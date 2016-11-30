@@ -1,0 +1,708 @@
+﻿/***reset***/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-shadow:none;
+	font-size:12px;
+	line-height:18px;
+	font-weight:400;
+	color:#808080;
+	outline:0 none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	overflow-x:hidden;
+	overflow-y:auto;
+	scrollbar-face-color: #929292;
+    scrollbar-shadow-color: none;
+    scrollbar-highlight-color:#cacaca;
+    scrollbar-3dlight-color: #cacaca;
+    scrollbar-darkshadow-color: none;
+    scrollbar-track-color: #cacaca;
+    scrollbar-arrow-color: #cecece;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/****MY Style****/
+body {
+	background:#e5e5e5;
+}
+img {
+	outline:none;
+}
+h1 {
+	font-size:26px;
+	color:#666;
+}
+#header {
+	background:#5e5e5e;
+	padding:10px 0;
+	float:left;
+	width:100%;
+	z-index:5;
+	position:fixed;
+	left:0;	
+}
+#footer {
+	padding:10px 0;
+	float:left;
+	width:100%;
+	background:#707273;
+	position:fixed;
+	bottom:0;
+    z-index:10;
+    left:0;
+}
+.login, .login ul
+{
+    float:right;
+    width:138px;    
+}
+.login li
+{
+    float:left;
+    color:#fff;
+    padding:10px 5px;
+    text-align:right;
+}
+
+
+.container {
+	width:1200px;
+	margin:0 auto;
+	clear:both;
+}
+#main
+{
+    clear:both;
+    float:none;
+}
+.tileview ul
+{
+    width:280px;
+    
+}
+.tileview li a
+{
+    background:#808080;
+	width:90px;
+	height:75px;
+	padding:26px 15px 20px;
+	margin:5px 10px 5px;
+	color:#fff;
+	float:left;
+	line-height:14px;
+	text-align:left;
+	text-decoration:none;
+	float:left;
+	margin-left:0;
+	border:0;
+	box-shadow:0;
+}
+
+.tileview h1
+{
+   	color:#5e5e5e;
+	font-size:28px;
+	padding-bottom:25px;
+	padding-top:30px;
+	text-align:left;
+	font-weight:normal;
+}
+.tileview h2 {
+	font-size:50px;
+	text-align:right;
+	padding:10px 10px 30px;
+	color:#fff;
+	}
+.tileview h3
+{
+text-align:right; clear:both; float:none; height:60px    
+}
+.tileview h5
+{
+font-size:20px;
+color:#fff;
+text-align:center;
+line-height:30px;
+}
+.tileview
+{
+    margin-right:50px;
+    width:250px;
+    float:left !important;
+}
+
+.quickanddetail, .selfeedback, .quickanddetailbig
+{
+    width:250px !important;
+}
+.tileview a:focus
+{
+    background:#e0b101;
+}
+.quickanddetail h3, .quickanddetailbig h3
+{
+    text-align:center;
+}
+.quickanddetailbig
+{
+    padding-top:40px !important;
+    padding-bottom:20px !important;
+    font-size:16px !important;
+}
+.black
+{
+    color:#000;
+}
+.selfeedback
+{
+    height:34px !important;
+    padding-top:17px !important;
+    font-size:15px !important;
+    line-height:18px !important;
+    float:left;
+}
+.sfright
+{
+    width:800px !important;
+}
+.sfright h3
+{
+    font-size:14px;
+    padding-bottom:10px;
+}
+.sfright h4
+{
+    font-size:28px;
+    width:70%;
+    float:left;
+    line-height:normal;
+    font-weight:bold;
+}
+.sfright p
+{
+    margin:28px 0 15px;
+}
+.feedbackleft, .feedbackright{float:left; width:350px; margin-top:20px; margin-right:30px}
+.feedbackright{width:280px;}
+.feedbackleft h5, .feedbackright h5, .feedbackleft h6, .feedbackright h6{font-weight:bold; padding:10px 0}
+.feedbackleft h5, .feedbackright h5{text-decoration:underline}
+
+.qn, .Qqn
+{
+    background:#e0b001;
+    padding:20px;
+    color:#fff;
+    margin:8px 10px 10px 0px;
+    float:left;
+    font-size:40px;
+}
+.Qqn
+{
+    background:#acacac;
+    margin:0 10px 10px;
+}
+.questions
+{
+    width:100%;
+}
+.oneline
+{
+    padding-top:40px !important;
+    height:15px !important;
+}
+.clr
+{
+    clear:both;
+}
+/***footer***/
+.copyright {
+	float:left;
+	width:500px;
+	color:#FFF;
+	font-size:14px;
+	position:absolute;
+}
+.container {
+	width:98%;
+	margin:0 auto;
+}
+.content {
+	width:98%;
+	margin:0 auto;
+	clear:both;
+	float:none;
+	padding-top:78px;
+	left:0;
+	position:fixed;
+}
+.menu{width:100px; float:right;}
+.menu a{ color:#FFF; font-size:14px; text-decoration:none; padding:6px 0 6px 40px}
+ul#nav {background:url(../images/menu-bg.png) no-repeat left; padding-left:30px}
+ul.drop a {background:url(../images/comparision.png) no-repeat; display:block; color: #fff; font-family: Verdana; font-size: 14px; text-decoration: none;}
+ul.drop, ul.drop li, ul.drop ul { list-style: none; margin: 0; padding: 0; color: #fff;}
+ul.drop li ul li{}
+ul.drop li ul li:hover{background:#E0B001; width:95%;}
+ul.drop { position: relative; z-index: 597; float: right;}
+ul.drop li { float: left; line-height: 1.3em; vertical-align: middle; zoom: 1; padding: 5px 10px;  cursor:pointer;}
+ul.drop li ul li.hover,  { position: relative; z-index: 599; cursor: default; }
+ul.drop ul { visibility: hidden; position: absolute; top: 100%; left: -120px; z-index: 598; width: 195px; }
+ul.drop ul{ float: none; margin-top:-146px; background:#4d4d4d;}
+ul.drop li ul li{padding:5px;  }
+ul.drop ul ul { top: -2px; left: 100%; }
+ul.drop li:hover > ul { visibility: visible }
+
+/***Login***/
+#menu_child
+{
+    border:1px solid #ccc;
+}
+#menu_child li
+{   background:#fff;
+    color:#666;
+    float:none;
+    min-width:150px !important;
+    margin:0;
+    clear:both;
+    text-align:left;
+    border-bottom:1 px dashed #000;
+    
+}
+#menu_child li:hover
+{
+    background:#efefef;
+}
+#menu_child li:last-child
+{
+    border-top:1px solid #ccc;
+    box-shadow:3px 3px 3px #ccc;
+}
+#menu_child li a
+{
+    color:#666;
+    text-decoration:none;
+    padding:10px;
+}
+#menu_child li a:hover
+{
+    color:#000;
+}
+/***Scroll Pane***/
+.scrollpane {  
+	 color: #000000;
+	 font-size: 10pt;
+	 margin: 0px;
+	 overflow-y: auto;
+	 overflow-x: hidden;
+	 padding: 1px;
+     width: 285px;
+	 height: 392px;
+	}
+
+.flipbox 
+{
+background:#808080;
+font-family: 'ChunkFive Regular', Tahoma, Helvetica;
+color: white;
+height:34px !important;
+    padding:30px 10px 10px;
+    font-size:15px !important;
+    line-height:18px !important;
+    text-decoration:none;
+}
+/**Collapse Panel**/
+.pollSlider{
+    position:fixed;
+    height:100%;
+    background:#fff;
+    width:340px;
+    right:0px;
+    margin-right: -340px;
+}
+#pollSlider-button{
+    position:fixed;
+    width:15px;
+    height:100%;
+    right:0px;
+    background:url("../images/collapse.png") no-repeat center #B2B2B2;
+    cursor:pointer;
+}
+.pollSliderleft{
+    position:fixed;
+    height:100%;
+    background:#fff;
+    width:340px;
+    left:0px;
+    margin-left: -340px;
+}
+#pollSliderleft-button{
+    position:fixed;
+    width:15px;
+    height:100%;
+    left:0px;
+    background:url("../images/collapse.png") no-repeat center #B2B2B2;
+    cursor:pointer;
+}
+/*#modal { display: none; }
+            #modal a { background: #CCC; color: #333; font-weight: bold; padding: 5px 10px; border: none; }
+            #modal a:hover { background: #aaa; } 
+
+pre { border: 1px solid #CCC; background-color: #EEE; color: #333; padding: 10px 20px; }
+#modalleft { display: none; }
+#pageslide {
+     These styles MUST be included. Do not change. 
+    display: block;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    
+   
+    width: 18%;
+    padding: 20px;
+    
+    
+    background-color: #fff;
+    color: #666;
+
+}*/
+
+.leftpanel {
+	width: 310px;
+	color: black;
+	float:left;
+	padding:10px;
+}
+.leftpanel  h1, .rightpanel h1{font-size:20px; padding:20px 0; color:#333}
+.rightpanel {width:340px; 	padding:10px; float:left}
+.rightpanel li{float:left; margin:5px; border:1px solid #efefef}
+
+.first
+{
+    position:fixed;
+    left:0;
+    height:100%;
+    z-index:3;
+    width:15px;
+    background:#b2b2b2;
+    padding-top:20%;
+}
+.second
+{
+    position:fixed;
+    right:0px;
+    height:100%;
+    z-index:4;
+    width:15px;
+    background:#b2b2b2;
+    padding-top:20%;
+}
+.third
+{
+    position:fixed;
+    right:0px;
+    height:100%;
+    z-index:4;
+    width:15px;
+    background:#b2b2b2;
+    padding-top:20%;
+}
+/*Reveal Modal */
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		background: #e0b001;
+		background: rgba(229,229,229,.8);
+}
+	
+	.reveal-modal {
+		visibility: hidden;
+		padding: 8px 0px 34px;
+		position:absolute;
+        z-index:101;
+		padding: 8px 0px 34px;
+		}
+		
+	.reveal-modal .close-reveal-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 50px;
+		color: #fff;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		background: #e0b001;
+		border-radius:40px;
+		padding:5px;
+		border:2px solid #fff;
+		} 
+/* Navigation Slide */
+.tileview .tile {
+	height: 120px; 
+	width: 280px;
+    overflow: hidden;
+    text-align: center;
+    float:none;
+    margin:10px;
+}
+
+.tileview .tile ul li {
+	float: left;
+	list-style-type: none;
+	width:120px;
+	margin-right:10px;
+}
+
+.tileview .tile ul a.top {
+	background: #808080; color: #fff;
+}
+
+.tileview .tile ul a {
+	display: block;
+	background: #e0b001; color: #fff;
+	/*height: 120px; */
+	text-decoration: none;
+	margin:0 !important;
+}
+.tileview .tile ul a.top:focus, .tile ul a:focus
+{
+    background: #e0b001;
+}
+.tileview .tile ul li h2 {
+	font-size:50px;
+	text-align:right;
+	color:#fff;
+	padding:0px 8px 45px 0px;
+	}
+.tileview .tile ul li h3
+{
+text-align:right; clear:both; float:none; padding:0 8px 30px 0; height:40px
+}
+/*User Slide*/
+.up-down {
+    overflow:hidden;
+    height:95px;
+    width:95px;
+}
+.slide {
+    width:95px;
+    height:95px;
+
+}
+.onhover {
+    background:black;
+    padding:0 5px;
+    color:#fff;
+    font-size:10px;
+    opacity:0.5;
+}
+.selectarea
+{   padding-top:30px;
+    float:left;
+    width:50%;
+}
+.selectarea li a
+{
+    color:#fff;
+    text-decoration:none; 
+    background:url(../images/select-bg.png) no-repeat right;
+    padding:0px 30px 2px 10px;
+    text-align:left;
+   
+}
+.selectarea li
+{
+    float:left;
+    width:114px;
+    margin-right:8px;
+    height:30px;
+}
+.selectarea li a:focus
+{
+    background:url(../images/select-bg-hover.png) no-repeat right;
+}
+
+/*#practisearea ul
+{
+    overflow-Y:auto;
+    overflow-X:hidden;
+    max-height:270px;
+    width:114px;
+    margin-top:-20px;
+    z-index:200;
+    position:relative;
+}
+#practisearea li
+{
+    background:#fff;
+    padding:3px 0px 3px 10px;
+    width:90px !important;
+    height:auto !important;
+    color:#000;
+    cursor:pointer;
+}
+#practisearea li:hover
+{
+    background:#e0b001;
+    color:#fff;
+}*/
+    #jsddm li {   
+    float: left;
+    list-style: none;
+
+     }
+
+    #jsddm li a {
+        display: block;
+        }
+
+    #jsddm li a:focus {
+        color:#666;
+        }
+
+        #jsddm li ul {
+            margin: 0;
+            padding: 0;
+            width: 85%;
+            visibility: hidden;
+            position:fixed;
+            background:#fff;
+            overflow-y:auto;
+            overflow-x:hidden;
+            height:300px;
+            margin-top:-28px;
+            }
+
+        #jsddm li ul li {
+            display: inline;
+            height:27px;
+            
+            }
+
+        #jsddm li ul li a {
+            width: auto;
+            color:#666;
+            padding:5px;
+            }
+
+        #jsddm li ul li a:hover {
+            background: #E0B001;
+            color:#fff;
+            }
+/***Page Slider****/
+.stepcarousel{
+position: relative; /*leave this value alone*/
+overflow: scroll; /*leave this value alone*/
+width: 98%; /*Width of Carousel Viewer itself*/
+height: 600px; /*Height should enough to fit largest content's height*/
+margin:0 auto;
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin: 0 40px 10px; /*margin around each panel*/
+width: 1260px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+@media only screen and (max-width : 1920px) {
+.stepcarousel .panel
+{
+    min-width:1820px;
+    max-width:1880px;
+}
+}
+@media only screen and (max-width : 1680px) {
+.stepcarousel .panel
+{
+    min-width:1600px;
+    max-width:1660px;
+}
+}
+@media only screen and (max-width : 1600px) {
+.stepcarousel .panel
+{
+    min-width:1520px;
+    max-width:1560px;
+}
+}
+@media only screen and (max-width : 1440px) 
+{
+    .stepcarousel .panel
+{
+    min-width:1360px;
+    max-width:1400px;
+}
+}
+@media only screen and (max-width : 1400px) 
+{
+    .stepcarousel .panel
+{
+    min-width:1300px;
+    max-width:1360px;
+}
+}
+@media only screen and (max-width : 1360px) 
+{
+    .stepcarousel .panel
+{
+    min-width:1200px;
+    max-width:1260px;
+}
+}
+@media only screen and (max-width : 1280px) 
+{
+    .stepcarousel .panel
+{
+    min-width:1200px;
+    max-width:1200px;
+}
+}

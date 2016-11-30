@@ -1,0 +1,261 @@
+
+
+/***********************************************/
+
+
+.surveyArea {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.surveyAction {
+    float: left;
+    margin-right: 0.5%;
+    color: #333;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#surveyQues .surveyAction h2 {
+    background: #333;
+    padding: 0 0 2% 0;
+    color: #fff;
+    width: 40%;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+.subquestions {
+    left: 6.8%;
+    position: relative;
+}
+
+#surveymain8 .surveyQNo {
+    margin-bottom: 2%;
+}
+
+
+.subquestions .surveyQNo {
+    margin-bottom: 0% !important;
+}
+
+#mCSB_1_scrollbar_horizontal {
+    display: none !important;
+}
+
+#mCSB_2_scrollbar_horizontal {
+    display: none !important;
+}
+
+mCSB_3_scrollbar_horizontal {
+    display: none !important;
+}
+
+mCSB_4_scrollbar_horizontal {
+    display: none !important;
+}
+
+mCSB_5_scrollbar_horizontal {
+    display: none !important;
+}
+
+mCSB_6_scrollbar_horizontal {
+    display: none !important;
+}
+
+.mCSB_scrollTools_horizontal {
+    display: none !important;
+}
+
+
+.productSurvey {
+    text-transform: none;
+}
+
+
+.surveyQNo {
+    background: none repeat scroll 0% 0% rgb(224, 176, 1);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    float: left;
+    margin-top: 0.4%;
+    margin-bottom: 0%;
+    margin-right: 2.5%;
+    width: 4%;
+    padding: 0% 0px 0.4% 0;
+    font-size: 110%;
+}
+
+
+.surveyquestionarea {
+    float: left;
+    width: 93%;
+}
+
+    .surveyquestionarea p {
+        width: 100%;
+        line-height: 1.2;
+        color: #000;
+        padding: 0;
+        margin-top: 0%;
+        margin-bottom: 0.5%;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+.surveySliderArea {
+    width: 100% !important;
+    margin-left: 5.1%;
+    height: 325px;
+    padding-bottom: 20px !important;
+    position: relative;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.mCSB_scrollTools {
+    width: 25px;
+}
+
+.mCSB_dragger_bar {
+    height: 35px !important;
+    width: 22px !important;
+}
+
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: red !important;
+    background-color: rgba(255, 0, 0, 0.4)!important;
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)";
+    width: 4px;
+}
+
+.SurveySlide {
+    width: 80% !important;
+    margin-top: 0.4%;
+    height: 0px !important;
+    padding-bottom: 7.5%;
+    float: left;
+}
+
+
+    .SurveySlide .sliderdiv {
+        width: 100% !important;
+        position: relative;
+        height: 0px !important;
+        padding-bottom: 8%;
+    }
+
+        .SurveySlide .sliderdiv img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            z-index: 1;
+        }
+
+    .SurveySlide .ui-slider-range {
+        background: url("../../Images/img/survey_1.png") no-repeat scroll 0% 0% transparent;
+        background-size: auto 100% !important;
+        height: 0px !important;
+        padding-bottom: 8.05%;
+        position: absolute;
+        z-index: 2;
+    }
+
+.ui-slider-handle {
+    width: 2% !important;
+    outline: medium none;
+    background: url("../../Images/slider-handle.png") no-repeat scroll 0% 0% transparent;
+    background-size: 100% 100%;
+    height: 0px;
+    padding-bottom: 9.5%;
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+    margin-left: -0.5em;
+    margin-top: -0.6%;
+}
+
+
+
+.clr {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+
+.surveyAction img {
+    width: 10%;
+    margin: 3% 4% -2% 4%;
+}
+
+
+/***************************************************/
+
+
+
+
+.content {
+    overflow: auto;
+    position: relative;
+    padding: 20px 20px 0px 20px;
+    background: #333;
+    margin: 0 10px 0 10px;
+    width: 740px;
+    max-width: 97%;
+    height: 420px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+    .content.hidden {
+        display: none;
+    }
+
+    .content.light {
+        background-color: #fff;
+        color: #333;
+    }
+
+
+
+
+
+
+/******************************************** jquerry***************************************/
+
+
+
+@media screen and (max-width: 2600px) and (min-width: 2170px) {
+
+    .content {
+        height: 840px;
+    }
+}
+
+
+@media screen and (max-width: 2170px) and (min-width: 2000px) {
+    .content {
+        height: 865px;
+    }
+}
+
+
+@media screen and (max-width: 2000px) and (min-width: 1800px) {
+    .content {
+        height: 650px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) and (min-width: 1800px) {
+}

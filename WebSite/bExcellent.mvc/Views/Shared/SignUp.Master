@@ -1,0 +1,283 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <%--Stylesheet--%>
+    <link rel="stylesheet" href="../../Styles/signup/semantic.min.css">
+    <link href="../../Styles/signup/signUpstart.css" rel="stylesheet" />
+    <link href="../../Styles/signup/signUpinnerHeaderFooter.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/signup/signUpNewMaster.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../Styles/Stylesheet1.css" />
+    <link href="../../Styles/reset.css" rel="stylesheet" type="text/css" />
+    <%--<link href="../../Styles/Common/master.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/common.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <%--scripts--%>
+    <%-- <script src="../../Scripts/ref/jquery-1.8.3.js" type="text/javascript"></script>--%>
+    <script type="text/javascript" src="../../Scripts/ref/jquery-1.8.3.min.js"></script>
+    <script type='text/javascript' src="../../Scripts/ref/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/myscroll.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/jquery.tabSlideOut.v1.4.1.js"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/ref/common.js"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/plugin/handlebars/handlebars-1.0.js"></script>
+    <style type="text/css">
+        .popup {
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -50px 0 0 -100px;
+            display: none;
+        }
+
+        .yj-hd h3, .yj-embed-narrow .yj-hd h3 {
+            display: none !important;
+        }
+
+        .yj-embed .yj-message-form-container {
+            padding-top: 10px;
+        }
+
+        .yj-embed-wide .yj-hd, .yj-embed-narrow .yj-hd {
+            background-color: #f3f3f3;
+        }
+
+        .yj-component {
+            background-color: White;
+        }
+
+
+
+        /*@media screen and (min-width: 1300px) and (max-width: 1399px) {
+
+           .accordion a img {
+                    width: 320% !important;
+                    margin-top: -2% !important;
+                }
+
+        }
+
+        @media screen and (min-width: 1400px) and (max-width: 1599px) {
+
+           .accordion a img {
+                    width: 320% !important;
+                    margin-top: -3% !important;
+                }
+
+        }
+
+
+        @media screen and (min-width: 1600px) and (max-width: 1650px) {
+
+              .accordion a img {
+                    width: 290% !important;
+                    margin-top: -1% !important;
+                }
+
+                
+            }
+
+        
+
+        @media screen and (min-width: 1651px) and (max-width: 1899px) {
+
+              .accordion a img {
+                    width: 290% !important;
+                    margin-top: -5% !important;
+                }
+
+                
+            }
+
+
+        @media screen and (min-width: 2200px) and (max-width: 2600px) {
+
+           .accordion a img {
+                    width: 290% !important;
+                    margin-top: -6% !important;
+                }
+
+        }
+
+            @media screen and (min-width: 2100px) and (max-width: 2199px) {
+
+               .accordion a img {
+                    width: 290% !important;
+                    margin-top: -3% !important;
+                }
+
+            }
+
+
+             @media screen and (min-width: 1900px) and (max-width: 2099px) {
+
+                .accordion a img {
+                    width: 290% !important;
+                    margin-top: -4% !important;
+                }
+
+            }*/
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $('#redirectTerms').click(function () {
+                // window.location.href = "/SignUp/Terms";
+                window.open("/SignUp/Terms", '_blank');
+            });
+            $('#redirectPrivacy').click(function () {
+                //window.location.href = "/SignUp/Privacy";
+                window.open("/SignUp/Privacy", '_blank');
+            });
+        });
+        //function showPopup(id) {
+        //    var popup = document.getElementById(id);
+        //    popup.style.display = 'block';
+        //};
+        //function pageRedirect(page) {
+        //    window.location.href = page.value;
+        //};
+    </script>
+</head>
+<body>
+
+    <div>
+
+        <%--New Design Header Start --%>
+
+        <div class="ui grid headerPart">
+            <div class="row headerMenu">
+                <div class="headerLeft">
+
+
+
+                    <%--New Design Header End --%>
+
+
+                    <div class="accordion">
+
+                        <%--                        <h3 class="checkt">
+                              <a href="#" class="cacIcon">
+                                    <img src="../../Images/blank.png" class="checkimg" /></a></h3>--%>
+                        <a href="/common/Index" id="imagelogo" class="cacLogo">
+
+                            <img id="kesslogo" src="../../Images/images/CAC_logo.png" alt="Bexcellent" align="left" />
+                        </a>
+
+                        <ul class="login cart afterlogin" id="cartOptions">
+                        </ul>
+                    </div>
+                    <div id="hiddenValues" style="visibility: hidden">
+                        <div id="userid" runat="server" style="visibility: hidden">
+                        </div>
+                        <div id="selectedpoe" runat="server" style="visibility: hidden">
+                        </div>
+                        <div id="createdFeedbacks" runat="server" style="visibility: hidden">
+                        </div>
+                        <div id="selectedPages" runat="server" style="visibility: hidden">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <%--    <div id="header">
+            <div class="main">
+                <div class="accordion">
+                    <a href="/common/Index">
+                         <img src="../../Images/belogo-1920.png" alt="Bexcellent" align="left" />
+                        <img src="../../Images/kessaku-logo.png" alt="Bexcellent" align="left" />
+                    </a>
+                    <h3></h3>
+                </div>
+                <ul class="login cart" id="cartOptions">
+                </ul>
+            </div>
+            <div id="hiddenValues" style="visibility: hidden">
+                <div id="userid" runat="server" style="visibility: hidden">
+                </div>
+                <div id="selectedpoe" runat="server" style="visibility: hidden">
+                </div>
+                <div id="createdFeedbacks" runat="server" style="visibility: hidden">
+                </div>
+                <div id="selectedPages" runat="server" style="visibility: hidden">
+                </div>
+            </div>
+        </div>--%>
+        <div class="bg">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+
+
+        <div class="sixteen wide column footerPart">
+            
+            <div class="ui inverted menu">
+                <span class="item">© 2016 PIPE9 Consulting</span>
+                <a class="item" id="redirectTerms">Terms</a>
+                <a class="item" id="redirectPrivacy">Privacy</a>
+                <a class="item" href="mailto:support@pipe9consulting.com">Support</a>
+                <div class="bukatutup">
+                    <span>
+                        <img src="../../Images/footer-menu.png"></span><p>
+                            Menu
+                        </p>
+                </div>
+            </div>
+
+            <div id="target">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+
+        <%--   <div class="footer">
+            <div class="main">
+                <div class="copyright">
+                    <span>© 2015 PIPE9 Consulting</span><span><a href="/Signup/Terms" target="_blank">Terms</a></span><span><a
+                        href="/Signup/Privacy" target="_blank">Privacy</a></span><span id="faqpage">FAQ</span><span><a
+                            href="mailto:support@pipe9consulting.com">Support</a></span>
+                </div>
+                <div class="bukatutup">
+                    <span>
+                        <img src="../../Images/footer-menu.png"></span><p>
+                            Menu
+                        </p>
+                </div>
+                <div id="target">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>--%>
+    </div>
+</body>
+</html>

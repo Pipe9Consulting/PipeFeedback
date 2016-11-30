@@ -1,0 +1,1943 @@
+﻿/********Connect********/
+.connectbutton
+{
+    float: right;
+    background: #e0b001;
+    padding: 1% 3%;
+    margin-top: 2%;
+    width: auto !important;
+    border: 2px solid #353535;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contentholder
+{
+    color: #4A4A4A;
+    float: left;
+    margin-left: 0px;
+    margin-top: 0;
+    width: 700px;
+}
+
+.connect ul
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.connect li
+{
+    background: none repeat scroll 0 0 #D5D5D5;
+    border: 1px solid #D5D5D5;
+    float: left;
+    margin: 10px 10px 0px 0;
+    padding: 10px;
+}
+
+    .connect li img
+    {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .connect li .title
+    {
+        color: #5e5e5e;
+    }
+
+.connectdesc
+{
+    float: left;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.connectbtn
+{
+    border-top: 1px solid #b9b9b9;
+    clear: both;
+    float: none;
+}
+
+.cnticon
+{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 3px;
+    margin-right: 10px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cnticonb
+{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 3px;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    border-left: 1px solid #b9b9b9;
+    cursor: pointer;
+}
+
+.connectpopup
+{
+    z-index: 9999;
+    background: #fff !important;
+    border: 1px solid #ccc;
+    width: 270px;
+    padding: 10px;
+    float: left;
+}
+
+.vs-context-menu
+{
+    z-index: 999999;
+    position: fixed !important;
+}
+
+.txtarea
+{
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 260px;
+    margin: 4px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.vs-context-menu .btn
+{
+    background: none repeat scroll 0 0 #DEAF01;
+    border: 2px solid #6C6C6C;
+    bottom: 5px;
+    clear: both;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px 0;
+    text-align: center;
+    width: 25%;
+    float: right;
+    margin: 4px 0 4px 4px;
+}
+
+.connect li .cnticon img, .connect li .cnticonb img
+{
+    margin-right: 2px;
+}
+
+.selectmngr
+{
+    background: url("../images/selected.png") no-repeat scroll right top #D5D5D5 !important;
+    border: 1px solid #E0B001 !important;
+}
+
+.customertiles h1, .contentholder h6
+{
+    color: #5e5e5e;
+    font-size: 160%;
+    font-weight: lighter;
+    padding-top: 10px;
+    background: none !important;
+}
+
+.contentholder h6
+{
+    margin-top: 10px;
+    padding-top: 0;
+    margin-bottom: 8px;
+}
+
+.customertiles .takesf
+{
+    background: #808080;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    padding: 0;
+    position: relative;
+}
+
+    .customertiles .takesf p
+    {
+        position: absolute;
+        left: 10px;
+        color: #fff;
+    }
+
+    .customertiles .takesf img
+    {
+        position: absolute;
+        right: -5px;
+        top: 5px;
+    }
+
+.customertiles .takesfsingle img
+{
+    float: right;
+    margin-right: -20px;
+    margin-top: -30px;
+}
+
+.customertiles .selected
+{
+    background: #e0b001;
+}
+
+.customertiles ul li p
+{
+    clear: both;
+    position: relative;
+    bottom: 0px;
+    width: 100px;
+    line-height: 1.2em;
+}
+
+.customertiles ul li
+{
+    padding: 10px;
+    float: left;
+    background: #808080;
+    margin: 10px 10px 0 0;
+    line-height: 1em;
+}
+
+.customertiles
+{
+    float: left;
+    margin-right: 50px;
+}
+
+.main
+{
+    width: 95%;
+}
+/********Connect********/
+@media screen and (max-width: 7680px) and (min-width: 1680px)
+{
+    .contentholder
+    {
+        margin-top: 12px;
+    }
+
+    .connectbutton
+    {
+        margin-right: 1.5%;
+    }
+
+    .pageholder
+    {
+        margin-top: 6% !important;
+        width: 94.2%;
+        padding: 0;
+    }
+
+    .connect
+    {
+        width: 980px;
+    }
+
+        .connect ul
+        {
+            width: 992px;
+            max-height: 588px !important;
+        }
+
+        .connect li
+        {
+            height: 113px;
+            width: 455px;
+        }
+
+            .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+            {
+                font-size: 16px !important;
+            }
+
+                .cnticon img, .cnticonb img
+                {
+                    width: 25px;
+                    height: 23px;
+                }
+
+    .conimg
+    {
+        width: 72px;
+        height: 72px;
+    }
+    /*End Connect*/
+    .customertiles
+    {
+        width: 389px;
+    }
+
+        .customertiles .takesf
+        {
+            width: 338px;
+            height: 95px;
+        }
+
+            .customertiles .takesf p
+            {
+                font-size: 16px;
+                width: 60%;
+                bottom: 10px;
+            }
+
+    .qn
+    {
+        height: 74px;
+        width: 74px;
+        line-height: 74px;
+        font-size: 300%;
+        margin-top: 16px;
+        margin-right: 30px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+        margin-right: 10px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 29pt;
+        margin-top: 15px;
+        line-height: 37px;
+        font-weight: normal;
+        width: 900px;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI
+    {
+        font-size: 18px;
+    }
+
+    .questions li
+    {
+        width: 920px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 836%;
+        width: 60%;
+        margin-left: 7.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 18px;
+        font-weight: 600;
+        color: #808080;
+        line-height: 1.2em;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 87%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 70px;
+        height: 67px;
+    }
+
+    .sliderimg img
+    {
+        width: 791px;
+        height: 117px;
+    }
+
+    .customertiles h1, .contentholder h6
+    {
+        font-size: 26px;
+    }
+
+    .breadcrumb
+    {
+        font-size: 13px;
+    }
+
+    .slidebtn
+    {
+        width: 16%;
+    }
+
+    .mngrfb
+    {
+        width: 88%;
+        max-height: 530px;
+    }
+
+    .qucvw
+    {
+        max-height: 694px;
+        width: 90%;
+    }
+
+    .user img
+    {
+        width: 95px;
+        height: 95px;
+        margin-top: 5px;
+    }
+
+    .mngrfb .user
+    {
+        width: 95px;
+    }
+
+    .content1 ul li
+    {
+        font-size: 18px;
+    }
+
+    .diagram img
+    {
+        width: 170%;
+        margin-top: 50px;
+    }
+
+    .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 18px;
+    }
+
+    .content3 li
+    {
+        height: 47px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1680px)
+{
+    /*Connect 1600*/
+    .connect
+    {
+        width: 770px;
+    }
+
+        .connect li
+        {
+            height: 91px;
+            width: 358px;
+        }
+
+        .connect ul
+        {
+            width: 800px;
+            max-height: 496px !important;
+        }
+
+    .pageholder
+    {
+        width: 93.9%;
+        margin-top: 6% !important;
+    }
+
+    .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+    {
+        font-size: 13px !important;
+    }
+
+        .cnticon img, .cnticonb img
+        {
+            width: 21px;
+            height: 19px;
+        }
+
+    .conimg
+    {
+        width: 61px;
+        height: 61px;
+    }
+
+    /*End Connect*/
+    .customertiles
+    {
+        width: 324px;
+    }
+
+        .customertiles .takesf
+        {
+            width: 324px;
+            height: 79px;
+        }
+
+            .customertiles .takesf p
+            {
+                font-size: 16px;
+                width: 60%;
+                bottom: 10px;
+            }
+
+    .qn
+    {
+        height: 64px;
+        width: 64px;
+        line-height: 64px;
+        font-size: 300%;
+        margin-top: 16px;
+        margin-right: 10px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 23px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 20pt;
+        margin-top: 12px;
+        width: 700px;
+        line-height: 1.1em;
+        font-weight: bold;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI, .breadcrumb
+    {
+        font-size: 14px;
+    }
+
+    .questions li
+    {
+        width: 720px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 668%;
+        width: 53%;
+        margin-left: 6.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 87%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 50px;
+        height: 48px;
+    }
+
+    .sliderimg img
+    {
+        width: 659px;
+        height: 95px;
+    }
+
+    .mngrfb
+    {
+        width: 90%;
+        max-height: 400px;
+    }
+
+    .qucvw
+    {
+        max-height: 540px;
+        width: 98%;
+    }
+
+    .user img
+    {
+        width: 75px;
+        height: 75px;
+        margin-top: 5px;
+    }
+
+    .mngrfb .user
+    {
+        width: 75px;
+    }
+
+    .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 14px;
+    }
+
+    .diagram img
+    {
+        width: 150%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px)
+{
+    /*Connect 1600*/
+    .connect
+    {
+        width: 770px;
+    }
+
+        .connect li
+        {
+            height: 85px;
+            width: 358px;
+        }
+
+        .connect ul
+        {
+            width: 800px;
+            max-height: 496px !important;
+        }
+
+    .pageholder
+    {
+        width: 93.9%;
+        margin-top: 6% !important;
+    }
+
+    .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+    {
+        font-size: 13px !important;
+    }
+
+        .cnticon img, .cnticonb img
+        {
+            width: 21px;
+            height: 19px;
+        }
+
+    .conimg
+    {
+        width: 61px;
+        height: 61px;
+    }
+
+    /*End Connect*/
+    .customertiles
+    {
+        width: 324px;
+    }
+
+        .customertiles .takesf
+        {
+            width: 300px;
+            height: 75px;
+        }
+
+            .customertiles .takesf p
+            {
+                font-size: 16px;
+                width: 60%;
+                bottom: 10px;
+            }
+
+    .qn
+    {
+        height: 64px;
+        width: 64px;
+        line-height: 64px;
+        font-size: 300%;
+        margin-top: 16px;
+        margin-right: 10px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 23px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 20pt;
+        margin-top: 12px;
+        width: 700px;
+        line-height: 1.1em;
+        font-weight: bold;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI, .breadcrumb
+    {
+        font-size: 14px;
+    }
+
+    .questions li
+    {
+        width: 720px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 668%;
+        width: 53%;
+        margin-left: 6.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 87%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 50px;
+        height: 48px;
+    }
+
+    .sliderimg img
+    {
+        width: 659px;
+        height: 95px;
+    }
+
+    .mngrfb
+    {
+        width: 90%;
+        max-height: 400px;
+    }
+
+    .qucvw
+    {
+        max-height: 540px;
+        width: 98%;
+    }
+
+    .user img
+    {
+        width: 75px;
+        height: 75px;
+        margin-top: 5px;
+    }
+
+    .mngrfb .user
+    {
+        width: 75px;
+    }
+
+    .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 14px;
+    }
+
+    .diagram img
+    {
+        width: 150%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1440px)
+{
+    .connect
+    {
+        width: 700px;
+    }
+
+        .connect li
+        {
+            height: 80px;
+            width: 308px;
+        }
+
+        .connect ul
+        {
+            width: 700px;
+            max-height: 401px !important;
+        }
+
+    .pageholder
+    {
+        width: 93.6%;
+        margin-top: 7% !important;
+    }
+
+    .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+    {
+        font-size: 12px !important;
+    }
+
+        .cnticon img, .cnticonb img
+        {
+            width: 21px;
+            height: 19px;
+        }
+
+    .conimg
+    {
+        width: 52px;
+        height: 52px;
+    }
+    /*****Connect****/
+    .customertiles
+    {
+        width: 276px;
+    }
+
+        .customertiles .takesf
+        {
+            width: 255px;
+            height: 64px;
+        }
+
+            .customertiles .takesf p
+            {
+                font-size: 14px;
+                width: 60%;
+                bottom: 10px;
+            }
+
+    .qn
+    {
+        height: 54px;
+        width: 54px;
+        line-height: 54px;
+        font-size: 220%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 17pt;
+        margin-top: 7px;
+        width: 550px;
+        line-height: 1.1em;
+        font-weight: bold;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI, .breadcrumb
+    {
+        font-size: 12px;
+    }
+
+    .questions li
+    {
+        width: 600px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 390%;
+        width: 60%;
+        margin-left: 5.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 45px;
+        height: 43px;
+    }
+
+    .sliderimg img, .quickview .sliderimg
+    {
+        width: 559px;
+        height: 73px;
+    }
+
+    .customertiles h1, .contentholder h6
+    {
+        font-size: 20px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+
+    .mngrfb
+    {
+        width: 89%;
+        max-height: 318px;
+    }
+
+    .qucvw
+    {
+        max-height: 500px;
+        width: 102%;
+    }
+
+    .user img
+    {
+        width: 60px;
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    .mngrfb .user
+    {
+        width: 60px;
+    }
+
+    .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 12px;
+    }
+
+    .diagram img
+    {
+        width: 130%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 33px;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px)
+{
+    .connect
+    {
+        width: 700px;
+    }
+
+        .connect li
+        {
+            height: 80px;
+            width: 308px;
+        }
+
+        .connect ul
+        {
+            width: 700px;
+            max-height: 401px !important;
+        }
+
+    .pageholder
+    {
+        width: 93.6%;
+        margin-top: 7% !important;
+    }
+
+    .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+    {
+        font-size: 12px !important;
+    }
+
+        .cnticon img, .cnticonb img
+        {
+            width: 21px;
+            height: 19px;
+        }
+
+    .conimg
+    {
+        width: 52px;
+        height: 52px;
+    }
+    /*****Connect****/
+    .customertiles
+    {
+        width: 276px;
+    }
+
+        .customertiles .takesf
+        {
+            width: 255px;
+            height: 64px;
+        }
+
+            .customertiles .takesf p
+            {
+                font-size: 14px;
+                width: 60%;
+                bottom: 10px;
+            }
+
+    .qn
+    {
+        height: 54px;
+        width: 54px;
+        line-height: 54px;
+        font-size: 220%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 17pt;
+        margin-top: 7px;
+        width: 550px;
+        line-height: 1.1em;
+        font-weight: bold;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI, .breadcrumb
+    {
+        font-size: 12px;
+    }
+
+    .questions li
+    {
+        width: 600px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 390%;
+        width: 60%;
+        margin-left: 5.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 45px;
+        height: 43px;
+    }
+
+    .sliderimg img, .quickview .sliderimg
+    {
+        width: 559px;
+        height: 73px;
+    }
+
+    .customertiles h1, .contentholder h6
+    {
+        font-size: 20px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+
+    .mngrfb
+    {
+        width: 89%;
+        max-height: 318px;
+    }
+
+    .qucvw
+    {
+        max-height: 500px;
+        width: 102%;
+    }
+
+    .user img
+    {
+        width: 60px;
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    .mngrfb .user
+    {
+        width: 60px;
+    }
+
+    .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 12px;
+    }
+
+    .diagram img
+    {
+        width: 130%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 33px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+{
+    .connect
+    {
+        width: 700px;
+    }
+
+        .connect li
+        {
+            height: 80px;
+            width: 308px;
+        }
+
+        .connect ul
+        {
+            width: 700px;
+            max-height: 401px !important;
+        }
+
+    .pageholder
+    {
+        width: 93.6%;
+        margin-top: 7% !important;
+    }
+
+    .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+    {
+        font-size: 12px !important;
+    }
+
+        .cnticon img, .cnticonb img
+        {
+            width: 21px;
+            height: 19px;
+        }
+
+    .conimg
+    {
+        width: 52px;
+        height: 52px;
+    }
+    /*****Connect****/
+    .customertiles
+    {
+        width: 276px;
+    }
+
+        .customertiles .takesf
+        {
+            width: 255px;
+            height: 64px;
+        }
+
+            .customertiles .takesf p
+            {
+                font-size: 14px;
+                width: 60%;
+                bottom: 10px;
+            }
+
+    .qn
+    {
+        height: 54px;
+        width: 54px;
+        line-height: 54px;
+        font-size: 220%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 17pt;
+        margin-top: 7px;
+        width: 550px;
+        line-height: 1.1em;
+        font-weight: bold;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI, .breadcrumb
+    {
+        font-size: 12px;
+    }
+
+    .questions li
+    {
+        width: 600px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 390%;
+        width: 60%;
+        margin-left: 5.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 45px;
+        height: 43px;
+    }
+
+    .sliderimg img, .quickview .sliderimg
+    {
+        width: 559px;
+        height: 73px;
+    }
+
+    .customertiles h1, .contentholder h6
+    {
+        font-size: 20px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+
+    .mngrfb
+    {
+        width: 89%;
+        max-height: 318px;
+    }
+
+    .qucvw
+    {
+        max-height: 500px;
+        width: 102%;
+    }
+
+    .user img
+    {
+        width: 60px;
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    .mngrfb .user
+    {
+        width: 60px;
+    }
+
+    .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 12px;
+    }
+
+    .diagram img
+    {
+        width: 130%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 33px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    .connect
+    {
+        width: 700px;
+    }
+
+        .connect li
+        {
+            height: 80px;
+            width: 308px;
+        }
+
+        .connect ul
+        {
+            width: 700px;
+            max-height: 401px !important;
+        }
+
+    .pageholder
+    {
+        width: 93.6%;
+        margin-top: 8% !important;
+    }
+
+    .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+    {
+        font-size: 12px !important;
+    }
+
+        .cnticon img, .cnticonb img
+        {
+            width: 21px;
+            height: 19px;
+        }
+
+    .conimg
+    {
+        width: 52px;
+        height: 52px;
+    }
+    /*****Connect****/
+    .customertiles
+    {
+        width: 276px;
+    }
+
+        .customertiles .takesf
+        {
+            width: 255px;
+            height: 64px;
+        }
+
+            .customertiles .takesf p
+            {
+                font-size: 14px;
+                width: 60%;
+                bottom: 10px;
+            }
+
+    .qn
+    {
+        height: 54px;
+        width: 54px;
+        line-height: 54px;
+        font-size: 220%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 17pt;
+        margin-top: 7px;
+        width: 550px;
+        line-height: 1.1em;
+        font-weight: bold;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI, .breadcrumb
+    {
+        font-size: 12px;
+    }
+
+    .questions li
+    {
+        width: 600px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 390%;
+        width: 60%;
+        margin-left: 5.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 45px;
+        height: 43px;
+    }
+
+    .sliderimg img, .quickview .sliderimg
+    {
+        width: 559px;
+        height: 73px;
+    }
+
+    .customertiles h1, .contentholder h6
+    {
+        font-size: 20px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+
+    .mngrfb
+    {
+        width: 89%;
+        max-height: 318px;
+    }
+
+    .qucvw
+    {
+        max-height: 500px;
+        width: 102%;
+    }
+
+    .user img
+    {
+        width: 60px;
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    .mngrfb .user
+    {
+        width: 60px;
+    }
+
+    .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 12px;
+    }
+
+    .diagram img
+    {
+        width: 130%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 33px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    .connect
+    {
+        width: 700px;
+    }
+
+        .connect li
+        {
+            height: 74px;
+            width: 308px;
+        }
+
+        .connect ul
+        {
+            width: 700px;
+            max-height: 360px !important;
+        }
+
+    .pageholder
+    {
+        width: 93.6%;
+        margin-top: 9% !important;
+    }
+
+    .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+    {
+        font-size: 11px !important;
+    }
+
+        .cnticon img, .cnticonb img
+        {
+            width: 21px;
+            height: 19px;
+        }
+
+    .conimg
+    {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 5px;
+    }
+    /*****Connect****/
+    .customertiles
+    {
+        width: 175px;
+    }
+
+        .customertiles .takesf
+        {
+            width: 190px;
+            height: 54px;
+            font-size: 10px;
+        }
+
+            .customertiles .takesf img
+            {
+                width: 32px;
+                height: 32px;
+                right: 0;
+            }
+
+            .customertiles .takesf p
+            {
+                font-size: 11px;
+                width: 60%;
+                bottom: 10px;
+            }
+
+    .qn
+    {
+        height: 54px;
+        width: 54px;
+        line-height: 54px;
+        font-size: 220%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 17pt;
+        margin-top: 7px;
+        width: 550px;
+        line-height: 1.1em;
+        font-weight: bold;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI, .breadcrumb
+    {
+        font-size: 12px;
+    }
+
+    .questions li
+    {
+        width: 600px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 390%;
+        width: 60%;
+        margin-left: 5.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 45px;
+        height: 43px;
+    }
+
+    .sliderimg img, .quickview .sliderimg
+    {
+        width: 559px;
+        height: 73px;
+    }
+
+    .customertiles h1, .contentholder h6
+    {
+        font-size: 20px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+
+    .mngrfb
+    {
+        width: 89%;
+        max-height: 318px;
+    }
+
+    .qucvw
+    {
+        max-height: 500px;
+        width: 102%;
+    }
+
+    .user img
+    {
+        width: 60px;
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    .mngrfb .user
+    {
+        width: 60px;
+    }
+
+    .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 12px;
+    }
+
+    .diagram img
+    {
+        width: 130%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 33px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px)
+{
+    .connect
+    {
+        width: 700px;
+    }
+
+        .connect li
+        {
+            height: 74px;
+            width: 230px;
+            font-size: 9px;
+        }
+
+        .connect ul
+        {
+            width: 700px;
+            max-height: 360px !important;
+        }
+
+    .pageholder
+    {
+        width: 93.6%;
+        margin-top: 9% !important;
+    }
+
+    .connect li, .connect li p, .cnticon, .cnticonb, .connect p
+    {
+        font-size: 11px !important;
+    }
+
+        .cnticon img, .cnticonb img
+        {
+            width: 21px;
+            height: 19px;
+        }
+
+    .conimg
+    {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 5px;
+    }
+    /*****Connect****/
+    .customertiles
+    {
+        width: 150px;
+        margin-right: 0;
+    }
+
+    .contentholder
+    {
+        width: 460px;
+        margin-left: 30px;
+    }
+
+    .customertiles .takesf
+    {
+        width: 150px;
+        height: 54px;
+        font-size: 10px;
+    }
+
+        .customertiles .takesf img
+        {
+            width: 32px;
+            height: 32px;
+            right: 0;
+        }
+
+        .customertiles .takesf p
+        {
+            font-size: 11px;
+            width: 60%;
+            bottom: 10px;
+        }
+
+    .qn
+    {
+        height: 54px;
+        width: 54px;
+        line-height: 54px;
+        font-size: 220%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .quickview .qn
+    {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .contentholder .questionarea h2
+    {
+        font-size: 17pt;
+        margin-top: 7px;
+        width: 550px;
+        line-height: 1.1em;
+        font-weight: bold;
+    }
+
+    .contentholder .questionarea p, .contentholder .questions li, .frequencydiv .frequency p, .SI, .breadcrumb
+    {
+        font-size: 12px;
+    }
+
+    .questions li
+    {
+        width: 600px;
+        margin-right: 140px;
+    }
+
+    .frequencydiv
+    {
+        top: 390%;
+        width: 60%;
+        margin-left: 5.5%;
+    }
+
+    .contentholder .frequencydiv h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contentholder .frequencydiv h4, .contentholder .mngrfb h1, .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .questionarea
+    {
+        float: left;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .frequency img
+    {
+        width: 45px;
+        height: 43px;
+    }
+
+    .sliderimg img, .quickview .sliderimg
+    {
+        width: 559px;
+        height: 73px;
+    }
+
+    .customertiles h1, .contentholder h6
+    {
+        font-size: 20px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+
+    .mngrfb
+    {
+        width: 89%;
+        max-height: 318px;
+    }
+
+    .qucvw
+    {
+        max-height: 500px;
+        width: 102%;
+    }
+
+    .user img
+    {
+        width: 60px;
+        height: 60px;
+        margin-top: 0px;
+    }
+
+    .mngrfb .user
+    {
+        width: 60px;
+    }
+
+    .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p
+    {
+        font-size: 12px;
+    }
+
+    .diagram img
+    {
+        width: 130%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 33px;
+    }
+}

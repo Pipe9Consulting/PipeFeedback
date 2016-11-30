@@ -1,0 +1,175 @@
+﻿.slidepage
+{
+    margin: 0 auto;
+    width: 100% !important;
+    max-width:1920px;
+    margin-left:100%;
+    -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.move
+{
+     margin-left:0 !important;
+}
+.remove
+{
+     margin-left:100% !important;
+     
+}
+#wrapper .stars
+{
+    float:left;
+    width:27.3%;
+    margin-right:4%;
+}
+#wrapper .last
+{
+    margin:0;
+}
+#wrapper .customernew
+{
+    float:left;
+    width:37%;
+    margin-right:3.5%;
+}
+#wrapper #scroller .customernew ul li
+{
+    width:23%;
+    margin:0 1.5% 1.5% 0;
+    position:relative;
+}
+#wrapper #scroller .stars ul li {
+    margin: 0 1.8% 1.8% 0;
+    position: relative;
+    width: 31.4%;
+}
+#wrapper #scroller .last li {
+    margin: 0 1.2% 1.2% 0;
+    width: 31.4%;
+    padding-bottom:31.4%;
+    position:relative;
+    background:#808080;
+}
+#wrapper #scroller .last li br
+{
+    display:none;
+}
+.rectangle
+{
+    width:64.7% !important;
+    padding-bottom:31.4% !important;
+    background:transparent !important;
+}
+#wrapper #scroller .last li .icon {
+    padding: 0 0 30%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 35%;
+}
+#wrapper #scroller .last li p
+{
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding:5%;
+    color:#fff;
+}
+#wrapper #scroller .last li .icon img
+{
+    width:100%;
+    height:100%;
+}
+#wrapper #scroller .stars li img, #wrapper #scroller .customernew li img
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.customernew .smalltile, .customernew .live-tile, .customernew .list-tile, .customernew .copy-tile, .customernew .tile-strip .flip-list > li,
+.stars .smalltile, .stars .live-tile, .stars .list-tile, .stars .copy-tile, .stars .tile-strip .flip-list > li
+{
+    width:100%;
+    padding-bottom:100%;
+}
+.customernew .flip-front ha, .customernew .flip-back ha, .stars .flip-front ha, .stars .flip-back ha
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.customernew .square
+{
+    width:47.4% !important;
+}
+.stars .square
+{
+    width:64.5% !important;
+}
+.customernew .square .square, .stars .square .square
+{
+    width:100% !important;
+}
+.rectangle .rectangle
+{
+    width:90% !important;
+    position:absolute !important;
+    top:0;
+    left:0;
+    padding:5% !important;
+    height:90%;
+}
+#wrapper .customernew .caption, #wrapper .stars .caption, .caption {
+    background: url("../../images/trans.png");
+    bottom: 0;
+    float: left;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+#wrapper .customernew .caption p, #wrapper .stars .caption p, .gcrpg .caption p
+{
+    padding:5%;
+}
+#wrapper .square .caption p
+{
+    padding:3% 5%;
+}
+.dtail, .dtails
+{
+    position:absolute;
+    top:0;
+    left:0;
+    color:#fff;
+    padding:5%;
+}
+.capW
+{
+    color:#fff !important;
+}
+.customernew .caption p, .starnew .caption p
+{
+    color:#e0b001;
+}
+.rectangle2 {
+    padding-bottom: 31.4% !important;
+    width: 64.7% !important;
+}
+.rectangle2 .icn
+{
+    position:absolute;
+    top:0;
+    right:0;
+    width:20%;
+    height:38%;
+}
+.rectangle2 .icn img
+{
+    width:100%;
+    height:100%;
+}

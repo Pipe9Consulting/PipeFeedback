@@ -1,0 +1,2925 @@
+#tiles .tileview, #tiles .tileview li
+{
+    width: 300px;
+    float: left;
+    margin-right: 33px;
+}
+
+#tiles .tileviewmid li
+{
+    width: 130px;
+    float: left;
+    margin-right: 10px !important;
+}
+
+#tiles .tileview a
+{
+    width: 108px;
+    height: 118px;
+    float: left;
+    margin: 10px 10px 0 0px;
+    background: #808080;
+    padding: 0 10px 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.tileview a:hover
+{
+    background: #e0b001 !important;
+}
+
+.tileviewmedium
+{
+    width: 246px !important;
+    height: 128px;
+}
+
+#tiles h1, #tiles .tileview h1
+{
+    color: #5e5e5e;
+    font-size: 28px;
+    font-weight: lighter;
+    padding-top: 38px;
+    padding-bottom: 4px;
+    background: none !important;
+}
+
+#tiles .quickview h1
+{
+    margin-left: 10px;
+}
+
+#tiles .tileviewmid h1
+{
+    padding-bottom: 9px;
+}
+
+#tiles .titles, #tiles .contents
+{
+    font-size: 12px;
+    height: 108px;
+    display: block;
+    cursor: pointer;
+}
+
+.singlelineicon
+{
+    width: 48px;
+    height: 48px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+}
+
+.doublelineicon
+{
+    width: 48px;
+    height: 42px;
+    padding-left: 60px;
+    padding-bottom: 46px;
+    padding-top: 5px;
+}
+
+.largeicon
+{
+    width: 64px;
+    height: 64px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tiles .largetileview, #tiles .largetileview li
+{
+    width: 310px;
+    float: none;
+    float: left;
+    margin-right: 40px;
+}
+
+    #tiles .largetileview a
+    {
+        width: 290px;
+        height: 25px;
+        float: left;
+        margin: 15px 10px 0 0px;
+        background: #808080;
+        padding: 40px 10px 10px 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: lighter !important;
+        line-height: 20px;
+    }
+
+#tiles .quickview ul
+{
+    float: left;
+    width: 310px;
+    margin-right: 40px;
+    margin-top: 11px;
+}
+
+#tiles .quickview li
+{
+    max-width: 250px;
+    height: 30px;
+    padding: 32px 45px 13px 10px;
+    float: none;
+    margin: 0px 10px 12px 0px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: lighter !important;
+    line-height: 20px;
+    background: url(../images/icons/self-feedback-icon.png) no-repeat right #808080;
+}
+
+    #tiles .quickview li p
+    {
+        width: 170px;
+        bottom: 12px;
+        position: relative;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+#tiles .quickview .act
+{
+    background: url(../images/icons/self-feedback-icon.png) no-repeat right #e0b001 !important;
+}
+
+#tiles .largetileview a.spl
+{
+    padding-top: 20px;
+    height: 45px;
+}
+
+#tiles .largetileview li a:focus
+{
+    background: #e0b001 !important;
+}
+
+#tiles .largetileview h1
+{
+    color: #5e5e5e;
+    font-size: 28px;
+    font-weight: lighter;
+    padding-top: 45px;
+}
+
+.contentholder
+{
+    float: left;
+    width: 700px;
+    margin-top: 0px;
+    color: #4a4a4a;
+    margin-left: 30px;
+}
+
+.Qno
+{
+    background: #e0b001;
+    padding: 7px 13px 21px;
+    font-size: 14pt;
+    width: 8px;
+    height: 5px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-family: Arial;
+}
+
+.TsfQno
+{
+    background: #e0b001;
+    padding: 10px 20px 25px;
+    font-size: 30pt;
+    height: 25px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-family: Arial;
+}
+
+.contentholder h2
+{
+    color: #808080;
+    float: left;
+    font-size: 17pt;
+    font-weight: bold;
+    line-height: 23px;
+    margin-bottom: 15px;
+    margin-top: 12px;
+    width: 600px;
+}
+
+.contentholder h5, #questionindetail h5
+{
+    font-size: 11pt;
+    color: #808080;
+    float: left;
+    width: 550px;
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+#questionindetail li
+{
+    list-style: square;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.contentholder h3
+{
+    font-weight: bold;
+    font-size: 18px;
+    color: #808080;
+    margin-top: 40px;
+    width: 300px;
+}
+
+.contentholder h4
+{
+    font-weight: bold;
+    font-size: 14px;
+    color: #808080;
+    margin-top: 20px;
+}
+
+.contentholder p, .contentholder li
+{
+    font-size: 13px;
+    color: #838383;
+    line-height: 1.2em;
+}
+
+.contentholder .txt
+{
+    color: #808080;
+    float: left;
+    width: 550px;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.contentholder .Mtxt
+{
+    color: #808080;
+    max-width: 540px;
+    margin-top: 12px;
+    float: none;
+    clear: both;
+    line-height: 18px;
+    margin-left: 80px;
+}
+
+    .contentholder .Mtxt li
+    {
+        list-style-type: square;
+        list-style-position: outside;
+        padding: 10px 10px 0;
+        margin-left: 20px;
+    }
+
+.clr
+{
+    clear: both;
+}
+
+#tiles .tileview .tile
+{
+    height: 128px;
+    width: 280px;
+    overflow: hidden;
+    text-align: center;
+    float: none;
+    margin: 10px;
+    margin-left: 0;
+}
+
+    #tiles .tileview .tile ul li
+    {
+        float: left;
+        list-style-type: none;
+        width: 128px;
+        margin-right: 10px;
+    }
+
+    #tiles .tileview .tile ul a.top
+    {
+        background: #808080;
+        color: #fff;
+    }
+
+    #tiles .tileview .tile ul a
+    {
+        display: block;
+        background: #e0b001;
+        color: #fff; /*height: 120px; */
+        text-decoration: none;
+        margin: 0 !important;
+        text-align: left;
+        font-size: 12px;
+    }
+
+        #tiles .tileview .tile ul a:focus
+        {
+            background: #e0b001;
+        }
+
+    #tiles .tileview .tile ul li a.top:focus
+    {
+        background: #e0b001;
+    }
+
+    #tiles .tileview .tile ul li h2
+    {
+        font-size: 65px;
+        text-align: center;
+        color: #fff;
+        padding: 20px 0px 20px 0;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    #tiles .tileview .tile ul li h4
+    {
+        font-size: 65px;
+        text-align: center;
+        color: #fff;
+        padding: 0px 0px 40px 56px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    #tiles .tileview .tile ul li h3
+    {
+        text-align: left;
+        clear: both;
+        float: none;
+        padding: 10px 8px 55px 0;
+        height: 40px;
+    }
+
+/*Tile Slide*/
+.tiles, .wideTiles, .longTiles, .footerTile
+{
+    background-color: #808080;
+    color: #FFFFFF;
+    margin: 5px;
+    float: left;
+    display: table-cell;
+    overflow: hidden;
+}
+
+.tiles
+{
+    width: 128px;
+    height: 128px;
+    float: left;
+    margin-right: 10px;
+}
+
+.wideTiles
+{
+    width: 410px;
+    height: 200px;
+}
+
+    .tiles .titles, .wideTiles .title, .longTiles .titles
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #e0b001;
+        max-height: 128px;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+.contents
+{
+    padding: 10px;
+    position: relative;
+}
+
+/*Manager Feedback*/
+
+li .quickanddetailbig:hover
+{
+    background: #808080 !important;
+}
+
+.quickanddetail h3, .quickanddetailbig h3
+{
+    text-align: center;
+    padding-bottom: 17px;
+    padding-top: 40px;
+}
+
+.quickanddetailbig
+{
+    padding-top: 20px !important;
+    font-size: 16px !important;
+}
+
+.note
+{
+    color: #000;
+    padding-top: 10px;
+    clear: both;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.selfeedback li
+{
+    clear: both;
+}
+
+    .selfeedback li .user
+    {
+        font-size: 18px;
+        float: none;
+        padding: 20px 0 10px 0;
+    }
+
+    .selfeedback li img, .selfeedback li .slider
+    {
+        float: left;
+        margin-right: 10px;
+    }
+
+.userlist ul
+{
+    max-height: 327px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.userlist
+{
+    float: left;
+    margin-top: 10px;
+    width: 300px;
+}
+
+    .userlist li img
+    {
+        padding: 0 10px;
+    }
+
+    .userlist label
+    {
+        margin: 0 auto;
+    }
+
+        .userlist label, .userlist label img
+        {
+            font-size: 12px;
+        }
+
+            .userlist label img
+            {
+                padding: 10px 30px;
+            }
+
+    .userlist li input
+    {
+        float: right;
+    }
+
+.Slide
+{
+    float: left;
+    height: 62px;
+}
+
+#fbsubmenu
+{
+    margin-left: 15px;
+}
+
+#tiles .userlist li
+{
+    width: 97px;
+    height: 97px;
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    color: #808080;
+}
+
+.youicon
+{
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    width: 118px !important;
+    height: 118px !important;
+}
+
+    .youicon img
+    {
+        text-align: right;
+        padding-left: 56px;
+    }
+
+.addbtn
+{
+    background: #e0b001;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px;
+    width: 111px;
+    text-align: center;
+    margin-top: 17px;
+    margin-left: 283px;
+    cursor: pointer;
+    border: 0;
+}
+
+.memberplace
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 420px;
+    min-width: 425px;
+    max-width: 425px;
+    margin-top: 10px;
+}
+
+    .memberplace li
+    {
+        background: #d5d5d5;
+        width: 400px !important;
+        max-width: 400px;
+        height: 80px;
+        margin-bottom: 10px;
+        color: #5e5e5e;
+    }
+
+    .memberplace p
+    {
+        float: left;
+        color: #5e5e5e;
+        width: 60%;
+        font-size: 12px;
+        padding: 1px 10px 1px 0;
+    }
+
+.memberP
+{
+    padding-top: 8px;
+}
+
+.memberplace p span
+{
+    font-size: 16px;
+}
+
+.memberplace img
+{
+    float: left;
+    padding: 10px;
+}
+
+.browseimg
+{
+    float: left;
+    width: 139px;
+}
+
+.browsetxt
+{
+    width: 235px;
+    padding-left: 20px;
+    float: left;
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 20px;
+}
+
+    .browsetxt h5
+    {
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .browsetxt .field
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: #fff;
+        border: 1px solid #ccc;
+    }
+
+.browsebtn
+{
+    background: #e0b001;
+    border: 0;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.browserdetails
+{
+    width: 350px;
+    float: left;
+    padding-left: 10px;
+}
+
+    .browserdetails li
+    {
+        background: none;
+        height: 20px;
+        color: #5e5e5e;
+        font-size: 12px;
+        padding: 3px 0;
+        margin-bottom: 7px;
+    }
+
+    .browserdetails .left
+    {
+        width: 140px !important;
+        font-size: 13px;
+        padding-top: 5px;
+    }
+
+    .browserdetails input
+    {
+        border: 1px solid #ccc;
+        background: #fff;
+        width: 200px;
+        padding: 3px 0;
+    }
+
+.checkbox_frame
+{
+    position: relative;
+    float: right;
+    margin-top: -80px;
+}
+
+    .checkbox_frame input[type="checkbox"]
+    {
+        width: 400px;
+        height: 70px;
+        position: absolute;
+        opacity: 0;
+    }
+
+        .checkbox_frame input[type="checkbox"] + .state
+        {
+            display: block;
+            width: 398px;
+            height: 77px;
+            background: none;
+        }
+
+        .checkbox_frame input[type="checkbox"]:checked + .state
+        {
+            background: url(../images/user-select.png) right top no-repeat;
+            border: 1px solid #e0b001;
+        }
+
+.memberFeedbackP
+{
+    width: 395px;
+    color: #808080;
+    font-size: 10pt;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.memberplace li .firstpara
+{
+    padding-left: 10px;
+}
+
+    .memberplace li .firstpara p
+    {
+        width: 95%;
+        font-size: 13px;
+        padding-top: 5px;
+        font-weight: 500;
+    }
+
+    .memberplace li .firstpara span
+    {
+        clear: both;
+        float: none;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+.memberplace li .thirdpara
+{
+    width: 95%;
+    font-size: 12px;
+    clear: both;
+    float: none;
+    padding-left: 10px;
+}
+
+.memberplace li
+{
+    margin-right: 10px;
+}
+
+.spl li
+{
+    min-height: 135px;
+}
+
+.rcv li
+{
+    min-height: 86px;
+}
+
+.stat li
+{
+    min-height: 152px;
+}
+
+.libtn
+{
+    float: right;
+    width: 110px;
+    height: 30px;
+}
+
+#tiles .tileview .memberplace li .libtn a
+{
+    background: none repeat scroll 0 0 #E0B001;
+    color: #FFFFFF;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+    height: 15px;
+}
+
+.memberplace li #thirdpara
+{
+    width: 95%;
+    font-size: 12px;
+    clear: both;
+    float: none;
+    margin-left: 10px;
+}
+
+#tiles #thirdpara a, #tiles #thirdpara p
+{
+    float: left;
+    width: 105px;
+    height: 15px;
+    background: none;
+    color: #666;
+    padding: 0px;
+    margin: 0;
+}
+
+    #tiles #thirdpara a:hover, #tiles #thirdpara p:hover
+    {
+        background: none !important;
+    }
+
+.pricing .first
+{
+    margin-right: 2px;
+    width: 275px;
+    float: left;
+}
+
+    .pricing .first ul
+    {
+        padding-top: 70px;
+        height: 302px;
+        clear: both;
+        float: none;
+        background: #fff;
+        margin-top: 2px;
+    }
+
+    .pricing .first li
+    {
+        float: none;
+        width: 90%;
+        padding: 9px 5px;
+        background: url(../images/square.png) no-repeat left;
+        padding-left: 10px;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+.pricing
+{
+    width: 810px;
+    font-size: 14px;
+    color: #000;
+}
+
+    .pricing p
+    {
+        font-size: 14px;
+        color: #000;
+        padding: 5px;
+        line-height: 1.2em;
+        height: 70px;
+    }
+
+    .pricing .second
+    {
+        background: #fff;
+        margin-right: 2px;
+        width: 120px;
+        float: left;
+        padding-bottom: 7px;
+        height: 29px;
+    }
+
+    .pricing .third
+    {
+        background: #fff;
+        margin-right: 2px;
+        width: 120px;
+        float: left;
+        padding-bottom: 7px;
+        margin-top: 2px;
+    }
+
+    .pricing .first h1
+    {
+        background: #efefef;
+        padding: 8px 10px;
+        width: 254px;
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 0;
+    }
+
+    .pricing .second h1
+    {
+        background: #efefef;
+        padding: 8px 5px;
+        width: 110px;
+        font-size: 16px;
+        color: #000 !important;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    .pricing .third li
+    {
+        padding: 0;
+        height: 32px;
+        float: none;
+        clear: both;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .pricing .button
+    {
+        background: #deaf00;
+        padding: 5px;
+        color: #fff;
+        border: 2px solid #808080;
+        width: 92px;
+        font-weight: bold;
+        clear: both;
+        text-align: center;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+.pricing_frame
+{
+    position: relative;
+    float: right;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"]
+{
+    width: 100px;
+    height: 26px;
+    position: absolute;
+    opacity: 0;
+}
+
+    input[type="checkbox"] + .tick
+    {
+        display: block;
+        width: 100px;
+        height: 26px;
+        background: none;
+    }
+
+    input[type="checkbox"]:checked + .tick
+    {
+        background: url(../images/tick.png) center top no-repeat;
+    }
+
+.faqhd
+{
+    min-width: 335px;
+}
+
+.vs-context-menu
+{
+    display: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    position: absolute;
+    border: 0px solid #DDDDDD;
+    width: 150px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    font-size: 13px;
+    height: 50px;
+    z-index: 2;
+}
+
+    .vs-context-menu ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .vs-context-menu li
+    {
+        margin: 0px;
+        padding: 3px;
+    }
+
+    .vs-context-menu ul a
+    {
+        display: block;
+        padding: 1px 5px;
+        padding-left: 28px;
+        text-decoration: none;
+        color: #000;
+        background-repeat: no-repeat;
+    }
+
+    .vs-context-menu ul li a:hover, .vs-context-menu ul li a:focus
+    {
+        color: #FFFFFF;
+        background-color: #e0b001;
+    }
+
+.seprator
+{
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.vs-context-menu li.cut A
+{
+    background-image: url(icons/cut.png);
+}
+
+.vs-context-menu li.copy A
+{
+    background-image: url(icons/copy.png);
+}
+
+.vs-context-menu li.paste A
+{
+    background-image: url(icons/paste.png);
+}
+
+.vs-context-menu li.edit A
+{
+    background-image: url(icons/edit.png);
+}
+
+.vs-context-menu li.delete A
+{
+    background-image: url(icons/delete.png);
+}
+
+.pane li label
+{
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Don't hide the radio button in older browsers */
+.pane li input:checked, .pane li input:not(:checked)
+{
+    display: none;
+}
+
+    .pane li input:checked + label
+    {
+        background: #e0b001;
+        padding: 9px;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+
+.mmgap
+{
+    padding-top: 25px;
+}
+
+.login ul
+{
+    display: none;
+}
+
+.login li:hover > ul
+{
+    display: block;
+}
+
+.content1 strong, #snap2 strong, #snap3 strong
+{
+    font-weight: 600;
+}
+
+.logo1600, .logo1366, .logo1920
+{
+    display: none;
+}
+
+img alt
+{
+    font-size: 12px !important;
+}
+
+.copyright span a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.breadcrumb
+{
+    float: none;
+    clear: both;
+}
+
+    .breadcrumb a, .breadcrumb span
+    {
+        text-decoration: none;
+        color: #808080;
+        font-weight: 500;
+    }
+
+.cart
+{
+    padding-top: 1%;
+    float: right;
+    cursor: pointer;
+}
+
+    .cart img
+    {
+        margin-right: 3px;
+    }
+
+.login li a, .login li img
+{
+    float: left;
+}
+
+.dropdown li
+{
+    padding: 5px;
+    float: left;
+    clear: both;
+    width: 100%;
+    background: #fff;
+}
+
+#cartlist
+{
+    margin-top: 1%;
+    line-height: 25px;
+}
+
+.yammererrorbg
+{
+    background: url("../images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+.yammernetwork
+{
+    width: 15%;
+    margin: 0 auto;
+    background: #efefef;
+    border: 2px solid #353535;
+    border-top: 25px solid #353535;
+    padding-bottom: 13%;
+    margin-top: 15%;
+    position: relative;
+    display: none;
+}
+
+    .yammernetwork .close
+    {
+        position: absolute;
+        top: -10%;
+        right: 1%;
+        width: 5% !important;
+        height: 0 !important;
+        padding-bottom: 5% !important;
+        background: url(../images/close.png) no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+
+        .yammernetwork .close:hover
+        {
+            background: url(../images/close-hover.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+    .yammernetwork img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.yammernetworkholder
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5%;
+}
+
+    .yammernetworkholder p
+    {
+        color: #353535;
+        font-size: 1vw;
+        line-height: 1.2em;
+        padding-top: 15%;
+        text-align: center;
+    }
+
+@media screen and (max-width: 7680px) and (min-width: 1680px)
+{
+    .breadcrumb, .breadcrumb span, .breadcrumb a, #target li a, #target li, .becomePaidmember p
+    {
+        font-size: 16px;
+    }
+
+    .logo1600, .logo1366
+    {
+        display: none;
+    }
+
+    .logo1920
+    {
+        display: block;
+    }
+
+    #header
+    {
+        height: 75px;
+        padding-top: 12px;
+    }
+
+    .accordion
+    {
+        padding-top: 6px;
+    }
+
+        .accordion div.pane
+        {
+            margin-left: 8px;
+        }
+
+        .accordion h3
+        {
+            height: 22px;
+        }
+
+        .accordion div.pane
+        {
+            width: 984px;
+        }
+
+    .pane li
+    {
+        width: 153px;
+        height: 153px;
+        padding: 0;
+        position: relative;
+    }
+
+        .pane li img
+        {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .pane li p
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 16px;
+        }
+
+        .pane li label
+        {
+            width: 153px;
+            height: 153px;
+        }
+
+        .pane li input:checked + label
+        {
+            background: none repeat scroll 0 0 #E0B001;
+            height: 153px;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 0px;
+            width: 153px;
+        }
+
+    .accordion div.pane
+    {
+        padding: 0 5px 10px 0;
+    }
+
+    .accordion
+    {
+        width: 220px;
+    }
+
+        .accordion h3
+        {
+            width: 21px;
+        }
+
+    .login li a, .login li li a
+    {
+        font-size: 16px;
+    }
+
+    .dropdown ul
+    {
+        margin-top: 51px;
+    }
+
+    .copyright span, .copyright span a, .bukatutup, .pagination
+    {
+        font-size: 16px;
+    }
+
+    .login
+    {
+        width: auto !important;
+        margin-right: 10px;
+    }
+
+    #ajax-content
+    {
+        width: 330px;
+    }
+
+    .content1 p, .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p, .content4 li, .content3 li p
+    {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .content4 li
+    {
+        padding: 5px 0 5px 25px;
+    }
+
+    #moduleintro img
+    {
+        width: 100%;
+    }
+
+    .content1
+    {
+        min-height: 615px;
+        width: 320px;
+    }
+
+        .content1 p
+        {
+            text-align: justify;
+            width: 95%;
+        }
+
+    #snap2 p, #snap3 p
+    {
+        padding: 5px 0;
+        text-align: justify;
+    }
+
+    .diagram img
+    {
+        width: 169%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 71px;
+        font-size: 15px;
+        line-height: 1.1em;
+    }
+
+    .traitp
+    {
+        float: left;
+        height: 71px;
+        display: table;
+        width: 80%;
+    }
+
+    .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .content3 h1
+    {
+        font-size: 28px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    #poetraits
+    {
+        background: url("../Images/background-img-1920.png") no-repeat scroll center top 30px transparent;
+        opacity: 0.7;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 50px 0 0 15px !important;
+        font-size: 24px;
+    }
+
+    .pagination
+    {
+        font-size: 16px;
+    }
+
+    #target li span
+    {
+        margin-top: 2px;
+    }
+
+    #target
+    {
+        width: 270px;
+    }
+
+    .content3 h1
+    {
+        font-size: 28px;
+        height: 56px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1680px)
+{
+    .logo1920, .logo1366
+    {
+        display: none;
+    }
+
+    .logo1600
+    {
+        display: block;
+    }
+
+    #header
+    {
+        height: 70px;
+        padding-top: 5px;
+    }
+
+    .accordion
+    {
+        padding-top: 6px;
+    }
+
+        .accordion div.pane
+        {
+            margin-left: 8px;
+        }
+
+        .accordion h3
+        {
+            height: 16px;
+        }
+
+        .accordion div.pane
+        {
+            width: 833px;
+        }
+
+    .pane li
+    {
+        width: 128px;
+        height: 128px;
+        padding: 0;
+        position: relative;
+    }
+
+        .pane li img
+        {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .pane li p
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+        }
+
+        .pane li label
+        {
+            width: 128px;
+            height: 128px;
+        }
+
+        .pane li input:checked + label
+        {
+            background: none repeat scroll 0 0 #E0B001;
+            height: 128px;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 0px;
+            width: 128px;
+        }
+
+    .accordion div.pane
+    {
+        padding: 0 5px 10px 0;
+    }
+
+    .accordion
+    {
+        width: 220px;
+    }
+
+        .accordion h3
+        {
+            width: 21px;
+        }
+
+    .login li a, .login li li a, #target li a, #target li
+    {
+        font-size: 14px;
+    }
+
+    .dropdown ul
+    {
+        margin-top: 46px;
+    }
+
+    .breadcrumb, .breadcrumb span, .breadcrumb a, .copyright span, .copyright span a, .bukatutup, .pagination, .becomePaidmember p
+    {
+        font-size: 14px;
+    }
+
+    .dropdown
+    {
+        height: 55px;
+    }
+
+    #ajax-content
+    {
+        width: 330px;
+    }
+
+    .content1 p, .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p, .content4 li, .content3 li p, #snap2 p, #snap3 p
+    {
+        font-size: 13px;
+        padding: 5px 0;
+        text-align: left;
+    }
+
+    .content4 li
+    {
+        padding: 5px 0 5px 25px;
+    }
+
+    .content1
+    {
+        min-height: 615px;
+        width: 320px;
+    }
+
+        .content1 p
+        {
+            text-align: justify;
+            width: 95%;
+        }
+
+    .diagram img
+    {
+        width: 150%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 56px;
+        font-size: 14px;
+        line-height: 1.1em;
+    }
+
+    .traitp
+    {
+        float: left;
+        height: 56px;
+        display: table;
+        width: 85%;
+    }
+
+    .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .content3 h1
+    {
+        font-size: 25px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    #poetraits
+    {
+        background: url(../Images/background-img-1600.png) no-repeat center top 0px;
+        opacity: 0.7;
+    }
+
+    .pagination
+    {
+        font-size: 14px;
+    }
+
+    #target li span
+    {
+        margin-top: -2px;
+    }
+
+    #target
+    {
+        width: 230px;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 50px 15px 10px 15px;
+        font-size: 20px;
+    }
+
+    #poetraits
+    {
+        background: url("../Images/background-img-1600.png") no-repeat scroll center top 30px transparent;
+        opacity: 0.7;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 50px 0 0 15px !important;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px)
+{
+    .logo1920, .logo1366
+    {
+        display: none;
+    }
+
+    .logo1600
+    {
+        display: block;
+    }
+
+    #header
+    {
+        height: 70px;
+        padding-top: 5px;
+    }
+
+    .accordion
+    {
+        padding-top: 6px;
+    }
+
+        .accordion div.pane
+        {
+            margin-left: 8px;
+        }
+
+        .accordion h3
+        {
+            height: 16px;
+        }
+
+        .accordion div.pane
+        {
+            width: 833px;
+        }
+
+    .pane li
+    {
+        width: 128px;
+        height: 128px;
+        padding: 0;
+        position: relative;
+    }
+
+        .pane li img
+        {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .pane li p
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+        }
+
+        .pane li label
+        {
+            width: 128px;
+            height: 128px;
+        }
+
+        .pane li input:checked + label
+        {
+            background: none repeat scroll 0 0 #E0B001;
+            height: 128px;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 0px;
+            width: 128px;
+        }
+
+    .accordion div.pane
+    {
+        padding: 0 5px 10px 0;
+    }
+
+    .accordion
+    {
+        width: 220px;
+    }
+
+        .accordion h3
+        {
+            width: 21px;
+        }
+
+    .login li a, .login li li a, #target li a, #target li, .becomePaidmember p
+    {
+        font-size: 14px;
+    }
+
+    .dropdown ul
+    {
+        margin-top: 46px;
+    }
+
+    .copyright span, .copyright span a, .bukatutup, .pagination
+    {
+        font-size: 14px;
+    }
+
+    .dropdown
+    {
+        height: 55px;
+    }
+
+    .pagination
+    {
+        font-size: 14px;
+    }
+
+    #target li span
+    {
+        margin-top: -2px;
+    }
+
+    #target
+    {
+        width: 235px;
+    }
+
+    .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 13px;
+    }
+
+    .content1 p, .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p, .content4 li, .content3 li p, #snap2 p, #snap3 p
+    {
+        font-size: 13px;
+        padding: 5px 0;
+        text-align: justify;
+    }
+
+    .content3 li
+    {
+        font-size: 12px !important;
+        line-height: 1.1em;
+        height: 58px;
+    }
+
+    .traitp
+    {
+        float: left;
+        height: 30px;
+        display: table;
+        width: 82%;
+    }
+
+    #poetraits
+    {
+        background: url("../Images/background-img-1600.png") no-repeat scroll center top 30px transparent;
+        opacity: 0.7;
+    }
+
+    #ajax-content
+    {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+
+        #ajax-content h2
+        {
+            margin-left: 15px;
+        }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 0px !important;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1440px)
+{
+    .logo1920, .logo1366
+    {
+        display: none;
+    }
+
+    .logo1600
+    {
+        display: block;
+    }
+
+    #header
+    {
+        height: 70px;
+        padding-top: 5px;
+    }
+
+    .accordion
+    {
+        padding-top: 6px;
+    }
+
+        .accordion div.pane
+        {
+            margin-left: 8px;
+        }
+
+        .accordion h3
+        {
+            height: 16px;
+        }
+
+        .accordion div.pane
+        {
+            width: 833px;
+        }
+
+    .pane li
+    {
+        width: 128px;
+        height: 128px;
+        padding: 0;
+        position: relative;
+    }
+
+        .pane li img
+        {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .pane li p
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+        }
+
+        .pane li label
+        {
+            width: 128px;
+            height: 128px;
+        }
+
+        .pane li input:checked + label
+        {
+            background: none repeat scroll 0 0 #E0B001;
+            height: 128px;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 0px;
+            width: 128px;
+        }
+
+    .accordion div.pane
+    {
+        padding: 0 5px 10px 0;
+    }
+
+    .accordion
+    {
+        width: 220px;
+    }
+
+        .accordion h3
+        {
+            width: 21px;
+        }
+
+    .login li a, .login li li a, #target li a, #target li, .becomePaidmember p
+    {
+        font-size: 14px;
+    }
+
+    .dropdown ul
+    {
+        margin-top: 46px;
+    }
+
+    .copyright span, .copyright span a, .bukatutup, .pagination
+    {
+        font-size: 14px;
+    }
+
+    .dropdown
+    {
+        height: 55px;
+    }
+
+    .pagination
+    {
+        font-size: 14px;
+    }
+
+    #target li span
+    {
+        margin-top: -2px;
+    }
+
+    #target
+    {
+        width: 235px;
+    }
+
+    .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 13px;
+    }
+
+    .content1 p, .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p, .content4 li, .content3 li p, #snap2 p, #snap3 p
+    {
+        font-size: 13px;
+        padding: 5px 0;
+        text-align: justify;
+    }
+
+    .content3 li
+    {
+        font-size: 12px !important;
+        line-height: 1.1em;
+        height: 58px;
+    }
+
+    .traitp
+    {
+        float: left;
+        height: 30px;
+        display: table;
+        width: 82%;
+    }
+
+    .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 13px !important;
+    }
+
+    #poetraits
+    {
+        background: url("../Images/background-img-1600.png") no-repeat scroll center top 30px transparent;
+        opacity: 0.7;
+    }
+
+    #ajax-content
+    {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+
+        #ajax-content h2
+        {
+            margin-left: 15px;
+        }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1400px)
+{
+    .logo1600, .logo1920
+    {
+        display: none;
+    }
+
+    .logo1366
+    {
+        display: block;
+    }
+
+    #header
+    {
+        height: 64px;
+        padding-top: 0;
+    }
+
+    .accordion h3
+    {
+        height: 10px;
+    }
+
+    .accordion
+    {
+        padding-top: 6px;
+    }
+
+        .accordion div.pane
+        {
+            margin-left: 10px;
+        }
+
+    .pane li
+    {
+        width: 109px;
+        height: 109px;
+        padding: 0;
+        position: relative;
+    }
+
+        .pane li img
+        {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .pane li p
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 12px;
+        }
+
+        .pane li label
+        {
+            width: 109px;
+            height: 109px;
+        }
+
+        .pane li input:checked + label
+        {
+            background: none repeat scroll 0 0 #E0B001;
+            height: 109px;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 0px;
+            width: 109px;
+        }
+
+    .accordion div.pane
+    {
+        padding: 0 5px 10px 0;
+    }
+
+    .accordion
+    {
+        width: 217px;
+    }
+
+        .accordion h3
+        {
+            width: 21px;
+        }
+
+    .login li a, .login li li a, #target li a, .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 12px;
+    }
+
+    .dropdown ul
+    {
+        margin-top: 40px;
+    }
+
+    .copyright span, .copyright span a, .bukatutup, .pagination
+    {
+        font-size: 12px;
+    }
+
+    .accordion div.pane
+    {
+        width: 720px;
+    }
+
+    .slidecontent1 h1
+    {
+        font-size: 20px;
+        color: #5E5E5E;
+        font-weight: lighter;
+        padding: 10px 0 5px 5px;
+    }
+
+    .slidecontent1
+    {
+        padding-top: 62px;
+    }
+
+    .dropdown
+    {
+        height: 49px;
+    }
+
+    #ajax-content
+    {
+        width: 330px;
+    }
+
+    .content1 p, .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p, .content4 li, .content3 li p, #snap2 p, #snap3 p
+    {
+        font-size: 12px;
+        line-height: 1.2em;
+        padding: 5px 0;
+        text-align: justify;
+    }
+
+    .content4 li
+    {
+        padding: 5px 0 0 25px;
+    }
+
+    .content1
+    {
+        width: 320px;
+    }
+
+        .content1 .diagram img
+        {
+            width: 128%;
+        }
+
+        .content1 p
+        {
+            padding-bottom: 5px;
+            text-align: justify;
+            width: 95%;
+            line-height: 1.2em;
+        }
+
+    .diagram img
+    {
+        width: 150%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 44px;
+        font-size: 14px;
+        line-height: 1.0em;
+    }
+
+    .traitp
+    {
+        float: left;
+        height: 44px;
+        display: table;
+        width: 86%;
+    }
+
+    .content3 li p
+    {
+        line-height: 1.0em;
+    }
+
+    .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .content3 h1
+    {
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+        width: 30px;
+    }
+
+    #poetraits
+    {
+        background: url("../Images/background-img.png") no-repeat scroll center top 15px transparent;
+        opacity: 0.7;
+    }
+
+    .pagination, .becomePaidmember p
+    {
+        font-size: 12px;
+    }
+
+    #target
+    {
+        width: 230px;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 0px 0 0 15px !important;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+
+    .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 12px;
+    }
+
+    #ajax-content
+    {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    .main
+    {
+        width: 98% !important;
+    }
+
+    .logo1600, .logo1920
+    {
+        display: none;
+    }
+
+    .logo1366
+    {
+        display: block;
+    }
+
+    #header
+    {
+        height: 64px;
+        padding-top: 0;
+    }
+
+    .accordion h3
+    {
+        height: 10px;
+    }
+
+    .accordion
+    {
+        padding-top: 6px;
+    }
+
+        .accordion div.pane
+        {
+            margin-left: 10px;
+        }
+
+    .pane li
+    {
+        width: 109px;
+        height: 109px;
+        padding: 0;
+        position: relative;
+    }
+
+        .pane li img
+        {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .pane li p
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 12px;
+        }
+
+        .pane li label
+        {
+            width: 109px;
+            height: 109px;
+        }
+
+        .pane li input:checked + label
+        {
+            background: none repeat scroll 0 0 #E0B001;
+            height: 109px;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 0px;
+            width: 109px;
+        }
+
+    .accordion div.pane
+    {
+        padding: 0 5px 10px 0;
+    }
+
+    .accordion
+    {
+        width: 217px;
+    }
+
+        .accordion h3
+        {
+            width: 21px;
+        }
+
+    .login li a, .login li li a, #target li a, .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 12px;
+    }
+
+    .dropdown ul
+    {
+        margin-top: 40px;
+    }
+
+    .copyright span, .copyright span a, .bukatutup, .pagination
+    {
+        font-size: 12px;
+    }
+
+    .accordion div.pane
+    {
+        width: 720px;
+    }
+
+    .slidecontent1 h1
+    {
+        font-size: 20px;
+        color: #5E5E5E;
+        font-weight: lighter;
+        padding: 10px 0 5px 5px;
+    }
+
+    .slidecontent1
+    {
+        padding-top: 62px;
+    }
+
+    .dropdown
+    {
+        height: 49px;
+    }
+
+    #ajax-content
+    {
+        width: 330px;
+        margin-top: 50px;
+    }
+
+    .content1 p, .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p, .content4 li, .content3 li p, #snap2 p, #snap3 p
+    {
+        font-size: 12px;
+        line-height: 1.2em;
+        padding: 5px 0;
+        text-align: justify;
+    }
+
+    .content4 li
+    {
+        padding: 5px 0 0 25px;
+    }
+
+    .content1
+    {
+        width: 320px;
+    }
+
+        .content1 .diagram img
+        {
+            width: 128%;
+        }
+
+        .content1 p
+        {
+            padding-bottom: 5px;
+            text-align: justify;
+            width: 95%;
+            line-height: 1.2em;
+        }
+
+    .diagram img
+    {
+        width: 150%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 44px;
+        font-size: 14px;
+        line-height: 1.0em;
+    }
+
+    .traitp
+    {
+        float: left;
+        height: 44px;
+        display: table;
+        width: 86%;
+    }
+
+    .content3 li p
+    {
+        line-height: 1.0em;
+    }
+
+    .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .content3 h1
+    {
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+        width: 30px;
+    }
+
+    #poetraits
+    {
+        background: url("../Images/background-img.png") no-repeat scroll center top 15px transparent;
+        opacity: 0.7;
+    }
+
+    .pagination, .becomePaidmember p
+    {
+        font-size: 12px;
+    }
+
+    #target li span
+    {
+        margin-top: -2px;
+    }
+
+    #target
+    {
+        width: 230px;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 0px 0 0 15px !important;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+
+    .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    .main
+    {
+        width: 95% !important;
+    }
+
+    .logo1600, .logo1920
+    {
+        display: none;
+    }
+
+    .logo1366
+    {
+        display: block;
+    }
+
+    #header
+    {
+        height: 64px;
+        padding-top: 0;
+    }
+
+    .accordion h3
+    {
+        height: 10px;
+    }
+
+    .accordion
+    {
+        padding-top: 6px;
+    }
+
+        .accordion div.pane
+        {
+            margin-left: 10px;
+        }
+
+    .pane li
+    {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        position: relative;
+    }
+
+        .pane li img
+        {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .pane li p
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 12px;
+        }
+
+        .pane li label
+        {
+            width: 80px;
+            height: 80px;
+        }
+
+        .pane li input:checked + label
+        {
+            background: none repeat scroll 0 0 #E0B001;
+            height: 80px;
+            margin-left: 0;
+            margin-top: 0;
+            padding: 0px;
+            width: 80px;
+        }
+
+    .accordion div.pane
+    {
+        padding: 0 5px 10px 0;
+    }
+
+    .accordion h3
+    {
+        width: 21px;
+    }
+
+    .accordion
+    {
+        width: 180px;
+        position: relative;
+        padding-top: 8px;
+    }
+
+        .accordion a
+        {
+            width: 150px;
+        }
+
+            .accordion a img
+            {
+                width: 45%;
+            }
+
+    .login li a, .login li li a, #target li a, .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 12px;
+    }
+
+    .dropdown ul
+    {
+        margin-top: 34px;
+    }
+
+    .copyright span, .copyright span a, .bukatutup, .pagination
+    {
+        font-size: 12px;
+    }
+
+    .accordion div.pane
+    {
+        width: 546px;
+    }
+
+    .slidecontent1 h1
+    {
+        font-size: 20px;
+        color: #5E5E5E;
+        font-weight: lighter;
+        padding: 10px 0 5px 5px;
+    }
+
+    .slidecontent1
+    {
+        padding-top: 62px;
+    }
+
+    .dropdown
+    {
+        height: 49px;
+    }
+
+    #ajax-content
+    {
+        width: 330px;
+    }
+
+    .content1 p, .content1 ul li, .content2 p, #module2 p, #module3 p, .content3 p, .content4 p, .content4 li, .content3 li p, #snap2 p, #snap3 p
+    {
+        font-size: 12px;
+        line-height: 1.2em;
+        padding: 5px 0;
+        text-align: justify;
+    }
+
+    .content4 li
+    {
+        padding: 5px 0 0 25px;
+    }
+
+    .content1
+    {
+        width: 320px;
+    }
+
+        .content1 .diagram img
+        {
+            width: 128%;
+        }
+
+        .content1 p
+        {
+            padding-bottom: 5px;
+            text-align: justify;
+            width: 95%;
+            line-height: 1.2em;
+        }
+
+    .diagram img
+    {
+        width: 150%;
+        margin: 0;
+    }
+
+    .content3 li
+    {
+        height: 44px;
+        font-size: 14px;
+        line-height: 1.0em;
+    }
+
+    .traitp
+    {
+        float: left;
+        height: 44px;
+        display: table;
+        width: 86%;
+    }
+
+    .content3 li p
+    {
+        line-height: 1.0em;
+    }
+
+    .content2 h3, #module2 h3, #module3 h3
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .content3 h1
+    {
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+        width: 30px;
+    }
+
+    #poetraits
+    {
+        background: url("../Images/background-img.png") no-repeat scroll center top 15px transparent;
+        opacity: 0.7;
+    }
+
+    .pagination, .becomePaidmember p
+    {
+        font-size: 12px;
+    }
+
+    #target li span
+    {
+        margin-top: -2px;
+    }
+
+    #target
+    {
+        width: 230px;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 0px 0 0 15px !important;
+    }
+
+    .item-container h2, #content1 h2
+    {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+
+    .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    #header
+    {
+        height: 58px;
+    }
+
+        #header li a, #header li p, .footer li, .footer li a, .footer a, .footer div, .footer span
+        {
+            font-size: 12px;
+        }
+
+    .accordion
+    {
+        width: 180px;
+        position: relative;
+        padding-top: 8px;
+    }
+
+        .accordion a
+        {
+            width: 150px;
+        }
+
+            .accordion a img
+            {
+                width: 45%;
+            }
+
+    .pane li
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .breadcrumb, .breadcrumb span, .breadcrumb a
+    {
+        font-size: 9px;
+    }
+
+    .copyright span
+    {
+        padding: 0 5px;
+    }
+
+    #simplemodal-container
+    {
+        width: 500px !important;
+        height: 300px !important;
+    }
+
+        #simplemodal-container p, #simplemodal-container h1, #simplemodal-container input
+        {
+            font-size: 12px !important;
+        }
+
+    .origin
+    {
+        margin-top: 6px !important;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px)
+{
+    #header
+    {
+        height: 58px;
+    }
+
+        #header li a, #header li p, .footer li, .footer li a, .footer a, .footer div, .footer span
+        {
+            font-size: 10px;
+        }
+
+    .accordion
+    {
+        width: 180px;
+        position: relative;
+        padding-top: 8px;
+    }
+
+        .accordion a
+        {
+            width: 150px;
+        }
+
+            .accordion a img
+            {
+                width: 45%;
+            }
+
+    .pane li, .pane li input:checked + label
+    {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        position: relative;
+    }
+
+        .pane li input:checked + label
+        {
+            margin: 0;
+        }
+
+        .pane li img
+        {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: auto !important;
+        }
+
+        .pane li p
+        {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+        }
+
+    .accordion div.pane
+    {
+        margin-left: 0;
+        width: 540px;
+    }
+
+    .breadcrumb
+    {
+        font-size: 9px;
+    }
+
+    .dropdown ul
+    {
+        margin-top: 34px;
+    }
+
+    .breadcrumb, .breadcrumb span
+    {
+        font-size: 9px;
+    }
+
+    .copyright span
+    {
+        padding: 0 5px;
+    }
+
+    #simplemodal-container
+    {
+        width: 400px !important;
+        height: 300px !important;
+    }
+
+        #simplemodal-container p, #simplemodal-container h1, #simplemodal-container input
+        {
+            font-size: 11px !important;
+        }
+
+    .origin
+    {
+        margin-top: 6px !important;
+    }
+
+    #poetraits
+    {
+        background: url("../Images/background-img.png") no-repeat scroll center top 5px transparent;
+        opacity: 0.7;
+    }
+
+    #ajax-content
+    {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+
+        #ajax-content h2
+        {
+            margin-left: 15px;
+            font-size: 20px;
+        }
+
+        #ajax-content p, #snap2 p, #snap3 p, #snap1 p, .content4 li
+        {
+            font-size: 11px;
+            line-height: 1.2em;
+            padding: 5px 0;
+            text-align: justify;
+        }
+
+    .content1 strong, #snap2 strong, #snap3 strong
+    {
+        font-weight: 400;
+    }
+}

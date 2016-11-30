@@ -1,0 +1,23 @@
+[
+	{
+		"name" : "Alan Dowzall Presents his revamped business navigation guide for how to do Cloud Business at the Acumatica Partner Summit",
+		"date" : "20-08-2013",
+		"image" : "../../Images/news1.png",
+		"text" : "Alan Dowzall presented his counter intuitive guide to building a winning Cloud Business at the 2013 Acumatica Partner Conference. Entrepreneurs and seasoned business owners heard Dowzall share his unique look into the new world of doing business in the Cloud. Partners are flocking to establish new Cloud businesses but are quickly finding that their well trodden path of doing business doesn&#8217;t work particularly well in the Cloud. &#8216;What we have found is that building successful businesses in the Cloud requires a different approach, one that is almost diametrically opposite to the traditional way of doing business&#8217; says Dowzall. Doing Cloud business requires a revamped business navigation guide. Dowzall presented his Cloud Business Role Excellence Profile a roadmap for how to build and manage an excellent Cloud Business.",
+		"link" :"#"
+	},
+	{
+		"name" : "Kessaku.com Amplifies Top Performance by Announcing v3.0 of its Performance Management Network delivering seemless Integration with Microsoft Yammer and igniting a David vs. Goliath tussle with Salesforce Work.Com",
+		"date" : "06-11-2013",
+		"image" : "../../Images/news2.png",
+		"text" : "On the heels of great feedback from early adopting companies and growing interest for its offerings, Kessaku a leading provider of Performance Management Solutions has launched v3.0 of its Innovative Role Excellence Profile Network, delivering seamless integration with Microsoft&#8217;s Yammer Enterprise Social Network and Igniting a David vs. Goliath tussle with Salesforce Work.com. Kessaku is a pioneer of cloud based Performance Management Solutions built to foster the power of Enterprise Social Networks as a way to amplify the winning skills and behaviors of Star Performers. The new v3.0 comes with a range of Innovative capabilities that enable organizations to align their people around Role Excellence Profiles. Role Excellence Profiles (REP) represent the &#8216;Gold Standard&#8217; for doing excellent work. REP&#8217;s are built from learning about what Top Performers do differently from everyone else. For Individuals the REP delivers a day by day roadmap to become a Top Performer. For teams the REP aligns and builds the chemistry necessary for Top Performance and for Frontline Managers the REP delivers a hypothesis of excellence critical for impactful coaching.",
+		"link" :"#"
+	},
+	{
+		"name" : "Kessaku Announces Sponsorship of Human Capital Webinar",
+		"date" : "07-11-2013",
+		"image" : "../../Images/news3.png",
+		"text" : "Today Kessaku announced that it has reached an agreement with ASTD to be the leading sponsor for its forthcoming Webinar &#8216;Shifting the Performance Curve: A Human Capital Community Virtual Summit.&#8217; Kessaku is offering a Free Trial of Kessaku.com to all attendees at the webinar and a series of Free webinars to demonstrate how the Kessaku Performance Management platform amplifies the skills and behaviors of Star Performers.",
+		"link" :"http://www.astd.org/Digital-Resources/Webcasts/TD/2013/11/Shifting-the-Performance-Curve-a-Human-Capital-Community-Virtual-Summit"
+	}
+]

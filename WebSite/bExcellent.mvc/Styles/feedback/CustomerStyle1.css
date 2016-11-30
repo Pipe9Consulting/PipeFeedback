@@ -1,0 +1,812 @@
+﻿.flipbox
+{
+    width: 244px;
+    height: 44px;
+    font-size: 14px;
+    color: white;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 70px 10px 13px 10px;
+}
+
+.pageholder
+{
+    width: 1080px;
+    max-width: 90%;
+    padding-top: 80px !important;
+}
+
+    .pageholder .hm
+    {
+        margin-left: 115px !important;
+    }
+
+.customertiles
+{
+    float: left;
+    margin-right: 70px;
+    max-width: 20%;
+}
+
+.last
+{
+    margin-right: 0px !important;
+}
+
+#customertiles .item
+{
+    width: 1230px;
+    float: left;
+}
+
+.stars, .stars ul
+{
+    width: 415px !important;
+    margin-right: 60px !important;
+}
+/*.customertiles ul {
+	width: 274px;
+	height: 520px;
+}*/
+.customertiles ul li
+{
+    padding: 10px;
+    float: left;
+    background: #808080;
+    margin: 10px 10px 0 0;
+    line-height: 1em;
+}
+
+    .customertiles ul li a, .customertiles ul li p
+    {
+        font-size: 12px;
+    }
+
+    .customertiles ul li p
+    {
+        clear: both;
+        position: relative;
+        bottom: 0px;
+        width: 100px;
+        line-height: 1.2em;
+    }
+
+    .customertiles ul li .title
+    {
+        position: relative;
+        top: -20px;
+        z-index: 3;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .customertiles ul li .reference
+    {
+        padding-top: 31px;
+    }
+
+        .customertiles ul li .reference p
+        {
+            padding-top: 0px;
+        }
+
+.customertiles h1
+{
+    color: #5e5e5e;
+    font-size: 160%;
+    font-weight: lighter;
+    padding-top: 5%;
+    padding-bottom: 4px;
+    background: none !important;
+}
+
+.customertiles .icon
+{
+    float: right;
+    padding-bottom: 53px;
+    padding-left: 60px;
+}
+
+.customertiles .iconA, .customertiles .iconB
+{
+    float: right;
+    padding-bottom: 35px;
+    padding-left: 60px;
+}
+
+.customertiles .iconB
+{
+    padding-bottom: 20px;
+}
+
+.customertiles .icon1
+{
+    float: right;
+    padding-bottom: 0px;
+}
+
+.customertiles .icon2
+{
+    float: right;
+    padding-bottom: 38px;
+}
+
+.customertiles .number
+{
+    float: left;
+    width: 32px;
+    height: 32px;
+    background: #000;
+    padding: 5px;
+    font-size: 22pt;
+    position: relative;
+    left: -10px;
+    top: -10px;
+    z-index: 2;
+}
+
+.customertiles .numbertile
+{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 42px;
+}
+
+.customertiles .doubleline
+{
+    padding-bottom: 37px;
+}
+
+.customertiles .tripleline
+{
+    padding-bottom: 22px;
+}
+
+.customertiles .caption
+{
+    float: left;
+    width: 32px;
+    height: 16px;
+    background: #000;
+    padding: 5px 10px;
+    font-size: 22pt;
+    position: relative;
+    left: -10px;
+    top: -33px;
+    z-index: 3;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    font-size: 12px;
+    width: 107px;
+}
+
+.customertiles .pic
+{
+    float: right;
+    height: 32px;
+    position: relative;
+    right: -10px;
+    top: -10px;
+}
+
+.customertiles .rectangle
+{
+    width: 243px !important;
+    background: none !important;
+    font-size: 14px !important;
+}
+
+    .customertiles .rectangle p
+    {
+        width: 244px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+.customertiles .rectangle1
+{
+    width: 243px !important;
+}
+
+    .customertiles .rectangle1 p
+    {
+        width: 244px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+.customertiles .logo
+{
+    position: relative;
+    left: -10px;
+    top: 20px;
+    background: #fff;
+    height: 65px;
+    width: 128px;
+    float: left;
+}
+
+.videoimg
+{
+    padding: 1px !important;
+    width: 125px !important;
+    height: 125px !important;
+}
+
+.videoimg1
+{
+    padding: 0px !important;
+    width: 126px !important;
+    height: 127px !important;
+}
+
+.starimg
+{
+    padding: 0px !important;
+    width: 125px !important;
+    height: 125px !important;
+    position: relative;
+    top: -52px;
+    left: -10px;
+    z-index: 1;
+}
+
+.guruimg
+{
+    padding: 0px !important;
+    width: 125px !important;
+    height: 125px !important;
+    position: relative;
+    left: -10px;
+    top: -10px;
+    z-index: 1;
+}
+
+.customerimg
+{
+    width: 125px !important;
+    height: 127px !important;
+    padding: 0 !important;
+    background: none !important;
+}
+
+.strong
+{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.aboutbx
+{
+    width: 605px !important;
+    margin-right: 0 !important;
+}
+
+    .aboutbx h1
+    {
+        padding-bottom: 14px;
+    }
+
+    .aboutbx li
+    {
+        padding: 10px;
+        border-top: 1px dashed #acacac;
+        width: 595px !important;
+        background: #e5e5e5;
+        color: #808080;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+        .aboutbx li img, .aboutbx li .heading, .aboutbx li .heading1
+        {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .aboutbx li .heading
+        {
+            font-size: 14px;
+            width: 90px;
+            font-weight: 600;
+            padding-top: 13px;
+        }
+
+        .aboutbx li .heading1, .aboutbx li .heading2, .aboutbx li .heading3
+        {
+            font-size: 14px;
+            width: 95px;
+            font-weight: 600;
+            float: left;
+        }
+
+        .aboutbx li .heading1
+        {
+            width: 80px;
+            padding-top: 45px;
+        }
+
+        .aboutbx li .heading2
+        {
+            padding-top: 65px;
+        }
+
+        .aboutbx li .heading3
+        {
+            padding-top: 12px;
+        }
+
+#aboutContent h1
+{
+    margin-bottom: 1%;
+}
+
+.indicon
+{
+    padding-top: 55px;
+    width: 52px;
+    float: left;
+}
+
+.managericon
+{
+    padding-top: 35px;
+    width: 52px;
+    float: left;
+}
+
+.aboutbx li .paragraph, .aboutbx li .paragraph p
+{
+    font-size: 14px;
+    line-height: 1.2em;
+    width: 435px;
+    margin-right: 0;
+    float: left;
+    text-align: justify;
+}
+
+#thirdpage .paragraph
+{
+    font-size: 14px;
+    line-height: 1.2em;
+    width: 352px;
+    margin-right: 0;
+    float: left;
+    margin-left: 5px;
+}
+
+.aboutbx li .paragraph p
+{
+    padding: 3px 0 0 0;
+}
+
+.aboutbx li .bicon
+{
+    width: 52px;
+    float: left;
+    padding-top: 15px;
+}
+
+.aboutbx li .leadericon
+{
+    width: 52px;
+    float: left;
+    padding-top: 35px;
+}
+
+#tiles .tileview, #tiles .tileview li
+{
+    height: auto !important;
+}
+
+.btnholder
+{
+    width: 1300px;
+    margin-top: 165px;
+    z-index: 1;
+    padding-left: 30px;
+    height: 50px;
+}
+
+.nxt
+{
+    cursor: pointer;
+    opacity: 0.9;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    position: relative;
+    margin-top: -10%;
+    margin-right: -6%;
+}
+
+    .nxt:hover
+    {
+        opacity: 0.9;
+    }
+
+.prev
+{
+    cursor: pointer;
+    opacity: 0.9;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: -333px;
+    left: 5%;
+    top: 48.5%;
+    position: fixed;
+    display: block;
+}
+
+    .prev:hover
+    {
+        background: url(../Images/prev_arrow1.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.abtprev
+{
+    background: url(../images/abt_prev_arrow.png) no-repeat;
+    cursor: pointer;
+    position: relative;
+    left: 572px;
+    top: -50px;
+}
+
+.abtnxt
+{
+    background: url(../images/abt_next_arrow.png) no-repeat;
+    position: relative;
+    left: 572px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#firstpage, #secondpage
+{
+    width: 720px !important;
+}
+
+#scroller #thirdpage #sideindividual, #scroller #thirdpage #sidemanager, #scroller #thirdpage #sideleaders, #scroller #thirdpage #sidehrprof, #scroller #thirdpage #sidereadsprof, #scroller .customertiles #firstpage li, .customertiles #secondpage li, #scroller .customertiles #thirdpagea li
+{
+    background: #e5e5e5;
+    color: #808080;
+    padding: 5px;
+}
+
+.customertiles #firstpage li, .customertiles #secondpage li
+{
+    background: #e5e5e5 !important;
+}
+
+.customertiles #secondpage ul li
+{
+    padding: 5px;
+}
+
+.whoisbe1
+{
+    display: none;
+}
+
+#tiles .tileview a
+{
+    padding-bottom: 0px;
+    height: 115px;
+}
+
+@media screen and (max-width: 1920px)
+{
+    #ajax-content
+    {
+        padding-top: 90px !important;
+    }
+
+    #module2, #module3
+    {
+        padding: 158px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        max-height: 385px;
+    }
+
+    #scroller li,
+    {
+        width: 1920px;
+    }
+
+    #scroller
+    {
+        width: 7680px;
+    }
+
+    .main
+    {
+        width: 98%;
+    }
+
+    .questions li
+    {
+        width: 720px;
+        margin-right: 300px;
+    }
+
+    .nxt
+    {
+        margin-top: 12%;
+        margin-right: -32%;
+    }
+
+    #clickmodele2
+    {
+        margin-top: -82px;
+    }
+
+    .pageholder
+    {
+        margin: 3% auto;
+    }
+
+    .customertiles
+    {
+        max-width: 25%;
+    }
+
+        .customertiles .takesf
+        {
+            width: 100%;
+            padding: 8% 6% 6% 6%;
+        }
+
+        .customertiles .takesfsingle
+        {
+            padding: 15% 6% 6% 6%;
+        }
+
+    .contentholder
+    {
+        margin-top: 28px;
+    }
+
+    .frequencydiv
+    {
+        top: 460%;
+    }
+}
+
+@media screen and (max-width: 1680px)
+{
+    #scroller li,
+    {
+        width: 1680px;
+    }
+
+    #scroller
+    {
+        width: 6720px;
+    }
+
+    .questions li
+    {
+        width: 720px;
+        margin-right: 180px;
+    }
+
+    .nxt
+    {
+        margin-top: 10%;
+        margin-right: -12%;
+    }
+
+    .pageholder
+    {
+        margin: 3% auto;
+    }
+
+    .customertiles .takesf
+    {
+        width: 100%;
+        padding: 8% 6% 6% 6%;
+    }
+
+    .customertiles .takesfsingle
+    {
+        padding: 15% 6% 6% 6%;
+    }
+}
+
+@media screen and (max-width: 1600px)
+{
+    #scroller li,
+    {
+        width: 1600px;
+    }
+
+    #scroller
+    {
+        width: 3200px;
+    }
+
+    .questions li
+    {
+        width: 720px;
+        margin-right: 145px;
+    }
+
+    .nxt
+    {
+        margin-top: 0;
+        margin-right: -12%;
+    }
+
+    #clickmodele2
+    {
+        margin-top: -55px;
+    }
+
+    .customertiles .takesf
+    {
+        width: 100%;
+        padding: 8% 6% 6% 6%;
+    }
+
+    .customertiles .takesfsingle
+    {
+        padding: 15% 6% 6% 6%;
+    }
+}
+
+@media screen and (max-width: 1440px)
+{
+    #scroller li,
+    {
+        width: 1440px;
+    }
+
+    #scroller
+    {
+        width: 5760px;
+    }
+
+    .questions li
+    {
+        width: 720px;
+        margin-right: 60px;
+    }
+
+    #module2, #module3
+    {
+        padding: 90px 20px 20px;
+    }
+
+    .nxt
+    {
+        margin-top: 0;
+        margin-right: -4%;
+        display: block;
+    }
+
+    .customertiles
+    {
+        max-width: 25%;
+    }
+
+        .customertiles .takesf
+        {
+            width: 100%;
+            padding: 8% 6% 6% 6%;
+        }
+
+        .customertiles .takesfsingle
+        {
+            padding: 15% 6% 6% 6%;
+        }
+}
+
+@media screen and (max-width: 1366px)
+{
+    #scroller li,
+    {
+        width: 1366px;
+    }
+
+    .mngrfb
+    {
+        max-height: 340px;
+    }
+
+    #scroller
+    {
+        width: 2732px;
+    }
+
+    .customertiles .takesf
+    {
+        width: 100%;
+        padding: 6% 6% 6% 6% !important;
+    }
+
+    .customertiles .takesfsingle
+    {
+        padding: 10% 6% 6% 6% !important;
+    }
+
+    .questions li
+    {
+        width: 685px;
+        margin-right: 60px;
+    }
+
+    .nxt
+    {
+        margin-top: -9.5%;
+        margin-right: -2%;
+    }
+
+    #clickmodele2
+    {
+        margin-top: -55px;
+    }
+
+    .customertiles
+    {
+        max-width: 25% !important;
+    }
+
+    .pageholder
+    {
+        margin-top: 1%;
+    }
+
+    .content3 li
+    {
+        font-size: 12px !important;
+        padding: 3px 10px !important;
+    }
+
+    #ajax-content
+    {
+        padding-top: 5px !important;
+    }
+
+    .frequencydiv
+    {
+        top: 400%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 450px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    @media screen and (max-width: 1280px)
+    {
+        #scroller li,
+        {
+            width: 1280px;
+        }
+
+        #scroller
+        {
+            width: 5120px;
+        }
+
+        .questions li
+        {
+            width: 650px;
+            margin-right: 40px;
+        }
+    }

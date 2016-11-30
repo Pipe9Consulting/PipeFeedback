@@ -1,0 +1,133 @@
+﻿.faqfield {
+    float: left;
+    margin-top: 2.7%;
+    width: 76%;
+}
+.faqfield .scroll9
+{
+    width:98% !important;
+    height:100% !important;
+    position:absolute !important;
+    background:none !important;
+}
+.faqfield .slimScrollDiv
+{
+    width:98% !important;
+    height:0 !important;
+    padding-bottom:50% !important;
+    background:none !important;
+    position:relative !important;
+}
+.faqfield .scrollbar1 {
+    width: 100% !important;
+}
+.faqfield .scrollbar1 .viewport {
+    width: 98% !important;
+}
+.faqscreen {
+    background: url("../../Images/faq-bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size:100% 100%;
+    color: #000000;
+    float: left;
+    margin-left: 4%;
+    margin-top: 0;
+    padding-bottom: 7%;
+    position: relative;
+    width: 93%;
+}
+.faqaccord h3.active {
+    background: url("../../Images/select-up.png") no-repeat scroll right center #FFFFFF;
+    background-size:1.8% 80%;
+}
+.faqaccord h3 {
+    background: url("../../Images/select-down.png") no-repeat scroll right center #FFFFFF;
+    background-size:1.8% 80%;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 0.2% 0;
+    padding: 0.5%;
+    color:#353535;
+}
+.faqhd
+{
+    width:19.5%;
+    float:left;
+}
+.faqhd h1
+{
+    padding:10px 0;
+}
+#wrapper .faqhd li
+{
+    width:90%;
+    padding-bottom:43%;
+    margin-right:10%;
+    background:#808080;
+    text-align:center;
+    position:relative;
+}
+#wrapper .faqhd li p
+{
+    position:absolute;
+    bottom:5%;
+    left:5%;
+    color:#fff;
+    text-decoration:none;
+}
+#wrapper .faqhd li a
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+#wrapper .faqhd li a h3
+{
+    padding:15% 0;
+    margin:0 auto;
+    width:22%;
+    height:37%;    
+}
+#wrapper .faqhd li a h3 img
+{
+    width:100%;
+    height:auto;
+}
+#accordion h2.active {
+    background: url("../../Images/minus.png") no-repeat scroll right top #FFFFFF;
+    background-size:2% 100%;
+}
+#accordion h2 {
+    background: url("../../Images/plus.png") no-repeat scroll right top #FFFFFF;
+    background-size:2% 100%;
+    border-top: 5px solid #E5E5E5;
+    color: #636363;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 0;
+    padding: 0.3% 2%;
+}
+#accordion .content {
+    background-color: #F2F2F2;
+    color: #000000;
+    font-weight: 400;
+    opacity: 0.7;
+    padding: 0.5% 2%;
+}
+.text .number {
+    float: left;
+    margin: 0;
+    padding: 0 0% 0 0.5%;
+    width: 2%;
+}
+.cont
+{
+    color:#353535;
+}
+.text p {
+    clear: both;
+    float: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Signup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.1.98:8089/Signup.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.1.98:8089/Signup.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.1.98:8089/Signup.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" />
+      <xsd:import schemaLocation="http://192.168.1.98:8089/Signup.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
+      <xsd:import schemaLocation="http://192.168.1.98:8089/Signup.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
+      <xsd:import schemaLocation="http://192.168.1.98:8089/Signup.svc?xsd=xsd5" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Signup_SignUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignUp" />
+  </wsdl:message>
+  <wsdl:message name="Signup_SignUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_UpdateUserPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserPhoto" />
+  </wsdl:message>
+  <wsdl:message name="Signup_UpdateUserPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_CheckEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmailId" />
+  </wsdl:message>
+  <wsdl:message name="Signup_CheckEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmailIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_UpdateAcessToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcessToken" />
+  </wsdl:message>
+  <wsdl:message name="Signup_UpdateAcessToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcessTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetMyUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyUsers" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetMyUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetMyAllUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetMyAllUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetUserById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserById" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetUserById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetNetworkById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNetworkById" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetNetworkById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNetworkByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_CheckNetwork_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckNetwork" />
+  </wsdl:message>
+  <wsdl:message name="Signup_CheckNetwork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckNetworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetAllPoEs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPoEs" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetAllPoEs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPoEsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetSubscribedPoes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribedPoes" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetSubscribedPoes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribedPoesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetSubscribedPoesList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribedPoesList" />
+  </wsdl:message>
+  <wsdl:message name="Signup_GetSubscribedPoesList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribedPoesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_AssignPoeRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignPoeRecord" />
+  </wsdl:message>
+  <wsdl:message name="Signup_AssignPoeRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignPoeRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_DeleteSubscribedUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSubscribedUsers" />
+  </wsdl:message>
+  <wsdl:message name="Signup_DeleteSubscribedUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSubscribedUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Signup_DeleteSubscribedPoe_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSubscribedPoe" />
+  </wsdl:message>
+  <wsdl:message name="Signup_DeleteSubscribedPoe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSubscribedPoeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Signup">
+    <wsdl:operation name="SignUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/SignUp" message="tns:Signup_SignUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/SignUpResponse" message="tns:Signup_SignUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/UpdateUserPhoto" message="tns:Signup_UpdateUserPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/UpdateUserPhotoResponse" message="tns:Signup_UpdateUserPhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmailId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/CheckEmailId" message="tns:Signup_CheckEmailId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/CheckEmailIdResponse" message="tns:Signup_CheckEmailId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcessToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/UpdateAcessToken" message="tns:Signup_UpdateAcessToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/UpdateAcessTokenResponse" message="tns:Signup_UpdateAcessToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/GetMyUsers" message="tns:Signup_GetMyUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/GetMyUsersResponse" message="tns:Signup_GetMyUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyAllUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/GetMyAllUsers" message="tns:Signup_GetMyAllUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/GetMyAllUsersResponse" message="tns:Signup_GetMyAllUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserById">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/GetUserById" message="tns:Signup_GetUserById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/GetUserByIdResponse" message="tns:Signup_GetUserById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNetworkById">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/GetNetworkById" message="tns:Signup_GetNetworkById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/GetNetworkByIdResponse" message="tns:Signup_GetNetworkById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckNetwork">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/CheckNetwork" message="tns:Signup_CheckNetwork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/CheckNetworkResponse" message="tns:Signup_CheckNetwork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPoEs">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/GetAllPoEs" message="tns:Signup_GetAllPoEs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/GetAllPoEsResponse" message="tns:Signup_GetAllPoEs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribedPoes">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/GetSubscribedPoes" message="tns:Signup_GetSubscribedPoes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/GetSubscribedPoesResponse" message="tns:Signup_GetSubscribedPoes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribedPoesList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/GetSubscribedPoesList" message="tns:Signup_GetSubscribedPoesList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/GetSubscribedPoesListResponse" message="tns:Signup_GetSubscribedPoesList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignPoeRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/AssignPoeRecord" message="tns:Signup_AssignPoeRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/AssignPoeRecordResponse" message="tns:Signup_AssignPoeRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscribedUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/DeleteSubscribedUsers" message="tns:Signup_DeleteSubscribedUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/DeleteSubscribedUsersResponse" message="tns:Signup_DeleteSubscribedUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscribedPoe">
+      <wsdl:input wsaw:Action="http://tempuri.org/Signup/DeleteSubscribedPoe" message="tns:Signup_DeleteSubscribedPoe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Signup/DeleteSubscribedPoeResponse" message="tns:Signup_DeleteSubscribedPoe_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Signup" type="tns:Signup">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SignUp">
+      <soap:operation soapAction="http://tempuri.org/Signup/SignUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserPhoto">
+      <soap:operation soapAction="http://tempuri.org/Signup/UpdateUserPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmailId">
+      <soap:operation soapAction="http://tempuri.org/Signup/CheckEmailId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcessToken">
+      <soap:operation soapAction="http://tempuri.org/Signup/UpdateAcessToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyUsers">
+      <soap:operation soapAction="http://tempuri.org/Signup/GetMyUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyAllUsers">
+      <soap:operation soapAction="http://tempuri.org/Signup/GetMyAllUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserById">
+      <soap:operation soapAction="http://tempuri.org/Signup/GetUserById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNetworkById">
+      <soap:operation soapAction="http://tempuri.org/Signup/GetNetworkById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckNetwork">
+      <soap:operation soapAction="http://tempuri.org/Signup/CheckNetwork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPoEs">
+      <soap:operation soapAction="http://tempuri.org/Signup/GetAllPoEs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribedPoes">
+      <soap:operation soapAction="http://tempuri.org/Signup/GetSubscribedPoes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribedPoesList">
+      <soap:operation soapAction="http://tempuri.org/Signup/GetSubscribedPoesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignPoeRecord">
+      <soap:operation soapAction="http://tempuri.org/Signup/AssignPoeRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscribedUsers">
+      <soap:operation soapAction="http://tempuri.org/Signup/DeleteSubscribedUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscribedPoe">
+      <soap:operation soapAction="http://tempuri.org/Signup/DeleteSubscribedPoe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Signup">
+    <wsdl:port name="BasicHttpBinding_Signup" binding="tns:BasicHttpBinding_Signup">
+      <soap:address location="http://192.168.1.98:8089/Signup.svc/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,252 @@
+.pricingBG
+{
+    background: url("../../images/KessakuImage/pricingBG.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 0;
+    padding-bottom: 49%;
+}
+
+.pricingmidBar
+{
+    width: 65%;
+    margin: 1em auto 0 auto;
+}
+
+.priceind, .priceorg
+{
+    width: 100% !important;
+    position: relative;
+}
+
+    .priceind img, .priceorg img
+    {
+        position: absolute;
+        left: 38px;
+        bottom: 0;
+        width: 97%;
+        height: 83.5%;
+    }
+
+    .priceind td, .priceorg td
+    {
+        color: #222327;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 85%;
+        background: #fff;
+        padding: 0.5% 0.5%;
+        text-align: left;
+    }
+    .priceind td p, .priceorg td p {
+        padding-left: 5%;
+    }
+    .priceorg td
+    {
+        padding: 0.3% 0.5%;
+    }
+
+    .priceind table, .priceorg table
+    {
+        width: 100%;
+    }
+
+        .priceind table img, .priceorg table img
+        {
+            position: inherit;
+            height: auto;
+            width: auto;
+            margin: 0;
+        }
+
+    .priceind td:nth-child(n+1), .priceind td:nth-child(n+2), .priceorg td:nth-child(n+1), .priceorg td:nth-child(n+2)
+    {
+        /*background: #e0b001;*/
+        background: none;
+    }
+
+    .priceind td:nth-child(n+1), .priceorg td:nth-child(n+1)
+    {
+        width: 6%;
+    }
+
+.secondimg
+{
+    width: 1vw !important;
+    text-align: center;
+}
+.smhd {
+   width: 1.2vw !important; 
+}
+    .secondimg img
+    {
+        width: 100%;
+    }
+
+.priceind td:nth-child(n+2), .priceorg td:nth-child(n+2)
+{
+    width: 5.5%;
+    text-align: left;
+}
+
+.priceind td:nth-child(n+3)
+{
+    background: transparent;
+    width: auto;
+    text-align: left;
+}
+
+.priceorg td:nth-child(n+3)
+{
+    background: transparent;
+    width: 1%;
+    text-align: left;
+}
+
+.whitebg
+{
+    background: #fff !important;
+}
+
+.priceheading
+{
+    background: #fff !important;
+    text-align: center !important;
+    font-weight: 600;
+}
+
+#wrapper .priceheading h1
+{
+    padding: 0 !important;
+}
+
+.priceind .column1
+{
+    width: 40% !important;
+    text-align: left;
+}
+
+.priceorg .column1
+{
+    width: 68% !important;
+    text-align: left;
+}
+
+.priceind .column2, .priceorg .column2
+{
+    width: 26% !important;
+    text-align: center !important;
+}
+.priceind .column2 img, .priceorg .column2 img {
+    height: auto;
+    width: 9%;   
+}
+.transparent
+{
+    background: transparent !important;
+}
+
+.priceheading h2
+{
+    color: #e0b001;
+    font-weight: 500;
+    padding: 0;
+    font-size: 110%;
+}
+
+.sign
+{
+    background: none repeat scroll 0 0 #DEAF00;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    padding: 1%;
+}
+
+.pricingBG .submit
+{
+    width: auto;
+    color: #fff;
+    background: #5b5c5f;
+    border: 2px solid #222327;
+    border-radius: 0.2em;
+    /* float: right; */
+    margin-top: 1em;
+    padding: 0em 1.5em;
+    width: 42%;
+    margin-right: 2em;
+}
+
+    .pricingBG  .submit input
+    {
+        border: 0;
+        background: transparent;
+        color: #fff;
+        padding: 0.4em;
+        cursor: pointer;
+        font-size: 100%;
+        font-family: Segoe UI;
+    }
+    .pricingBG  .submit:hover
+    {
+        background: #e0b001;
+        border: 2px solid #cea201;
+        cursor: pointer;
+    }
+
+.txtCenter
+{
+    text-align: center!important;
+}
+
+.bdrTop
+{
+    border-top: 1px solid #eeeeee;
+}
+
+.selectBG
+{
+    background: #e6c343!important;
+    padding: 0.5% 2%!important;
+}
+
+.unselectBG
+{
+    background: #e0b001!important;
+    padding: 0.5% 2%!important;
+}
+
+    .selectBG img, .unselectBG img
+    {
+        width: 100%;
+    }
+
+.lightBG
+{
+    background: #fdfdfd!important;
+}
+
+.topLeftCurve
+{
+    position: relative;
+    background: #e0b001 !important;
+    clear: both;
+    border-top-left-radius: 2em;
+    height: 0;
+    padding-bottom: 27%;
+}
+
+.bottomLeftCurve
+{
+    position: relative;
+    background: #e0b001 !important;
+    clear: both;
+    border-bottom-left-radius: 2em;
+    height: 0;
+    padding-bottom: 27%;
+}

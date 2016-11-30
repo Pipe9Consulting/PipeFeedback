@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB07BC5E-5D60-4D49-A0E5-5EC16E3F77F2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CheckSite</RootNamespace>
+    <AssemblyName>CheckSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Common\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\DataSources\bExcellent.Service.DataAccess.V3_GetMyActivitiesResult.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.DataAccess.V3_GetStandingAvgWCSIScoreResult.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.DataAccess.V3_GetUserListByBatchIdResult.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.DataAccess.v4_GetGoalssharedbyuserResult.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.DataAccess.v4_GetMentorConnectHistoryResult.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.Accounts.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.Country.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.DashboardModel.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.DashboardPathFinders.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.Designation.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.DevelopmentPriorities.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.GoalDate.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.ManagerReports.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.MinimizedPOE.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.ModulesGoal.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.Network.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.Notification.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.Plan.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.POE.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.PoeModules.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.QuestionLists.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.Results.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.TeamReports.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.TimeZone.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.TrackGoal.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.User.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.UserPOEMapping.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.UserRole.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.YammerContent.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Domain.Zone.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Request.PPAResults.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.CreatedFeedback.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.DashBoard.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.Notification.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.Partner.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.PSEReports.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.PSESurvey.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.PSMReports.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.QuestionScore.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.Standing.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.StandingNew.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.StandingPAContent.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.SyncScoreCollection.datasource" />
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.SyncWcsiDiff.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Service\bExcellent.Service.BusinessLogic\bExcellent.Service.BusinessLogic.csproj">
+      <Project>{f0ddbe80-2bdf-4ce3-bd85-543a58e1621b}</Project>
+      <Name>bExcellent.Service.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\bExcellent.Service.DataAccess\bExcellent.Service.DataAccess.csproj">
+      <Project>{bb9b2b38-0147-421d-aff0-09eccf1f2e73}</Project>
+      <Name>bExcellent.Service.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\bExcellent.Service.Util\bExcellent.Service.Util.csproj">
+      <Project>{fad7a872-198b-44f4-8c24-16990079e423}</Project>
+      <Name>bExcellent.Service.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\bExcellent.Service.Util.Response.TopLeadsReport.datasource" />
+    <None Include="Service References\Common\Common1.wsdl" />
+    <None Include="Service References\Common\Common7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\Common71.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\Common72.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\Common73.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\Common74.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\Common75.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\Common76.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\Common77.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\Common78.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Common\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Common\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Common\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Common\Common1.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

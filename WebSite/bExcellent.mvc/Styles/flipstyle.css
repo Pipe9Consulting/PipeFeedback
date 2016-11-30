@@ -1,0 +1,118 @@
+﻿
+#tips, #tips li,#tips1, #tips1 li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#tips,#tips1
+{
+    width: 250px;
+    font-size: 16px;
+    line-height: 120%;
+}
+#tips li,#tips1 li
+{
+    padding: 20px;
+    background: #e1e1e1;
+    display: none; /* hide the items at first only */
+}
+@font-face
+{
+    font-family: 'ChunkFive Regular';
+    src: url('Styles/fonts/chunkfive-webfont.eot');
+    src: local('ChunkFive Regular'), local('ChunkFive'), url('Styles/fonts/Chunkfive.woff') format('woff'), url('fonts/Chunkfive.svg#ChunkFive') format('svg'), url('Styles/fonts/Chunkfive.otf') format('opentype');
+}
+
+.container
+{
+    width: 900px;
+    margin: 0 auto;
+}
+.container header
+{
+    font-family: 'ChunkFive Regular' , Arial, sans-serif;
+    font-size: 6em;
+    color: #527699;
+    margin: 25px 0;
+    text-shadow: 2px 2px 1px #aabfd4;
+}
+.container article.main
+{
+    float: left;
+    width: 70%;
+}
+.container article.main p
+{
+    font-size: 2.3em;
+    color: #999999;
+    margin: 5px 0 20px;
+}
+.container article.main p pre
+{
+    font-family: monospace;
+    font-size: 15px;
+    margin: 10px;
+    display: block;
+    color: #333333;
+}
+.container article.main .usage
+{
+    margin-top: 50px;
+}
+.container aside
+{
+    float: right;
+    width: 25%;
+}
+.container aside #dependencies
+{
+    margin-bottom: 25px;
+}
+.container aside #license
+{
+    font-size: 1.1em;
+    color: #666666;
+    margin-bottom: 25px;
+}
+.container aside #compat
+{
+    font-size: 1.1em;
+    color: #666666;
+    margin-bottom: 25px;
+}
+.container ul.options strong
+{
+    font-family: monospace;
+    font-size: 2.2em;
+}
+.container li
+{
+    list-style: none;
+    font-size: 2.5em;
+    margin: 7px 0;
+}
+.container li strong
+{
+    display: block;
+}
+#flipbox
+{
+    background-color: #e0b001;
+    font-family: Segoe UI;
+    color: #e5e5e5;
+
+    text-align: center;
+    font-size: 10pt;
+}
+
+#flipbox1
+{
+    background-color: #e0b001;
+    font-family: Segoe UI;
+    color: #e5e5e5;
+
+    text-align: center;
+    font-size: 10pt;
+}
+

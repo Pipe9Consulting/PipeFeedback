@@ -1,0 +1,5134 @@
+.layer
+{
+    background: #fff;
+    opacity: 0.5;
+}
+
+.accordion h3, .bukatutup, .login
+{
+    display: none;
+}
+
+.cart
+{
+    display: block !important;
+}
+
+.captcha_style
+{
+    background-image: url(../Images/1.jpg);
+    text-align: center;
+    border: none;
+    font-weight: bolder !important;
+    font-family: modern;
+    font-size: 30px !important;
+    margin: 5px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.captcha_btn
+{
+    background: url(../Images/refreshes.png) #e5e5e5;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.buybtn
+{
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    float: right;
+    clear: both;
+    cursor: pointer;
+}
+
+.backBtn
+{
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.dwnldbtn
+{
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    float: right;
+    margin-top: 1%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8vw;
+}
+
+.pageholder h1
+{
+    color: #5E5E5E;
+    font-size: 160%;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.signuptile
+{
+    padding-top: 30px;
+    text-align: center;
+    background: #808080;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+    margin-right: 70px;
+}
+
+.brdrnil
+{
+    border: 0 !important;
+}
+
+.signuptile p
+{
+    position: absolute;
+    bottom: 10px;
+    color: #FFF;
+    left: 10px;
+}
+
+.contenthold
+{
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+    width: 783px;
+}
+
+.signuptxt
+{
+    float: left;
+    color: #5E5E5E;
+    width: 70%;
+    margin-right: 0;
+}
+
+    .signuptxt p
+    {
+        font-size: 14px;
+        text-align: justify;
+        padding: 0 10px 10px 0;
+        line-height: 1.1em;
+    }
+
+    .signuptxt b
+    {
+        line-height: 1.6em;
+    }
+
+.contenthold h1
+{
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+    float: left;
+    width: 242px;
+}
+
+.contenthold h2
+{
+    color: #808080;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+    float: left;
+    text-align: right;
+}
+
+.frnbtm .errormsg
+{
+    height: 30px;
+    line-height: 30px;
+}
+
+.totalerror .errormsg
+{
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.errormsg, .errormsgpay
+{
+    color: #5E5E5E;
+    background: url(../Images/error.png) no-repeat left;
+    padding: 0 0 0 30px !important;
+}
+
+.mendatory
+{
+    color: #808080;
+    font-size: 10px;
+    text-align: right;
+    padding: 5px 20px 5px 0;
+}
+
+.addselect
+{
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 30px 0 10px;
+}
+
+    .addselect a, .addselectact a
+    {
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+.choosepoe
+{
+    display: none;
+    position: absolute;
+}
+
+    .choosepoe ul
+    {
+        width: 110%;
+        background: #ccc;
+        padding: 1px;
+        float: left;
+    }
+
+    .choosepoe li
+    {
+        font-size: 12px;
+        padding: 0 10px;
+        width: 88%;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+
+        .choosepoe li:hover
+        {
+            background: #deaf01;
+            color: #fff;
+        }
+
+        .choosepoe li a
+        {
+            color: #000;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+.frnbtm
+{
+    margin-left: 100px;
+    clear: both;
+}
+
+.browse
+{
+    background: #808080;
+    font-size: 12px;
+    color: #fff;
+    border: 0;
+    padding: 5px;
+}
+
+.signupcol
+{
+    float: left;
+    text-align: right;
+    margin-top: 15px;
+    position: fixed;
+}
+
+.clr
+{
+    clear: both;
+}
+
+.chkbx
+{
+    font-size: 14px !important;
+    text-decoration: underline;
+}
+
+.photo
+{
+    width: 124px;
+    height: 124px;
+    float: left;
+}
+
+.signupbtn
+{
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#btnUpload, #btnCrop
+{
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#btnCrop
+{
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.captcha
+{
+    width: 301px;
+    margin-bottom: 5px;
+}
+
+.row
+{
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+.col
+{
+    float: left;
+    margin: 3px 10px 3px 0;
+    padding: 0;
+    color: #5E5E5E;
+}
+
+.level
+{
+    width: 150px !important;
+}
+
+.txtcol
+{
+    border: 1px solid #cbcbcb;
+    padding-left: 5px;
+    color: #808080;
+}
+
+#textupload
+{
+    border: 1px solid #cbcbcb;
+    padding: 4px 5px;
+    color: #808080;
+    width: 150px;
+}
+
+.selectcol
+{
+    border: 1px solid #cbcbcb;
+    width: 303px;
+    height: 26px;
+    color: #808080;
+}
+
+.addform .txtcol
+{
+    width: 222px;
+}
+
+.uploadtext
+{
+    border: 1px solid #cbcbcb;
+    width: 165px;
+    height: 24px;
+}
+
+.check label
+{
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    background: url(../Images/checkbox.png) left no-repeat;
+    padding: 3px 0 0 30px;
+    text-decoration: underline;
+}
+
+    .check label a
+    {
+        color: #5E5E5E;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+        .check label a:focus
+        {
+            background: #e5e5e5;
+        }
+
+/* Don't hide the radio button in older browsers */
+.check input:checked, .check input:not(:checked)
+{
+    display: none;
+}
+
+    .check input:checked + label
+    {
+        background: url(../Images/checked.png) left no-repeat;
+    }
+
+.midcol
+{
+    width: 358px;
+    float: left;
+    margin-right: 90px;
+}
+
+    .midcol p
+    {
+        line-height: 1.1em;
+        font-size: 14px;
+        padding: 0 0 10px 0;
+    }
+
+.addmngr h2
+{
+    background: url(../Images/addmngr-plus.png) left top no-repeat #fff;
+    padding: 0 0 0 30px;
+    color: #5e5e5e;
+    border-top: 10px solid #e5e5e5;
+    width: 97.6%;
+    text-align: left;
+    margin: 0;
+}
+
+    .addmngr h2.active
+    {
+        background: url(../Images/addmngr-minus.png) left top no-repeat #fff;
+    }
+
+.addform
+{
+    display: none;
+    background: #fff;
+    width: 97.5%;
+    float: left;
+    border-top: 1px solid #e5e5e5;
+}
+
+.rightcol
+{
+    background: #808080;
+    padding: 10px;
+    position: relative;
+    color: #FFF;
+}
+
+    .rightcol .btm
+    {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 93%;
+    }
+
+.total
+{
+    border-top: 1px solid #5e5e5e;
+    float: left;
+    width: 100%;
+    height: 25px;
+    padding: 5px 0;
+}
+
+.btm .signupbtn
+{
+    float: right;
+    padding: 8px 4px;
+}
+
+.totalLeft
+{
+    float: left;
+    color: #fff;
+    font-size: 24px;
+}
+
+.totalRight
+{
+    float: right;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 3px;
+}
+
+.welcomenote
+{
+    float: left;
+}
+
+    .welcomenote p
+    {
+        float: left;
+        padding-top: 15px;
+    }
+
+    .welcomenote img
+    {
+        margin-right: 10px;
+        float: left;
+    }
+
+.urntwrk ul
+{
+    max-height: 370px;
+    min-height: 370px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.urntwrk h2
+{
+    color: #FFF;
+    float: none;
+    clear: both;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: 1px solid #5e5e5e;
+    width: 98% !important;
+    padding: 10px 0;
+}
+
+.urntwrk .title
+{
+    clear: both;
+    padding-bottom: 5px;
+    font-size: 11px;
+}
+
+.urntwrk li
+{
+    border-top: 1px dashed #acacac;
+    width: 100%;
+    float: left;
+    padding: 8px 0;
+}
+
+.combine
+{
+    border: 0 !important;
+    padding-top: 0 !important;
+}
+
+.urntwrk li:first-child
+{
+    border: 0;
+}
+
+.urntwrk li .colone
+{
+    float: left;
+    margin-right: 10px;
+    width: 34px;
+}
+
+.urntwrk li .coltwo
+{
+    float: left;
+    margin-right: 10px;
+    width: 185px;
+}
+
+.urntwrk li .colthree
+{
+    float: right;
+    width: 60px;
+    text-align: right;
+}
+
+.submit .signupbtn
+{
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    font-weight: 600 !important;
+    margin-right: 20px;
+    padding: 8px 10px;
+}
+
+.spotlight, .mypoe
+{
+    float: left;
+}
+
+    .spot h2, .mypoe h2, .mypoearea h2
+    {
+        color: #808080;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+.spotlightdiv
+{
+    margin-top: 10px;
+}
+
+.bigtile
+{
+    background: #808080;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.smalltile
+{
+    background: #808080;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.poe
+{
+    float: left;
+    margin-left: 10px;
+}
+
+.new, .comingsoon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.poetext
+{
+    padding-top: 30px;
+    padding-right: 10px;
+    width: 50px;
+    float: left;
+}
+
+.bigtile img, .smalltile img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+{
+    padding: 8px 10px;
+    background: url(../images/trans1.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.nonbgbigtiletitle, .nonbgsmalltitle
+{
+    background: none;
+    opacity: 1;
+}
+
+.poepopupbg
+{
+    background: url(../images/trans.png);
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.poepopup
+{
+    margin: 0 auto;
+    position: absolute;
+    left: 33%;
+    z-index: 99999;
+    background: #f3f5f7;
+    border: 4px solid #5f5f5f;
+    color: #808080;
+    display: none;
+    width: 30%;
+    height: 60.2%;
+    top: 20%;
+}
+
+.poepopuphd
+{
+    float: left;
+    padding: 1%;
+    background: #5f5f5f;
+    text-align: right;
+    width: 98%;
+}
+
+.close
+{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: url(../Images/close.png) no-repeat;
+    float: right;
+}
+
+    .close:hover
+    {
+        background: url(../Images/close-hover.png) no-repeat;
+    }
+
+.poepopupcontent
+{
+    width: 99%;
+    padding: 5px;
+    clear: both;
+    position: relative;
+    height: 92%;
+}
+
+    .poepopupcontent img, .popupwrapper
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99%;
+        height: 100%;
+        z-index: 1;
+    }
+
+.popupwrapper
+{
+    z-index: 2;
+}
+
+    .popupwrapper table
+    {
+        width: 98%;
+        margin: 1.5% auto;
+    }
+
+        .popupwrapper table td
+        {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+    .popupwrapper h1
+    {
+        color: #000;
+        font-size: 1.4vw !important;
+        margin: 0 !important;
+    }
+
+    .popupwrapper span
+    {
+        clear: both;
+        color: #e0b001;
+        font-size: 1.4vw;
+        font-weight: 500;
+    }
+
+.freetrial
+{
+    width: 80% !important;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+    .freetrial p, .freetrialimg
+    {
+        float: left !important;
+        position: relative;
+    }
+
+.trialtxt .freetrial p
+{
+    background: #e0b001;
+    text-align: center !important;
+    color: #fff !important;
+    width: 60% !important;
+    padding: 4.3% 0;
+}
+
+.freetrialimg
+{
+    width: 11% !important;
+    padding-bottom: 10%;
+}
+
+    .freetrialimg img
+    {
+        width: 100%;
+        height: 100%;
+        position: inherit;
+    }
+
+.trialtxt
+{
+    position: relative;
+}
+
+    .trialtxt h2
+    {
+        font-size: 0.8vw !important;
+        margin: 0 3%;
+        color: #353535 !important;
+        font-weight: 600;
+    }
+
+    .trialtxt p
+    {
+        font-size: 0.7vw !important;
+        margin: 0 0 0 3%;
+        color: #353535 !important;
+        line-height: 1.1em;
+        width: 93%;
+        text-align: left !important;
+    }
+
+.popupwrapper h3
+{
+    color: #e0b001;
+    font-size: 1vw;
+    font-weight: 500;
+    margin: 3% 2% 0 2%;
+}
+
+.popupwrapper .buo p
+{
+    padding: 2.8% !important;
+    font-size: 0.7vw;
+}
+
+.popupwrapper table p
+{
+    padding: 2%;
+    text-align: justify;
+    font-size: 0.7vw;
+    color: #fff;
+}
+
+.aop p
+{
+    padding: 1% 2% !important;
+}
+
+#poeselection
+{
+    background: #fff;
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1% 0 0 0;
+}
+
+    #poeselection li
+    {
+        border-left: 1px dotted #666;
+        cursor: pointer;
+        float: left;
+        padding: 2% 1%;
+        position: relative !important;
+        width: 31%;
+    }
+
+        #poeselection li:hover
+        {
+            background: #e0b001;
+            color: #fff;
+        }
+
+            #poeselection li:hover > span
+            {
+                color: #fff;
+            }
+
+        #poeselection li p, #poeselection li span
+        {
+            text-align: left !important;
+            font-size: 0.7vw !important;
+        }
+
+        #poeselection li span
+        {
+            font-size: 0.8vw !important;
+        }
+
+        #poeselection li img
+        {
+            width: 24%;
+            height: auto;
+            position: relative;
+            float: left;
+            margin-right: 2%;
+        }
+
+.popupwrapper table strong
+{
+    font-weight: bold;
+    color: #e0b001;
+    font-size: 0.7vw;
+}
+
+.popuptextbg, .popuptextbg1
+{
+    background: url(../images/trans1.png);
+}
+
+.popuptextbg1
+{
+    position: absolute;
+    height: 82%;
+    right: 2%;
+}
+
+    .popuptextbg1 .dwnldbtn
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+.trialcont img
+{
+    width: 100%;
+    height: 100%;
+    position: inherit;
+}
+
+.btn
+{
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 5px 8px;
+    font-weight: 400;
+    margin-right: 12px;
+    font-size: 80%;
+    width: 20%;
+    text-align: center;
+}
+
+.spotlight, .mypoe
+{
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.spot, .mypoearea
+{
+    float: left;
+}
+
+.mypoearea
+{
+    overflow: hidden;
+}
+
+.poeoverflow
+{
+    width: 300%;
+    margin-top: 10px;
+}
+
+.main
+{
+    width: 95%;
+}
+
+.address
+{
+    float: left;
+    width: 15%;
+    margin: 10px 0;
+}
+
+.address1
+{
+    float: left;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.print
+{
+    background: url("../Images/print.png") no-repeat scroll left center transparent;
+    clear: both;
+    font-size: 12px;
+    height: 30px;
+    padding: 12px 0 0 35px;
+    text-decoration: underline;
+    width: 100%;
+    cursor: pointer;
+}
+
+.startbtn
+{
+    background: url("../Images/nxt-arrow.png") no-repeat scroll right center #DEAF01;
+    background-position: 85px;
+    border: 2px solid #6C6C6C;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 8px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+#pnlUploadedImage h2
+{
+    font-weight: 400;
+    color: #000;
+    font-size: 14px;
+}
+
+#submiterr
+{
+    width: 80%;
+}
+
+.valid
+{
+    font-size: 11px;
+    color: #fff;
+    line-height: 1.2em;
+}
+
+.browseright
+{
+    float: right;
+    width: 30%;
+    display: table;
+}
+
+.browserightcont
+{
+    display: table-cell;
+    vert-align: top;
+}
+
+    .browserightcont p
+    {
+        color: #000;
+        font-size: 12px;
+        padding: 5px 0 0 0;
+    }
+
+.imgselection
+{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+    .imgselection p
+    {
+        background: url(../Images/trans.png);
+        width: 177px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        float: left;
+        height: 25px;
+        display: table;
+    }
+
+        .imgselection p span
+        {
+            padding: 5px;
+            color: #fff;
+            font-size: 12px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+.mastercard li
+{
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.countryselect
+{
+    border: 1px solid #cbcbcb;
+}
+
+/*************Checkout**********************/
+.cancel
+{
+    background: #353535;
+}
+
+.security
+{
+    width: 100px;
+    float: left;
+}
+
+.securityHelp
+{
+    float: left;
+    margin: 0 0 10px 0;
+}
+
+    .securityHelp img
+    {
+        float: left;
+        margin-top: 5px;
+    }
+
+.securityHelpinfo
+{
+    padding: 10px;
+    float: right;
+    z-index: 111;
+    width: 250px;
+    position: absolute;
+    margin-left: 20px;
+    display: none;
+    margin-top: -30px;
+}
+
+    .securityHelpinfo span
+    {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #808080;
+        height: 0px;
+        width: 0px;
+        float: left;
+        margin-top: 12%;
+    }
+
+    .securityHelpinfo p
+    {
+        background: #808080;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 12px !important;
+        float: left;
+        line-height: 1.2em !important;
+        width: 80%;
+    }
+
+.card
+{
+    background: url(/Images/cards.png) no-repeat right 5px center #fff;
+}
+
+.exp
+{
+    border: 1px solid #CBCBCB;
+}
+
+.smalltxtbx
+{
+    width: 150px;
+}
+
+.space
+{
+    padding: 3px;
+    height: 0;
+}
+
+.assignpoe1
+{
+    display: none;
+    z-index: 99;
+    position: absolute;
+    background: #fff;
+}
+
+    .assignpoe1 li
+    {
+        background: url("/Images/poe-deselect.png") no-repeat left 5px top 10px;
+        padding: 5px 0 0 30px;
+        border: 1px solid #ccc;
+        border-top: 0;
+        border-bottom: 0;
+        cursor: pointer;
+        height: 30px;
+        line-height: 30px;
+    }
+
+        .assignpoe1 li:last-child
+        {
+            border-bottom: 1px solid #ccc;
+        }
+
+    .assignpoe1 .assignpoe1select
+    {
+        background: url("../Images/poe-select.png") no-repeat left 5px top 10px;
+    }
+
+.detailsholder
+{
+    width: 80%;
+    float: left;
+}
+
+    .detailsholder .details
+    {
+        float: left;
+        width: 256px;
+    }
+
+.edit, .delete
+{
+    float: left;
+    width: 20px;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.deletePoe
+{
+    float: left;
+    width: 20px;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.edit
+{
+    border-right: 1px solid #fff;
+}
+
+.colone img
+{
+    width: 38px;
+    height: 38px;
+}
+
+.cancel
+{
+    background: #353535;
+}
+/***************Accounts Page**********************/
+.accounts table
+{
+    background: #f2f2f2;
+}
+
+.accounts th
+{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accounthd1 .printtd
+{
+    background: #e5e5e5 !important;
+    text-align: right !important;
+    cursor: pointer;
+}
+
+.printtd div
+{
+    float: right;
+    padding: 5px 0px 5px 5px;
+}
+
+.totl
+{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.accounts th
+{
+    width: 8%;
+}
+
+.accounts td
+{
+    padding: 8px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 8%;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    .accounts td:nth-child(n+2), .accounts th:nth-child(n+2)
+    {
+        width: 15%;
+        text-align: left;
+    }
+
+    .accounts td:nth-child(n+3), .accounts th:nth-child(n+3)
+    {
+        width: 20%;
+        text-align: center;
+        background: #eaeaea;
+    }
+
+    .accounts td:nth-child(n+4), .accounts th:nth-child(n+4)
+    {
+        width: 15%;
+        text-align: center;
+        background: #f2f2f2;
+    }
+
+.accounthd1 td
+{
+    background: #f2f2f2 !important;
+    border-top: 1px solid #ccc !important;
+}
+
+.securityHelpinfo
+{
+    float: left;
+}
+
+.cpoe
+{
+    background: #fff !important;
+    padding-left: 10px !important;
+}
+
+    .cpoe:hover
+    {
+        background: #e0b001 !important;
+        color: #fff !important;
+    }
+
+.alertboxholder
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: none;
+}
+
+.alertbox
+{
+    background: #fff;
+    width: 150px;
+    height: 125px;
+    border: 5px solid #5e5e5e;
+    border-top: 25px solid #5e5e5e;
+    margin: 0 auto;
+    margin-top: 15%;
+    padding: 10px;
+    color: #808080;
+    font-size: 12px;
+    position: relative;
+}
+
+    .alertbox .close
+    {
+        top: -20px;
+        right: 0;
+        position: absolute;
+    }
+
+    .alertbox .button
+    {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+        .alertbox .button input
+        {
+            background: #5f5f5f;
+            color: #fff;
+            border: 2px solid #353535;
+            padding: 3px;
+        }
+
+            .alertbox .button input:focus
+            {
+                background: #e0b001;
+            }
+
+.downloadPoE table
+{
+    width: 95%;
+    margin: 30px auto 0 auto;
+}
+
+.downloadPoE td
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 28%;
+}
+
+    .downloadPoE td:first-child
+    {
+        width: 25%;
+    }
+
+    .downloadPoE td:last-child
+    {
+        width: 40%;
+    }
+
+    .downloadPoE td input
+    {
+        border: 1px solid #ccc;
+        padding: 5px;
+        color: #808080;
+        background: #efefef;
+        width: 91%;
+        float: left;
+        margin: 5px;
+    }
+
+    .downloadPoE td .dwnldbtn
+    {
+        background: #e0b001;
+        color: #fff;
+        float: right;
+        width: 80px !important;
+        margin: 10px 0 0 0;
+        text-decoration: none;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    .downloadPoE td .error
+    {
+        color: #808080;
+        margin-left: 5%;
+        padding-left: 28px;
+        font-weight: normal;
+        background: url(../images/error.png) no-repeat left;
+        clear: both;
+        height: 22px;
+        font-size: 11px;
+        line-height: 1.1em;
+    }
+
+.downloadPoE ul
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 23%;
+}
+
+.downloadPoE li
+{
+    width: 23.6%;
+    float: left;
+    background: #ccc;
+    margin-right: 1%;
+    height: 100%;
+    position: relative;
+}
+
+    .downloadPoE li img
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .downloadPoE li p
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 30px;
+        background: url(../images/trans.png);
+        width: 100%;
+        display: table;
+    }
+
+        .downloadPoE li p span
+        {
+            padding: 0 5px;
+            margin: 0;
+            display: table-cell;
+            vertical-align: middle;
+            color: #fff;
+        }
+
+    .downloadPoE li .comingsoon
+    {
+        width: 35%;
+        height: 35%;
+    }
+
+.remove ul
+{
+    opacity: 0.5;
+    cursor: none;
+}
+
+.remove li:hover
+{
+    cursor: none;
+}
+
+.anatomyadd ul
+{
+    opacity: 1 !important;
+}
+
+.anatomyadd ul
+{
+    position: relative !important;
+    width: 94%;
+    height: 94%;
+}
+
+.anatomyadd li
+{
+    width: 48%;
+    height: 48%;
+    border: 0 !important;
+    padding: 0 !important;
+    float: left;
+    clear: none;
+    margin: 2% 2% 0 0;
+}
+
+    .anatomyadd li img, .anatomyadd li p
+    {
+        margin: 0 !important;
+    }
+/****Form****/
+.formpopupbg
+{
+    background: url(../images/trans.png);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.formpopupt
+{
+    width: 30%;
+    height: 57%;
+    margin: 0 auto;
+    background: #e5e5e5;
+    margin-top: 10%;
+    margin-left: 33%;
+    border: 5px solid #353535;
+    border-top: 30px solid #353535;
+    position: relative;
+    display: none;
+}
+
+    .formpopupt img
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+.formpopup
+{
+    padding: 5%;
+    position: relative;
+}
+
+    .formpopup .left, .formpopup .right
+    {
+        width: 46%;
+        float: left;
+        margin: 2% 0 0;
+    }
+
+    .formpopup .right
+    {
+        width: 38%;
+    }
+
+    .formpopup .left
+    {
+        left: 5%;
+        border-right: 1px solid #4c4c4c;
+        padding: 2% 3%;
+    }
+
+    .formpopup input
+    {
+        width: 95%;
+        border: 1px solid #fff;
+        padding: 2%;
+        margin: 4% 0;
+    }
+
+    .formpopup .texfield
+    {
+        padding-bottom: 146.5%;
+        width: 100%;
+        background: #e5e5e5;
+        border: 1px solid #fff;
+        position: relative;
+        margin: 2% 0 0 0;
+        overflow: hidden;
+    }
+
+.texfield textarea
+{
+    width: 101%;
+    resize: none;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    height: 96%;
+    padding: 2%;
+    color: #808080;
+    font-size: 0.8vw;
+    font-family: Segoe UI;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.formpopup .right
+{
+    right: 5%;
+    padding: 2% 3%;
+}
+
+#form .errormsg
+{
+    color: #fff;
+    margin: 3% 0;
+    padding: 0 !important;
+}
+
+.formtransbg
+{
+    background: url(../Images/trans1.png);
+    float: left;
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+#form .errormsg div
+{
+    width: 10%;
+    float: left;
+    position: relative;
+    padding: 0 0 10% 0;
+}
+
+#form .errormsg p
+{
+    width: 85%;
+    float: right;
+    padding: 2% 0;
+    font-size: 0.6vw;
+}
+
+#form .errormsg img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#form .header
+{
+    width: 100%;
+    float: left;
+    clear: both;
+    padding: 0 2%;
+    height: 25px;
+}
+
+#form h1, #form h2
+{
+    font-size: 1.1vw;
+    font-weight: bold;
+    margin: 0.5% 0 1.5% 0;
+    color: #e0b001;
+    padding: 2% 0% 2% 5%;
+    width: 44%;
+    float: left;
+}
+
+span.skype_pnh_container span.skype_pnh_highlighting_inactive_common span.skype_pnh_text_span
+{
+    color: #e0b001 !important;
+    font-size: 1.2vw !important;
+    font-weight: bold !important;
+}
+
+span.skype_pnh_container img.skype_pnh_logo_img
+{
+    display: none !important;
+}
+
+#form h1
+{
+    padding: 2% 1%;
+    width: 46%;
+}
+
+#form p, #form li, #form span, #form a, #form div, #form p span, #form div p
+{
+    font-size: 0.8vw;
+    color: #fff;
+}
+
+#form input
+{
+    font-size: 0.8vw;
+    color: #808080;
+    background: #e5e5e5;
+}
+
+#form .sendbtn
+{
+    background: none repeat scroll 0 0 #e0b001;
+    border: 1px solid #353535;
+    color: #FFFFFF;
+    margin: 4% 0 0;
+    padding: 2% 5%;
+    text-align: center;
+    width: 22%;
+    cursor: pointer;
+}
+
+    #form .sendbtn:hover
+    {
+        background: #e0b001;
+    }
+
+#form .close
+{
+    background: url(../images/close.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.yourpoes li
+{
+    background: transparent !important;
+    padding: 5px !important;
+}
+
+.yourpoes .selected
+{
+    background: #e0b001 !important;
+    color: #fff !important;
+}
+
+.poetxtarea
+{
+    height: 100%;
+}
+
+    .poetxtarea p
+    {
+        padding: 1.8% 4% !important;
+    }
+
+    .poetxtarea h1
+    {
+        color: #fff !important;
+        font-size: 1.4vw;
+        padding: 2% 0 0 4%;
+    }
+
+    .poetxtarea h3
+    {
+        padding: 2% 0 2% 2%;
+    }
+
+.select
+{
+    background: #e0b001 !important;
+    color: #fff !important;
+    border-left: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+
+    .select span
+    {
+        color: #fff !important;
+    }
+
+/*****PoE Lobrary media screen***/
+@media screen and (max-width: 7680px) and (min-width: 1680px)
+{
+    .byo .poepopupcontent
+    {
+        /*height: 94% !important;*/
+    }
+
+    .byo .poepopup
+    {
+        /*height: 57% !important;*/
+    }
+
+    .contenthold
+    {
+        width: 1355px;
+    }
+
+        .contenthold h1
+        {
+            width: 390px;
+        }
+
+    .pageholder
+    {
+        width: 94.2%;
+        margin-top: 6% !important;
+    }
+
+    .midcol
+    {
+        width: 900px;
+    }
+
+    .signupcol
+    {
+        left: 32.5%;
+        width: 333px;
+        bottom: 10%;
+    }
+
+    .rightcol
+    {
+        width: 340px;
+        height: 625px;
+        float: left;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 420px !important;
+        min-height: 420px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .checkoutcol
+    {
+        float: left !important;
+        margin-right: 60px;
+        font-size: 14px;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 776px;
+        margin-right: 10px;
+    }
+
+    .spotlightdivholder
+    {
+        max-height: 630px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        float: left;
+    }
+
+    .spotlightcont
+    {
+        width: 210%;
+    }
+
+    .bigtile
+    {
+        width: 375px;
+        height: 375px;
+    }
+
+    .smalltile
+    {
+        width: 183px;
+        height: 183px;
+    }
+
+    .bigtiletitle
+    {
+        width: 355px;
+    }
+
+    .smalltiletitle
+    {
+        width: 163px;
+    }
+
+    .poe
+    {
+        padding: 25px 0;
+        width: 65px;
+        height: 140px;
+        margin-right: 10px;
+    }
+
+    .selected
+    {
+        background: #e0b001;
+    }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 100%;
+    }
+
+    .spot, .spot h2, .mypoe h2
+    {
+        font-size: 16px;
+    }
+
+    .poetext
+    {
+        font-size: 100%;
+        line-height: 1.5em;
+        padding-top: 35px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 68px;
+        height: 67px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 760px;
+    }
+
+    .mypoearea
+    {
+        max-width: 763px;
+        max-height: 648px;
+        margin-left: 90px;
+    }
+
+    .slidebtn
+    {
+        bottom: 5px;
+        height: 43px;
+        left: 40%;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .pagination
+    {
+        float: left;
+        font-size: 12px;
+        padding-top: 15px;
+        text-align: center;
+        width: 65%;
+    }
+
+    .nxt
+    {
+        background: url(../Images/next_arrow1.png) no-repeat;
+        cursor: pointer;
+        width: 43px;
+        height: 43px;
+        text-decoration: none;
+        float: right;
+        color: #e5e5e5;
+        text-indent: 1033px;
+    }
+
+        .nxt:hover
+        {
+            background: url(../Images/next_arrow.png) no-repeat;
+            opacity: 0.9;
+        }
+
+    .prev
+    {
+        background: url(../Images/previous.png) no-repeat;
+        cursor: pointer;
+        width: 43px;
+        height: 43px;
+        text-decoration: none;
+        float: left;
+        color: #e5e5e5;
+        text-indent: -1333px;
+    }
+
+        .prev:hover
+        {
+            background: url(../Images/prev-hover.png) no-repeat;
+            opacity: 0.9;
+        }
+
+    #bn2, #bn3, #bn5, #bn4, #p2, #p3, #p5, #p4
+    {
+        display: none;
+    }
+
+    .slidebtn
+    {
+        width: 16%;
+    }
+    /********************/
+    .signuptile
+    {
+        height: 120px;
+        width: 305px;
+    }
+
+    .col, .col p, .col input
+    {
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: normal;
+    }
+
+    .pageholder h1
+    {
+        font-size: 24px;
+    }
+
+    .contenthold h1, .signuptile p
+    {
+        font-size: 18px;
+    }
+
+    .photo, .photo img
+    {
+        width: 156px;
+        height: 156px;
+        margin-left: 45px;
+    }
+
+    .selectcol
+    {
+        width: 367px;
+        padding: 5px;
+        height: 34px;
+    }
+
+    .captcha_style
+    {
+        width: 333px;
+    }
+
+    .txtcol
+    {
+        width: 360px;
+        height: 32px;
+    }
+
+    .addform .txtcol
+    {
+        width: 500px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 12px;
+    }
+
+    .signuptile img
+    {
+        width: 72px;
+        height: 72px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+    .addform
+    {
+        padding: 15px 0px 15px 30px;
+    }
+
+    .checkoutcol
+    {
+        width: 934px;
+    }
+
+    .addform .level
+    {
+        width: 120px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 157px;
+    }
+
+    .mendatory
+    {
+        font-size: 14px;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title
+    {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 275px;
+    }
+
+    .choosepoe li
+    {
+        width: 255px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow-1920.png) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 230px;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up-1920.png) right no-repeat #575757;
+        width: 230px;
+    }
+
+    .signuptxt
+    {
+        max-height: 700px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 508px;
+        font-size: 16px;
+        color: #808080;
+        line-height: 35px;
+        height: 35px;
+    }
+
+    .assignpoe1
+    {
+        width: 277px;
+    }
+
+    .accounts
+    {
+        margin-left: 30px;
+        width: 1200px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 550px;
+        min-height: 550px;
+        width: 1200px;
+    }
+
+        .accounthd table, .accounthd1 table, .urAccounts table
+        {
+            width: 1180px;
+        }
+
+    .poepopup
+    {
+        height: 590px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1680px)
+{
+    .pageholder
+    {
+        width: 93.9%;
+        margin-top: 6% !important;
+    }
+
+    .contenthold
+    {
+        width: 1098px;
+    }
+
+        .contenthold h1
+        {
+            width: 330px;
+        }
+
+    .midcol
+    {
+        width: 660px;
+    }
+
+    .signupcol
+    {
+        width: 315px;
+        left: 33.5%;
+        bottom: 7%;
+    }
+
+    .rightcol
+    {
+        width: 320px !important;
+        height: 545px;
+        float: right !important;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 340px !important;
+        min-height: 340px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 652px;
+    }
+
+    .bigtile
+    {
+        width: 314px;
+        height: 314px;
+    }
+
+    .smalltile
+    {
+        width: 152px;
+        height: 152px;
+    }
+
+    .bigtiletitle
+    {
+        width: 294px;
+    }
+
+    .smalltiletitle
+    {
+        width: 132px;
+    }
+
+    .poe
+    {
+        padding: 15px 0;
+        width: 55px;
+        height: 125px;
+    }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 90%;
+    }
+
+    .spot h2, .mypoe h2
+    {
+        font-size: 14px;
+    }
+
+    .poetext
+    {
+        font-size: 90%;
+        line-height: 1.2em;
+        padding-top: 35px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 57px;
+        height: 55px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 649px;
+    }
+
+    .mypoearea
+    {
+        max-width: 655px;
+        max-height: 552px;
+        margin-left: 80px;
+    }
+
+    .buybtn
+    {
+        margin-right: 15px;
+    }
+
+    .signuptile
+    {
+        height: 95px;
+        width: 255px;
+        margin-right: 83px;
+    }
+
+        .col, .check label, .signuptile p, .col input, .col p
+        {
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: normal;
+        }
+
+    .captcha_style
+    {
+        width: 240px;
+    }
+
+    .txtcol
+    {
+        width: 295px;
+        height: 24px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 10px;
+    }
+
+    .selectcol
+    {
+        width: 304px;
+        padding: 5px;
+        height: 32px;
+    }
+
+    .signuptile img
+    {
+        width: 62px;
+        height: 62px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 35px;
+        font-size: 16px;
+    }
+
+    .addform
+    {
+        padding: 10px 0px 10px 30px;
+    }
+
+    .photo, .photo img
+    {
+        width: 136px;
+        height: 136px;
+        margin-left: 30px;
+    }
+
+    .checkoutcol
+    {
+        width: 640px;
+        float: left;
+    }
+
+    .addform .level
+    {
+        width: 90px;
+    }
+
+    .totalRight
+    {
+        padding-right: 10px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 100px;
+    }
+
+    .mendatory
+    {
+        font-size: 12px;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li
+    {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 226px;
+    }
+
+    .choosepoe li
+    {
+        width: 206px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow.gif) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 181px;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up.png) right no-repeat #575757;
+        width: 181px;
+    }
+
+    .addform .txtcol
+    {
+        width: 350px;
+    }
+
+    .signuptxt
+    {
+        max-height: 576px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 357px;
+        font-size: 14px;
+        color: #808080;
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .assignpoe1
+    {
+        width: 228px;
+    }
+
+    .accounts
+    {
+        margin-left: 30px;
+        width: 1000px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 450px;
+        min-height: 450px;
+        width: 1000px;
+    }
+
+        .accounthd table, .accounthd1 table, .urAccounts table
+        {
+            width: 980px;
+        }
+
+    .poepopup
+    {
+        height: 54.5%;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px)
+{
+    .pageholder
+    {
+        width: 93.9%;
+        margin-top: 6% !important;
+    }
+
+    .contenthold
+    {
+        width: 1098px;
+    }
+
+        .contenthold h1
+        {
+            width: 330px;
+        }
+
+    .midcol
+    {
+        width: 660px;
+    }
+
+    .signupcol
+    {
+        width: 315px;
+        left: 33.5%;
+        bottom: 7%;
+    }
+
+    .rightcol
+    {
+        width: 320px !important;
+        height: 545px;
+        float: right !important;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 340px !important;
+        min-height: 340px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 652px;
+    }
+
+    .bigtile
+    {
+        width: 314px;
+        height: 314px;
+    }
+
+    .smalltile
+    {
+        width: 152px;
+        height: 152px;
+    }
+
+    .bigtiletitle
+    {
+        width: 294px;
+    }
+
+    .smalltiletitle
+    {
+        width: 132px;
+    }
+
+    .poe
+    {
+        padding: 15px 0;
+        width: 55px;
+        height: 125px;
+    }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 90%;
+    }
+
+    .spot h2, .mypoe h2
+    {
+        font-size: 14px;
+    }
+
+    .poetext
+    {
+        font-size: 90%;
+        line-height: 1.2em;
+        padding-top: 35px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 57px;
+        height: 55px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 649px;
+    }
+
+    .mypoearea
+    {
+        max-width: 655px;
+        max-height: 556px;
+        margin-left: 80px;
+    }
+
+    .buybtn
+    {
+        margin-right: 15px;
+    }
+
+    .signuptile
+    {
+        height: 95px;
+        width: 255px;
+        margin-right: 83px;
+    }
+
+        .col, .check label, .signuptile p, .col input, .col p
+        {
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: normal;
+        }
+
+    .captcha_style
+    {
+        width: 240px;
+    }
+
+    .txtcol
+    {
+        width: 295px;
+        height: 24px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 10px;
+    }
+
+    .selectcol
+    {
+        width: 304px;
+        padding: 5px;
+        height: 32px;
+    }
+
+    .signuptile img
+    {
+        width: 62px;
+        height: 62px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 35px;
+        font-size: 16px;
+    }
+
+    .addform
+    {
+        padding: 10px 0px 5px 30px;
+    }
+
+    .photo, .photo img
+    {
+        width: 136px;
+        height: 136px;
+        margin-left: 30px;
+    }
+
+    .checkoutcol
+    {
+        width: 640px;
+        float: left;
+    }
+
+    .addform .level
+    {
+        width: 90px;
+    }
+
+    .totalRight
+    {
+        padding-right: 10px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 157px;
+    }
+
+    .mendatory
+    {
+        font-size: 12px;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li
+    {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 226px;
+    }
+
+    .choosepoe li
+    {
+        width: 206px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow.gif) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 181px;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up.png) right no-repeat #575757;
+        width: 181px;
+    }
+
+    .addform .txtcol
+    {
+        width: 350px;
+    }
+
+    .signuptxt
+    {
+        max-height: 576px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 357px;
+        font-size: 14px;
+        color: #808080;
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .assignpoe1
+    {
+        width: 228px;
+    }
+
+    .accounts
+    {
+        margin-left: 30px;
+        width: 1000px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 450px;
+        min-height: 450px;
+        width: 1000px;
+    }
+
+        .accounthd table, .accounthd1 table, .urAccounts table
+        {
+            width: 980px;
+        }
+
+    .poepopup
+    {
+        height: 55%;
+    }
+
+    .poepopup
+    {
+        height: 61.5%;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1440px)
+{
+    .signupbtn
+    {
+        margin-left: 50px;
+    }
+
+    .pageholder
+    {
+        width: 93.9%;
+        margin-top: 6% !important;
+    }
+
+    .contenthold
+    {
+        width: 986px;
+    }
+
+        .contenthold h1
+        {
+            width: 330px;
+        }
+
+    .midcol
+    {
+        width: 560px;
+        margin-right: 80px;
+    }
+
+    .signupcol
+    {
+        width: 315px;
+        left: 32.5%;
+        bottom: 7%;
+    }
+
+    .rightcol
+    {
+        width: 320px !important;
+        height: 545px;
+        float: right !important;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 340px !important;
+        min-height: 340px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 652px;
+    }
+
+    .bigtile
+    {
+        width: 314px;
+        height: 314px;
+    }
+
+    .smalltile
+    {
+        width: 152px;
+        height: 152px;
+    }
+
+    .bigtiletitle
+    {
+        width: 294px;
+    }
+
+    .smalltiletitle
+    {
+        width: 132px;
+    }
+
+    .poe
+    {
+        padding: 15px 0;
+        width: 55px;
+        height: 125px;
+    }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 90%;
+    }
+
+    .spot h2, .mypoe h2
+    {
+        font-size: 14px;
+    }
+
+    .poetext
+    {
+        font-size: 90%;
+        line-height: 1.2em;
+        padding-top: 35px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 57px;
+        height: 55px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 649px;
+    }
+
+    .mypoearea
+    {
+        max-width: 631px;
+        max-height: 550px;
+        margin-left: 40px;
+    }
+
+    .buybtn
+    {
+        margin-right: 0px;
+    }
+
+    .signuptile
+    {
+        height: 95px;
+        width: 255px;
+        margin-right: 80px;
+    }
+
+        .col, .check label, .signuptile p, .col input, .col p
+        {
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: normal;
+        }
+
+    .captcha_style
+    {
+        width: 240px;
+    }
+
+    .txtcol
+    {
+        width: 255px;
+        height: 24px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 10px;
+    }
+
+    .selectcol
+    {
+        width: 262px;
+        padding: 5px;
+        height: 32px;
+    }
+
+    .signuptile img
+    {
+        width: 62px;
+        height: 62px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 32px;
+        font-size: 16px;
+    }
+
+    .addform
+    {
+        padding: 10px 0px 10px 30px;
+    }
+
+    .photo, .photo img
+    {
+        width: 136px;
+        height: 136px;
+        margin-left: 9px;
+    }
+
+    .checkoutcol
+    {
+        width: 600px;
+        float: left;
+    }
+
+    .addform .level
+    {
+        width: 100px;
+    }
+
+    .totalRight
+    {
+        padding-right: 10px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 108px;
+    }
+
+    .mendatory
+    {
+        font-size: 12px;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li
+    {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 226px;
+    }
+
+    .choosepoe li
+    {
+        width: 206px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow.gif) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 181px;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up.png) right no-repeat #575757;
+        width: 181px;
+    }
+
+    .addform .txtcol
+    {
+        width: 350px;
+    }
+
+    .accounts th
+    {
+        width: 9%;
+    }
+
+    .signuptxt
+    {
+        max-height: 576px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 357px;
+        font-size: 14px;
+        color: #808080;
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .assignpoe1
+    {
+        width: 228px;
+    }
+
+    .accounts
+    {
+        margin-left: 30px;
+        width: 950px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 450px;
+        min-height: 450px;
+        width: 950px;
+    }
+
+        .accounthd table, .accounthd1 table, .urAccounts table
+        {
+            width: 900px;
+        }
+
+    .poepopup
+    {
+        height: 56%;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px)
+{
+    .contenthold
+    {
+        width: 955px;
+    }
+
+    .checkoutcol
+    {
+        width: 552px;
+        margin-right: 35px;
+        float: left;
+    }
+
+    .midcol
+    {
+        width: 500px;
+    }
+
+    .pageholder
+    {
+        padding-top: 5.5% !important;
+        width: 93.6%;
+    }
+
+    .txtcol, .uploadtext
+    {
+        line-height: 18px;
+        height: 18px;
+        width: 257px;
+    }
+
+    .selectcol
+    {
+        line-height: 21px;
+        height: 21px;
+    }
+
+    .col
+    {
+        line-height: 19px;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .midcol p
+    {
+        padding: 0 0 2px !important;
+    }
+
+    .addmngr h2
+    {
+        border-top: 5px solid #e5e5e5 !important;
+    }
+
+    .midcol p
+    {
+        font-size: 12px !important;
+    }
+
+    .rightcol
+    {
+        width: 290px !important;
+        height: 464px;
+        float: left;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 275px !important;
+        min-height: 275px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 555px;
+    }
+
+    .bigtile
+    {
+        width: 266px;
+        height: 266px;
+    }
+
+    .smalltile
+    {
+        width: 128px;
+        height: 128px;
+    }
+
+    .bigtiletitle
+    {
+        width: 246px;
+    }
+
+    .smalltiletitle
+    {
+        width: 108px;
+    }
+
+    .poe
+    {
+        padding: 4px 0;
+        width: 50px;
+        height: 120px;
+        margin-right: 0;
+    }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 80%;
+    }
+
+    .poetext
+    {
+        font-size: 80%;
+        line-height: 1.5em;
+        padding-top: 30px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 49px;
+        height: 47px;
+    }
+
+    .downloadPoE td .error
+    {
+        font-size: 10px;
+    }
+
+    .downloadPoE td
+    {
+        font-size: 12px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 558px;
+    }
+
+    .mypoearea
+    {
+        max-width: 555px;
+        max-height: 478px;
+        margin-left: 70px;
+    }
+
+    .buybtn
+    {
+        margin-right: 15px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+    /***************/
+    .signuptile
+    {
+        height: 74px;
+        width: 219px;
+    }
+
+    .col, .col p, .check label, .col input
+    {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .contenthold h1
+    {
+        font-size: 14px;
+        width: 242px;
+    }
+
+    .photo, .photo img
+    {
+        width: 78px;
+        height: 78px;
+        margin-left: 47px;
+    }
+
+    .selectcol
+    {
+        width: 265px;
+        padding: 0;
+    }
+
+    .captcha_style
+    {
+        width: 221px;
+    }
+
+    .txtcol
+    {
+        width: 259px;
+        height: 18px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 10px;
+    }
+
+    .signuptile img
+    {
+        width: 42px;
+        height: 42px;
+    }
+
+    .signuptile p
+    {
+        font-size: 12px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .addform
+    {
+        padding: 10px 0px 10px 30px;
+    }
+
+    .signupcol
+    {
+        width: 295px;
+        bottom: 9%;
+        left: 30.3%;
+    }
+
+    .level
+    {
+        width: 100px;
+    }
+
+    .addform .level
+    {
+        width: 90px;
+    }
+
+    .urntwrk li .coltwo
+    {
+        width: 165px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 100px;
+    }
+
+    .mendatory
+    {
+        font-size: 12px;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 183px;
+    }
+
+    .choosepoe li
+    {
+        width: 163px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow.gif) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 138px;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up.png) right no-repeat #575757;
+        width: 138px;
+    }
+
+    .addform .txtcol
+    {
+        width: 222px;
+    }
+
+    .signuptxt
+    {
+        max-height: 420px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 229px;
+        font-size: 12px;
+        color: #808080;
+        line-height: 20px;
+        height: 20px;
+    }
+
+    .assignpoe1
+    {
+        width: 185px;
+    }
+
+    .accounts
+    {
+        margin-left: 30px;
+        width: 920px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 370px;
+        min-height: 370px;
+        width: 920px;
+    }
+
+    .accounts th
+    {
+        width: 9%;
+    }
+
+    .accounthd1 table, .urAccounts table
+    {
+        width: 880px;
+    }
+
+    .accounthd table
+    {
+        width: 880px;
+    }
+
+    .AuthorizeNetSeal img
+    {
+        width: 64px;
+        height: 54px;
+    }
+
+    .poepopup
+    {
+        height: 46.5%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+{
+    .detailsholder .details
+    {
+        width: 235px;
+    }
+
+    .contenthold
+    {
+        width: 955px;
+    }
+
+    .anatomyadd ul
+    {
+        width: 92%;
+    }
+
+    .checkoutcol
+    {
+        width: 552px;
+        margin-right: 35px;
+        float: left;
+    }
+
+    .midcol
+    {
+        width: 500px;
+    }
+
+    .pageholder
+    {
+        padding-top: 5.5% !important;
+        width: 93.6%;
+    }
+
+    .txtcol, .uploadtext
+    {
+        line-height: 18px;
+        height: 18px;
+        width: 257px;
+    }
+
+    .selectcol
+    {
+        line-height: 21px;
+        height: 21px;
+    }
+
+    .col
+    {
+        line-height: 19px;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .midcol p
+    {
+        padding: 0 0 2px !important;
+    }
+
+    .addmngr h2
+    {
+        border-top: 5px solid #e5e5e5 !important;
+    }
+
+    .midcol p
+    {
+        font-size: 12px !important;
+    }
+
+    .rightcol
+    {
+        width: 290px !important;
+        height: 464px;
+        float: left;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 275px !important;
+        min-height: 275px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 555px;
+    }
+
+    .bigtile
+    {
+        width: 266px;
+        height: 266px;
+    }
+
+    .smalltile
+    {
+        width: 128px;
+        height: 128px;
+    }
+
+    .bigtiletitle
+    {
+        width: 246px;
+    }
+
+    .smalltiletitle
+    {
+        width: 108px;
+    }
+
+    .poe
+    {
+        padding: 4px 0;
+        width: 50px;
+        height: 120px;
+        margin-right: 0;
+    }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 80%;
+    }
+
+    .paid p
+    {
+        font-size: 10px;
+        padding: 9px 8px 11px 25px !important;
+    }
+
+    .poetext
+    {
+        font-size: 80%;
+        line-height: 1.5em;
+        padding-top: 30px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 49px;
+        height: 47px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 558px;
+    }
+
+    .mypoearea
+    {
+        max-width: 555px;
+        max-height: 478px;
+        margin-left: 70px;
+    }
+
+    .buybtn
+    {
+        margin-right: 13px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+    /***************/
+    .signuptile
+    {
+        height: 74px;
+        width: 219px;
+    }
+
+    .col, .col p, .check label, .col input
+    {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .contenthold h1
+    {
+        font-size: 14px;
+        width: 242px;
+    }
+
+    .photo, .photo img
+    {
+        width: 78px;
+        height: 78px;
+        margin-left: 47px;
+    }
+
+    .selectcol
+    {
+        width: 265px;
+        padding: 0;
+    }
+
+    .captcha_style
+    {
+        width: 221px;
+    }
+
+    .txtcol
+    {
+        width: 259px;
+        height: 18px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 10px;
+    }
+
+    .signuptile img
+    {
+        width: 42px;
+        height: 42px;
+    }
+
+    .signuptile p
+    {
+        font-size: 12px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .addform
+    {
+        padding: 10px 0px 10px 30px;
+    }
+
+    .signupcol
+    {
+        width: 295px;
+        bottom: 9%;
+        left: 30.3%;
+    }
+
+    .level
+    {
+        width: 100px;
+    }
+
+    .addform .level
+    {
+        width: 90px;
+    }
+
+    .urntwrk li .coltwo
+    {
+        width: 165px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 158px;
+    }
+
+    .mendatory
+    {
+        font-size: 12px;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 183px;
+    }
+
+    .choosepoe li
+    {
+        width: 163px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow.gif) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 138px;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up.png) right no-repeat #575757;
+        width: 138px;
+    }
+
+    .addform .txtcol
+    {
+        width: 222px;
+    }
+
+    .signuptxt
+    {
+        max-height: 420px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 229px;
+        font-size: 12px;
+        color: #808080;
+        line-height: 20px;
+        height: 20px;
+    }
+
+    .assignpoe1
+    {
+        width: 185px;
+    }
+
+    .accounts
+    {
+        margin-left: 30px;
+        width: 920px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 370px;
+        min-height: 370px;
+        width: 920px;
+    }
+
+    .accounts th
+    {
+        width: 9%;
+    }
+
+    .accounthd1 table, .urAccounts table
+    {
+        width: 880px;
+    }
+
+    .accounthd table
+    {
+        width: 880px;
+    }
+
+    .AuthorizeNetSeal img
+    {
+        width: 64px;
+        height: 54px;
+    }
+
+    .poepopup
+    {
+        height: 428px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    .contenthold
+    {
+        width: 900px;
+    }
+
+    .detailsholder .details
+    {
+        width: 222px;
+    }
+
+    .checkoutcol
+    {
+        width: 552px;
+        margin-right: 35px;
+        float: left;
+    }
+
+    .midcol
+    {
+        width: 500px;
+    }
+
+    .pageholder
+    {
+        padding-top: 5.5% !important;
+        width: 96.6%;
+    }
+
+    .txtcol, .uploadtext
+    {
+        line-height: 18px;
+        height: 18px;
+        width: 257px;
+    }
+
+    .selectcol
+    {
+        line-height: 21px;
+        height: 21px;
+    }
+
+    .col
+    {
+        line-height: 19px;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .midcol p
+    {
+        padding: 0 0 2px !important;
+    }
+
+    .addmngr h2
+    {
+        border-top: 5px solid #e5e5e5 !important;
+    }
+
+    .midcol p
+    {
+        font-size: 12px !important;
+    }
+
+    .rightcol
+    {
+        width: 290px !important;
+        height: 464px;
+        float: left;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 265px !important;
+        min-height: 265px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 555px;
+    }
+
+    .bigtile
+    {
+        width: 266px;
+        height: 266px;
+    }
+
+    .smalltile
+    {
+        width: 128px;
+        height: 128px;
+    }
+
+    .bigtiletitle
+    {
+        width: 246px;
+    }
+
+    .smalltiletitle
+    {
+        width: 108px;
+    }
+
+    .poe
+    {
+        padding: 4px 0;
+        width: 50px;
+        height: 120px;
+        margin-right: 0;
+    }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 80%;
+    }
+
+    .paid p
+    {
+        font-size: 10px;
+        padding: 9px 8px 11px 25px !important;
+    }
+
+    .poetext
+    {
+        font-size: 80%;
+        line-height: 1.5em;
+        padding-top: 30px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 49px;
+        height: 47px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 558px;
+    }
+
+    .mypoearea
+    {
+        max-width: 555px;
+        max-height: 477px;
+        margin-left: 70px;
+    }
+
+    .buybtn
+    {
+        margin-right: 15px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+    /***************/
+    .signuptile
+    {
+        height: 74px;
+        width: 219px;
+    }
+
+    .col, .col p, .check label, .col input
+    {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .contenthold h1
+    {
+        font-size: 14px;
+        width: 242px;
+    }
+
+    .photo, .photo img
+    {
+        width: 78px;
+        height: 78px;
+        margin-left: 47px;
+    }
+
+    .selectcol
+    {
+        width: 265px;
+        padding: 0;
+    }
+
+    .captcha_style
+    {
+        width: 221px;
+    }
+
+    .txtcol
+    {
+        width: 259px;
+        height: 18px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 10px;
+    }
+
+    .signuptile img
+    {
+        width: 42px;
+        height: 42px;
+    }
+
+    .signuptile p
+    {
+        font-size: 12px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .addform
+    {
+        padding: 10px 0px 10px 30px;
+    }
+
+    .signupcol
+    {
+        width: 295px;
+        bottom: 9%;
+        left: 30.3%;
+    }
+
+    .level
+    {
+        width: 100px;
+    }
+
+    .addform .level
+    {
+        width: 144px;
+    }
+
+    .urntwrk li .coltwo
+    {
+        width: 145px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 157px;
+    }
+
+    .mendatory
+    {
+        font-size: 12px;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 183px;
+    }
+
+    .choosepoe li
+    {
+        width: 163px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow.gif) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 138px;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up.png) right no-repeat #575757;
+        width: 138px;
+    }
+
+    .addform .txtcol
+    {
+        width: 222px;
+    }
+
+    .signuptxt
+    {
+        max-height: 420px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 229px;
+        font-size: 12px;
+        color: #808080;
+        line-height: 20px;
+        height: 20px;
+    }
+
+    .assignpoe1
+    {
+        width: 185px;
+    }
+
+    .accounts
+    {
+        margin-left: 0px;
+        width: 494px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 370px;
+        min-height: 370px;
+        width: 920px;
+    }
+
+        .accounthd1 table, .urAccounts table
+        {
+            width: 800px;
+        }
+
+            .accounthd1 table td, .urAccounts table td
+            {
+                font-size: 12px;
+            }
+
+                .urAccounts table td img
+                {
+                    width: 32px;
+                    height: 32px;
+                }
+
+    .accounts th:nth-child(n+2)
+    {
+        width: 21%;
+    }
+
+    .accounts th:last-child
+    {
+        width: 21%;
+    }
+
+    .accounts td:nth-child(n+3)
+    {
+        width: 16.5%;
+    }
+
+    .accounthd table th
+    {
+        font-size: 11px;
+    }
+
+    .accounthd table
+    {
+        width: 800px;
+    }
+
+    .AuthorizeNetSeal img
+    {
+        width: 64px;
+        height: 54px;
+    }
+
+    .poepopup
+    {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    .contenthold
+    {
+        width: 710px;
+        margin-left: 30px;
+    }
+
+    .checkoutcol
+    {
+        width: 420px;
+        margin-right: 0px;
+        float: left;
+    }
+
+    .midcol
+    {
+        width: 380px;
+        margin-right: 10px;
+    }
+
+    .pageholder
+    {
+        padding-top: 7% !important;
+        width: 93.6%;
+    }
+
+    .txtcol, .uploadtext
+    {
+        line-height: 18px;
+        height: 18px;
+        width: 257px;
+    }
+
+    .selectcol
+    {
+        line-height: 21px;
+        height: 21px;
+    }
+
+    .col
+    {
+        line-height: 19px;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .midcol p
+    {
+        padding: 0 0 2px !important;
+    }
+
+    .addmngr h2
+    {
+        border-top: 5px solid #e5e5e5 !important;
+    }
+
+    .midcol p
+    {
+        font-size: 12px !important;
+    }
+
+    .rightcol
+    {
+        width: 250px !important;
+        height: 464px;
+        float: right;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 275px !important;
+        min-height: 275px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 450px;
+    }
+
+    .bigtile
+    {
+        width: 210px;
+        height: 210px;
+    }
+
+    .smalltile
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bigtiletitle
+    {
+        width: 180px;
+    }
+
+    .smalltiletitle
+    {
+        width: 80px;
+    }
+
+    .poe
+    {
+        padding: 4px 0;
+        width: 50px;
+        height: 120px;
+        margin-right: 0;
+    }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 10px;
+    }
+
+    .paid p
+    {
+        font-size: 9px;
+        padding: 5px 8px 6px 25px !important;
+        width: 56%;
+        float: left !important;
+    }
+
+    .paid
+    {
+        width: 110px;
+    }
+
+        .paid span
+        {
+            border-top: 14px solid transparent !important;
+            float: left;
+            height: 0;
+            width: 0;
+        }
+
+    .poetext
+    {
+        font-size: 80%;
+        line-height: 1.5em;
+        padding-top: 30px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 49px;
+        height: 47px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 558px;
+    }
+
+    .mypoearea
+    {
+        max-width: 555px;
+        max-height: 450px;
+        margin-left: 20px;
+    }
+
+    .buybtn
+    {
+        margin-right: 20px;
+    }
+
+    .backBtn, .buybtn
+    {
+        font-size: 10px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+    /***************/
+    .signuptile
+    {
+        height: 60px;
+        width: 180px;
+        margin-right: 0px;
+    }
+
+    .col, .col p, .check label, .col input
+    {
+        font-size: 11px;
+        line-height: 18px;
+        font-weight: normal;
+    }
+
+    .urntwrk li .colthree
+    {
+        width: 59px;
+    }
+
+    .securityHelp img
+    {
+        margin-top: 0;
+    }
+
+    .AuthorizeNetSeal img
+    {
+        margin-top: 20px !important;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .contenthold h1
+    {
+        font-size: 14px;
+        width: 242px;
+    }
+
+    .photo, .photo img
+    {
+        width: 78px;
+        height: 78px;
+        margin-left: 47px;
+    }
+
+    .selectcol
+    {
+        width: 136px;
+        padding: 0;
+    }
+
+    .captcha_style
+    {
+        width: 221px;
+    }
+
+    .txtcol
+    {
+        width: 129px;
+        height: 16px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 9px;
+        margin-left: 24px;
+    }
+
+    .signuptile img
+    {
+        width: 42px;
+        height: 42px;
+    }
+
+    .signuptile p
+    {
+        font-size: 12px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .addform
+    {
+        padding: 10px 0px 10px 30px;
+    }
+
+    .signupcol
+    {
+        width: 295px;
+        bottom: 9%;
+        left: 30.3%;
+    }
+
+    .level
+    {
+        width: 80px;
+    }
+
+    .addform .level
+    {
+        width: 90px;
+    }
+
+    .urntwrk li .coltwo
+    {
+        width: 115px;
+        margin-right: 0;
+    }
+
+    .valid, .urntwrk li .coltwo, .welcomenote p, .midcol p, .addmngr h2, .addform .level, .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li, .colthree
+    {
+        font-size: 11px !important;
+    }
+
+    .totalLeft, .totalRight
+    {
+        font-size: 18px;
+    }
+
+    .detailsholder .details
+    {
+        width: 174px;
+    }
+
+    #submiterr
+    {
+        width: 41%;
+        line-height: 11px;
+        padding-bottom: 10px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 100px;
+    }
+
+    .mendatory
+    {
+        font-size: 12px;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 183px;
+    }
+
+    .choosepoe li
+    {
+        width: 163px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow.gif) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 138px;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up.png) right no-repeat #575757;
+        width: 138px;
+    }
+
+    .addform .txtcol
+    {
+        width: 222px;
+    }
+
+    .signuptxt
+    {
+        max-height: 420px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 229px;
+        font-size: 12px;
+        color: #808080;
+        line-height: 20px;
+        height: 20px;
+    }
+
+    .assignpoe1
+    {
+        width: 185px;
+    }
+
+    .accounts
+    {
+        margin-left: 30px;
+        width: 494px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 370px;
+        min-height: 370px;
+        width: 920px;
+    }
+
+        .accounthd1 table, .urAccounts table
+        {
+            width: 670px;
+        }
+
+            .accounthd1 table td, .urAccounts table td
+            {
+                font-size: 10px;
+            }
+
+                .urAccounts table td img
+                {
+                    width: 32px;
+                    height: 32px;
+                }
+
+    .accounts th:nth-child(n+2)
+    {
+        width: 21%;
+    }
+
+    .accounts th:last-child
+    {
+        width: 21%;
+    }
+
+    .accounts td:nth-child(n+3)
+    {
+        width: 16.5%;
+    }
+
+    .accounthd table th
+    {
+        font-size: 11px;
+    }
+
+    .accounthd table
+    {
+        width: 670px;
+    }
+
+    .AuthorizeNetSeal img
+    {
+        width: 44px;
+        height: 34px;
+    }
+
+    .accordion label img
+    {
+        width: auto !important;
+    }
+
+    .accordion a img
+    {
+        width: 83%;
+    }
+
+    .accordion h3.current, .accordion h3
+    {
+        height: 2px;
+    }
+
+    .poepopup
+    {
+        height: 330px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px)
+{
+    .contenthold
+    {
+        width: 515px;
+        margin-left: 10px;
+    }
+
+    .checkoutcol
+    {
+        width: 237px;
+        margin-right: 0px;
+        float: left;
+    }
+
+    .midcol
+    {
+        width: 204px;
+        margin-right: 10px;
+    }
+
+    .pageholder
+    {
+        padding-top: 9% !important;
+        width: 93.6%;
+    }
+
+    .txtcol, .uploadtext
+    {
+        line-height: 18px;
+        height: 18px;
+        width: 257px;
+    }
+
+    .selectcol
+    {
+        line-height: 21px;
+        height: 21px;
+    }
+
+    .col
+    {
+        line-height: 19px;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .midcol p
+    {
+        padding: 0 0 2px !important;
+    }
+
+    .addmngr h2
+    {
+        border-top: 5px solid #e5e5e5 !important;
+    }
+
+    .midcol p
+    {
+        font-size: 12px !important;
+    }
+
+    .rightcol
+    {
+        width: 250px !important;
+        height: 426px;
+        float: right;
+    }
+
+    .urntwrk ul
+    {
+        max-height: 230px !important;
+        min-height: 230px !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .spotlight, .mypoe
+    {
+        max-width: 380px;
+    }
+
+    .bigtile
+    {
+        width: 165px;
+        height: 165px;
+        margin: 0 0 5px 5px;
+    }
+
+    .smalltile
+    {
+        width: 80px;
+        height: 80px;
+        margin: 0 0 5px 5px;
+    }
+
+    .bigtiletitle
+    {
+        width: 155px;
+    }
+
+    .smalltiletitle
+    {
+        width: 70px;
+    }
+
+    .poe
+    {
+        padding: 4px 0;
+        width: 50px;
+        height: 120px;
+        margin-right: 0;
+    }
+
+    .paid
+    {
+        width: 79px;
+    }
+
+        .paid p
+        {
+            background: #e0b001 !important;
+            padding: 3px !important;
+            float: right !important;
+            font-size: 8px;
+            width: 73%;
+        }
+
+        .paid span
+        {
+            border-bottom: 11px solid transparent !important;
+            border-right: 15px solid #e0b001 !important;
+            border-top: 11px solid transparent !important;
+        }
+
+    .bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle
+    {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .poetext
+    {
+        font-size: 80%;
+        line-height: 1.5em;
+        padding-top: 30px;
+    }
+
+    .new img, .comingsoon img
+    {
+        width: 49px;
+        height: 47px;
+    }
+
+    .spotlightdivholder
+    {
+        max-width: 355px;
+    }
+
+    .mypoearea
+    {
+        max-width: 355px;
+        max-height: 450px;
+        margin-left: 0px;
+    }
+
+    .buybtn
+    {
+        margin-right: 15px;
+    }
+
+    .buybtn, .backBtn
+    {
+        font-size: 9px;
+    }
+
+    .slidebtn
+    {
+        width: 20%;
+    }
+    /***************/
+    .signuptile
+    {
+        height: 60px;
+        width: 180px;
+        margin-right: 0px;
+    }
+
+    .col, .col p, .check label, .col input
+    {
+        font-size: 11px;
+        line-height: 18px;
+        font-weight: normal;
+    }
+
+    .urntwrk li .colthree
+    {
+        width: 59px;
+    }
+
+    .securityHelp img
+    {
+        margin-top: 0;
+    }
+
+    .AuthorizeNetSeal img
+    {
+        margin-top: 20px !important;
+    }
+
+    .pageholder h1
+    {
+        font-size: 20px;
+    }
+
+    .contenthold h1
+    {
+        font-size: 14px;
+        width: 242px;
+    }
+
+    .photo, .photo img
+    {
+        width: 78px;
+        height: 78px;
+        margin-left: 47px;
+    }
+
+    .selectcol
+    {
+        width: 136px;
+        padding: 0;
+    }
+
+    .captcha_style
+    {
+        width: 221px;
+    }
+
+    .txtcol
+    {
+        width: 129px;
+        height: 16px;
+    }
+
+    .errormsg, .errormsgpay
+    {
+        font-size: 9px;
+    }
+
+    .securityHelp
+    {
+        display: none;
+    }
+
+    .signuptile img
+    {
+        width: 42px;
+        height: 42px;
+    }
+
+    .signuptile p
+    {
+        font-size: 12px;
+    }
+
+    .addmngr h2
+    {
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .addform
+    {
+        padding: 5px;
+        width: 107.5%;
+    }
+
+    .signupcol
+    {
+        width: 295px;
+        bottom: 9%;
+        left: 30.3%;
+    }
+
+    .level
+    {
+        width: 80px;
+    }
+
+    .addform .level
+    {
+        width: 60px;
+    }
+
+    .urntwrk li .coltwo
+    {
+        width: 115px;
+        margin-right: 0;
+    }
+
+    .valid, .urntwrk li .coltwo, .welcomenote p, .midcol p, .addmngr h2, .addform .level, .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li, .colthree, .mendatory
+    {
+        font-size: 10px !important;
+    }
+
+    .totalLeft, .totalRight
+    {
+        font-size: 18px;
+    }
+
+    .detailsholder .details
+    {
+        width: 174px;
+    }
+
+    #submiterr
+    {
+        width: 41%;
+        line-height: 11px;
+        padding-bottom: 10px;
+    }
+
+    .frnbtm
+    {
+        margin-left: 70px;
+        margin-top: 0;
+    }
+
+    .welcomenote p, .midcol p, .addselect, .signupbtn, .choosepoe li, .choosepoe li a, .addselect a, .addselectact a, .selectcol, .urntwrk .title, .assignpoe1 li
+    {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .choosepoe ul
+    {
+        width: 183px;
+    }
+
+    .choosepoe li
+    {
+        width: 163px;
+    }
+
+    .addselect
+    {
+        background: url(../Images/select-arrow.gif) right no-repeat #575757;
+        padding: 0 37px 0 10px;
+        width: 81px;
+        line-height: 1.2em;
+    }
+
+    .addselectact
+    {
+        background: url(../Images/select-arrow-up.png) right no-repeat #575757;
+        width: 81px;
+    }
+
+    .addform .txtcol
+    {
+        width: 122px;
+    }
+
+    .signuptxt
+    {
+        max-height: 420px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .countryselect
+    {
+        width: 229px;
+        font-size: 12px;
+        color: #808080;
+        line-height: 20px;
+        height: 20px;
+    }
+
+    .assignpoe1
+    {
+        width: 128px;
+    }
+
+    .accounts
+    {
+        margin-left: 30px;
+        width: 494px;
+    }
+
+    .urAccounts
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 370px;
+        min-height: 370px;
+        width: 920px;
+    }
+
+        .accounthd1 table, .urAccounts table
+        {
+            width: 480px;
+        }
+
+            .accounthd1 table td, .urAccounts table td
+            {
+                font-size: 10px;
+            }
+
+                .urAccounts table td img
+                {
+                    width: 32px;
+                    height: 32px;
+                }
+
+    .accounts th:nth-child(n+2)
+    {
+        width: 33%;
+    }
+
+    .accounts th:last-child
+    {
+        width: 25%;
+    }
+
+    .accounthd table th
+    {
+        font-size: 11px;
+    }
+
+    .accounthd table
+    {
+        width: 480px;
+    }
+
+    .AuthorizeNetSeal img
+    {
+        width: 44px;
+        height: 34px;
+    }
+
+    .accordion label img
+    {
+        width: auto !important;
+    }
+
+    .accordion a img
+    {
+        width: 80%;
+    }
+
+    .accordion h3.current, .accordion h3
+    {
+        height: 2px;
+    }
+}

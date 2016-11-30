@@ -1,0 +1,640 @@
+﻿.goal {
+    width: 18%;
+    float: left;
+    margin-right: 4%;
+}
+
+
+    .goal li {
+        background: none repeat scroll 0 0 #808080;
+        cursor: pointer;
+        float: left;
+        margin: 0 0 3% 0;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 29%;
+    }
+
+        .goal li img {
+            position: absolute;
+            right: 0;
+            top: 5%;
+            width: 20%;
+            height: auto;
+        }
+
+    .goal h2 {
+        padding-bottom: 2%;
+        font-size: 120%;
+    }
+
+#excell li {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+#excell .number {
+    background: none repeat scroll 0 0 #E0B001;
+    color: #FFFFFF;
+    height: 0;
+    padding: 2% 0 9% 0;
+    line-height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 11%;
+    font-size: 150%;
+}
+
+#excell li p {
+    position: absolute;
+    width: 80%;
+    right: 5%;
+    padding: 5% 0;
+    bottom:0;
+}
+
+.selected {
+    background: none repeat scroll 0 0 #E0B001 !important;
+    border: 0 !important;
+}
+
+.select {
+    background: url("../../Images/selected.png") no-repeat scroll right top #FFFFFF !important;
+    background-size: 16% 45% !important;
+    border: 0 none !important;
+}
+
+.slider {
+    width: 100%;
+    height: 0;
+    padding-bottom: 10%;
+    position: relative;
+}
+
+    .slider img {
+        height: 104%;
+        width: 100%;
+        position: absolute;
+    }
+
+.goalslideholder {
+    width: 50%;
+    float: left;
+}
+
+.row {
+    clear: both;
+    height: 0;
+    padding-bottom: 11.2%;
+    margin-bottom: 0.3%;
+}
+
+.sliderimg {
+    float: left;
+    height: 0 !important;
+    margin-left: 2%;
+    padding-bottom: 9%;
+    width: 90% !important;
+}
+
+    #quickviewli .sliderimg img, .sliderimg img {
+        height: auto;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+
+.sliderdiv {
+    position: relative;
+    width: 77.5% !important;
+}
+
+.ui-slider-handle {
+    background: url("../../Images/slider-handle.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    cursor: default;
+    height: 0;
+    margin-left: -0.6em;
+    margin-top: -0.1%;
+    outline: medium none;
+    padding-bottom: 11.3%;
+    position: absolute;
+    width: 2% !important;
+    z-index: 2;
+}
+
+#quickviewli .ui-slider-range, .ui-slider-range {
+    background: url("../../Images/goal-slider.png") no-repeat scroll 0 0 / auto 100% rgba(0, 0, 0, 0) !important;
+    height: 0 !important;
+    padding-bottom: 10.5%;
+    position: absolute;
+    z-index: 2;
+}
+
+.ui-widget-content {
+    height: 0;
+    padding-bottom: 10.1%;
+    background: transparent !important;
+}
+
+#share1, #share2, #share3, #share4, #share5 {
+    display: none;
+}
+
+.sharebtn {
+    background: url("../../Images/icons/share.png") no-repeat scroll right center rgba(0, 0, 0, 0) !important;
+    background-size: 100% 90% !important;
+    display: block;
+    float: right !important;
+    position: absolute !important;
+    text-indent: -5000% !important;
+    z-index: 9 !important;
+    left: 18%;
+    top: 12% !important;
+    width: 4%;
+    height: 33%;
+    cursor: pointer;
+}
+
+#share1 {
+    margin-left: 0.5% !important;
+}
+
+#share2 {
+    margin-left: 25.5%;
+}
+
+#share3 {
+    margin-left: 50.5%;
+}
+
+#share4 {
+    margin-left: 75.5%;
+}
+
+#poemodule li p {
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+    color: #ffffff;
+    font-size: 130%;
+}
+
+.goal .slimScrollDiv, .scroll1 {
+    width: 105% !important;
+    height: 10%!important;
+    padding-bottom: 150%!important;
+    position: relative;
+}
+
+#poemodule {
+    position: absolute;
+    height: 120%;
+    width: 90%;
+}
+
+.vs-context-menu {
+    position: absolute;
+    float: left;
+    z-index: 9999;
+    display: none;
+    width: 9%;
+}
+
+    .vs-context-menu ul {
+        float: left;
+        width: 100%;
+    }
+
+    .vs-context-menu li {
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        padding: 3%;
+    }
+
+        .vs-context-menu li:hover {
+            background: #e0b001;
+            color: #fff;
+        }
+
+        .vs-context-menu li:first-child:hover {
+            background: #fff;
+            color: #000;
+            cursor: wait;
+        }
+
+.goalslideholder h2 {
+    font-size: 150%;
+}
+
+.shareall {
+    background: #373737;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    padding: 1% 3%;
+    border: 2px solid #808080;
+}
+
+    .shareall p {
+        width: 100%;
+        color: #fff;
+    }
+
+div:empty {
+    display: none;
+}
+
+.errormsg {
+    width: 70%;
+    float: left;
+    background-size: 4% auto !important;
+    margin-left: -1%;
+    background-position: top 10% left 0 !important;
+}
+
+    .errormsg img {
+        width: 4%;
+        height: auto;
+        margin-bottom: -1%;
+    }
+
+.vs-context-menu .slimScrollDiv, .vs-context-menu .scroll2 {
+    position: relative;
+    width: 98%;
+    height: 0 !important;
+    padding-bottom: 100% !important;
+}
+
+.vs-context-menu .scroll2 {
+    padding-bottom: 95% !important;
+}
+
+.vs-context-menu .slimScrollDiv {
+    border: 0.1em solid #ccc;
+    background: #fff;
+}
+
+    .vs-context-menu .slimScrollDiv ul, .vs-context-menu .scroll2 ul {
+        position: absolute;
+        width: 95%;
+        height: 100%;
+    }
+
+.firstid, .secondid, .thirdid, .forthid {
+    font-size: 90% !important;
+    width: 40% !important;
+    background-size: 100% auto !important;
+    height: 30% !important;
+    top: 105% !important;
+    white-space: nowrap;
+    line-height: 1.5em;
+    padding-top: 1%;
+}
+
+.firstid {
+    left: 5.2%;
+}
+
+.secondid {
+    left: 30%;
+}
+
+.thirdid {
+    left: 55.2%;
+}
+
+.forthid {
+    left: 80%;
+}
+
+.poepopupbg {
+    background: url(../../Images/trans.png);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    width: 15%;
+    height: 0;
+    padding-bottom: 15%;
+    background: url(../../Images/other-popup-bg.png) #fff;
+    background-size: 100% 100%;
+    z-index: 9999999;
+    left: 42.5% !important;
+    top: 38%;
+    border: 0.3em solid #353535;
+    margin: 0;
+}
+
+.poepopuphd {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 7%;
+    background: #353535;
+}
+
+.close {
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    background: url(../../images/close.png) no-repeat;
+    background-size: 100% auto;
+}
+
+    .close:hover {
+        background: url(../../images/close-hover.png) no-repeat;
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+
+.popupcontent {
+    position: absolute;
+    text-align: center;
+    top: 46%;
+    font-size: 100%;
+    padding:0 0 0 16%;
+    width:67%;
+}
+
+.popupcontentinner {
+    width: 95%;
+    margin: 0 auto;
+    height: 14vw;
+    display: table;
+}
+
+.popupcontentinnertxt {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.popupcontent img {
+    width: 9%;
+    height: auto;
+    margin-bottom: -2%;
+}
+
+.indexrightarrow {
+    background: url("../../Images/chart/standing/index-arrow.png") no-repeat scroll left center / 100% 100% rgba(0, 0, 0, 0);
+    height: 100%;
+    left: -14%;
+    position: absolute;
+    width: 14%;
+}
+
+.indexrightclose {
+    background: url("../../images/chart/standing/plus-bg.png") no-repeat scroll center center / 70% 70% #E0B001;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 0;
+    left: -2.5%;
+    padding-bottom: 4.5%;
+    position: absolute;
+    top: -3%;
+    width: 4.5%;
+    z-index: 9;
+}
+
+.indexright {
+    background: none repeat scroll 0 0 #5E5E5E;
+    height: auto;
+    padding-bottom: 1%;
+    position: fixed;
+    right: -24.5%;
+    width: 25%;
+    z-index: 9999;
+    top: 10.9vw;
+}
+
+.indexrightclose1 {
+    background: url("../../images/chart/standing/minus-bg.png") no-repeat scroll center center / 70% 70% #E0B001;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 0;
+    padding-bottom: 4.5%;
+    position: absolute;
+    right: 0;
+    top: -4.5%;
+    width: 4.5%;
+    z-index: 9;
+}
+
+.indexright h1 {
+    color: #FFFFFF;
+    padding: 3% 0;
+}
+
+.helpcontent {
+    margin-left: 2.5%;
+    margin-top: 3%;
+}
+
+.hlprow {
+    background: url("../../images/helpcont-divider.png") no-repeat scroll center bottom / 100% 1px rgba(0, 0, 0, 0);
+    clear: both;
+    float: left;
+    margin-bottom: 1.5%;
+    padding-bottom: 2%;
+    width: 98%;
+}
+
+.hlpheading {
+    color: #E0B001;
+    float: left;
+    font-weight: bold;
+    margin-right: 3%;
+    width: 22%;
+}
+
+.hlpcont {
+    color: #FFFFFF;
+    float: left;
+    width: 100%;
+}
+
+
+/*********************************************ravi *********************************/
+
+.modquestionlist {
+    position: absolute;
+    height: 118%;
+    width: 90%;
+}
+
+
+#quickFeed3
+{
+    position: absolute;
+    width: 70%;
+    
+}
+
+
+.slimScrollDiv, .scroll2 {
+    width: 105% !important;
+    height: 10%!important;
+    padding-bottom: 150%!important;
+    position: relative;
+}
+
+
+.goalmain .slimScrollDiv, .scroll3 {
+    width: 119% !important;
+    height: 250px;
+    padding-bottom: 15px!important;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.goalmain {
+    height: 100px;
+}
+
+
+.goalmain .slimScrollBar {
+    right:15% !important;
+}
+.goalmain .slimScrollRail {
+
+       right:15% !important;
+}
+
+.dummy-slimscrollbar-backgound
+{
+    background: none !important;
+    top: 0px !important;
+}
+
+
+
+
+@media screen and (min-width: 1279px) and (max-width: 1358px) {
+
+    .goalmain .slimScrollDiv, .scroll3 {
+
+
+        height:325px !important;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 1359px) and (max-width: 1364px) {
+
+    .goalmain .slimScrollDiv, .scroll3 {
+
+
+        height:345px !important;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1359px) and (max-width: 1439px) {
+
+    .goalmain .slimScrollDiv, .scroll3 {
+
+
+        height:345px !important;
+    }
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+
+    .goalmain .slimScrollDiv, .scroll3 {
+
+
+        height:367px !important;
+    }
+}
+
+
+@media screen and (min-width: 1600px) and (max-width: 1679px) {
+
+    .goalmain .slimScrollDiv, .scroll3 {
+
+
+        height:408px !important;
+    }
+}
+
+
+@media screen and (min-width: 1680px) and (max-width: 1689px) {
+
+
+    .goalmain .slimScrollDiv, .scroll3 {
+
+
+        height:430px !important;
+    }
+}
+
+
+@media screen and (min-width: 1690px) and (max-width: 1929px) {
+
+    .goalmain .slimScrollDiv, .scroll3 {
+
+
+        height:492px !important;
+    }
+
+}
+
+
+@media screen and (min-width: 1930px) and (max-width: 2600px) {
+
+
+    .goalmain .slimScrollDiv, .scroll3 {
+
+
+        height:650px !important;
+    }
+
+}
+
+.scroll1 ul {
+    position: absolute !important;
+    height: 98% !important;
+}
+
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #quickviewli .ui-slider-range, .ui-slider-range {
+        background:url("../../Images/goal-slider.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 0 0 ;
+        background-size: auto 100% ;
+        background-color: transparent !important;
+    }
+
+
+    .ui-slider-handle {
+        background:url("../../Images/slider-handle.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size:100% 100%;
+        background-color:transparent;
+    }
+}

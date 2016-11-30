@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FAD7A872-198B-44F4-8C24-16990079E423}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bExcellent.Service.Util</RootNamespace>
+    <AssemblyName>bExcellent.Service.Util</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\StringValueAttribute.cs" />
+    <Compile Include="Domain\Accounts.cs" />
+    <Compile Include="Domain\Country.cs" />
+    <Compile Include="Domain\Dashboard.cs" />
+    <Compile Include="Domain\Designation.cs" />
+    <Compile Include="Domain\Feedback.cs" />
+    <Compile Include="Domain\FeedbackDetail.cs" />
+    <Compile Include="Domain\Goal.cs" />
+    <Compile Include="Domain\Module.cs" />
+    <Compile Include="Domain\Network.cs" />
+    <Compile Include="Domain\Notification.cs" />
+    <Compile Include="Domain\Password.cs" />
+    <Compile Include="Domain\Payment.cs" />
+    <Compile Include="Domain\Plan.cs" />
+    <Compile Include="Domain\POE.cs" />
+    <Compile Include="Domain\PoeModules.cs" />
+    <Compile Include="Domain\Question.cs" />
+    <Compile Include="Domain\Reports.cs" />
+    <Compile Include="Domain\TimeZone.cs" />
+    <Compile Include="Domain\User.cs" />
+    <Compile Include="Domain\UserPOEMapping.cs" />
+    <Compile Include="Domain\YammerContent.cs" />
+    <Compile Include="Domain\Zone.cs" />
+    <Compile Include="Enumeration\Enumeration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\AuthenticationRequest.cs" />
+    <Compile Include="Request\CreateFeedbackRequest.cs" />
+    <Compile Include="Request\CreateUserMappingRequest.cs" />
+    <Compile Include="Request\GetNetworkUserHtml.cs" />
+    <Compile Include="Request\NewFeedbackRequest.cs" />
+    <Compile Include="Request\PPAResults.cs" />
+    <Compile Include="Request\RegisterUserData.cs" />
+    <Compile Include="Request\SavePOEResultRequest.cs" />
+    <Compile Include="Request\SignupRequest.cs" />
+    <Compile Include="Request\UpdatePasswordRequest.cs" />
+    <Compile Include="Request\UpdatePOEResultRequest.cs" />
+    <Compile Include="Request\UserSurvey.cs" />
+    <Compile Include="Response\AuthenticationResult.cs" />
+    <Compile Include="Response\CreatedFeedback.cs" />
+    <Compile Include="Response\DashBoard.cs" />
+    <Compile Include="Response\DET.cs" />
+    <Compile Include="Response\DIYQuestions.cs" />
+    <Compile Include="Response\Notification.cs" />
+    <Compile Include="Response\OutstandingFeedbacks.cs" />
+    <Compile Include="Response\Partner.cs" />
+    <Compile Include="Response\PPAReports.cs" />
+    <Compile Include="Response\PSEAnswers.cs" />
+    <Compile Include="Response\PSEReports.cs" />
+    <Compile Include="Response\PSESurvey.cs" />
+    <Compile Include="Response\PSMReports.cs" />
+    <Compile Include="Response\ReportContent.cs" />
+    <Compile Include="Response\SavedQuestion.cs" />
+    <Compile Include="Response\StakeHolders.cs" />
+    <Compile Include="Response\StandingScore.cs" />
+    <Compile Include="Response\SyncScore.cs" />
+    <Compile Include="Response\TopLeadsReport.cs" />
+    <Compile Include="Utils\Email.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bExcellent.Service.DataAccess\bExcellent.Service.DataAccess.csproj">
+      <Project>{BB9B2B38-0147-421D-AFF0-09ECCF1F2E73}</Project>
+      <Name>bExcellent.Service.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

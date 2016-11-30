@@ -1,0 +1,180 @@
+
+
+
+
+/* DEMO 2 */
+
+.wrapper-dropdown-2 {
+    /* Size and position */
+    position: fixed; /* Enable absolute positionning for children and pseudo elements */
+   
+    margin: 0 auto;
+    padding: 10px 15px;
+
+    /* Styles */
+    background: rgb(94, 94, 94);
+    cursor: pointer;
+    outline: none;
+    top: 20px;
+    z-index: 9999;
+    left: 500px;
+    width: 120px;
+}
+
+.wrapper-dropdown-2:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -10px;
+    background:url("../images/select-bg.png") no-repeat;
+}
+
+.wrapper-dropdown-2 .dropdownlist {
+  /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    right: 0px;
+    font-size: 12px;
+    width: 120px;
+
+    /* Styles */
+    background: white;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    list-style: none;
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+    margin-top: -30px;
+}
+
+.wrapper-dropdown-2 .dropdownlist li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-size: 12px;
+}
+
+
+/* Hover state */
+
+.wrapper-dropdown-2 .dropdownlist li:hover a {
+    color: #fff;
+    background: rgb(224, 176, 1)
+}
+
+/* Active state */
+
+.wrapper-dropdown-2.active:after {
+    /*border-width: 0px 6px 6px 6px;
+    border-style: solid;
+    border-color: grey transparent;*/
+    background:url("../images/select-bg-hover.png") no-repeat;
+    
+    }
+
+.wrapper-dropdown-2.active .dropdownlist {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* No CSS3 support */
+
+.no-opacity       .wrapper-dropdown-2 .dropdownlist,
+.no-pointerevents .wrapper-dropdown-2 .dropdownlist {
+    display: none;
+    opacity: 1; /* If opacity support but no pointer-events support */
+    pointer-events: auto; /* If pointer-events support but no pointer-events support */
+}
+
+.no-opacity       .wrapper-dropdown-2.active .dropdownlist,
+.no-pointerevents .wrapper-dropdown-2.active .dropdownlist {
+    display: block;
+}
+#Qno1 .ui-slider-range
+        {
+            background-image: url(../../Images/img/slidebg2.png);
+            cursor: pointer;
+        }
+        .feedback_question
+        {
+            width: 900px;
+            max-height: 500px;
+            min-height: 500px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .feedback_question ul
+        {
+            list-style-type: none;
+        }
+        code:before
+        {
+            position: absolute;
+            content: 'Code:';
+            top: -1.35em;
+            left: 0;
+        }
+        code
+        {
+            margin-top: 1.5em;
+            position: relative;
+            background: #eee;
+            border: 1px solid #aaa;
+            white-space: pre;
+            padding: .25em;
+            min-height: 1.25em;
+        }
+        code:before, code
+        {
+            display: block;
+            text-align: left;
+        }
+         .sliderdiv .ui-slider-range
+        {
+            background-image: url(../Images/img/slidebg2.png);
+            cursor: pointer;
+        }
+        .sliderdiv
+        {
+            cursor: pointer;
+        }
+          #Qn1 .ui-slider-range
+        {
+            background-image: url(/../images/img/slidebg2.png);
+            cursor: pointer;
+        }
+        #Qn2 .ui-slider-range
+        {
+            background-image: url(/../images/img/slidebg2.png);
+            cursor: pointer;
+        }
+        #Qn3 .ui-slider-range
+        {
+            background-image: url(/../images/img/slidebg2.png);
+            cursor: pointer;
+        }
+        #Qn4 .ui-slider-range
+        {
+            background-image: url(/../images/img/slidebg2.png);
+            cursor: pointer;
+        }
+        #Qn5 .ui-slider-range
+        {
+            background-image: url(/../images/img/slidebg2.png);
+            cursor: pointer;
+        }

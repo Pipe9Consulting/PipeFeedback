@@ -1,0 +1,117 @@
+﻿h1
+{
+    padding:10px 0;
+}
+.signuptile  
+{
+    width:17.5%;
+    float:left;
+    margin-right:4.7%;
+    background:#808080;
+    position:relative;
+    padding-bottom:8.5%;
+}
+.signuptile .img, .signuptile p
+{
+    position:absolute;
+}
+.signuptile .img
+{
+    width:100%;
+    text-align:center;
+    padding-top:10%;
+}
+.signuptile .img img
+{
+    width:22%;
+    height:22%;
+}
+.signuptile p
+{
+    bottom:5%;
+    left:4%; 
+    color:#fff;
+}
+.accounts
+{
+    width:67%;
+    float:left;
+}
+/*.urAccounts {
+    overflow-x: hidden;
+    height:0;
+    padding-bottom:47%;
+    overflow-y: auto;
+}*/
+.clr
+{
+    clear:both;
+}
+.accounts table {
+    background: none repeat scroll 0 0 #F2F2F2;
+}
+.accounts table, .accounthd1 table
+{
+    width:100%;
+    border-collapse:inherit !important;
+}
+.urAccounts img
+{
+    width:45%;
+    height:auto;
+}
+.accounts th {
+    width: 8%;
+    color:#5e5e5e;
+}
+.accounts th {
+    border-bottom: 1px solid #E5E5E5;
+    font-weight: 400;
+    padding: 2% 0;
+    text-align: center;
+}
+.accounts td:nth-child(n+2), .accounts th:nth-child(n+2) {
+    text-align: left;
+    width: 15%;
+}
+.accounts td:nth-child(n+3), .accounts th:nth-child(n+3) {
+    background: none repeat scroll 0 0 #EAEAEA;
+    text-align: center;
+    width: 20%;
+}
+.accounts td:nth-child(n+4), .accounts th:nth-child(n+4) {
+    background: none repeat scroll 0 0 #F2F2F2;
+    text-align: center;
+    width: 15%;
+}
+.accounts td {
+    border-bottom: 1px solid #E5E5E5;
+    display: table-cell;
+    padding: 8px 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 8%;
+    color:#5e5e5e;
+}
+.accounthd1 td {
+    background: none repeat scroll 0 0 #F2F2F2 !important;
+    border-top: 1px solid #CCCCCC !important;
+}
+.accounthd1 .printtd {
+    background: none repeat scroll 0 0 #E5E5E5 !important;
+    cursor: pointer;
+    text-align: right !important;
+}
+.accounthd1 .printtd img
+{
+    width:4%;
+    height:auto;
+}
+.printtd div {
+    float: right;
+    padding: 5px 0 5px 5px;
+}
+.slimScrollDiv,  .scroll1 {
+    height: 0 !important;
+    padding-bottom: 48% !important;
+}

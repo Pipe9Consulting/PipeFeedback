@@ -1,0 +1,215 @@
+﻿#scroller .pricetiles
+{
+    width: 18%;
+    float: left;
+}
+#scroller .pricetiles li
+{
+    width: 46.2%;
+    padding-bottom: 46.2%;
+    float: left;
+    margin: 0 3.3% 3.3% 0;
+    position: relative;
+    background: #808080;
+    cursor:pointer;
+}
+#scroller .pricetiles li .icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5%;
+    width: 35%;
+    height: 32%;
+}
+
+#scroller .pricetiles li .icon img
+{
+    width: 100%;
+    height: 100%;
+}
+#scroller .pricetiles li p
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    padding: 5%;
+    color: #fff;
+}
+#scroller .priceind, #scroller .priceorg
+{
+    float: left;
+    width: 78%;
+    position: relative;
+    margin-left:4%;
+    overflow:hidden;
+}
+#scroller .priceind img, #scroller .priceorg img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84%;
+    margin-top:6%;
+}
+#scroller .priceind td img, #scroller .priceorg td img
+{
+    position: relative;
+    height: auto;
+    width:auto;
+    margin:0;
+}
+#scroller .priceind .column2 img
+{
+    width:7%;
+}
+#scroller .priceorg .column2 img
+{
+    width:7.5%;
+}
+.priceind, .priceorg
+{
+    width: 73% !important;
+    position: relative;
+}
+
+.priceind img, .priceorg img
+{
+    position: absolute;
+    left: 38px;
+    bottom: 0;
+    width: 97%;
+    height: 83.5%;
+}
+
+.priceind td, .priceorg td
+{
+    color: #353535;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    padding:0.2% 0.5%;
+}
+.priceorg td
+{
+    padding:0.3% 0.5%;
+}
+
+.priceind table, .priceorg table
+{
+    width: 100%;
+}
+
+.priceind table img, .priceorg table img
+{
+    position: inherit;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.priceind td:nth-child(n+1), .priceind td:nth-child(n+2), .priceorg td:nth-child(n+1), .priceorg td:nth-child(n+2)
+{
+    background: #dad9d9;
+    border-right: 1px solid #dad9d9;
+}
+.priceind td:nth-child(n+1), .priceorg td:nth-child(n+1)
+{
+    width:1%;
+}
+.firstimg
+{
+    width:0.9vw !important;
+}
+.secondimg
+{
+    width:60% !important;
+}
+.priceind td:nth-child(n+2), .priceorg td:nth-child(n+2)
+{
+    width:5.5%;
+    text-align:center;
+}
+
+.priceind td:nth-child(n+3)
+{
+    background: transparent;
+    width:auto;
+    text-align:left;
+}
+.priceorg td:nth-child(n+3)
+{
+    background: transparent;
+    width:1%;
+    text-align:left;
+}
+.whitebg
+{
+    background: #fff !important;
+}
+
+.priceheading
+{
+    background: #efefef !important;
+    border-top: 1px solid #DAD9D9 !important;
+    text-align: center !important;
+    font-weight: 600;
+}
+
+#wrapper .priceheading h1
+{
+    padding: 0 !important;
+}
+
+.priceind .column1
+{
+    width: 33% !important;
+    text-align: left;
+}
+
+.priceorg .column1
+{
+    width: 68% !important;
+    text-align: left;
+}
+
+.priceind .column2, .priceorg .column2
+{
+    width: 28% !important;
+    text-align: center !important;
+}
+
+.transparent
+{
+    background: transparent !important;
+}
+.priceheading h2
+{
+    color: #000;
+    font-weight:500;
+}
+
+.priceheading h3
+{
+    padding-top: 1%;
+}
+
+.priceheading h4
+{
+    padding-bottom: 2%;
+}
+.sign
+{
+    background: none repeat scroll 0 0 #DEAF00;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    padding:1%;
+}

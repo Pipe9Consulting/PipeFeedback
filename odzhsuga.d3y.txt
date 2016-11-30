@@ -1,0 +1,447 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+# Conflicts:
+#	Service/bExcellent.Service.DataAccess/obj/Debug/bExcellent.Service.DataAccess.csproj.FileListAbsolute.txt
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 2 and 2 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   .gitignore
+#	deleted:    CheckSite/obj/Debug/build.force
+#	new file:   DashBoardEmails/bin/Debug/Quartz.xml
+#	modified:   DashBoardEmails/obj/Debug/DashBoardEmails.csproj.FileListAbsolute.txt
+#	deleted:    DashBoardEmails/obj/Debug/build.force
+#	new file:   DemoCloudAsCoachService/bin/Debug/Common.Logging.Core.xml
+#	new file:   DemoCloudAsCoachService/bin/Debug/Common.Logging.xml
+#	new file:   DemoCloudAsCoachService/bin/Debug/Quartz.xml
+#	modified:   DemoCloudAsCoachService/obj/Debug/DemoCloudAsCoachService.csproj.FileListAbsolute.txt
+#	deleted:    DemoCloudAsCoachService/obj/Debug/build.force
+#	new file:   KessakuYammerNotification/bin/Debug/Common.Logging.Core.xml
+#	new file:   KessakuYammerNotification/bin/Debug/Common.Logging.xml
+#	new file:   KessakuYammerNotification/bin/Debug/Quartz.xml
+#	modified:   KessakuYammerNotification/obj/Debug/KessakuYammerNotification.csproj.FileListAbsolute.txt
+#	deleted:    KessakuYammerNotification/obj/Debug/build.force
+#	new file:   Kessaku_notification/bin/Debug/Common.Logging.Core.xml
+#	new file:   Kessaku_notification/bin/Debug/Common.Logging.xml
+#	new file:   Kessaku_notification/bin/Debug/Quartz.xml
+#	modified:   Kessaku_notification/obj/Debug/KessakuDemoNotification.csproj.FileListAbsolute.txt
+#	deleted:    Kessaku_notification/obj/Debug/build.force
+#	modified:   Service/bExcellent.Service.BusinessLogic/POE/POEBL.cs
+#	modified:   Service/bExcellent.Service.BusinessLogic/POE/POEBLDataAccess.cs
+#	modified:   Service/bExcellent.Service.BusinessLogic/obj/Debug/bExcellent.Service.BusinessLogic.csproj.FileListAbsolute.txt
+#	modified:   Service/bExcellent.Service.DataAccess/bExcellent.dbml
+#	modified:   Service/bExcellent.Service.DataAccess/bExcellent.designer.cs
+#	deleted:    Service/bExcellent.Service.DataAccess/obj/Debug/bExcellent.Service.DataAccess.csproj.FileListAbsolute.txt
+#	modified:   Service/bExcellent.Service.Util/obj/Debug/bExcellent.Service.Util.csproj.FileListAbsolute.txt
+#	modified:   Service/bExcellent.Service/FeedbackService.svc.cs
+#	modified:   Service/bExcellent.Service/obj/Debug/bExcellent.Service.csproj.FileListAbsolute.txt
+#	modified:   WebSite/ExcelReportGenerator/obj/Debug/ExcelReportGenerator.csproj.FileListAbsolute.txt
+#	modified:   WebSite/bExcellent.mvc/Controllers/DevelopmentController.cs
+#	modified:   WebSite/bExcellent.mvc/Controllers/FeedbackController.cs
+#	new file:   WebSite/bExcellent.mvc/Images/Account Executive_Intro.png
+#	new file:   WebSite/bExcellent.mvc/Images/Account Manager_Intro.png
+#	new file:   WebSite/bExcellent.mvc/Images/AccountExecutive.png
+#	new file:   WebSite/bExcellent.mvc/Images/AccountExecutive_Intro.png
+#	new file:   WebSite/bExcellent.mvc/Images/AccountManager.png
+#	new file:   WebSite/bExcellent.mvc/Images/Inside Sales_Intro.png
+#	new file:   WebSite/bExcellent.mvc/Images/InsideSales.png
+#	modified:   WebSite/bExcellent.mvc/Images/KessakuImage/AccountExecutive.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/AccountExecutive_pane.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/AccountExecutive_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/AccountExecutive_poe.png
+#	modified:   WebSite/bExcellent.mvc/Images/KessakuImage/AccountManager.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/AccountManager_pane.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/AccountManager_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/Inside Sales_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/InsideSales.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/InsideSales_pane.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/InsideSales_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/PoE/AccountExecutive_large.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/PoE/AccountManager_large.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/PoE/InsideSales_large.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/PoE/SalesInsightsManager_large.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/PoE/SalesManager_large.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/Sales Manager_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/SalesInsightsManager.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/SalesInsightsManager_pane.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/SalesInsightsManager_poe.jpg
+#	modified:   WebSite/bExcellent.mvc/Images/KessakuImage/SalesManager.png
+#	new file:   WebSite/bExcellent.mvc/Images/KessakuImage/SalesManager_pane.png
+#	new file:   WebSite/bExcellent.mvc/Images/Sales Insights Manager_Intro.png
+#	new file:   WebSite/bExcellent.mvc/Images/Sales Manager_Intro.png
+#	new file:   WebSite/bExcellent.mvc/Images/SalesInsightsManager.png
+#	new file:   WebSite/bExcellent.mvc/Images/SalesManager.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive1-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive1.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive1_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive1h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive2-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive2.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive2_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive2h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive3-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive3.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive3_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive3h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive4-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive4.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive4_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive4h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive5-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive5.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive5_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountExecutive5h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager1-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager1.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager1_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager1h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager2-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager2.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager2_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager2h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager3-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager3.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager3_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager3h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager4-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager4.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager4_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager4h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager5-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager5.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager5_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/AccountManager5h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/Bing.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales1-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales1.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales1_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales1h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales2-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales2.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales2_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales2h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales3-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales3.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales3_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales3h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales4-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales4.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales4_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales4h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales5-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales5.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales5_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/InsideSales5h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager1-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager1.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager1_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager1h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager2-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager2.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager2_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager2h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager3-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager3.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager3_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager3h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager4-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager4.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager4_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager4h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager5-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager5.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager5_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesInsightsManager5h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager1-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager1.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager1_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager1h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager2-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager2.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager2_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager2h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager3-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager3.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager3_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager3h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager4-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager4.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager4_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager4h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager5-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager5.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager5_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager5h.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager6-small.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager6-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager6.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager6_S.png
+#	new file:   WebSite/bExcellent.mvc/Images/icons/SalesManager6h.png
+#	new file:   WebSite/bExcellent.mvc/Images/img/survey_1.png
+#	new file:   WebSite/bExcellent.mvc/Images/img/survey_bg.png
+#	modified:   WebSite/bExcellent.mvc/Scripts/ref/DevPriorities/devLanding.js
+#	modified:   WebSite/bExcellent.mvc/Scripts/ref/DevPriorities/devPriorities.js
+#	modified:   WebSite/bExcellent.mvc/Scripts/ref/Feedback/feedbacklanding.js
+#	new file:   WebSite/bExcellent.mvc/Scripts/ref/Feedback/jquery.mCustomScrollbar.concat.min.js
+#	modified:   WebSite/bExcellent.mvc/Scripts/ref/Feedback/takefeedbackdv.js
+#	modified:   WebSite/bExcellent.mvc/Service References/FeedbackWCF/FeedbackService1.wsdl
+#	modified:   WebSite/bExcellent.mvc/Service References/FeedbackWCF/FeedbackService13.xsd
+#	modified:   WebSite/bExcellent.mvc/Service References/FeedbackWCF/Reference.cs
+#	new file:   WebSite/bExcellent.mvc/Styles/feedback/jquery.mCustomScrollbar.css
+#	new file:   WebSite/bExcellent.mvc/Styles/feedback/surveyFb.css
+#	modified:   WebSite/bExcellent.mvc/Views/Development/Priorities.aspx
+#	modified:   WebSite/bExcellent.mvc/Views/Feedback/Detailedview.aspx
+#	modified:   WebSite/bExcellent.mvc/Views/SignUp/PoELibrary.aspx
+#	modified:   WebSite/bExcellent.mvc/bExcellent.mvc.csproj
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/Account Executive_Intro.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/Account Manager_Intro.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/AccountExecutive.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/AccountExecutive_Intro.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/AccountManager.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/Inside Sales_Intro.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/InsideSales.png
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/AccountExecutive.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/AccountExecutive_pane.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/AccountExecutive_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/AccountExecutive_poe.png
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/AccountManager.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/AccountManager_pane.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/AccountManager_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/Inside Sales_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/InsideSales.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/InsideSales_pane.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/InsideSales_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/PoE/AccountExecutive_large.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/PoE/AccountManager_large.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/PoE/InsideSales_large.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/PoE/SalesInsightsManager_large.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/PoE/SalesManager_large.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/Sales Manager_poe.jpg
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/SalesInsightsManager.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/SalesInsightsManager_pane.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/SalesInsightsManager_poe.jpg
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/SalesManager.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/KessakuImage/SalesManager_pane.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/Sales Insights Manager_Intro.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/Sales Manager_Intro.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/SalesInsightsManager.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/SalesManager.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive1-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive1.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive1_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive1h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive2-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive2.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive2_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive2h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive3-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive3.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive3_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive3h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive4-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive4.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive4_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive4h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive5-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive5.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive5_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountExecutive5h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager1-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager1.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager1_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager1h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager2-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager2.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager2_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager2h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager3-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager3.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager3_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager3h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager4-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager4.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager4_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager4h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager5-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager5.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager5_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/AccountManager5h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales1-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales1.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales1_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales1h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales2-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales2.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales2_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales2h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales3-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales3.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales3_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales3h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales4-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales4.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales4_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales4h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales5-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales5.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales5_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/InsideSales5h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager1-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager1.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager1_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager1h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager2-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager2.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager2_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager2h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager3-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager3.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager3_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager3h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager4-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager4.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager4_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager4h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager5-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager5.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager5_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesInsightsManager5h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager1-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager1-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager1.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager1_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager1h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager2-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager2-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager2.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager2_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager2h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager3-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager3-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager3.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager3_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager3h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager4-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager4-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager4.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager4_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager4h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager5-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager5-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager5.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager5_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager5h.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager6-small.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager6-small_selected.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager6.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager6_S.png
+#	new file:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Images/icons/SalesManager6h.png
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Scripts/ref/DevPriorities/devLanding.js
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Scripts/ref/DevPriorities/devPriorities.js
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Scripts/ref/Feedback/feedbackGuide.js
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Scripts/ref/Feedback/feedbacklanding.js
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Scripts/ref/Feedback/managerfeedback.js
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Scripts/ref/Feedback/takefeedbackdv.js
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Styles/feedback/detailedview.css
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Styles/feedback/feedbackGuide.css
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Styles/feedback/feedbacklanding.css
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Styles/feedback/managerfeedback.css
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Views/Development/Priorities.aspx
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Views/Feedback/Detailedview.aspx
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Views/Feedback/FeedbackGuide.aspx
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Views/Feedback/Managerfeedback.aspx
+#	modified:   WebSite/bExcellent.mvc/obj/Release/Package/PackageTmp/Views/SignUp/PoELibrary.aspx
+#	modified:   _ReSharper.bExcellent/AspFileDataCache.dat
+#	modified:   _ReSharper.bExcellent/AssemblyInfoCache.dat
+#	modified:   _ReSharper.bExcellent/BuildScriptCache/.crc
+#	modified:   _ReSharper.bExcellent/CompletionStatistics/Statistics.dat
+#	modified:   _ReSharper.bExcellent/ConditionalNames/.crc
+#	modified:   _ReSharper.bExcellent/ConditionalNames/4/6d9677f8.dat
+#	modified:   _ReSharper.bExcellent/GeneratedFiles/.crc
+#	modified:   _ReSharper.bExcellent/GeneratedFiles/4/6d9677f8.dat
+#	modified:   _ReSharper.bExcellent/JSTest/.crc
+#	modified:   _ReSharper.bExcellent/JSTest/2/5f144979.dat
+#	modified:   _ReSharper.bExcellent/JavaScriptCache/.crc
+#	modified:   _ReSharper.bExcellent/JavaScriptCache/9/5bfc6413.dat
+#	modified:   _ReSharper.bExcellent/MVC/.crc
+#	modified:   _ReSharper.bExcellent/MvcAnnotations/.crc
+#	modified:   _ReSharper.bExcellent/NamedArguments/.crc
+#	deleted:    _ReSharper.bExcellent/PersistentCaches/000411.sst
+#	deleted:    _ReSharper.bExcellent/PersistentCaches/000414.sst
+#	deleted:    _ReSharper.bExcellent/PersistentCaches/000417.sst
+#	renamed:    _ReSharper.bExcellent/PersistentCaches/000409.sst -> _ReSharper.bExcellent/PersistentCaches/000422.sst
+#	new file:   _ReSharper.bExcellent/PersistentCaches/000424.sst
+#	new file:   _ReSharper.bExcellent/PersistentCaches/000427.sst
+#	new file:   _ReSharper.bExcellent/PersistentCaches/000430.sst
+#	modified:   _ReSharper.bExcellent/PersistentCaches/CURRENT
+#	modified:   _ReSharper.bExcellent/PersistentCaches/LOG
+#	modified:   _ReSharper.bExcellent/PersistentCaches/LOG.old
+#	deleted:    _ReSharper.bExcellent/PersistentCaches/MANIFEST-000416
+#	new file:   _ReSharper.bExcellent/PersistentCaches/MANIFEST-000429
+#	modified:   _ReSharper.bExcellent/TagPrefixes/.crc
+#	modified:   _ReSharper.bExcellent/WebSymbols/.crc
+#	new file:   bExcellentNotificationService/bin/Debug/Common.Logging.Core.xml
+#	new file:   bExcellentNotificationService/bin/Debug/Common.Logging.xml
+#	new file:   bExcellentNotificationService/bin/Debug/Quartz.xml
+#	modified:   bExcellentNotificationService/obj/Debug/KessakuLiveNotificationService.csproj.FileListAbsolute.txt
+#	deleted:    bExcellentNotificationService/obj/Debug/build.force
+#
+

@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Network.master.cs" Inherits="bExcellent.mvc.Views.Shared.Network" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="NetworkHeader" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../../Styles/network.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/mystyle.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/grid.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/common.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/network.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src="../../Scripts/ref/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/myscroll.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/iscroll.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/jquery.tabSlideOut.v1.4.1.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="header">
+            <div class="main">
+                <div class="accordion">
+                    <img src="../../Images/belogo.png" alt="Bexcellent" align="left" />
+                    <h3>
+                    </h3>
+                    <div class="pane">
+                        <ul id="indicator">
+                            <li><a>
+                                <input checked="checked" id="nav_a" name="option" type="radio" value="nav_a" />
+                                <label for="nav_a">
+                                    <img src="../../Images/menu1.png" alt="Tile" />Wall</label></a></li>
+                            <li><a>
+                                <input name="option" id="nNetwork" type="radio" value="../../Network/Network" onclick="pageRedirect(this);" />
+                                <label for="nNetwork">
+                                    <img src="../../Images/menu2.png" alt="Tile" />Network</label></a></li>
+                            <li><a>
+                                <input name="option" id="nFeedback" type="radio" value="../../Feedback/Feedback"
+                                    onclick="pageRedirect(this);" />
+                                <label for="nFeedback">
+                                    <img src="../../Images/menu3.png" alt="Tile" />Feedback</label>
+                            </a></li>
+                            <li><a>
+                                <input name="option" id="nav_d" type="radio" value="nav_c" />
+                                <label for="nav_d">
+                                    <img src="../../Images/menu4.png" alt="Tile" />Tile</label>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="login">
+                    <li class="dropdown lgn"><a href="#" id="loggedinUser">
+                        <%
+                            if (Session["Uname"] != null)
+                            {
+                                Response.Write(Session["Uname"].ToString());
+                            }
+                        %></a><img src="../../Images/user.png" alt="User" align="right" />
+                        <ul>
+                            <li><a href="#">Forgot Password</a></li>
+                            <li><a href="#">Account Setting</a></li>
+                            <li><a href="../Home/SignOut">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="login">
+                    <li class="dropdown nt"><a href="#">Choose your Network</a><img src="../../Images/icons/network-menu.png"
+                        alt="User" align="right" />
+                        <ul id="networklist">
+                            <li><a href="#">Network 1</a></li>
+                            <li><a href="#">Network 2</a></li>
+                            <li class="brdrnil"><a href="#">Network 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div style="margin-top: 20px; float: right; margin-right: -250px;">
+                    <span id="yammer-login" style="margin-left: 300px; margin-top: 20px;"></span>
+                </div>
+            </div>
+            <div id="hiddenValues" style="visibility: hidden">
+                <div id="userid" runat="server" style="visibility: hidden">
+                </div>
+                <div id="selectedpoe" runat="server" style="visibility: hidden">
+                </div>
+                <div id="createdFeedbacks" runat="server" style="visibility: hidden">
+                </div>
+                <div id="selectedPages" runat="server" style="visibility: hidden">
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="Networkcontent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+            <div class="main">
+                <div class="copyright">
+                    <span>© 2013 pipe9consulting.com</span><span>Terms</span><span>Privacy</span><span>FAQ</span></div>
+                <div class="bukatutup">
+                    Menu</div>
+                <div id="target">
+                    <ul>
+                        <li>Your Network</li>
+                        <li>You</li>
+                        <li>Your Managers</li>
+                        <li>Your Team Members</li>
+                        <li>Your Peers</li>
+                        <li>Your Customers & Partners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

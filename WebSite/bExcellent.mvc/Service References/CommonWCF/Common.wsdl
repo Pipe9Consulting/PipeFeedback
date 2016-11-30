@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Common" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8099/Common.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8099/Common.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8099/Common.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
+      <xsd:import schemaLocation="http://localhost:8099/Common.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
+      <xsd:import schemaLocation="http://localhost:8099/Common.svc?xsd=xsd4" />
+      <xsd:import schemaLocation="http://localhost:8099/Common.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
+      <xsd:import schemaLocation="http://localhost:8099/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Common_GetPoEsByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoEsByUserId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPoEsByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoEsByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMySubscribedPoes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMySubscribedPoes" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMySubscribedPoes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMySubscribedPoesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMySubscribedPoeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMySubscribedPoeList" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMySubscribedPoeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMySubscribedPoeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserMappingDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserMappingDetails" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserMappingDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserMappingDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAccountDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountDetail" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAccountDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPoeContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoeContent" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPoeContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoeContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRole" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyTeammembers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyTeammembers" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyTeammembers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyTeammembersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyGiveFbTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyGiveFbTeam" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyGiveFbTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyGiveFbTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyGiveFbTeamList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyGiveFbTeamList" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyGiveFbTeamList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyGiveFbTeamListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyReceiveFbTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyReceiveFbTeam" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyReceiveFbTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyReceiveFbTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyReceiveFbTeamList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyReceiveFbTeamList" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyReceiveFbTeamList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyReceiveFbTeamListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyManager_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyManager" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyManager_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyManagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyCustomers" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyPeers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyPeers" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyPeers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyPeersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyFullNetwork_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyFullNetwork" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyFullNetwork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyFullNetworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetNetworksUsersWall_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNetworksUsersWall" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetNetworksUsersWall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNetworksUsersWallResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyNetworkCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyNetworkCount" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyNetworkCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyNetworkCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserDetailsByEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsByEmailId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserDetailsByEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsByEmailIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyDetail" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyDetailWithArea_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyDetailWithArea" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyDetailWithArea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyDetailWithAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAllCounties_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCounties" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAllCounties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCountiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAllArea_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllArea" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAllArea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPhoto" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdateUserPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserPhoto" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdateUserPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdateUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdateUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdatePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePassword" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdatePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPassword" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_CheckEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmailId" />
+  </wsdl:message>
+  <wsdl:message name="Common_CheckEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmailIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdatePageMode_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePageMode" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdatePageMode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePageModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPoeName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoeName" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPoeName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoeNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPasswordForUSer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPasswordForUSer" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPasswordForUSer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPasswordForUSerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_CheckMapping_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckMapping" />
+  </wsdl:message>
+  <wsdl:message name="Common_CheckMapping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserSubscriptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptions" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserSubscriptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMySubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMySubscription" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMySubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMySubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyActivities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyActivities" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyActivities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyActivitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserList" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetDefaultUserSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultUserSubscription" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetDefaultUserSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultUserSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOwnNetwork_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOwnNetwork" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOwnNetwork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOwnNetworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="Common_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreateActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateActivity" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreateActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreateActivityForPathfinders_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateActivityForPathfinders" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreateActivityForPathfinders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateActivityForPathfindersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_SendConnectMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendConnectMail" />
+  </wsdl:message>
+  <wsdl:message name="Common_SendConnectMail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendConnectMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_SendMailFromWall_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMailFromWall" />
+  </wsdl:message>
+  <wsdl:message name="Common_SendMailFromWall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMailFromWallResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyUsers" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyAllUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyAllUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStanding_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStanding" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStanding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStandingTileScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingTileScore" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStandingTileScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingTileScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRoles" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserPoeByRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPoeByRole" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserPoeByRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPoeByRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserPoeByType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPoeByType" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserPoeByType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPoeByTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_SaveGoal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveGoal" />
+  </wsdl:message>
+  <wsdl:message name="Common_SaveGoal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveGoalResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_SaveGoals_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveGoals" />
+  </wsdl:message>
+  <wsdl:message name="Common_SaveGoals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveGoalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_AssignPoe_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignPoe" />
+  </wsdl:message>
+  <wsdl:message name="Common_AssignPoe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignPoeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyGoals_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyGoals" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyGoals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyGoalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserdetailsByMappingId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserdetailsByMappingId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserdetailsByMappingId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserdetailsByMappingIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserDetailsByFbId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsByFbId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserDetailsByFbId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsByFbIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetFeedbacksByGroupId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbacksByGroupId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetFeedbacksByGroupId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbacksByGroupIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSubscribedUserWall_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribedUserWall" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSubscribedUserWall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribedUserWallResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncScores_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncScores" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncScores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncScoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncScoresOverall_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncScoresOverall" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncScoresOverall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncScoresOverallResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAvgSyncScores_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvgSyncScores" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAvgSyncScores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvgSyncScoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncScoresByFbId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncScoresByFbId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncScoresByFbId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncScoresByFbIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncTeamScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncTeamScore" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncTeamScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncTeamScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAvgSyncScoresByFbId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvgSyncScoresByFbId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAvgSyncScoresByFbId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvgSyncScoresByFbIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncWcsiDiff_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncWcsiDiff" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSyncWcsiDiff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncWcsiDiffResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPlanById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanById" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPlanById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_SendPoePdfNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendPoePdfNotification" />
+  </wsdl:message>
+  <wsdl:message name="Common_SendPoePdfNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendPoePdfNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GenerateManagerReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateManagerReport" />
+  </wsdl:message>
+  <wsdl:message name="Common_GenerateManagerReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateManagerReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GenerateTeamReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateTeamReport" />
+  </wsdl:message>
+  <wsdl:message name="Common_GenerateTeamReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateTeamReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_InsertYammerContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertYammerContent" />
+  </wsdl:message>
+  <wsdl:message name="Common_InsertYammerContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertYammerContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetYammerTopContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetYammerTopContent" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetYammerTopContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetYammerTopContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdateYammercontent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateYammercontent" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdateYammercontent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateYammercontentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetModuleCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleCount" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetModuleCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_DeleteExistingFeedback_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteExistingFeedback" />
+  </wsdl:message>
+  <wsdl:message name="Common_DeleteExistingFeedback_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteExistingFeedbackResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStandingData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingData" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStandingData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetTopMembers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopMembers" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetTopMembers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopMembersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStandingPAContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingPAContent" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStandingPAContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingPAContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetDashBoardDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashBoardDetails" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetDashBoardDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashBoardDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetNotUpdatedPasswordList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotUpdatedPasswordList" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetNotUpdatedPasswordList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotUpdatedPasswordListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_SendMailForResource_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMailForResource" />
+  </wsdl:message>
+  <wsdl:message name="Common_SendMailForResource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMailForResourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetDashBoard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashBoard" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetDashBoard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashBoardResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetIndividualUserSharedGoals_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndividualUserSharedGoals" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetIndividualUserSharedGoals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndividualUserSharedGoalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPathfinders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPathfinders" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPathfinders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPathfindersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyManagerScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyManagerScore" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetMyManagerScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyManagerScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetRecognitionCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecognitionCount" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetRecognitionCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecognitionCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetIndividualPathfindersCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndividualPathfindersCount" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetIndividualPathfindersCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndividualPathfindersCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetFeedbackReceivedCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackReceivedCount" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetFeedbackReceivedCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackReceivedCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetFeedbackGivenCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackGivenCount" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetFeedbackGivenCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackGivenCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreateUpdateUserview_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUpdateUserview" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreateUpdateUserview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUpdateUserviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserNotifications_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNotifications" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetUserNotifications_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNotificationsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Common">
+    <wsdl:operation name="GetPoEsByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPoEsByUserId" message="tns:Common_GetPoEsByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPoEsByUserIdResponse" message="tns:Common_GetPoEsByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMySubscribedPoes">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMySubscribedPoes" message="tns:Common_GetMySubscribedPoes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMySubscribedPoesResponse" message="tns:Common_GetMySubscribedPoes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMySubscribedPoeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMySubscribedPoeList" message="tns:Common_GetMySubscribedPoeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMySubscribedPoeListResponse" message="tns:Common_GetMySubscribedPoeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMappingDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserMappingDetails" message="tns:Common_GetUserMappingDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserMappingDetailsResponse" message="tns:Common_GetUserMappingDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetAccountDetail" message="tns:Common_GetAccountDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetAccountDetailResponse" message="tns:Common_GetAccountDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPoeContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPoeContent" message="tns:Common_GetPoeContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPoeContentResponse" message="tns:Common_GetPoeContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserRole" message="tns:Common_GetUserRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserRoleResponse" message="tns:Common_GetUserRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTeammembers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyTeammembers" message="tns:Common_GetMyTeammembers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyTeammembersResponse" message="tns:Common_GetMyTeammembers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyGiveFbTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyGiveFbTeam" message="tns:Common_GetMyGiveFbTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyGiveFbTeamResponse" message="tns:Common_GetMyGiveFbTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyGiveFbTeamList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyGiveFbTeamList" message="tns:Common_GetMyGiveFbTeamList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyGiveFbTeamListResponse" message="tns:Common_GetMyGiveFbTeamList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyReceiveFbTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyReceiveFbTeam" message="tns:Common_GetMyReceiveFbTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyReceiveFbTeamResponse" message="tns:Common_GetMyReceiveFbTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyReceiveFbTeamList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyReceiveFbTeamList" message="tns:Common_GetMyReceiveFbTeamList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyReceiveFbTeamListResponse" message="tns:Common_GetMyReceiveFbTeamList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyManager">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyManager" message="tns:Common_GetMyManager_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyManagerResponse" message="tns:Common_GetMyManager_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyCustomers" message="tns:Common_GetMyCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyCustomersResponse" message="tns:Common_GetMyCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyPeers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyPeers" message="tns:Common_GetMyPeers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyPeersResponse" message="tns:Common_GetMyPeers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFullNetwork">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyFullNetwork" message="tns:Common_GetMyFullNetwork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyFullNetworkResponse" message="tns:Common_GetMyFullNetwork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNetworksUsersWall">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetNetworksUsersWall" message="tns:Common_GetNetworksUsersWall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetNetworksUsersWallResponse" message="tns:Common_GetNetworksUsersWall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyNetworkCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyNetworkCount" message="tns:Common_GetMyNetworkCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyNetworkCountResponse" message="tns:Common_GetMyNetworkCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsByEmailId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserDetailsByEmailId" message="tns:Common_GetUserDetailsByEmailId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserDetailsByEmailIdResponse" message="tns:Common_GetUserDetailsByEmailId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyDetail" message="tns:Common_GetMyDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyDetailResponse" message="tns:Common_GetMyDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyDetailWithArea">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyDetailWithArea" message="tns:Common_GetMyDetailWithArea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyDetailWithAreaResponse" message="tns:Common_GetMyDetailWithArea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCounties">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetAllCounties" message="tns:Common_GetAllCounties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetAllCountiesResponse" message="tns:Common_GetAllCounties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllArea">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetAllArea" message="tns:Common_GetAllArea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetAllAreaResponse" message="tns:Common_GetAllArea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserPhoto" message="tns:Common_GetUserPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserPhotoResponse" message="tns:Common_GetUserPhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/UpdateUserPhoto" message="tns:Common_UpdateUserPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/UpdateUserPhotoResponse" message="tns:Common_UpdateUserPhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/UpdateUserDetails" message="tns:Common_UpdateUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/UpdateUserDetailsResponse" message="tns:Common_UpdateUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/UpdatePassword" message="tns:Common_UpdatePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/UpdatePasswordResponse" message="tns:Common_UpdatePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPassword" message="tns:Common_GetPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPasswordResponse" message="tns:Common_GetPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmailId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/CheckEmailId" message="tns:Common_CheckEmailId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/CheckEmailIdResponse" message="tns:Common_CheckEmailId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePageMode">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/UpdatePageMode" message="tns:Common_UpdatePageMode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/UpdatePageModeResponse" message="tns:Common_UpdatePageMode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPoeName">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPoeName" message="tns:Common_GetPoeName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPoeNameResponse" message="tns:Common_GetPoeName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPasswordForUSer">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPasswordForUSer" message="tns:Common_GetPasswordForUSer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPasswordForUSerResponse" message="tns:Common_GetPasswordForUSer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckMapping">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/CheckMapping" message="tns:Common_CheckMapping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/CheckMappingResponse" message="tns:Common_CheckMapping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptions">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserSubscriptions" message="tns:Common_GetUserSubscriptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserSubscriptionsResponse" message="tns:Common_GetUserSubscriptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMySubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMySubscription" message="tns:Common_GetMySubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMySubscriptionResponse" message="tns:Common_GetMySubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyActivities">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyActivities" message="tns:Common_GetMyActivities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyActivitiesResponse" message="tns:Common_GetMyActivities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserList" message="tns:Common_GetUserList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserListResponse" message="tns:Common_GetUserList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultUserSubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetDefaultUserSubscription" message="tns:Common_GetDefaultUserSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetDefaultUserSubscriptionResponse" message="tns:Common_GetDefaultUserSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOwnNetwork">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetOwnNetwork" message="tns:Common_GetOwnNetwork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetOwnNetworkResponse" message="tns:Common_GetOwnNetwork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/DeleteUser" message="tns:Common_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/DeleteUserResponse" message="tns:Common_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateActivity">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/CreateActivity" message="tns:Common_CreateActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/CreateActivityResponse" message="tns:Common_CreateActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateActivityForPathfinders">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/CreateActivityForPathfinders" message="tns:Common_CreateActivityForPathfinders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/CreateActivityForPathfindersResponse" message="tns:Common_CreateActivityForPathfinders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendConnectMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/SendConnectMail" message="tns:Common_SendConnectMail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/SendConnectMailResponse" message="tns:Common_SendConnectMail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailFromWall">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/SendMailFromWall" message="tns:Common_SendMailFromWall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/SendMailFromWallResponse" message="tns:Common_SendMailFromWall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyUsers" message="tns:Common_GetMyUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyUsersResponse" message="tns:Common_GetMyUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyAllUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyAllUsers" message="tns:Common_GetMyAllUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyAllUsersResponse" message="tns:Common_GetMyAllUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStanding">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetStanding" message="tns:Common_GetStanding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetStandingResponse" message="tns:Common_GetStanding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingTileScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetStandingTileScore" message="tns:Common_GetStandingTileScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetStandingTileScoreResponse" message="tns:Common_GetStandingTileScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserRoles" message="tns:Common_GetUserRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserRolesResponse" message="tns:Common_GetUserRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPoeByRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserPoeByRole" message="tns:Common_GetUserPoeByRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserPoeByRoleResponse" message="tns:Common_GetUserPoeByRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPoeByType">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserPoeByType" message="tns:Common_GetUserPoeByType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserPoeByTypeResponse" message="tns:Common_GetUserPoeByType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoal">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/SaveGoal" message="tns:Common_SaveGoal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/SaveGoalResponse" message="tns:Common_SaveGoal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoals">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/SaveGoals" message="tns:Common_SaveGoals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/SaveGoalsResponse" message="tns:Common_SaveGoals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignPoe">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/AssignPoe" message="tns:Common_AssignPoe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/AssignPoeResponse" message="tns:Common_AssignPoe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyGoals">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyGoals" message="tns:Common_GetMyGoals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyGoalsResponse" message="tns:Common_GetMyGoals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserdetailsByMappingId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserdetailsByMappingId" message="tns:Common_GetUserdetailsByMappingId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserdetailsByMappingIdResponse" message="tns:Common_GetUserdetailsByMappingId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsByFbId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserDetailsByFbId" message="tns:Common_GetUserDetailsByFbId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserDetailsByFbIdResponse" message="tns:Common_GetUserDetailsByFbId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbacksByGroupId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetFeedbacksByGroupId" message="tns:Common_GetFeedbacksByGroupId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetFeedbacksByGroupIdResponse" message="tns:Common_GetFeedbacksByGroupId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribedUserWall">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetSubscribedUserWall" message="tns:Common_GetSubscribedUserWall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetSubscribedUserWallResponse" message="tns:Common_GetSubscribedUserWall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncScores">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetSyncScores" message="tns:Common_GetSyncScores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetSyncScoresResponse" message="tns:Common_GetSyncScores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncScoresOverall">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetSyncScoresOverall" message="tns:Common_GetSyncScoresOverall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetSyncScoresOverallResponse" message="tns:Common_GetSyncScoresOverall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvgSyncScores">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetAvgSyncScores" message="tns:Common_GetAvgSyncScores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetAvgSyncScoresResponse" message="tns:Common_GetAvgSyncScores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncScoresByFbId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetSyncScoresByFbId" message="tns:Common_GetSyncScoresByFbId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetSyncScoresByFbIdResponse" message="tns:Common_GetSyncScoresByFbId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncTeamScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetSyncTeamScore" message="tns:Common_GetSyncTeamScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetSyncTeamScoreResponse" message="tns:Common_GetSyncTeamScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvgSyncScoresByFbId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetAvgSyncScoresByFbId" message="tns:Common_GetAvgSyncScoresByFbId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetAvgSyncScoresByFbIdResponse" message="tns:Common_GetAvgSyncScoresByFbId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncWcsiDiff">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetSyncWcsiDiff" message="tns:Common_GetSyncWcsiDiff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetSyncWcsiDiffResponse" message="tns:Common_GetSyncWcsiDiff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanById">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPlanById" message="tns:Common_GetPlanById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPlanByIdResponse" message="tns:Common_GetPlanById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendPoePdfNotification">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/SendPoePdfNotification" message="tns:Common_SendPoePdfNotification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/SendPoePdfNotificationResponse" message="tns:Common_SendPoePdfNotification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateManagerReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GenerateManagerReport" message="tns:Common_GenerateManagerReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GenerateManagerReportResponse" message="tns:Common_GenerateManagerReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateTeamReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GenerateTeamReport" message="tns:Common_GenerateTeamReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GenerateTeamReportResponse" message="tns:Common_GenerateTeamReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertYammerContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/InsertYammerContent" message="tns:Common_InsertYammerContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/InsertYammerContentResponse" message="tns:Common_InsertYammerContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYammerTopContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetYammerTopContent" message="tns:Common_GetYammerTopContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetYammerTopContentResponse" message="tns:Common_GetYammerTopContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateYammercontent">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/UpdateYammercontent" message="tns:Common_UpdateYammercontent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/UpdateYammercontentResponse" message="tns:Common_UpdateYammercontent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetModuleCount" message="tns:Common_GetModuleCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetModuleCountResponse" message="tns:Common_GetModuleCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExistingFeedback">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/DeleteExistingFeedback" message="tns:Common_DeleteExistingFeedback_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/DeleteExistingFeedbackResponse" message="tns:Common_DeleteExistingFeedback_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingData">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetStandingData" message="tns:Common_GetStandingData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetStandingDataResponse" message="tns:Common_GetStandingData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTopMembers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetTopMembers" message="tns:Common_GetTopMembers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetTopMembersResponse" message="tns:Common_GetTopMembers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingPAContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetStandingPAContent" message="tns:Common_GetStandingPAContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetStandingPAContentResponse" message="tns:Common_GetStandingPAContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDashBoardDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetDashBoardDetails" message="tns:Common_GetDashBoardDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetDashBoardDetailsResponse" message="tns:Common_GetDashBoardDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNotUpdatedPasswordList">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetNotUpdatedPasswordList" message="tns:Common_GetNotUpdatedPasswordList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetNotUpdatedPasswordListResponse" message="tns:Common_GetNotUpdatedPasswordList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForResource">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/SendMailForResource" message="tns:Common_SendMailForResource_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/SendMailForResourceResponse" message="tns:Common_SendMailForResource_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDashBoard">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetDashBoard" message="tns:Common_GetDashBoard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetDashBoardResponse" message="tns:Common_GetDashBoard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndividualUserSharedGoals">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetIndividualUserSharedGoals" message="tns:Common_GetIndividualUserSharedGoals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetIndividualUserSharedGoalsResponse" message="tns:Common_GetIndividualUserSharedGoals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPathfinders">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPathfinders" message="tns:Common_GetPathfinders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPathfindersResponse" message="tns:Common_GetPathfinders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyManagerScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetMyManagerScore" message="tns:Common_GetMyManagerScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetMyManagerScoreResponse" message="tns:Common_GetMyManagerScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecognitionCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetRecognitionCount" message="tns:Common_GetRecognitionCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetRecognitionCountResponse" message="tns:Common_GetRecognitionCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndividualPathfindersCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetIndividualPathfindersCount" message="tns:Common_GetIndividualPathfindersCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetIndividualPathfindersCountResponse" message="tns:Common_GetIndividualPathfindersCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackReceivedCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetFeedbackReceivedCount" message="tns:Common_GetFeedbackReceivedCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetFeedbackReceivedCountResponse" message="tns:Common_GetFeedbackReceivedCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackGivenCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetFeedbackGivenCount" message="tns:Common_GetFeedbackGivenCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetFeedbackGivenCountResponse" message="tns:Common_GetFeedbackGivenCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateUserview">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/CreateUpdateUserview" message="tns:Common_CreateUpdateUserview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/CreateUpdateUserviewResponse" message="tns:Common_CreateUpdateUserview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNotifications">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetUserNotifications" message="tns:Common_GetUserNotifications_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetUserNotificationsResponse" message="tns:Common_GetUserNotifications_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Common" type="tns:Common">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPoEsByUserId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPoEsByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMySubscribedPoes">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMySubscribedPoes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMySubscribedPoeList">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMySubscribedPoeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMappingDetails">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserMappingDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountDetail">
+      <soap:operation soapAction="http://tempuri.org/Common/GetAccountDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoeContent">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPoeContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRole">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTeammembers">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyTeammembers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyGiveFbTeam">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyGiveFbTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyGiveFbTeamList">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyGiveFbTeamList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyReceiveFbTeam">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyReceiveFbTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyReceiveFbTeamList">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyReceiveFbTeamList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyManager">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyManager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyCustomers">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyPeers">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyPeers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFullNetwork">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyFullNetwork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNetworksUsersWall">
+      <soap:operation soapAction="http://tempuri.org/Common/GetNetworksUsersWall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyNetworkCount">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyNetworkCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsByEmailId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserDetailsByEmailId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyDetail">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyDetailWithArea">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyDetailWithArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCounties">
+      <soap:operation soapAction="http://tempuri.org/Common/GetAllCounties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllArea">
+      <soap:operation soapAction="http://tempuri.org/Common/GetAllArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPhoto">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserPhoto">
+      <soap:operation soapAction="http://tempuri.org/Common/UpdateUserPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserDetails">
+      <soap:operation soapAction="http://tempuri.org/Common/UpdateUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePassword">
+      <soap:operation soapAction="http://tempuri.org/Common/UpdatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPassword">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmailId">
+      <soap:operation soapAction="http://tempuri.org/Common/CheckEmailId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePageMode">
+      <soap:operation soapAction="http://tempuri.org/Common/UpdatePageMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoeName">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPoeName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPasswordForUSer">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPasswordForUSer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMapping">
+      <soap:operation soapAction="http://tempuri.org/Common/CheckMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptions">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserSubscriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMySubscription">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMySubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyActivities">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyActivities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultUserSubscription">
+      <soap:operation soapAction="http://tempuri.org/Common/GetDefaultUserSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOwnNetwork">
+      <soap:operation soapAction="http://tempuri.org/Common/GetOwnNetwork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/Common/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateActivity">
+      <soap:operation soapAction="http://tempuri.org/Common/CreateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateActivityForPathfinders">
+      <soap:operation soapAction="http://tempuri.org/Common/CreateActivityForPathfinders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendConnectMail">
+      <soap:operation soapAction="http://tempuri.org/Common/SendConnectMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailFromWall">
+      <soap:operation soapAction="http://tempuri.org/Common/SendMailFromWall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyUsers">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyAllUsers">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyAllUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStanding">
+      <soap:operation soapAction="http://tempuri.org/Common/GetStanding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingTileScore">
+      <soap:operation soapAction="http://tempuri.org/Common/GetStandingTileScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoles">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPoeByRole">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserPoeByRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPoeByType">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserPoeByType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoal">
+      <soap:operation soapAction="http://tempuri.org/Common/SaveGoal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoals">
+      <soap:operation soapAction="http://tempuri.org/Common/SaveGoals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignPoe">
+      <soap:operation soapAction="http://tempuri.org/Common/AssignPoe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyGoals">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyGoals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserdetailsByMappingId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserdetailsByMappingId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsByFbId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserDetailsByFbId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbacksByGroupId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetFeedbacksByGroupId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribedUserWall">
+      <soap:operation soapAction="http://tempuri.org/Common/GetSubscribedUserWall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncScores">
+      <soap:operation soapAction="http://tempuri.org/Common/GetSyncScores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncScoresOverall">
+      <soap:operation soapAction="http://tempuri.org/Common/GetSyncScoresOverall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvgSyncScores">
+      <soap:operation soapAction="http://tempuri.org/Common/GetAvgSyncScores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncScoresByFbId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetSyncScoresByFbId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncTeamScore">
+      <soap:operation soapAction="http://tempuri.org/Common/GetSyncTeamScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvgSyncScoresByFbId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetAvgSyncScoresByFbId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncWcsiDiff">
+      <soap:operation soapAction="http://tempuri.org/Common/GetSyncWcsiDiff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanById">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPlanById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPoePdfNotification">
+      <soap:operation soapAction="http://tempuri.org/Common/SendPoePdfNotification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateManagerReport">
+      <soap:operation soapAction="http://tempuri.org/Common/GenerateManagerReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateTeamReport">
+      <soap:operation soapAction="http://tempuri.org/Common/GenerateTeamReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertYammerContent">
+      <soap:operation soapAction="http://tempuri.org/Common/InsertYammerContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYammerTopContent">
+      <soap:operation soapAction="http://tempuri.org/Common/GetYammerTopContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateYammercontent">
+      <soap:operation soapAction="http://tempuri.org/Common/UpdateYammercontent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleCount">
+      <soap:operation soapAction="http://tempuri.org/Common/GetModuleCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExistingFeedback">
+      <soap:operation soapAction="http://tempuri.org/Common/DeleteExistingFeedback" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingData">
+      <soap:operation soapAction="http://tempuri.org/Common/GetStandingData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopMembers">
+      <soap:operation soapAction="http://tempuri.org/Common/GetTopMembers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingPAContent">
+      <soap:operation soapAction="http://tempuri.org/Common/GetStandingPAContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDashBoardDetails">
+      <soap:operation soapAction="http://tempuri.org/Common/GetDashBoardDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNotUpdatedPasswordList">
+      <soap:operation soapAction="http://tempuri.org/Common/GetNotUpdatedPasswordList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForResource">
+      <soap:operation soapAction="http://tempuri.org/Common/SendMailForResource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDashBoard">
+      <soap:operation soapAction="http://tempuri.org/Common/GetDashBoard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndividualUserSharedGoals">
+      <soap:operation soapAction="http://tempuri.org/Common/GetIndividualUserSharedGoals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPathfinders">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPathfinders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyManagerScore">
+      <soap:operation soapAction="http://tempuri.org/Common/GetMyManagerScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecognitionCount">
+      <soap:operation soapAction="http://tempuri.org/Common/GetRecognitionCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndividualPathfindersCount">
+      <soap:operation soapAction="http://tempuri.org/Common/GetIndividualPathfindersCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackReceivedCount">
+      <soap:operation soapAction="http://tempuri.org/Common/GetFeedbackReceivedCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackGivenCount">
+      <soap:operation soapAction="http://tempuri.org/Common/GetFeedbackGivenCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateUserview">
+      <soap:operation soapAction="http://tempuri.org/Common/CreateUpdateUserview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNotifications">
+      <soap:operation soapAction="http://tempuri.org/Common/GetUserNotifications" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Common">
+    <wsdl:port name="BasicHttpBinding_Common" binding="tns:BasicHttpBinding_Common">
+      <soap:address location="http://localhost:8099/Common.svc/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

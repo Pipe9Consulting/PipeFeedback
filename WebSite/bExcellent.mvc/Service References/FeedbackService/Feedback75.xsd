@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCreatedFeedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CreatedFeedback" nillable="true" type="tns:CreatedFeedback" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCreatedFeedback" nillable="true" type="tns:ArrayOfCreatedFeedback" />
+  <xs:complexType name="CreatedFeedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FeedBackId" type="xs:int" />
+      <xs:element minOccurs="0" name="UserMappingId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreatedFeedback" nillable="true" type="tns:CreatedFeedback" />
+</xs:schema>

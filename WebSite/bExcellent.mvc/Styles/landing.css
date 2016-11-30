@@ -1,0 +1,1015 @@
+﻿#target, .bukatutup, .copyright span
+{
+    display:none !important;
+}
+.copyright span:first-child
+{
+    display:block !important;
+}
+.accordion a img
+{
+    position:relative !important;
+}
+.register a
+{
+    text-decoration:none;
+    color:#353535;
+}
+@media screen and (max-width: 7680px) and (min-width: 1680px)
+{
+    .landingpage
+    {
+        margin-top:86px;
+        width:100%;
+        height:846px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:44px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:18px;
+        text-align:justify;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:287px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:400px;
+        height:400px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:286px;
+        height:540px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:282px;
+        height:164px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:30px 0;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:16px;
+    }
+}
+@media screen and (min-width: 1600px) and (max-width: 1680px)
+{
+    .landingpage
+    {
+        margin-top:75px;
+        width:100%;
+        height:832px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:44px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:18px;
+        text-align:justify;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:287px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:400px;
+        height:400px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:300px;
+        height:540px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:282px;
+        height:164px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:30px 0;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:16px;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1600px)
+{
+    .landingpage
+    {
+        margin-top:75px;
+        width:100%;
+        height:688px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:44px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:18px;
+        text-align:justify;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:187px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:400px;
+        height:400px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:300px;
+        height:540px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:282px;
+        height:164px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:30px 0;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:16px;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1440px)
+{
+    .landingpage
+    {
+        margin-top:75px;
+        width:100%;
+        height:700px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:44px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:18px;
+        text-align:justify;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:200px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:400px;
+        height:400px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:300px;
+        height:540px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:282px;
+        height:164px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:30px 0;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:16px;
+    }
+}
+@media screen and (min-width: 1366px) and (max-width: 1400px)
+{
+    .landingpage
+    {
+        margin-top:60px;
+        width:100%;
+        height:843px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:44px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:18px;
+        text-align:justify;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:260px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:400px;
+        height:400px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:300px;
+        height:540px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:282px;
+        height:164px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:30px 0;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:16px;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+{
+    .landingpage
+    {
+        margin-top:60px;
+        width:100%;
+        height:568px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:34px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p, .register a
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:14px;
+        text-align:justify;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:170px;        
+        margin-left:37px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:300px;
+        height:300px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:219px;
+        height:300px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:212px;
+        height:123px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:0;
+        font-size:13px;
+    }
+    .register a
+    {
+        font-size:13px;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:13px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    .landingpage
+    {
+        margin-top:60px;
+        width:100%;
+        height:600px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:26px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:13px;
+        text-align:justify;
+    }
+    .register a
+    {
+        font-size:13px;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:162px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:300px;
+        height:300px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:229px;
+        height:300px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:217px;
+        height:126px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:30px 0;
+        font-size:12px;
+    }
+    .register a
+    {
+        font-size:12px;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:13px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    .landingpage
+    {
+        margin-top:60px;
+        width:100%;
+        height:568px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:27px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:13px;
+        text-align:justify;
+    }
+    .register a
+    {
+        font-size:13px;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:162px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:300px;
+        height:300px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:229px;
+        height:300px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:217px;
+        height:125px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:30px 0;
+        font-size:11px;
+    }
+    .register a
+    {
+        font-size:11px;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:13px;
+    }
+}
+@media screen and (min-width: 685px) and (max-width: 800px)
+{
+    .landingpage
+    {
+        margin-top:58px;
+        width:100%;
+        height:400px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:22px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:5px 0;
+        font-size:12px;
+        text-align:justify;
+    }
+    .register a
+    {
+        font-size:12px;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:130px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:250px;
+        height:250px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:179px;
+        height:200px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:170px;
+        height:99px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:44%;
+        margin:8px 0;
+        font-size:11px;
+    }
+    .register a
+    {
+        font-size:11px;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:11px;
+    }
+}
+@media screen and (min-width: 568px) and (max-width: 685px)
+{
+    .landingpage
+    {
+        margin-top:58px;
+        width:100%;
+        height:280px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:22px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:5px 0;
+        font-size:12px;
+        text-align:justify;
+    }
+    .register a
+    {
+        font-size:11px;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:68px;        
+        margin-left:10px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:230px;
+        height:230px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:179px;
+        height:200px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:170px;
+        height:80px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:48%;
+        margin:0;
+        font-size:11px;
+    }
+    .register a
+    {
+        font-size:11px;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:11px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 568px)
+{
+    .landingpage
+    {
+        margin-top:58px;
+        width:100%;
+        height:280px;
+        position:relative;
+    }
+    .leftcolumn h1
+    {
+        color:#e0b001;
+        font-size:44px;
+        font-weight:lighter;
+        line-height:1.2em;
+    }
+    .leftcolumn p
+    {
+        line-height:1.2em;
+        padding:10px 0;
+        font-size:18px;
+        text-align:justify;
+    }
+    .landingpage img
+    {
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:1;
+    }
+    .contenholder
+    {
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:2;
+        left:0;
+        top:0;
+    }
+    .txtbox
+    {
+        margin-top:130px;        
+        margin-left:48px;
+        float:left;
+    }
+    .leftcolumn
+    {
+        background:#353535;
+        width:400px;
+        height:400px;
+        margin-right:20px;
+        float:left;
+        padding:15px;
+    }
+    .rightcolumn
+    {
+        width:300px;
+        height:540px;
+        margin-right:20px;
+        float:left
+    }
+    .imgholder
+    {
+        width:282px;
+        height:164px;
+    }
+    .imgholder img
+    {
+        width:100%;
+        height:100%;
+    }
+    .register
+    {
+        background:#e0b001;
+        padding:10px;
+        text-align:center;
+        color:#353535;
+        width:40%;
+        margin:30px 0;
+    }
+    .rightcolumn p
+    {
+        padding:8px 0;
+        line-height:1.2em;
+        font-size:16px;
+    }
+}

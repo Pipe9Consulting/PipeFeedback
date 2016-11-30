@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
+  <xs:complexType name="ArrayOfCreatedFeedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CreatedFeedback" nillable="true" type="tns:CreatedFeedback" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCreatedFeedback" nillable="true" type="tns:ArrayOfCreatedFeedback" />
+  <xs:complexType name="CreatedFeedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CapabilityId" type="xs:int" />
+      <xs:element minOccurs="0" name="FeedBackId" type="xs:int" />
+      <xs:element minOccurs="0" name="RequestedUserMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="TeamUserMappingId" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="Teammember" nillable="true" type="q1:UserPOEMapping" />
+      <xs:element minOccurs="0" name="UserMappingId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreatedFeedback" nillable="true" type="tns:CreatedFeedback" />
+  <xs:complexType name="SavedQuestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FeedBackId" type="xs:int" />
+      <xs:element minOccurs="0" name="FeedBackStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionOrder" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SavedQuestion" nillable="true" type="tns:SavedQuestion" />
+  <xs:complexType name="DataDumbScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Feedbackid" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleScores" nillable="true" type="tns:ArrayOfDataDumbModuleScore" />
+      <xs:element minOccurs="0" name="PoeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Poeid" type="xs:int" />
+      <xs:element minOccurs="0" name="WcsiScore" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataDumbScore" nillable="true" type="tns:DataDumbScore" />
+  <xs:complexType name="ArrayOfDataDumbModuleScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataDumbModuleScore" nillable="true" type="tns:DataDumbModuleScore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataDumbModuleScore" nillable="true" type="tns:ArrayOfDataDumbModuleScore" />
+  <xs:complexType name="DataDumbModuleScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleScoreAvg" type="xs:double" />
+      <xs:element minOccurs="0" name="ModuleScorePercentage" type="xs:double" />
+      <xs:element minOccurs="0" name="Moduleid" type="xs:int" />
+      <xs:element minOccurs="0" name="Modulescore" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="QuestionScores" nillable="true" type="tns:ArrayOfDataDumbQuestionScore" />
+      <xs:element minOccurs="0" name="TotalModuleScore" type="xs:float" />
+      <xs:element minOccurs="0" name="WeightageScore" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataDumbModuleScore" nillable="true" type="tns:DataDumbModuleScore" />
+  <xs:complexType name="ArrayOfDataDumbQuestionScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataDumbQuestionScore" nillable="true" type="tns:DataDumbQuestionScore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataDumbQuestionScore" nillable="true" type="tns:ArrayOfDataDumbQuestionScore" />
+  <xs:complexType name="DataDumbQuestionScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="QuestionText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Questionid" type="xs:int" />
+      <xs:element minOccurs="0" name="Score" type="xs:double" />
+      <xs:element minOccurs="0" name="ScorePercentage" type="xs:double" />
+      <xs:element minOccurs="0" name="ShortQuetionText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataDumbQuestionScore" nillable="true" type="tns:DataDumbQuestionScore" />
+</xs:schema>

@@ -1,0 +1,3887 @@
+﻿.main {
+	width: 95%;
+}
+.start, .start ul {
+	width: 412px !important;
+}
+.wall2, .wall3
+{
+	display:none;
+}
+.wall li, .dig li {
+	float: left;
+	background: #808080;
+	margin:0 10px 10px 0;
+	line-height:1em;
+	cursor:pointer;
+	font-size:12px;
+	position:relative;
+}
+.wall li img
+{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+.wall li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.wall li p
+{
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	line-height:1.1em;
+	width:90%;
+}
+.dig li
+{
+	height:62px;
+}
+.wall li a, .dig li a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+.wall li a, .wall span {
+	font-size: 12px;
+	line-height:1.1em;
+}
+.wall h1, .dig h1 {
+	color: #5e5e5e;
+	font-weight: lighter;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: none !important;
+}
+.iconrect
+{
+	padding-left:170px !important;
+}
+.icon{
+	float: right;
+	padding-bottom: 53px;
+	padding-left: 60px;
+}
+.dig li .icon{
+	float: right;
+	padding-bottom:0;
+	padding-left:0;
+}
+.dig li span
+{
+	float:left;
+	padding-top:50px;
+}
+.digdeep li
+{
+	float:left;
+	padding:0 5px;
+	font-size:12px;
+}
+.digdeep li h1
+{
+	height:25px;
+	line-height:25px;
+	font-weight:normal;
+}
+.score li
+{
+	line-height:35px;
+}
+
+.digdeep td
+{
+	border-bottom:1px solid #efefef;
+	margin:0;
+	padding:3px 5px;
+	font-size:12px;
+	background:none;
+	color:#383838;
+}
+.digdeep .questions
+{
+	width:300px;
+}
+
+.digdeep .dark
+{
+	background:#b7b7b7;
+}
+.digdeep
+{
+	background:#d1d1d1;
+	border-bottom:1px solid #cacaca;
+}
+.digdeep .lightcol
+{
+	background:#dbdbdb;
+	border-bottom:1px solid #cacaca;
+}
+.digdeep .light
+{
+	background:#d1d1d1;
+}
+.goalscore
+{
+	font-size:12px;
+	line-height:23px;
+}
+
+.strategytxt
+{
+	font-size:16px !important;
+	background:url(../Images/strategy1.png) no-repeat center #DBDBDB !important;
+	height:200px;
+	padding-top:50px;
+	border:0 !important;
+}
+.digdeep
+{
+	max-height:546px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.commentarea .digdeep
+{
+	padding-right:10px;
+}
+
+.average
+{
+	color:#000 !important;
+	font-size:16px !important;
+	border-bottom:1px solid #fff !important;
+}
+.black
+{
+	color:#000 !important;
+}
+.digdeep .gap
+{
+	background:url(../Images/gap.png) no-repeat right top 3px #dbdbdb;
+	width:68px;
+	border-right:1px solid #a2a2a2;
+	padding:3px;
+	height:28px;
+	border-bottom:1px solid #cacaca;
+}
+.digdeep .fit
+{
+	background:url(../Images/fit.png) no-repeat left top 3px #dbdbdb;
+	width:68px;
+	border-left:1px solid #a2a2a2;
+	padding:3px;
+	height:28px;
+}
+.digdeep .notachived
+{
+	background:url(../Images/goal-bg.png) repeat-x left top 3px #dbdbdb;
+	border-right:1px solid #a2a2a2;
+	padding:3px;
+	height:28px;
+	width:10px;
+}
+.digdeep .tbline
+{
+	border-right:1px solid #fff;
+}
+.digdeep .today
+{
+	border-right:1px solid #fff;
+	border-left:1px solid #fff;
+}
+.lastb
+{
+	border-right:0 !important;
+}
+.digdeep .achived
+{
+	background:url(../Images/goal-achieved.png) no-repeat left top 3px #dbdbdb;
+	padding:3px 4px 3px 2px;
+	height:28px;
+	border-right:1px solid #a2a2a2;
+}
+.doubleline {
+	padding-bottom:37px;
+}
+.tripleline {
+	padding-bottom:30px;
+}
+.wall, .dig
+{
+	width:317px;
+	float:left;
+}
+.commentarea
+{
+	float:left;
+    margin-top:20px;
+}
+.postcmnt ul
+{
+	width:300px;
+	height:470px;
+}
+.commentul
+{
+	width:130% !important;
+	max-height:460px !important;
+	overflow-y:scroll;
+}
+.commentarea h3
+{
+	color:#5E5E5E;
+	font-weight:normal;
+	padding:10px 0 5px 0;
+	width:50%;
+	float:left;
+}
+#scroller li ul
+{
+	float:left;
+	width:452px;
+}
+#thelist1 ul
+{
+	width:1500%;
+	overflow:hidden;
+}
+#thelist1 li
+{
+	float:none;
+	border:1px solid #d5d5d5;
+	margin:0 10px 10px 0;
+	cursor:pointer;
+	height:auto;
+	display:block;
+	text-align:left;
+	display:block;
+    position: relative;
+}
+.column
+{
+	float:left;
+}
+.commentarea li .dt
+{
+	color:#808080;
+}
+.commentarea .postcmnt
+{
+	float:left;
+	overflow-y: auto;
+	position:relative;
+	display:block;
+}
+.postcmnt li
+{
+	float:left;
+	clear:both;
+	width:90%;
+	border:1px solid #d5d5d5;
+	background:#d5d5d5;
+	background-position-y:8px;
+	background-position-x:380px;
+	margin:0 10px 10px 0;
+	padding:5px;
+	position:relative;
+	cursor:pointer;
+}
+.postcmnt li h2
+{
+	font-weight:500;
+	color:#5e5e5e;
+	padding:0;
+	padding-bottom:3px;
+	margin:0;
+}
+.postcmnt li h4
+{
+	font-weight:normal;
+	padding-bottom:0;
+	font-size:12px;
+	padding:0;
+}
+.commentsel
+{
+	border:1px solid #e0b001 !important;
+	left:0;
+	top:0;
+	position:absolute;
+}
+.postsel
+{
+	border:1px solid #e0b001 !important;
+	background:url(../Images/select.png) top right #d5d5d5 no-repeat !important;
+	display:block;
+}
+.post
+{
+	float:left;
+	background:#fff;
+	width:525px !important;
+	padding:10px;
+    padding-bottom: 25px;
+}
+.post .sign, .post .sign1
+{
+    background: none repeat scroll 0 0 #DEAF00;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 3px 0 5px;
+    text-align: center;
+    width: 94px;
+	margin:0 0 0 5px;
+	float:right;
+	font-weight:bold;
+	height:18px;
+	line-height:18px;
+}
+.sign1 {
+    margin-top: 10px !important;
+}
+.rightmenu
+{
+	background:#fff;
+	display:none;
+	position:absolute;
+	width:125px;
+	left:410px;
+	top:60px;
+	z-index:1
+}
+.filepath {
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    color: #808080;
+}
+.filespath {
+    margin-top: 5px;
+    float: left;
+    color: #808080;
+}
+.filespathrcvd {
+    margin-top: 5px;
+    float: right;
+    color: #808080;
+    font-size: 12px;
+}
+.rightmenu li
+{
+	background:#fff;
+	padding:0 10px 0 10px !important;
+	color:#000;
+	width:105px;
+	font-size:12px;
+	float:none;
+	height:25px;
+	line-height:25px;
+	cursor:pointer;
+	border:0;
+}
+.rightmenu li:hover
+{
+	color:#fff;
+	background:#e0b101;
+}
+.youimg
+{
+	float:left;
+	margin-right:10px;
+	display:block;
+}
+.commentarea h2
+{
+	color:#808080;
+}
+.commentarea h4
+{
+	color:#808080;
+	font-weight:bold;
+}
+.commentarea p
+{
+	color:#808080;
+    
+}
+.wallcomment {
+    max-width: 85%;
+    float: left;
+    line-height: 1.2em;
+    
+}
+.startarea {
+	width: 730px !important;
+	margin-right: 0 !important;
+	float:left;
+	margin-left:65px;
+	margin-top:55px;
+}
+.startarea h1 {
+	padding-bottom: 14px;
+}
+.startarea li {
+	padding: 10px;
+	border-top: 1px dashed #acacac;
+	width: 730px !important;
+	background: #e5e5e5;
+	color: #808080;
+	height: auto !important;
+	margin: 0 !important;
+	position:relative;
+	min-height:35px;
+}
+.startarea li .paragraph
+{
+	margin-left:55px;
+	position:relative;
+	font-size:14px;
+	text-align:justify;
+}
+.startarea li img, .startarea li .heading, .startarea li .heading1 {
+	float: left;
+	margin-right: 17px;
+}
+.startarea li .heading  {
+	font-size: 14px;
+	width: 84px;
+	font-weight: 600;
+	padding-top: 25px;
+}
+.subhead
+{
+	width:140px;
+	float:left;
+	margin-right:10px;
+	top:22%;
+}
+.subhead .img
+{
+	float:left;
+	width:43px;
+	margin-right:10px;
+}
+.subhead span
+{
+	float:left;
+	width:53% !important;
+	margin-top:5%;
+}
+.vs-context-menu{
+    display:none;
+    position: absolute;
+    width:180px;
+	padding:0;
+	margin:0;
+    min-height: 150px;
+}
+
+.vs-context-menu ul{
+        padding: 0;
+        margin: 0;
+		width:170px;
+
+}
+
+.vs-context-menu li{
+    margin: 0px !important;
+    padding:0 10px;
+	background:#fff;
+	border:0;
+	color:#000;
+    cursor: pointer;
+	}
+.vs-context-menu li:hover
+{
+	background:#e0b001;
+	color:#fff;
+}
+#pageslide {
+    /* These styles MUST be included. Do not change. */
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 70%;
+    z-index: 999999 !important;
+    
+    /* Specify the width of your pageslide here */
+    width: 100%;
+    padding: 20px;
+}
+#draggable
+{
+	cursor:move;
+}
+.txtarea
+{
+    background: #fff;
+    color: #ccc;
+    border: 1px solid #cecece;
+    width: 98%;
+    min-height: 15px;
+    max-height: 15px;
+    overflow-x:hidden;
+    overflow-y:auto !important;    
+}
+.post p
+{
+	clear:both;
+}
+.badge
+{
+	margin-bottom:10px;
+	float:left;
+	width:100%;
+}
+.badge li
+{
+	background:#ececec;
+	border:1px solid #cecece;
+	float:left;
+	color:#808080;
+	font-size:12px;
+	cursor:pointer;
+	position:relative;
+}
+.nogap
+{
+	padding-top:0 !important;
+}
+.nogap img
+{
+	margin-left:0 !important;
+}
+.nogap div
+{
+	font-size:12px !important;
+}
+.badge li span
+{
+	position:absolute;
+	top:0px;
+	right:10px;
+}
+.badge li div
+{
+	position:absolute;
+}
+.badge li p
+{
+	position:absolute;
+	bottom:10px;
+	left:10px;
+}
+.badge li div
+{
+    position:absolute;
+    top:3px;
+    right:5px;
+}
+
+.videomsg, .videpreview
+{
+	float:left;
+	width:45%;
+	margin-right:10px;
+	
+}
+.videomsg p
+{
+	font-size:14px !important;
+}
+.videomsg h3
+{
+	font-weight:bold;
+	font-size:14px;
+}
+.videomsg h2
+{
+	font-weight:normal;
+}
+.post .icons
+{
+	padding-bottom:10px;
+	float:right;
+}
+.comntbx
+{
+	padding-bottom:10px;
+}
+
+.recieve
+{
+	text-align:right;
+}
+.bgnone
+{
+	background:none !important;
+	padding:0 !important;
+	width:128px !important;
+	height:128px !important;
+	margin-right:0 !important;
+	margin-left:1px;
+	float:left;
+}
+.badgetile1
+{
+	width:43px;
+	height:43px;
+	background:#808080;
+	padding:10px;
+	margin-bottom:1px;
+	float:left;
+	margin-right:1px;
+	text-align:center;
+}
+.badgetile
+{
+	
+	width:43px;
+	height:43px;
+	background:#808080;
+	padding:10px;
+	margin-bottom:1px;
+	float:left;
+	text-align:center;
+}
+.splbadgetile
+{
+	opacity:0.7;
+}
+.badgetile1 img, .badgetile img
+{
+	margin:0 auto;
+	
+}
+.badgetile1 p, .badgetile p
+{
+	font-size:12px;
+	line-height:1.2em;
+	clear:both;
+}
+.selectpost
+{
+	background:#e0b001 !important;
+	width:116px !important;
+	margin-right:0 !important;
+}
+.singleline
+{
+	clear:both;
+	font-size:12px;
+}
+.dig .singleline
+{
+	float:left;
+	font-size:12px;
+}
+.nxtitem
+{
+	height:100%;
+	background:#e5e5e5;
+	opacity:0.8;
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:5
+}
+
+#postcmnt, #postvmsg
+{
+	display:none;
+}
+#wrapper {
+    position:absolute;
+	height:650px;
+    width:100%;
+    overflow:visible !important;
+	margin:0;
+	padding:0;
+}
+
+#scroller {
+    position:absolute; z-index:1;
+    width:100%;
+    padding:0;
+	margin:0;
+	height:650px;
+}
+
+#scroller ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:100%;
+    text-align:left;
+	height:650px;
+}
+
+#scroller li {
+    padding:0;
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+	height:650px;
+}
+
+#myFrame {
+    position:absolute;
+    top:0; left:0;
+}
+
+/* Wrapper 1 */
+
+#wrapper1 {
+    width:100%;
+    margin: 0 auto;
+    float:left;
+    position:relative;    /* On older OS versions "position" and "z-index" must be defined, */
+    z-index:1;            /* it seems that recent webkit is less picky and works anyway. */
+    overflow:hidden;
+	height:650px;
+
+}
+
+#scroller1 {
+    width:417%;
+    float:left;
+    padding:0;
+}
+
+#scroller1 ul {
+    list-style:none;
+    display:block;
+    float:left;
+    width:100%;
+    padding:0;
+    margin:0;
+    text-align:left;
+}
+
+#scroller1 li {
+    display:block; 
+	float:left;
+    width:24%; 
+    line-height:1.1em;
+	background:#e5e5e5;
+	border:0;
+	margin:0;
+	height:680px;
+}
+
+#nav1 {
+    width:65%;
+    float:left;
+    height: 30px;
+    padding: 0 0 20px 0;
+	position:fixed;
+	top:45%;
+	z-index:9;
+	margin-left:-50px;
+}
+
+#prev1, #next1{
+    font-weight:bold;
+    font-size:14px;
+    padding:5px 0;
+    width:80px;
+    position: absolute;
+}
+
+#next1 {
+    right: 10px;
+}
+
+#prev1{
+    left: 10px;
+	background: url(../images/prev_arrow_dim.png) no-repeat;
+	cursor: pointer;
+	width:24px;
+	height:24px;
+	text-decoration:none;
+	padding:10px;
+	top:45%;
+	position:absolute;
+	z-index:6;
+}
+#prev1:hover
+{
+	background: url(../images/prev_arrow1.png) no-repeat;
+}
+
+#next1{
+    float:right;
+    text-align:right;
+	background: url(../images/next_arrow1.png) no-repeat;
+	cursor: pointer;
+	width:24px;
+	height:24px;
+	text-decoration:none;
+	padding:10px;
+	top:45%;
+	position:absolute;
+	z-index:6;
+}
+#next1:hover
+{
+	background: url(../images/next_arrow.png) no-repeat;
+}
+#indicator1, #indicator1 > li, #indicator2, #indicator2 > li, #indicator3, #indicator3 > li {
+    display:block; float:left;
+    list-style:none;
+    padding:0; margin:0;
+}
+
+.indicator-wrapper {
+    overflow: visible;
+    width: auto;
+    height: auto;
+    float: left;
+    position: relative;
+    left: 50%;
+}
+.gaps
+{
+	background:url(../Images/gap.png) right no-repeat;
+	border-right:1px solid #666;
+	width:50%;
+	float:left;
+	}
+.prev {
+    background: url("../Images/previous.png") no-repeat scroll 0 0 transparent;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: left;
+    height: 43px;
+    text-decoration: none;
+    text-indent: -1333px;
+    width: 43px;
+}
+.prev:hover {
+	background:url(../Images/prev-hover.png) no-repeat;
+	opacity:0.9;
+}
+.nxt {
+    background: url("../Images/next.png") no-repeat scroll 0 0 transparent;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: right;
+    height: 43px;
+    text-decoration: none;
+    text-indent: 1033px;
+    width: 43px;
+}
+.nxt:hover {
+	background:url(../Images/next-hover.png) no-repeat;
+	opacity:0.9;
+}
+
+.pagination {
+    float: left;
+    padding-top: 15px;
+    text-align: center;
+    width: 65%;
+}
+.slidebtn {
+    bottom: 5px;
+    height: 43px; 
+    margin: 0 auto;
+    position: fixed;
+    z-index: 99999;
+}
+#q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8
+{
+	float:left;
+}
+#bn2,#bn3,#bn5,#bn4, #p2,#p3,#p5,#p4
+{
+	display:none;
+}
+.poepopup, .popupW {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 4px solid #5F5F5F;
+    color: #808080;
+    display: none;
+    left: 27%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 9999999 !important;
+	width:30%;
+	height:30%;
+	top:10%;
+}
+.cmntpopup {
+    background: #FFFFFF;
+    border: 4px solid #5F5F5F;
+    color: #808080;
+    left: 33%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 9999999;
+	width:546px;
+	height:290px;
+	top:37%;
+	display: none;
+}
+.wallgoal
+{
+    width:500px;
+    height:auto;
+    border:3px solid #5f5f5f;
+    border-top:25px solid #5f5f5f;
+    position: absolute;
+    z-index: 99999999 !important;
+    margin:0 auto;
+    top:30%;
+    left:33%;
+    background:#e5e5e5;
+    padding:10px;
+    color:#808080;
+    display: none;
+}
+.goalshareimg
+{
+    width:120px;
+    float:left;
+}
+.goalshareimg img
+{
+    width:120px;
+    height:120px;
+}
+.goalsharecont
+{
+    width:365px;
+    float:right;
+}
+.goalsharecont p:first-child
+{
+    font-weight:bold;
+}
+.wallgoal .close
+{
+    margin-top:-30px;
+    margin-right:-10px;
+}
+.wallgoal h1
+{
+    float:left;
+    width:50%;
+    font-size:20px;
+    font-weight:500;
+    margin:5px 0;
+    line-height:20px;
+}
+.wallgoal .goaldate
+{
+    float:right;
+    width:50%;
+    font-size:12px;
+    text-align:right;
+    margin:5px 0;
+    line-height:20px;
+}
+.wallgoal table
+{
+    width:100%;
+    }
+.wallgoal2ndtbl
+{
+    max-height:260px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    float:left;
+    width:100%;
+    }
+.wallgoal2ndtbl p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wallgoal2ndtbl td {
+    height:30px;
+}
+.wallgoal td:first-child
+{
+    width:166px;
+}
+.wallgoal2ndtbl td:first-child
+{
+    width:172px !important;
+}
+.wallgoal td
+{
+    display:table-cell;
+    vertical-align:middle;
+    border:1px solid #e5e5e5;
+    line-height:1.2em;
+}
+.wallgoal p
+{
+    font-size:12px;
+    padding:5px 0;
+    text-align:justify;
+}
+.wallgoal td p
+{
+    padding:0 5px;
+}
+.wallgoal td p:first-child
+{
+    color:#353535;
+}
+.wallgoal table table
+{
+    display:table;
+    height:100%;
+}
+.wallgoal table table tr
+{
+    background:transparent !important;
+}
+.wallgoal table table td
+{
+    border-left:1px solid #e5e5e5;
+    background:transparent;
+    border-right:0;
+    border-top:0;
+    border-bottom:0;
+    width:25% !important;
+    height:100%;
+    display:table-cell;
+    }
+.wallgoal table table td:first-child
+{
+    border:0;
+}
+.month0
+{
+    background:url(../Images/chart/1920/goal-achieved4.png) no-repeat center left -97px;
+}
+.month6
+{
+    background:url(../Images/chart/1920/goal-achieved4.png) no-repeat center left -70px;
+}
+.month12
+{
+    background:url(../Images/chart/1920/goal-achieved4.png) no-repeat center left -41px;
+}
+.month24
+{
+    background:url(../Images/chart/1920/goal-achieved4.png) no-repeat center left -13px;
+}
+.wallgoal td:nth-child(n+2)
+{
+    width:15px;
+    text-align:center;
+}
+.wallgoalhd, .wallgoalhd p
+{
+    background:#999999 !important;
+    color:#fff !important;
+    font-size:13px;
+}
+.wallgoal tr:nth-child(even) {background: #dfdfdf}
+.wallgoal tr:nth-child(odd) {background: #cfcfcf}
+.cmntpopupcont 
+{
+    width: 96.3%;
+    min-height: 245px;
+    max-height: 245px;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    padding: 10px;
+    background:#d5d5d5 no-repeat;
+}
+.cmntpopupcont p, .cmntpopupcont .dt {
+    font-size: 12px;
+    margin: 10px 0;
+}
+.cmntpopupcont .clickmore {
+    display: none;
+}
+.clickmore {
+    float: right;
+    background: url(../Images/expand_right.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    
+    }
+.cmntpopupcont .wallcomment {
+    overflow: visible;
+    height: auto;
+    width: auto;
+}
+.cmntpopupcont .wallcomment p {
+    width: 380px;
+}
+.load {
+    background: none;
+    position: absolute;
+    z-index: 9999999;
+	top:45%;
+    left: 50%;
+    height: 25px;
+    width: 25px;
+    display: none;
+}
+.popupW {
+  width:480px;
+	height:345px;
+	top:20%;
+    left: 35%; 
+}
+.poepopupcont
+{
+	padding:10px;
+	clear:both;
+}
+.poepopupbg {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+.poepopuphd, .popuphd, .cmntpopuphd {
+    background: none repeat scroll 0 0 #5F5F5F;
+    float: left;
+    padding: 5px;
+    text-align: right;
+}
+
+.close {
+    background: url("../Images/close.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: right;
+    height: 15px;
+    width: 15px;
+}
+.close:hover {
+    background: url("../Images/close-hover.png") no-repeat scroll 0 0 transparent;
+}
+.signupbtn {
+	background:#deaf01;
+	color:#fff;
+	border:2px solid #6c6c6c;
+	padding:3px 8px;
+	margin-top:8px;
+    float: right;
+}
+.attach
+{
+	float:left;
+}
+.mailattach
+{
+	float:left;
+    cursor: pointer;
+}
+.popupattach
+{
+	float:right;
+    cursor: pointer;
+}
+.selected
+{
+    background:#e0b001 !important;
+}
+.mailattach input {
+    margin-left: -220px;
+}
+.mailattach input, .popupattach input
+{
+    opacity:0.0;
+    margin-top:0px;
+    margin-left:-220px;
+    position:absolute;
+    cursor: pointer;
+}
+.mailattach
+{
+    width:20px;
+    overflow:hidden;
+}
+.upld input
+{
+    opacity:0.0;
+    margin-top:0px;
+    margin-left:3px;
+    position:absolute;
+    float:left;
+    width: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.upld
+{
+    margin-right:10px;
+}
+.upld, .del
+{
+    width:20px;
+    float:right;
+    cursor: pointer;
+}
+.fileattach {
+    float: right;
+}
+.morelink {
+    color: #000;
+    text-decoration: none;
+    margin: 5px;
+}
+#postcmnt h3, #postvmsg h3
+{
+    display:none;
+}
+#postvmsg .post h3
+{
+    visibility:visible;
+}
+.sign
+{
+    margin-top:180px !important;
+}
+.filter
+{
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    z-index: 99;
+    width:100px;
+    position:absolute;
+    right:101px;
+}
+.filter div
+{
+    background: url("../Images/select-arrow.gif") no-repeat scroll 85px center #575757;
+    width:100px;
+    padding:5px;
+}
+.filter li
+{
+    padding:5px;
+    width:100px;
+    background:#fff;
+    color:#808080;
+    border:0 !important;
+}
+.filter li:hover
+{
+    background:#e0b001;
+    color:#fff;
+}
+.filter ul
+{
+    display:none;
+}
+.filter li a
+{
+    display:block;
+    width:100%;
+    height:100%;
+     text-decoration:none;
+      color:#808080;
+}
+ /*filter  a:link    {
+ 
+  text-decoration:  none;
+  
+  background-color: #fff;
+  color:            #ccc;
+  }*/ 
+.badgeselect
+{
+background: #ccc !important;
+}
+.sendtbl
+{
+    float:right;
+}
+.sendtbl table
+{
+    width:100%;
+    float:right;
+}
+.sendtbl table td, .sendtbl table td p, .sendtbl table td div
+{
+    display:table-cell;
+    vertical-align:bottom;
+    margin:0;
+    padding:0;
+}
+.dt
+{
+    margin:10px 0;
+}
+.sceditor-container, .sceditor-group
+{
+    width:100% !important;
+    height:auto !important;
+}
+.poepopupcont .level {
+width: 30px;
+float:left;
+height:30px;
+line-height:30px;
+}
+#wallactcontent .commentsel, #wallactcontent .clickmore
+{
+    visibility:hidden;
+}
+.yammerpopupbg
+{
+    background:url(../images/trans.png);
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:9999;
+    display:none;
+}
+.yammerpopup
+{
+    width:55%;
+    margin:0 auto;
+    margin-top:10%;
+    z-index:99999;
+}
+.yammerpopupcont
+{
+    float:left;
+    width:100%;
+    background:#fff;
+    border:5px solid #353535;
+    position:relative;
+}
+.yammerpopupcont h1
+{
+    color:#353535;
+    font-weight:lighter;
+    font-size:1.2vw;
+    margin: 1% 0 0.5%;
+}
+.yammerpopupcont .btm
+{
+    clear:both;
+    width:103%;
+    }
+.yammerpopupcont .btm .btn
+{
+    float:right;
+    padding:4% 2%;
+    text-align:right;
+    background:#5f5f5f;
+    border:2px solid #353535;
+    color:#fff;
+    margin:1%;
+    cursor:pointer;
+    font-size:0.7vw;
+    width:100%;
+}
+.btnholder
+{
+    float:right;
+    width:32%;
+    margin-right:0.5%;
+    margin-top:1%;
+}
+.yammerpopupcont .btm .btn:hover, .yammerpopupcont .btm .btn1:hover
+{
+    background:#e0b001;
+}
+.yammerpopupconthd
+{
+    background:#353535;
+    float:left;
+    width:100%;
+    position:relative;
+    padding-bottom:1%;
+    z-index:2
+}
+.yammerpopupconthd span
+{
+    width:3%;
+    padding-bottom:3%;
+    float:right;
+    margin:0.5% 1%;
+    overflow:hidden;
+    position:relative;
+}
+.yammerpopupconthd span img
+{
+    width:100%;
+    margin-top:-200%;
+    position:absolute;
+    top:100%;
+    height:200%;
+}
+.yammerpopupconthd span img:hover
+{
+    margin-top:-100%;
+    cursor:pointer;
+}
+.yammerpopupcontholder
+{
+    padding:2% 3%;
+    overflow:hidden;
+    width:91%;
+    position:relative;
+    z-index:1;
+}
+.yammerpopupcont img
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+}
+.yammerpopupcontholder h3 {
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+.yammerpopupcontholder p {
+    color: #353535;
+    font-size: 0.7vw;
+}
+.yammerpopupcontholder .left
+{
+    width:215%;
+    float:left;
+}
+.yammerpopupcontholder .left ul
+{
+    float:left;
+    width:48%;
+    margin-right:2%;
+}
+.yammerpopupcontholder .left li
+{
+    margin:1% 1% 0 0;
+    padding:1%;
+    background:url(../Images/trans2.png);
+     float:left;
+    width:47%;
+    color:#fff;
+    font-size:0.8vw;
+    font-weight:lighter;
+    cursor:pointer;
+    position:relative;
+}
+.yammerpopupcontholder .left li span
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+}
+.yammerpopupcontholder .left li span img
+{
+   width:100%;
+    height:100%; 
+    display:none;
+}
+.yammerpopupcontholder .left li .imgholder
+{
+    float:left;
+    margin:3%;
+    width:30%;
+}
+.yammerpopupcontholder .left li .imgholder img
+{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.yammerpopupcontholder .left li .conholder
+{
+    float:left;
+    margin:3%;
+    width:58%;
+    font-size:0.8vw;
+    padding: 9% 0;
+}
+.yammerpopupcontholder .left li .conholder p
+{
+    font-size:0.7vw;
+    padding:0;
+    margin:0;
+    clear:both;
+    padding-top:3%;
+    color:#666;
+}
+
+.yammerselect
+{
+    background:#e0b001;
+    color:#fff !important;
+}
+.yammerhd
+{
+    background:transparent !important;
+    color:#353535 !important;
+    cursor:default;
+}
+.yammernavigation
+{
+    width:20%;
+    margin:0 auto;
+}
+.yammernavigation li
+{
+    float:left;
+    margin:10% 2%;
+    width:43%;
+    padding-bottom:43%;
+    overflow:hidden;
+    position:relative;
+}
+.yammernavigation li img
+{
+    width:100%;
+    height:200%;
+    position:absolute;
+    margin-top:-100%;
+}
+.yammernavigation li img:hover
+{
+    margin-top:0;
+    cursor:pointer;
+}
+ @media screen and (max-width: 7680px) and (min-width: 1680px) {
+.pageholder
+{
+    margin-top:6%;
+	width:94.2%;
+}
+#postcmnt, #postvmsg
+{
+    top:40px;
+}
+.nxtitem
+{
+	width:5%;
+}
+.wall li, .dig li {
+	width: 153px;
+	height: 153px;
+ }
+ .rectangle
+{
+	width:316px !important
+}
+.wall ul, .dig ul {
+	width: 336px;
+}
+.wall, .dig
+{
+	width:317px;
+}
+.wall h1, .dig h1 {
+	font-size: 24px;
+}
+.wall li p, .commentarea h4 {
+	font-size:16px;
+}
+.commentarea h2
+{
+	font-size:20px;
+}
+.commentarea p, .morelink
+{
+	font-size:16px;
+}
+.youimg
+{
+	width:65px;
+	height:65px;
+}
+.recieve img
+{
+    width:124px;
+    height:65px;	
+}
+.recieve
+{
+	text-align:right;
+	max-height:65px;
+	margin-bottom:15px;
+}
+
+.commentarea h2
+{
+	padding-bottom:5px;
+	line-height:1.1em;
+}
+.commentarea li .dt
+{
+	margin-bottom:5px;
+}
+.commentarea h4
+{
+	padding-bottom:5px;
+}
+#thelist1 li
+{
+	width:420px;
+    height: 160px;
+	padding:10px;
+	background:url(../Images/icons/comment.png) top 10px right 10px #d5d5d5 no-repeat;
+    overflow: hidden;
+}
+.commentsel
+{
+    width:438px;
+	height:178px;
+}
+.column
+{
+	width:453px;
+}
+.commentarea li .dt, #postvmsg .post h3 
+{
+	font-size:16px;
+}
+.slidebtn {
+	left: 43%;
+	width:13%;
+}
+.vs-context-menu li{
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	width:170px;
+}
+.commentsel
+{
+	background:url(../Images/selected.png) top right no-repeat !important;
+}
+.commentarea .postcmnt
+{
+	max-height:490px !important;
+	width:350px !important;
+}
+.commentarea
+{
+	width:1340px;
+	margin-left:90px;
+}
+.postcmnt li h2
+{
+	font-size:18px;
+}
+.postcmnt li h4 
+{
+    font-size:16px;
+}
+.commentarea .postcmnt
+{
+	max-height:480px !important;
+}
+.post p
+{
+	font-size:16px !important;
+}
+.badge
+{
+    margin:10px 0;
+}
+.badge li div
+{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+.badge li div img
+{
+	width:44px;
+	height:44px;
+}
+.badge li span img
+{
+	width:37px;
+	height:49px;
+}
+.badge li div
+{
+	position:absolute;
+	top:4px;
+	right:4px;
+}
+
+.badge li
+{
+	width:32.7%;
+	height:85px;
+    float: left;
+    background: #efefef;
+}
+.badge label
+{
+	margin:10px 1px 0 0;
+}
+.txtarea
+{
+	padding: 6px 0 6px 5px;
+	margin:10px 0;
+}
+.post
+{
+	height:540px !important;
+	width:745px !important;
+	margin-left:90px;
+}
+.videpreview {
+    height: 214px;
+    width: 290px;
+}
+.poepopup
+{
+width:545px;
+height:310px;
+top:35%;
+left:36%;
+}
+.poepopuphd
+{
+	width:535px;
+}
+.cmntpopuphd {
+    width: 98.8%;
+}
+.popuphd {
+    width: 470px;
+}
+.poepopupcont p
+{
+	font-size:16px;
+}
+.poepopupcont .level
+{
+	width:30px;
+	float:left;
+	margin:0px 10px 0px 0;
+}
+.txtbx
+{
+	border:1px solid #ccc;
+	padding:5px;
+	color:#808080;
+}
+.poepopupcont .level, .txtbx, .signupbtn.filter div, .filter li a.filter div, .filter li a.filter div, .filter li a
+{
+	font-size:14px;
+}
+.txtbx
+{
+	width:445px;
+}
+.commentarea
+{
+    margin-top:0;
+    position:relative;
+}
+.commentarea h3 {
+	font-size:24px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.sign {
+    margin-top: 165px;
+}
+#txtareas
+{
+    width:740px !important;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.postcmnt li img
+{
+	width:52px;
+	height:52px;
+}
+#thelist1 .wallcomment {
+    max-height: 42px;
+    overflow: hidden;
+}
+.cmntpopup {
+    left: 35%;
+}
+.sendtbl
+{
+    width:66%;
+}
+.filter
+{
+    right:0;
+}
+
+
+ }
+@media screen and (min-width: 1600px) and (max-width: 1680px)
+{
+    
+.pageholder
+{
+    margin-top:6%;
+    width:93.9%;
+}
+	 .nxtitem
+{
+	width:6%;
+}
+.wall li, .dig li {
+	width: 128px;
+	height: 128px;
+ }
+ .rectangle
+{
+	width:267px !important
+}
+.wall ul, .dig ul {
+	width: 285px;
+}
+.wall, .dig
+{
+	width:266px;
+}
+.wall h1, .dig h1 {
+	font-size: 24px;
+}
+.wall li p, .commentarea h4 {
+	font-size:13px;
+}
+.commentarea
+{
+    margin-top:0;
+    margin-left:80px;
+}
+.commentarea h3 {
+	font-size:24px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.commentarea li .dt, #postvmsg .post h3 {
+font-size: 14px;
+}
+.wall li p
+{
+    width:85%;
+}
+.commentarea h2
+{
+	font-size:16px;
+}
+.commentarea p, .morelink
+{
+	font-size:13px;
+}
+.youimg
+{
+	width:60px;
+	height:60px;
+}
+.recieve
+{
+	margin-bottom:8px;
+}
+.commentarea h2
+{
+	padding-bottom:5px;
+	line-height:1.1em;
+}
+.commentarea li .dt
+{
+	margin-bottom:5px;
+}
+.commentarea h4
+{
+	padding-bottom:5px;
+}
+#thelist1 li
+{
+	width:345px;
+	height:150px;
+	padding:8px;
+	background:url(../Images/icons/comment.png) top 10px right 10px #d5d5d5 no-repeat;
+}
+.commentsel
+{
+    width:359px;
+	height:164px;
+}
+.column
+{
+	width:374px;
+}
+.commentarea li .dt
+{
+	font-size:12px;
+}
+.slidebtn {
+	left: 42%;
+	width:18%;
+}
+.vs-context-menu li{
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	width:170px;
+    
+}
+.commentsel
+{
+	background:url(../Images/selected.png) top right no-repeat !important;
+}
+.commentarea .postcmnt
+{
+	max-height:490px !important;
+	width:330px !important;
+}
+.commentarea
+{
+	width:1104px;
+}
+.postcmnt li h2
+{
+	font-size:16px;
+}
+.postcmnt li h4 
+{
+    font-size:14px;
+}
+.commentarea .postcmnt
+{
+	max-height:407px !important;
+}
+.post p
+{
+	font-size:14px !important;
+}
+.badge li div
+{
+	position:absolute;
+	top:10px;
+	right:10px;
+   }
+.badge li div img
+{
+	width:44px;
+	height:44px;
+}
+.badge li span img
+{
+	width:37px;
+	height:49px;
+}
+
+.badge li
+{
+	width:32.7%;
+	height:60px;
+}
+.badge li
+{
+	margin:10px 1px 0 0;
+}
+.txtarea
+{
+	padding: 6px 0 6px 5px;
+	margin:10px 0;
+}
+.post
+{
+	height:460px !important;
+	width: 638px !important;
+	margin-left:80px;
+}
+.videpreview
+{
+	width:232px;
+	height:173px;
+    float: left;
+}
+.poepopup
+{
+width:546px;
+height:310px;
+top:33%;
+left:33%;
+}
+.poepopuphd
+{
+	width:536px;
+}
+.poepopupcont p
+{
+	font-size:16px;
+}
+.poepopupcont .level
+{
+	width:30px;
+	float:left;
+	margin:0px 10px 0px 0;
+}
+.txtbx
+{
+	border:1px solid #ccc;
+	padding:5px;
+	color:#808080;
+}
+.poepopupcont .level, .txtbx, .signupbtn, #postvmsg .post h3.filter div, .filter li a.filter div, .filter li a.filter div, .filter li a
+{
+	font-size:14px;
+}
+.txtbx
+{
+	width:445px;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.sign
+{
+    margin-top:154px !important;
+}
+#txtareas
+{
+    width:632px !important;
+    height:350px !important;
+    
+}
+.postcmnt li img
+{
+	width:42px;
+	height:42px;
+}
+.cmntpopup {
+    left: 33%;
+}
+#postcmnt, #postvmsg {
+margin-top: 37px;
+}
+.sendtbl
+{
+    width:73%;
+}
+ }
+ @media screen and (min-width: 1440px) and (max-width: 1600px)
+{
+    
+.pageholder
+{
+    margin-top:6%;
+    width:93.9%;
+}
+	 .nxtitem
+{
+	width:5%;
+}
+.wall li, .dig li {
+	width: 128px;
+	height: 128px;
+ }
+ .rectangle
+{
+	width:267px !important
+}
+.wall ul, .dig ul {
+	width: 285px;
+}
+.wall, .dig
+{
+	width:266px;
+}
+.wall h1, .dig h1 {
+	font-size: 24px;
+}
+.wall li p, .commentarea h4 {
+	font-size:14px;
+}
+.commentarea
+{
+    margin-top:0;
+    margin-left:80px;
+}
+.commentarea h3 {
+	font-size:24px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.commentarea li .dt, #postvmsg .post h3 {
+font-size: 14px;
+}
+.wall li p
+{
+    width:85%;
+}
+.commentarea h2
+{
+	font-size:16px;
+}
+.commentarea p, .morelink
+{
+	font-size:12px;
+    line-height: 1.3em;
+}
+.youimg
+{
+	width:60px;
+	height:60px;
+}
+.recieve
+{
+	margin-bottom:8px;
+}
+.commentarea h2
+{
+	padding-bottom:5px;
+	line-height:1.1em;
+}
+.commentarea li .dt
+{
+	margin-bottom:5px;
+}
+.commentarea h4
+{
+	padding-bottom:5px;
+}
+#thelist1 li
+{
+	width:345px;
+	height:150px;
+	padding:8px;
+	background:url(../Images/icons/comment.png) top 10px right 10px #d5d5d5 no-repeat;
+    overflow: hidden;
+}
+.commentsel
+{
+    width:359px;
+	height:164px;
+}
+.column
+{
+	width:374px;
+}
+.commentarea li .dt
+{
+	font-size:12px;
+}
+.slidebtn {
+	left: 42%;
+	width:18%;
+}
+.vs-context-menu li{
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	width:170px;
+}
+.commentsel
+{
+	background:url(../Images/selected.png) top right no-repeat !important;
+    
+}
+.commentarea .postcmnt
+{
+	max-height:490px !important;
+	width:330px !important;
+}
+.commentarea
+{
+	width:1104px;
+}
+.postcmnt li h2
+{
+	font-size:16px;
+}
+.postcmnt li h4 
+{
+    font-size:14px;
+}
+.commentarea .postcmnt
+{
+	max-height:407px !important;
+}
+.post p
+{
+	font-size:14px !important;
+}
+.badge li div
+{
+	position:absolute;
+	top:10px;
+	right:10px;
+   }
+.badge li div img
+{
+	width:44px;
+	height:44px;
+}
+.badge li span img
+{
+	width:37px;
+	height:49px;
+}
+
+.badge li
+{
+	width:32.7%;
+	height:60px;
+}
+.badge li
+{
+	margin:10px 1px 0 0;
+}
+.txtarea
+{
+	padding: 6px 0 6px 5px;
+	margin:10px 0;
+}
+.post
+{
+	height:460px !important;
+	width: 638px !important;
+	margin-left:80px;
+}
+.videpreview
+{
+	width:232px;
+	height:173px;
+    float: left;
+}
+.poepopup
+{
+width:546px;
+height:310px;
+top:33%;
+left:33%;
+}
+.poepopuphd
+{
+	width:536px;
+}
+.poepopupcont p
+{
+	font-size:16px;
+}
+.poepopupcont .level
+{
+	width:30px;
+	float:left;
+	margin:0px 10px 0px 0;
+}
+.txtbx
+{
+	border:1px solid #ccc;
+	padding:5px;
+	color:#808080;
+}
+.poepopupcont .level, .txtbx, .signupbtn, #postvmsg .post h3.filter div, .filter li a.filter div, .filter li a.filter div, .filter li a
+{
+	font-size:14px;
+}
+.txtbx
+{
+	width:445px;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.sign
+{
+    margin-top:154px !important;
+}
+#txtareas
+{
+    width:632px !important;
+    height:350px !important;
+    
+}
+.postcmnt li img
+{
+	width:42px;
+	height:42px;
+}
+.cmntpopup {
+    left: 33%;
+}
+#postcmnt, #postvmsg {
+margin-top: 37px;
+}
+.sendtbl
+{
+    width:80%;
+}
+ }
+ @media screen and (min-width: 1400px) and (max-width: 1440px)
+{
+    
+.pageholder
+{
+    margin-top:6%;
+    width:93.9%;
+}
+	 .nxtitem
+{
+	width:6%;
+}
+.wall li, .dig li {
+	width: 128px;
+	height: 128px;
+ }
+ .rectangle
+{
+	width:267px !important
+}
+.wall ul, .dig ul {
+	width: 285px;
+}
+.wall, .dig
+{
+	width:266px;
+}
+.wall h1, .dig h1 {
+	font-size: 24px;
+}
+.wall li p, .commentarea h4 {
+	font-size:14px;
+}
+.commentarea
+{
+    margin-top:0;
+    margin-left:50px;
+}
+.commentarea h3 {
+	font-size:24px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.commentarea li .dt, #postvmsg .post h3 {
+font-size: 14px;
+}
+.wall li p
+{
+    width:85%;
+}
+.commentarea h2
+{
+	font-size:16px;
+}
+.commentarea p, .morelink
+{
+	font-size:12px;
+}
+.youimg
+{
+	width:60px;
+	height:60px;
+}
+.recieve
+{
+	margin-bottom:8px;
+}
+.recieve img {
+width: 103px;
+height: 60px;
+}
+.commentarea h2
+{
+	padding-bottom:5px;
+	line-height:1.1em;
+}
+.commentarea li .dt
+{
+	margin-bottom:5px;
+}
+.commentarea h4
+{
+	padding-bottom:5px;
+}
+#thelist1 li
+{
+	width:296px;
+	height:150px;
+	padding:8px;
+	background:url(../Images/icons/comment.png) top 10px right 10px #d5d5d5 no-repeat;
+}
+.commentsel
+{
+    width:310px;
+	height:165px;
+}
+.column
+{
+	width:322px;
+}
+.commentarea li .dt
+{
+	font-size:12px;
+}
+.slidebtn {
+	left: 42%;
+	width:18%;
+}
+.vs-context-menu li{
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	width:170px;
+}
+.commentsel
+{
+	background:url(../Images/selected.png) top right no-repeat !important;
+}
+.commentarea .postcmnt
+{
+	max-height:490px !important;
+	width:248px !important;
+}
+.commentarea
+{
+	width:954px;
+}
+.postcmnt li h2
+{
+	font-size:16px;
+}
+.postcmnt li h4 
+{
+    font-size:14px;
+}
+.commentarea .postcmnt
+{
+	max-height:407px !important;
+}
+.post p
+{
+	font-size:13px !important;
+}
+.badge li div
+{
+	position:absolute;
+	top:10px;
+	right:10px;
+   }
+.badge li div img
+{
+	width:44px;
+	height:44px;
+}
+.badge li span img
+{
+	width:37px;
+	height:49px;
+}
+
+.badge li
+{
+	width:32.7%;
+	height:60px;
+}
+.badge li
+{
+	margin:10px 1px 0 0;
+}
+.txtarea
+{
+	padding: 6px 0 6px 5px;
+	margin:10px 0;
+}
+.post
+{
+	height:460px !important;
+	width: 636px !important;
+	margin-left:50px;
+}
+.videpreview
+{
+	width:232px;
+	height:173px;
+    float: left;
+}
+.poepopup
+{
+width:546px;
+height:310px;
+top:33%;
+left:33%;
+}
+.poepopuphd
+{
+	width:536px;
+}
+.poepopupcont p
+{
+	font-size:16px;
+}
+.poepopupcont .level
+{
+	width:30px;
+	float:left;
+	margin:0px 10px 0px 0;
+}
+.txtbx
+{
+	border:1px solid #ccc;
+	padding:5px;
+	color:#808080;
+}
+.poepopupcont .level, .txtbx, .signupbtn, #postvmsg .post h3.filter div, .filter li a
+{
+	font-size:13px;
+}
+.txtbx
+{
+	width:445px;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.sign
+{
+    margin-top:154px !important;
+}
+#txtareas
+{
+    width:632px !important;
+    height:350px !important;
+    
+}
+.postcmnt li img
+{
+	width:42px;
+	height:42px;
+}
+.cmntpopup {
+    left: 32%;
+}
+#postcmnt, #postvmsg {
+margin-top: 37px;
+}
+.sendtbl
+{
+    width:72%;
+}
+ }
+@media screen and (min-width: 1366px) and (max-width: 1400px)
+
+{
+
+    .pageholder {
+    margin-top: 6%;
+    width:93.6%;
+}
+	 .nxtitem
+{
+	width:7%;
+}
+.wallcomment
+{
+    width:90%;
+}
+.wall li, .dig li {
+	width: 109px;
+	height: 109px;
+ }
+ .rectangle
+{
+	width:228px !important
+}
+.wall ul, .dig ul {
+	width: 238px;
+}
+.wall, .dig
+{
+	width:228px;
+}
+.wall h1, .dig h1 {
+	font-size: 20px;
+}
+.wall li p, .commentarea h4
+ {
+	font-size:12px;
+}
+.wall li p
+{
+    width:85%;
+}
+.commentarea
+{
+    margin-left:70px;
+    margin-top:0;
+}
+.commentarea h3 {
+	font-size:20px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.commentarea h2
+{
+	font-size:13px;
+	font-weight:800;
+}
+.commentarea p, .morelink, .commentarea li .dt
+{
+	font-size:12px;
+}
+.youimg
+{
+	width:40px;
+	height:40px;
+}
+.recieve img
+{
+	width:83px;
+	height:40px;
+}
+.recieve
+{
+	text-align:right;
+	margin-bottom:4px;
+	max-height:45px;
+}
+.commentarea h2
+{
+	padding-bottom:2px;
+}
+
+.commentarea li .dt
+{
+	margin-bottom:0px;
+}
+.commentarea h4
+{
+	padding-bottom:2px;
+}
+#thelist1 li
+{
+	width:290px;
+	height:114px;
+	padding:6px;
+	background:url(../Images/icons/comment1366.png) top 6px right 6px #d5d5d5 no-repeat;
+}
+.commentsel
+{
+    width:300px;
+	height:124px;
+}
+.column
+{
+	width:313px;
+}
+.slidebtn {
+	left: 40%;
+	width:20%;
+}
+.vs-context-menu li{
+	font-size:10px;
+	height:20px;
+	line-height:20px;
+	width:100px;
+}
+.commentsel
+{
+	background:url(../Images/selected1366.png) top right no-repeat !important;
+}
+.commentarea .postcmnt
+{
+	width:260px !important;
+}
+.commentarea
+{
+	width:923px;
+}
+.postcmnt li
+{
+	width:220px;
+}
+.postcmnt li h2
+{
+	font-size:14px;
+}
+.commentarea .postcmnt
+{
+	max-height:351px !important;
+}
+.post p, #postvmsg .post h3, .filepath
+{
+	font-size:12px !important;
+}
+.badge li
+{
+    height:50px;
+    margin-top:5px;
+    width:32.5%;
+}
+.badge li div img
+{
+	width:34px;
+	height:34px;
+}
+.badge li span img
+{
+	width:27px;
+	height:39px;
+}
+.badge label div
+{
+	position:absolute;
+	top:4px;
+	right:4px;
+}
+
+.badge label
+{
+	width:32.7%;
+}
+.badge label
+{
+	margin:5px 1px 0 0;
+	height:40px;
+}
+.txtarea
+{
+	padding: 3px 0 3px 5px;
+	margin:5px 0;
+}
+.post
+{
+    width: 525px !important;
+	height:410px !important;
+	margin-left:70px;
+}
+.videpreview
+{
+	width:160px;
+	height:122px;
+}
+.poepopup
+{
+width:543px;
+height:310px;
+top:30%;
+left:30%;
+}
+.poepopuphd
+{
+	width:535px;
+}
+.poepopupcont p
+{
+	font-size:12px;
+}
+
+.poepopupcont .level, .txtbx, .signupbtn.filter div, .filter li a.filter div, .filter li a,
+.postcmnt li h4
+{
+	font-size:12px;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.sign
+{
+    margin-top:120px !important;
+}
+#txtareas
+{
+    width:520px !important;
+}
+.postcmnt li img
+{
+	width:32px;
+	height:32px;
+}
+.cmntpopup {
+    left: 30%;
+}
+#postcmnt, #postvmsg {
+margin-top: 37px;
+}
+.sendtbl
+{
+    width:90%;
+}
+   }
+   
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+
+{
+    .wallgoal
+    {
+        top:30%;
+    }
+    .pageholder {
+    margin-top: 6%;
+    width:93.6%;
+}
+	 .nxtitem
+{
+	width:7%;
+}
+.wallcomment
+{
+    width:90%;
+}
+.wall li, .dig li {
+	width: 109px;
+	height: 109px;
+ }
+ .rectangle
+{
+	width:228px !important
+}
+.wall ul, .dig ul {
+	width: 238px;
+}
+.wall, .dig
+{
+	width:228px;
+}
+.wall h1, .dig h1 {
+	font-size: 20px;
+}
+.wall li p, .commentarea h4
+ {
+	font-size:12px;
+}
+.wall li p
+{
+    width:85%;
+}
+.commentarea
+{
+    margin-left:70px;
+    margin-top:0;
+}
+.commentarea h3 {
+	font-size:20px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.commentarea h2
+{
+	font-size:13px;
+	font-weight:800;
+}
+.commentarea p, .morelink, .commentarea li .dt
+{
+	font-size:12px;
+}
+.youimg
+{
+	width:40px;
+	height:40px;
+}
+.recieve img
+{
+	width:83px;
+	height:40px;
+}
+.recieve
+{
+	text-align:right;
+	margin-bottom:4px;
+	max-height:45px;
+}
+.commentarea h2
+{
+	padding-bottom:2px;
+}
+
+.commentarea li .dt
+{
+	margin-bottom:0px;
+}
+.commentarea h4
+{
+	padding-bottom:2px;
+}
+#thelist1 li
+{
+	width:290px;
+	height:120px;
+	padding:6px;
+	background:url(../Images/icons/comment1366.png) top 6px right 6px #d5d5d5 no-repeat;
+}
+.commentsel
+{
+    width:300px;
+	height:130px;
+}
+.column
+{
+	width:313px;
+}
+.slidebtn {
+	left: 40%;
+	width:20%;
+}
+.vs-context-menu li{
+	font-size:10px;
+	height:20px;
+	line-height:20px;
+	width:100px;
+}
+.commentsel
+{
+	background:url(../Images/selected1366.png) top right no-repeat !important;
+}
+.commentarea .postcmnt
+{
+	width:260px !important;
+}
+.commentarea
+{
+	width:923px;
+}
+.postcmnt li
+{
+	width:220px;
+}
+.postcmnt li h2
+{
+	font-size:14px;
+}
+.commentarea .postcmnt
+{
+	max-height:351px !important;
+}
+.post p, #postvmsg .post h3, .filepath
+{
+	font-size:12px !important;
+}
+.badge li
+{
+    height:50px;
+    margin-top:5px;
+    width:32.5%;
+}
+.badge li div img
+{
+	width:34px;
+	height:34px;
+}
+.badge li span img
+{
+	width:27px;
+	height:39px;
+}
+.badge label div
+{
+	position:absolute;
+	top:4px;
+	right:4px;
+}
+
+.badge label
+{
+	width:32.7%;
+}
+.badge label
+{
+	margin:5px 1px 0 0;
+	height:40px;
+}
+.txtarea
+{
+	padding: 3px 0 3px 5px;
+	margin:5px 0;
+}
+.post
+{
+    width: 525px !important;
+	height:410px !important;
+	margin-left:70px;
+}
+.videpreview
+{
+	width:160px;
+	height:122px;
+}
+.poepopup
+{
+width:543px;
+height:310px;
+top:30%;
+left:30%;
+}
+.poepopuphd
+{
+	width:535px;
+}
+.poepopupcont p
+{
+	font-size:12px;
+}
+
+.poepopupcont .level, .txtbx, .signupbtn.filter div, .filter li a.filter div, .filter li a,
+.postcmnt li h4
+{
+	font-size:12px;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.sign
+{
+    margin-top:120px !important;
+}
+#txtareas
+{
+    width:520px !important;
+}
+.postcmnt li img
+{
+	width:32px;
+	height:32px;
+}
+.cmntpopup {
+    left: 30%;
+}
+#postcmnt, #postvmsg {
+margin-top: 37px;
+}
+.sendtbl
+{
+    width:90%;
+}
+   }
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+
+{
+        .wallgoal
+    {
+        top:5%;
+    }
+    .pageholder {
+    margin-top: 6%;
+    width:96.6%;
+}
+	 .nxtitem
+{
+	width:7%;
+}
+.wallcomment
+{
+    width:90%;
+}
+.wall li, .dig li {
+	width: 109px;
+	height: 109px;
+ }
+ .rectangle
+{
+	width:228px !important
+}
+.wall ul, .dig ul {
+	width: 238px;
+}
+.wall, .dig
+{
+	width:228px;
+}
+.wall h1, .dig h1 {
+	font-size: 20px;
+}
+.wall li p, .commentarea h4
+ {
+	font-size:12px;
+}
+.wall li p
+{
+    width:85%;
+}
+.commentarea
+{
+    margin-left:40px;
+    margin-top:0;
+}
+.commentarea h3 {
+	font-size:20px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.commentarea h2
+{
+	font-size:13px;
+	font-weight:800;
+}
+.commentarea p, .morelink, .commentarea li .dt
+{
+	font-size:12px;
+}
+.youimg
+{
+	width:40px;
+	height:40px;
+}
+.recieve img
+{
+	width:83px;
+	height:40px;
+}
+.recieve
+{
+	text-align:right;
+	margin-bottom:4px;
+	max-height:45px;
+}
+.commentarea h2
+{
+	padding-bottom:2px;
+}
+
+.commentarea li .dt
+{
+	margin-bottom:0px;
+}
+.commentarea h4
+{
+	padding-bottom:2px;
+}
+#thelist1 li
+{
+	width:290px;
+	height:120px;
+	padding:6px;
+	background:url(../Images/icons/comment1366.png) top 6px right 6px #d5d5d5 no-repeat;
+}
+.commentsel
+{
+    width:300px;
+	height:130px;
+}
+.column
+{
+	width:313px;
+}
+.slidebtn {
+	left: 40%;
+	width:20%;
+}
+.vs-context-menu li{
+	font-size:10px;
+	height:20px;
+	line-height:20px;
+	width:100px;
+}
+.commentsel
+{
+	background:url(../Images/selected1366.png) top right no-repeat !important;
+}
+.commentarea .postcmnt
+{
+	width:260px !important;
+}
+.commentarea
+{
+	width:890px;
+}
+.postcmnt li
+{
+	width:220px;
+}
+.postcmnt li h2
+{
+	font-size:14px;
+}
+.commentarea .postcmnt
+{
+	max-height:351px !important;
+}
+.post p, #postvmsg .post h3, .filepath
+{
+	font-size:12px !important;
+}
+.badge li
+{
+    height:50px;
+    margin-top:5px;
+    width:32.5%;
+}
+.badge li div img
+{
+	width:34px;
+	height:34px;
+}
+.badge li span img
+{
+	width:27px;
+	height:39px;
+}
+.badge label div
+{
+	position:absolute;
+	top:4px;
+	right:4px;
+}
+
+.badge label
+{
+	width:32.7%;
+}
+.badge label
+{
+	margin:5px 1px 0 0;
+	height:40px;
+}
+.txtarea
+{
+	padding: 3px 0 3px 5px;
+	margin:5px 0;
+}
+.post
+{
+    width: 525px !important;
+	height:410px !important;
+	margin-left:15px;
+}
+.videpreview
+{
+	width:160px;
+	height:122px;
+}
+.poepopup
+{
+width:543px;
+height:310px;
+top:30%;
+left:30%;
+}
+.poepopuphd
+{
+	width:535px;
+}
+.poepopupcont p
+{
+	font-size:12px;
+}
+
+.poepopupcont .level, .txtbx, .signupbtn.filter div, .filter li a.filter div, .filter li a,
+.postcmnt li h4
+{
+	font-size:12px;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.sign
+{
+    margin-top:120px !important;
+}
+#txtareas
+{
+    width:520px !important;
+}
+.postcmnt li img
+{
+	width:32px;
+	height:32px;
+}
+.cmntpopup {
+    left: 30%;
+}
+#postcmnt, #postvmsg {
+margin-top: 37px;
+}
+.sendtbl
+{
+    width:90%;
+}
+   }
+   
+@media screen and (min-width: 800px) and (max-width: 1024px)
+
+{
+        .wallgoal
+    {
+        top:2%;
+        left:22%;
+    }
+    .pageholder {
+    margin-top: 7%;
+    width:93.6%;
+}
+	 .nxtitem
+{
+	width:7%;
+}
+.wallcomment
+{
+    width:90%;
+}
+.wall li, .dig li {
+	width: 80px;
+	height: 80px;
+	margin:0 5px 5px 0;
+ }
+ .wall li img
+ {
+     width:32px;
+ }
+ .rectangle
+{
+	width:165px !important
+}
+.wall ul, .dig ul {
+	width: 238px;
+}
+.wall, .dig
+{
+	width:171px;
+}
+.wall h1, .dig h1 {
+	font-size: 18px;
+}
+.wall li p, .commentarea h4
+ {
+	font-size:12px;
+}
+.wall li p
+{
+    width:85%;
+}
+.commentarea
+{
+    margin-left:20px;
+    margin-top:0;
+}
+.commentarea h3 {
+	font-size:20px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.commentarea h2
+{
+	font-size:13px;
+	font-weight:800;
+}
+.commentarea p, .morelink, .commentarea li .dt
+{
+	font-size:10px;
+}
+.youimg
+{
+	width:40px;
+	height:40px;
+}
+.recieve img
+{
+	width:83px;
+	height:40px;
+}
+.recieve
+{
+	text-align:right;
+	margin-bottom:4px;
+	max-height:40px;
+}
+.commentarea h2
+{
+	padding-bottom:2px;
+}
+
+.commentarea li .dt
+{
+	margin-bottom:0px;
+}
+.commentarea h4
+{
+	padding-bottom:2px;
+}
+#thelist1 li
+{
+	width:222px;
+	height:114px;
+	padding:6px;
+	background:url(../Images/icons/comment1366.png) top 6px right 6px #d5d5d5 no-repeat;
+	overflow:hidden;
+}
+.commentsel
+{
+    width:232px;
+	height:124px;
+}
+.cmntpopup
+{
+    top:26% !important;
+    left:26% !important;
+}
+.poepopuphd, .popuphd, .cmntpopuphd
+{
+    width:98.5%;
+}
+.column
+{
+	width:241px;
+}
+.slidebtn {
+	left: 40%;
+	width:24%;
+}
+.vs-context-menu li{
+	font-size:10px;
+	height:20px;
+	line-height:20px;
+	width:100px;
+}
+.commentsel
+{
+	background:url(../Images/selected1366.png) top right no-repeat !important;
+}
+.commentarea .postcmnt
+{
+	width:246px !important;
+	margin-right:10px;
+}
+.commentarea
+{
+	width:660px;
+}
+.postcmnt li
+{
+	width:210px;
+}
+.postcmnt li h2
+{
+	font-size:14px;
+}
+.commentarea .postcmnt
+{
+	max-height:351px !important;
+}
+.post p, #postvmsg .post h3, .filepath
+{
+	font-size:12px !important;
+}
+.badge li
+{
+    height:50px;
+    margin-top:5px;
+    width:32.5%;
+}
+.badge li div img
+{
+	width:34px;
+	height:34px;
+}
+.badge li span img
+{
+	width:27px;
+	height:39px;
+}
+.badge label div
+{
+	position:absolute;
+	top:4px;
+	right:4px;
+}
+
+.badge label
+{
+	width:32.7%;
+}
+.badge label
+{
+	margin:5px 1px 0 0;
+	height:40px;
+}
+.txtarea
+{
+	padding: 3px 0 3px 5px;
+	margin:5px 0;
+}
+.post
+{
+    width: 370px !important;
+	height:410px !important;
+	margin-left:0px;
+}
+.videpreview
+{
+	width:160px;
+	height:122px;
+}
+.poepopup
+{
+width:543px;
+height:310px;
+top:30%;
+left:25%;
+}
+.poepopuphd
+{
+	width:535px;
+}
+.poepopupcont p
+{
+	font-size:12px;
+}
+
+.poepopupcont .level, .txtbx, .signupbtn.filter div, .filter li a.filter div, .filter li a,
+.postcmnt li h4
+{
+	font-size:12px;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.sign
+{
+    margin-top:120px !important;
+}
+#txtareas
+{
+    width:365px !important;
+}
+.postcmnt li img
+{
+	width:32px;
+	height:32px;
+}
+.cmntpopup {
+    left: 30%;
+}
+    .accordion label img
+    {
+        width:auto !important;
+    }
+        .accordion a img {
+width: 83% ;
+}
+.accordion h3.current, .accordion h3 {
+height: 2px;
+}
+.pagination
+{
+    font-size:10px;
+    width:53%;
+}
+#postcmnt, #postvmsg {
+margin-top: 37px;
+}
+.sendtbl
+{
+    width:92%;
+}
+.sendtbl .sign1
+{
+    width:63px;
+}
+   }
+ @media screen and (min-width: 200px) and (max-width: 800px)
+
+{
+        .wallgoal
+    {
+        top:1%;
+        left:17%;
+    }
+    .pageholder {
+    margin-top: 9%;
+    width:93.6%;
+}
+	 .nxtitem
+{
+	width:11%;
+}
+.wallcomment
+{
+    width:90%;
+}
+.wall li, .dig li {
+	width: 80px;
+	height: 80px;
+	margin:0 5px 5px 0;
+ }
+ .wall li img
+ {
+     width:32px;
+ }
+ .rectangle
+{
+	width:165px !important
+}
+.wall ul, .dig ul {
+	width: 238px;
+}
+.wall, .dig
+{
+	width:171px;
+}
+.wall h1, .dig h1 {
+	font-size: 18px;
+}
+.wall li p, .commentarea h4
+ {
+	font-size:9px;
+}
+.wall li p
+{
+    width:85%;
+}
+.commentarea
+{
+    margin-left:7px;
+    margin-top:0;
+}
+.commentarea h3 {
+	font-size:20px;
+	font-weight:lighter;
+	padding:10px 0;
+}
+.filter
+{
+    right:93px;
+    font-size:10px;
+}
+.commentarea h2
+{
+	font-size:13px;
+	font-weight:800;
+}
+.commentarea p, .morelink, .commentarea li .dt
+{
+	font-size:10px;
+}
+.youimg
+{
+	width:40px;
+	height:40px;
+}
+.recieve img
+{
+	width:83px;
+	height:40px;
+}
+.recieve
+{
+	text-align:right;
+	margin-bottom:4px;
+	max-height:40px;
+}
+.commentarea h2
+{
+	padding-bottom:2px;
+}
+
+.commentarea li .dt
+{
+	margin-bottom:0px;
+}
+.commentarea h4
+{
+	padding-bottom:2px;
+}
+#thelist1 li
+{
+	width:222px;
+	height:114px;
+	padding:6px;
+	background:url(../Images/icons/comment1366.png) top 6px right 6px #d5d5d5 no-repeat;
+	overflow:hidden;
+}
+.commentsel
+{
+    width:232px;
+	height:124px;
+}
+.cmntpopup
+{
+    top:16% !important;
+    left:16% !important;
+}
+.poepopuphd, .popuphd, .cmntpopuphd
+{
+    width:98.5%;
+}
+.column
+{
+	width:241px;
+}
+.slidebtn {
+	left: 40%;
+	width:24%;
+}
+.vs-context-menu li{
+	font-size:10px;
+	height:20px;
+	line-height:20px;
+	width:100px;
+}
+.commentsel
+{
+	background:url(../Images/selected1366.png) top right no-repeat !important;
+}
+.commentarea .postcmnt
+{
+	width:207px !important;
+	margin-right:10px;
+}
+.commentarea
+{
+	width:533px;
+}
+.postcmnt li
+{
+	width:172px;
+}
+.postcmnt li h2
+{
+	font-size:14px;
+}
+.commentarea .postcmnt
+{
+	max-height:351px !important;
+}
+.post p, #postvmsg .post h3, .filepath
+{
+	font-size:12px !important;
+}
+.badge li
+{
+    height:50px;
+    margin-top:5px;
+    width:32.5%;
+}
+.badge li div img
+{
+	width:24px;
+	height:24px;
+}
+.badge li span img
+{
+	width:20px;
+	height:29px;
+}
+.badge label div
+{
+	position:absolute;
+	top:4px;
+	right:4px;
+}
+
+.badge label
+{
+	width:32.7%;
+}
+.badge label
+{
+	margin:5px 1px 0 0;
+	height:40px;
+}
+.txtarea
+{
+	padding: 3px 0 3px 5px;
+	margin:5px 0;
+}
+.post
+{
+    width: 296px !important;
+	height:410px !important;
+	margin-left:0px;
+}
+.videpreview
+{
+	width:140px;
+	height:107px;
+}
+.poepopup
+{
+width:543px;
+height:310px;
+top:20%;
+left:16%;
+}
+.poepopuphd
+{
+	width:535px;
+}
+.poepopupcont p
+{
+	font-size:12px;
+}
+
+.poepopupcont .level, .txtbx, .signupbtn.filter div, .filter li a.filter div, .filter li a,
+.postcmnt li h4
+{
+	font-size:12px;
+}
+.mailattach
+{
+    margin-top:10px;
+}
+.sign
+{
+    margin-top:120px !important;
+}
+#txtareas
+{
+    width:293px !important;
+}
+.postcmnt li img
+{
+	width:32px;
+	height:32px;
+}
+.cmntpopup {
+    left: 30%;
+}
+    .accordion label img
+    {
+        width:auto !important;
+    }
+        .accordion a img {
+width: 80% ;
+}
+.accordion h3.current, .accordion h3 {
+height: 2px;
+}
+.pagination
+{
+    font-size:10px;
+    width:53%;
+}
+#postcmnt, #postvmsg {
+margin-top: 37px;
+}
+.sendtbl
+{
+    width:90%;
+}
+.sendtbl .sign1
+{
+    width:53px;
+    font-size:9px;
+}
+   }

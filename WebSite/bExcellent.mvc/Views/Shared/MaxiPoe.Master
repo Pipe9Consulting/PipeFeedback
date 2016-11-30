@@ -1,0 +1,610 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <%--<meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0">--%>
+    <%--   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">--%>
+
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+
+
+    <%-- New Design Css And Js Start --%>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../../Styles/signup/semantic.min.css">
+    <link href="../../Styles/signup/start.css" rel="stylesheet" />
+    <link href="../../Styles/signup/innerHeaderFooter.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/signup/NewMaster.css" rel="stylesheet" />
+    <!-- endbower -->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../../Scripts/ref/jquery.min.js"></script>
+    <script src="../../Scripts/ref/semantic.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <%-- New Design Css And Js End --%>
+
+
+
+
+    <%--stylesheet--%>
+    <%--<link href="../../Styles/Common/master.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../../Styles/reset.css" rel="stylesheet" type="text/css" />
+    <%--  <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/common.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../../Styles/basic.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <%--Scripts--%>
+    <script src="../../Scripts/ref/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/ref/editor/jquery.sceditor.min.js" type="text/javascript"></script>
+    <%--<script type='text/javascript' src="../../Scripts/ref/jquery.min.js"></script>--%>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/myscroll.js"></script>
+    <%--   <script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js"></script>--%>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/jquery.tabSlideOut.v1.4.1.js"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/ref/common.js"></script>
+    <script src="../../Scripts/ref/Account/SelectNetwork.js" type="text/javascript"></script>
+    <script src="../../Scripts/ref/Account/Login.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.simplemodal.js" type="text/javascript"></script>
+    <script src="../../Scripts/ref/Namespace.js"></script>
+    <script src="../../Scripts/ref/Requests.js"></script>
+    <script src="../../Scripts/ref/loadPhoto.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/plugin/handlebars/handlebars-1.0.js"></script>
+    <%--<script type="text/javascript" src="https://assets.yammer.com/platform/yam.js"></script>--%>
+    <script src="../../Scripts/ref/MaxipoeMaster.js"></script>
+    <script src="../../Scripts/jquery.slimscroll.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            //$('#networklist').networkdropdown();
+            disableFadeOut: true;
+            // window.parent.document.body.style.zoom = 2;
+            //alert($(window).width() + "===" + screen.width);
+            if ($(window).width() != screen.width) {
+                //alert($(window).width() + "===" + screen.width);
+                //alert('1366');
+                ////window.width(1366);
+                //window.resizeTo(1366, 446);
+
+            }
+            var scale = 'scale(1)';
+            document.body.style.webkitTransform = 100;    // Chrome, Opera, Safari
+            document.body.style.msTransform = 100;       // IE 9
+            document.body.style.transform = 100;
+        });
+    </script>
+
+    <style type="text/css">
+        .popup {
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -50px 0 0 -100px; /* [-(height/2)px 0 0 -(width/2)px] */
+            display: none;
+        }
+
+        .yj-hd h3, .yj-embed-narrow .yj-hd h3 {
+            display: none !important;
+        }
+
+        .yj-embed .yj-message-form-container {
+            padding-top: 10px;
+        }
+
+        .yj-embed-wide .yj-hd, .yj-embed-narrow .yj-hd {
+            background-color: #f3f3f3;
+        }
+
+        .yj-component {
+            background-color: White;
+        }
+
+        .zoom {
+            zoom: 150%;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function showPopup(id) {
+            var popup = document.getElementById(id);
+            popup.style.display = 'block';
+        };
+        function pageRedirect(page) {
+            window.location.href = page.value;
+        };
+        function RedirectPoeLibrary() {
+            window.location = "/Signup/Poelibrary?location=newPoe";
+        }
+
+    </script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="preloader">
+            <div id="status">
+                &nbsp;
+            </div>
+        </div>
+
+
+        <div class="overallpopup" id="overallCont">
+
+            <div class="overallcontent">
+                <div class="overallclose" id="closeOverall">
+                    <p>X</p>
+                </div>
+
+                <div>
+                    <p id="masterMsgCont"></p>
+                    <a href="#" id="overllDismiss">Ok</a>
+
+                </div>
+
+                <%--  <p id="masterMsgCont"></p>--%>
+            </div>
+
+
+        </div>
+        <div class="overallpopup" id="overallFeedback">
+
+            <div class="overallcontent">
+                <div class="overallclose" id="feedbackClose">
+                    <p>X</p>
+                </div>
+
+                <div>
+                    <p id="P1">Your Feedback has been completed successfully.</p>
+                    <a href="#" id="redirectNextPage">Ok</a>
+
+                </div>
+
+                <%--  <p id="masterMsgCont"></p>--%>
+            </div>
+
+
+        </div>
+
+        <%-- <div>--%>
+
+        <input type="hidden" id="planMode" value="0" />
+        <input type="hidden" id="masterPlan" value="0" />
+        <%--  <div class="bg">
+            <div id="header">--%>
+
+        <%--   <div class="main">  --%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <%--New Design Header Start --%>
+
+        <div class="ui grid headerPart">
+            <div class="row headerMenu">
+                <div class="headerLeft">
+
+
+
+
+                    <%--New Design Header End --%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="accordion">
+
+                        <h3 class="checkt">
+                            <a href="#" class="cacIcon">
+                                <img src="../../Images/blank.png" class="checkimg" /></a></h3>
+                        <a href="/common/Index" id="imagelogo" class="cacLogo">
+
+                            <img id="kesslogo" src="../../Images/images/CAC_logo.png" alt="Bexcellent" align="left" />
+                        </a>
+                        <div class="pane">
+                            <div class="menuArrow">
+                                <img src="../../Images/menu_arrow.png" alt="REP Library" /><p>
+                            </div>
+                            <ul id="indicator">
+                                <li class="start_start select_start"><a>
+                                    <input name="option" id="nStart" type="radio" value="../../Home/Start" />
+                                    <label for="nStart">
+                                        <img src="../../Images/icons/start_icon.png" alt="Sync" /><p>
+                                            Start
+                                        </p>
+                                    </label>
+                                </a></li>
+                                <%--<li id="poelibraryHome"><a>
+                                    <input name="option" type="radio" id="nPoeLibrary" />
+                                    <label for="poelibrary">
+                                        <img src="../../Images/icons/square-library.png" alt="REP Library" /><p>
+                                            REP Library
+                                        </p>
+                                    </label>
+                                </a></li>--%>
+                                <%-- <li><a>
+                                    <input name="option" id="nWall" type="radio" value="../../wall/index" />
+                                    <label for="nWall">
+                                        <img src="../../Images/icons/start-wall.png" alt="Wall" /><p>
+                                            Wall
+                                        </p>
+                                    </label>
+                                </a></li>--%>
+                                <%-- <li><a>
+                                    <input name="option" id="nNetwork" type="radio" value="../../Network/Network" />
+                                    <label for="nNetwork">
+                                        <img src="../../Images/icons/start-Network.png" alt="Network" /><p>
+                                            Network
+                                        </p>
+                                    </label>
+                                </a></li>--%>
+                                <li class="feedback_start"><a>
+                                    <input name="option" id="nFeedback" type="radio" value="../../Feedback/Feedback" />
+                                    <label for="nFeedback">
+                                        <img src="../../Images/icons/start-feedback.png" alt="Feedback" /><p>
+                                            Feedback
+                                        </p>
+                                    </label>
+
+                                </a>
+
+                                </li>
+                                <li class="result_start"><a>
+                                    <input name="option" id="nResult" type="radio" value="../../Results/Results" />
+                                    <label for="nResult">
+                                        <img src="../../Images/icons/result_Icon.png" alt="Dashboard" /><p>
+                                            Feedback Results
+                                        </p>
+
+                                    </label>
+
+                                </a>
+                                    <span class="headermenus"></span>
+
+                                </li>
+                                <li class="managersync_start"><a>
+                                    <input name="option" id="nSync" type="radio" value="../../managersync/managersync" />
+                                    <label for="nSync">
+                                        <img src="../../Images/icons/start-sync.png" alt="Sync" /><p>
+                                            Manager Sync
+                                        </p>
+                                    </label>
+                                </a>
+                                    <span class=" headermenus"></span>
+                                </li>
+                                <li class="communitysync_start"><a>
+                                    <input name="option" id="nStanding" type="radio" value="../../communitysync/communitysync" />
+                                    <label for="nStanding">
+                                        <img src="../../Images/icons/start-standing.png" alt="Standing" /><p>
+                                            Community Sync
+                                        </p>
+                                    </label>
+                                </a>
+                                    <span class="headermenus"></span>
+
+                                </li>
+
+                                <%--<li><a>
+                                    <input name="option" id="nDashboard" type="radio" value="../../Dashboard/Index" />
+                                    <label for="nDashboard">
+                                        <img src="../../Images/dashboard/dashboard_icon.png" alt="Dashboard" /><p>
+                                            Dashboard
+                                        </p>
+
+                                    </label>
+
+                                </a></li>--%>
+
+                                <li class="goals_start"><a>
+                                    <input name="option" id="nGoal" type="radio" value="../../Goal/Index" />
+                                    <label for="nGoal">
+                                        <img src="../../Images/icons/goals_icon.png" alt="Dashboard" /><p>
+                                            Development Priorities
+                                        </p>
+
+
+
+                                    </label>
+
+                                </a>
+
+                                    <span class="headermenus"></span>
+                                </li>
+                                <%-- <li><a>
+                                    <input name="option" id="nMentor" type="radio" value="../../Mentor/Mentor" />
+                                    <label for="nMentor">
+                                        <img src="../../Images/icons/mentor_icon.png" alt="Dashboard" /><p>
+                                            Mentors
+                                        </p>
+
+                                    </label>
+
+                                </a></li>--%>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <%-- After login --%>
+                <div class="headerRight">
+
+
+                    <div class="dropdown">
+                        <span class="dropImage">
+                            <span class="menuStar" id="menustar" style="display:none"><img src="../../Images/start/menu_starIcon.png" /></span>
+                            <img src="../../Images/start/wall_icon.png" alt="User" align="right" title="Notifications" /></span>
+                        <div class="dropdown-content">
+                            <ul id="notifyCont">
+                                <li><a href="#"><span>*</span> Incomplete Self-Feedback</a></li>
+                                <li><a href="#"><span>*</span> Incomplete Team-Feedback</a></li>
+                                <li><a href="#"><span>*</span> View Notification History</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <ul class="wallAward">
+                        <%-- <li id="redirectWall"><a href="#">
+                            <img src="../../Images/start/wall_icon.png" alt="User" align="right" title="Notifications" /></a></li>--%>
+                        <li id="redirectPostAppreciation"><a href="#">
+                            <img src="../../Images/start/award_icon.png" alt="User" align="right" title="Give Appreciation" /></a></li>
+
+                    </ul>
+
+
+
+
+
+
+                    <%--                    <ul class="login afterlogin" id="networkdrpdown">
+                        <li class="dropdowns nt">
+                            <img src="../../Images/images/network-gray.png" alt="User" align="right" /><a id="ChooseyourNetwork" href="#"></a>
+
+                            <ul id="networklist">
+                                <li><a href="#">Network 1</a></li>
+                                <li><a href="#">Network 2</a></li>
+                                <li class="brdrnil"><a href="#">Network 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>--%>
+                    <ul class="login afterlogin">
+                        <li class="dropdowns lgn">
+                            <img src="../../Images/user.png" alt="User" align="right" id="myphoto" width="34px"
+                                height="34px" /><a href="#" id="loggedinUser">
+                                    <%
+                                        if (Session["Uname"] != null)
+                                        {
+                                            Response.Write(Session["Uname"].ToString());
+                                        }
+                                    %></a>
+                            <ul id="accsettings">
+                                <div class="hideDiv">
+                                    <li id="redirectAccount"><a href="#">Account</a></li>
+                                    <li id="redirectNetwork"><a href="#">Network</a></li>
+                                    <li id="redirectProfiles"><a href="#">Profiles</a></li>
+                                    <li id="changingPassword"><a href="#">Change Password</a></li>
+                                    <%-- <li id="yourAcc"><a href="../SignUp/Accounts">Your Accounts</a></li>--%>
+                                    <li><a href="../Feedback/CompletedFeedback?mode=1">Feedback on Your<br />
+                                        Experience</a></li>
+                                    <li><a href="../Feedback/CompletedFeedback?mode=2">Report an Issue</a></li>
+                                    <li><a href="../../Home/SignOut">Sign Out</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <%--     <ul class="login afterlogin" id="paidmember">
+                    </ul>
+                    <ul class="login afterlogin" id="cartlist">
+                    </ul>--%>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        <%-- Before login --%>
+        <%-- <div class="placeholder">--%>
+        <div class="navigation">
+            <ul id="beforeLogin" style="display: none">
+                <!-- <ul id="beforeLogin" style="display: none">-->
+                <li><a href="../Home/Login" class="members">Members</a></li>
+                <li id="reqDemoHdr"><a href="../#CloudAsCoach?slice=8" class="deActive">Request a Demo</a></li>
+                <li id="pricingHdr"><a href="../#CloudAsCoach?slice=7" class="deActive">Pricing</a></li>
+                <li class="res" id="ResourcesHdr"><a href="../#CloudAsCoach?slice=3" class="deActive">Resources</a>
+                    <ul>
+
+                        <li onclick="RedirectPoeLibrary()"><a class="deActive">REP Library</a></li>
+                        <li id=""><a href="../#CloudAsCoach?slice=4" class="deActive">Events</a></li>
+                        <li id="Li1"><a href="../#CloudAsCoach?slice=5" class="deActive">Videos</a></li>
+                        <li><a href="../#CloudAsCoach?slice=6" class="deActive">Downloadable Content</a></li>
+                        <li><a href="http://alandowzall.com/" target="_blank" class="deActive">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="cs" id="cloudSolnHdr"><a href="../#CloudAsCoach?slice=2" class="deActive">Cloud Solutions</a>
+                    <ul id="tempSolnRedirect">
+
+                        <li><a href="../#CloudAsCoach?slice=ProfileOfExcellenceCont" class="poetile deActive">Role Excellence Profiles</a></li>
+                        <li><a href="../#CloudAsCoach?slice=cloudAsCoachCont" class="coctile deActive">Cloud as Coach</a></li>
+                        <li><a href="../#CloudAsCoach?slice=PerformanceCont" class="prtile deActive">Performance Reports</a></li>
+                        <li><a href="../#CloudAsCoach?slice=CoachingToolKitCont" class="cttile deActive">Coaching Toolbox</a></li>
+                    </ul>
+                </li>
+                <li class="casc" id="cloudasHdr"><a href="../#CloudAsCoach?slice=1" class="deActive">Cloud as Coach</a>
+                    <ul id="tempRedirect">
+                        <li><a href="../#CloudAsCoach?slice=CloudasPoe" class="deActive">Role Excellence Profiles</a></li>
+                        <li><a href="../#CloudAsCoach?slice=Feedback" class="deActive">Feedback</a></li>
+                        <li><a href="../#CloudAsCoach?slice=Standing" class="deActive">Standing</a></li>
+                        <li><a href="../#CloudAsCoach?slice=Connect" class="deActive">Connect</a></li>
+                        <li><a href="../#CloudAsCoach?slice=Goals" class="deActive">Goals</a></li>
+                        <li><a href="../#CloudAsCoach?slice=Recognition" class="deActive">Recognition</a></li>
+                    </ul>
+                </li>
+                <li id="homeAct"><a href="../#CloudAsCoach?slice=9">Home</a></li>
+            </ul>
+        </div>
+
+
+        <%--</div>--%>
+        <div id="hiddenValues" style="visibility: hidden; display: none;">
+            <input type="hidden" id="Subscriptionid" value="0" />
+            <div id="userid" runat="server" style="visibility: hidden">
+            </div>
+            <div id="selectedpoe" runat="server" style="visibility: hidden">
+            </div>
+            <div id="createdFeedbacks" runat="server" style="visibility: hidden">
+            </div>
+            <div id="selectedPages" runat="server" style="visibility: hidden">
+            </div>
+        </div>
+        <%--</div>--%>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <%--                   <div class="footer">
+                    <div class="main">
+                        <div class="copyright">
+                            <span>© 2015 PIPE9</span><span><a href="/Signup/Terms" target="_blank">Terms</a></span><span><a
+                                href="/Signup/Privacy" target="_blank">Privacy</a></span><span><a
+                                    href="mailto:support@pipe9consulting.com">Support</a></span>
+                        </div>
+                          <div class="bukatutup">
+                            <span>
+                                <img src="../../Images/footer-menu.png"></span><p>
+                                    Menu
+                                </p>
+                        </div>
+                        <div id="target">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        --%>
+    </div>
+
+
+
+
+
+
+
+    <%-- New Design Footer Start --%>
+
+    <div class="sixteen wide column footerPart">
+
+        <div class="ui inverted menu">
+            <span class="item">© 2016 PIPE9 Consulting</span>
+            <a class="item" href="#" id="gotoTerms">Terms</a>
+            <a class="item" href="#" id="gotoPrivacy">Privacy</a>
+            <a class="item" href="mailto:support@pipe9consulting.com">Support</a>
+
+
+        </div>
+
+        <div class="bukatutup">
+            <span class="clickdeeper" style="display: none;">Go to the next level </span>
+            <span>
+                <img src="../../Images/footer-menu.png"></span>
+        </div>
+
+        <div id="target">
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <%-- New Design Footer End --%>
+
+
+
+
+
+
+
+
+
+
+
+
+    <%--  </div>
+        </div>--%>
+    <%--</div>--%>
+    <%
+        var emailid = "";
+
+        if (Session["emailid"] != null)
+        {
+            emailid = Session["emailid"].ToString();
+        }
+
+    %>
+    <form id="updateform" action="/Home/updateuserdetails">
+        <div id="basic-changePassword" style="display: none;">
+            <h1>Change Password</h1>
+            <p>
+                Please fill in the required details below 
+            </p>
+            <p class="origin">
+                Email
+            </p>
+            <input type="text" id="txtemailid" class="textspace" value="<%:emailid %>" disabled="disabled" />
+            <br />
+            <p class="origin">
+                Current Password
+            </p>
+            <input type="password" id="curpassword" class="textspace" />
+            <br />
+            <p class="origin">
+                New Password
+            </p>
+            <input type="password" id="newpassword" class="textspace" />
+            <br />
+            <p class="origin">
+                Confirm New Password
+            </p>
+            <input type="password" id="Confirmpassword" class="textspace" />
+            <br />
+            <input type="submit" id="ChangePassbtn" value="Submit" class="origin" />
+            <label class="errormsg" id="UpdatemailLbl">
+            </label>
+        </div>
+    </form>
+</body>
+</html>

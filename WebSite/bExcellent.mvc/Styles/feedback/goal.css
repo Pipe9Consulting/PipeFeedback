@@ -1,0 +1,2186 @@
+.main
+{
+    width: 95%;
+}
+
+.goal
+{
+    float: left;
+    margin-right: 70px;
+}
+
+    .goal li
+    { 
+        float: left;
+        background: #808080;
+        margin: 0 10px 10px 0;
+        line-height: 1em;
+        cursor: pointer;
+        font-size: 12px;
+        position: relative;
+    }
+
+        .goal li img
+        {
+            position: absolute;
+            top: 5px;
+            right: -5px;
+        }
+
+        .goal li p
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            line-height: 1.1em;
+            width: 70%;
+        }
+
+        .goal li span
+        {
+            position: absolute;
+            left: 0;
+            line-height: 1.1em;
+            width: 100%;
+            text-align: center;
+        }
+
+    .goal h1
+    {
+        color: #5e5e5e;
+        font-weight: lighter;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: none !important;
+    }
+
+    .goal h2
+    {
+        color: #5e5e5e;
+        font-weight: normal;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        background: none !important;
+    }
+
+#excell li
+{
+    background: #fff;
+}
+
+.select
+{
+    background: url(../../Images/selected-1366.png) no-repeat top right #fff !important;
+    border: 0 !important;
+}
+
+#excell li p
+{
+    color: #808080;
+    position: absolute;
+    left: 20%;
+    right: 15%;
+    width: 71%;
+    top: 15%;
+}
+
+#excell .number
+{
+    background: #e0b001;
+    color: #fff;
+    padding: 10px;
+    width: 5%;
+    text-align: center;
+    height: 20%;
+    line-height: 100%;
+    position: absolute;
+}
+
+.goalmain
+{
+    float: left;
+}
+
+.goalslideholder
+{
+    float: left;
+}
+
+.slider
+{
+    background: #fff;
+    float: left;
+}
+
+.share
+{
+    background: #808080;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.sharebtn
+{
+    position: absolute !important;
+    float: right !important;
+    background: url(../../Images/icons/share.png) no-repeat right !important;
+    width: 42px !important;
+    height: 42px !important;
+    z-index: 9 !important;
+    top: 15% !important;
+    text-indent: -5000% !important;
+    display: block;
+}
+
+#share1, #share2, #share3, #share4, #share5
+{
+    display: none;
+}
+
+.vs-context-menu
+{
+    height: 250px;
+}
+
+    .vs-context-menu ul
+    {
+        float: left;
+        border: 1px solid #ccc;
+        max-height: 120px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .vs-context-menu li
+    {
+        background: #fff;
+        color: #000;
+        padding: 5px 10px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+        .vs-context-menu li:hover
+        {
+            background: #e0b001;
+            color: #fff;
+        }
+
+.share img
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.share p
+{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.shareall
+{
+    background: #373737;
+    color: #fff;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 0;
+    border: 2px solid #808080;
+}
+
+.row
+{
+    float: left;
+    width: 102%;
+    clear: both;
+}
+
+.vs-context-menu
+{
+    display: none;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    position: absolute;
+    width: 160px;
+    float: left;
+    z-index: 9;
+    margin-left: -80px;
+}
+
+.errormsg
+{
+    background: url("../../Images/error.png") no-repeat scroll left center transparent;
+    color: #808080;
+    font-size: 10px !important;
+    padding: 0 0 0 30px !important;
+    line-height: 20px;
+    width: 60%;
+    float: left;
+    margin: 21px 0 0;
+    margin-left: -10px;
+    display: none;
+}
+
+#Qno1
+{
+    display: block;
+}
+
+.poepopupbg
+{
+    background: none repeat scroll 0 0 #000000;
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    clear: both;
+    float: none;
+    display: none;
+}
+
+.popupcontent
+{
+    clear: both;
+    font-size: 12px;
+    position: absolute;
+    top: 45%;
+    width: 90%;
+    text-align: center;
+}
+
+.popup
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 4px solid #5F5F5F;
+    color: #808080;
+    height: 20%;
+    left: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    width: 20%;
+    z-index: 99999;
+    display: none;
+}
+
+.poepopuphd
+{
+    background: none repeat scroll 0 0 #5F5F5F;
+    float: left;
+    left: 0;
+    padding: 5px 0;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 100%;
+}
+
+.close
+{
+    background: url("../../Images/close.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: right;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+    .close:hover
+    {
+        background: url(../../Images/close-hover.png);
+    }
+
+#share1, #share2, #share3, #share4, #share5
+{
+    width: 15%;
+    position: absolute;
+}
+
+.selected
+{
+    background: none repeat scroll 0 0 #E0B001 !important;
+    border: 0 !important;
+}
+
+.lastrow
+{
+    width: 100%;
+}
+
+@media screen and (max-width: 7680px) and (min-width: 1680px)
+{
+    .goal ul
+    {
+        max-height: 465px;
+        width: 345px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94.5%;
+    }
+
+    #excell
+    {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+        #excell ul
+        {
+            width: 310px;
+        }
+
+        #excell li
+        {
+            width: 280px;
+            height: 70px;
+        }
+
+    .goal
+    {
+        width: 324px;
+    }
+
+        .goal li
+        {
+            width: 324px;
+            height: 85px;
+        }
+
+            .goal li p
+            {
+                font-size: 14px;
+            }
+
+            .goal li span
+            {
+                font-size: 65px;
+                top: 20px;
+            }
+
+        .goal h1
+        {
+            font-size: 24px;
+        }
+
+        .goal h2
+        {
+            font-size: 18px;
+        }
+
+    #poemodule li p
+    {
+        font-size: 20px;
+    }
+
+    .goalslideholder
+    {
+        width: 44.5%;
+        margin-top: 4%;
+    }
+
+    .share
+    {
+        width: 105px;
+        height: 85px;
+    }
+
+    .shareall
+    {
+        width: 103px;
+    }
+
+    .slider
+    {
+        width: 86.5%;
+        height: 85px;
+    }
+
+    .slidebar
+    {
+        width: 826px;
+        height: 85px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/goal-slider.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle.png) no-repeat !important;
+        font-weight: normal;
+        color: #555555;
+        height: 94px !important;
+        width: 24px;
+    }
+
+    .firstid
+    {
+        margin-left: 10%;
+    }
+
+    .secondid
+    {
+        margin-left: 35%;
+    }
+
+    .thirdid
+    {
+        margin-left: 60%;
+    }
+
+    .forthid
+    {
+        margin-left: 85%;
+    }
+
+    .eilist
+    {
+        height: 85px !important;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 7%;
+        top: 2% !important;
+    }
+
+    .lastrow
+    {
+        margin-top: 34px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: 10.5% !important;
+    }
+
+    #share2
+    {
+        margin-left: 35.5%;
+    }
+
+    #share3
+    {
+        margin-left: 60.5%;
+    }
+
+    #share4
+    {
+        margin-left: 85.5%;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1680px)
+{
+    .goal ul
+    {
+        max-height: 390px;
+        width: 322px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94.5%;
+    }
+
+    .goal
+    {
+        width: 270px;
+    }
+
+        .goal li
+        {
+            width: 300px;
+            height: 70px;
+        }
+
+    #poemodule li p
+    {
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    #excell
+    {
+        width: 300px;
+        margin-left: 40px;
+    }
+
+        #excell ul
+        {
+            width: 300px;
+        }
+
+        #excell li
+        {
+            width: 280px;
+            height: 70px;
+        }
+
+    .goal li p
+    {
+        font-size: 14px;
+    }
+
+    .goal li span
+    {
+        font-size: 55px;
+        top: 20px;
+    }
+
+    .goal h1
+    {
+        font-size: 24px;
+    }
+
+    .goal h2
+    {
+        font-size: 16px;
+    }
+
+    .goalslideholder
+    {
+        width: 42%;
+        margin-top: 4.5%;
+    }
+
+    .share
+    {
+        width: 90px;
+        height: 70px;
+    }
+
+    .shareall
+    {
+        width: 88px;
+        margin-top: 10px;
+    }
+
+    .slider
+    {
+        width: 86%;
+        height: 70px;
+    }
+
+    .slidebar
+    {
+        width: 647px;
+        height: 70px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/slider-1600.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle-1600.png) no-repeat;
+        font-weight: normal;
+        color: #555555;
+        height: 74px;
+        width: 14px;
+    }
+
+    .ui-slider .ui-slider-handle
+    {
+        height: 78px !important;
+    }
+
+    .firstid
+    {
+        margin-left: 5.5%;
+    }
+
+    .secondid
+    {
+        margin-left: 30.5%;
+    }
+
+    .thirdid
+    {
+        margin-left: 55.5%;
+    }
+
+    .forthid
+    {
+        margin-left: 80.5%;
+    }
+
+    .eilist
+    {
+        height: 70px !important;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 10%;
+    }
+
+    .lastrow
+    {
+        margin-top: 28px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: 6% !important;
+    }
+
+    #share2
+    {
+        margin-left: 31%;
+    }
+
+    #share3
+    {
+        margin-left: 55.5%;
+    }
+
+    #share4
+    {
+        margin-left: 80.5%;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px)
+{
+    .goal ul
+    {
+        max-height: 390px;
+        width: 320px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94%;
+    }
+
+    .goal
+    {
+        width: 270px;
+    }
+
+        .goal li
+        {
+            width: 300px;
+            height: 70px;
+        }
+
+    #excell
+    {
+        width: 250px;
+        margin-left: 40px;
+    }
+
+        #excell ul
+        {
+            width: 250px;
+        }
+
+        #excell li
+        {
+            width: 230px;
+            height: 70px;
+        }
+
+    #poemodule li p
+    {
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    .goal li p
+    {
+        font-size: 14px;
+    }
+
+    .goal li span
+    {
+        font-size: 55px;
+        top: 20px;
+    }
+
+    .goal h1
+    {
+        font-size: 24px;
+    }
+
+    .goal h2
+    {
+        font-size: 16px;
+    }
+
+    .goalslideholder
+    {
+        width: 46.9%;
+        margin-top: 5%;
+    }
+
+    .share
+    {
+        width: 90px;
+        height: 70px;
+    }
+
+    .shareall
+    {
+        width: 88px;
+        margin-top: 10px;
+    }
+
+    .slider
+    {
+        width: 86%;
+        height: 70px;
+    }
+
+    .slidebar
+    {
+        width: 647px;
+        height: 70px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/slider-1600.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle-1600.png) no-repeat;
+        font-weight: normal;
+        color: #555555;
+        height: 74px;
+        width: 14px;
+    }
+
+    .ui-slider .ui-slider-handle
+    {
+        height: 78px !important;
+    }
+
+    .firstid
+    {
+        margin-left: 5.5%;
+    }
+
+    .secondid
+    {
+        margin-left: 30.5%;
+    }
+
+    .thirdid
+    {
+        margin-left: 55.5%;
+    }
+
+    .forthid
+    {
+        margin-left: 80.5%;
+    }
+
+    .eilist
+    {
+        height: 70px !important;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 10%;
+    }
+
+    .lastrow
+    {
+        margin-top: 28px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: 6% !important;
+    }
+
+    #share2
+    {
+        margin-left: 31%;
+    }
+
+    #share3
+    {
+        margin-left: 55.5%;
+    }
+
+    #share4
+    {
+        margin-left: 80.5%;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1440px)
+{
+    .goal
+    {
+        margin-right: 70px;
+    }
+
+    #excell
+    {
+        margin-right: 60px;
+    }
+
+    .goal ul
+    {
+        max-height: 340px;
+        width: 277px;
+        margin-right: 40px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94%;
+    }
+
+    .select
+    {
+        background: url(../../Images/selected-1366.png) no-repeat top right #fff !important;
+        border: 0 !important;
+    }
+
+    .goal
+    {
+        width: 266px;
+    }
+
+        .goal li
+        {
+            width: 255px;
+            height: 60px;
+        }
+
+    .eilist
+    {
+        height: 60px !important;
+    }
+
+    .goal li p
+    {
+        font-size: 11px;
+        width: 80%;
+    }
+
+    #poemodule li p
+    {
+        font-size: 14px;
+    }
+
+    .goal li span
+    {
+        font-size: 45px;
+        top: 20px;
+    }
+
+    .goal li img
+    {
+        top: 0;
+    }
+
+    .goal h1
+    {
+        font-size: 20px;
+    }
+
+    .goal h2
+    {
+        font-size: 14px;
+    }
+
+    .goalslideholder
+    {
+        width: 41.7%;
+        margin-top: 5%;
+    }
+
+    .share
+    {
+        width: 80px;
+        height: 60px;
+    }
+
+    .shareall
+    {
+        width: 78px;
+    }
+
+    .slider
+    {
+        width: 85%;
+        height: 60px;
+    }
+
+    .slidebar
+    {
+        width: 515px;
+        height: 60px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/slider-1366.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle-1366.png) no-repeat !important;
+    }
+
+    .ui-slider .ui-slider-handle
+    {
+        height: 68px !important;
+    }
+
+    .firstid
+    {
+        margin-left: 0.5%;
+    }
+
+    .secondid
+    {
+        margin-left: 25.5%;
+    }
+
+    .thirdid
+    {
+        margin-left: 50.5%;
+    }
+
+    .forthid
+    {
+        margin-left: 75.5%;
+    }
+
+    .vs-context-menu li
+    {
+        font-size: 10px;
+    }
+
+    .vs-context-menu
+    {
+        height: 100px;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 13%;
+    }
+
+    .lastrow
+    {
+        margin-top: 19px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: 0.5% !important;
+    }
+
+    #share2
+    {
+        margin-left: 25.5%;
+    }
+
+    #share3
+    {
+        margin-left: 50.5%;
+    }
+
+    #share4
+    {
+        margin-left: 75.5%;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px)
+{
+    .goal
+    {
+        margin-right: 70px;
+    }
+
+    #excell
+    {
+        margin-right: 60px;
+    }
+
+    .goal ul
+    {
+        max-height: 340px;
+        width: 277px;
+        margin-right: 40px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94%;
+    }
+
+    .lastrow
+    {
+        width: 100%;
+    }
+
+    .select
+    {
+        background: url(../../Images/selected-1366.png) no-repeat top right #fff !important;
+        border: 0 !important;
+    }
+
+    .goal
+    {
+        width: 266px;
+    }
+
+        .goal li
+        {
+            width: 255px;
+            height: 60px;
+        }
+
+    .eilist
+    {
+        height: 60px !important;
+    }
+
+    .goal li p
+    {
+        font-size: 11px;
+        width: 80%;
+    }
+
+    #poemodule li p
+    {
+        font-size: 14px;
+    }
+
+    .goal li span
+    {
+        font-size: 45px;
+        top: 20px;
+    }
+
+    .goal li img
+    {
+        top: 0;
+    }
+
+    .goal h1
+    {
+        font-size: 20px;
+    }
+
+    .goal h2
+    {
+        font-size: 14px;
+    }
+
+    .goalslideholder
+    {
+        width: 41.7%;
+        margin-top: 5%;
+    }
+
+    .share
+    {
+        width: 80px;
+        height: 60px;
+    }
+
+    .shareall
+    {
+        width: 78px;
+    }
+
+    .slider
+    {
+        width: 85%;
+        height: 60px;
+    }
+
+    .slidebar
+    {
+        width: 515px;
+        height: 60px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/slider-1366.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle-1366.png) no-repeat !important;
+    }
+
+    .ui-slider .ui-slider-handle
+    {
+        height: 68px !important;
+    }
+
+    .firstid
+    {
+        margin-left: 0.5%;
+    }
+
+    .secondid
+    {
+        margin-left: 25.5%;
+    }
+
+    .thirdid
+    {
+        margin-left: 50.5%;
+    }
+
+    .forthid
+    {
+        margin-left: 75.5%;
+    }
+
+    .vs-context-menu li
+    {
+        font-size: 10px;
+    }
+
+    .vs-context-menu
+    {
+        height: 100px;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 13%;
+    }
+
+    .lastrow
+    {
+        margin-top: 19px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: 0.5% !important;
+    }
+
+    #share2
+    {
+        margin-left: 25.5%;
+    }
+
+    #share3
+    {
+        margin-left: 50.5%;
+    }
+
+    #share4
+    {
+        margin-left: 75.5%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+{
+    .goal
+    {
+        margin-right: 70px;
+    }
+
+    #excell
+    {
+        margin-right: 60px;
+    }
+
+    .goal ul
+    {
+        max-height: 340px;
+        width: 277px;
+        margin-right: 40px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94%;
+    }
+
+    .select
+    {
+        background: url(../../Images/selected-1366.png) no-repeat top right #fff !important;
+        border: 0 !important;
+    }
+
+    .goal
+    {
+        width: 266px;
+    }
+
+        .goal li
+        {
+            width: 255px;
+            height: 60px;
+        }
+
+    .eilist
+    {
+        height: 60px !important;
+    }
+
+    .goal li p
+    {
+        font-size: 11px;
+        width: 80%;
+    }
+
+    #poemodule li p
+    {
+        font-size: 14px;
+    }
+
+    .goal li span
+    {
+        font-size: 45px;
+        top: 20px;
+    }
+
+    .goal li img
+    {
+        top: 0;
+    }
+
+    .goal h1
+    {
+        font-size: 20px;
+    }
+
+    .goal h2
+    {
+        font-size: 14px;
+    }
+
+    .goalslideholder
+    {
+        width: 41.7%;
+        margin-top: 5%;
+    }
+
+    .share
+    {
+        width: 80px;
+        height: 60px;
+    }
+
+    .shareall
+    {
+        width: 78px;
+    }
+
+    .slider
+    {
+        width: 85%;
+        height: 60px;
+    }
+
+    .slidebar
+    {
+        width: 515px;
+        height: 60px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/slider-1366.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle-1366.png) no-repeat !important;
+    }
+
+    .ui-slider .ui-slider-handle
+    {
+        height: 68px !important;
+    }
+
+    .firstid
+    {
+        margin-left: 0.5%;
+    }
+
+    .secondid
+    {
+        margin-left: 25.5%;
+    }
+
+    .thirdid
+    {
+        margin-left: 50.5%;
+    }
+
+    .forthid
+    {
+        margin-left: 75.5%;
+    }
+
+    .vs-context-menu li
+    {
+        font-size: 10px;
+    }
+
+    .vs-context-menu
+    {
+        height: 100px;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 13%;
+    }
+
+    .lastrow
+    {
+        margin-top: 19px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: 0.5% !important;
+    }
+
+    #share2
+    {
+        margin-left: 25.5%;
+    }
+
+    #share3
+    {
+        margin-left: 50.5%;
+    }
+
+    #share4
+    {
+        margin-left: 75.5%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    .goal
+    {
+        margin-right: 70px;
+    }
+
+    #excell
+    {
+        margin-right: 60px;
+    }
+
+    .goal ul
+    {
+        max-height: 340px;
+        width: 277px;
+        margin-right: 40px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94%;
+    }
+
+    .select
+    {
+        background: url(../../Images/selected-1366.png) no-repeat top right #fff !important;
+        border: 0 !important;
+    }
+
+    .goal
+    {
+        width: 266px;
+    }
+
+        .goal li
+        {
+            width: 255px;
+            height: 60px;
+        }
+
+    .eilist
+    {
+        height: 60px !important;
+    }
+
+    .goal li p
+    {
+        font-size: 11px;
+        width: 80%;
+    }
+
+    #poemodule li p
+    {
+        font-size: 14px;
+    }
+
+    .goal li span
+    {
+        font-size: 45px;
+        top: 20px;
+    }
+
+    .goal li img
+    {
+        top: 0;
+    }
+
+    .goal h1
+    {
+        font-size: 20px;
+    }
+
+    .goal h2
+    {
+        font-size: 14px;
+    }
+
+    .goalslideholder
+    {
+        width: 41.7%;
+        margin-top: 5%;
+    }
+
+    .share
+    {
+        width: 80px;
+        height: 60px;
+    }
+
+    .shareall
+    {
+        width: 78px;
+    }
+
+    .slider
+    {
+        width: 85%;
+        height: 60px;
+    }
+
+    .slidebar
+    {
+        width: 515px;
+        height: 60px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/slider-1366.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle-1366.png) no-repeat !important;
+    }
+
+    .ui-slider .ui-slider-handle
+    {
+        height: 68px !important;
+    }
+
+    .firstid
+    {
+        margin-left: 0.5%;
+    }
+
+    .secondid
+    {
+        margin-left: 25.5%;
+    }
+
+    .thirdid
+    {
+        margin-left: 50.5%;
+    }
+
+    .forthid
+    {
+        margin-left: 75.5%;
+    }
+
+    .vs-context-menu li
+    {
+        font-size: 10px;
+    }
+
+    .vs-context-menu
+    {
+        height: 100px;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 13%;
+    }
+
+    .lastrow
+    {
+        margin-top: 19px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: 0.5% !important;
+    }
+
+    #share2
+    {
+        margin-left: 25.5%;
+    }
+
+    #share3
+    {
+        margin-left: 50.5%;
+    }
+
+    #share4
+    {
+        margin-left: 75.5%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    .goal
+    {
+        margin-right: 10px;
+    }
+
+    #excell
+    {
+        margin-right: 10px;
+    }
+
+    .goal ul
+    {
+        max-height: 340px;
+        width: 277px;
+        margin-right: 40px;
+    }
+
+    .pageholder
+    {
+        margin-top: 7%;
+        width: 94%;
+    }
+
+    .lastrow
+    {
+        width: 100%;
+    }
+
+    .select
+    {
+        background: url(../../Images/selected-1366.png) no-repeat top right #fff !important;
+        border: 0 !important;
+    }
+
+    .goal
+    {
+        width: 217px;
+    }
+
+        .goal li
+        {
+            width: 200px;
+            height: 60px;
+        }
+
+    .eilist
+    {
+        height: 60px !important;
+    }
+
+    .goal li p
+    {
+        font-size: 11px;
+        width: 80%;
+    }
+
+    #poemodule li p
+    {
+        font-size: 14px;
+    }
+
+    .goal li span
+    {
+        font-size: 45px;
+        top: 20px;
+    }
+
+    .goal li img
+    {
+        top: 0;
+    }
+
+    .goal h1
+    {
+        font-size: 20px;
+    }
+
+    .goal h2
+    {
+        font-size: 14px;
+    }
+
+    .goalslideholder
+    {
+        width: 41.7%;
+        margin-top: 6.5%;
+    }
+
+    .share
+    {
+        width: 80px;
+        height: 60px;
+    }
+
+    .shareall
+    {
+        width: 78px;
+    }
+
+    .slider
+    {
+        width: 85%;
+        height: 60px;
+    }
+
+    .slidebar
+    {
+        width: 515px;
+        height: 60px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/slider-1366.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle-1366.png) no-repeat !important;
+    }
+
+    .ui-slider .ui-slider-handle
+    {
+        height: 68px !important;
+    }
+
+    .firstid
+    {
+        margin-left: 0.5%;
+    }
+
+    .secondid
+    {
+        margin-left: 25.5%;
+    }
+
+    .thirdid
+    {
+        margin-left: 50.5%;
+    }
+
+    .forthid
+    {
+        margin-left: 75.5%;
+    }
+
+    .vs-context-menu li
+    {
+        font-size: 10px;
+    }
+
+    .vs-context-menu
+    {
+        height: 100px;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 13%;
+    }
+
+    .lastrow
+    {
+        margin-top: 19px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: 0.5% !important;
+    }
+
+    #share2
+    {
+        margin-left: 25.5%;
+    }
+
+    #share3
+    {
+        margin-left: 50.5%;
+    }
+
+    #share4
+    {
+        margin-left: 75.5%;
+    }
+
+    .accordion label img
+    {
+        width: auto !important;
+    }
+
+    .accordion a img
+    {
+        width: 83%;
+    }
+
+    .accordion h3.current, .accordion h3
+    {
+        height: 2px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px)
+{
+    .goal
+    {
+        margin-right: 70px;
+    }
+
+    #excell
+    {
+        margin-right: 60px;
+    }
+
+    .goal ul
+    {
+        max-height: 340px;
+        width: 277px;
+        margin-right: 40px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94%;
+    }
+
+    .select
+    {
+        background: url(../../Images/selected-1366.png) no-repeat top right #fff !important;
+        border: 0 !important;
+    }
+
+    .goal
+    {
+        width: 125px;
+    }
+
+        .goal li
+        {
+            width: 166px;
+            height: 60px;
+        }
+
+    .eilist
+    {
+        height: 60px !important;
+    }
+
+    .goal li p
+    {
+        font-size: 11px;
+        width: 80%;
+    }
+
+    #poemodule li p
+    {
+        font-size: 14px;
+    }
+
+    .goal li span
+    {
+        font-size: 45px;
+        top: 20px;
+    }
+
+    .goal li img
+    {
+        top: 0;
+    }
+
+    .goal h1
+    {
+        font-size: 20px;
+    }
+
+    .goal h2
+    {
+        font-size: 14px;
+    }
+
+    .goalslideholder
+    {
+        width: 41.7%;
+        margin-top: 8.8%;
+    }
+
+    .share
+    {
+        width: 80px;
+        height: 60px;
+    }
+
+    .shareall
+    {
+        width: 78px;
+    }
+
+    .slider
+    {
+        width: 85%;
+        height: 60px;
+    }
+
+    .slidebar
+    {
+        width: 348px;
+        height: 60px !important;
+        cursor: pointer;
+    }
+
+    #Qno1 .ui-slider-range, #Qno2 .ui-slider-range, #Qno3 .ui-slider-range, #Qno4 .ui-slider-range, #Qno5 .ui-slider-range, #Qno6 .ui-slider-range
+    {
+        background-image: url(../../Images/chart/800/slider-800.png);
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default
+    {
+        background: url(../../Images/slider-handle-1366.png) no-repeat !important;
+    }
+
+    .ui-slider .ui-slider-handle
+    {
+        height: 68px !important;
+    }
+
+    .firstid
+    {
+        margin-left: 0.5%;
+    }
+
+    .secondid
+    {
+        margin-left: 25.5%;
+    }
+
+    .thirdid
+    {
+        margin-left: 50.5%;
+    }
+
+    .forthid
+    {
+        margin-left: 75.5%;
+    }
+
+    .vs-context-menu li
+    {
+        font-size: 10px;
+    }
+
+    .vs-context-menu
+    {
+        height: 100px;
+    }
+
+    .bold
+    {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .slider img
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .sharebtn
+    {
+        left: 13%;
+    }
+
+    .lastrow
+    {
+        margin-top: 19px;
+    }
+
+    .row
+    {
+        margin-bottom: 10px;
+    }
+
+    #share1
+    {
+        margin-left: -3.5% !important;
+    }
+
+    #share2
+    {
+        margin-left: 20.5%;
+    }
+
+    #share3
+    {
+        margin-left: 45.5%;
+    }
+
+    #share4
+    {
+        margin-left: 70.5%;
+    }
+
+    .accordion label img
+    {
+        width: auto !important;
+    }
+
+    .accordion a img
+    {
+        width: 80%;
+    }
+
+    .accordion h3.current, .accordion h3
+    {
+        height: 2px;
+    }
+}

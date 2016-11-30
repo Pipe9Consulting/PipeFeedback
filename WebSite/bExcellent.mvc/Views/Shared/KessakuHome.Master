@@ -1,0 +1,360 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KessakuHome.master.cs" Inherits="bExcellent.mvc.Views.Shared.KessakuHome" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <%--<link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />--%>
+    <link href="../../Styles/KessakuStyles/client-carousel.css" rel="stylesheet" />
+    <link href="../../Styles/KessakuStyles/home.css" rel="stylesheet" />
+    <link href="../../Styles/KessakuStyles/icons.css" rel="stylesheet" />
+    <link href="../../Styles/KessakuStyles/reset.css" rel="stylesheet" />
+    <link href="../../Styles/KessakuStyles/pop-up.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <script src="../../Scripts/jquery-1.9.1.js"></script>
+    <script src="../../Scripts/ref/common.js"></script>
+    <script src="../../Scripts/KessakuScript/kessakuHomeCommon.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-52392592-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#tempRedirect li').click(function () {
+                window.location.href = "../CloudAsCoach";
+            });
+            $('#tempSolnRedirect li').click(function () {
+                window.location.href = "../CloudSolutions";
+            });
+            $('#dwnldCont').click(function () {
+                window.open('../PDF/Cloud as Coach_ASTD Webinar_Downloadable.pptx', '_blank');
+            });
+            $('#gotoTerms').click(function () {
+                // window.location.href = "/SignUp/Terms";
+                window.open("/SignUp/Terms", '_blank');
+            });
+            $('#gotoPrivacy').click(function () {
+                //window.location.href = "/SignUp/Privacy";
+                window.open("/SignUp/Privacy", '_blank');
+            });
+            //$('#target li').click(function () {
+            //    debugger;
+            //    var datavalue = $(this).attr("data-value");
+            //    var vals = $('#' + datavalue + ' a');
+            //    vals.removeClass('deActive').addClass('active');
+            //});
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".modal").on("click", function (e) {
+                if ($(e.target).hasClass("modal")) {
+                    modal.hide();
+                }
+            });
+
+        });
+
+        var modal = {
+
+            show: function (selector) {
+                $("#" + selector).show();
+            },
+
+            hide: function () {
+                $(".modal:visible").hide();
+            }
+
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="KessakuHomehead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <%--<iframe src="../KessakuHome/Header.html" height="15%" width="100%"></iframe>--%>
+    <div id="preloader">
+        <div id="status">
+            &nbsp;
+        </div>
+    </div>
+    <%-- Start of pop-up--%>
+    <input type="hidden" id="Dwnfilenumber" value="0" />
+    <input type="hidden" id="PrevVideoDemo" value="0" />
+    <input type="hidden" id="homeurl" value="<%=ConfigurationManager.AppSettings["HostingPrefix"].ToString() %>" />
+    <div class="popup" id="messagePopup">
+        <div class="popuparea">
+            <div class="popupbox">
+                <div class="close"></div>
+                <h2>Download Role Excellence Profiles</h2>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>Name</td>
+                        <td colspan="2">
+                            <div class="txtbox mendatory">
+                                <input type="text" id="PreviewFirstname" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td colspan="2">
+                            <div class="txtbox mendatory">
+                                <input type="text" id="PreviewMailid" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Company</td>
+                        <td colspan="2">
+                            <div class="txtbox">
+                                <input type="text" id="PreviewCompany" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td colspan="2">
+                            <div class="txtbox">
+                                <input type="text" id="PreviewPhone" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td colspan="2">
+
+                            <div class="txtbox">
+                                <textarea name="textarea" rows="5" id="PreviewMessage"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <div class="error" id="PreviewContactErr">Please enter your name</div>
+                        </td>
+                        <td>
+                            <div class="submit">
+                                <input type="button" value="Submit" onclick="SubmitContactUs()" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <%-- End of the Pop-up--%>
+    <%-- Pop-up for Thank You--%>
+
+    <%-- start Video popup--%>
+    <div class="popup" id="videopopup">
+        <div class="popuparea">
+            <div class="popupbox">
+                <div class="close" id="closevideoPopup"></div>
+                <h2>Watch Videos</h2>
+                <div id="popupvideo"></div>
+            </div>
+        </div>
+    </div>
+    <%-- End video popup--%>
+
+    <div class="popup" id="thankuPopup">
+        <div class="popuparea thankyou">
+            <div class="popupbox">
+                <div class="close"></div>
+                <h2>Thank You!</h2>
+                <p>Your request has been successfully submitted</p>
+            </div>
+        </div>
+    </div>
+    <%--End of pop-up Thank you--%>
+    <div class="main">
+
+        <%--<div class="header">
+            <div class="placeholder">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../../Images/KessakuImage/logo.png" alt="Kessaku" /></a>
+                </div>
+                <div class="navigation">
+                    <ul id="headerCont">
+                        <li><a href="../Home/Login" class="members">Members</a></li>
+                        <li id="reqDemoHdr"><a href="../RequestDemo">Request a Demo</a></li>
+                        <li id="pricingHdr"><a href="../Pricing">Pricing</a></li>
+                        <li class="res" id="ResourcesHdr"><a href="../Resources">Resources</a>
+                            <ul>
+
+                                <li onclick="RedirectPoeLibrary()"><a>PoE Library</a></li>
+                                <li id="EventsRedirect"><a>Events</a></li>
+                                <li id="videoPage"><a href="../Videos">Videos</a></li>
+                                <li><a id="dwnldCont">Downloadable Content</a></li>
+                            </ul>
+                        </li>
+                        <li class="cs" id="cloudSolnHdr"><a href="../CloudSolutions">Cloud Solutions</a>
+                            <ul id="tempSolnRedirect">
+
+                                <li><a class="poetile">Profiles of Excellence</a></li>
+                                <li><a class="coctile">Cloud as Coach</a></li>
+                                <li><a class="prtile">Performance Reports</a></li>
+                                <li><a class="cttile">Coaching Toolbox</a></li>
+                            </ul>
+                        </li>
+                        <li class="casc" id="cloudasHdr"><a href="../CloudAsCoach">Cloud as Coach</a>
+                            <ul id="tempRedirect">
+                                <li><a >Profiles of Excellence</a></li>
+                                <li><a>Feedback</a></li>
+                                <li><a >Standing</a></li>
+                                <li><a >Connect</a></li>
+                                <li><a >Goals</a></li>
+                                <li><a >Recognition</a></li>
+                            </ul>
+                        </li>
+                        <li id="homeAct"><a class="active" href="/">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>--%>
+        <%--    <div class="headerbdr"></div>--%>
+        <%--  <div style="height:5.6em;position:fixed">hello</div>--%>
+        <asp:ContentPlaceHolder ID="kessakuHomeContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="contact" id="contactuspage">
+            <div class="placeholder" id="hidDiv1">
+                <h1>Contact Us</h1>
+            </div>
+            <%--            <div class="addressbar" id="hidDiv2">
+                <div class="placeholder">
+                    <ul>
+                           <li>
+                            <h5>Address</h5>
+                            <p>Pipe9 Consulting Inc.</p>
+                            <p>19329 Skyridge Circle,</p>
+                            <p>Boca Raton, Florida</p>
+                            <p>33498</p>
+                        </li>
+                       <li>
+                            <h5>Customer Service</h5>
+                            <p>Phone:	+1-855-923-5556</p>
+                            <p>Email: support@pipe9consulting.com</p>
+                        </li>
+                        <li>
+                            Contact Us
+                        </li>
+
+                          <li>
+                            <h5>Sales</h5>
+                            <p>Phone:	+1-855-923-5556</p>
+                            <p>Email: sales@pipe9consulting.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>--%>
+            <div class="contactform" id="hidDiv3">
+                <div class="placeholder">
+                    <div class="txtbox">
+                        <input type="text" placeholder="First Name" id="contactFirstName" />
+                    </div>
+                    <div class="txtbox right">
+                        <input type="text" placeholder="Last Name" id="ContactLastName" />
+                    </div>
+                    <div class="txtbox">
+                        <input type="text" placeholder="Email" id="ContactEmail" />
+                    </div>
+                    <div class="txtbox right">
+                        <input type="text" placeholder="Company" id="ContactCompany" />
+                    </div>
+                    <div class="txtbox">
+                        <input type="text" placeholder="Title" id="ContactTitle" />
+                    </div>
+                    <div class="txtbox right">
+                        <input type="text" placeholder="Phone" id="ContactPhoneNumber" />
+                    </div>
+                    <div class="msgbx">
+                        <textarea name="" cols="1" rows="5" placeholder="Message" id="ContactMessage"></textarea>
+                    </div>
+
+                    <div class="submit">
+                        <input type="button" id="submitContact" class="button" value="Submit" />
+                    </div>
+                    <div id="example" class="modal">
+                        <div class="modal__content">
+                            <a class="modal__close" href="javascript: modal.hide()">X</a>
+
+                            <p>Thanks!</p>
+
+                            <p>We appreciate your interest in learning more about the transformational journey towards excellence!</p>
+
+                            <p>We have received your submission and will have one of our project managers get in contact with you within 1-2 business days. </p>
+
+                            <p>The team at Pipe9 Consulting </p>
+
+                        </div>
+                    </div>
+                    <div class="error ContError" id="ContactError">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="placeholder">
+                    <ul class="left">
+                        <li><a id="gotoTerms">Terms</a></li>
+                        <li><a id="gotoPrivacy">Privacy</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a href="mailto:support@pipe9consulting.com">Support</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li id="footerMenu"><a>
+                            <img src="../../Images/KessakuImage/menu.png" alt="Menu" /></a>
+                            <ul id="target">
+                                <li data-value="homeAct"><a href="../Home"><span class="footermenu7"></span>
+                                    <p>Home</p>
+                                </a></li>
+                                <li data-value="cloudasHdr"><a href="../CloudAsCoach"><span class="footermenu1"></span>
+                                    <p>PIPE9 Coach</p>
+                                </a></li>
+                                <li data-value="cloudSolnHdr"><a href="../CloudSolutions"><span class="footermenu2"></span>
+                                    <p>PIPE9 Solutions</p>
+                                </a></li>
+                                <%-- <li data-value="ResourcesHdr"><a href="../Resources"><span class="footermenu3"></span>
+                                    <p>Resources</p>
+                                </a></li>
+                                <li data-value="pricingHdr"><a href="../Pricing"><span class="footermenu4"></span>
+                                    <p>Pricing</p>
+                                </a></li>--%>
+                                <li data-value="reqDemoHdr"><a href="../RequestDemo"><span class="footermenu5"></span>
+                                    <p>Demo Request</p>
+                                </a></li>
+                              <%--  <li data-value=""><a href="../Microsoft/Login"><span class="footermenu6"></span>
+                                    <p>Login</p>
+                                </a></li>--%>
+                            </ul>
+                        </li>
+                        <li>© 2016 PIPE9</li>
+                        <li><a href="mailto:support@pipe9consulting.com">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%--<form id="form1" runat="server">
+        <div>
+        </div>
+    </form>--%>
+</body>
+</html>

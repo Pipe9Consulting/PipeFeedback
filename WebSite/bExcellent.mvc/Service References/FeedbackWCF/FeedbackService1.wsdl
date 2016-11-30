@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FeedbackService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
+      <xsd:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
+      <xsd:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd4" />
+      <xsd:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" />
+      <xsd:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FeedbackService_GetUserdetailsByMappingId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserdetailsByMappingId" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetUserdetailsByMappingId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserdetailsByMappingIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackGivenCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackGivenCount" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackGivenCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackGivenCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_CheckAnswers_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckAnswers" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_CheckAnswers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckAnswersResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetGivenAnswer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGivenAnswer" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetGivenAnswer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGivenAnswerResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackReceivedCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackReceivedCount" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackReceivedCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackReceivedCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPOEIntro_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOEIntro" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPOEIntro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOEIntroResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetModuleIntro_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleIntro" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetModuleIntro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleIntroResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPOEKeyAction_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOEKeyAction" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPOEKeyAction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOEKeyActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetModuleKeyAction_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleKeyAction" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetModuleKeyAction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleKeyActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPracticeArea_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPracticeArea" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPracticeArea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPracticeAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetQuestions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuestions" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetQuestions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuestionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetSurveyQuestions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyQuestions" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetSurveyQuestions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyQuestionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetQuestionCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuestionCount" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetQuestionCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuestionCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackHistory" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetOutstandingFeedbacks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutstandingFeedbacks" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetOutstandingFeedbacks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutstandingFeedbacksResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackGiven_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackGiven" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackGiven_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackGivenResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackRecevied_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackRecevied" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackRecevied_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackReceviedResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_SavePOEResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePOEResult" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_SavePOEResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePOEResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_SaveDemographicResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDemographicResult" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_SaveDemographicResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDemographicResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_CreateFeedback_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFeedback" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_CreateFeedback_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFeedbackResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_UpdateFeedbackStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFeedbackStatus" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_UpdateFeedbackStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFeedbackStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetLastSavedQuestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastSavedQuestion" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetLastSavedQuestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastSavedQuestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackResults" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbackResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbackResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbacksByGroupId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbacksByGroupId" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFeedbacksByGroupId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeedbacksByGroupIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetTopMembers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopMembers" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetTopMembers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopMembersResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetAllFeedbackDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFeedbackDetails" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetAllFeedbackDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFeedbackDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetManagerReportDumb_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetManagerReportDumb" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetManagerReportDumb_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetManagerReportDumbResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetModuleScores_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleScores" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetModuleScores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleScoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetCapabilityModuleScores_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCapabilityModuleScores" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetCapabilityModuleScores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCapabilityModuleScoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetTeamReportDumb_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamReportDumb" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetTeamReportDumb_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamReportDumbResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_InsertUpdateUSerRating_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateUSerRating" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_InsertUpdateUSerRating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateUSerRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetUserRatingByPoeId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRatingByPoeId" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetUserRatingByPoeId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRatingByPoeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetUserRatingByPoeIdUpdated_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRatingByPoeIdUpdated" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetUserRatingByPoeIdUpdated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRatingByPoeIdUpdatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_UpdateFeedbackNotes_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFeedbackNotes" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_UpdateFeedbackNotes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFeedbackNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFbExperienceQuestions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFbExperienceQuestions" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetFbExperienceQuestions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFbExperienceQuestionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_InsertFbExperience_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFbExperience" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_InsertFbExperience_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFbExperienceResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPathfindersIds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPathfindersIds" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPathfindersIds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPathfindersIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_SaveSurveyResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveSurveyResult" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_SaveSurveyResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveSurveyResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetDevPriorityQuestions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevPriorityQuestions" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetDevPriorityQuestions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevPriorityQuestionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetModuleQuestions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleQuestions" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetModuleQuestions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleQuestionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetUserSurvey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSurvey" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetUserSurvey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSurveyResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPoEResultMode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoEResultMode" />
+  </wsdl:message>
+  <wsdl:message name="FeedbackService_GetPoEResultMode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoEResultModeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FeedbackService">
+    <wsdl:operation name="GetUserdetailsByMappingId">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetUserdetailsByMappingId" message="tns:FeedbackService_GetUserdetailsByMappingId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetUserdetailsByMappingIdResponse" message="tns:FeedbackService_GetUserdetailsByMappingId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackGivenCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackGivenCount" message="tns:FeedbackService_GetFeedbackGivenCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackGivenCountResponse" message="tns:FeedbackService_GetFeedbackGivenCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckAnswers">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/CheckAnswers" message="tns:FeedbackService_CheckAnswers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/CheckAnswersResponse" message="tns:FeedbackService_CheckAnswers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGivenAnswer">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetGivenAnswer" message="tns:FeedbackService_GetGivenAnswer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetGivenAnswerResponse" message="tns:FeedbackService_GetGivenAnswer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackReceivedCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackReceivedCount" message="tns:FeedbackService_GetFeedbackReceivedCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackReceivedCountResponse" message="tns:FeedbackService_GetFeedbackReceivedCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPOEIntro">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetPOEIntro" message="tns:FeedbackService_GetPOEIntro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetPOEIntroResponse" message="tns:FeedbackService_GetPOEIntro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleIntro">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetModuleIntro" message="tns:FeedbackService_GetModuleIntro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetModuleIntroResponse" message="tns:FeedbackService_GetModuleIntro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPOEKeyAction">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetPOEKeyAction" message="tns:FeedbackService_GetPOEKeyAction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetPOEKeyActionResponse" message="tns:FeedbackService_GetPOEKeyAction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleKeyAction">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetModuleKeyAction" message="tns:FeedbackService_GetModuleKeyAction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetModuleKeyActionResponse" message="tns:FeedbackService_GetModuleKeyAction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPracticeArea">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetPracticeArea" message="tns:FeedbackService_GetPracticeArea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetPracticeAreaResponse" message="tns:FeedbackService_GetPracticeArea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestions">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetQuestions" message="tns:FeedbackService_GetQuestions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetQuestionsResponse" message="tns:FeedbackService_GetQuestions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSurveyQuestions">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetSurveyQuestions" message="tns:FeedbackService_GetSurveyQuestions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetSurveyQuestionsResponse" message="tns:FeedbackService_GetSurveyQuestions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestionCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetQuestionCount" message="tns:FeedbackService_GetQuestionCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetQuestionCountResponse" message="tns:FeedbackService_GetQuestionCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackHistory" message="tns:FeedbackService_GetFeedbackHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackHistoryResponse" message="tns:FeedbackService_GetFeedbackHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutstandingFeedbacks">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetOutstandingFeedbacks" message="tns:FeedbackService_GetOutstandingFeedbacks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetOutstandingFeedbacksResponse" message="tns:FeedbackService_GetOutstandingFeedbacks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackGiven">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackGiven" message="tns:FeedbackService_GetFeedbackGiven_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackGivenResponse" message="tns:FeedbackService_GetFeedbackGiven_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackRecevied">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackRecevied" message="tns:FeedbackService_GetFeedbackRecevied_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackReceviedResponse" message="tns:FeedbackService_GetFeedbackRecevied_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePOEResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/SavePOEResult" message="tns:FeedbackService_SavePOEResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/SavePOEResultResponse" message="tns:FeedbackService_SavePOEResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDemographicResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/SaveDemographicResult" message="tns:FeedbackService_SaveDemographicResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/SaveDemographicResultResponse" message="tns:FeedbackService_SaveDemographicResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFeedback">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/CreateFeedback" message="tns:FeedbackService_CreateFeedback_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/CreateFeedbackResponse" message="tns:FeedbackService_CreateFeedback_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFeedbackStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/UpdateFeedbackStatus" message="tns:FeedbackService_UpdateFeedbackStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/UpdateFeedbackStatusResponse" message="tns:FeedbackService_UpdateFeedbackStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSavedQuestion">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetLastSavedQuestion" message="tns:FeedbackService_GetLastSavedQuestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetLastSavedQuestionResponse" message="tns:FeedbackService_GetLastSavedQuestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackResults" message="tns:FeedbackService_GetFeedbackResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbackResultsResponse" message="tns:FeedbackService_GetFeedbackResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbacksByGroupId">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbacksByGroupId" message="tns:FeedbackService_GetFeedbacksByGroupId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetFeedbacksByGroupIdResponse" message="tns:FeedbackService_GetFeedbacksByGroupId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTopMembers">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetTopMembers" message="tns:FeedbackService_GetTopMembers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetTopMembersResponse" message="tns:FeedbackService_GetTopMembers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFeedbackDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetAllFeedbackDetails" message="tns:FeedbackService_GetAllFeedbackDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetAllFeedbackDetailsResponse" message="tns:FeedbackService_GetAllFeedbackDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetManagerReportDumb">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetManagerReportDumb" message="tns:FeedbackService_GetManagerReportDumb_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetManagerReportDumbResponse" message="tns:FeedbackService_GetManagerReportDumb_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleScores">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetModuleScores" message="tns:FeedbackService_GetModuleScores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetModuleScoresResponse" message="tns:FeedbackService_GetModuleScores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCapabilityModuleScores">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetCapabilityModuleScores" message="tns:FeedbackService_GetCapabilityModuleScores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetCapabilityModuleScoresResponse" message="tns:FeedbackService_GetCapabilityModuleScores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamReportDumb">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetTeamReportDumb" message="tns:FeedbackService_GetTeamReportDumb_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetTeamReportDumbResponse" message="tns:FeedbackService_GetTeamReportDumb_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateUSerRating">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/InsertUpdateUSerRating" message="tns:FeedbackService_InsertUpdateUSerRating_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/InsertUpdateUSerRatingResponse" message="tns:FeedbackService_InsertUpdateUSerRating_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRatingByPoeId">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetUserRatingByPoeId" message="tns:FeedbackService_GetUserRatingByPoeId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetUserRatingByPoeIdResponse" message="tns:FeedbackService_GetUserRatingByPoeId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRatingByPoeIdUpdated">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetUserRatingByPoeIdUpdated" message="tns:FeedbackService_GetUserRatingByPoeIdUpdated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetUserRatingByPoeIdUpdatedResponse" message="tns:FeedbackService_GetUserRatingByPoeIdUpdated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFeedbackNotes">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/UpdateFeedbackNotes" message="tns:FeedbackService_UpdateFeedbackNotes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/UpdateFeedbackNotesResponse" message="tns:FeedbackService_UpdateFeedbackNotes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFbExperienceQuestions">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetFbExperienceQuestions" message="tns:FeedbackService_GetFbExperienceQuestions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetFbExperienceQuestionsResponse" message="tns:FeedbackService_GetFbExperienceQuestions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFbExperience">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/InsertFbExperience" message="tns:FeedbackService_InsertFbExperience_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/InsertFbExperienceResponse" message="tns:FeedbackService_InsertFbExperience_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPathfindersIds">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetPathfindersIds" message="tns:FeedbackService_GetPathfindersIds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetPathfindersIdsResponse" message="tns:FeedbackService_GetPathfindersIds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSurveyResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/SaveSurveyResult" message="tns:FeedbackService_SaveSurveyResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/SaveSurveyResultResponse" message="tns:FeedbackService_SaveSurveyResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevPriorityQuestions">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetDevPriorityQuestions" message="tns:FeedbackService_GetDevPriorityQuestions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetDevPriorityQuestionsResponse" message="tns:FeedbackService_GetDevPriorityQuestions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleQuestions">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetModuleQuestions" message="tns:FeedbackService_GetModuleQuestions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetModuleQuestionsResponse" message="tns:FeedbackService_GetModuleQuestions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSurvey">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetUserSurvey" message="tns:FeedbackService_GetUserSurvey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetUserSurveyResponse" message="tns:FeedbackService_GetUserSurvey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPoEResultMode">
+      <wsdl:input wsaw:Action="http://tempuri.org/FeedbackService/GetPoEResultMode" message="tns:FeedbackService_GetPoEResultMode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FeedbackService/GetPoEResultModeResponse" message="tns:FeedbackService_GetPoEResultMode_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_FeedbackService" type="tns:FeedbackService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserdetailsByMappingId">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetUserdetailsByMappingId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackGivenCount">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetFeedbackGivenCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAnswers">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/CheckAnswers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGivenAnswer">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetGivenAnswer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackReceivedCount">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetFeedbackReceivedCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOEIntro">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetPOEIntro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleIntro">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetModuleIntro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOEKeyAction">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetPOEKeyAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleKeyAction">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetModuleKeyAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPracticeArea">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetPracticeArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestions">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetQuestions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSurveyQuestions">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetSurveyQuestions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestionCount">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetQuestionCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackHistory">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetFeedbackHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutstandingFeedbacks">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetOutstandingFeedbacks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackGiven">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetFeedbackGiven" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackRecevied">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetFeedbackRecevied" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePOEResult">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/SavePOEResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDemographicResult">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/SaveDemographicResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFeedback">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/CreateFeedback" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFeedbackStatus">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/UpdateFeedbackStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSavedQuestion">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetLastSavedQuestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbackResults">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetFeedbackResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeedbacksByGroupId">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetFeedbacksByGroupId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopMembers">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetTopMembers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFeedbackDetails">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetAllFeedbackDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManagerReportDumb">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetManagerReportDumb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleScores">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetModuleScores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCapabilityModuleScores">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetCapabilityModuleScores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamReportDumb">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetTeamReportDumb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateUSerRating">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/InsertUpdateUSerRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRatingByPoeId">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetUserRatingByPoeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRatingByPoeIdUpdated">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetUserRatingByPoeIdUpdated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFeedbackNotes">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/UpdateFeedbackNotes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFbExperienceQuestions">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetFbExperienceQuestions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFbExperience">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/InsertFbExperience" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPathfindersIds">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetPathfindersIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSurveyResult">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/SaveSurveyResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevPriorityQuestions">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetDevPriorityQuestions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleQuestions">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetModuleQuestions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSurvey">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetUserSurvey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoEResultMode">
+      <soap:operation soapAction="http://tempuri.org/FeedbackService/GetPoEResultMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FeedbackService">
+    <wsdl:port name="BasicHttpBinding_FeedbackService" binding="tns:BasicHttpBinding_FeedbackService">
+      <soap:address location="http://localhost:8052/FeedbackService.svc/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

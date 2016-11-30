@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: lighter;
+	font-style: inherit;
+	   font-family: Segoe UI;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	font-family: 'Maven Pro', sans-serif;
+	color: #535758;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+a {
+color: #000;
+text-decoration: none;
+}
+a:hover, a:active, a:focus {
+color: #e0b001;
+text-decoration: none;
+cursor:pointer;
+}
+/* saf3+, chrome1+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ body, .middle p  { font-size: 90%!important  }
+}*/
+ 
+@media all and (max-width: 1152px)
+{
+body
+{
+font-size:10px;
+}
+}
+@media all and (max-width: 1152px) and (min-width: 800px)
+{
+body
+{
+font-size:11px;
+}
+}
+@media all and (max-width: 1280px) and (min-width: 1152px)
+{
+body
+{
+font-size:14px;
+}
+}
+@media all and (max-width: 1360px) and (min-width: 1280px)
+{
+body
+{
+font-size:15px;
+}
+.middle p  { font-size: 90% }
+}
+@media all and (max-width: 1400px) and (min-width: 1360px)
+{
+body
+{
+font-size:16px;
+}
+.fourcolumn li .middle p { font-size: 83%;}
+.addressbar .placeholder li p { font-size: 117%;}
+}
+@media all and (max-width: 1680px) and (min-width: 1400px)
+{
+body
+{
+font-size:17px;
+}
+.fourcolumn li .middle p { font-size: 81%;}
+.addressbar .placeholder li p { font-size: 117%;}
+}
+@media all and (max-width: 1920px) and (min-width: 1600px)
+{
+body
+{
+font-size:19px;
+}
+.fourcolumn li .middle p { font-size: 81%;}
+}
+@media all and (min-width: 1920px)
+{
+body
+{
+font-size:21px;
+}
+.fourcolumn li .middle p { font-size: 90%;}
+}

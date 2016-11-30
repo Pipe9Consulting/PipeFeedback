@@ -1,0 +1,49 @@
+.demoBG {
+background: url("../../images/KessakuImage/pricingBG.jpg") no-repeat;
+background-size: 100% auto;
+width: 100%;
+float: left;
+position: relative;
+height: 0;
+padding-bottom: 49%;
+top:0em;
+}
+.demomidBar
+{
+width: 65%;
+margin:1em auto 0 auto;
+}
+.contactform { background:none;}
+.demoBG  h1 { padding:1.5em 0 0.5em 0; font-size: 220%; text-align:left; } 
+.demoBG  .contactform .placeholder {  width: 65%; margin: 0.5em auto; }
+
+.submit
+{
+    width: auto;
+    color: #fff;
+    background: #222327;
+    border: 2px solid #000;
+    border-radius: 0.2em;
+    float: right;
+    margin-top: 1em;
+    padding: 0 1.5em;
+}
+
+    .submit input
+    {
+        border: 0;
+        background: transparent;
+        color: #fff;
+        padding: 0.8em;
+        cursor: pointer;
+        font-size: 100%;
+        font-family: Segoe UI;
+    }
+
+    .submit:hover
+    {
+        background: #e0b001;
+        border: 2px solid #cea201;
+        cursor: pointer;
+    }
+

@@ -1,0 +1,735 @@
+﻿.pageholder {
+    margin: 0% 1.5%;
+    overflow: hidden;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../../images/images/loginbg.jpg) !important;
+    font-family: Segoe UI;
+    background-size: 100% !important;
+}
+
+
+#basic-forgetPassword h1, #basic-forgetPassword p, #basic-forgetPassword input {
+    color: #fff;
+}
+
+#txtCaptcha {
+    color: #000 !important;
+}
+
+.tileview {
+    width: 9%;
+    float: left;
+    margin-right: 4.7%;
+}
+
+    .tileview li {
+        width: 100%;
+        background: #000;
+        position: relative;
+        padding-bottom: 95%;
+    }
+
+        .tileview li p, .tileview li a {
+            position: absolute;
+        }
+
+        .tileview li p {
+            bottom: 5%;
+            left: 7%;
+            color: #e0b001;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .tileview li a {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .tileview li img {
+            padding-top: 5%;
+        }
+
+
+.loginscreen h1 {
+    font-size: 200%;
+    font-weight: 400;
+    margin: 0%;
+    padding: 0;
+    color: #000;
+}
+
+.tileview h1 {
+    font-size: 140%;
+    font-weight: 400;
+    margin: 4% 0 2% 0;
+}
+
+.loginscreen {
+    float: left;
+    width: 100%;
+    margin-top: 1.5%;
+}
+
+
+.signUp ul {
+    margin-left: 2%;
+}
+
+.signUp h2 {
+    font-size: 125%;
+}
+
+.loginscreenleft {
+    width: 37%;
+    float: left;
+    margin-right: 3%;
+}
+
+    .loginscreenleft ul {
+        margin-top: 3%;
+    }
+
+.loginrightpanel {
+    width: 60%;
+    float: right;
+    border-left: 0.1em solid #808080;
+    padding-left: 3%;
+}
+
+.yammerloginpic {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.yammersmallpic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3%;
+    width: 20%;
+    height: 70%;
+}
+
+    .yammersmallpic img {
+        height: 100%;
+        width: 100%;
+    }
+
+.loginscreen .txtarea {
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    padding: 1%;
+    width: 100%;
+    margin: 0% 0 3% 0;
+}
+
+.yammerloginpic img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.loginrightpanel p {
+    color: #000 !important;
+    font-size: 125%;
+}
+
+.yammerlogin {
+    background: #000;
+    width: 100%;
+    position: relative;
+    padding-bottom: 22%;
+    margin: 5% 0 2% 0;
+    cursor: pointer;
+}
+
+.loginscreenleft p {
+    position: inherit;
+    font-size: 125%;
+}
+
+.loginrightpanel li {
+    margin-left: 2%;
+    list-style: square;
+}
+
+
+
+.loginscreen li p {
+    margin: 0 0 2% 0;
+}
+
+
+
+.newuser {
+    float: right;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+.breadcrumb {
+    background: #fff;
+    padding: .6% 1%;
+    margin: 0 !important;
+}
+
+    .breadcrumb a {
+        color: #000;
+        text-decoration: none;
+    }
+
+.loginscreenleft h1 {
+    margin-bottom: 3%;
+}
+
+.loginscreen .btn {
+    background: none repeat scroll 0 0 #DEAF00;
+    border: 1px solid #808080;
+    color: #000;
+    font-weight: normal;
+    padding: 5px 15px 10px 15px;
+    cursor: pointer;
+}
+
+.mark a {
+    text-decoration: underline;
+}
+
+.loginscreen .btn:hover {
+    background: none repeat scroll 0 0 #000;
+    border: 1px solid #e0b001;
+    color: #FFFFFF;
+}
+
+
+.loginscreen p, .loginscreen span, .loginscreen a, .loginscreen div, .loginscreen input {
+    color: #000;
+}
+
+.loginico {
+    width: 30%;
+    height: 35%;
+    margin: 0 1.5%;
+    float: right;
+}
+
+    .loginico img {
+        width: 100%;
+        height: 100%;
+    }
+
+p:empty {
+    display: none;
+}
+
+
+
+.signup {
+    width: 100%;
+}
+
+.individuals {
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+}
+
+
+.managers {
+    width: 45%;
+    float: left;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 5%;
+}
+
+
+.loginrightpanel h1 {
+    margin-bottom: 1%;
+}
+
+.signUp {
+    margin-top: 3%;
+}
+
+
+@media screen and (max-width: 3500px) and (min-width: 2601px) {
+
+    body {
+        background-size: 100% 100% !important;
+    }
+
+    .loginscreen {
+        margin-top: 10.5% !important;
+    }
+
+
+    .loginscreenleft ul {
+        margin-top: 1%;
+    }
+
+
+    .loginscreenleft p {
+        font-size: 200%;
+    }
+
+    .loginscreen h1 {
+        font-size: 300%;
+    }
+
+    .loginscreen .btn {
+        font-size: 200%;
+    }
+
+    .loginscreen .txtarea {
+        margin: 0% 0 3% 0;
+    }
+}
+
+@media screen and (max-width: 2600px) and (min-width: 2001px) {
+
+
+
+    .errormsg {
+        margin-bottom: 0px !important;
+        padding-left: 55px !important;
+        background-size: auto 65% !important;
+    }
+
+    .loginscreenleft p {
+        font-size: 220%;
+    }
+
+    .loginscreen .btn {
+        font-size: 220%;
+        padding: 4px 20px 13px 20px;
+        margin-bottom: 20px;
+    }
+
+    .loginscreen h1 {
+        font-size: 300%;
+    }
+
+    .loginrightpanel p {
+        font-size: 220%;
+        line-height: 1.5;
+    }
+
+    .loginrightpanel ul li {
+        font-size: 220%;
+        padding: 1.5% 0;
+        line-height: 1.3;
+    }
+
+
+    .loginrightpanel a {
+        font-size: 220%;
+        line-height: 2;
+    }
+
+    .signUp h2 {
+        font-size: 220%;
+        margin-bottom: 2%;
+    }
+
+    body {
+        background-size: 102% !important;
+    }
+}
+
+
+@media screen and (max-width: 2000px) and (min-width: 1801px) {
+
+    .check p {
+        font-size: 130% !important;
+    }
+
+    .loginscreenleft p {
+        font-size: 150%;
+    }
+
+    .errormsg {
+        margin-bottom: 0px !important;
+        padding-left: 40px !important;
+    }
+
+    .loginscreen .btn {
+        font-size: 150%;
+        margin-bottom: 20px;
+    }
+
+    .loginscreen h1 {
+        font-size: 250%;
+    }
+
+    .loginrightpanel p {
+        font-size: 150%;
+        line-height: 1.5;
+    }
+
+    .loginrightpanel ul li {
+        font-size: 150%;
+        padding: 1.5% 0;
+        line-height: 1.3;
+        margin-left: 3%;
+    }
+
+
+    .loginrightpanel a {
+        font-size: 150%;
+        line-height: 2;
+    }
+
+    .signUp h2 {
+        font-size: 150%;
+        margin-bottom: 2%;
+    }
+}
+
+
+@media screen and (max-width: 1800px) and (min-width: 1501px) {
+    .check p {
+        font-size: 120% !important;
+    }
+
+    .errormsg {
+        margin-bottom: 0px !important;
+        padding-left: 35px !important;
+    }
+
+    .pageholder {
+        margin: 0% 2.2%;
+    }
+
+    .loginscreenleft p {
+        font-size: 140%;
+    }
+
+    .loginrightpanel li {
+        margin-left: 4%;
+    }
+
+    .loginscreen .btn {
+        font-size: 140%;
+        margin-bottom: 14px;
+    }
+
+    .loginscreen h1 {
+        font-size: 200%;
+    }
+
+    .loginrightpanel p {
+        font-size: 140%;
+        line-height: 1.5;
+    }
+
+    .loginrightpanel ul li {
+        font-size: 140%;
+        padding: 1% 0;
+        line-height: 1.3;
+    }
+
+
+    .loginrightpanel a {
+        font-size: 140%;
+        line-height: 1.5;
+    }
+
+    .signUp h2 {
+        font-size: 140%;
+        margin-bottom: 2%;
+    }
+
+    .individuals {
+        width: 40%;
+    }
+
+    .managers {
+        width: 55%;
+    }
+
+    .signUp {
+        margin-top: 2%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1500px) and (min-width: 1200px) {
+
+    .check p {
+        font-size: 100% !important;
+    }
+
+
+    .errormsg {
+        font-size: 14px !important;
+        margin-bottom: 0px !important;
+        background-size: auto 35% !important;
+    }
+
+    .pageholder {
+        margin: 0% 2.2%;
+    }
+
+    .loginscreenleft p {
+        font-size: 115%;
+    }
+
+    .loginrightpanel li {
+        margin-left: 4%;
+    }
+
+    .loginscreen .btn {
+        font-size: 115%;
+        margin-bottom: 9px;
+        padding: 4px 15px 7px 15px;
+    }
+
+    .loginscreen h1 {
+        font-size: 180%;
+    }
+
+    .loginrightpanel p {
+        font-size: 115%;
+        line-height: 1.5;
+    }
+
+    .loginrightpanel ul li {
+        font-size: 115%;
+        padding: 1% 0;
+        line-height: 1.3;
+    }
+
+
+    .loginrightpanel a {
+        font-size: 115%;
+        line-height: 1.5;
+    }
+
+    .signUp h2 {
+        font-size: 115%;
+        margin-bottom: 2%;
+    }
+
+    .individuals {
+        width: 40%;
+    }
+
+    .managers {
+        width: 55%;
+    }
+
+    .signUp {
+        margin-top: 2%;
+    }
+}
+
+
+.errormsg {
+    clear: both;
+    margin-top: 3%;
+    padding: 1.2% 1% 1.5% 3%;
+    background-size: auto 65%;
+    background: url(../../Images/error.png) no-repeat top left;
+    color: red !important;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+p:empty {
+    display: none;
+}
+
+.check {
+    margin: 1% 0;
+    width: 150%;
+    float: left;
+}
+
+    .check input {
+        display: none;
+    }
+
+    .check label a {
+        color: #5E5E5E;
+        text-decoration: none;
+        line-height: 1;
+    }
+
+    .check p {
+        padding: .9% 0 0 0;
+        font-size: 180%;
+        margin-bottom: 1% !important;
+    }
+
+
+    .check input {
+        height: auto;
+    }
+
+        .check input:checked + label {
+            background: url("../../Images/checked.png") no-repeat left center rgba(0, 0, 0, 0);
+            background-size: auto 56%;
+        }
+
+    .check label {
+        background: url("../../Images/checkbox.png") no-repeat left center rgba(0, 0, 0, 0);
+        display: inline-block;
+        font-weight: normal;
+        margin: 1% 0;
+        padding: 0% 0 4% 4%;
+        text-decoration: underline;
+        width: 94%;
+        height: 0px;
+        background-size: auto 56%;
+    }
+
+
+.footermenu1 {
+    background: url("../../images/KessakuImage/icons/footer-cac-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu1 {
+    background: url("../../images/KessakuImage/icons/footer-cac-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu2 {
+    background: url("../../images/KessakuImage/icons/footer-cs-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu2 {
+    background: url("../../images/KessakuImage/icons/footer-cs-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu3 {
+    background: url("../../images/KessakuImage/icons/footer-resource-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu3 {
+    background: url("../../images/KessakuImage/icons/footer-resource-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu4 {
+    background: url("../../images/KessakuImage/icons/footer-pricing-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu4 {
+    background: url("../../images/KessakuImage/icons/footer-pricing-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu5 {
+    background: url("../../images/KessakuImage/icons/footer-demo-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu5 {
+    background: url("../../images/KessakuImage/icons/footer-demo-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu6 {
+    background: url("../../images/KessakuImage/icons/footer-member-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu6 {
+    background: url("../../images/KessakuImage/icons/footer-member-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu7 {
+    background: url("../../images/KessakuImage/icons/logo_icon_yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu7 {
+    background: url("../../images/KessakuImage/icons/logo_icon_black.png") no-repeat;
+    background-size: 100% auto;
+}
+
+#target li {
+    list-style: none;
+}
+
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1370px) {
+
+
+    .errormsg {
+        background-size: auto 50% !important;
+        background-position: 0 5%;
+        padding-left: 3.5% !important;
+    }
+
+    .loginscreen li p {
+        width: 100% !important;
+    }
+
+    .errormsg {
+        font-size: 14px !important;
+        margin-bottom: 0px !important;
+        background-size: auto 60% !important;
+    }
+
+
+
+
+    .newuser {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (min-width: 1371px) and (max-width: 1450px) {
+
+
+    .errormsg {
+        background-size: auto 75% !important;
+    }
+
+    .loginscreen li p {
+        width: 100% !important;
+    }
+
+
+    .newuser {
+        font-size: 13px;
+    }
+
+    .errormsg {
+        font-size: 14px !important;
+        margin-bottom: 0px !important;
+        padding-left: 25px !important;
+        background-size: auto 30% !important;
+    }
+}
+
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+}

@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="report.master.cs" Inherits="bExcellent.mvc.Views.Shared.report" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="../../Styles/Stylesheet1.css" />
+    <link href="../../Styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/Common/master.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/common.css" rel="stylesheet" type="text/css" />
+    <%-- <script src="../../Scripts/ref/jquery-1.8.3.js" type="text/javascript"></script>--%>
+    <script src="../../Scripts/ref/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script type='text/javascript' src="../../Scripts/ref/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/myscroll.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/jquery.tabSlideOut.v1.4.1.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <div class="main">
+                <div class="accordion">
+                    <a href="/common/Index">
+                        <img src="../../Images/kessaku-logo.png" alt="Bexcellent" align="left" /></a>
+                    <h3></h3>
+                </div>
+                <ul class="login">
+                    <li class="dropdown lgn"><a href="#" id="loggedinUser">
+                        <%
+                            try
+                            {
+                                if (Session["Uname"] != null)
+                                {
+                                    Response.Write(Session["Uname"].ToString());
+                                }
+                            }
+                            catch (Exception)
+                            {
+
+                            }
+
+                        %></a><img src="../../Images/user.png" alt="User" align="right" />
+                        <ul id="accsettings">
+                            <li><a href="#">Forgot Password</a></li>
+
+                            <li><a href="../Report/SignOut">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="login cart" id="cartOptions">
+                </ul>
+                <div style="margin-top: 20px; float: right; margin-right: -250px;">
+                    <span id="yammer-login" style="margin-left: 300px; margin-top: 20px; visibility: hidden"></span>
+                </div>
+            </div>
+            <div id="hiddenValues" style="visibility: hidden">
+                <div id="userid" runat="server" style="visibility: hidden">
+                </div>
+                <div id="selectedpoe" runat="server" style="visibility: hidden">
+                </div>
+                <div id="createdFeedbacks" runat="server" style="visibility: hidden">
+                </div>
+                <div id="selectedPages" runat="server" style="visibility: hidden">
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+            <div class="main">
+                <div class="copyright">
+                    <span>© 2013 bexcellent.com</span><span><a href="/Signup/Terms" target="_blank">Terms</a></span><span><a
+                        href="/Signup/Privacy" target="_blank">Privacy</a></span><span>FAQ</span><span><a
+                            href="mailto:support@pipe9consulting.com">Support</a></span>
+                </div>
+                <div class="bukatutup">
+                    Menu
+                </div>
+                <div id="target">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-45437347-1', 'bexcellent.com');
+        ga('send', 'pageview');
+    </script>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+</body>
+</html>

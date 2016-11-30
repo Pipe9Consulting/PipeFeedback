@@ -1,0 +1,415 @@
+.poe
+{
+    background: url("../../images/KessakuImage/icons/poe-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .poe
+{
+    background: url("../../images/KessakuImage/icons/poe.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.cac
+{
+    background: url("../../images/KessakuImage/icons/cloud-as-coach-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .cac
+{
+    background: url("../../images/KessakuImage/icons/cloud-as-coach-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.pr
+{
+    background: url("../../images/KessakuImage/icons/pr-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .pr
+{
+    background: url("../../images/KessakuImage/icons/pr-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.ct
+{
+    background: url("../../images/KessakuImage/icons/coaching-tool-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .ct
+{
+    background: url("../../images/KessakuImage/icons/coaching-tool-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.feedback
+{
+    background: url("../../images/KessakuImage/icons/feedback-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .feedback
+{
+    background: url("../../images/KessakuImage/icons/feedback-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.connect
+{
+    background: url("../../images/KessakuImage/icons/smart-connect-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .connect
+{
+    background: url("../../images/KessakuImage/icons/smart-connect-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.goal
+{
+    background: url("../../images/KessakuImage/icons/goals-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .goal
+{
+    background: url("../../images/KessakuImage/icons/goals-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.recognition
+{
+    background: url("../../images/KessakuImage/icons/recognition-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .recognition
+{
+    background: url("../../images/KessakuImage/icons/recognition-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.analytics
+{
+    background: url("../../images/KessakuImage/icons/analytics-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .analytics
+{
+    background: url("../../images/KessakuImage/icons/analytics-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.rolex
+{
+    background: url("../../images/KessakuImage/icons/rolex-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .rolex
+{
+    background: url("../../images/KessakuImage/icons/rolex-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.guides
+{
+    background: url("../../images/KessakuImage/icons/guides-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .guides
+{
+    background: url("../../images/KessakuImage/icons/guides-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.coachingguide
+{
+    background: url("../../images/KessakuImage/icons/coachingguide-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .coachingguide
+{
+    background: url("../../images/KessakuImage/icons/coachingguide-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.handbook
+{
+    background: url("../../images/KessakuImage/icons/handbook-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .handbook
+{
+    background: url("../../images/KessakuImage/icons/handbook-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.playbook
+{
+    background: url("../../images/KessakuImage/icons/sales-playbook-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .playbook
+{
+    background: url("../../images/KessakuImage/icons/sales-playbook-white.png") no-repeat;
+    background-size: 100% auto;
+}
+/* ------------------ Cloud as coach Icons ----------------- */
+.incComplexity
+{
+    background: url("../../images/KessakuImage/icons/increasing-complexitiy.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.growingTalentGaps
+{
+    background: url("../../images/KessakuImage/icons/growing-Talent-Gaps.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.coaching
+{
+    background: url("../../images/KessakuImage/icons/whos-Doing-Coach.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.dataTools
+{
+    background: url("../../images/KessakuImage/icons/lack-of-data-and-tools.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.cloud-poe
+{
+    background: url("../../images/KessakuImage/icons/poe.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.cloud-recognition
+{
+    background: url("../../images/KessakuImage/icons/recognition-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.cloud-feedback
+{
+    background: url("../../images/KessakuImage/icons/feedback-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.cloud-connect
+{
+    background: url("../../images/KessakuImage/icons/smart-connect-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.cloud-goal
+{
+    background: url("../../images/KessakuImage/icons/goals-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.cloud-analytics
+{
+    background: url("../../images/KessakuImage/icons/analytics-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+/*Resources Page Icons*/
+.resource-POE
+{
+    background: url("../../images/KessakuImage/icons/resource-POE-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .resource-POE
+{
+    background: url("../../images/KessakuImage/icons/resource-POE-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.resource-events
+{
+    background: url("../../images/KessakuImage/icons/resource-Events-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .resource-events
+{
+    background: url("../../images/KessakuImage/icons/resource-Events-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.resource-videos
+{
+    background: url("../../images/KessakuImage/icons/resources-Video-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .resource-videos
+{
+    background: url("../../images/KessakuImage/icons/resource-Video-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.standingico
+{
+    background: url("../../images/KessakuImage/icons/standing-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .standingico
+{
+    background: url("../../images/KessakuImage/icons/standing-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.resource-download
+{
+    background: url("../../images/KessakuImage/icons/resource-Downloads-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .resource-download
+{
+    background: url("../../images/KessakuImage/icons/resource-Downloads-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.blog
+{
+    background: url("../../images/KessakuImage/icons/blog-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .blog
+{
+    background: url("../../images/KessakuImage/icons/blog-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu1
+{
+    background: url("../../images/KessakuImage/icons/footer-cac-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu1
+{
+    background: url("../../images/KessakuImage/icons/footer-cac-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu2
+{
+    background: url("../../images/KessakuImage/icons/footer-cs-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu2
+{
+    background: url("../../images/KessakuImage/icons/footer-cs-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu3
+{
+    background: url("../../images/KessakuImage/icons/footer-resource-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu3
+{
+    background: url("../../images/KessakuImage/icons/footer-resource-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu4
+{
+    background: url("../../images/KessakuImage/icons/footer-pricing-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu4
+{
+    background: url("../../images/KessakuImage/icons/footer-pricing-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu5
+{
+    background: url("../../images/KessakuImage/icons/footer-demo-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu5
+{
+    background: url("../../images/KessakuImage/icons/footer-demo-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu6
+{
+    background: url("../../images/KessakuImage/icons/footer-member-yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu6
+{
+    background: url("../../images/KessakuImage/icons/footer-member-white.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.footermenu7
+{
+    background: url("../../images/KessakuImage/icons/logo_icon_yellow.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.selected .footermenu7
+{
+    background: url("../../images/KessakuImage/icons/logo_icon_black.png") no-repeat;
+    background-size: 100% auto;
+}
+
+/* ----------- Team Page Icon ---------------- */
+.excellence-Gap
+{
+    background: url("../../images/KessakuImage/icons/excellenceGap-icon.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.hour-Mystery
+{
+    background: url("../../images/KessakuImage/icons/hour-mystery-icon.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.pain-Chain-icon
+{
+    background: url("../../images/KessakuImage/icons/pain-chain-icon.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.team-coaching-icon
+{
+    background: url("../../images/KessakuImage/icons/team-coaching-icon.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.cloud-coaching-icon
+{
+    background: url("../../images/KessakuImage/icons/clouch-coach-icon.png") no-repeat;
+    background-size: 100% auto;
+}

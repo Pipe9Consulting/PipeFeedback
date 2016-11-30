@@ -1,0 +1,478 @@
+/* ------------------ Is your Team Page CSS Start here --------------- */
+.cloudascoachContainer
+{
+    background: #eeeeee;
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-bottom: 3em;
+}
+
+.teamhomebg
+{
+    background: url("../../Images/KessakuImage/team.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    padding-bottom: 66%;
+    margin-bottom: 5em;
+    position: relative;
+    /* margin-top: 5em;*/
+}
+
+.cloud_midbar
+{
+    position: absolute;
+    width: 100%;
+    /*top: 6em;*/
+    top: 1em;
+}
+
+    .cloud_midbar .cloudcoach
+    {
+        color: #fff;
+        height: 100%;
+        /*font-size: 282%;*/
+        font-size: 250%;
+        width: 100%;
+        margin: 0px auto;
+        padding: 35px 0px 0px 0px;
+    }
+
+.cloudcoachArea
+{
+    width: 48%;
+    margin: 0px auto;
+}
+
+.teamText
+{
+    background: #fff;
+    margin: 0px auto;
+    width: 100%;
+    padding: 2em 1em 3em 1em;
+    position: relative;
+}
+
+    .teamText p
+    {
+        padding: 1em 0 0 0;
+        text-align: center;
+        line-height: 1.3em;
+    }
+
+.teamDescription
+{
+    margin: 0px auto;
+    width: 90%;
+    padding: 1em;
+    position: relative;
+}
+
+    .teamDescription h1
+    {
+        font-size: 120%;
+        padding: 1.5em 0 0.5em 0;
+    }
+
+    .teamDescription p
+    {
+        padding: 1em 0 0 0;
+        line-height: 1.3em;
+    }
+
+.divider2
+{
+    background: url(../../Images/KessakuImage/divider2.png) no-repeat;
+    background-size: 100% auto;
+    clear: both;
+    height: 0.6em;
+}
+
+.placeholder h3
+{
+    padding: 0 0 1em 0;
+    font-size: 100%;
+}
+
+.coachTilesBox
+{
+    background: #ffffff;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    margin-bottom: 3em;
+    border-bottom-right-radius: 1em;
+}
+
+.sixcolumn li .coach
+{
+    padding: 0 0em 30% 0em;
+}
+
+.fourcolumn li .Coachbottom
+{
+    position: relative;
+    background: #fff;
+    clear: both;
+    border-bottom-right-radius: 2em;
+    height: 0;
+    padding-bottom: 27%;
+}
+
+    .fourcolumn li .Coachbottom p
+    {
+        margin: 1em 1.5em;
+        padding: 1em 0;
+        font-size: 75%;
+        width: 70%;
+    }
+
+.caccbg
+{
+    width: 100%;
+}
+
+.cloud-POE
+{
+    /*  background: url("../KessakuImages/cloud-POE.jpg") no-repeat;*/
+    background: url("../../Images/KessakuImage/poe-bg.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.cloudCol
+{
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+    .cloudCol li
+    {
+        width: 49%;
+        float: left;
+        list-style-type: none;
+    }
+
+        .cloudCol li:last-child
+        {
+            float: right;
+            width: 50%;
+        }
+
+        .cloudCol li .cloudHead
+        {
+            background: #e0b001;
+            width: 20%;
+            height: 0;
+            padding-bottom: 20%;
+            position: relative;
+        }
+
+        .cloudCol li .icon
+        {
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            height: 0;
+            right: 15%;
+            padding-bottom: 70%;
+        }
+
+.TeamCloudRight
+{
+    display: table;
+    height: 31.5em;
+}
+
+    .TeamCloudRight h1
+    {
+        padding: 0.8em 0 0.3em 0;
+    }
+
+    .TeamCloudRight .cont
+    {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .TeamCloudRight p
+    {
+        font-size: 100%;
+        padding: 0.5em 0em 0em 0em!important;
+    }
+
+.learnmore a
+{
+    background: #e0b001;
+    padding: 0 0.5em;
+    float: left;
+    width: 18%;
+    text-align: center;
+    margin-top: 0.5em;
+    height: 2.4em;
+    line-height: 2.4em;
+    position: relative;
+    color: #fff;
+    font-size: 105%;
+    text-decoration: none;
+}
+
+    .learnmore a:hover
+    {
+        color: #ffffff;
+    }
+
+.cloudCol li .grayname
+{
+    position: relative;
+    font-size: 200%;
+    padding: 1em 0em 0em 0em;
+    color: #535758;
+}
+
+.cloudCol li .graysubname
+{
+    position: relative;
+    font-size: 100%;
+    padding: 0.5em 0em;
+    color: #535758;
+    width: 49%;
+}
+
+.iconRight
+{
+    right: 23%!important;
+}
+
+.analyticsRight
+{
+    right: 9%!important;
+}
+/* --------------- Cloud Smart Connect --------------- */
+.cloud-SmartConnect
+{
+    background: url("../../Images/KessakuImage/cloud-Smart-Connect.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.cloud-Recognition
+{
+    background: url("../../Images/KessakuImage/cloud-Recognition.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.caccbgNew
+{
+    background: url("../../Images/KessakuImage/inner-pg-bg.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 0;
+    padding-bottom: 40%;
+}
+
+.teamBG h1
+{
+    padding: 3.5em 0 3.5em 0;
+    background-size: auto 45%;
+    width: 62%;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.teamBG h1
+{
+    color: #fff;
+    margin: 0 auto;
+}
+
+.italicTxt
+{
+    font-style: italic;
+}
+
+.TeamCloudRight p:nth-last-child(2)
+{
+    padding: 0.5em 0em 0.2em 0em;
+}
+
+.TeamCloudRight p:last-child
+{
+    padding: 0.1em 0em 0.5em 0.3em;
+}
+
+.TeamCloudRight h1
+{
+    text-align: left;
+    color: #333;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+.lastPara
+{
+    padding: 0.5em 0em 0.2em 0em!important;
+}
+
+/*----------------------------------------------------*/
+
+.teamLeft
+{
+    width: 38%;
+    margin-right: 8%;
+    float: left;
+}
+
+.teamPercentArea
+{
+    float: left;
+    padding: 1em 3em;
+    width: 70%;
+    background: #fff;
+    margin-top: 12%;
+}
+
+    .teamPercentArea h1
+    {
+        padding: 0.0em 0 0.1em 0;
+        font-size: 220%;
+        text-align: left;
+    }
+
+    .teamPercentArea p
+    {
+        line-height: 1.5em;
+    }
+
+.teamPercentAreaNew
+{
+    float: left;
+    padding: 1em 2em;
+    width: 92%;
+    background: #fff;
+    margin-top: 48%;
+}
+
+    .teamPercentAreaNew h1
+    {
+        padding: 0.0em 0 0.1em 0;
+        font-size: 220%;
+        text-align: left;
+    }
+
+    .teamPercentAreaNew p
+    {
+        line-height: 1.5em;
+    }
+
+.hours-Mystery
+{
+    background: url("../../Images/KessakuImage/hours-Mystery.png") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.pain-Chain
+{
+    background: url("../../Images/KessakuImage/pain-chain.png") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.team-coaching
+{
+    background: url("../../Images/KessakuImage/team-coaching.png") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-bottom: 3em;
+}
+
+.cloudCoachHead
+{
+    background: #e0b001;
+    width: 10%;
+    height: 0;
+    padding-bottom: 10%;
+    position: relative;
+    float: left;
+}
+
+.cloudCoachIcon
+{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 0;
+    right: 11%;
+    padding-bottom: 61%;
+}
+
+.cloudAsCoach
+{
+    width: 75%;
+    margin: 0px auto;
+}
+
+    .cloudAsCoach p
+    {
+        text-align: center;
+        padding: 0 0 0.8em 0;
+        line-height: 1.5em;
+    }
+
+.teamcapability
+{
+    background: url("../../Images/KessakuImage/capability.jpg") no-repeat top #eeeeee;
+    background-size: auto 95%;
+    float: left;
+    width: 100%;
+    height: 0;
+    padding-bottom: 51%;
+    overflow: hidden;
+}
+
+.teamcapabilityBG
+{
+    background: #eeeeee;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 0;
+    padding-bottom: 87%;
+}
+
+.microsoft-Success
+{
+    background: url("../../Images/KessakuImage/microsoft-sucess.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.building-Team
+{
+    background: url("../../Images/KessakuImage/building-Team.png") no-repeat;
+    background-size: 108% 100%;
+    width: 100%;
+    float: left;
+    position: relative;
+}

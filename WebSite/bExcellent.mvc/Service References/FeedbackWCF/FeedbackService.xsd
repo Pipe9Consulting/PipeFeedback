@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.1.93:109/FeedbackService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
+  <xs:complexType name="ArrayOfCreatedFeedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CreatedFeedback" nillable="true" type="tns:CreatedFeedback" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCreatedFeedback" nillable="true" type="tns:ArrayOfCreatedFeedback" />
+  <xs:complexType name="CreatedFeedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FeedBackId" type="xs:int" />
+      <xs:element minOccurs="0" name="RequestedUserMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="TeamUserMappingId" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="Teammember" nillable="true" type="q1:UserPOEMapping" />
+      <xs:element minOccurs="0" name="UserMappingId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreatedFeedback" nillable="true" type="tns:CreatedFeedback" />
+</xs:schema>

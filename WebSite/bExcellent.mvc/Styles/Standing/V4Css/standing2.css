@@ -1,0 +1,2334 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
+    font-family: Segoe UI;
+    background-size: 100% 100% !important;
+}
+
+
+.takefeedback {
+    margin: 0 1.5% !important;
+}
+
+    .takefeedback .sixteen.wide.column {
+        padding: 0px;
+    }
+
+
+    .takefeedback h2 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 200%;
+        text-transform: uppercase !important;
+    }
+
+.takefbLeftPart {
+    width: 20%;
+    margin-right: 3%;
+    float: left;
+}
+
+.takefbRightPart span {
+    font-size: 75%;
+    text-transform: none;
+    color: #000;
+}
+
+.takeFeedbackLeft {
+    border: 1px solid #333;
+    float: left;
+    width: 100%;
+    padding: 3% 0 0 3%;
+    /*background: url(../../../Images/images/feedback/fbmenubg.png) no-repeat center;*/
+    background-size: 94.5% 96.5%;
+}
+
+.takeFeedbackMenu {
+    text-align: left;
+    height: 0;
+    width: 47%;
+    margin: 0 3% 3% 0;
+    position: relative;
+    float: left;
+    padding-bottom: 40%;
+}
+
+.incompletefbMenu {
+    text-align: left;
+    height: 0;
+    width: 97%;
+    margin: 0 3% 3% 0;
+    position: relative;
+    float: left;
+    padding-bottom: 40%;
+}
+
+.right .container {
+    height: 100%;
+}
+
+.vertical-align-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.selfStd {
+    background: url(../../../Images/images/feedback/selfIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    display: table-cell;
+    cursor: pointer;
+    background-size: 45% 45%;
+}
+
+    .selfStd:hover {
+        background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #000;
+        display: table-cell;
+        background-size: 45% 45%;
+    }
+
+.managerStd {
+    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    display: table-cell;
+    cursor: pointer;
+    background-size: 45% 45%;
+}
+
+    .managerStd:hover {
+        background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #000;
+        display: table-cell;
+        background-size: 45% 45%;
+    }
+
+.skipStd {
+    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    display: table-cell;
+    cursor: pointer;
+    background-size: 45% 45%;
+}
+
+.dummytile {
+    background: rgba(0, 0, 0, 0.9);
+    display: table-cell;
+    cursor: default;
+}
+
+.skipStd:hover {
+    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #000;
+    display: table-cell;
+    background-size: 45% 45%;
+}
+
+
+.partnersStd {
+    background: url(../../../Images/images/feedback/customersIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    display: table-cell;
+    cursor: pointer;
+    background-size: 45% 45%;
+}
+
+    .partnersStd:hover {
+        background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #000;
+        display: table-cell;
+        background-size: 45% 45%;
+    }
+
+
+
+.peersStd {
+    background: url(../../../Images/images/feedback/peersgfbIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    display: table-cell;
+    cursor: pointer;
+    background-size: 45% 45%;
+}
+
+    .peersStd:hover {
+        background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 10% right 10% #000;
+        display: table-cell;
+        background-size: 45% 45%;
+    }
+
+
+
+
+.teamStd {
+    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 10% right 3.5% rgba(0, 0, 0, 0.9);
+    display: table-cell;
+    cursor: pointer;
+    background-size: 20% 40%;
+}
+
+
+
+    .teamStd:hover {
+        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 3.5% rgba(0, 0, 0, 1);
+        display: table-cell;
+        background-size: 20% 40%;
+    }
+
+
+.selectSelf {
+    background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #000;
+    display: table-cell;
+    background-size: 45% 45%;
+}
+
+    .selectSelf a {
+        color: #e0b001 !important;
+    }
+
+
+    .selectSelf p {
+        color: #e0b001 !important;
+    }
+
+.selectManager {
+    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #000;
+    display: table-cell;
+    background-size: 45% 45%;
+}
+
+    .selectManager a {
+        color: #e0b001 !important;
+    }
+
+    .selectManager p {
+        color: #e0b001 !important;
+    }
+
+
+.selectTeam {
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 10% #000;
+    display: table-cell;
+    background-size: 45% 45%;
+}
+
+    .selectTeam a {
+        color: #e0b001 !important;
+    }
+
+    .selectTeam p {
+        color: #e0b001 !important;
+    }
+
+
+.selectSkip {
+    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #000;
+    display: table-cell;
+    background-size: 45% 45%;
+}
+
+    .selectSkip a {
+        color: #e0b001 !important;
+    }
+
+    .selectSkip p {
+        color: #e0b001 !important;
+    }
+
+.selectPartners {
+    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #000;
+    display: table-cell;
+    background-size: 45% 45%;
+}
+
+    .selectPartners a {
+        color: #e0b001 !important;
+    }
+
+    .selectPartners p {
+        color: #e0b001 !important;
+    }
+
+
+.selectPeers {
+    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #000;
+    display: table-cell;
+    background-size: 45% 45%;
+}
+
+    .selectPeers a {
+        color: #e0b001 !important;
+    }
+
+    .selectPeers p {
+        color: #e0b001 !important;
+    }
+
+
+
+
+
+
+.vertical-align-wrap p {
+    font-size: 250%;
+    margin: 10% 0;
+    padding: 0 9%;
+    color: #fff;
+}
+
+.vertical-align-wrap:hover p {
+    color: #e0b001;
+}
+
+
+
+.vertical-align--bottom {
+    vertical-align: bottom;
+}
+
+    .vertical-align--bottom a {
+        color: #fff;
+        font-size: 150%;
+        padding: 0 15px;
+        position: relative;
+        bottom: 10px;
+        display: block;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+.vertical-align-wrap:hover a {
+    color: #e0b001;
+}
+
+
+
+
+
+
+.profilePart {
+    width: 20%;
+    margin-right: 3%;
+    float: left;
+}
+
+.profileCenter {
+    border: 1px solid #333;
+    width: 100% !important;
+    padding: 3% 0 0 3%;
+    height: auto;
+    float: left;
+}
+
+    .profileCenter ul {
+        width: 100%;
+        margin: 0 3% 0 0;
+        padding: 0;
+        height: auto;
+        float: left;
+    }
+
+        .profileCenter ul li {
+            float: left;
+            width: 46%;
+            margin-right: 4%;
+            margin-bottom: 3%;
+            padding-bottom: 47%;
+            height: 0;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+        }
+
+.profilePicture {
+    cursor: pointer;
+}
+
+.profileCenter p {
+    color: #fff;
+    font-size: 150%;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0%;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 13px !important;
+}
+
+.profileCenter img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    width: 100%;
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* Firefox 35+ */
+    -webkit-filter: grayscale(1); /* Chrome,Safari 6+ & Opera15+ */
+}
+/*.selectArrow{ border:1px solid #e0b001;}*/
+.selectArrow img {
+    filter: gray; /* IE6-9 */
+    filter: grayscale(0); /* Firefox 35+ */
+    -webkit-filter: grayscale(0); /* Chrome,Safari 6+ & Opera15+ */
+}
+
+.selectArrow span {
+    border: 2px solid #e0b001;
+    background: url(../../../Images/images/feedback/selecttick.png)no-repeat top right;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    background-size: 40% 35%;
+    top: 0;
+    right: 0;
+}
+
+.selectArrow p {
+    color: #e0b001;
+}
+
+.profileCenter ul li:hover img {
+    filter: gray; /* IE6-9 */
+    filter: grayscale(0); /* Firefox 35+ */
+    -webkit-filter: grayscale(0); /* Chrome,Safari 6+ & Opera15+ */
+}
+
+.profileCenter ul li:hover p {
+    color: #e0b001;
+}
+
+.takefbRightPart {
+    width: 54%;
+    float: left;
+}
+
+.givefbcontent {
+    border: 1px solid #333;
+    float: left;
+    width: 99%;
+    padding: 1.5%;
+}
+
+
+
+.requestfbcontent {
+    border: 1px solid #999;
+    float: left;
+    width: 66%;
+    padding: 1.5%;
+}
+
+
+.takefbcontent {
+    border: 1px solid #999;
+    float: left;
+    width: 66%;
+    padding: 1.5%;
+}
+
+
+.requestPart {
+    border: 1px solid #999;
+    width: 100%;
+    padding: 1.5%;
+}
+
+.fblfristBox {
+    background: url(../../../Images/feedback/bigPicturebg.jpg)no-repeat;
+    background-size: 100% 100%;
+    width: 32.3%;
+    float: left;
+    margin-right: 1.5%;
+    height: 65%;
+}
+
+.fblsecondBox {
+    background: url(../../../Images/feedback/practiceAreasBg.jpg)no-repeat;
+    background-size: 100% 100%;
+    width: 32.3%;
+    float: left;
+    margin-right: 1.5%;
+    height: 65%;
+}
+
+.fblthirdBox {
+    background: url(../../../Images/feedback/excellenceActionbg.jpg)no-repeat;
+    background-size: 100% 100%;
+    width: 32.3%;
+    float: left;
+    height: 65%;
+}
+
+.takefbcontent p {
+    font-size: 100% !important;
+}
+
+.boxone {
+    background: rgba(0, 0, 0, 0.9);
+    margin-top: 106%;
+    height: 50%;
+}
+
+    .boxone h2 {
+        background: #000;
+        width: 100%;
+        color: #fff;
+        font-size: 170%;
+        border-bottom: 1px solid #222;
+        padding: 6%;
+        font-weight: normal;
+    }
+
+    .boxone h3 {
+        width: 100%;
+        color: #fff;
+        font-size: 150%;
+        padding: 5% 6% 0% 6%;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .boxone p {
+        width: 100%;
+        color: #fff;
+        font-size: 110%;
+        padding: 2% 6% 5% 6%;
+        height: 100px;
+    }
+
+    .boxone a {
+        float: right;
+        background: #e0b001;
+        text-decoration: none;
+        padding: 2% 4% 2.5% 4%;
+        margin: 0 6%;
+        font-size: 130%;
+        color: #000;
+        font-weight: 500;
+        border: 1px solid #000;
+    }
+
+        .boxone a:hover {
+            background: #000;
+            color: #e0b001;
+            border: 1px solid #e0b001;
+        }
+
+.boxbottom {
+    margin-top: 3%;
+}
+
+
+
+/*-------------------------------Give Inner----------------------------------------------*/
+
+.giveInnerPart {
+    width: 54%;
+    float: left;
+}
+
+.givefbInnermenu {
+    width: 14%;
+    float: left;
+}
+
+    .givefbInnermenu ul {
+        margin: 0;
+        position: relative;
+        padding: 0;
+    }
+
+        .givefbInnermenu ul li {
+            position: relative;
+            list-style: none;
+            height: 0;
+            padding-bottom: 100%;
+            margin-bottom: 10%;
+            cursor: pointer;
+        }
+
+            .givefbInnermenu ul li a {
+                bottom: 0;
+                position: absolute;
+                padding: 5%;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            .givefbInnermenu ul li:hover a {
+                color: #e0b001;
+            }
+
+
+
+.sendRequest .boxone h2 {
+    background: url(../../../Images/images/feedback/sendRequestIcon.png)no-repeat top 130% right 5% #000;
+    background-size: 30% 80%;
+    font-size: 120%;
+}
+
+
+.askRequest .boxone h2 {
+    background: url(../../../Images/images/feedback/askRequestIcon.png)no-repeat top 130% right 5% #000;
+    background-size: 30% 80%;
+    font-size: 120%;
+}
+
+
+
+.sendRequest {
+    background: url(../../../Images/images/feedback/sendRequestBg.png)no-repeat;
+    background-size: 100% 100%;
+    width: 49%;
+    float: left;
+    margin-right: 1.5%;
+    height: 50%;
+}
+
+.askRequest {
+    background: url(../../../Images/images/feedback/askRequestBg.png)no-repeat;
+    background-size: 100% 100%;
+    width: 49%;
+    float: left;
+    height: 50%;
+}
+
+
+.generalFb {
+    background: url(../../../Images/images/feedback/takefbBg.png)no-repeat;
+    background-size: 100% 100%;
+    width: 49%;
+    float: left;
+    margin-right: 1.5%;
+    height: 50%;
+}
+
+.quickFb {
+    background: url(../../../Images/images/feedback/quickFbBg.png)no-repeat;
+    background-size: 100% 100%;
+    width: 49%;
+    float: left;
+    height: 50%;
+}
+
+.generalFb .boxone h2 {
+    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 270% right 5% #000;
+    background-size: 22% 90%;
+    font-size: 120%;
+}
+
+
+.quickFb .boxone h2 {
+    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 20px right 15px #000;
+    background-size: 22% 90%;
+    font-size: 120%;
+}
+
+
+.fblfristBox .boxone h2 {
+    background: url(../../../Images/images/feedback/bigPictureIcon.png)no-repeat top 20px right 15px #000;
+    background-size: contain;
+    font-size: 120%;
+}
+
+.fblsecondBox .boxone h2 {
+    background: url(../../../Images/images/feedback/practiceAreasIcon.png)no-repeat top 10px right 15px #000;
+    background-size: contain;
+    font-size: 120%;
+}
+
+.fblthirdBox .boxone h2 {
+    background: url(../../../Images/images/feedback/excellenceActionIcon.png)no-repeat top 6px right 15px #000;
+    background-size: contain;
+    font-size: 120%;
+}
+
+.selectTeam {
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 18% right 5% rgba(0, 0, 0, 1 ) !important;
+    background-size: 25% 55% !important;
+}
+
+    .selectTeam a {
+        color: #e0b001 !important;
+    }
+
+.selectOtherTeam {
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background-size: 50% 50% !important;
+}
+
+    .selectOtherTeam a {
+        color: #e0b001 !important;
+    }
+
+
+
+.selectPeers {
+    background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 10% right 10% rgba(0, 0, 0, 1 ) !important;
+    background-size: 45% 45% !important;
+}
+
+    .selectPeers a {
+        color: #e0b001 !important;
+    }
+
+
+.selectskip {
+    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background-size: 50% 50% !important;
+}
+
+    .selectskip a {
+        color: #e0b001 !important;
+    }
+
+.selectmanager {
+    background: url(../../../Images/images/feedback/rfbManagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background-size: 50% 50% !important;
+}
+
+    .selectmanager a {
+        color: #e0b001 !important;
+    }
+
+.selectcustomer {
+    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background-size: 50% 50% !important;
+}
+
+    .selectcustomer a {
+        color: #e0b001 !important;
+    }
+
+
+.teamGfbIcon {
+    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background-size: 50% 50%;
+}
+
+    .teamGfbIcon:hover {
+        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background-size: 50% 50%;
+    }
+
+.otherteamGfbIcon {
+    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background-size: 50% 50%;
+}
+
+    .otherteamGfbIcon:hover {
+        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background-size: 50% 50%;
+    }
+
+
+.skipLevelRfb {
+    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background-size: 50% 50%;
+}
+
+    .skipLevelRfb:hover {
+        background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background-size: 50% 50%;
+    }
+
+
+.managerRfb {
+    background: url(../../../Images/images/feedback/rfbManagerIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background-size: 50% 50%;
+}
+
+    .managerRfb:hover {
+        background: url(../../../Images/images/feedback/rfbManagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background-size: 50% 50%;
+    }
+
+.customerRFb {
+    background: url(../../../Images/images/feedback/customersIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background-size: 50% 50%;
+}
+
+    .customerRFb:hover {
+        background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background-size: 50% 50%;
+    }
+
+
+
+
+.peersGfbIcon {
+    background: url(../../../Images/images/feedback/peersgfbIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background-size: 50% 50%;
+}
+
+
+    .peersGfbIcon:hover {
+        background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background-size: 45% 45%;
+    }
+
+.giveInnerPart h2 span {
+    font-size: 70%;
+}
+
+
+.givefbContent {
+    border: 1px solid #999;
+    width: 82%;
+    margin-left: 3%;
+    float: left;
+    padding: 1% 0 1% 2%;
+}
+
+
+.histroyArea {
+    margin-left: 0%;
+    width: 99%;
+}
+
+.givefbmessage {
+    width: 48%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1% 1% 1% 1%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left;
+}
+
+.givefbContent p {
+    font-size: 100%;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.givefbmessage img {
+    float: left;
+    margin-right: 2%;
+    width: 25%;
+}
+
+.givefbmessagedetails {
+    float: left;
+    margin-bottom: 3%;
+}
+
+    .givefbmessagedetails p {
+        font-size: 85%;
+        padding: 1% 0;
+        color: #fff;
+    }
+
+.givefbmessageDummy {
+    position: relative;
+    height: 0%;
+    width: 48%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1% 1% 14% 1%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left;
+}
+
+.histroyfb .givefbmessageDummy {
+    padding-bottom: 21.7%;
+}
+
+
+.incompleteBtn p {
+    float: left;
+    color: #fff;
+    padding-right: 5%;
+    font-size: 85%;
+    width: 37%;
+}
+
+.givefbBtn {
+    float: right;
+    width: 18%;
+}
+
+    .givefbBtn a {
+        background: #e0b001;
+        padding: 4% 6%;
+        text-decoration: none;
+        color: #000;
+        border: 1px solid #e0b001;
+        font-weight: 600;
+        margin-top: 2%;
+    }
+
+        .givefbBtn a:Hover {
+            background: #000;
+            padding: 4% 6%;
+            text-decoration: none;
+            color: #e0b001;
+            border: 1px solid #e0b001;
+        }
+
+
+.paginationfb {
+    width: 100%;
+    margin-top: 2%;
+    float: left;
+}
+
+    .paginationfb ul {
+        float: right;
+        width: 27%;
+    }
+
+        .paginationfb ul li {
+            float: left;
+            list-style: none;
+            margin: 0 .5% 0 .5%;
+        }
+
+.histroyArea .paginationfb ul {
+    float: right;
+    width: 22.3%;
+}
+
+
+.histroyArea .paginationfb {
+    margin-top: -1%;
+}
+
+.histroyArea .givefbmessage img {
+    width: 20%;
+}
+
+.givefbmessage a {
+    border: 1px solid #000;
+    background: #e0b001;
+    padding: 1% 2%;
+    font-size: 67%;
+    color: #000;
+    text-decoration: none;
+}
+
+    .givefbmessage a:hover {
+        border: 1px solid #e0b001;
+        background: #000;
+        color: #fff;
+    }
+
+.givefbmessage h3 {
+    font-size: 100%;
+    color: #fff;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.fristpage {
+    background: url(../../../Images/images/feedback/fristPreArrow.png) no-repeat;
+    background-size: 100% 100%;
+    width: 2%;
+    height: 0;
+    padding-bottom: 2%;
+    right: 11.8%;
+    cursor: pointer;
+    position: absolute;
+}
+
+    .fristpage:hover {
+        background: url(../../../Images/images/feedback/fristPreArrowHover.png) no-repeat;
+    }
+
+
+.prepage {
+    background: url(../../../Images/images/feedback/preArrow.png) no-repeat;
+    background-size: 100% 100%;
+    width: 2%;
+    height: 0;
+    padding-bottom: 2%;
+    right: 10.5%;
+    position: absolute;
+    cursor: pointer;
+}
+
+    .prepage:hover {
+        background: url(../../../Images/images/feedback/preArrowHover.png) no-repeat;
+    }
+
+.nextpage {
+    background: url(../../../Images/images/feedback/nextArrow.png) no-repeat;
+    background-size: 100% 100%;
+    width: 2%;
+    height: 0;
+    padding-bottom: 2%;
+    right: 3.5%;
+    cursor: pointer;
+    position: absolute;
+}
+
+    .nextpage:hover {
+        background: url(../../../Images/images/feedback/nextArrowHover.png) no-repeat;
+    }
+
+
+
+.lastpage {
+    background: url(../../../Images/images/feedback/lastNextArrow.png) no-repeat;
+    background-size: 100% 100%;
+    width: 2%;
+    height: 0;
+    padding-bottom: 2%;
+    right: 2.2%;
+    position: absolute;
+    cursor: pointer;
+}
+
+    .lastpage:hover {
+        background: url(../../../Images/images/feedback/lastNextArrowHover.png) no-repeat;
+    }
+
+
+.paginationfb ul li a {
+    background: url(../../../Images/images/feedback/pageBg.png) no-repeat center;
+    background-size: 100% 100%;
+    padding: 2px 8px 3px 8px;
+    line-height: 30px;
+    font-size: 100%;
+    color: #fff;
+    margin: 0;
+}
+
+    .paginationfb ul li a:hover {
+        background: url(../../../Images/images/feedback/pageBgHover.png) no-repeat;
+        cursor: pointer;
+        color: #000;
+    }
+
+
+.activeArrow {
+    background: url(../../../Images/images/feedback/pageBgHover.png) no-repeat !important;
+    color: #000 !important;
+}
+
+.teamStd p {
+    padding-left: 4%;
+}
+
+/*------------------------------------- Pagination--------------------------------------*/
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+
+@media screen and (max-width: 3600px) and (min-width: 2600px) {
+
+    .boxone h2 {
+        font-size: 200% !important;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 200% !important;
+    }
+}
+
+@media screen and (max-width: 2600px) and (min-width: 2170px) {
+
+    .fblfristBox {
+        background-size: 100% 110%;
+    }
+
+
+    .fblthirdBox {
+        background-size: 100% 110%;
+    }
+
+    .fblsecondBox {
+        background-size: 100% 120%;
+    }
+
+
+    .login {
+        padding: 3% 2% 2% 0;
+    }
+
+    .accordion a {
+        margin-top: -0.7%;
+    }
+
+    .takeFeedbackMenu {
+        padding-bottom: 44%;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 44%;
+    }
+
+    .vertical-align-wrap p {
+        font-size: 500%;
+        padding-left: 5%;
+    }
+
+    .teamStd p {
+        padding-left: 3% !important;
+        margin-bottom: 4%;
+    }
+
+    .scroll2 {
+        padding-bottom: 95%;
+    }
+
+
+    .boxone {
+        height: 285px;
+        margin-top: 100%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 130%;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 200%;
+    }
+
+    .boxone h2 {
+        font-size: 150% !important;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+
+
+    .boxone p {
+        font-size: 120%;
+        line-height: 1.5;
+        padding-bottom: 5% !important;
+        height: 150px;
+    }
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 120%;
+        bottom: 0%;
+    }
+
+    .scroll2 {
+        padding-bottom: 94% !important;
+    }
+
+    .profileCenter img {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 2169px) and (min-width: 2001px) {
+    .boxone {
+        height: 270px;
+        margin-top: 90%;
+    }
+
+
+    .fblsecondBox {
+        background-size: 100% 115%;
+    }
+
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 120%;
+    }
+
+
+    .vertical-align-wrap p {
+        font-size: 350%;
+    }
+
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+    .boxone p {
+        font-size: 110%;
+        line-height: 20px;
+        height: 150px;
+    }
+
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 110%;
+        padding-bottom: 3%;
+    }
+
+    .profileCenter p {
+        font-size: 100%;
+        bottom: 0%;
+    }
+
+    .profileCenter img {
+        height: 190px;
+    }
+
+
+    .takeFeedbackMenu {
+        padding-bottom: 46%;
+    }
+
+    .profileCenter {
+        padding: 3% 0 3% 3%;
+    }
+
+
+    .fblfristBox .boxone h2 {
+        font-size: 150%;
+    }
+
+    .scroll2 {
+        padding-bottom: 97% !important;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1701px) {
+    .takeFeedbackMenu {
+        padding-bottom: 42%;
+    }
+
+    .takeFeedbackLeft {
+        width: 97% !IMPORTANT;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 44% !important;
+    }
+
+    .fblsecondBox {
+        background-size: 100% 112%;
+    }
+
+    .scroll2 {
+        padding-bottom: 94% !important;
+    }
+
+    .vertical-align-wrap p {
+        font-size: 350%;
+        margin-bottom: 4%;
+    }
+
+    .boxone {
+        height: 257px;
+        margin-top: 90%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 90%;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+
+
+    .boxone p {
+        font-size: 100%;
+        line-height: 1.5;
+        height: 150px;
+    }
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 100%;
+        bottom: 0%;
+        padding: 2px 8px 5px 8px;
+    }
+
+    .profileCenter img {
+        height: 157px;
+    }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1670px) {
+    .scroll2 {
+        padding-bottom: 92% !important;
+    }
+
+
+    .breadMenu {
+        margin-bottom: 0% !important;
+    }
+
+    .teamStd p {
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .login {
+        padding: 3% 2% 3% 0;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 43%;
+    }
+
+    .takefeedback {
+        margin-top: 2%l;
+    }
+
+    .poelistli a div img {
+        height: 134px;
+    }
+
+    .boxone {
+        height: 250px;
+        margin-top: 90%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 90%;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+
+
+    .boxone p {
+        font-size: 90%;
+        line-height: 20px;
+        height: 155px;
+    }
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 100%;
+        bottom: 0%;
+    }
+
+    .profileCenter p {
+        font-size: 100% !important;
+        bottom: 0%;
+        padding: 2px 8px 3px 8px;
+    }
+
+    .takeFeedbackMenu, .incompletefbMenu {
+        padding-bottom: 43%;
+    }
+}
+
+@media screen and (max-width: 1669px) and (min-width: 1501px) {
+
+    .profileCenter p {
+        font-size: 100% !important;
+        bottom: 0%;
+        padding: 2px 8px 3px 8px;
+    }
+
+    .scroll2 {
+        padding-bottom: 90% !important;
+    }
+
+    .takefeedback {
+        margin: 1% 2% 0 2% !important;
+    }
+
+
+    .breadMenu {
+        margin-bottom: 0% !important;
+    }
+
+    .teamStd p {
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .login {
+        padding: 3.2% 2% 3% 0;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 42%;
+    }
+
+    .boxone {
+        height: 245px;
+        margin-top: 90%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 90%;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+
+
+    .boxone p {
+        font-size: 90%;
+        line-height: 20px;
+        height: 150px;
+    }
+
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 100% !important;
+        bottom: 0%;
+        padding: 2px 8px 3px 8px;
+    }
+
+
+    .profileCenter img {
+        height: 124px;
+    }
+}
+
+
+@media screen and (max-width: 1500px) and (min-width: 1401px) {
+    .takefeedback {
+        margin: 1% 2% 0 2% !important;
+    }
+
+    .scroll2 {
+        padding-bottom: 90% !important;
+    }
+
+    .takeFeedbackMenu {
+        padding-bottom: 43% !important;
+    }
+
+
+
+    .breadMenu {
+        margin-bottom: 0% !important;
+    }
+
+    .teamStd p {
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .login {
+        padding: 2.4% 2% 2.4% 0;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 42%;
+    }
+
+    .boxone {
+        height: 240px;
+        margin-top: 100%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 80%;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+    .boxone p {
+        font-size: 90%;
+        line-height: 20px;
+        height: 150px;
+    }
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    /*@media screen and (max-width:1500px) and (min-width:1401px)*/
+    .profileCenter p {
+        font-size: 100% !important;
+        bottom: 0%;
+        padding: 3px 8px 4px 8px;
+    }
+
+
+    .profileCenter img {
+        height: 112px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
+
+    .fblsecondBox {
+        background-size: 100% 115%;
+    }
+
+
+    .takefeedback {
+        margin: 1% 2% 0 2% !important;
+    }
+
+    .vertical-align-wrap p {
+        font-size: 200%;
+    }
+
+    .scroll2 {
+        padding-bottom: 90% !important;
+    }
+
+    .takeFeedbackMenu {
+        padding-bottom: 40% !important;
+    }
+
+
+
+    .breadMenu {
+        margin-bottom: 0% !important;
+    }
+
+    .teamStd p {
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .login {
+        padding: 2.2% 2% 2.2% 0;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 42%;
+    }
+
+    .boxone {
+        height: 185px;
+        margin-top: 104%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 90%;
+        padding: 0 5px 0 10px;
+    }
+
+    .breadcrumb {
+        margin-top: 0;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+    .boxone p {
+        font-size: 80%;
+        line-height: 1.5;
+    }
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 69% !important;
+        bottom: 0%;
+        padding: 2px 2px 4px 6px;
+    }
+
+
+    .profileCenter img {
+        height: 105px;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+    .vertical-align-wrap p {
+        font-size: 200%;
+    }
+
+    .scroll2 {
+        padding-bottom: 96% !important;
+    }
+
+
+
+    .accordion h3 {
+        padding-bottom: 16%;
+    }
+
+    .breadMenu {
+        margin-bottom: 0% !important;
+    }
+
+    .teamStd p {
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .login {
+        padding: 2.2% 2% 2.2% 0;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 45%;
+    }
+
+
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+    .vertical-align-wrap p {
+        font-size: 200%;
+    }
+
+
+    .takeFeedbackMenu {
+        padding-bottom: 43% !important;
+    }
+
+    .incompletefbMenu {
+        padding-bottom: 43% !important;
+    }
+
+    .accordion h3 {
+        padding-bottom: 16%;
+    }
+
+    .breadMenu {
+        margin-bottom: 0% !important;
+    }
+
+    .teamStd p {
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .login {
+        padding: 2.2% 2% 2.2% 0;
+    }
+
+
+
+    .boxone {
+        height: 260px;
+        margin-top: 80%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 90%;
+        padding: 0 5px 0 10px;
+    }
+
+    .breadcrumb {
+        margin-top: 0;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+
+
+    .boxone p {
+        font-size: 80%;
+        line-height: 1.5;
+    }
+
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 80%;
+        bottom: 0%;
+    }
+
+    .profileCenter img {
+        height: 105px;
+    }
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 80%;
+        padding: 0 5px 0 10px;
+    }
+
+    .breadcrumb {
+        margin-top: 0;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+
+
+    .boxone p {
+        font-size: 80%;
+        line-height: 1.5;
+    }
+
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 80%;
+        bottom: 0%;
+    }
+
+    .profileCenter img {
+        height: 105px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+
+    .vertical-align-wrap p {
+        font-size: 200%;
+    }
+
+    .scroll2 {
+        padding-bottom: 118% !important;
+    }
+
+
+
+    .accordion h3 {
+        padding-bottom: 16%;
+    }
+
+    .breadMenu {
+        margin-bottom: 0% !important;
+    }
+
+    .teamStd p {
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .login {
+        padding: 2.2% 2% 2.2% 0;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 56%;
+    }
+
+
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+    .vertical-align-wrap p {
+        font-size: 200%;
+    }
+
+
+    .takeFeedbackMenu {
+        padding-bottom: 52% !important;
+    }
+
+    .incompletefbMenu {
+        padding-bottom: 52% !important;
+    }
+
+    .accordion h3 {
+        padding-bottom: 16%;
+    }
+
+    .breadMenu {
+        margin-bottom: 0% !important;
+    }
+
+    .teamStd p {
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .login {
+        padding: 2.2% 2% 2.2% 0;
+    }
+
+
+
+    .boxone {
+        height: 290px;
+        margin-top: 80%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 90%;
+        padding: 0 5px 0 10px;
+    }
+
+    .breadcrumb {
+        margin-top: 0;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 130%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+
+
+    .boxone p {
+        font-size: 80%;
+        line-height: 1.5;
+    }
+
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 80%;
+        bottom: 0%;
+    }
+
+    .profileCenter img {
+        height: 105px;
+    }
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 65%;
+        padding: 0 5px 0 10px;
+    }
+
+    .breadcrumb {
+        margin-top: 3%;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+
+    .boxone h2 {
+        font-size: 100% !important;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+
+
+    .boxone p {
+        font-size: 80%;
+        line-height: 1.5;
+    }
+
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+    }
+
+    .profileCenter p {
+        font-size: 65%;
+        bottom: 0%;
+    }
+
+    .profileCenter img {
+        height: 105px;
+    }
+}
+
+
+/* My CSS */
+
+.slimScrollDiv {
+    width: 100% !important;
+    height: 0% !important;
+    position: relative;
+}
+
+
+
+.scroll2 {
+    padding-bottom: 95%;
+    position: relative;
+    width: 100% !important;
+    height: 0% !important;
+}
+
+    .scroll2 ul {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+    }

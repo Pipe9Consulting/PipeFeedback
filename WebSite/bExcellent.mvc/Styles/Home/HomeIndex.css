@@ -1,0 +1,1661 @@
+﻿.accordion
+{
+    padding-right: 0 !important;
+}
+
+.contname
+{
+    background: #e5e5e5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Segoe UI;
+    color: #808080;
+    width: 95%;
+    border: 1px solid #fff;
+    padding: 2%;
+    margin: 4% 0;
+    resize: none;
+}
+
+#secondpage, #thirdpage, #thirdpagea, #forthpage, .videoscreen, .videoh, .videobc, .priceorg, .faq2, .favblogpg, .crpg, .workshoppg, .newspg, .tweetpg
+{
+    display: none;
+}
+
+.callus
+{
+    background: none repeat scroll 0 0 #353535;
+    display: none;
+    height: 95px;
+    margin-left: -30px;
+    padding: 5px 15px !important;
+    position: absolute;
+    top: 52px;
+    width: 198px;
+}
+
+.footer
+{
+    display: none;
+}
+
+.topmenu
+{
+    float: right;
+    width: 50%;
+    position: relative;
+}
+
+    .topmenu li
+    {
+        float: right;
+        padding: 3.5% 1.5%;
+    }
+
+        .topmenu li a, .footermenu li a
+        {
+            background: transparent !important;
+        }
+
+.callus
+{
+    background: none repeat scroll 0 0 #353535;
+    display: none;
+    height: 95px;
+    padding: 5px 15px !important;
+    position: absolute;
+    top: 100%;
+    height: auto;
+    width: auto;
+}
+
+    .callus div
+    {
+        color: #fff !important;
+        clear: both;
+        border-bottom: 1px dotted #fff;
+        padding: 3% 0;
+    }
+
+        .callus div:last-child
+        {
+            border: 0;
+        }
+
+    .callus a
+    {
+        border: 0;
+        color: #fff !important;
+    }
+
+.footermenu li
+{
+    float: left;
+    padding: 2.5% 2%;
+}
+
+    .footermenu li:first-child
+    {
+        padding-left: 0;
+    }
+
+    .topmenu li a, .footermenu li a
+    {
+        color: #e0b001;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.homefooter
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    background: #5e5e5e;
+}
+
+.footermenu, .slidebtn
+{
+    float: left;
+    width: 40%;
+}
+
+.slidebtn
+{
+    float: left;
+    width: 20%;
+    margin: 0.2% 0 0;
+}
+
+.hmcopyright
+{
+    float: left;
+    width: 34%;
+    text-align: right;
+}
+
+    .hmcopyright .copyright
+    {
+        float: right;
+    }
+
+        .hmcopyright .copyright span
+        {
+            float: right;
+            margin: 4% 0;
+            padding: 0 3%;
+        }
+
+            .hmcopyright .copyright span:first-child
+            {
+                padding: 0 0 0 3%;
+            }
+
+            .hmcopyright .copyright span a
+            {
+                text-align: right;
+                cursor: pointer;
+                text-align: right;
+            }
+
+            .hmcopyright .copyright span:first-child
+            {
+                border-left: 1px solid #fff;
+            }
+
+.pg2, .pg3, .pg4, .pg5, .pg6, .pg7
+{
+    display: none;
+}
+
+.pageholderhome
+{
+    width: 83%;
+    min-width: 200px;
+    padding: 12.4% 0 0;
+    margin: 0 auto;
+}
+
+.spotlightdivholder
+{
+    width: 50.7%;
+    float: left;
+    margin-top: 0.5%;
+}
+
+.bigtile
+{
+    width: 59%;
+    position: relative;
+    padding-bottom: 39%;
+    height: 0;
+    float: left;
+    margin: 0 1% 0 0;
+}
+
+    .bigtile .bigtile
+    {
+        width: 100%;
+        height: 0;
+    }
+
+.smalltile .smalltile
+{
+    width: 100%;
+    padding-bottom: 100%;
+    height: 0;
+}
+
+.bigtile .bigtile
+{
+    padding-bottom: 33%;
+}
+
+.smalltile
+{
+    width: 18.8%;
+    padding-bottom: 18.8%;
+    position: relative;
+    float: left;
+    margin: 0 1.2% 1.2% 0;
+    height: 0;
+}
+
+    .smalltile img, .bigtile img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.everyone, .nonbgsmalltitle
+{
+    position: absolute;
+}
+
+.everyone
+{
+    z-index: 111;
+    width: 100%;
+}
+
+    .everyone div
+    {
+        background: none repeat scroll 0 0 #494949;
+        float: left;
+        padding: 3.8% 5%;
+        width: 63%;
+        color: #fff;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .everyone span
+    {
+        float: left;
+        width: 18%;
+        padding-bottom: 18%;
+        position: relative;
+    }
+
+        .everyone span img
+        {
+            height: 100%;
+            width: auto;
+        }
+
+.nonbgbigtiletitle, .nonbgsmalltitle
+{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    opacity: 1;
+    margin: 5%;
+}
+
+.white-tile .nonbgsmalltitle, .black-tile .nonbgsmalltitle
+{
+    background: url("../../Images/trans.png");
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.bigtiletitle, .smalltiletitle
+{
+    background: url("../../Images/trans1.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    color: #fff;
+}
+
+    .white-tile .nonbgsmalltitle p, .black-tile .nonbgsmalltitle p, .smalltiletitle p
+    {
+        padding: 5%;
+        color: #fff;
+    }
+
+.nonbgsmalltitle
+{
+    padding: 0;
+    width: 80%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+}
+
+.nick
+{
+    padding: 3.3% !important;
+}
+
+.live-tile.flip .ha.flip-front, .flip-list .ha.flip-front, .live-tile.flip .ha.flip-back, .flip-list .ha.flip-back
+{
+    backface-visibility: hidden;
+    position: absolute;
+    z-index: 20;
+}
+
+.noselect > div, .noselect > .slide, .noselect > .slide-front, .noselect > .slide-back, .noselect > .flip-front, .noselect > .flip-back
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.live-tile > div, .list-tile > div, .live-tile > .slide, .carousel > .slide, .live-tile > .slide-front, .live-tile > .slide-back, .live-tile > .flip-front, .live-tile > .flip-back
+{
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 20;
+}
+
+.list-tile > div
+{
+    position: relative;
+    background-color: transparent;
+}
+
+img.full, a.full, .live-tile .full, .list-tile .full
+{
+    display: block;
+    margin: 0px;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+}
+
+.live-tile > .back, .live-tile > .slide-back, .live-tile > .flip-back, .flip-list .flip-back
+{
+    position: absolute;
+    z-index: 10;
+}
+/*  ========== flip-list Styles ==========
+	.flip-list
+	---li
+	------div.flip-front
+	------div.flip-back
+*/
+.flip-list
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-tile .flip-list
+{
+    height: 100%;
+    width: 100%;
+}
+
+.flip-list > li > a
+{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.flip-list > li img
+{
+    border: none;
+    outline: none;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.flip-list > li
+{
+    float: left;
+    list-style-type: none;
+    outline: none;
+    position: relative;
+}
+
+    .flip-list > li > div
+    {
+        border: none;
+        background: white;
+        height: 100%;
+        left: 0px;
+        margin: 0px;
+        overflow: hidden;
+        position: absolute;
+        padding: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: 20;
+    }
+
+        .flip-list > li > div.flip-back
+        {
+            height: 0px;
+        }
+/* ------ Hardware Accelerated Tiles --------*/
+/* flip */
+.live-tile.flip.ha, .flip-list.ha
+{
+    position: relative;
+}
+
+    .live-tile.flip .ha.flip-front, .flip-list .ha.flip-front, .live-tile.flip .ha.flip-back, .flip-list .ha.flip-back
+    {
+        position: absolute;
+        z-index: 20;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+.bigtile
+{
+    z-index: 3;
+}
+
+.flip-list > li > .ha.flip-back, .flip-list > li > .ha.flip-back img
+{
+    /* override the values set for margin and ensure the back tile is visible  */
+    margin: 0px !important;
+}
+
+html body .gray.accent, html body .gray.live-tile > .accent, html body .gray.list-tile > .accent, html body .gray.copy-tile > .accent, html body .gray.live-tile > div, html body .gray.copy-tile > div, html body .gray.list-tile > div, html body .gray.live-tile > .face, html body .gray.list-tile > .face, html body .gray.copy-tile > .face, html body .gray.live-tile > .slide, html body .gray.live-tile > .flip-back, html body .gray.live-tile > .flip-front, html body .gray.live-tile > .slide-back, html body .gray.live-tile > .slide-front, html body .gray.flip-list > li > .accent, html body .gray.flip-list > li > .flip-back, html body .gray.flip-list > li > .flip-front, html body .gray.slide.accent, html body .gray.slide-front.accent, html body .gray.slide-back.accent, html body .gray.flip-front.accent, html body .gray.flip-back.accent
+{
+    background: #808080;
+}
+
+.mypoearea
+{
+    width: 44%;
+    float: right;
+}
+
+    .mypoearea h2
+    {
+        font-weight: 300;
+        line-height: 1.2em;
+        color: #808080;
+        margin: 0 0 5% 0;
+        padding: 0;
+    }
+
+    .mypoearea h3
+    {
+        color: #808080;
+        font-weight: normal;
+        line-height: 1.2em;
+    }
+
+.homesignup
+{
+    background: #CBCBCB;
+    float: left;
+    width: 100%;
+    margin: 5% 0 0;
+}
+
+    .homesignup h1
+    {
+        color: #5E5E5E;
+        font-weight: 300;
+        padding: 4% 5% !important;
+    }
+
+    .homesignup .btn
+    {
+        background: none repeat scroll 0 0 #DEAF00;
+        border: 0.1em solid #808080;
+        cursor: pointer;
+        float: left;
+        font-weight: bold;
+        margin-left: 1%;
+        margin-top: 0.2%;
+        text-align: center;
+        width: 10%;
+        height: 0;
+        padding-bottom: 5.7%;
+        position: relative;
+    }
+
+        .homesignup .btn p
+        {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: #FFFFFF;
+            top: 25%;
+        }
+
+    .homesignup .btnYammer
+    {
+        background: none repeat scroll 0 0 #DEAF00;
+        border: 0.1em solid #808080;
+        color: #FFFFFF;
+        cursor: pointer;
+        float: left;
+        font-weight: bold;
+        margin-left: 1%;
+        margin-top: 0.2%;
+        text-align: center;
+        width: 28%;
+        height: 0;
+        padding-bottom: 5.7%;
+        position: relative;
+    }
+
+        .homesignup .btnYammer p
+        {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: #FFFFFF;
+            top: 25%;
+        }
+
+.textareaholder
+{
+    float: left;
+    margin: 0 1% 5% 5%;
+    width: 46%;
+    padding: 0.1em;
+}
+
+    .textareaholder span
+    {
+        background: #fff;
+        float: left;
+        width: 100%;
+        height: 0;
+        padding-bottom: 12%;
+        padding-left: 2%;
+        border: 0.1em solid #808080;
+        position: relative;
+    }
+
+.homesignup .txtarea
+{
+    background: transparent;
+    border: 0;
+    float: left;
+    color: #808080;
+    width: 95%;
+    padding-left: 5%;
+    position: absolute;
+    left: 1%;
+    top: 25%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .homesignup .txtarea
+    {
+        top: 14% !important;
+    }
+}
+
+@-moz-document url-prefix()
+{
+    .homesignup .txtarea;
+
+{
+    top: 15% !important;
+}
+}
+
+.testimonial
+{
+    float: right;
+    width: 50%;
+    margin: 4% 0 0;
+}
+
+    .testimonial br, #p1, #p2, #p3, #p4, #p5, #p6, #p7, #bn2, #bn3, #bn4, #bn5, #bn6, #bn7
+    {
+        display: none;
+    }
+
+#wrapper .testimonial li
+{
+    width: 100%;
+}
+
+.testimonial li a
+{
+    clear: both;
+    text-align: right;
+    color: #808080;
+    width: 100%;
+    float: right;
+    padding: 0.5% 0;
+    margin: 0;
+    text-decoration: none;
+    background: transparent !important;
+}
+
+#scroller .MS
+{
+    float: right;
+    width: 27%;
+    margin: 5% 0 0;
+}
+
+    #scroller .MS li:first-child
+    {
+        float: right;
+        height: auto !important;
+        text-align: right;
+        width: 59%;
+        margin-right: 2%;
+    }
+
+        #scroller .MS li:first-child img
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+    #scroller .MS li
+    {
+        width: 32%;
+        text-align: right;
+    }
+
+.prev
+{
+    background: url("../../Images/previous.png") no-repeat;
+    background-size: 100% 100%;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+    text-indent: -99999px;
+    width: 14%;
+    padding-bottom: 9%;
+}
+
+.nxt
+{
+    background: url("../../Images/next.png") no-repeat;
+    background-size: 100% 100%;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+    text-indent: -99999px;
+    width: 14%;
+    padding-bottom: 9%;
+}
+
+    .nxt:hover
+    {
+        background: url("../../Images/next-hover.png") no-repeat;
+        background-size: 100% 100%;
+    }
+
+.prev:hover
+{
+    background: url("../../Images/prev-hover.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.pagination
+{
+    width: 68%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    padding: 5% 0;
+}
+
+.popupbg
+{
+    background: url(../../Images/trans.png);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999;
+    display: none;
+    overflow: hidden;
+}
+
+    .popupbg .formpopup
+    {
+        margin: 0 auto;
+        display: table;
+        width: 28%;
+        margin-top: 10%;
+        background: #efefef;
+        color: #353535;
+        display: none;
+        padding: 1% 1% 30% 1%;
+        position: relative;
+        border: 5px solid #353535;
+        border-top: 25px solid #353535;
+    }
+
+    .popupbg .closebtn
+    {
+        height: auto !important;
+        width: 3% !important;
+        padding-bottom: 3%;
+        top: -4%;
+        right: 0;
+        position: absolute;
+        z-index: 5;
+    }
+
+        .popupbg .closebtn img
+        {
+            width: 100% !important;
+            height: 100% !important;
+            text-align: right;
+        }
+
+.formtransbg
+{
+    background: url("../../Images/trans1.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    width: 100%;
+    position: relative;
+    border: 0 !important;
+}
+
+.popupbg .formpopup img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popupbg .formpopup table
+{
+    width: 100%;
+}
+
+    .popupbg .formpopup table table
+    {
+        border: 0;
+    }
+
+.popupbg .formpopup .contbtn
+{
+    float: right;
+    width: 45%;
+    margin: 5% 0;
+    background: #e0b001 !important;
+}
+
+.popupbg .formpopup .errormsg
+{
+    margin: 4% 0 !important;
+    color: #fff;
+}
+
+.errormsg
+{
+    background: url(../../Images/error.png) no-repeat left;
+    background-size: 10% 100%;
+    padding: 1% 0% 1% 12%;
+}
+
+.popupbg .formpopup td, .popupbg .formpopup p, .contbtn, .popupbg .formpopup td input
+{
+    color: #fff;
+}
+
+.popupbg .formpopup td
+{
+    padding: 0% 3%;
+    width: 45%;
+}
+
+.popupbg .formpopup p
+{
+    margin: 1.5%;
+}
+
+.popupbg .formpopup h1, .popupbg .formpopup h2
+{
+    font-weight: bold;
+    margin: 2% 0;
+    color: #e0b001;
+    border-bottom: 1px dotted #4C4C4C;
+    padding: 3% 0;
+}
+
+span.skype_pnh_container span.skype_pnh_highlighting_inactive_common span.skype_pnh_text_span
+{
+    color: #e0b001 !important;
+    font-weight: bold !important;
+}
+
+span.skype_pnh_container img.skype_pnh_logo_img
+{
+    display: none !important;
+}
+
+.formpopup .texfield
+{
+    background: #E5E5E5 !important;
+    border: 1px solid #FFFFFF;
+    margin: 2% 0 0;
+    padding-bottom: 140%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+    .formpopup .texfield textarea
+    {
+        width: 105%;
+        height: 95% !important;
+        background: transparent;
+        border: 0 !important;
+        outline: 0;
+        resize: none;
+        color: #808080;
+        font-family: Segoe UI;
+        position: absolute;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+.popupbg .formpopup h2
+{
+    padding-left: 1.5%;
+}
+
+.lftbdr
+{
+    border-left: 1px solid #4c4c4c;
+}
+
+.popupbg .formpopup td input
+{
+    background: #E5E5E5 !important;
+    border: 1px solid #FFFFFF;
+    padding: 2%;
+    width: 95%;
+    color: #808080;
+}
+
+.popupholder
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: none;
+}
+
+.popup
+{
+    border: 4px solid #5F5F5F;
+    border-top: 25px solid #5F5F5F;
+    margin: 9% auto;
+    position: relative;
+    background: #e5e5e5;
+    width: 40%;
+    padding-bottom: 30%;
+    float: none;
+}
+
+    .popup .player
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+.close
+{
+    background: url("../../Images/close.png") no-repeat scroll 0 0 transparent;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    cursor: pointer;
+    float: right;
+    height: 15px;
+    width: 15px;
+}
+
+    .close:hover
+    {
+        background: url("../../Images/close-hover.png") no-repeat scroll 0 0 transparent;
+    }
+
+.mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6
+{
+    text-align: left;
+}
+
+#vidh03, #vidh02, #vidh01, .videolist li
+{
+    cursor: pointer;
+}
+
+.last li a
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#thirdpage, #forthpage, #fifthpage, #sixthpage, .videoscreen, .priceorg
+{
+    display: none;
+}
+
+@media screen and (min-width: 2800px)
+{
+    .mypoearea h2
+    {
+        font-size: 42px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .priceheading h2, .priceheading h3
+    {
+        font-size: 15px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 35px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 18px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 2500px;
+    }
+
+    .everyone div
+    {
+        width: 56%;
+        padding: 3.4% 5%;
+    }
+
+    .longtxt
+    {
+        font-size: 12px !important;
+    }
+
+    #benefitsbg
+    {
+        width: 49% !important;
+    }
+
+    .mypoearea h2
+    {
+        font-size: 60px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .priceheading h2, .priceheading h3
+    {
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width: 2144px) and (max-width: 2800px)
+{
+    .mypoearea h2
+    {
+        font-size: 42px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .priceheading h2, .priceheading h3
+    {
+        font-size: 15px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 35px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 15px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 2500px;
+    }
+
+    .everyone div
+    {
+        width: 56%;
+        padding: 3.4% 5%;
+    }
+
+    .longtxt
+    {
+        font-size: 12px !important;
+    }
+
+    #benefitsbg
+    {
+        width: 49% !important;
+    }
+
+    .mypoearea h2
+    {
+        font-size: 51px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .priceheading h2, .priceheading h3
+    {
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2144px)
+{
+    .mypoearea h2
+    {
+        font-size: 42px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .priceheading h2, .priceheading h3
+    {
+        font-size: 18px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 26px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 13px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 2500px;
+    }
+
+    .everyone div
+    {
+        width: 56%;
+        padding: 3.4% 5%;
+    }
+
+    .longtxt
+    {
+        font-size: 12px !important;
+    }
+
+    #benefitsbg
+    {
+        width: 49% !important;
+    }
+
+    .mypoearea h2
+    {
+        font-size: 43px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .priceheading h2, .priceheading h3
+    {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1680px)
+{
+    .mypoearea h2
+    {
+        font-size: 41px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4
+    {
+        font-size: 18px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 23px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 11px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 1595px;
+    }
+
+    .longtxt
+    {
+        font-size: 12px !important;
+    }
+
+    #benefitsbg
+    {
+        width: 49% !important;
+    }
+
+    .textareaholder span
+    {
+        padding-bottom: 12.5% !important;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1600px)
+{
+    .everyone div
+    {
+        padding: 2.8% 5% !important;
+    }
+
+    .mypoearea h2
+    {
+        font-size: 36px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4
+    {
+        font-size: 15px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 20px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 10px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 1394px;
+    }
+
+    .longtxt
+    {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1440px)
+{
+    .mypoearea h2
+    {
+        font-size: 33px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4
+    {
+        font-size: 16px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 20px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 10px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 1330px;
+    }
+
+    .longtxt
+    {
+        font-size: 11px !important;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1400px)
+{
+    .mypoearea h2
+    {
+        font-size: 31px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4
+    {
+        font-size: 13px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 16px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 9px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 1193px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1366px)
+{
+    .mypoearea h2
+    {
+        font-size: 29px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4
+    {
+        font-size: 15px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 16px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 8px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 1161px;
+    }
+
+    .everyone div
+    {
+        padding: 3.3% 5%;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1280px)
+{
+    .mypoearea h2
+    {
+        font-size: 30px;
+        margin: 0 0 3% 0;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4
+    {
+        font-size: 14px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 18px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 10px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 1133px;
+    }
+
+    #scroller .MS
+    {
+        width: 32%;
+    }
+
+    .topmenu li
+    {
+        padding: 4% 1.5%;
+    }
+
+    .homesignup .btnYammer, .homesignup .btn
+    {
+        font-size: 12px;
+    }
+
+    .homesignup .btnYammer
+    {
+        width: 27%;
+    }
+
+    .textareaholder
+    {
+        width: 48%;
+    }
+
+    .faqscreen
+    {
+        padding-bottom: 4% !important;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px)
+{
+    .mypoearea h2
+    {
+        font-size: 28px;
+    }
+
+    .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4, .contakt h1, .faqhd h1, #accordion h2, .faqaccord h3,
+    .homesignup .btnYammer, .homesignup .btn
+    {
+        font-size: 10px;
+    }
+
+    #accordion h2
+    {
+        padding: 0 2% !important;
+    }
+
+    .mypoearea h3
+    {
+        font-size: 12px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 15px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 6px;
+    }
+
+    .everyone div
+    {
+        width: 64%;
+    }
+
+    .pageholderhome
+    {
+        max-width: 1062px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 800px)
+{
+    .mypoearea h2
+    {
+        font-size: 21px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4, .contakt h1, .faqhd h1, #accordion h2, .faqaccord h3
+    {
+        font-size: 8px;
+    }
+
+    .homesignup .btnYammer, .homesignup .btn
+    {
+        font-size: 6px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 13px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 5px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 899px;
+    }
+
+    .homesignup h1
+    {
+        padding: 4% 5% !important;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 700px)
+{
+    .mypoearea h2
+    {
+        font-size: 17px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4, .contakt h1, .faqhd h1, #accordion h2, .faqaccord h3
+    {
+        font-size: 8px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 9px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 4px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 666px;
+    }
+
+    .everyone div
+    {
+        width: 67%;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 480px)
+{
+    .mypoearea h2
+    {
+        font-size: 11px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4, .contakt h1, .faqhd h1, #accordion h2, .faqaccord h3
+    {
+        font-size: 6px;
+    }
+
+    .dtails
+    {
+        font-size: 7px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 6px;
+    }
+
+    p, div, li, a, span, input, td, #wrapper .videolist li h2
+    {
+        font-size: 4px;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 3px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 400px)
+{
+    .mypoearea h2
+    {
+        font-size: 9px;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4, .contakt h1, .faqhd h1, #accordion h2, .faqaccord h3
+    {
+        font-size: 5px;
+    }
+
+    .dtails
+    {
+        font-size: 7px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails
+    {
+        font-size: 6px;
+    }
+
+    #wrapper .customertiles h1, .contakt h1, .faqhd h1
+    {
+        padding: 5px 0 !important;
+    }
+
+    p, div, li, a, span, input, td, #wrapper .videolist li h2, #wrapper #scroller #latestCustomerData .paragraph p
+    {
+        font-size: 3px;
+    }
+
+    #scroller .MS
+    {
+        width: 31%;
+    }
+
+    .faqscreen
+    {
+        padding-bottom: 10% !important;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 3px;
+    }
+
+    .pageholderhome
+    {
+        max-width: 450px;
+    }
+
+    .slimScrollBar
+    {
+        width: 2px !important;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .spotlightdivholder, .mypoearea, #wrapper .customernew, #wrapper .stars, #wrapper .last, #aboutContent, .aboutbxbg, #scroller .priceind, #scroller .priceorg, .gurus, .faqfield, .faqscreen
+    {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    #scroller .pricetiles
+    {
+        width: 73% !important;
+    }
+
+    .contactfield
+    {
+        width: 90% !important;
+        margin: 0 !important;
+    }
+
+    .contakt, .faqhd
+    {
+        width: 54% !important;
+        margin-bottom: 2% !important;
+    }
+
+    .mypoearea h2
+    {
+        font-size: 17px;
+        padding-top: 3%;
+    }
+
+    .mypoearea h3, .popupbg .formpopup h1, .popupbg .formpopup h2, .tblhd, .hdtwt, .venue, #latestNewsData .hd, .contactcontleft h6, .contactcontright h6, .priceheading h2, .priceheading h3, .priceheading h4
+    {
+        font-size: 11px;
+    }
+
+    .homesignup h1, #wrapper .customertiles h1, .dtails, h1
+    {
+        font-size: 11px;
+    }
+
+    p, div, li, a, span, input, td, #wrapper .videolist li h2
+    {
+        font-size: 6px;
+    }
+
+    .topmenu
+    {
+        width: 86% !important;
+    }
+
+    #scroller .testimonial li a, #scroller .MS li
+    {
+        font-size: 5px;
+    }
+
+    .pageholder
+    {
+        max-width: 447px;
+    }
+
+    .hmcopyright, .benefits
+    {
+        display: none;
+    }
+
+    .footermenu
+    {
+        visibility: hidden;
+    }
+
+    .slidebtn
+    {
+        width: 35% !important;
+    }
+
+    .bukatutup
+    {
+        width: 13% !important;
+    }
+
+    #target
+    {
+        width: 30% !important;
+    }
+
+    #aboutContent ul
+    {
+        width: 118% !important;
+    }
+
+    .contactplaceholder
+    {
+        padding-bottom: 107% !important;
+        background-size: 79% 92% !important;
+    }
+
+    .footermenu li
+    {
+        padding: 0;
+    }
+}

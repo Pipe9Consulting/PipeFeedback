@@ -1,0 +1,238 @@
+﻿.customertiles
+{
+    float: left;
+    width: 19.5%;
+    margin-right: 4.5%;
+}
+
+#quickviewli .customertiles .takesf, .takesf
+{
+    width: 100% !important;
+    height: 0px;
+    padding-bottom: 26%;
+    background: none repeat scroll 0% 0% rgb(128, 128, 128);
+    position: relative;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+    #quickviewli .customertiles .takesf img, .takesf img
+    {
+        width: 18%;
+        height: auto;
+        position: absolute;
+        top: 5%;
+        right: 0;
+    }
+
+    #quickviewli .customertiles .takesf p, .takesf p
+    {
+        color: #fff;
+        position: absolute;
+        bottom: 5%;
+        left: 3%;
+        font-size: 130%;
+    }
+
+.selected
+{
+    background: #e0b001;
+}
+
+.contentholder
+{
+    width: 50%;
+    float: left;
+}
+
+#userslist
+{
+    margin-top: 1%;
+    width:95%;
+}
+
+.connect li
+{
+    background: none repeat scroll 0 0 #D5D5D5;
+    border: 1px solid #D5D5D5;
+    float: left;
+    margin: 1% 1% 0px 0;
+    padding: 1%;
+    width: 46%;
+    padding-bottom: 13.2%;
+    height: 0;
+    cursor:pointer;
+}
+
+.connectbutton
+{
+    background: #e0b001;
+    color: #fff;
+    padding: 1%;
+    border: 2px solid #808080;
+    clear: both;
+    width: 14%;
+    text-align: center;
+    float: right;
+    margin-top: 1%;
+    margin-right: 2.5%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.connect li p, .connect li div
+{
+    color: #808080;
+}
+
+.connect li img
+{
+    float: left;
+    margin-right: 3%;
+    width: 19%;
+    height: auto;
+}
+
+.connectbtn
+{
+    border-top: 1px solid #b9b9b9;
+    clear: both;
+    float: none;
+    /*margin-top: 2%;*/
+}
+
+    .connectbtn div
+    {
+        width: 24%;
+        float: left;
+        margin-top: 1%;
+        cursor: pointer;
+    }
+
+        .connectbtn div:first-child
+        {
+            border-right: 1px solid #808080;
+            margin-right: 2%;
+        }
+
+.connect li .title
+{
+    font-size: 120%;
+    color: #353535;
+}
+
+.connect li .connectbtn div img
+{
+    width: 23%;
+}
+
+.connectbtn div img:after
+{
+    padding-top: 2%;
+}
+
+.connect p
+{
+    width: 97.4%;
+}
+
+.connectpopup
+{
+    z-index: 9999;
+    background: #fff !important;
+    border: 1px solid #ccc;
+    padding: 2%;
+    float: left;
+}
+
+.vs-context-menu
+{
+    z-index: 999999;
+    position: fixed !important;
+    display: none;
+}
+
+.btn
+{
+    float: right;
+    margin-top: 2%;
+    background: #e0b001;
+    color: #ffffff;
+    padding: 1% 2%;
+    border: 2px solid #808080;
+    font-weight: bold;
+}
+
+.scroll1, .slimScrollDiv
+{
+    width: 100% !important;
+    
+    height: 0!important;
+    position: relative;
+}
+
+    .scroll1 ul
+    {
+        position: absolute;
+        height: 100%;
+    }
+
+.selectmngr
+{
+    background: url("../../images/selected.png") no-repeat scroll right top #D5D5D5 !important;
+    border: 1px solid #E0B001 !important;
+    background-size: 13% 50% !important;
+}
+
+
+#aboutContent .slimScrollDiv, .scroll4
+{
+    width: 105% !important;
+    height: 10%!important;
+    padding-bottom: 164%!important;
+    position: relative;
+}
+
+
+
+.contentholder .slimScrollDiv, .scroll4
+{
+    width: 105% !important;
+    height: 10%!important;
+    
+    position: relative;
+}
+
+
+
+
+#poemodule
+{
+    position: absolute;
+    width: 90%;
+}
+
+.emptyTile
+{
+    background: #ccc!important;
+    cursor: default !important;
+}
+
+.dummy-slimscrollbar-backgound
+{
+    background: none !important;
+    top: 0px !important;
+}
+
+
+
+.sceditor-container {
+
+    width:450px !important;
+    
+}
+
+    .sceditor-container iframe {
+
+        height:160px !important;
+    }

@@ -1,0 +1,393 @@
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://simplemodal.com
+ *
+ * Copyright (c) 2013 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ */
+#modalpopupUpload {
+    display: none;
+}
+
+#basic-modal-content {
+    display: none;
+}
+
+#basic-changePassword {
+    display: none;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    width: 22%;
+    /*background-color: black;*/
+    position: fixed;
+    left: 39%;
+    z-index: 2147483647;
+    top: 25%;
+    height: 200px;
+    padding: .2% 2% 0 2%;
+    color: white;
+}
+
+
+
+#basic-forgetPassword {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 33%;
+    width: auto;
+    color: white;
+    background-color: #000 !important;
+    border: 1px solid #E0B001;
+    z-index: 9999999999 !important;
+    padding: 0.5% 2% 2% 1.5%;
+}
+
+    #basic-forgetPassword h1 {
+        font-weight: normal;
+    }
+
+#forgetpassword {
+    cursor: pointer;
+}
+
+.textspace {
+    margin-top: 1%;
+    background: none;
+    padding: 1%;
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+.origin {
+    margin-top: 3%;
+}
+
+#changingPassword {
+    cursor: pointer;
+}
+
+#changePassword {
+    cursor: pointer;
+}
+
+.captcha_style {
+    background-image: url(../Images/1.jpg);
+    text-align: center;
+    border: none;
+    font-weight: bolder;
+    font-family: modern;
+    font-size: 25px;
+    width: 240px;
+}
+
+.captcha_btn {
+    background: url(../Images/refreshes.png) no-repeat left 0;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    float: left;
+    background-color: transparent;
+}
+
+.errormsg {
+    color: #FFF;
+    font-size: 12px;
+    background: url("../Images/error.png") no-repeat left;
+    padding: 3px 0 3px 30px;
+}
+
+
+/* Overlay */
+#simplemodal-overlay {
+    background-color: #000;
+    z-index: 999999 !important;
+}
+
+/* Container */
+/*#simplemodal-container
+{
+    height: 500px;
+    width: 800px;
+    color: #bbb;
+    background-color: #e5e5e5;
+    border: 4px solid #444;
+    border-top: 25px solid #444;
+    padding: 2%;
+    z-index: 999999 !important;
+}*/
+
+#simplemodal-container {
+    height: 500px;
+    width: 450px;
+    color: #bbb;
+    background-color: #000 !important;
+    border: 1px solid #E0B001;
+    padding: 2%;
+    z-index: 999999 !important;
+}
+
+    #simplemodal-container code {
+        background: #141414;
+        border-left: 3px solid #65B43D;
+        color: #bbb;
+        display: block;
+        font-size: 12px;
+        margin-bottom: 12px;
+        padding: 4px 6px 6px;
+    }
+
+
+    #simplemodal-container a {
+        color: #ddd;
+        padding: 3% 2.8%;
+    }
+
+
+
+
+        #simplemodal-container a.modalCloseImg {
+            background: url(../Images/close.png) no-repeat;
+            background-size: 80% 70%;
+            height: 0px;
+            z-index: 999999999;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+
+    /*#simplemodal-container a.modalCloseImg:hover {
+                background: url(../Images/close-hover.png) no-repeat;
+                background-size: 50% 50% !important;
+                width: 5%;
+                height: 0;
+                padding-bottom: 2.5%;
+                z-index: 3200;
+                position: absolute;
+                right: -1px;
+                top: -27px;
+                cursor: pointer;
+                background-position: 50% 50%;
+                background-color: #000 !important;
+                border: 1px solid #e0b001;
+            }*/
+
+    #simplemodal-container h3 {
+        color: #5E5E5E;
+    }
+
+#imgUploadedImage {
+    max-height: 400px;
+    max-width: 600px;
+}
+
+.simplemodal-data p {
+    color: #FFF;
+}
+
+#resetbtn, #ChangePassbtn {
+    background: none repeat scroll 0 0 #e0b001;
+    border: 1px solid #000;
+    padding: 1%;
+    color: #000;
+    font-weight: bold;
+}
+
+    #resetbtn, #ChangePassbtn:hover {
+        background: none repeat scroll 0 0 #e0b001;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+    #resetbtn, #ChangePassbtn:hover {
+        background: none repeat scroll 0 0 #000;
+        border: 1px solid #e0b001;
+        color: #e0b001;
+    }
+
+
+
+#simplemodal-container {
+    background-image: none !IMPORTANT;
+}
+
+.simplemodal-data H1 {
+    color: #fff;
+    margin-bottom: 3%;
+    font-weight: normal;
+}
+
+
+.poelistlidummy {
+    background: rgba(0,0,0,0.8) !important;
+}
+
+
+@media screen and (max-width: 2600px) and (min-width: 2170px) {
+
+
+
+    #basic-changePassword {
+        top: 28%;
+        height: 470px;
+        padding-top: 1%;
+    }
+
+        #basic-changePassword .close {
+            padding: 2.8% !important;
+            top: -7% !important;
+        }
+}
+
+
+.popupbg {
+    background: url(../../Images/trans.png);
+    position: fixed;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.captcha_style {
+    color: black;
+}
+
+.close {
+    float: right;
+    background: url(../../images/close.png) no-repeat center ;
+    background-size: 50% 50%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+
+#basic-forgetPassword .close {
+    padding: 2.8% !important;
+}
+
+#basic-changePassword .close {
+    padding: 1.8%;
+    top: -5%;
+}
+
+.close:hover {
+    background: url(../../images/close-hover.png) no-repeat center #000;
+    background-size: 50% 50%;
+    border: 1px solid #e0b001;
+}
+
+
+@media screen and (max-width: 2169px) and (min-width: 2001px) {
+
+    #basic-changePassword {
+        top: 32% !important;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1701px) {
+
+    #basic-changePassword {
+        top: 30% !important;
+        height: 400px;
+        padding-top: 1%;
+    }
+
+
+
+        #basic-changePassword .close {
+            padding: 2.8% !important;
+            top: -6% !important;
+        }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1670px) {
+
+
+    #basic-changePassword {
+        top: 28% !important;
+        height: 380px;
+        padding-top: 1%;
+    }
+
+        #basic-changePassword .close {
+            padding: 2.8% !important;
+            top: -5.5% !important;
+        }
+}
+
+@media screen and (max-width: 1669px) and (min-width: 1501px) {
+
+
+    #basic-changePassword {
+        top: 26% !important;
+        height: 370px;
+        padding-top: 1%;
+    }
+
+
+
+        #basic-changePassword .close {
+            padding: 2.8% !important;
+            top: -4.5% !important;
+        }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1401px) {
+
+    #basic-changePassword {
+        top: 24% !important;
+        height: 340px;
+        padding-top: 1%;
+    }
+
+
+        #basic-changePassword .close {
+            padding: 2.8% !important;
+            top: -4.5% !important;
+        }
+
+
+
+    #simplemodal-container {
+        width: 26% !important;
+        left: 37% !important;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
+
+
+    #basic-changePassword {
+        top: 27% !important;
+        height: 333px;
+        padding-top: .5%;
+    }
+
+
+        #basic-changePassword .close {
+            padding: 3.8% !important;
+            top: -6.5% !important;
+        }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+}

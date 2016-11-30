@@ -1,0 +1,2241 @@
+.container-fluid {
+    padding: 1.5% 1% 1.5% 1.5% !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../../Images/DevPriorities/Landing/bodyBg-new5.jpg)no-repeat !important;
+    font-family: Segoe UI;
+    background-size: 100% 100% !important;
+}
+
+.row {
+    margin-right: 0;
+}
+
+a:focus, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.slimScrollBar, .slimScrollRail {
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+p {
+    font-size: 100%;
+}
+
+.clearfix {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.priorities_tiles h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.priorities_tiles ul {
+    border: 1px solid #333;
+    margin-bottom: 5%;
+    float: left;
+    width: 85%;
+    margin-right: 15%;
+    padding: 2.5% 0% 2.5% 2.5%;
+    position: relative;
+}
+
+    .priorities_tiles ul li {
+        cursor: pointer;
+        width: 97%;
+        float: left;
+        padding: 0 0% 44% 0;
+        margin: 0 2% 0 0;
+        position: relative;
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+
+
+.listview {
+    background: url(../../Images/DevPriorities/Priorities/listView.png)no-repeat right 4% top 8% rgba(0,0,0,0.8);
+    background-size: 15% 20%;
+}
+
+    .listview:hover {
+        background: url(../../Images/DevPriorities/Priorities/listView_h.png)no-repeat right 4% top 8% rgba(0,0,0,1);
+        background-size: 15% 20%;
+    }
+
+
+.selectList {
+    background: url(../../Images/DevPriorities/Priorities/listView_h.png)no-repeat right 4% top 8% rgba(0,0,0,1);
+    background-size: 15% 20%;
+}
+
+
+.profileview {
+    background: url(../../Images/DevPriorities/Priorities/profileView.png)no-repeat right 8% top 8% rgba(0,0,0,0.8);
+    background-size: 30% 28%;
+}
+
+    .profileview:hover {
+        background: url(../../Images/DevPriorities/Priorities/profileView_h.png)no-repeat right 8% top 8% rgba(0,0,0,1);
+        background-size: 30% 28%;
+    }
+
+
+.slecetProfile {
+    background: url(../../Images/DevPriorities/Priorities/profileView_h.png)no-repeat right 8% top 8% rgba(0,0,0,1);
+    background-size: 30% 28%;
+}
+
+.profileview:hover p, .listview:hover p {
+    color: #e0b001;
+}
+
+
+.selectList p, .slecetProfile p {
+    color: #e0b001 !important;
+}
+
+.priorities_tiles ul li p {
+    bottom: 0;
+    color: #fff;
+    padding: 2% 3%;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.user_tiles h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.user_tiles ul {
+    float: left;
+    width: 85%;
+    margin-right: 15%;
+    position: relative;
+}
+
+    .user_tiles ul li {
+        background: rgba(0,0,0,0.8);
+        width: 47.5%;
+        float: left;
+        padding: 0 0% 44% 0;
+        position: relative;
+        margin: 0 2% 2% 0;
+        list-style: none;
+        cursor: pointer;
+    }
+
+        .user_tiles ul li:hover {
+            background: rgba(0,0,0,1);
+        }
+
+            .user_tiles ul li:hover p, .user_tiles ul li:hover span {
+                color: #e0b001;
+            }
+
+        .user_tiles ul li p {
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0 4% 2% 4%;
+        }
+
+        .user_tiles ul li img {
+            right: 0;
+            width: 50%;
+            height: auto;
+            position: absolute;
+        }
+
+        .user_tiles ul li span {
+            display: none;
+            color: #fff;
+            padding: 0 2%;
+            font-size: 250%;
+            margin: 0;
+            line-height: 1;
+        }
+
+.user_name {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.selectTiles {
+    background: #000 !important;
+}
+
+    .selectTiles p, .selectTiles span {
+        color: #e0b001 !important;
+    }
+
+.priorities_part2 h2 {
+    margin: 0;
+    text-transform: uppercase;
+    float: left;
+    width: 90%;
+}
+
+.priorities_part2 h1 {
+    margin: 0;
+    text-transform: uppercase;
+    float: left;
+    width: 90%;
+    font-size: 150%;
+}
+
+
+.priorities_part2 h2 span {
+    text-transform: none;
+    font-size: 70%;
+}
+
+
+.priorities_part2 h1 span {
+    text-transform: none;
+    font-size: 70%;
+}
+
+
+.hover_content {
+    display: none;
+    background: #fff;
+    border: 1px solid #e0b001;
+    position: absolute;
+    width: 30%;
+    margin-top: 3%;
+    right: 41%;
+    text-align: left;
+    padding: .5% .8%;
+    z-index: 99999999999;
+}
+
+    .hover_content span {
+        display: none;
+    }
+
+
+.prioitiesFrequency .slimScrollBar, .prioitiesFrequency .slimScrollRail {
+    background-color: #e0b001 !important;
+    opacity: 0.8 !important;
+    height: 50% !important;
+}
+
+.prioritiesScale {
+    border: 1px solid #333;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.scale_one {
+    background: url(../../Images/DevPriorities/Priorities/scale_bg.png) no-repeat;
+    background-position: 0% 85%;
+    position: relative;
+    width: 100%;
+    background-size: 100% auto;
+    padding-bottom: 10.2%;
+}
+
+.scaleYellow {
+    background: url(../../Images/DevPriorities/Priorities/scale_h.png) no-repeat;
+    background-position: 0% 38%;
+    background-size: auto 59.2%;
+    padding-bottom: 13.2%;
+    width: 100%;
+    position: absolute;
+}
+
+.startDate {
+    position: absolute;
+    top: 23%;
+    left: 1%;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.endDate {
+    position: absolute;
+    top: 23%;
+    right: 1%;
+    text-align: right;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+
+.slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 18%;
+}
+
+.user_tiles .slimScrollDiv {
+    width: 85% !important;
+    height: 0px !important;
+    position: relative;
+    padding-bottom: 78%;
+    border: 1px solid #333;
+    padding: 2% 0 76% 2.5%;
+}
+
+.priorities_part2 .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 18%;
+}
+
+
+
+.refreshBtn {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 98% !important;
+    position: relative;
+}
+
+
+.priorities_part2 .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 26%;
+}
+
+
+.prioitiesFrequency .slimScrollBar, .prioitiesFrequency .slimScrollRail {
+    right: .3% !important;
+    margin-top: 5px;
+}
+
+.profileview_content .slimScrollBar, .slimScrollRail {
+    margin-top: 1%;
+    cursor: pointer;
+    right: 0.3%;
+}
+
+.profileview_content .slimScrollBar, .profileview_content .slimScrollRail {
+    right: .3% !important;
+    margin-top: 0%;
+}
+
+
+#option_menu .slimScrollBar, #option_menu .slimScrollRail {
+    background: #ccc !important;
+    height: 50% !important;
+}
+
+#profileListsView {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 26% !important;
+    position: relative;
+}
+
+.profileview_content .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 26%;
+}
+
+#devPrioritiesCont {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 26% !important;
+    position: relative;
+}
+
+.slimScrollDiv #usrList {
+    width: 100% !important;
+    height: 0!important;
+    padding: 0 0 90% 0 !important;
+    border: 0 !important;
+    position: relative;
+}
+
+#usrList {
+    border: 1px solid #333;
+    padding: 2% 0 .5% 2% !important;
+    width: 85% !important;
+    position: relative;
+}
+
+
+#accordion-4 {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 42% !important;
+    position: relative;
+}
+
+.accordion-section .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+#option_menu .accordion h3 {
+    background: none;
+    padding-bottom: 3%;
+    display: table;
+}
+
+    #option_menu .accordion h3:hover {
+        display: table;
+    }
+
+
+
+.yellowEndLine {
+    background: #e0b001;
+    width: 10px;
+    position: absolute;
+    right: 0px;
+    height: 40%;
+    top: 12%;
+}
+
+
+
+.selectArrow img {
+    filter: gray;
+    filter: grayscale(0) !important;
+    -webkit-filter: grayscale(0) !important;
+}
+
+
+.daysCompleted {
+    position: absolute;
+    right: 0px;
+    top: -2%;
+    background: url(../../Images/DevPriorities/Priorities/line_arrow.png)no-repeat bottom;
+    background-size: 100% auto;
+    background-position: 0 100%;
+    padding: 0 0 7px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: 9999999;
+    color: black;
+}
+
+.blow15 {
+    left: 2%;
+    right: auto;
+    background: url(../../Images/DevPriorities/Priorities/line_arrow15.png)no-repeat bottom;
+    background-size: 100% auto;
+    background-position: 0 100%;
+}
+
+
+.above85 {
+    left: 2%;
+    right: auto;
+    background: url(../../Images/DevPriorities/Priorities/line_arrow15.png)no-repeat bottom;
+    background-size: 100% auto;
+    background-position: 0 100%;
+}
+
+.daysRemaining {
+    position: absolute;
+    right: 1%;
+    top: -2%;
+    background: url(../../Images/DevPriorities/Priorities/lineRed_arrow.png)no-repeat bottom;
+    background-size: 100% auto;
+    background-position: 0 100%;
+    padding: 0 0 7px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: 9999999;
+    color: red;
+}
+
+
+.prioitiesFrequency {
+    border: 1px solid #333;
+    float: left;
+    position: relative;
+    padding: 1%;
+}
+
+.frquencyHeader {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .frquencyHeader li {
+        background: #333333;
+        list-style: none;
+        font-size: 120%;
+        float: left;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0% .3% .2% .3%;
+        text-align: center;
+    }
+
+        .frquencyHeader li:first-child {
+            border-right: 1px solid #ccc;
+            width: 3%;
+        }
+
+        .frquencyHeader li:nth-child(2) {
+            border-right: 1px solid #ccc;
+            width: 17%;
+        }
+
+
+        .frquencyHeader li:nth-child(3) {
+            border-right: 1px solid #999;
+            width: 45%;
+        }
+
+
+        .frquencyHeader li:nth-child(4) {
+            width: 35%;
+        }
+
+
+.frquencyContent ul {
+    margin: 0;
+    float: left;
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+
+    .frquencyContent ul li {
+        list-style: none;
+        display: table-cell;
+        padding: .2% 1% .5% 1%;
+        vertical-align: middle;
+    }
+
+
+.hidScaleTracker h1 {
+    display: none;
+}
+
+
+
+
+.frquencyContent li:first-child {
+    width: 3%;
+    border-right: 1px solid #999;
+    text-align: center;
+}
+
+.frquencyContent li:nth-child(2) {
+    width: 17%;
+}
+
+
+.frquencyContent li:first-child img {
+    float: left;
+    width: 20%;
+}
+
+.frquencyContent li:nth-child(3) {
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    width: 45%;
+    min-height: 55px;
+    font-size: 80%;
+}
+
+.frequency_scale li {
+    min-height: 0 !important;
+    text-transform: uppercase;
+    min-height: 0px;
+}
+
+.prioitiesFrequency .slimScrollRail, .prioitiesFrequency .slimScrollBar {
+    background-color: #e0b001 !important;
+    opacity: .8 !important;
+    height: 50% !important;
+}
+
+.frquencyContent li:nth-child(4) {
+    width: 35%;
+}
+
+
+.frquencyContent ul:first-child {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(2) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(3) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(4) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(5) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(6) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(7) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(8) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(9) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(10) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(11) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(12) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(13) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(14) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(15) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(16) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(17) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(18) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(19) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(20) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(21) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(22) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(23) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(24) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(25) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(26) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(27) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(28) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(29) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(30) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(31) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(32) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(33) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(34) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(35) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(36) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(37) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(38) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(39) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(40) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(41) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(42) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(43) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(44) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(45) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(46) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(47) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(48) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(49) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(50) {
+    background: #ddd;
+}
+
+.frequency_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border-top: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+}
+
+    .frequency_scale li {
+        color: #fff;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+        .frequency_scale li:first-child {
+            background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;
+            background-size: 105% 100% !important;
+            width: 25%;
+        }
+
+        .frequency_scale li:nth-child(2) {
+            background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            font-size: 65%;
+        }
+
+        .frequency_scale li:nth-child(3) {
+            background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;
+            background-size: 100% 100% !important;
+            width: 25%;
+        }
+
+        .frequency_scale li:nth-child(4) {
+            background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;
+            background-size: 100% 100% !important;
+            width: 25%;
+        }
+
+.selectManager {
+    background: none !important;
+    position: relative;
+}
+
+.managerSpan {
+    color: #000;
+    background: url(../../Images/DevPriorities/Priorities/frequencyManager.png)no-repeat center;
+    position: absolute;
+    padding-bottom: 21%;
+    top: -100%;
+    text-transform: uppercase;
+    left: 0%;
+    font-weight: normal;
+    background-size: 25px 15px;
+    font-size: 100%;
+    width: 100%;
+}
+
+
+
+.selectYou {
+    background: none !important;
+    position: relative;
+}
+
+
+.youSpan {
+    width: 20%;
+    color: #000;
+    background: url(../../Images/DevPriorities/Priorities/frequencyYou.png)no-repeat center;
+    position: absolute;
+    text-align: center;
+    padding-top: 30%;
+    top: -8%;
+    text-transform: uppercase;
+    right: 0%;
+    font-weight: normal;
+    background-size: 25px 15px;
+    font-size: 100%;
+    width: 100%;
+}
+
+#showscaleView {
+    display: none !important;
+}
+
+.button_menu {
+    background: url(../../Images/DevPriorities/Priorities/menu_icon.png)no-repeat center;
+    border: 0;
+    float: right;
+    background-size: 100% 70%;
+    width: 2%;
+}
+
+
+#option_menu {
+    top: 5.2%;
+    position: absolute;
+    background: #000 !important;
+    right: 1.5%;
+    z-index: 999999999999999999999;
+}
+
+
+
+/*------------------------------------- profile      -------------------------*/
+
+
+.profileview_content {
+    border: 1px solid #333;
+    float: left;
+    position: relative;
+    padding: 1.2%;
+}
+
+.profilelist {
+    width: 100%;
+    background: #000;
+    position: relative;
+    float: left;
+    padding: 0;
+}
+
+    .profilelist p {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .profilelist img {
+        margin-top: 1%;
+    }
+
+.practiceArea {
+    width: 15%;
+    padding: 1%;
+    float: left;
+}
+
+.profilelist ul {
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background: #fff;
+}
+
+    .profilelist ul li {
+        list-style: none;
+        border-bottom: 1px solid #ccc;
+        padding: 1%;
+        color: #000;
+    }
+
+.content_part {
+    border-bottom: 2px solid #666;
+    float: left;
+}
+
+
+.ui-datepicker-next {
+    background: url(../../Images/images/nextMonth.png)no-repeat center right !important;
+    cursor: pointer;
+}
+
+.ui-datepicker-prev {
+    background: url(../../Images/images/preMonth.png)no-repeat center right !important;
+    cursor: pointer;
+}
+
+.ui-datepicker-next:hover {
+    background: url(../../Images/images/nextMonth.png)no-repeat center right !important;
+    cursor: pointer;
+}
+
+.ui-datepicker-prev:hover {
+    background: url(../../Images/images/preMonth.png)no-repeat center right !important;
+    cursor: pointer;
+}
+
+.content_part:last-child {
+    border-bottom: 0px solid #666 !important;
+}
+
+.select_list {
+    background: #333;
+    color: #e0b001 !important;
+    border-bottom: 1PX solid #999;
+}
+/*------------------------------------*\
+-------- Page Styles: Accordion
+\*------------------------------------*/
+body {
+    position: relative;
+    z-index: 0;
+}
+
+.main:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    content: '';
+    background: -webkit-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
+    background: -moz-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
+    background: -o-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
+    background: radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
+}
+
+.site-header-wrap {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #cd9ad6;
+}
+
+/*------------------------------------*\
+-------- DEMO Code: accordion
+\*------------------------------------*/
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.accordion {
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+    border-radius: 3px;
+    background: #000;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #333;
+    background: #000;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.200em;
+    color: #fff !important;
+}
+
+.updateMenu {
+    background: url(../../Images/DevPriorities/Priorities/update.png)no-repeat left center;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+}
+
+.requestMenu {
+    background: url(../../Images/DevPriorities/Priorities/request.png)no-repeat left center;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+}
+
+
+.trackerMenu {
+    background: url(../../Images/DevPriorities/Priorities/day_tracker.png)no-repeat left center;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+}
+
+
+.profilemenu {
+    background: url(../../Images/DevPriorities/Priorities/viewprofile.png)no-repeat left center;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+}
+
+.boardView {
+    background: url(../../Images/DevPriorities/Priorities/board.png)no-repeat left center #000;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+    height: 50px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 120%;
+    padding-right: 246px;
+}
+
+
+    .boardView:hover {
+        background: url(../../Images/DevPriorities/Priorities/board.png)no-repeat left center #e0b001;
+        background-position: 2% 45%;
+        background-size: 10% 70%;
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+.tracker_show {
+    background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #000;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+    height: 50px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 120%;
+    padding-right: 246px;
+}
+
+
+    .tracker_show:hover {
+        background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #e0b001;
+        background-position: 2% 45%;
+        background-size: 10% 70%;
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+.hideTrace {
+    background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #000 !important;
+}
+
+    .hideTrace:hover {
+        background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #e0b001 !important;
+    }
+
+
+.cap_scale:focus {
+    color: #fff !important;
+}
+
+
+.cap_scale {
+    background: url(../../Images/DevPriorities/Priorities/capMenu_icon.png)no-repeat left center #000;
+    white-space: nowrap;
+    width: 100%;
+    position: absolute;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+    height: 50px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 120%;
+    padding-right: 246px;
+}
+
+
+.alterScale {
+    background: url(../../Images/DevPriorities/Priorities/freMenu_icon.png)no-repeat left center #000 !important;
+}
+
+    .alterScale:hover {
+        background: url(../../Images/DevPriorities/Priorities/freMenu_icon.png)no-repeat left center #e0b001 !important;
+    }
+
+.cap_scale:hover {
+    background: url(../../Images/DevPriorities/Priorities/capMenu_icon.png)no-repeat left center #e0b001;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.scaleViews {
+    background: url(../../Images/DevPriorities/Priorities/chart_icon.png)no-repeat left center #000 !important;
+}
+
+    .scaleViews:hover {
+        background: url(../../Images/DevPriorities/Priorities/chart_icon.png)no-repeat left center #e0b001 !important;
+    }
+
+.main {
+    margin-top: 12.6%;
+}
+
+.accordion-section-content h3 {
+    width: 100%;
+    color: #fff;
+    margin: 0 0 3% 0;
+    font-size: 150%;
+}
+
+.accordion-section-content img {
+    width: 100%;
+}
+
+.accordion-section-content p {
+    color: #fff;
+    font-size: 90%;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background-color: #e0b001;
+    /* Type */
+    text-decoration: none;
+    border-bottom: 0px solid #333;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding: 15px;
+    display: none;
+    border-bottom: 1px solid #333;
+}
+
+.sendRequest {
+    background: #e0b001;
+    float: right;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #000;
+    padding: 2% 3%;
+    text-decoration: none;
+}
+
+
+    .sendRequest:hover {
+        background: #000;
+        color: #e0b001;
+        border: 1px solid #e0b001;
+        text-decoration: none;
+    }
+
+
+
+
+/****************************/
+
+
+.ddummyerror {
+    border: 1px solid #333;
+    position: relative;
+    padding: .7%;
+    float: left;
+    padding-bottom: 25%;
+    margin-left: 1.3%;
+    width: 72.6%;
+}
+
+
+.blankBox {
+    float: left;
+    background: #000;
+    padding-bottom: 15%;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    width: 98.3%;
+    position: absolute;
+}
+
+
+.twoItemsHide .main {
+    margin-top: 0 !important;
+}
+
+.twoItemsHide {
+    top: 18% !important;
+}
+
+.hidScaleTracker .twoItemsHide {
+    top: 100% !important;
+}
+
+.blankBox p {
+    position: relative;
+    vertical-align: middle;
+    padding-top: 16.6%;
+    color: #fff;
+    font-size: 130%;
+}
+
+.errorText {
+    color: #000;
+    float: right;
+}
+
+    .errorText span {
+        color: red;
+    }
+
+.accordion h4 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+/*********************************************************BoardView***************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+
+/* STRUCTURAL STYLES */
+
+.flapper {
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 300;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+    .flapper .digit {
+        position: relative;
+        display: inline-block;
+        box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+    }
+
+        .flapper .digit div {
+            position: absolute;
+            text-align: center;
+            box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+        }
+
+        .flapper .digit .top {
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+        }
+
+        .flapper .digit .bottom {
+            bottom: 0px;
+            left: 0px;
+            overflow: hidden;
+        }
+
+    /* SIZE STYLES */
+
+    /* XXL 96x128 */
+
+    .flapper.XXL {
+        font-size: 116px;
+        line-height: 123px;
+        height: 132px;
+    }
+
+        .flapper.XXL .digit {
+            border-radius: 8px;
+        }
+
+            .flapper.XXL .digit div {
+                border-radius: 6px;
+            }
+
+            .flapper.XXL .digit,
+            .flapper.XXL .digit div {
+                height: 128px;
+                width: 96px;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+                .flapper.XXL .digit .top {
+                    clip: rect(0px, 96px, 64px, 0px);
+                }
+
+                .flapper.XXL .digit .bottom {
+                    clip: rect(65px, 96px, 128px, 0px);
+                }
+
+    /* XL 72x96 */
+
+    .flapper.XL {
+        font-size: 89px;
+        line-height: 92px;
+        height: 100px;
+    }
+
+        .flapper.XL .digit {
+            border-radius: 7px;
+            margin: 0 0 0 4px;
+        }
+
+            .flapper.XL .digit:first-child {
+                margin: 0;
+            }
+
+            .flapper.XL .digit div {
+                border-radius: 5px;
+            }
+
+            .flapper.XL .digit,
+            .flapper.XL .digit div {
+                height: 96px;
+                width: 72px;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+                .flapper.XL .digit .top {
+                    clip: rect(0px, 72px, 47px, 0px);
+                }
+
+                .flapper.XL .digit .bottom {
+                    clip: rect(48px, 72px, 96px, 0px);
+                }
+
+    /* L 54x72 */
+
+    .flapper.L {
+        float: left;
+        font-size: 180%;
+        line-height: 25px;
+        height: 28px;
+    }
+
+        .flapper.L .digit {
+            border-radius: 6px;
+            margin: 0 0 0 4px;
+        }
+
+            .flapper.L .digit:first-child {
+                margin: 0;
+            }
+
+            .flapper.L .digit div {
+                border-radius: 4px;
+            }
+
+            .flapper.L .digit, .flapper.L .digit div {
+                height: 28px;
+                width: 26px;
+                font-size: inherit;
+                line-height: inherit;
+                font-weight: 400;
+            }
+
+
+/*.flapper.L .digit .top {
+                    clip: rect(0px, 54px, 25px, 0px);
+                }
+
+                .flapper.L .digit .bottom {
+                    clip: rect(26px, 54px, 72px, 0px);
+                }*/
+
+/* M 40x54 (default) */
+
+.flapper {
+    font-size: 51px;
+    line-height: 52px;
+    height: 58px;
+}
+
+    .flapper .digit {
+        border-radius: 5px;
+        margin: 0 0 0 4px;
+    }
+
+        .flapper .digit:first-child {
+            margin: 0;
+        }
+
+        .flapper .digit div {
+            border-radius: 3px;
+        }
+
+        .flapper .digit,
+        .flapper .digit div {
+            height: 54px;
+            width: 40px;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+    /*.flapper .digit .top {
+                clip: rect(0px, 40px, 26px, 0px);
+            }
+
+            .flapper .digit .bottom {
+                clip: rect(27px, 40px, 54px, 0px);
+            }*/
+
+    /* S 30x40 */
+
+    .flapper.S {
+        font-size: 36px;
+        line-height: 39px;
+        height: 44px;
+    }
+
+        .flapper.S .digit {
+            border-radius: 4px;
+            margin: 0 0 0 2px;
+        }
+
+            .flapper.S .digit:first-child {
+                margin: 0;
+            }
+
+            .flapper.S .digit div {
+                border-radius: 2px;
+            }
+
+            .flapper.S .digit,
+            .flapper.S .digit div {
+                height: 40px;
+                width: 30px;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+                .flapper.S .digit .top {
+                    clip: rect(0px, 30px, 19px, 0px);
+                }
+
+                .flapper.S .digit .bottom {
+                    clip: rect(20px, 30px, 40px, 0px);
+                }
+
+    /* XS 24x30 */
+
+    .flapper.XS {
+        font-size: 28px;
+        line-height: 30px;
+        height: 34px;
+    }
+
+        .flapper.XS .digit {
+            border-radius: 3px;
+            margin: 0 0 0 2px;
+        }
+
+            .flapper.XS .digit:first-child {
+                margin: 0;
+            }
+
+            .flapper.XS .digit div {
+                border-radius: 1px;
+            }
+
+            .flapper.XS .digit,
+            .flapper.XS .digit div {
+                height: 30px;
+                width: 24px;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+                .flapper.XS .digit .top {
+                    clip: rect(0px, 24px, 14px, 0px);
+                }
+
+                .flapper.XS .digit .bottom {
+                    clip: rect(15px, 24px, 30px, 0px);
+                }
+
+    /* THEME STYLES */
+
+    /* DARK (default) */
+
+    .flapper .digit {
+        background-color: #333;
+        border: 1px solid #666;
+    }
+
+        .flapper .digit div {
+            color: #f0f0f0;
+            padding: 0px;
+            background-color: #333;
+        }
+
+    /* LIGHT */
+
+    .flapper.light .digit {
+        border: 1px solid #ddd;
+        background-color: #eee;
+    }
+
+        .flapper.light .digit div {
+            color: #222;
+            padding: 0px;
+            background-color: #f6f6f6;
+        }
+
+
+.sliderboardView {
+    background: #333;
+    width: 101%;
+    float: left;
+    text-align: center;
+    margin: .5% 0.5% 0.5% -0.5%;
+    padding: .5% 2% 0.3% 2%;
+}
+
+
+.calendarText {
+    float: left;
+    padding: 1%;
+}
+
+    .calendarText label {
+        margin: 0;
+        font-size: 80%;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+    }
+
+
+.startgoalDate {
+    float: left;
+    width: 30%;
+    position: relative;
+}
+
+.completedDate {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.remainingDate {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.coachingDate {
+    float: left;
+    width: 30%;
+    position: relative;
+}
+
+
+.sliderboardView h3 {
+    color: #fff;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 120%;
+}
+
+.startgoalDate .calendarText {
+    padding: 1% 2%;
+}
+
+.completedDate .calendarText {
+    padding: 1% 25%;
+}
+
+.remainingDate .calendarText {
+    padding: 1% 25%;
+}
+
+.coachingDate .calendarText {
+    padding: 1% 2%;
+}
+
+.completedDate .flapper .digit div {
+    color: #e0b001 !important;
+}
+
+
+.remainingDate .flapper .digit div {
+    color: red !important;
+}
+
+.priorities_part2 .accordion a {
+    display: table !important;
+}
+
+
+@media screen and (max-width: 2600px) and (min-width: 1800px) {
+
+    .sliderboardView {
+        width: 100.6%;
+        margin: .5% 0.5% 0.5% -0.3%;
+    }
+}
+
+
+@media screen and (max-width: 2600px) and (min-width: 1800px) {
+
+    .ddummyerror {
+        margin-left: 0.7%;
+        width: 73.7%;
+    }
+
+    .modNmaeview {
+        font-size: 115%;
+    }
+
+    .frquencyContent li .frequency_scale li {
+        font-size: 70% !important;
+    }
+
+
+    p {
+        font-size: 150% !important;
+    }
+
+    h2 {
+        font-size: 200% !important;
+    }
+
+    h1 {
+        font-size: 200% !important;
+    }
+
+    h4 {
+        font-size: 140% !important;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-top: -0.2%;
+        margin-bottom: 0.3%;
+    }
+
+
+    #option_menu {
+        right: 1%;
+        top: 3.4%;
+    }
+
+
+    .profilelist ul li {
+        font-size: 140%;
+    }
+
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 42% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 42% !important;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 35%;
+    }
+
+    #profileListsView {
+        padding-bottom: 35% !important;
+    }
+
+
+    .digit {
+        font-size: 120% !important;
+    }
+
+
+    .moduleTier {
+        font-size: 100% !important;
+    }
+
+
+    .frequency_scale li span:first-child, .frequency_scale li span {
+        font-size: 100% !important;
+    }
+
+    .frequency_scale {
+        margin-top: 0.4% !important;
+    }
+
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 100%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 95% !important;
+    }
+
+    .accordion-section-content p {
+        font-size: 110% !important;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 45px;
+    }
+
+    .startgoalDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .frquencyContent li {
+        font-size: 120% !important;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+
+    h3 {
+        font-size: 200% !important;
+    }
+
+    .user_tiles ul li {
+        width: 47%;
+    }
+
+        .user_tiles ul li p {
+            font-size: 150% !important;
+        }
+
+    .option_part {
+        width: 70%;
+    }
+
+    .startDate, .endDate {
+        font-size: 170%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 10px 0;
+        font-size: 150%;
+    }
+
+    .frquencyHeader li {
+        font-size: 150%;
+    }
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 30%;
+    }
+
+        .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 30% !important;
+        }
+
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40%;
+    }
+
+        .hidScaleTracker .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 40% !important;
+        }
+
+    .managerSpan {
+        padding-bottom: 16%;
+        top: -90%;
+    }
+
+
+    .youSpan {
+        padding-top: 15%;
+        top: 4%;
+    }
+
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 70px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+}
+
+
+
+
+@media screen and (max-width:2300px) and (min-width:2000px) {
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 38px !important;
+    }
+
+    .youSpan {
+        padding-top: 19% !important;
+        top: 8% !important;
+    }
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40%;
+    }
+
+        .hidScaleTracker .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 40% !important;
+        }
+
+    .managerSpan {
+        padding-bottom: 18% !important;
+        top: -100% !important;
+    }
+
+
+    .frquencyContent li {
+        font-size: 110% !important;
+    }
+
+    .modNmaeview {
+        font-size: 110% !important;
+    }
+
+    .frequency_scale li {
+        font-size: 88% !important;
+    }
+
+        .frequency_scale li span {
+            font-size: 105% !important;
+        }
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 75px;
+    }
+
+    .clickdeeper {
+        left: -190% !important;
+    }
+}
+
+
+
+@media screen and (max-width:2000px) and (min-width:1800px) {
+    .startDate, .endDate {
+        font-size: 150%;
+    }
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 120%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 113% !important;
+    }
+
+
+    h1 {
+        font-size: 150% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -5.4% !important;
+    }
+
+
+    h2 {
+        font-size: 150% !important;
+    }
+
+
+    #accordion-4 p {
+        font-size: 100% !important;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 1.5%;
+    }
+
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 9px 0;
+        font-size: 120%;
+    }
+
+
+    .startgoalDate .calendarText {
+        padding: 1% 1.5%;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 40px;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 25%;
+    }
+
+    .user_tiles ul li span {
+        font-size: 300%;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 31%;
+    }
+
+    #profileListsView {
+        padding-bottom: 31% !important;
+    }
+
+    .profilelist ul li {
+        font-size: 120%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+        padding-bottom: 33% !important;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 33%;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 25%;
+    }
+
+    .frquencyContent li {
+        font-size: 108% !important;
+    }
+
+    .ddummyerror {
+        margin-left: 1%;
+        width: 73.2%;
+    }
+
+    .frquencyContent li:nth-child(2) {
+        min-height: 60px;
+        line-height: 1.2;
+    }
+
+    /*@media screen and (max-width:2000px) and (min-width:1800px)*/
+    .managerSpan {
+        top: -108%;
+        padding-bottom: 24%;
+    }
+
+
+    .youSpan {
+        padding-top: 22%;
+        top: -3%;
+    }
+
+
+
+    .frequency_scale li {
+        font-size: 80% !important;
+    }
+
+
+
+    #devPrioritiesCont {
+        padding-bottom: 25% !important;
+    }
+
+
+
+        #devPrioritiesCont ul li span {
+            font-size: 110%;
+        }
+
+    .managerSpan, .youSpan {
+        font-size: 100% !important;
+    }
+
+    /*@media screen and (max-width:2000px) and (min-width:1900px)*/
+    .clickdeeper {
+        left: -175% !important;
+    }
+}
+
+
+
+@media screen and (max-width:1800px) and (min-width:1500px) {
+
+
+    .ddummyerror {
+        margin-left: 1.1%;
+        width: 73%;
+    }
+
+    #option_menu {
+        right: 1.2%;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 32px;
+    }
+
+    .managerSpan {
+        padding-bottom: 22%;
+        top: -90%;
+    }
+
+    .youSpan {
+        padding-top: 22%;
+        top: 0%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        top: 0%;
+    }
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40% !important;
+    }
+
+    .hidScaleTracker #devPrioritiesCont {
+        padding-bottom: 40% !important;
+    }
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 40% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 40% !important;
+    }
+}
+
+
+@media screen and (max-width:1500px) and (min-width:1200px) {
+
+    .sliderboardView {
+        width: 102%;
+        margin: .5% 0.5% 0.5% -1%;
+    }
+
+
+    .frequency_scale li {
+        font-size: 55% !important;
+    }
+
+    .hover_content {
+        margin-top: 3.5%;
+        width: 35%;
+    }
+
+
+    .youSpan {
+        padding-top: 30%;
+        top: -4%;
+    }
+
+    .managerSpan {
+        padding-bottom: 30%;
+        top: -130%;
+    }
+
+
+    .modNmaeview {
+        font-size: 90%;
+    }
+
+    .priorities_part2 h1 {
+        font-size: 120%;
+    }
+
+
+    .clickdeeper {
+        left: -160%;
+    }
+
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -6% !important;
+    }
+
+
+    .frquencyContent ul li {
+        padding: .3% 1% .5% 1%;
+    }
+
+    .hidScaleTracker .slimScrollDiv {
+        padding-bottom: 37% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 37% !important;
+    }
+
+    .hidScaleTracker #accordion-4 {
+        padding-bottom: 32% !important;
+    }
+
+    .hidScaleTracker #devPrioritiesCont {
+        padding-bottom: 37% !important;
+    }
+}
+
+
+
+.actionMore {
+    font-size: 80% !important;
+    padding-left: 4px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+    .actionMore:hover {
+        text-decoration: none;
+    }
+
+.moduleTier {
+    position: relative;
+    right: -2%;
+    font-size: 80% !important;
+    color: red;
+    text-align: left;
+    float: right;
+    display: table;
+    vertical-align: top;
+}
+
+
+.actionMore:hover {
+    color: #e0b001;
+    text-decoration: underline;
+}
+
+
+.frquencyContent ul:last-child .hover_content {
+    margin-top: -5%;
+}

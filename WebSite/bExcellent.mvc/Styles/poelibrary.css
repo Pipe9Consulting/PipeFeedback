@@ -1,0 +1,2540 @@
+﻿
+.grid.ui > .row {
+    width: 100% !important;
+}
+
+.footerPart {
+    width: 100% !important;
+}
+
+.layer {
+    background: #fff;
+    opacity: 0.5;
+}
+
+.bukatutup {
+    display: table !important;
+}
+
+/*.accordion h3, .bukatutup, .login {
+    display: none;
+}*/
+
+.cart {
+    display: block !important;
+}
+
+
+
+
+
+.captcha_style {
+    background-image: url(../Images/1.jpg);
+    text-align: center;
+    border: none;
+    font-weight: bolder !important;
+    font-family: modern;
+    font-size: 30px !important;
+    margin: 5px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.captcha_btn {
+    background: url(../Images/refreshes.png) #e5e5e5;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.buybtn {
+    background: #deaf01;
+    color: #fff;
+    border: 0.2em solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    margin-right: 1.7%;
+}
+
+.backBtn {
+    background: #deaf01;
+    color: #fff;
+    border: 0.2em solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.dwnldbtn {
+    background: #e0b001;
+    color: #000;
+    border: 1px solid #000;
+    padding: 1% 2%;
+    font-weight: 500;
+    float: right;
+    margin-top: 1%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8vw;
+}
+
+    .dwnldbtn:hover {
+        background: #000;
+        color: #e0b001;
+        border: 1px solid #e0b001;
+    }
+
+.pageholder h1 {
+    color: #5E5E5E;
+    padding: 10px 0;
+}
+
+.column h1 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.signuptile {
+    padding-top: 30px;
+    text-align: center;
+    background: #808080;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+    margin-right: 70px;
+}
+
+.brdrnil {
+    border: 0 !important;
+}
+
+.signuptile p {
+    position: absolute;
+    bottom: 10px;
+    color: #FFF;
+    left: 10px;
+}
+
+.contenthold {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+    width: 783px;
+}
+
+.signuptxt {
+    float: left;
+    color: #5E5E5E;
+    width: 70%;
+    margin-right: 0;
+}
+
+    .signuptxt p {
+        font-size: 14px;
+        text-align: justify;
+        padding: 0 10px 10px 0;
+        line-height: 1.1em;
+    }
+
+    .signuptxt b {
+        line-height: 1.6em;
+    }
+
+.contenthold h1 {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+    float: left;
+    width: 242px;
+}
+
+.contenthold h2 {
+    color: #808080;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+    float: left;
+    text-align: right;
+}
+
+.frnbtm .errormsg {
+    height: 30px;
+    line-height: 30px;
+}
+
+.totalerror .errormsg {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.errormsg, .errormsgpay {
+    color: #5E5E5E;
+    background: url(../Images/error.png) no-repeat left;
+    padding: 0 0 0 30px !important;
+}
+
+.mendatory {
+    color: #808080;
+    font-size: 10px;
+    text-align: right;
+    padding: 5px 20px 5px 0;
+}
+
+.addselect {
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 30px 0 10px;
+}
+
+    .addselect a, .addselectact a {
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+.choosepoe {
+    display: none;
+    position: absolute;
+}
+
+    .choosepoe ul {
+        width: 110%;
+        background: #ccc;
+        padding: 1px;
+        float: left;
+    }
+
+    .choosepoe li {
+        font-size: 12px;
+        padding: 0 10px;
+        width: 88%;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+
+        .choosepoe li:hover {
+            background: #deaf01;
+            color: #fff;
+        }
+
+        .choosepoe li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+.frnbtm {
+    margin-left: 100px;
+    clear: both;
+}
+
+.browse {
+    background: #808080;
+    font-size: 12px;
+    color: #fff;
+    border: 0;
+    padding: 5px;
+}
+
+.signupcol {
+    float: left;
+    text-align: right;
+    margin-top: 15px;
+    position: fixed;
+}
+
+.clr {
+    clear: both;
+}
+
+.chkbx {
+    font-size: 14px !important;
+    text-decoration: underline;
+}
+
+.photo {
+    width: 124px;
+    height: 124px;
+    float: left;
+}
+
+.signupbtn {
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#btnUpload, #btnCrop {
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 3px 8px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#btnCrop {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.captcha {
+    width: 301px;
+    margin-bottom: 5px;
+}
+
+.row {
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+.col {
+    float: left;
+    margin: 3px 10px 3px 0;
+    padding: 0;
+    color: #5E5E5E;
+}
+
+.level {
+    width: 150px !important;
+}
+
+.txtcol {
+    border: 1px solid #cbcbcb;
+    padding-left: 5px;
+    color: #808080;
+}
+
+#textupload {
+    border: 1px solid #cbcbcb;
+    padding: 4px 5px;
+    color: #808080;
+    width: 150px;
+}
+
+.selectcol {
+    border: 1px solid #cbcbcb;
+    width: 303px;
+    height: 26px;
+    color: #808080;
+}
+
+.addform .txtcol {
+    width: 222px;
+}
+
+.uploadtext {
+    border: 1px solid #cbcbcb;
+    width: 165px;
+    height: 24px;
+}
+
+.check label {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    background: url(../Images/checkbox.png) left no-repeat;
+    padding: 3px 0 0 30px;
+    text-decoration: underline;
+}
+
+    .check label a {
+        color: #5E5E5E;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+        .check label a:focus {
+            background: #e5e5e5;
+        }
+
+/* Don't hide the radio button in older browsers */
+.check input:checked, .check input:not(:checked) {
+    display: none;
+}
+
+    .check input:checked + label {
+        background: url(../Images/checked.png) left no-repeat;
+    }
+
+.midcol {
+    width: 358px;
+    float: left;
+    margin-right: 90px;
+}
+
+    .midcol p {
+        line-height: 1.1em;
+        font-size: 14px;
+        padding: 0 0 10px 0;
+    }
+
+.addmngr h2 {
+    background: url(../Images/addmngr-plus.png) left top no-repeat #fff;
+    padding: 0 0 0 30px;
+    color: #5e5e5e;
+    border-top: 10px solid #e5e5e5;
+    width: 97.6%;
+    text-align: left;
+    margin: 0;
+}
+
+    .addmngr h2.active {
+        background: url(../Images/addmngr-minus.png) left top no-repeat #fff;
+    }
+
+.addform {
+    display: none;
+    background: #fff;
+    width: 97.5%;
+    float: left;
+    border-top: 1px solid #e5e5e5;
+}
+
+.rightcol {
+    background: #808080;
+    padding: 10px;
+    position: relative;
+    color: #FFF;
+}
+
+    .rightcol .btm {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 93%;
+    }
+
+.total {
+    border-top: 1px solid #5e5e5e;
+    float: left;
+    width: 100%;
+    height: 25px;
+    padding: 5px 0;
+}
+
+.btm .signupbtn {
+    float: right;
+    padding: 8px 4px;
+}
+
+.totalLeft {
+    float: left;
+    color: #fff;
+    font-size: 24px;
+}
+
+.totalRight {
+    float: right;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 3px;
+}
+
+.welcomenote {
+    float: left;
+}
+
+    .welcomenote p {
+        float: left;
+        padding-top: 15px;
+    }
+
+    .welcomenote img {
+        margin-right: 10px;
+        float: left;
+    }
+
+.urntwrk ul {
+    max-height: 370px;
+    min-height: 370px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.urntwrk h2 {
+    color: #FFF;
+    float: none;
+    clear: both;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: 1px solid #5e5e5e;
+    width: 98% !important;
+    padding: 10px 0;
+}
+
+.urntwrk .title {
+    clear: both;
+    padding-bottom: 5px;
+    font-size: 11px;
+}
+
+.urntwrk li {
+    border-top: 1px dashed #acacac;
+    width: 100%;
+    float: left;
+    padding: 8px 0;
+}
+
+.combine {
+    border: 0 !important;
+    padding-top: 0 !important;
+}
+
+.urntwrk li:first-child {
+    border: 0;
+}
+
+.urntwrk li .colone {
+    float: left;
+    margin-right: 10px;
+    width: 34px;
+}
+
+.urntwrk li .coltwo {
+    float: left;
+    margin-right: 10px;
+    width: 185px;
+}
+
+.urntwrk li .colthree {
+    float: right;
+    width: 60px;
+    text-align: right;
+}
+
+.submit .signupbtn {
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    font-weight: 600 !important;
+    margin-right: 20px;
+    padding: 8px 10px;
+}
+
+.spotlight, .mypoe {
+    float: left;
+}
+
+    .spot h2, .mypoe h2, .mypoearea h2 {
+        color: #808080;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+.spotlightdiv {
+    margin-top: 10px;
+}
+
+.bigtile {
+    background: #808080;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.smalltile {
+    background: #808080;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.poe {
+    float: left;
+    margin-left: 10px;
+}
+
+.new, .comingsoon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.bigtile .new, .bigtile .comingsoon {
+    width: 25%;
+    padding-bottom: 25%;
+    height: 0;
+}
+
+.poetext {
+    padding-top: 30px;
+    padding-right: 10px;
+    width: 50px;
+    float: left;
+}
+
+.bigtile img, .smalltile img {
+    width: 100%;
+    height: 100%;
+}
+
+.bigtiletitle, .smalltiletitle, .nonbgbigtiletitle, .nonbgsmalltitle {
+    background: url("../images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    float: left;
+    left: 0;
+    padding: 2% 0 2% 5%;
+    position: absolute;
+    width: 95%;
+}
+
+.nonbgbigtiletitle, .nonbgsmalltitle {
+    background: none;
+    opacity: 1;
+}
+
+.bigtiletitle span {
+    margin: 0 0 0 2.5%;
+    color: #fff;
+}
+
+.smalltiletitle span {
+    color: #fff;
+}
+
+.poepopupbg {
+    background: url(../images/trans.png);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    display: none;
+    cursor: move;
+}
+
+.poepopup {
+    margin: 0 auto;
+    position: fixed;
+    left: 33%;
+    z-index: 9999999;
+    background: #000;
+    color: #808080;
+    display: none;
+    width: 36%;
+    height: 0;
+    padding-bottom: 34%;
+    top: 15%;
+    overflow: hidden;
+    border: 0.4em solid #000;
+    margin: 0;
+}
+
+.byo .poepopup {
+    height: 0;
+    padding-bottom: 34%;
+}
+
+.byo .poepopupcontent img, .byo .popupwrapper {
+    height: auto !important;
+}
+
+.poepopuphd {
+    background: #5f5f5f;
+    width: 100%;
+    padding: 0 0 0.5%;
+    position: absolute;
+    border-left: 0.4em solid #5f5f5f;
+    border-right: 0.4em solid #5f5f5f;
+    padding: 0%;
+}
+
+.alertbox .close {
+    width: 8%;
+    padding-bottom: 8%;
+}
+
+.close {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: url(../Images/close.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -0px;
+    top: 3px;
+}
+
+    .close:hover {
+        background: url(../Images/close-hover.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+.poepopupcontent {
+    width: 100%;
+    clear: both;
+    position: relative;
+    height: 96%;
+    position: absolute;
+    top: 4%;
+}
+
+    .poepopupcontent img, .popupwrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+.popupwrapper {
+    z-index: 2;
+}
+
+#anatomy .popupwrapper table {
+    margin: 0.5% auto;
+}
+
+.popupwrapper table {
+    width: 98%;
+    margin: 1.5% auto;
+}
+
+    .popupwrapper table td {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+.popupwrapper h1 {
+    color: #000;
+    font-size: 1.4vw !important;
+    font-weight: 500;
+    margin: 0 !important;
+}
+
+    .popupwrapper h1 span {
+        clear: both;
+        color: #e0b001;
+        font-weight: 500;
+        font-size: 1.4vw !important;
+    }
+
+.freetrial {
+    width: 80% !important;
+    margin-left: 2%;
+}
+
+    .freetrial p, .freetrialimg {
+        float: left !important;
+        position: relative;
+    }
+
+.trialtxt .freetrial p {
+    background: #e0b001;
+    text-align: center !important;
+    color: #fff !important;
+    width: 60% !important;
+    padding: 4.4% 0;
+    cursor: pointer;
+}
+
+.freetrialimg {
+    width: 11% !important;
+    padding-bottom: 10%;
+}
+
+    .freetrialimg img {
+        width: 100%;
+        height: 100%;
+        position: inherit;
+    }
+
+.trialtxt {
+    position: relative;
+}
+
+    .trialtxt h2 {
+        margin: 0 3%;
+        color: #353535 !important;
+        font-weight: 600;
+        font-size: 116%;
+    }
+
+    .trialtxt p {
+        margin: 0 0 0 2%;
+        color: #353535 !important;
+        line-height: 1.1em;
+        width: 93%;
+        text-align: left !important;
+    }
+
+.popupwrapper h3 {
+    color: #e0b001;
+    font-weight: 500;
+    margin: 3% 2% 0 2%;
+}
+
+.popupwrapper .buo p {
+    padding: 2.6% !important;
+    line-height: 1.1em;
+}
+
+.popupwrapper .buo h3 {
+    margin: 2.2% 2% 0;
+    font-size: 137%;
+}
+
+.popupwrapper table p {
+    padding: 2%;
+    color: #fff;
+    text-align: justify;
+    font-size: 94%;
+    line-height: 1.4em;
+}
+
+.aop p {
+    padding: 0% 2% !important;
+}
+
+#poeselection, #Microsoftpoeselection {
+    background: #fff;
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1% 0 0 0;
+}
+
+    #poeselection li, #Microsoftpoeselection li {
+        border-left: 0.1em dotted #666;
+        cursor: pointer;
+        float: left;
+        padding: 2% 1%;
+        position: relative !important;
+        width: 30.8%;
+        height: 0;
+        padding-bottom: 10%;
+    }
+
+        #poeselection li:first-child, #Microsoftpoeselection li {
+            border-left: 0 !important;
+        }
+
+    #Microsoftpoeselection li {
+        background: #e0b001;
+        margin: 0 1% 1%;
+        width: 50%;
+        padding: 0 1%;
+        padding-bottom: 10%;
+    }
+
+    #poeselection li {
+        background: #e0b001;
+        margin: 0 1% 1%;
+        width: 50%;
+        padding: 0 1%;
+        padding-bottom: 10%;
+    }
+
+        #poeselection li p {
+            color: #fff;
+            font-size: 120%;
+            padding: 6% 0;
+        }
+
+    #Microsoftpoeselection li p {
+        color: #fff;
+        font-size: 120%;
+        padding: 6% 0;
+    }
+
+/*#poeselection li:hover
+    {
+        background: #e0b001;
+        color: #fff;
+    }*/
+
+.popupwrapper h3 {
+    margin: 3% 2% 0 2%;
+    font-size: 145%;
+}
+
+#poeselection li:hover > span, #poeselection li:hover > h2 {
+    color: #fff;
+}
+
+#poeselection li p, #poeselection li span {
+    text-align: left !important;
+    /*font-size: 0.8vw;*/
+}
+
+#poeselection li img, #Microsoftpoeselection li img {
+    width: 24%;
+    height: auto;
+    position: relative;
+    float: left;
+    margin-right: 2%;
+}
+
+#Microsoftpoeselection li span {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background: url(../../Images/micor-btn-arrow.png) no-repeat right;
+    background-size: 100% 100%;
+    right: -10%;
+    top: 0;
+}
+
+#poeselection li span {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background: url(../../Images/micor-btn-arrow.png) no-repeat right;
+    background-size: 100% 100%;
+    right: -10%;
+    top: 0;
+}
+
+
+#Microsoftpoeselection li img {
+    width: 19%;
+    margin-top: 2%;
+}
+
+#poeselection li img {
+    width: 19%;
+    margin-top: 2%;
+}
+
+.popupwrapper table strong {
+    font-weight: bold;
+    color: #e0b001;
+}
+
+#microsoftownpoecontent {
+    position: absolute;
+    height: 100%;
+}
+
+.popuptextbg, .popuptextbg1, .popuptextbg2 {
+    background: url(../images/trans1.png);
+}
+
+    .popuptextbg2 .dwnldbtn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .popuptextbg2 .poetxtarea p {
+        font-size: 106%;
+        padding: 1.8% 4% !important;
+    }
+
+.popuptextbg1 {
+    position: absolute;
+    height: 84%;
+    right: 1%;
+}
+
+.popuptextbg2 {
+    position: absolute;
+    height: 97%;
+    right: 1%;
+}
+
+.popuptextbg1 .dwnldbtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.trialcont img {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+}
+
+.btn {
+    background: #deaf01;
+    color: #fff;
+    border: 2px solid #6c6c6c;
+    padding: 5px 8px;
+    font-weight: 400;
+    margin-right: 12px;
+    font-size: 80%;
+    width: 20%;
+    text-align: center;
+}
+
+.spotlight, .mypoe {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.spot, .mypoearea {
+    float: left;
+}
+
+.mypoearea {
+    overflow: hidden;
+}
+
+.poeoverflow {
+    width: 300%;
+    margin-top: 10px;
+}
+
+.address {
+    float: left;
+    width: 15%;
+    margin: 10px 0;
+}
+
+.address1 {
+    float: left;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.print {
+    background: url("../Images/print.png") no-repeat scroll left center transparent;
+    clear: both;
+    font-size: 12px;
+    height: 30px;
+    padding: 12px 0 0 35px;
+    text-decoration: underline;
+    width: 100%;
+    cursor: pointer;
+}
+
+.startbtn {
+    background: url("../Images/nxt-arrow.png") no-repeat scroll right center #DEAF01;
+    background-position: 85px;
+    border: 2px solid #6C6C6C;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 8px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+#pnlUploadedImage h2 {
+    font-weight: 400;
+    color: #000;
+    font-size: 14px;
+}
+
+#submiterr {
+    width: 80%;
+}
+
+.valid {
+    font-size: 11px;
+    color: #fff;
+    line-height: 1.2em;
+}
+
+.browseright {
+    float: right;
+    width: 30%;
+    display: table;
+}
+
+.browserightcont {
+    display: table-cell;
+    vert-align: top;
+}
+
+    .browserightcont p {
+        color: #000;
+        font-size: 12px;
+        padding: 5px 0 0 0;
+    }
+
+.imgselection {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+    .imgselection p {
+        background: url(../Images/trans.png);
+        width: 177px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        float: left;
+        height: 25px;
+        display: table;
+    }
+
+        .imgselection p span {
+            padding: 5px;
+            color: #fff;
+            font-size: 12px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+.mastercard li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.countryselect {
+    border: 1px solid #cbcbcb;
+}
+
+/*************Checkout**********************/
+.cancel {
+    background: #353535;
+}
+
+.security {
+    width: 100px;
+    float: left;
+}
+
+.securityHelp {
+    float: left;
+    margin: 0 0 10px 0;
+}
+
+    .securityHelp img {
+        float: left;
+        margin-top: 5px;
+    }
+
+.securityHelpinfo {
+    padding: 10px;
+    float: right;
+    z-index: 111;
+    width: 250px;
+    position: absolute;
+    margin-left: 20px;
+    display: none;
+    margin-top: -30px;
+}
+
+    .securityHelpinfo span {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #808080;
+        height: 0px;
+        width: 0px;
+        float: left;
+        margin-top: 12%;
+    }
+
+    .securityHelpinfo p {
+        background: #808080;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 12px !important;
+        float: left;
+        line-height: 1.2em !important;
+        width: 80%;
+    }
+
+.card {
+    background: url(/Images/cards.png) no-repeat right 5px center #fff;
+}
+
+.exp {
+    border: 1px solid #CBCBCB;
+}
+
+.smalltxtbx {
+    width: 150px;
+}
+
+.space {
+    padding: 3px;
+    height: 0;
+}
+
+.assignpoe1 {
+    display: none;
+    z-index: 99;
+    position: absolute;
+    background: #fff;
+}
+
+    .assignpoe1 li {
+        background: url("/Images/poe-deselect.png") no-repeat left 5px top 10px;
+        padding: 5px 0 0 30px;
+        border: 1px solid #ccc;
+        border-top: 0;
+        border-bottom: 0;
+        cursor: pointer;
+        height: 30px;
+        line-height: 30px;
+    }
+
+        .assignpoe1 li:last-child {
+            border-bottom: 1px solid #ccc;
+        }
+
+    .assignpoe1 .assignpoe1select {
+        background: url("../Images/poe-select.png") no-repeat left 5px top 10px;
+    }
+
+.detailsholder {
+    width: 80%;
+    float: left;
+}
+
+    .detailsholder .details {
+        float: left;
+        width: 256px;
+    }
+
+.edit, .delete {
+    float: left;
+    width: 20px;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.deletePoe {
+    float: left;
+    width: 20px;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.edit {
+    border-right: 1px solid #fff;
+}
+
+.colone img {
+    width: 38px;
+    height: 38px;
+}
+
+.cancel {
+    background: #353535;
+}
+/***************Accounts Page**********************/
+.accounts table {
+    background: #f2f2f2;
+}
+
+.accounts th {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accounthd1 .printtd {
+    background: #e5e5e5 !important;
+    text-align: right !important;
+    cursor: pointer;
+}
+
+.printtd div {
+    float: right;
+    padding: 5px 0px 5px 5px;
+}
+
+.totl {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.accounts th {
+    width: 8%;
+}
+
+.accounts td {
+    padding: 8px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 8%;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    .accounts td:nth-child(n+2), .accounts th:nth-child(n+2) {
+        width: 15%;
+        text-align: left;
+    }
+
+    .accounts td:nth-child(n+3), .accounts th:nth-child(n+3) {
+        width: 20%;
+        text-align: center;
+        background: #eaeaea;
+    }
+
+    .accounts td:nth-child(n+4), .accounts th:nth-child(n+4) {
+        width: 15%;
+        text-align: center;
+        background: #f2f2f2;
+    }
+
+.accounthd1 td {
+    background: #f2f2f2 !important;
+    border-top: 1px solid #ccc !important;
+}
+
+.securityHelpinfo {
+    float: left;
+}
+
+.cpoe {
+    background: #fff !important;
+    padding-left: 10px !important;
+}
+
+    .cpoe:hover {
+        background: #e0b001 !important;
+        color: #fff !important;
+    }
+
+.alertboxholder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: none;
+}
+
+.alerterr {
+    padding: 35% 0 0 0;
+    text-align: center;
+}
+
+.alertbox .close {
+    top: -20px;
+    right: 0;
+    position: absolute;
+}
+
+.alertbox .button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+    .alertbox .button input {
+        background: #5f5f5f;
+        color: #fff;
+        border: 2px solid #353535;
+        padding: 3px;
+    }
+
+.dropdwner {
+    text-align: center !important;
+    padding: 5% 0 0 !important;
+}
+
+.alertbox .button input:focus {
+    background: #e0b001;
+}
+
+.downloadPoE table {
+    width: 95%;
+    margin: 30px auto 0 auto;
+}
+
+.downloadPoE td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 28%;
+}
+
+    .downloadPoE td:first-child {
+        width: 25%;
+    }
+
+    .downloadPoE td:last-child {
+        width: 40%;
+    }
+
+    .downloadPoE td input {
+        border: 1px solid #ccc;
+        padding: 5px;
+        color: #808080;
+        background: #efefef;
+        width: 91%;
+        float: left;
+        margin: 5px;
+    }
+
+    .downloadPoE td .dwnldbtn {
+        background: #e0b001;
+        color: #fff;
+        float: right;
+        width: 80px !important;
+        margin: 10px 0 0 0;
+        text-decoration: none;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    .downloadPoE td .error {
+        color: #808080;
+        margin-left: 5%;
+        padding-left: 28px;
+        font-weight: normal;
+        background: url(../images/error.png) no-repeat left;
+        clear: both;
+        height: 22px;
+        font-size: 11px;
+        line-height: 1.1em;
+    }
+
+.downloadPoE ul {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 23%;
+}
+
+.downloadPoE li {
+    width: 23.6%;
+    float: left;
+    background: #ccc;
+    margin-right: 1%;
+    height: 100%;
+    position: relative;
+}
+
+    .downloadPoE li img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .downloadPoE li p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 30px;
+        background: url(../images/trans.png);
+        width: 100%;
+        display: table;
+    }
+
+        .downloadPoE li p span {
+            padding: 0 5px;
+            margin: 0;
+            display: table-cell;
+            vertical-align: middle;
+            color: #fff;
+        }
+
+    .downloadPoE li .comingsoon {
+        width: 35%;
+        height: 35%;
+    }
+
+.remove ul {
+    opacity: 0.5;
+    cursor: none;
+}
+
+.remove li:hover {
+    cursor: none;
+}
+
+.anatomyadd ul {
+    opacity: 1 !important;
+}
+
+.anatomyadd ul {
+    position: relative !important;
+    width: 94%;
+    height: 94%;
+}
+
+.anatomyadd li {
+    width: 48%;
+    height: 48%;
+    border: 0 !important;
+    padding: 0 !important;
+    float: left;
+    clear: none;
+    margin: 2% 2% 0 0;
+}
+
+    .anatomyadd li img, .anatomyadd li p {
+        margin: 0 !important;
+    }
+/****Form****/
+.formpopupbg {
+    background: url(../images/trans.png);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    display: none;
+    cursor: move;
+}
+
+.formpopupt {
+    width: 30%;
+    height: 57%;
+    margin: 0 auto;
+    background: #e5e5e5;
+    margin-top: 10%;
+    margin-left: 33%;
+    border: 5px solid #353535;
+    border-top: 30px solid #353535;
+    position: relative;
+    display: none;
+}
+
+    .formpopupt img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+.formpopup {
+    padding: 5%;
+    position: relative;
+}
+
+    .formpopup .left, .formpopup .right {
+        width: 46%;
+        float: left;
+        margin: 2% 0 0;
+    }
+
+    .formpopup .right {
+        width: 38%;
+    }
+
+    .formpopup .left {
+        left: 5%;
+        border-right: 1px solid #4c4c4c;
+        padding: 2% 3%;
+    }
+
+    .formpopup input, .left textarea {
+        width: 95%;
+        border: 1px solid #fff;
+        padding: 2%;
+        margin: 4% 0;
+        background: #e5e5e5;
+        color: #808080;
+        resize: none;
+        overflow: hidden;
+        font-family: "Segoe UI";
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .formpopup .texfield {
+        padding-bottom: 146.5%;
+        width: 100%;
+        background: #e5e5e5;
+        border: 1px solid #fff;
+        position: relative;
+        margin: 2% 0 0 0;
+        overflow: hidden;
+    }
+
+.texfield textarea {
+    width: 103%;
+    resize: none;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    height: 96%;
+    padding: 2%;
+    color: #808080;
+    font-size: 0.8vw;
+    font-family: Segoe UI;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.formpopup .right {
+    right: 5%;
+    padding: 2% 3%;
+}
+
+#form .errormsg {
+    color: #fff;
+    margin: 3% 0;
+    padding: 0 !important;
+}
+
+.formtransbg {
+    background: url(../Images/trans1.png);
+    float: left;
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+#form .errormsg div {
+    width: 10%;
+    float: left;
+    position: relative;
+    padding: 0 0 10% 0;
+}
+
+#form .errormsg p {
+    width: 85%;
+    float: right;
+    padding: 2% 0;
+    font-size: 0.6vw;
+}
+
+#form .errormsg img {
+    width: 100%;
+    height: 100%;
+}
+
+#form .header {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding: 0 2%;
+    height: 25px;
+}
+
+#form h1, #form h2 {
+    font-size: 1.1vw;
+    font-weight: bold;
+    margin: 0.5% 0 1.5% 0;
+    color: #e0b001;
+    padding: 2% 0% 2% 5%;
+    width: 44%;
+    float: left;
+}
+
+span.skype_pnh_container span.skype_pnh_highlighting_inactive_common span.skype_pnh_text_span {
+    color: #e0b001 !important;
+    font-size: 1.2vw !important;
+    font-weight: bold !important;
+}
+
+span.skype_pnh_container img.skype_pnh_logo_img {
+    display: none !important;
+}
+
+#form h1 {
+    padding: 2% 1%;
+    width: 46%;
+}
+
+#form p, #form li, #form span, #form a, #form div, #form p span, #form div p {
+    font-size: 0.8vw;
+    color: #fff;
+}
+
+#form input {
+    font-size: 0.8vw;
+    color: #808080;
+    background: #e5e5e5;
+}
+
+#form .sendbtn {
+    background: none repeat scroll 0 0 #e0b001;
+    border: 1px solid #353535;
+    color: #FFFFFF;
+    margin: 4% 0 0;
+    padding: 2% 5%;
+    text-align: center;
+    width: 22%;
+    cursor: pointer;
+}
+
+    #form .sendbtn:hover {
+        background: #e0b001;
+    }
+
+#form .close {
+    background: url(../images/close.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.yourpoes li {
+    background: transparent !important;
+    padding: 5px !important;
+}
+
+.yourpoes .selected {
+    background: #e0b001 !important;
+    color: #fff !important;
+}
+
+.poetxtarea {
+    height: 100%;
+}
+
+    .poetxtarea p {
+        padding: 1.8% 4% !important;
+        line-height: 92%;
+        font-size: 100%;
+    }
+
+    .poetxtarea h1 {
+        color: #fff !important;
+        font-size: 180% !important;
+        padding: 0% 3% 1.8% 3% !important;
+    }
+
+    .poetxtarea h3 {
+        padding: 2% 0 2% 2%;
+    }
+
+.column {
+    /*float: left;
+    margin-right: 2.5%;
+    overflow: hidden;
+    width: 30%;*/
+}
+
+    .column .bigtile {
+        padding-bottom: 63.8%;
+        width: 64%;
+    }
+
+    .column li {
+        /*background: none repeat scroll 0 0 #808080;
+        cursor: pointer;
+        float: left;
+        margin-bottom: 2%;
+        margin-right: 2%;
+        padding-bottom: 31%;
+        position: relative;
+        width: 31%;*/
+    }
+
+    .column .bigtile {
+        padding-bottom: 63.8%;
+        width: 64%;
+        height: 0;
+    }
+
+    .column li {
+        /*background: none repeat scroll 0 0 #808080;
+        cursor: pointer;
+        float: left;
+        margin-bottom: 2%;
+        margin-right: 2%;
+        padding-bottom: 31%;
+        position: relative;
+        width: 31%;
+        height: 0;*/
+    }
+
+        .column li img {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+    .column .bigtile p {
+        background: url("../images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+        bottom: 0;
+        float: left;
+        left: 0;
+        padding: 1.5% 0;
+        position: absolute;
+        width: 100%;
+        color: #ffffff;
+        font-size: 90%;
+    }
+
+    .column li p span, .anatomypopup .left li p span {
+        color: #FFFFFF;
+        width: 90%;
+    }
+
+    .column .bigtile p span {
+        margin: 0 0 0 2.5%;
+    }
+
+.anatomypopup .left li p {
+    background: url("../images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    float: left;
+    left: 0;
+    padding: 3.5% 0 3.5% 5%;
+    position: absolute;
+    width: 95%;
+}
+
+.selectopt {
+    background: #e0b001 !important;
+    color: #fff !important;
+    border-left: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+
+    .selectopt span {
+        color: #fff !important;
+    }
+
+.select {
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 25%;
+    padding: 1%;
+    position: relative;
+    z-index: 999;
+    border: 0;
+}
+
+    .select p {
+        color: #fff;
+    }
+
+    .select img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 18%;
+    }
+
+#comingsoon1, #leadership, #microsoft, #marketing, #partner {
+    display: none;
+}
+
+.column h1 {
+    clear: both; /*padding: 1.5% 0;*/
+}
+
+.up {
+    display: none;
+}
+
+.select ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 101%;
+    background: #fff;
+    float: left;
+    display: none;
+    margin-left: -0.5%;
+    border: 1px solid #353535;
+}
+
+.select li {
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    color: #808080;
+    height: auto;
+    clear: both;
+}
+
+    .select li p {
+        padding: 5%;
+        position: relative;
+        background: transparent;
+        color: #808080;
+    }
+
+.footer .menu {
+    cursor: pointer;
+    float: right;
+    margin: 0.5% 0;
+    position: relative;
+    text-align: right;
+    width: 4%;
+}
+
+.pagination {
+    width: 28%;
+    margin-left: 20.5%;
+}
+
+    .pagination .img {
+        margin: 0.5% 0;
+        overflow: hidden;
+        padding-bottom: 13%;
+        position: relative;
+        width: 13%;
+    }
+
+    .pagination div {
+        color: #FFFFFF;
+        float: left;
+        margin: 0 1%;
+    }
+
+    .pagination .img img {
+        width: 100%;
+        height: 200%;
+        position: absolute;
+        margin-top: -100%;
+    }
+
+        .pagination .img img:hover {
+            margin-top: 0;
+            cursor: pointer;
+        }
+
+    .pagination .txt {
+        margin-top: 5%;
+    }
+
+.footerpoe {
+    float: left;
+    width: 70%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 27%;
+    z-index: 9999;
+}
+
+    .footerpoe .left {
+        float: left;
+        width: 30%;
+        padding: 0.8% 0;
+    }
+
+    .footerpoe .menu {
+        float: right;
+        width: 6%;
+        text-align: right;
+        margin: 0.5% 0;
+        cursor: pointer;
+        position: relative;
+    }
+
+        .footerpoe .menu div {
+            float: left;
+            width: 41%;
+        }
+
+        .footerpoe .menu img {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .footerpoe .menu p {
+            margin: 25% 0 25% 10%;
+            right: 0;
+            color: #e0b001;
+        }
+
+    .footerpoe li {
+        float: left;
+        color: #fff;
+        margin-right: 5%;
+    }
+
+#poecontextment {
+    position: absolute;
+    right: 0;
+    bottom: 125%;
+    width: 300%;
+    display: none;
+}
+
+    #poecontextment ul {
+        background: #353535;
+        float: left;
+        width: 100%;
+    }
+
+    #poecontextment li {
+        width: 100%;
+        float: left;
+        text-align: left;
+    }
+
+        #poecontextment li span {
+            width: 10%;
+            float: left;
+            padding: 5%;
+        }
+
+            #poecontextment li span img {
+                width: 100%;
+                height: 100%;
+            }
+
+        #poecontextment li:hover, .select li:hover {
+            background: #e0b001;
+        }
+
+            #poecontextment li:hover > p, .select li:hover > p {
+                color: #fff;
+            }
+
+        #poecontextment li p {
+            padding: 5% 0;
+            margin: 0;
+            color: #fff !important;
+            width: 70%;
+            float: left;
+        }
+
+.clos {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 999999;
+    font-family: Verdana;
+    color: #5e5e5c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paid {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    z-index: 99999;
+    width: 56%;
+}
+
+    .paid p {
+        background: #e0b001 !important;
+        float: left;
+        position: relative !important;
+        width: 85% !important;
+        padding: 3.8% 0 !important;
+        text-align: center;
+    }
+
+    .paid span {
+        background: url("../Images/paid.png") no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        padding-bottom: 8%;
+        height: 0%;
+        width: 15%;
+        /* display: block;*/
+    }
+
+#becomepaidmember p {
+    line-height: 138%;
+    display: block;
+}
+
+.remove li:hover {
+    border: none !important;
+    background: none !important;
+}
+
+.alertboxholder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: none;
+}
+
+.alertbox {
+    background: #fff;
+    width: 160px;
+    height: 140px;
+    border: 5px solid #5e5e5e;
+    border-top: 25px solid #5e5e5e;
+    margin: 0 auto;
+    margin-top: 15%;
+    padding: 10px;
+    color: #808080;
+    font-size: 12px;
+    position: relative;
+}
+
+    .alertbox img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .alertbox .close {
+        top: -20px;
+        right: 0;
+        position: absolute;
+    }
+
+    .alertbox .button {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+        .alertbox .button input {
+            background: #5f5f5f;
+            color: #fff;
+            border: 2px solid #353535;
+            padding: 3px;
+        }
+
+            .alertbox .button input:focus {
+                background: #e0b001;
+            }
+
+.btnholder {
+    width: 100%;
+    float: right;
+    padding-right: 1.2%;
+}
+
+#addnowTrail h2 {
+    font-size: 130%;
+    padding: 6px 0 0 0;
+}
+
+.hdcvr {
+    height: 0;
+    padding-bottom: 7%;
+}
+
+p:empty {
+    display: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    p {
+        /*    line-height: 1.1em !important;*/
+    }
+
+    .trialtxt h2 {
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 7680px) and (min-width: 1920px) {
+    .trialtxt p {
+        font-size: 100% !important;
+    }
+
+    .aop p {
+        font-size: 93% !important;
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1680px) {
+    .trialtxt p {
+        font-size: 103% !important;
+    }
+
+    .popupwrapper .buo p {
+        font-size: 102% !important;
+    }
+
+    .aop p {
+        font-size: 93% !important;
+    }
+
+    .paid span {
+        background: url("../Images/paid.png") no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        padding-bottom: 8%;
+        height: 0%;
+        width: 15%;
+        /* display: block;*/
+    }
+
+    .poetxtarea p {
+        padding: 0.8% 4% !important;
+        line-height: 92%;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1600px) {
+    .trialtxt p {
+        font-size: 110% !important;
+    }
+
+    .popupwrapper .buo p {
+        font-size: 102% !important;
+    }
+
+    /*  .popupwrapper table p
+    {
+        font-size: 92% !important;
+        line-height: 80% !important;
+    }
+
+    .poetxtarea p
+    {
+        padding: 0.8% 4% !important;
+        line-height: 92%;
+        font-size: 100%;
+    }*/
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1440px) {
+
+
+    .trialtxt p {
+        font-size: 105% !important;
+    }
+
+    .popupwrapper .buo p {
+        font-size: 100% !important;
+    }
+
+    .popupwrapper .aop p {
+        font-size: 86% !important;
+        padding: 0.8% 2% !important;
+    }
+
+    .popupwrapper .buo h3 {
+        font-size: 125% !important;
+        margin: 2% 2% 0 !important;
+    }
+
+    .popuptextbg2 .poetxtarea p {
+        font-size: 102% !important;
+    }
+
+    .popupwrapper h3 {
+        font-size: 140% !important;
+    }
+
+    /*
+
+    .popupwrapper table p
+    {
+        font-size: 92% !important;
+        line-height: 80% !important;
+    }
+
+         */
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1400px) {
+
+    .poepopup {
+        width: 42%;
+    }
+
+    .byo .poepopup {
+        padding-bottom: 36%;
+    }
+
+    .popupwrapper .buo p {
+        font-size: 106% !important;
+    }
+
+    .aop p {
+        font-size: 97% !important;
+    }
+
+    .popuptextbg2 .poetxtarea p {
+        font-size: 108% !important;
+    }
+
+    /* .popupwrapper table p
+    {
+        font-size: 100% !important;
+    }*/
+
+    .popupwrapper .buo h3 {
+        font-size: 140% !important;
+    }
+
+    .popupwrapper .aop p {
+        font-size: 92% !important;
+    }
+
+    .paid span {
+        background: url("../Images/paid.png") no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        padding: 4.1% 0 4% 0;
+        height: 0%;
+        width: 15%;
+        /* display: block;*/
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1366px) {
+
+    .poepopup {
+        width: 42%;
+    }
+
+    .byo .poepopup {
+        padding-bottom: 36%;
+    }
+
+    p, div, li, a, span, input, td, th, #wrapper .videolist li h2, select, option, textarea {
+        font-size: 11px !important;
+    }
+
+    .popupwrapper .buo p {
+        font-size: 100% !important;
+    }
+
+    .aop p {
+        font-size: 95% !important;
+    }
+
+    .popuptextbg2 .poetxtarea p {
+        font-size: 104% !important;
+    }
+
+    /*.popupwrapper table p
+    {
+        font-size: 96% !important;
+    }*/
+
+    .popupwrapper .buo h3 {
+        font-size: 135% !important;
+    }
+
+    .popupwrapper .aop p {
+        font-size: 92% !important;
+    }
+
+    .trialtxt h2 {
+        font-size: 113% !important;
+    }
+
+    .paid span {
+        background: url("../Images/paid.png") no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        padding: 4% 0 4.5% 0;
+        height: 0%;
+        width: 15%;
+        /* display: block;*/
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1280px) {
+    .popupwrapper .buo p {
+        font-size: 100% !important;
+    }
+
+    .aop p {
+        padding: 0% 2% !important;
+        font-size: 95% !important;
+    }
+
+    .popupwrapper .buo h3 {
+        font-size: 140%;
+    }
+
+    .poetxtarea p {
+        padding: 0.6% 4% !important;
+    }
+
+    .popuptextbg2 .poetxtarea p {
+        font-size: 103% !important;
+    }
+
+    .popupwrapper .buo h3 {
+        font-size: 130% !important;
+    }
+
+    .popupwrapper h3 {
+        font-size: 143% !important;
+    }
+
+    .popupwrapper .aop p {
+        font-size: 90% !important;
+    }
+
+    .paid span {
+        background: url("../Images/paid.png") no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        padding: 4% 0 4.5% 0;
+        height: 0%;
+        width: 15%;
+        /* display: block;*/
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .popupwrapper .aop p {
+        font-size: 98% !important;
+    }
+
+    .popupwrapper .buo h3 {
+        font-size: 131% !important;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1120px) {
+    .aop p {
+        font-size: 106.5% !important;
+        padding: 0.4% 2% !important;
+    }
+
+    .popupwrapper .buo p {
+        font-size: 118% !important;
+    }
+
+    .trialtxt p {
+        font-size: 120% !important;
+    }
+
+    .trialtxt h2 {
+        font-size: 130% !important;
+    }
+
+    .popuptextbg2 .poetxtarea p {
+        font-size: 108% !important;
+    }
+
+    .popupwrapper .aop p {
+        font-size: 102% !important;
+    }
+}
+
+@media screen and (max-width: 1120px) and (min-width: 1024px) {
+    .popupwrapper .buo p {
+        font-size: 121% !important;
+    }
+
+    .aop p {
+        font-size: 112% !important;
+    }
+
+    .trialtxt p {
+        font-size: 127% !important;
+    }
+
+    .byo .poepopup {
+        padding-bottom: 35% !important;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+    .popupwrapper p {
+        font-size: 117% !important;
+    }
+
+    .popupwrapper .buo p {
+        font-size: 123% !important;
+    }
+
+    .aop p {
+        font-size: 112% !important;
+        padding: 0% 2% !important;
+    }
+
+    .trialtxt p {
+        font-size: 112% !important;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    .popupwrapper p {
+        font-size: 107% !important;
+    }
+
+    .popupwrapper .buo p {
+        font-size: 108% !important;
+    }
+
+    .aop p {
+        font-size: 108% !important;
+        padding: 0% 2% !important;
+    }
+
+    .trialtxt p {
+        font-size: 90% !important;
+    }
+
+    .trialtxt h2 {
+        font-size: 123% !important;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 480px) {
+    .popupwrapper .buo p {
+        font-size: 108% !important;
+    }
+
+    .aop p {
+        font-size: 97% !important;
+        padding: 0% 2% !important;
+    }
+
+    .trialtxt p {
+        font-size: 90% !important;
+    }
+
+    .trialtxt h2 {
+        font-size: 123% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popupwrapper .buo p {
+        font-size: 83% !important;
+    }
+
+    .aop p {
+        font-size: 84% !important;
+        padding: 0% 2% !important;
+    }
+
+    .trialtxt p {
+        font-size: 90% !important;
+    }
+
+    .trialtxt h2 {
+        font-size: 123% !important;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    p, div, li, a, span, input, td, th, #wrapper .videolist li h2, select, option, textarea {
+        line-height: 1.2em;
+    }
+}

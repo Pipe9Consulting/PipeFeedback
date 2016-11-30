@@ -1,0 +1,69 @@
+.takefeedback{ margin:0 2% !important;}
+.takefeedback h2{ margin:0; font-weight:normal; font-size:200%; text-transform:uppercase !important;}
+
+.takefbLeftPart{ width:20%; margin-right:3% ; float:left;  }
+.takeFeedbackLeft{ border:1px solid #999; float:left; width:100%; padding:3% 0 0 3%; background:url(../images/feedback/fbmenubg.png) no-repeat; background-size:100% 100%; }
+.takeFeedbackMenu {text-align: left;  height: 16%; width:47%; margin:0 3% 3% 0; position: relative;  float:left; }
+.incompletefbMenu{text-align: left;  height: 16%; width:97%; margin:0 3% 3% 0; position: relative;  float:left; }
+.right .container {  height: 100%;}
+.vertical-align-wrap {  position: absolute;  width: 100%;  height: 100%;  display: table;}
+.takefbIcon{  background:url(../images/feedback/takefbIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);  display: table-cell; cursor:pointer; background-size:45% 45%;  }
+.takefbIcon:hover{  background:url(../images/feedback/takefbIconHover.png)no-repeat top 10% right 10% #000;  display: table-cell; background-size:45% 45%;}
+.givefbIcon{  background:url(../images/feedback/givefbIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);  display: table-cell; cursor:pointer; background-size:45% 45%;}
+.givefbIcon:hover{  background:url(../images/feedback/givefbIconHover.png)no-repeat top 10% right 10% #000;  display: table-cell; background-size:45% 45%;}
+.requestfbIcon{  background:url(../images/feedback/requestfbIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);  display: table-cell; cursor:pointer; background-size:45% 45%;}
+.requestfbIcon:hover{  background:url(../images/feedback/requestfbIconHover.png)no-repeat top 10% right 10% #000;  display: table-cell; background-size:45% 45%;}
+.incompletefb{  background:rgba(0, 0, 0, 0.9);  display: table-cell; cursor:pointer; background-size:40% 45%;}
+.incompletefb:hover{  background:#000;  display: table-cell; }
+.incompletefb p{ font-size:350%; margin:10% 0;padding:0 10%; color:#fff; }
+.incompletefb:hover p{color:#e0b001; }
+.historyfbIcon{  background:url(../images/feedback/historyfbIcon.png)no-repeat top 10% right 3.5% rgba(0, 0, 0, 0.9);  display: table-cell; cursor:pointer; background-size:20% 40%;}
+.historyfbIcon:hover{  background:url(../images/feedback/historyfbIconHover.png)no-repeat top 10% right 3.5% #000;  display: table-cell; cursor:pointer; background-size:20% 40%;}
+.vertical-align--bottom {  vertical-align: bottom;}
+.vertical-align--bottom a{ color:#fff; font-size:150%; padding:0 15px; position:relative; bottom:10px; display:block; text-transform:uppercase; }
+.vertical-align-wrap:hover a{color:#e0b001;}
+
+.profilePart{ width:20%; margin-right:3%; float:left;  }
+.profileCenter{ border:1px solid #999; width:100%; padding:3% 0 0 3%; height:auto; float:left;}
+.profileCenter ul{width:100%; margin:0 3% 0 0; padding:0; height:auto; float:left;  }
+.profileCenter ul li{ float:left;  width:46%; margin-right:4%; margin-bottom:3%; padding-bottom:47%; height:0; cursor:pointer; list-style:none; position:relative; }
+.profilePicture{ cursor:pointer; }
+.profileCenter p{ color:#fff; font-size:150%; padding:10px 10px; background:rgba(0, 0, 0, 0.8); position: absolute; bottom:0%; display:block; width:100%; }
+.profileCenter img {width:100%;  filter:gray; /* IE6-9 */  filter:grayscale(1); /* Firefox 35+ */ -webkit-filter:grayscale(1); /* Chrome,Safari 6+ & Opera15+ */}
+/*.selectArrow{ border:1px solid #e0b001;}*/
+.selectArrow img{ filter:gray; /* IE6-9 */  filter:grayscale(0); /* Firefox 35+ */ -webkit-filter:grayscale(0); /* Chrome,Safari 6+ & Opera15+ */}
+.selectArrow span{ border:2px solid #e0b001; background:url(../images/feedback/selecttick.png)no-repeat top right; height:100%; width:100%; z-index:999; position:absolute; background-size:40% 35%; top:0; right:0; }
+.selectArrow  p{ color:#e0b001;}
+.profileCenter ul li:hover img{ filter:gray; /* IE6-9 */  filter:grayscale(0); /* Firefox 35+ */ -webkit-filter:grayscale(0); /* Chrome,Safari 6+ & Opera15+ */}
+.profileCenter ul li:hover p{ color:#e0b001;}
+.takefbRightPart{ width:54%; float:left; }
+.takefbcontent{border:1px solid #999; float:left; width:100%; padding:1.5%;}
+.fblfristBox{ background:url(../images/feedback/tfbfristboxBg.png)no-repeat; background-size:100% 100%; width:32.3%; float:left; margin-right:1.5%; height:65%;}
+.fblsecondBox{ background:url(../images/feedback/tfbsecondboxBg.png)no-repeat; background-size:100% 100%; width:32.3%; float:left; margin-right:1.5%; height:65%;}
+.fblthirdBox{ background:url(../images/feedback/fblthirdboxBg.png)no-repeat; background-size:100% 100%; width:32.3%; float:left; height:65%;}
+.boxone{background: rgba(0, 0, 0, 0.9); margin-top:106%; height:50%; }
+.boxone h2{ background:#000; width:100%; color:#fff; font-size:170%; padding:6%; font-weight:normal;}
+.boxone h3{ width:100%; color:#fff; font-size:150%; padding:5% 6% 0% 6%; margin:0; font-weight:normal;}
+.boxone p{ width:100%; color:#fff; font-size:110%; padding:2% 6% 2 6%;}
+.boxone a{ background:#e0b001; text-decoration:none; padding:2% 4%; margin:0 6%; font-size:130%; color:#000; font-weight:500; border:1px solid #000;}
+
+.boxone a:hover{ background:#000; color:#e0b001; border:1px solid #e0b001; }
+.boxbottom{ margin-top:3%;}
+
+
+
+
+@media screen and (max-width: 1669px) and (min-width: 1501px){
+.boxone{ height:57%; margin-top:93%;}
+.profilePicture img{ height:47%;}
+.vertical-align--bottom a{ font-size:100%;}
+.takefeedback h2{ font-size:150%;}
+.boxone h2{ font-size:130%;}
+.boxone h3{ font-size:110%;}
+.boxone p{ font-size:80%;}
+.boxone a{ font-size:90%;}
+.profileCenter p{ font-size:100%; bottom:0%;}
+.profileCenter img{ height:136px}
+
+
+}

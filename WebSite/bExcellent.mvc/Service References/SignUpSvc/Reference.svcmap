@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ffca4571-ed7b-4a25-9d28-d487b6ecdbd7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:125/Signup.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Signup.xsd" MetadataType="Schema" ID="d98c2c94-40cc-4ad3-bb86-db334de7e7a0" SourceId="1" SourceUrl="http://localhost:125/Signup.svc?xsd=xsd2" />
+    <MetadataFile FileName="Signup.wsdl" MetadataType="Wsdl" ID="d7316b2b-ca83-45c2-b613-57a6433c661d" SourceId="1" SourceUrl="http://localhost:125/Signup.svc?wsdl" />
+    <MetadataFile FileName="Signup1.xsd" MetadataType="Schema" ID="47995114-72e2-4635-a3e1-f3d1aedb603c" SourceId="1" SourceUrl="http://localhost:125/Signup.svc?xsd=xsd0" />
+    <MetadataFile FileName="Signup2.xsd" MetadataType="Schema" ID="1888d35f-0755-4f06-93a2-b98e6b92c167" SourceId="1" SourceUrl="http://localhost:125/Signup.svc?xsd=xsd3" />
+    <MetadataFile FileName="Signup.disco" MetadataType="Disco" ID="6afed5d1-85dd-42e5-848b-ff1f8781d6b0" SourceId="1" SourceUrl="http://localhost:125/Signup.svc?disco" />
+    <MetadataFile FileName="Signup3.xsd" MetadataType="Schema" ID="e6c4b7b2-255d-492f-bb70-fd4256dd89e0" SourceId="1" SourceUrl="http://localhost:125/Signup.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

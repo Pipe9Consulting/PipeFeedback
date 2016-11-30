@@ -1,0 +1,1314 @@
+﻿body {
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 60%;
+    padding: 1.5% 1%;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.guideArea {
+    padding: 0 1.5%;
+}
+
+p {
+    font-size: 150%;
+}
+
+
+.questionPart {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.questiontaken {
+    float: left;
+    margin-bottom: 0.5%;
+    color: #333;
+}
+
+.clearfix {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.qn {
+    background: none repeat scroll 0% 0% rgb(224, 176, 1);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    float: left;
+    margin-top: 0%;
+    margin-top: 0.3%;
+    margin-right: 1%;
+    width: 2%;
+    padding: .3% 0% .5% 0%;
+    font-size: 120%;
+}
+
+
+
+.questionarea {
+    float: left;
+    width: 95%;
+}
+
+    .questionarea p {
+        width: 100%;
+        padding: 0.5% 1% .8% 0%;
+        color: #000;
+        margin: 0;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+
+.rateOverall {
+    width: 100%;
+    position: relative;
+}
+
+    .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
+        float: left;
+        position: relative;
+        width: 5.4%;
+    }
+
+.SI3 {
+    font-size: 16px;
+    margin-bottom: 1%;
+    color: #333;
+    width: 120%;
+}
+
+#quickviewli .rateThisQuestion img, .rateThisQuestion img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.SI3 span {
+    color: #333 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.capabilityQuestion {
+    margin: 3% 0 0 0;
+}
+
+.sliderdiv .ui-slider-range {
+    background-image: url(../../Images/img/slidebg2.png);
+    cursor: pointer;
+}
+
+.rateThisQuestion .ui-slider-range:nth-child(2) {
+    background: url("../../Images/img/rate-slidebgHover.png") no-repeat scroll 0% 0% transparent;
+    background-size: auto 100% !important;
+    height: 0 !important;
+    padding-bottom: 8.1%;
+    position: absolute;
+    z-index: 2;
+}
+
+#quickviewli .ui-slider-range, .ui-slider-range {
+    background: url("../../Images/feedback-slider-1920.png") no-repeat scroll 0% 0% transparent !important;
+    background-size: auto 101% !important;
+    height: 0 !important;
+    padding-bottom: 8%;
+    position: absolute;
+    z-index: 2;
+}
+
+.sliderimg {
+    width: 100% !important;
+    margin: 3% 0 0 0;
+}
+
+
+
+.rateThisQuestion {
+    width: 100%;
+    height: auto;
+    margin: 1% 0 0 0;
+    float: left;
+}
+
+
+    .rateThisQuestion img {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .rateThisQuestion .ui-slider-range:nth-child(2) {
+        background: url("../../Images/img/rate-slidebgHover.png") no-repeat scroll 0% 0% transparent;
+        background-size: auto 100% !important;
+        height: 0 !important;
+        padding-bottom: 8.1%;
+        position: absolute;
+        z-index: 2;
+    }
+
+.sliderdiv .ui-slider-range {
+    background-image: url(../../Images/img/slidebg2.png);
+    cursor: pointer;
+}
+
+#quickviewli .ui-slider-range, .ui-slider-range {
+    background: url("../../Images/feedback-slider-1920.png") no-repeat scroll 0% 0% transparent !important;
+    background-size: auto 100% !important;
+    height: 0 !important;
+    padding-bottom: 8.05%;
+    position: absolute;
+    z-index: 2;
+}
+
+.ui-slider-handle {
+    width: 2% !important;
+    outline: medium none;
+    background: url("../../Images/slider-handle.png") no-repeat scroll 0% 0% transparent;
+    background-size: 100% 100%;
+    height: 0;
+    padding-bottom: 9.5%;
+    position: absolute;
+    z-index: 99999;
+    cursor: default;
+    margin-left: -0.5em;
+    margin-top: -0.7%;
+}
+
+.mngrfb {
+    width: 94% !important;
+    margin-left: 6.3%;
+    height: 325px;
+    padding-bottom: 20px !important;
+    position: relative;
+    padding-top: 1%;
+    margin-top: 0.5%;
+}
+
+.Capabailityfreq {
+    width: 100%;
+}
+
+.userIconArea img {
+    width: 100%;
+    height: 100%;
+}
+
+.userIconArea {
+    width: 13%;
+    margin-right: 1%;
+    position: relative;
+    float: left;
+    margin-bottom: 2%;
+}
+
+.mngrfbGoal1, .mngrfbGoal2, .mngrfbGoal3 {
+    height: auto !important;
+}
+
+
+.userIconArea span {
+    position: absolute;
+    text-align: center;
+    font-size: 70%;
+    background: #000;
+    color: #fff;
+    padding: 1% 3% 2% 3%;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+
+.overallScalesSlider {
+    width: 86%;
+    float: left;
+    margin-bottom: 2%;
+}
+
+.capbabiltyScaleArea {
+    width: 100%;
+}
+
+.frequencyScaleArea {
+    width: 100%;
+    margin-top: .2%;
+}
+
+.capbabiltyScaleArea .user {
+    float: left;
+    width: 7.4%;
+    margin-right: 2%;
+}
+
+.mngrfb .user {
+    float: left;
+    width: 7.4%;
+    margin-right: 2%;
+}
+
+    .mngrfb .user img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+.capbabiltyScaleArea .sliderimg {
+    width: 88% !important;
+    height: 0px !important;
+    padding-bottom: 7.5%;
+    float: left;
+}
+
+.sliderdiv {
+    width: 700px;
+    position: relative;
+    height: 0;
+    float: left;
+    right: -7%;
+}
+
+
+.clr {
+    clear: both;
+}
+
+.frequencyScaleArea .sliderimg {
+    width: 88% !important;
+    margin-top: 0.4%;
+    height: 0px !important;
+    padding-bottom: 7.5%;
+    float: left;
+}
+
+
+.beginBtn {
+    background: url(../../Images/images/nextIcon.png) no-repeat;
+    float: right;
+    text-decoration: none;
+    background-size: 80% 90% !important;
+    width: 79px;
+    height: 119px;
+    margin-top: -30%;
+    margin-right: -4.5%;
+    text-indent: -3%;
+    position: relative;
+    color: #fff;
+    font-size: 1px;
+}
+
+    .beginBtn:hover {
+        background: url(../../Images/images/nextIconHover.png) no-repeat;
+        background-size: 80% 90% !important;
+        text-indent: -3%;
+        color: #fff;
+        width: 79px;
+        height: 119px;
+    }
+
+.welcomeName {
+    margin-bottom: .5%;
+}
+
+.stepNo {
+    font-weight: 600;
+    float: left;
+    width: 4.5%;
+}
+
+.stepContent {
+    float: left;
+    width: 95.5%;
+}
+
+.stepText {
+    margin-bottom: 0.3%;
+    float: left;
+    width: 100%;
+}
+
+/******************************************************************** Team Feedback ***************************************************************************/
+
+.OverallScale {
+    width: 60%;
+    clear: both;
+    float: left;
+    position: relative;
+    margin: 1% 0;
+}
+
+.importanceArea {
+    width: 32.5%;
+    float: left;
+    margin-right: 1%;
+}
+
+.frequencyArea {
+    width: 33%;
+    float: left;
+    left: 3%;
+    position: relative;
+}
+
+.slidercontent {
+    width: 100%;
+}
+
+    .slidercontent img {
+        float: left;
+        width: 21%;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+
+    .slidercontent h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000;
+        font-size: 80%;
+    }
+
+    .slidercontent p {
+        color: #333;
+        font-weight: 400;
+        float: left;
+        line-height: 1;
+        font-size: 75%;
+        width: 75%;
+        position: relative;
+    }
+
+.capabilityArea {
+    width: 32.5%;
+    float: left;
+    margin-right: 1%;
+}
+
+.teamUser {
+    width: 9%;
+    margin-right: 1%;
+    position: relative;
+    float: left;
+    margin-top: 6%;
+    bottom: 0px;
+}
+
+    .teamUser img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .teamUser span {
+        position: absolute;
+        text-align: center;
+        font-size: 80%;
+        background: #000;
+        color: #fff;
+        padding: 1% 3% 2% 3%;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+
+.teamFeedback .rateThisQuestion {
+    width: 90%;
+    height: auto;
+    margin: 1% 0 0 0;
+    float: left;
+}
+
+
+#managerFeedContent .rateOverall .ui-slider-handle {
+    background: url("../../Images/slider-handleRed.png") no-repeat scroll 0% 0% transparent;
+}
+
+
+.selfcapratingRemoved .SI3 {
+    font-size: 14px;
+}
+
+
+/***********************************************************************************************************************************************/
+
+@media screen and (max-width: 2600px) and (min-width: 2200px) {
+
+    #selfFeedCont .questionPart {
+        margin-left: 22%;
+    }
+
+    .beginBtn {
+        margin-top: -26%;
+    }
+
+    .selfcapRemoved .beginBtn {
+        margin-top: -20%;
+    }
+
+    .selfcapratingRemoved .beginBtn {
+        margin-top: -15%;
+    }
+
+    .ratingscaleSelfRemoved .rateThisQuestion {
+        margin: -3% 0 2% 0;
+    }
+
+
+    .ratingscaleSelfRemoved .sliderimg {
+        width: 100% !important;
+        margin: 3% 0 0 0;
+    }
+
+    .ratingscaleSelfRemoved .beginBtn {
+        margin-top: -20%;
+    }
+
+
+    .slidercontent p {
+        font-size: 110%;
+    }
+
+    .slidercontent h4 {
+        font-size: 100%;
+    }
+
+    .OverallScale {
+        width: 81%;
+    }
+
+
+    .teamUser span {
+        font-size: 120%;
+    }
+
+    .teamcapRemoved .teamUser span {
+        font-size: 82%;
+        padding-bottom: 5%;
+    }
+
+    .teamUser {
+        margin-top: 9.5%;
+        width: 11%;
+    }
+
+    .teamFeedback .rateThisQuestion {
+        width: 86%;
+        margin: 1% 0 1% 0;
+    }
+
+    p {
+        font-size: 120%;
+        margin-bottom: 18px;
+    }
+
+    .capabilityQuestion {
+        margin: 4% 0 0 0;
+    }
+
+    .sliderimg {
+        width: 100% !important;
+        margin: 4% 0 0 0;
+    }
+
+    .rateThisQuestion {
+        margin: 2% 0 0 0;
+    }
+
+    .selfcapratingRemoved .rateThisQuestion {
+        margin: -2% 0 2% 0;
+    }
+
+    .rateThisQuestion {
+        margin: 2% 0 2% 0;
+    }
+
+    .sliderdiv {
+        right: -6.5%;
+    }
+
+    .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
+        width: 5.4%;
+    }
+
+    #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
+        width: 6%;
+    }
+
+    #managerFeedContent .sliderdiv {
+        right: -7.5%;
+    }
+
+    #managerFeedContent .questionPart {
+        margin-left: 16.5%;
+    }
+
+    .ratingscaleTeamRemoved .teamUser {
+        width: 12%;
+        margin-top: 5%;
+    }
+
+    .ratingscaleTeamRemoved .OverallScale {
+        width: 71%;
+        margin-bottom: -1%;
+    }
+
+    .ratingscaleTeamRemoved .beginBtn {
+        margin-top: -25%;
+        margin-right: -4.4%;
+    }
+
+    .teamcapratingRemoved .frequencyArea {
+        width: 100%;
+        float: left;
+        left: 8.8%;
+        position: relative;
+        margin-bottom: -5%;
+    }
+
+    .teamcapratingRemoved .beginBtn {
+        margin-top: -15.5%;
+    }
+
+
+    .teamcapratingRemoved .slidercontent img {
+        width: 6.5%;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+
+    .teamcapratingRemoved .teamUser {
+        margin-top: 4%;
+        width: 6%;
+    }
+
+    .teamcapratingRemoved .slidercontent img {
+        float: left;
+        width: 6.5%;
+        margin-right: 1%;
+        margin-top: -0.8%;
+    }
+
+    .teamcapratingRemoved .teamUser span {
+        font-size: 80%;
+        padding-bottom: 5%;
+    }
+
+    .teamcapRemoved .OverallScale {
+        width: 100%;
+        left: 7%;
+    }
+
+    .teamcapRemoved .slidercontent img {
+        width: 16.5%;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+
+    .teamcapRemoved .teamUser {
+        margin-top: 8.3%;
+        width: 6%;
+    }
+
+    .teamcapRemoved .importanceArea {
+        margin-right: 4%;
+    }
+
+    .teamcapRemoved .beginBtn {
+        margin-top: -21%;
+    }
+}
+
+@media screen and (max-width: 2200px) and (min-width: 2000px) {
+
+    .teamcapratingRemoved .frequencyArea {
+        width: 100%;
+        float: left;
+        left: 8.8%;
+        position: relative;
+        margin-bottom: -4%;
+        margin-top: 1%;
+    }
+
+    .teamcapratingRemoved .beginBtn {
+        margin-top: -15.5%;
+    }
+
+
+    .teamcapratingRemoved .slidercontent img {
+        width: 6.5%;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+
+    .teamcapratingRemoved .teamUser {
+        margin-top: 4%;
+        width: 6%;
+    }
+
+    .teamcapratingRemoved .slidercontent img {
+        float: left;
+        width: 6.2%;
+        margin-right: 1%;
+        margin-top: -0.8%;
+    }
+
+    .teamUser span {
+        font-size: 80%;
+        padding-bottom: 5%;
+    }
+
+
+    .teamcapratingRemoved .teamUser {
+        width: 7%;
+        margin-top: 3.7%;
+    }
+
+        .teamcapratingRemoved .teamUser span {
+            font-size: 89%;
+            padding-bottom: 6%;
+        }
+
+    .teamcapratingRemoved .beginBtn {
+        margin-top: -22.5%;
+        text-indent: -3%;
+        margin-right: -4.6%;
+    }
+
+
+
+    .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
+        width: 6%;
+    }
+
+    .sliderdiv {
+        right: -7.5%;
+    }
+
+
+    #selfFeedCont .questionPart {
+        margin-left: 17%;
+    }
+
+    .ratingscaleSelfRemoved .rateThisQuestion {
+        margin: -3% 0 2% 0;
+    }
+
+
+    .ratingscaleSelfRemoved .sliderimg {
+        width: 100% !important;
+        margin: 3% 0 0 0;
+    }
+
+    .ratingscaleSelfRemoved .beginBtn {
+        margin-top: -24% !important;
+    }
+
+    .ratingscaleSelfRemoved .questionarea {
+        margin-bottom: 0%;
+    }
+
+    .ratingscaleTeamRemoved .teamUser {
+        width: 13%;
+        margin-top: 5%;
+    }
+
+
+    .ratingscaleTeamRemoved .OverallScale {
+        width: 84%;
+        margin-bottom: -1%;
+    }
+
+    .ratingscaleTeamRemoved .beginBtn {
+        margin-top: -28%;
+        margin-right: -4.7%;
+    }
+
+    .slidercontent p {
+        font-size: 110%;
+    }
+
+    .slidercontent h4 {
+        font-size: 100%;
+    }
+
+    .OverallScale {
+        width: 91%;
+    }
+
+    .teamFeedback .rateThisQuestion {
+        width: 86%;
+    }
+
+
+    .questionarea {
+        margin-bottom: 5%;
+    }
+
+    .teamUser span {
+        font-size: 100%;
+    }
+
+    .teamUser {
+        width: 13%;
+        margin-top: 9.6%;
+    }
+
+
+    .teamcapRemoved .teamUser {
+        width: 13%;
+        margin-top: 1.6%;
+    }
+
+    .teamcapRemoved .teamcapRemoved {
+        width: 100%;
+    }
+
+    .teamcapRemoved .slidercontent img {
+        width: 14.3%;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+
+    .teamcapRemoved .OverallScale {
+        width: 100%;
+        left: 7.5%;
+    }
+
+    .teamcapRemoved .beginBtn {
+        margin-top: -27%;
+        text-indent: -3%;
+        margin-right: -4.6%;
+    }
+
+    .teamcapRemoved .teamUser {
+        margin-top: 8.7%;
+        width: 6.6%;
+    }
+
+        .teamcapRemoved .teamUser span {
+            font-size: 80%;
+        }
+
+
+    .teamcapRemoved .importanceArea, .teamcapRemoved .frequencyArea {
+        width: 40%;
+    }
+
+
+
+    #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
+        width: 6.6%;
+    }
+
+    #managerFeedContent .sliderdiv {
+        right: -8.5%;
+    }
+
+    p {
+        font-size: 120%;
+        margin-bottom: 18px;
+    }
+
+    .capabilityQuestion {
+        margin: 4% 0 0 0;
+    }
+
+    .sliderimg {
+        width: 100% !important;
+        margin: 4% 0 0 0;
+    }
+
+    .rateThisQuestion {
+        margin: 2% 0 0 0;
+    }
+
+    .selfcapratingRemoved .rateThisQuestion {
+        margin: -2% 0 0 0;
+    }
+
+
+    .selfcapratingRemoved #selfFeedCont .beginBtn {
+        margin-top: -19%;
+        text-indent: -4%;
+        margin-right: -4.7%;
+    }
+
+
+    .beginBtn {
+        margin-top: -32.5%;
+        text-indent: -3%;
+        margin-right: -4.6%;
+    }
+
+
+    #selfFeedCont .beginBtn {
+        margin-top: -37.5%;
+        text-indent: -4%;
+        margin-right: -4.7%;
+    }
+
+    .selfcapRemoved #selfFeedCont .beginBtn {
+        margin-top: -25%;
+        text-indent: -4%;
+        margin-right: -4.7%;
+    }
+
+
+    #managerFeedContent .questionPart {
+        margin-left: 11%;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1800px) {
+
+    #selfFeedCont .questionPart {
+        margin-left: 23%;
+    }
+
+    .ratingscaleSelfRemoved .rateThisQuestion {
+        margin: -2% 0 2% 0;
+    }
+
+
+    .ratingscaleSelfRemoved .sliderimg {
+        width: 100% !important;
+        margin: 3% 0 0 0;
+    }
+
+    .ratingscaleSelfRemoved .beginBtn {
+        margin-top: -19% !important;
+    }
+
+    .wrapper {
+        padding: 1.5% 1.5% 1% 1%;
+        width: 80%;
+        margin-top: -0.5%;
+    }
+
+
+    #managerFeedContent .questionPart {
+        margin-left: 17%;
+    }
+
+    .sliderdiv {
+        right: -6.5%;
+    }
+
+    #managerFeedContent .sliderdiv {
+        right: -7.5%;
+    }
+
+    .slidercontent p {
+        font-size: 110%;
+    }
+
+    .slidercontent h4 {
+        font-size: 100%;
+    }
+
+    .OverallScale {
+        width: 82%;
+    }
+
+    .slidercontent img {
+        width: 19%;
+    }
+
+    .teamcapRemoved .ratingRemoved .slidercontent img {
+        width: 15.5%;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+
+    .teamcapRemoved .ratingRemoved {
+        width: 100%;
+        left: 6.8%;
+    }
+
+
+    .teamFeedback .rateThisQuestion {
+        width: 86%;
+        margin: 1% 0 1% 0;
+    }
+
+
+    #selfFeedCont .questionarea {
+        margin-bottom: -1%;
+    }
+
+    .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
+        width: 5.4%;
+    }
+
+    #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
+        width: 5.9%;
+    }
+
+    .teamUser span {
+        font-size: 100%;
+    }
+
+
+    .ratingscaleTeamRemoved .teamUser {
+        width: 10%;
+        margin-top: 4.5%;
+    }
+
+    .ratingscaleTeamRemoved .OverallScale {
+        width: 71%;
+        margin-bottom: -1%;
+    }
+
+    .ratingscaleTeamRemoved .beginBtn {
+        margin-top: -20%;
+        margin-right: -4.7%;
+    }
+
+
+    .ratingscaleRemoved .teamUser span {
+        font-size: 80%;
+    }
+
+
+    .ratingscaleRemoved.teamUser {
+        width: 6%;
+        margin-top: 3%;
+    }
+
+    .teamcapRemoved .teamUser {
+        width: 5.8%;
+        margin-top: 7.5%;
+    }
+
+    .teamcapRemoved .beginBtn {
+        margin-top: -20%;
+        margin-right: -4.7%;
+    }
+
+    .teamcapRemoved .importanceArea {
+        margin-right: 4%;
+    }
+
+    .teamUser {
+        width: 11%;
+        margin-top: 8.4%;
+    }
+
+    .teamcapratingRemoved .teamUser {
+        width: 6%;
+        margin-top: 3%;
+    }
+
+
+    .teamcapratingRemoved .beginBtn {
+        margin-top: -15.5%;
+        margin-right: -4.7%;
+    }
+
+
+    .teamcapratingRemoved .frequencyArea {
+        width: 100%;
+    }
+
+    .teamcapratingRemoved .slidercontent img {
+        float: left;
+        width: 6.2%;
+        margin-right: 1.5%;
+        margin-top: -0.8%;
+    }
+
+
+    .teamcapratingRemoved .frequencyArea {
+        width: 100%;
+        left: 8.5%;
+        margin-bottom: -3%;
+    }
+
+
+
+
+
+    p {
+        font-size: 110%;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+
+    .capabilityQuestion {
+        margin: 3% 0 0 0;
+    }
+
+    .sliderimg {
+        width: 100% !important;
+        margin: 3% 0 0 0;
+    }
+
+    .beginBtn {
+        margin-top: -22%;
+        margin-right: -4.7%;
+    }
+
+    .selfcapRemoved .beginBtn {
+        margin-top: -18%;
+        margin-right: -4.7%;
+    }
+
+    .selfcapratingRemoved .beginBtn {
+        margin-top: -14%;
+        margin-right: -4.7%;
+    }
+
+
+    .rateThisQuestion {
+        margin: 1% 0 2% 0;
+    }
+
+
+    .selfcapratingRemoved .rateThisQuestion {
+        margin: -2% 0 2% 0;
+    }
+}
+
+
+@media screen and (max-width: 1800px) and (min-width: 1000px) {
+
+    .selfcapratingRemoved .rateThisQuestion {
+        margin: 1% 0 2% 0;
+    }
+
+
+    .selfcapratingRemoved .beginBtn {
+        margin-top: -15.5%;
+        background-size: 60% 70% !important;
+        margin-right: -5.3%;
+        text-indent: -4%;
+    }
+
+
+    #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
+        width: 5.5%;
+    }
+
+
+    #managerFeedContent .questionPart {
+        margin-left: 21.5%;
+    }
+
+    #selfFeedCont .questionPart {
+        margin-left: 24%;
+    }
+
+
+    .teamUser {
+        margin-top: 8.5%;
+    }
+
+    .teamcapRemoved .teamUser {
+        margin-top: 7%;
+        width: 5.5%;
+    }
+
+    .teamcapratingRemoved .teamUser {
+        margin-top: 0.5%;
+        width: 5.5%;
+    }
+
+        .teamcapratingRemoved .teamUser span {
+            font-size: 50%;
+            padding: 3% 3% 6% 3%;
+        }
+
+    .teamcapratingRemoved .slidercontent img {
+        float: left;
+        width: 6.5%;
+        margin-right: 1%;
+        margin-top: 0%;
+        margin-left: 5.5%;
+    }
+
+    .teamcapratingRemoved .beginBtn {
+        margin-top: -16%;
+        background-size: 60% 70% !important;
+        margin-right: -5.3%;
+        text-indent: -4%;
+    }
+
+
+    .teamcapratingRemoved .frequencyArea {
+        width: 100%;
+        margin-bottom: 1%;
+        margin-top: 2%;
+    }
+
+    .teamcapratingRemoved .ratingRemoved {
+        width: 100% !important;
+        margin: 0% 0;
+        left: -2% !important;
+    }
+
+        .teamcapratingRemoved .ratingRemoved .slidercontent img {
+            width: 5%;
+            margin-right: 1%;
+            margin-top: 0%;
+        }
+
+
+    .ratingscaleSelfRemoved .rateThisQuestion {
+        margin: 1% 0 2% 0;
+    }
+
+
+    .ratingscaleSelfRemoved .sliderimg {
+        width: 100% !important;
+        margin: 1% 0 0 0;
+    }
+
+    .ratingscaleSelfRemoved .beginBtn {
+        margin-top: -22% !important;
+    }
+
+    .beginBtn {
+        margin-top: -23%;
+        background-size: 60% 70% !important;
+        margin-right: -5.3%;
+        text-indent: -4%;
+    }
+
+    .selfcapRemoved .beginBtn {
+        margin-top: -19%;
+        background-size: 60% 70% !important;
+        margin-right: -5.3%;
+        text-indent: -4%;
+    }
+
+    .beginBtn:hover {
+        background-size: 60% 70% !important;
+    }
+
+    .sliderdiv {
+        width: 460px !important;
+        right: -6.5%;
+    }
+
+    .OverallScale {
+        width: 75%;
+        margin: 0% 0;
+    }
+
+
+    .ratingRemoved {
+        width: 100% !important;
+        margin: 0% 0;
+        left: 10% !important;
+    }
+
+
+
+        .ratingRemoved .slidercontent img {
+            width: 15%;
+            margin-right: 2%;
+            margin-top: 1%;
+        }
+
+    .teamcapRemoved .beginBtn {
+        margin-top: -20%;
+        background-size: 60% 70% !important;
+        margin-right: -5.3%;
+        text-indent: -4%;
+    }
+
+  
+    .teamcapRemoved .ratingRemoved {
+        width: 100% !important;
+        margin: 0% 0;
+        left: 6.6% !important;
+    }
+
+
+
+    .ratingscaleTeamRemoved .teamUser {
+        margin-top: 1.8%;
+    }
+
+
+    .ratingscaleTeamRemoved .beginBtn {
+        margin-top: -21%;
+        margin-right: -5.3%;
+        text-indent: -4%;
+    }
+
+
+
+    .teamFeedback .sliderdiv {
+        width: 460px !important;
+        right: -7%;
+    }
+
+
+    .wrapper {
+        width: 80%;
+        margin-top: -0.5%;
+        padding: 1% .5% 0.5% 0.3%;
+    }
+
+    .rateThisQuestion {
+        margin: .5% 0 0 0;
+    }
+
+
+
+    p {
+        font-size: 90%;
+        line-height: 1.1;
+        padding-bottom: 0.4%;
+    }
+
+
+
+    .SI3 {
+        font-size: 12px;
+        margin-bottom: 0.5%;
+    }
+
+    .qn {
+        font-size: 100%;
+    }
+
+    .capabilityQuestion {
+        margin: 0% 0 0 0;
+    }
+
+    .sliderimg {
+        margin: 0% 0 0 0;
+    }
+
+    .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
+        width: 5%;
+    }
+
+    .teamFeedback .freqOverall .freqImg, .teamFeedback .capOverall .capImg, .teamFeedback .rateOverall .rateImg {
+        width: 4.4%;
+    }
+
+    .questionPart {
+        margin-top: 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 3000px) and (min-width: 1800px) {
+
+    .sliderdiv {
+        width: 700px !important;
+    }
+}

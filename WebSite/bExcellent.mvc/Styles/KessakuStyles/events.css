@@ -1,0 +1,112 @@
+body
+{
+    background: #eeeeee;
+}
+
+h1
+{
+    position: relative;
+}
+
+.eventbrite
+{
+    position: absolute;
+    right: 0;
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+
+.caccbg
+{
+    background: #eeeeee;
+    float: left;
+    width: 100%;
+}
+
+.graydroplet
+{
+    background: url("../../images/kessakuimage/gray-bg.jpg") no-repeat;
+    background-size: 30% auto;
+    width: 100%;
+    float: left;
+}
+
+.events
+{
+    margin-top: 2%;
+}
+
+    .events li
+    {
+        float: left;
+        width: 31%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+
+.day
+{
+    float: left;
+    width: 20%;
+    background: #848686;
+    padding: 5% 3%;
+    margin-top: 0.2em;
+    height: 0;
+    padding-bottom: 25%;
+}
+
+    .day p
+    {
+        height: 5em;
+        display: table;
+    }
+
+        .day p span
+        {
+            font-size: 80%;
+            color: #fff;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+.eventsdetails
+{
+    width: 70%;
+    float: right;
+}
+
+    .eventsdetails h3
+    {
+        font-size: 150%;
+        margin-bottom: 1%;
+    }
+
+    .eventsdetails p
+    {
+        font-size: 100%;
+        margin-bottom: 1%;
+    }
+
+.type
+{
+    border-top: 1px solid #b9baba;
+    padding: 0.5em 0 0;
+    margin: 0.5em 0 0;
+}
+
+.register
+{
+    padding: 0.5em 1em;
+    background: #e0b001;
+    color: #fff;
+    border-radius: 0.5em;
+    width: inherit;
+    text-align: center;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.last
+{
+    margin-right: 0 !important;
+}

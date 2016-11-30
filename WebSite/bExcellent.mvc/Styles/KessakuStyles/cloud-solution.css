@@ -1,0 +1,195 @@
+.cloudsolutionbg {
+    background: url("../../images/KessakuImage/kessaku-cloud.jpg") #eeeeee no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    padding-bottom: 1em;
+    position: relative;
+    /*margin-top: 5em;*/
+}
+
+    .cloudsolutionbg .fourcolumn li .bottom {
+        position: relative;
+        background: #fff;
+        clear: both;
+        /*border-bottom-right-radius: 2em;*/
+        height: 0;
+        padding: 6% 0 30% 0;
+    }
+
+        .cloudsolutionbg .fourcolumn li .bottom p {
+            margin: 0em 1.5em;
+            padding: 1em 0;
+            font-size: 75%;
+            /*width: 70%;*/
+            width: 69%;
+            border-top: 1px solid #ccc;
+        }
+
+    .cloudsolutionbg h1, .cloudsolutionbg h2 {
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    .cloudsolutionbg h1 {
+        /*background: url(../../images/KessakuImage/icons/kessaku-cloud.png) no-repeat top 2em left 0;*/
+        background: url(../../images/KessakuImage/icons/cloud-as-coach-home-icon.png) no-repeat top 2em left 0;
+        padding: 2.5em 0 1em 0;
+        background-size: auto 45%;
+        width: 34%;
+        text-align: center;
+        margin-top: 6%;
+        margin-left:37%;
+    }
+
+    .cloudsolutionbg h2 {
+        width: 60%;
+        margin-bottom: 6%;
+        font-size: 150%;
+    }
+/*Cloud Solution PoE*/
+.cloud-POE {
+    background: url("../../images/KessakuImage/poe-bg.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 0;
+    padding-bottom: 40%;
+}
+
+.cloud-pr {
+    background: url("../../images/KessakuImage/performance-bg.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 0;
+    padding-bottom: 37%;
+}
+
+.subbg {
+    background: url("../../images/KessakuImage/inner-pg-bg.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 0;
+    padding-bottom: 30%;
+}
+
+
+    .subbg .CloudRight {
+        height: 23em !important;
+    }
+
+    .subbg .name, .subbg .subname, .cloud-pr .name, .cloud-pr .subname {
+        color: #535758 !important;
+    }
+
+.cloudCol {
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+    .cloudCol li {
+        width: 49%;
+        float: left;
+        list-style-type: none;
+    }
+
+        .cloudCol li .cloudHead {
+            background: #e0b001;
+            width: 20%;
+            height: 0;
+            padding-bottom: 20%;
+            position: relative;
+        }
+
+        .cloudCol li .icon {
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            height: 0;
+            right: 15%;
+            padding-bottom: 70%;
+        }
+
+        .cloudCol li .name {
+            position: relative;
+            font-size: 200%;
+            padding: 1em 0em 0em 0em;
+            color: #ffffff;
+        }
+
+.CloudRight p {
+    font-size: 100%;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.CloudRight {
+    display: table;
+    height: 33em;
+}
+
+    .CloudRight .cont {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.cloudCol li .subname {
+    position: relative;
+    font-size: 100%;
+    padding: 0.5em 0em;
+    color: #ffffff;
+    width: 60%;
+}
+
+.learnmore a {
+    background: #e0b001;
+    padding: 0 0.5em;
+    float: left;
+    width: 18%;
+    text-align: center;
+    margin-top: 0.5em;
+    height: 2.4em;
+    line-height: 2.4em;
+    position: relative;
+    color: #fff;
+    font-size: 105%;
+    text-decoration: none;
+}
+
+.cloudCol li:last-child {
+    float: right;
+    width: 45%;
+}
+
+.cloudCol .pr {
+    right: 20% !important;
+}
+
+.CloudRight h1 {
+    text-align: left;
+    color: #333;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+.italicTxt {
+    font-style: italic;
+}
+
+.CloudRight p:nth-last-child(2) {
+    padding: 0.5em 0em 0.2em 0em;
+}
+
+.CloudRight p:last-child {
+    padding: 0.1em 0em 0.5em 0.3em;
+}
+
+
+.cloud-pr .CloudRight {
+    height: 30em;
+}

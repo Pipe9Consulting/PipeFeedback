@@ -1,0 +1,72 @@
+[
+	{
+		"name" : "Paulo Martinez, Microsoft, Partner Account Manager",
+		"image" : "../../Images/ms.png",
+		"text" : "&#8220;Alan Dowzall made my partners stop, think and understand the importance of building a solid business strategy for the Cloud starting immediately. In less than 1 hour he was able to make the partners get real about the Cloud opportunity and get their business focused on the cloud path to success.&#8221;"
+	},
+	{
+		"name" : "Seth Patton, Senior Director, Microsoft CRM Online",
+		"image" : "../../Images/ms.png",
+		"text" : "&#8220;Alan Dowzall helped us to kick start our business planning efforts for launching Microsoft Dynamics CRM Online. He offered us a simple and sensible approach to getting right to the most critical activities that needed focus. His high energy and passionate coaching style was exactly what we needed.&#8221;"
+	},
+	{
+		"name" : "Angel L. Prez, Vice President, Rock Solid Technologies",
+		"image" : "../../Images/rock-solid-small.png",
+		"text" : "&#8220;Alan Dowzall made us really think about the business issues holding us back and what we need to move forward. Alan tapped into our business KPIs, practices and processes and within 4 short hours helped us evaluate the work we need to do to improve.&#8221;"
+	},
+	{
+		"name" : "Pattie Grimm, Director of Field Readiness, Microsoft Dynamics",
+		"image" : "../../Images/ms.png",
+		"text" : "&#8220;Alan's Business Performance improvement approach and coaching has provided to us an arsenal of tools analysis and insights that have taken us to the next level in our journey to become a High Performance organization.&#8221;"
+	},
+	{
+		"name" : "Jon Farmer, Director, Microsoft CRM Online",
+		"image" : "../../Images/ms.png",
+		"text" : "&#8220;Alan played an instrumental role in helping us get ready for the roll out of Microsoft Dynamics CRM Online. Alans unique coaching style coupled with his expert understanding of what it takes to get ready to launch a major new business application offering in the Cloud made it possible for us to take a massive step forwards in preparing to launch Microsoft Dynamics CRM Online.&#8221;"
+	},
+	{
+		"name" : "Petra Daiberl, Group HR Manager, Microsoft Dynamics",
+		"image" : "../../Images/ms.png",
+		"text" : "&#8220;The work exceeded my expectations. Alan Dowzall delivers your money's worth and much more. He provides the tools that you need to shape a world class performance enhancing strategy.&#8221;"
+	},
+	{
+		"name" : "Vicente Sanchez Cabezon, Business Development Leader, Microsoft Dynamics",
+		"image" : "../../Images/ms.png",
+		"text" : "&#8220;What Alan's approach really gave me was the knowledge and insight to pinpoint the right actions required to take our business leaders to the next level.&#8221;"
+	},
+	{
+		"name" : "Rasmus Hartung, Managing Partner, Alfa People",
+		"image" : "../../Images/alfa-small.png",
+		"text" : "&#8220;Thank you for a fantastic kick-start! You guys did an excellent job taking us through the assessment of our current processes. Feedback from the team has been extremely positive and we are all very committed.&#8221;"
+	},
+	{
+		"name" : "Linda Collins, VP Services, Western Computer",
+		"image" : "../../Images/western-computer-small.png",
+		"text" : "&#8220;I wanted to thank you so much for your efforts yesterday. I felt the workshop was a total success and the comments from Tom Bardos and the rest of our team was nothing short of total excitement.&#8221;"
+	},
+	{
+		"name" : "Bryan Wilton, President, Interdyn Progressive Group",
+		"image" : "../../Images/Interdyn-small.png",
+		"text" : "&#8220;The workshop enabled us to assess our core business methodologies in a way and to a level of depth that we have never done before. I really liked the approach we followed and the feedback from the team was extremely positive.&#8221;"
+	},
+	{
+		"name" : "Laura Gonzalez, Managing Director, Dax Pro Consulting",
+		"image" : "../../Images/Dax-small.png",
+		"text" : "&#8220;The program exceeded all of my expectations. Before the program based on Microsoft’s new partner program announcements we were unsure about the right direction for our business. Alan Dowzall delivered a program that really made us think about our business to a level we had never done before. He provided the tools that helped us to shape the right business strategy for the future.&#8221;"
+	},
+	{
+		"name" : "Miguel Angel Ordonez, CEO, FesWorld",
+		"image" : "../../Images/fes-small.png",
+		"text" : "&#8220;Alan Dowzall's work gave us the insight to pinpoint the right actions required to get to the next level.&#8221;"
+	},
+	{
+		"name" : "Hans Wigdahl, Team Manager, Sogeti",
+		"image" : "../../Images/sogetti-small.png",
+		"text" : "&#8220;Alan Dowzall provided the coaching and tools that helped guide us to make necessary improvements in the way our Sales & Services teams engage and manage customers.&#8221;"
+	},
+	{
+		"name" : "Francisco Nelson, Director, Axxon Consulting",
+		"image" : "../../Images/axxon-small.png",
+		"text" : "&#8220;Alan's work exceeded our expectations helping us to shape a World-Class Cloud business strategy.&#8221;"
+	}
+]

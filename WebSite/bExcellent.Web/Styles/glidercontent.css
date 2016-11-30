@@ -1,0 +1,154 @@
+﻿.glidecontentwrapper {
+	position: relative;
+	width: 500px;
+	min-height: 600px;
+	height:auto;
+	overflow: hidden;
+	float:right;
+	color:#666;
+	margin-left:30px;
+}
+.glidecontentwrapperF {
+	position: relative;
+	width: 800px;
+	min-height: 530px;
+	overflow: hidden;
+	float:right;
+	color:#666;
+	background:#e5e5e5;
+}
+.glidecontent {
+	position: absolute;
+	visibility: hidden;
+	width: 950px;
+	overflow:hidden;
+	}
+.glidecontent li{width:30%;}
+.glidecontenttoggler {
+	width: 350px;
+	margin-top: 6px;
+	text-align: center;
+}
+.rightcolfeedback h1, .glidecontenttoggler h1 {
+	color:#5e5e5e;
+	font-size:30px;
+	padding-bottom:25px;
+	padding-top:30px;
+	text-align:left;
+	font-weight:normal;
+}
+.glidecontenttoggler h2
+{
+	color:#fff;
+	font-size:40px;
+	padding-bottom:40px;
+	text-align:center;
+}
+.glidecontenttoggler h3{ text-align:right; clear:both; float:none; height:50px}
+.glidecontenttoggler a {
+	display: -moz-inline-box;
+	display: inline-block;
+	background:#808080;
+	width:90px;
+	height:75px;
+	padding:15px 10px 10px;
+	margin:10px;
+	color:#fff;
+	float:left;
+	line-height:14px;
+	font-size:12px;
+	text-align:left;
+	text-decoration:none;
+	float:left;
+	margin-left:0;
+}
+.glidecontenttoggler a.selected, .glidecontenttoggler a.selected:hover {
+	color: #fff;
+	text-decoration:none;
+	text-align:left;
+	background:#e0b101;
+}
+.glidecontenttoggler a:hover {
+	background: #ccc;
+	color: black;
+}
+.glidecontenttoggler a.toc {
+}
+.glidecontenttoggler a.prev, .glidecontenttoggler a.next {
+}
+.glidecontenttoggler a.prev:hover, .glidecontenttoggler a.next:hover {
+	background: #1A48A4;
+	color: white;
+}
+.glidecontenttoggler h5 {
+	text-align:left;
+	color:#666;
+	font-size:12px
+}
+/*take self feedback*/
+.glidecontenttsf{width:340px;}
+.glidecontenttsf a {
+	display: -moz-inline-box;
+	display: inline-block;
+	width:250px;
+	background-color: #808080;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    height: 115px;
+    list-style: none outside none;
+    margin: 0 10px 10px 0;
+    padding: 9px;
+    text-align: left;
+    text-decoration: none;
+    width: 124px;
+}
+.glidecontenttsf a.selected, .glidecontenttsf a.selected:hover {
+	color: #fff;
+	text-decoration:none;
+	text-align:left;
+	background:#e0b101;
+}
+.glidecontenttsf a:hover {
+	background: #e0b101;
+	color: #fff;
+}
+.glidecontenttsf a.toc {
+}
+.glidecontenttsf a.prev, .glidecontenttsf a.next {
+}
+.glidecontenttsf a.prev:hover, .glidecontenttsf a.next:hover {
+	background: #1A48A4;
+	color: white;
+}
+.3col{width:780px !important}
+.rightcolfeedback, .rightcolfeedback ul{margin:0 !important;}
+.glidecontenttsf a h2
+{
+   	font-size:50px;
+	padding:9px 0 0;
+	text-align:center;
+	font-weight:lighter;
+	margin:0;
+	padding-bottom:0px;
+}
+.glidecontenttsf .img
+{ 
+    text-align:right; 
+    clear:both; 
+    float:none; 
+    height:60px;
+    padding:6px;
+}
+.glidecontenttsf img
+{
+    border:0;
+}
+.glidecontenttsf p
+{
+    text-align:left;
+    font-weight:normal;
+    font-size:12px;
+    bottom:0;
+}
+.act{background:#000;}

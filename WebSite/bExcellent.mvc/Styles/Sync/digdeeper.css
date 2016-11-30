@@ -1,0 +1,1299 @@
+﻿.stand {
+    width: 18%;
+    float: left;
+    margin-right: 5%;
+}
+
+    .stand ul {
+        position: absolute;
+        width: 95%;
+        height: 98%;
+    }
+
+    .stand li {
+        background: none repeat scroll 0 0 #808080;
+        cursor: pointer;
+        float: left;
+        margin: 0 0 3% 0;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 29%;
+    }
+
+        .stand li img {
+            position: absolute;
+            right: 3%;
+            top: 16%;
+            width: 20%;
+            height: auto;
+        }
+
+        .stand li p {
+            color: #fff;
+            left: 3%;
+            bottom: 8%;
+            position: absolute;
+        }
+
+.standlaning .slimScrollDiv, .scroll1 {
+    width: 100% !important;
+    height: 10% !important;
+    padding-bottom: 180% !important;
+    position: relative;
+}
+
+.selected {
+    background: #e0b001 !important;
+}
+
+.digdeeper {
+    float: left;
+    width: 74%;
+    display: table;
+    border-collapse: collapse;
+}
+
+    .digdeeper .slimScrollDiv {
+        height: 2200px;
+        padding-bottom: 0 !important;
+        position: relative !important;
+    }
+
+    .digdeeper .scroll2 {
+        width: 100% !important;
+        position: absolute !important;
+        padding-bottom: 0 !important;
+    }
+
+    .digdeeper table {
+        width: 100%;
+    }
+
+    .digdeeper td {
+        padding: 0.5%;
+        width: 12.5%;
+    }
+
+.digcol {
+    float: left; /*padding: 0.5% 0;*/
+    background: #dbdbdb;
+    display: table-cell;
+    width: 3%;
+    position: relative;
+    height: 0;
+    padding-bottom: 5%;
+    text-indent: 0.5%;
+}
+
+.deepertable .digcol {
+    padding-bottom: 15%;
+}
+
+.deepertable .seventhcol li {
+    text-indent: 25% !important;
+    position: relative;
+    text-align: left;
+}
+
+.deepertable .seventhcol .tick {
+    position: absolute;
+}
+
+.digcol ul {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: table;
+    border-top: 2px solid #ccc;
+    top: 0;
+}
+
+    .digcol ul ul {
+        border: 0;
+        height: auto;
+    }
+
+.digcol p {
+    color: #5e5e5e;
+}
+
+.deepertable .digcol .gap p {
+    width: 100%;
+    text-align: center;
+    display: inline !important;
+}
+
+.average {
+    color: #353535 !important;
+    font-weight: bold;
+}
+
+.digrow {
+    clear: both;
+    width: 100%;
+    display: table-row;
+    background: #ddd;
+}
+
+.secondcol ul {
+    background: #e5e5e5 !important;
+}
+
+.forthcol ul {
+    background: #e5e5e5 !important;
+}
+
+.fifthcol ul {
+    background: #e5e5e5 !important;
+}
+
+.picholder, .picholder1 {
+    float: left;
+    width: 50%;
+    padding-top: 5%;
+}
+
+    .picholder img, .picholder1 img {
+        width: 65%;
+        height: auto;
+        cursor: pointer;
+    }
+
+.deepertable .fifthcol li {
+    text-indent: 0;
+}
+
+.secondcol, .forthcol, .fifthcol, .sixthcol {
+    background: #b7b7b7;
+}
+
+.firstcol, .thirdcol, .fifthcol, .seventhcol {
+    background: #dbdbdb;
+}
+
+.firstcol {
+    width: 8%;
+}
+
+.secondcol {
+    width: 38%;
+}
+
+.thirdcol {
+    width: 9%;
+}
+
+.forthcol {
+    width: 5%;
+    text-align: center;
+    text-indent: 0;
+}
+
+.fifthcol {
+    width: 9%;
+}
+
+.sixthcol {
+    width: 12.3%;
+}
+
+.seventhcol {
+    width: 6%;
+}
+
+.fisrtsixthcol {
+    background: #cac9c9;
+}
+
+.deepertable {
+    margin-top: 0.1em;
+    float: left;
+    width: 100%;
+    display: table;
+}
+
+    .deepertable .digcol li {
+        padding: 0;
+        display: table-row;
+        border-bottom: 1px solid #ccc;
+        text-indent: 7%;
+    }
+
+    .deepertable .secondcol li {
+        text-indent: 3%;
+    }
+
+        .deepertable .secondcol li p {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+    .deepertable .digcol li ul {
+        clear: both;
+    }
+
+    .deepertable .digcol li p {
+        display: table-cell !important;
+        vertical-align: middle !important;
+        font-weight: 500;
+    }
+
+    .deepertable .digcol li li {
+        float: left;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0;
+        height: 16.6%;
+    }
+
+    .deepertable .firstcol p {
+        margin-top: 5%;
+        position: absolute;
+        color: #353535;
+        padding-left: 5%;
+    }
+
+    .deepertable .firstcol li {
+        text-align: center;
+        text-indent: 0;
+    }
+
+        .deepertable .firstcol li img {
+            padding-top: 20%;
+            width: 60%;
+            height: auto;
+        }
+
+    .deepertable .firstcol, .deepertable .thirdcol, .deepertable .sixthcol, .deepertable .seventhcol {
+        background: #dbdbdb;
+    }
+
+    .deepertable .secondcol, .deepertable .forthcol, .deepertable .fifthcol, .deepertable .lastcol {
+        background: #e5e5e5;
+    }
+
+        .deepertable .forthcol li {
+            text-align: center;
+        }
+
+    .deepertable .sixthcol ul {
+        position: relative;
+    }
+
+    .deepertable .sixthcol li {
+        height: 0;
+        padding-bottom: 19.5%;
+        width: 100%;
+        float: left;
+    }
+
+.averagecol {
+    border-bottom: none !important;
+}
+
+.deepertable .sixthcol li ul li {
+    width: 23%;
+    border-bottom: 0;
+    border-right: 1px solid #ccc;
+    padding: 4% 0 5% 0;
+}
+
+.deepertable .lastcol li {
+    height: 0;
+    padding-bottom: 19.5%;
+    width: 100%;
+    float: left;
+}
+
+    .deepertable .lastcol li ul li {
+        width: 24.6%;
+        border-right: 0;
+    }
+
+.deepertable .sixthcol li ul li:last-child {
+    border-right: 0;
+}
+
+.deepertable .lastcol li {
+    position: relative;
+}
+
+.gap {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.tick {
+    width: 50%;
+    float: right;
+}
+
+    .tick img {
+        width: 50%;
+        height: auto;
+    }
+
+.deepertable .thirdcol li:empty {
+    display: block;
+    height: 0;
+    padding-bottom: 14.6%;
+    border-bottom: 0.1em solid #dbdbdb;
+}
+
+.achieved2mask {
+    background: url("../../images/chart/1920/goal-achieved2-mask.png") no-repeat scroll left 0 top / 50% 100% rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+}
+
+.achieved3mask {
+    background: url("../../images/chart/1920/goal-achieved3-mask.png") no-repeat scroll left 0 top / 75% 100% rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+}
+
+.achieved4mask {
+    background: url("../../images/chart/1920/goal-achieved4-mask.png") no-repeat scroll left 0 top / 100% 100% rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+}
+
+.exceed4mask {
+    background: url(../../images/chart/1920/goal-exceed4-mask.png) no-repeat scroll left 0 top / 100% 100% rgba(0, 0, 0, 0);
+    background-size: auto 100%;
+}
+
+.exceed3mask {
+    background: url(../../images/chart/1920/goal-exceed3-mask.png) no-repeat scroll left 0 top / 100% 100% rgba(0, 0, 0, 0);
+    background-size: auto 100%;
+}
+
+.exceed2mask {
+    background: url(../../images/chart/1920/goal-exceed2-mask.png) no-repeat scroll left 0 top / 100% 100% rgba(0, 0, 0, 0);
+    background-size: auto 100%;
+}
+
+.lastcol .achieved1mask, .lastcol .achieved2mask, .lastcol .achieved3mask, .lastcol .achieved4mask, .lastcol .exceed4mask, .lastcol .exceed3mask, .lastcol .exceed2mask {
+    position: absolute;
+    left: 0;
+    height: 16.6%;
+    width: 100%;
+}
+
+.indexrightarrow {
+    background: url("../../Images/chart/standing/index-arrow.png") no-repeat scroll left center / 100% 100% rgba(0, 0, 0, 0);
+    height: 100%;
+    left: -14%;
+    position: absolute;
+    width: 14%;
+}
+
+.indexrightclose {
+    background: url("../../images/chart/standing/plus-bg.png") no-repeat scroll center center / 70% 70% #E0B001;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 0;
+    padding-bottom: 3.5%;
+    position: absolute;
+    left: -2%;
+    top: -3%;
+    width: 3.5%;
+    z-index: 9;
+}
+
+.indexright {
+    background: none repeat scroll 0 0 #5E5E5E;
+    height: auto;
+    padding-bottom: 1%;
+    position: fixed;
+    right: -33.5%;
+    width: 34%;
+    z-index: 9999;
+    top: 9.5vw;
+}
+
+.indexrightclose1 {
+    background: url("../../images/chart/standing/minus-bg.png") no-repeat scroll center center / 70% 70% #E0B001;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 0;
+    padding-bottom: 3.5%;
+    position: absolute;
+    right: 0;
+    top: -3%;
+    width: 3.5%;
+    z-index: 9;
+}
+
+.indexright h1 {
+    color: #FFFFFF;
+    padding: 3% 0;
+}
+
+.helpcontent {
+    margin-left: 2.5%;
+}
+
+.hlprow {
+    background: url("../../images/helpcont-divider.png") no-repeat scroll center bottom / 100% 1px rgba(0, 0, 0, 0);
+    clear: both;
+    float: left;
+    margin-bottom: 1.5%;
+    padding-bottom: 2%;
+    width: 95%;
+}
+
+.hlpheading {
+    color: #E0B001;
+    float: left;
+    font-weight: bold;
+    margin-right: 3%;
+    width: 22%;
+}
+
+.hlpcont {
+    color: #FFFFFF;
+    float: left;
+    width: 75%;
+}
+/*******Browser hack**************/
+@-moz-document url-prefix() {
+    .lastcol .achieved1mask, .lastcol .achieved2mask, .lastcol .achieved3mask, .lastcol .achieved4mask, .lastcol .exceed4mask, .lastcol .exceed3mask, .lastcol .exceed2mask, .lastcol .achieved1, .lastcol .achieved2, .lastcol .achieved3, .lastcol .achieved4;
+
+{
+    height: 100% !important; /* for M.Firefox */
+}
+
+}
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0)*/
+@media screen and (min-width: 0px) and (max-width: 2600px) {
+    #totalavrbg .digcol {
+        min-height: 0.3vw !important;
+        height: auto !important;
+    }
+
+    .deepertable .digcol li {
+        height: 2.4em;
+    }
+
+    .deepertable .firstcol li {
+        height: 10.7em;
+        border-bottom: none;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.84vw !important;
+        padding-bottom: 0 !important;
+    }
+
+        #digdeepcontnet .sixthcol li ul li {
+            padding: 3% 0 0 0 !important;
+        }
+
+    .digrowhd {
+        padding-top: 1%;
+    }
+
+    .digcol .firstcol, .digcol .thirdcol, .digcol .seventhcol {
+        background: #cac9c9;
+    }
+
+    #digdeepcontnet #totalavrbg .sixthcol li, #totalavrbg .lastcol li {
+        padding-bottom: 0 !important;
+    }
+
+    .lastcol .achieved1mask, .lastcol .achieved2mask, .lastcol .achieved3mask, .lastcol .achieved4mask, .lastcol .exceed4mask, .lastcol .exceed3mask, .lastcol .exceed2mask, .lastcol .achieved1, .lastcol .achieved2, .lastcol .achieved3, .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 15% !important;
+    }
+
+    .row3bg .lastcol .achieved1mask, .row3bg .lastcol .achieved2mask, .row3bg .lastcol .achieved3mask, .row3bg .lastcol .achieved4mask, .row3bg .lastcol .exceed4mask, .row3bg .lastcol .exceed3mask, .row3bg .lastcol .exceed2mask, .row3bg .lastcol .achieved1, .row3bg .lastcol .achieved2, .row3bg .lastcol .achieved3, .row3bg .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 21% !important;
+    }
+
+    .row4bg .lastcol .achieved1mask, .row4bg .lastcol .achieved2mask, .row4bg .lastcol .achieved3mask, .row4bg .lastcol .achieved4mask, .row4bg .lastcol .exceed4mask, .row4bg .lastcol .exceed3mask, .row4bg .lastcol .exceed2mask, .row4bg .lastcol .achieved1, .row4bg .lastcol .achieved2, .row4bg .lastcol .achieved3, .row4bg .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 18% !important;
+    }
+
+    .row5bg .lastcol .achieved1mask, .row5bg .lastcol .achieved2mask, .row5bg .lastcol .achieved3mask, .row5bg .lastcol .achieved4mask, .row5bg .lastcol .exceed4mask, .row5bg .lastcol .exceed3mask, .row5bg .lastcol .exceed2mask, .row5bg .lastcol .achieved1, .row5bg .lastcol .achieved2, .row5bg .lastcol .achieved3, .row5bg .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 16% !important;
+    }
+
+    .row6bg .lastcol .achieved1mask, .row6bg .lastcol .achieved2mask, .row6bg .lastcol .achieved3mask, .row6bg .lastcol .achieved4mask, .row6bg .lastcol .exceed4mask, .row6bg .lastcol .exceed3mask, .row6bg .lastcol .exceed2mask, .row6bg .lastcol .achieved1, .row6bg .lastcol .achieved2, .row6bg .lastcol .achieved3, .row6bg .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 14% !important;
+    }
+
+    .row7bg .lastcol .achieved1mask, .row7bg .lastcol .achieved2mask, .row7bg .lastcol .achieved3mask, .row7bg .lastcol .achieved4mask, .row7bg .lastcol .exceed4mask, .row7bg .lastcol .exceed3mask, .row7bg .lastcol .exceed2mask, .row7bg .lastcol .achieved1, .row7bg .lastcol .achieved2, .row7bg .lastcol .achieved3, .row7bg .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 12% !important;
+    }
+
+    .row8bg .lastcol .achieved1mask, .row8bg .lastcol .achieved2mask, .row8bg .lastcol .achieved3mask, .row8bg .lastcol .achieved4mask, .row8bg .lastcol .exceed4mask, .row8bg .lastcol .exceed3mask, .row8bg .lastcol .exceed2mask, .row8bg .lastcol .achieved1, .row8bg .lastcol .achieved2, .row8bg .lastcol .achieved3, .row8bg .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 11% !important;
+    }
+
+    .row9bg .lastcol .achieved1mask, .row9bg .lastcol .achieved2mask, .row9bg .lastcol .achieved3mask, .row9bg .lastcol .achieved4mask, .row9bg .lastcol .exceed4mask, .row9bg .lastcol .exceed3mask, .row9bg .lastcol .exceed2mask, .row9bg .lastcol .achieved1, .row9bg .lastcol .achieved2, .row9bg .lastcol .achieved3, .row9bg .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 10% !important;
+    }
+
+    .row10bg .lastcol .achieved1mask, .row10bg .lastcol .achieved2mask, .row10bg .lastcol .achieved3mask, .row10bg .lastcol .achieved4mask, .row10bg .lastcol .exceed4mask, .row10bg .lastcol .exceed3mask, .row10bg .lastcol .exceed2mask, .row10bg .lastcol .achieved1, .row10bg .lastcol .achieved2, .row10bg .lastcol .achieved3, .row10bg .lastcol .achieved4 {
+        /*height: 100% !important;*/ /* for M.Firefox */
+        height: 9% !important;
+    }
+
+    .deepertable .digcol {
+        padding-bottom: 0;
+        min-height: 7.7vw;
+        height: auto;
+    }
+}
+/******************Hack end*******************/
+.exceed {
+    color: #fff !important;
+}
+
+.lastcol .achieved1, .lastcol .achieved2, .lastcol .achieved3, .lastcol .achieved4 {
+    position: absolute;
+    left: 0;
+    height: 16.6%;
+}
+
+.zeromonth {
+    width: 25%;
+}
+
+.threemonth {
+    width: 37.5%;
+}
+
+.sixmonth {
+    width: 50%;
+}
+
+.ninemonth {
+    width: 62.5%;
+}
+
+.twelvemonth {
+    width: 75%;
+}
+
+.eighteenmonth {
+    width: 87.5%;
+}
+
+.twentyfourmonth {
+    width: 100%;
+}
+
+.endbdr {
+    border-right: 1px dashed #b7b7b7 !important;
+}
+
+#totalavrbg {
+    float: left;
+    /*height: 2.6em;*/
+    clear: both;
+    width: 100%;
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+}
+
+    #totalavrbg .digcol ul {
+        border-top: 0;
+    }
+
+    #totalavrbg .digcol {
+        height: 0 !important;
+        padding-bottom: 3.5% !important;
+    }
+
+    #totalavrbg .sixthcol li, #totalavrbg .lastcol li {
+        padding-bottom: 20% !important;
+    }
+
+        #totalavrbg .sixthcol li li, #totalavrbg .lastcol li li {
+            padding-bottom: 8% !important;
+        }
+
+    #totalavrbg .digcol li {
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        height: 2.4em;
+    }
+
+    #totalavrbg .lastcol div {
+        height: 100% !important;
+    }
+
+.slimScrollBar {
+    opacity: 1 !important;
+    background: #808080 !important;
+    right: 0 !important;
+}
+
+.digrowhd {
+    text-align: center;
+    text-indent: 0;
+    padding-top: 1%;
+}
+
+.achieved1 {
+    background-size: 100% 100% !important;
+}
+
+.achieved2 {
+    background-size: 100% 100% !important;
+}
+
+.achieved3 {
+    background-size: 100% 100% !important;
+}
+
+.achieved4 {
+    background-size: 99% 100% !important;
+}
+
+.lastcol .achieved1 {
+    background-size: auto 100% !important;
+}
+
+.lastcol .achieved2 {
+    background-size: auto 100% !important;
+}
+
+.lastcol .achieved3 {
+    background-size: auto 100% !important;
+}
+
+.lastcol .achieved4 {
+    background-size: auto 100% !important;
+}
+
+@media screen and (min-width: 1920px) {
+    .achieved1 {
+        background: url(../../images/chart/1920/goal-achieved.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/goal-achieved2.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/goal-achieved3.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/goal-achieved4.png) no-repeat top 0px left 0px;
+    }
+
+    .lastcol .achieved1 {
+        background: url("../../Images/chart/1920/goal-achieved.png") no-repeat left top;
+    }
+
+    .lastcol .achieved2 {
+        background: url(../../images/chart/1920/goal-achieved2.png) no-repeat left top;
+    }
+
+    .lastcol .achieved3 {
+        background: url(../../images/chart/1920/goal-achieved3.png) no-repeat top 0px left 0px;
+    }
+
+    .lastcol .achieved4 {
+        background: url(../../images/chart/1920/goal-achieved4.png) no-repeat top 0px left 0px;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1600px) {
+    .achieved1 {
+        background: url(../../images/chart/1920/1680-goal-achieved1.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/1680-goal-achieved2.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/1680-goal-achieved3.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/1680-goal-achieved4.png) no-repeat top 0px left 0px;
+    }
+
+    .deepertable .sixthcol li, .deepertable .lastcol li {
+        padding-bottom: 20% !important;
+    }
+
+        .deepertable .sixthcol li ul li {
+            padding: 4% 0 4% 0 !important;
+        }
+    /*@media screen and (-webkit-min-device-pixel-ratio:0)
+    {
+    .deepertable .sixthcol li, .deepertable .lastcol li
+    {
+        padding-bottom: 19.8% !important;
+    }
+    .deepertable .sixthcol li ul li
+    {
+        padding:4% 0 17% 0 !important
+    }
+    .deepertable .digcol {
+padding-bottom: 14.7%;
+}*/
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1440px) {
+    .achieved1 {
+        background: url(../../images/chart/1920/1600-goal-achieved1.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/1600-goal-achieved2.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/1600-goal-achieved3.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/1600-goal-achieved4.png) no-repeat top 0px left 0px;
+    }
+
+    .deepertable .sixthcol li, .deepertable .lastcol li {
+        padding-bottom: 19.9% !important;
+    }
+
+        .deepertable .sixthcol li ul li {
+            padding: 4% 0 4% 0 !important;
+        }
+    /*@media screen and (-webkit-min-device-pixel-ratio:0)
+    {
+    .deepertable .sixthcol li, .deepertable .lastcol li
+    {
+        padding-bottom: 20.8% !important;
+    }
+    .deepertable .sixthcol li ul li
+    {
+        padding:4% 0 17% 0 !important
+    }
+    .deepertable .digcol {
+padding-bottom: 15.4%;
+}*/
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1400px) {
+    .achieved1 {
+        background: url(../../images/chart/1920/1480-goal-achieved1.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/1480-goal-achieved2.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/1480-goal-achieved3.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/1480-goal-achieved4.png) no-repeat top 0px left 0px;
+    }
+    /*@media screen and (-webkit-min-device-pixel-ratio:0)
+    {
+    .deepertable .sixthcol li, .deepertable .lastcol li
+    {
+        padding-bottom: 19% !important;
+    }
+    .deepertable .sixthcol li ul li
+    {
+        padding:4% 0 17% 0 !important
+    }
+    .deepertable .digcol {
+padding-bottom: 14.2%;
+}*/
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1366px) {
+    .achieved1 {
+        background: url(../../images/chart/1920/1400-goal-achieved1.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/1400-goal-achieved2.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/1400-goal-achieved3.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/1400-goal-achieved4.png) no-repeat top 0px left 0px;
+    }
+    /*@media screen and (-webkit-min-device-pixel-ratio:0)
+    {
+    .deepertable .sixthcol li, .deepertable .lastcol li
+    {
+        padding-bottom: 19.8% !important;
+    }
+    .deepertable .sixthcol li ul li
+    {
+        padding:4% 0 17% 0 !important
+    }
+    .deepertable .digcol {
+padding-bottom: 16%;
+}*/
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1280px) {
+    .achieved1 {
+        background: url(../../images/chart/1920/1366-goal-achieved1.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/1366-goal-achieved2.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/1366-goal-achieved3.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/1366-goal-achieved4.png) no-repeat top 0px left 0px;
+    }
+
+    .deepertable .sixthcol li, .deepertable .lastcol li {
+        padding-bottom: 19.3% !important;
+    }
+
+        .deepertable .sixthcol li ul li {
+            padding: 4% 0 4% 0 !important;
+        }
+    /*@media screen and (-webkit-min-device-pixel-ratio:0)
+    {
+    .deepertable .sixthcol li, .deepertable .lastcol li
+    {
+        padding-bottom: 21.8% !important;
+    }
+    .deepertable .sixthcol li ul li
+    {
+        padding:4% 0 19% 0 !important
+    }
+    .deepertable .digcol {
+padding-bottom: 16%;
+}*/
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+    .achieved1 {
+        background: url(../../images/chart/1920/1280-goal-achieved1.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/1280-goal-achieved2.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/1280-goal-achieved3.png) no-repeat top 0px left 0px;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/1280-goal-achieved4.png) no-repeat top 0px left 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .achieved1 {
+        background: url(../../images/chart/1920/1024-goal-achieved1.png) no-repeat top 0px left 0px;
+        background-size: auto 100%;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/1024-goal-achieved2.png) no-repeat top 0px left 0px;
+        background-size: auto 100%;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/1024-goal-achieved3.png) no-repeat top 0px left 0px;
+        background-size: auto 100%;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/1024-goal-achieved4.png) no-repeat top 0px left 0px;
+        background-size: auto 100%;
+    }
+}
+
+.averagecol {
+    bottom: 0;
+}
+
+.scroll1 ul {
+    position: absolute;
+    height: 98%;
+}
+
+@media screen and (min-width: 2169px) and (max-width: 2570px) {
+    .digdeeper .slimScrollDiv {
+        height: 3200px !important;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.65vw !important;
+    }
+
+    .achieved3 {
+        background-size: 95% 100% !important;
+    }
+
+    .deepertable .firstcol p {
+        font-size: 90%;
+    }
+
+    .lastcol .achieved1 {
+        background-size: auto 100% !important;
+    }
+}
+
+@media screen and (min-width: 1930px) and (max-width: 2169px) {
+    .digdeeper .slimScrollDiv {
+        height: 3400px !important;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.96vw !important;
+    }
+
+    .lastcol .achieved1 {
+        background-size: auto 95% !important;
+    }
+
+    .achieved3 {
+        background-size: 96% 100% !important;
+    }
+
+    .achieved2 {
+        background-size: 98% 100% !important;
+    }
+
+    #digdeepcontnet .sixthcol li ul li {
+        padding: 3.5% 0 0 0 !important;
+    }
+
+    .deepertable .firstcol p {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1929px) {
+    .digdeeper .slimScrollDiv {
+        height: 2500px !important;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.82vw !important;
+    }
+
+    .lastcol .achieved1 {
+        background-size: auto 97% !important;
+    }
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1699px) {
+    .digdeeper .slimScrollDiv {
+        height: 2300px !important;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.8vw !important;
+    }
+
+        #digdeepcontnet .sixthcol li ul li {
+            padding: 3% 0 0 0;
+        }
+
+    .deepertable .firstcol p {
+        font-size: 90%;
+    }
+
+    .lastcol .achieved1 {
+        background-size: auto 94% !important;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1679px) {
+    .digdeeper .slimScrollDiv {
+        height: 2000px !important;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.89vw !important;
+    }
+
+        #digdeepcontnet .sixthcol li ul li {
+            padding: 3.2% 0 0 0 !important;
+        }
+
+    .deepertable .firstcol p {
+        font-size: 90%;
+    }
+
+    .lastcol .achieved1 {
+        background-size: auto 94% !important;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+    .digdeeper .slimScrollDiv {
+        height: 1800px !important;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.77vw !important;
+    }
+
+        #digdeepcontnet .sixthcol li ul li {
+            padding: 4% 0 0 0;
+        }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+    .digdeeper .slimScrollDiv {
+        height: 1600px !important;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.86vw !important;
+    }
+
+        #digdeepcontnet .sixthcol li ul li {
+            padding: 3.2% 0 0 0 !important;
+        }
+
+    .achieved4 {
+        background-size: 100% 100% !important;
+    }
+
+    .lastcol .achieved1 {
+        background-size: auto 90% !important;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1359px) {
+    .digdeeper .slimScrollDiv {
+        height: 1600px !important;
+    }
+
+    #digdeepcontnet .sixthcol li {
+        height: 1.61vw !important;
+    }
+
+        #digdeepcontnet .sixthcol li ul li {
+            padding: 4% 0 0 0 !important;
+        }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .achieved1 {
+        background: url(../../images/chart/1920/1024-goal-achieved1.png);
+        background-repeat: no-repeat;
+        background-position: top 0px left 0px;
+    }
+
+    .achieved2 {
+        background: url(../../images/chart/1920/1024-goal-achieved2.png);
+        background-repeat: no-repeat;
+        background-position: top 0px left 0px;
+    }
+
+    .achieved3 {
+        background: url(../../images/chart/1920/1024-goal-achieved3.png);
+        background-repeat: no-repeat;
+        background-position: top 0px left 0px;
+    }
+
+    .achieved4 {
+        background: url(../../images/chart/1920/1024-goal-achieved4.png);
+        background-repeat: no-repeat;
+        background-position: top 0px left 0px;
+    }
+
+    .achieved2mask {
+        background: url("../../images/chart/1920/goal-achieved2-mask.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left 0 top 50% 100%;
+        background-color: rgba(0, 0, 0, 0);
+        background-size: 50% 100%;
+    }
+
+    .achieved3mask {
+        background: url("../../images/chart/1920/goal-achieved3-mask.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left 0 top;
+        background-color: rgba(0, 0, 0, 0);
+        background-size: 75% 100%;
+    }
+
+    .achieved4mask {
+        background: url("../../images/chart/1920/goal-achieved4-mask.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left 0 top;
+        background-color: rgba(0, 0, 0, 0);
+        background-size: auto 100%;
+    }
+
+    .exceed4mask {
+        background: url(../../images/chart/1920/goal-exceed4-mask.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left 0 top;
+        background-color: rgba(0, 0, 0, 0);
+        ;
+        background-size: 100% 100%;
+    }
+
+    .exceed3mask {
+        background: url(../../images/chart/1920/goal-exceed3-mask.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left 0 top;
+        background-color: rgba(0, 0, 0, 0);
+        background-size: auto 100%;
+    }
+
+    .exceed2mask {
+        background: url(../../images/chart/1920/goal-exceed2-mask.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left 0 top;
+        background-size: 100% 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .indexrightarrow {
+        background: url("../../Images/chart/standing/index-arrow.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left center;
+        background-size: 100% 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .indexrightclose {
+        background: url("../../images/chart/standing/plus-bg.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-color: #E0B001;
+    }
+
+    .indexright {
+        background: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0 0;
+        background-color: #5e5e5e;
+    }
+
+    .indexrightclose1 {
+        background: url("../../images/chart/standing/minus-bg.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center / 70% 70%;
+        background-color: #E0B001;
+    }
+
+    .hlprow {
+        background: url("../../images/helpcont-divider.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center bottom 100% 1px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+#share2 {
+    margin-left: 25.5%;
+}
+
+.sharebtn {
+}
+
+.sharebtn {
+    background: url("../../Images/icons/share2.png") no-repeat left center !important;
+    background-size: 100% 70% !important;
+    display: block;
+    float: left !important;
+    position: absolute !important;
+    text-indent: -5000% !important;
+    z-index: 99999 !important;
+    left: inherit !important;
+    top: inherit !important;
+    width: 4%;
+    height: 10.5%;
+    margin-top: 1%;
+    margin-left: -6%;
+}
+
+.deepertable p {
+    width: auto !important;
+    overflow: visible !important;
+}
+
+
+
+.row5bg .sharebtn {
+    width: 4% !important;
+    height: 9.5% !important;
+}
+
+.row7bg .sharebtn {
+    width: 4% !important;
+    height: 7.5% !important;
+}
+
+.row8bg .sharebtn {
+    width: 4% !important;
+    height: 6.5% !important;
+}
+
+.row6bg .sharebtn {
+    width: 4% !important;
+    height: 8.5% !important;
+}
+
+.row4bg .sharebtn {
+    width: 4% !important;
+    height: 6.5% !important;
+}
+
+.row3bg .sharebtn {
+    width: 4% !important;
+    height: 6.5% !important;
+}
+
+.row2bg .sharebtn {
+    width: 4% !important;
+    height: 6.5% !important;
+}
+
+.row1bg .sharebtn {
+    width: 4% !important;
+    height: 6.5% !important;
+}
+
+.row9bg .sharebtn {
+    width: 4% !important;
+    height: 6.5% !important;
+}

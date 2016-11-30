@@ -1,0 +1,385 @@
+/* ------------------ Cloud as Coach Page CSS Start here --------------- */
+.cloudascoachContainer {
+    background: #eeeeee;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.cloudascoachhomebg {
+    background: url("../../images/KessakuImage/cloud-as-coach-homeBG.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    padding-bottom: 40%;
+    margin-bottom: 0;
+    position: relative;
+    /* margin-top: 5em;*/
+}
+
+.cloud_midbar {
+    position: absolute;
+    width: 100%;
+    /*top: 6em;*/
+    top: 1em;
+}
+
+    .cloud_midbar .cloudcoach {
+        color: #fff;
+        height: 100%;
+        /*font-size: 282%;*/
+        font-size: 250%;
+        width: 100%;
+        margin: 0px auto;
+        padding: 35px 0px 0px 0px;
+    }
+
+.cloudcoachArea {
+    width: 48%;
+    margin: 0px auto;
+}
+
+.coachTiles {
+    width: 100%;
+    margin: 1.5em auto;
+    overflow: hidden;
+}
+
+    .coachTiles li {
+        width: 23%;
+        margin-right: 2%;
+        margin-bottom: 0em;
+        float: left;
+        display: block;
+    }
+
+.cloudIcon {
+    float: left;
+    width: 19%;
+    clear: both;
+    padding-right: 1%;
+}
+
+    .cloudIcon img {
+        width: 100%;
+        height: 100%;
+    }
+
+.coachTiles li .top {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+    .coachTiles li .top p {
+        position: absolute;
+        left: 0.8em;
+        bottom: 0.8em;
+        color: #000;
+        font-size: 100%;
+        width: 71%;
+    }
+
+.coachTiles li .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 0;
+    padding-bottom: 49%;
+}
+
+.coach-First {
+    background: #e0b001;
+}
+
+.coach-Second {
+    background: #ffc82e;
+}
+
+.coach-Third {
+    background: #ffd451;
+}
+
+.coach-Fourth {
+    background: #fbdd6f;
+}
+
+.cloudAsCoachText {
+    background: #fff;
+    margin: 0px auto;
+    width: 68%;
+    padding: 1em;
+    position: relative;
+}
+
+    .cloudAsCoachText h1 {
+        font-size: 220%;
+        /*padding: 0em 0 0.5em 0;*/
+        padding: 0em 0 0em 0;
+    }
+
+    .cloudAsCoachText p {
+        padding: 1em 0 0 0;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+.divider2 {
+    background: url(../../images/KessakuImage/divider2.png) no-repeat;
+    background-size: 100% auto;
+    clear: both;
+    height: 0.6em;
+}
+
+.placeholder h3 {
+    padding: 0 0 1em 0;
+    font-size: 100%;
+}
+
+.coachTilesBox {
+    background: #ffffff;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    margin-bottom: 3em;
+    border-bottom-right-radius: 1em;
+}
+
+.sixcolumn li .coach {
+    padding: 0 0em 30% 0em;
+}
+
+.fourcolumn li .Coachbottom {
+    position: relative;
+    background: #fff;
+    clear: both;
+    border-bottom-right-radius: 2em;
+    height: 0;
+    padding-bottom: 27%;
+}
+    /*.fourcolumn li .Coachbottom .seperate
+        {
+            height: 1px;
+            width: 100%;
+            clear: both;
+            float: left;
+            background: #fff;
+        }
+.fourcolumn li .Coachbottom .seperate span
+            {
+                background: #ccc;
+                height: 1px;
+                width: 85%;
+                float: left;
+                margin: 0 1em;
+            }*/
+
+    .fourcolumn li .Coachbottom p {
+        margin: 1em 1.5em;
+        padding: 1em 0;
+        font-size: 75%;
+        width: 70%;
+    }
+
+.caccbg {
+    width: 100%;
+}
+
+.cloud-POE {
+    /*  background: url("../../images/KessakuImage/cloud-POE.jpg") no-repeat;*/
+    background: url("../../images/KessakuImage/poe-bg.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.cloudCol {
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+    .cloudCol li {
+        width: 49%;
+        float: left;
+        list-style-type: none;
+    }
+
+        .cloudCol li:last-child {
+            float: right;
+            width: 45%;
+        }
+
+        .cloudCol li .cloudHead {
+            background: #e0b001;
+            width: 20%;
+            height: 0;
+            padding-bottom: 20%;
+            position: relative;
+        }
+
+        .cloudCol li .icon {
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            height: 0;
+            right: 15%;
+            padding-bottom: 70%;
+        }
+
+        .cloudCol li .name {
+            position: relative;
+            font-size: 200%;
+            padding: 1em 0em 0em 0em;
+            color: #ffffff;
+        }
+
+        .cloudCol li .subname {
+            position: relative;
+            font-size: 100%;
+            padding: 0.5em 0em;
+            color: #ffffff;
+            width: 60%;
+        }
+
+.CloudRight {
+    display: table;
+    /*height: 33em;*/
+    height: 32.5em;
+}
+
+    .CloudRight .cont {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .CloudRight p {
+        font-size: 100%;
+        padding: 0.5em 0em 0em 0em;
+    }
+
+.learnmore a {
+    background: #e0b001;
+    padding: 0 0.5em;
+    float: left;
+    width: 18%;
+    text-align: center;
+    margin-top: 0.5em;
+    height: 2.4em;
+    line-height: 2.4em;
+    position: relative;
+    color: #fff;
+    font-size: 105%;
+    text-decoration: none;
+}
+
+    .learnmore a:hover {
+        color: #ffffff;
+    }
+
+.cloudCol li .grayname {
+    position: relative;
+    font-size: 200%;
+    padding: 1em 0em 0em 0em;
+    color: #535758;
+}
+
+.cloudCol li .graysubname {
+    position: relative;
+    font-size: 100%;
+    padding: 0.5em 0em;
+    color: #535758;
+    width: 75%;
+}
+
+.iconRight {
+    right: 23%!important;
+}
+
+.analyticsRight {
+    right: 9%!important;
+}
+/* --------------- Cloud Smart Connect --------------- */
+.cloud-SmartConnect {
+    background: url("../../images/KessakuImage/cloud-Smart-Connect.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+    .cloud-SmartConnect .CloudRight {
+        height: 21em !important;
+    }
+
+.cloud-Recognition {
+    background: url("../../images/KessakuImage/cloud-Recognition.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.caccbgNew {
+    background: url("../../images/KessakuImage/inner-pg-bg.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 0;
+    padding-bottom: 26%;
+}
+
+
+    .caccbgNew .CloudRight {
+        height: 20.5em !important;
+    }
+
+.cloudandCoachbg h1 {
+    background: url("../../images/KessakuImage/icons/cloud-as-coach-home-icon.png") no-repeat top 2em left 0;
+    padding: 2.5em 0 1em 0;
+    background-size: auto 45%;
+    width: 80%;
+    text-align: right;
+    margin-top: 6%;
+}
+
+.cloudandCoachbg h1 {
+    color: #fff;
+    margin: 0 auto;
+}
+
+.italicTxt {
+    font-style: italic;
+}
+
+.CloudRight p:nth-last-child(2) {
+    padding: 0.5em 0em 0.2em 0em;
+}
+
+.CloudRight p:last-child {
+    padding: 0.1em 0em 0.5em 0em;
+}
+
+.CloudRight h1 {
+    text-align: left;
+    color: #333;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+.lastPara {
+    padding: 0.5em 0em 0.2em 0em!important;
+}
+
+
+/*----------------------------------------------------*/
+
+
+
+.cloud-POE .CloudRight {
+    height: 28em !important;
+}

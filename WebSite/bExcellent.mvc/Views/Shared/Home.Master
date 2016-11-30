@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="description" content="bexcellent is Social Performance Management for You, Your Team or Your entire Company" />
+    <meta name="keywords" content="Social Performance Management, bexcellent, bexcellent.com, REP, Role Excellence Profile, " />
+    <meta name="author" content="bexcellent.com" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="copyright" content="© 2013 bexcellent.com" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="expires" content="0" />
+    <meta name="robots" content="index,follow" />
+
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+
+    <%--Scripts--%>
+    <link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="../../Scripts/mediaqueries.js" type="text/javascript"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="../../Scripts/ref/jquery-1.8.3.js" type="text/javascript"></script>
+    <script type='text/javascript' src="../../Scripts/ref/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/iscroll.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/myscroll.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/jquery.tabSlideOut.v1.4.1.js"></script>
+    <script src="../../Scripts/ref/HomeMaster.js"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/ref/common.js"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/plugin/handlebars/handlebars-1.0.js"></script>
+
+    <%--StyleSheet--%>
+    <%--<link rel="stylesheet" href="../../Styles/Stylesheet1.css" />--%>
+    <link href="../../Styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <input type="hidden" id="pagexvalue" value="0" />
+    <div id="preloader">
+        <div id="status">
+            &nbsp;
+        </div>
+    </div>
+    <div>
+        <div id="header">
+            <div class="main">
+                <div class="accordion">
+                    <a href="/" id="imagelogoHome">
+                        <%--   <img src="../../Images/belogo-1920.png" alt="Bexcellent" align="left" />--%>
+                        <img src="../../Images/kessaku-logo.png" alt="Bexcellent" align="left" />
+                    </a>
+                </div>
+            </div>
+            <div id="hiddenValues" style="visibility: hidden">
+                <div id="userid" runat="server" style="visibility: hidden">
+                </div>
+                <div id="selectedpoe" runat="server" style="visibility: hidden">
+                </div>
+                <div id="createdFeedbacks" runat="server" style="visibility: hidden">
+                </div>
+                <div id="selectedPages" runat="server" style="visibility: hidden">
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <form id="hiddenfieldRedirection">
+        </form>
+        <div class="footer">
+            <div class="main">
+                <div class="copyright">
+                    <span>© 2013 kessaku.com</span><span><a href="/Signup/Terms" target="_blank">Terms</a></span><span><a
+                        href="/Signup/Privacy" target="_blank">Privacy</a></span><span>FAQ</span><span><a
+                            href="mailto:support@pipe9consulting.com">Support</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

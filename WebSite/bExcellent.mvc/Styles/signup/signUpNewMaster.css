@@ -1,0 +1,539 @@
+﻿.login {
+    cursor: pointer;
+    float: right;
+    min-width: 20%;
+    margin-left: 2%;
+    padding: 3.2% 2% 2.6% 0;
+    position: relative;
+    border-right: 1px solid #444;
+}
+
+#paidmember {
+    border: 0;
+}
+ 
+#cartlist {
+    border: 0;
+}
+ 
+.dropdowns {
+    width: 100%;
+}
+
+    .dropdowns a {
+        background: url("../../Images/images/login-arrow.png") no-repeat bottom right rgba(0, 0, 0, 0);
+        background-position: right 0 bottom 0;
+        color: #fff !important;
+        float: right;
+        text-decoration: none;
+        text-align: right;
+        min-width: 66%;
+        max-width: 66%;
+        word-wrap: break-word;
+        padding-bottom: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+    }
+
+.selectdd {
+    background: url("../../images/login-arrow-up.png") no-repeat bottom right rgba(0, 0, 0, 0) !important;
+    background-position: right 0 bottom 0;
+}
+
+.dropdowns img {
+    float: right;
+    max-width: 35px;
+    max-height: 35px;
+    width: 30%;
+    height: auto;
+    margin-left: 3%;
+}
+
+.login:hover > .dropdowns ul, .login:hover > .dropdowns .slimScrollDiv {
+    display: block;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.dropdowns ul {
+    position: absolute;
+    top: 98%;
+    right: 0;
+    width: 108%;
+    height: 60% !important;
+    display: none;
+    z-index: 9999;
+    background-color: #222327 !important;
+    border-radius: 0 0 15px 15px !important;
+}
+
+.dropdowns .slimScrollDiv {
+    position: absolute !important;
+    width: 108% !important;
+    top: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    display: none;
+}
+
+.accordion {
+        display: table;
+        width: 100%;
+        padding: 0% 0% 0% 0%;
+        position: relative;
+        height: 100%;
+    }
+
+    .accordion a, .accordion h3 {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .accordion a.cacLogo {
+        padding-left: 30px;
+    }
+
+    .accordion h3 {
+        cursor: pointer;
+        width: 100px;
+        background: url(../../Images/menu_icon.png) no-repeat center;
+        position: relative;
+    }
+
+
+    .accordion h3:hover {
+        background: url(../../Images/menu_icon_hover.png) no-repeat center;
+    }
+
+    .accordion .down {
+        background: url(../../Images/menu_icon_hover.png) no-repeat center;
+    }
+
+    .accordion div.pane {
+        background: none repeat scroll 0 0 #eee;
+        clear: both;
+        display: none;
+        float: left;
+        width: 90%;
+        position: absolute;
+        top: 101%;
+        z-index: 999999999;
+        left: 1px;
+        border: 1px solid #000;
+    }
+
+#networklist {
+    position: absolute !important;
+    top: 98% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+}
+
+.dropdowns ul li {
+    padding: 0 0 5% 0;
+    width: 100%;
+    background: #222327 !important;
+    background-image: none !important;
+    float: left;
+    clear: both;
+}
+
+    /*.dropdowns ul li:last-child {
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+    }*/
+
+    .dropdowns ul li a {
+        color: #fff !important;
+        background-image: none !important;
+        min-width: 95%;
+        max-width: 95%;
+        text-align: left !important;
+        padding: 3% 0 0 5% !important;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+        line-height: 2;
+    }
+
+#accsettings li a {
+    padding: 3% 0 0% 5% !important;
+}
+
+.dropdowns ul li:hover {
+    background: #e0b001 !important;
+    background-image: none !important;
+    color: #000;
+}
+
+    .dropdowns ul li:hover > a {
+        color: #000 !important;
+    }
+
+.cart {
+    color: #fff;
+    display: none;
+}
+
+    .cart img {
+        width: 20%;
+        height: auto;
+        float: left;
+        margin-right: 5%;
+        display: none;
+    }
+
+    .cart p {
+        padding: 5% 0 0;
+        color: #ffffff;
+        display: none;
+    }
+
+#simplemodal-container {
+    width: 23% !important;
+    height: 0 !important;
+    padding-bottom: 23% !important;
+    /*background: url("../../Images/other-popup-bg.png") no-repeat 0 0 #e5e5e5;*/
+    background: url("../../Images/other-popup-bg-new.png") no-repeat 0 0 #e5e5e5;
+    background-size: 100% 100%;
+}
+
+.becomePaidmember {
+    background: url(../../Images/paid-member.png) no-repeat left 8% center #e0b001;
+    background-size: 15% 84% !important;
+    height: 0;
+    padding-bottom: 22%;
+    padding-left: 28%;
+}
+
+    .becomePaidmember p {
+        color: #ffffff;
+        line-height: 1.1em;
+        font-size: 90%;
+        padding: 11% 0;
+        font-weight: 600;
+    }
+
+#target {
+    background: none repeat scroll 0 0 #454444;
+    bottom: 54px;
+    display: none;
+    float: right;
+    position: absolute;
+    right: 80px;
+    width: 15%;
+}
+
+#target {
+    bottom: 100%;
+    background: #222;
+    position: absolute;
+    right: 0;
+}
+
+    #target li:hover p {
+        color: #e0b001;
+    }
+
+    #target li {
+        clear: both;
+        float: left;
+        width: 100%;
+        cursor: pointer;
+        background: transparent !important;
+    }
+
+        #target li:hover {
+            background: #000 !important;
+        }
+
+        #target li span {
+            float: left;
+            margin: 2% 3% 2% 2%;
+            width: 9%;
+            height: 0;
+            padding-bottom: 9%;
+            font-size: 130%;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+            #target li span img {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                left: 0;
+                top: 0;
+            }
+
+        #target li p, #target li a {
+            float: left;
+            color: #fff;
+            margin: 1%;
+            padding: 1.5% 0 0;
+            text-decoration: none;
+            width: 82%;
+        }
+
+        #target li a {
+            width: 98% !important;
+        }
+ 
+
+.menuArrow {
+    position: absolute;
+    margin-top: -2.3%;
+    margin-left: .3%;
+}
+
+    .menuArrow img {
+        width: 80%;
+    }
+
+
+.accordion div.pane {
+    background: none repeat scroll 0 0 #eee;
+    clear: both;
+    display: none;
+    float: left;
+    width: 60%;
+    position: absolute;
+    top: 95%;
+    z-index: 9999;
+    left: 0;
+    border: 1px solid #000;
+}
+
+.pane li input:checked, .pane li input:not(:checked) {
+    display: none;
+}
+
+    .pane li input:checked + label {
+        background: #000;
+        margin-left: 0;
+        padding: 0;
+    }
+
+        .pane li input:checked + label p {
+            bottom: 3%;
+            color: #e0b001;
+        }
+
+.pane #indicator {
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.pane li {
+    position: relative;
+    width: 23.7%;
+    padding-bottom: 21%;
+    float: left;
+    background: #333;
+    margin: 0 1% 1% 0;
+}
+
+    .pane li:last-child {
+        margin-right: 0;
+    }
+
+    .pane li p {
+        position: absolute;
+        bottom: 7%;
+        left: 5%;
+        color: #fff;
+        font-size: 13px !important;
+    }
+
+    .pane li label {
+        cursor: pointer;
+        display: inline-block;
+        font-weight: normal;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pane li a {
+        color: #FFFFFF;
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+    }
+
+#indicator {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.bukatutup {
+    cursor: pointer;
+    float: right;
+    padding: .9% 0 .8% 0;
+    width: 4.8%;
+    display: block;
+    /* right: 0%; */
+    z-index: 9999999999999999999;
+    /* position: relative; */
+    border-left: 1px solid #333;
+}
+
+}
+
+
+.bukatutup p {
+    float: left;
+    color: #E0B001;
+    padding: 6% 0;
+    display: block;
+}
+
+.bukatutup span {
+    float: left;
+    width: 33%;
+    margin-right: 11%;
+    display: block;
+    left: 35%;
+    position: relative;
+}
+
+    .bukatutup span img {
+        width: 100%;
+        height: 100%;
+    }
+
+.headerRight {
+    float: left;
+    width: 50%;
+}
+
+.headerLeft {
+    float: left;
+    width: 50%;
+    height:100%;
+}
+
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000 !important; /* change if the mask should have another color then white */
+    opacity: 0.5;
+    z-index: 9999998; /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    top: 50%; /* centers the loading animation vertically one the screen */
+    background-image: url(../../images/loading3.gif); /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px; /* is width and height divided by two */
+    z-index: 9999999;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #5E5E5E;
+    opacity: 0.1;
+    z-index: 90;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+  
+@media screen and (max-width: 2600px) and (min-width: 2170px) {
+    
+    .ui.menu {
+        height: 80px;
+    }
+
+    .footerPart {
+        height: 81px;
+    }
+}
+
+@media screen and (max-width: 2169px) and (min-width: 2001px) {
+    
+    .ui.menu {
+        height: 80px;
+    }
+
+    .footerPart {
+        height: 81px;
+    }
+
+    .bukatutup {
+        padding: 1.1% 0 1.1% 0;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1701px) {
+
+    .ui.menu {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1670px) {
+    .ui.menu {
+        height: 53px;
+    }
+}
+
+@media screen and (max-width: 1669px) and (min-width: 1501px) {
+
+
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1401px) {
+
+    .bukatutup {
+            padding: 1% 0 1.1% 0;
+    }
+    .ui.menu {
+        height:51px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
+
+    .bukatutup {
+        padding:1.1% 0 1.1% 0;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+    .bukatutup {
+        padding:1.2% 0 1.2% 0;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+     .bukatutup {
+        padding:1.7% 0 1.7% 0;
+    }
+}

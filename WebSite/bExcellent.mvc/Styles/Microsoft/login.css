@@ -1,0 +1,286 @@
+﻿.loginbackground {
+    background: url("../../images/ms-login-bg.png") no-repeat top right #e5e5e5;
+    background-size: 60% auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.reportbackground {
+    background: url("../../images/report-bg.png") no-repeat top right #e5e5e5;
+    background-size: 42% auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.tileview {
+    width: 17.5%;
+    float: left;
+    margin-right: 4.7%;
+}
+
+    .tileview li {
+        width: 100%;
+        background: #808080;
+        position: relative;
+        padding-bottom: 50%;
+    }
+
+        .tileview li p, .tileview li a {
+            position: absolute;
+        }
+
+        .tileview li p {
+            bottom: 5%;
+            left: 3%;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .tileview li a {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .tileview li img {
+            padding-top: 65%;
+        }
+
+.loginscreen {
+    float: left;
+    width: 55%;
+}
+
+    .loginscreen h1 {
+        padding-top: 40px;
+        padding-bottom: 2%;
+    }
+
+.loginscreenleft {
+    width: 20%;
+    float: left;
+    padding-right: 4%;
+    margin-top: 2.2%;
+}
+
+    .loginscreenleft ul {
+        margin-top: 3%;
+    }
+
+.loginrightpanel {
+    width: 49%;
+    float: right;
+}
+
+.yammerloginpic {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.yammersmallpic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3%;
+    width: 11%;
+    height: 40%;
+}
+
+    .yammersmallpic img {
+        height: 100%;
+        width: 100%;
+    }
+
+.txtarea {
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    padding: 2%;
+    width: 95.5%;
+    margin: 2% 0;
+    color: #808080;
+}
+
+.yammerloginpic img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.loginscreen p {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+}
+
+.loginrightpanel p {
+    color: #fff !important;
+}
+
+.yammerlogin {
+    background: #808080;
+    width: 100%;
+    position: relative;
+    padding-bottom: 22%;
+    margin: 5% 0 2% 0;
+}
+
+.loginscreenleft p {
+    position: inherit;
+    padding-bottom: 1%;
+}
+
+.loginscreenleft li {
+    width: 60%;
+    float: left;
+}
+
+    .loginscreenleft li:last-child {
+        width: 40%;
+    }
+
+.loginscreen li p {
+    margin: 0 0 1% 0;
+}
+
+.loginscreen li input {
+    float: right;
+}
+
+.newuser {
+    float: right;
+    text-decoration: none;
+    margin-top: 1%;
+}
+
+.loginscreen .btn {
+    background: none repeat scroll 0 0 #DEAF00;
+    border: 2px solid #6C6C6C;
+    color: #FFFFFF;
+    float: right;
+    font-weight: bold;
+    padding: 3%;
+    width: 60%;
+}
+
+.loginscreen p, .loginscreen span, .loginscreen a, .loginscreen div, .loginscreen input {
+    color: #353535;
+}
+
+.loginico {
+    width: 20%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+    .loginico img {
+        width: 100%;
+        height: 100%;
+    }
+
+#btnLogin {
+    background: #e0b001;
+    padding: 3% 5%;
+    border: 2px solid #808080;
+    color: #fff;
+    float: right;
+    margin-top: 5%;
+}
+
+.bukatutup {
+    display: none;
+}
+
+.errormsg {
+    background: url("../../Images/error.png") no-repeat scroll left center transparent;
+    clear: both;
+    padding: 0.5% 8%;
+    margin: 20% 0;
+    background-size: 6% 100%;
+}
+
+.report {
+    width: 30%;
+    height: 0;
+    padding-bottom: 12.3%;
+    float: left;
+    background: #808080;
+    margin-right: 2%;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+    .report:focus, .report:hover, .selected {
+        background: #e0b001;
+    }
+
+    .report input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .report img {
+        width: 50.1%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .report p {
+        color: #ffffff;
+        left: 52%;
+        position: absolute;
+        bottom: 5%;
+        width: 35%;
+    }
+
+.icon {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    width: 35%;
+    height: 85%;
+}
+
+    .icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+.reportbtn {
+    clear: both;
+    background: #e0b001;
+    padding: 0.5%;
+    border: 2px solid #808080;
+    width: 8%;
+    margin-top: 1%;
+    text-align: center;
+    font-weight: 600;
+}
+
+    .reportbtn a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
+

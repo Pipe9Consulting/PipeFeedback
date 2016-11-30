@@ -1,0 +1,409 @@
+﻿
+body {
+    background: url("../../Images/new/signUpBg.png") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+    background-size: 100% 95% !important;
+}
+
+.bg {
+    margin: 2%;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .row {
+        padding: 0.6% 0 !important;
+    }
+}
+
+.login, .accordion h3 {
+    display: none;
+}
+
+.signuptile {
+    margin-top: 1%;
+    width: 9%;
+    float: left;
+    margin-right: 15%;
+    background: #000;
+    position: relative;
+    padding-bottom: 8.5%;
+}
+
+    .signuptile .img, .signuptile p {
+        position: absolute;
+    }
+
+    .signuptile .img {
+        width: 100%;
+        text-align: right;
+        padding-top: 5%;
+        right: 3%;
+    }
+
+        .signuptile .img img {
+            width: 30%;
+            height: 30%;
+        }
+
+    .signuptile p {
+        bottom: 5%;
+        left: 7%;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+.contenthold {
+    float: left;
+    width: 55%;
+    background: rgba(0, 0, 0, .8);
+    margin-top: 1%;
+    padding: 0.7% 1.5% 1.5% 1.5%;
+}
+
+    .contenthold h1 {
+        padding-top: 0 !important;
+    }
+
+.col {
+    float: left;
+    width: 40%;
+}
+
+.contenthold h1 {
+    float: left;
+    width: 31%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+
+.contenthold h2 {
+    float: left;
+    width: 31%;
+    color: #fff;
+    font-size: 70%;
+    font-weight: 400;
+}
+
+.contenthold h2 {
+    padding: 3% 0 0 11%;
+    font-size: 90%;
+}
+
+.row {
+    clear: both;
+    padding: 0.5% 0;
+}
+
+#btnuploadingimage:before .col {
+    width: auto;
+}
+
+.level {
+    width: 20%;
+    color: #fff;
+}
+
+.txtcol, #textupload {
+    width: 100%;
+    border: 1px solid #CBCBCB;
+    padding: 1% 1.5%;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.0);
+}
+
+.selectcol {
+    width: 100%;
+    border: 1px solid #CBCBCB;
+    padding: 1% 1.5%;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.0);
+    font-family: Segoe UI;
+}
+
+option {
+    color: #000 !important;
+}
+
+.errormsg, .errormsgpay {
+    background: url("../../Images/error.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    background-size: 6% 100%;
+    color: #fff;
+    padding: 0 0 0 8% !important;
+    line-height: 1.5em;
+    margin-top: 1%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 3%;
+}
+
+.col div:empty {
+    display: none;
+}
+
+.captcha_style {
+    width: 85%;
+    margin-top: 0;
+    font-size: 250%;
+}
+
+.browse {
+    background: none repeat scroll 0 0 #000;
+    border: 0 none;
+    color: #FFFFFF;
+    padding: 10%;
+    cursor: pointer;
+}
+
+.col1 {
+    width: 12% !important;
+    float: left;
+}
+
+.col2 {
+    width: 20% !important;
+    float: left;
+}
+
+.photo {
+    float: left;
+    width: 30%;
+}
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+    }
+
+.check label a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+
+.check input:checked + label {
+    background: url("../../Images/checked.png") no-repeat left center rgba(0, 0, 0, 0);
+    background-size: auto 71%;
+}
+
+.check label {
+    background: url("../../Images/checkbox.png") no-repeat left center rgba(0, 0, 0, 0);
+    background-size: auto 71%;
+    display: inline-block;
+    font-weight: normal;
+    margin: 2% 0 0;
+    padding: 0.5% 0 0.5% 16%;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.signupcol {
+    width: 50%;
+    float: right;
+    margin-top: 2%;
+}
+
+    .signupcol input, #btnUpload, #btnCrop {
+        float: right;
+        background: none repeat scroll 0 0 #e0b001;
+        border: 1px solid #000;
+        color: #000;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 1% 2%;
+    }
+
+        .signupcol input:hover {
+            background: none repeat scroll 0 0 #000;
+            border: 1px solid #e0b001;
+            color: #fff;
+        }
+
+
+#btnCrop {
+    float: left;
+}
+
+.captcha_btn {
+    background: url("../../Images/new/refreshes.png") no-repeat scroll 0 0;
+    margin: 2%;
+    background-size: 100% 100%;
+    border: medium none;
+    cursor: pointer;
+    width: 9%;
+    padding-bottom: 7%;
+    height: 0;
+    float: right;
+    padding-top: 2%;
+}
+
+.check input:checked, .check input:not(:checked) {
+    display: none;
+}
+
+.bukatutup {
+    display: none;
+}
+
+#simplemodal-container {
+    background: none repeat scroll 0 0 #000;
+    padding-bottom: 25.5% !important;
+    width: 42% !important;
+    left: 29% !important;
+}
+
+    #simplemodal-container a.modalCloseImg {
+        padding-bottom: 1.5% !important;
+        width: 1.5% !important;
+    }
+
+    #simplemodal-container .browseright {
+        float: right;
+        width: 29%;
+    }
+
+    #simplemodal-container .browserightcont p {
+        color: #000000 !important;
+        font-size: 80%;
+        padding: 0 0 2%;
+    }
+
+    #simplemodal-container .imgselection {
+        margin-bottom: 4%;
+        position: relative;
+        width: 90%;
+    }
+
+        #simplemodal-container .imgselection img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #simplemodal-container .imgselection p {
+            background: url("../../Images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+            bottom: 0;
+            left: 0;
+            padding: 2% 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        #simplemodal-container .imgselection span {
+            color: #FFFFFF;
+            padding: 0 2%;
+        }
+
+    #simplemodal-container .txtcol, #textupload {
+        border: 1px solid #CBCBCB;
+        color: #5E5E5E;
+        padding: 2% 1.5%;
+        width: 94%;
+    }
+
+#textupload {
+    padding: 0 2% !important;
+    height: 2em;
+}
+
+#simplemodal-container .signupcol input, #btnUpload, #btnCrop {
+    background: none repeat scroll 0 0 #DEAF01;
+    border: 2px solid #6C6C6C;
+    color: #000;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    padding: 1% 2%;
+}
+
+#btnCrop {
+    float: left;
+}
+
+#btnUpload {
+    padding: 0% 5%;
+    height: 2.1em;
+}
+
+#pnlUpload {
+    left: 2%;
+}
+
+.jcrop-holder {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    height: 0 !important;
+    overflow: hidden;
+    padding-bottom: 70% !important;
+    width: 100% !important;
+}
+
+.jcrop-tracker {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.croptxt {
+    width: 100%;
+    clear: both;
+}
+
+.cropmsg {
+    float: left;
+    padding: 1.2% 2%;
+    width: 72%;
+    color: #fff;
+}
+
+#pnlUploadedImage {
+    position: relative;
+    width: 65%;
+    height: 0;
+    padding-bottom: 50%;
+}
+
+    #pnlUploadedImage img {
+        height: 250px !important;
+        width: auto !important;
+        min-width: 175px !important;
+        position: absolute;
+    }
+
+    #pnlUploadedImage br {
+        display: none !important;
+    }
+
+
+
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
+
+    .photo {
+        width: 20%;
+    }
+
+    .txtcol, #textupload {
+        padding: .2% 1.5% !important;
+    }
+
+    .contenthold h2 {
+        padding: 2% 0 0 11% !important;
+        font-size: 80% !important;
+    }
+
+    .contenthold {
+        margin-top: 0% !important;
+        padding: 0.7% 1.5% .5% 1.5% !important;
+    }
+
+    .signuptile {
+        margin-top: 0% !important;
+    }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1401px) {
+    .txtcol, #textupload {
+        padding: .5% 1.5% !important;
+    }
+}

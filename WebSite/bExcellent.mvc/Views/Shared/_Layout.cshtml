@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="../../Styles/mystyle.css" href="style/mystyle.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/grid.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/carousel.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    @RenderBody()
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+
+    <script src="../../Scripts/ref/jquery-1.8.3.js" type="text/javascript"></script>
+    <script type='text/javascript' src="../../Scripts/ref/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/myscroll.js">
+    </script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/iscroll.js">
+    </script>
+    <!--End MyScroll-->
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js">
+    </script>
+    <!--Accordion-->
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/jquery.tabSlideOut.v1.4.1.js">
+    </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $("#tiles .tile li").hover(function () {
+                    $(this).stop().animate({ marginTop: "-128px" }, 400);
+                }, function () {
+                    $(this).stop().animate({ marginTop: "0px" }, 400);
+                });
+
+            });
+    </script>
+</html>

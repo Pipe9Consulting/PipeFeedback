@@ -1,0 +1,5468 @@
+﻿.main
+{
+	width:95%;
+}
+
+.stand
+{
+	float:left;
+}
+.number
+{
+	width:100%;
+	text-align:left;
+}
+
+.stand li .diginimg
+{
+	top:5px;
+	right:-5px;
+}
+.diginpg
+{
+	padding-top:10px;
+}
+ .comingsoon img
+{
+     width: 50px !important;
+    height: 50px !important;
+}
+	
+.syncnumber
+{
+	text-align:left;
+	position:absolute;
+	left:10px;
+}
+.dignumber
+{
+	text-align:center;
+	position:absolute;
+	left:0px;
+	}
+
+.stand li .syncu
+{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.stand li {
+	float: left;
+	background: #808080;
+	margin:0 10px 10px 0;
+	line-height:1em;
+	cursor:pointer;
+	font-size:12px;
+	position:relative;
+}
+.synclandinghd h1
+{
+    float:left;
+    width:49%;
+}
+.syncimg
+{
+    position:absolute;
+    top:0;
+    left:0;
+    float:left;
+    width:50%;
+    height:100%;  
+    padding:0;
+    margin:0;  
+}
+.syncimg img
+{
+    width:100% !important;
+    height:100% !important;
+    top:0 !important;
+    left:0 !important;
+}
+.stand li img {
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+.stand li p {
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	line-height:1.1em;
+	width:70%;
+}
+.stand li span {
+	position:absolute;
+	left:0;
+	line-height:1.1em;
+	 width:100%;
+	 text-align:center;
+}
+.landingcol
+{
+	margin-left:40px;
+}
+.stand h1 {
+	color: #5e5e5e;
+	font-weight: lighter;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: none !important;
+}
+.chartplaceholder, .chartsmlplaceholder
+{
+	background:#fff;
+	float:left;
+	
+}
+.chartplaceholder
+{
+	padding:10px 0;
+}
+.chartsmlplaceholder
+{
+	width:100%;
+	float:left;
+	background:none;
+}
+.chartdiv
+{
+	background:#fff;
+	padding:5px 10px 0 10px;
+	width:100%;
+	float:left;
+	position:relative;
+}
+.chartdiv1
+{
+	background:#fff;
+	padding:18px 10px;
+	float:left;
+	position:relative;
+}
+.legend
+{
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:118px;
+}
+.legend li
+{
+	color:#808080;
+	font-size:11px;
+	line-height:15px;
+	padding:0 0 0 15px;
+}
+.legend1
+{
+	background: url(../Images/chart/you-box.png) no-repeat left;
+}
+.legend2
+{
+	background: url(../Images/chart/performer-box.png) no-repeat left;
+}
+.legend3
+{
+	background: url(../Images/chart/legend3.png) no-repeat left;
+}
+.legend4
+{
+	background: url(../Images/chart/legend4.png) no-repeat left;
+}
+.legend5
+{
+	background: url(../Images/chart/legend5.png) no-repeat left;
+}
+.chartholder
+{
+	float:left;
+	width:74%;
+	margin-top:20px;
+	overflow:hidden;
+	margin-left:40px;
+}
+.digchartholder
+{
+	float:left;
+	width:76%;
+	margin-top:20px;
+	margin-left:47px;
+}
+
+.chartholder h1
+{
+	color:#808080;
+	font-weight:normal;
+	margin-bottom:10px;
+	clear:both;
+	background:#e5e5e5;
+}
+.chartsmlplaceholder h1
+{
+	margin-bottom:0;
+}
+.bigchart
+{
+	width:50%;
+	margin:0 auto;
+}
+.selected
+{
+	background:#e0b001 !important;
+}
+.markergray
+{
+	background:url(../Images/chart/marker-gray.png) no-repeat right;
+}
+.markeramper
+{
+	background:url(../Images/chart/marker-amper.png) no-repeat right;
+}
+.markergray
+{
+	background:url(../Images/chart/marker-gray.png) no-repeat right;
+}
+.marker3
+{
+	background:url(../Images/chart/marker3.png) no-repeat right;
+	top:-10px;
+}
+.marker4
+{
+	background:url(../Images/chart/marker4.png) no-repeat right;
+	top:-10px;
+}
+.marker5
+{
+	background:url(../Images/chart/marker5.png) no-repeat right;
+	top:-10px;
+}
+.markerholder, .markerholder1
+{
+	position:relative;
+	margin-left:28px;
+}
+.markerholder li, .markerholder1 li
+{
+	position:absolute;
+	left:0;
+	width:20px;
+	height:29px;
+}
+.markerholder li p, .markerholder1 li p
+{
+	font-size:9px;
+	line-height:24px;
+	text-align:center;
+	width:25px;
+	float:right;
+}
+/*Dig Deeper*/
+.digdeeper
+{
+	margin-top:40px;
+	float:left;
+	margin-left:37px;
+	width:75%;
+}
+.deepertable
+{
+	overflow-x:hidden;
+	overflow-y:auto;
+	width:96%;
+}
+.digrow
+{
+	clear:both;
+	width:100%;
+	float:left;
+	margin-bottom:2px;
+}
+.secondcol, .firstcol, .thirdcol, .forthcol, .fifthcol, .sixthcol, .seventhcol
+{
+	border-bottom:3px solid #ccc !important;
+}
+.averagecol
+{
+	border-top:3px solid #ccc !important;
+}
+.averagecol .achieved0
+{
+	border-top:3px solid #ccc !important;
+}
+.averagecol1
+{
+	border-top:2px solid #ccc !important;
+}
+.digrowhd
+{
+	height:64px;
+	border-bottom:0 !important;
+}
+.digcol
+{
+	float:left;
+	color:#5e5e5e;
+	font-size:12px;
+	background:#cac9c9;
+}
+.digcol li
+{
+	float:none;
+	height:15pt;
+	color:#5e5e5e;
+	border-top:1px solid #ccc;
+	padding:3.8pt;
+	background:#dbdbdb;
+}
+.digcol p
+{
+	font-size:12px;
+	padding:5px;
+	color:#000;
+}
+.fifthcol p
+{
+	padding-top:5px;
+}
+.fifthcol li
+{
+	background:#e5e5e5;
+}
+.average
+{
+	color:#000;
+	font-size:14px;
+}
+.secondcol li .average
+{
+	line-height:20px;
+}
+.firstcol li
+{
+	height:178px;
+	position:relative;
+}
+.totalavr
+{
+	height:20px !important;
+}
+#totalavrbg
+{
+	border-top:2px solid #808080 !important;
+	border-bottom:2px solid #808080 !important;
+	width:100%;
+}
+#totalavrbg .firstcol, #totalavrbg .secondcol, #totalavrbg .thirdcol,  #totalavrbg .forthcol,  #totalavrbg .fifthcol,  #totalavrbg .sixthcol,  #totalavrbg .seventhcol, #totalavrbg li
+{
+	border-top:0 !important;
+	border-bottom:0 !important;
+}
+.bdrtpnil
+{
+	border-top:0 !important;
+}
+.firstcol li p
+{
+	position:absolute;
+	bottom:5px;
+	font-size:14px;
+	width:55%;
+}
+.firstcol li img
+{
+	position:absolute;
+	top:40%;
+	left:30%;
+}
+.secondcol
+{
+	background:#b7b7b7;
+}
+.secondcol li, .forthcol li, .averagecomb
+{
+	background:#e5e5e5 !important;
+}
+.lastcol ul, .lastcol
+{
+	background:#e5e5e5 !important
+}
+/******Last column*************/
+.lastcol li
+{
+	position:relative;
+	height:22.6pt;
+	line-height:30px;
+}
+.lastcol .achieved1mask, .lastcol .achieved2mask, .lastcol .achieved3mask, .lastcol .achieved4mask, .lastcol .exceed4mask, .lastcol .exceed3mask, .lastcol .exceed2mask
+{
+	position:absolute;
+	left:0;
+	height:100%;
+	width:100%
+}
+.exceed
+{
+	color:#fff !important;
+}
+.lastcol .achieved1, .lastcol .achieved2, .lastcol .achieved3, .lastcol .achieved4
+{
+	position:absolute;
+	left:0;
+	height:100%;
+}
+.zeromonth
+{
+	width:25%;
+}
+.threemonth
+{
+	width:35%;
+}
+.sixmonth
+{
+	width:50%;
+}
+.ninemonth
+{
+	width:65%;
+}
+.twelvemonth
+{
+	width:73.5%;
+}
+.eighteenmonth
+{
+    width: 82.5%;
+}
+.twentyfourmonth
+{
+	width:100%;
+}
+.thirdcol li, .forthcol li, .seventhcol li
+{
+	line-height:18px;
+}
+.seventhcol li {
+    text-align: center;
+}
+.forthcol li {
+    text-align: center;
+}
+.forthcol, .fifthcol
+{
+	background:#b7b7b7;
+}
+.fisrtsixthcol
+{
+	background:#CAC9C9 !important;
+}
+.fifthcol li, .eightcol li
+{
+	padding:0;
+	height:23.2pt;
+	border-top:0;
+}
+.sixthcol
+{
+	border-left:1px solid #efefef;
+	background: none repeat scroll 0 0 #B7B7B7;
+}
+.sixthcol ul
+{
+	background:#DBDBDB;
+}
+.sixthcol li
+{
+	padding:0 !important;
+	background:none;
+	width:100%;
+}
+.seventhcol
+{
+	border-left:1px solid #efefef;
+}
+.eightcol
+{
+	border-left:1px solid #efefef;
+}
+.gapfit
+{
+	margin:0 auto;
+	width:100%;
+	height:31px;
+	border-top:1px solid #ccc;
+	background:url(../Images/line1.png) center repeat-y;
+}
+.gap
+{
+	width:45%;
+	padding-left:5px;
+	height:27px;
+	float:left;
+	font-size:14px;
+	line-height:1.4em;
+    text-align: center;
+}
+.fit
+{
+	width:50%;
+	height:28px;
+	float:left;
+	margin-top:6px;
+}
+.gapcol
+{
+	width:100%;
+	float:left;
+}
+.gapone
+{
+	width:45%;
+	float:right;
+	margin-right:1px;
+}
+.gaptwo
+{
+	width:66%;
+	float:right;
+	margin-right:1px;
+}
+.gapthree
+{
+	width:96%;
+	float:right;
+	margin-right:1px;
+}
+.fitone
+{
+	width:45%;
+	float:left;
+	margin-left:1px;
+}
+.fittwo
+{
+	width:66%;
+	float:left;
+	margin-left:1px;
+}
+.fitthree
+{
+	width:96%;
+	float:left;
+	margin-left:1px;
+}
+.goals li
+{
+	border-left:1px solid #ccc;
+	border-right:0;
+	border-bottom:0;
+	float:left;
+	padding:0 5px !important;
+	height:30px;
+}
+.bdrnil
+{
+	border-left:0 !important;
+}
+.bdrnil1
+{
+	border-top:0 !important;
+	border-left:0 !important;
+}
+.seperaterow
+{
+	border-bottom:5px solid #ccc;
+}
+.endbdr
+{
+	border-right:1px dashed #b7b7b7 !important;
+}
+.goals li:first-child
+{
+	border-left:0;
+}
+.sixthcol .averagecol {
+    background: rgb(219,219,219);
+    height:23.4pt !important;
+	line-height:23.4pt;
+}
+.achieved0
+{
+	height:23.3pt !important;
+	line-height:23.3pt;
+    border-top: 0 !important;
+}
+.achieved1
+{
+	height:31px !important;
+	line-height:27px;
+	border-top:0 !important
+}
+.achieved2
+{
+	height:31px !important;
+	line-height:27px;
+}
+.achieved3
+{
+	height:31px !important;
+	line-height:27px;
+	border-top:0 !important
+}
+.achieved4
+{
+	height:31px !important;
+	line-height:27px;
+}
+.notachieved4
+{
+	height:31px !important;
+	line-height:27px;
+	border-top:0 !important
+}
+
+/* End Dig Deeper*/
+/* End Dig Deeper*/
+.row
+{
+	float:left;
+	width:47%;
+	margin-top:22px;
+	margin-right:5%
+}
+.row1
+{
+	float:left;
+	width:47%;
+	margin-top:22px;
+	margin-right:0
+}
+.col
+{
+	width:100%;
+}
+.digqn
+{
+	background:#e0b001;
+	color:#fff;
+	text-align:center;
+	float:left;
+}
+.digdev
+{
+	float:left;
+	margin:10px 0 10px 10px;
+	color:#808080;
+	width:90%;
+}
+.digchartarea
+{
+	background:#fff;
+	clear:both;
+	width:100%;
+	float:left;
+}
+.digchartarea ul
+{
+	width:89%;
+	float:left;
+}
+.digchartarea li
+{
+	color:#000;
+}
+
+.digchartbg
+{
+	background:url(../Images/line.png) center repeat-x;
+}
+.digstatus
+{
+	float:left;
+	width:34px;
+	text-align:center;
+	font-size:12px;
+}
+.addmember {
+    background: url("../Images/select-arrow.gif") no-repeat scroll 147px center #575757;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    margin-bottom:12px;
+	margin-top:8px;
+    padding: 5px 0px 5px 5px;
+	width:165px;
+}
+.addselect
+{
+	background:url("../Images/select-arrow-up.png")no-repeat scroll 147px center #575757;
+}
+.sendinv {
+    float: right;
+	display:none;
+}
+.stand .sendinv ul {
+    margin-left: 0px;
+	margin-top:25px;
+    position: absolute;
+    width: 170px;
+    z-index: 9;
+	overflow:hidden;
+}
+.stand .sendinv li {
+    background: none repeat scroll 0 0 #FFFFFF !important;
+    border: 0 none ;
+    color: #808080;
+    float: none;
+    font-size: 12px;
+    height: 27px;
+    line-height: 27px;
+    margin: 0;
+    padding: 5px;
+    width: 160px;
+}
+.stand .sendinv li:hover
+{
+	background:#e0b001 !important;
+	color:#fff;
+}
+.stand .sendinv li img
+{
+	position:relative;
+	top:0;
+	right:0;
+	float:left;
+	margin-right:10px;
+}
+#target li img {
+    float: left;
+    margin-right: 5px;
+    margin-top: -3px;
+
+}
+.chartslide
+{
+	width:500%
+}
+.pagination {
+    float: left;
+    font-size: 12px;
+    padding-top: 15px;
+    text-align: center;
+    width: 65%;
+}
+.nxt {
+    background: url("../Images/next.png") no-repeat scroll 0 0 transparent;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: right;
+    height: 43px;
+    text-decoration: none;
+    text-indent: 1033px;
+    width: 43px;
+}
+.nxt:hover {
+    background: url("../Images/next-hover.png") no-repeat scroll 0 0 transparent;
+}
+.prev {
+    background: url("../Images/previous.png") no-repeat scroll 0 0 transparent;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: left;
+    height: 43px;
+    text-decoration: none;
+    text-indent: -1333px;
+    width: 43px;
+}
+.prev:hover {
+    background: url("../Images/prev-hover.png") no-repeat scroll 0 0 transparent;
+}
+.slidebtn {
+    bottom: 5px;
+    height: 43px;
+    left: 40%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 9999;
+}
+
+#bn2, #bn3, #bn5, #bn4, #p2, #p3, #p5, #p4 {
+    display: none;
+}
+.slide
+{
+	float:left;
+}
+#manager2, #slm1, #peer1, #peer2, #cust1
+{
+	display:none;
+}
+#poelist .selected span {
+    background: url(../Images/select.png) no-repeat right top !important;
+    border: 1px solid #e0b001;
+    z-index: 9;
+    position: absolute;
+    width: 39px;
+    height: 41px;
+    top: 0;
+    right: 0;
+}
+.poelistli p
+{
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    background: url(../Images/trans.png);
+    padding: 5px;
+}
+.poelistli img {
+    width: 100%;
+    height: 100%;
+    top: 0 !important;
+    right: 0 !important;
+}
+.seventhcol span
+{
+    margin-left:5px;
+}
+.synclandingtiles li p
+{
+    text-align:right !important;
+    right:10px !important;
+    left:auto !important;
+    width:43% !important;
+}
+
+
+ @media screen and (max-width: 7680px) and (min-width: 1680px) {
+
+.digdeepertile
+{
+	width:317px !important;
+	height:80px !important;
+}
+.number
+{
+	font-size:60px;
+	padding-top:74px;
+    padding-left: 5px;
+}
+.dignumber
+{
+	font-size:30px;
+	height:60px;
+	width:60px;
+	line-height:60px;
+    top: 40%;
+    left: 10px;
+}
+.syncnumber
+{
+	font-size:64px;
+	top:40%;
+}
+.syncu
+{
+	width:55px;
+	height:55px;
+}
+.stand ul
+{
+	max-height:489px;
+	width:345px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.slide
+{
+	width:1500px;
+}
+.pageholder
+{
+	margin-top:6%;
+	width:94.2%;
+}
+.stand {
+ width:666px;
+}
+.stand li {
+ width: 153px;
+ height: 153px;
+}
+.stand li p {
+ font-size:16px;
+}
+.stand li span {
+ font-size:65px;
+ top:20px;
+}
+.stand h1 {
+ font-size: 24px;
+}
+/*******Chart******/
+ .chart
+ {
+	width:492px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/1920/chart-top.png) left no-repeat;
+	 height:59px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/1920/chart-bg.png) no-repeat left;
+	 height:142px;
+ }
+  .char2top
+ {
+	 background:url(../Images/chart/1920/chart-top.png) left no-repeat;
+	 height:60px;
+	 margin-top:45px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1920/chart2bg.png) no-repeat left;
+	 height:323px;
+ }
+  .fivebarbg
+ {
+	 background:url(../Images/chart/1920/5barbg.png) no-repeat left;
+	 height:323px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1920/chart-scale.png) left no-repeat;
+	 height:88px;
+	 width:528px;
+
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1920/progress1.png) right no-repeat #e0af01;
+	 top:120px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1920/progress2.png) right no-repeat #808080;
+	 top:200px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1920/chart2pointer.png) top left no-repeat;
+	 width:16px;
+	 height:82px;
+	 float:left;
+	 margin-top:214px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1920/status.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:236px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:34px;
+	 font-size:12px;
+ }
+ .dwnstatus {
+    background: url("../Images/chart/1920/status-dwn.png") no-repeat scroll left top transparent;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    height: 28px;
+    line-height: 24px;
+    margin-top: 118px;
+    text-align: center;
+    width: 34px;
+}
+ .chartarea
+ {
+	 margin-left:12px;
+	 width:95%;
+	 position:relative;
+ }
+  .bigchartarea
+ {
+	 margin-left:19px;
+	 width:95%;
+	 position:relative;
+ }
+ .chartbtm
+ {
+	 background:url(../Images/chart/1920/chart-scale.png) left no-repeat;
+	 height:88px;
+	 width:528px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1920/pointer.png) top left no-repeat;
+	 width:14px;
+	 height:57px;
+	 float:left;
+	 margin-top:97px;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1920/status.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:105px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:34px;
+	 font-size:12px;
+ }
+ .chartarea li
+ {
+	 height:35px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea li
+ {
+	 height:35px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1920/progress1.png) right no-repeat #e0af01;
+	 top:19px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1920/progress2.png) right no-repeat #808080;
+	 top:74px !important;
+ }
+   .progressbar3
+ {
+	 background:url(../Images/chart/1920/progress3.png) right no-repeat #777777;
+	 top:110px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1920/progress4.png) right no-repeat #999999;
+	 top:159px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1920/progress5.png) right no-repeat #b0b0b0;
+	 top:208px !important;
+ }
+  .chartsmlplaceholder
+{
+	margin-right:4.5%;
+}
+.chartplaceholder
+{
+	width:96.3%;
+}
+.markerholder
+{
+	width:476px;
+	bottom:-29px;
+}
+.markerholder1
+{
+	width:1123px;
+	margin-left:30px;
+}
+.chartsmlplaceholder h1,.chartholder h1
+{
+	font-size:18px;
+}
+.digqn
+{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+	margin:8px 0;
+}
+.digchartarea
+{
+	margin:8px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:16px;
+}
+.digchartarea li img
+{
+	width:95%;
+}
+.digchartarea li
+{
+margin:4px 0px 4px 10px;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1920/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:55px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1920/status.png) no-repeat;
+	height:28px;
+	line-height:32px;
+	margin-top:82px;
+	margin-left:10px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:15px 0 10px 0;
+}
+.chartsmlplaceholder h1,.chartholder h1
+{
+	font-size:16px;
+}
+.rectangle
+{
+	width:316px !important;
+}
+.addmember {
+	margin-right: 24px;
+	margin-left:200px;
+}
+.stand .sendinv ul {
+	margin-left:200px;
+}
+.sendinv
+{
+	margin-top:5px;
+}
+.coltwo
+{
+	width:552px;
+	float:left;
+	margin-right:80px;
+}
+.chartholder
+{
+	width:74%;
+}
+.slidebtn {
+    width: 16%;
+}
+ .standlaning
+ {
+	 width:380px;
+ }
+
+/*Dig Deeper*/
+.firstcol
+{
+	width:151px;
+}
+.secondcol
+{
+	width:530px;
+}
+.thirdcol
+{
+	width:90px;
+}
+.forthcol
+{
+	width:50px;
+}
+.fifthcol
+{
+	width:108px;
+	border-left:1px solid #ccc;
+}
+.picholder
+{
+	width:34px;
+	height:34px;
+	background:#ccc;
+	float:left;
+	margin-left:5px;
+	margin-right:22px;
+}
+.picholder1
+{
+	width:34px;
+	height:34px;
+	background:#ccc;
+	float:left;
+}
+.sixthcol
+{
+	width:128px;
+}
+.seventhcol
+{
+	width:70px;
+}
+.seventhcol li span
+{
+	float:right;
+	margin-right:5px;
+}
+.tick
+{
+	margin-right:0 !important;
+}
+.eightcol
+{
+	width:135px;
+}
+.digcol p, .digcol li
+{
+	font-size:14px;
+}
+.deepertable
+{
+	max-height:650px;
+	min-height:650px;
+}
+.gap
+{
+	margin-top:4px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:32px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1660.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1660.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:16.5%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1920/goal-achieved.png) no-repeat top left !important;
+}
+.achieved2
+{
+	background:url(../Images/chart/1920/goal-achieved2.png) no-repeat top left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1920/goal-achieved2-mask.png) no-repeat top left !important;
+}
+.achieved3
+{
+	background:url(../Images/chart/1920/goal-achieved3.png) no-repeat center left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1920/goal-achieved3-mask.png) no-repeat top left !important;
+}
+.achieved4
+{
+	background:url(../Images/chart/1920/goal-achieved4.png) no-repeat top left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1920/goal-achieved4-mask.png) no-repeat top left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1920/goal-exceed4-mask.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1920/goal-exceed3-mask.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1920/goal-exceed2-mask.png) no-repeat top left !important;
+}
+
+.averagecol .goals li
+{	
+	height:20.1pt;
+	border-top:0 !important;
+}
+
+.digdeepertile img
+{
+	width:64px;
+	height:64px;
+}
+.digdeepertile
+{
+	width:317px !important;
+	height:83px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-194px;
+    margin-top:-16px;
+}
+.poelistli p
+{
+    width: 93.5% !important;
+}
+#poelist .selected span {
+        width: 152px;
+        height: 152px;
+    }
+}
+ @media screen and (min-width: 1600px) and (max-width: 1680px) {
+.digdeepertile
+{
+	width:266px !important;
+	height:80px !important;
+}
+.number
+{
+	font-size:40px;
+	padding-top:60px;
+    padding-left: 5px;
+}
+.dignumber
+{
+	font-size:25px;
+	height:55px;
+	width:55px;
+	line-height:55px;
+    top: 40%;
+    left: 10px;
+}
+
+.syncnumber
+{
+	font-size:54px;
+	top:40%;
+}
+.syncu
+{
+	width:45px;
+	height:45px;
+}
+.stand ul
+{
+	max-height:415px;
+	width:295px;
+}
+.slide
+{
+	width:1160px;
+}
+.pageholder
+{
+	margin-top:6%;
+	width:93.9%;
+}
+.stand {
+ width:552px;
+}
+ .stand li {
+ width: 128px;
+ height: 128px;
+}
+.stand li p {
+ font-size:14px;
+}
+.stand li span {
+ font-size:55px;
+ top:20px;
+}
+
+.stand h1 {
+ font-size: 24px;
+}
+/*******Chart******/
+ /*******Chart******/
+ .chart
+ {
+	width:411px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/1600/chart-top.png) left no-repeat;
+	 height:50px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/1600/chart-bg.png) no-repeat left;
+	 height:119px;
+ }
+ .chartarea
+ {
+	 margin-left:17px;
+	 width:95%;
+	 position:relative;
+ }
+  .chartarea li
+  {
+	  height:30px;
+  }
+ .chartbtm
+ {
+	 background:url(../Images/chart/1600/chart-scale.png) left no-repeat;
+	 height:80px;
+	 width:437px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1600/pointer.png) top left no-repeat;
+	 width:7px;
+	 height:47px;
+	 float:left;
+	 margin-top:81px;
+	 margin-right:0;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1600/status.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:89px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+   .dwnstatus
+ {
+	 background:url(../Images/chart/1600/status-dwn.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:98px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:24px;
+	 font-size:12px;
+ }
+ .chartbg li
+ {
+	 height:30px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1600/progress1.png) right no-repeat #e0af01;
+	 top:15px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1600/progress2.png) right no-repeat #808080;
+	 top:61px !important;
+ }
+    .progressbar3
+ {
+	 background:url(../Images/chart/1600/progress3.png) right no-repeat #777777;
+	 top:111px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1600/progress4.png) right no-repeat #999999;
+	 top:158px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1600/progress5.png) right no-repeat #b0b0b0;
+	 top:205px !important;
+ }
+
+ 
+   .char2top
+ {
+	 background:url(../Images/chart/1600/chart2top.png) left no-repeat;
+	 height:27px;
+	 margin-top:35px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1600/chart2bg.png) no-repeat left;
+	 height:300px;
+ }
+   .fivebarbg
+ {
+	 background:url(../Images/chart/1600/5barbg.png) no-repeat left;
+	 height:300px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1600/chart2scale.png) left no-repeat;
+	 height:51px;
+	 width:508px;
+	 margin-bottom:27px;
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1600/progress1.png) right no-repeat #e0af01;
+	 top:96px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1600/progress2.png) right no-repeat #808080;
+	 top:160px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1600/chart2pointer.png) top left no-repeat;
+	 width:8px;
+	 height:66px;
+	 float:left;
+	 margin-top:172px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1600/status.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:187px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:34px;
+	 font-size:11px;
+ }
+
+.chartplaceholder
+{
+	width:96.9%;
+}
+.markerholder
+{
+	width:394px;
+	top:20px;
+}
+.digqn
+{
+	width:32px;
+	height:32px;
+	line-height:32px;
+	font-size:16px;
+}
+.digchartarea
+{
+	margin:10px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:14px;
+}
+.digchartarea li img
+{
+	width:90%;
+}
+.digchartarea li
+{
+margin:4px 0px 4px 10px;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1600/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:48px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1600/status.png) no-repeat;
+	height:28px;
+	line-height:32px;
+	margin-top:66px;
+	margin-left:5px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:20px 0 10px 0;
+}
+.chartsmlplaceholder h1,.chartholder h1
+{
+	font-size:14px;
+}
+.rectangle
+{
+	width:266px !important;
+}
+.addmember {
+	margin-right: 10px;
+}
+.sendinv
+{
+	margin-top:8px;
+	display:none;
+}
+.coltwo
+{
+	width:452px;
+	float:left;
+	margin-right:70px;
+}
+.chartholder
+{
+	width:74%;
+	margin-left:40px;
+}
+
+.slidebtn {
+    width: 16%;
+}
+ .standlaning
+ {
+	 width:320px;
+ }
+ .markerholder1
+{
+	width:897px;
+	margin-left:27px;
+}
+  .bigchartarea li
+ {
+	 height:30px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea
+ {
+	 margin-left:16px;
+	 width:95%;
+	 position:relative;
+ }
+   .chartbig
+ {
+	 background:url(../Images/chart/1600/chart-big.png) left no-repeat;
+	 height:49px;
+	 width:937px;
+ }
+  .chartdiv1
+ {
+	 width:97%;
+ }
+ .chart1 {
+    float: left;
+    width: 948px;
+}
+/*Dig Deeper*/
+.deepertable {
+    max-height: 500px;
+    min-height: 500px;
+	width:97%;
+}
+.firstcol
+{
+	width:114px;
+}
+.secondcol
+{
+	width:403px;
+}
+.thirdcol
+{
+	width:90px;
+}
+.forthcol
+{
+	width:74px;
+}
+.fifthcol
+{
+	width:105px;
+}
+.sixthcol
+{
+	width:109px;
+}
+.seventhcol
+{
+	width:48px;
+}
+.eightcol
+{
+	width:105px;
+}
+.digcol p, .digcol li
+{
+	font-size:13px;
+}
+.picholder1 {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+}
+.picholder {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+margin-left: 5px;
+margin-right: 22px;
+}
+.gap
+{
+	margin-top:4px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:32px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1660.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1660.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:14.9%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1600/goal-achieved.png) no-repeat top 0px left !important;
+}
+.achieved1mask
+{
+	background:url(../Images/chart/1600/goal-achieved-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved2
+{
+	background:url(../Images/chart/1600/goal-achieved2.png) no-repeat top 0px left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1600/goal-achieved2-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved3
+{
+	background:url(../Images/chart/1600/goal-achieved3.png) no-repeat top 0px left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1600/goal-achieved3-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved4
+{
+	background:url(../Images/chart/1600/goal-achieved4.png) no-repeat top 0px left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1600/goal-achieved4-mask.png) no-repeat top 0px left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1600/goal-exceed4.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1600/goal-exceed3.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1600/goal-exceed2.png) no-repeat top left !important;
+}
+.averagecol .goals li
+{	
+	height:22.1pt;
+	border-top:0 !important;
+}
+.digdeepertile img
+{
+	width:54px;
+	height:54px;
+}
+.digdeepertile
+{
+	height:73px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-180px;
+    margin-top:-16px;
+}
+ .poelistli p
+{
+    width: 92% !important;
+}
+#poelist .selected span {
+        width: 127px;
+        height: 127px;
+    }
+}
+ @media screen and (min-width: 1480px) and (max-width: 1600px) {
+.digdeepertile
+{
+	width:266px !important;
+	height:80px !important;
+}
+.number
+{
+	font-size:40px;
+	padding-top:60px;
+    padding-left: 5px;
+}
+.dignumber
+{
+	font-size:25px;
+	height:55px;
+	width:55px;
+	line-height:55px;
+    top: 40%;
+    left: 10px;
+}
+
+.syncnumber
+{
+	font-size:54px;
+	top:40%;
+}
+.syncu
+{
+	width:45px;
+	height:45px;
+}
+.stand ul
+{
+	max-height:415px;
+	width:295px;
+}
+.slide
+{
+	width:1150px;
+}
+.pageholder
+{
+	margin-top:6%;
+	width:93.9%;
+}
+.stand {
+ width:552px;
+}
+ .stand li {
+ width: 128px;
+ height: 128px;
+}
+.stand li p {
+ font-size:14px;
+}
+.stand li span {
+ font-size:55px;
+ top:20px;
+}
+
+.stand h1 {
+ font-size: 24px;
+}
+/*******Chart******/
+ .chart
+ {
+	width:411px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/1600/chart-top.png) left no-repeat;
+	 height:50px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/1600/chart-bg.png) no-repeat left;
+	 height:119px;
+ }
+ .chartarea
+ {
+	 margin-left:17px;
+	 width:95%;
+	 position:relative;
+ }
+  .chartarea li
+  {
+	  height:30px;
+  }
+ .chartbtm
+ {
+	 background:url(../Images/chart/1600/chart-scale.png) left no-repeat;
+	 height:80px;
+	 width:437px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1600/pointer.png) top left no-repeat;
+	 width:7px;
+	 height:47px;
+	 float:left;
+	 margin-top:81px;
+	 margin-right:0;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1600/status.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:89px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+   .dwnstatus
+ {
+	 background:url(../Images/chart/1600/status-dwn.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:98px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:24px;
+	 font-size:12px;
+ }
+ .chartbg li
+ {
+	 height:30px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1600/progress1.png) right no-repeat #e0af01;
+	 top:16px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1600/progress2.png) right no-repeat #808080;
+	 top:62px !important;
+ }
+    .progressbar3
+ {
+	 background:url(../Images/chart/1600/progress3.png) right no-repeat #777777;
+	 top:111px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1600/progress4.png) right no-repeat #999999;
+	 top:158px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1600/progress5.png) right no-repeat #b0b0b0;
+	 top:205px !important;
+ }
+
+ 
+   .char2top
+ {
+	 background:url(../Images/chart/1600/chart2top.png) left no-repeat;
+	 height:27px;
+	 margin-top:35px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1600/chart2bg.png) no-repeat left;
+	 height:300px;
+ }
+   .fivebarbg
+ {
+	 background:url(../Images/chart/1600/5barbg.png) no-repeat left;
+	 height:300px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1600/chart2scale.png) left no-repeat;
+	 height:51px;
+	 width:508px;
+	 margin-bottom:27px;
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1600/progress1.png) right no-repeat #e0af01;
+	 top:96px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1600/progress2.png) right no-repeat #808080;
+	 top:160px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1600/chart2pointer.png) top left no-repeat;
+	 width:8px;
+	 height:66px;
+	 float:left;
+	 margin-top:172px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1600/status.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:187px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:34px;
+	 font-size:11px;
+ }
+
+.chartplaceholder
+{
+	width:96.9%;
+}
+.markerholder
+{
+	width:394px;
+	top:20px;
+}
+.digqn
+{
+	width:32px;
+	height:32px;
+	line-height:32px;
+	font-size:16px;
+}
+.digchartarea
+{
+	margin:10px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:14px;
+}
+.digchartarea li img
+{
+	width:90%;
+}
+.digchartarea li
+{
+margin:4px 0px 4px 10px;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1600/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:48px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1600/status.png) no-repeat;
+	height:28px;
+	line-height:32px;
+	margin-top:66px;
+	margin-left:5px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:20px 0 10px 0;
+}
+.chartsmlplaceholder h1,.chartholder h1
+{
+	font-size:14px;
+}
+.rectangle
+{
+	width:266px !important;
+}
+.addmember {
+	margin-right: 10px;
+	font-size:14px;
+}
+.sendinv
+{
+	margin-top:8px;
+	display:none;
+}
+.coltwo
+{
+	width:452px;
+	float:left;
+	margin-right:40px;
+}
+.chartholder
+{
+	width:73%;
+	margin-left:27px;
+}
+
+.slidebtn {
+    width: 16%;
+}
+ .standlaning
+ {
+	 width:320px;
+ }
+ .markerholder1
+{
+	width:897px;
+	margin-left:27px;
+}
+  .bigchartarea li
+ {
+	 height:30px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea
+ {
+	 margin-left:16px;
+	 width:95%;
+	 position:relative;
+ }
+   .chartbig
+ {
+	 background:url(../Images/chart/1600/chart-big.png) left no-repeat;
+	 height:49px;
+	 width:937px;
+ }
+  .chartdiv1
+ {
+	 width:97%;
+ }
+ .chart1 {
+    float: left;
+    width: 948px;
+}
+/*Dig Deeper*/
+.digdeeper
+{
+    width:70%;
+}
+.deepertable {
+    max-height: 500px;
+    min-height: 500px;
+	width:96%;
+}
+.gap
+{
+	height:24px;
+}
+.firstcol
+{
+	width:93px;
+}
+.secondcol
+{
+	width:278px;
+}
+.thirdcol
+{
+	width:90px;
+}
+.forthcol
+{
+	width:64px;
+}
+.fifthcol
+{
+	width:103px;
+}
+.sixthcol
+{
+	width:96px;
+}
+.seventhcol
+{
+	width:58px;
+}
+.eightcol
+{
+	width:87px;
+}
+.digcol p, .digcol li
+{
+	font-size:12px;
+}
+.picholder1 {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+}
+.picholder {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+margin-left: 5px;
+margin-right: 22px;
+}
+.gap
+{
+	margin-top:6px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:28px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1366.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1366.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:13.5%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1366/goal-achieved.png) no-repeat top 0px left !important;
+}
+.achieved1mask
+{
+	background:url(../Images/chart/1366/goal-achieved-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved2
+{
+	background:url(../Images/chart/1366/goal-achieved2.png) no-repeat top 0px left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1366/goal-achieved2-mask.png) no-repeat top 0px left !important;
+}
+.achieved3
+{
+	background:url(../Images/chart/1366/goal-achieved3.png) no-repeat top 0px left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1366/goal-achieved3-mask.png) no-repeat top 0px left !important;
+}
+.achieved4
+{
+	background:url(../Images/chart/1366/goal-achieved4.png) no-repeat top 0px left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1366/goal-achieved4-mask.png) no-repeat top 0px left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1366/goal-exceed4.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1366/goal-exceed3.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1366/goal-exceed2.png) no-repeat top left !important;
+}
+.averagecol .goals li
+{	
+	height:23.1pt;
+	border-top:0 !important;
+}
+.digdeepertile img
+{
+	width:54px;
+	height:54px;
+}
+.digdeepertile
+{
+	height:70px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-180px;
+    margin-top:-16px;
+}
+ .poelistli p
+{
+    width: 92% !important;
+}
+#poelist .selected span {
+        width: 127px;
+        height: 127px;
+    }
+}
+ @media screen and (min-width: 1400px) and (max-width: 1440px) {
+.digdeepertile
+{
+	width:266px !important;
+	height:80px !important;
+}
+.number
+{
+	font-size:40px;
+	padding-top:60px;
+    padding-left: 5px;
+}
+.dignumber
+{
+	font-size:25px;
+	height:55px;
+	width:55px;
+	line-height:55px;
+    top: 40%;
+    left: 10px;
+}
+
+.syncnumber
+{
+	font-size:54px;
+	top:40%;
+}
+.syncu
+{
+	width:45px;
+	height:45px;
+}
+.stand ul
+{
+	max-height:415px;
+	width:295px;
+}
+.slide
+{
+	width:1150px;
+}
+.pageholder
+{
+	margin-top:6%;
+	width:93.9%;
+}
+.stand {
+ width:552px;
+}
+ .stand li {
+ width: 80px;
+ height: 80px;
+}
+.stand li p {
+ font-size:14px;
+}
+.stand li span {
+ font-size:55px;
+ top:20px;
+}
+
+.stand h1 {
+ font-size: 24px;
+}
+/*******Chart******/
+ .chart
+ {
+	width:411px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/1600/chart-top.png) left no-repeat;
+	 height:50px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/1600/chart-bg.png) no-repeat left;
+	 height:119px;
+ }
+ .chartarea
+ {
+	 margin-left:17px;
+	 width:95%;
+	 position:relative;
+ }
+  .chartarea li
+  {
+	  height:30px;
+  }
+ .chartbtm
+ {
+	 background:url(../Images/chart/1600/chart-scale.png) left no-repeat;
+	 height:80px;
+	 width:437px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1600/pointer.png) top left no-repeat;
+	 width:7px;
+	 height:47px;
+	 float:left;
+	 margin-top:81px;
+	 margin-right:0;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1600/status.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:89px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+   .dwnstatus
+ {
+	 background:url(../Images/chart/1600/status-dwn.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:98px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:24px;
+	 font-size:12px;
+ }
+ .chartbg li
+ {
+	 height:30px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1600/progress1.png) right no-repeat #e0af01;
+	 top:16px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1600/progress2.png) right no-repeat #808080;
+	 top:62px !important;
+ }
+    .progressbar3
+ {
+	 background:url(../Images/chart/1600/progress3.png) right no-repeat #777777;
+	 top:111px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1600/progress4.png) right no-repeat #999999;
+	 top:158px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1600/progress5.png) right no-repeat #b0b0b0;
+	 top:205px !important;
+ }
+
+ 
+   .char2top
+ {
+	 background:url(../Images/chart/1600/chart2top.png) left no-repeat;
+	 height:27px;
+	 margin-top:35px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1600/chart2bg.png) no-repeat left;
+	 height:300px;
+ }
+   .fivebarbg
+ {
+	 background:url(../Images/chart/1600/5barbg.png) no-repeat left;
+	 height:300px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1600/chart2scale.png) left no-repeat;
+	 height:51px;
+	 width:508px;
+	 margin-bottom:27px;
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1600/progress1.png) right no-repeat #e0af01;
+	 top:96px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1600/progress2.png) right no-repeat #808080;
+	 top:160px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1600/chart2pointer.png) top left no-repeat;
+	 width:8px;
+	 height:66px;
+	 float:left;
+	 margin-top:172px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1600/status.png) top left no-repeat;
+	 width:34px;
+	 height:28px;
+	 float:left;
+	 margin-top:187px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:34px;
+	 font-size:11px;
+ }
+
+.chartplaceholder
+{
+	width:96.9%;
+}
+.markerholder
+{
+	width:394px;
+	top:20px;
+}
+.digqn
+{
+	width:32px;
+	height:32px;
+	line-height:32px;
+	font-size:16px;
+}
+.digchartarea
+{
+	margin:10px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:14px;
+}
+.digchartarea li img
+{
+	width:90%;
+}
+.digchartarea li
+{
+margin:4px 0px 4px 10px;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1600/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:48px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1600/status.png) no-repeat;
+	height:28px;
+	line-height:32px;
+	margin-top:66px;
+	margin-left:5px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:20px 0 10px 0;
+}
+.chartsmlplaceholder h1,.chartholder h1
+{
+	font-size:14px;
+}
+.rectangle
+{
+	width:266px !important;
+}
+.addmember {
+	margin-right: 10px;
+	font-size:14px;
+}
+.sendinv
+{
+	margin-top:8px;
+	display:none;
+}
+.coltwo
+{
+	width:452px;
+	float:left;
+	margin-right:40px;
+}
+.chartholder
+{
+	width:73%;
+	margin-left:27px;
+}
+
+.slidebtn {
+    width: 16%;
+}
+ .standlaning
+ {
+	 width:320px;
+ }
+ .markerholder1
+{
+	width:897px;
+	margin-left:27px;
+}
+  .bigchartarea li
+ {
+	 height:30px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea
+ {
+	 margin-left:16px;
+	 width:95%;
+	 position:relative;
+ }
+   .chartbig
+ {
+	 background:url(../Images/chart/1600/chart-big.png) left no-repeat;
+	 height:49px;
+	 width:937px;
+ }
+  .chartdiv1
+ {
+	 width:97%;
+ }
+ .chart1 {
+    float: left;
+    width: 948px;
+}
+/*Dig Deeper*/
+.digdeeper
+{
+    width:70%;
+}
+.deepertable {
+    max-height: 500px;
+    min-height: 500px;
+	width:96%;
+}
+.gap
+{
+	height:24px;
+}
+.firstcol
+{
+	width:93px;
+}
+.secondcol
+{
+	width:278px;
+}
+.thirdcol
+{
+	width:90px;
+}
+.forthcol
+{
+	width:64px;
+}
+.fifthcol
+{
+	width:103px;
+}
+.picholder1 {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+}
+.picholder {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+margin-left: 5px;
+margin-right: 22px;
+}
+.sixthcol
+{
+	width:96px;
+}
+.seventhcol
+{
+	width:58px;
+}
+.eightcol
+{
+	width:87px;
+}
+.digcol p, .digcol li
+{
+	font-size:12px;
+}
+.gap
+{
+	margin-top:6px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:28px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1366.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1366.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:13.5%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1366/goal-achieved.png) no-repeat top 0px left !important;
+}
+.achieved1mask
+{
+	background:url(../Images/chart/1366/goal-achieved-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved2
+{
+	background:url(../Images/chart/1366/goal-achieved2.png) no-repeat top 0px left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1366/goal-achieved2-mask.png) no-repeat top 0px left !important;
+}
+.achieved3
+{
+	background:url(../Images/chart/1366/goal-achieved3.png) no-repeat top 0px left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1366/goal-achieved3-mask.png) no-repeat top 0px left !important;
+}
+.achieved4
+{
+	background:url(../Images/chart/1366/goal-achieved4.png) no-repeat top 0px left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1366/goal-achieved4-mask.png) no-repeat top 0px left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1366/goal-exceed4.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1366/goal-exceed3.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1366/goal-exceed2.png) no-repeat top left !important;
+}
+.averagecol .goals li
+{	
+	height:23.1pt;
+	border-top:0 !important;
+}
+.digdeepertile img
+{
+	width:54px;
+	height:54px;
+}
+.digdeepertile
+{
+	height:70px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-180px;
+    margin-top:-16px;
+}
+ .poelistli p
+{
+    width: 92% !important;
+}
+#poelist .selected span {
+        width: 127px;
+        height: 127px;
+    }
+}
+@media screen and (min-width: 1366px) and (max-width: 1400px) {
+.digdeepertile
+{
+	width:230px !important;
+	height:80px !important;
+}
+.dignumber
+{
+	font-size:23px;
+	height:50px;
+	width:50px;
+	line-height:50px;
+    top: 40%;
+    left: 10px;
+}
+.number
+{
+	font-size:32px;
+	padding-top:56px;
+    padding-left: 8px;
+}
+.syncnumber
+{
+	font-size:44px;
+	top:35%;
+}
+.syncu
+{
+	width:35px;
+	height:35px;
+}
+.stand ul
+{
+	max-height:360px;
+	width:258px;
+}
+.slide
+{
+	width:950px;
+}
+.pageholder
+{
+	margin-top:6%;
+	width:93.6%;
+}
+ .stand {
+ width:480px;
+}
+ .standlaning
+ {
+	 width:260px;
+ }
+ .stand li {
+ width: 110px;
+ height: 110px;
+}
+.stand li p {
+ font-size:11px;
+ width:80%;
+}
+.stand li span {
+ font-size:45px;
+ top:20px;
+}
+
+.stand h1 {
+ font-size: 20px;
+}
+ /*******Chart******/
+ .chart
+ {
+	width:362px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/1366/chart-top.png) left no-repeat;
+	 height:42px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/1366/chart-bg.png) no-repeat left;
+	 height:92px;
+ }
+ .chartarea
+ {
+	 margin-left:12px;
+	 width:338px;
+	 position:relative;
+ }
+ .chartbtm
+ {
+	 background:url(../Images/chart/1366/chart-scale.png) left no-repeat;
+	 height:62px;
+	 width:392px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:5px;
+	 height:38px;
+	 float:left;
+	 margin-top:63px;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:65px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+   .dwnstatus
+ {
+	 background:url(../Images/chart/1366/status-dwn.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:68px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartbg li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:10px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:46px !important;
+ }
+    .progressbar3
+ {
+	 background:url(../Images/chart/1366/progress3.png) right no-repeat #777777;
+	 top:109px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1366/progress4.png) right no-repeat #999999;
+	 top:152px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1366/progress5.png) right no-repeat #b0b0b0;
+	 top:195px !important;
+ }
+
+.chartplaceholder
+{
+	width:97.4%;
+}
+.markergray
+{
+	top:-5px;
+	left:-2px !important;
+}
+.markeramper
+{
+	left:-2px !important;
+}
+.markerholder
+{
+	width:336px;
+	bottom: -13px;
+}
+.chartsmlplaceholder h1
+{
+	font-size:12px;
+	padding-bottom:5px;
+}
+.digqn
+{
+	width:25px;
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+	margin:5px 0;
+}
+.digchartarea
+{
+	margin:5px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:12px;
+}
+.digchartarea li
+{
+margin:2px 0px 2px 10px;
+}
+.digchartarea li img
+{
+	width:90%;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1366/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:37px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1366/status.png) no-repeat;
+	height:28px;
+	width:28px;
+	line-height:28px;
+	margin-top:52px;
+	margin-left:3px;
+	font-size:10px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:10px 0;
+}
+.row, .row1
+{
+	margin-top:20px;
+}
+.rectangle
+{
+	width:230px !important;
+}
+.addmember {
+	margin-right: 10px;
+}
+.sendinv
+{
+	margin-top:0px;
+}
+.coltwo
+{
+	width:400px;
+	float:left;
+	margin-right:60px;
+}
+.chartholder
+{
+	width:70%;
+	margin-left:40px;
+}
+.slidebtn {
+    width: 20%;
+}
+   .char2top
+ {
+	 background:url(../Images/chart/1366/chart-top.png) left no-repeat;
+	 height:18px;
+	 margin-top:48px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1366/chart2bg.png) no-repeat left;
+	 height:265px;
+ }
+   .fivebarbg
+ {
+	 background:url(../Images/chart/1366/5barbg.png) no-repeat left;
+	 height:265px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1366/chart-scale.png) left no-repeat;
+	 height:35px;
+	 width:508px;
+	 margin-bottom: 40px;
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:94px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:139px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:8px;
+	 height:66px;
+	 float:left;
+	 margin-top:171px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:30px;
+	 height:28px;
+	 float:left;
+	 margin-top:217px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartarea li 
+ {
+	 height:24px;
+ }
+ .stand .sendinv li, .addmember
+ {
+	 font-size:12px;
+ }
+  .markerholder1
+{
+	width:815px;
+	margin-left:23px;
+}
+  .bigchartarea li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea
+ {
+	 margin-left:10px;
+	 width:95%;
+	 position:relative;
+ }
+   .chartbig
+ {
+	 background:url(../Images/chart/1366/chart-big.png) left no-repeat;
+	 height:44px;
+	 width:848px;
+ }
+  .chartdiv1
+ {
+	 width:97%;
+ }
+ .chart1 {
+    float: left;
+    width: 860px;
+}
+/*Dig Deeper*/
+.digdeeper
+{
+    width:74%;
+}
+.deepertable {
+    max-height: 400px;
+    min-height: 400px;
+	width:96%;
+}
+.gap
+{
+	height:25px;
+}
+.firstcol
+{
+	width:93px;
+}
+.secondcol
+{
+	width:278px;
+}
+.thirdcol
+{
+	width:90px;
+}
+.forthcol
+{
+	width:64px;
+}
+.fifthcol
+{
+	width:103px;
+}
+.picholder1 {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+}
+.picholder {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+margin-left: 5px;
+margin-right: 22px;
+}
+.sixthcol
+{
+	width:96px;
+}
+.seventhcol
+{
+	width:58px;
+}
+.eightcol
+{
+	width:87px;
+}
+.digcol p, .digcol li
+{
+	font-size:12px;
+}
+.gap
+{
+	margin-top:6px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:28px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1366.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1366.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:13.5%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1366/goal-achieved.png) no-repeat top 0px left !important;
+}
+.achieved1mask
+{
+	background:url(../Images/chart/1366/goal-achieved-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved2
+{
+	background:url(../Images/chart/1366/goal-achieved2.png) no-repeat top 0px left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1366/goal-achieved2-mask.png) no-repeat top 0px left !important;
+}
+.achieved3
+{
+	background:url(../Images/chart/1366/goal-achieved3.png) no-repeat top 0px left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1366/goal-achieved3-mask.png) no-repeat top 0px left !important;
+}
+.achieved4
+{
+	background:url(../Images/chart/1366/goal-achieved4.png) no-repeat top 0px left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1366/goal-achieved4-mask.png) no-repeat top 0px left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1366/goal-exceed4.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1366/goal-exceed3.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1366/goal-exceed2.png) no-repeat top left !important;
+}
+.averagecol .goals li
+{	
+	height:23.1pt;
+	border-top:0 !important;
+}
+.digdeepertile img
+{
+	width:44px;
+	height:44px;
+}
+.digdeepertile
+{
+	height:64px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-180px;
+    margin-top:-12px;
+}
+ .poelistli p
+{
+    width: 91% !important;
+}
+#poelist .selected span {
+        width: 109px;
+        height: 109px;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+{
+.digdeepertile
+{
+	width:230px !important;
+	height:80px !important;
+}
+.dignumber
+{
+	font-size:23px;
+	height:50px;
+	width:50px;
+	line-height:50px;
+    top: 40%;
+    left: 10px;
+}
+.number
+{
+	font-size:32px;
+	padding-top:56px;
+    padding-left: 8px;
+}
+.syncnumber
+{
+	font-size:44px;
+	top:35%;
+}
+.syncu
+{
+	width:35px;
+	height:35px;
+}
+.stand ul
+{
+	max-height:360px;
+	width:258px;
+}
+.slide
+{
+	width:950px;
+}
+.pageholder
+{
+	margin-top:6%;
+	width:93.6%;
+}
+ .stand {
+ width:480px;
+}
+ .standlaning
+ {
+	 width:260px;
+ }
+ .stand li {
+ width: 110px;
+ height: 110px;
+}
+.stand li p {
+ font-size:11px;
+ width:80%;
+}
+.tick img {
+ padding-top: 3%   
+}
+.stand li span {
+ font-size:45px;
+ top:20px;
+}
+
+.stand h1 {
+ font-size: 20px;
+}
+ /*******Chart******/
+ .chart
+ {
+	width:362px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/1366/chart-top.png) left no-repeat;
+	 height:42px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/1366/chart-bg.png) no-repeat left;
+	 height:92px;
+ }
+ .chartarea
+ {
+	 margin-left:12px;
+	 width:338px;
+	 position:relative;
+ }
+ .chartbtm
+ {
+	 background:url(../Images/chart/1366/chart-scale.png) left no-repeat;
+	 height:62px;
+	 width:392px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:5px;
+	 height:38px;
+	 float:left;
+	 margin-top:63px;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:65px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+   .dwnstatus
+ {
+	 background:url(../Images/chart/1366/status-dwn.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:68px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartbg li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:10px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:46px !important;
+ }
+    .progressbar3
+ {
+	 background:url(../Images/chart/1366/progress3.png) right no-repeat #777777;
+	 top:109px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1366/progress4.png) right no-repeat #999999;
+	 top:152px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1366/progress5.png) right no-repeat #b0b0b0;
+	 top:195px !important;
+ }
+
+.chartplaceholder
+{
+	width:97.4%;
+}
+.markergray
+{
+	top:-5px;
+	left:-2px !important;
+}
+.markeramper
+{
+	left:-2px !important;
+}
+.markerholder
+{
+	width:336px;
+	bottom: -13px;
+}
+.chartsmlplaceholder h1
+{
+	font-size:12px;
+	padding-bottom:5px;
+}
+.digqn
+{
+	width:25px;
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+	margin:5px 0;
+}
+.digchartarea
+{
+	margin:5px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:12px;
+}
+.digchartarea li
+{
+margin:2px 0px 2px 10px;
+}
+.digchartarea li img
+{
+	width:90%;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1366/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:37px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1366/status.png) no-repeat;
+	height:28px;
+	width:28px;
+	line-height:28px;
+	margin-top:52px;
+	margin-left:3px;
+	font-size:10px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:10px 0;
+}
+.row, .row1
+{
+	margin-top:20px;
+}
+.rectangle
+{
+	width:230px !important;
+}
+.addmember {
+	margin-right: 10px;
+}
+.sendinv
+{
+	margin-top:0px;
+}
+.coltwo
+{
+	width:400px;
+	float:left;
+	margin-right:60px;
+}
+.chartholder
+{
+	width:74%;
+	margin-left:40px;
+}
+.slidebtn {
+    width: 20%;
+}
+   .char2top
+ {
+	 background:url(../Images/chart/1366/chart-top.png) left no-repeat;
+	 height:18px;
+	 margin-top:48px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1366/chart2bg.png) no-repeat left;
+	 height:265px;
+ }
+   .fivebarbg
+ {
+	 background:url(../Images/chart/1366/5barbg.png) no-repeat left;
+	 height:265px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1366/chart-scale.png) left no-repeat;
+	 height:35px;
+	 width:508px;
+	 margin-bottom: 40px;
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:94px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:139px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:8px;
+	 height:66px;
+	 float:left;
+	 margin-top:171px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:30px;
+	 height:28px;
+	 float:left;
+	 margin-top:217px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartarea li 
+ {
+	 height:24px;
+ }
+ .stand .sendinv li, .addmember
+ {
+	 font-size:12px;
+ }
+  .markerholder1
+{
+	width:815px;
+	margin-left:23px;
+}
+  .bigchartarea li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea
+ {
+	 margin-left:10px;
+	 width:95%;
+	 position:relative;
+ }
+   .chartbig
+ {
+	 background:url(../Images/chart/1366/chart-big.png) left no-repeat;
+	 height:44px;
+	 width:848px;
+ }
+  .chartdiv1
+ {
+	 width:97%;
+ }
+ .chart1 {
+    float: left;
+    width: 860px;
+}
+/*Dig Deeper*/
+.digdeeper
+{
+    width:74%;
+}
+.deepertable {
+    max-height: 400px;
+    min-height: 400px;
+	width:96%;
+}
+.gap
+{
+	height:25px;
+}
+.firstcol
+{
+	width:93px;
+}
+.secondcol
+{
+	width:278px;
+}
+.thirdcol
+{
+	width:90px;
+}
+.forthcol
+{
+	width:50px;
+}
+.fifthcol
+{
+	width:103px;
+}
+.sixthcol
+{
+	width:96px;
+}
+.seventhcol
+{
+	width:58px;
+}
+.eightcol
+{
+	width:87px;
+}
+.digcol p, .digcol li
+{
+	font-size:12px;
+}
+.gap
+{
+	margin-top:6px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:28px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1366.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1366.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:13.5%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1366/goal-achieved.png) no-repeat top 0px left !important;
+}
+.achieved1mask
+{
+	background:url(../Images/chart/1366/goal-achieved-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved2
+{
+	background:url(../Images/chart/1366/goal-achieved2.png) no-repeat top 0px left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1366/goal-achieved2-mask.png) no-repeat top 0px left !important;
+}
+.achieved3
+{
+	background:url(../Images/chart/1366/goal-achieved3.png) no-repeat top 0px left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1366/goal-achieved3-mask.png) no-repeat top 0px left !important;
+}
+.achieved4
+{
+	background:url(../Images/chart/1366/goal-achieved4.png) no-repeat top 0px left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1366/goal-achieved4-mask.png) no-repeat top 0px left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1366/goal-exceed4.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1366/goal-exceed3.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1366/goal-exceed2.png) no-repeat top left !important;
+}
+.averagecol .goals li
+{	
+	height:23.1pt;
+	border-top:0 !important;
+}
+.digdeepertile img
+{
+	width:44px;
+	height:44px;
+}
+.digdeepertile
+{
+	height:64px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-180px;
+    margin-top:-12px;
+}
+ .poelistli p
+{
+    width: 91% !important;
+}
+#poelist .selected span {
+        width: 109px;
+        height: 109px;
+    }
+    .picholder {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+margin-left: 5px;
+margin-right: 22px;
+}
+.picholder1 {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+}
+    }
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+.digdeepertile
+{
+	width:230px !important;
+	height:80px !important;
+}
+.dignumber
+{
+	font-size:23px;
+	height:50px;
+	width:50px;
+	line-height:50px;
+    top: 40%;
+    left: 10px;
+}
+.number
+{
+	font-size:32px;
+	padding-top:56px;
+    padding-left: 8px;
+}
+.syncnumber
+{
+	font-size:44px;
+	top:35%;
+}
+.syncu
+{
+	width:35px;
+	height:35px;
+}
+.stand ul
+{
+	max-height:360px;
+	width:258px;
+}
+.slide
+{
+	width:950px;
+}
+.pageholder
+{
+	margin-top:8%;
+	width:96.6%;
+}
+ .stand {
+ width:480px;
+}
+ .standlaning
+ {
+	 width:260px;
+ }
+ .stand li {
+ width: 110px;
+ height: 110px;
+}
+.stand li p {
+ font-size:11px;
+ width:80%;
+}
+.stand li span {
+ font-size:45px;
+ top:20px;
+}
+
+.stand h1 {
+ font-size: 20px;
+}
+ /*******Chart******/
+ .chart
+ {
+	width:362px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/1366/chart-top.png) left no-repeat;
+	 height:42px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/1366/chart-bg.png) no-repeat left;
+	 height:92px;
+ }
+ .chartarea
+ {
+	 margin-left:12px;
+	 width:338px;
+	 position:relative;
+ }
+ .chartbtm
+ {
+	 background:url(../Images/chart/1366/chart-scale.png) left no-repeat;
+	 height:62px;
+	 width:392px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:5px;
+	 height:38px;
+	 float:left;
+	 margin-top:63px;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:65px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+   .dwnstatus
+ {
+	 background:url(../Images/chart/1366/status-dwn.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:68px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartbg li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:10px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:46px !important;
+ }
+    .progressbar3
+ {
+	 background:url(../Images/chart/1366/progress3.png) right no-repeat #777777;
+	 top:109px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1366/progress4.png) right no-repeat #999999;
+	 top:152px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1366/progress5.png) right no-repeat #b0b0b0;
+	 top:195px !important;
+ }
+
+.chartplaceholder
+{
+	width:97.4%;
+}
+.markergray
+{
+	top:-5px;
+	left:-2px !important;
+}
+.markeramper
+{
+	left:-2px !important;
+}
+.markerholder
+{
+	width:336px;
+	bottom: -13px;
+}
+.chartsmlplaceholder h1
+{
+	font-size:12px;
+	padding-bottom:5px;
+}
+.digqn
+{
+	width:25px;
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+	margin:5px 0;
+}
+.digchartarea
+{
+	margin:5px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:12px;
+}
+.digchartarea li
+{
+margin:2px 0px 2px 10px;
+}
+.digchartarea li img
+{
+	width:90%;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1366/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:37px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1366/status.png) no-repeat;
+	height:28px;
+	width:28px;
+	line-height:28px;
+	margin-top:52px;
+	margin-left:3px;
+	font-size:10px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:10px 0;
+}
+.row, .row1
+{
+	margin-top:20px;
+}
+.rectangle
+{
+	width:230px !important;
+}
+.addmember {
+	margin-right: 10px;
+}
+.sendinv
+{
+	margin-top:0px;
+}
+.coltwo
+{
+	width:400px;
+	float:left;
+	margin-right:60px;
+}
+.chartholder
+{
+	width:74%;
+	margin-left:40px;
+}
+.slidebtn {
+    width: 20%;
+}
+   .char2top
+ {
+	 background:url(../Images/chart/1366/chart-top.png) left no-repeat;
+	 height:18px;
+	 margin-top:48px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1366/chart2bg.png) no-repeat left;
+	 height:265px;
+ }
+   .fivebarbg
+ {
+	 background:url(../Images/chart/1366/5barbg.png) no-repeat left;
+	 height:265px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1366/chart-scale.png) left no-repeat;
+	 height:35px;
+	 width:508px;
+	 margin-bottom: 40px;
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:94px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:139px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:8px;
+	 height:66px;
+	 float:left;
+	 margin-top:171px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:30px;
+	 height:28px;
+	 float:left;
+	 margin-top:217px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartarea li 
+ {
+	 height:24px;
+ }
+ .stand .sendinv li, .addmember
+ {
+	 font-size:12px;
+ }
+  .markerholder1
+{
+	width:815px;
+	margin-left:23px;
+}
+  .bigchartarea li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea
+ {
+	 margin-left:10px;
+	 width:95%;
+	 position:relative;
+ }
+   .chartbig
+ {
+	 background:url(../Images/chart/1366/chart-big.png) left no-repeat;
+	 height:44px;
+	 width:848px;
+ }
+  .chartdiv1
+ {
+	 width:97%;
+ }
+ .chart1 {
+    float: left;
+    width: 860px;
+}
+/*Dig Deeper*/
+.digdeeper
+{
+    width:74%;
+}
+.deepertable {
+    max-height: 400px;
+    min-height: 400px;
+	width:96%;
+}
+.gap
+{
+	height:25px;
+}
+.firstcol
+{
+	width:93px;
+}
+.secondcol
+{
+	width:218px;
+}
+.thirdcol
+{
+	width:90px;
+}
+.forthcol
+{
+	width:64px;
+}
+.fifthcol
+{
+	width:103px;
+}
+.sixthcol
+{
+	width:96px;
+}
+.seventhcol
+{
+	width:45px;
+}
+.eightcol
+{
+	width:87px;
+}
+.digcol p, .digcol li
+{
+	font-size:12px;
+}
+.gap
+{
+	margin-top:6px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:28px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1366.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1366.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:13.5%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1366/goal-achieved.png) no-repeat top 0px left !important;
+}
+.achieved1mask
+{
+	background:url(../Images/chart/1366/goal-achieved-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved2
+{
+	background:url(../Images/chart/1366/goal-achieved2.png) no-repeat top 0px left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1366/goal-achieved2-mask.png) no-repeat top 0px left !important;
+}
+.achieved3
+{
+	background:url(../Images/chart/1366/goal-achieved3.png) no-repeat top 0px left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1366/goal-achieved3-mask.png) no-repeat top 0px left !important;
+}
+.achieved4
+{
+	background:url(../Images/chart/1366/goal-achieved4.png) no-repeat top 0px left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1366/goal-achieved4-mask.png) no-repeat top 0px left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1366/goal-exceed4.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1366/goal-exceed3.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1366/goal-exceed2.png) no-repeat top left !important;
+}
+.averagecol .goals li
+{	
+	height:23.1pt;
+	border-top:0 !important;
+}
+.digdeepertile img
+{
+	width:44px;
+	height:44px;
+}
+.digdeepertile
+{
+	height:64px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-180px;
+    margin-top:-12px;
+}
+ .poelistli p
+{
+    width: 91% !important;
+}
+#poelist .selected span {
+        width: 109px;
+        height: 109px;
+    }
+.picholder {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+margin-left: 5px;
+margin-right: 22px;
+}
+.picholder1 {
+width: 34px;
+height: 34px;
+background: #ccc;
+float: left;
+}
+}
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+.digdeepertile
+{
+	width:180px !important;
+	height:80px !important;
+}
+.dignumber
+{
+	font-size:23px;
+	height:50px;
+	width:50px;
+	line-height:50px;
+    top: 40%;
+    left: 10px;
+}
+.number
+{
+	font-size: 19px;
+	padding-top: 30px;
+	padding-left: 8px;
+}
+.syncnumber
+{
+	font-size:44px;
+	top:35%;
+}
+.syncu
+{
+	width:35px;
+	height:35px;
+}
+.stand ul
+{
+	max-height:360px;
+	width:170px;
+}
+.slide
+{
+	width:950px;
+}
+.pageholder
+{
+	margin-top:6%;
+	width:93.6%;
+}
+ .stand {
+ width:357px;
+}
+.addmember {
+background: url("../Images/select-arrow.gif") no-repeat scroll 100px center #575757;
+width:120px;
+}
+ .standlaning
+ {
+	 width:170px;
+	  }
+ .stand li {
+ width: 80px;
+ height: 80px;
+ margin:0 5px 5px 0;
+}
+#poelist img
+{
+    width:100%;
+    height:100%;
+}
+.stand li img
+{
+    width:32px;
+}
+#you img
+{
+   width:14px; 
+}
+.stand li p {
+ font-size:11px;
+ width:44%;
+}
+.stand li span {
+ font-size:45px;
+ top:20px;
+}
+#userList li img
+{
+    width:42px;
+    height:42px;
+}
+.stand h1 {
+ font-size: 20px;
+}
+ /*******Chart******/
+ .chart
+ {
+	width:220px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/800/chart-top.png) left no-repeat;
+	 height:24px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/800/chart-bg.png) no-repeat left;
+	 height:73px;
+ }
+ .chartarea
+ {
+	 margin-left:12px;
+	 width:250px;
+	 position:relative;
+ }
+ .chartbtm
+ {
+	 background:url(../Images/chart/800/chart-scale.png) left no-repeat;
+	 height:39px;
+	 width:235px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:5px;
+	 height:38px;
+	 float:left;
+	 margin-top:38px;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:40px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+   .dwnstatus
+ {
+	 background:url(../Images/chart/1366/status-dwn.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:68px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartbg li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:0px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:38px !important;
+ }
+    .progressbar3
+ {
+	 background:url(../Images/chart/1366/progress3.png) right no-repeat #777777;
+	 top:109px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1366/progress4.png) right no-repeat #999999;
+	 top:152px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1366/progress5.png) right no-repeat #b0b0b0;
+	 top:195px !important;
+ }
+
+.chartplaceholder
+{
+	width:97.4%;
+}
+.markergray
+{
+	top:-5px;
+	left:-2px !important;
+}
+.markeramper
+{
+	left:-2px !important;
+}
+.markerholder
+{
+	width:246px;
+	bottom: -13px;
+}
+.chartsmlplaceholder h1
+{
+	font-size:12px;
+	padding-bottom:5px;
+}
+.digqn
+{
+	width:25px;
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+	margin:5px 0;
+}
+.digchartarea
+{
+	margin:5px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:12px;
+}
+.digchartarea li
+{
+margin:2px 0px 2px 10px;
+}
+.digchartarea li img
+{
+	width:90%;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1366/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:37px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1366/status.png) no-repeat;
+	height:28px;
+	width:28px;
+	line-height:28px;
+	margin-top:52px;
+	margin-left:3px;
+	font-size:10px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:5px 0;
+}
+.digdev
+{
+width:80%;
+}
+.row, .row1
+{
+	margin-top:20px;
+}
+.rectangle
+{
+	width:170px !important;
+}
+.addmember {
+	margin-right: 10px;
+}
+.sendinv
+{
+	margin-top:0px;
+}
+.chartdiv
+{
+    padding:7px;
+}
+.coltwo
+{
+	width:254px;
+	float:left;
+	margin-right:40px;
+}
+.chartholder
+{
+	width:74%;
+	margin-left:40px;
+}
+.stand li .diginimg {
+    right: 1px;
+    top: 5px;
+}
+.slidebtn {
+    width: 24%;
+}
+   .char2top
+ {
+	 background:url(../Images/chart/1366/chart-top.png) left no-repeat;
+	 height:18px;
+	 margin-top:48px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1366/chart2bg.png) no-repeat left;
+	 height:265px;
+ }
+   .fivebarbg
+ {
+	 background:url(../Images/chart/1366/5barbg.png) no-repeat left;
+	 height:265px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1366/chart-scale.png) left no-repeat;
+	 height:35px;
+	 width:508px;
+	 margin-bottom: 40px;
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:94px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:139px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:8px;
+	 height:66px;
+	 float:left;
+	 margin-top:171px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:30px;
+	 height:28px;
+	 float:left;
+	 margin-top:217px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartarea li 
+ {
+	 height:24px;
+ }
+ .stand .sendinv li, .addmember
+ {
+	 font-size:12px;
+ }
+  .markerholder1
+{
+	width:815px;
+	margin-left:23px;
+}
+  .bigchartarea li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea
+ {
+	 margin-left:10px;
+	 width:95%;
+	 position:relative;
+ }
+   .chartbig
+ {
+	 background:url(../Images/chart/1366/chart-big.png) left no-repeat;
+	 height:44px;
+	 width:848px;
+ }
+  .chartdiv1
+ {
+	 width:97%;
+ }
+ .chart1 {
+    float: left;
+    width: 860px;
+}
+/*Dig Deeper*/
+.digdeeper
+{
+    width:74%;
+}
+.deepertable {
+    max-height: 400px;
+    min-height: 400px;
+	width:96%;
+}
+.gap
+{
+	height:25px;
+	width:42%;
+	font-size:12px;
+}
+.firstcol
+{
+	width:70px;
+}
+.secondcol
+{
+	width:150px;
+}
+.thirdcol
+{
+	width:68px;
+}
+.picholder, .picholder1
+{
+float:left;
+margin-left:3px;
+}
+.forthcol
+{
+	width:37px;
+}
+.firstcol li p, .average
+{
+font-size:10px;
+}
+.fifthcol
+{
+	width:80px;
+}
+.sixthcol
+{
+	width:96px;
+}
+.seventhcol
+{
+	width:52px;
+}
+.eightcol
+{
+	width:87px;
+}
+.digcol p, .digcol li
+{
+	font-size:10px;
+}
+.gap
+{
+	margin-top:6px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:28px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1366.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1366.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:13.5%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1366/goal-achieved.png) no-repeat top 0px left !important;
+}
+.achieved1mask
+{
+	background:url(../Images/chart/1366/goal-achieved-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved2
+{
+	background:url(../Images/chart/1366/goal-achieved2.png) no-repeat top 0px left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1366/goal-achieved2-mask.png) no-repeat top 0px left !important;
+}
+.achieved3
+{
+	background:url(../Images/chart/1366/goal-achieved3.png) no-repeat top 0px left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1366/goal-achieved3-mask.png) no-repeat top 0px left !important;
+}
+.achieved4
+{
+	background:url(../Images/chart/1366/goal-achieved4.png) no-repeat top 0px left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1366/goal-achieved4-mask.png) no-repeat top 0px left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1366/goal-exceed4.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1366/goal-exceed3.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1366/goal-exceed2.png) no-repeat top left !important;
+}
+.averagecol .goals li
+{	
+	height:23.1pt;
+	border-top:0 !important;
+}
+.digdeepertile img
+{
+	width:44px;
+	height:44px;
+}
+.digdeepertile
+{
+	height:64px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-180px;
+    margin-top:-12px;
+}
+ .poelistli p
+{
+    width: 88% !important;
+}
+#poelist .selected span {
+        width: 79px;
+        height: 79px;
+    }
+        .accordion label img
+    {
+        width:auto !important;
+    }
+        .accordion a img {
+width: 83% ;
+}
+.accordion h3.current, .accordion h3 {
+height: 2px;
+}
+.landingcol li img
+{
+    width:25px;
+}
+    }
+
+@media screen and (min-width: 200px) and (max-width: 800px)
+{
+.digdeepertile
+{
+	width:95px !important;
+	height:80px !important;
+}
+.dignumber
+{
+	font-size:23px;
+	height:50px;
+	width:50px;
+	line-height:50px;
+    top: 40%;
+    left: 10px;
+}
+.number
+{
+	font-size: 19px;
+	padding-top: 28px;
+	padding-left: 8px;
+}
+.syncnumber
+{
+	font-size:44px;
+	top:35%;
+}
+.syncu
+{
+	width:35px;
+	height:35px;
+}
+.stand ul
+{
+	max-height:360px;
+	width:180px;
+}
+.slide
+{
+	width:600px;
+}
+.pageholder
+{
+	margin-top:9%;
+	width:93.6%;
+}
+ .stand {
+ width:356px;
+}
+.addmember {
+background: url("../Images/select-arrow.gif") no-repeat scroll 100px center #575757;
+width:120px;
+}
+ .standlaning
+ {
+	 width:170px;
+	  }
+ .stand li {
+ width: 80px;
+ height: 80px;
+ margin:0 5px 5px 0;
+}
+.stand li .diginimg {
+    right: -3px;
+    top: 5px;
+}
+.syncdigdeeper
+{
+    width:99px !important;
+}
+#poelist img
+{
+    width:100%;
+    height:100%;
+}
+.stand li img
+{
+    width:32px;
+}
+.landingcol li img
+{
+    width:25px;
+}
+#you img
+{
+   width:14px; 
+}
+.stand li p {
+ font-size:10px;
+ width:70%;
+}
+.stand li span {
+ font-size:45px;
+ top:20px;
+}
+
+.stand h1 {
+ font-size: 20px;
+}
+
+ /*******Chart******/
+ .chart
+ {
+	width:205px;
+	float:left
+ }
+ .chartop
+ {
+	 background:url(../Images/chart/800/chart-top.png) left no-repeat;
+	 height:26px;
+ }
+ .chartbg
+ {
+	 background:url(../Images/chart/800/chart-bg.png) no-repeat left;
+	 height:73px;
+ }
+ .chartarea
+ {
+	 margin-left:12px;
+	 width:250px;
+	 position:relative;
+ }
+ .chartbtm
+ {
+	 background:url(../Images/chart/800/chart-scale.png) left no-repeat;
+	 height:39px;
+	 width:235px;
+ }
+ .pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:5px;
+	 height:38px;
+	 float:left;
+	 margin-top:38px;
+ }
+  .status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:40px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+   .dwnstatus
+ {
+	 background:url(../Images/chart/1366/status-dwn.png) top left no-repeat;
+	 width:28px;
+	 height:28px;
+	 float:left;
+	 margin-top:68px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartbg li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+ .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:0px !important;
+ }
+  .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:38px !important;
+ }
+    .progressbar3
+ {
+	 background:url(../Images/chart/1366/progress3.png) right no-repeat #777777;
+	 top:109px !important;
+ }
+   .progressbar4
+ {
+	 background:url(../Images/chart/1366/progress4.png) right no-repeat #999999;
+	 top:152px !important;
+ }
+   .progressbar5
+ {
+	 background:url(../Images/chart/1366/progress5.png) right no-repeat #b0b0b0;
+	 top:195px !important;
+ }
+
+.chartplaceholder
+{
+	width:97.4%;
+}
+.markergray
+{
+	top:-5px;
+	left:-2px !important;
+}
+.markeramper
+{
+	left:-2px !important;
+}
+.markerholder
+{
+	width:246px;
+	bottom: -13px;
+}
+.chartsmlplaceholder h1
+{
+	font-size:12px;
+	padding-bottom:5px;
+}
+.digqn
+{
+	width:25px;
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+	margin:5px 0;
+}
+.digchartarea
+{
+	margin:5px 0;
+}
+.digdev, .digchartarea li
+{
+	font-size:12px;
+}
+.digchartarea li
+{
+margin:2px 0px 2px 10px;
+}
+.digchartarea li img
+{
+	width:90%;
+}
+.digstat
+{
+	float:left;
+	background:url(../Images/chart/1366/dig-mark.png) no-repeat;
+	width:13px;
+	height:87px;
+	margin-top:37px;
+}
+.digstatus
+{
+	background:url(../Images/chart/1366/status.png) no-repeat;
+	height:28px;
+	width:28px;
+	line-height:28px;
+	margin-top:52px;
+	margin-left:3px;
+	font-size:10px;
+
+}
+.chartsmlplaceholder h1
+{
+	padding:5px 0;
+}
+.digdev
+{
+width:80%;
+}
+.row, .row1
+{
+	margin-top:20px;
+}
+.rectangle
+{
+	width:170px !important;
+}
+.addmember {
+	margin-right: 10px;
+}
+.sendinv
+{
+	margin-top:0px;
+}
+.coltwo
+{
+	width:240px;
+	float:left;
+	margin-right:30px;
+}
+.chartholder
+{
+	width:73%;
+	margin-left:5px;
+}
+.slidebtn {
+    width: 20%;
+}
+   .char2top
+ {
+	 background:url(../Images/chart/1366/chart-top.png) left no-repeat;
+	 height:18px;
+	 margin-top:48px;
+ }
+ .chart2bg
+ {
+	 background:url(../Images/chart/1366/chart2bg.png) no-repeat left;
+	 height:265px;
+ }
+   .fivebarbg
+ {
+	 background:url(../Images/chart/1366/5barbg.png) no-repeat left;
+	 height:265px;
+ }
+  .chart2btm
+ {
+	 background:url(../Images/chart/1366/chart-scale.png) left no-repeat;
+	 height:35px;
+	 width:508px;
+	 margin-bottom: 40px;
+ }
+ .chart2bg .progressbar1
+ {
+	 background:url(../Images/chart/1366/progress1.png) right no-repeat #e0af01;
+	 top:94px !important;
+ }
+ .chart2bg .progressbar2
+ {
+	 background:url(../Images/chart/1366/progress2.png) right no-repeat #808080;
+	 top:139px !important;
+ }
+  .chart2pointer
+ {
+	 background:url(../Images/chart/1366/pointer.png) top left no-repeat;
+	 width:8px;
+	 height:66px;
+	 float:left;
+	 margin-top:171px;
+ }
+ .chart2status
+ {
+	 background:url(../Images/chart/1366/status.png) top left no-repeat;
+	 width:30px;
+	 height:28px;
+	 float:left;
+	 margin-top:217px;
+	 text-align:center;
+	 color:#fff;
+	 height:28px;
+	 line-height:28px;
+	 font-size:10px;
+ }
+ .chartarea li 
+ {
+	 height:24px;
+ }
+ .stand .sendinv li, .addmember
+ {
+	 font-size:12px;
+ }
+  .markerholder1
+{
+	width:815px;
+	margin-left:23px;
+}
+  .bigchartarea li
+ {
+	 height:24px;
+	 position:absolute;
+	 left:0;
+ }
+  .bigchartarea
+ {
+	 margin-left:10px;
+	 width:95%;
+	 position:relative;
+ }
+   .chartbig
+ {
+	 background:url(../Images/chart/1366/chart-big.png) left no-repeat;
+	 height:44px;
+	 width:848px;
+ }
+  .chartdiv1
+ {
+	 width:97%;
+ }
+ .chart1 {
+    float: left;
+    width: 860px;
+}
+/*Dig Deeper*/
+/*Dig Deeper*/
+.digdeeper
+{
+    width:86%;
+    margin-left:0;
+}
+.deepertable {
+    max-height: 400px;
+    min-height: 400px;
+	width:103%;
+}
+.gap
+{
+	height:25px;
+	width:42%;
+	font-size:12px;
+}
+#totalavrbg
+{
+    width:100%;
+}
+.firstcol
+{
+	width:64px;
+}
+.secondcol
+{
+	width:147px;
+}
+.firstcol li img {
+    left: 19%;
+}
+.thirdcol
+{
+	width:68px;
+}
+.picholder, .picholder1
+{
+float:left;
+margin-left:3px;
+}
+.forthcol
+{
+	width:37px;
+}
+.firstcol li p, .average
+{
+font-size:10px;
+}
+.fifthcol
+{
+	width:77px;
+}
+.sixthcol
+{
+	width:93px;
+}
+.seventhcol
+{
+	width:35px;
+}
+.eightcol
+{
+	width:87px;
+}
+.digcol p, .digcol li
+{
+	font-size:10px;
+}
+.gap
+{
+	margin-top:6px;
+}
+.gapone, .gaptwo, .gapthree, .fitone, .fittwo, .fitthree
+{
+	height:28px;
+}
+.gapone, .gaptwo, .gapthree
+{
+	background:url(../Images/gap1366.png) no-repeat left #808080;
+}
+.fitone, .fittwo, .fitthree
+{
+	background:url(../Images/fit1366.png) no-repeat right #e0b001;
+}
+.goals li
+{
+	width:12.5%;
+}
+.achieved1
+{
+	background:url(../Images/chart/1366/goal-achieved.png) no-repeat top 0px left !important;
+}
+.achieved1mask
+{
+	background:url(../Images/chart/1366/goal-achieved-mask.png) no-repeat top 0px left !important;
+}
+
+.achieved2
+{
+	background:url(../Images/chart/1366/goal-achieved2.png) no-repeat top 0px left !important;
+}
+.achieved2mask
+{
+	background:url(../Images/chart/1366/goal-achieved2-mask.png) no-repeat top 0px left !important;
+}
+.achieved3
+{
+	background:url(../Images/chart/1366/goal-achieved3.png) no-repeat top 0px left !important;
+}
+.achieved3mask
+{
+	background:url(../Images/chart/1366/goal-achieved3-mask.png) no-repeat top 0px left !important;
+}
+.achieved4
+{
+	background:url(../Images/chart/1366/goal-achieved4.png) no-repeat top 0px left !important;
+}
+.achieved4mask
+{
+	background:url(../Images/chart/1366/goal-achieved4-mask.png) no-repeat top 0px left !important;
+}
+.exceed4mask
+{
+	background:url(../Images/chart/1366/goal-exceed4.png) no-repeat top left !important;
+}
+.exceed3mask
+{
+	background:url(../Images/chart/1366/goal-exceed3.png) no-repeat top left !important;
+}
+.exceed2mask
+{
+	background:url(../Images/chart/1366/goal-exceed2.png) no-repeat top left !important;
+}
+.averagecol .goals li
+{	
+	height:23.1pt;
+	border-top:0 !important;
+}
+.digdeepertile img
+{
+	width:32px;
+	height:32px;
+}
+.digdeepertile
+{
+	height:48px !important;
+}
+.stand .sendinv ul 
+{
+    margin-left:-180px;
+    margin-top:-12px;
+}
+ .poelistli p
+{
+    width: 88% !important;
+}
+#poelist .selected span {
+        width: 79px;
+        height: 79px;
+    }
+        .accordion label img
+    {
+        width:auto !important;
+    }
+        .accordion a img {
+width: 80% ;
+}
+.accordion h3.current, .accordion h3 {
+height: 2px;
+}
+.landingcol {
+margin-left: 10px;
+}
+    }

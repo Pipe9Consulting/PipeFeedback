@@ -1,0 +1,238 @@
+﻿.stand 
+{
+    float: left;
+}
+
+    .stand li
+    {
+        width: 47%;
+        height: 0;
+        padding-bottom: 47%;
+        background: #808080;
+        position: relative;
+        list-style: none;
+        float: left;
+        margin: 0 3% 3% 0;
+        cursor: pointer;
+    }
+.ui.grid > :not(.row).column {
+    padding-top: 0 !important
+}
+        .stand li img
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .stand li p
+        {
+            position: absolute;
+            left: 5%;
+            bottom: 3%;
+            color: #fff;
+        }
+
+        .stand li .number
+        {
+            position: absolute;
+            left: 5%;
+            bottom: 20%;
+            color: #fff;
+            font-size: 410%;
+        }
+
+.standlaning
+{
+    width: 18.5%;
+    margin-right: 5.7%;
+}
+
+#poelist1 .selected span
+{
+    background: url("../../Images/selected-poe.png") no-repeat right top !important;
+    background-size: 100% 100% !important;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.poelistli p
+{
+    background: url("../../Images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0 !important;
+    left: 0 !important;
+    padding: 3% 5%;
+    position: absolute !important;
+    width: 90%;
+}
+
+.comingsoon
+{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 0;
+    right: 0;
+}
+
+.selected
+{
+    background: none repeat scroll 0 0 #E0B001 !important;
+}
+
+.synclandingtiles
+{
+    width: 38%;
+    float: left;
+}
+
+.synclandinghd h1
+{
+    float: left;
+    width: 47.5%;
+}
+
+.rectangle
+{
+    padding-bottom: 22.9% !important;
+    width: 45.9% !important;
+    margin: 0 1.5% 1.5% 0 !important;
+}
+
+.syncimg
+{
+    width: 49.9%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.stand .rectangle .syncimg img
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: auto;
+    top: auto;
+}
+
+.stand .rectangle img
+{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+}
+
+.stand .rectangle p
+{
+    right: 3%;
+    left: auto;
+    width: 45%;
+    text-align: right;
+}
+
+
+.slimScrollDiv
+{
+    width: 102% !important;
+    height: 0 !important;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.scroll1, .scroll2
+{
+    width: 102% !important;
+    height: 0 !important;
+    padding-bottom: 97%;
+    position: relative;
+}
+
+    .scroll1 ul, .scroll2 ul
+    {
+        position: absolute;
+        height: 98%;
+        width: 96.5%;
+    }
+
+.dummy-slimscrollbar-backgound
+{
+    background: none !important;
+    top: 0px !important;
+}
+
+
+
+@media screen and (max-width: 1920px)
+{
+    .scroll1, .scroll2
+    {
+        padding-bottom: 196%;
+    }
+}
+
+@media screen and (max-width: 1680px)
+{
+    .scroll1{
+         padding-bottom: 86%;
+}
+
+.scroll2
+{
+    padding-bottom: 96%;
+}
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2100px)
+{
+
+
+
+    .scroll1
+    {
+        padding-bottom: 85% !important;
+    }
+}
+
+
+  @media screen and (min-width: 1440px) and (max-width: 1599px)
+{
+
+
+
+    .scroll1
+    {
+        padding-bottom: 81% !important;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px)
+{
+
+
+
+    .scroll1
+    {
+        padding-bottom: 98% !important;
+    }
+}
+
+
+@media screen and (min-width: 1365px) and (max-width: 1400px)
+{
+
+
+
+    .scroll1
+    {
+        padding-bottom: 80% !important;
+    }
+}
+
+

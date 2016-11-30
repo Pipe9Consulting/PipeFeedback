@@ -1,0 +1,1587 @@
+.placeholder {
+    clear: both;
+    margin: 0 1.5%;
+    overflow: hidden;
+}
+
+
+#sales, #marketing, #partner, #leadership, /*#microsoft*/ {
+    padding: 2% 0% 95.7% 2%;
+    border: 1px solid #333;
+}
+
+/*.poepage
+{
+    float: left;
+    width: 100%;
+    padding-bottom: 2em;
+    margin-top: 6em;
+}*/
+
+.poecolumn {
+    width: 34%;
+    float: left;
+    margin-right: 4.6%;
+}
+
+.scrollable .viewport {
+    border: 1px solid #333;
+    height: 800px;
+}
+
+.midcolumn {
+    width: 22.8%;
+    float: left;
+    margin-right: 4.6%;
+}
+
+
+
+.slimScrollDiv, #microsoft {
+    width: 101% !important;
+    height: 617px;
+    padding-bottom: 0% !important;
+    position: relative;
+}
+
+.poemargintop {
+    border: 1px solid #333;
+    padding: .6% .6%;
+}
+
+
+.slimScrollBar, .slimScrollRail {
+    height: 50% !important;
+    right: -0.2% !important;
+}
+
+
+.poecolumn .top, .midcolumn .top, .poelastColumn .top {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+    .poecolumn .top h1, .midcolumn .top h1, .poelastColumn .top h1 {
+        font-size: 120%;
+        padding: 0;
+        text-align: left;
+        line-height: 1em;
+        font-weight: 400;
+        text-transform: uppercase;
+        /*margin-top: 0.5em;*/
+    }
+
+    .midcolumn .top h1, .last h1, .poe-midcolum .top h1 {
+        margin: 0.2em 0 !important;
+        font-size: 120%;
+    }
+
+    .poelastColumn .top h1 {
+        margin: 0.2em 0 !important;
+    }
+
+    .midcolumn .top h1, .poelastColumn .top h1 {
+        line-height: 1.5em !important;
+    }
+
+.poemenu {
+    font-size: 120%;
+    padding: 0;
+    text-align: left;
+    line-height: 5em;
+    position: relative;
+}
+
+    .poemenu::after {
+        content: "";
+        background: url("../../images/KessakuImage/poemenubg.png") no-repeat top 0.5em right 0;
+        padding: 0 0.7em;
+    }
+
+.poecolumn .poemenu ul {
+    background: #fff;
+    width: 40%;
+    float: left;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.poecolumn .poemenu li {
+    width: 100%;
+    padding: 0;
+    float: none;
+    color: #535758;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+}
+
+    .poecolumn .poemenu li:hover {
+        background: #e0b001;
+        color: #fff;
+    }
+
+.last {
+    margin-right: 0;
+}
+
+.poecolumn li {
+    width: 31.7%;
+    height: 0;
+    padding-bottom: 31%;
+    float: left;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/*.overview {
+    width:100%;
+}*/
+
+.last li {
+    margin-left: 1.5%;
+    margin-right: 0;
+}
+
+.poecolumn li p {
+    /*background: url(../../images/KessakuImage/trans1.png);*/
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 3% 5%;
+    font-size: 100%;
+}
+
+.poecolumn li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.midcolumn li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    cursor: pointer;
+}
+
+.midcolumn li p {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 2% 3%;
+    /*min-height: 2em;*/
+    line-height: 1.3em;
+    font-size: 100%;
+}
+
+.midcolumn li {
+    width: 100%;
+    height: 0;
+    padding-bottom: 47.7%;
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 2.5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.next {
+    float: right;
+    background: #000;
+    background-size: auto 85%;
+    color: #fff;
+    width: auto;
+    padding: 1.5% 2%;
+    position: relative;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.prev {
+    float: right;
+    background: #000;
+    background-size: auto 85%;
+    color: #fff;
+    width: auto;
+    padding: 1.5% 2%;
+    position: relative;
+    margin-right: .5%;
+    cursor: pointer;
+}
+
+
+.next:hover {
+    background: #e0b001;
+    color: #000;
+}
+
+
+.prev:hover {
+    background: #e0b001;
+    color: #000;
+}
+
+.btnplace {
+    width: 101%;
+    clear: both;
+    /*padding-right: 8%;*/
+}
+
+.new {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    background: #e0b001;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+.midcolumn .new {
+    width: 15%;
+    padding-bottom: 15%;
+}
+
+.navigation {
+    float: right;
+    width: 60%;
+    margin: 1.6% 0 3% 0 !important;
+    position: fixed;
+    top: 0;
+    right: 4.8%;
+    z-index: 999;
+}
+
+.members {
+    background: #e0b001;
+    color: #fff !important;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+    .members a {
+        color: #fff !important;
+    }
+
+.navigation li {
+    float: right;
+    padding: 0 2% 0 1.6%;
+    position: relative;
+}
+
+    .navigation li a {
+        line-height: 1.6em;
+        font-weight: 300;
+        text-decoration: none;
+        font-size: 139%;
+    }
+
+    .navigation li ul {
+        background: url(../../Images/KessakuImage/menuarrow.png) no-repeat top;
+        position: absolute;
+        border-radius: 3%;
+        overflow: hidden;
+        background-size: 7% auto;
+        display: none;
+        /*width: 14em;*/
+        width: 19em;
+        z-index: 9;
+    }
+
+.casc ul {
+    margin-left: -40%;
+}
+
+.cs ul {
+    margin-left: -40%;
+}
+
+.res ul {
+    margin-left: -77%;
+}
+
+.navigation li li {
+    background: url("../../Images/KessakuImage/arrow-light.png")#222327 no-repeat center right 0.3em;
+    float: none;
+    padding: 0.5em 2em 0.5em 0.5em;
+    border-bottom: 1px solid #40444f;
+}
+
+    .navigation li li:first-child {
+        margin-top: 7px;
+        border-top-left-radius: 0.4em;
+        border-top-right-radius: 0.4em;
+    }
+
+    .navigation li li:last-child {
+        border: 0;
+    }
+
+    .navigation li li:hover {
+        background: url("../../Images/KessakuImage/arrow-dark.png") #e0b001 no-repeat center right 0.3em;
+        cursor: pointer;
+    }
+
+.navigation li:hover > ul {
+    display: block;
+}
+
+.navigation li li a {
+    color: #fff !important;
+    display: block;
+    text-decoration: none;
+}
+
+.active {
+    color: #e0b001;
+}
+
+.deActive {
+    color: #000 !important;
+}
+
+.select {
+    background: #333;
+    padding: .1% .8%;
+    border: 1px solid #5e5e5e;
+    margin: 1% 0;
+}
+
+    .select p {
+        color: #fff;
+        font-size: 120%;
+        padding: 1% 0;
+    }
+
+    .select img {
+        position: absolute;
+        top: 35%;
+        right: 0;
+        height: auto;
+        width: 10%;
+        margin-right: 5%;
+    }
+
+    .select li {
+        width: 100%;
+        background: #555;
+        height: auto;
+        padding: 0%;
+        margin: 0;
+    }
+
+        .select li p {
+            position: relative;
+            background: transparent;
+            color: #fff;
+        }
+
+        .select li:hover {
+            background: #e0b001;
+        }
+
+.poe-midcolumn li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    cursor: pointer;
+}
+
+.midcolumn ul {
+    padding: 3% 3% 1% 3%;
+    border: 1px solid #333;
+}
+
+.poe-midcolumn li p {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 1% 3%;
+    /*min-height: 2em;*/
+    line-height: 2em;
+    font-size: 100%;
+}
+
+.poe-midcolumn li {
+    width: 188%;
+    height: 10%;
+    padding-bottom: 93.5%;
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 5.5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.poe-midcolumn .new {
+    width: 15%;
+    padding-bottom: 15%;
+}
+
+.poe-midcolumn {
+    width: 237px;
+    float: left;
+}
+
+    .poe-midcolumn .top {
+        margin-top: 0;
+    }
+
+        .poe-midcolumn .top h1 {
+            font-size: 180%;
+            padding: 0;
+            text-align: left;
+            line-height: 1em;
+            margin-bottom: .4em;
+        }
+
+        .poe-midcolumn .top h1, .last h1 {
+            margin-top: 2em!important;
+            margin-bottom: 0.5em;
+        }
+
+.poelastcolumn li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    cursor: pointer;
+}
+
+.poelastcolumn li p {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 2% 3%;
+    /*min-height: 2em;*/
+    line-height: 2em;
+    font-size: 100%;
+}
+
+.poelastcolumn li {
+    background: rgba(0, 0, 0, 0.6);
+    width: 180%;
+    height: 0;
+    padding-bottom: 155%;
+    margin-bottom: 9%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-right: 1.5%;
+}
+
+.poelastcolumn .new {
+    width: 26%;
+    padding-bottom: 26%;
+}
+
+.poelastcolumn {
+    width: 150px;
+    margin-left: 2%;
+    float: left;
+}
+
+
+.poepage {
+    margin-top: -1%;
+}
+
+
+
+
+.poelastcolumn .top {
+    margin-top: 0;
+}
+
+    .poelastcolumn .top h1 {
+        font-size: 180%;
+        padding: 0;
+        text-align: left;
+        line-height: 1em;
+        margin-bottom: .4em;
+    }
+
+    .poelastcolumn .top h1, .last h1 {
+        margin-top: 2em!important;
+        margin-bottom: 0.5em;
+    }
+
+@media screen and (max-width: 2800px) and (min-width: 2560px) {
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 1.9em!important;
+    }
+
+
+    .slimScrollDiv, #microsoft {
+        height: 764px !important;
+    }
+
+
+    .placeholder {
+        max-width: 2400px !important;
+    }
+
+
+    .poE-verticalDiv {
+        width: 260px !important;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 820px;
+        height: 798px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .scrollable.default-skin .scroll-bar .thumb {
+        margin-top: -11px;
+    }
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .poe-midcolumn li {
+        width: 215%;
+        padding-bottom: 103.2%;
+        margin-bottom: 5.4%;
+    }
+
+
+
+    .poelastColumn .viewport .overview {
+        margin: 2%;
+    }
+
+    .poelastcolumn li {
+        width: 163%;
+        padding-bottom: 163.1%;
+        margin-bottom: 8.8%;
+        margin-left: 9%;
+    }
+
+    .poE-verticalDiv1 {
+        width: 505px !important;
+    }
+}
+
+@media screen and (max-width: 2559px) and (min-width: 2160px) {
+
+    /*.scrollable .viewport {
+        height:800px !important;
+    }*/
+    .poE-verticalDiv {
+        width: 212px !important;
+    }
+
+    /*@media screen and (max-width:2559px) and (min-width:2160px)*/
+    #horizontal-scrollbar-demo {
+        width: 720px;
+        height: 698px;
+        float: left;
+        margin-top: 0%;
+    }
+
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .poelastColumn .top h1 {
+        margin-bottom: 0%;
+        margin-top: 1.7em !important;
+    }
+
+    .poe-midcolumn li {
+        width: 195%;
+        padding-bottom: 89%;
+        margin-bottom: 4.5%;
+    }
+
+    .slimScrollDiv, #microsoft {
+        height: 667px !important;
+    }
+
+
+
+    .poelastcolumn li {
+        width: 136%;
+        padding-bottom: 140.5%;
+        margin-bottom: 7%;
+    }
+
+
+    .poE-verticalDiv1 {
+        width: 464px !important;
+    }
+
+
+    .navigation li a {
+        font-size: 21px !important;
+        text-decoration: none;
+        line-height: 35px;
+        margin: 0;
+    }
+
+    #poe-columnmarginlast {
+        margin-top: 1.8% !important;
+    }
+
+    .poecolumn .top h1, .midcolumn .top h1 {
+        line-height: 1.5em !important;
+    }
+
+    .byo .poepopup {
+        padding-bottom: 37.2%;
+    }
+
+    .popupwrapper table p {
+        line-height: 124% !important;
+    }
+
+    .popupwrapper .aop p {
+        font-size: 100% !important;
+    }
+
+    .poelastColumn .viewport .overview {
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 2159px) and (min-width: 1920px) {
+
+    /*.scrollable .viewport {
+        height:800px !important;
+    }*/
+    /*.poelastColumn .top h1
+    {
+        margin-top: 1.5em!important;
+        margin-bottom: 0%;
+    }*/
+
+    .poE-verticalDiv {
+        width: 180px !important;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 619px;
+        height: 620px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .slimScrollDiv, #microsoft {
+        height: 593px !important;
+    }
+
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .poe-midcolumn li {
+        width: 155%;
+        padding-bottom: 73%;
+        margin-bottom: 3.6%;
+    }
+
+
+    .poelastcolumn li {
+        width: 117%;
+        padding-bottom: 127%;
+        margin-left: 10%;
+        margin-bottom: 5.8%;
+    }
+
+
+
+    .poE-verticalDiv1 {
+        width: 390px !important;
+    }
+
+    .btnplace {
+        padding-right: 3.5%;
+    }
+
+
+
+    .navigation li a {
+        font-size: 21px !important;
+        text-decoration: none;
+        line-height: 35px;
+        margin: 0;
+    }
+
+    #poe-columnmarginlast {
+        margin-top: 1.8% !important;
+    }
+
+    .poecolumn .top h1 {
+        line-height: 1em !important;
+    }
+
+
+    .byo .poepopup {
+        padding-bottom: 37.2%;
+    }
+
+    .popupwrapper table p {
+        line-height: 124% !important;
+    }
+
+    .popupwrapper .aop p {
+        font-size: 97% !important;
+    }
+
+    .default-skin.scrollable .scroll-bar .thumb {
+        margin-top: -10px !important;
+    }
+
+    .poelastColumn .viewport .overview {
+        margin: 2%;
+    }
+
+    .poe-midcolumn {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1919px) and (min-width: 1680px) {
+
+    .scrollable.default-skin .scroll-bar .thumb {
+        margin-top: -1.5%;
+        height: 70%;
+    }
+
+
+    .midcolumn .top, .poelastColumn .top {
+        margin-bottom: 2.5% !important;
+    }
+
+        .poelastColumn .top h1, .midcolumn .top h1 {
+            margin-top: 1.4em !important;
+            margin-bottom: 0 !important;
+        }
+
+
+    .slimScrollDiv, #microsoft {
+        height: 617px !important;
+    }
+
+
+    .poE-verticalDiv {
+        width: 160px !important;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 540px;
+        height: 543px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .poe-midcolumn li {
+        width: 137%;
+        padding-bottom: 66.5%;
+        margin-bottom: 3.5%;
+    }
+
+    .poelastcolumn li {
+        width: 104%;
+        padding-bottom: 111%;
+        margin-bottom: 6%;
+        margin-left: 6%;
+    }
+
+    .btnplace {
+        width: 97%;
+    }
+
+    .poelastColumn .viewport .overview {
+        margin: 2%;
+    }
+
+    .poE-verticalDiv1 {
+        width: 340px !important;
+    }
+
+    .poe-midcolumn {
+        width: 250px;
+    }
+
+    .navigation li a {
+        font-size: 19px !important;
+        text-decoration: none;
+        line-height: 33px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1679px) and (min-width: 1600px) {
+    .placeholder {
+        margin: 0 2%;
+    }
+
+    .scrollable.default-skin .scroll-bar .thumb {
+        margin-top: -1.5%;
+        height: 70%;
+    }
+
+
+    .midcolumn .top, .poelastColumn .top {
+        margin-bottom: 2.5% !important;
+    }
+
+        .poelastColumn .top h1, .midcolumn .top h1 {
+            margin-top: 1.4em !important;
+            margin-bottom: 0 !important;
+        }
+
+    .poelastcolumn {
+        width: 142px;
+    }
+
+    .slimScrollDiv, #microsoft {
+        height: 617px !important;
+    }
+
+
+    .poE-verticalDiv {
+        width: 154px !important;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 513px;
+        height: 515px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .poe-midcolumn li {
+        width: 137%;
+        padding-bottom: 66.5%;
+        margin-bottom: 3.5%;
+    }
+
+    .poelastcolumn li {
+        width: 104%;
+        padding-bottom: 111%;
+        margin-bottom: 6%;
+        margin-left: 6%;
+    }
+
+    .btnplace {
+        width: 98%;
+    }
+
+    .poelastColumn .viewport .overview {
+        margin: 2%;
+    }
+
+    .poE-verticalDiv1 {
+        width: 320px !important;
+    }
+
+    .poe-midcolumn {
+        width: 238px;
+    }
+
+    .navigation li a {
+        font-size: 19px !important;
+        text-decoration: none;
+        line-height: 33px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1440px) {
+    .poelastColumn {
+        width: 32%;
+    }
+
+    .slimScrollDiv, #microsoft {
+        height: 617px !important;
+    }
+
+    .poelastColumn .top h1 {
+        margin-top: 1.7em !important;
+        margin-bottom: 0;
+    }
+
+    .placeholder {
+        margin: 0 2% !important;
+    }
+
+    .poelastColumn .viewport .overview {
+        margin: 2%;
+    }
+
+    .midcolumn {
+        width: 21%;
+        margin-right: 7%;
+    }
+
+    .poecolumn {
+        width: 31%;
+        margin-right: 7%;
+    }
+
+    .scrollable.default-skin .scroll-bar .thumb {
+        margin-top: -2%;
+        height: 70%;
+    }
+
+    .next {
+        margin-right: -2.2%;
+    }
+
+    .poE-verticalDiv {
+        width: 125px !important;
+    }
+
+    .poelastcolumn {
+        width: 150px;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 422px;
+        height: 425px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .btnplace {
+        padding-right: 15%;
+    }
+
+    .breadcrumb {
+        margin-top: 2%;
+    }
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .poe-midcolumn li {
+        width: 110%;
+        padding-bottom: 55.3%;
+        margin-bottom: 3.5%;
+    }
+
+    .midcolumn, .poelastColumn {
+        margin-top: 0% !important;
+    }
+
+
+        .poelastcolumn li {
+            width: 85%;
+            padding-bottom: 90.8%;
+            margin-bottom: 6.2%;
+            margin-left: 9%;
+        }
+
+
+
+    .poE-verticalDiv1 {
+        width: 245px !important;
+    }
+
+    .close {
+        top: 0px;
+    }
+
+    .poe-midcolumn {
+        width: 232px;
+    }
+
+
+
+    .poelastcolumn {
+        width: 141px;
+    }
+
+
+    .navigation li a {
+        font-size: 17px !important;
+        text-decoration: none;
+        font-weight: 300;
+    }
+
+    .popupwrapper table p {
+        line-height: 140% !important;
+    }
+
+    .midcolumn .top, .poelastColumn .top {
+        margin: 0px !important;
+    }
+
+        .midcolumn .top h1, .poelastColumn .top h1 {
+            margin: 0px !important;
+        }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1366px) {
+    .poelastColumn {
+        width: 32%;
+    }
+
+    .poepage {
+        margin-top: -1%;
+    }
+
+    .poelastColumn .top h1 {
+        margin-top: 1.7em !important;
+        margin-bottom: 0;
+    }
+
+    .placeholder {
+        margin: 0 2% !important;
+    }
+
+    .poelastColumn .viewport .overview {
+        margin: 2%;
+    }
+
+    .slimScrollDiv, #microsoft {
+        height: 383px !important;
+    }
+
+
+    .midcolumn {
+        width: 21%;
+        margin-right: 7%;
+    }
+
+    .poecolumn {
+        width: 31%;
+        margin-right: 7%;
+    }
+
+    .scrollable.default-skin .scroll-bar .thumb {
+        margin-top: -2%;
+        height: 70%;
+    }
+
+    .next {
+        margin-right: -2.2%;
+    }
+
+    .poE-verticalDiv {
+        width: 125px !important;
+    }
+
+    .poelastcolumn {
+        width: 150px;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 395px;
+        height: 403px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .btnplace {
+        padding-right: 16%;
+    }
+
+    .breadcrumb {
+        margin-top: 2%;
+    }
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .poe-midcolumn li {
+        width: 110%;
+        padding-bottom: 55.3%;
+        margin-bottom: 3.5%;
+    }
+
+    .midcolumn, .poelastColumn {
+        margin-top: 0% !important;
+    }
+
+        .poelastcolumn li {
+            width: 90%;
+            padding-bottom: 91%;
+            margin-bottom: 7%;
+        }
+
+
+    .poE-verticalDiv1 {
+        width: 245px !important;
+    }
+
+    .close {
+        top: 0px;
+    }
+
+    .poe-midcolumn {
+        width: 220px;
+    }
+
+
+
+    .poelastcolumn {
+        width: 133px;
+    }
+
+
+    .navigation li a {
+        font-size: 17px !important;
+        text-decoration: none;
+        font-weight: 300;
+    }
+
+    .popupwrapper table p {
+        line-height: 140% !important;
+    }
+
+    .midcolumn .top, .poelastColumn .top {
+        margin: 0px !important;
+    }
+
+        .midcolumn .top h1, .poelastColumn .top h1 {
+            margin: 0px !important;
+        }
+}
+
+@media screen and (max-width: 1365px) and (min-width: 1360px) {
+
+
+    .poelastColumn {
+        width: 32%;
+    }
+
+        .poelastColumn .top h1 {
+            margin-top: 1.7em !important;
+            margin-bottom: 0;
+        }
+
+    .placeholder {
+        margin: 0 2% !important;
+    }
+
+    .poelastColumn .viewport .overview {
+        margin: 2%;
+    }
+
+    .midcolumn {
+        width: 21%;
+        margin-right: 7%;
+    }
+
+    .poecolumn {
+        width: 31%;
+        margin-right: 7%;
+    }
+
+    .slimScrollDiv, #microsoft {
+        height: 617px !important;
+    }
+
+
+    .scrollable.default-skin .scroll-bar .thumb {
+        margin-top: -2%;
+        height: 70%;
+    }
+
+    .next {
+        margin-right: -2.2%;
+    }
+
+    .poE-verticalDiv {
+        width: 125px !important;
+    }
+
+    .poelastcolumn {
+        width: 150px;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 395px;
+        height: 403px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .btnplace {
+        padding-right: 16%;
+    }
+
+    .breadcrumb {
+        margin-top: 2%;
+    }
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .poe-midcolumn li {
+        width: 110%;
+        padding-bottom: 55.3%;
+        margin-bottom: 3.5%;
+    }
+
+    .midcolumn, .poelastColumn {
+        margin-top: 0% !important;
+    }
+
+        .poelastcolumn li {
+            width: 90%;
+            padding-bottom: 91%;
+            margin-bottom: 7%;
+        }
+
+
+    .poE-verticalDiv1 {
+        width: 245px !important;
+    }
+
+    .close {
+        top: 0px;
+    }
+
+    .poe-midcolumn {
+        width: 220px;
+    }
+
+
+
+    .poelastcolumn {
+        width: 133px;
+    }
+
+
+    .navigation li a {
+        font-size: 17px !important;
+        text-decoration: none;
+        font-weight: 300;
+    }
+
+    .popupwrapper table p {
+        line-height: 140% !important;
+    }
+
+    .midcolumn .top, .poelastColumn .top {
+        margin: 0px !important;
+    }
+
+        .midcolumn .top h1, .poelastColumn .top h1 {
+            margin: 0px !important;
+        }
+}
+
+@media screen and (max-width: 1359px) and (min-width: 1280px) {
+    .poelastcolumn img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    btnplace {
+        padding-right: 2%;
+    }
+
+    .placeholder {
+        margin-top: -.5% !important;
+    }
+
+    .poelastColumn .top h1 {
+        margin-top: 1.7em !important;
+        margin-bottom: 0;
+    }
+
+    .next {
+        margin-right: -3.8%;
+    }
+
+    .poE-verticalDiv {
+        width: 152px !important;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 430px;
+        height: 415px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .scrollable .scroll-bar.horizontal .thumb {
+        margin-top: -8px;
+    }
+
+
+
+    .poe-midcolumn .top h1, .last h1 {
+        margin-top: 3em!important;
+    }
+
+    .close {
+        top: 0px;
+    }
+
+    .poe-midcolumn li {
+        width: 110%;
+        padding-bottom: 51.3%;
+        margin-bottom: 2.5%;
+    }
+
+    .poelastcolumn li {
+        width: 100%;
+        padding-bottom: 86%;
+        margin-bottom: 1.5%;
+    }
+
+
+    .poE-verticalDiv1 {
+        width: 273px !important;
+    }
+
+    .poe-midcolumn {
+        margin-top: 1.5%;
+    }
+
+    .navigation li a {
+        font-size: 163% !important;
+        text-decoration: none;
+    }
+
+    .midcolumn .top, .poelastColumn .top {
+        margin: 0px !important;
+    }
+
+        .midcolumn .top h1, .poelastColumn .top h1 {
+            margin: 5px !important;
+        }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1152px) {
+    .navigation li a {
+        font-size: 155% !important;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 1151px) and (min-width: 1024px) {
+    .navigation li a {
+        font-size: 150% !important;
+        text-decoration: none;
+    }
+
+    #horizontal-scrollbar-demo {
+        width: 295px;
+        height: 415px;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .close {
+        top: 1px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .poE-verticalDiv1 {
+        width: 180px !important;
+    }
+
+    .poe-midcolumn {
+        width: 135px;
+    }
+
+        .poe-midcolumn li {
+            width: 130%;
+        }
+
+    .poE-verticalDiv {
+        width: 100px !important;
+    }
+
+    .poelastcolumn {
+        width: 82px !important;
+    }
+
+        .poelastcolumn li {
+            width: 118% !important;
+        }
+
+    .scrollable .scroll-bar.horizontal .thumb {
+        margin-top: -8px;
+    }
+
+
+
+    .breadcrumb, .breadcrumb a {
+        width: 93.5% !important;
+    }
+
+    #accsettings {
+        top: 94% !important;
+    }
+
+    .midcolumn .top, .poelastColumn .top {
+        margin: 0px !important;
+    }
+
+        .midcolumn .top h1, .poelastColumn .top h1 {
+            margin: 5px !important;
+        }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 800px) {
+    .navigation li a {
+        font-size: 130% !important;
+        text-decoration: none;
+    }
+}
+
+#horizontal-scrollbar-demo .overview {
+    white-space: nowrap;
+    /*padding:1% 0 0 0;*/
+}
+
+.poE-verticalDiv1 {
+    display: inline-block;
+    width: 475px;
+    vertical-align: top;
+}
+
+.poE-verticalDiv {
+    display: inline-block;
+    width: 280px;
+    vertical-align: top;
+}
+
+.poelastColumn {
+    width: 34%;
+    float: left;
+    position: relative;
+}
+
+.accordion a, .accordion h3 {
+    display: table-cell !important;
+}
+
+
+
+.headerRight ul.afterlogin:nth-last-child(3) {
+    display: table-cell !important;
+}
+
+
+
+
+/*-----------------------------Safari Only---------------------------------------*/
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .navigation {
+        top: 3%;
+    }
+
+        .navigation li li {
+            background: url("../../Images/KessakuImage/arrow-light.png");
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-color: #222327;
+        }
+
+        .navigation li ul {
+            background: url("../../Images/KessakuImage/menuarrow.png");
+            background-repeat: no-repeat;
+            background-position: top;
+            border-radius: 3%;
+        }
+
+
+        .navigation li li:hover {
+            background: url("../../Images/KessakuImage/arrow-dark.png");
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-color: #e0b001;
+        }
+
+
+        .navigation li li:last-child {
+            margin-bottom: 7px;
+            border-bottom-left-radius: .4em;
+            border-bottom-left-radius: .4em;
+        }
+}
+/*Added*/
+.top_cont {
+    display: table;
+    width: 100%;
+    padding: 0px 0px 5px;
+}
+
+    .top_cont .top {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .top_cont .poecolumn .select {
+        position: absolute;
+        right: -1px;
+        top: 25%;
+        margin: 0px;
+    }
+
+        .top_cont .poecolumn .select p {
+            font-size: 100% !important;
+        }
+
+    .top_cont h1 {
+        padding: 0px !important;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 500;
+    }
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
+    .top_cont {
+        padding: 10px 0px;
+    }
+}
+/*Added*/

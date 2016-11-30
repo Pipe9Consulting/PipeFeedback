@@ -1,0 +1,282 @@
+body
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI";
+}
+
+.isyourteam
+{
+    width: 100%;
+}
+
+    .isyourteam p
+    {
+        font-size: 100%;
+        line-height:150%;
+        text-align: justify;
+        color:#000;
+        padding-bottom:20px;
+    }
+
+.isyourteambg
+{
+    background: url("../../images/KessakuImage/IsYourTeamHome.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    padding-bottom: 43% !important;
+    position: relative;
+}
+
+.isyourteamArea
+{
+    position: relative;
+    padding: 50px;
+}
+
+.areaheader
+{
+    width: 100%;
+}
+
+    .areaheader h2
+    {
+        font-size: 200%;
+        color: #4a4a4a;
+        font-weight: 500;
+        border-bottom: 4px solid #f2bc3e;
+        padding: 10px 0 10px 0;
+        margin: 0 0 30px 0;
+        width: auto;
+    }
+
+.isyourteam-contant .isyourteamleft
+{
+    float: left;
+    width: 30%;
+}
+
+.isyourteam-contant .isyourteamright
+{
+    float: left;
+    width: 70%;
+}
+
+    .isyourteam-contant .isyourteamright p
+    {
+        font-size: 100%;
+        text-align: justify;
+        line-height:150%;
+    }
+
+.isyourteam-contanttwo
+{
+    padding: 50px 0;
+}
+
+    .isyourteam-contanttwo .isyourteamleft1
+    {
+        float: left;
+        width: 70%;
+    }
+
+    .isyourteam-contanttwo .isyourteamright1
+    {
+        float: right;
+    }
+
+.winningteam
+{
+    padding: 50px;
+    background: #535756;
+    color: #f8bc33;
+}
+
+    .winningteam h2
+    {
+        font-size: 180%;
+        color: #f8bc33;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .winningteam p
+    {
+        color: #fff;
+        font-size: 100%;
+        line-height:150%;
+        text-align: justify;
+        font-weight: 400;
+
+    }
+
+.talentgap
+{
+    padding: 50px;
+}
+
+.Yellowbg
+{
+    padding: 50px;
+    background: #535756;
+    color: #f8bc33;
+    background: #f8bc33;
+}
+
+    .Yellowbg h2
+    {
+        font-size: 180%;
+        color: #f8bc33;
+        font-weight: 500;
+        margin: 0;
+        color: #333;
+    }
+
+    .Yellowbg p
+    {
+        color: #000;
+        font-size: 100%;
+        line-height:150%;
+        text-align: justify;
+        font-weight: 400;
+    }
+
+.border-bg
+{
+    background: url("../../images/KessakuImage/border-bg.png") no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+    .border-bg h2
+    {
+        font-size: 160%;
+        color: #4a4a4a;
+        font-weight: 600;
+        border-bottom: 4px solid #f2bc3e;
+        padding: 10px 0 10px 30px;
+        margin: 0 0 30px 0;
+        float: left;
+        margin: 50px 0 0 50px;
+    }
+
+    .border-bg .teamIcon
+    {
+        float: left;
+        padding: 60px 0 0 10px;
+    }
+
+.isyourteamheader
+{
+    width: 100%;
+}
+
+    .isyourteamheader h2
+    {
+        font-size: 160%;
+        color: #4a4a4a;
+        font-weight: 600;
+        border-bottom: 4px solid #f2bc3e;
+        padding: 10px 0 10px 30px;
+        margin: 0 0 30px 0;
+        width: auto;
+        float: left;
+        margin: 0 0 0 0;
+    }
+
+    .isyourteamheader .teamIcon
+    {
+        float: left;
+        padding: 10px 0 0 15px;
+    }
+
+.cloudcoachArea
+{
+    width: 100%;
+    background: url("../../images/KessakuImage/cloudascoach.jpg") no-repeat;
+    float: left;
+    padding-bottom: 54%;
+    position: relative;
+    background-size: 100% auto;
+}
+
+    .cloudcoachArea h2
+    {
+        font-size: 230%;
+        color: #535657;
+        font-weight: 500;
+        text-align: center;
+        margin: 11% 0 0 0;
+    }
+
+    .cloudcoachArea h3
+    {
+        font-size: 130%;
+        color: #535657;
+        font-weight: 500;
+        text-align: center;
+        margin: 0;
+    }
+
+.borderYellowbg
+{
+    background: url("../../images/KessakuImage/borderYellowbg.png") no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+    .borderYellowbg h2
+    {
+        font-size: 160%;
+        color: #4a4a4a;
+        font-weight: 600;
+        border-bottom: 4px solid #f2bc3e;
+        padding: 10px 0 10px 30px;
+        margin: 0 0 30px 0;
+        float: left;
+        margin: 50px 0 0 50px;
+    }
+
+    .borderYellowbg .teamIcon
+    {
+        float: left;
+        padding: 60px 0 0 10px;
+    }
+
+.cloudtab
+{
+    padding: 50px;
+    background: #f2bc3e;
+}
+
+.borderYellowbg2
+{
+    background: url("../../images/KessakuImage/borderYellowbg2.png") no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+.footerBg
+{
+    background: url("../../images/KessakuImage/footerBg.jpg") no-repeat;
+    width: 100%;
+    padding: 35% 0 1% 0;
+    background-size: 100%;
+    position: relative;
+}
+
+    .footerBg p
+    {
+        text-align: center;
+        font-size: 100%;
+        line-height:150%;
+        color: #333;
+    }
+
+        .footerBg p span
+        {
+            font-size: 150%;
+            font-weight: 600;
+        }

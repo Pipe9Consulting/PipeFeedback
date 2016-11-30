@@ -1,0 +1,1205 @@
+﻿.sceditor-button, .sceditor-button a, .sceditor-button div {
+    padding: 1% !important;
+    margin: 0 !important;
+}
+
+.wall {
+    width: 17%;
+    float: left;
+    margin-right: 4.7%;
+}
+
+    .wall li {
+        width: 47%;
+        padding-bottom: 47%;
+        height: 0;
+        background: #808080;
+        float: left;
+        margin: 0 2.7% 2.7% 0;
+        position: relative;
+    }
+
+    .wall a, .wall img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+    }
+
+    .wall li p {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        color: #fff;
+        width: 90%;
+    }
+
+.rectangle {
+    width: 97% !important;
+}
+
+    .rectangle img {
+        width: 50%;
+        height: 100%;
+    }
+
+.wall .rectangle p {
+    left: 3%;
+}
+
+.selected {
+    background: #e0b001 !important;
+}
+
+.wall2, .wall3 {
+    display: none;
+}
+
+.commentarea {
+    float: left;
+    width: 78%;
+}
+
+    .commentarea h1 {
+        width: 50%;
+        float: left;
+    }
+
+#thelist1 {
+    clear: both;
+    overflow: hidden;
+}
+
+    #thelist1 ul {
+        width: 100%;
+    }
+
+.column {
+    float: left;
+    margin-right: 2%;
+    width: 31.3%;
+}
+
+.frame {
+    width: 25%;
+    float: left;
+}
+
+#thelist1 li {
+    background: url("../../Images/icons/comment.png") no-repeat scroll right 3% top 7% / 13% 28% #D5D5D5;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding: 2% 2% 38.7%;
+    margin: 0 0 2% 0;
+    position: relative;
+}
+
+    #thelist1 li p {
+        line-height: 2.5em;
+    }
+
+        #thelist1 li p:empty {
+            display: none;
+        }
+
+    #thelist1 li h2 {
+        width: 100%;
+        height: 0;
+        padding-bottom: 7%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+.recieve {
+    float: right;
+    height: auto !important;
+    margin-right: 13%;
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    width: 60%;
+}
+
+.videosimg {
+    cursor: pointer;
+}
+
+.wallcomment {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 8.8% !important;
+    width: 90%;
+    position: absolute;
+}
+
+.recieve img {
+    float: right;
+    width: 45.5%;
+    height: auto;
+    margin-left: 3%;
+}
+
+.youimg {
+    float: left;
+    width: 15%;
+    height: auto;
+}
+
+.dt {
+    clear: both;
+    padding: 1% 0 0 0;
+}
+
+h2 {
+    color: #5e5e5e;
+    padding: 1% 0;
+    font-weight: 600;
+}
+
+.morelink {
+    color: #000;
+    text-decoration: none;
+    margin: 1%;
+}
+
+.clickmore {
+    background: url("../../Images/expand_right.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    bottom: 7%;
+    float: right;
+    position: absolute;
+    right: 4%;
+    width: 4.5%;
+    padding-bottom: 4.5%;
+    cursor: pointer;
+}
+
+.filter {
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 0 1%;
+    width: 10%;
+    z-index: 99;
+    float: right;
+    position: relative;
+    margin-top: 0.8%;
+}
+
+    .filter div {
+        background: url("../../Images/select-arrow.gif") no-repeat right 0 #575757;
+        background-size: 20% 100%;
+        padding: 4% 5%;
+        color: #fff;
+    }
+
+    .filter ul {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 80%;
+    }
+
+    .filter li {
+        background: #FFFFFF;
+        border: 0 none !important;
+        color: #808080;
+        padding: 3% 5%;
+        width: 95%;
+    }
+
+        .filter li:hover, .vs-context-menu li {
+            background: #e0b001;
+        }
+
+            .filter li:hover > a, .vs-context-menu li > a {
+                color: #fff;
+            }
+
+        .filter li a {
+            color: #808080;
+            display: block;
+            height: 100%;
+            text-decoration: none;
+            width: 100%;
+        }
+
+.commentsel {
+    background: url("../../Images/selected.png") no-repeat scroll right top / 14% 35% rgba(0, 0, 0, 0);
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 99.5%;
+    border: 1px solid #e0b001;
+    height: 98.5%;
+}
+
+.vs-context-menu {
+    display: none;
+    margin: 0;
+    min-height: 150px;
+    padding: 0;
+    position: absolute;
+    width: 10%;
+    z-index: 10;
+}
+
+    .vs-context-menu li {
+        background: #FFFFFF;
+        border: 0 none;
+        color: #000000;
+        cursor: pointer;
+        margin: 0 !important;
+        padding: 3%;
+        width: 100%;
+    }
+
+        .vs-context-menu li:hover {
+            background: #e0b001;
+            color: #ffffff;
+        }
+
+.poepopup, .popupW {
+    background: #FFFFFF;
+    border: 4px solid #5F5F5F;
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 35%;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    z-index: 9999999!important;
+    padding-bottom: 0.5%;
+}
+
+.poepopuphd, .popuphd, .cmntpopuphd {
+    background: #5F5F5F;
+    float: left;
+    text-align: right;
+    width: 100%;
+    padding: 1% 0;
+}
+
+.poepopupcont .level {
+    float: left;
+    width: 8%;
+}
+
+.txtbx {
+    border: 1px solid #CCCCCC;
+    color: #808080;
+    padding: 1% 3%;
+    width: 79%;
+}
+
+.popupattach {
+    cursor: pointer;
+    float: right;
+    width: 3.8%;
+    overflow: hidden;
+    margin-top: 1%;
+}
+
+    .popupattach img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mailattach input, .popupattach input {
+        cursor: pointer;
+        margin-top: 0;
+        opacity: 0;
+        position: absolute;
+    }
+
+.filespath {
+    color: #808080;
+    float: left;
+    margin-top: 3%;
+}
+
+.signupbtn {
+    background: #DEAF01;
+    border: 2px solid #6C6C6C;
+    color: #FFFFFF;
+    float: right;
+    margin: 1% 0 0;
+    padding: 1% 2%;
+}
+
+.close {
+    background: url("../../Images/close.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    cursor: pointer;
+    float: right;
+    height: 0;
+    width: 3%;
+    padding-bottom: 3%;
+}
+
+    .close:hover {
+        background: url("../../Images/close-hover.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background-size: 100% 100%;
+    }
+
+.poepopupcont {
+    width: 95%;
+    margin: 7% auto 2%;
+    padding-bottom: 2%;
+}
+
+.sceditor-container {
+    position: relative !important;
+    padding-bottom: 25% !important;
+}
+
+    .sceditor-container iframe {
+        position: absolute !important;
+        height: 56% !important;
+    }
+
+.sceditor-container, .sceditor-group {
+    width: 100% !important;
+    margin-top: 2%;
+    clear: both;
+}
+
+.yammerpopupbg {
+    background: url("../../Images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.yammerpopup {
+    margin: 10% auto 0;
+    width: 55%;
+    z-index: 99999;
+}
+
+.yammerpopupcont {
+    background: #FFFFFF;
+    border: 5px solid #353535;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+    .yammerpopupcont img {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+.yammerpopupconthd {
+    background: #353535;
+    float: left;
+    padding-bottom: 1%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+    .yammerpopupconthd span {
+        float: right;
+        margin: 0.5% 1%;
+        overflow: hidden;
+        padding-bottom: 3%;
+        position: relative;
+        width: 3%;
+        cursor: pointer;
+    }
+
+#Closeclick img:hover {
+    margin-top: -100%;
+}
+
+.yammerpopupconthd span img {
+    height: 200%;
+    margin-top: -200%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.yammerpopupcontholder {
+    overflow: hidden;
+    padding: 2% 0 2% 3%;
+    position: relative;
+    width: 96%;
+    z-index: 1;
+}
+
+.yammerpopupcont h1 {
+    color: #353535;
+    font-weight: lighter;
+    margin: 1% 0 0.5%;
+}
+
+.yammerpopupcontholder .left {
+    float: left;
+    width: 300%;
+    position: relative;
+    height: 0;
+    padding-bottom: 80%;
+    overflow: hidden;
+}
+
+    .yammerpopupcontholder .left .holder {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .yammerpopupcontholder .left ul {
+        float: left;
+        width: 33.3%;
+    }
+
+#yammerNextPrevBtn {
+    width: 80%;
+}
+
+.yammerpopupcontholder .left li {
+    background: url("../../Images/trans2.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-weight: lighter;
+    margin: 1% 1% 0 0;
+    padding: 1% 1% 16% 1%;
+    position: relative;
+    width: 47%;
+    overflow: hidden;
+}
+
+    .yammerpopupcontholder .left li span {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .yammerpopupcontholder .left li .imgholder {
+        left: 3%;
+        position: absolute;
+        top: 7%;
+        width: 30%;
+    }
+
+.yammerpopupcontholder h3 {
+    font-weight: 400;
+    color: #fff;
+    padding: 21% 0;
+}
+
+.yammerpopupcontholder .left li span img {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.yammerpopupcontholder .left li .imgholder img {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.yammerpopupcontholder .left li .conholder {
+    width: 58%;
+    position: absolute;
+    right: 3%;
+    top: 0;
+    height: 100%;
+}
+
+.yammerpopupcont .btm {
+    clear: both;
+    width: 103%;
+}
+
+.yammernavigation {
+    margin: 0 auto;
+    width: 20%;
+}
+
+    .yammernavigation li {
+        float: left;
+        margin: 8% 2%;
+        overflow: hidden;
+        padding-bottom: 43%;
+        position: relative;
+        width: 43%;
+        display: block;
+    }
+
+        .yammernavigation li img {
+            height: 200%;
+            margin-top: -100%;
+            position: absolute;
+            width: 100%;
+        }
+
+            .yammernavigation li img:hover {
+                margin-top: 0;
+                cursor: pointer;
+            }
+
+.btnholder {
+    float: right;
+    margin-right: 4%;
+    margin-top: 1%;
+    width: 37%;
+}
+
+.yammerpopupcont .btm .btn {
+    background: #5F5F5F;
+    border: 2px solid #353535;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    margin: 1%;
+    padding: 4% 2%;
+    text-align: right;
+    width: 100%;
+}
+
+    .yammerpopupcont .btm .btn:hover {
+        background: #e0b001;
+    }
+
+.wallgoal {
+    background: #5F5F5F;
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 36%;
+    margin: 0 auto;
+    padding: 1.7% 0.3% 0.3%;
+    position: absolute;
+    top: 25%;
+    width: 28%;
+    z-index: 9999999 !important;
+}
+
+    .wallgoal .wallcomment {
+        position: relative;
+    }
+
+#wallactcontent {
+    background: #e5e5e5;
+    float: left;
+    width: 96%;
+    padding: 2%;
+}
+
+    #wallactcontent .wallcomment {
+        overflow: no-display !important;
+        height: auto !important;
+        padding-bottom: 0 !important;
+    }
+
+.wallgoal .commentsel, .wallgoal .clickmore {
+    display: none;
+}
+
+.wallgoal .close {
+    margin-top: -4.3%;
+}
+
+.poepopupbg {
+    background: url(../../images/trans.png);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.slidebtn {
+    bottom: 0;
+    float: left;
+    margin: 0;
+    position: fixed;
+    width: 20%;
+    z-index: 99999;
+    left: 40.1%;
+}
+
+.prev {
+    background: url("../../Images/previous.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    color: #E5E5E5;
+    cursor: pointer;
+    float: left;
+    padding-bottom: 9%;
+    text-decoration: none;
+    text-indent: -99999px;
+    width: 14%;
+}
+
+    .prev:hover {
+        background: url("../../Images/prev-hover.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    }
+
+.nxt {
+    background: url("../../Images/next.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    color: #E5E5E5;
+    cursor: pointer;
+    float: right;
+    padding-bottom: 9%;
+    text-decoration: none;
+    text-indent: -99999px;
+    width: 14%;
+}
+
+    .nxt:hover {
+        background: url("../../Images/next-hover.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    }
+
+.pagination {
+    color: #FFFFFF;
+    float: left;
+    padding: 4.5% 0;
+    text-align: center;
+    width: 68%;
+}
+
+.nxtitem {
+    background: #E5E5E5;
+    height: 100%;
+    opacity: 0.8;
+    /* position: fixed;*/
+    right: 0;
+    top: 0;
+    z-index: 5;
+    width: 3.5%;
+}
+/************************Post Comment*************************/
+.postcmnt {
+    width: 22%;
+    float: left;
+    margin-right: 5.8%;
+    clear: both;
+    height: 0;
+    padding-bottom: 45%;
+    position: relative;
+}
+
+    .postcmnt li {
+        background: none repeat scroll 0 0 #D5D5D5;
+        border: 1px solid #D5D5D5;
+        clear: both;
+        cursor: pointer;
+        float: left;
+        margin: 0 0 2.8% 0;
+        position: relative;
+        width: 95%;
+        padding-bottom: 21%;
+    }
+
+.postsel {
+    background: url("../../Images/select.png") no-repeat scroll right top / 15% 65% #D5D5D5 !important;
+    border: 1px solid #E0B001 !important;
+    display: block;
+}
+
+.postcmnt li img {
+    height: auto;
+    left: 2%;
+    position: absolute;
+    top: 10%;
+    width: 18%;
+}
+
+.postcmnt li h2, .postcmnt li h4 {
+    position: absolute;
+    right: 3%;
+    width: 74%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#postcmnt h1, #postvmsg h1 {
+    visibility: hidden;
+}
+
+.postcmnt li h2 {
+    top: 7%;
+    font-weight: 400;
+}
+
+.postcmnt li h4 {
+    top: 50%;
+}
+
+.post {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: auto;
+    padding: 1%;
+    width: 55%;
+}
+
+    .post .txtarea {
+        background: #FFFFFF;
+        border: 1px solid #CECECE;
+        color: #CCCCCC;
+        overflow: hidden;
+        width: 98%;
+        padding: 1% 1% 3.5%;
+        height: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .post p {
+        margin: 1% 0;
+    }
+
+.badge {
+    clear: both;
+    float: left;
+    margin-bottom: 1%;
+    width: 100%;
+    background: #ccc;
+    padding: 0.2%;
+}
+
+    .badge li {
+        background: #ECECEC;
+        color: #808080;
+        cursor: pointer;
+        float: left;
+        position: relative;
+        width: 33.2%;
+        margin-right: 0.2%;
+        padding-bottom: 10.5%;
+    }
+
+        .badge li:last-child {
+            margin: 0;
+        }
+
+        .badge li p {
+            position: absolute;
+            left: 3%;
+            bottom: 3%;
+        }
+
+        .badge li span {
+            position: absolute;
+            right: 3%;
+            top: 0;
+            width: 16%;
+        }
+
+        .badge li div {
+            position: absolute;
+            right: 3%;
+            top: 10%;
+            width: 16%;
+        }
+
+            .badge li span img, .badge li div img {
+                width: 100%;
+                height: auto;
+            }
+
+.wallcomment a {
+    padding-left: 10px;
+}
+
+.badgeselect {
+    background: #CCCCCC !important;
+}
+
+.sendtbl {
+    width: 65%;
+    float: right;
+}
+
+.mailattach {
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+    width: 2.5%;
+    padding: 0.5% 0 0;
+}
+
+.post .sign, .post .sign1 {
+    background: #DEAF00;
+    border: 0.1em solid #808080;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-left: 1%;
+    text-align: center;
+    width: 95%;
+    line-height: 2em;
+}
+
+.post .sign {
+    background: #DEAF00;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-left: 1%;
+    padding: 0.3% 2% 0.5% 2%;
+    text-align: center;
+    width: auto;
+}
+
+.sendtbl table {
+    width: 100%;
+}
+
+.sendtbl td {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.mailattach img, .upld img, .del img {
+    width: 100%;
+    height: auto;
+}
+
+.upld, .del {
+    cursor: pointer;
+    float: right;
+    width: 4%;
+    margin-top: 1%;
+}
+
+.del {
+    width: 2.8%;
+}
+
+.upld input {
+    cursor: pointer;
+    float: left;
+    margin-top: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 1.5%;
+}
+
+.videpreview {
+    width: 35%;
+    padding-bottom: 24%;
+    position: relative;
+}
+
+    .videpreview .player {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.scroll1, .slimScrollDiv {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+}
+
+.wallgoal h1 {
+    float: left;
+    width: 50%;
+    font-weight: 500;
+}
+
+.wallgoal .goaldate {
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding: 2% 0;
+}
+
+.wallgoal table {
+    width: 100%;
+}
+
+.wallgoal2ndtbl {
+    float: left;
+    width: 100%;
+}
+
+    .wallgoal2ndtbl p {
+        margin: 0 !important;
+        padding: 0 0 0 1% !important;
+    }
+
+.wallgoal td {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #e5e5e5;
+    line-height: 1.2em;
+    width: 78%;
+}
+
+.wallgoal p {
+    text-align: justify;
+}
+
+    .wallgoal p:first-child {
+        font-weight: bold;
+    }
+
+.wallgoal td p:first-child {
+    color: #353535;
+    padding: 1%;
+}
+
+.wallgoal table table {
+    display: table;
+    height: 100%;
+}
+
+    .wallgoal table table tr {
+        background: transparent !important;
+    }
+
+    .wallgoal table table td {
+        border-left: 1px solid #e5e5e5;
+        background-size: 100% 100%;
+        background: transparent;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 0;
+        width: 25% !important;
+        height: 100%;
+        display: table-cell;
+        padding: 10% 0;
+    }
+
+        .wallgoal table table td:first-child {
+            border: 0;
+        }
+
+.month0 {
+    background: url(../../Images/chart/1920/goal-achieved.png) no-repeat center left;
+    background-size: 25% 100%;
+}
+
+.month6 {
+    background: url(../../Images/chart/1920/goal-achieved2.png) no-repeat center left;
+    background-size: 50% 100%;
+}
+
+.month12 {
+    background: url(../../Images/chart/1920/goal-achieved3.png) no-repeat center left;
+    background-size: 75% 100%;
+}
+
+.month24 {
+    background: url(../../Images/chart/1920/goal-achieved4.png) no-repeat center left;
+    background-size: 100% 100%;
+}
+
+.wallgoal td:nth-child(n+2) {
+    text-align: center;
+}
+
+.wallgoalhd, .wallgoalhd p {
+    background: #999999 !important;
+    color: #fff !important;
+}
+
+.wallgoal tr:nth-child(even) {
+    background: #dfdfdf;
+}
+
+.wallgoal tr:nth-child(odd) {
+    background: #cfcfcf;
+}
+
+.goalshareimg {
+    width: 27%;
+    float: left;
+}
+
+    .goalshareimg img {
+        width: 100%;
+        height: auto;
+    }
+
+.goalsharecont {
+    width: 70%;
+    float: right;
+}
+
+.clr {
+    clear: both;
+}
+
+.load {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 99999999;
+    display: none;
+}
+
+    .load img {
+        margin-top: 25%;
+    }
+
+/*added by karthikeyan*/
+
+.popup {
+    background: #000;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 2% 0;
+    position: fixed;
+    z-index: 999999999;
+    display: none;
+    color: rgb(128, 128, 128);
+    text-align: center;
+    border: 1px solid #e0b001;
+    left: 42.5%;
+    top: 40%;
+    width: 15%;
+    height: 0;
+    padding-bottom: 13% !important;
+}
+
+    .popup p {
+        position: absolute;
+        top: 28%;
+        width: 90%;
+        left: 5%;
+        font-size: 120%;
+        color: #fff;
+    }
+/*added by karthikeyan*/
+
+@media screen and (max-width: 7680px) and (min-width: 1760px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:2560px) and (min-width:1930px) {
+    .wallleft ul li p {
+        font-size: 113% !important;
+    }
+}
+
+@media screen and (max-width: 1760px) and (min-width: 1680px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1600px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    #thelist1 li p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1440px) {
+    h2 {
+        font-size: 17px;
+    }
+
+    #thelist1 li p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1400px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    #thelist1 li p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1366px) {
+    h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1280px) {
+    h2 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1120px) {
+    h2 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1120px) and (min-width: 1024px) {
+    h2 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+    h2 {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    h2 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 480px) {
+    h2 {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 7px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #thelist1 .wallcomment {
+        padding-bottom: 9.2% !important;
+    }
+
+    #thelist1 li p {
+        padding: 0.3% 0 !important;
+    }
+}

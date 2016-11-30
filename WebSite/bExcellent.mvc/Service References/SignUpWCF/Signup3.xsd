@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8089/Signup.svc?xsd=xsd5" />
+  <xs:import schemaLocation="http://localhost:8089/Signup.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
+  <xs:complexType name="ArrayOfUserPOEMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserPOEMapping" nillable="true" type="tns:UserPOEMapping" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserPOEMapping" nillable="true" type="tns:ArrayOfUserPOEMapping" />
+  <xs:complexType name="UserPOEMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="ChildMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="Designation" nillable="true" type="tns:Designation" />
+      <xs:element minOccurs="0" name="Duration" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="FeedbackDetails" nillable="true" type="tns:Feedback" />
+      <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nooffbs" type="xs:int" />
+      <xs:element minOccurs="0" name="POE" nillable="true" type="tns:POE" />
+      <xs:element minOccurs="0" name="POEId" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="PeerChildMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="PeerParentMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="PoeAmount" type="xs:float" />
+      <xs:element minOccurs="0" name="RegionId" type="xs:int" />
+      <xs:element minOccurs="0" name="Role" type="xs:int" />
+      <xs:element minOccurs="0" name="SecondaryUserPOEMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="SubscribtionDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="User" />
+      <xs:element minOccurs="0" name="UserAmount" type="xs:float" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+      <xs:element minOccurs="0" name="UserPOEMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="WcsiScoreDiff" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserPOEMapping" nillable="true" type="tns:UserPOEMapping" />
+  <xs:complexType name="Designation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DesignationId" type="xs:int" />
+      <xs:element minOccurs="0" name="Level" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Designation" nillable="true" type="tns:Designation" />
+  <xs:complexType name="Feedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedOn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedOnDtm" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FeedbackId" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" minOccurs="0" name="FeedbackStatus" type="q1:FeedbackStatus" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" minOccurs="0" name="FeedbackType" type="q2:FeedbackType" />
+      <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="tns:UserPOEMapping" />
+      <xs:element minOccurs="0" name="RequestedById" type="xs:int" />
+      <xs:element minOccurs="0" name="RequestedFor" nillable="true" type="tns:UserPOEMapping" />
+      <xs:element minOccurs="0" name="RequestedForId" type="xs:int" />
+      <xs:element minOccurs="0" name="RequestedFrom" nillable="true" type="tns:UserPOEMapping" />
+      <xs:element minOccurs="0" name="RequestedFromId" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdatedOn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdatedOnDtm" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Feedback" nillable="true" type="tns:Feedback" />
+  <xs:complexType name="POE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IntroContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modules" nillable="true" type="tns:ArrayOfModule" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POEId" type="xs:int" />
+      <xs:element minOccurs="0" name="PoeAmount" type="xs:float" />
+      <xs:element minOccurs="0" name="PoeFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="SubscribedPoeDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="POE" nillable="true" type="tns:POE" />
+  <xs:complexType name="ArrayOfModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Module" nillable="true" type="tns:Module" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModule" nillable="true" type="tns:ArrayOfModule" />
+  <xs:complexType name="Module">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CourseDetail" nillable="true" type="tns:ArrayOfCourseDetail" />
+      <xs:element minOccurs="0" name="IndexType" type="xs:int" />
+      <xs:element minOccurs="0" name="KeyAction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyActionSlideCount" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleIntro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntroSlideCount" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleOrderNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="POEId" type="xs:int" />
+      <xs:element minOccurs="0" name="Questions" nillable="true" type="tns:ArrayOfQuestion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Module" nillable="true" type="tns:Module" />
+  <xs:complexType name="ArrayOfCourseDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CourseDetail" nillable="true" type="tns:CourseDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCourseDetail" nillable="true" type="tns:ArrayOfCourseDetail" />
+  <xs:complexType name="CourseDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Contentlength" type="xs:int" />
+      <xs:element minOccurs="0" name="CourseContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CourseLink" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CourseTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Courseid" type="xs:int" />
+      <xs:element minOccurs="0" name="LinkCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CourseDetail" nillable="true" type="tns:CourseDetail" />
+  <xs:complexType name="ArrayOfQuestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Question" nillable="true" type="tns:Question" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQuestion" nillable="true" type="tns:ArrayOfQuestion" />
+  <xs:complexType name="Question">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Answer" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsBarrierQuestion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionOrderNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="QuetionText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortQuetionText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SideBarTitle" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Question" nillable="true" type="tns:Question" />
+  <xs:complexType name="Zone">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Zone" nillable="true" type="tns:Zone" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="Network">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedOn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NetworkName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Plan" type="xs:int" />
+      <xs:element minOccurs="0" name="Subscriptionid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Network" nillable="true" type="tns:Network" />
+  <xs:complexType name="Payment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CVV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreditCard" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Response" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponseId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Payment" nillable="true" type="tns:Payment" />
+  <xs:complexType name="ArrayOfPOE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="POE" nillable="true" type="tns:POE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPOE" nillable="true" type="tns:ArrayOfPOE" />
+</xs:schema>

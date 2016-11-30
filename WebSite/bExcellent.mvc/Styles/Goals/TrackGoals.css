@@ -1,0 +1,1128 @@
+﻿.clr {
+    clear: both;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background: url(../../../Images/images/bodyBg-new5.jpg)no-repeat !important;*/
+    font-family: Segoe UI;
+    background-size: 100% 100% !important;
+}
+
+
+.pageholder {
+    margin: 0 auto;
+    max-width: 2800px;
+    width: 97% !important;
+    margin-top: -1.2%;
+}
+
+.stand {
+    width: 19.5%;
+    margin-right: 3%;
+    float: left;
+}
+
+    .stand h1 {
+        font-weight: 400;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 200%;
+        margin-top: 4%;
+    }
+
+.trackTiles ul {
+    width: 94% !important;
+    position: absolute;
+    height: 96.5%;
+    margin: 3%;
+}
+
+
+.trackTiles {
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 137% !important;
+    position: relative;
+}
+
+.stand li {
+    width: 48.5%;
+    padding-bottom: 45%;
+    height: 0;
+    float: left;
+    background: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    margin: 0 3% 3% 0;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.number {
+    font-size: 400%;
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+    color: #fff;
+}
+
+.selected .number {
+    color: #e0b001 !important;
+}
+
+.selected p {
+    color: #e0b001 !important;
+}
+
+.stand li img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.stand li .syncu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 45%;
+}
+
+.stand li p {
+    position: absolute;
+    font-size: 150%;
+    color: #ffffff;
+    bottom: 3%;
+    left: 5%;
+    width: 90%;
+}
+
+/*.stand li:nth-child(2) {
+    margin-right: 0;
+}
+
+.stand li:nth-child(4) {
+    margin-right: 0;
+}
+
+.stand li:nth-child(6) {
+    margin-right: 0;
+}*/
+
+
+
+.stand li:first-child img {
+    right: 4%;
+    top: 4%;
+    width: 28%;
+    height: 30%;
+}
+
+
+.TrackGoalsArea {
+    padding: .6%;
+    border: 1px solid #333;
+    width: 72%;
+    float: left;
+    margin-top: 2.3%;
+}
+
+
+.praticeAreaFC {
+    margin: 0;
+    padding: 0;
+}
+
+
+    .praticeAreaFC li {
+        float: left;
+        height: 0;
+        background: #000;
+        margin: 0 1% 0% 0;
+        position: relative;
+        cursor: pointer;
+        width: 8% !important;
+        padding-bottom: 8% !important;
+    }
+
+        .praticeAreaFC li img {
+            position: absolute;
+            width: 50%;
+            height: 40%;
+            right: 23%;
+            top: 12%;
+        }
+
+
+        .praticeAreaFC li p {
+            position: absolute;
+            color: #fff;
+            text-align: center;
+            top: 52%;
+            font-size: 85%;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 10%;
+        }
+
+.selected p {
+    color: #e0b001 !important;
+}
+
+.TrackGoalsArea .slimScrollDiv {
+    padding-bottom: 0 !important;
+    height: 475px !important;
+}
+
+.scroll2 {
+    overflow: hidden;
+    width: auto;
+}
+
+.contentTG {
+    width: 98%;
+    margin-top: 1%;
+    /*height: 420px;*/
+}
+
+.ea_part {
+    width: 40%;
+    float: left;
+}
+
+.gd_part {
+    width: 10%;
+    float: left;
+}
+
+.gt_part {
+    width: 20%;
+    float: left;
+}
+
+.gg_part {
+    width: 8%;
+    float: left;
+}
+
+.tg_part {
+    width: 22%;
+    float: left;
+}
+
+
+.ea_part ul li:first-child {
+    background: #191919;
+    font-size: 120%;
+    color: #fff;
+    text-align: left;
+    padding: 2em 0em;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.ea_part ul li {
+    background: #5d5d5d;
+    font-size: 100%;
+    color: #fff;
+    text-align: left;
+    padding: 1em 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+    .ea_part ul li:last-child {
+        background: #000;
+        font-size: 100%;
+        color: #fff;
+        text-align: left;
+        padding: 1em 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+.gd_part ul li:first-child {
+    padding: 2em 0em;
+    font-size: 120%;
+}
+
+.gd_part ul li {
+    background: #323232;
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.gt_part ul li:first-child {
+    font-size: 100%;
+    padding: .5em 0;
+    background: #424242;
+    border-bottom: 0;
+}
+
+.gt_part ul li:nth-child(2) {
+    padding: 1em 0 3em 0;
+}
+
+.gt_part ul li {
+    background: #4a4a4a;
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0 2em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+    .gt_part ul li:first-child {
+        width: 100%;
+    }
+
+
+
+    .gt_part ul li div {
+        width: 50%;
+        float: left;
+        margin: 0 auto;
+    }
+
+
+
+    .gt_part ul li p {
+        width: 50%;
+        float: left;
+        margin: 0 auto;
+    }
+
+
+    .gt_part ul li div img {
+        margin: 0 auto;
+    }
+
+
+
+.gg_part ul li:first-child {
+    padding: 2em 0em;
+    font-size: 120%;
+}
+
+.gg_part ul li {
+    background: #323232;
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+    padding: .5em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.tg_part ul li:first-child {
+    background: #191919;
+    padding: 2em 0em;
+    font-size: 120%;
+}
+
+.tg_part ul li {
+    /*background: #4b4b4b;*/
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 0.32em 0;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.goalTimeLine p {
+    margin: 0 2%;
+    font-size: 90%;
+    background: #ccc;
+    float: left;
+    width: 96%;
+    text-align: right;
+    height: 33px;
+    float: left;
+}
+
+    .goalTimeLine p span {
+        /*padding: 10% 3% 4% 0;*/
+        background: url(../../Images/new/trackYellowArrow.png) no-repeat top right !important;
+        text-align: right;
+        float: left;
+        height: 100%;
+    }
+
+
+.tg_part ul li b {
+    position: absolute;
+    z-index: 999999999;
+    /*padding: 3% 0px;*/
+    font-size: 90%;
+    font-weight: 400;
+    color: #000;
+    right: 10px;
+    line-height: 33px;
+}
+
+.goalNotMet p {
+    /*padding: 3% 0;*/
+    padding-right: 10px;
+    margin: 0 2%;
+    font-size: 90%;
+    background: #000;
+    float: left;
+    width: 96%;
+    color: #fff;
+    text-align: right;
+    height: 33px;
+    line-height: 33px;
+}
+
+.awaitingManagerFeedback p {
+    /*padding: 2% 0;*/
+    padding-right: 10px;
+    margin: 0 2%;
+    font-size: 90%;
+    background: #6d6d6d;
+    float: left;
+    width: 96%;
+    text-align: right;
+    color: #fff;
+    height: 33px;
+    line-height: 33px;
+}
+
+
+.goalAchieved p {
+    /*padding: 2% 0;*/
+    padding-right: 10px;
+    margin: 0 2%;
+    font-size: 90%;
+    background: #e0b001;
+    float: left;
+    width: 96%;
+    text-align: right;
+    color: #000;
+    height: 33px;
+    line-height: 33px;
+}
+
+
+.arrow-right {
+    background: url(../../Images/new/chartYellowArrow.png) no-repeat !important;
+    background-size: 100% 100%;
+}
+
+
+
+/*************************************************************/
+.sticklr .notification-count; {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #555;
+    color: #f0f0f0;
+    cursor: default;
+    font-size: 10px;
+    line-height: 12px;
+    text-indent: 3px;
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    z-index: 96;
+}
+
+
+
+#sticky {
+    position: absolute;
+    /*z-index: 9999999999;*/
+}
+
+.sticklr,
+.sticklr * {
+    margin: 0;
+    padding: 0 0 1.4% 0;
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+    line-height: 16px;
+    color: #555;
+    vertical-align: baseline;
+}
+
+    .sticklr,
+    .sticklr > li > ul {
+        list-style-type: none;
+    }
+
+.sticklr {
+    position: fixed;
+    top: 18.7%;
+    left: 0;
+    background-color: #000;
+    border-left: none;
+    width: auto;
+    overflow: visible;
+    z-index: 90;
+}
+
+.selected {
+    background: #000 !important;
+}
+
+.stand li:hover {
+    background: #000 !important;
+}
+
+    .stand li:hover .number, .stand li:hover p {
+        color: #e0b001 !important;
+    }
+
+
+.sticklr-right {
+    left: auto;
+    right: 0;
+}
+
+
+.sticklr > li > a {
+}
+
+.sticklr > li > a {
+    display: block;
+    width: 80px;
+    height: 0;
+    padding: 4px;
+    background-color: #000;
+    background-position: top 5% center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 100%;
+}
+
+    .sticklr > li > a > p {
+        bottom: 0;
+        top: 60%;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        width: 90%;
+        font-size: 90%;
+    }
+
+
+
+
+.sticklr > li:hover a p {
+    color: #e0b001;
+}
+
+.sticklr > li {
+    position: relative;
+    float: none;
+    width: auto;
+    margin: 0;
+}
+
+    .sticklr > li:first-child {
+    }
+
+    .sticklr > li:last-child {
+    }
+
+    /*.sticklr > li > a:hover {
+    background-color: #eaeaea;
+}*/
+
+    .sticklr > li > ul {
+        display: none;
+        position: absolute;
+        left: 25px;
+        top: -2px;
+        width: 180px;
+        overflow: hidden;
+        z-index: 95;
+    }
+
+.sticklr-right > li > ul {
+    left: auto;
+    right: 80%;
+}
+
+.sticklr > li > ul:nth-child(3) {
+    left: 206px;
+}
+
+.sticklr > li > ul:nth-child(4) {
+    left: 387px;
+}
+
+.sticklr > li > ul:nth-child(5) {
+    left: 568px;
+}
+
+.sticklr > li > ul:nth-child(6) {
+    left: 749px;
+}
+
+.sticklr > li > ul:nth-child(7) {
+    left: 930px;
+}
+
+.sticklr-right > li > ul:nth-child(3) {
+    left: auto;
+    right: 581%;
+}
+
+.sticklr-right > li > ul:nth-child(4) {
+    left: auto;
+    right: 387px;
+}
+
+.sticklr-right > li > ul:nth-child(5) {
+    left: auto;
+    right: 568px;
+}
+
+.sticklr-right > li > ul:nth-child(6) {
+    left: auto;
+    right: 749px;
+}
+
+.sticklr-right > li > ul:nth-child(7) {
+    left: auto;
+    right: 930px;
+}
+
+.sticklr > li:hover > ul {
+    display: block;
+    float: left;
+}
+
+.sticklr.sticklr-js > li:hover > ul {
+    display: none;
+}
+
+.sticklr > li > ul > li {
+}
+
+    .sticklr > li > ul > li:first-child {
+        /*border-top: 1px solid #f7f7f7;*/
+    }
+
+    .sticklr > li > ul > li:last-child {
+        /*border-bottom: 1px solid #f7f7f7;*/
+    }
+
+.sticklr > li > ul > li {
+    border: none !ie;
+}
+
+    .sticklr > li > ul > li > a {
+        display: block;
+        padding: 8px 10px 8px 32px;
+        background-color: #f0f0f0;
+        background-color: rgba(240, 240, 240, 0.75);
+        background-position: 10px;
+        background-repeat: no-repeat;
+        color: #555;
+        min-height: 20px;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent !ie;
+    }
+
+        .sticklr > li > ul > li > a:hover {
+            background-color: #eaeaea;
+        }
+
+    .sticklr > li > ul > li.sticklr-title > a {
+        padding-left: 10px;
+        background-color: #e6e6e6;
+        cursor: default;
+        font-weight: bold;
+        background-color: transparent !ie;
+    }
+
+        .sticklr > li > ul > li.sticklr-title > a:hover {
+            background-color: #e6e6e6;
+            background-color: transparent !ie;
+        }
+
+    .sticklr > li > ul > li > table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .sticklr > li > ul > li > form {
+        padding: 8px 10px;
+    }
+
+    .sticklr > li > ul > li input,
+    .sticklr > li > ul > li select,
+    .sticklr > li > ul > li textarea,
+    .sticklr > li > ul > li button {
+        margin: 4px 0;
+        padding: 4px;
+    }
+
+        .sticklr > li > ul > li input[type="text"],
+        .sticklr > li > ul > li input[type="password"],
+        .sticklr > li > ul > li textarea {
+            min-width: 150px;
+            width: auto;
+        }
+
+        .sticklr > li > ul > li input[type="submit"] {
+            background-color: #f0f0f0;
+        }
+
+.sticklr-arrow {
+    position: absolute;
+    left: 80px;
+    top: 32%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #e0b001;
+    border-right: none;
+    z-index: 999999;
+}
+
+.sticklr-right .sticklr-arrow {
+    left: auto;
+    right: 100%;
+    border-right: 15px solid #e0b001;
+    border-left: none;
+}
+
+.standBPInfo {
+    background-image: url('../../Images/new/settrackGoal.png') !important;
+}
+
+
+    .standBPInfo:hover {
+        background-image: url('../../Images/new/settrackGoalHover.png') !important;
+    }
+
+.selectstandBPInfo {
+    background-image: url('../../Images/new/settrackGoalHover.png') !important;
+}
+
+.selectstandBPInfo {
+    color: #e0b001 !important;
+}
+
+    .selectstandBPInfo p {
+        color: #e0b001 !important;
+    }
+
+
+
+.selecttraits p {
+    color: #e0b001 !important;
+}
+
+
+.descinfo {
+    margin-left: 1.5%;
+}
+
+
+.standInfo {
+    width: 500% !important;
+    background: #000;
+    padding: 5% 10%;
+}
+
+
+
+
+.standTable {
+    width: 500% !important;
+    background: #000;
+    padding: 5% 10%;
+}
+
+    .standTable p {
+        margin: 1% 0%;
+        color: #ccc;
+        line-height: 1.5;
+        font-size: 100%;
+        width: 98%;
+    }
+
+    .standTable h1 {
+        color: #fff;
+        padding: 4% 0 2% 0;
+        font-weight: 400;
+        font-size: 150%;
+        border-bottom: 1px solid #ccc;
+        width: 95%;
+    }
+
+.scroll1 {
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 138% !important;
+    position: relative;
+    border: 1px solid #333;
+    /*background: url("../../Images/new/syncEItilesBg.png") no-repeat scroll center;*/
+    background-size: 94% 97%;
+    /*padding: 3% 0 3% 3%;*/
+}
+
+.slimScrollDiv {
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 200% !important;
+    position: relative;
+}
+/*Newly Added*/
+.Mgrimages {
+    height: 30px;
+    overflow: hidden;
+}
+
+.tg_part ul {
+    background-color: #4b4b4b;
+}
+
+    .tg_part ul li {
+        position: relative;
+    }
+
+#userList li:nth-child(even) {
+    margin-right: 0px;
+}
+
+@-moz-document url-prefix() {
+    .gg_part ul li;
+
+{
+    padding: 0.53em 0px;
+}
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .gg_part ul li {
+        padding: 0.535em 0px;
+    }
+}
+
+/*Newly Added*/
+
+/*Media CSS Starts*/
+@media only screen and (min-width:1000px) and (max-width : 1280px) {
+    .gd_part ul li:first-child, .ea_part ul li:first-child, .gg_part ul li:first-child, .tg_part ul li:first-child {
+        font-size: 90%;
+    }
+
+    .gd_part ul li {
+        font-size: 85%;
+    }
+
+    .gt_part ul li div {
+        width: 20%;
+    }
+
+    .gt_part ul li {
+        overflow: hidden;
+        padding: 0.8em 0 0.75em 0;
+    }
+
+        .gt_part ul li div.Mgrimages {
+            width: 80% !important;
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .gt_part ul li:nth-child(2) {
+            padding: 0.49em 0 0.49em 0;
+            overflow: hidden;
+        }
+
+    .ea_part ul li {
+        font-size: 85%;
+    }
+
+    .Mgrimages img {
+        width: 20px;
+        height: 20px;
+    }
+
+    img.trackNetwork {
+        width: 15px;
+        height: 20px;
+    }
+
+    .ea_part ul li:last-child {
+        font-size: 85%;
+    }
+
+    .gg_part ul li {
+        padding: .49em 0;
+    }
+
+    .gt_part ul li p {
+        font-size: 75%;
+    }
+
+    .tg_part ul li {
+        overflow: hidden;
+        padding: 0.276em 0;
+    }
+
+    .goalNotMet p, .awaitingManagerFeedback p, .goalAchieved p, .goalTimeLine p {
+        height: 28px;
+        line-height: 28px;
+        padding: 0px 10px 0 0;
+        font-size: 85%;
+    }
+
+    .tg_part ul li b {
+        height: 28px;
+        line-height: 28px;
+        padding: 0px;
+        font-size: 85%;
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .gg_part ul li {
+            padding: 0.535em 0px;
+        }
+    }
+}
+
+@media only screen and (min-width:2201px) and (max-width : 2600px) {
+    .gg_part ul li {
+        padding: .53em 0;
+    }
+
+    .sticklr {
+        top: 18.7% !important;
+        padding: 0 0 .8% 0;
+    }
+
+
+
+    .praticeAreaFC li p {
+        font-size: 130%;
+    }
+
+    .standTable p {
+        font-size: 120%;
+    }
+
+    .stand li p {
+        font-size: 120%;
+    }
+
+
+
+    .gg_part ul li {
+        padding: 5.4% 0;
+    }
+
+    .TrackGoalsArea .slimScrollDiv {
+        height: 600px !important;
+    }
+
+
+    .TrackGoalsArea {
+        padding: .67%;
+    }
+}
+
+
+
+@media only screen and (min-width:2001px) and (max-width : 2200px) {
+    .scroll1 {
+        padding-bottom: 137.5% !important;
+    }
+
+    .stand h1 {
+        font-size: 180%;
+    }
+
+    .gg_part ul li {
+        padding: .53em 0;
+    }
+
+    .sticklr {
+        top: 18.7% !important;
+        padding: 0 0 .8% 0;
+    }
+
+
+
+    .praticeAreaFC li p {
+        font-size: 110%;
+    }
+
+    .standTable p {
+        font-size: 120%;
+    }
+
+    .stand li p {
+        font-size: 120%;
+    }
+
+
+
+    .gg_part ul li {
+        padding: 6.4% 0;
+    }
+
+    .TrackGoalsArea .slimScrollDiv {
+        height: 600px !important;
+    }
+
+
+    .TrackGoalsArea {
+        padding: .67%;
+    }
+}
+
+
+@media only screen and (min-width:1700px) and (max-width : 2000px) {
+
+
+
+    .TrackGoalsArea .slimScrollDiv {
+        height: 500px !important;
+    }
+
+
+    .stand h1 {
+        font-size: 160%;
+        margin-top: 4%;
+    }
+
+    .stand li p {
+        font-size: 120%;
+    }
+
+    .gg_part ul li {
+        padding: 7.15% 0;
+    }
+
+
+    .sticklr {
+        top: 20.1% !important;
+    }
+}
+
+
+
+@media only screen and (min-width:1501px) and (max-width : 1700px) {
+    .TrackGoalsArea .slimScrollDiv {
+        height: 400px !important;
+    }
+
+    .sticklr {
+        top: 21.7% !important;
+    }
+
+    .gg_part ul li {
+        padding: 8.7% 0;
+    }
+
+
+    .number {
+        font-size: 300%;
+    }
+
+
+    .pageholder {
+        padding: .5%;
+    }
+
+    .stand h1 {
+        font-size: 140%;
+    }
+
+    .stand li p {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width : 1500px) {
+    .pageholder {
+        padding: .5%;
+    }
+
+    .ea_part ul li {
+        font-size: 80%;
+        padding: 4.25% 10px;
+    }
+
+    .sticklr {
+        top: 24.1% !important;
+    }
+
+    .TrackGoalsArea {
+        margin-top: 1.8%;
+    }
+
+        .TrackGoalsArea .slimScrollDiv {
+            height: 350px !important;
+        }
+
+
+    .stand li p {
+        font-size: 100%;
+    }
+
+    .gg_part ul li {
+        padding: 10.2% 0;
+    }
+
+
+    .number {
+        font-size: 250%;
+    }
+
+    .gt_part ul li:nth-child(2) {
+        padding: .4em 0 2.4em 0;
+    }
+
+    .gd_part ul li:first-child {
+        padding: 1.5em 0em;
+    }
+
+    .ea_part ul li:first-child {
+        padding: 1.5em 0;
+    }
+
+    .gg_part ul li:first-child {
+        padding: 1.5em 0;
+    }
+
+    .praticeAreaFC li p {
+        font-size: 70%;
+    }
+
+
+    .tg_part ul li:first-child {
+        padding: 1.51em 0em;
+    }
+
+
+    .stand h1 {
+        font-size: 120%;
+        margin-top: 1%;
+    }
+}
+
+
+
+.scroll2 {
+    height: 100% !important;
+}

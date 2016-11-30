@@ -1,0 +1,89 @@
+﻿.pageholder {
+    padding: 0.5% !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../../../Images/images/bodyBg-new5.jpg)no-repeat !important;
+    font-family: Segoe UI;
+    background-size: 100% 100% !important;
+}
+
+
+.priorities_tiles h2 {
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+.priorities_tiles ul {
+    border: 1px solid #333;
+    float: left;
+    width: 100%;
+    padding: 2% 0% 2% 2%;
+    position: relative;
+}
+
+    .priorities_tiles ul li {
+        background: rgba(0,0,0,0.8);
+        width: 48%;
+        float: left;
+        padding: 0 0% 44% 0;
+        margin: 0 2% 0 0;
+        position: relative;
+    }
+
+        .priorities_tiles ul li p {
+            bottom: 0;
+            color: #fff;
+            padding: 2%;
+            position: absolute;
+        }
+
+
+.user_tiles h2 {
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+.user_tiles ul {
+    border: 1px solid #333;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 2% 0% 0% 2%;
+}
+
+    .user_tiles ul li {
+        background: rgba(0,0,0,0.8);
+        width: 48%;
+        float: left;
+        padding: 0 0% 44% 0;
+        position: relative;
+        margin: 0 2% 2% 0;
+    }
+
+        .user_tiles ul li p {
+            bottom: 0;
+            color: #fff;
+            padding: 2%;
+        }
+
+
+        .user_tiles ul li img {
+            float: right;
+            width: 50%;
+            height: auto;
+            position: absolute;
+        }
+
+        .user_tiles ul li span {
+            color: #fff;
+            padding: 2%;
+        }
+
+
+.user_name {
+    bottom: 0;
+    position: absolute;
+}

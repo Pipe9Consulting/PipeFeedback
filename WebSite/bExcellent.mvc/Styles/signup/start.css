@@ -1,0 +1,1722 @@
+
+
+
+.StartTitle h1 {
+    margin: 0 1.5% !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 1;
+    display: none;
+}
+
+/*.startPart {
+    background: url(../../Images/images/startBg.png) no-repeat;
+    margin: 10px !important;
+    background-size: 100% 100%;
+}*/
+
+.startColumn {
+    padding: 0 !important;
+    margin: 1% 0;
+}
+
+.startArrowHide {
+    opacity: .2;
+}
+
+
+
+.centerPart {
+    border: none !important;
+    margin: 0 1% 1% 1% !important;
+}
+
+.startColumn2 {
+    padding: 2% 0 0 0 !important;
+}
+
+.startColumn3 {
+    padding: 1.8% 0 2% 0 !important;
+}
+
+.startPart h1 {
+    color: #000;
+    font-weight: normal;
+    width: 100%;
+    padding: 2% 3.5% 0 3.5%;
+    text-transform: uppercase;
+    background: url(../../Images/start/header_arrow.png) no-repeat;
+    background-size: auto 100%;
+}
+
+    .startPart h1 span {
+        color: #fff;
+        margin-right: 7%;
+    }
+
+
+
+.startBox {
+    background: #000;
+    opacity: .8;
+    height: 170px;
+    width: 95%;
+}
+
+    .startBox h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 150%;
+        font-weight: 300;
+        bottom: 0;
+        line-height: 1.2em;
+        margin: 0;
+    }
+
+    .startBox p {
+        color: #fff;
+        font-size: 100%;
+        font-weight: 400;
+        bottom: 0;
+        margin: 0 0 0 15px;
+    }
+
+    .startBox:hover h3 {
+        color: #e0b001;
+    }
+
+    .startBox:hover p {
+        color: #fff;
+    }
+
+.profile {
+    background: url(../../Images/images/profileIcon.png) top 20px right 20px no-repeat #000;
+    background-size: 18% 33%;
+}
+
+    .profile:hover {
+        background: url(../../Images/images/profileIcon2.png) top 20px right 20px no-repeat #000;
+        background-size: 18% 33%;
+    }
+
+.feedback {
+    background: url(../../Images/start/completeSFB.png) top 20px right 20px no-repeat #000;
+    background-size: 18% 33%;
+}
+
+    .feedback:hover {
+        background: url(../../Images/start/completeSFB_h.png) top 20px right 20px no-repeat #000;
+        background-size: 18% 33%;
+    }
+
+.standing {
+    background: url(../../Images/start/resultsnew.png) top 20px right 20px no-repeat #000;
+    background-size: 18% 33%;
+}
+
+    .standing:hover {
+        background: url(../../Images/start/resultsnew_h.png) top 20px right 20px no-repeat #000;
+        background-size: 18% 33%;
+    }
+
+.goal {
+    background: url(../../Images/images/goalIcon.png) top 20px right 20px no-repeat #000;
+    background-size: 18% 33%;
+}
+
+    .goal:hover {
+        background: url(../../Images/images/goalIcon2.png) top 20px right 20px no-repeat #000;
+        background-size: 18% 33%;
+    }
+
+.networks {
+    background: url(../../Images/start/provideTFB.png) top 20px right 20px no-repeat #000;
+    background-size: 18% 33%;
+}
+
+    .networks:hover {
+        background: url(../../Images/start/provideTFB_h.png) top 20px right 20px no-repeat #000;
+        background-size: 18% 33%;
+    }
+
+
+
+.managerSync {
+    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #000;
+    background-size: 38% 33%;
+    width: 47% !important;
+    float: left;
+    margin-right: 6%;
+    height: 330px;
+    position: relative;
+}
+
+    .managerSync:hover {
+        background: url(../../Images/start/managersync_h.png) top 20px right 20px no-repeat #000;
+        background-size: 38% 33%;
+    }
+
+
+.startSmallTile {
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 91.5%;
+    cursor: default;
+    margin-left: -8.5%;
+}
+
+.startManagerNoOver:hover {
+    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #000 !important;
+    opacity: .4 !important;
+    background-size: 38% 33% !important;
+}
+
+.startManagerNoOver {
+    opacity: .4 !important;
+    background-size: 38% 33% !important;
+    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #000;
+}
+
+
+    .startManagerNoOver h3 {
+        color: #ccc !important;
+    }
+
+    .startManagerNoOver:hover h3 {
+        color: #ccc !important;
+    }
+
+.startSyncNoOver:hover {
+    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #000 !important;
+    opacity: .4 !important;
+    background-size: 38% 33% !important;
+}
+
+.startSyncNoOver {
+    opacity: .4 !important;
+    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #000 !important;
+    background-size: 38% 33% !important;
+}
+
+    .startSyncNoOver h3 {
+        color: #ccc !important;
+    }
+
+    .startSyncNoOver:hover h3 {
+        color: #ccc !important;
+    }
+
+.communitySync {
+    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #000;
+    background-size: 38% 33%;
+    width: 47% !important;
+    float: left;
+    height: 330px;
+    position: relative;
+}
+
+    .communitySync:hover {
+        background: url(../../Images/start/communitySync_h.png) top 20px right 20px no-repeat #000;
+        background-size: 38% 33%;
+    }
+
+.sync {
+    background: url(../../Images/start/trackGoals.png) top 20px right 20px no-repeat #000;
+    background-size: 18% 33%;
+}
+
+    .sync:hover {
+        background: url(../../Images/start/trackGoals_h.png) top 20px right 20px no-repeat #000;
+        background-size: 18% 33%;
+    }
+
+.mentor {
+    background: url(../../Images/images/mentorIcon.png) top 20px right 20px no-repeat #000;
+    background-size: 18% 33%;
+}
+
+    .mentor:hover {
+        background: url(../../Images/images/mentorIcon2.png) top 20px right 20px no-repeat #000;
+        background-size: 18% 33%;
+    }
+
+.wall {
+    background: url(../../Images/images/wallIcon.png) top 20px right 20px no-repeat #000;
+    background-size: 18% 33%;
+}
+
+    .wall:hover {
+        background: url(../../Images/images/wallIcon2.png) top 20px right 20px no-repeat #000;
+        background-size: 18% 33%;
+    }
+
+
+.startManagerNoOver:hover .star_name {
+    color: #fff !important;
+    opacity: .5;
+}
+
+.startManagerNoOver .star_name {
+    color: #fff !important;
+    opacity: .5;
+}
+
+#hover_content1 span, #hover_content2 span, #hover_content4 span {
+    top: 100%;
+    position: absolute;
+    left: 1.5%;
+}
+
+#hover_content3 span, #hover_content7 span {
+    top: 100%;
+    position: absolute;
+    right: 2%;
+}
+
+
+#hover_content5 span, #hover_content6 span {
+    top: 100%;
+    position: absolute;
+    left: 2%;
+}
+
+
+#hover_content8 span, #hover_content9 span {
+    top: -12px;
+    position: absolute;
+    left: 2%;
+}
+
+#hover_content1, #hover_content2, #hover_content4 {
+    height: auto;
+    line-height: 1.1;
+    background: #e0b001;
+    border: 1px solid #000;
+    width: 50%;
+    color: #000;
+    padding: 2%;
+    display: none;
+    position: absolute;
+    right: -40.5%;
+    top: 53%;
+    z-index: 99999999;
+}
+
+.Star_Icon {
+    float: left;
+    color: #e0b001;
+    font-size: 280%;
+}
+
+.star_name {
+    float: left;
+    color: #fff;
+    margin: 0 0 0 5px;
+    background: url(../../Images/start/notification_start.png) left center no-repeat;
+    padding: 0 0 0 30px;
+    background-position-y: 2px;
+}
+
+    .star_name:hover {
+        background: url(../../Images/start/notification_startH.png) left center no-repeat;
+    }
+
+
+#hover_content3, #hover_content7 {
+    height: auto;
+    line-height: 1.1;
+    background: #e0b001;
+    border: 1px solid #000;
+    width: 50%;
+    color: #000;
+    padding: 2%;
+    display: none;
+    position: absolute;
+    right: 4.5%;
+    top: 53%;
+    z-index: 99999999;
+}
+
+
+#hover_content5, #hover_content6 {
+    height: auto;
+    line-height: 1.1;
+    background: #e0b001;
+    border: 1px solid #000;
+    width: 80%;
+    color: #000;
+    padding: 3% 4% 4% 4%;
+    display: none;
+    position: absolute;
+    right: -61%;
+    top: 53%;
+    z-index: 99999999;
+}
+
+#hover_content8, #hover_content9 {
+    height: auto;
+    line-height: 1.1;
+    background: #d63232;
+    border: 1px solid #000;
+    width: auto;
+    color: #fff;
+    padding: 1.5% 2% 2% 2%;
+    display: none;
+    position: absolute;
+    left: 7%;
+    top: 18%;
+    z-index: 99999999;
+}
+
+.star_content .noticationIcon {
+    bottom: inherit;
+    position: absolute;
+    float: left;
+    text-align: left;
+    margin-left: 3.5%;
+    margin-top: 2%;
+    left: 0px;
+}
+
+
+.star_sync .noticationIcon {
+    /*margin-left: 6.5% !important;*/
+    margin-top: 6% !important;
+    line-height: 0.85 !important;
+}
+
+
+.startTextArea {
+    float: left;
+    position: absolute;
+    bottom: 9%;
+    width: 70%;
+}
+
+.startBox:hover, .startBox h3:hover, .startBox p:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.startBox {
+    color: yellow;
+    padding-left: 4%;
+}
+
+.noticationIcon {
+    bottom: 6%;
+    position: absolute;
+    float: right;
+    text-align: right;
+    right: 40px;
+}
+
+
+
+/*.tooltip { border-bottom: 1px dotted #333; position: relative; cursor: pointer; }  .tooltip:hover:after { content: attr(title); position: absolute; white-space: nowrap; background: rgba(0, 0, 0, 0.85); padding: 3px 7px; color: #FFF; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; margin-left: 7px; margin-top: -3px; }
+.tooltip:hover:after { content: attr(title); }*/
+
+
+/* -  ---------------------------- */
+
+
+.ui.grid > [class*='four column'].row > .column {
+    width: 31.83% !important;
+    margin-right: 4rem;
+}
+
+    .ui.grid > [class*='four column'].row > .column:last-child {
+        margin-right: 0rem;
+    }
+
+
+@media screen and (max-width: 3600px) and (min-width: 2600px) {
+    .startPart h1 {
+        padding: 3% 3.5% 3% 3.5%;
+        font-size: 300%;
+    }
+
+    .goal {
+        background-size: 20% 33%;
+    }
+
+        .goal:hover {
+            background-size: 20% 33%;
+        }
+
+    .startBox {
+        height: 430px;
+    }
+
+        .startBox h3 {
+            font-size: 300%;
+        }
+
+    .noticationIcon {
+        right: 40px;
+    }
+
+    .managerSync, .communitySync {
+        height: 430px;
+    }
+
+        .managerSync .noticationIcon, .communitySync .noticationIcon {
+            right: 25px;
+        }
+
+
+    body {
+        background-size: 100% 100% !important;
+    }
+
+
+    #hover_content1 span, #hover_content2 span, #hover_content4 span {
+        top: 94%;
+        left: 1.5%;
+    }
+
+    #hover_content1, #hover_content2, #hover_content4 {
+        right: -41%;
+        top: 60%;
+        font-size: 150%;
+    }
+
+    #hover_content4 {
+        top: 54%;
+    }
+
+    #hover_content2 {
+        top: 50%;
+    }
+
+    .startBox {
+        width: 100%;
+    }
+
+    #hover_content5 {
+        padding: 3% 4% 4% 4%;
+        right: -65%;
+        font-size: 150%;
+        top: 7%;
+    }
+
+    #hover_content6 {
+        padding: 3% 4% 4% 4%;
+        right: -65%;
+        font-size: 150%;
+        top: 39%;
+    }
+
+        #hover_content5 span, #hover_content6 span {
+            top: 97%;
+        }
+
+    #hover_content3 {
+        font-size: 150%;
+        top: 55%;
+    }
+
+    #hover_content7 {
+        font-size: 150%;
+        top: 60%;
+    }
+
+        #hover_content3 span, #hover_content7 span {
+            top: 93%;
+        }
+}
+
+
+
+@media screen and (max-width: 2600px) and (min-width: 2470px) {
+    .accordion a {
+        margin-top: -0.7% !important;
+    }
+
+    #hover_content5 span, #hover_content6 span {
+        top: 98%;
+        left: 2%;
+    }
+
+    #hover_content8 span, #hover_content9 span {
+        top: -15px !important;
+        left: 10px;
+    }
+
+
+    .startBox {
+        height: 330px;
+        width: 100%;
+    }
+
+    .startPart h1 {
+        font-size: 350%;
+        padding: 1.4% 3.5% 1.8% 2.8%;
+    }
+
+    .StartTitle h1 {
+        margin: 0 2.5% !important;
+        font-size: 2.5rem;
+    }
+
+    .startColumn3 {
+        padding-bottom: 1.2% !important;
+    }
+
+    .startBox h3 {
+        font-size: 320%;
+    }
+
+    .startBox p {
+        font-size: 150%;
+    }
+
+    .star_name {
+        margin: 0 0 0 5px !important;
+        padding: 3px 0 4px 40px;
+        background-position-y: 2px;
+        background-size: 35px 35px;
+    }
+
+
+        .star_name:hover {
+            margin: 0 0 0 5px !important;
+            padding: 3px 0 4px 40px;
+            background-position-y: 2px;
+            background-size: 35px 35px;
+        }
+
+
+    .startTextArea {
+        bottom: 5%;
+        left: 4.5%;
+    }
+
+    #hover_content8, #hover_content9 {
+        left: 9%;
+    }
+
+
+
+
+
+    .centerPart {
+        margin: 0 1% 1% 1% !important;
+    }
+
+    .noticationIcon img {
+        width: 90%;
+    }
+
+    .noticationIcon {
+        right: 37px;
+    }
+
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        right: 30px !important;
+    }
+
+    .startColumn2 {
+        padding: .6% 0 0 0 !important;
+    }
+
+
+    .hideColumn {
+        width: 96.5% !important;
+        padding-bottom: 41.5% !important;
+    }
+
+
+    #hover_content1 {
+        right: -40.5%;
+        top: 58%;
+    }
+
+    #hover_content2 {
+        right: -40.5%;
+        top: 53%;
+    }
+
+
+    #hover_content4 {
+        right: -40.5%;
+        top: 58%;
+    }
+
+    #hover_content3, #hover_content7 {
+        right: 4.5%;
+        top: 58%;
+    }
+
+    #hover_content5 {
+        right: -81%;
+        top: 36%;
+        width: 100%;
+    }
+
+    #hover_content6 {
+        right: -81%;
+        top: 50%;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 2469px) and (min-width: 2001px) {
+
+    .startSmallTile {
+        padding-bottom: 93.5%;
+    }
+
+    #hover_content8, #hover_content9 {
+        left: 70px;
+        top: 62px;
+    }
+
+
+    #hover_content1 {
+        right: -39%;
+        top: 56%;
+    }
+
+    #hover_content2 {
+        right: -39%;
+        top: 45%;
+    }
+
+    #hover_content4 {
+        right: -39%;
+        top: 51%;
+    }
+
+    #hover_content3, #hover_content7 {
+        right: 5%;
+        top: 56%;
+    }
+
+    #hover_content5 {
+        right: -80%;
+        top: 22%;
+        width: 100%;
+    }
+
+    #hover_content6 {
+        right: -80%;
+        top: 42%;
+        width: 100%;
+    }
+
+    .noticationIcon {
+        right: 35px;
+    }
+
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        right: 20px !important;
+    }
+
+    .accordion a {
+        margin-top: -0.7% !important;
+    }
+
+    /*@media screen and (max-width:2169px) and (min-width:2001px)*/
+    .hideColumn {
+        width: 95.8% !important;
+        padding-bottom: 44.8% !important;
+    }
+
+    .startColumn2 {
+        padding: 1% 0 0 0 !important;
+    }
+
+
+    .startBox {
+        height: 300px;
+        width: 100%;
+    }
+
+    .startPart h1 {
+        font-size: 300%;
+        padding: 1% 3.5% 1.5% 2.6%;
+    }
+
+        .startPart h1 span {
+            margin-right: 6%;
+        }
+
+
+    .StartTitle h1 {
+        margin: 0 2.5% !important;
+        font-size: 2.5rem;
+    }
+
+    .startColumn3 {
+        padding-bottom: 1.2% !important;
+    }
+
+    .startBox h3 {
+        font-size: 220%;
+    }
+
+    .startBox p {
+        font-size: 120%;
+    }
+
+    .star_name {
+        margin: 0 0 0 5px !important;
+        font-size: 150% !important;
+        padding: 5px 0 5px 42px;
+        background-size: 38px 38px;
+    }
+
+        .star_name:hover {
+            margin: 0 0 0 5px !important;
+            font-size: 150% !important;
+            padding: 5px 0 5px 42px;
+            background-size: 38px 38px;
+        }
+
+
+    .Star_Icon {
+        font-size: 220%;
+    }
+
+    #hover_content8 span, #hover_content9 span {
+        top: -15px;
+        left: 5px;
+    }
+
+    #hover_content8, #hover_content9 {
+        left: 10%;
+    }
+
+
+    .startTextArea {
+        bottom: 5%;
+    }
+
+    .ui.grid > [class*='four column'].row > .column {
+        width: 31.53% !important;
+        margin-right: 4rem;
+    }
+
+
+    .centerPart {
+        margin: 0 1% 1% 1% !important;
+    }
+
+    .noticationIcon img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1701px) {
+
+
+    .managerSync .star_name, .communitySync .star_name {
+        padding: 0px 0 0 37px;
+        background-position-y: 2px !important;
+        background-size: 35px 35px;
+        line-height: 1.1 !important;
+    }
+
+        .managerSync .star_name:hover, .communitySync .star_name:hover {
+            padding: 0px 0 0 37px;
+            background-position-y: 2px !important;
+            background-size: 35px 35px;
+            line-height: 1.1 !important;
+        }
+
+
+    .star_name {
+        padding: 7px 0 6px 40px;
+        background-position-y: 2px;
+        background-size: 35px 35px;
+    }
+
+        .star_name:hover {
+            padding: 7px 0 6px 40px;
+            background-position-y: 2px;
+            background-size: 35px 35px;
+        }
+
+
+
+
+    #hover_content1 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: -48.5%;
+        top: 51%;
+    }
+
+    .star_name {
+        margin: 0 0 0 5px !important;
+    }
+
+    .Star_Icon {
+        font-size: 220%;
+    }
+
+
+    #hover_content8, #hover_content9 {
+        left: 73px;
+        top: 62px;
+    }
+
+
+        #hover_content8 span, #hover_content9 span {
+            top: -15px;
+        }
+
+    .star_content .noticationIcon {
+        margin-left: 5% !important;
+        margin-top: 3% !important;
+    }
+
+
+    .star_sync .noticationIcon {
+        margin-top: 6% !important;
+        margin-left: 6.5% !important;
+    }
+
+
+    #hover_content2 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: -48.5%;
+        top: 46%;
+    }
+
+    #hover_content4 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: -48.5%;
+        top: 46%;
+    }
+
+    #hover_content3, #hover_content7 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: 4.5%;
+        top: 51%;
+    }
+
+    .hideColumn {
+        width: 95.3% !important;
+        padding-bottom: 42.5% !important;
+    }
+
+    #hover_content5 {
+        width: 130%;
+        padding: 3% 4% 4% 4%;
+        right: -109.5%;
+        top: 15%;
+    }
+
+    #hover_content6 {
+        width: 130%;
+        padding: 3% 4% 4% 4%;
+        right: -109.5%;
+        top: 40%;
+    }
+
+
+    .breadMenu {
+        margin: 2% 2% 1.8% 2%;
+    }
+
+    .noticationIcon {
+        bottom: 6%;
+        right: 30px;
+    }
+
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        right: 15px;
+    }
+
+    .startBox:hover {
+        background-position-y: 19px;
+        background-position-x: 445px;
+    }
+
+    .managerSync, .communitySync {
+        background-position: 147px 15px !important;
+    }
+
+
+        .managerSync:hover, .communitySync:hover {
+            background-position: 147px 15px !important;
+        }
+
+    .startBox {
+        height: 250px !important;
+        width: 100%;
+        background-position-y: 19px;
+        background-position-x: 445px;
+    }
+
+    .startPart h1 span {
+        margin-right: 6%;
+    }
+
+
+    .startPart h1 {
+        font-size: 200%;
+        padding: 1.5% 3.5% 2% 2.4%;
+    }
+
+
+    .noticationIcon img {
+        width: 85%;
+        margin-right: 0px !important;
+    }
+
+
+
+    .StartTitle h1 {
+        font-size: 170%;
+    }
+
+    .startPart h1 {
+        font-size: 220%;
+    }
+
+    .ui.grid > [class*='four column'].row > .column {
+        width: 31.1% !important;
+        margin-right: 4rem;
+    }
+
+    .startBox h3 {
+        font-size: 200%;
+    }
+
+    .startBox p {
+        font-size: 120%;
+    }
+
+    .startColumn {
+        margin: 20px 0 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 33px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+}
+
+
+
+
+/*@media screen and (max-width: 1700px) and (min-width: 1670px) {
+    .startPart {
+        padding-top: 10px!important;
+    }
+
+    .startBox {
+        height: 220px !important;
+        width: 100%;
+    }
+
+    #hover_content1, #hover_content2, #hover_content4 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: -47.5%;
+        top: 27%;
+    }
+
+    #hover_content3, #hover_content7 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: 6%;
+        top: 27%;
+    }
+
+    #hover_content5, #hover_content6 {
+        width: 130%;
+        padding: 3% 4% 4% 4%;
+        right: -109%;
+        top: 29%;
+    }
+
+
+    .breadMenu {
+        margin: 2% 2% 1.8% 2%;
+    }
+
+
+    .noticationIcon {
+        bottom: 6%;
+        right: 30px;
+    }
+
+
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        bottom: 6%;
+        right: 15px;
+    }
+
+
+    .startBox:hover {
+        background-position-y: 15px;
+        background-position-x: 305px;
+    }
+
+
+    .managerSync, .communitySync {
+        background-position-y: 13px !important;
+        background-position-x: 118px !important;
+    }
+
+
+    .startBox {
+        height: 180px !important;
+        width: 100%;
+        background-position-y: 15px;
+        background-position-x: 357px;
+    }
+
+
+    .startPart h1 {
+        font-size: 200%;
+        padding: 3% 3.5% 3% 4%;
+    }
+
+    .noticationIcon img {
+        width: 90%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .startPart h1 {
+        font-size: 180%;
+    }
+
+    .startBox h3 {
+        font-size: 160%;
+    }
+
+    .startBox p {
+        font-size: 110%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 42px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+}*/
+
+
+@media screen and (max-width: 1700px) and (min-width: 1501px) {
+    .ui.grid > :not(.row).column, .ui.grid > .row > .column {
+        padding-left: 1.2rem;
+    }
+
+    .ui.grid > [class*='four column'].row > .column {
+        width: 30.83% !important;
+        margin-right: 4rem;
+    }
+
+
+    .hideColumn {
+        width: 93.6% !important;
+        left: 17px !important;
+        padding-bottom: 41.5% !important;
+    }
+
+    .startBox {
+        height: 200px !important;
+        width: 100%;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .startPart h1 span {
+        margin-right: 6.5%;
+    }
+
+    #hover_content1 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: -47.5%;
+        top: 48%;
+    }
+
+
+    #hover_content2 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: -47.5%;
+        top: 33%;
+    }
+
+
+    #hover_content4 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: -47.5%;
+        top: 33%;
+        top: 40%;
+    }
+
+    #hover_content3, #hover_content7 {
+        width: 66%;
+        padding: 1.5% 2% 2% 2%;
+        right: 5%;
+        top: 48%;
+    }
+
+    #hover_content5 {
+        width: 130%;
+        padding: 3% 4% 4% 4%;
+        right: -107.5%;
+        top: -5%;
+    }
+
+
+    #hover_content6 {
+        width: 130%;
+        padding: 3% 4% 4% 4%;
+        right: -107.5%;
+        top: 26%;
+    }
+
+
+    .breadMenu {
+        margin: 2% 2% 1.8% 2%;
+    }
+
+
+    .noticationIcon {
+        bottom: 6%;
+        right: 30px;
+    }
+
+
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        bottom: 6%;
+        right: 15px;
+    }
+
+
+    .startBox:hover {
+        background-position-y: 15px;
+        background-position-x: 357px;
+    }
+
+
+    .startBox {
+        height: 200px !important;
+        width: 100%;
+        background-position-y: 15px;
+        background-position-x: 357px;
+    }
+
+    .managerSync, .communitySync {
+        background-position: 118px 13px;
+    }
+
+        .managerSync:hover, .communitySync:hover {
+            background-position: 118px 13px;
+        }
+
+
+    .breadMenu {
+        margin: 2% 2% 1.8% 2%;
+    }
+
+
+
+    .startPart h1 {
+        font-size: 200%;
+        padding: 1.1% 5% 2.1% 3%;
+    }
+
+    .startBox h3 {
+        font-size: 160%;
+    }
+
+    .startBox p {
+        font-size: 110%;
+    }
+
+    .startColumn {
+        margin: 20px 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 10px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+}
+
+/*@media screen and (max-width: 1500px) and (min-width: 1401px) {
+    .startPart {
+        padding-top: 10px!important;
+    }
+
+    .ui.grid > [class*='four column'].row > .column {
+        width: 30.83% !important;
+        margin-right: 4rem;
+    }
+
+    #hover_content1, #hover_content2, #hover_content4 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: -47.5%;
+        top: 27%;
+    }
+
+    #hover_content3, #hover_content7 {
+        width: 60%;
+        padding: 1.5% 2% 2% 2%;
+        right: 6%;
+        top: 27%;
+    }
+
+    #hover_content5, #hover_content6 {
+        width: 130%;
+        padding: 3% 4% 4% 4%;
+        right: -109%;
+        top: 29%;
+    }
+
+
+    .breadMenu {
+        margin: 2% 2% 1.8% 2%;
+    }
+
+
+    .noticationIcon {
+        bottom: 6%;
+        right: 30px;
+    }
+
+
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        bottom: 6%;
+        right: 15px;
+    }
+
+
+
+    .startBox:hover {
+        background-position-y: 15px;
+        background-position-x: 305px;
+    }
+
+
+    .managerSync, .communitySync {
+        background-position-y: 13px !important;
+        background-position-x: 100px !important;
+    }
+
+    .startBox {
+        height: 180px !important;
+        width: 100%;
+        background-position-y: 15px;
+        background-position-x: 305px;
+    }
+
+    .noticationIcon img {
+        width: 90%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .StartPart h1 {
+        font-size: 150%;
+    }
+
+    .startBox h3 {
+        font-size: 150%;
+    }
+
+    .startBox p {
+        font-size: 100%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 50px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+
+    .startPart h1 {
+        font-size: 180%;
+    }
+}*/
+
+
+@media screen and (max-width: 1500px) and (min-width: 1301px) {
+    .ui.grid > :not(.row).column, .ui.grid > .row > .column {
+        padding-right: 0;
+    }
+
+    .star_name {
+        font-size: 100% !important;
+    }
+
+    .star_name {
+        padding: 0 0 0 30px;
+        background-position-y: 3px;
+        background-size: 26px 25px;
+        line-height: 2;
+        margin-left: 27px !important;
+    }
+
+        .star_name:hover {
+            padding: 0 0 0 30px;
+            background-position-y: 3px;
+            background-size: 26px 25px;
+        }
+
+    .star_content .noticationIcon {
+        margin-left: 0.5%;
+        margin-top: 2%;
+    }
+
+
+
+    .managerSync .star_name, .communitySync .star_name {
+        padding: 0px 0 3px 31px;
+        background-position-y: 0px !important;
+        background-size: 27px 27px;
+        line-height: 1 !important;
+        margin-left: 12px !important;
+    }
+
+
+
+    .managerSync .star_name:hover, .communitySync .star_name:hover {
+        padding: 0px 0 3px 31px;
+        background-position-y: 0px !important;
+        background-size: 27px 27px;
+        line-height: 1 !important;
+        margin-left: 12px !important;
+    }
+
+
+    .startSmallTile {
+        padding-bottom: 95.5%;
+        margin-left: -9.5%;
+    }
+
+
+    #hover_content8 span img, #hover_content9 span img {
+        width: 30% !important;
+    }
+
+    #hover_content8 span, #hover_content9 span {
+        top: -12px !important;
+        left: 5px;
+        width: 50px;
+    }
+
+    #hover_content8, #hover_content9 {
+        left: 15%;
+        top: 40px;
+        font-size: 85%;
+    }
+
+
+
+
+    .Star_Icon {
+        font-size: 175% !important;
+        line-height: 0.8;
+    }
+
+    .hideColumn {
+        width: 96.6% !important;
+        padding-bottom: 43.1% !important;
+    }
+
+
+    /*@media screen and (max-width:1600px) and (min-width:1024px)*/
+    .breadMenu {
+        margin: 2% 2% 1.5% 2% !important;
+    }
+
+
+    .ui.grid > [class*='four column'].row > .column {
+        width: 30.2% !important;
+        margin-right: 4rem;
+    }
+
+
+
+
+    .ui.grid > .row > .column {
+        margin-bottom: .8%;
+    }
+
+    .startPart h1 {
+        font-size: 200% !important;
+        padding: 1% 7.5% 1.5% 2.5%;
+    }
+
+    .startBox {
+        height: 175px !important;
+        width: 100%;
+        background-position-y: 15px;
+        background-position-x: 305px;
+    }
+
+        .startBox:hover {
+            background-position-y: 15px;
+            background-position-x: 305px;
+        }
+
+
+    .managerSync, .communitySync {
+        background-position: 100px 13px !important;
+    }
+
+        .managerSync:hover, .communitySync:hover {
+            background-position: 100px 13px !important;
+        }
+
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+
+
+    .startBox h3 {
+        font-size: 150%;
+    }
+
+    .startBox p {
+        font-size: 110%;
+    }
+
+    .startColumn {
+        margin: 0 !important;
+    }
+
+    #hover_content1 {
+        width: 65%;
+        padding: 1.5% 2% 2.5% 2%;
+        right: -54%;
+        top: 31%;
+    }
+
+    #hover_content2 {
+        width: 65%;
+        padding: 1.5% 2% 2.5% 2%;
+        right: -54%;
+        top: 23%;
+    }
+
+    #hover_content4 {
+        width: 65%;
+        padding: 1.5% 2% 2.5% 2%;
+        right: -54%;
+        top: 22%;
+    }
+
+
+    #hover_content5 {
+        width: 150%;
+        right: -124%;
+        top: -16%;
+        padding: 1.5% 4% 2.5% 4%;
+    }
+
+    #hover_content6 {
+        width: 150%;
+        right: -124%;
+        top: 18%;
+        padding: 1.5% 4% 2.5% 4%;
+    }
+
+    #hover_content3, #hover_content7 {
+        width: 65%;
+        right: 2%;
+        top: 31%;
+        padding: 1.5% 2% 2.5% 2%;
+    }
+
+
+
+
+    .startColumn2 {
+        padding: 1% 0 0 0 !important;
+    }
+
+    .noticationIcon {
+        bottom: 8%;
+        right: 15px;
+    }
+
+
+    .startColumn3 {
+        padding: 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 12px 0 18px 0 !important;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+    .hideColumn {
+        width: 96.8%;
+        padding-bottom: 43.5%;
+    }
+
+    .startBox {
+        height: 100px !important;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .StartPart h1 {
+        font-size: 150%;
+    }
+
+    .startBox h3 {
+        font-size: 120%;
+    }
+
+    .startBox p {
+        font-size: 80%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 12px 0 18px 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .startPart {
+        padding-top: 15px!important;
+    }
+
+    .hideColumn {
+        width: 96.8%;
+        padding-bottom: 43.5%;
+    }
+
+
+
+    .startBox {
+        height: 100px !important;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+        margin-right: -10px;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .StartPart h1 {
+        font-size: 130%;
+    }
+
+    .startBox h3 {
+        font-size: 100%;
+    }
+
+    .startBox p {
+        font-size: 70%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 25px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+}
+
+
+.hideColumn {
+    height: 0%;
+    position: absolute;
+    z-index: 999;
+    background: #111;
+    top: 0%;
+    width: 95.8%;
+    left: 14px;
+    padding-bottom: 49.5%;
+    cursor: default;
+    opacity: 0.3;
+}
+
+
+
+.SelecDisable h3, .SelecDisable img {
+    /*opacity: 0.5 !important;*/
+}
+
+.SelecDisable {
+    opacity: 0.1 !important;
+}
+
+
+
+
+/*RAVI*/

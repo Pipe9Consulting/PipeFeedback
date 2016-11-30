@@ -1,0 +1,2291 @@
+body {
+    background: url(../../../Images/images/dashboardBg.png) no-repeat !important;
+    background-size: 100% 100% !important;
+}
+
+
+.dbpoeList {
+    float: left;
+    width: 14%;
+    position: absolute;
+    z-index: 999;
+    margin: 0 2.5%;
+}
+
+.poeimg {
+    float: left;
+    position: absolute;
+}
+
+    .poeimg img {
+        padding: 2%;
+        width: 25%;
+    }
+
+.dbpoeList p {
+    background: url(../../../Images/images/DashboardSelect-arrow.png) no-repeat #333 right;
+    background-size: auto 100%;
+    color: #fff;
+    padding: 5% 1% 4% 18%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    float: left;
+}
+
+.dbpoeList ul {
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    padding: 0.5% 0 1% 1%;
+    background: #fff;
+    display: none;
+}
+
+.dbpoeList li {
+    color: #808080;
+    padding: 0;
+    margin-bottom: 1%;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 98%;
+    float: left;
+}
+
+.selected {
+    background: #e0b001 !important;
+}
+
+.dbpoeList li a {
+    width: 96%;
+    float: left;
+    margin: 2%;
+}
+
+    .dbpoeList li a span {
+        float: left;
+        margin-top: 4%;
+        width: 80%;
+    }
+
+    .dbpoeList li a img {
+        float: left;
+        width: 15%;
+        margin-right: 5%;
+    }
+
+.last {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.dbline {
+    margin: 3% 2.5% 0 2.5%;
+    height: 11%;
+    position: absolute;
+}
+
+.dbarea {
+    margin: 3% 2.5% 0 2.5%;
+    height: 63%;
+    bottom: 0;
+    position: absolute;
+}
+
+.dbBox {
+    border: 1px solid #333;
+    border-bottom: 0;
+    height: auto;
+    width: 14.6%;
+    margin-right: 2.4%;
+    float: left;
+    cursor: pointer;
+}
+
+.dbcontent {
+    padding: 0 !important;
+    width: 95.7% !important;
+}
+
+.dbBoxBottom {
+    background: url(../../../Images/images/dbStoriesBg.png) no-repeat;
+}
+
+.pagination a:nth-child(2) {
+    left: 1%;
+}
+
+.pagination a:nth-child(3) {
+    left: 20%;
+}
+
+.pagination a:nth-child(4) {
+    left: 30%;
+}
+
+.dbBoxBottom h1 {
+    margin-bottom: 0;
+    background: #000;
+    width: 100%;
+    padding: 6%;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 180%;
+}
+
+.dbBoxBottom p {
+    padding: 3% 5% 0 5%;
+    color: #fff;
+    font-size: 120%;
+    line-height: 25px;
+}
+
+.storiesIcon {
+    float: right;
+}
+
+.dbBoxtop {
+    padding: 5% 5% 0 5%;
+}
+
+.dbInnerBox {
+    background: #191919;
+    width: 100%;
+    padding-bottom: 36%;
+    margin-bottom: 5%;
+}
+
+.dbInnerLeft {
+    float: left;
+    width: 90%;
+    bottom: 5%;
+}
+
+    .dbInnerLeft h2 {
+        color: #fff;
+        font-size: 500%;
+        bottom: 5%;
+        font-weight: normal;
+        margin: 0 5%;
+        line-height: 115%;
+    }
+
+    .dbInnerLeft p {
+        float: left;
+        color: #fff;
+        font-size: 120%;
+        bottom: 5%;
+        margin: 0 5%;
+    }
+
+.dbInnerRight {
+    float: right;
+    width: 30%;
+    margin-top: 14%;
+}
+
+.dbInnerBox:hover {
+    background: #000;
+    cursor: pointer;
+}
+
+    .dbInnerBox:hover h2, .dbInnerBox:hover p {
+        color: #e0b001;
+    }
+
+.dbstories {
+    margin-top: 6.3%;
+    height: 88%;
+    display: none;
+}
+
+.dbfeedback {
+    margin-top: 2.4%;
+    height: 99%;
+    display: none;
+}
+
+.dbstanding {
+    margin-top: 1%;
+    height: 103%;
+    display: none;
+}
+
+.dbmentors {
+    margin-top: -3.6%;
+    height: 117%;
+    display: none;
+}
+
+.dbgoals {
+    margin-top: 1%;
+    height: 103%;
+    display: none;
+}
+
+.dbrecognition {
+    margin-right: 0%;
+    margin-top: 8.5%;
+    height: 84%;
+    display: none;
+}
+
+.read {
+    background: url(../../../Images/images/readYouIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .read:hover {
+        background: url(../../../Images/images/readYouIconHover.png) no-repeat bottom right #000;
+    }
+
+.shared {
+    background: url(../../../Images/images/sharedIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .shared:hover {
+        background: url(../../../Images/images/sharedIconHover.png) no-repeat bottom right #000;
+    }
+
+.post {
+    background: url(../../../Images/images/postedIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .post:hover {
+        background: url(../../../Images/images/postedIconHover.png) no-repeat bottom right #000;
+    }
+
+.taken {
+    background: url(../../../Images/images/takenIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .taken:hover {
+        background: url(../../../Images/images/takenIconHover.png) no-repeat bottom right #000;
+    }
+
+.recived {
+    background: url(../../../Images/images/receivedIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .recived:hover {
+        background: url(../../../Images/images/receivedIconHover.png) no-repeat bottom right #000;
+    }
+
+.given {
+    background: url(../../../Images/images/givenIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .given:hover {
+        background: url(../../../Images/images/givenIconHover.png) no-repeat bottom right #000;
+    }
+
+.yourStanding {
+    background: url(../../../Images/images/yourstandingIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .yourStanding:hover {
+        background: url(../../../Images/images/yourstandingIconHover.png) no-repeat bottom right #000;
+    }
+
+.community {
+    background: url(../../../Images/images/communityIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .community:hover {
+        background: url(../../../Images/images/communityIconHover.png) no-repeat bottom right #000;
+    }
+
+.team {
+    background: url(../../../Images/images/teamIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .team:hover {
+        background: url(../../../Images/images/teamIconHover.png) no-repeat bottom right #000;
+    }
+
+.managersync {
+    background: url(../../../Images/images/managerSyncIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .managersync:hover {
+        background: url(../../../Images/images/managerSyncIconHover.png) no-repeat bottom right #000;
+    }
+
+.yourmentors {
+    background: url(../../../Images/images/yourmentorsIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .yourmentors:hover {
+        background: url(../../../Images/images/yourmentorsIconHover.png) no-repeat bottom right #000;
+    }
+
+.mentorsyou {
+    background: url(../../../Images/images/mentorsyouIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .mentorsyou:hover {
+        background: url(../../../Images/images/mentorsyouIconHover.png) no-repeat bottom right #000;
+    }
+
+.goalscompleted {
+    background: url(../../../Images/images/goalscompletedIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .goalscompleted:hover {
+        background: url(../../../Images/images/goalscompletedIconHover.png) no-repeat bottom right #000;
+    }
+
+.goalsshared {
+    background: url(../../../Images/images/goalssharedIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .goalsshared:hover {
+        background: url(../../../Images/images/goalssharedIconHover.png) no-repeat bottom right #000;
+    }
+
+.goalsdelayed {
+    background: url(../../../Images/images/goalsdelayedIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .goalsdelayed:hover {
+        background: url(../../../Images/images/goalsdelayedIconHover.png) no-repeat bottom right #000;
+    }
+
+.goalsset {
+    background: url(../../../Images/images/goalssetIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .goalsset:hover {
+        background: url(../../../Images/images/goalssetIconHover.png) no-repeat bottom right #000;
+    }
+
+.recognitionOtherz {
+    background: url(../../../Images/images/recognitionOthersIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .recognitionOtherz:hover {
+        background: url(../../../Images/images/recognitionOthersIconHover.png) no-repeat bottom right #000;
+    }
+
+.recognizedYou {
+    background: url(../../../Images/images/recognizedYouIcon.png) no-repeat bottom right #191919;
+    width: 100%;
+}
+
+    .recognizedYou:hover {
+        background: url(../../../Images/images/recognizedYouIconHover.png) no-repeat bottom right #000;
+    }
+
+.dbArrowArea {
+    margin: 0 2.5% 3% 2.5%;
+}
+
+.dbarrow {
+    background: url(../../../Images/images/dbarrow.png) no-repeat bottom center;
+    height: 11px;
+    width: 100%;
+    margin-right: 2.4%;
+    float: left;
+}
+
+.dbInnerarrow {
+    background: url(../../../Images/images/dbarrow.png) no-repeat bottom center;
+    height: 20px;
+    width: 100%;
+    float: left;
+}
+
+.activeyellow .yourmentors {
+    background: url(../../../Images/images/yourmentorsIconHover.png) no-repeat bottom 13px right 13px #000;
+}
+
+.activeyellow h2, .activeyellow p {
+    color: #e0b001;
+}
+
+
+
+/*----------------------------------------- Dropdown ------------------------------------------*/
+
+.walldropdown {
+    width: 15%;
+    float: left;
+    margin-top: 0;
+    margin-left: 2.5% !important;
+    display: none;
+}
+
+    .walldropdown > ul {
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        width: 15%;
+        z-index: 99999999;
+    }
+
+
+
+.dropdownarrow {
+    background:;
+}
+
+.dropdown a {
+    text-decoration: none;
+    height: 50px;
+}
+
+.dropdown [data-toggle="dropdown"] {
+    display: block;
+    position: relative;
+    border: solid 1px transparent;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1% 1% 0 1%;
+    margin: 0;
+    outline: 0;
+    font-size: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #191919;
+}
+
+.dropdown [data-toggle="dropdown"] {
+    border-bottom: 1px solid #444;
+    background: #333;
+    color: #fff;
+}
+
+    .dropdown [data-toggle="dropdown"]:hover {
+        background: #333;
+    }
+
+.dropdown .icon-arrow {
+    position: absolute;
+    display: block;
+    font-size: 100%;
+    color: #fff;
+    padding: 6.3%;
+    top: 0;
+    right: 0;
+    background: url(../../../Images/images/dropdownarrow.png)no-repeat center #000;
+}
+
+    .dropdown .icon-arrow.open {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+    .dropdown .icon-arrow.close {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+/*.dropdown .icon-arrow:before {
+  content: '\25BC';
+}*/
+
+.dropdown .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown a .img {
+    width: 12.5%;
+    margin: 0 !important;
+    padding: 0 2% 0 0 !important;
+    float: left;
+}
+
+.dropdown a span {
+    float: left;
+    font-size: 120%;
+    margin-top: 7px;
+}
+
+.dropdown .dropdown-menu li {
+    padding: 0;
+}
+
+    .dropdown .dropdown-menu li a {
+        display: block;
+        color: #fff;
+        background: #444;
+        padding: 2% 2% 12% 2%;
+        border-bottom: 1px solid #555;
+    }
+
+
+        .dropdown .dropdown-menu li a:hover {
+            background: #e0b001;
+        }
+
+.dropdown .show, .dropdown .hide {
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.dropdown .show {
+    display: block;
+    max-height: 9999px;
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    animation: showAnimation 0.5s ease-in-out;
+    -moz-animation: showAnimation 0.5s ease-in-out;
+    -webkit-animation: showAnimation 0.5s ease-in-out;
+    -webkit-transition: max-height 1s ease-in-out;
+    -moz-transition: max-height 1s ease-in-out;
+    -o-transition: max-height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
+}
+
+.dropdown .hide {
+    max-height: 0;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    animation: hideAnimation 0.4s ease-out;
+    -moz-animation: hideAnimation 0.4s ease-out;
+    -webkit-animation: hideAnimation 0.4s ease-out;
+    -webkit-transition: max-height 0.6s ease-out;
+    -moz-transition: max-height 0.6s ease-out;
+    -o-transition: max-height 0.6s ease-out;
+    transition: max-height 0.6s ease-out;
+}
+
+
+
+
+
+
+/********************************-------------accordin-----------------*******************************************/
+.ui.styled.accordion {
+    margin: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    padding: 0;
+    float: none;
+}
+
+    .ui.styled.accordion .title {
+        padding: 0 !important;
+    }
+
+    .ui.styled.accordion .content {
+        padding: 0 !important;
+    }
+
+.pagination {
+    text-align: right;
+    margin: -8px 0 5px 0;
+    padding: 0;
+}
+
+    .pagination a {
+        background: #000;
+        padding: 2px 8px;
+        color: White;
+    }
+
+        .pagination a:hover {
+            background: #e0b001;
+        }
+
+/*--------------------------------------- DB Carosal --------------------------*/
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    background: #b9b9b9;
+    border: 1px solid #5e5e5e;
+    width: 100% !important;
+}
+
+
+    .slider img {
+        border: 1px solid #888;
+        width: 100%;
+    }
+
+
+
+dl.accordion {
+    background: #444;
+    width: 300px;
+    float: left;
+}
+
+    dl.accordion dt {
+        background: #333;
+        padding: 10px 10px 10px 10px;
+        border-bottom: 1px solid #222;
+        border-top: 1px solid #444;
+        color: #CCC;
+        cursor: pointer;
+    }
+
+    dl.accordion dd {
+        display: none;
+        background: #444;
+        color: #EFEFEF;
+        margin: 0;
+    }
+
+        dl.accordion dd p {
+            font-size: 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    dl.accordion .active {
+        display: block;
+    }
+
+
+.pagination a {
+    position: relative;
+    left: 0px;
+    right: 0px;
+}
+
+
+
+@media screen and (max-width: 2600px) and (min-width: 2170px) {
+
+    .dbBoxBottom p {
+        height: 121px;
+    }
+    /*@media screen and (max-width:2600px) and (min-width:2170px)*/
+    .footerPart {
+        height: 84px;
+    }
+
+    .dbstories {
+        height: 693px;
+    }
+
+    .dbrecognition {
+        margin-top: 7.8%;
+        height: 653px;
+        height: 658px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 160%;
+    }
+
+    .dbstanding {
+        height: 825px;
+    }
+
+    .dbfeedback {
+        height: 789px;
+    }
+
+
+    .dbmentors {
+        height: 939px;
+    }
+
+        .dbmentors .dbBoxtop {
+            height: 742px;
+        }
+
+    .dbgoals {
+        margin-top: 1%;
+        height: 825px;
+        display: none;
+    }
+
+
+
+
+    .dbline {
+        margin: 0% 2.5% 0 2.5%;
+    }
+    /*@media screen and (max-width:2600px) and (min-width:2170px)*/
+    .ui.menu {
+        height: 0px;
+    }
+
+    .pagination a {
+        width: 10px !important;
+        margin-right: 1%;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 80px 80px;
+        background-position: bottom 21px right 10px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 80px 80px;
+            background-position: bottom 21px right 10px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 80px 80px;
+        background-position: bottom 21px right 10px;
+    }
+
+    .storeiesHide {
+        height: 691px !important;
+    }
+
+    .storiesIcon img {
+        margin-left: 10%;
+        margin-top: -5px;
+    }
+
+    .dbgoals .storiesIcon {
+        margin-top: -10%;
+    }
+}
+
+@media screen and (max-width: 2169px) and (min-width: 2001px) {
+
+    .dbBoxBottom p {
+        height: 111px;
+    }
+
+    .walldropdown {
+        margin-left: 1.5% !important;
+    }
+
+    .dbInnerLeft h2 {
+        font-size: 400%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .h2 {
+        font-size: 120%;
+    }
+
+    .walldropdown > ul {
+        width: 20%;
+    }
+
+    .dropdown a {
+        height: 55px;
+    }
+
+        .dropdown a span {
+            font-size: 130%;
+            padding-top: 0px;
+            margin-top: 10px;
+        }
+
+    .dbInnerLeft p {
+        font-size: 130%;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 70px 70px;
+        background-position: bottom 25px right 8px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 70px 70px;
+            background-position: bottom 25px right 8px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 70px 70px;
+        background-position: bottom 25px right 8px;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item {
+        width: 73px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-clip-horizontal {
+        height: 60px !important;
+        width: 222px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal {
+        margin-right: 3px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        padding: 4px 15px 4px 22px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal img {
+        width: 70px;
+        height: 60px;
+    }
+
+    .pagination a {
+        font-size: 100%;
+        padding: 2px 8px;
+    }
+
+    .dbBoxBottom p {
+        font-size: 120%;
+        line-height: 25px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 180%;
+        margin: 0;
+    }
+
+    .dbBoxBottom span img {
+        width: 100%;
+        margin-top: -6%;
+        margin-left: 10%;
+    }
+
+    .dbline img {
+        width: 98.9%;
+        background-size: 100% 100%;
+    }
+
+    .pagination {
+        margin: -5px 0 5px 0;
+    }
+
+    .jcarousel-skin-tango .jcarousel-prev-horizontal {
+        top: 22px !important;
+        background-size: 70% 70%;
+        left: -5px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-next-horizontal {
+        top: 22px !important;
+        background-size: 70% 70%;
+        right: -165px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        width: 103px !important;
+    }
+
+    .dbInnerarrow {
+        height: 20px;
+    }
+
+    .dbInnerBox {
+        padding-bottom: 40%;
+    }
+
+    .dbarea {
+        height: 61%;
+    }
+
+    .dbstories {
+        margin-top: 8.9%;
+        height: 81%;
+    }
+
+    .dbfeedback {
+        margin-top: 5.4%;
+        height: 90%;
+    }
+
+    .dbstanding {
+        margin-top: 3%;
+        height: 97%;
+    }
+
+    .dbmentors {
+        margin-top: -1.5%;
+        height: 109%;
+    }
+
+    .dbgoals {
+        margin-top: 3%;
+        height: 97%;
+    }
+
+    .dbrecognition {
+        margin-top: 11.3%;
+        height: 75%;
+    }
+
+    .dbarrow {
+        height: 10px;
+    }
+
+    .dbline {
+        margin-top: 3%;
+    }
+
+    .dbmentors .dbBoxtop {
+        height: 77%;
+    }
+
+    .storeiesHide {
+        height: 473px !important;
+    }
+
+    .dbgoals .storiesIcon {
+        margin-top: -11%;
+    }
+}
+
+
+
+@media screen and (max-width: 2000px) and (min-width: 1701px) {
+
+    .storeiesHide {
+        height: 473px !important;
+    }
+
+    .dbgoals .storiesIcon {
+        margin-top: -9%;
+    }
+
+    .walldropdown {
+        margin-left: 1.5% !important;
+    }
+
+    .dbInnerLeft h2 {
+        font-size: 300%;
+    }
+
+    .h2 {
+        font-size: 120%;
+    }
+
+    .walldropdown > ul {
+        width: 20%;
+    }
+
+    .dropdown a {
+        height: 49px;
+    }
+
+        .dropdown a span {
+            font-size: 100%;
+            padding-top: 0px;
+            margin-top: 10px;
+        }
+
+    .dbInnerLeft p {
+        font-size: 100%;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 50px 50px;
+        background-position: bottom 15px right 8px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 50px 50px;
+            background-position: bottom 15px right 8px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 50px 50px;
+        background-position: bottom 15px right 8px;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item {
+        width: 63px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-clip-horizontal {
+        height: 50px !important;
+        width: 195px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal {
+        margin-right: 3px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        padding: 4px 15px 4px 22px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal img {
+        width: 55px;
+        height: 50px;
+    }
+
+    .pagination a {
+        font-size: 80%;
+        padding: 2px 7px;
+    }
+
+    .dbBoxBottom p {
+        font-size: 100%;
+        height: 90px;
+        line-height: 18px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 120%;
+        margin: 0;
+    }
+
+    .dbBoxBottom span img {
+        width: 65%;
+        margin-top: -7%;
+        margin-left: 45%;
+    }
+
+    .dbline img {
+        width: 98.7%;
+        background-size: 100% 100%;
+    }
+
+    .pagination {
+        margin: -5px 0 5px 0;
+    }
+
+    .jcarousel-skin-tango .jcarousel-prev-horizontal {
+        top: 14px !important;
+        background-size: 70% 70%;
+        left: -5px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-next-horizontal {
+        top: 16px !important;
+        background-size: 70% 70%;
+        right: -135px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        width: 103px !important;
+    }
+
+    .dbInnerarrow {
+        height: 16px;
+    }
+
+    .dbInnerBox {
+        padding-bottom: 31%;
+    }
+
+    .dbarea {
+        height: 61%;
+    }
+
+    .dbstories {
+        margin-top: 5.7%;
+        height: 473px;
+    }
+
+    .dbfeedback {
+        margin-top: 2.4%;
+        height: 533px;
+    }
+
+    .dbstanding {
+        margin-top: 1%;
+        height: 558px;
+    }
+
+    .dbmentors {
+        margin-top: -3.5%;
+        height: 640px;
+    }
+
+    .dbgoals {
+        margin-top: 1%;
+        height: 558px;
+    }
+
+    .dbrecognition {
+        margin-top: 7.1%;
+        height: 447px;
+    }
+
+    .dbarrow {
+        height: 10px;
+    }
+
+    .dbline {
+        margin-top: 1%;
+    }
+
+    .dbmentors .dbBoxtop {
+        height: 77.5%;
+    }
+
+    .storeiesHide {
+        height: 473px !important;
+    }
+
+    .dbgoals .storiesIcon {
+        margin-top: -9%;
+    }
+}
+
+
+
+@media screen and (max-width: 1700px) and (min-width: 1670px) {
+    .walldropdown {
+        margin-left: 1.5% !important;
+    }
+
+    .dbInnerLeft h2 {
+        font-size: 340%;
+    }
+
+    .h2 {
+        font-size: 120%;
+    }
+
+    .walldropdown > ul {
+        width: 20%;
+    }
+
+    .dropdown a {
+        height: 43px;
+    }
+
+        .dropdown a span {
+            font-size: 100%;
+            padding-top: 0px;
+            margin-top: 7px;
+        }
+
+    .dbInnerLeft p {
+        font-size: 100%;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 50px 50px;
+        background-position: bottom 21px right 6px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 50px 50px;
+            background-position: bottom 21px right 6px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 50px 50px;
+        background-position: bottom 21px right 6px;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item {
+        width: 52px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-clip-horizontal {
+        height: 45px !important;
+        width: 165px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal {
+        margin-right: 3px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        padding: 3px 15px 4px 22px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .pagination a {
+        font-size: 80%;
+        padding: 2px 7px;
+    }
+
+    .dbBoxBottom p {
+        font-size: 100%;
+        line-height: 18px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 110%;
+        margin: 0;
+    }
+
+    .dbBoxBottom span img {
+        width: 60%;
+        margin-top: -5%;
+        margin-left: 47%;
+    }
+
+    .dbline img {
+        width: 98.5%;
+        background-size: 100% 100%;
+    }
+
+    .pagination {
+        margin: -5px 0 5px 0;
+    }
+
+    .jcarousel-skin-tango .jcarousel-prev-horizontal {
+        top: 14px !important;
+        background-size: 70% 70%;
+        left: -5px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-next-horizontal {
+        top: 14px !important;
+        background-size: 70% 70%;
+        right: -103px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        width: 103px !important;
+    }
+
+    .dbInnerarrow {
+        height: 12px;
+    }
+
+    .dbInnerBox {
+        padding-bottom: 38%;
+    }
+
+    .dbarea {
+        height: 61%;
+    }
+
+    .dbstories {
+        margin-top: 7.2%;
+        height: 90%;
+    }
+
+    .dbfeedback {
+        margin-top: 3.8%;
+        height: 99%;
+    }
+
+    .dbstanding {
+        margin-top: 1.6%;
+        height: 106%;
+    }
+
+    .dbmentors {
+        margin-top: -3%;
+        height: 117.3%;
+    }
+
+    .dbgoals {
+        margin-top: 1.6%;
+        height: 106%;
+    }
+
+    .dbrecognition {
+        margin-top: 9.5%;
+        height: 83%;
+    }
+
+    .dbarrow {
+        height: 7px;
+    }
+
+    .dbline {
+        margin-top: 4%;
+    }
+
+    .dbmentors .dbBoxtop {
+        height: 77%;
+    }
+
+    .storeiesHide {
+        height: 390px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 1669px) and (min-width: 1501px) {
+
+    .storeiesHide {
+        height: 390px !important;
+    }
+
+
+    .walldropdown {
+        margin-left: 2% !important;
+        margin-top: 0.1%;
+    }
+
+
+    .dbInnerLeft h2 {
+        font-size: 270%;
+    }
+
+    .h2 {
+        font-size: 120%;
+    }
+
+    .walldropdown > ul {
+        width: 20%;
+    }
+
+    .dropdown a {
+        height: 41px;
+    }
+
+        .dropdown a span {
+            font-size: 100%;
+            padding-top: 0px;
+            margin-top: 7px;
+        }
+
+    .dbInnerLeft p {
+        font-size: 80%;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 40px 40px;
+        background-position: bottom 15px right 6px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 40px 40px;
+            background-position: bottom 15px right 6px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 40px 40px;
+        background-position: bottom 15px right 6px;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item {
+        width: 52px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-clip-horizontal {
+        height: 45px !important;
+        width: 165px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal {
+        margin-right: 3px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        padding: 3px 15px 4px 16px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .pagination a {
+        font-size: 80%;
+        padding: 2px 7px;
+        float: none;
+    }
+
+    .dbBoxBottom p {
+        font-size: 80%;
+        line-height: 15px;
+        height: 75px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 90%;
+        margin: 0;
+    }
+
+    .dbgoals .storiesIcon {
+        margin-top: -8%;
+    }
+
+    .dbBoxBottom span img {
+        width: 50%;
+        margin-top: -5%;
+        margin-left: 47%;
+    }
+
+    .dbline img {
+        width: 98.3%;
+        background-size: 100% 100%;
+    }
+
+    .pagination {
+        margin: -5px 0 5px 0;
+    }
+
+    .jcarousel-skin-tango .jcarousel-prev-horizontal {
+        top: 14px !important;
+        background-size: 70% 70%;
+        left: -5px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-next-horizontal {
+        top: 14px !important;
+        background-size: 70% 70%;
+        right: -96px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        width: 103px !important;
+    }
+
+    .dbInnerarrow {
+        height: 12px;
+    }
+
+    .dbInnerBox {
+        padding-bottom: 32%;
+    }
+
+    .dbarea {
+        height: 61%;
+    }
+
+    .dbstories {
+        margin-top: 6.9%;
+        height: 400px;
+    }
+
+    .dbfeedback {
+        margin-top: 3.3%;
+        height: 454px;
+    }
+
+    .dbstanding {
+        margin-top: 2.1%;
+        height: 473px;
+    }
+
+    .dbmentors {
+        margin-top: -3%;
+        height: 549px;
+    }
+
+    .dbgoals {
+        margin-top: 2.1%;
+        height: 473px;
+    }
+
+    .dbrecognition {
+        margin-top: 8.1%;
+        height: 382px;
+    }
+
+    .dbarrow {
+        height: 7px;
+    }
+
+    .dbline {
+        margin-top: -0.2%;
+    }
+
+    .dbmentors .dbBoxtop {
+        height: 430px;
+    }
+}
+
+
+
+@media screen and (max-width: 1500px) and (min-width: 1401px) {
+    .walldropdown {
+        margin-left: 1.5% !important;
+    }
+
+    .storeiesHide {
+        background: rgba(0,0,0,0.8);
+        position: relative;
+        height: 390px;
+        top: -100.5%;
+        cursor: default !important;
+    }
+
+    .dbInnerLeft h2 {
+        font-size: 240%;
+    }
+
+    .h2 {
+        font-size: 120%;
+    }
+
+    .walldropdown > ul {
+        width: 20%;
+    }
+
+    .dropdown a {
+        height: 36px;
+    }
+
+        .dropdown a span {
+            font-size: 100%;
+            padding-top: 0px;
+            margin-top: 4px;
+        }
+
+    .dbInnerLeft p {
+        font-size: 80%;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 40px 40px;
+        background-position: bottom 7px right 5px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 40px 40px;
+            background-position: bottom 7px right 5px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 40px 40px;
+        background-position: bottom 7px right 5px;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item {
+        width: 43px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-clip-horizontal {
+        height: 35px !important;
+        width: 130px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal {
+        margin-right: 2px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        padding: 3px 15px 4px 22px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal img {
+        width: 38px;
+        height: 35px;
+    }
+
+    .pagination a {
+        font-size: 80%;
+        padding: 2px 7px;
+    }
+
+    .dbBoxBottom p {
+        font-size: 80%;
+        line-height: 15px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 100%;
+        margin: 0;
+    }
+
+    .dbBoxBottom span img {
+        width: 60%;
+        margin-top: -5%;
+        margin-left: 47%;
+    }
+
+    .dbline img {
+        width: 98%;
+        background-size: 100% 100%;
+    }
+
+    .pagination {
+        margin: -5px 0 5px 0;
+    }
+
+    .jcarousel-skin-tango .jcarousel-prev-horizontal {
+        top: 9px !important;
+        background-size: 70% 70%;
+        left: 0px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-next-horizontal {
+        top: 9px !important;
+        background-size: 70% 70%;
+        right: -73px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        width: 103px !important;
+    }
+
+    .dbInnerarrow {
+        height: 12px;
+    }
+
+    .dbInnerBox {
+        padding-bottom: 32%;
+    }
+
+    .dbarea {
+        height: 61%;
+    }
+
+    .dbstories {
+        margin-top: 7.6%;
+        height: 79%;
+    }
+
+    .dbfeedback {
+        margin-top: 4.3%;
+        height: 88%;
+    }
+
+    .dbstanding {
+        margin-top: 2.7%;
+        height: 93%;
+    }
+
+    .dbmentors {
+        margin-top: -2%;
+        height: 105%;
+    }
+
+    .dbgoals {
+        margin-top: 2.7%;
+        height: 93%;
+    }
+
+    .dbrecognition {
+        margin-top: 9%;
+        height: 75%;
+    }
+
+    .dbarrow {
+        height: 7px;
+    }
+
+    .dbline {
+        margin-top: 1%;
+    }
+
+    .dbmentors .dbBoxtop {
+        height: 74%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
+    .dbmentors .dbBoxtop {
+        height: 358px;
+    }
+
+
+    .storeiesHide {
+        height: 340px !important;
+    }
+
+    .dbgoals .storiesIcon {
+        margin-top: -9%;
+    }
+
+    .walldropdown {
+        margin-left: 2% !important;
+    }
+
+    .dbInnerLeft h2 {
+        font-size: 215%;
+    }
+
+    .h2 {
+        font-size: 120%;
+    }
+
+    .walldropdown > ul {
+        width: 20%;
+    }
+
+    .dropdown a {
+        height: 35px;
+    }
+
+        .dropdown a span {
+            font-size: 100%;
+            padding-top: 0px;
+            margin-top: 4px;
+        }
+
+    .dbInnerLeft p {
+        font-size: 70%;
+        margin: -2% 0% 4% 4% !important;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 40px 40px;
+        background-position: bottom 7px right 5px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 40px 40px;
+            background-position: bottom 7px right 5px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 40px 40px;
+        background-position: bottom 7px right 5px;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item {
+        width: 42px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-clip-horizontal {
+        height: 35px !important;
+        width: 130px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal {
+        margin-right: 2px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        padding: 3px 15px 4px 15px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal img {
+        width: 38px;
+        height: 35px;
+    }
+
+    .pagination a {
+        font-size: 80%;
+        padding: 0 7px 2px 7px;
+    }
+
+    .dbBoxBottom p {
+        font-size: 70%;
+        line-height: 12px;
+        height: 62px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 75%;
+        margin: 0;
+    }
+
+    .dbBoxBottom span img {
+        width: 40%;
+        margin-left: 65%;
+        margin-top: -1%;
+    }
+
+    .dbline img {
+        width: 99.2%;
+        background-size: 100% 100%;
+    }
+
+    .pagination {
+        margin: -9px 0 5px 0;
+    }
+
+    .jcarousel-skin-tango .jcarousel-prev-horizontal {
+        top: 8px !important;
+        background-size: 70% 70%;
+        left: -8px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-next-horizontal {
+        top: 8px !important;
+        background-size: 70% 70%;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        width: 103px !important;
+    }
+
+    .dbInnerarrow {
+        height: 10px;
+    }
+
+    .dbInnerBox {
+        padding-bottom: 32%;
+    }
+
+    .dbarea {
+        height: 61%;
+    }
+
+    .dbstories {
+        height: 340px;
+        margin-top: 4.2%;
+    }
+
+    .dbfeedback {
+        margin-top: 0.7%;
+        height: 383px;
+    }
+
+    .dbstanding {
+        margin-top: -0.7%;
+        height: 401px;
+    }
+
+    .dbmentors {
+        margin-top: -5%;
+        height: 458px;
+    }
+
+    .dbgoals {
+        margin-top: -0.5%;
+        height: 402px;
+    }
+
+    .dbrecognition {
+        margin-top: 5.5%;
+        height: 321px;
+    }
+
+    .dbarrow {
+        height: 7px;
+    }
+
+    .dbline {
+        margin-top: 0.2%;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+    .walldropdown {
+        margin-left: 1.5% !important;
+    }
+
+    .dbInnerLeft h2 {
+        font-size: 215%;
+        margin-top: 2px;
+    }
+
+    .h2 {
+        font-size: 120%;
+    }
+
+    .walldropdown > ul {
+        width: 20%;
+    }
+
+    .dropdown a {
+        height: 33px;
+    }
+
+        .dropdown a span {
+            font-size: 100%;
+            padding-top: 0px;
+            margin-top: 4px;
+        }
+
+    .dbInnerLeft p {
+        font-size: 80%;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 40px 40px;
+        background-position: bottom 7px right 5px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 40px 40px;
+            background-position: bottom 7px right 5px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 40px 40px;
+        background-position: bottom 7px right 5px;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item {
+        width: 42px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-clip-horizontal {
+        height: 35px !important;
+        width: 130px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal {
+        margin-right: 2px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        padding: 3px 15px 4px 12px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal img {
+        width: 40px;
+        height: 35px;
+    }
+
+    .pagination a {
+        font-size: 80%;
+        padding: 2px 7px;
+    }
+
+    .dbBoxBottom p {
+        font-size: 80%;
+        line-height: 15px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 90%;
+        margin: 0;
+    }
+
+    .dbBoxBottom span img {
+        width: 60%;
+        margin-top: -5%;
+        margin-left: 47%;
+    }
+
+    .dbline {
+        margin-top: 4%;
+    }
+
+        .dbline img {
+            width: 98%;
+            background-size: 100% 100%;
+        }
+
+    .pagination {
+        margin: -5px 0 5px 0;
+    }
+
+    .jcarousel-skin-tango .jcarousel-prev-horizontal {
+        top: 8px !important;
+        background-size: 60% 60% !important;
+        left: -8px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-next-horizontal {
+        top: 8px !important;
+        background-size: 60% 60% !important;
+        right: -58px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        width: 103px !important;
+    }
+
+    .dbInnerarrow {
+        height: 12px;
+    }
+
+    .dbInnerBox {
+        padding-bottom: 35%;
+    }
+
+    .dbarea {
+        height: 61%;
+    }
+
+    .dbstories {
+        margin-top: 7.8%;
+        height: 87%;
+    }
+
+    .dbfeedback {
+        margin-top: 4%;
+        height: 97%;
+    }
+
+    .dbstanding {
+        margin-top: 2.6%;
+        height: 101%;
+    }
+
+    .dbmentors {
+        margin-top: -2.8%;
+        height: 116%;
+    }
+
+    .dbgoals {
+        margin-top: 2.6%;
+        height: 101%;
+    }
+
+    .dbrecognition {
+        margin-top: 9.2%;
+        height: 82%;
+    }
+
+    .dbarrow {
+        height: 7px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .walldropdown {
+        margin-left: 1.5% !important;
+    }
+
+    .dbInnerLeft h2 {
+        font-size: 215%;
+    }
+
+    .h2 {
+        font-size: 120%;
+    }
+
+    .walldropdown > ul {
+        width: 20%;
+    }
+
+    .dropdown a {
+        height: 35px;
+    }
+
+        .dropdown a span {
+            font-size: 100%;
+            padding-top: 0px;
+            margin-top: 4px;
+        }
+
+    .dbInnerLeft p {
+        font-size: 80%;
+    }
+
+    .read, .shared, .post, .taken, .recived, .given, .yourStanding, .community, .team, .managersync, .yourmentors, .goalsdelayed, .goalsset, .goalsshared, .goalscompleted, .recognitionOtherz, .recognizedYou {
+        background-size: 40px 40px;
+        background-position: bottom 7px right 5px;
+    }
+
+        .read:hover, .shared:hover, .post:hover, .taken:hover, .recived:hover, .given:hover, .yourStanding:hover, .community:hover, .team:hover, .managersync:hover, .yourmentors:hover, .goalsdelayed:hover, .goalsset:hover, .goalsshared:hover, .goalscompleted:hover, .recognitionOtherz:hover, .recognizedYou:hover {
+            background-size: 40px 40px;
+            background-position: bottom 7px right 5px;
+        }
+
+    .activeyellow .yourmentors {
+        background-size: 40px 40px;
+        background-position: bottom 7px right 5px;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item {
+        width: 42px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-clip-horizontal {
+        height: 35px !important;
+        width: 130px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal {
+        margin-right: 2px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        padding: 3px 15px 4px 15px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-item-horizontal img {
+        width: 38px;
+        height: 35px;
+    }
+
+    .pagination a {
+        font-size: 80%;
+        padding: 2px 7px;
+    }
+
+    .dbBoxBottom p {
+        font-size: 80%;
+        line-height: 15px;
+    }
+
+    .dbBoxBottom h1 {
+        font-size: 100%;
+        margin: 0;
+    }
+
+    .dbBoxBottom span img {
+        width: 60%;
+        margin-top: -5%;
+        margin-left: 47%;
+    }
+
+    .dbline img {
+        width: 98%;
+        background-size: 100% 100%;
+    }
+
+    .pagination {
+        margin: -5px 0 5px 0;
+    }
+
+    .jcarousel-skin-tango .jcarousel-prev-horizontal {
+        top: 8px !important;
+        background-size: 70% 70%;
+        left: -8px !important;
+    }
+
+    .jcarousel-skin-tango .jcarousel-next-horizontal {
+        top: 8px !important;
+        background-size: 70% 70%;
+    }
+
+    .jcarousel-skin-tango .jcarousel-container-horizontal {
+        width: 103px !important;
+    }
+
+    .dbInnerarrow {
+        height: 12px;
+    }
+
+    .dbInnerBox {
+        padding-bottom: 32%;
+    }
+
+    .dbarea {
+        height: 61%;
+    }
+
+    .dbstories {
+        margin-top: 5.8%;
+    }
+
+    .dbfeedback {
+        margin-top: 2.3%;
+    }
+
+    .dbstanding {
+        margin-top: 0.9%;
+        height: 107%;
+    }
+
+    .dbmentors {
+        margin-top: -4%;
+        height: 123%;
+    }
+
+    .dbgoals {
+        margin-top: 0.9%;
+        height: 107%;
+    }
+
+    .dbrecognition {
+        margin-top: 7.1%;
+        height: 87%;
+    }
+
+    .dbarrow {
+        height: 7px;
+    }
+}
+
+
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #808080; /* change if the mask should have another color then white */
+    opacity: 0.5;
+    z-index: 99999999999998; /* makes sure it stays on top */
+}
+
+.tileIcon {
+    float: right;
+    left: 6%;
+    position: relative;
+    margin-top: 1%;
+}
+
+    .tileIcon img {
+        width: 75%;
+        float: right;
+        left: 10%;
+        position: relative;
+    }
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    top: 50%; /* centers the loading animation vertically one the screen */
+    background-image: url(../../../images/loading3.gif); /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px; /* is width and height divided by two */
+    z-index: 9999999;
+}
+
+.slidecontentselect {
+    background: url("../../../Images/selected-1366.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top;
+    background-color: transparent;
+    background-size: 40% 50%;
+    border: 1px solid #e0b001 !important;
+    z-index: 9 !important;
+    position: absolute;
+}
+
+.emptyUserTile {
+    background: #484848;
+    padding-bottom: 0%;
+    width: 100%;
+}
+
+.recognitionOthers h2 {
+    float: left;
+}
+
+
+
+
+@media screen and (max-width: 1679px) and (min-width: 1600px) {
+    .slidecontentselect {
+        width: 50px !important;
+        height: 45px !important;
+        top: 0;
+        margin-left: 0px;
+    }
+}
+
+
+@media screen and (max-width: 1679px) and (min-width: 1600px) {
+    .emptyUserTile {
+        background: #484848;
+        padding-bottom: 0%;
+        width: 100%;
+    }
+}
+
+
+
+
+
+.storeiesHide {
+    background: rgba(0,0,0,0.8);
+    position: relative;
+    top: -100.5%;
+    cursor: default !important;
+}

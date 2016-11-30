@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9805e4b4-7894-4f9a-80c4-c3a7eb63f221" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.98:8089/Signup.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Signup66.xsd" MetadataType="Schema" ID="0b18ea01-ba15-4e82-92b8-e1cd686f381a" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd0" />
+    <MetadataFile FileName="Signup11.wsdl" MetadataType="Wsdl" ID="63579efc-4bc2-48e4-8e37-dd6f99759b33" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?wsdl" />
+    <MetadataFile FileName="Signup67.xsd" MetadataType="Schema" ID="64d3f60e-2a59-42be-93bc-15de2d8f3391" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd2" />
+    <MetadataFile FileName="Signup68.xsd" MetadataType="Schema" ID="f33718ac-ecee-48f8-b07f-bc940f4de9ae" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd5" />
+    <MetadataFile FileName="Signup69.xsd" MetadataType="Schema" ID="9879f16e-77b9-4c4e-9028-033edf3794ce" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd1" />
+    <MetadataFile FileName="Signup610.xsd" MetadataType="Schema" ID="fb377ae1-7d9e-4e17-813d-85b5ccd14f36" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd4" />
+    <MetadataFile FileName="Signup611.xsd" MetadataType="Schema" ID="ed59b071-5654-4756-a80b-3438e458ff73" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd3" />
+    <MetadataFile FileName="Signup.disco" MetadataType="Disco" ID="fbf1dec2-8227-4e41-874f-0d3fd66067bd" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

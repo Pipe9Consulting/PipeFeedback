@@ -1,0 +1,165 @@
+.glidecontentwrapper
+{
+    position: relative;
+    width: 900px;
+    min-height: 600px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    color: #666;
+    background: #e5e5e5;
+}
+
+.glidecontentwrapperF
+{
+    position: relative;
+    width: 800px;
+    min-height: 530px;
+    overflow: hidden;
+    float: right;
+    color: #666;
+    background: #e5e5e5;
+}
+
+.glidecontent
+{
+    position: absolute;
+    padding: 10px;
+    visibility: hidden;
+    width: 950px;
+    overflow: hidden;
+    background: #e5e5e5;
+}
+
+.glidecontenttoggler
+{
+    width: 350px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+    .rightcolfeedback h1, .glidecontenttoggler h1
+    {
+        color: #5e5e5e;
+        font-size: 30px;
+        padding-bottom: 25px;
+        padding-top: 30px;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    .glidecontenttoggler h2
+    {
+        color: #fff;
+        font-size: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .glidecontenttoggler h3
+    {
+        text-align: right;
+        clear: both;
+        float: none;
+        height: 50px;
+    }
+
+    .glidecontenttoggler a
+    {
+        display: -moz-inline-box;
+        display: inline-block;
+        background: #808080;
+        width: 90px;
+        height: 75px;
+        padding: 15px 10px 10px;
+        margin: 10px;
+        color: #fff;
+        float: left;
+        line-height: 14px;
+        font-size: 12px;
+        text-align: left;
+        text-decoration: none;
+        float: left;
+        margin-left: 0;
+    }
+
+        .glidecontenttoggler a.selected, .glidecontenttoggler a.selected:hover
+        {
+            color: #fff;
+            text-decoration: none;
+            text-align: left;
+            background: #e0b101;
+        }
+
+        .glidecontenttoggler a:hover
+        {
+            background: #ccc;
+            color: black;
+        }
+
+        .glidecontenttoggler a.toc
+        {
+        }
+
+        .glidecontenttoggler a.prev, .glidecontenttoggler a.next
+        {
+        }
+
+            .glidecontenttoggler a.prev:hover, .glidecontenttoggler a.next:hover
+            {
+                background: #1A48A4;
+                color: white;
+            }
+
+    .glidecontenttoggler h5
+    {
+        text-align: left;
+        color: #666;
+        font-size: 12px;
+    }
+/*take self feedback*/
+.glidecontenttsf a
+{
+    display: -moz-inline-box;
+    display: inline-block;
+    background: #808080;
+    width: 250px;
+    height: 45px;
+    padding: 15px 10px 10px;
+    margin: 10px;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    float: left;
+    margin-left: 0;
+}
+
+    .glidecontenttsf a.selected, .glidecontenttsf a.selected:hover
+    {
+        color: #fff;
+        text-decoration: none;
+        text-align: left;
+        background: #e0b101;
+    }
+
+    .glidecontenttsf a:hover
+    {
+        background: #ccc;
+        color: black;
+    }
+
+    .glidecontenttsf a.toc
+    {
+    }
+
+    .glidecontenttsf a.prev, .glidecontenttsf a.next
+    {
+    }
+
+        .glidecontenttsf a.prev:hover, .glidecontenttsf a.next:hover
+        {
+            background: #1A48A4;
+            color: white;
+        }

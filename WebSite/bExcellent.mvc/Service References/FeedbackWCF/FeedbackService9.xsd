@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8052/FeedbackService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="Area" nillable="true" type="q1:Zone" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanySize" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="Country" nillable="true" type="q2:Country" />
+      <xs:element minOccurs="0" name="DesignationId" type="xs:int" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAgreed" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastLogin" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Photo" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="StratPageMode" type="xs:int" />
+      <xs:element minOccurs="0" name="Subscriptionid" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+      <xs:element minOccurs="0" name="YammerToken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="User" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="ArrayOfUser" />
+  <xs:complexType name="ArrayOfSavePOEResultRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SavePOEResultRequest" nillable="true" type="SavePOEResultRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSavePOEResultRequest" nillable="true" type="ArrayOfSavePOEResultRequest" />
+  <xs:complexType name="SavePOEResultRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Answer" type="xs:int" />
+      <xs:element minOccurs="0" name="AnswerType" type="xs:int" />
+      <xs:element minOccurs="0" name="CapabilityAnswer" type="xs:int" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DemographicAnswer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FeedbackId" type="xs:int" />
+      <xs:element minOccurs="0" name="FeedbackStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Initials" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+      <xs:element minOccurs="0" name="UserRating" type="xs:int" />
+      <xs:element minOccurs="0" name="poeid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SavePOEResultRequest" nillable="true" type="SavePOEResultRequest" />
+</xs:schema>

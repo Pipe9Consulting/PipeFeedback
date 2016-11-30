@@ -1,0 +1,5234 @@
+﻿.main
+{
+    width: 95%;
+}
+
+.quickview a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.coltwo
+{
+    width: 361px;
+    float: left;
+}
+
+.flipbox
+{
+    width: 244px;
+    height: 44px;
+    font-size: 14px;
+    color: white;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 70px 10px 13px 10px;
+    background: url(../Images/quote-icon.png) no-repeat right top #808080;
+}
+
+.pageholder .hm
+{
+    margin-left: 115px !important;
+}
+
+.comingsoon img
+{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+#quickviewli li
+{
+    width: 1050px;
+    margin-left: 0;
+}
+
+.qvlist, .qvlist ul, .qvlist li
+{
+    max-width: 250px !important;
+}
+
+.customertiles
+{
+    float: left;
+    margin-right: 70px;
+    max-width: 25%;
+}
+
+.selectnt
+{
+    margin-top: 10px;
+}
+
+    .selectnt li
+    {
+        position: relative;
+        background: url(../Images/icons/network.png) no-repeat top 10px right 10px #808080 !important;
+    }
+
+        .selectnt li:hover
+        {
+            background: url(../Images/icons/network.png) no-repeat top 10px right 10px #deaf00 !important;
+        }
+
+        .selectnt li a
+        {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+            .selectnt li a p
+            {
+                position: absolute;
+                bottom: 0;
+            }
+
+.selected
+{
+    background: #e0b001 !important;
+}
+
+.customertiles .takesf
+{
+    width: 100%;
+    padding: 6% 10% 6% 10%;
+    height: 45px;
+    width: 230px;
+    position: relative;
+    color: #fff;
+}
+
+.contentholder .customertiles .takesf
+{
+    width: 100%;
+    padding: 8% 10% 6% 10%;
+    height: 50px;
+    width: 230px;
+    position: relative;
+}
+
+.customertiles .takesf p
+{
+    width: 75%;
+    float: left;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.contentholder .customertiles .takesf p
+{
+    width: 75%;
+    float: left;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 11pt;
+}
+
+.customertiles .takesfsingle
+{
+    padding: 15% 6% 6% 6%;
+}
+
+.last
+{
+    margin-right: 0px !important;
+}
+
+#customertiles .item
+{
+    width: 1230px;
+    float: left;
+}
+
+.stars, .stars ul
+{
+    width: 415px !important;
+    margin-right: 60px !important;
+}
+
+.questiontaken, .timetaken, .counterHour, .collan, .counterMin, .collan, .counterSec
+{
+    float: left;
+    padding: 0 3px;
+}
+/*.customertiles ul {
+	width: 274px;
+	height: 520px;
+}*/
+.customertiles ul li
+{
+    padding: 10px;
+    float: left;
+    background: #808080;
+    margin: 10px 10px 0 0;
+    line-height: 1em;
+}
+
+.customertiles h1, .tsf
+{
+    color: #5e5e5e;
+    font-size: 160%;
+    font-weight: lighter;
+    padding-top: 5%;
+    padding-bottom: 4px;
+    background: none !important;
+}
+
+.tsf
+{
+    min-width: 200px;
+    margin-top: -5px;
+}
+
+.takeFB, .receiveFB, #dialog-modal
+{
+    display: none;
+}
+
+.customertiles .quickview .icon
+{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.customertiles .takesf
+{
+    background: #808080;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+    .customertiles .takesf img, .contentholder .customertiles .takesf img
+    {
+        margin-right: -20px;
+        max-width: 30%;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+.customertiles .takesfsingle img
+{
+    float: right;
+    margin-right: -20px;
+    margin-top: -30px;
+}
+
+.customertiles .selected
+{
+    background: #e0b001;
+}
+
+.customertiles .takesfsingle
+{
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+#wrapper .contentholder
+{
+    float: left;
+    color: #4a4a4a;
+    margin-left: 30px;
+}
+
+.contentholder h1
+{
+    padding: 0;
+    font-size: 9px;
+}
+
+.questions
+{
+    width: 2000%;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+}
+
+    .questions li
+    {
+        width: 700px;
+        margin-right: 300px;
+    }
+
+.mngrq
+{
+    width: 100% !important;
+}
+
+    .mngrq .questionarea
+    {
+        width: 75%;
+    }
+
+.questions li
+{
+    float: left;
+    display: block;
+    visibility: visible;
+    padding: 0;
+}
+
+.qn
+{
+    background: #e0b001;
+    padding: 10px 20px 20px;
+    font-size: 30px;
+    width: 13px;
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+
+.questionarea
+{
+    float: left;
+    width: 88%;
+    margin-bottom: 20px;
+}
+
+.frequencydiv
+{
+    position: absolute;
+}
+
+.frequency
+{
+    float: left;
+    margin-right: 5px;
+}
+
+    .frequency img
+    {
+        float: left;
+        padding: 15px 10px 20px 0;
+    }
+
+#content1
+{
+    display: block;
+}
+
+.inropanelbar1
+{
+    float: right;
+    height: 100%;
+    width: 17px;
+    background: url(../images/collapse.png) center 50% no-repeat;
+}
+
+.inropanelbar2
+{
+    float: right;
+    height: 100%;
+    width: 17px;
+    background: url(../images/collapse.png) center 50% no-repeat;
+}
+
+#clickmodele1
+{
+    background: url(../Images/next-slide.png) no-repeat #f1f1f1 center;
+    width: 15px;
+    position: fixed;
+    height: 100%;
+    left: 340px;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele1hide
+{
+    background: url(../Images/prev-slide.png) center no-repeat #f1f1f1;
+    width: 15px;
+    position: fixed;
+    height: 100%;
+    left: 340px;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele2hide
+{
+    background: url(../../Images/prev-slide.png) center no-repeat #f1f1f1;
+    width: 15px;
+    position: fixed;
+    height: 100%;
+    left: 705px;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele2
+{
+    background: url(../../Images/next-slide.png) center no-repeat #f1f1f1;
+    width: 15px;
+    position: fixed;
+    height: 100%;
+    left: 704px;
+    top: 0px;
+    display: none;
+}
+
+#module2, #module3
+{
+    background: #fff;
+    width: 315px;
+    position: fixed;
+    height: 100%;
+    left: 355px;
+    top: 0;
+    display: block;
+    border-left: 1px solid #ccc;
+    z-index: 98;
+    color: #808080;
+    display: none;
+}
+
+#module3
+{
+    left: 720px;
+}
+
+    #module2 p, #module3 p
+    {
+        font-size: 12px;
+        line-height: 1.2em;
+        width: 280px;
+        padding: 3px 0;
+    }
+
+.sliderimg
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tooltip
+{
+    background: url(../../Images/hover1-bg.png) no-repeat bottom center #e0b001;
+    color: #fff;
+    padding: 0px 3px 8px 3px;
+    clear: both;
+    display: none;
+    position: absolute;
+    margin-top: -42px;
+    font-size: 12px;
+    min-width: 90px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: -30px;
+    text-align: center;
+}
+
+.tooltipS
+{
+    background: url(../Images/hover1-bg.png) no-repeat bottom center #e0b001;
+    color: #fff;
+    padding: 0px 3px 8px 3px;
+    clear: both;
+    display: block;
+    position: absolute;
+    margin-top: -22px;
+    font-size: 12px;
+    min-width: 90px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.SI
+{
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.diagram img
+{
+    width: 130%;
+}
+
+.mngrfb
+{
+    width: 660px;
+}
+
+    .mngrfb .user
+    {
+        float: left;
+        margin-top: 7px;
+        margin-right: 10px;
+        width: 64px;
+    }
+
+    .mngrfb h1
+    {
+        font-size: 14px;
+        font-weight: 400;
+        clear: both;
+        padding-top: 10px;
+    }
+
+    .mngrfb .sliderimg
+    {
+        float: left;
+        margin: 0;
+    }
+
+.customertiles .bigtile
+{
+    width: 255px !important;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+    .customertiles .bigtile img
+    {
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .customertiles .bigtile p
+    {
+        clear: both;
+        float: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+.txtaftertile
+{
+    clear: both;
+    color: #000;
+    margin-top: 30px;
+    font-size: 14px;
+    width: 300px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+    .txtaftertile p
+    {
+        padding: 0 0 10px 0;
+    }
+
+.fbarea .quickview
+{
+    text-align: center;
+}
+
+#feedback-poe-list li img
+{
+    width: 100%;
+    height: 100%;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+#feedback-poe-list .selected span
+{
+    background: url(../Images/select.png) no-repeat right top !important;
+    border: 1px solid #e0b001;
+    z-index: 9;
+    position: absolute;
+    width: 39px;
+    height: 41px;
+    top: 0;
+    right: 0;
+}
+
+.poelistli p
+{
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    background: url(../Images/trans.png);
+    padding: 5px;
+}
+
+.quickview h2
+{
+    float: left;
+    width: 530px !important;
+    font-size: 16px !important;
+    padding-top: 0 !important;
+    line-height: none !important;
+    line-height: 1.2em !important;
+    margin-bottom: 7px !important;
+}
+
+.quickview .qn
+{
+    font-size: 20px !important;
+    width: auto !important;
+    height: 23px !important;
+    padding: 5px 12px !important;
+    margin-top: 15px;
+    margin-bottom: 0 !important;
+    margin-left: 3px;
+}
+
+.quickview .user
+{
+    width: 64px;
+    float: left;
+    margin-top: 7px;
+}
+
+.quickview .sliderimg
+{
+    float: left;
+    width: 562px;
+    margin: 0;
+    padding: 0;
+}
+
+.quickviewfb
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 87%;
+    margin-left: 11px;
+}
+
+#q6 ul
+{
+    height: 500px;
+}
+
+#q6 li
+{
+    padding-top: 25px !important;
+    width: 300px;
+    min-height: 35px;
+}
+
+.quickviewfb .questionarea
+{
+    width: 100% !important;
+}
+
+.nxt
+{
+    background: url(../Images/next_arrow1.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    position: relative;
+}
+
+    .nxt:hover
+    {
+        background: url(../../Images/next_arrow.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.nxt1
+{
+    background: url(../Images/next_arrow1.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    position: relative;
+    display: block;
+}
+
+    .nxt1:hover
+    {
+        background: url(../../Images/next_arrow.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.nxt2
+{
+    background: url(../Images/next_arrow1.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    position: relative;
+    display: block;
+}
+
+    .nxt2:hover
+    {
+        background: url(../../Images/next_arrow.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.prev
+{
+    background: url(../../Images/prev_arrow_dim.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: -333px;
+    left: 5%;
+    top: 48.5%;
+    position: fixed;
+    display: block;
+}
+
+    .prev:hover
+    {
+        background: url(../../Images/prev_arrow1.png) no-repeat;
+        opacity: 0.9;
+    }
+
+#wrapper #tiles .tileview a
+{
+    padding-bottom: 0px;
+    height: 115px;
+}
+
+.sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+{
+    background: #808080;
+    color: #fff;
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+    float: right;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.give
+{
+    cursor: pointer;
+}
+
+.startfb, .historybtn
+{
+    width: 105px;
+}
+
+    .startfb a, .historybtn a
+    {
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+.poename
+{
+    float: none;
+    clear: both;
+    font-size: 12px;
+    color: #494949;
+    margin: 0;
+    line-height: 1.2em;
+}
+
+.congo
+{
+    float: none;
+    clear: both;
+    font-size: 12px;
+    color: #494949;
+    padding: 0px 10px 0 10px;
+    margin: 0;
+    line-height: 1.2em;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
+.poename a
+{
+    text-decoration: none;
+    color: #494949;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.fbarea .poename p
+{
+    font-size: 12px;
+}
+
+.memberhd
+{
+    background: none !important;
+    font-size: 12px;
+    height: 12px !important;
+    color: #000;
+    width: 350px;
+}
+
+.fbholder
+{
+    width: 100%;
+    position: relative;
+}
+
+.FBtwocol li img
+{
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+.FBtxt
+{
+    color: #494949;
+    font-size: 14px;
+    float: left;
+}
+
+    .FBtxt p
+    {
+        padding-left: 0px !important;
+    }
+
+.FBtwocol .subhead
+{
+    width: 98.5% !important;
+    color: #808080;
+    background: none !important;
+    border: 0 !important;
+    padding: 5px 0;
+}
+
+.FBtwocol .btnli
+{
+    width: 98.5% !important;
+    font-size: 14px;
+    color: #808080;
+    background: none !important;
+    border: 0 !important;
+    padding: 5px 0;
+    height: 9px !important;
+}
+
+.FBtwocol .subhead1
+{
+    width: 98.5% !important;
+    font-size: 14px;
+    color: #808080;
+    background: none !important;
+    border: 0 !important;
+    line-height: 1.1em;
+    padding-bottom: 5px;
+}
+
+.FBtwocol .first
+{
+    background: none !important;
+    border: 0 !important;
+}
+
+.FBtwocol .subhead p, .FBtwocol .subhead1 p
+{
+    padding: 0 !important;
+}
+
+.fbtiles li
+{
+    width: 120px;
+    height: 120px;
+    max-width: 5%;
+    max-height: 5%;
+}
+
+.fbarea
+{
+    min-width: 100%;
+    float: left;
+}
+
+    .fbarea ul
+    {
+        width: 278px;
+        margin-right: 70px;
+        float: left;
+    }
+
+.last
+{
+    margin-right: 0 !important;
+}
+
+.FBtwocol, .FBtwocol ul
+{
+    margin-right: 0 !important;
+    overflow: hidden;
+    float: left;
+}
+
+.fbarea .FBtwocol li
+{
+    float: left !important;
+    margin-bottom: 10px !important;
+    margin-right: 10px !important;
+    position: relative;
+    background: #d5d5d5;
+}
+
+.FBtwocol .b4select
+{
+    background: #d5d5d5;
+    border: 1px solid #d5d5d5;
+    display: block;
+}
+
+    .FBtwocol .b4select img, .FBtwocol .b4select p
+    {
+        position: inherit;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        left: auto;
+    }
+
+    .FBtwocol .b4select p
+    {
+        width: auto;
+    }
+
+.FBtwocol .nonselect
+{
+    border: 1px solid #d5d5d5;
+    display: block;
+}
+
+.selectFBtwocol
+{
+    border: 1px solid #e0b001 !important;
+    background: url(../Images/select.png) no-repeat top right #d5d5d5 !important;
+}
+
+#wrapper .customertiles h1, .fbarea h1
+{
+    color: #5e5e5e;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 0;
+    background: none !important;
+    width: 300px;
+}
+
+#takeFB, #receiveFB, .giveFB, .status, .history, .FBreceived, .invite
+{
+    display: none;
+}
+
+.fbarea .first
+{
+    clear: both;
+    width: 100%;
+    float: none;
+    background: none;
+    margin: 0;
+}
+
+.fbarea ul li
+{
+    width: 128px;
+    height: 128px;
+    float: left;
+    background: #808080;
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+
+    .fbarea ul li a
+    {
+        cursor: pointer;
+    }
+
+.fbarea li h2
+{
+    text-align: center;
+    font-weight: 400;
+    padding: 17% 0;
+}
+
+.fbarea li p
+{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.fbarea li img
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.fbarea .first
+{
+    clear: both;
+    width: 100%;
+    float: none;
+    background: none;
+    margin: 0 !important;
+}
+
+.img
+{
+    float: right;
+}
+/*.imgs
+{
+	width:100%;
+	width:52px;
+	float:right;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:33%;
+}*/
+
+.imgbig
+{
+    width: 100%;
+    width: 64px;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+.popupbg
+{
+    background: #000;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 95;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.popup
+{
+    background: #fff;
+    height: 100px;
+    width: 260px;
+    margin: 0 auto;
+    padding: 10px;
+    position: fixed;
+    z-index: 111;
+    display: none;
+    color: #808080;
+    text-align: center;
+    font-size: 14px;
+}
+
+.requestpopup
+{
+    background: #fff;
+    height: 100px;
+    width: 260px;
+    margin: 0 auto;
+    padding: 10px;
+    position: fixed;
+    z-index: 111;
+    color: #808080;
+    text-align: center;
+    font-size: 14px;
+}
+
+    .requestpopup p
+    {
+        position: absolute;
+        top: 45%;
+    }
+
+.close
+{
+    float: right;
+    background: #e0b001;
+    color: #fff;
+    font-size: 12px;
+    width: 10%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.popup p
+{
+    position: absolute;
+    top: 45%;
+}
+
+.fbarea .FBtwocol .quickview
+{
+    width: 267px;
+    text-align: center;
+}
+
+.quickview p
+{
+    font-size: 90%;
+    text-align: left;
+    width: 93%;
+}
+
+.ntwrktext p
+{
+    color: #808080 !important;
+}
+
+.hover
+{
+    background: #E0B001;
+    float: left;
+    height: 128px;
+}
+
+.quickview .icon
+{
+    width: 100%;
+    float: left;
+}
+
+    .quickview .icon img
+    {
+        text-align: center;
+        top: 10px;
+        padding: 0;
+    }
+
+.quickviewlftimg
+{
+    width: 50% !important;
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+}
+
+    .quickviewlftimg img
+    {
+        width: 100% !important;
+        left: 0;
+        top: 0 !important;
+        height: 100% !important;
+    }
+
+#info
+{
+    width: 90%;
+    text-align: center;
+}
+
+.pagination
+{
+    float: left;
+    padding-top: 15px;
+    text-align: center;
+    width: 65%;
+}
+
+.slidebtn
+{
+    bottom: 5px;
+    height: 43px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 99999;
+}
+
+.prevfb
+{
+    background: url("../Images/previous.png") no-repeat scroll 0 0 transparent;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: left;
+    height: 43px;
+    text-decoration: none;
+    text-indent: -1333px;
+    width: 43px;
+}
+
+    .prevfb:hover
+    {
+        background: url(../Images/prev-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.nxtfb
+{
+    background: url("../Images/next.png") no-repeat scroll 0 0 transparent;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: right;
+    height: 43px;
+    text-decoration: none;
+    text-indent: 1033px;
+    width: 43px;
+}
+
+    .nxtfb:hover
+    {
+        background: url(../Images/next-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.slidebtn
+{
+    display: none;
+}
+
+.quickview p
+{
+    right: 10px !important;
+    width: 50% !important;
+    text-align: right !important;
+    left: auto !important;
+}
+
+@media screen and (max-width:7680px) and (min-width:1680px)
+{
+    .fbarea ul li
+    {
+        width: 153px;
+        height: 153px;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 152px;
+        height: 152px;
+    }
+
+    .poelistli p
+    {
+        width: 93.5% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 335px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 42px;
+    }
+
+    .frequency
+    {
+        width: 43%;
+    }
+
+    .questions li
+    {
+        width: 720px;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 3.8%;
+        width: 35%;
+        top: 45%;
+    }
+
+    .nxt
+    {
+        margin-top: 12%;
+        margin-right: -30%;
+    }
+
+    .nxt1
+    {
+        margin-top: -38%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: -10%;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 94.2%;
+    }
+
+    #module2, #module3
+    {
+        padding: 158px 20px 20px;
+    }
+
+    #ajax-content
+    {
+        padding-top: 50px;
+    }
+
+    .fbarea li h2
+    {
+        font-size: 60px;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 900px;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 436px;
+        height: 104px;
+    }
+
+    .FBtwocol .first
+    {
+        height: 60px !important;
+    }
+
+    .img
+    {
+        padding-bottom: 43%;
+    }
+
+    .FBtxt p
+    {
+        padding-bottom: 4px !important;
+    }
+
+    .poename
+    {
+        padding: 5px 0 0px 10px !important;
+    }
+
+    .FBtwocol .stat
+    {
+        height: 198px !important;
+    }
+
+    .FBtxt, .FBtwocol li img
+    {
+        margin: 12px 0 0 10px;
+    }
+
+    .FBtwocol .first
+    {
+        height: 36px !important;
+    }
+
+    .FBtwocol .b4select p, .congo, .poename, .poename p, .poename a, .FBtwocol .subhead, .FBtwocol .subhead p, .FBtwocol .subhead1, .FBtwocol .subhead1 p, .memberhd, #info
+    {
+        font-size: 16px;
+    }
+
+    .memberhd
+    {
+        height: 18px;
+    }
+
+    .fbarea .poename p
+    {
+        padding: 4px 0 0px 0 !important;
+    }
+
+    .fbarea .quickview
+    {
+        width: 323px !important;
+    }
+
+    .coltwo
+    {
+        width: 450px;
+    }
+
+        .coltwo li:last-child
+        {
+            margin-bottom: 0;
+        }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 75px;
+        height: 75px;
+        margin: 15px 0 0 15px;
+    }
+
+    .sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+    {
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .FBtwocol .nonselect
+    {
+        background: url(../Images/you-1920.png) no-repeat left 10px center #d5d5d5;
+    }
+
+    .popup
+    {
+        left: 40%;
+        top: 40%;
+    }
+
+    .slidebtn
+    {
+        left: 43%;
+        width: 13%;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1680px)
+{
+    .fbarea ul li
+    {
+        width: 128px;
+        height: 128px;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 127px;
+        height: 127px;
+    }
+
+    #feedback-poe-list
+    {
+        width: 276px !important;
+    }
+
+    .poelistli p
+    {
+        width: 92% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 276px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 13px;
+        width: 90%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 42px;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 8%;
+        width: 43%;
+        top: 50%;
+    }
+
+    .customertiles .takesf
+    {
+        width: 120%;
+    }
+
+    .contentholder .customertiles .takesf
+    {
+        width: 100%;
+        padding: 8% 10% 6% 10%;
+        height: 40px;
+        width: 230px;
+        position: relative;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 93.9%;
+    }
+
+    .questions li
+    {
+        width: 658px;
+        margin-left: 60px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 530px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 400px;
+    }
+
+    #module2, #module3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    #ajax-content
+    {
+        padding-top: 10px;
+    }
+
+    .fbarea li h2
+    {
+        font-size: 60px;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 726px;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 351px;
+        height: 77px;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-weight: lighter;
+        padding-top: 10px;
+    }
+
+    .fbarea li h2
+    {
+        padding: 19% 0;
+    }
+
+    .FBtxt p
+    {
+        padding-bottom: 3px !important;
+    }
+
+    .poename
+    {
+        padding: 5px 0 0px 10px !important;
+    }
+
+    .FBtwocol .stat
+    {
+        height: 163px !important;
+    }
+
+    .FBtxt, .FBtwocol li img
+    {
+        margin: 6px 0 0 10px;
+    }
+
+    .FBtwocol .first
+    {
+        height: 36px !important;
+    }
+
+    .FBtwocol .b4select p, .congo, .poename, .poename p, .poename a, .FBtwocol .subhead, .FBtwocol .subhead p, .FBtwocol .subhead1, .FBtwocol .subhead1 p, .memberhd, #info
+    {
+        font-size: 13px;
+    }
+
+    .fbarea .poename p
+    {
+        padding: 2px 0 0px 0 !important;
+    }
+
+    .fbarea .quickview
+    {
+        width: 267px !important;
+    }
+
+    .coltwo
+    {
+        width: 361px;
+    }
+
+        .coltwo li:last-child
+        {
+            margin-bottom: 0;
+        }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 61px;
+        height: 61px;
+        margin: 7px 0 0 10px;
+    }
+
+    .sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+    {
+        font-size: 11px;
+        width: 102px;
+    }
+
+    .FBtwocol .nonselect
+    {
+        background: url(../Images/you.png) no-repeat left 10px center #d5d5d5;
+    }
+
+    .poename
+    {
+        padding: 9px 10px 0 10px !important;
+    }
+
+    .popup
+    {
+        left: 40%;
+        top: 40%;
+    }
+
+    .slidebtn
+    {
+        left: 42%;
+        width: 18%;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px)
+{
+    .fbarea ul li
+    {
+        width: 128px;
+        height: 128px;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 127px;
+        height: 127px;
+    }
+
+    #feedback-poe-list
+    {
+        width: 276px !important;
+    }
+
+    .poelistli p
+    {
+        width: 92% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 276px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 13px;
+        width: 89%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 42px;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 8%;
+        width: 43%;
+        top: 50%;
+    }
+
+    .customertiles .takesf
+    {
+        width: 120%;
+    }
+
+    .contentholder .customertiles .takesf
+    {
+        width: 100%;
+        padding: 8% 10% 6% 10%;
+        height: 40px;
+        width: 230px;
+        position: relative;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 93.9%;
+    }
+
+    .questions li
+    {
+        width: 658px;
+        margin-left: 60px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 530px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 400px;
+    }
+
+    #module2, #module3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    #ajax-content
+    {
+        padding-top: 10px;
+    }
+
+    .fbarea li h2
+    {
+        font-size: 60px;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 635px;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 305px;
+        height: 77px;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-weight: lighter;
+        padding-top: 10px;
+    }
+
+    .fbarea li h2
+    {
+        padding: 19% 0;
+    }
+
+    .FBtxt p
+    {
+        padding-bottom: 3px !important;
+    }
+
+    .poename
+    {
+        padding: 5px 0 0px 10px !important;
+    }
+
+    .FBtwocol .stat
+    {
+        height: 163px !important;
+    }
+
+    .FBtxt, .FBtwocol li img
+    {
+        margin: 6px 0 0 10px;
+    }
+
+    .FBtwocol .first
+    {
+        height: 36px !important;
+    }
+
+    .FBtwocol .b4select p, .congo, .poename, .poename p, .poename a, .FBtwocol .subhead, .FBtwocol .subhead p, .FBtwocol .subhead1, .FBtwocol .subhead1 p, .memberhd, #info
+    {
+        font-size: 13px;
+    }
+
+    .congo
+    {
+        bottom: 24px;
+    }
+
+    .fbarea .poename p
+    {
+        padding: 2px 0 0px 0 !important;
+    }
+
+    .fbarea .quickview
+    {
+        width: 267px !important;
+    }
+
+    .coltwo
+    {
+        width: 315px;
+    }
+
+        .coltwo li:last-child
+        {
+            margin-bottom: 0;
+        }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 61px;
+        height: 61px;
+        margin: 7px 0 0 10px;
+    }
+
+    .sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+    {
+        font-size: 10px;
+        width: 90px;
+    }
+
+    .FBtwocol .nonselect
+    {
+        background: url(../Images/you.png) no-repeat left 10px center #d5d5d5;
+    }
+
+    .poename
+    {
+        padding: 9px 10px 0 10px !important;
+    }
+
+    .popup
+    {
+        left: 40%;
+        top: 40%;
+    }
+
+    .slidebtn
+    {
+        left: 42%;
+        width: 18%;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1440px)
+{
+    .fbarea ul li
+    {
+        width: 128px;
+        height: 128px;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 127px;
+        height: 127px;
+    }
+
+    #feedback-poe-list
+    {
+        width: 276px !important;
+    }
+
+    .poelistli p
+    {
+        width: 92% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 276px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 13px;
+        width: 89%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 42px;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 8%;
+        width: 43%;
+        top: 50%;
+    }
+
+    .customertiles .takesf
+    {
+        width: 120%;
+    }
+
+    .contentholder .customertiles .takesf
+    {
+        width: 100%;
+        padding: 8% 10% 6% 10%;
+        height: 40px;
+        width: 230px;
+        position: relative;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 93.9%;
+    }
+
+    .questions li
+    {
+        width: 658px;
+        margin-left: 60px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 530px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 400px;
+    }
+
+    #module2, #module3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    #ajax-content
+    {
+        padding-top: 10px;
+    }
+
+    .fbarea li h2
+    {
+        font-size: 60px;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 622px;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 298px;
+        height: 77px;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-weight: lighter;
+        padding-top: 10px;
+    }
+
+    .fbarea li h2
+    {
+        padding: 19% 0;
+    }
+
+    .FBtxt p
+    {
+        padding-bottom: 3px !important;
+    }
+
+    .poename
+    {
+        padding: 5px 0 0px 10px !important;
+    }
+
+    .FBtwocol .stat
+    {
+        height: 163px !important;
+    }
+
+    .FBtxt, .FBtwocol li img
+    {
+        margin: 6px 0 0 10px;
+    }
+
+    .FBtwocol .first
+    {
+        height: 36px !important;
+    }
+
+    .FBtwocol .b4select p, .congo, .poename, .poename p, .poename a, .FBtwocol .subhead, .FBtwocol .subhead p, .FBtwocol .subhead1, .FBtwocol .subhead1 p, .memberhd, #info
+    {
+        font-size: 13px;
+    }
+
+    .fbarea .poename p
+    {
+        padding: 2px 0 0px 0 !important;
+    }
+
+    .fbarea .quickview
+    {
+        width: 267px !important;
+    }
+
+    .coltwo
+    {
+        width: 310px;
+    }
+
+    .congo
+    {
+        bottom: 24px;
+    }
+
+    .coltwo li:last-child
+    {
+        margin-bottom: 0;
+    }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 61px;
+        height: 61px;
+        margin: 7px 0 0 10px;
+    }
+
+    .sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+    {
+        font-size: 11px;
+        width: 102px;
+    }
+
+    .FBtwocol .nonselect
+    {
+        background: url(../Images/you.png) no-repeat left 10px center #d5d5d5;
+    }
+
+    .poename
+    {
+        padding: 9px 10px 0 10px !important;
+    }
+
+    .popup
+    {
+        left: 40%;
+        top: 40%;
+    }
+
+    .slidebtn
+    {
+        left: 42%;
+        width: 18%;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px)
+{
+    .fbarea ul li
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 109px;
+        height: 109px;
+    }
+
+    #feedback-poe-list
+    {
+        width: 244px !important;
+    }
+
+    .poelistli p
+    {
+        width: 91% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 276px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 38px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 93.6%;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 9.8%;
+        width: 47%;
+        top: 55%;
+    }
+
+    .qvlist, .qvlist ul, .qvlist li
+    {
+        max-width: 210px !important;
+    }
+
+    .frequency
+    {
+        width: 48%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 453px;
+    }
+
+    #module2, #module3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 373px;
+    }
+
+    .contentholder .customertiles .takesf
+    {
+        height: 48px;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 18px;
+        font-weight: lighter;
+        padding-top: 7px;
+    }
+
+    .fbarea li h2
+    {
+        padding: 16.5% 0;
+        font-size: 54px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 76%;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 598px !important;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 286px;
+        height: 68px;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 140px;
+    }
+
+    .fbarea ul
+    {
+        width: 240px;
+    }
+
+    .fbarea .FBtwocol .subhead, .fbarea .FBtwocol .subhead1
+    {
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 1.1em;
+    }
+
+        .fbarea .FBtwocol .subhead p, .fbarea .FBtwocol .subhead1 p
+        {
+            font-size: 12px;
+            line-height: 1.1em;
+        }
+
+    .fbarea ul li
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+        .fbarea ul li a
+        {
+            cursor: pointer;
+        }
+
+    .FBtwocol .first
+    {
+        height: 30px !important;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 165px;
+    }
+
+    .prevfb
+    {
+        right: 50%;
+    }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 50px;
+        height: 50px;
+        margin: 8px 0 0 10px;
+    }
+
+    .img
+    {
+        padding-bottom: 35%;
+    }
+
+    .imgs
+    {
+        padding-bottom: 22%;
+    }
+
+    .imgbig
+    {
+        padding-top: 6%;
+    }
+
+    .fbarea .FBtwocol .quickview
+    {
+        width: 230px;
+    }
+
+    #wrapper
+    {
+        height: 570px;
+        clear: both;
+        width: 100%;
+        overflow: visible !important;
+    }
+
+    #scroller
+    {
+        width: 5200px;
+        cursor: pointer;
+    }
+
+        #scroller li
+        {
+            display: block;
+            float: left;
+            width: 1280px;
+        }
+
+    .pageholder .hm
+    {
+        margin-left: 115px !important;
+    }
+
+    #wrapper .customertiles
+    {
+        float: left;
+        margin-right: 70px;
+        width: 20%;
+    }
+
+    #wrapper .last
+    {
+        margin-right: 0px !important;
+    }
+
+    #customertiles .item
+    {
+        width: 1230px;
+        float: left;
+    }
+
+    #wrapper .stars, .stars ul
+    {
+        width: 415px !important;
+        margin-right: 60px !important;
+    }
+
+    #wrapper .customertiles ul
+    {
+    }
+
+    #wrapper #scroller .customertiles ul li
+    {
+        padding: 10px;
+        float: left;
+        background: #808080;
+        margin: 10px 10px 0 0;
+        line-height: 1em;
+    }
+
+    #wrapper .customertiles ul li a, .customertiles ul li p
+    {
+        font-size: 12px;
+    }
+
+    #wrapper .customertiles ul li p
+    {
+        clear: both;
+        position: relative;
+        bottom: 0px;
+        width: 100px;
+        line-height: 1.2em;
+    }
+
+    #wrapper .customertiles ul li .title
+    {
+        position: relative;
+        top: -20px;
+        z-index: 3;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    #wrapper .customertiles ul li .reference
+    {
+        padding-top: 31px;
+    }
+
+        #wrapper .customertiles ul li .reference p
+        {
+            padding-top: 0px;
+        }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        color: #5e5e5e;
+        font-size: 20px;
+        font-weight: lighter;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: none !important;
+        width: 300px;
+    }
+
+    #wrapper .customertiles .icon
+    {
+        float: right;
+        padding-bottom: 53px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconA, .customertiles .iconB
+    {
+        float: right;
+        padding-bottom: 35px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconB
+    {
+        padding-bottom: 20px;
+    }
+
+    #wrapper .customertiles .icon1
+    {
+        float: right;
+        padding-bottom: 0px;
+    }
+
+    #wrapper .customertiles .icon2
+    {
+        float: right;
+        padding-bottom: 38px;
+    }
+
+    #wrapper .customertiles .number
+    {
+        float: left;
+        width: 32px;
+        height: 32px;
+        background: #000;
+        padding: 5px;
+        font-size: 22pt;
+        position: relative;
+        left: -10px;
+        top: -10px;
+        z-index: 2;
+    }
+
+    #wrapper .customertiles .numbertile
+    {
+        font-size: 80px;
+        text-align: center;
+        padding-top: 42px;
+    }
+
+    #wrapper .customertiles .doubleline
+    {
+        padding-bottom: 37px;
+    }
+
+    #wrapper .customertiles .tripleline
+    {
+        padding-bottom: 22px;
+    }
+
+    #wrapper .customertiles .caption
+    {
+        float: left;
+        width: 32px;
+        height: 16px;
+        background: #000;
+        padding: 5px 10px;
+        font-size: 22pt;
+        position: relative;
+        left: -10px;
+        top: -33px;
+        z-index: 3;
+        background: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        font-size: 12px;
+        width: 107px;
+    }
+
+    #wrapper .customertiles .pic
+    {
+        float: right;
+        height: 32px;
+        position: relative;
+        right: -10px;
+        top: -10px;
+    }
+
+    #wrapper .customertiles .rectangle
+    {
+        width: 243px !important;
+        background: none !important;
+        font-size: 14px !important;
+    }
+
+        #wrapper .customertiles .rectangle p
+        {
+            width: 244px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+    #wrapper .customertiles .rectangle1
+    {
+        width: 243px !important;
+    }
+
+        #wrapper .customertiles .rectangle1 p
+        {
+            width: 244px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+    #wrapper .customertiles .logo
+    {
+        position: relative;
+        left: -10px;
+        top: 20px;
+        background: #fff;
+        height: 65px;
+        width: 128px;
+        float: left;
+    }
+
+    #wrapper .videoimg
+    {
+        padding: 1px !important;
+        width: 125px !important;
+        height: 125px !important;
+    }
+
+    #wrapper .videoimg1
+    {
+        padding: 0px !important;
+        width: 126px !important;
+        height: 127px !important;
+    }
+
+    #wrapper .starimg
+    {
+        padding: 0px !important;
+        width: 125px !important;
+        height: 125px !important;
+        position: relative;
+        top: -52px;
+        left: -10px;
+        z-index: 1;
+    }
+
+    #wrapper .guruimg
+    {
+        padding: 0px !important;
+        width: 125px !important;
+        height: 125px !important;
+        position: relative;
+        left: -10px;
+        top: -10px;
+        z-index: 1;
+    }
+
+    #wrapper .customerimg
+    {
+        width: 125px !important;
+        height: 127px !important;
+        padding: 0 !important;
+        background: none !important;
+    }
+
+    #wrapper .strong
+    {
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    #wrapper .aboutbx
+    {
+        width: 605px !important;
+        margin-right: 0 !important;
+    }
+
+        #wrapper .aboutbx h1
+        {
+            padding-bottom: 14px;
+        }
+
+        #wrapper .aboutbx li
+        {
+            padding: 10px;
+            border-top: 1px dashed #acacac;
+            width: 595px !important;
+            background: #e5e5e5;
+            color: #808080;
+            height: auto !important;
+            margin: 0 !important;
+        }
+
+            #wrapper .aboutbx li img, .aboutbx li .heading, .aboutbx li .heading1
+            {
+                float: left;
+                margin-right: 15px;
+            }
+
+            #wrapper .aboutbx li .heading
+            {
+                font-size: 14px;
+                width: 90px;
+                font-weight: 600;
+                padding-top: 13px;
+            }
+
+            #wrapper .aboutbx li .heading1, #wrapper .aboutbx li .heading2, #wrapper .aboutbx li .heading3
+            {
+                font-size: 14px;
+                width: 95px;
+                font-weight: 600;
+                float: left;
+            }
+
+            #wrapper .aboutbx li .heading1
+            {
+                width: 80px;
+                padding-top: 45px;
+            }
+
+            #wrapper .aboutbx li .heading2
+            {
+                padding-top: 65px;
+            }
+
+            #wrapper .aboutbx li .heading3
+            {
+                padding-top: 12px;
+            }
+
+    #aboutContent h1
+    {
+        color: #5e5e5e;
+        font-size: 28px;
+        font-weight: lighter;
+        padding-top: 38px;
+        padding-bottom: 4px;
+        background: none !important;
+        width: 300px;
+    }
+
+    .indicon
+    {
+        padding-top: 55px;
+        width: 52px;
+        float: left;
+    }
+
+    .managericon
+    {
+        padding-top: 35px;
+        width: 52px;
+        float: left;
+    }
+
+    #wrapper .aboutbx li .paragraph, #wrapper .aboutbx li .paragraph p
+    {
+        font-size: 14px;
+        line-height: 1.2em;
+        width: 435px;
+        margin-right: 0;
+        float: left;
+        text-align: justify;
+    }
+
+    #wrapper #thirdpage .paragraph
+    {
+        font-size: 14px;
+        line-height: 1.2em;
+        width: 352px;
+        margin-right: 0;
+        float: left;
+        margin-left: 5px;
+    }
+
+    #wrapper .aboutbx li .paragraph p
+    {
+        padding: 3px 0 0 0;
+    }
+
+    #wrapper .aboutbx li .bicon
+    {
+        width: 52px;
+        float: left;
+        padding-top: 15px;
+    }
+
+    #wrapper .aboutbx li .leadericon
+    {
+        width: 52px;
+        float: left;
+        padding-top: 35px;
+    }
+
+    #tiles .tileview, #tiles .tileview li
+    {
+        height: auto !important;
+    }
+
+    .btnholder
+    {
+        width: 1300px;
+        margin-top: 165px;
+        z-index: 1;
+        padding-left: 30px;
+        height: 50px;
+    }
+
+    .nxt
+    {
+        background: url(../Images/next_arrow1.png) no-repeat;
+        cursor: pointer;
+        opacity: 0.9;
+        width: 24px;
+        height: 24px;
+        text-decoration: none;
+        float: right;
+        clear: both;
+        color: #e5e5e5;
+        text-indent: 1033px;
+        position: relative;
+        margin-top: 10%;
+        margin-right: -80%;
+    }
+
+        .nxt:hover
+        {
+            background: url(../Images/next_arrow.png) no-repeat;
+            opacity: 0.9;
+        }
+
+    .prev
+    {
+        background: url(../Images/prev_arrow_dim.png) no-repeat;
+        cursor: pointer;
+        opacity: 0.9;
+        width: 24px;
+        height: 24px;
+        text-decoration: none;
+        float: right;
+        clear: both;
+        color: #e5e5e5;
+        text-indent: -333px;
+        left: 5%;
+        top: 48.5%;
+        position: fixed;
+    }
+
+        .prev:hover
+        {
+            background: url(../Images/prev_arrow1.png) no-repeat;
+            opacity: 0.9;
+        }
+
+    .abtprev
+    {
+        background: url(../images/abt_prev_arrow.png) no-repeat;
+        cursor: pointer;
+        position: relative;
+        left: 572px;
+        top: -50px;
+    }
+
+    .abtnxt
+    {
+        background: url(../images/abt_next_arrow.png) no-repeat;
+        position: relative;
+        left: 572px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    #firstpage, #secondpage
+    {
+        width: 720px !important;
+    }
+
+    #wrapper #scroller #thirdpage #sideindividual, #wrapper #scroller #thirdpage #sidemanager, #wrapper #scroller #thirdpage #sideleaders, #wrapper #scroller #thirdpage #sidehrprof, #wrapper #scroller #thirdpage #sidereadsprof, #wrapper #scroller .customertiles #firstpage li, #wrapper .customertiles #secondpage li, #wrapper #scroller .customertiles #thirdpagea li
+    {
+        background: #e5e5e5;
+        color: #808080;
+        padding: 5px;
+    }
+
+    #wrapper .customertiles #firstpage li, #wrapper .customertiles #secondpage li
+    {
+        background: #e5e5e5 !important;
+    }
+
+    #wrapper .customertiles #secondpage ul li
+    {
+        padding: 5px;
+    }
+
+    .whoisbe1
+    {
+        display: none;
+    }
+
+    #wrapper #tiles .tileview a
+    {
+        padding-bottom: 0px;
+        height: 115px;
+    }
+
+    .fbtiles li
+    {
+        width: 120px;
+        height: 120px;
+        max-width: 5%;
+        max-height: 5%;
+    }
+
+    .fbarea
+    {
+        max-width: 100%;
+        float: left;
+    }
+
+        .fbarea ul
+        {
+            margin-right: 60px;
+            float: left;
+        }
+
+    .last
+    {
+        margin-right: 0 !important;
+    }
+
+    .fbarea ul li
+    {
+        float: left;
+        background: #808080;
+        margin: 0 10px 10px 0;
+    }
+
+        .fbarea ul li a
+        {
+            cursor: pointer;
+        }
+
+    .fbarea li h2
+    {
+        text-align: center;
+        font-weight: 400;
+        padding: 17% 0;
+    }
+
+    .fbarea li p
+    {
+        clear: both;
+        font-size: 12px;
+    }
+
+    .fbarea .first
+    {
+        clear: both;
+        width: 100%;
+        float: none;
+        background: none;
+        margin: 0;
+    }
+
+    .img
+    {
+        width: 100%;
+        width: 52px;
+        float: right;
+    }
+
+    .imgbig
+    {
+        width: 100%;
+        width: 64px;
+        padding-top: 10%;
+        padding-bottom: 4%;
+    }
+
+    .quickview
+    {
+        width: 100% !important;
+        text-align: center;
+    }
+
+        .quickview p
+        {
+            font-size: 90%;
+            text-align: left;
+            width: 93%;
+        }
+
+    .hover
+    {
+        background: #E0B001;
+        float: left;
+        height: 128px;
+    }
+
+    .FBtxt p
+    {
+        padding-bottom: 2px !important;
+    }
+
+    .fbarea .poename p
+    {
+        padding: 3px 0 0px 0 !important;
+    }
+
+    .FBtwocol .stat
+    {
+        height: 138px !important;
+    }
+
+    .FBtxt
+    {
+        margin: 6px 0 0 10px;
+    }
+
+    .sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+    {
+        font-size: 10px;
+        width: 90px;
+    }
+
+    .startfb
+    {
+        width: 100px;
+    }
+
+    .givebtn, .invitebtn
+    {
+        right: 2px;
+        bottom: 0px;
+    }
+
+    .FBtwocol .nonselect
+    {
+        background: url(../Images/you-1366.png) no-repeat left 10px center #d5d5d5;
+    }
+
+    .coltwo
+    {
+        width: 298px;
+    }
+
+        .coltwo li:last-child
+        {
+            margin-bottom: 0;
+        }
+
+    .poename
+    {
+        padding: 3px 10px 0 10px !important;
+    }
+
+        .FBtwocol .b4select p, .congo, .poename, .poename p, .poename a, .FBtwocol .subhead, .FBtwocol .subhead p, .FBtwocol .subhead1, .FBtwocol .subhead1 p, .memberhd, #info
+        {
+            font-size: 12px;
+        }
+
+    .memberhd
+    {
+        height: 8px !important;
+    }
+
+    .fbarea .quickview
+    {
+        width: 230px !important;
+    }
+
+    .popup
+    {
+        left: 40%;
+        top: 40%;
+    }
+
+    .slidebtn
+    {
+        left: 40%;
+        width: 20%;
+    }
+
+    .congo
+    {
+        bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+{
+    .fbarea ul li
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 109px;
+        height: 109px;
+    }
+
+    #feedback-poe-list
+    {
+        width: 244px !important;
+    }
+
+    .poelistli p
+    {
+        width: 91% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 276px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 38px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 93.6%;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 9.8%;
+        width: 47%;
+        top: 55%;
+    }
+
+    .qvlist, .qvlist ul, .qvlist li
+    {
+        max-width: 210px !important;
+    }
+
+    .frequency
+    {
+        width: 48%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 453px;
+    }
+
+    #module2, #module3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 373px;
+    }
+
+    .contentholder .customertiles .takesf
+    {
+        height: 48px;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 18px;
+        font-weight: lighter;
+        padding-top: 7px;
+    }
+
+    .fbarea li h2
+    {
+        padding: 16.5% 0;
+        font-size: 54px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 76%;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 598px !important;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 286px;
+        height: 68px;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 140px;
+    }
+
+    .fbarea ul
+    {
+        width: 240px;
+    }
+
+    .fbarea .FBtwocol .subhead, .fbarea .FBtwocol .subhead1
+    {
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 1.1em;
+    }
+
+        .fbarea .FBtwocol .subhead p, .fbarea .FBtwocol .subhead1 p
+        {
+            font-size: 12px;
+            line-height: 1.1em;
+        }
+
+    .fbarea ul li
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+        .fbarea ul li a
+        {
+            cursor: pointer;
+        }
+
+    .FBtwocol .first
+    {
+        height: 30px !important;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 165px;
+    }
+
+    .prevfb
+    {
+        right: 50%;
+    }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 50px;
+        height: 50px;
+        margin: 8px 0 0 10px;
+    }
+
+    .img
+    {
+        padding-bottom: 35%;
+    }
+
+    .imgs
+    {
+        padding-bottom: 22%;
+    }
+
+    .imgbig
+    {
+        padding-top: 6%;
+    }
+
+    .fbarea .FBtwocol .quickview
+    {
+        width: 230px;
+    }
+
+    #wrapper
+    {
+        height: 570px;
+        clear: both;
+        width: 100%;
+        overflow: visible !important;
+    }
+
+    #scroller
+    {
+        width: 5200px;
+        cursor: pointer;
+    }
+
+        #scroller li
+        {
+            display: block;
+            float: left;
+            width: 1280px;
+        }
+
+    .pageholder .hm
+    {
+        margin-left: 115px !important;
+    }
+
+    #wrapper .customertiles
+    {
+        float: left;
+        margin-right: 70px;
+        width: 20%;
+    }
+
+    #wrapper .last
+    {
+        margin-right: 0px !important;
+    }
+
+    #customertiles .item
+    {
+        width: 1230px;
+        float: left;
+    }
+
+    #wrapper .stars, .stars ul
+    {
+        width: 415px !important;
+        margin-right: 60px !important;
+    }
+
+    #wrapper .customertiles ul
+    {
+    }
+
+    #wrapper #scroller .customertiles ul li
+    {
+        padding: 10px;
+        float: left;
+        background: #808080;
+        margin: 10px 10px 0 0;
+        line-height: 1em;
+    }
+
+    #wrapper .customertiles ul li a, .customertiles ul li p
+    {
+        font-size: 12px;
+    }
+
+    #wrapper .customertiles ul li p
+    {
+        clear: both;
+        position: relative;
+        bottom: 0px;
+        width: 100px;
+        line-height: 1.2em;
+    }
+
+    #wrapper .customertiles ul li .title
+    {
+        position: relative;
+        top: -20px;
+        z-index: 3;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    #wrapper .customertiles ul li .reference
+    {
+        padding-top: 31px;
+    }
+
+        #wrapper .customertiles ul li .reference p
+        {
+            padding-top: 0px;
+        }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        color: #5e5e5e;
+        font-size: 20px;
+        font-weight: lighter;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: none !important;
+        width: 300px;
+    }
+
+    #wrapper .customertiles .icon
+    {
+        float: right;
+        padding-bottom: 53px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconA, .customertiles .iconB
+    {
+        float: right;
+        padding-bottom: 35px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconB
+    {
+        padding-bottom: 20px;
+    }
+
+    #wrapper .customertiles .icon1
+    {
+        float: right;
+        padding-bottom: 0px;
+    }
+
+    #wrapper .customertiles .icon2
+    {
+        float: right;
+        padding-bottom: 38px;
+    }
+
+    #wrapper .customertiles .number
+    {
+        float: left;
+        width: 32px;
+        height: 32px;
+        background: #000;
+        padding: 5px;
+        font-size: 22pt;
+        position: relative;
+        left: -10px;
+        top: -10px;
+        z-index: 2;
+    }
+
+    #wrapper .customertiles .numbertile
+    {
+        font-size: 80px;
+        text-align: center;
+        padding-top: 42px;
+    }
+
+    #wrapper .customertiles .doubleline
+    {
+        padding-bottom: 37px;
+    }
+
+    #wrapper .customertiles .tripleline
+    {
+        padding-bottom: 22px;
+    }
+
+    #wrapper .customertiles .caption
+    {
+        float: left;
+        width: 32px;
+        height: 16px;
+        background: #000;
+        padding: 5px 10px;
+        font-size: 22pt;
+        position: relative;
+        left: -10px;
+        top: -33px;
+        z-index: 3;
+        background: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        font-size: 12px;
+        width: 107px;
+    }
+
+    #wrapper .customertiles .pic
+    {
+        float: right;
+        height: 32px;
+        position: relative;
+        right: -10px;
+        top: -10px;
+    }
+
+    #wrapper .customertiles .rectangle
+    {
+        width: 243px !important;
+        background: none !important;
+        font-size: 14px !important;
+    }
+
+        #wrapper .customertiles .rectangle p
+        {
+            width: 244px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+    #wrapper .customertiles .rectangle1
+    {
+        width: 243px !important;
+    }
+
+        #wrapper .customertiles .rectangle1 p
+        {
+            width: 244px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+    #wrapper .customertiles .logo
+    {
+        position: relative;
+        left: -10px;
+        top: 20px;
+        background: #fff;
+        height: 65px;
+        width: 128px;
+        float: left;
+    }
+
+    #wrapper .videoimg
+    {
+        padding: 1px !important;
+        width: 125px !important;
+        height: 125px !important;
+    }
+
+    #wrapper .videoimg1
+    {
+        padding: 0px !important;
+        width: 126px !important;
+        height: 127px !important;
+    }
+
+    #wrapper .starimg
+    {
+        padding: 0px !important;
+        width: 125px !important;
+        height: 125px !important;
+        position: relative;
+        top: -52px;
+        left: -10px;
+        z-index: 1;
+    }
+
+    #wrapper .guruimg
+    {
+        padding: 0px !important;
+        width: 125px !important;
+        height: 125px !important;
+        position: relative;
+        left: -10px;
+        top: -10px;
+        z-index: 1;
+    }
+
+    #wrapper .customerimg
+    {
+        width: 125px !important;
+        height: 127px !important;
+        padding: 0 !important;
+        background: none !important;
+    }
+
+    #wrapper .strong
+    {
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    #wrapper .aboutbx
+    {
+        width: 605px !important;
+        margin-right: 0 !important;
+    }
+
+        #wrapper .aboutbx h1
+        {
+            padding-bottom: 14px;
+        }
+
+        #wrapper .aboutbx li
+        {
+            padding: 10px;
+            border-top: 1px dashed #acacac;
+            width: 595px !important;
+            background: #e5e5e5;
+            color: #808080;
+            height: auto !important;
+            margin: 0 !important;
+        }
+
+            #wrapper .aboutbx li img, .aboutbx li .heading, .aboutbx li .heading1
+            {
+                float: left;
+                margin-right: 15px;
+            }
+
+            #wrapper .aboutbx li .heading
+            {
+                font-size: 14px;
+                width: 90px;
+                font-weight: 600;
+                padding-top: 13px;
+            }
+
+            #wrapper .aboutbx li .heading1, #wrapper .aboutbx li .heading2, #wrapper .aboutbx li .heading3
+            {
+                font-size: 14px;
+                width: 95px;
+                font-weight: 600;
+                float: left;
+            }
+
+            #wrapper .aboutbx li .heading1
+            {
+                width: 80px;
+                padding-top: 45px;
+            }
+
+            #wrapper .aboutbx li .heading2
+            {
+                padding-top: 65px;
+            }
+
+            #wrapper .aboutbx li .heading3
+            {
+                padding-top: 12px;
+            }
+
+    #aboutContent h1
+    {
+        color: #5e5e5e;
+        font-size: 28px;
+        font-weight: lighter;
+        padding-top: 38px;
+        padding-bottom: 4px;
+        background: none !important;
+        width: 300px;
+    }
+
+    .indicon
+    {
+        padding-top: 55px;
+        width: 52px;
+        float: left;
+    }
+
+    .managericon
+    {
+        padding-top: 35px;
+        width: 52px;
+        float: left;
+    }
+
+    #wrapper .aboutbx li .paragraph, #wrapper .aboutbx li .paragraph p
+    {
+        font-size: 14px;
+        line-height: 1.2em;
+        width: 435px;
+        margin-right: 0;
+        float: left;
+        text-align: justify;
+    }
+
+    #wrapper #thirdpage .paragraph
+    {
+        font-size: 14px;
+        line-height: 1.2em;
+        width: 352px;
+        margin-right: 0;
+        float: left;
+        margin-left: 5px;
+    }
+
+    #wrapper .aboutbx li .paragraph p
+    {
+        padding: 3px 0 0 0;
+    }
+
+    #wrapper .aboutbx li .bicon
+    {
+        width: 52px;
+        float: left;
+        padding-top: 15px;
+    }
+
+    #wrapper .aboutbx li .leadericon
+    {
+        width: 52px;
+        float: left;
+        padding-top: 35px;
+    }
+
+    #tiles .tileview, #tiles .tileview li
+    {
+        height: auto !important;
+    }
+
+    .btnholder
+    {
+        width: 1300px;
+        margin-top: 165px;
+        z-index: 1;
+        padding-left: 30px;
+        height: 50px;
+    }
+
+    .nxt
+    {
+        background: url(../Images/next_arrow1.png) no-repeat;
+        cursor: pointer;
+        opacity: 0.9;
+        width: 24px;
+        height: 24px;
+        text-decoration: none;
+        float: right;
+        clear: both;
+        color: #e5e5e5;
+        text-indent: 1033px;
+        position: relative;
+        margin-top: 10%;
+        margin-right: -80%;
+    }
+
+        .nxt:hover
+        {
+            background: url(../Images/next_arrow.png) no-repeat;
+            opacity: 0.9;
+        }
+
+    .prev
+    {
+        background: url(../Images/prev_arrow_dim.png) no-repeat;
+        cursor: pointer;
+        opacity: 0.9;
+        width: 24px;
+        height: 24px;
+        text-decoration: none;
+        float: right;
+        clear: both;
+        color: #e5e5e5;
+        text-indent: -333px;
+        left: 5%;
+        top: 48.5%;
+        position: fixed;
+    }
+
+        .prev:hover
+        {
+            background: url(../Images/prev_arrow1.png) no-repeat;
+            opacity: 0.9;
+        }
+
+    .abtprev
+    {
+        background: url(../images/abt_prev_arrow.png) no-repeat;
+        cursor: pointer;
+        position: relative;
+        left: 572px;
+        top: -50px;
+    }
+
+    .abtnxt
+    {
+        background: url(../images/abt_next_arrow.png) no-repeat;
+        position: relative;
+        left: 572px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    #firstpage, #secondpage
+    {
+        width: 720px !important;
+    }
+
+    #wrapper #scroller #thirdpage #sideindividual, #wrapper #scroller #thirdpage #sidemanager, #wrapper #scroller #thirdpage #sideleaders, #wrapper #scroller #thirdpage #sidehrprof, #wrapper #scroller #thirdpage #sidereadsprof, #wrapper #scroller .customertiles #firstpage li, #wrapper .customertiles #secondpage li, #wrapper #scroller .customertiles #thirdpagea li
+    {
+        background: #e5e5e5;
+        color: #808080;
+        padding: 5px;
+    }
+
+    #wrapper .customertiles #firstpage li, #wrapper .customertiles #secondpage li
+    {
+        background: #e5e5e5 !important;
+    }
+
+    #wrapper .customertiles #secondpage ul li
+    {
+        padding: 5px;
+    }
+
+    .whoisbe1
+    {
+        display: none;
+    }
+
+    #wrapper #tiles .tileview a
+    {
+        padding-bottom: 0px;
+        height: 115px;
+    }
+
+    .fbtiles li
+    {
+        width: 120px;
+        height: 120px;
+        max-width: 5%;
+        max-height: 5%;
+    }
+
+    .fbarea
+    {
+        max-width: 100%;
+        float: left;
+    }
+
+        .fbarea ul
+        {
+            margin-right: 60px;
+            float: left;
+        }
+
+    .last
+    {
+        margin-right: 0 !important;
+    }
+
+    .fbarea ul li
+    {
+        float: left;
+        background: #808080;
+        margin: 0 10px 10px 0;
+    }
+
+        .fbarea ul li a
+        {
+            cursor: pointer;
+        }
+
+    .fbarea li h2
+    {
+        text-align: center;
+        font-weight: 400;
+        padding: 17% 0;
+    }
+
+    .fbarea li p
+    {
+        clear: both;
+        font-size: 12px;
+    }
+
+    .fbarea .first
+    {
+        clear: both;
+        width: 100%;
+        float: none;
+        background: none;
+        margin: 0;
+    }
+
+    .img
+    {
+        width: 100%;
+        width: 52px;
+        float: right;
+    }
+
+    .imgbig
+    {
+        width: 100%;
+        width: 64px;
+        padding-top: 10%;
+        padding-bottom: 4%;
+    }
+
+    .quickview
+    {
+        width: 100% !important;
+        text-align: center;
+    }
+
+        .quickview p
+        {
+            font-size: 90%;
+            text-align: left;
+            width: 93%;
+        }
+
+    .hover
+    {
+        background: #E0B001;
+        float: left;
+        height: 128px;
+    }
+
+    .FBtxt p
+    {
+        padding-bottom: 2px !important;
+    }
+
+    .fbarea .poename p
+    {
+        padding: 3px 0 0px 0 !important;
+    }
+
+    .FBtwocol .stat
+    {
+        height: 138px !important;
+    }
+
+    .FBtxt
+    {
+        margin: 6px 0 0 10px;
+    }
+
+    .sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+    {
+        font-size: 10px;
+        width: 90px;
+    }
+
+    .startfb
+    {
+        width: 100px;
+    }
+
+    .givebtn, .invitebtn
+    {
+        right: 2px;
+        bottom: 0px;
+    }
+
+    .FBtwocol .nonselect
+    {
+        background: url(../Images/you-1366.png) no-repeat left 10px center #d5d5d5;
+    }
+
+    .coltwo
+    {
+        width: 298px;
+    }
+
+        .coltwo li:last-child
+        {
+            margin-bottom: 0;
+        }
+
+    .poename
+    {
+        padding: 3px 10px 0 10px !important;
+    }
+
+        .FBtwocol .b4select p, .congo, .poename, .poename p, .poename a, .FBtwocol .subhead, .FBtwocol .subhead p, .FBtwocol .subhead1, .FBtwocol .subhead1 p, .memberhd, #info
+        {
+            font-size: 12px;
+        }
+
+    .congo
+    {
+        bottom: 24px;
+    }
+
+    .memberhd
+    {
+        height: 8px !important;
+    }
+
+    .fbarea .quickview
+    {
+        width: 230px !important;
+    }
+
+    .popup
+    {
+        left: 40%;
+        top: 40%;
+    }
+
+    .slidebtn
+    {
+        left: 40%;
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    .fbarea ul li
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+    .quickview
+    {
+        width: 230px !important;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 109px;
+        height: 109px;
+    }
+
+    #feedback-poe-list
+    {
+        width: 244px !important;
+    }
+
+    .poelistli p
+    {
+        width: 91% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 276px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 38px;
+    }
+
+    .pageholder
+    {
+        margin-top: 6%;
+        width: 96.6%;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 9.8%;
+        width: 47%;
+        top: 55%;
+    }
+
+    .qvlist, .qvlist ul, .qvlist li
+    {
+        max-width: 210px !important;
+    }
+
+    .frequency
+    {
+        width: 48%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 453px;
+    }
+
+    #module2, #module3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 373px;
+    }
+
+    .contentholder .customertiles .takesf
+    {
+        height: 48px;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 18px;
+        font-weight: lighter;
+        padding-top: 7px;
+    }
+
+    .fbarea li h2
+    {
+        padding: 16.5% 0;
+        font-size: 54px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 76%;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 598px !important;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 286px;
+        height: 68px;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 140px;
+    }
+
+    .fbarea ul
+    {
+        width: 240px;
+        margin-right: 40px;
+    }
+
+    .coltwo
+    {
+        width: 298px;
+    }
+
+    .fbarea .FBtwocol .subhead, .fbarea .FBtwocol .subhead1
+    {
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 1.1em;
+    }
+
+        .fbarea .FBtwocol .subhead p, .fbarea .FBtwocol .subhead1 p
+        {
+            font-size: 12px;
+            line-height: 1.1em;
+        }
+
+    .fbarea ul li
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+        .fbarea ul li a
+        {
+            cursor: pointer;
+        }
+
+    .FBtwocol .first
+    {
+        height: 30px !important;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 165px;
+    }
+
+    .prevfb
+    {
+        right: 50%;
+    }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 50px;
+        height: 50px;
+        margin: 8px 10px 0 10px;
+    }
+
+    .FBtxt
+    {
+        margin-top: 10px;
+    }
+
+    .img
+    {
+        padding-bottom: 35%;
+    }
+
+    .imgs
+    {
+        padding-bottom: 22%;
+    }
+
+    .imgbig
+    {
+        padding-top: 6%;
+    }
+
+    .fbarea .FBtwocol .quickview
+    {
+        width: 230px;
+    }
+
+    #wrapper
+    {
+        height: 570px;
+        clear: both;
+        width: 100%;
+        overflow: visible !important;
+    }
+
+    #scroller
+    {
+        width: 5200px;
+        cursor: pointer;
+    }
+
+        #scroller li
+        {
+            display: block;
+            float: left;
+            width: 1280px;
+        }
+
+    .pageholder .hm
+    {
+        margin-left: 115px !important;
+    }
+
+    #wrapper .customertiles
+    {
+        float: left;
+        margin-right: 70px;
+        width: 20%;
+    }
+
+    #wrapper .last
+    {
+        margin-right: 0px !important;
+    }
+
+    #customertiles .item
+    {
+        width: 1230px;
+        float: left;
+    }
+
+    #wrapper .stars, .stars ul
+    {
+        width: 415px !important;
+        margin-right: 60px !important;
+    }
+
+    #wrapper .customertiles ul
+    {
+    }
+
+    #wrapper #scroller .customertiles ul li
+    {
+        padding: 10px;
+        float: left;
+        background: #808080;
+        margin: 10px 10px 0 0;
+        line-height: 1em;
+    }
+
+    #wrapper .customertiles ul li a, .customertiles ul li p
+    {
+        font-size: 12px;
+    }
+
+    #wrapper .customertiles ul li p
+    {
+        clear: both;
+        position: relative;
+        bottom: 0px;
+        width: 100px;
+        line-height: 1.2em;
+    }
+
+    #wrapper .customertiles ul li .title
+    {
+        position: relative;
+        top: -20px;
+        z-index: 3;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    #wrapper .customertiles ul li .reference
+    {
+        padding-top: 31px;
+    }
+
+        #wrapper .customertiles ul li .reference p
+        {
+            padding-top: 0px;
+        }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        color: #5e5e5e;
+        font-size: 20px;
+        font-weight: lighter;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: none !important;
+        width: 300px;
+    }
+
+    #wrapper .customertiles .icon
+    {
+        float: right;
+        padding-bottom: 53px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconA, .customertiles .iconB
+    {
+        float: right;
+        padding-bottom: 35px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconB
+    {
+        padding-bottom: 20px;
+    }
+
+    #wrapper .customertiles .icon1
+    {
+        float: right;
+        padding-bottom: 0px;
+    }
+
+    #wrapper .customertiles .icon2
+    {
+        float: right;
+        padding-bottom: 38px;
+    }
+
+    #wrapper .customertiles .number
+    {
+        float: left;
+        width: 32px;
+        height: 32px;
+        background: #000;
+        padding: 5px;
+        font-size: 22pt;
+        position: relative;
+        left: -10px;
+        top: -10px;
+        z-index: 2;
+    }
+
+    #wrapper .customertiles .numbertile
+    {
+        font-size: 80px;
+        text-align: center;
+        padding-top: 42px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    .fbarea ul li
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+    .quickview
+    {
+        width: 170px !important;
+    }
+
+    .coltwo
+    {
+        width: 255px;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 79px;
+        height: 79px;
+    }
+
+    .FBtxt
+    {
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .poename p
+    {
+        padding-top: 5px !important;
+        padding-left: 5px;
+    }
+
+    #feedback-poe-list
+    {
+        width: 205px !important;
+    }
+
+    .poelistli p
+    {
+        width: 87% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 276px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 38px;
+    }
+
+    .pageholder
+    {
+        margin-top: 7%;
+        width: 93.6%;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 9.8%;
+        width: 47%;
+        top: 55%;
+    }
+
+    .qvlist, .qvlist ul, .qvlist li
+    {
+        max-width: 210px !important;
+    }
+
+    .frequency
+    {
+        width: 48%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 453px;
+    }
+
+    #module2, #module3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 373px;
+    }
+
+    .contentholder .customertiles .takesf
+    {
+        height: 48px;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 18px;
+        font-weight: lighter;
+        padding-top: 7px;
+    }
+
+    .fbarea li h2
+    {
+        padding: 16.5% 0;
+        font-size: 34px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 76%;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 515px !important;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 245px;
+        height: 68px;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 140px;
+    }
+
+    .fbarea ul
+    {
+        width: 200px;
+        margin-right: 0;
+    }
+
+    .fbarea .FBtwocol .subhead, .fbarea .FBtwocol .subhead1
+    {
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 1.1em;
+    }
+
+        .fbarea .FBtwocol .subhead p, .fbarea .FBtwocol .subhead1 p
+        {
+            font-size: 12px;
+            line-height: 1.1em;
+        }
+
+    .fbarea ul li
+    {
+        width: 80px;
+        height: 80px;
+        margin: 0 5px 5px 0;
+    }
+
+        .fbarea ul li img
+        {
+            width: 32px;
+        }
+
+        .fbarea ul li a
+        {
+            cursor: pointer;
+        }
+
+    .FBtwocol .first
+    {
+        height: 30px !important;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 120px;
+    }
+
+    .congo
+    {
+        bottom: 20px;
+    }
+
+    .prevfb
+    {
+        right: 50%;
+    }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 50px;
+        height: 50px;
+        margin: 8px 0 0 10px;
+    }
+
+    .img
+    {
+        padding-bottom: 35%;
+    }
+
+    .imgs
+    {
+        padding-bottom: 22%;
+    }
+
+    .imgbig
+    {
+        padding-top: 6%;
+    }
+
+    .fbarea .FBtwocol .quickview
+    {
+        width: 230px;
+    }
+
+    #wrapper
+    {
+        height: 570px;
+        clear: both;
+        width: 100%;
+        overflow: visible !important;
+    }
+
+    #scroller
+    {
+        width: 5200px;
+        cursor: pointer;
+    }
+
+        #scroller li
+        {
+            display: block;
+            float: left;
+            width: 1280px;
+        }
+
+    .pageholder .hm
+    {
+        margin-left: 115px !important;
+    }
+
+    #wrapper .customertiles
+    {
+        float: left;
+        margin-right: 70px;
+        width: 20%;
+    }
+
+    #wrapper .last
+    {
+        margin-right: 0px !important;
+    }
+
+    #customertiles .item
+    {
+        width: 1230px;
+        float: left;
+    }
+
+    #wrapper .stars, .stars ul
+    {
+        width: 415px !important;
+        margin-right: 60px !important;
+    }
+
+    #wrapper .customertiles ul
+    {
+    }
+
+    #wrapper #scroller .customertiles ul li
+    {
+        padding: 10px;
+        float: left;
+        background: #808080;
+        margin: 10px 10px 0 0;
+        line-height: 1em;
+    }
+
+    #wrapper .customertiles ul li a, .customertiles ul li p
+    {
+        font-size: 12px;
+    }
+
+    #wrapper .customertiles ul li p
+    {
+        clear: both;
+        position: relative;
+        bottom: 0px;
+        width: 100px;
+        line-height: 1.2em;
+    }
+
+    #wrapper .customertiles ul li .title
+    {
+        position: relative;
+        top: -20px;
+        z-index: 3;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    #wrapper .customertiles ul li .reference
+    {
+        padding-top: 31px;
+    }
+
+        #wrapper .customertiles ul li .reference p
+        {
+            padding-top: 0px;
+        }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        color: #5e5e5e;
+        font-size: 20px;
+        font-weight: lighter;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: none !important;
+        width: 300px;
+    }
+
+    #wrapper .customertiles .icon
+    {
+        float: right;
+        padding-bottom: 53px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconA, .customertiles .iconB
+    {
+        float: right;
+        padding-bottom: 35px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconB
+    {
+        padding-bottom: 20px;
+    }
+
+    #wrapper .customertiles .icon1
+    {
+        float: right;
+        padding-bottom: 0px;
+    }
+
+    #wrapper .customertiles .icon2
+    {
+        float: right;
+        padding-bottom: 38px;
+    }
+
+    #wrapper .customertiles .number
+    {
+        float: left;
+        width: 32px;
+        height: 32px;
+        background: #000;
+        padding: 5px;
+        font-size: 22pt;
+        position: relative;
+        left: -10px;
+        top: -10px;
+        z-index: 2;
+    }
+
+    #wrapper .customertiles .numbertile
+    {
+        font-size: 80px;
+        text-align: center;
+        padding-top: 42px;
+    }
+
+    .accordion label img
+    {
+        width: auto !important;
+    }
+
+    .accordion a img
+    {
+        width: 83%;
+    }
+
+    .accordion h3.current, .accordion h3
+    {
+        height: 2px;
+    }
+
+    .poename br
+    {
+        display: none;
+    }
+
+    .poename
+    {
+        margin: 5px 0 0 5px;
+    }
+
+    .sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+    {
+        padding: 3px 0;
+        width: 90px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px)
+{
+    .fbarea ul li
+    {
+        width: 110px;
+        height: 110px;
+    }
+
+    .quickview
+    {
+        width: 170px !important;
+    }
+
+    .coltwo
+    {
+        width: 170px;
+    }
+
+    #feedback-poe-list .selected span
+    {
+        width: 79px;
+        height: 79px;
+    }
+
+    .FBtxt
+    {
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .poename p
+    {
+        padding-top: 5px !important;
+        padding-left: 5px;
+    }
+
+    #feedback-poe-list
+    {
+        width: 180px !important;
+    }
+
+    .poelistli p
+    {
+        width: 87% !important;
+    }
+
+    .fbarea ul
+    {
+        width: 276px;
+    }
+
+    .fbarea li p
+    {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 24px;
+    }
+
+    .fbarea .first
+    {
+        height: 38px;
+    }
+
+    .pageholder
+    {
+        margin-top: 9%;
+        width: 93.6%;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 9.8%;
+        width: 47%;
+        top: 55%;
+    }
+
+    .qvlist, .qvlist ul, .qvlist li
+    {
+        max-width: 210px !important;
+    }
+
+    .frequency
+    {
+        width: 48%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    .quickviewfb
+    {
+        max-height: 453px;
+    }
+
+    #module2, #module3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 373px;
+    }
+
+    .contentholder .customertiles .takesf
+    {
+        height: 48px;
+    }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        font-size: 18px;
+        font-weight: lighter;
+        padding-top: 7px;
+    }
+
+    .fbarea li h2
+    {
+        padding: 16.5% 0;
+        font-size: 34px;
+    }
+
+    .fbarea li p, .fbarea li p, .congo, .poename p, .poename, .startfb a, .historybtn a, .poename a, .sendbtn
+    {
+        font-size: 9px !important;
+        line-height: 1.2em;
+    }
+
+    .sendbtn, .givebtn, .startfb, .invitebtn, .historybtn
+    {
+        padding: 3px 0;
+        width: 90px;
+        margin-right: 10px;
+    }
+
+    .FBtwocol, .FBtwocol ul
+    {
+        width: 350px !important;
+    }
+
+    .fbarea .FBtwocol li
+    {
+        width: 163px;
+        height: 68px;
+        margin: 0 3px 3px 0;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 107px;
+    }
+
+    .fbarea ul
+    {
+        width: 180px;
+        margin-right: 0;
+    }
+
+    .fbarea .FBtwocol .subhead, .fbarea .FBtwocol .subhead1
+    {
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 1.1em;
+    }
+
+        .fbarea .FBtwocol .subhead p, .fbarea .FBtwocol .subhead1 p
+        {
+            font-size: 12px;
+            line-height: 1.1em;
+        }
+
+    .fbarea ul li
+    {
+        width: 80px;
+        height: 80px;
+        margin: 0 5px 5px 0;
+    }
+
+        .fbarea ul li img
+        {
+            width: 32px;
+        }
+
+        .fbarea ul li a
+        {
+            cursor: pointer;
+        }
+
+    .FBtwocol .first
+    {
+        height: 30px !important;
+    }
+
+    .fbarea .FBtwocol .stat
+    {
+        height: 90px;
+    }
+
+    .congo
+    {
+        bottom: 20px;
+    }
+
+    .prevfb
+    {
+        right: 50%;
+    }
+
+    .fbarea .FBtwocol .b4select img
+    {
+        width: 32px;
+        height: 32px;
+        margin: 8px 0 0 10px;
+    }
+
+    .img
+    {
+        padding-bottom: 35%;
+    }
+
+    .imgs
+    {
+        padding-bottom: 22%;
+    }
+
+    .imgbig
+    {
+        padding-top: 6%;
+    }
+
+    .fbarea .FBtwocol .quickview
+    {
+        width: 230px;
+    }
+
+    #wrapper
+    {
+        height: 570px;
+        clear: both;
+        width: 100%;
+        overflow: visible !important;
+    }
+
+    #scroller
+    {
+        width: 5200px;
+        cursor: pointer;
+    }
+
+        #scroller li
+        {
+            display: block;
+            float: left;
+            width: 1280px;
+        }
+
+    .pageholder .hm
+    {
+        margin-left: 115px !important;
+    }
+
+    #wrapper .customertiles
+    {
+        float: left;
+        margin-right: 70px;
+        width: 20%;
+    }
+
+    #wrapper .last
+    {
+        margin-right: 0px !important;
+    }
+
+    #customertiles .item
+    {
+        width: 1230px;
+        float: left;
+    }
+
+    #wrapper .stars, .stars ul
+    {
+        width: 415px !important;
+        margin-right: 60px !important;
+    }
+
+    #wrapper .customertiles ul
+    {
+    }
+
+    #wrapper #scroller .customertiles ul li
+    {
+        padding: 10px;
+        float: left;
+        background: #808080;
+        margin: 10px 10px 0 0;
+        line-height: 1em;
+    }
+
+    #wrapper .customertiles ul li a, .customertiles ul li p
+    {
+        font-size: 12px;
+    }
+
+    #wrapper .customertiles ul li p
+    {
+        clear: both;
+        position: relative;
+        bottom: 0px;
+        width: 100px;
+        line-height: 1.2em;
+    }
+
+    #wrapper .customertiles ul li .title
+    {
+        position: relative;
+        top: -20px;
+        z-index: 3;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    #wrapper .customertiles ul li .reference
+    {
+        padding-top: 31px;
+    }
+
+        #wrapper .customertiles ul li .reference p
+        {
+            padding-top: 0px;
+        }
+
+    #wrapper .customertiles h1, .fbarea h1
+    {
+        color: #5e5e5e;
+        font-size: 18px;
+        font-weight: lighter;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: none !important;
+        width: 300px;
+    }
+
+    #wrapper .customertiles .icon
+    {
+        float: right;
+        padding-bottom: 53px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconA, .customertiles .iconB
+    {
+        float: right;
+        padding-bottom: 35px;
+        padding-left: 60px;
+    }
+
+    #wrapper .customertiles .iconB
+    {
+        padding-bottom: 20px;
+    }
+
+    #wrapper .customertiles .icon1
+    {
+        float: right;
+        padding-bottom: 0px;
+    }
+
+    #wrapper .customertiles .icon2
+    {
+        float: right;
+        padding-bottom: 38px;
+    }
+
+    #wrapper .customertiles .number
+    {
+        float: left;
+        width: 32px;
+        height: 32px;
+        background: #000;
+        padding: 5px;
+        font-size: 22pt;
+        position: relative;
+        left: -10px;
+        top: -10px;
+        z-index: 2;
+    }
+
+    #wrapper .customertiles .numbertile
+    {
+        font-size: 80px;
+        text-align: center;
+        padding-top: 42px;
+    }
+
+    .accordion label img
+    {
+        width: auto !important;
+    }
+
+    .accordion a img
+    {
+        width: 80%;
+    }
+
+    .accordion h3.current, .accordion h3
+    {
+        height: 2px;
+    }
+
+    .poename br
+    {
+        display: none;
+    }
+}

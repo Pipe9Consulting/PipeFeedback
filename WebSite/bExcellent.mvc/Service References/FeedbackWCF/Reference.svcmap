@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9350bcbe-52ce-42da-aea1-ab8a79a072d6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8052/FeedbackService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FeedbackService8.xsd" MetadataType="Schema" ID="90888df3-5bdd-4027-b1d8-68c6f1f0f53c" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?xsd=xsd1" />
+    <MetadataFile FileName="FeedbackService9.xsd" MetadataType="Schema" ID="c3f43ce4-a9b9-4416-9523-2a2df819cf28" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?xsd=xsd4" />
+    <MetadataFile FileName="FeedbackService10.xsd" MetadataType="Schema" ID="48487c45-47e0-443b-9598-87131ecf4c57" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?xsd=xsd5" />
+    <MetadataFile FileName="FeedbackService11.xsd" MetadataType="Schema" ID="53d7416a-4c00-4cb6-8e6b-73d54aafa78e" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?xsd=xsd6" />
+    <MetadataFile FileName="FeedbackService12.xsd" MetadataType="Schema" ID="63034331-7bdd-481f-a29a-01889d802778" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?xsd=xsd7" />
+    <MetadataFile FileName="FeedbackService13.xsd" MetadataType="Schema" ID="bc0a45ba-ea8b-4879-a512-ac685d63df92" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?xsd=xsd0" />
+    <MetadataFile FileName="FeedbackService14.xsd" MetadataType="Schema" ID="48dc97ab-2203-4666-a092-9da591360fda" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?xsd=xsd3" />
+    <MetadataFile FileName="FeedbackService15.xsd" MetadataType="Schema" ID="715fdff3-51d2-4ef3-b72c-7b2e0f772978" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?xsd=xsd2" />
+    <MetadataFile FileName="FeedbackService1.disco" MetadataType="Disco" ID="3bba294b-07e6-458d-a44c-419386f1f0fb" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?disco" />
+    <MetadataFile FileName="FeedbackService1.wsdl" MetadataType="Wsdl" ID="69777861-405c-491e-9e65-baf42205e86d" SourceId="1" SourceUrl="http://localhost:8052/FeedbackService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

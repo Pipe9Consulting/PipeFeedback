@@ -1,0 +1,599 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: url(../../Images/images/bodyBg-new.png) repeat !important;
+    font-family: Segoe UI;
+}
+
+
+.StartTitle h1 {
+    margin: 0 1.5% !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 1;
+    display: none;
+}
+
+/*.startPart {
+    background: url(../../Images/images/startBg.png) no-repeat;
+    margin: 10px !important;
+    background-size: 100% 100%;
+}*/
+
+.startColumn {
+    padding: 0 !important;
+    margin: 10px 0;
+}
+
+
+.centerPart {
+    border: none !important;
+    margin: 0 1% 1% 1% !important;
+}
+
+.startColumn2 {
+    padding: 1% 0 0 0 !important;
+}
+
+.startColumn3 {
+    padding: 1.8% 0 2% 0 !important;
+}
+
+.startPart h1 {
+    color: #000;
+    font-weight: normal;
+}
+
+
+
+.startBox {
+    background: #000;
+    opacity: .8;
+    height: 170px;
+    width: 95%;
+}
+
+    .startBox h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 150%;
+        font-weight: 400;
+        bottom: 0;
+        line-height: 1.5em;
+        margin: 0 0 0 15px;
+    }
+
+    .startBox p {
+        color: #fff;
+        font-size: 100%;
+        font-weight: 400;
+        bottom: 0;
+        margin: 0 0 0 15px;
+    }
+
+    .startBox:hover h3 {
+        color: #e0b001;
+    }
+
+    .startBox:hover p {
+        color: #e0b001;
+    }
+
+.profile {
+    background: url(../../Images/images/profileIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 22% 40%;
+}
+
+    .profile:hover {
+        background: url(../../Images/images/profileIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 22% 40%;
+    }
+
+.feedback {
+    background: url(../../Images/images/feedbackIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 22% 40%;
+}
+
+    .feedback:hover {
+        background: url(../../Images/images/feedbackIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 22% 40%;
+    }
+
+.standing {
+    background: url(../../Images/images/standingIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 18% 40%;
+}
+
+    .standing:hover {
+        background: url(../../Images/images/standingIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 18% 40%;
+    }
+
+.goal {
+    background: url(../../Images/images/goalIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 22% 40%;
+}
+
+    .goal:hover {
+        background: url(../../Images/images/goalIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 22% 40%;
+    }
+
+.networks {
+    background: url(../../Images/images/networkIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 22% 40%;
+}
+
+    .networks:hover {
+        background: url(../../Images/images/networkIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 22% 40%;
+    }
+
+.result {
+    background: url(../../Images/images/resultIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 22% 40%;
+}
+
+    .result:hover {
+        background: url(../../Images/images/resultIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 22% 40%;
+    }
+
+.sync {
+    background: url(../../Images/images/syncIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 22% 40%;
+}
+
+    .sync:hover {
+        background: url(../../Images/images/syncIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 22% 40%;
+    }
+
+.mentor {
+    background: url(../../Images/images/mentorIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 22% 40%;
+}
+
+    .mentor:hover {
+        background: url(../../Images/images/mentorIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 22% 40%;
+    }
+
+.wall {
+    background: url(../../Images/images/wallIcon.png) top 10px right 10px no-repeat #000;
+    background-size: 22% 40%;
+}
+
+    .wall:hover {
+        background: url(../../Images/images/wallIcon2.png) top 10px right 10px no-repeat #000;
+        background-size: 22% 40%;
+    }
+
+
+.startTextArea {
+    float: left;
+    position: absolute;
+    bottom: 9%;
+    width: 70%;
+}
+
+.startBox:hover, .startBox h3:hover, .startBox p:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.startBox {
+    color: yellow;
+}
+
+.noticationIcon {
+    bottom: 6%;
+    position: absolute;
+    float: right;
+    text-align: right;
+    right: 40px;
+}
+
+
+
+/*.tooltip { border-bottom: 1px dotted #333; position: relative; cursor: pointer; }  .tooltip:hover:after { content: attr(title); position: absolute; white-space: nowrap; background: rgba(0, 0, 0, 0.85); padding: 3px 7px; color: #FFF; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; margin-left: 7px; margin-top: -3px; }
+.tooltip:hover:after { content: attr(title); }*/
+
+
+/* -  ---------------------------- */
+
+
+
+
+
+@media screen and (max-width: 2600px) and (min-width: 2170px) {
+    .accordion a {
+        margin-top: -0.7% !important;
+    }
+
+    .login {
+        padding: 2.5% 2% 2.6% 0 !important;
+    }
+
+    .startBox {
+        height: 250px;
+        width: 100%;
+    }
+
+    .startPart h1 {
+        font-size: 250%;
+    }
+
+    .StartTitle h1 {
+        margin: 0 2.5% !important;
+        font-size: 2.5rem;
+    }
+
+    .startColumn3 {
+        padding-bottom: 1.2% !important;
+    }
+
+    .startBox h3 {
+        font-size: 220%;
+    }
+
+    .startBox p {
+        font-size: 120%;
+    }
+
+    .startTextArea {
+        bottom: 5%;
+    }
+
+    .centerPart {
+        margin: 0 1% 1% 1% !important;
+    }
+}
+
+
+@media screen and (max-width: 2169px) and (min-width: 2001px) {
+
+    .startBox {
+        height: 200px;
+        width: 100%;
+    }
+
+
+    .StartTitle h1 {
+        margin: 0 1.5% !important;
+        font-size: 2.5rem;
+    }
+
+    .startPart {
+        padding-top: 5px!important;
+    }
+
+    .startColumn3 {
+        padding-bottom: 1.2% !important;
+    }
+
+    .startBox h3 {
+        font-size: 180%;
+    }
+
+    .startBox p {
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1701px) {
+
+
+
+    .startBox {
+        height: 175px !important;
+        width: 100%;
+    }
+
+    .noticationIcon img {
+        width: 65%;
+        margin-right: 8px !important;
+    }
+
+    .StartTitle h1 {
+        font-size: 170%;
+    }
+
+    .startPart h1 {
+        font-size: 150%;
+    }
+
+    .startBox h3 {
+        font-size: 140%;
+    }
+
+    .startBox p {
+        font-size: 100%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 25px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1700px) and (min-width: 1670px) {
+    .startPart {
+        padding-top: 10px!important;
+    }
+
+    .startBox {
+        height: 150px !important;
+        width: 100%;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .startPart h1 {
+        font-size: 150%;
+    }
+
+    .startBox h3 {
+        font-size: 120%;
+    }
+
+    .startBox p {
+        font-size: 80%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 25px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 1669px) and (min-width: 1501px) {
+    .ui.grid > :not(.row).column, .ui.grid > .row > .column {
+        padding-left: 1.2rem;
+    }
+
+
+    .startBox {
+        height: 140px !important;
+        width: 99%;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .startPart h1 {
+        font-size: 150%;
+    }
+
+    .startBox h3 {
+        font-size: 120%;
+    }
+
+    .startBox p {
+        font-size: 80%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 25px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1401px) {
+    .startPart {
+        padding-top: 10px!important;
+    }
+
+    .startBox {
+        height: 130px !important;
+        width: 99%;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .StartPart h1 {
+        font-size: 150%;
+    }
+
+    .startBox h3 {
+        font-size: 120%;
+    }
+
+    .startBox p {
+        font-size: 80%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 25px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+
+    .startPart h1 {
+        font-size: 160%;
+    }
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
+    .ui.grid > :not(.row).column, .ui.grid > .row > .column {
+        padding-right: 0;
+    }
+
+
+
+    .ui.grid > .row > .column {
+        margin-bottom: .8%;
+    }
+
+    .startPart h1 {
+        font-size: 150% !important;
+        
+    }
+
+    .startBox {
+        height: 120px !important;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+
+
+    .startBox h3 {
+        font-size: 120%;
+    }
+
+    .startBox p {
+        font-size: 80%;
+    }
+
+    .startColumn {
+        margin: -7px 0 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 12px 0 18px 0 !important;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+
+    .startBox {
+        height: 100px !important;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .StartPart h1 {
+        font-size: 150%;
+    }
+
+    .startBox h3 {
+        font-size: 120%;
+    }
+
+    .startBox p {
+        font-size: 80%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 12px 0 18px 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .startPart {
+        padding-top: 15px!important;
+    }
+
+    .startBox {
+        height: 100px !important;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+        margin-right: -10px;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .StartPart h1 {
+        font-size: 130%;
+    }
+
+    .startBox h3 {
+        font-size: 100%;
+    }
+
+    .startBox p {
+        font-size: 70%;
+    }
+
+    .startColumn {
+        margin: 0 0 !important;
+    }
+
+    .startColumn2 {
+        padding: 25px 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 30px 0 !important;
+    }
+}

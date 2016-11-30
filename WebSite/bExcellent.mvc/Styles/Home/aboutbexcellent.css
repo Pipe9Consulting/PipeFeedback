@@ -1,0 +1,261 @@
+﻿.benefits {
+    border: 0 none !important;
+    float: left;
+    position: relative;
+    width: 100%;
+    height:0;
+}
+#benefitsbg
+{
+    width:48%;
+    position: absolute;
+    right:0;
+    z-index: -5;
+    top:0;
+}
+#benefitsbg img {
+    background: none !important;
+    border: 0 none !important;
+    height: 100%;
+    outline: 0 none;
+    width: 100%;
+}
+#aboutContent
+{
+    width:32%;
+    float:left;
+}
+#aboutContent li a
+{
+    display: block;
+
+    }
+#aboutContent li
+{
+    width:27%;
+    padding-bottom:27%;
+    float:left;
+    background:#808080;
+    margin:0 1.5% 1.5% 0;
+    position:relative;
+    display:block;
+    cursor:pointer;
+}
+#aboutContent li p
+{
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding:35% 5% 5% 5%;
+    color:#fff;
+    width:85%;
+}
+.iconA, .iconB, .icon2
+{
+    position:absolute;
+    width:34%;
+    height:28%;
+    padding:5%;
+    right:0;
+    top:0;
+}
+.aboutbxbg td img
+{
+    width:95%;
+    height:auto;
+    position:relative;
+    opacity:1;
+    z-index:1;
+}
+.icon2
+{
+    width:13%;
+    height:28%;
+    padding:3%;
+}
+#aboutContent li img
+{
+    width:100%;
+    height:100%;
+}
+#aboutContent .rectangle1
+{
+    width:55.5% !important;
+    padding-bottom:27%;
+}
+.aboutbxbg
+{
+    float:left;
+    width:45% !important;
+    padding-bottom:44%;
+    position:relative;
+    z-index:1;
+    display:block
+}
+.aboutbxbg img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-50;
+    opacity:0.2;
+}
+.aboutbxbgtbl
+{
+    background:url(../../images/white-trans.png);
+    width:100%;
+    padding-bottom:82%;
+    position:relative;
+}
+.aboutbxbgtblscroll
+{
+    background:none;
+    width:100%;
+    padding-bottom:78%;
+    position:relative;
+}
+.aboutbxbg table
+{
+    width:96%;
+    border-spacing: 5px;
+    position:absolute;
+    left:2%;
+    top:1%;
+}
+.aboutbxbg td
+{
+    display:table-cell;
+    vertical-align:middle;
+    padding:1%;
+    color:#666;
+    text-align:justify;
+    width:5%;
+    border-bottom:1px dotted #808080;
+}
+.aboutbxbg td:nth-child(n+1)
+{
+    width:6%;
+}
+.aboutbxbg td:nth-child(n+2)
+{
+    width:15%;
+    text-align:left;
+}
+.aboutbxbg td:nth-child(n+3)
+{
+    width:70%;
+    font-weight:normal;
+    text-align:justify;
+}
+.videolist li img
+{
+    width:auto;
+    height:auto;
+    position:relative;
+    opacity:1;
+    z-index:1;
+}
+.aboutbx
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-2;
+}
+#thirdpage, #forthpage, #fifthpage, #sixthpage
+{
+    display:none;
+}
+.topalign
+{
+    vertical-align:middle !important;
+}
+.slimScrollDiv, .scroll1, .scroll2
+{
+    height:90% !important;
+    padding-bottom:2%;
+}
+.slimScrollDiv
+{
+background:url(../../images/white-trans.png);
+}
+#scroller .videolist li
+{
+    float:left;
+    width:11%;
+    min-width:11%;
+    margin-right:1%;
+}
+#wrapper .videolist li h2
+{
+    font-weight:normal;
+    color:#666;
+}
+#wrapper .videolist
+{
+    width:100%;
+    overflow-y:hidden;
+    overflow-x:scroll;
+}
+#wrapper .videolist li img
+{
+    width:100%;
+}
+#wrapper .videolist ul
+{
+    width:190%;
+}
+.videoscreen
+{
+    position:relative;
+}
+#VideoPlayer
+{
+    width:100%;
+    padding-bottom:60%;
+    position:relative;
+    margin-bottom:2%;
+    height: 0;
+}
+.abtvideopopup {
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #E5E5E5;
+    border-color: #5F5F5F;
+    border-image: none;
+    margin: 10% auto 0;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+}
+    
+.abtvideo {
+    height: 58%;
+    left: 33%;
+    position: fixed;
+    top: 10.6%;
+    width: 42.2%;
+    z-index: 9999999;
+}
+#videoPopup, .abtvideopopup, .abtvideo {
+    display: none;   
+}
+.videobg
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+}
+   
+.player
+{
+    width:100% !important;
+    height:100% !important;
+    position:absolute;
+}

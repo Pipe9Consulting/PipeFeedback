@@ -1,0 +1,3931 @@
+﻿.main
+{
+    width: 95%;
+}
+
+.btn
+{
+    background: #e0b001;
+    padding: 3px 10px;
+    text-align: center;
+    border: 2px solid #383838;
+    color: #fff;
+    margin-top: 10px;
+    float: right;
+    margin-right: 15px;
+}
+
+
+
+
+.flipbox
+{
+    width: 244px;
+    height: 44px;
+    font-size: 14px;
+    color: white;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 70px 10px 13px 10px;
+    background: url(../Images/quote-icon.png) no-repeat right top #808080;
+}
+
+.pageholder .hm
+{
+    margin-left: 115px !important;
+}
+
+.qvlist, .qvlist ul
+{
+    margin-right: 50px !important;
+}
+
+.comingsoon img
+{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.customertiles
+{
+    float: left;
+    max-width: 25%;
+}
+
+    .customertiles .takesf
+    {
+        /*    width:100%;
+    padding:6% 10% 6% 10%;*/
+        position: relative;
+        color: #fff;
+        padding: 0;
+    }
+
+.timetakencont
+{
+    color: #808080;
+    font-size: 14px;
+}
+
+    .timetakencont .timetaken
+    {
+        margin-left: 35px;
+    }
+
+.contentholder .customertiles .takesf
+{
+    /*    width:100%;
+    padding:8% 10% 6% 10%;*/
+    position: relative;
+}
+
+.customertiles .takesf p
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.contentholder .customertiles .takesf p
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 11pt;
+}
+
+.last
+{
+    margin-right: 0px !important;
+}
+
+#customertiles .item
+{
+    width: 1230px;
+    float: left;
+}
+
+.stars, .stars ul
+{
+    width: 415px !important;
+    margin-right: 60px !important;
+}
+
+.questiontaken, .timetaken, .counterHour, .collan, .counterMin, .collan, .counterSec
+{
+    float: left;
+    padding: 0 3px;
+}
+/*.customertiles ul {
+	width: 274px;
+	height: 520px;
+}*/
+.customertiles ul li
+{
+    padding: 10px;
+    float: left;
+    background: #808080;
+    margin: 10px 10px 0 0;
+    line-height: 1em;
+}
+
+.customertiles h1, .tsf
+{
+    color: #5e5e5e;
+    font-size: 160%;
+    font-weight: lighter;
+    padding-top: 5%;
+    padding-bottom: 4px;
+    background: none !important;
+}
+
+.tsf
+{
+    min-width: 200px;
+    margin-top: -5px;
+}
+
+.quickview
+{
+    width: 250px;
+}
+
+.customertiles .quickview .icon
+{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.customertiles .takesf
+{
+    background: #808080;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+    .customertiles .takesf img, .contentholder .customertiles .takesf img
+    {
+        position: absolute;
+        top: 5px;
+        right: -5px;
+    }
+
+.customertiles .takesfsingle img
+{
+    float: right;
+    margin-right: -20px;
+    margin-top: -30px;
+}
+
+.customertiles .selected
+{
+    background: #e0b001;
+}
+
+.customertiles .takesfsingle
+{
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+#wrapper .contentholder
+{
+    float: left;
+    color: #4a4a4a;
+    margin-left: 0px;
+}
+
+.contentholder h1
+{
+    padding: 0;
+    font-size: 9px;
+}
+
+.questions
+{
+    width: 3000%;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+}
+
+.mngrq
+{
+    width: 100% !important;
+}
+
+    .mngrq .questionarea
+    {
+        width: 75%;
+    }
+
+.questions ul
+{
+    float: left;
+}
+
+.questions li
+{
+    float: left;
+    display: block;
+    visibility: visible;
+    padding: 0;
+}
+
+.qn
+{
+    background: #e0b001;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+
+.questionarea
+{
+    float: left;
+    width: 88%;
+    margin-bottom: 20px;
+}
+.content1 .frequencydiv
+{
+    width:auto;
+    margin-left:auto;
+    top:auto;    
+}
+.content1 .frequencydiv .frequency
+{
+    width:100%;
+    padding:3% 0;
+    border-bottom:1px dotted #666;
+    height:auto;
+}
+.content1 .frequencydiv .frequency h4
+{
+    padding:0 0 2% 0;
+}
+.content1 .frequencydiv .frequency img
+{
+    padding:24px 10px 20px 0;
+}
+
+.frequencydiv
+{
+    position: absolute;
+}
+
+.frequency
+{
+    float: left;
+    margin-right: 5px;
+}
+
+    .frequency img
+    {
+        float: left;
+        padding: 15px 10px 20px 0;
+    }
+
+#content1
+{
+    display: block;
+}
+
+.inropanelbar1
+{
+    float: right;
+    height: 100%;
+    width: 17px;
+    background: url(../images/collapse.png) center 50% no-repeat;
+}
+
+.inropanelbar2
+{
+    float: right;
+    height: 100%;
+    width: 17px;
+    background: url(../images/collapse.png) center 50% no-repeat;
+}
+
+#clickmodele1
+{
+    background: url(../Images/next-slide.png) no-repeat #f1f1f1 center;
+    width: 15px;
+    position: fixed;
+    height: 100%;
+    left: 340px;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele1hide
+{
+    background: url(../Images/prev-slide.png) center no-repeat #f1f1f1;
+    width: 15px;
+    position: fixed;
+    height: 100%;
+    left: 340px;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele2hide
+{
+    background: url(../../Images/prev-slide.png) center no-repeat #f1f1f1;
+    width: 15px;
+    position: fixed;
+    height: 100%;
+    left: 705px;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele2
+{
+    background: url(../../Images/next-slide.png) center no-repeat #f1f1f1;
+    width: 15px;
+    position: fixed;
+    height: 100%;
+    left: 704px;
+    top: 0px;
+    display: none;
+    z-index: 91;
+}
+
+#snap2, #snap3
+{
+    background: #fff;
+    width: 315px;
+    position: fixed;
+    height: 100%;
+    left: 355px;
+    top: 0;
+    display: block;
+    border-left: 1px solid #ccc;
+    z-index: 90;
+    color: #808080;
+    display: none;
+}
+
+#snap3
+{
+    left: 720px;
+}
+/*#snap2 p, #snap3 p
+{
+	line-height:1.2em;
+	width:280px;
+	padding:3px 0;
+}*/
+.sliderimg
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.customername
+{
+    font-size: 14pt;
+    color: #808080;
+    margin: 5px 0;
+}
+
+.customercol
+{
+    width: 120%;
+}
+
+.customerimg
+{
+    margin-top: 15px;
+    margin-right: 10px;
+    float: left;
+}
+
+.customerslide
+{
+    float: left;
+}
+
+.tooltip
+{
+    background: url(../../Images/hover1-bg.png) no-repeat bottom center #e0b001;
+    color: #fff;
+    padding: 0px 3px 8px 3px;
+    clear: both;
+    display: none;
+    position: absolute;
+    margin-top: -42px;
+    font-size: 12px;
+    min-width: 90px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: -30px;
+    text-align: center;
+}
+.tooltipF
+{
+    background: url(../../Images/hover2-bg.png) no-repeat bottom center #e0b001 !important;
+    width:140px;
+    margin-left:-60px;
+}
+
+.tooltipS
+{
+    background: url(../Images/hover1-bg.png) no-repeat bottom center #e0b001;
+    color: #fff;
+    padding: 0px 3px 8px 3px;
+    clear: both;
+    display: block;
+    position: absolute;
+    margin-top: -22px;
+    font-size: 12px;
+    min-width: 90px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.SI
+{
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.mngrfb
+{
+    width: 675px;
+}
+
+    .mngrfb .user
+    {
+        float: left;
+        margin-top: 7px;
+        margin-right: 10px;
+        width: 64px;
+    }
+
+    .mngrfb h1
+    {
+        font-size: 14px;
+        font-weight: 400;
+        clear: both;
+        padding-top: 10px;
+    }
+
+    .mngrfb .sliderimg
+    {
+        float: left;
+        margin: 0;
+        margin-top: 6px;
+    }
+
+.customertiles .bigtile
+{
+    width: 255px !important;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+    .customertiles .bigtile img
+    {
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .customertiles .bigtile p
+    {
+        clear: both;
+        float: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+.txtaftertile
+{
+    clear: both;
+    color: #000;
+    margin-top: 30px;
+    font-size: 14px;
+    width: 300px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+    .txtaftertile p
+    {
+        padding: 0 0 10px 0;
+    }
+
+.quickview
+{
+    margin-bottom: 0;
+}
+
+    .quickview h2
+    {
+        float: left;
+        width: 530px;
+        font-size: 16px;
+        padding-top: 0 !important;
+        margin-bottom: 7px !important;
+        text-align: left;
+    }
+
+    .quickview .qn
+    {
+        margin-bottom: 10px!important;
+        margin-left: 0px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .quickview .user
+    {
+        width: 64px;
+        float: left;
+        margin-top: 7px;
+    }
+
+    .quickview .sliderimg
+    {
+        float: left;
+        width: 562px;
+        padding: 0;
+    }
+
+.quickviewfb
+{
+    width: 87%;
+    margin-left: 11px;
+    height: auto !important;
+}
+
+#q6 ul
+{
+    height: 500px;
+}
+
+#q6 li
+{
+    padding-top: 25px !important;
+    width: 300px;
+    min-height: 35px;
+}
+
+.quickviewfb .questionarea
+{
+    width: 100% !important;
+}
+
+.detailedarea
+{
+    max-height: 250px !important;
+    min-height: 250px !important;
+}
+
+.nxtD
+{
+    background: url(../Images/next.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    position: relative;
+    display: block;
+}
+
+    .nxtD:hover
+    {
+        background: url(../Images/next-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.prevD
+{
+    background: url(../Images/previous.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: -333px;
+    position: fixed;
+    display: block;
+}
+
+    .prevD:hover
+    {
+        background: url(../Images/prev-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.nxtM
+{
+    background: url(../Images/next.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    overflow: hidden;
+}
+
+    .nxtM:hover
+    {
+        background: url(../Images/next-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.nMngr
+{
+    position: fixed;
+    top: 0%;
+    right: 10%;
+    display: block;
+    width: 43px;
+    z-index: 9;
+    height: 100%;
+}
+
+.nxt:hover
+{
+    background: url(../Images/next-hover.png) no-repeat;
+    opacity: 0.9;
+}
+
+.nxt
+{
+    background: url(../Images/next.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    position: relative;
+}
+
+    .nxt:hover
+    {
+        background: url(../Images/next-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.nxt1
+{
+    background: url(../Images/next.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    position: relative;
+    display: block;
+}
+
+    .nxt1:hover
+    {
+        background: url(../Images/next-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.nxt2
+{
+    background: url(../Images/next.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: 1033px;
+    position: relative;
+    display: block;
+}
+
+    .nxt2:hover
+    {
+        background: url(../Images/next-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.prev
+{
+    background: url(../Images/previous.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    float: right;
+    clear: both;
+    color: #e5e5e5;
+    text-indent: -333px;
+    left: 5%;
+    top: 48.5%;
+    position: fixed;
+    display: block;
+}
+
+    .prev:hover
+    {
+        background: url(../Images/prev-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+#wrapper #tiles .tileview a
+{
+    padding-bottom: 0px;
+    height: 115px;
+}
+
+.fbtiles li
+{
+    width: 120px;
+    height: 120px;
+    max-width: 5%;
+    max-height: 5%;
+}
+
+.fbarea
+{
+    width: 1000px;
+    max-width: 100%;
+    float: left;
+}
+
+    .fbarea ul
+    {
+        max-width: 30%;
+        margin-right: 5%;
+        float: left;
+    }
+
+.last
+{
+    margin-right: 0 !important;
+}
+
+#wrapper .customertiles h1, .fbarea h1
+{
+    color: #5e5e5e;
+    font-size: 28px;
+    font-weight: lighter;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background: none !important;
+    width: 300px;
+}
+
+#takeFB, #receiveFB
+{
+    display: none;
+}
+
+.fbarea .first
+{
+    clear: both;
+    width: 100%;
+    float: none;
+    background: none;
+    margin: 0;
+    height: 60px;
+}
+
+.fbarea ul li
+{
+    width: 128px;
+    height: 128px;
+    float: left;
+    background: #808080;
+    margin: 0 10px 10px 0;
+}
+
+.fbarea li h2
+{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    padding: 17% 0;
+}
+
+.fbarea li p
+{
+    clear: both;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-size: 85%;
+}
+
+.fbarea .first
+{
+    clear: both;
+    width: 100%;
+    float: none;
+    background: none;
+    margin: 0;
+}
+
+.quickview
+{
+    width: 267px !important;
+    text-align: center;
+}
+
+    .quickview p
+    {
+        font-size: 90%;
+        text-align: left;
+        width: 93%;
+    }
+
+.hover
+{
+    background: #E0B001;
+    float: left;
+    height: 128px;
+}
+
+/* @media screen and (max-width: 1680px) {
+ #scroller li {
+ width: 1680px;
+}
+#scroller {
+ width: 6720px;
+}
+.questions li
+{
+	margin-right:180px;
+}
+
+.nxt
+{
+	margin-top:10%;
+	margin-right:-12%;
+}
+
+.customertiles .takesfsingle{
+padding:15% 6% 6% 6%;
+}
+ }*/
+#GF .customercol .customername
+{
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#GF .customerimg, #GF .customercol .sliderimg
+{
+    float: left;
+    margin-top: 0;
+}
+
+#GF .frequency, #GF .frequencydiv h3
+{
+    display: none;
+}
+
+.pagination
+{
+    float: left;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.slidebtn
+{
+    bottom: 5px;
+    height: 43px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 99999;
+}
+
+.prevfb
+{
+    background: url("../Images/previous.png") no-repeat scroll 0 0 transparent;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: left;
+    height: 43px;
+    text-decoration: none;
+    text-indent: -1333px;
+    width: 43px;
+}
+
+    .prevfb:hover
+    {
+        background: url(../Images/prev-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+.nxtfb
+{
+    background: url("../Images/next.png") no-repeat scroll 0 0 transparent;
+    color: #E5E5E5;
+    cursor: pointer;
+    float: right;
+    height: 43px;
+    text-decoration: none;
+    text-indent: 1033px;
+    width: 43px;
+}
+
+    .nxtfb:hover
+    {
+        background: url(../Images/next-hover.png) no-repeat;
+        opacity: 0.9;
+    }
+
+@media screen and (max-width:7680px) and (min-width:1680px)
+{
+    .frequency
+    {
+        width: 43%;
+    }
+
+    .questions li
+    {
+        width: 720px;
+        margin-right: 300px;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 3.6%;
+        width: 49.5%;
+        top: 56.5%;
+    }
+
+    .nxt
+    {
+        margin-top: 12%;
+        margin-right: -30%;
+    }
+
+    .nxt1
+    {
+        margin-top: -38%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: -10%;
+    }
+
+    .pageholder
+    {
+        margin-top: 5.3%;
+        width: 94.5%;
+    }
+
+    .breadcrumb
+    {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+        float: none;
+        clear: both;
+    }
+
+    .mngrfb .user
+    {
+        width: 84px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 496px !important;
+        min-height: 496px !important;
+        width: 950px !important;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 130px 20px 20px;
+    }
+
+    #ajax-content
+    {
+        padding-top: 50px;
+    }
+    /***/
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 338px !important;
+        height: 95px;
+    }
+
+    #quickviewli li
+    {
+        width: 1430px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 900px;
+        margin-left: 0;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 20px;
+        width: 780px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 7px 0 5px 0;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        line-height: 38px;
+        margin-top: 8px;
+        font-size: 30px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 18px !important;
+        outline: none;
+        background: url(../Images/slider-handle.png) no-repeat;
+        height: 102px;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 828px !important;
+        height: 89px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 828px;
+        height: 85px;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1920.png) no-repeat !important;
+        height: 85px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 10px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 50px;
+        width: 338px;
+    }
+
+    .qn
+    {
+        width: 52px;
+        height: 52px;
+        line-height: 49px;
+        font-size: 36px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 860px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 860px;
+    }
+
+    .questionarea
+    {
+        width: 90%;
+    }
+
+    #dv
+    {
+        margin-top: 6.2%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 590px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -17px;
+            margin-right: 0;
+        }
+
+            .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .customertile .takesf p, .takesf p, .mngrfb h1, .SI, #GF .detailedarea p, .customername,
+            #GF .frequency p, #GF .frequency h4
+            {
+                font-size: 16px;
+            }
+
+    .customertiles .takesf p
+    {
+        font-size: 20px;
+    }
+
+    .customertile .takesf p, .takesf p
+    {
+        width: 60% !important;
+        line-height: 1.2em;
+    }
+
+    #dv .contentholder h4
+    {
+        margin-bottom: 5px;
+    }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+
+    #dv .user img, #GF .customerimg
+    {
+        height: 84px;
+        width: 84px;
+    }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -74px;
+    }
+
+    #GF
+    {
+        margin-top: 6.2%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -13px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 860px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 590px;
+            width: 720px;
+        }
+
+    .prev, .prevD
+    {
+        left: 1.5%;
+        top: 47.5%;
+    }
+
+    .nxt2
+    {
+        margin-top: -31%;
+        margin-right: -20%;
+    }
+
+    .nxtD
+    {
+        margin-top: 5.4%;
+        margin-right: -86%;
+    }
+
+    .nMngr
+    {
+        right: 7%;
+        padding-top: 24.5%;
+    }
+
+    .slidebtn
+    {
+        left: 42%;
+        width: 18%;
+    }
+
+    .quickview .sliderimg
+    {
+        margin-left: 63px;
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width:1680px) and (min-width:1600px)
+{
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 7.5%;
+        width: 47%;
+        top: 43%;
+    }
+
+    .frequency
+    {
+        width: 43%;
+    }
+
+    .contentholder .customertiles .takesf, .takesf
+    {
+        width: 300px;
+        height: 75px;
+        position: relative;
+    }
+
+    .pageholder
+    {
+        margin-top: 5%;
+        width: 93.9%;
+    }
+
+    .questions li
+    {
+        width: 658px;
+        margin-left: 60px;
+        margin-right: 180px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 420px !important;
+        min-height: 420px !important;
+        width: 750px !important;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 106px 20px 20px;
+    }
+
+    #ajax-content
+    {
+        padding-top: 10px;
+    }
+    /***/
+    .timetakencont
+    {
+        width: 100%;
+    }
+
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 300px !important;
+        height: 75px;
+    }
+
+        #quickviewli .customertiles .takesf p, .takesf p, .customertiles .takesf p
+        {
+            font-size: 16px !important;
+            width: 65% !important;
+            line-height: 1.2em;
+        }
+
+    #quickviewli li
+    {
+        width: 1230px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 800px;
+        margin-left: 0;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 16px;
+        width: 607px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 7px 0 5px 0;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        line-height: 28px;
+        margin-top: 8px;
+        margin-right: 8px;
+        font-size: 20px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 15px !important;
+        outline: none;
+        background: url(../Images/slider-handle-1600.png) no-repeat;
+        height: 78px;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 647px !important;
+        height: 68px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 647px;
+        height: 68px;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1600.png) no-repeat !important;
+        height: 68px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 13px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+
+    .quickviewfb
+    {
+        height: auto !important;
+        overflow: visible !important;
+        padding-bottom: 10px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 0px;
+        width: 280px;
+    }
+
+    .qn
+    {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 660px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 660px;
+    }
+
+    .questionarea
+    {
+        width: 90%;
+    }
+
+    #dv
+    {
+        margin-top: 5.8%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 320px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+            .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .customertile .takesf p, .takesf p,
+            .mngrfb h1, .SI
+            {
+                font-size: 13px;
+            }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+
+    #dv .user
+    {
+        width: 68px;
+    }
+
+        #dv .user img, #GF .customerimg
+        {
+            height: 68px;
+            width: 68px;
+        }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -60px;
+    }
+
+    #GF
+    {
+        margin-top: 6.2%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 660px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 320px;
+            width: 658px;
+        }
+
+    .prev, .prevD
+    {
+        left: 2%;
+        top: 47.5%;
+    }
+
+    .nxt2
+    {
+        margin-top: -29%;
+        margin-right: -13%;
+    }
+
+    .nxtD
+    {
+        margin-top: -3.2%;
+        margin-right: -65.5%;
+    }
+
+    .nMngr
+    {
+        right: 8%;
+        padding-top: 24%;
+    }
+
+    .slidebtn
+    {
+        left: 42%;
+        width: 18%;
+    }
+
+    .quickview .sliderimg
+    {
+        margin-left: 41px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px)
+{
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 7.5%;
+        width: 47%;
+        top: 52.5%;
+    }
+
+    .frequency
+    {
+        width: 43%;
+    }
+
+    .contentholder .customertiles .takesf, .takesf
+    {
+        width: 300px;
+        height: 75px;
+        position: relative;
+    }
+
+    .pageholder
+    {
+        margin-top: 5%;
+        width: 93.9%;
+    }
+
+    .questions li
+    {
+        width: 658px;
+        margin-left: 60px;
+        margin-right: 70px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 420px !important;
+        min-height: 420px !important;
+        width: 750px !important;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    #ajax-content
+    {
+        padding-top: 10px;
+    }
+    /***/
+    .qvlist, .qvlist ul
+    {
+        margin-right: 60px !important;
+    }
+
+    .timetakencont
+    {
+        width: 100%;
+    }
+
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 300px !important;
+        height: 75px;
+    }
+
+        #quickviewli .customertiles .takesf p, .takesf p, .customertiles .takesf p
+        {
+            font-size: 16px !important;
+            width: 65% !important;
+            line-height: 1.2em;
+        }
+
+    #quickviewli li
+    {
+        width: 1230px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 800px;
+        margin-left: 0;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 16px;
+        width: 607px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 7px 0 5px 0;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        line-height: 28px;
+        margin-top: 8px;
+        margin-right: 8px;
+        font-size: 20px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 15px !important;
+        outline: none;
+        background: url(../Images/slider-handle-1600.png) no-repeat;
+        height: 78px;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 647px !important;
+        height: 68px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 647px;
+        height: 68px;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1600.png) no-repeat !important;
+        height: 68px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 10px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+
+    .quickviewfb
+    {
+        height: auto !important;
+        overflow: visible !important;
+        padding-bottom: 10px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 0px;
+        width: 290px;
+    }
+
+    .qn
+    {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 660px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 660px;
+    }
+
+    .questionarea
+    {
+        width: 90%;
+    }
+
+    #dv
+    {
+        margin-top: 5.8%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 190px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+            .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .customertile .takesf p, .takesf p,
+            .mngrfb h1, .SI
+            {
+                font-size: 13px;
+            }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+
+    #dv .user
+    {
+        width: 68px;
+    }
+
+        #dv .user img, #GF .customerimg
+        {
+            height: 68px;
+            width: 68px;
+        }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -60px;
+    }
+
+    #GF
+    {
+        margin-top: 6.2%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 660px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 320px;
+            width: 658px;
+        }
+
+    .prev, .prevD
+    {
+        left: 2%;
+        top: 47.5%;
+    }
+
+    .nxt2
+    {
+        margin-top: -29%;
+        margin-right: -13%;
+    }
+
+    .nxtD
+    {
+        margin-top: -3.2%;
+        margin-right: -65.5%;
+    }
+
+    .nMngr
+    {
+        right: 8%;
+        padding-top: 24%;
+    }
+
+    .slidebtn
+    {
+        left: 42%;
+        width: 18%;
+    }
+
+    .quickview .sliderimg
+    {
+        margin-left: 41px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1440px)
+{
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 7.5%;
+        width: 47%;
+        top: 48.5%;
+    }
+
+    .frequency
+    {
+        width: 43%;
+    }
+
+    .contentholder .customertiles .takesf, .takesf
+    {
+        width: 300px;
+        height: 75px;
+        position: relative;
+    }
+
+    .pageholder
+    {
+        margin-top: 5%;
+        width: 93.9%;
+    }
+
+    .questions li
+    {
+        width: 658px;
+        margin-left: 60px;
+        margin-right: 70px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 420px !important;
+        min-height: 420px !important;
+        width: 750px !important;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    #ajax-content
+    {
+        padding-top: 10px;
+    }
+    /***/
+    .qvlist, .qvlist ul
+    {
+        margin-right: 60px !important;
+    }
+
+    .timetakencont
+    {
+        width: 100%;
+    }
+
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 300px !important;
+        height: 75px;
+    }
+
+        #quickviewli .customertiles .takesf p, .takesf p, .customertiles .takesf p
+        {
+            font-size: 16px !important;
+            width: 65% !important;
+            line-height: 1.2em;
+        }
+
+    #quickviewli li
+    {
+        width: 1230px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 800px;
+        margin-left: 0;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 16px;
+        width: 607px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 7px 0 5px 0;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        line-height: 28px;
+        margin-top: 8px;
+        margin-right: 8px;
+        font-size: 20px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 15px !important;
+        outline: none;
+        background: url(../Images/slider-handle-1600.png) no-repeat;
+        height: 78px;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 647px !important;
+        height: 68px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 647px;
+        height: 68px;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1600.png) no-repeat !important;
+        height: 68px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 10px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+
+    .quickviewfb
+    {
+        height: auto !important;
+        overflow: visible !important;
+        padding-bottom: 10px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 0px;
+        width: 290px;
+    }
+
+    .qn
+    {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 660px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 660px;
+    }
+
+    .questionarea
+    {
+        width: 90%;
+    }
+
+    #dv
+    {
+        margin-top: 5.8%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 190px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+            .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .customertile .takesf p, .takesf p,
+            .mngrfb h1, .SI
+            {
+                font-size: 13px;
+            }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+
+    #dv .user
+    {
+        width: 68px;
+    }
+
+        #dv .user img, #GF .customerimg
+        {
+            height: 68px;
+            width: 68px;
+        }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -60px;
+    }
+
+    #GF
+    {
+        margin-top: 6.2%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 660px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 320px;
+            width: 658px;
+        }
+
+    .prev, .prevD
+    {
+        left: 2%;
+        top: 47.5%;
+    }
+
+    .nxt2
+    {
+        margin-top: -29%;
+        margin-right: -13%;
+    }
+
+    .nxtD
+    {
+        margin-top: -3.2%;
+        margin-right: -65.5%;
+    }
+
+    .nMngr
+    {
+        right: 8%;
+        padding-top: 24%;
+    }
+
+    .slidebtn
+    {
+        left: 42%;
+        width: 18%;
+    }
+
+    .quickview .sliderimg
+    {
+        margin-left: 41px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px)
+{
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 58px;
+        width: 720px;
+        top: 40.5%;
+    }
+
+        .frequencydiv h3
+        {
+            font-size: 16px;
+        }
+
+    .frequency
+    {
+        width: 262px;
+        margin-right: 0px;
+        height: 100px;
+    }
+
+    .pageholder
+    {
+        margin-top: 5%;
+        width: 93.6%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 332px !important;
+        min-height: 332px !important;
+        width: 616px !important;
+    }
+
+    /***/
+    .qvlist, .qvlist ul
+    {
+        margin-right: 50px !important;
+    }
+
+    .timetakencont
+    {
+        width: 100%;
+    }
+
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 255px !important;
+        height: 64px !important;
+        font-size: 12px;
+    }
+
+        #quickviewli .customertiles .takesf p, .takesf p, #dv .contentholder .takesf p
+        {
+            font-size: 14px !important;
+            width: 65% !important;
+            line-height: 1.2em;
+        }
+
+    #quickviewli .qvlist
+    {
+        width: 255px !important;
+        margin-right: 70px !important;
+    }
+
+    #quickviewli li
+    {
+        width: 1100px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 700px;
+        margin-left: 0;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 14px;
+        width: 485px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 5px 0 5px 0 !important;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        line-height: 25px;
+        margin-top: 5px;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 15px !important;
+        outline: none;
+        background: url(../Images/slider-handle-1366.png) no-repeat;
+        height: 63px !important;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 515px !important;
+        height: 54px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 515px;
+        height: 54px;
+    }
+
+    #quickviewli .sliderimg
+    {
+        margin: 0 !important;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1366.png) no-repeat !important;
+        height: 54px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 10px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+
+    .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .mngrfb h1,
+    .SI, #GF .detailedarea p, #GF .customername
+    {
+        font-size: 12px !important;
+    }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 20px;
+    }
+
+    .qn
+    {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 540px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 540px;
+    }
+
+    .questionarea
+    {
+        width: 80%;
+    }
+
+    #dv
+    {
+        margin-top: 5.9%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 210px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -10px;
+            margin-left: 24px;
+        }
+
+        #dv .user
+        {
+            width: 53px;
+        }
+
+            #dv .user img, #GF .customerimg
+            {
+                height: 53px;
+                width: 53px;
+            }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -57px;
+    }
+
+    #GF
+    {
+        margin-top: 6%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 540px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 210px;
+            width: 648px;
+        }
+
+    .prev, .prevD
+    {
+        left: 2%;
+        top: 47%;
+    }
+
+    .nxt2
+    {
+        margin-top: -26.5%;
+        margin-right: -6.5%;
+    }
+
+    .nxtD
+    {
+        margin-top: -11.5%;
+        margin-right: -35.5%;
+    }
+
+    .nMngr
+    {
+        right: 10%;
+        padding-top: 23%;
+    }
+
+    .slidebtn
+    {
+        left: 40%;
+        width: 20%;
+    }
+
+    #quickviewli .quickview .sliderimg
+    {
+        margin-left: 37px !important;
+        margin-top: -8px !important;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px)
+{
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 58px;
+        width: 720px;
+        top: 48.5%;
+    }
+
+        .frequencydiv h3
+        {
+            font-size: 16px;
+        }
+
+    .frequency
+    {
+        width: 262px;
+        margin-right: 0px;
+        height: 100px;
+    }
+
+    .pageholder
+    {
+        margin-top: 5%;
+        width: 93.6%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 332px !important;
+        min-height: 332px !important;
+        width: 616px !important;
+    }
+
+    /***/
+    .qvlist, .qvlist ul
+    {
+        margin-right: 50px !important;
+    }
+
+    .timetakencont
+    {
+        width: 100%;
+    }
+
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 255px !important;
+        height: 64px !important;
+        font-size: 12px;
+    }
+
+        #quickviewli .customertiles .takesf p, .takesf p, #dv .contentholder .takesf p
+        {
+            font-size: 14px !important;
+            width: 65% !important;
+            line-height: 1.2em;
+        }
+
+    #quickviewli .qvlist
+    {
+        width: 255px !important;
+        margin-right: 70px !important;
+    }
+
+    #quickviewli li
+    {
+        width: 1100px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 700px;
+        margin-left: 0;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 14px;
+        width: 485px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 5px 0 5px 0 !important;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        line-height: 25px;
+        margin-top: 5px;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 15px !important;
+        outline: none;
+        background: url(../Images/slider-handle-1366.png) no-repeat;
+        height: 63px !important;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 515px !important;
+        height: 54px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 515px;
+        height: 54px;
+    }
+
+    #quickviewli .sliderimg
+    {
+        margin: 0 !important;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1366.png) no-repeat !important;
+        height: 54px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 10px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+
+    .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .mngrfb h1,
+    .SI, #GF .detailedarea p, #GF .customername
+    {
+        font-size: 12px !important;
+    }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 20px;
+    }
+
+    .qn
+    {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 540px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 540px;
+    }
+
+    .questionarea
+    {
+        width: 80%;
+    }
+
+    #dv
+    {
+        margin-top: 5.9%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 210px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -10px;
+            margin-left: 24px;
+        }
+
+        #dv .user
+        {
+            width: 53px;
+        }
+
+            #dv .user img, #GF .customerimg
+            {
+                height: 53px;
+                width: 53px;
+            }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -57px;
+    }
+
+    #GF
+    {
+        margin-top: 6%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 540px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 210px;
+            width: 648px;
+        }
+
+    .prev, .prevD
+    {
+        left: 2%;
+        top: 47%;
+    }
+
+    .nxt2
+    {
+        margin-top: -26.5%;
+        margin-right: -6.5%;
+    }
+
+    .nxtD
+    {
+        margin-top: -11.5%;
+        margin-right: -35.5%;
+    }
+
+    .nMngr
+    {
+        right: 10%;
+        padding-top: 23%;
+    }
+
+    .slidebtn
+    {
+        left: 40%;
+        width: 20%;
+    }
+
+    #quickviewli .quickview .sliderimg
+    {
+        margin-left: 37px !important;
+        margin-top: -16px !important;
+        margin-bottom: 8px !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 58px;
+        width: 720px;
+        top: 35.5%;
+    }
+
+        .frequencydiv h3
+        {
+            font-size: 16px;
+        }
+
+    .frequency
+    {
+        width: 262px;
+        margin-right: 0px;
+        height: 100px;
+    }
+
+    .pageholder
+    {
+        margin-top: 5%;
+        width: 93.6%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 332px !important;
+        min-height: 332px !important;
+        width: 616px !important;
+    }
+
+    /***/
+    .qvlist, .qvlist ul
+    {
+        margin-right: 50px !important;
+    }
+
+    .timetakencont
+    {
+        width: 100%;
+    }
+
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 255px !important;
+        height: 64px !important;
+        font-size: 12px;
+    }
+
+        #quickviewli .customertiles .takesf p, .takesf p, #dv .contentholder .takesf p
+        {
+            font-size: 14px !important;
+            width: 65% !important;
+            line-height: 1.2em;
+        }
+
+    #quickviewli .qvlist
+    {
+        width: 255px !important;
+        margin-right: 70px !important;
+    }
+
+    #quickviewli li
+    {
+        width: 1060px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 700px;
+        margin-left: 0;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 14px;
+        width: 485px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 5px 0 5px 0 !important;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        line-height: 25px;
+        margin-top: 5px;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 15px !important;
+        outline: none;
+        background: url(../Images/slider-handle-1366.png) no-repeat;
+        height: 63px !important;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 515px !important;
+        height: 54px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 515px;
+        height: 54px;
+    }
+
+    #quickviewli .sliderimg
+    {
+        margin: 0 !important;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1366.png) no-repeat !important;
+        height: 54px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 10px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+
+    .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .mngrfb h1,
+    .SI, #GF .detailedarea p, #GF .customername
+    {
+        font-size: 12px !important;
+    }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 20px;
+    }
+
+    .qn
+    {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 540px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 540px;
+    }
+
+    .questionarea
+    {
+        width: 80%;
+    }
+
+    #dv
+    {
+        margin-top: 5.9%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 165px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -10px;
+            margin-left: 24px;
+        }
+
+        #dv .user
+        {
+            width: 53px;
+        }
+
+            #dv .user img, #GF .customerimg
+            {
+                height: 53px;
+                width: 53px;
+            }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -57px;
+    }
+
+    #GF
+    {
+        margin-top: 6%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 540px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 210px;
+            width: 648px;
+        }
+
+    .prev, .prevD
+    {
+        left: 2%;
+        top: 47%;
+    }
+
+    .nxt2
+    {
+        margin-top: -26.5%;
+        margin-right: -6.5%;
+    }
+
+    .nxtD
+    {
+        margin-top: -11.5%;
+        margin-right: -35.5%;
+    }
+
+    .nMngr
+    {
+        right: 10%;
+        padding-top: 23%;
+    }
+
+    .slidebtn
+    {
+        left: 40%;
+        width: 20%;
+    }
+
+    #quickviewli .quickview .sliderimg
+    {
+        margin-left: 37px !important;
+        margin-top: -16px !important;
+        margin-bottom: 8px !important;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 58px;
+        width: 720px;
+        top: 48.5%;
+    }
+
+        .frequencydiv h3
+        {
+            font-size: 16px;
+        }
+
+    .frequency
+    {
+        width: 262px;
+        margin-right: 0px;
+        height: 100px;
+    }
+
+    .pageholder
+    {
+        margin-top: 5%;
+        width: 93.6%;
+    }
+
+    .customertiles
+    {
+        max-width: 22%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 332px !important;
+        min-height: 332px !important;
+        width: 616px !important;
+    }
+
+    /***/
+    .qvlist, .qvlist ul
+    {
+        margin-right: 50px !important;
+    }
+
+    .timetakencont
+    {
+        width: 100%;
+    }
+
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 200px !important;
+        height: 64px !important;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+        #quickviewli .customertiles .takesf img, .takesf img
+        {
+            width: 42px;
+            height: 32px;
+        }
+
+        #quickviewli .customertiles .takesf p, .takesf p, #dv .contentholder .takesf p
+        {
+            font-size: 14px !important;
+            width: 65% !important;
+            line-height: 1.2em;
+        }
+
+    #quickviewli .qvlist
+    {
+        width: 255px !important;
+        margin-right: 0px !important;
+    }
+
+    #quickviewli li
+    {
+        width: 790px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 555px;
+        margin-left: 50px;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 14px;
+        width: 485px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 5px 0 5px 0 !important;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        line-height: 25px;
+        margin-top: 5px;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 15px !important;
+        outline: none;
+        background: url(../Images/slider-handle-1366.png) no-repeat;
+        height: 63px !important;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 515px !important;
+        height: 54px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 515px;
+        height: 54px;
+    }
+
+    #quickviewli .sliderimg
+    {
+        margin: 0 !important;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1366.png) no-repeat !important;
+        height: 54px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 10px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+
+    .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .mngrfb h1,
+    .SI, #GF .detailedarea p, #GF .customername
+    {
+        font-size: 12px !important;
+    }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 20px;
+    }
+
+    .qn
+    {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 540px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 540px;
+    }
+
+    .questionarea
+    {
+        width: 80%;
+    }
+
+    #dv
+    {
+        margin-top: 7%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 210px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -10px;
+            margin-left: 24px;
+        }
+
+        #dv .user
+        {
+            width: 53px;
+        }
+
+            #dv .user img, #GF .customerimg
+            {
+                height: 53px;
+                width: 53px;
+            }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -57px;
+    }
+
+    #GF
+    {
+        margin-top: 6%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 540px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 210px;
+            width: 648px;
+        }
+
+    .prev, .prevD
+    {
+        left: 2%;
+        top: 47%;
+    }
+
+    .nxt2
+    {
+        margin-top: -26.5%;
+        margin-right: -6.5%;
+    }
+
+    .nxtD
+    {
+        margin-top: -11.5%;
+        margin-right: -35.5%;
+    }
+
+    .nMngr
+    {
+        right: 10%;
+        padding-top: 23%;
+    }
+
+    .slidebtn
+    {
+        left: 40%;
+        width: 20%;
+    }
+
+    #quickviewli .quickview .sliderimg
+    {
+        margin-left: 37px !important;
+        margin-top: -16px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .accordion label img
+    {
+        width: auto !important;
+    }
+
+    .accordion a img
+    {
+        width: 83%;
+    }
+
+    .accordion h3.current, .accordion h3
+    {
+        height: 2px;
+    }
+
+    #ajax-content
+    {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px)
+{
+    .pageholder
+    {
+        margin-top: 9%;
+        width: 93.6%;
+    }
+
+    .frequencydiv
+    {
+        position: absolute;
+        margin-left: 58px;
+        width: 440px;
+        top: 32.5%;
+    }
+
+        .frequencydiv h3
+        {
+            font-size: 16px;
+        }
+
+    .frequency
+    {
+        width: 208px;
+        margin-right: 0px;
+        height: 100px;
+    }
+
+        .frequency img
+        {
+            padding: 15px 10px 30px 0;
+        }
+
+    .customertiles
+    {
+        max-width: 20%;
+    }
+
+    .questions li
+    {
+        width: 648px;
+        margin-right: 90px;
+    }
+
+    .nxt
+    {
+        margin-top: -2%;
+        margin-right: -20%;
+    }
+
+    .nxt2
+    {
+        margin-top: -30%;
+        margin-right: 0%;
+    }
+
+    #snap2, #snap3
+    {
+        padding: 80px 20px 20px;
+    }
+
+    .mngrfb
+    {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        max-height: 332px !important;
+        min-height: 332px !important;
+        width: 616px !important;
+    }
+
+    /***/
+    .qvlist, .qvlist ul
+    {
+        margin-right: 0px !important;
+    }
+
+    .timetakencont
+    {
+        width: 100%;
+    }
+
+    #quickviewli .customertiles .takesf, .takesf
+    {
+        width: 152px !important;
+        height: 64px !important;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+        #quickviewli .customertiles .takesf img, .takesf img
+        {
+            width: 42px;
+            height: 32px;
+        }
+
+        #quickviewli .customertiles .takesf p, .takesf p, #dv .contentholder .takesf p
+        {
+            font-size: 14px !important;
+            width: 65% !important;
+            line-height: 1.2em;
+        }
+
+    #quickviewli .qvlist
+    {
+        width: 255px !important;
+        margin-right: 0px !important;
+    }
+
+    #quickviewli li
+    {
+        width: 790px;
+        margin-left: 0;
+    }
+
+    #quickviewli .contentholder
+    {
+        width: 555px;
+        margin-left: 0px;
+    }
+
+    .quickviewfb
+    {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #quickviewli .quickview h2
+    {
+        font-size: 14px;
+        width: 485px;
+        font-weight: 600;
+        line-height: 1.0em;
+        margin: 5px 0 5px 0 !important;
+    }
+
+    #quickviewli .quickview .qn
+    {
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        line-height: 25px;
+        margin-top: 5px;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .ui-slider-handle
+    {
+        width: 15px !important;
+        outline: none;
+        background: url(../Images/slider-handle-1366.png) no-repeat;
+        height: 63px !important;
+        margin-top: 2px;
+    }
+
+    #quickviewli .sliderdiv, .sliderdiv
+    {
+        width: 492px !important;
+        height: 54px !important;
+    }
+
+    #quickviewli .sliderimg img, .sliderimg img
+    {
+        width: 490px;
+        height: 54px;
+    }
+
+    #quickviewli .sliderimg
+    {
+        margin: 0 !important;
+    }
+
+    #quickviewli .ui-slider-range, .ui-slider-range
+    {
+        background: url(../Images/feedback-slider-1366.png) no-repeat !important;
+        height: 54px !important;
+    }
+
+    .customertiles h1
+    {
+        font-size: 17px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .customertiles
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .questions
+    {
+        margin-top: 10px;
+    }
+
+    .timetakencont .timetaken
+    {
+        margin-left: 5px;
+    }
+
+    .timetaken, .counterHour, .collan, .counterMin, .counterSec, .questiontaken, #dv .contentholder li, #dv .contentholder p, #dv .contentholder h4, .mngrfb h1,
+    .SI, #GF .detailedarea p, #GF .customername
+    {
+        font-size: 10px !important;
+    }
+
+    #aboutContent h1
+    {
+        margin-top: 10px;
+    }
+    /****Detailedview***/
+    #aboutContent
+    {
+        margin-right: 0px;
+    }
+
+    .qn
+    {
+        width: 38px;
+        height: 38px;
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .detailedarea h2, #dv .questionarea h2
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        line-height: 1.1em;
+        width: 480px;
+    }
+
+    #dv .questionarea p
+    {
+        width: 480px;
+    }
+
+    .questionarea
+    {
+        width: 80%;
+    }
+
+    #dv
+    {
+        margin-top: 9%;
+    }
+
+        #dv .questions li
+        {
+            margin-right: 210px;
+        }
+
+        #dv .contentholder
+        {
+            margin-top: -10px;
+            margin-left: 24px;
+            width: 450px;
+        }
+
+        #dv .user
+        {
+            width: 53px;
+        }
+
+            #dv .user img, #GF .customerimg
+            {
+                height: 53px;
+                width: 53px;
+            }
+    /***Customer Feedback****/
+    .customercol
+    {
+        width: 150%;
+        margin-left: -57px;
+    }
+
+    #GF
+    {
+        margin-top: 6%;
+    }
+
+        #GF .contentholder
+        {
+            margin-top: -10px;
+            margin-right: 0;
+        }
+
+        #GF .questionarea p
+        {
+            width: 540px;
+        }
+
+        #GF .questions li
+        {
+            margin-right: 210px;
+            width: 648px;
+        }
+
+    .prev, .prevD
+    {
+        left: 2%;
+        top: 47%;
+    }
+
+    .nxt2
+    {
+        margin-top: -26.5%;
+        margin-right: -6.5%;
+    }
+
+    .nxtD
+    {
+        margin-top: -11.5%;
+        margin-right: -35.5%;
+    }
+
+    .nMngr
+    {
+        right: 10%;
+        padding-top: 23%;
+    }
+
+    .slidebtn
+    {
+        left: 40%;
+        width: 22%;
+    }
+
+    #quickviewli .quickview .sliderimg
+    {
+        margin-left: 37px !important;
+        margin-top: -16px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .accordion label img
+    {
+        width: auto !important;
+    }
+
+    .accordion a img
+    {
+        width: 80%;
+    }
+
+    .accordion h3.current, .accordion h3
+    {
+        height: 2px;
+    }
+
+    #navigation li a
+    {
+        width: 23px;
+        height: 23px;
+    }
+
+        #navigation li a img
+        {
+            width: 20px;
+            height: 20px;
+        }
+
+    #navigation
+    {
+        margin-left: 75px;
+        margin-bottom: 5px;
+    }
+}

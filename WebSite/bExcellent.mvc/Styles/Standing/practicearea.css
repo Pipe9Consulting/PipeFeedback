@@ -1,0 +1,8823 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
+    font-family: Segoe UI;
+    background-size: 100% 100% !important;
+}
+
+
+.stand {
+    width: 18%;
+    margin-right: 3%;
+    float: left;
+}
+
+.hideboxtile span {
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    cursor: default;
+}
+
+.hideboxtile:hover {
+    background: url(../../Images/icons/iconTeam.png)no-repeat top right rgba(0, 0, 0, .8) !important;
+    background-size: 100% 100% !important;
+}
+
+    .hideboxtile:hover p {
+        color: #fff !important;
+    }
+
+    .hideboxtileAll span {
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    cursor: default;
+}
+
+
+
+    .hideboxtileAll:hover p {
+        color: #fff !important;
+    }
+
+h1.lft_head {
+    padding: 0px !important;
+    color: rgba(0,0,0,0.8);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.chartsmlplaceholder {
+    clear: both;
+}
+
+.breadMenu {
+    margin: 1.5% 1.5% 0% 1.5% !important;
+}
+
+.communitytile:hover p, .areaTeamtile:hover p, .tenuretile:hover p, .alltile:hover p {
+    color: #e0b001;
+}
+
+
+
+.selectcommunity:hover p, .selectAreaTeam:hover p, .selectTenure:hover p, .selectAll:hover p {
+    color: #e0b001;
+}
+
+.communitytile:hover {
+    background: url(../../Images/new/iconCommunityHover.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+.areaTeamtile:hover {
+    background: url(../../Images/new/iconTeamHover.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+.tenuretile:hover {
+    background: url(../../Images/new/iconTenureHover.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+.alltile:hover {
+    background: url(../../Images/icons/iconAll.png)no-repeat top right rgba(0, 0, 0, .8);
+}
+
+#seekSherpas .slimScrollDiv {
+    height: 0px;
+    padding-bottom: 0;
+    position: relative;
+    width: 98% !important;
+}
+
+#seekSherpas #seekSherpasMentors {
+    height: 450px;
+    width: 97% !important;
+}
+
+h1 {
+    color: #333;
+}
+
+
+.chartholdertop h1 span {
+    font-style: italic;
+    text-transform: none;
+}
+
+.pa1 h1, .pa3 h1 {
+    padding: 15px 0px 5px !important;
+    color: #000 !important;
+}
+
+.pa2 h1, .pa4 h1 {
+    padding: 15px 0px 5px !important;
+    color: #000 !important;
+}
+
+.stand li {
+    width: 47%;
+    padding-bottom: 45%;
+    height: 0;
+    float: left;
+    list-style: none;
+    margin: 0 3% 3% 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.stand h1 {
+    text-transform: uppercase;
+    padding: 0px 0px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.8);
+}
+
+/*.stand ul li:hover p {
+        color: #e0b001;
+    }*/
+
+
+.standpracticeArea {
+    border: 1px solid #333;
+    padding: 3% 0 0% 3%;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.chartholdertop {
+    width: 75%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.standpracticeArea ul {
+    /*background: url("../../Images/images/feedback/spa_bg.png")no-repeat;*/
+    background-size: 97% 100%;
+}
+
+
+.rectangle {
+    width: 97% !important;
+}
+
+    .rectangle img {
+        width: 50% !important;
+        right: 0;
+    }
+
+.stand li img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.chartholder {
+    width: 70%;
+    float: left;
+}
+
+.stand li p {
+    position: absolute;
+    color: #ffffff;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    text-transform: uppercase;
+}
+
+.indexright {
+    background: none repeat scroll 0 0 #5E5E5E;
+    height: auto;
+    padding-bottom: 1%;
+    position: fixed;
+    right: -33.5%;
+    width: 35%;
+    z-index: 6;
+}
+
+#papoeContents {
+    width: 100%;
+}
+
+    #papoeContents th {
+        background: #808080;
+    }
+
+    #papoeContents tr td table {
+        width: 100%;
+    }
+
+    #papoeContents td, #papoeContents th {
+        color: #ffffff;
+        border-collapse: collapse;
+        text-align: left;
+        padding: 0.3em 1em 0.2em 0.3em;
+    }
+
+    #papoeContents tr td:first-child {
+        width: 65%;
+    }
+
+    #papoeContents tr th:first-child {
+        width: 77%;
+    }
+
+    #papoeContents tr th:nth-child(2) {
+        width: 27%;
+    }
+
+    #papoeContents tr th:nth-child(3) {
+        width: 10%;
+    }
+
+
+    #papoeContents tr td:nth-child(2) {
+        width: 25%;
+    }
+
+
+    #papoeContents tr td:nth-child(3) {
+        width: 10%;
+    }
+
+
+
+.indexrightarrow {
+    position: absolute;
+    left: -14%;
+    background: url(../../Images/chart/standing/index-arrow.png) no-repeat left;
+    background-size: 100% 100%;
+    width: 14%;
+    height: 100%;
+}
+
+.indexclose {
+    position: absolute;
+    top: -3%;
+    right: -10%;
+    background: url(../../images/chart/standing/plus-bg.png) no-repeat center #e0b001;
+    background-size: 70% 70%;
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    border-radius: 50%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.indexrightclose {
+    position: absolute;
+    top: -3%;
+    right: 16px;
+    background: url(../../images/chart/standing/plus-bg.png) no-repeat center #e0b001;
+    background-size: 70% 70%;
+    width: 3.5%;
+    height: 0;
+    padding-bottom: 3.5%;
+    border-radius: 50%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.charttile {
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    text-transform: none;
+    font-size: 16px;
+}
+
+
+
+.indexrightclose1 {
+    position: absolute;
+    top: -3%;
+    right: 16px;
+    background: url(../../images/chart/standing/minus-bg.png) no-repeat center #e0b001;
+    background-size: 70% 70%;
+    width: 3.5%;
+    height: 0;
+    padding-bottom: 3.5%;
+    border-radius: 50%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.model {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 45%;
+}
+
+.patable {
+    width: 96% !important;
+    float: left;
+    margin-right: 2%;
+}
+
+/*#PAname {
+    margin-left: 2.5%;
+}*/
+
+.modelcontent .slimScrollDiv {
+    position: relative;
+    padding-bottom: 0% !important;
+    margin-right: 2%;
+    width: 100% !important;
+}
+
+.modelcontent .scroll2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 98%!important;
+    height: 98%!important;
+}
+
+.modelcontent {
+    width: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.helpcontent {
+    float: left;
+    width: 100%;
+}
+
+
+    .helpcontent .descinfo {
+        width: 95%;
+    }
+
+.hlprow {
+    clear: both;
+    padding-bottom: 2% !important;
+    margin-bottom: 1.4% !important;
+    float: left;
+    width: 100%;
+    background: url(../../images/helpcont-divider.png) bottom no-repeat;
+    background-size: 100% 1px;
+}
+
+
+
+.scroll2 table {
+    margin: 0 !important;
+}
+
+.spaRight-des {
+    clear: both;
+    padding-bottom: 2%;
+    margin-bottom: 1.5%;
+    float: left;
+    width: 100%;
+}
+
+
+    .spaRight-des .hlpcont {
+        float: left;
+        color: #fff;
+        width: 90%;
+    }
+
+
+.hlpheading {
+    float: left;
+    color: #e0b001 !important;
+    font-weight: bold;
+    width: 27%;
+    margin-right: 3%;
+}
+
+.hlpcont {
+    float: left;
+    color: #ccc !important;
+    width: 72%;
+    font-size: 90%;
+}
+
+.chartholder {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #333;
+    position: absolute;
+    padding-bottom: 45%;
+}
+
+
+.chartslide {
+    width: 205%;
+    clear: both;
+}
+
+.slide {
+    width: 48%;
+    float: left;
+}
+
+.coltwo {
+    width: 40%;
+    margin-right: 3%;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+    .coltwo:nth-child(2) {
+        margin-left: 0;
+    }
+
+.chartdiv {
+    border: 1px solid #333;
+    float: left;
+    padding: 2% 8% 1% 2%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0%;
+    cursor: pointer;
+}
+
+.charttitle, .charttitle1 {
+    text-align: center;
+    width: 91.3%;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 3%;
+    clear: both;
+    font-weight: 600;
+}
+
+.charttitle1 {
+    width: 110% !important;
+}
+
+.legend {
+    float: right;
+    width: 40%;
+    position: absolute;
+    right: 8%;
+    top: 2%;
+    z-index: 2;
+}
+
+    .legend li {
+        color: #808080;
+        padding: 0 0 0 13%;
+        margin-bottom: 1%;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+
+/*.legendTenure {
+    float: left;
+    width: 30%;
+    position: relative;
+    left: 40%;
+    top: 2%;
+    z-index: 2;
+}*/
+
+
+
+
+.dummychartdiv {
+    background: rgba(0,0,0,0.3) !important;
+    cursor: default !important;
+    padding-bottom: 43.8% !important;
+}
+
+.legendTenure li {
+    color: #808080;
+    padding: 0 0 0 13%;
+    margin-bottom: 2%;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.legendp {
+    background-size: 9% auto;
+}
+
+.legend1 {
+    background: url("../../Images/chart/you-box.png") no-repeat;
+    background-size: 11% 100%;
+}
+
+.legend2 {
+    background: url(../../Images/chart/legend3.png) no-repeat left;
+    background-size: 11% 100%;
+}
+
+.legendmp {
+    background: url(../../Images/chart/legend-mp.png) no-repeat left;
+    background-size: 11% 100%;
+}
+
+.legend3 {
+    background: url("../../Images/chart/performer-box.png") no-repeat;
+    background-size: 11% 100%;
+}
+
+.legend4 {
+    background: url(../../Images/chart/legend4.png) no-repeat left;
+    background-size: 11% 100%;
+}
+
+.legend5 {
+    background: url(../../Images/chart/legend5.png) no-repeat left;
+    background-size: 11% 100%;
+}
+
+.chartop {
+    background: url("../../Images/new/chart-top-new.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    background-size: 99% 100%;
+    height: 0;
+    padding-bottom: 6.5%;
+}
+
+.chartbtm {
+    background: url("../../Images/new/sync-pa-bg-new1.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    height: 0;
+    width: 100%;
+    padding-bottom: 11%;
+}
+
+.chartbg {
+    background: url("../../Images/new/pa-bg.png") no-repeat scroll left center;
+    background-size: 101% 100%;
+    height: 0;
+    padding-bottom: 30.2%;
+}
+
+
+#all .chartbg {
+    background: url("../../Images/new/pa-bg-new.png") no-repeat scroll left center;
+    background-size: 101% 100%;
+    height: 0;
+    padding-bottom: 30.2%;
+}
+
+.chartallbg {
+    background: url("../../Images/chart/standing/chartall-bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    height: 0;
+    padding-bottom: 30%;
+}
+
+.chartarea {
+    margin-left: 3%;
+    position: relative;
+    width: 91.3%;
+    height: 0;
+    padding-bottom: 30%;
+}
+
+    .chartarea ul {
+        padding-top: 5.1%;
+    }
+
+    .chartarea li {
+        height: 0;
+        padding-bottom: 6.6%;
+        left: 0;
+        position: relative;
+        clear: both;
+        overflow: hidden;
+    }
+
+.progressbar1zerotofive {
+    background: url("../../Images/chart/standing/progressbar0amber.png") no-repeat scroll right center;
+    min-width: 2.5%;
+    max-width: 2.5%;
+}
+
+.progressbar1 {
+    height: 0;
+    padding: -0.6% 0 6% 0%;
+    left: 0;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    background: url("../../Images/new/chartYellowArrow.png") no-repeat scroll left center;
+    background-position: 100%;
+    font-size: 150%;
+    color: #fff;
+    font-weight: 500;
+    text-align: right;
+}
+
+    .progressbar1 p {
+        background: url("../../Images/chart/standing/progressbar1.png") no-repeat scroll right center;
+        background-size: 100% 105%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+.progressbar2 {
+    height: 0;
+    padding: 0.4% 0 6% 0%;
+    left: 0;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    background: url("../../Images/new/chartDarkArrow.png") no-repeat scroll left center;
+    background-position: 100%;
+    font-size: 150%;
+    color: #fff;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 7%;
+}
+
+
+
+.progressbar2zerotofive {
+    background: url("../../Images/chart/standing/progressbar0gray.png") no-repeat scroll right center;
+    top: 55% !important;
+    margin-top: 7%;
+    min-width: 2.5%;
+    max-width: 2.5%;
+}
+
+.progressbar2 p {
+    background: url("../../Images/chart/standing/progressbar2.png") no-repeat scroll right center;
+    background-size: 100% 105%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+/*.dwnstatus {
+    background: url("../../Images/chart/standing/status-dwn.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    right: 1%;
+    width: 7%;
+    height: 10%;
+    top: 37%;
+    padding: 0.5% 1% 0.5% .5%;
+}
+
+.status {
+    background: url("../../Images/chart/standing/status.png") no-repeat scroll left top / 100% 100% rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    height: 8.5%;
+    padding: 1.5% 1% .5% .5%;
+    position: absolute;
+    right: 2%;
+    text-align: center;
+    top: 32%;
+    width: 6%;
+}*/
+
+
+
+
+.dwnstatus {
+    background: url("../../Images/chart/standing/status-down.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    right: 1.5%;
+    width: 7%;
+    height: 11.5%;
+    top: 39%;
+    padding-top: 0.6%;
+    padding-right: 0.5%;
+}
+
+.status {
+    background: url("../../Images/chart/standing/status-up.png") no-repeat scroll left top / 100% 100% rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    height: 6%;
+    padding: 2% 0.3% .8% 0;
+    position: absolute;
+    right: 1.8%;
+    text-align: center;
+    top: 33%;
+    width: 6%;
+}
+
+.midstatus {
+    background: url("../../images/chart/standing/status-right.png") no-repeat scroll left top 55% / 100% auto rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    height: 13%;
+    position: absolute;
+    right: 1.6%;
+    text-align: center;
+    /*text-indent: -99999999%;*/
+    top: 31%;
+    width: 5%;
+    padding: 3% 1.3% 0 0;
+}
+
+
+.markerholder {
+    padding-bottom: 6.2%;
+    position: relative;
+    width: 92%;
+    margin-left: 3%;
+}
+
+    .markerholder ul {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .markerholder li {
+        height: 0;
+        left: 0;
+        position: absolute;
+    }
+
+        .markerholder li p {
+            color: #FFFFFF;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            font-size: 90%;
+        }
+
+#all .markerholder li p {
+    font-size: 85%;
+}
+
+.markeramper {
+    background: url("../../Images/chart/standing/big-pic-marker1.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    z-index: 5;
+}
+
+.markermp {
+    background: url("../../Images/chart/big-pic-marker-mp.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    z-index: 5;
+}
+
+.markergray {
+    background: url("../../Images/chart/standing/big-pic-marker2.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    z-index: 5;
+}
+
+
+
+.marker3 {
+    background: url("../../Images/chart/standing/big-pic-marker3.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    z-index: 5;
+}
+
+.marker4 {
+    background: url("../../Images/chart/standing/big-pic-marker4.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    z-index: 5;
+}
+
+.marker5 {
+    background: url("../../Images/chart/standing/big-pic-marker5.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    z-index: 5;
+}
+
+.indexright table {
+    width: 98%;
+    margin-right: 2%;
+    margin-left: 3%;
+    float: left;
+}
+
+.indexright th {
+    background: #808080;
+    white-space: nowrap;
+}
+
+.indexright td, .indexright th {
+    color: #ffffff;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 0.3em 1em 0.2em 0.3em;
+}
+
+
+.indexright tr:nth-child(even) {
+    background: #696969;
+}
+
+.indexright tr:nth-child(odd) {
+    background: #5e5e5e;
+}
+
+.indexright h1 {
+    color: #fff;
+    padding: 2% 0;
+    font-weight: 600;
+}
+
+.scale {
+    width: 100%;
+    display: none;
+}
+
+    .scale li {
+        padding: 0;
+        margin: 0;
+        float: left;
+        text-align: right;
+        color: #fff;
+    }
+
+#all .legend3 .legend2 {
+    margin-bottom: 0%;
+}
+
+#all .legend1 {
+    margin-bottom: 1%;
+}
+
+
+.scale1 {
+    width: 26%;
+}
+
+.scale2 {
+    width: 23.5%;
+}
+
+.scale3 {
+    width: 23%;
+}
+
+.scale4 {
+    width: 23%;
+}
+
+#nxtline, #community, #previous, #all {
+    display: none;
+}
+
+    #all .chartbg {
+        /*background: url(../../images/chart/standing/pa-all-bg.png) repeat-y;*/
+        background-size: 100% 100%;
+    }
+
+    #all .chartarea ul {
+        padding-top: 2%;
+    }
+
+    #all .chartarea li {
+        clear: inherit;
+        margin-top: 0px;
+        margin-bottom: 4%;
+        padding-bottom: 6.4%;
+    }
+
+
+        #all .chartarea li p {
+            background-size: 100% 105% !important;
+        }
+
+    #all .progressbar1 {
+        /*background: #e0b001;*/
+        margin-top: 0 !important;
+        top: 0 !important;
+        padding-top: 0;
+    }
+
+        #all .progressbar1 p {
+            background: url("../../Images/chart/standing/progressbar1.png") no-repeat scroll right center;
+            background-size: 100% 102%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+        }
+
+    #all .progressbar2 {
+        /*background: #5e5e5e;*/
+    }
+
+        #all .progressbar2 p {
+            background: url("../../Images/chart/standing/progressbar3.png") no-repeat scroll right center;
+            background-size: 100% 102%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+        }
+
+    #all .progressbar3 {
+        /*background: #767676;*/
+        height: 0;
+        padding: -0.6% 0 6% 0%;
+        left: 0;
+        position: relative;
+        clear: both;
+        overflow: hidden;
+        background: url("../../Images/new/chartAreaTeam.png") no-repeat scroll left center;
+        background-position: 100%;
+        font-size: 150%;
+        color: #fff;
+        font-weight: 500;
+        text-align: right;
+        margin-top: 0 !important;
+        top: 0 !important;
+        padding-top: 0;
+    }
+
+    /*#all .progressbar3 p {
+            background: url("../../Images/chart/standing/progressbar2all.png") no-repeat scroll right center;
+            background-size: 100% 102%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+        }*/
+
+    #all .progressbar4 {
+        /*background: #919191;*/
+        height: 0;
+        padding: -0.6% 0 6% 0%;
+        left: 0;
+        position: relative;
+        clear: both;
+        overflow: hidden;
+        background: url("../../Images/new/chartGrayArrow.png") no-repeat scroll left center;
+        background-position: 100%;
+        font-size: 150%;
+        color: #fff;
+        font-weight: 500;
+        text-align: right;
+        margin-top: 0 !important;
+        top: 0 !important;
+        padding-top: 0;
+    }
+
+    /*#all .progressbar4 p {
+            background: url("../../Images/chart/standing/progressbar4.png") no-repeat scroll right center;
+            background-size: 100% 102%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+        }*/
+
+    #all .progressbar5 {
+        /*background: #b2b0b1;*/
+        height: 0;
+        padding: -0.6% 0 6% 0%;
+        left: 0;
+        position: relative;
+        clear: both;
+        overflow: hidden;
+        background: url("../../Images/new/chartPreviousArrow.png") no-repeat scroll left center;
+        background-position: 100%;
+        font-size: 150%;
+        color: #fff;
+        font-weight: 500;
+        text-align: right;
+        margin-top: 0 !important;
+        top: 0 !important;
+        padding-top: 0;
+    }
+
+    /*#all .progressbar5 p {
+            background: url("../../Images/chart/standing/progressbar5.png") no-repeat scroll right center;
+            background-size: 100% 102%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+        }*/
+
+    #all .chartdiv {
+        padding: 1% 8% 1% 2%;
+        margin-bottom: 2%;
+    }
+
+
+.pagination {
+    color: #ffffff;
+    width: 72%;
+    float: left;
+    text-align: center;
+    padding: 5% 0;
+    display: none !important;
+}
+
+/*#region Prev Next Button Styles*/
+.slidebtn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 42%;
+}
+
+h1 {
+    color: #000 !important;
+}
+
+.poeintroPanes h1 {
+    color: #fff !important;
+}
+
+.prev, .nxt {
+    z-index: 9999;
+    position: absolute;
+    color: #E5E5E5;
+    cursor: pointer;
+    text-indent: -99999px;
+    padding-bottom: 5%;
+    text-decoration: none;
+    width: 4%;
+    display: none;
+}
+
+.prev {
+    background: url("../../../Images/images/preIcon.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    left: 0;
+}
+
+.nxt {
+    background: url("../../../Images/images/nextIcon.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    right: 0;
+}
+
+.prev:hover {
+    background: url("../../../Images/images/preIconHover.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+}
+
+.nxt:hover {
+    background: url("../../../Images/images/nextIconHover.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+}
+/*#endregion*/
+
+.scroll1 ul {
+    width: 93% !important;
+    position: absolute;
+    height: 100%;
+}
+
+.slimScrollDiv {
+    width: 106% !important;
+    height: 0 !important;
+    padding-bottom: 10px !important;
+    position: relative;
+}
+
+.scroll1 {
+    width: 106% !important;
+    height: 0 !important;
+    padding-bottom: 480px;
+    position: relative;
+}
+
+#all .legend p {
+    background: url("../../Images/select-arrow.png") no-repeat #777777 right;
+    background-size: auto 100%;
+    color: #fff;
+    padding: 1.5% 1% 2% 5%;
+    display: block;
+    cursor: pointer;
+}
+
+.legend p {
+    background: url("../../Images/select-arrow.png") no-repeat #777777 right;
+    background-size: auto 100%;
+    color: #fff;
+    padding: 1.5% 1% 2% 5%;
+    display: block;
+    cursor: pointer;
+}
+
+/**/
+.legendwn {
+    background: url("../../Images/select-arrow-up.png") no-repeat #777777 right !important;
+    background-size: auto 100% !important;
+}
+
+#all .legend ul {
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    padding: 1.5% 0 1.5% 5%;
+    background: #fff;
+    display: none;
+}
+
+.legend ul {
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    padding: 1.5% 0 1.5% 5%;
+    background: #fff;
+    display: none;
+}
+
+
+#all .legend li:first-child {
+    margin-top: 1%;
+}
+
+.legend li:first-child {
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+@media screen and (min-width: 2560px) {
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 50px 80%;
+    }
+
+    .markerholder li p {
+        height: 50px;
+        line-height: 50px;
+        width: 50px;
+    }
+
+    .markerholder li {
+        margin-left: 25px;
+    }
+
+    .indexright {
+        top: 18.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 33px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 28px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 25px;
+    }
+
+    .pageholder {
+        margin: 1.2% 1.5% 0.5% !important;
+    }
+}
+
+@media screen and (min-width: 2048px) and (max-width: 2560px) {
+    .model {
+        padding-bottom: 50% !important;
+    }
+
+    #readinessAccordion {
+        height: 600px !important;
+    }
+
+    .readinessResources .slimScrollDiv {
+        height: 600px !important;
+    }
+
+
+
+
+    #seekSherpas .slimScrollDiv {
+        height: 330px !important;
+    }
+
+    #seekSherpas #seekSherpasMentors {
+        height: 330px !important;
+    }
+
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 46px 80%;
+    }
+
+    .markerholder li p {
+        height: 46px;
+        line-height: 46px;
+        width: 46px;
+    }
+
+    .markerholder li {
+        margin-left: 23px;
+    }
+
+    .indexright {
+        top: 18.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 33px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 28px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 2048px) and (min-width: 1931px) {
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 40px 83%;
+    }
+
+    .markerholder li p {
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+    }
+
+    .markerholder li {
+        margin-left: 20px;
+    }
+
+    .indexright {
+        top: 18.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 20px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 15px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1930px) and (min-width: 1680px) {
+
+
+    .descinfo {
+        margin-top: 10px;
+    }
+
+
+    .desc2part {
+        margin-top: 10px !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 35px 40px;
+        padding: 2px 0 0 0;
+    }
+
+    .markerholder li p {
+        height: 36px;
+        line-height: 28px;
+        width: 36px;
+    }
+
+    .markerholder li {
+        margin-left: 15px;
+        padding-bottom: 39px;
+        margin-top: 7px;
+    }
+
+    .indexright {
+        top: 18.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 20px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 15px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1620px) {
+
+    .descinfo {
+        margin-top: 30px;
+    }
+
+    .desc2part {
+        margin-top: 10px !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 33px 40px;
+    }
+
+    .markerholder li p {
+        height: 32px;
+        line-height: 32px;
+        width: 32px;
+    }
+
+    .markerholder li {
+        margin-left: 13.5px;
+        padding-bottom: 42px;
+        margin-top: -1px;
+    }
+
+    .indexright {
+        top: 17%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 15px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 13px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1619px) and (min-width: 1440px) {
+    .model {
+        padding-bottom: 51% !important;
+    }
+
+    .margindown {
+        margin-top: 0 !important;
+        margin-right: 20px;
+    }
+
+    .descinfo {
+        margin-top: 20px;
+    }
+
+    .desc2part {
+        margin-top: 10px !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 30px 36px;
+        padding: 3px 0 0 0;
+    }
+
+    .markerholder li p {
+        height: 32px;
+        line-height: 25px;
+        width: 31px;
+    }
+
+    .markerholder li {
+        margin-left: 3.6%;
+        padding-bottom: 35px;
+        margin-top: 1px;
+    }
+
+    .indexright {
+        top: 18.8%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 15px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 15px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1400px) {
+    .model {
+        padding-bottom: 53% !important;
+    }
+
+    .margindown {
+        margin-top: 25px !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 25px 32px;
+    }
+
+
+    .markerholder li p {
+        height: 28px;
+        line-height: 20px;
+        width: 25px;
+    }
+
+
+    .markerholder li {
+        margin-left: 10.5px;
+        padding-bottom: 31px;
+        margin-top: 2px;
+    }
+
+    .indexright {
+        top: 18%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 15px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 10px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1370px) {
+    .model {
+        padding-bottom: 53% !important;
+    }
+
+    .margindown {
+        margin-top: 25px !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 28px 36px;
+    }
+
+    .markerholder li {
+        margin-left: 14px;
+        padding-bottom: 36px;
+        margin-top: 3px;
+    }
+
+        .markerholder li p {
+            height: 28px;
+            line-height: 28px;
+            width: 28px;
+        }
+
+    .indexright {
+        top: 14%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 16px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 11px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 1369px) and (min-width: 1280px) {
+
+    #seekSherpas .slimScrollDiv {
+        height: 160px !important;
+    }
+
+    #seekSherpas #seekSherpasMentors {
+        height: 160px !important;
+    }
+
+    .model {
+        padding-bottom: 68% !important;
+    }
+
+    .margindown {
+        margin-top: 5px !important;
+        margin-right: 20px;
+    }
+
+    .poeheaderIcon {
+        width: 20%;
+    }
+
+    .descinfo {
+        margin-top: 10px;
+    }
+
+    .desc2part {
+        margin-top: 25px !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 22px 27px;
+        padding-top: 2px;
+    }
+
+    .markerholder li p {
+        height: 26px;
+        line-height: 20px;
+        width: 22px;
+    }
+
+    .markerholder li {
+        margin-left: 12px;
+        padding-bottom: 36px;
+        margin-top: 1px;
+    }
+
+    .indexright {
+        top: 19.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p {
+        width: 13px;
+    }
+
+    #all .progressbar1 p, #all .progressbar2 p, #all .progressbar3 p, #all .progressbar4 p, #all .progressbar5 p, #all .progressbar6 p {
+        width: 8px;
+        background-size: 100% 100%;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 17px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+    .model {
+        padding-bottom: 51% !important;
+    }
+
+    .margindown {
+        margin-top: 20px !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 26px 33px;
+    }
+
+    .markerholder li {
+        margin-left: 13px;
+        padding-bottom: 33px;
+        margin-top: 2px;
+    }
+
+        .markerholder li p {
+            height: 26px;
+            line-height: 26px;
+            width: 26px;
+        }
+
+    .indexright {
+        top: 16.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p, .progressbar3 p, .progressbar4 p, .progressbar5 p, .progressbar6 p {
+        width: 10px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 17px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+    .model {
+        padding-bottom: 48% !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 22px 26px;
+    }
+
+    .markerholder li {
+        margin-left: 11px;
+        padding-bottom: 26px;
+        margin-top: 2px;
+    }
+
+        .markerholder li p {
+            height: 22px;
+            line-height: 22px;
+            width: 22px;
+        }
+
+    .indexright {
+        top: 14%;
+    }
+
+    .progressbar1 p, .progressbar2 p, .progressbar3 p, .progressbar4 p, .progressbar5 p, .progressbar6 p {
+        width: 6px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 768px) {
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 18px 21px;
+    }
+
+    .markerholder li {
+        margin-left: 9px;
+        padding-bottom: 21px;
+        margin-top: 1px;
+    }
+
+        .markerholder li p {
+            height: 18px;
+            line-height: 18px;
+            width: 18px;
+        }
+
+    .indexright {
+        top: 15%;
+    }
+
+    .progressbar1 p, .progressbar2 p, .progressbar3 p, .progressbar4 p, .progressbar5 p, .progressbar6 p {
+        width: 4px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 14px 17px;
+    }
+
+    .markerholder li {
+        margin-left: 7px;
+        padding-bottom: 17px;
+        margin-top: 5px;
+    }
+
+        .markerholder li p {
+            height: 14px;
+            line-height: 14px;
+            width: 14px;
+        }
+
+    .indexright {
+        top: 7%;
+    }
+
+    .progressbar1 p, .progressbar2 p, .progressbar3 p, .progressbar4 p, .progressbar5 p, .progressbar6 p {
+        width: 6px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 568px) {
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 12px 16px;
+    }
+
+    .markerholder li {
+        margin-left: 6px;
+        padding-bottom: 12px;
+        margin-top: 1px;
+    }
+
+        .markerholder li p {
+            height: 12px;
+            line-height: 12px !important;
+            width: 12px;
+        }
+
+    .indexright {
+        top: 11.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p, .progressbar3 p, .progressbar4 p, .progressbar5 p, .progressbar6 p {
+        width: 6px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 5px;
+    }
+}
+
+@media screen and (max-width: 568px) and (min-width: 480px) {
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 12px 16px;
+    }
+
+    .markerholder li {
+        margin-left: 6px;
+        padding-bottom: 14px;
+        margin-top: 1px;
+    }
+
+        .markerholder li p {
+            height: 12px;
+            line-height: 12px !important;
+            width: 12px;
+        }
+
+    .indexright {
+        top: 5.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p, .progressbar3 p, .progressbar4 p, .progressbar5 p, .progressbar6 p {
+        width: 4px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 400px) {
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 12px 16px;
+    }
+
+    .markerholder li {
+        margin-left: 6px;
+        padding-bottom: 14px;
+        margin-top: 1px;
+    }
+
+        .markerholder li p {
+            height: 12px;
+            line-height: 12px !important;
+            width: 12px;
+        }
+
+    .indexright {
+        top: 11.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p, .progressbar3 p, .progressbar4 p, .progressbar5 p, .progressbar6 p {
+        width: 4px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 4px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 12px 16px;
+    }
+
+    .markerholder li {
+        margin-left: 6px;
+        padding-bottom: 14px;
+        margin-top: 1px;
+    }
+
+        .markerholder li p {
+            height: 12px;
+            line-height: 12px !important;
+            width: 12px;
+        }
+
+    .indexright {
+        top: 11.5%;
+    }
+
+    .progressbar1 p, .progressbar2 p, .progressbar3 p, .progressbar4 p, .progressbar5 p, .progressbar6 p {
+        width: 3px;
+    }
+
+    .chartallbg .progressbar1 p, .chartallbg .progressbar2 p, .chartallbg .progressbar3 p, .chartallbg .progressbar4 p, .chartallbg .progressbar5 p {
+        width: 3px;
+    }
+}
+
+
+
+.pageBtn-Part a {
+    font-size: 100%;
+    color: #000 !important;
+    background: #f1f1f1;
+    width: auto;
+    padding: 4px 10px 5px 10px;
+    height: auto;
+    text-decoration: none !important;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 2px;
+    line-height: 30px;
+}
+
+.pageBtn-Part {
+    float: right;
+}
+
+.maincontent .pageBtn-Part {
+    float: right;
+    position: relative;
+    right: -16%;
+    width: 30%;
+    /*margin-right: 20PX;*/
+}
+
+.indexright .pageBtn-Part a {
+    font-size: 12px;
+    color: #000;
+    background: #f1f1f1;
+    width: auto;
+    padding: 3px 8px 5px 8px;
+    height: auto;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0;
+    cursor: pointer;
+    margin: 0 1px;
+}
+
+
+
+    .indexright .pageBtn-Part a:nth-child(2) {
+        margin-right: 0;
+    }
+
+
+.goalpagination a:first-child {
+    margin-right: -2px;
+}
+
+
+.pageBtn-Part a:hover {
+    background: #E0AF01 !important;
+}
+
+.SelectPagebtn {
+    background: #E0AF01!important;
+}
+
+.descinfo {
+    margin-left: 3%;
+}
+
+
+
+#modulecontent .pageBtn-Part a:first-child {
+    margin-right: -1px !important;
+}
+
+
+
+
+
+
+/*****************************Quickview Style***************************************************/
+
+
+
+.selected {
+    background: #e0b001 !important;
+}
+
+.frequencydiv {
+    float: left;
+    margin-left: 4.7%;
+    width: 8%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+    .frequencydiv h3 {
+        font-size: 120%;
+        font-weight: 600;
+        color: #808080;
+    }
+
+.frequency {
+    float: left;
+    width: 48%;
+    margin: 1% 2% 0 0;
+}
+
+    .frequency img {
+        float: left;
+        width: 14%;
+        margin-right: 2%;
+        margin-bottom: 8%;
+        margin-top: 8% !important;
+    }
+
+    .frequency h3 {
+        font-weight: bold;
+        margin-bottom: 1%;
+        font-size: 100%;
+    }
+
+    .frequency h4, .frequency p {
+        color: #808080;
+    }
+
+.content1 .frequencydiv .frequency {
+    width: 100%;
+    padding: 3% 0;
+    border-bottom: 1px dotted #666;
+    height: auto;
+}
+
+    .content1 .frequencydiv .frequency h4 {
+        padding: 0 0 2% 0;
+    }
+
+.content1 .frequencydiv {
+    width: 88%;
+    bottom: auto;
+}
+
+    .content1 .frequencydiv h4 {
+        font-size: 130%;
+    }
+
+    .content1 .frequencydiv img {
+        width: 18%;
+    }
+
+.slideout {
+    background: url("../../images/collapse-bg.png") repeat-x scroll center right rgb(229, 229, 229);
+    position: fixed;
+    width: 19.9%;
+    height: 100%;
+    z-index: 999;
+    top: 0px;
+    overflow: hidden;
+    left: -19.1%;
+}
+
+.slidecontent {
+    float: left;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    color: rgb(128, 128, 128);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#left {
+    float: right;
+    height: 100%;
+    width: 4.5%;
+    background: url("../../images/collapse-bg.png") no-repeat scroll center 50% #e5e5e5;
+    background-size: 100% 100% !important;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+    #left:hover {
+        background: url("../../images/collapse-bg-amper.png") no-repeat scroll center 50% #e5e5e5;
+        background-size: 100% 100% !important;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+.slidecontent1 {
+    float: right;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    color: rgb(128, 128, 128);
+    height: 100%;
+    padding: 3% 3% 2%;
+    line-height: 18px;
+    width: 92%;
+}
+
+
+slidecontent12 {
+    float: right;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    color: rgb(128, 128, 128);
+    height: 100%;
+    padding: 3% 3% 2%;
+    line-height: 18px;
+    width: 92%;
+}
+
+.slidecontentselect {
+    background: url("../../images/selected-1366.png") no-repeat scroll right top transparent;
+    background-size: 35% 35%;
+    border: 1px solid #e0b001;
+    z-index: 9999 !important;
+    position: absolute;
+    width: 98%;
+    height: 98%;
+}
+
+
+#clickmodele1hide {
+    background: url("../../Images/prev-slide.png") no-repeat scroll center center rgb(241, 241, 241);
+    width: 0.8%;
+    position: fixed;
+    height: 100%;
+    left: 19%;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele2hide {
+    background: url("../../Images/prev-slide.png") no-repeat scroll center center rgb(241, 241, 241);
+    width: 0.8%;
+    position: fixed;
+    height: 100%;
+    left: 38.5%;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele3hide {
+    background: url("../../Images/prev-slide.png") no-repeat scroll center center rgb(241, 241, 241);
+    width: 0.8%;
+    position: fixed;
+    height: 100%;
+    left: 58%;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele4hide {
+    background: url("../../Images/prev-slide.png") no-repeat scroll center center rgb(241, 241, 241);
+    width: 0.8%;
+    position: fixed;
+    height: 100%;
+    left: 77.8%;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#clickmodele1 {
+    background: url("../../Images/next-slide.png") no-repeat scroll center center rgb(241, 241, 241);
+    width: 0.8%;
+    position: fixed;
+    height: 100%;
+    left: 18%;
+    top: 0px;
+    display: none;
+    z-index: 98;
+}
+
+#snap2, #snap3, #snap4 {
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    width: 17.6%;
+    position: fixed;
+    height: 100%;
+    left: 19%;
+    top: 0px;
+    border-left: 1px solid rgb(204, 204, 204);
+    z-index: 90;
+    color: rgb(128, 128, 128);
+    display: none;
+    padding: 2.6% 1% 5% 1%;
+}
+
+.sceditor-container {
+    clear: both;
+    width: 85% !important;
+    margin: 5% !important;
+}
+
+    .sceditor-container iframe {
+        width: 90% !important;
+    }
+
+#snap2 p, #snap3 p, #snap4 p {
+    text-align: justify;
+    padding: 0 0px 5% 0px;
+}
+
+#snap3 {
+    left: 38.6%;
+}
+
+
+
+#snap4 {
+    left: 58.2%;
+}
+
+#right {
+    float: left;
+    height: 100%;
+    width: 4.2%;
+    background: url("../../images/collapse-bg.png") no-repeat scroll center 50% #e5e5e5;
+    background-size: 100% 100% !important;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+    #right:hover {
+        background: url("../../images/collapse-bg-amper.png") no-repeat scroll center 50% #e5e5e5;
+        background-size: 100% 100% !important;
+        cursor: pointer;
+    }
+
+.slidecontent1 li {
+    width: 30%;
+    height: 0;
+    padding-bottom: 31%;
+    position: relative;
+    margin: 1%;
+    float: left;
+    border: 1px solid rgb(239, 239, 239);
+}
+
+    .slidecontent1 li a {
+        cursor: pointer;
+    }
+
+    .slidecontent1 li p {
+        background: url(../../images/trans.png);
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 89%;
+        padding: 5%;
+        text-align: left;
+    }
+
+    .slidecontent1 li img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+.item-container {
+    text-align: justify;
+    overflow: hidden;
+}
+
+    .item-container h2 {
+        font-size: 160%;
+        padding-bottom: 2%;
+        margin: 5% 5% 0 5%;
+    }
+
+    .item-container img {
+        width: 100%;
+        height: auto;
+    }
+
+#primarynav {
+    position: fixed;
+    z-index: 9999;
+}
+
+.customertiles {
+    float: left;
+    width: 20%;
+}
+
+.quickview {
+    clear: both;
+    padding-top: 7%;
+}
+
+#quickviewli .contentholder, .timetakencont {
+    width: 66%;
+    margin-left: 0px;
+    float: left;
+    margin: 0.8% 1% 0% 5%;
+}
+
+#quickviewli .customertiles .takesf, .takesf {
+    width: 100% !important;
+    height: 0;
+    padding-bottom: 26%;
+    background: #808080;
+    position: relative;
+    cursor: pointer;
+}
+
+    #quickviewli .customertiles .takesf img, .takesf img {
+        width: 18%;
+        height: auto;
+        position: absolute;
+        top: 5%;
+        right: 0;
+    }
+
+    #quickviewli .customertiles .takesf p, .takesf p {
+        color: #fff;
+        position: absolute;
+        bottom: 5%;
+        left: 3%;
+        font-size: 130%;
+        font-weight: lighter;
+        width: 80%;
+    }
+
+.questions {
+    width: 700%;
+}
+
+    .questions li {
+        list-style: none;
+        width: 14%;
+        float: left;
+    }
+
+    .questions .qvlist li {
+        margin-bottom: 3%;
+    }
+
+.timetaken, .counterHour, .collan, .counterMin, .collan, .counterSec {
+    float: left;
+    padding: 0 0.1%;
+}
+
+#quickviewli .quickview .qn {
+    width: 6%;
+    height: 0;
+    padding-bottom: 7%;
+    font-size: 110%;
+    background: #e0b001;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 2%;
+}
+
+#quickviewli .quickview h2 {
+    font-size: 110%;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1em;
+    float: left;
+    padding: 0%;
+    color: #808080;
+    margin: 0 0 2% 0;
+}
+
+#quickviewli .quickview h3 {
+    font-size: 100%;
+    font-weight: normal !important;
+    font-weight: 600;
+    line-height: 1em;
+    float: left;
+    padding: 0%;
+    color: #666;
+    margin: 2% 0;
+}
+
+.nxtfb {
+    background: url("../../Images/next.png") no-repeat scroll 0% 0% / 100% 100% transparent;
+    color: rgb(229, 229, 229);
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+    text-indent: -99999px;
+    width: 14%;
+    padding-bottom: 9%;
+    display: none;
+}
+
+    .nxtfb:hover {
+        background: url("../../Images/next-hover.png") no-repeat scroll 0% 0% / 100% 100% transparent;
+    }
+
+.prevfb {
+    background: url("../../Images/previous.png") no-repeat scroll 0% 0% / 100% 100% transparent;
+    color: rgb(229, 229, 229);
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+    text-indent: -99999px;
+    width: 14%;
+    padding-bottom: 9%;
+    display: none;
+}
+
+    .prevfb:hover {
+        background: url("../../Images/prev-hover.png") no-repeat scroll 0% 0% / 100% 100% transparent;
+    }
+
+.sliderimg {
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 18%;
+    float: left;
+}
+
+    #quickviewli .sliderimg img, .sliderimg img {
+        width: 76%;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+    }
+
+.sliderdiv {
+    width: 100% !important;
+    position: relative;
+}
+
+.ui-slider-handle {
+    width: 2% !important;
+    outline: medium none;
+    background: url("../../Images/slider-handle.png") no-repeat scroll 0% 0% transparent;
+    background-size: 100% 100%;
+    height: 0;
+    padding-bottom: 11.8%;
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+    margin-left: -0.6em;
+    margin-top: -0.6%;
+}
+
+#quickviewli .ui-slider-range, .ui-slider-range {
+    background: url("../../Images/spa-sllider-top.png") no-repeat scroll 0% 0% transparent !important;
+    background-size: auto 100% !important;
+    height: 0 !important;
+    padding-bottom: 10.5%;
+    position: absolute;
+    z-index: 2;
+}
+
+.customertiles .selected {
+    background: #e0b001 !important;
+}
+
+#primarynav .quicknav {
+    width: 20%;
+    right: 8.5%;
+}
+
+#primarynav ul {
+    float: left;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    right: 1%;
+}
+
+#navigation li {
+    position: relative;
+    width: 18%;
+    padding-bottom: 12%;
+    float: left;
+    margin-right: 0%;
+    margin-bottom: 1.3%;
+}
+
+    #navigation li a {
+        float: left;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+        #navigation li a img {
+            padding: 6%;
+            width: 90%;
+            height: 80%;
+        }
+
+        #navigation li a.selected {
+            background: none repeat scroll 0% 0% rgb(224, 176, 1) !important;
+        }
+
+.tooltip {
+    background: url("../../Images/hover1-bg.png") no-repeat scroll center bottom rgb(224, 176, 1);
+    background-size: 100% 25% !important;
+    color: rgb(255, 255, 255);
+    padding: 5% 5% 25% 5%;
+    clear: both;
+    display: none;
+    position: absolute;
+    text-align: center;
+    bottom: 115%;
+    width: 372%;
+    font-size: 85%;
+    margin-left: -140%;
+}
+
+#poetraits {
+    background: url("../../Images/background-img-1920.png") no-repeat scroll center bottom transparent;
+    background-size: 100% 100%;
+    opacity: 0.7;
+}
+
+.content1, .content2, .content3, .content4, .content5 {
+    width: 100%;
+    margin: 0 5% 0 6%;
+}
+
+    .content1 strong {
+        line-height: 2em;
+    }
+
+#conektul {
+    float: left;
+    width: 8.5%;
+    right: 9.5% !important;
+}
+
+
+    #conektul li {
+        position: relative;
+        width: 36%;
+        padding-bottom: 4%;
+        float: left;
+        margin-right: 10%;
+        /*margin-bottom: 2%;*/
+    }
+
+        #conektul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 8px 6px 0 8px;
+        }
+
+            #conektul li a img {
+                width: 100%;
+                height: auto;
+            }
+
+.content3 li {
+    width: 100%;
+    background: none repeat scroll 0% 0% rgb(56, 56, 56);
+    height: 0px;
+    padding-bottom: 21%;
+    float: none;
+    margin: 1.5% 1% 1% 0px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    opacity: 0.55;
+}
+
+.content3 h1, .traitp {
+    float: left;
+    color: #fff;
+}
+
+.traitp {
+    width: 80%;
+    display: table;
+    position: absolute;
+    height: 100%;
+    left: 17%;
+    text-align: left;
+}
+
+.content3 h1 {
+    font-size: 215%;
+    width: 6%;
+    padding: 3% 4% !important;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+}
+
+.traitp p {
+    color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .traitp {
+        height: 4em;
+    }
+
+    .content3 h1 {
+        font-size: 200%;
+    }
+}
+
+.content4 li {
+    background: url("../../Images/tick.png") no-repeat scroll left top 0 transparent;
+    background-size: 8% auto !important;
+    padding: 1% 0px 1% 9% !important;
+    list-style: none;
+    margin: 4% 0;
+}
+
+.content1 .strong {
+    font-weight: 600;
+}
+
+#poeintrodiv {
+    display: none;
+}
+
+.btn {
+    background: none repeat scroll 0% 0% rgb(224, 176, 1);
+    padding: 1% 2%;
+    text-align: center;
+    border: 2px solid rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+    margin-top: 3%;
+    float: right;
+    margin-right: 23px;
+}
+
+/***********************Scroll**********************/
+
+
+#poemodule li p {
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+    color: #ffffff;
+    font-size: 130%;
+}
+
+/*.slimScrollDiv, .scroll1
+{
+    width: 105% !important;
+    height: 0!important;
+    padding-bottom: 170%!important;
+    position: relative;
+}
+
+.slimScrollDiv, .scroll3
+{
+    width: 105% !important;
+    height: 0!important;
+    padding-bottom: 170%!important;
+    position: relative;
+}*/
+
+
+.slidecontent12 .slimScrollDiv, .scroll5 {
+    width: 99% !important;
+    height: 200px;
+    padding-bottom: 0!important;
+    position: relative;
+}
+
+/*.slimScrollDiv, .scroll6
+{
+    width: 105% !important;
+    height: 0!important;
+    padding-bottom: 97%!important;
+    position: relative;
+    
+}*/
+
+
+
+/*#quickFeed5 {
+    position: absolute;
+    height: 120%;
+    width: 90%;
+    padding-bottom: 75%;
+}*/
+
+#quickFeed6 {
+    position: absolute;
+    height: 120%;
+    width: 90%;
+    padding-bottom: 75%;
+}
+
+
+.scroll3 {
+    padding-left: 15px;
+}
+
+#quickFeed {
+    position: absolute;
+    height: 120%;
+    width: 90%;
+    padding-bottom: 75%;
+}
+
+/*#quickFeed li
+    {
+        background: none repeat scroll 0 0 #808080;
+        cursor: pointer;
+        float: left;
+        margin: 0 0 3% 0;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 29%;
+    }*/
+
+
+#questionFeed {
+    position: absolute;
+    height: 120%;
+    width: 90%;
+    padding-bottom: 80%;
+}
+
+
+
+
+.contentholder .slimScrollBar {
+    right: 23% !important;
+}
+
+.contentholder .slimScrollRail {
+    right: 23% !important;
+}
+
+.feedheight {
+    padding-bottom: 57%;
+}
+
+
+
+
+
+.connectfeed .slimScrollBar {
+    left: 0px !important;
+}
+
+.connectfeed .slimScrollRail {
+    left: 0px !important;
+}
+
+
+.emptytakesf {
+    width: 100% !important;
+    height: 0;
+    padding-bottom: 26%;
+    background: #ccc;
+    position: relative;
+    cursor: pointer;
+}
+
+.connectheader {
+    padding-left: 12px;
+}
+
+.emptyTile {
+    background: #ccc!important;
+    cursor: default !important;
+}
+
+
+
+
+
+
+.excellencemenu {
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 3%;
+    width: 100%;
+    margin: 3% 0;
+}
+
+
+.addmember {
+    background: url("../../images/select-arrow.png") no-repeat scroll right 1% center / 15% 100% #575757;
+    color: #FFFFFF;
+    padding: 1% 3% 3% 5%;
+    position: relative;
+    width: 74%;
+    cursor: pointer;
+}
+
+
+    .addmember p {
+        color: #fff;
+        width: 83%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+.sendinv {
+    display: none;
+    position: absolute;
+    width: 98.2%;
+    top: 100%;
+    z-index: 5;
+    left: 0;
+}
+
+
+    .sendinv li {
+        background: #fff;
+        color: #808080;
+        width: 90%;
+        padding: 2% 2% 2% 4% !important;
+        float: left;
+        clear: both;
+        font-weight: normal;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+        .sendinv li:last-child {
+            border-bottom: 1px solid #ccc;
+        }
+
+
+.setgoalsArea {
+    float: left;
+    width: 90%;
+    height: 13vw;
+}
+
+.poeintroPane {
+    min-height: 300px;
+    margin: 3% !important;
+}
+
+
+
+    .poeintroPane img {
+        margin: 2% 0 0% 0;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+.poeQuestionArea {
+    width: 100%;
+    margin-top: 3% !important;
+    margin-left: 2% !important;
+}
+
+.poemoduleload p {
+    margin-bottom: 2%;
+}
+
+
+.questionNo {
+    background: #e0af01;
+    padding: 1% 2% 1% 2% !important;
+    color: #000 !important;
+    float: left;
+    margin: 2% !important;
+    font-weight: bold;
+}
+
+.poeQA {
+    width: 88%;
+    float: left;
+    margin-left: 2%;
+}
+
+    .poeQA p {
+        margin-bottom: 0% !important;
+    }
+
+
+
+
+
+
+
+
+.poeheaderIcon {
+    float: right;
+}
+
+
+
+.poeheaderArea h3 {
+    float: left;
+    width: 78%;
+    font-size: 115%;
+    color: #fff;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    bottom: 20%;
+    position: absolute;
+}
+
+
+.poeheaderArea {
+    border-bottom: 1px solid #fff !important;
+    width: 98%;
+    float: left;
+    position: relative;
+    margin-bottom: 2% !important;
+}
+
+.resourcesPA p {
+    padding-bottom: 5px;
+    clear: both;
+}
+
+.poeintroPane a {
+    color: #e0af01;
+    text-decoration: none;
+    margin-top: 2%;
+}
+
+    .poeintroPane a:first-child {
+        margin-top: 0px;
+    }
+
+    .poeintroPane a:hover {
+        text-decoration: underline;
+    }
+
+
+
+.slidecontent12 {
+    padding: 10% 0 0 5%;
+}
+
+
+.rightPaneText {
+    height: auto;
+    padding-bottom: 80%;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.textboxRightpane {
+    margin: 6% 0 0 1%;
+}
+
+.textboxRightpane1 {
+    margin: 17% 0 0 1%;
+}
+
+
+.selectFBtwocol {
+    border: 1px solid rgb(224, 176, 1) !important;
+    background: url("../../Images/select.png") no-repeat scroll right top/ 7% 18%;
+}
+
+
+
+
+/*******************************set Goal slider************************************/
+
+
+
+
+#quickviewli .ui-slider-range1, .ui-slider-range {
+    background: url("../../Images/feedback-slider-1920.png") no-repeat scroll 0% 0% transparent !important;
+    background-size: auto 77.5% !important;
+    height: 0 !important;
+    padding-bottom: 10.5%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/*#tenure .legend p {
+    background: url("../../Images/select-arrow.png") no-repeat #5e5e5e right;
+    background-size: auto 100%;
+    color: #fff;
+    padding: 1.5% 1% 2% 5%;
+    display: block;
+    cursor: pointer;
+}*/
+
+.legendwn {
+    background: url("../../Images/select-arrow-up.png") no-repeat #5e5e5e right !important;
+    background-size: auto 100% !important;
+}
+
+/*#tenure .legend ul {
+    border: 1px solid #ccc;
+    float: left;
+    width: 98%;
+    padding: 1.5% 0 1.5% 5%;
+    background: #fff;
+    display: none;
+}*/
+
+/*#tenure .legend li:first-child {
+    margin-top: 1%;
+}*/
+
+
+
+
+
+/*******************Goal Error Msg*************************/
+
+
+.errormsg {
+    width: 90%;
+    float: left;
+    background-size: 6% auto !important;
+    margin: 10% 0 0 0;
+    background-position: top 10% left 0 !important;
+    color: #000;
+    font-size: 12px;
+    background: url("../../Images/error.png") no-repeat left;
+    padding: 0 0 3px 30px;
+}
+
+
+    .errormsg img {
+        width: 6%;
+        height: auto;
+        margin-bottom: -1%;
+    }
+
+
+.footer {
+    z-index: 999 !important;
+}
+
+
+.slidecontentselect {
+    background: url("../../images/selected-1366.png") no-repeat scroll right top transparent;
+    background-size: 35% 35%;
+    border: 1px solid #e0b001;
+    z-index: 9999 !important;
+    position: absolute;
+    width: 98%;
+    height: 98%;
+}
+
+
+.firstid, .secondid, .thirdid, .forthid {
+    font-size: 75% !important;
+    width: 85% !important;
+    background-size: 100% auto !important;
+    height: 50% !important;
+    top: 110% !important;
+    white-space: nowrap;
+    line-height: 1.5em;
+    padding: 5px 5px;
+}
+
+.firstid, .secondid, .thirdid, .forthid {
+    position: absolute;
+    top: -28px;
+    display: none;
+    z-index: 99;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+    font-size: 11px;
+    background: url(../../Images/tooltip-arrow.png) no-repeat center top #e0b001;
+    margin: -2% 0 0 0;
+}
+
+
+.firstid {
+    left: 5%;
+}
+
+.secondid {
+    left: 5%;
+}
+
+.thirdid {
+    left: 5%;
+}
+
+
+.forthid {
+    left: 5%;
+}
+
+#share1 {
+    margin-left: 0.5% !important;
+}
+
+#share2 {
+    margin-left: 25.5%;
+}
+
+#share3 {
+    margin-left: 50.5%;
+}
+
+
+#share4 {
+    margin-left: 75.5%;
+}
+
+
+#share1, #share2, #share3, #share4, #share5 {
+    display: none;
+}
+
+
+.sharebtn {
+    background: url("../../Images/icons/share.png") no-repeat scroll right center rgba(0, 0, 0, 0) !important;
+    background-size: 100% 90% !important;
+    display: block;
+    float: right !important;
+    position: absolute !important;
+    text-indent: -5000% !important;
+    z-index: 9 !important;
+    left: 18%;
+    top: 12% !important;
+    width: 4%;
+    height: 33%;
+    cursor: pointer;
+}
+
+
+.vs-context-menu {
+    position: fixed;
+    float: left;
+    z-index: 999999;
+    display: none;
+    width: 9%;
+}
+
+
+    .vs-context-menu .slimScrollDiv {
+        border: 0.1em solid #ccc;
+        background: #fff;
+    }
+
+
+    .vs-context-menu .scroll2 {
+        padding-bottom: 95% !important;
+    }
+
+
+    .vs-context-menu .slimScrollDiv, .vs-context-menu .scroll2 {
+        position: relative;
+        width: 98%;
+        height: 0 !important;
+        padding-bottom: 100% !important;
+    }
+
+        .vs-context-menu .slimScrollDiv ul, .vs-context-menu .scroll2 ul {
+            position: absolute;
+            width: 95%;
+            height: 100%;
+        }
+
+
+    .vs-context-menu li {
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        padding: 3%;
+    }
+
+        .vs-context-menu li:hover {
+            background: #e0b001;
+            color: #fff;
+        }
+
+        .vs-context-menu li:first-child:hover {
+            background: #fff;
+            color: #000;
+        }
+
+
+.popupbg {
+    background: url(../../Images/trans.png);
+    position: fixed;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+
+.popup {
+    left: 42.5%;
+    top: 40%;
+    width: 15%;
+    height: 0;
+    padding-bottom: 10% !important;
+}
+
+
+.popup {
+    width: 300px;
+    height: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin: -50px 0 0 -100px;
+    display: none;
+}
+
+
+.popup {
+    background: url(../../images/other-popup-bg-new.png) #fff;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 2% 0;
+    position: fixed;
+    z-index: 999999999;
+    display: none;
+    color: rgb(128, 128, 128);
+    text-align: center;
+    border-left: 0.2em solid #353535;
+    border-right: 0.2em solid #353535;
+    border-bottom: 0.2em solid #353535;
+    border-top: 1.8em solid #353535;
+}
+
+.requestpopup {
+    left: 42.5%;
+    top: 40%;
+    width: 15%;
+    height: 0;
+    padding-bottom: 13% !important;
+}
+
+.requestpopup {
+    background: url(../../images/other-popup-bg.png) #fff;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 2% 0;
+    position: fixed;
+    z-index: 999999999;
+    display: block;
+    color: rgb(128, 128, 128);
+    text-align: center;
+    border-left: 0.2em solid #353535;
+    border-right: 0.2em solid #353535;
+    border-bottom: 0.2em solid #353535;
+    border-top: 1.8em solid #353535;
+    display: none;
+}
+
+
+.close {
+    float: right;
+    background: url(../../images/close.png);
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 3.5%;
+    cursor: pointer;
+    position: absolute;
+    top: -8%;
+    right: 1%;
+}
+
+
+.popup p {
+    position: absolute;
+    top: 45%;
+    width: 90%;
+    left: 5%;
+    font-size: 130%;
+}
+
+#newpopup .close {
+    top: -9.5% !important;
+    right: 2% !important;
+}
+
+#newpopup {
+    width: 12% !important;
+    padding-bottom: 10% !important;
+}
+
+    #newpopup p {
+        position: relative !important;
+        margin-bottom: 5%;
+        margin-top: -13%;
+    }
+
+    #newpopup a {
+        background: #5e5e5e;
+        border: 1px solid #373737;
+        color: #fff;
+        width: 80%;
+        text-decoration: none;
+        padding: 2% 5%;
+        float: left;
+        margin: 2% 5%;
+    }
+
+        #newpopup a:hover {
+            background: #e0b001;
+            border: 1px solid #e0b001;
+        }
+
+
+.cleartextMsg {
+    margin-bottom: 20px;
+}
+
+
+
+
+#bigpicPoeContent1 .slimScrollDiv .scroll2 table {
+    margin-left: 0% !important;
+}
+
+
+
+.patable table tr th:first-child {
+    width: 55%;
+}
+
+
+.patable table tr th:nth-child(2) {
+    width: 26%;
+}
+
+.dummy-slimscrollbar-backgound {
+    background: none !important;
+    top: 0px !important;
+}
+
+
+
+@media screen and (min-width: 2170px) and (max-width: 2600px) {
+
+    .readinessResoucesIcon p {
+        top: 44% !important;
+    }
+
+    .peersPanel {
+        width: 500% !important;
+        top: 0% !important;
+    }
+
+    .mentorsPanel {
+        width: 500% !important;
+        top: -15% !important;
+    }
+
+    .readinessResources {
+        width: 500% !important;
+        top: -124% !important;
+    }
+
+    .sticklr {
+        top: 19.3% !important;
+    }
+
+    #setContent {
+        font-size: 120% !important;
+    }
+
+    .scroll1 {
+        padding-bottom: 500px !important;
+    }
+
+    .hlpheading, .hlpcont, #papoeContentsScroll td, #papoeContentsScroll th, .content3 p, .feedbackIntro p, .mentorsPanel p, .keyActions p, .readinessResources p, .peersPanel p {
+        font-size: 120% !important;
+        line-height: 1.4 !important;
+    }
+
+        .feedbackIntro p b {
+            font-size: 105% !important;
+            line-height: 1.4;
+        }
+
+    .content3 h2, .feedbackIntro h3, .mentorsPanel h2, .keyActions h2, .readinessResources h1, .readinessResources h3, .peersPanel h2 {
+        font-size: 140% !important;
+        line-height: 1.4;
+    }
+
+    .sticklr > li > a > p {
+        font-size: 109% !important;
+    }
+
+    .dwnstatus {
+        width: 6% !important;
+        right: 3% !important;
+        top: 36.5% !important;
+        padding: 0.4% 1% 0% .6% !important;
+    }
+
+
+
+    .status {
+        top: 34% !important;
+        right: 3% !important;
+        height: 11.5%;
+        width: 6%;
+        padding: 1.3% .5% 0 .5%;
+    }
+
+    .midstatus {
+        height: 14%;
+        right: 2.6%;
+        top: 34%;
+        width: 6%;
+        padding: 1.3% 1.1% 0 0;
+    }
+
+
+    /*.markermp {
+        margin-top: 0.7% !important;
+        left: -0.6% !important;
+    }*/
+
+    .indexright .pageBtn-Part a {
+        font-size: 14px;
+    }
+
+    .patable table tr th:nth-child(2) {
+        width: 26%;
+    }
+
+    .patable table tr th:first-child {
+        width: 55%;
+    }
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+    .markerholder li {
+        padding-bottom: 61px !important;
+    }
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        width: 269px !important;
+        height: 200px !important;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 47% !important;
+    }
+
+
+    .poeheaderArea h3 {
+        padding-top: 2%;
+    }
+
+    .slidebtn {
+        bottom: -1px !important;
+    }
+
+    .legenddropdown {
+        width: 20% !important;
+    }
+
+
+    .legendTenure {
+        left: 24%;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 45px 55px !important;
+        padding: 2px 0 0 0;
+    }
+
+
+    .markerholder li p {
+        height: 36px;
+        line-height: 45px;
+        width: 48px;
+    }
+
+    .mentorsPanel p {
+        font-size: 120%;
+    }
+
+
+    .markerholder li {
+        margin-left: 19px;
+        padding-bottom: 46px;
+        margin-top: 3px;
+    }
+
+    .hlpcont {
+        font-size: 90%;
+    }
+
+
+    .slider-img {
+        margin-top: 3%;
+    }
+
+
+
+
+
+    .stand {
+        width: 20% !important;
+    }
+
+    .resourcesPA p {
+        font-size: 90%;
+    }
+
+    .managerModel {
+        padding-bottom: 59.5% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 57% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 64% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 6.7% !important;
+        margin-right: 4.5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 8% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 10.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 14%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 20%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 18%;
+    }
+
+    .selfModel .patable {
+        margin-top: 10% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 12% !important;
+    }
+
+
+        .teamModel .patable .pageBtn-Part {
+            margin-top: 12.5% !important;
+            margin-right: -1% !important;
+        }
+
+
+    .quickview {
+        padding-top: 2%;
+    }
+
+
+
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 545px !important;
+    }
+
+    #quickviewli {
+        height: 1300px !important;
+    }
+
+    .spaRight-des {
+        margin: 11% 0 4% 2%;
+    }
+
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 30px;
+    }
+
+    .modelcontent .slimScrollDiv {
+        height: 180px !important;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 8.5% 80%;
+    }
+
+
+    .coltwo {
+        width: 40%;
+    }
+
+    #tenure .legend p {
+        font-size: 80%;
+    }
+
+
+
+    .spaRight-des p {
+        font-size: 120%;
+    }
+
+    .legenddropdown ul {
+        width: 99% !important;
+    }
+
+
+    .PoeRecourceContents {
+        margin-top: -7% !important;
+    }
+}
+
+
+@media screen and (min-width: 1930px) and (max-width: 2169px) {
+
+    .breadMenu {
+        margin: 1.5% 1.5% 1% 1.5% !important;
+    }
+
+    .charttile {
+        color: #000;
+        font-weight: 400;
+        text-transform: none;
+        font-size: 14px;
+    }
+
+    .poeheaderAreatwoline h3 {
+        padding-bottom: 2% !important;
+    }
+
+    .chartholder {
+        padding-bottom: 46%;
+    }
+
+
+    .peersPanel {
+        width: 400% !important;
+        top: -500% !important;
+    }
+
+    .mentorsPanel {
+        width: 600% !important;
+        top: -11% !important;
+    }
+
+
+    .readinessResources {
+        width: 600% !important;
+        top: -121% !important;
+    }
+
+    .sticklr {
+        top: 16% !important;
+    }
+
+    #setContent {
+        font-size: 120% !important;
+    }
+
+    .scroll1 {
+        padding-bottom: 500px !important;
+    }
+
+    .hlpheading, .hlpcont, #papoeContentsScroll td, #papoeContentsScroll th, .content3 p, .feedbackIntro p, .mentorsPanel p, .keyActions p, .readinessResources p, .peersPanel p {
+        font-size: 120% !important;
+        line-height: 1.4 !important;
+    }
+
+        .feedbackIntro p b {
+            font-size: 105% !important;
+            line-height: 1.4;
+        }
+
+    .content3 h2, .feedbackIntro h3, .mentorsPanel h2, .keyActions h2, .readinessResources h1, .readinessResources h3, .peersPanel h2 {
+        font-size: 140% !important;
+        line-height: 1.4;
+    }
+
+    .sticklr > li > a > p {
+        font-size: 109% !important;
+    }
+
+    .dwnstatus {
+        width: 6% !important;
+        right: 3% !important;
+        top: 36.5% !important;
+        padding: 0.4% 1% 0% .6% !important;
+    }
+
+
+    .status {
+        top: 34% !important;
+        right: 3% !important;
+        height: 11.5%;
+        width: 6%;
+        padding: 1% .5% 0 .3%;
+    }
+
+
+    .midstatus {
+        height: 14%;
+        right: 2.6%;
+        top: 34%;
+        width: 6%;
+        padding: 1.3% 1.1% 0 0;
+    }
+
+    .managerModel {
+        padding-bottom: 68.5% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 69% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 80.5% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 6% !important;
+        margin-right: 5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 5% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 10.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 14%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 15%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21.5%;
+    }
+
+    .selfModel .patable {
+        margin-top: 10% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 19% !important;
+    }
+
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 12.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 10.5% !important;
+        margin-right: -1% !important;
+    }
+
+
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 15.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 9.5% 80%;
+    }
+
+    .markermp {
+        margin-top: -0.6% !important;
+        left: -0.6% !important;
+    }
+
+    .PoeRecourceContents {
+        margin-top: -7% !important;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 42px 50px !important;
+    }
+
+    .spaRight-des p {
+        font-size: 120%;
+    }
+
+
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        width: 269px !important;
+        height: 200px !important;
+    }
+
+
+    .poeheaderArea h3 {
+        padding-top: 2%;
+    }
+
+    .slidebtn {
+        bottom: -1px !important;
+    }
+
+    .legenddropdown {
+        width: 20% !important;
+    }
+
+
+    .legendTenure {
+        left: 23%;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 47% !important;
+    }
+
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 36px 45px;
+        padding: 2px 0 0 0;
+    }
+
+
+    .markerholder li p {
+        height: 37px;
+        line-height: 48px;
+        width: 41px;
+    }
+
+    .markerholder li {
+        margin-left: 22.2px;
+        padding-bottom: 64px;
+        margin-top: -5px !important;
+    }
+
+    .hlpcont {
+        font-size: 90%;
+    }
+
+
+    .slider-img {
+        margin-top: 3%;
+    }
+
+
+    .resourcesPA p {
+        font-size: 90%;
+    }
+
+    .quickview {
+        padding-top: 2%;
+    }
+
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 545px !important;
+    }
+
+    #quickviewli {
+        height: 1300px !important;
+    }
+
+    .spaRight-des {
+        margin: 10% 0 8% 2%;
+    }
+
+    #quickviewli .quickview .qn {
+        padding-bottom: 8%;
+    }
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 30px;
+    }
+
+    .modelcontent .slimScrollDiv {
+        height: 180px !important;
+    }
+
+    .popup {
+        padding-bottom: 12% !important;
+    }
+
+
+
+    .coltwo {
+        width: 40%;
+    }
+
+    #tenure .legend p {
+        font-size: 80%;
+    }
+
+    .legend li {
+        font-size: 100%;
+    }
+
+
+    .legenddropdown ul {
+        width: 99% !important;
+    }
+}
+
+
+@media screen and (min-width: 1690px) and (max-width: 1929px) {
+    #readinessAccordion {
+        height: 600px !important;
+    }
+
+    .readinessResources .slimScrollDiv {
+        height: 600px !important;
+    }
+
+
+
+
+    #seekSherpas .slimScrollDiv {
+        height: 295px !important;
+    }
+
+    #seekSherpas #seekSherpasMentors {
+        height: 296px !important;
+    }
+
+
+    .chartholder {
+        padding-bottom: 48%;
+    }
+
+
+
+    .sticklr {
+        top: 21.9% !important;
+    }
+
+
+    .peersPanel {
+        width: 400% !important;
+        top: -500% !important;
+    }
+
+    .mentorsPanel {
+        width: 450% !important;
+        top: -11% !important;
+    }
+
+
+    .readinessResources {
+        width: 500% !important;
+        top: -120% !important;
+    }
+
+
+
+
+    .login {
+        padding: 3% 2% 3% 0;
+    }
+
+    #setContent {
+        font-size: 120% !important;
+    }
+
+    .scroll1 {
+        padding-bottom: 500px !important;
+    }
+
+    .hlpheading, .hlpcont, #papoeContentsScroll td, #papoeContentsScroll th, .content3 p, .feedbackIntro p, .mentorsPanel p, .keyActions p, .readinessResources p, .peersPanel p {
+        font-size: 100% !important;
+        line-height: 1.5 !important;
+    }
+
+        .feedbackIntro p b {
+            font-size: 105% !important;
+            line-height: 1.4;
+        }
+
+    .content3 h2, .feedbackIntro h3, .mentorsPanel h2, .keyActions h2, .readinessResources h1, .readinessResources h3, .peersPanel h2 {
+        font-size: 140% !important;
+        line-height: 1.4;
+    }
+
+    .sticklr > li > a > p {
+        font-size: 109% !important;
+    }
+
+    .readinessResoucesIcon p {
+        padding-bottom: 11% !important;
+    }
+
+    .dwnstatus {
+        width: 6% !important;
+        right: 3% !important;
+        top: 36.5% !important;
+        padding: 0.3% 1% 0% .6% !important;
+    }
+
+    .status {
+        top: 33% !important;
+        right: 3% !important;
+        height: 11.5%;
+        width: 6%;
+        padding: 1.1% .5% 0 .5%;
+    }
+
+    .midstatus {
+        height: 14%;
+        right: 2.6%;
+        top: 34%;
+        width: 6%;
+        padding: 1.5% 1.1% 0 0;
+    }
+
+
+    .managerModel {
+        padding-bottom: 72.5% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 76% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 84.5% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 15% !important;
+        margin-right: 5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 12.5% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 23.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 20%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21.5%;
+    }
+
+    .selfModel .patable {
+        margin-top: 17% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 19% !important;
+    }
+
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 13.4% !important;
+        margin-right: -1% !important;
+    }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 14.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 20% !important;
+        margin-right: -1% !important;
+    }
+
+
+    .hlpcont {
+        font-size: 100%;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 9% 80%;
+        padding-left: 13% !important;
+    }
+
+    /*.markermp {
+        margin-top: 1.5% !important;
+        left: -0.4% !important;
+    }*/
+
+    .legendTenure {
+        left: 24%;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 47.8% !important;
+    }
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+    .slider-img {
+        margin-top: 3%;
+    }
+
+    .popup {
+        padding-bottom: 13% !important;
+    }
+
+    .resourcesPA p {
+        font-size: 90%;
+    }
+
+
+    .quickview {
+        padding-top: 2%;
+    }
+
+    .poeheaderArea h3 {
+        width: 76%;
+    }
+
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 415px !important;
+    }
+
+    #quickviewli {
+        height: 875px !important;
+    }
+
+
+
+    .modelcontent .slimScrollDiv {
+        height: 160px !important;
+    }
+
+
+    .patable .pageBtn-Part {
+        margin-top: 55px !important;
+        margin-right: -2.5% !important;
+    }
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 150px !important;
+    }
+
+    .PoeRecourceContents {
+        margin-top: -5% !important;
+    }
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1689px) {
+
+    .sticklr {
+        top: 19.9% !important;
+    }
+
+    #readinessAccordion {
+        height: 600px !important;
+    }
+
+    .readinessResources .slimScrollDiv {
+        height: 600px !important;
+    }
+
+    #seekSherpas .slimScrollDiv {
+        height: 328px !important;
+    }
+
+    #seekSherpas #seekSherpasMentors {
+        height: 333px !important;
+    }
+
+    .peersPanel {
+        width: 400% !important;
+        top: -500% !important;
+    }
+
+    .mentorsPanel {
+        width: 450% !important;
+        top: -11% !important;
+    }
+
+
+    .readinessResources {
+        width: 500% !important;
+        top: -120% !important;
+    }
+
+    .peersPanel {
+        width: 400% !important;
+        top: -500% !important;
+    }
+
+    .mentorsPanel {
+        width: 500% !important;
+        top: -10% !important;
+    }
+
+    .readinessResoucesIcon p {
+        padding-bottom: 15%;
+    }
+
+    .managerModel {
+        padding-bottom: 68.5% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 69% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 78.5% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 6% !important;
+        margin-right: 5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 5% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 10.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 14%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 15%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21.5%;
+    }
+
+    .selfModel .patable {
+        margin-top: 10% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 16% !important;
+    }
+
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 12.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 10.5% !important;
+        margin-right: -1% !important;
+    }
+
+
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 13.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .markerholder li p {
+        line-height: 34px;
+        width: 33px;
+    }
+
+    .legend p {
+        font-size: 100% !important;
+    }
+
+    .chartholder {
+        padding-bottom: 49.5% !important;
+    }
+
+    .charttile {
+        font-size: 14px;
+    }
+
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 12% 85%;
+        padding-left: 15% !important;
+    }
+
+    /*.markermp {
+        left: 0.5% !important;
+    }*/
+
+    .legendTenure {
+        left: 24%;
+    }
+
+    .charttile {
+        font-size: 14px;
+        line-height: 0.5;
+        padding-bottom: 5px;
+    }
+
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+
+    .status {
+        padding: 1% 0.6% 1% .2%;
+        height: 13%;
+        right: 2.5%;
+        top: 32%;
+        width: 6.5%;
+        font-size: 120%;
+    }
+
+    .dwnstatus {
+        padding: .2% 0.3% 1% .1%;
+        height: 13%;
+        right: 2%;
+        top: 35%;
+        font-size: 120%;
+    }
+
+    .midstatus {
+        height: 14%;
+        top: 33%;
+        padding: 1.2% 1.3% 2% 0;
+        width: 6.3%;
+        right: 2.2%;
+        font-size: 120%;
+    }
+
+
+
+    .poepaneTwo {
+        margin-bottom: 0vw !important;
+    }
+
+
+    .slidebtn {
+        bottom: 0px !important;
+    }
+
+
+    .indexright h1 {
+        margin-bottom: 0 !important;
+    }
+
+    .poeheaderArea h3 {
+        width: 75%;
+    }
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 120px !important;
+        width: 330px !important;
+    }
+
+    .poeQA p {
+        margin-bottom: 2%;
+        font-size: 95%;
+    }
+
+
+
+    #quickviewli .quickview .qn {
+        padding-bottom: 7%;
+    }
+
+    .spaRight-des .hlpcont {
+        font-size: 110%;
+    }
+
+    .popup {
+        padding-bottom: 14% !important;
+    }
+
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 245px !important;
+    }
+
+    #quickviewli {
+        height: 850px !important;
+    }
+
+
+    .quickview {
+        padding-top: 1%;
+    }
+
+    .spaRight-des {
+        margin: 15% 0 9% 2%;
+    }
+
+
+    .modelcontent .slimScrollDiv {
+        height: 155px !important;
+    }
+
+
+    .patable .pageBtn-Part {
+        margin-top: 20px !important;
+        margin-right: -1% !important;
+    }
+
+    .poeheaderArea {
+        padding: 1% 0 0% 2% !important;
+    }
+
+    .resourcesPA p {
+        font-size: 100% !important;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 48% !important;
+    }
+
+    .PoeRecourceContents {
+        margin-top: -5% !important;
+    }
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 20px;
+    }
+
+    .errormsg {
+        padding-bottom: 0px !important;
+    }
+
+    .textboxRightpane1 {
+        margin-top: 12% !important;
+    }
+}
+
+
+
+@media screen and (min-width: 1600px) and (max-width: 1679px) {
+    #readinessAccordion {
+        height: 500px !important;
+    }
+
+    .readinessResources .slimScrollDiv {
+        height: 500px !important;
+    }
+
+
+
+
+    #seekSherpas .slimScrollDiv {
+        height: 180px !important;
+    }
+
+    #seekSherpas #seekSherpasMentors {
+        height: 180px !important;
+    }
+
+    .standpracticeArea ul li {
+        background-size: 100% 100%;
+    }
+
+
+    .mentorsPanel li a p {
+        font-size: 70% !important;
+    }
+
+    .feedbackIntro p {
+        margin-bottom: 0 !important;
+        font-size: 95% !important;
+    }
+
+    .peersPanel {
+        width: 300% !important;
+        top: -500% !important;
+    }
+
+    .scroll1 {
+        padding-bottom: 60% !important;
+    }
+
+    .mentorsPanel {
+        width: 400% !important;
+        top: -9% !important;
+    }
+
+    .readinessResources {
+        width: 400% !important;
+        top: -119% !important;
+    }
+
+    .sticklr {
+        top: 20.9% !important;
+    }
+
+    .pageholder {
+        margin: 0% 1.5% 0.5% !important;
+    }
+
+    .chartholder {
+        padding-bottom: 48% !important;
+    }
+
+
+    .readinessResoucesIcon p {
+        padding-bottom: 15% !important;
+    }
+
+    .spanname {
+    }
+
+    .login {
+        padding: 3% 2% 2.4% 0;
+    }
+
+
+    .managerModel {
+        padding-bottom: 72.5% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 70% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 78.5% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 10% !important;
+        margin-right: 5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 11% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 15.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 18%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 20%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21.5%;
+    }
+
+    .selfModel .patable {
+        margin-top: 10% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 16% !important;
+    }
+
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 11% !important;
+        margin-right: -1% !important;
+    }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 11.5% !important;
+        margin-right: -1% !important;
+    }
+
+
+
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 13.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 10% 75%;
+        padding-left: 13% !important;
+        background-position: 0 2px;
+    }
+
+    /*.markermp {
+        margin-top: 0.4% !important;
+        left: -0.3% !important;
+    }*/
+
+    .legendTenure {
+        left: 24%;
+    }
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+    .legend p {
+        font-size: 12px !important;
+    }
+
+
+    .status {
+        padding: 1% 0.6% 1.3% .2%;
+        height: 12%;
+        right: 2.5%;
+        top: 34%;
+        width: 6.5%;
+    }
+
+
+
+    .dwnstatus {
+        padding: .5% 0.3% .5% .1%;
+        height: 14%;
+        right: 2%;
+        top: 35.5%;
+    }
+
+    .charttile {
+        font-size: 14px;
+        line-height: 0.5;
+        padding-bottom: 5px;
+    }
+
+
+    .midstatus {
+        height: 20%;
+        top: 31%;
+        padding: 2.8% 1.3% 2% 0;
+        width: 6.3%;
+        right: 2.2%;
+    }
+
+
+    .poepaneTwo {
+        margin-bottom: 0vw !important;
+    }
+
+
+    .indexright h1 {
+        margin-bottom: 0 !important;
+    }
+
+
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 150px !important;
+    }
+
+    .poeQA p {
+        margin-bottom: 2%;
+        font-size: 95%;
+    }
+
+
+
+
+
+
+    #quickviewli .quickview .qn {
+        padding-bottom: 7%;
+    }
+
+    .spaRight-des .hlpcont {
+        font-size: 130%;
+    }
+
+    .popup {
+        padding-bottom: 14% !important;
+    }
+
+
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 232px !important;
+    }
+
+    #quickviewli {
+        height: 700px !important;
+    }
+
+
+    .quickview {
+        padding-top: 1%;
+    }
+
+
+
+    .modelcontent .slimScrollDiv {
+        height: 140px !important;
+    }
+
+
+    .patable .pageBtn-Part {
+        margin-top: 25px !important;
+        margin-right: -1% !important;
+    }
+
+
+
+    .resourcesPA p {
+        font-size: 100% !important;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 46.2% !important;
+    }
+
+    .PoeRecourceContents {
+        margin-top: -4% !important;
+    }
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 20px;
+    }
+
+    .errormsg {
+        padding-bottom: 0px !important;
+    }
+
+    .textboxRightpane1 {
+        margin-top: 12% !important;
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+
+    .charttile {
+        font-size: 14px;
+        line-height: 0.5;
+        padding-bottom: 5px;
+    }
+
+    #seekSherpas .slimScrollDiv {
+        height: 250px !important;
+    }
+
+    #seekSherpas #seekSherpasMentors {
+        height: 252px !important;
+    }
+
+
+    #readinessAccordion {
+        height: 500px !important;
+        margin-top: 4%;
+    }
+
+
+    .readinessResources .slimScrollDiv {
+        height: 500px !important;
+    }
+
+    .standpracticeArea ul li {
+        background-size: 100% 100% !important;
+    }
+
+    .mentorsPanel {
+        width: 380% !important;
+        top: -9% !important;
+    }
+
+    .readinessResources {
+        width: 400% !important;
+        top: -119% !important;
+    }
+
+    .sticklr {
+        top: 20.8% !important;
+    }
+
+    .pageholder {
+        margin: 0% 1.5% 0.5% !important;
+    }
+
+    .chartholder {
+        padding-bottom: 48.5% !important;
+    }
+
+
+    .readinessResoucesIcon p {
+        padding-bottom: 15% !important;
+    }
+
+    .login {
+        padding: 2% 2% 2.2% 0;
+    }
+
+    .mentorsPanel li a p {
+        font-size: 70% !important;
+    }
+
+    .feedbackIntro p {
+        margin-bottom: 0 !important;
+        font-size: 95% !important;
+    }
+
+    .peersPanel {
+        width: 300% !important;
+        top: -500% !important;
+    }
+
+    .scroll1 {
+        padding-bottom: 60% !important;
+    }
+
+    .managerModel {
+        padding-bottom: 72.5% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 70% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 78.5% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 10% !important;
+        margin-right: 5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 11% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 15.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 18%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 20%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21.5%;
+    }
+
+    .selfModel .patable {
+        margin-top: 10% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 16% !important;
+    }
+
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 11% !important;
+        margin-right: -1% !important;
+    }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 11.5% !important;
+        margin-right: -1% !important;
+    }
+
+
+
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 13.5% !important;
+        margin-right: -1% !important;
+    }
+
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 12% 90%;
+        padding-left: 16% !important;
+    }
+
+    /*.markermp {
+        margin-top: 0.6% !important;
+        left: -0.6% !important;
+    }*/
+
+    .legendTenure {
+        left: 24%;
+    }
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+    .breadcrumb {
+        margin-top: 0;
+    }
+
+    .status {
+        padding: 1.3% 0.6% 1.3% .2%;
+        height: 12%;
+        right: 3%;
+        top: 34%;
+        width: 6%;
+    }
+
+    .dwnstatus {
+        padding: .5% 0.3% .5% .1%;
+        height: 12%;
+        right: 3.5%;
+        top: 37%;
+        width: 6%;
+    }
+
+    .midstatus {
+        height: 20%;
+        top: 31.5%;
+        padding: 2.7% 1.3% 2% 0;
+        width: 6.3%;
+        right: 2.2%;
+    }
+
+    .poepaneTwo {
+        margin-bottom: 0vw !important;
+    }
+
+
+    .indexright h1 {
+        margin-bottom: 0 !important;
+    }
+
+    .poeheaderArea h3 {
+        width: 75%;
+    }
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 100px !important;
+    }
+
+    .poeQA p {
+        margin-bottom: 2%;
+        font-size: 95%;
+    }
+
+    #quickviewli .quickview .qn {
+        padding-bottom: 7%;
+    }
+
+    .spaRight-des .hlpcont {
+        font-size: 110%;
+    }
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 232px !important;
+    }
+
+    #quickviewli {
+        height: 700px !important;
+    }
+
+
+    .quickview {
+        padding-top: 1%;
+    }
+
+
+
+
+    .modelcontent .slimScrollDiv {
+        height: 140px !important;
+    }
+
+
+    .patable .pageBtn-Part {
+        margin-top: 25px !important;
+        margin-right: -1% !important;
+    }
+
+    .poeheaderArea {
+        padding: 1% 0 0% 2% !important;
+    }
+
+    .resourcesPA p {
+        font-size: 100% !important;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 46.5% !important;
+    }
+
+    .PoeRecourceContents {
+        margin-top: -3% !important;
+    }
+
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 20px;
+    }
+
+    .errormsg {
+        padding-bottom: 0px !important;
+    }
+
+    .textboxRightpane1 {
+        margin-top: 12% !important;
+    }
+
+    .popup {
+        padding-bottom: 14% !important;
+    }
+}
+
+
+
+@media screen and (min-width: 1365px) and (max-width: 1439px) {
+    .pa1 h1, .pa3 h1 {
+        padding: 5px 0px 0px !important;
+    }
+
+    .charttile {
+        font-size: 12px;
+        line-height: 0.7;
+        padding-bottom: 5px;
+    }
+
+
+
+    .standpracticeArea ul li {
+        background-size: 100% 100% !important;
+    }
+
+    .mentorsPanel {
+        width: 450% !important;
+        top: -9% !important;
+    }
+
+    .readinessResources {
+        width: 400% !important;
+        top: -119% !important;
+    }
+
+    .sticklr {
+        top: 22.5% !important;
+    }
+
+    #readinessAccordion {
+        height: 400px !important;
+    }
+
+    .readinessResources .slimScrollDiv {
+        height: 420px !important;
+    }
+
+    .pageholder {
+        margin: 0% 1.5% 0 !important;
+    }
+
+    .chartholder {
+        padding-bottom: 43.5% !important;
+    }
+
+    .readinessResoucesIcon p {
+        padding-bottom: 15% !important;
+    }
+
+    .sticklr-right > li > ul:nth-child(3) {
+        right: 378px !important;
+    }
+
+    .sticklr-right > li > ul:nth-child(5) {
+        right: 704px !important;
+    }
+
+    .stand li {
+        background-size: 100% 100%;
+    }
+
+    .sticklr > li > a {
+        background-size: 50% 50% !important;
+    }
+
+    .login {
+        padding: 2% 2% 1.6% 0;
+    }
+
+    .mentorsPanel li a p {
+        font-size: 70% !important;
+    }
+
+    .feedbackIntro p {
+        margin-bottom: 0 !important;
+        font-size: 90% !important;
+    }
+
+    .peersPanel {
+        width: 400% !important;
+        top: -500% !important;
+    }
+
+    .scroll1 {
+        padding-bottom: 60% !important;
+    }
+
+    .managerModel {
+        padding-bottom: 71% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 68.5% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 76.5% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 5% !important;
+        margin-right: 5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 5% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 9.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 18%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 20%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21.5%;
+    }
+
+    .selfModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 16% !important;
+    }
+
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 8.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 11% !important;
+        margin-right: -1% !important;
+    }
+
+
+
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 12.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 10% 70%;
+        padding-left: 13% !important;
+        background-position: 0 2px;
+    }
+
+    /*.markermp {
+        margin-top: 0.4% !important;
+        left: -0.3% !important;
+    }*/
+
+    .legendTenure {
+        left: 24%;
+    }
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+    .diagram img {
+        margin-top: 0 !important;
+    }
+
+    .close {
+        padding: 2.5%;
+    }
+
+
+    .poeheaderIcon {
+        width: 20%;
+    }
+
+
+
+    .status {
+        padding: 1% 0.6% 1.3% .2%;
+        height: 12%;
+        right: 2.8%;
+        top: 33%;
+        width: 6%;
+    }
+
+    .dwnstatus {
+        padding: .1% 0.3% .5% 0%;
+        height: 12%;
+        right: 3%;
+        top: 36%;
+        width: 6%;
+    }
+
+
+    .sticklr > li > a {
+        width: 65px !important;
+    }
+
+        .sticklr > li > a > p {
+            line-height: 1.2;
+            font-size: 85% !important;
+        }
+
+
+    .midstatus {
+        height: 20%;
+        top: 30.5%;
+        padding: 2.6% 1.3% 2% 0;
+        width: 6.3%;
+        right: 2.8%;
+    }
+
+
+    .managerRating p, .keyActions p {
+        font-size: 90% !important;
+    }
+
+    .poeheaderAreatwoline h3 {
+        padding-top: 1.5% !important;
+    }
+
+    .legend p {
+        font-size: 9px;
+    }
+
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 50px !important;
+    }
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 20px;
+    }
+
+    .markerholder li {
+        margin-top: 0px;
+        padding-bottom: 29px;
+        margin-left: 9px;
+    }
+
+    .excellencemenu {
+        margin: 2% 0;
+    }
+
+    .errormsg {
+        margin-bottom: -10px;
+    }
+
+    .quickview {
+        padding-top: 3%;
+    }
+
+    .resourcesPA p {
+        padding-bottom: 0px !important;
+    }
+
+    .textboxRightpane1 {
+        margin-top: 14% !important;
+    }
+
+    .quickviewli p {
+        font-size: 10px !important;
+    }
+
+
+    .poepaneTwo {
+        height: 450px !important;
+    }
+
+    .popup {
+        padding-bottom: 14% !important;
+    }
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 198px !important;
+    }
+
+    #quickviewli {
+        height: 580px !important;
+    }
+
+    .spaRight-des {
+        margin: 12% 0 7% 2%;
+    }
+
+
+    .modelcontent .slimScrollDiv {
+        height: 115px !important;
+    }
+
+    .poemoduleload .poeheaderArea h3 {
+        padding-top: 3%;
+    }
+
+    .poeheaderArea h3 {
+        width: 72% !important;
+        padding-top: 5%;
+    }
+
+    .poeheaderArea {
+        padding: 1% 0 0% 2% !important;
+    }
+
+    .resourcesPA p {
+        font-size: 100% !important;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 47.6% !important;
+    }
+
+
+
+    .coltwo {
+        width: 36%;
+    }
+
+    .PoeRecourceContents {
+        margin-top: -3% !important;
+    }
+
+    .poeQA p {
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1360px) and (max-width: 1364px) {
+    .managerModel {
+        padding-bottom: 71% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 68.5% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 76.5% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 5% !important;
+        margin-right: 5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 5% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 9.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 18%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 20%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21.5%;
+    }
+
+    .selfModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 16% !important;
+    }
+
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 8.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 11% !important;
+        margin-right: -1% !important;
+    }
+
+
+
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 12.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 14% 100%;
+        padding-left: 17% !important;
+    }
+
+    .markermp {
+        margin-top: 0.4% !important;
+        left: -0.3% !important;
+    }
+
+    .legendTenure {
+        left: 30%;
+    }
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+    .diagram img {
+        margin-top: 0 !important;
+    }
+
+    .close {
+        padding: 2.5%;
+    }
+
+    .status {
+        padding: 2% 0.4% 1.2% .2%;
+        height: 7%;
+        right: 2%;
+        top: 32%;
+        width: 6.5%;
+    }
+
+    .poeheaderIcon {
+        width: 20%;
+    }
+
+    .dwnstatus {
+        padding: .9% 0.3% .5% .1%;
+        height: 10%;
+        right: 1%;
+        top: 35.5%;
+    }
+
+    .midstatus {
+        height: 10%;
+        top: 30.5%;
+        padding: 2.5% 1.3% 2% 0;
+        width: 6.3%;
+        right: .2%;
+    }
+
+
+    .poeheaderAreatwoline h3 {
+        padding-top: 1.5% !important;
+    }
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 140px !important;
+        width: 260px !important;
+    }
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 20px;
+    }
+
+    .markerholder li {
+        margin-top: 0px;
+        padding-bottom: 34px;
+        margin-left: 13px;
+    }
+
+    .excellencemenu {
+        margin: 2% 0;
+    }
+
+    .errormsg {
+        margin-bottom: -10px;
+    }
+
+    .quickview {
+        padding-top: 3%;
+    }
+
+    .resourcesPA p {
+        padding-bottom: 0px !important;
+    }
+
+    .textboxRightpane1 {
+        margin-top: 14% !important;
+    }
+
+    .quickviewli p {
+        font-size: 10px !important;
+    }
+
+
+    .poepaneTwo {
+        height: 450px !important;
+    }
+
+    .popup {
+        padding-bottom: 14% !important;
+    }
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 198px !important;
+    }
+
+    #quickviewli {
+        height: 580px !important;
+    }
+
+    .spaRight-des {
+        margin: 12% 0 7% 2%;
+    }
+
+
+    .modelcontent .slimScrollDiv {
+        height: 115px !important;
+    }
+
+    .poemoduleload .poeheaderArea h3 {
+        padding-top: 3%;
+    }
+
+    .poeheaderArea h3 {
+        width: 72% !important;
+        padding-top: 5%;
+    }
+
+    .poeheaderArea {
+        padding: 1% 0 0% 2% !important;
+    }
+
+    .resourcesPA p {
+        font-size: 100% !important;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 53% !important;
+    }
+
+    .dwnstatus {
+        top: 35%;
+        height: 11.5%;
+    }
+
+    .coltwo {
+        width: 36%;
+    }
+
+    .PoeRecourceContents {
+        margin-top: -3% !important;
+    }
+
+    .poeQA p {
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1359px) {
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 10% 80%;
+    }
+
+    .managerModel {
+        padding-bottom: 63% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 61% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 68.5% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 10% !important;
+        margin-right: 5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 10% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 14.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 18%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 20%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 21.5%;
+    }
+
+    .selfModel .patable {
+        margin-top: 8% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 10% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 13% !important;
+    }
+
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 8.5% !important;
+        margin-right: -1% !important;
+    }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 9% !important;
+        margin-right: -1% !important;
+    }
+
+
+
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 11.5% !important;
+        margin-right: -1% !important;
+    }
+
+
+    .popup {
+        padding-bottom: 14% !important;
+    }
+
+    .PoeRecourceContents {
+        margin-top: -2% !important;
+    }
+
+    .patable table tr th:first-child {
+        width: 60%;
+    }
+
+    .close {
+        padding: 2.5%;
+    }
+
+    .patable table tr th:nth-child(2) {
+        width: 23%;
+    }
+
+    .poeheaderAreatwoline h3 {
+        padding-top: 1.5%;
+    }
+
+    .status {
+        padding: 2% 0.3% .5% .2%;
+        height: 7%;
+        right: 1.5%;
+        top: 32.5%;
+    }
+
+    .poemoduleload .poeheaderArea h3 {
+        padding-top: 3%;
+    }
+
+    .dwnstatus {
+        padding: .9% 0.3% .5% .1%;
+        height: 10%;
+        right: 1%;
+        top: 35.5%;
+    }
+
+
+    .midstatus {
+        height: 10%;
+        top: 28.5%;
+        padding: 4% 1.3% 2% 0;
+        width: 5.3%;
+    }
+
+
+
+    #modulecontent .pageBtn-Part a {
+        padding: 4px 8px 4px 8px;
+    }
+
+    #maincontent .pageBtn-Part a {
+        padding: 4px 8px 4px 8px;
+    }
+
+
+    .poepaneTwo {
+        margin-bottom: -2.5vw;
+    }
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 140px !important;
+        width: 255px !important;
+    }
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 20px;
+    }
+
+    .markerholder li {
+        margin-top: -3px;
+        padding-bottom: 35px;
+        margin-left: 14px;
+    }
+
+    .excellencemenu {
+        margin: 2% 0;
+    }
+
+    .errormsg {
+        margin-bottom: -10px;
+    }
+
+    .quickview {
+        padding-top: 3%;
+    }
+
+    .resourcesPA p {
+        padding-bottom: 0px !important;
+    }
+
+    .textboxRightpane1 {
+        margin-top: 14% !important;
+    }
+
+
+    .quickviewli p {
+        font-size: 10px !important;
+    }
+
+
+
+
+    .poepaneTwo {
+        height: 470px !important;
+    }
+
+
+
+
+    .slidecontent1 li p {
+        width: 89%;
+    }
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 185px !important;
+    }
+
+    #quickviewli {
+        height: 540px !important;
+    }
+
+    .poeheaderAreatwoline h3 {
+        padding-top: 2% !important;
+    }
+
+
+    .indexright .pageBtn-Part a {
+        padding: 3px 6px 3px 6px;
+    }
+
+    .modelcontent .slimScrollDiv {
+        height: 95px !important;
+    }
+
+    .poeheaderArea h3 {
+        width: 70% !important;
+    }
+
+    .poeheaderArea {
+        padding: 1% 0 0% 2% !important;
+    }
+
+    .resourcesPA p {
+        font-size: 100% !important;
+    }
+
+    .poeheaderArea h3 {
+        font-size: 120%;
+        padding-top: 5%;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 53% !important;
+    }
+
+
+    .coltwo {
+        width: 36%;
+    }
+
+
+    .poeQA p {
+        font-size: 10px;
+    }
+}
+
+
+
+
+.legenddropdown {
+    width: 25% !important;
+}
+
+
+    .legenddropdown li {
+        background: #fff;
+        padding: 1% 4%!important;
+        margin-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+
+        .legenddropdown li:hover {
+            background: #e0b001;
+            color: #fff;
+        }
+
+
+    .legenddropdown ul {
+        padding: 0% !important;
+        margin: 0% !important;
+        width: 98%;
+    }
+
+
+.standingNav4 img {
+    padding: 9% 6% !important;
+}
+
+.standingNav2 img {
+    width: 100% !important;
+    padding: 6% 0% !important;
+}
+
+
+.diagram img {
+    width: 93% !important;
+    margin-left: 5% !important;
+    margin-top: 5%;
+}
+
+.poetitleArea p {
+    padding-bottom: 2% !important;
+}
+
+
+.poeQA p {
+    text-align: left;
+}
+
+.slidecontent12 h1 {
+    margin: 0 1%;
+}
+
+
+.slidecontent12 p {
+    margin: 0 1% 2% 1%;
+    width: 93%;
+    text-align: justify;
+}
+
+
+.navhidepa li:first-child {
+    margin-left: 15% !important;
+}
+
+
+.setgoalsArea label {
+    font-size: 80%;
+    padding: 1% 2% 2% 2%;
+    width: auto;
+    background: #666;
+    color: #fff;
+}
+
+.slider-img {
+    margin-top: 8%;
+}
+
+.setgoalContent h2 {
+    margin: 0;
+}
+
+
+
+
+
+.setgoalContent {
+    margin-top: 1vw !important;
+}
+
+
+.slidebtn {
+    bottom: -1px;
+}
+
+
+.poepaneTwo {
+    padding-top: 0.6vw;
+    margin-bottom: -0.5vw;
+}
+
+.sceditor-container iframe, .sceditor-container textarea {
+    width: 97% !important;
+}
+
+
+
+.poeheaderIcon img {
+    width: 80%;
+    height: auto;
+}
+
+
+.patable {
+    margin-top: 4%;
+}
+
+
+
+
+
+.resourcesPA poeheaderArea h3 {
+    padding: 0.5% 0 2% 2%;
+}
+
+
+.poeheaderAreatwoline h3 {
+    padding-top: 0.5%;
+    width: 70%;
+    padding-bottom: 2%;
+}
+
+
+.spaRight-des h1 {
+    font-size: 150%;
+}
+
+
+.patable h1 {
+    font-size: 22px;
+}
+
+.spaRight-des p {
+    font-size: 130%;
+}
+
+
+
+.setgoalContent p {
+    margin-bottom: 10%;
+}
+
+
+#quickviewli .quickview h3 span {
+    font-style: italic;
+    font-size: 80%;
+}
+
+.poeQA p b {
+    font-weight: normal !important;
+    color: #ccc;
+}
+
+
+/*
+.navhidepa {
+
+    right:2.5% !important;
+} 
+
+.connecthidpa {
+
+    margin-right:-6% !important;
+}
+
+    */
+
+
+.navhidepa li:first-child {
+    margin-left: 39% !important;
+}
+
+.connecthidpa li {
+    float: right !important;
+    width: 82% !important;
+    padding-bottom: 6% !important;
+}
+
+.connecthidpa {
+    width: 4% !important;
+}
+
+.share-block .sharebtn {
+    background: url("../../Images/icons/share2.png") no-repeat left center !important;
+    background-size: 100% 70% !important;
+    display: block;
+    float: left !important;
+    position: relative !important;
+    text-indent: -5000% !important;
+    z-index: 99999 !important;
+    left: inherit !important;
+    top: inherit !important;
+    width: 3.5%;
+    height: 1.5%;
+    cursor: pointer;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+
+
+
+    .share-block .sharebtn:after {
+        content: "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+    }
+
+.share-block a {
+    float: left;
+    width: auto;
+    padding-bottom: 3%;
+}
+
+.share-block {
+    clear: both;
+}
+
+
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #navigation li a img {
+        height: 3.7%;
+    }
+
+
+    .status {
+        background: url("../../Images/new/status-up.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left top;
+        background-size: 100% 100%;
+        background-color: transparent;
+    }
+}
+
+
+
+.communitytile {
+    background: url(../../Images/icons/iconCommunity.png)no-repeat top right rgba(0, 0, 0, .8);
+}
+
+
+
+.selectcommunity {
+    background: url(../../Images/new/iconCommunityHover.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+    .selectcommunity p {
+        color: #e0b001 !important;
+    }
+
+
+
+.areaTeamtile {
+    background: url(../../Images/icons/iconTeam.png)no-repeat top right rgba(0, 0, 0, .8);
+}
+
+
+.selectAreaTeam {
+    background: url(../../Images/new/iconTeamHover.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+    .selectAreaTeam p {
+        color: #e0b001 !important;
+    }
+
+
+.pathfinderstile {
+    background: url(../../Images/icons/mentor_icon.png)no-repeat top right rgba(0, 0, 0, .8);
+}
+
+
+
+.selectpathfinders {
+    background: url(../../Images/icons/mentor_icon_h.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+    .selectpathfinders p {
+        color: #e0b001 !important;
+    }
+
+
+
+.tenuretile {
+    background: url(../../Images/icons/iconTenure.png)no-repeat top right rgba(0, 0, 0, .8);
+}
+
+
+
+.selectTenure {
+    background: url(../../Images/new/iconTenureHover.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+    .selectTenure p {
+        color: #e0b001 !important;
+    }
+
+
+.previoustile {
+    background: url(../../Images/icons/iconPrevious.png)no-repeat top right rgba(0, 0, 0, .8);
+}
+
+
+
+.selectPrevious {
+    background: url(../../Images/new/iconPreviousHover.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+    .selectPrevious p {
+        color: #e0b001 !important;
+    }
+
+
+
+.alltile {
+    background: url(../../Images/icons/iconAll.png)no-repeat top right rgba(0, 0, 0, .8);
+}
+
+
+
+
+.selectAll {
+    background: url(../../Images/new/IconAllHover.png)no-repeat top right rgba(0, 0, 0, 1);
+}
+
+    .selectAll p {
+        color: #e0b001 !important;
+    }
+
+
+
+
+
+
+
+/*************************************************************/
+
+.sticklr .notification-count {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #555;
+    color: #f0f0f0;
+    cursor: default;
+    font-size: 10px;
+    line-height: 12px;
+    text-indent: 3px;
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    z-index: 96;
+}
+
+
+
+#sticky {
+    position: absolute;
+    /*z-index: 9999999999;*/
+}
+
+.sticklr,
+.sticklr * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ccc;
+    vertical-align: baseline;
+}
+
+    .sticklr,
+    .sticklr > li > ul {
+        list-style-type: none;
+    }
+
+.sticklr {
+    top: 12.6%;
+    position: fixed;
+    left: 0;
+    background-color: #000;
+    border-left: none;
+    width: auto;
+    overflow: visible;
+    z-index: 90;
+    padding: .5% 0 .3% 0;
+}
+
+.sticklr-right {
+    left: auto;
+    right: 0;
+}
+
+
+.sticklr > li > a {
+}
+
+.sticklr > li > a {
+    display: block;
+    width: 80px;
+    height: 0;
+    padding: 4px;
+    background-color: #000;
+    background-position: top 5% center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 100%;
+    background-size: 50% 50%;
+}
+
+    .sticklr > li > a > p {
+        bottom: 0;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        width: 90%;
+        font-size: 100%;
+    }
+
+
+.sticklr > li:hover a p {
+    color: #e0b001;
+}
+
+.sticklr > li {
+    position: relative;
+    float: none;
+    width: auto;
+    margin: 0;
+}
+
+    .sticklr > li:first-child {
+        margin: 0 0 10% 0;
+    }
+
+
+    .sticklr > li:first-child {
+    }
+
+    .sticklr > li:last-child {
+    }
+
+    /*.sticklr > li > a:hover {
+    background-color: #eaeaea;
+}*/
+
+    .sticklr > li > ul {
+        display: none;
+        position: absolute;
+        left: 25px;
+        top: -2px;
+        width: 180px;
+        overflow: hidden;
+        background-color: #000;
+        background-color: rgba(240, 240, 240, 0.75);
+        z-index: 95;
+    }
+
+.sticklr-right > li > ul {
+    left: auto;
+    right: 80%;
+}
+
+.sticklr > li > ul:nth-child(3) {
+    left: 206px;
+}
+
+.sticklr > li > ul:nth-child(4) {
+    left: 387px;
+}
+
+.sticklr > li > ul:nth-child(5) {
+    left: 568px;
+}
+
+.sticklr > li > ul:nth-child(6) {
+    left: 749px;
+}
+
+.sticklr > li > ul:nth-child(7) {
+    left: 930px;
+}
+
+.sticklr-right > li > ul:nth-child(3) {
+    left: auto;
+    right: 465px;
+}
+
+.sticklr-right > li > ul:nth-child(4) {
+    left: auto;
+    right: 387px;
+}
+
+.sticklr-right > li > ul:nth-child(5) {
+    left: auto;
+    right: 867px;
+}
+
+.sticklr-right > li > ul:nth-child(6) {
+    left: auto;
+    right: 749px;
+}
+
+.sticklr-right > li > ul:nth-child(7) {
+    left: auto;
+    right: 930px;
+}
+
+.sticklr > li:hover > ul {
+    display: block;
+    float: left;
+}
+
+.sticklr.sticklr-js > li:hover > ul {
+    display: none;
+}
+
+.sticklr > li > ul > li {
+}
+
+    .sticklr > li > ul > li:first-child {
+        /*border-top: 1px solid #f7f7f7;*/
+    }
+
+    .sticklr > li > ul > li:last-child {
+        /*border-bottom: 1px solid #f7f7f7;*/
+    }
+
+.sticklr > li > ul > li {
+    border: none !ie;
+}
+
+    .sticklr > li > ul > li > a {
+        display: block;
+        padding: 8px 10px 8px 32px;
+        background-color: #f0f0f0;
+        background-color: rgba(240, 240, 240, 0.75);
+        background-position: 10px;
+        background-repeat: no-repeat;
+        color: #555;
+        min-height: 20px;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent !ie;
+    }
+
+        .sticklr > li > ul > li > a:hover {
+            background-color: #eaeaea;
+        }
+
+    .sticklr > li > ul > li.sticklr-title > a {
+        padding-left: 10px;
+        background-color: #e6e6e6;
+        cursor: default;
+        font-weight: bold;
+        background-color: transparent !ie;
+    }
+
+        .sticklr > li > ul > li.sticklr-title > a:hover {
+            background-color: #e6e6e6;
+            background-color: transparent !ie;
+        }
+
+    .sticklr > li > ul > li > table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .sticklr > li > ul > li > form {
+        padding: 8px 10px;
+    }
+
+    .sticklr > li > ul > li input,
+    .sticklr > li > ul > li select,
+    .sticklr > li > ul > li textarea,
+    .sticklr > li > ul > li button {
+        margin: 4px 0;
+        padding: 4px;
+    }
+
+        .sticklr > li > ul > li input[type="text"],
+        .sticklr > li > ul > li input[type="password"],
+        .sticklr > li > ul > li textarea {
+            min-width: 150px;
+            width: auto;
+        }
+
+        .sticklr > li > ul > li input[type="submit"] {
+            background-color: #f0f0f0;
+        }
+
+.sticklr-arrow {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #e0b001;
+    border-right: none;
+    z-index: 999999;
+}
+
+.sticklr-right .sticklr-arrow {
+    left: auto;
+    right: 100%;
+    border-right: 15px solid #e0b001;
+    border-left: none;
+}
+
+
+/* icons */
+
+.icon-zoom {
+    background-image: url('img/pc.de/icon-tratis.png');
+}
+
+.standPAIcon {
+    background-image: url('../../Images/new/standInfoIcon.png');
+}
+
+
+    .standPAIcon:hover {
+        background-image: url('../../Images/new/standInfoIconHover.png');
+    }
+
+.selectstandPAIcon {
+    background-image: url('../../Images/new/standInfoIconHover.png') !important;
+}
+
+
+    .selectstandPAIcon p {
+        color: #e0b001 !important;
+    }
+
+
+
+
+
+
+
+.repIcon {
+    background-image: url('../../Images/images/feedback/icon-tratis.png');
+}
+
+    .repIcon p {
+        padding-bottom: 10px;
+    }
+
+    .repIcon:hover {
+        background-image: url('../../Images/images/feedback/icon-tratis-hover.png');
+    }
+
+
+.selectrepIcon {
+    background-image: url('../../Images/images/feedback/icon-tratis-hover.png') !important;
+}
+
+
+    .selectrepIcon p {
+        color: #e0b001 !important;
+    }
+
+.mentorIcon {
+    background-image: url('../../Images/new/mentor_icon.png');
+}
+
+
+    .mentorIcon:hover {
+        background-image: url('../../Images/new/mentor_iconH.png');
+    }
+
+.selectmentorIcon {
+    background-image: url('../../Images/new/mentor_iconH.png');
+}
+
+    .selectmentorIcon p {
+        color: #e0b001 !important;
+    }
+
+
+.setGoalIcon {
+    background-image: url('../../Images/new/settrackGoal.png');
+}
+
+
+    .setGoalIcon:hover {
+        background-image: url('../../Images/new/settrackGoalHover.png');
+    }
+
+    .setGoalIcon p {
+        bottom: 4% !important;
+    }
+
+
+.selectsetGoalIcon {
+    background-image: url('../../Images/new/settrackGoalHover.png') !important;
+}
+
+    .selectsetGoalIcon p {
+        bottom: 4% !important;
+        color: #e0b001 !important;
+    }
+
+
+
+.readinessResoucesIcon {
+    background-image: url('../../Images/new/readinessResoucres.png');
+}
+
+
+    .readinessResoucesIcon:hover {
+        background-image: url('../../Images/new/readinessResoucresHover.png');
+    }
+
+.selectreadinessResoucesIcon {
+    background-image: url('../../Images/new/readinessResoucresHover.png') !important;
+}
+
+    .selectreadinessResoucesIcon p {
+        color: #e0b001 !important;
+    }
+
+
+.connectPeersIcon {
+    background-image: url('../../Images/new/connectwithpeers.png');
+}
+
+    .connectPeersIcon p {
+        bottom: 4% !important;
+    }
+
+
+
+    .connectPeersIcon:hover {
+        background-image: url('../../Images/new/connectwithpeersHover.png');
+    }
+
+.selectconnectPeersIcon {
+    background-image: url('../../Images/new/connectwithpeersHover.png') !important;
+}
+
+    .selectconnectPeersIcon p {
+        bottom: 4% !important;
+        color: #e0b001 !important;
+    }
+
+
+
+
+#poetraits {
+    background: rgba(0, 0, 0, 1);
+    background-size: 100% 100%;
+    opacity: 0.7;
+    width: 500%;
+}
+
+.content3 li {
+    width: 100%;
+    background: none repeat scroll 0% 0% rgb(0, 0, 0);
+    height: 0px;
+    padding-bottom: 19%;
+    float: none;
+    margin: 0%;
+    color: rgb(255, 255, 255);
+    position: relative;
+    opacity: 0.9;
+}
+
+.content3 h1 {
+    font-size: 215%;
+    width: 6%;
+    padding: 6% 4% !important;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+}
+
+.traitp {
+    width: 80%;
+    display: table;
+    position: absolute;
+    height: 100%;
+    left: 17%;
+    text-align: left;
+}
+
+    .traitp p {
+        color: #ccc;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.feedbackIntro {
+    width: 500% !important;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+    top: -100% !important;
+}
+
+    .feedbackIntro img {
+        width: 92%;
+        margin: 4%;
+        height: auto;
+    }
+
+    .feedbackIntro p {
+        font-size: 100%;
+        width: 92%;
+        margin: 0 4% 4% 4%;
+        height: auto;
+        color: #ccc;
+        line-height: 1.5;
+    }
+
+
+
+.practiceAreaIntro {
+    width: 500% !important;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+    top: -200% !important;
+}
+
+    .practiceAreaIntro img {
+        width: 92%;
+        margin: 4%;
+        height: auto;
+    }
+
+    .practiceAreaIntro p {
+        font-size: 100%;
+        width: 92%;
+        margin: 4%;
+        height: auto;
+        color: #ccc;
+        line-height: 1.5;
+    }
+
+
+
+.whatIsRate {
+    width: 400% !important;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+    top: -520% !important;
+}
+
+    .whatIsRate img {
+        width: 92%;
+        margin: 4%;
+        height: auto;
+    }
+
+    .whatIsRate p {
+        font-size: 100%;
+        width: 92%;
+        margin: 4%;
+        height: auto;
+        color: #ccc;
+        line-height: 1.5;
+    }
+
+
+
+    .whatIsRate h2 {
+        font-size: 150% !important;
+        width: 72%;
+        margin: 4% !important;
+        height: auto;
+        color: #fff !important;
+        line-height: 1.5;
+        float: left;
+    }
+
+    .whatIsRate img {
+        float: left;
+        width: 12%;
+        height: 30px;
+    }
+
+.practiceAreaTitle {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3%;
+}
+
+    .practiceAreaTitle h2 {
+        font-size: 150% !important;
+        width: 72%;
+        margin: 4% !important;
+        height: auto;
+        color: #fff !important;
+        line-height: 1.5;
+        float: left;
+    }
+
+    .practiceAreaTitle img {
+        float: left;
+        width: 12%;
+        height: 30px;
+    }
+
+
+
+.keyActions {
+    width: 850% !important;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+    top: -300% !important;
+}
+
+/*.keyActions img {
+        width: 92%;
+        margin: 4%;
+        height: auto;
+    }
+
+    .keyActions p {
+        font-size: 100%;
+        width: 92%;
+        margin: 4%;
+        height: auto;
+        color: #fff;
+        line-height: 1.5;
+    }
+
+
+    .keyActions h2 {
+        border-bottom: 1px solid #fff;
+        font-size: 150% !important;
+        width: 92%;
+        margin: 4% !important;
+        height: auto;
+        color: #fff !important;
+        line-height: 1.5;
+        background-size: 13% 100%;
+    }
+
+    .keyActions ul li {
+        background: url("../../Images/tick.png") no-repeat scroll left top 0 transparent;
+        background-size: 8% auto !important;
+        padding: 1% 0px 1% 9% !important;
+        list-style: none;
+        margin: 4%;
+        width: 90% !important;
+        color: #ccc;
+    }
+
+    .keyActions li {
+        width: 100% !important;
+    }*/
+
+
+.resourcesPA:nth-child(2), .resourcesPA:nth-child(3), .resourcesPA:nth-child(4) {
+    position: relative !important;
+    margin-top: 0% !important;
+}
+
+.readinessResources {
+    width: 400%;
+    top: -400%;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+    padding-bottom: 15%;
+}
+
+.frequency {
+    float: left;
+    width: 100%;
+    margin: 1% 2% 0 0;
+}
+
+.readinessResources p {
+    font-size: 100%;
+    width: 100%;
+    height: auto;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.readinessResources h1 {
+    font-size: 130%;
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 0% 0% 2% 0%;
+    height: auto;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+.dosdonts {
+    width: 400% !important;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+    top: -280% !important;
+}
+
+
+    .dosdonts li {
+        width: 100% !important;
+    }
+
+    .dosdonts p {
+        font-size: 100%;
+        width: 92%;
+        margin: 4%;
+        height: auto;
+        color: #ccc;
+        line-height: 1.5;
+    }
+
+        .dosdonts p b {
+            color: #fff;
+            font-size: 110%;
+        }
+
+.sceditor-container textarea {
+    width: 95%;
+}
+
+
+.mentorsPanel li a p {
+    color: #fff !important;
+}
+
+
+.mentorsPanel {
+    width: 400%;
+    top: -200%;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+}
+
+    .mentorsPanel p {
+        color: #ccc;
+        padding-bottom: 4%;
+        line-height: 1.4;
+    }
+
+
+    .mentorsPanel h2 {
+        color: #fff;
+        padding-bottom: 2%;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 2%;
+        width: 100%;
+        font-size: 130%;
+    }
+
+
+.peersPanel {
+    width: 400%;
+    top: -500%;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+}
+
+    .peersPanel p {
+        color: #ccc;
+        padding-bottom: 4%;
+    }
+
+
+    .peersPanel h2 {
+        color: #fff;
+        padding-bottom: 2%;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 2%;
+        width: 100%;
+        font-size: 130%;
+    }
+
+    .peersPanel li a p {
+        color: #fff !important;
+    }
+
+
+
+    .peersPanel li {
+        width: 100% !important;
+    }
+
+    .peersPanel ul {
+        margin: 4%;
+    }
+
+        .peersPanel ul li {
+            width: 31% !important;
+            height: 0;
+            padding-bottom: 29%;
+            position: relative;
+            margin: 1%;
+            float: left;
+            border: 1px solid rgb(239, 239, 239);
+        }
+
+            .peersPanel ul li img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            .peersPanel ul li p {
+                background: url(../../images/trans.png);
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 5%;
+            }
+
+
+.addnotes {
+    width: 400% !important;
+    margin: 0 5% 0 5%;
+    background: rgba(0, 0, 0, 1) !important;
+    top: -575% !important;
+}
+
+
+    .addnotes li {
+        width: 100% !important;
+    }
+
+    .addnotes ul {
+        margin: 4%;
+    }
+
+        .addnotes ul li {
+            width: 31% !important;
+            height: 0;
+            padding-bottom: 29%;
+            position: relative;
+            margin: 1%;
+            float: left;
+            border: 1px solid rgb(239, 239, 239);
+        }
+
+            .addnotes ul li img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            .addnotes ul li p {
+                background: url(../../images/trans.png);
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 5%;
+            }
+
+
+.readinessResources .slimScrollDiv {
+    width: 100% !important;
+    height: 450px;
+    position: relative;
+    margin-top: 4%;
+}
+
+.mentorsPanel li {
+    width: 100% !important;
+}
+
+.mentorsPanel ul {
+    margin: 4%;
+}
+
+    .mentorsPanel ul li {
+        cursor: pointer;
+        width: 31% !important;
+        height: 0;
+        padding-bottom: 29%;
+        position: relative;
+        margin: 1%;
+        float: left;
+        border: 1px solid rgb(239, 239, 239);
+    }
+
+        .mentorsPanel ul li img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .mentorsPanel ul li p {
+            background: url(../../images/trans.png);
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 5%;
+            line-height: 1.2 !important;
+        }
+
+.clr {
+    clear: both;
+}
+
+
+table {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+
+.send {
+    background: #e0b001;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 2% 3%;
+    float: right;
+    margin: 0 9% 4% 0;
+}
+
+    .send:hover {
+        background: #000;
+        color: #e0b001;
+        border: 1px solid #e0b001;
+    }
+
+
+.managerFeedbackArea {
+    border: 1px solid #ccc;
+    width: 97%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************** Accordin *****************************************************/
+
+
+----------------------------------*/ .ui-helper-hidden {
+    display: none;
+}
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+}
+
+.ui-helper-clearfix:after {
+    clear: both;
+}
+
+.ui-helper-clearfix {
+    min-height: 0; /* support: IE7 */
+}
+
+.ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0); /* support: IE8 */
+}
+
+.ui-front {
+    z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+    cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+    min-height: 0; /* support: IE7 */
+    font-size: 120%;
+}
+
+.ui-accordion .ui-accordion-icons {
+}
+
+    .ui-accordion .ui-accordion-icons .ui-accordion-icons {
+    }
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    position: absolute;
+    left: .5em;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 2%;
+    border-top: 0;
+    overflow: auto;
+    height: 100% !important;
+    background: #000;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+.ui-button {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    line-height: normal;
+    margin-right: .1em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    overflow: visible; /* removes extra width in IE */
+}
+
+    .ui-button,
+    .ui-button:link,
+    .ui-button:visited,
+    .ui-button:hover,
+    .ui-button:active {
+        text-decoration: none;
+    }
+/* to make room for the icon, a width needs to be set here */
+.ui-button-icon-only {
+    width: 2.2em;
+}
+/* button elements seem to need a little more width */
+button.ui-button-icon-only {
+    width: 2.4em;
+}
+
+.ui-button-icons-only {
+    width: 3.4em;
+}
+
+button.ui-button-icons-only {
+    width: 3.7em;
+}
+
+/* button text element */
+.ui-button .ui-button-text {
+    display: block;
+    line-height: normal;
+}
+
+.ui-button-text-only .ui-button-text {
+    padding: .4em 1em;
+}
+
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+    padding: .4em;
+    text-indent: -9999999px;
+}
+
+.ui-button-text-icon-primary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+    padding: .4em 1em .4em 2.1em;
+}
+
+.ui-button-text-icon-secondary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+    padding: .4em 2.1em .4em 1em;
+}
+
+.ui-button-text-icons .ui-button-text {
+    padding-left: 2.1em;
+    padding-right: 2.1em;
+}
+/* no icon support for input elements, provide padding by default */
+input.ui-button {
+    padding: .4em 1em;
+}
+
+/* button icon element(s) */
+.ui-button-icon-only .ui-icon,
+.ui-button-text-icon-primary .ui-icon,
+.ui-button-text-icon-secondary .ui-icon,
+.ui-button-text-icons .ui-icon,
+.ui-button-icons-only .ui-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.ui-button-icon-only .ui-icon {
+    left: 50%;
+    margin-left: -8px;
+}
+
+.ui-button-text-icon-primary .ui-button-icon-primary,
+.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-icons-only .ui-button-icon-primary {
+    left: .5em;
+}
+
+.ui-button-text-icon-secondary .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+    right: .5em;
+}
+
+/* button sets */
+.ui-buttonset {
+    margin-right: 7px;
+}
+
+    .ui-buttonset .ui-button {
+        margin-left: 0;
+        margin-right: -.3em;
+    }
+
+/* workarounds */
+/* reset extra padding in Firefox, see h5bp.com/l */
+input.ui-button::-moz-focus-inner,
+button.ui-button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+
+.ui-dialog {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .2em;
+    outline: 0;
+}
+
+    .ui-dialog .ui-dialog-titlebar {
+        padding: .4em 1em;
+        position: relative;
+    }
+
+    .ui-dialog .ui-dialog-title {
+        float: left;
+        margin: .1em 0;
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .ui-dialog .ui-dialog-titlebar-close {
+        position: absolute;
+        right: .3em;
+        top: 50%;
+        width: 20px;
+        margin: -10px 0 0 0;
+        padding: 1px;
+        height: 20px;
+    }
+
+    .ui-dialog .ui-dialog-content {
+        position: relative;
+        border: 0;
+        padding: .5em 1em;
+        background: none;
+        overflow: auto;
+    }
+
+    .ui-dialog .ui-dialog-buttonpane {
+        text-align: left;
+        border-width: 1px 0 0 0;
+        background-image: none;
+        margin-top: .5em;
+        padding: .3em 1em .5em .4em;
+    }
+
+        .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+            float: right;
+        }
+
+        .ui-dialog .ui-dialog-buttonpane button {
+            margin: .5em .4em .5em 0;
+            cursor: pointer;
+        }
+
+    .ui-dialog .ui-resizable-se {
+        width: 12px;
+        height: 12px;
+        right: -5px;
+        bottom: -5px;
+        background-position: 16px 16px;
+    }
+
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+
+.ui-draggable-handle {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.ui-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    outline: none;
+}
+
+    .ui-menu .ui-menu {
+        position: absolute;
+    }
+
+    .ui-menu .ui-menu-item {
+        position: relative;
+        margin: 0;
+        padding: 3px 1em 3px .4em;
+        cursor: pointer;
+        min-height: 0; /* support: IE7 */
+        /* support: IE10, see #8844 */
+        list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+    }
+
+    .ui-menu .ui-menu-divider {
+        margin: 5px 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+        border-width: 1px 0 0 0;
+    }
+
+    .ui-menu .ui-state-focus,
+    .ui-menu .ui-state-active {
+        margin: -1px;
+    }
+
+/* icon support */
+.ui-menu-icons {
+    position: relative;
+}
+
+    .ui-menu-icons .ui-menu-item {
+        padding-left: 2em;
+    }
+
+/* left-aligned */
+.ui-menu .ui-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: .2em;
+    margin: auto 0;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+    left: auto;
+    right: 0;
+}
+
+.ui-progressbar {
+    height: 2em;
+    text-align: left;
+    overflow: hidden;
+}
+
+    .ui-progressbar .ui-progressbar-value {
+        margin: -1px;
+        height: 100%;
+    }
+
+    .ui-progressbar .ui-progressbar-overlay {
+        height: 100%;
+        filter: alpha(opacity=25); /* support: IE8 */
+        opacity: 0.25;
+    }
+
+.ui-progressbar-indeterminate .ui-progressbar-value {
+    background-image: none;
+}
+
+.ui-resizable {
+    position: relative;
+}
+
+.ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    display: block;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+    display: none;
+}
+
+.ui-resizable-n {
+    cursor: n-resize;
+    height: 7px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+}
+
+.ui-resizable-s {
+    cursor: s-resize;
+    height: 7px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+
+.ui-resizable-e {
+    cursor: e-resize;
+    width: 7px;
+    right: -5px;
+    top: 0;
+    height: 100%;
+}
+
+.ui-resizable-w {
+    cursor: w-resize;
+    width: 7px;
+    left: -5px;
+    top: 0;
+    height: 100%;
+}
+
+.ui-resizable-se {
+    cursor: se-resize;
+    width: 12px;
+    height: 12px;
+    right: 1px;
+    bottom: 1px;
+}
+
+.ui-resizable-sw {
+    cursor: sw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    bottom: -5px;
+}
+
+.ui-resizable-nw {
+    cursor: nw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    top: -5px;
+}
+
+.ui-resizable-ne {
+    cursor: ne-resize;
+    width: 9px;
+    height: 9px;
+    right: -5px;
+    top: -5px;
+}
+
+.ui-selectable {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.ui-selectable-helper {
+    position: absolute;
+    z-index: 100;
+    border: 1px dotted black;
+}
+
+.ui-selectmenu-menu {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+    .ui-selectmenu-menu .ui-menu {
+        overflow: auto;
+        /* Support: IE7 */
+        overflow-x: hidden;
+        padding-bottom: 1px;
+    }
+
+        .ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
+            font-size: 1em;
+            font-weight: bold;
+            line-height: 1.5;
+            padding: 2px 0.4em;
+            margin: 0.5em 0 0 0;
+            height: auto;
+            border: 0;
+        }
+
+.ui-selectmenu-open {
+    display: block;
+}
+
+.ui-selectmenu-button {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .ui-selectmenu-button span.ui-icon {
+        right: 0.5em;
+        left: auto;
+        margin-top: -8px;
+        position: absolute;
+        top: 50%;
+    }
+
+    .ui-selectmenu-button span.ui-selectmenu-text {
+        text-align: left;
+        padding: 0.4em 2.1em 0.4em 1em;
+        display: block;
+        line-height: 1.4;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+    .ui-slider .ui-slider-handle {
+        position: absolute;
+        z-index: 2;
+        width: 1.2em;
+        height: 1.2em;
+        cursor: default;
+        -ms-touch-action: none;
+        touch-action: none;
+    }
+
+    .ui-slider .ui-slider-range {
+        position: absolute;
+        z-index: 1;
+        font-size: .7em;
+        display: block;
+        border: 0;
+        background-position: 0 0;
+    }
+
+    /* support: IE8 - See #6727 */
+    .ui-slider.ui-state-disabled .ui-slider-handle,
+    .ui-slider.ui-state-disabled .ui-slider-range {
+        filter: inherit;
+    }
+
+.ui-slider-horizontal {
+    height: .8em;
+}
+
+    .ui-slider-horizontal .ui-slider-handle {
+        top: -.3em;
+        margin-left: -.6em;
+    }
+
+    .ui-slider-horizontal .ui-slider-range {
+        top: 0;
+        height: 100%;
+    }
+
+    .ui-slider-horizontal .ui-slider-range-min {
+        left: 0;
+    }
+
+    .ui-slider-horizontal .ui-slider-range-max {
+        right: 0;
+    }
+
+.ui-slider-vertical {
+    width: .8em;
+    height: 100px;
+}
+
+    .ui-slider-vertical .ui-slider-handle {
+        left: -.3em;
+        margin-left: 0;
+        margin-bottom: -.6em;
+    }
+
+    .ui-slider-vertical .ui-slider-range {
+        left: 0;
+        width: 100%;
+    }
+
+    .ui-slider-vertical .ui-slider-range-min {
+        bottom: 0;
+    }
+
+    .ui-slider-vertical .ui-slider-range-max {
+        top: 0;
+    }
+
+.ui-sortable-handle {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.ui-spinner {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.ui-spinner-input {
+    border: none;
+    background: none;
+    color: inherit;
+    padding: 0;
+    margin: .2em 0;
+    vertical-align: middle;
+    margin-left: .4em;
+    margin-right: 22px;
+}
+
+.ui-spinner-button {
+    width: 16px;
+    height: 50%;
+    font-size: .5em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    cursor: default;
+    display: block;
+    overflow: hidden;
+    right: 0;
+}
+/* more specificity required here to override default borders */
+.ui-spinner a.ui-spinner-button {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+/* vertically center icon */
+.ui-spinner .ui-icon {
+    position: absolute;
+    margin-top: -8px;
+    top: 50%;
+    left: 0;
+}
+
+.ui-spinner-up {
+    top: 0;
+}
+
+.ui-spinner-down {
+    bottom: 0;
+}
+
+/* TR overrides */
+.ui-spinner .ui-icon-triangle-1-s {
+    /* need to fix icons sprite */
+    background-position: -65px -16px;
+}
+
+.ui-tabs {
+    position: relative; /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+    padding: .2em;
+}
+
+    .ui-tabs .ui-tabs-nav {
+        margin: 0;
+        padding: .2em .2em 0;
+    }
+
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            border-bottom-width: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+
+        .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+
+            .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+            .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+            .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+                cursor: text;
+            }
+
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    padding: 1em 1.4em;
+    background: none;
+}
+
+.ui-tooltip {
+    padding: 8px;
+    position: absolute;
+    z-index: 9999;
+    max-width: 300px;
+    -webkit-box-shadow: 0 0 5px #aaa;
+    box-shadow: 0 0 5px #aaa;
+}
+
+body .ui-tooltip {
+    border-width: 2px;
+}
+
+/*/* Component containers
+----------------------------------*/
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+    float: left;
+    margin: 3%;
+    width: 94%;
+}
+
+    .ui-widget .ui-widget {
+        font-size: 1em;
+    }
+
+    .ui-widget input,
+    .ui-widget select,
+    .ui-widget textarea,
+    .ui-widget button {
+        font-family: Verdana,Arial,sans-serif;
+        font-size: 1em;
+    }
+
+.ui-widget-content {
+    color: #222222;
+}
+
+    .ui-widget-content a {
+        color: #222222;
+    }
+
+.ui-widget-header {
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+}
+
+    .ui-widget-header a {
+        color: #222222;
+    }
+
+    /* Interaction states
+----------------------------------*/
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default {
+        border: 1px solid #fff;
+        font-weight: normal;
+        /*color: #fff;*/
+    }
+
+        .ui-state-default a,
+        .ui-state-default a:link,
+        .ui-state-default a:visited {
+            color: #555555;
+            text-decoration: none;
+        }
+
+    .ui-state-hover,
+    .ui-widget-content .ui-state-hover,
+    .ui-widget-header .ui-state-hover,
+    .ui-state-focus,
+    .ui-widget-content .ui-state-focus,
+    .ui-widget-header .ui-state-focus {
+        /*border: 1px solid #e0b001;
+        font-weight: normal;
+        color: #e0b001;*/
+    }
+
+        .ui-state-hover a,
+        .ui-state-hover a:hover,
+        .ui-state-hover a:link,
+        .ui-state-hover a:visited,
+        .ui-state-focus a,
+        .ui-state-focus a:hover,
+        .ui-state-focus a:link,
+        .ui-state-focus a:visited {
+            color: #212121;
+            text-decoration: none;
+        }
+
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active {
+        .ui-widget-header .ui-state-active;
+
+{
+    border: 1px solid #e0b001;
+    font-weight: normal;
+    color: #e0b001;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #212121;
+    text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #fcefa1;
+    background: #fbf9ee url("images/ui-bg_glass_55_fbf9ee_1x400.png") 50% 50% repeat-x;
+    color: #363636;
+}
+
+    .ui-state-highlight a,
+    .ui-widget-content .ui-state-highlight a,
+    .ui-widget-header .ui-state-highlight a {
+        color: #363636;
+    }
+
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+    border: 1px solid #cd0a0a;
+    background: #fef1ec url("images/ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
+    color: #cd0a0a;
+}
+
+    .ui-state-error a,
+    .ui-widget-content .ui-state-error a,
+    .ui-widget-header .ui-state-error a {
+        color: #cd0a0a;
+    }
+
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+    color: #cd0a0a;
+}
+
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+    font-weight: bold;
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+    opacity: .7;
+    filter: Alpha(Opacity=70); /* support: IE8 */
+    font-weight: normal;
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35); /* support: IE8 */
+    background-image: none;
+}
+
+    .ui-state-disabled .ui-icon {
+        filter: Alpha(Opacity=35); /* support: IE8 - See #6059 */
+    }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background-image: url("images/ui-icons_222222_256x240.png");
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url("images/ui-icons_222222_256x240.png");
+}
+
+.ui-state-default .ui-icon {
+    background-image: url("images/ui-icons_888888_256x240.png");
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+    background-image: url("images/ui-icons_454545_256x240.png");
+}
+
+.ui-state-active .ui-icon {
+    background-image: url("images/ui-icons_454545_256x240.png");
+}
+
+.ui-state-highlight .ui-icon {
+    background-image: url("images/ui-icons_2e83ff_256x240.png");
+}
+
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+    background-image: url("images/ui-icons_cd0a0a_256x240.png");
+}
+
+/* positioning */
+.ui-icon-blank {
+    background-position: 16px 16px;
+}
+
+.ui-icon-carat-1-n {
+    background-position: 0 0;
+}
+
+.ui-icon-carat-1-ne {
+    background-position: -16px 0;
+}
+
+.ui-icon-carat-1-e {
+    background-position: -32px 0;
+}
+
+.ui-icon-carat-1-se {
+    background-position: -48px 0;
+}
+
+.ui-icon-carat-1-s {
+    background-position: -64px 0;
+}
+
+.ui-icon-carat-1-sw {
+    background-position: -80px 0;
+}
+
+.ui-icon-carat-1-w {
+    background-position: -96px 0;
+}
+
+.ui-icon-carat-1-nw {
+    background-position: -112px 0;
+}
+
+.ui-icon-carat-2-n-s {
+    background-position: -128px 0;
+}
+
+.ui-icon-carat-2-e-w {
+    background-position: -144px 0;
+}
+
+.ui-icon-triangle-1-n {
+    background-position: 0 -16px;
+}
+
+.ui-icon-triangle-1-ne {
+    background-position: -16px -16px;
+}
+
+.ui-icon-triangle-1-e {
+    background-position: -32px -16px;
+}
+
+.ui-icon-triangle-1-se {
+    background-position: -48px -16px;
+}
+
+.ui-icon-triangle-1-s {
+    background-position: -64px -16px;
+}
+
+.ui-icon-triangle-1-sw {
+    background-position: -80px -16px;
+}
+
+.ui-icon-triangle-1-w {
+    background-position: -96px -16px;
+}
+
+.ui-icon-triangle-1-nw {
+    background-position: -112px -16px;
+}
+
+.ui-icon-triangle-2-n-s {
+    background-position: -128px -16px;
+}
+
+.ui-icon-triangle-2-e-w {
+    background-position: -144px -16px;
+}
+
+.ui-icon-arrow-1-n {
+    background-position: 0 -32px;
+}
+
+.ui-icon-arrow-1-ne {
+    background-position: -16px -32px;
+}
+
+.ui-icon-arrow-1-e {
+    background-position: -32px -32px;
+}
+
+.ui-icon-arrow-1-se {
+    background-position: -48px -32px;
+}
+
+.ui-icon-arrow-1-s {
+    background-position: -64px -32px;
+}
+
+.ui-icon-arrow-1-sw {
+    background-position: -80px -32px;
+}
+
+.ui-icon-arrow-1-w {
+    background-position: -96px -32px;
+}
+
+.ui-icon-arrow-1-nw {
+    background-position: -112px -32px;
+}
+
+.ui-icon-arrow-2-n-s {
+    background-position: -128px -32px;
+}
+
+.ui-icon-arrow-2-ne-sw {
+    background-position: -144px -32px;
+}
+
+.ui-icon-arrow-2-e-w {
+    background-position: -160px -32px;
+}
+
+.ui-icon-arrow-2-se-nw {
+    background-position: -176px -32px;
+}
+
+.ui-icon-arrowstop-1-n {
+    background-position: -192px -32px;
+}
+
+.ui-icon-arrowstop-1-e {
+    background-position: -208px -32px;
+}
+
+.ui-icon-arrowstop-1-s {
+    background-position: -224px -32px;
+}
+
+.ui-icon-arrowstop-1-w {
+    background-position: -240px -32px;
+}
+
+.ui-icon-arrowthick-1-n {
+    background-position: 0 -48px;
+}
+
+.ui-icon-arrowthick-1-ne {
+    background-position: -16px -48px;
+}
+
+.ui-icon-arrowthick-1-e {
+    background-position: -32px -48px;
+}
+
+.ui-icon-arrowthick-1-se {
+    background-position: -48px -48px;
+}
+
+.ui-icon-arrowthick-1-s {
+    background-position: -64px -48px;
+}
+
+.ui-icon-arrowthick-1-sw {
+    background-position: -80px -48px;
+}
+
+.ui-icon-arrowthick-1-w {
+    background-position: -96px -48px;
+}
+
+.ui-icon-arrowthick-1-nw {
+    background-position: -112px -48px;
+}
+
+.ui-icon-arrowthick-2-n-s {
+    background-position: -128px -48px;
+}
+
+.ui-icon-arrowthick-2-ne-sw {
+    background-position: -144px -48px;
+}
+
+.ui-icon-arrowthick-2-e-w {
+    background-position: -160px -48px;
+}
+
+.ui-icon-arrowthick-2-se-nw {
+    background-position: -176px -48px;
+}
+
+.ui-icon-arrowthickstop-1-n {
+    background-position: -192px -48px;
+}
+
+.ui-icon-arrowthickstop-1-e {
+    background-position: -208px -48px;
+}
+
+.ui-icon-arrowthickstop-1-s {
+    background-position: -224px -48px;
+}
+
+.ui-icon-arrowthickstop-1-w {
+    background-position: -240px -48px;
+}
+
+.ui-icon-arrowreturnthick-1-w {
+    background-position: 0 -64px;
+}
+
+.ui-icon-arrowreturnthick-1-n {
+    background-position: -16px -64px;
+}
+
+.ui-icon-arrowreturnthick-1-e {
+    background-position: -32px -64px;
+}
+
+.ui-icon-arrowreturnthick-1-s {
+    background-position: -48px -64px;
+}
+
+.ui-icon-arrowreturn-1-w {
+    background-position: -64px -64px;
+}
+
+.ui-icon-arrowreturn-1-n {
+    background-position: -80px -64px;
+}
+
+.ui-icon-arrowreturn-1-e {
+    background-position: -96px -64px;
+}
+
+.ui-icon-arrowreturn-1-s {
+    background-position: -112px -64px;
+}
+
+.ui-icon-arrowrefresh-1-w {
+    background-position: -128px -64px;
+}
+
+.ui-icon-arrowrefresh-1-n {
+    background-position: -144px -64px;
+}
+
+.ui-icon-arrowrefresh-1-e {
+    background-position: -160px -64px;
+}
+
+.ui-icon-arrowrefresh-1-s {
+    background-position: -176px -64px;
+}
+
+.ui-icon-arrow-4 {
+    background-position: 0 -80px;
+}
+
+.ui-icon-arrow-4-diag {
+    background-position: -16px -80px;
+}
+
+.ui-icon-extlink {
+    background-position: -32px -80px;
+}
+
+.ui-icon-newwin {
+    background-position: -48px -80px;
+}
+
+.ui-icon-refresh {
+    background-position: -64px -80px;
+}
+
+.ui-icon-shuffle {
+    background-position: -80px -80px;
+}
+
+.ui-icon-transfer-e-w {
+    background-position: -96px -80px;
+}
+
+.ui-icon-transferthick-e-w {
+    background-position: -112px -80px;
+}
+
+.ui-icon-folder-collapsed {
+    background-position: 0 -96px;
+}
+
+.ui-icon-folder-open {
+    background-position: -16px -96px;
+}
+
+.ui-icon-document {
+    background-position: -32px -96px;
+}
+
+.ui-icon-document-b {
+    background-position: -48px -96px;
+}
+
+.ui-icon-note {
+    background-position: -64px -96px;
+}
+
+.ui-icon-mail-closed {
+    background-position: -80px -96px;
+}
+
+.ui-icon-mail-open {
+    background-position: -96px -96px;
+}
+
+.ui-icon-suitcase {
+    background-position: -112px -96px;
+}
+
+.ui-icon-comment {
+    background-position: -128px -96px;
+}
+
+.ui-icon-person {
+    background-position: -144px -96px;
+}
+
+.ui-icon-print {
+    background-position: -160px -96px;
+}
+
+.ui-icon-trash {
+    background-position: -176px -96px;
+}
+
+.ui-icon-locked {
+    background-position: -192px -96px;
+}
+
+.ui-icon-unlocked {
+    background-position: -208px -96px;
+}
+
+.ui-icon-bookmark {
+    background-position: -224px -96px;
+}
+
+.ui-icon-tag {
+    background-position: -240px -96px;
+}
+
+.ui-icon-home {
+    background-position: 0 -112px;
+}
+
+.ui-icon-flag {
+    background-position: -16px -112px;
+}
+
+.ui-icon-calendar {
+    background-position: -32px -112px;
+}
+
+.ui-icon-cart {
+    background-position: -48px -112px;
+}
+
+.ui-icon-pencil {
+    background-position: -64px -112px;
+}
+
+.ui-icon-clock {
+    background-position: -80px -112px;
+}
+
+.ui-icon-disk {
+    background-position: -96px -112px;
+}
+
+.ui-icon-calculator {
+    background-position: -112px -112px;
+}
+
+.ui-icon-zoomin {
+    background-position: -128px -112px;
+}
+
+.ui-icon-zoomout {
+    background-position: -144px -112px;
+}
+
+.ui-icon-search {
+    background-position: -160px -112px;
+}
+
+.ui-icon-wrench {
+    background-position: -176px -112px;
+}
+
+.ui-icon-gear {
+    background-position: -192px -112px;
+}
+
+.ui-icon-heart {
+    background-position: -208px -112px;
+}
+
+.ui-icon-star {
+    background-position: -224px -112px;
+}
+
+.ui-icon-link {
+    background-position: -240px -112px;
+}
+
+.ui-icon-cancel {
+    background-position: 0 -128px;
+}
+
+.ui-icon-plus {
+    background-position: -16px -128px;
+}
+
+.ui-icon-plusthick {
+    background-position: -32px -128px;
+}
+
+.ui-icon-minus {
+    background-position: -48px -128px;
+}
+
+.ui-icon-minusthick {
+    background-position: -64px -128px;
+}
+
+.ui-icon-close {
+    background-position: -80px -128px;
+}
+
+.ui-icon-closethick {
+    background-position: -96px -128px;
+}
+
+.ui-icon-key {
+    background-position: -112px -128px;
+}
+
+.ui-icon-lightbulb {
+    background-position: -128px -128px;
+}
+
+.ui-icon-scissors {
+    background-position: -144px -128px;
+}
+
+.ui-icon-clipboard {
+    background-position: -160px -128px;
+}
+
+.ui-icon-copy {
+    background-position: -176px -128px;
+}
+
+.ui-icon-contact {
+    background-position: -192px -128px;
+}
+
+.ui-icon-image {
+    background-position: -208px -128px;
+}
+
+.ui-icon-video {
+    background-position: -224px -128px;
+}
+
+.ui-icon-script {
+    background-position: -240px -128px;
+}
+
+.ui-icon-alert {
+    background-position: 0 -144px;
+}
+
+.ui-icon-info {
+    background-position: -16px -144px;
+}
+
+.ui-icon-notice {
+    background-position: -32px -144px;
+}
+
+.ui-icon-help {
+    background-position: -48px -144px;
+}
+
+.ui-icon-check {
+    background-position: -64px -144px;
+}
+
+.ui-icon-bullet {
+    background-position: -80px -144px;
+}
+
+.ui-icon-radio-on {
+    background-position: -96px -144px;
+}
+
+.ui-icon-radio-off {
+    background-position: -112px -144px;
+}
+
+.ui-icon-pin-w {
+    background-position: -128px -144px;
+}
+
+.ui-icon-pin-s {
+    background-position: -144px -144px;
+}
+
+.ui-icon-play {
+    background-position: 0 -160px;
+}
+
+.ui-icon-pause {
+    background-position: -16px -160px;
+}
+
+.ui-icon-seek-next {
+    background-position: -32px -160px;
+}
+
+.ui-icon-seek-prev {
+    background-position: -48px -160px;
+}
+
+.ui-icon-seek-end {
+    background-position: -64px -160px;
+}
+
+.ui-icon-seek-start {
+    background-position: -80px -160px;
+}
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first {
+    background-position: -80px -160px;
+}
+
+.ui-icon-stop {
+    background-position: -96px -160px;
+}
+
+.ui-icon-eject {
+    background-position: -112px -160px;
+}
+
+.ui-icon-volume-off {
+    background-position: -128px -160px;
+}
+
+.ui-icon-volume-on {
+    background-position: -144px -160px;
+}
+
+.ui-icon-power {
+    background-position: 0 -176px;
+}
+
+.ui-icon-signal-diag {
+    background-position: -16px -176px;
+}
+
+.ui-icon-signal {
+    background-position: -32px -176px;
+}
+
+.ui-icon-battery-0 {
+    background-position: -48px -176px;
+}
+
+.ui-icon-battery-1 {
+    background-position: -64px -176px;
+}
+
+.ui-icon-battery-2 {
+    background-position: -80px -176px;
+}
+
+.ui-icon-battery-3 {
+    background-position: -96px -176px;
+}
+
+.ui-icon-circle-plus {
+    background-position: 0 -192px;
+}
+
+.ui-icon-circle-minus {
+    background-position: -16px -192px;
+}
+
+.ui-icon-circle-close {
+    background-position: -32px -192px;
+}
+
+.ui-icon-circle-triangle-e {
+    background-position: -48px -192px;
+}
+
+.ui-icon-circle-triangle-s {
+    background-position: -64px -192px;
+}
+
+.ui-icon-circle-triangle-w {
+    background-position: -80px -192px;
+}
+
+.ui-icon-circle-triangle-n {
+    background-position: -96px -192px;
+}
+
+.ui-icon-circle-arrow-e {
+    background-position: -112px -192px;
+}
+
+.ui-icon-circle-arrow-s {
+    background-position: -128px -192px;
+}
+
+.ui-icon-circle-arrow-w {
+    background-position: -144px -192px;
+}
+
+.ui-icon-circle-arrow-n {
+    background-position: -160px -192px;
+}
+
+.ui-icon-circle-zoomin {
+    background-position: -176px -192px;
+}
+
+.ui-icon-circle-zoomout {
+    background-position: -192px -192px;
+}
+
+.ui-icon-circle-check {
+    background-position: -208px -192px;
+}
+
+.ui-icon-circlesmall-plus {
+    background-position: 0 -208px;
+}
+
+.ui-icon-circlesmall-minus {
+    background-position: -16px -208px;
+}
+
+.ui-icon-circlesmall-close {
+    background-position: -32px -208px;
+}
+
+.ui-icon-squaresmall-plus {
+    background-position: -48px -208px;
+}
+
+.ui-icon-squaresmall-minus {
+    background-position: -64px -208px;
+}
+
+.ui-icon-squaresmall-close {
+    background-position: -80px -208px;
+}
+
+.ui-icon-grip-dotted-vertical {
+    background-position: 0 -224px;
+}
+
+.ui-icon-grip-dotted-horizontal {
+    background-position: -16px -224px;
+}
+
+.ui-icon-grip-solid-vertical {
+    background-position: -32px -224px;
+}
+
+.ui-icon-grip-solid-horizontal {
+    background-position: -48px -224px;
+}
+
+.ui-icon-gripsmall-diagonal-se {
+    background-position: -64px -224px;
+}
+
+.ui-icon-grip-diagonal-se {
+    background-position: -80px -224px;
+}
+
+*/
+/* Overlays */
+.ui-widget-overlay {
+    background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+    opacity: .3;
+    filter: Alpha(Opacity=30); /* support: IE8 */
+}
+
+.ui-widget-shadow {
+    margin: -8px 0 0 -8px;
+    padding: 8px;
+    background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+    opacity: .3;
+    filter: Alpha(Opacity=30); /* support: IE8 */
+    border-radius: 8px;
+}
+
+
+.spa_info p {
+    color: #ccc;
+    line-height: 1.5;
+    font-size: 100%;
+}

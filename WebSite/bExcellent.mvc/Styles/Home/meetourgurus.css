@@ -1,0 +1,290 @@
+﻿.gurus
+{
+    float:left;
+    width:60%;
+    margin-left:4%;
+}
+#wrapper #scroller .blogback
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom:60%;
+    position:relative;
+}
+#wrapper #scroller .blogback img {
+    height: 95%;
+    top: 0;
+    width: 100%;
+    position:absolute;
+}
+.newspg, .tweetpg, .favblogpg, .blogpg, .videobc
+{
+    display:none;
+}
+.gurucont
+{
+    left: 1%;
+    position: absolute;
+    top: 1%;
+    width: 98%;
+    height:98%;
+}
+#wrapper #scroller .gurucont li
+{
+    border-bottom:1px dashed #808080;
+    display:table;
+    position:relative;
+    padding:1% 0;
+}
+#wrapper #scroller #favBlogdata li
+{
+    padding:1% 0 1.5%;
+}
+#wrapper #scroller .gurucont img
+{
+    position:relative;
+    width:auto;
+    height:auto;
+}
+#wrapper #scroller .subhead, #wrapper #scroller .paragraph
+{
+    float:left;
+    display:table-cell;
+    vertical-align:middle;
+}
+#wrapper #scroller .subhead
+{
+    width:9%;
+    margin-right:1%;
+}
+#wrapper #scroller .blogpg .subhead
+{
+    width:5%;
+    padding:1.5% 0;
+}
+#wrapper #scroller .paragraph
+{
+    width:80%;
+}
+#wrapper #scroller .subhead .logo
+{
+    display:table-cell;
+    vertical-align:middle;
+}
+#wrapper #scroller .subhead .img
+{
+    width:80%;
+}
+#wrapper #scroller .subhead img
+{
+    width:100%;
+}
+#wrapper #scroller .paragraph
+{
+    float:left;
+}
+#wrapper #scroller .gurucont li
+{
+    width:98%;
+}
+#wrapper #scroller .gurucont .paragraph
+{
+    width:90%;
+}
+#blogData .paragraph, #favBlogdata .paragraph {
+     width:78% !important;
+}
+#blogData .paragraph1, #favBlogdata .paragraph1 {
+     width:100% !important;
+    text-align: justify;
+}
+#blogData .date, #favBlogdata .date {
+    float: right !important;
+    text-align: right;
+}
+.last li
+{
+    cursor:pointer;
+}
+.paragraph .hdtwt, .paragraph .date
+{
+    float:left;
+}
+#blogData .date, #favBlogdata .date
+{
+    width:10%;
+}
+#blogData .hdtwt, #favBlogdata .hdtwt
+{
+    width:90%;
+}
+.hdtwt
+{
+    color:#5e5e5e;
+}
+.paragraph p a, .paragraph1 p a, #wrapper #scroller #latestNewsData li a
+{
+    text-decoration:none;
+    color:#000;
+    padding-left:1%;
+}
+#wrapper #scroller .last .caption p
+{
+    position:relative;
+}
+.header
+{
+    clear:both;
+}
+.header a
+{
+    text-decoration:none;
+}
+.header h1
+{
+    float:left;
+}
+.gurus .paragraph p
+{
+    clear:both;
+}
+#blogData .subhead, #favBlogdata .subhead {
+    width: 20% !important;
+    padding: 0 !important; 
+}
+#blogData .img, #favBlogdata .img {
+    width: 100% !important;   
+}
+#wrapper #scroller #favBlogdata .subhead
+{
+    width:5%;
+    padding:1% 0 0;
+}
+#wrapper #scroller #latestCustomerData .subhead
+{
+    width:6%;
+    padding:0.5% 0 0;
+}
+#wrapper #scroller #latestCustomerData li
+{
+    padding:1% 0;
+}
+.hdright, .tweetpg .hdright
+{
+    float:right;
+    padding:2% 0 0;
+    color:#808080;
+    text-decoration:none;
+}
+.hdright a
+{
+    color:#808080;
+}
+#latesttweetsul .paragraph p
+{
+    width:100%;
+    clear:both;
+}
+#wrapper #scroller #latesttweetsul .paragraph a
+{
+    width:100%;
+    clear:both;
+    color:#808080;
+    display:block;
+    padding:0;
+}
+#wrapper #scroller .beNews.hd {
+    float: left;
+    width: 88%;
+    color: #e5e5e5;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+}
+#wrapper #scroller .beNews .dateNews {
+    width: 9%;
+    float:right;
+    text-align:right;
+}
+#wrapper #scroller .beNews img
+{
+float: left;
+margin-right: 10px;
+width: auto;
+height: auto;
+}
+.gurus .slimScrollDiv
+{
+    background:transparent;
+}
+#wrapper #scroller .beNews li, #latestNewsData li, #wrapper #scroller #latestNewsData .paragraph, #wrapper #scroller #latestNewsData li
+{
+    width:99%;
+    position:inherit;
+    clear:both;
+}
+.paragraph
+{
+    text-align:justify;
+}
+#wrapper #scroller #latestWorkshopData .dt, #wrapper #scroller #latestWorkshopData .venue
+{
+    float:left;
+}
+#latestWorkshopData .subhead {
+    width: 11% !important;
+}
+#latestWorkshopData .subhead .img {
+    width: 100% !important;
+}
+#latestWorkshopData .paragraph {
+    width: 88% !important;
+}
+.venue
+{
+    color:#5e5e5e;
+    padding-left:2%;
+}
+#wrapper #scroller #latestWorkshopData .paragraph, #wrapper #scroller #latestWorkshopData li, #wrapper #scroller #latestNewsData .paragraph, #wrapper #scroller #latestNewsData li
+{
+    height:auto;
+}
+.scroll3, .scroll6, .scroll7, .scroll8
+{
+    height:100% !important;
+}
+.type, .location
+{
+    float:left;
+    padding:1% 0;
+    margin-right: 3%;
+}
+.register, .newsM
+{
+    float:right;
+    padding:1% 0;
+}
+.register a
+{
+    color:#353535;
+}
+#wrapper #scroller #latestNewsData li
+{
+    padding-bottom:2%;
+}
+#wrapper #scroller .blog .hd {
+    float: left;
+    width: 88%;
+    color: #5e5e5e;
+    margin-bottom: 1%;
+    line-height: 1.2em;
+}
+#wrapper #scroller #latestNewsData .img
+{
+    width:20%;
+}
+#wrapper #scroller #latestNewsData .img img
+{
+    width:100%;
+    margin-bottom:5%;
+}

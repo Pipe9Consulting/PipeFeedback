@@ -1,0 +1,1082 @@
+.container-fluid {
+    padding: 2% 1% 2% 2% !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../../Images/DevPriorities/Landing/bodyBg-new5.jpg)no-repeat !important;
+    font-family: Segoe UI;
+    background-size: 100% 100% !important;
+}
+
+.row {
+    margin-right: 0;
+}
+
+a:focus, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+p {
+    font-size: 100%;
+}
+
+.clearfix {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+
+#devprogress {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 35%;
+    position: relative;
+}
+
+.user_tiles .slimScrollDiv {
+    width: 85% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 55%;
+    border: 1px solid #333;
+    padding: 1% 1% 77% 1%;
+}
+
+#usrList {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 90% !important;
+    position: relative;
+}
+
+.prioitiesFrequency .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 35%;
+}
+
+.user_tiles .slimScrollBar, .user_tiles .slimScrollRail {
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.prioitiesFrequency .slimScrollBar, .prioitiesFrequency .slimScrollRail {
+    cursor: pointer;
+    opacity: .8 !important;
+    right: 0.3% !important;
+    margin-top: 5px;
+    background-color: #e0b001 !important;
+    height: 50% !important;
+}
+
+
+.user_tiles h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.user_tiles ul {
+    float: left;
+    width: 85%;
+    margin-right: 15%;
+    position: relative;
+}
+
+    .user_tiles ul li {
+        background: rgba(0,0,0,0.8);
+        width: 48%;
+        float: left;
+        padding: 0 0% 44% 0;
+        position: relative;
+        margin: 0 2% 2% 0;
+        list-style: none;
+        cursor: pointer;
+    }
+
+        .user_tiles ul li:hover {
+            background: rgba(0,0,0,1);
+        }
+
+            .user_tiles ul li:hover p, .user_tiles ul li:hover span {
+                color: #e0b001;
+            }
+
+        .user_tiles ul li p {
+            text-transform: uppercase;
+            color: #fff;
+            margin: 0;
+            padding: 0 4% 2% 4%;
+        }
+
+        .user_tiles ul li img {
+            right: 0;
+            width: 50%;
+            height: auto;
+            position: absolute;
+        }
+
+        .user_tiles ul li span {
+            color: #fff;
+            display: none;
+            padding: 0 2%;
+            font-size: 230%;
+            margin: 0;
+            line-height: 1;
+        }
+
+.user_name {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.selectTiles {
+    background: #000 !important;
+}
+
+    .selectTiles p, .selectTiles span {
+        color: #e0b001 !important;
+    }
+
+.priorities_part2 h2 {
+    margin: 0;
+    text-transform: uppercase;
+    float: left;
+    width: 90%;
+}
+
+
+    .priorities_part2 h2 span {
+        text-transform: none;
+        font-size: 70%;
+    }
+
+
+
+.prioitiesFrequency {
+    border: 1px solid #333;
+    height: auto;
+    float: left;
+    position: relative;
+    padding: .8%;
+}
+
+.frquencyHeader {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .frquencyHeader li {
+        background: #333333;
+        list-style: none;
+        float: left;
+        color: #fff;
+        text-transform: uppercase;
+        padding: .2% 1% .3% 1%;
+        text-align: center;
+    }
+
+
+        .frquencyHeader li:first-child {
+            border-right: 1px solid #999;
+            width: 3%;
+        }
+
+
+        .frquencyHeader li:nth-child(2) {
+            border-right: 1px solid #999;
+            width: 13%;
+        }
+
+
+        .frquencyHeader li:nth-child(3) {
+            border-right: 1px solid #999;
+            width: 40%;
+        }
+
+        .frquencyHeader li:nth-child(4) {
+            border-right: 1px solid #999;
+            width: 35%;
+        }
+
+        .frquencyHeader li:nth-child(5) {
+            text-align: center;
+            width: 9%;
+        }
+
+.frquencyContent ul {
+    margin: 0;
+    float: left;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    display: table;
+    list-style: none;
+}
+
+    .frquencyContent ul li {
+        line-height: 1.2;
+        display: table-cell;
+        vertical-align: middle;
+        padding: .2% 1% .3% 1%;
+        border-right: 1px solid #999;
+        list-style-position: inside;
+    }
+
+.modNmaeview {
+    font-size: 140%;
+}
+
+.frquencyContent li:first-child {
+    width: 3%;
+}
+
+    .frquencyContent li:first-child img {
+        width: 20%;
+        float: left;
+    }
+
+.frquencyContent li:nth-child(2) {
+    width: 13%;
+    font-size: 80%;
+}
+
+.frquencyContent li:nth-child(3) {
+    width: 40%;
+}
+
+.frquencyContent li {
+    min-height: 80px;
+}
+
+.frequency_scale li {
+    min-height: 0 !important;
+}
+
+.frquencyContent li:nth-child(4) {
+    width: 35%;
+}
+
+.frquencyContent li:nth-child(5) {
+    width: 9%;
+    text-align: center;
+    border-right: 0px solid #999;
+}
+
+    .frquencyContent li:nth-child(5) img {
+        width: 60%;
+        text-align: center;
+    }
+
+.frquencyContent ul:first-child {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(2) {
+    background: #ddd;
+}
+
+.frquencyContent ul:first-child {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(2) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(3) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(4) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(5) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(6) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(7) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(8) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(9) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(10) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(11) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(12) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(13) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(14) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(15) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(16) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(17) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(18) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(19) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(20) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(21) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(22) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(23) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(24) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(25) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(26) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(27) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(28) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(29) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(30) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(31) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(32) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(33) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(34) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(35) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(36) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(37) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(38) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(39) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(40) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(41) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(42) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(43) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(44) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(45) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(46) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(47) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(48) {
+    background: #ddd;
+}
+
+.frquencyContent ul:nth-child(49) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(50) {
+    background: #ddd;
+}
+
+.frequency_scale {
+    margin: 0%;
+    height: auto !important;
+    padding: 0%;
+    background: none !important;
+    border-top: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+}
+
+    .frequency_scale li {
+        color: #fff;
+        padding: .8% 0 1.2% 0 !important;
+        font-size: 70%;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        border: none !important;
+    }
+
+        .frequency_scale li:first-child {
+            background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;
+            background-size: 105% 100% !important;
+            width: 25%;
+        }
+
+        .frequency_scale li:nth-child(2) {
+            background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+        }
+
+        .frequency_scale li:nth-child(3) {
+            background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;
+            background-size: 100% 100% !important;
+            width: 25%;
+        }
+
+        .frequency_scale li:nth-child(4) {
+            background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;
+            background-size: 100% 100% !important;
+            width: 25%;
+        }
+
+.selectManager {
+    position: relative;
+}
+
+.ddummyerror {
+    border: 1px solid #333;
+    position: relative;
+    padding: .7%;
+    float: left;
+    padding-bottom: 41.3%;
+    width: 100%;
+}
+
+
+.blankBox {
+    float: left;
+    background: #000;
+    padding-bottom: 20.2%;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    width: 98.6%;
+    position: absolute;
+}
+
+.twoItemsHide .main {
+    margin-top: 0 !important;
+}
+
+.blankBox p {
+    position: relative;
+    vertical-align: middle;
+    padding-top: 19%;
+    color: #fff;
+    font-size: 130%;
+}
+
+.managerSpan {
+    background: url(../../Images/DevPriorities/Priorities/frequencyManager.png)no-repeat center;
+    background-size: 25px 15px !important;
+    position: absolute;
+    padding-bottom: 26%;
+    top: -98%;
+    text-transform: uppercase;
+    left: 0%;
+    color: #000 !important;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.selectYou {
+    position: relative;
+}
+
+
+.youSpan {
+    color: #000 !important;
+    background: url(../../Images/DevPriorities/Priorities/frequencyYou.png)no-repeat center;
+    background-size: 25px 15px !important;
+    position: absolute;
+    padding-top: 28%;
+    top: -5%;
+    text-transform: uppercase;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.button_menu {
+    background: url(../../Images/DevPriorities/Priorities/menu_icon.png)no-repeat center;
+    border: 0;
+    float: right;
+    background-size: 100% 70%;
+    width: 2%;
+}
+
+
+#option_menu {
+    top: 5.3%;
+    position: absolute;
+    border: 1px solid #000;
+    background: #fff !important;
+    right: 1.5%;
+    width: 50% !important;
+    z-index: 999999999999999999999;
+}
+
+
+.progress_practiceArea {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+    .progress_practiceArea li {
+        height: 100px;
+        background: #333;
+        padding: 1% 1%;
+        text-align: center;
+        width: 18.8%;
+        list-style: none;
+        float: left;
+        margin: 1% 0 1% 1%;
+        cursor: pointer;
+    }
+
+        .progress_practiceArea li:hover {
+            background: #000;
+        }
+
+            .progress_practiceArea li:hover p {
+                color: #e0b001;
+            }
+
+.selectAP {
+    background: #000 !important;
+}
+
+    .selectAP p {
+        color: #e0b001 !important;
+    }
+
+.progress_practiceArea p {
+    color: #fff;
+    line-height: 1.2;
+    margin: 0%;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
+
+    .frequency_scale li {
+        font-size: 60% !important;
+        min-height: 0px !important;
+    }
+
+    .modNmaeview {
+        font-size: 120% !important;
+    }
+
+    /*@media screen and (max-width:1400px) and (min-width:1300px)*/
+    .clickdeeper {
+        left: -155%;
+    }
+
+    .managerSpan, .youSpan {
+        font-size: 110% !important;
+    }
+
+    #option_menu {
+        width: 55% !important;
+    }
+
+
+    .hover_content {
+        margin-top: 3.7% !important;
+    }
+
+
+    .frquencyContent li {
+        min-height: 50px !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -6% !important;
+    }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1500px) {
+
+    .frequency_scale li {
+        font-size: 70% !important;
+        min-height: 0px !important;
+    }
+
+
+
+    .hover_content {
+        margin-top: 3.2% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -4% !important;
+    }
+
+    .managerSpan, .youSpan {
+        font-size: 110% !important;
+    }
+
+    .managerSpan {
+        padding-bottom: 26%;
+    }
+
+    .youSpan {
+        top: -11%;
+    }
+
+    h2 {
+        font-size: 120%;
+    }
+
+    .frquencyContent li {
+        min-height: 60px;
+    }
+}
+
+@media screen and (max-width:2000px) and (min-width:1800px) {
+
+    .managerSpan {
+        top: -95% !important;
+        padding-top: 2%;
+    }
+
+    .youSpan {
+        top: -4% !important;
+        padding-bottom: 2% !important;
+    }
+
+    #devprogress {
+        padding-bottom: 40% !important;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -6.8% !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px !important;
+    }
+
+    .hover_content {
+        margin-top: 3.2% !important;
+    }
+
+    .frquencyContent ul li {
+        font-size: 100%;
+        line-height: 1.2;
+    }
+
+    .modNmaeview {
+        font-size: 160% !important;
+    }
+
+    .frequency_scale li {
+        min-height: 0px !important;
+    }
+
+
+    .clickdeeper {
+        left: -175% !important;
+    }
+}
+
+@media screen and (max-width:2500px) and (min-width:2000px) {
+    .managerSpan {
+        top: -90% !important;
+        padding-bottom: 25%;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px;
+    }
+
+    .hover_content {
+        margin-top: 2.8% !important;
+    }
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 75px !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -3.5% !important;
+    }
+
+    .frquencyContent ul li {
+        font-size: 125% !important;
+        line-height: 1.2;
+    }
+
+    .user_tiles ul li span {
+        font-size: 350% !important;
+    }
+
+    .youSpan {
+        top: -5% !important;
+        padding-bottom: 2%;
+    }
+
+    .modNmaeview {
+        font-size: 110% !important;
+    }
+
+    .frequency_scale li {
+        min-height: 0px !important;
+    }
+
+
+    h2 {
+        font-size: 180% !important;
+    }
+}
+
+
+@media screen and (max-width: 2600px) and (min-width: 1800px) {
+
+    .frquencyContent ul li {
+        font-size: 120%;
+        line-height: 1.2;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+
+    .modNmaeview {
+        font-size: 160%;
+    }
+
+    .frquencyContent ul li .moduleTier {
+        font-size: 80% !important;
+    }
+
+    .frquencyContent ul li .frequency_scale li {
+        font-size: 70% !important;
+        min-height: 0 !important;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 150% !important;
+    }
+
+    .managerSpan {
+        top: -100%;
+        padding-top: 2%;
+    }
+
+
+    .youSpan {
+        top: -18%;
+        padding-bottom: 4%;
+    }
+
+
+
+    .youSpan {
+        top: -22%;
+    }
+
+
+
+    .progress_practiceArea li {
+        height: 135px;
+        padding: 2% 1%;
+    }
+
+
+    #option_menu {
+        top: 3.9%;
+        right: 1.1%;
+    }
+
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    #devprogress {
+        padding-bottom: 45%;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 45%;
+    }
+
+
+    .frequency_scale li {
+        min-height: 0 !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 60px;
+    }
+
+    .frquencyHeader li {
+        font-size: 130%;
+    }
+
+    P {
+        font-size: 130%;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-bottom: 0.3%;
+    }
+}
+
+@media screen and (max-width: 2600px) and (min-width: 2500px) {
+
+    .hover_content {
+        margin-top: 2.5% !important;
+    }
+
+    h2 {
+        font-size: 200% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -2% !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px;
+    }
+
+
+    .managerSpan {
+        top: -100%;
+        padding-top: 4% !important;
+    }
+
+    #option_menu {
+        width: 45% !important;
+    }
+}
+
+
+
+#usrList {
+    border: 1px solid #333;
+    padding: 2% 0 76% 2% !important;
+    width: 85% !important;
+}
+
+
+.slimScrollDiv #usrList {
+    border: 0;
+    padding: 0;
+    width: 100% !important;
+    padding-bottom: 90% !important;
+}
+
+
+.select_list {
+    border-bottom: 1PX solid #999;
+    background: #666 !important;
+    color: #e0b001 !important;
+}
+
+
+.actionMore {
+    font-size: 80% !important;
+    padding-left: 4px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+    .actionMore:hover {
+        text-decoration: none;
+    }
+
+.moduleTier {
+    position: relative;
+    right: -2%;
+    font-size: 80% !important;
+    color: red;
+    text-align: left;
+    float: right;
+    display: table;
+    vertical-align: top;
+}
+
+.frquencyContent .slimScrollBar, .frquencyContent .slimScrollRail {
+    background-color: #e0b001 !important;
+    opacity: 0.8 !important;
+    height: 50% !important;
+}
+
+
+.select_list .actionMore {
+    color: #e0b001;
+}
+
+    .select_list .actionMore:hover {
+        color: #fff;
+    }
+
+.hover_content {
+    display: none;
+    color: #000;
+    background: #fff;
+    border: 1px solid #e0b001;
+    position: absolute;
+    width: 30%;
+    margin-top: 5.5%;
+    right: 50%;
+    text-align: left;
+    padding: .5% .8%;
+    z-index: 2147483647;
+}
+
+    .hover_content span {
+        display: none;
+    }
+
+.actionMore:hover {
+    color: #e0b001;
+    text-decoration: underline;
+}
+
+
+.frquencyContent ul:last-child .hover_content {
+    margin-top: -4.5%;
+}
+
+
+.frquencyContent ul li:first-child {
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.select_list .managerSpan, .select_list .youSpan {
+    color: #e0b001 !important;
+}
+
+
+
+.frequency_scale li {
+    min-height: 0 !important;
+}

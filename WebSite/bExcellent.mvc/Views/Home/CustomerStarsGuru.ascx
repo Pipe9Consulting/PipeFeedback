@@ -1,0 +1,631 @@
+﻿<%--<link href="../../Styles/Home.css" rel="stylesheet" type="text/css" />--%>
+<%--<script src="../../Scripts/ref/Flip.js" type="text/javascript"></script>
+<script src="../../Scripts/jscript.min.1.7.2.js" type="text/javascript"></script>
+<link href="../../Styles/flipstyle.css" rel="stylesheet" type="text/css" />--%>
+<%--<script src="../../Scripts/ref/Home.js" type="text/javascript"></script>--%>
+<%--<script src="../../Scripts/ref/common.js" type="text/javascript"></script>--%>
+<%--<script src="../../Scripts/ref/FlipDiv.js" type="text/javascript"></script>--%>
+
+<script type="text/javascript">
+
+    this.randomtip = function () {
+
+        var pause = 3000; // define the pause for each tip (in milliseconds)
+        var length = $("#tips li").length;
+        var temp = -1;
+
+        this.getRan = function () {
+            // get the random number
+            var ran = Math.floor(Math.random() * length) + 1;
+            return ran;
+        };
+        this.show = function () {
+            var ran = getRan();
+            // to avoid repeating
+            while (ran == temp) {
+                ran = getRan();
+            };
+            temp = ran;
+
+            $("#flipbox").flip(
+                {
+
+                    direction: 'lr',
+                    color: "#808080",
+                    content: $("#tips li:nth-child(" + ran + ")")
+                })
+            $("#flipbox1").flip(
+                {
+
+                    direction: 'lr',
+                    color: "#808080",
+                    content: $("#tips li:nth-child(" + ran + ")")
+                })
+
+        };
+
+        show(); setInterval(show, pause);
+
+    };
+
+    $(document).ready(function () {
+
+        $(".live-tile, .flip-list").not(".exclude").liveTile();
+        randomtip();
+        //$('.bukatutup').click(function () {
+        //    $('#target').toggle('slow');
+        //});
+    });
+</script>
+
+<div class="pageholder">
+    <div class="customerscreen">
+        <div id="customertiles">
+            <div class="breadcrumb">
+                Home > Customers / Stars / Gurus
+            </div>
+            <div class="customertiles customernew">
+                <h1>Customers</h1>
+                <ul>
+                    <!--1st tile-->
+                    <li class="square">
+                        <div class="live-tile square gray" data-direction="horizontal" data-mode="flip" data-initdelay="1000"
+                            data-delay="74000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/cecilia.png" alt="Cecilia" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Microsoft
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtails">
+                                    “As a result of Role Excellence Profiles our Partner Satisfaction results have never
+                                    been higher.”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Cecilia Flombaum, Business Manager For the CVP Sales & Marketing
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--2nd tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="10000"
+                            data-delay="74000" data-flipback="true" data-flipmultiple1="false">
+                            <div data-check="0">
+                                <img src="../../Images/dave-miller.png" alt="Cecilia" />
+                                <div class="caption">
+                                    <p class="capW longtxt">
+                                        Dave Miller, Global Sales Lead
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="" data-check="0">
+                                <p class="dtail">
+                                    “REP is a perfect tool to surface new skills and give people a way to measure excellence.”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Dave Miller, Global Sales Lead
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--3rd tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="19000"
+                            data-delay="74000" data-flipback="true" data-flipmultiple="true">
+                            <div id="t1">
+                                <img src="../../Images/western-computer.png" alt="Western-Computer" />
+                                <div class="caption">
+                                    <p class="capW longtxt">
+                                        Western Computer
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="t2">
+                                <p class="dtail">
+                                    “The work was a great success, the comments from our CEO was nothing short of total excitement.”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Linda Collins, VP Operations
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--4th tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="28000"
+                            data-delay="74000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/johneen.png" width="127" height="127" alt="Johneen" />
+                                <div class="caption">
+                                    <p class="capW longtxt">
+                                        Johneen Bufford, Global Partner Lead
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “REP gives us a clear vision for the role consistently worldwide”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Johneen Bufford, Global Partner Lead
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--5th tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="37000"
+                            data-delay="74000" data-flipback="true" data-flipmultiple1="true">
+                            <div id="t3">
+                                <img src="../../Images/rock-solid.png" alt="rock-solid" />
+                                <div class="caption">
+                                    <p class="capW longtxt">
+                                        Rock Solid
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="t4">
+                                <p class="dtail">
+                                    “You made us think about the business. You helped us evaluate the work we need to
+                                    do to improve.”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Angel Prez, Vice President
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--6th tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="46000"
+                            data-delay="74000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/axxon.png" alt="Axxon" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Axxon Consulting
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “The work exceeded our expectations helping us to shape a world-class Cloud business.”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Francisco Nelson, Director
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--7th tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="55000"
+                            data-delay="74000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/sogeti.png" alt="Sogeti" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Sogeti
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “You provided the tool that helped guide us to make necessary improvements.”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Hans Wigdahl, Team Manager
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--8th tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="64000"
+                            data-delay="74000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/microsoft1.png" alt="Microsoft" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Microsoft
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “The work delivered an arsenal of insights that have taken us to the next level”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Pattie Grimm, Field Readiness Lead
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--9th tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="73000"
+                            data-delay="74000" data-flipback="true" data-flipmultiple2="true">
+                            <div id="t5">
+                                <img src="../../Images/alfa.png" alt="AlfaPeople" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Alfa People
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="t6">
+                                <p class="dtail">
+                                    “You did an excellent job taking us through the Role Excellence Profile. Feedback from the team has been extremely positive.”
+                                </p>
+                                <div class="caption">
+                                    <p class="longtxt">
+                                        Rasmus Hartung, Managing Partner
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="latestCustomerRefData" style="display: none">
+            </div>
+            <div class="customertiles stars starnew">
+                <h1>Stars</h1>
+                <ul>
+                    <!--1st Tile-->
+                    <li class="square">
+                        <div class="live-tile square gray" data-direction="horizontal" data-mode="flip" data-initdelay="1000"
+                            data-delay="47000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/CloudBusiness.jpg" alt="CloudBusiness" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Cloud Business
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtails">
+                                    “Manages the business to a new set of metrics used to measure the success of drawing
+                                    prospects to the website and into managed trials.”
+                                </p>
+                                <div class="caption">
+                                    <p>
+                                        Cloud Business
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--2nd Tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="10000"
+                            data-delay="47000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/challenger-sale.png" alt="Satr" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Challenger Selling
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “Advises Customers on new things about their business; new opportunities or looming
+                                    risks.”
+                                </p>
+                                <div class="caption">
+                                    <p>
+                                        Challenger Selling
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--3rd Tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="19000"
+                            data-delay="47000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/sollution-seller.png" width="127" height="127" alt="Solution Selling" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Solution Selling
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “Negotiates deals that deliver the highest return for both parties -Win/Win.”
+                                </p>
+                                <div class="caption">
+                                    <p>
+                                        Solution Selling
+                                    </p>
+                                </div>
+                            </div>
+                    </li>
+                    <!--4th Tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="28000"
+                            data-delay="47000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/salesmanager.png" width="127" height="127" alt="sales-manager" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Sales Manager
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “Strives to be a great coach and makes himself a source of information and insight.”
+                                </p>
+                                <div class="caption">
+                                    <p>
+                                        Sales Manager
+                                    </p>
+                                </div>
+                            </div>
+                    </li>
+                    <!--5th Tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="37000"
+                            data-delay="47000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/Human Selling_Intro.png" width="127" height="127" alt="Human Selling" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Human Selling
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “Pitching style resembles a process of mutual collaboration.“
+                                </p>
+                                <div class="caption">
+                                    <p>
+                                        Human Selling
+                                    </p>
+                                </div>
+                            </div>
+                    </li>
+                    <!--6th Tile-->
+                    <li>
+                        <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="46000"
+                            data-delay="47000" data-flipback="true">
+                            <div>
+                                <img src="../../Images/social-selling.png" width="127" height="127" alt="sales-manager-woman" />
+                                <div class="caption">
+                                    <p class="capW">
+                                        Social Selling
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="dtail">
+                                    “Believes in the power of making social connections to build knowledge and trust.”
+                                </p>
+                                <div class="caption">
+                                    <p>
+                                        Social Selling
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="customertiles stars last">
+                <h1>Meet Alan Dowzall</h1>
+                <ul>
+                    <li class="gcrpg"><a onclick="myScroll.scrollToPage(4,8)">
+                        <div class="guruimg">
+                            <img src="../../Images/guru-pic.png" width="129" height="128" />
+                        </div>
+                    </a>
+                        <div class="caption">
+                            <p>
+                                Alan Dowzall
+                            </p>
+                        </div>
+                    </li>
+                    <li class="gblog" id="alansblog"><a onclick="myScroll.scrollToPage(4,4)">
+                        <div class="icon">
+                            <img src="../../Images/icons/blog-icon.png" alt="Customers" />
+                        </div>
+                        <p>
+                            Alan’s Blog
+                        </p>
+                    </a></li>
+                    <li class="gbfavlog"><a onclick="myScroll.scrollToPage(4,5)">
+                        <div class="icon">
+                            <img src="../../Images/icons/fav-blog.png" alt="Customers" />
+                        </div>
+                        <p>
+                            Alan’s favorite Blogs
+                        </p>
+                    </a></li>
+                    <%--<li class="rectangle gcrpg"><a onclick="myScroll.scrollToPage(5)">
+                                                <div class="rectangle live-tile" data-mode="carousel" data-direction="horizontal"
+                                                    data-delay="2500">
+                                                    <div class="rectangle">
+                                                        <span class="tile-title">“Alan Dowzall made my partners stop, think and understand the
+                                                            importance of building a solid business strategy for the Cloud starting immediately.”
+                                                            <div class="caption">
+                                                                <div class="longtxt">
+                                                                    Paulo Martinez, Microsoft, Partner Account Manager</div>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="tile-title accent">“Alan Dowzall helped us to kick start our business planning
+                                                            efforts for launching Microsoft Dynamics CRM Online. He offered us a simple and
+                                                            sensible approach to getting right to the most critical activities that needed focus."<div
+                                                                class="caption">
+                                                                <div class="longtxt">
+                                                                    Seth Patton, Senior Director, Microsoft CRM Online</div>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="tile-title">“Alan Dowzall made us really think about the business issues
+                                                            holding us back and what we need to move forward.”<div class="caption">
+                                                                <div class="longtxt">
+                                                                    Angel L. Prez, Vice President, Rock Solid Technologies</div>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="tile-title accent">“Alan's Business Performance improvement approach and
+                                                            coaching has provided to us an arsenal of tools analysis and insights that have
+                                                            taken us to the next level in our journey to become a High Performance organization.”<div
+                                                                class="caption">
+                                                                <div class="longtxt">
+                                                                    Pattie Grimm, Director of Field Readiness, Microsoft Dynamics</div>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a></li>--%>
+                    <li class="rectangle gcrpg white"><a onclick="myScroll.scrollToPage(4,19)">
+                        <div class="rectangle live-tile gray" data-direction="horizontal" data-mode="flip"
+                            data-initdelay="12000" data-delay="12000" data-flipback="true">
+                            <div id="a1">
+                                <p class="dtail">
+                                    "Alan Dowzall's work gave us the insight to pinpoint the right actions required to get to the next level"
+                                </p>
+                            </div>
+                            <div id="a2">
+                                <p class="dtail">
+                                    "What Alan's approach really gave me was the knowledge and insight to pinpoint the right actions required to take our business leaders to the next level"
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                        <%--  <a onclick="myScroll.scrollToPage(5)">
+                                                <img src="../../Images/icons/reference.png" alt="Customers" />
+                                                <p>
+                                                    Customer References
+                                                </p>
+                                            </a>--%>
+                    </li>
+                    <%--<li class="rectangle gcrpg"><a onclick="myScroll.scrollToPage(5)">
+                                                <div class="live-tile rectangle" data-direction="horizontal" data-mode="flip" data-initdelay="5000">
+                                                    <div>
+                                                        <p>
+                                                            Customer Reference</p>
+                                                    </div>
+                                            </a><a onclick="myScroll.scrollToPage(5)">
+                                                <div>
+                                                    <p>
+                                                        Customer Reference
+                                                    </p>
+                                                </div>
+                                            </a></li>--%>
+                    <%--<li class="rectangle gcrpg">
+                                                <div>
+                                                <div class="live-tile gray" data-direction="horizontal" data-mode="flip" data-initdelay="5000">
+                                                    <div>
+                                                        <img src="../../Images/HumanSelling.png" width="127" height="127" alt="Human Selling" />
+                                                        <div class="caption">
+                                                            <p class="capW">
+                                                                Human Selling</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="dtail">
+                                                            “Pitching style resembles a process of mutual collaboration .“
+                                                        </p>
+                                                        <div class="caption">
+                                                            <p>
+                                                                Human Selling
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div></a>
+                                                    <%--<div id="flipbox" class="flipdiv flip-front ha">
+                                                    </div>--%>
+                    <%--  <div class="live-tile" data-mode="flip">
+                                                <div id="Div1" class="flipdiv">
+                                                    <p>
+                                                        Phasellus eget nulla felis, id semper eros. Quisque vel sollicitudin orci. Praesent
+                                                        nibh odio</p>
+                                                </div>
+                                                <div id="Div2" class="flipdiv">
+                                                    <p>
+                                                        Phasellus eget nulla felis, id semper eros. Quisque vel sollicitudin orci. Praesent
+                                                        nibh odio</p>
+                                                </div>
+                                            </div>--%>
+                    <%--<div id="flipdiv" class="flipbox flipbox-forward" data-color="#e0b001" data-direction="rl"
+                                                data-current="0">
+                                                <a>
+                                                    <p id="fliponload">
+                                                        before</p>
+                                                </a>
+                                            </div>
+                                            </li>--%>
+                    <!--<li class="rectangle"><div class="live-tile" data-mode="flip">
+        <div style="background-color:#808080;">Phasellus eget nulla felis, id semper eros. Quisque vel sollicitudin orci. Praesent nibh odio</div>
+        <div style="background-color:#deae02;">Phasellus eget nulla felis, id semper eros. Quisque vel sollicitudin orci. Praesent nibh odio</div>
+    </div></li>-->
+                    <li class="gworkshop"><a onclick="myScroll.scrollToPage(4,3)">
+                        <div class="icon">
+                            <img src="../../Images/icons/workshop.png" alt="Customers" />
+                        </div>
+                        <p>
+                            Role Excellence Profile Events
+                        </p>
+                    </a></li>
+                    <li class="gnews"><a onclick="myScroll.scrollToPage(4,6)">
+                        <div class="icon">
+                            <img src="../../Images/icons/news.png" alt="Customers" />
+                        </div>
+                        <p>
+                            Latest News on Alan Dowzall
+                        </p>
+                    </a></li>
+                    <li class="glink"><a target="_blank" href="https://linkedin.com/pub/alan-dowzall/1a/777/a62">
+                        <div class="icon">
+                            <img src="../../Images/icons/linkedin.png" alt="Customers" />
+                        </div>
+                        <p>
+                            Linked-in with Alan
+                        </p>
+                    </a></li>
+                    <li class="gtweet"><a onclick="myScroll.scrollToPage(4,7)">
+                        <div class="icon">
+                            <img src="../../Images/icons/twitter.png" alt="Customers" />
+                        </div>
+                        <br />
+                        <p>
+                            Read Alan’s Latest Tweets
+                        </p>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

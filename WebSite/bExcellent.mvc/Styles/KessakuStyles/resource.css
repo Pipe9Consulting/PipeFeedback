@@ -1,0 +1,105 @@
+/* ------------------ Cloud as Coach Page CSS Start here --------------- */
+.resourceContainer {
+    background: #eeeeee;
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-bottom: 17em;
+}
+
+.resourcehomebg {
+    background: url("../../images/KessakuImage/Resources-POE.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    float: left;
+    padding-bottom: 40%;
+    /*margin-bottom: 5em;*/
+    margin-bottom: 3em;
+    position: relative;
+    /*margin-top: 5em;*/
+}
+
+.cloud_midbar {
+    position: absolute;
+    width: 100%;
+    top: 6em;
+}
+
+    .cloud_midbar .resourcecoach {
+        color: #fff;
+        height: 100%;
+        font-size: 250%;
+        width: 80%;
+        float: left;
+        margin: 0px auto;
+        margin-top: 6%;
+        padding: 5px 0px 20px 0px;
+    }
+
+.resourceArea {
+    width: 48%;
+    margin: 0px auto;
+    padding-left: 9%;
+}
+
+
+   
+
+.resourcecoachsub {
+    font-size: 180%;
+    color: #fff;
+    height: 100%;
+    padding: 5px 0px 20px 0.9em;
+    font-style: normal;
+    margin-bottom: 3em;
+}
+
+.resourceIcon {
+    float: left;
+    width: 19%;
+    clear: both;
+    padding-right: 1%;
+    margin-top: 6%;
+}
+
+    .resourceIcon img {
+        width: 100%;
+        height: 100%;
+    }
+
+.fourcolumn li .resourcemiddle {
+    padding: 0 1em 88% 1em;
+    background: #fff;
+    float: left;
+    height: 0;
+}
+
+    .fourcolumn li .resourcemiddle p {
+        padding: 1em 0 0 0;
+        font-size: 90%;
+    }
+
+.fourcolumn li:last-child .bottom p {
+    padding: 1em 0;
+}
+
+.resourceArea h1, .resourceArea h2 {
+    color: #fff;
+    margin: 0 auto;
+}
+
+.resourceArea h1 {
+    background: url(../../images/KessakuImage/icons/resources-Icon.png) no-repeat top 2.3em left 0;
+    padding: 2.0em 0 0em 0;
+    background-size: auto 30%;
+    width: 90%;
+    text-align: center;
+    margin-top: 6%;
+}
+
+
+.resourceArea h2 {
+    width: 61%;
+    margin-bottom: 6%;
+    font-size: 150%;
+}

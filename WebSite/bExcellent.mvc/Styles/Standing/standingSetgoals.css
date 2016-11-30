@@ -1,0 +1,1193 @@
+#wrapper .customertiles {
+    width: 19.5%;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+}
+
+.networkTile {
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 0%;
+    float: left;
+    padding: 3% 0% 0% 3%;
+}
+
+.customertiles h1 {
+    color: #000 !important;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    font-weight: 400;
+    font-size: 150%;
+}
+
+#wrapper .customertiles li {
+    width: 47%;
+    height: 0;
+    padding-bottom: 45%;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 2.9% 2.9% 0;
+    position: relative;
+    cursor: pointer;
+    float: left;
+}
+
+.keyActions h2 {
+    color: #fff;
+    margin: 3% 3% 1% 3%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1%;
+    font-size: 150%;
+}
+
+.standingSetGoal {
+    margin: 2% 0% 0% 2%;
+    background: #222;
+    border: 1px solid #333;
+    width: 47%;
+    float: left;
+    position: relative;
+}
+
+.keyActions p {
+    color: #fff;
+    margin: 0% 3% 2% 3%;
+    font-size: 100%;
+    line-height: 1.3;
+}
+
+#wrapper .customertiles li:first-child {
+    width: 97%;
+}
+
+    #wrapper .customertiles li:first-child img {
+        width: 24%;
+        height: 40%;
+    }
+
+    #wrapper .customertiles li:first-child p {
+        left: 3%;
+    }
+
+#wrapper .customertiles li p {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#wrapper .customertiles li img {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    right: 0;
+    top: 4%;
+}
+
+
+.slimScrollBar {
+    background: #ccc !important;
+}
+
+.slimScrollRail {
+    background: #ccc !important;
+}
+
+
+.selected {
+    background: #000 !important;
+}
+
+    .selected .numbertile {
+        color: #e0b001 !important;
+    }
+
+    .selected p {
+        color: #e0b001 !important;
+    }
+
+
+
+
+#wrapper #scroller .customertiles .browsebtn {
+    background: none repeat scroll 0 0 #E0B001;
+    border: 1px solid #E0B001;
+    color: #FFFFFF;
+    padding: 2.5% 3%;
+    margin: 0 0 4% 0.5%;
+    float: left;
+    cursor: pointer;
+}
+
+.clr {
+    clear: both;
+}
+
+
+.setGoalQA {
+    border: 1px solid #aaa;
+    width: 70%;
+    padding: .7%;
+    float: left;
+    margin-top: 2.8%;
+}
+
+
+.clickText {
+    font-size: 110%;
+    color: #333;
+    float: right;
+    margin-bottom: 1%;
+    margin-right: 2%;
+}
+
+.setGoalQA ul li {
+    background: #000;
+    padding: 0%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 31.3%;
+    float: left;
+    border: 2px solid #000;
+}
+
+/*.setGoalQA ul li:nth-child(3) {
+        margin-right: 0%;
+    }
+
+    .setGoalQA ul li:nth-child(6) {
+        margin-right: 0%;
+    }
+
+    .setGoalQA ul li:nth-child(9) {
+        margin-right: 0%;
+    }
+
+    .setGoalQA ul li:nth-child(12) {
+        margin-right: 0%;
+    }
+
+    .setGoalQA ul li:nth-child(15) {
+        margin-right: 0%;
+    }
+
+    .setGoalQA ul li:nth-child(18) {
+        margin-right: 0%;
+    }*/
+
+.qn-answer {
+    padding: 2% 2%;
+}
+
+.practiceArea {
+    width: 100%;
+    margin-top: 1%;
+}
+
+    .practiceArea p {
+        font-size: 100%;
+        color: #fff;
+        float: left;
+        width: 85%;
+        margin-top: 3%;
+        text-transform: uppercase;
+    }
+
+    .practiceArea img {
+        width: 15%;
+        float: left;
+    }
+
+.qn {
+    background: #e0b001;
+    padding: 1% 2% 1% 2%;
+    color: #000;
+    font-size: 120%;
+    float: left;
+    width: 7.5%;
+    margin-right: 0%;
+}
+
+.goalAnswer {
+    color: #fff;
+    font-size: 100%;
+    float: left;
+    width: 80%;
+}
+
+.managerPhoto {
+    width: 15%;
+    float: left;
+    margin-right: 0%;
+}
+
+    .managerPhoto img {
+        width: 100%;
+    }
+
+
+.managerRating {
+    margin: 2%;
+    margin-bottom: 2%;
+}
+
+    .managerRating p {
+        float: left;
+        width: 38%;
+        font-size: 100%;
+        color: #fff;
+    }
+
+.managerScore {
+    float: left;
+    width: 40%;
+}
+
+
+    .managerScore img {
+        width: 80%;
+    }
+
+
+.goalDate {
+    width: 100%;
+    background: #fff;
+    padding: 2%;
+    margin: 3% 0% 0% 0%;
+    float: left;
+}
+
+.goalDateDB {
+    /*width: 100% !important;
+    background: url("../../../Images/images/dropdownarrow.png") no-repeat scroll right center #111;
+    background-size: 10% 100%;
+    padding: 3% 3%;
+    color: #fff;
+    position: relative;
+    margin: 0;
+    cursor: pointer;*/
+    float: left;
+    width: 100% !important;
+    background: #111;
+    background-size: 10% 100%;
+    padding: 1%;
+    color: #fff;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+}
+
+    .goalDateDB #chooseText {
+        float: left;
+        padding: 2%;
+    }
+
+
+
+#wrapper #scroller .customertiles .sendinv {
+    display: none;
+    float: right;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+
+
+
+    #wrapper #scroller .customertiles .sendinv li {
+        background: none repeat scroll 0 0 #444 !important;
+        width: 100%;
+        border: 0 none !important;
+        color: #fff;
+        float: none;
+        margin: 0;
+        padding: 3%;
+        height: auto;
+        cursor: pointer;
+    }
+
+
+.sleftRatings p {
+    width: 55%;
+    float: left;
+    color: #000;
+    font-size: 100%;
+    margin-top: 5%;
+}
+
+
+
+.sleftRatings img {
+    width: 33%;
+    float: left;
+    margin-top: 2%;
+}
+
+.sendinv li {
+    background: none repeat scroll 0 0 #444 !important;
+    width: 100% !important;
+    border: 0 none !important;
+    color: #fff !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 2% 0 1% 3% !important;
+    height: auto !important;
+    cursor: pointer !important;
+    border-bottom: 1px solid #555 !important;
+}
+
+
+
+.sendinv {
+    display: none;
+    float: right;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+    .sendinv li:hover {
+        background: #e0b001 !important;
+        color: #fff;
+    }
+
+
+.slimScrollDiv {
+    width: 100% !important;
+    height: 0% !important;
+    position: relative;
+}
+
+
+.scroll1 {
+    padding-bottom: 48%;
+    position: relative;
+    width: 100% !important;
+    height: 0% !important;
+}
+
+    .scroll1 ul {
+        position: absolute;
+        height: 0%;
+        width: 96.5%;
+    }
+
+/*.scroll2 {
+    padding-bottom: 152%;
+    position: relative;
+    width: 103% !important;
+    height: 0% !important;
+}
+
+    .scroll2 ul {
+        position: absolute;
+        height: 0%;
+        width: 96.5%;
+    }*/
+
+.scroll3 {
+    padding-bottom: 48%;
+    position: relative;
+    width: 104% !important;
+    height: 0% !important;
+}
+
+    .scroll3 ul {
+        position: absolute;
+        height: 0%;
+        width: 96.5%;
+    }
+
+.practAerea {
+    color: #000;
+    font-size: 140%;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+
+
+.selectGoal {
+    border: 2px solid #e0b001 !important;
+}
+
+    .selectGoal span {
+        background: url(../../../Images/images/feedback/selecttick.png)no-repeat top right;
+        height: 77px;
+        width: 31.5%;
+        z-index: 999;
+        position: absolute;
+        background-size: 17% 60%;
+        top: 0;
+        left: 0;
+    }
+
+.doneBtn {
+    margin-right: 1.5%;
+    float: right;
+    margin-bottom: 2%;
+}
+
+
+    .doneBtn a {
+        padding: 3px 10px 6px 10px;
+        color: #000;
+        background: #e0b001;
+        border: 1px solid #000;
+        font-size: 100%;
+        text-decoration: none;
+    }
+
+        .doneBtn a:hover {
+            color: #e0b001;
+            background: #000;
+            border: 1px solid #e0b001;
+        }
+
+
+.saveBtn {
+    margin-right: 1.5%;
+    float: right;
+}
+
+
+    .saveBtn a {
+        padding: 3px 10px 6px 10px;
+        color: #000;
+        background: #e0b001;
+        border: 1px solid #000;
+        font-size: 100%;
+        text-decoration: none;
+    }
+
+        .saveBtn a:hover {
+            color: #e0b001;
+            background: #000;
+            border: 1px solid #e0b001;
+        }
+
+
+
+.sendinv ul {
+    width: 100% !important;
+}
+
+.goalDatePick {
+    float: left;
+    padding-top: 1%;
+}
+
+.slimScrollBar {
+    z-index: 0 !important;
+}
+
+.goalsShared p {
+    color: #fff;
+    padding: 1% 2%;
+    width: 90%;
+    float: left;
+}
+
+.goalDateSet {
+    background: rgba(0, 0, 0, 0.7) !important;
+    height: 0;
+    padding-bottom: 22% !important;
+    z-index: 9999999;
+    position: absolute;
+    width: 31.5%;
+}
+
+
+.ui-datepicker-trigger {
+    margin-left: 10%;
+    float: right;
+    padding-top: .5%;
+}
+
+
+.goalDate #dateValue {
+    display: none;
+}
+
+.popupbg {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9888888;
+}
+
+#wallactcontent {
+    background: #000;
+    float: left;
+    width: 100%;
+    padding: 2% 2% 4% 2%;
+    border: 1px solid #e0b001;
+}
+
+.goalNotSavedContent {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    float: left;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    padding: 20% 10%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+
+
+
+    .goalNotSavedContent h3 {
+        text-align: center;
+        font-size: 110%;
+        color: #fff;
+        padding: 2% 0;
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 5%;
+    }
+
+    .goalNotSavedContent a {
+        background: #e0b001;
+        border: 1px solid #000;
+        color: #000;
+        padding: 2% 4%;
+        cursor: pointer;
+    }
+
+        .goalNotSavedContent a:hover {
+            background: #000;
+            border: 1px solid #e0b001;
+            color: #e0b001;
+        }
+
+.goalSavedPopContent {
+    background: rgba(0, 0, 0, 0.9);
+    float: left;
+    width: 100%;
+    height:100%;
+    padding: 20% 10%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    
+}
+
+    .goalSavedPopContent h3 {
+        text-align: center;
+        font-size: 150%;
+        color: #fff;
+        padding: 30% 0;
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+
+.goalNotSavedPopContent {
+    background: rgba(0, 0, 0, 0.9);
+    float: left;
+    width: 100%;
+    padding: 10%;
+    margin-top: -545px;
+    position: absolute;
+    padding-bottom: 422px;
+}
+
+    .goalNotSavedPopContent h3 {
+        text-align: center;
+        font-size: 150%;
+        color: #fff;
+        padding: 30% 0;
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+
+
+.goalDeleteContent {
+    background: rgba(0, 0, 0, 0.8);
+    float: left;
+    width: 100%;
+    padding: 28% 0;
+}
+
+    .goalDeleteContent h3 {
+        text-align: center;
+        font-size: 110%;
+        color: #fff;
+        padding: 2% 0;
+        margin: 0;
+        font-weight: 400;
+    }
+
+
+.goalNotSaved .close {
+    background: #e0b001;
+    padding: 1% 6% 7% 3%;
+    cursor: pointer;
+    float: right;
+    height: 0;
+    width: 3%;
+    border: 1px solid #e0b001;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+    .goalNotSaved .close:hover {
+        background: #000;
+        color: #e0b001;
+        border: 1px solid #e0b001;
+    }
+
+
+div .goalSavedPopup .close {
+    background: #e0b001;
+    padding: 1% 6% 7% 3%;
+    cursor: pointer;
+    float: right;
+    height: 0;
+    width: 3%;
+    border: 1px solid #e0b001;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.goalSavedPopup .close:hover {
+    background: #000;
+    color: #e0b001;
+    border: 1px solid #e0b001;
+}
+
+
+.goalDeletePopup .close {
+    background: #e0b001;
+    padding: 1% 6% 7% 3%;
+    cursor: pointer;
+    float: right;
+    height: 0;
+    width: 3%;
+    border: 1px solid #e0b001;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.goalDelete .close:hover {
+    background: #000;
+    color: #e0b001;
+    border: 1px solid #e0b001;
+}
+
+.goalDeletePopup .close {
+    margin-top: -4.3%;
+}
+
+
+
+.goalNotSaved .close {
+    margin-top: -4.3%;
+}
+
+
+
+div .wallgoal .close {
+    background: #e0b001;
+    padding: 0.5% 2.5% 3.3% 1.3%;
+    cursor: pointer;
+    float: right;
+    height: 0;
+    width: 3%;
+    border: 1px solid #e0b001;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+    div .wallgoal .close:hover {
+        background: #000;
+        color: #e0b001;
+        border: 1px solid #e0b001;
+    }
+
+
+.wallgoal .close {
+    margin-top: -4.3%;
+}
+
+.wallgoal {
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 29%;
+    margin: 0 auto;
+    padding: 1.7% 0.3% 0.3%;
+    position: absolute;
+    top: 5%;
+    width: 46%;
+    z-index: 9999999 !important;
+}
+
+
+.goalNotSaved {
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 38%;
+    margin: 0 auto;
+    padding: 7.7% 3.3% 0.3%;
+    position: absolute;
+    top: 21%;
+    width: 25%;
+    z-index: 9999999 !important;
+}
+
+.goalSavedPopup {
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 36%;
+    margin: 0 auto;
+    padding: 7.7% 3.3% 0.3%;
+    position: absolute;
+    top: 20%;
+    width: 25%;
+    z-index: 9999999 !important;
+}
+
+
+.goalDeletePopup {
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 36%;
+    margin: 0 auto;
+    padding: 7.7% 3.3% 0.3%;
+    position: absolute;
+    top: 30%;
+    width: 25%;
+    z-index: 9999999 !important;
+}
+
+.goalsDeletBtn {
+    width: 100%;
+    text-align: center;
+    margin: 5% 0 0 0;
+}
+
+    .goalsDeletBtn a {
+        background: #e0b001;
+        color: #000;
+        border: 1px solid #000;
+        padding: 2% 5%;
+        margin-right: 2%;
+        cursor: pointer;
+    }
+
+        .goalsDeletBtn a:hover {
+            background: #000;
+            color: #e0b001;
+            border: 1px solid #e0b001;
+        }
+
+
+
+
+
+    .goalsDeletBtn a {
+        text-decoration: none;
+        background: #e0b001 !important;
+        float: none !important;
+        text-align: center;
+        padding: 1.5% 4% 2% 4% !important;
+        margin: 2% !important;
+        border: 1px solid #000 !important;
+        cursor: pointer;
+        color: #000 !important;
+    }
+
+        .goalsDeletBtn a:hover {
+            background: #000 !important;
+            color: #000 !important;
+            border: 1px solid #e0b001 !important;
+            color: #e0b001 !important;
+        }
+
+.goalsSetSaveBtn {
+    margin-top: -24%;
+}
+
+    .goalsSetSaveBtn a {
+        text-decoration: none;
+        background: #e0b001 !important;
+        float: none !important;
+        text-align: center;
+        padding: 1% 4% 1% 4% !important;
+        margin: 45% !important;
+        border: 1px solid #000 !important;
+        cursor: pointer;
+        color: #000 !important;
+    }
+
+        .goalsSetSaveBtn a:hover {
+            background: #000 !important;
+            color: #000 !important;
+            border: 1px solid #e0b001 !important;
+            color: #e0b001 !important;
+        }
+
+
+
+
+.goalsNotSaveBtn {
+    margin-top: -24%;
+}
+
+    .goalsNotSaveBtn a {
+        text-decoration: none;
+        background: #e0b001 !important;
+        float: none !important;
+        text-align: center;
+        padding: 1% 4% 1% 4% !important;
+        margin: 45% !important;
+        border: 1px solid #000 !important;
+        cursor: pointer;
+        color: #000 !important;
+    }
+
+        .goalsNotSaveBtn a:hover {
+            background: #000 !important;
+            color: #000 !important;
+            border: 1px solid #e0b001 !important;
+            color: #e0b001 !important;
+        }
+
+
+.wallgoal h3 {
+    text-align: center;
+    font-size: 130%;
+    color: #fff;
+    padding: 2% 0;
+    margin: 0;
+    font-weight: 400;
+    border-bottom: 1px solid #666;
+}
+
+.goalDateShared ul li {
+    list-style: none;
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+
+.wallgoal h4 {
+    font-size: 110%;
+    color: #fff;
+    padding: 2% 0;
+    margin: 0;
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+
+    .wallgoal h4 span {
+        background: #e0b001;
+        padding: 3px 3px 0px 4px;
+        margin: 5px;
+    }
+
+        .wallgoal h4 span img {
+            width: 15px;
+        }
+
+
+.shareQn {
+    float: left;
+    padding: 2% 0 2% 3%;
+    background: #e0b001;
+    width: 8%;
+    color: #000;
+    font-size: 100%;
+}
+
+.shareContent {
+    float: left;
+    width: 92%;
+    border: 1px solid #e0b001;
+    background: #000;
+    padding: .5%;
+}
+
+.sharePa {
+    background: #fff;
+    width: 100%;
+    padding: .2% .5%;
+    float: left;
+}
+
+    .sharePa img {
+        /*background: #000;*/
+        width: 13%;
+        float: left;
+    }
+
+    .sharePa p {
+        float: left;
+        font-size: 130%;
+        color: #000;
+        padding: 1% 0 0 2%;
+    }
+
+
+.goalShareQn {
+    font-size: 100%;
+    color: #fff;
+    padding: 2% 0 0 3%;
+}
+
+.sharedGoalDate {
+    font-size: 115%;
+    color: #fff;
+    padding: 6% 0 3% 3%;
+}
+
+.bfrSetGoalDate {
+    font-size: 115%;
+    color: #000;
+    width: 100%;
+    float: left;
+    margin-top: 0%;
+}
+
+.goalshareBtn {
+    background: #e0b001;
+    width: 8.3%;
+    float: left;
+    cursor: pointer;
+    margin-left: 0%;
+    margin-top: 4%;
+}
+
+    .goalshareBtn img {
+        width: 80%;
+        margin: 12% 10% 6% 12%;
+    }
+
+.vs-context-menu {
+    /*position: absolute;
+    float: left;
+    z-index: 9999;
+    display: none;
+    width: 50%;
+    left: 18.5%;
+    top: 76%;*/
+    position: fixed;
+    float: left;
+    z-index: 999999;
+    display: none;
+    width: 21%;
+}
+
+    .vs-context-menu ul {
+        float: left;
+        width: 100%;
+    }
+
+    .vs-context-menu li {
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        padding: 3%;
+        margin: 0 !important;
+        width: 48.3% !important;
+        /* float: none !important; */
+        float: none !important;
+        border-bottom: 1px solid #444;
+    }
+
+.bold {
+    background-color: #222 !important;
+}
+
+.vs-context-menu li:first-child:hover {
+    background: #fff;
+    color: #fff;
+    cursor: wait;
+}
+
+.vs-context-menu li:hover {
+    background: #e0b001;
+    color: #fff;
+}
+
+.ui-datepicker-calendar th span {
+    font-size: 100% !important;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-size: 13px;
+    font-weight:normal;
+}
+
+.managerRating p, .keyActions p {
+    font-size: 100% !important;
+}
+
+.goalEditDeleteDevlopment {
+    width: 100%;
+    height: 264px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: -264px;
+    float: left;
+}
+
+    .goalEditDeleteDevlopment a {
+        text-decoration: none;
+        background: #000;
+        float: right;
+        padding: 2% 1% 2% 2%;
+        margin: 2%;
+        border: 1px solid #E0B000;
+        cursor: pointer;
+    }
+
+        .goalEditDeleteDevlopment a:hover {
+            text-decoration: none;
+            background: #e0b001;
+        }
+
+        .goalEditDeleteDevlopment a img {
+            width: 80%;
+        }
+
+.goalDateSuccessYes {
+    background: #e0b001;
+    color: #000;
+    border: 1px solid #000;
+    padding: 2% 5%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+    .goalDateSuccessYes:hover {
+        background: #000;
+        color: #e0b001;
+        border: 1px solid #e0b001;
+    }
+
+.goalEditDelete {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    float: left;
+}
+
+
+    .goalEditDelete a {
+        text-decoration: none;
+        background: #000;
+        float: right;
+        padding: 1.5% 0% 1% 3%;
+        margin: 20px 2%;
+        border: 1px solid #E0B000;
+        cursor: pointer;
+    }
+
+        .goalEditDelete a:hover {
+            text-decoration: none;
+            background: #e0b001;
+        }
+
+        .goalEditDelete a img {
+            width: 64%;
+        }
+
+.goalsShared {
+    height: 22px;
+    overflow: hidden;
+}
+
+
+    .goalsShared span {
+        color: #fff;
+        /* width: 4%; */
+        bottom: -5px;
+        position: relative;
+        text-align: left;
+        float: left;
+        cursor: pointer;
+    }
+
+    
+
+#sticky .scroll4 {
+    padding-bottom: 88%;
+    position: relative;
+    width: 95% !important;
+    height: 0% !important;
+}
+
+    /*.scroll3 ul {
+        position: absolute;
+        height: 0%;
+        width: 96.5%;
+    }*/
+
+
+   
+
+      .reqFeedback .slimScrollDiv {   
+    height: 0 !important;
+    padding-bottom: 90% !important;
+    position: relative;
+}
+
+      .dummyBg {
+    display: table;
+    width: 100%;
+}
+
+    .dummyBg h3 {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        color: #fff;
+        font-size: medium;
+        height: 394px;      
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+
+#practiceAreaQuestions li:nth-child(1), #practiceAreaQuestions li:nth-child(2) {
+    margin-top:0px;
+}
+.scroll1 ul {
+    width:100% !important;
+}

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd3" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
+  <xs:complexType name="ArrayOfZone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Zone" nillable="true" type="tns:Zone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfZone" nillable="true" type="tns:ArrayOfZone" />
+  <xs:complexType name="Zone">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Zone" nillable="true" type="tns:Zone" />
+  <xs:complexType name="ArrayOfTimeZone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TimeZone" nillable="true" type="tns:TimeZone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTimeZone" nillable="true" type="tns:ArrayOfTimeZone" />
+  <xs:complexType name="TimeZone">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TimeZone" nillable="true" type="tns:TimeZone" />
+  <xs:complexType name="ArrayOfCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountry" nillable="true" type="tns:ArrayOfCountry" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="ArrayOfMinimizedPOE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MinimizedPOE" nillable="true" type="tns:MinimizedPOE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMinimizedPOE" nillable="true" type="tns:ArrayOfMinimizedPOE" />
+  <xs:complexType name="MinimizedPOE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsCapability" type="xs:int" />
+      <xs:element minOccurs="0" name="IsSurvey" type="xs:int" />
+      <xs:element minOccurs="0" name="NoOfModule" type="xs:int" />
+      <xs:element minOccurs="0" name="POEId" type="xs:int" />
+      <xs:element minOccurs="0" name="POEName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuestionPerModule" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleLevel" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleTitle" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MinimizedPOE" nillable="true" type="tns:MinimizedPOE" />
+  <xs:complexType name="ArrayOfUserPOEMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserPOEMapping" nillable="true" type="tns:UserPOEMapping" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserPOEMapping" nillable="true" type="tns:ArrayOfUserPOEMapping" />
+  <xs:complexType name="UserPOEMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="ChildMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="Designation" nillable="true" type="tns:Designation" />
+      <xs:element minOccurs="0" name="Duration" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="FeedbackDetails" nillable="true" type="tns:Feedback" />
+      <xs:element minOccurs="0" name="IsFbCompleted" type="xs:boolean" />
+      <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nooffbs" type="xs:int" />
+      <xs:element minOccurs="0" name="POE" nillable="true" type="tns:POE" />
+      <xs:element minOccurs="0" name="POEId" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="PeerChildMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="PeerParentMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="PoeAmount" type="xs:float" />
+      <xs:element minOccurs="0" name="RegionId" type="xs:int" />
+      <xs:element minOccurs="0" name="Role" type="xs:int" />
+      <xs:element minOccurs="0" name="SecondaryUserPOEMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="SubscribtionDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="User" />
+      <xs:element minOccurs="0" name="UserAmount" type="xs:float" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+      <xs:element minOccurs="0" name="UserPOEMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="WcsiScoreDiff" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserPOEMapping" nillable="true" type="tns:UserPOEMapping" />
+  <xs:complexType name="Designation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DesignationId" type="xs:int" />
+      <xs:element minOccurs="0" name="Level" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Designation" nillable="true" type="tns:Designation" />
+  <xs:complexType name="Feedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedOn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedOnDtm" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FeedbackId" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" minOccurs="0" name="FeedbackStatus" type="q1:FeedbackStatus" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" minOccurs="0" name="FeedbackType" type="q2:FeedbackType" />
+      <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="tns:UserPOEMapping" />
+      <xs:element minOccurs="0" name="RequestedById" type="xs:int" />
+      <xs:element minOccurs="0" name="RequestedFor" nillable="true" type="tns:UserPOEMapping" />
+      <xs:element minOccurs="0" name="RequestedForId" type="xs:int" />
+      <xs:element minOccurs="0" name="RequestedFrom" nillable="true" type="tns:UserPOEMapping" />
+      <xs:element minOccurs="0" name="RequestedFromId" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdatedOn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdatedOnDtm" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Feedback" nillable="true" type="tns:Feedback" />
+  <xs:complexType name="POE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IntroContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modules" nillable="true" type="tns:ArrayOfModule" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POEId" type="xs:int" />
+      <xs:element minOccurs="0" name="PoeAmount" type="xs:float" />
+      <xs:element minOccurs="0" name="PoeFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="SubscribedPoeDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="POE" nillable="true" type="tns:POE" />
+  <xs:complexType name="ArrayOfModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Module" nillable="true" type="tns:Module" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModule" nillable="true" type="tns:ArrayOfModule" />
+  <xs:complexType name="Module">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CourseDetail" nillable="true" type="tns:ArrayOfCourseDetail" />
+      <xs:element minOccurs="0" name="IndexType" type="xs:int" />
+      <xs:element minOccurs="0" name="KeyAction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyAction5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyActionSlideCount" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleIntro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntro5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleIntroSlideCount" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleOrderNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="POEId" type="xs:int" />
+      <xs:element minOccurs="0" name="Questions" nillable="true" type="tns:ArrayOfQuestion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Module" nillable="true" type="tns:Module" />
+  <xs:complexType name="ArrayOfCourseDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CourseDetail" nillable="true" type="tns:CourseDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCourseDetail" nillable="true" type="tns:ArrayOfCourseDetail" />
+  <xs:complexType name="CourseDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Contentlength" type="xs:int" />
+      <xs:element minOccurs="0" name="CourseContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CourseLink" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CourseTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Courseid" type="xs:int" />
+      <xs:element minOccurs="0" name="LinkCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CourseDetail" nillable="true" type="tns:CourseDetail" />
+  <xs:complexType name="ArrayOfQuestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Question" nillable="true" type="tns:Question" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQuestion" nillable="true" type="tns:ArrayOfQuestion" />
+  <xs:complexType name="Question">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Answer" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Goaldate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsBarrierQuestion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Manager" nillable="true" type="User" />
+      <xs:element minOccurs="0" name="NetScore" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionOrderNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="QuetionText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SelScore" type="xs:int" />
+      <xs:element minOccurs="0" name="SetGoalDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sharedwith" nillable="true" type="ArrayOfUser" />
+      <xs:element minOccurs="0" name="ShortQuetionText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SideBarTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubQuestion" nillable="true" type="tns:ArrayOfSubQuestion" />
+      <xs:element minOccurs="0" name="SubQuestionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Question" nillable="true" type="tns:Question" />
+  <xs:complexType name="ArrayOfSubQuestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubQuestion" nillable="true" type="tns:SubQuestion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubQuestion" nillable="true" type="tns:ArrayOfSubQuestion" />
+  <xs:complexType name="SubQuestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionOrderNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="QuetionText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubQuestionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubQuestion" nillable="true" type="tns:SubQuestion" />
+  <xs:complexType name="ArrayOfAccounts">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Accounts" nillable="true" type="tns:Accounts" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAccounts" nillable="true" type="tns:ArrayOfAccounts" />
+  <xs:complexType name="Accounts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DesignationId" type="xs:int" />
+      <xs:element minOccurs="0" name="DesignationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Photo" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="PlanId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PoeCost" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Poes" nillable="true" type="tns:ArrayOfPOE" />
+      <xs:element minOccurs="0" name="SubscribedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubscribedUserDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrialDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserCost" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Userid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Accounts" nillable="true" type="tns:Accounts" />
+  <xs:complexType name="ArrayOfPOE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="POE" nillable="true" type="tns:POE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPOE" nillable="true" type="tns:ArrayOfPOE" />
+  <xs:complexType name="PoeModules">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Modules" nillable="true" type="tns:ArrayOfPoeModuleValues" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PoeModules" nillable="true" type="tns:PoeModules" />
+  <xs:complexType name="ArrayOfPoeModuleValues">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PoeModuleValues" nillable="true" type="tns:PoeModuleValues" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPoeModuleValues" nillable="true" type="tns:ArrayOfPoeModuleValues" />
+  <xs:complexType name="PoeModuleValues">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModuleAverage" type="xs:double" />
+      <xs:element minOccurs="0" name="ModuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="Modulename" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PoeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Priority" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeightageScores" nillable="true" type="tns:WeightageValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PoeModuleValues" nillable="true" type="tns:PoeModuleValues" />
+  <xs:complexType name="WeightageValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Always" type="xs:double" />
+      <xs:element minOccurs="0" name="Frequently" type="xs:double" />
+      <xs:element minOccurs="0" name="Inconsistenly" type="xs:double" />
+      <xs:element minOccurs="0" name="Rarely" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WeightageValue" nillable="true" type="tns:WeightageValue" />
+  <xs:complexType name="ArrayOfNetwork">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Network" nillable="true" type="tns:Network" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNetwork" nillable="true" type="tns:ArrayOfNetwork" />
+  <xs:complexType name="Network">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedOn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NetworkName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Plan" type="xs:int" />
+      <xs:element minOccurs="0" name="Subscriptionid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Network" nillable="true" type="tns:Network" />
+  <xs:complexType name="ArrayOfUserRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserRole" nillable="true" type="tns:UserRole" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserRole" nillable="true" type="tns:ArrayOfUserRole" />
+  <xs:complexType name="UserRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RoleId" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserRole" nillable="true" type="tns:UserRole" />
+  <xs:complexType name="ArrayOfModulesGoal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ModulesGoal" nillable="true" type="tns:ModulesGoal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModulesGoal" nillable="true" type="tns:ArrayOfModulesGoal" />
+  <xs:complexType name="ModulesGoal">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Module">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="QuestionsGoals" nillable="true" type="tns:ArrayOfQuestionsGoal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ModulesGoal" nillable="true" type="tns:ModulesGoal" />
+  <xs:complexType name="ArrayOfQuestionsGoal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="QuestionsGoal" nillable="true" type="tns:QuestionsGoal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQuestionsGoal" nillable="true" type="tns:ArrayOfQuestionsGoal" />
+  <xs:complexType name="QuestionsGoal">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Question">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Goal" type="xs:int" />
+          <xs:element minOccurs="0" name="GoalCompletedMonth" type="xs:int" />
+          <xs:element minOccurs="0" name="GoalExpired" type="xs:boolean" />
+          <xs:element minOccurs="0" name="GoalGap" type="xs:int" />
+          <xs:element minOccurs="0" name="GoalMonthDiff" type="xs:int" />
+          <xs:element minOccurs="0" name="GoalSetedOn" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="GoalSetedOnStr" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsGoalShared" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SelectedGoalValue" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="QuestionsGoal" nillable="true" type="tns:QuestionsGoal" />
+  <xs:complexType name="Plan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MaxPoeCount" type="xs:int" />
+      <xs:element minOccurs="0" name="MaxUsercount" type="xs:int" />
+      <xs:element minOccurs="0" name="PlanId" type="xs:int" />
+      <xs:element minOccurs="0" name="PlanName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PoeCost" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UserCost" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Plan" nillable="true" type="tns:Plan" />
+  <xs:complexType name="ArrayOfManagerReports">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ManagerReports" nillable="true" type="tns:ManagerReports" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfManagerReports" nillable="true" type="tns:ArrayOfManagerReports" />
+  <xs:complexType name="ManagerReports">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompletedOn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastLogin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ManagerEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ManagerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PoeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PoeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Relation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeamEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeamName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ManagerReports" nillable="true" type="tns:ManagerReports" />
+  <xs:complexType name="ArrayOfTeamReports">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TeamReports" nillable="true" type="tns:TeamReports" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeamReports" nillable="true" type="tns:ArrayOfTeamReports" />
+  <xs:complexType name="TeamReports">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompletedOn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastLogin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PoeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Relation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TeamReports" nillable="true" type="tns:TeamReports" />
+  <xs:complexType name="ArrayOfYammerContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="YammerContent" nillable="true" type="tns:YammerContent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfYammerContent" nillable="true" type="tns:ArrayOfYammerContent" />
+  <xs:complexType name="YammerContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromMailid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Groupid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ImageUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToMailid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YammerToken" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="YammerContent" nillable="true" type="tns:YammerContent" />
+  <xs:complexType name="DashboardModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DashboardFeedback" nillable="true" type="tns:DashboardFeedback" />
+      <xs:element minOccurs="0" name="DashboardGoal" nillable="true" type="tns:DashboardGoal" />
+      <xs:element minOccurs="0" name="DashboardPathFinders" nillable="true" type="tns:DashboardPathFinders" />
+      <xs:element minOccurs="0" name="DashboardRecognition" nillable="true" type="tns:DashboardRecognition" />
+      <xs:element minOccurs="0" name="DashboardStanding" nillable="true" type="tns:DashboardStanding" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardModel" nillable="true" type="tns:DashboardModel" />
+  <xs:complexType name="DashboardFeedback">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FeedbackGiven" type="xs:int" />
+      <xs:element minOccurs="0" name="FeedbackGivenUsers" nillable="true" type="tns:ArrayOfUserPOEMapping" />
+      <xs:element minOccurs="0" name="FeedbackReceived" type="xs:int" />
+      <xs:element minOccurs="0" name="FeedbackReceivedUsers" nillable="true" type="tns:ArrayOfUserPOEMapping" />
+      <xs:element minOccurs="0" name="FeedbackTaken" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardFeedback" nillable="true" type="tns:DashboardFeedback" />
+  <xs:complexType name="DashboardGoal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GoalUsers" nillable="true" type="tns:ArrayOfDashboardUser" />
+      <xs:element minOccurs="0" name="GoalsCompleted" type="xs:int" />
+      <xs:element minOccurs="0" name="GoalsDelayed" type="xs:int" />
+      <xs:element minOccurs="0" name="GoalsSet" type="xs:int" />
+      <xs:element minOccurs="0" name="GoalsShared" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardGoal" nillable="true" type="tns:DashboardGoal" />
+  <xs:complexType name="ArrayOfDashboardUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DashboardUser" nillable="true" type="tns:DashboardUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDashboardUser" nillable="true" type="tns:ArrayOfDashboardUser" />
+  <xs:complexType name="DashboardUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardUser" nillable="true" type="tns:DashboardUser" />
+  <xs:complexType name="DashboardPathFinders">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Modules" nillable="true" type="tns:ArrayOfPAModule" />
+      <xs:element minOccurs="0" name="ModulesCount" type="xs:int" />
+      <xs:element minOccurs="0" name="PathfindersForYouCount" type="xs:int" />
+      <xs:element minOccurs="0" name="YourPathfinders" nillable="true" type="tns:ArrayOfPathfindersPracticeArea" />
+      <xs:element minOccurs="0" name="YourPathfindersCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardPathFinders" nillable="true" type="tns:DashboardPathFinders" />
+  <xs:complexType name="ArrayOfPAModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PAModule" nillable="true" type="tns:PAModule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPAModule" nillable="true" type="tns:ArrayOfPAModule" />
+  <xs:complexType name="PAModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PAModule" nillable="true" type="tns:PAModule" />
+  <xs:complexType name="ArrayOfPathfindersPracticeArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PathfindersPracticeArea" nillable="true" type="tns:PathfindersPracticeArea" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPathfindersPracticeArea" nillable="true" type="tns:ArrayOfPathfindersPracticeArea" />
+  <xs:complexType name="PathfindersPracticeArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="PathfinderUsers" nillable="true" type="tns:ArrayOfDashboardUser" />
+      <xs:element minOccurs="0" name="PracticeAreaCount" type="xs:int" />
+      <xs:element minOccurs="0" name="PracticeAreaName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PathfindersPracticeArea" nillable="true" type="tns:PathfindersPracticeArea" />
+  <xs:complexType name="DashboardRecognition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RecognitionOthers" type="xs:int" />
+      <xs:element minOccurs="0" name="RecognitionOthersUser" nillable="true" type="tns:ArrayOfDashboardUser" />
+      <xs:element minOccurs="0" name="RecognitionYou" type="xs:int" />
+      <xs:element minOccurs="0" name="RecognitionYouUsers" nillable="true" type="tns:ArrayOfDashboardUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardRecognition" nillable="true" type="tns:DashboardRecognition" />
+  <xs:complexType name="DashboardStanding">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ManagerSync" type="xs:double" />
+      <xs:element minOccurs="0" name="StandingUsers" nillable="true" type="tns:ArrayOfDashboardUser" />
+      <xs:element minOccurs="0" name="TenureForUser" type="xs:double" />
+      <xs:element minOccurs="0" name="YourComunity" type="xs:double" />
+      <xs:element minOccurs="0" name="YourStanding" type="xs:double" />
+      <xs:element minOccurs="0" name="YourTeam" type="xs:double" />
+      <xs:element minOccurs="0" name="YourTenure" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardStanding" nillable="true" type="tns:DashboardStanding" />
+  <xs:complexType name="Notification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Feedback" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Goals" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mentor" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Network" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Profile" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Standing" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Sync" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Wall" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Notification" nillable="true" type="tns:Notification" />
+  <xs:complexType name="ArrayOfQuestionLists">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="QuestionLists" nillable="true" type="tns:QuestionLists" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQuestionLists" nillable="true" type="tns:ArrayOfQuestionLists" />
+  <xs:complexType name="QuestionLists">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POEId" type="xs:int" />
+      <xs:element minOccurs="0" name="PoeModuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="Priority" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionList" nillable="true" type="tns:ArrayOfQuestionLists" />
+      <xs:element minOccurs="0" name="QuestionOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="Questions" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QuestionLists" nillable="true" type="tns:QuestionLists" />
+  <xs:complexType name="TrackGoal">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="Netdata" nillable="true" type="q3:StandingScore" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="Youdata" nillable="true" type="q4:SyncScore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrackGoal" nillable="true" type="tns:TrackGoal" />
+  <xs:complexType name="ArrayOfDevelopmentPriorities">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DevelopmentPriorities" nillable="true" type="tns:DevelopmentPriorities" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDevelopmentPriorities" nillable="true" type="tns:ArrayOfDevelopmentPriorities" />
+  <xs:complexType name="DevelopmentPriorities">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bucketorder" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrentFeedbackId" type="xs:int" />
+      <xs:element minOccurs="0" name="ManagerCapability" type="xs:int" />
+      <xs:element minOccurs="0" name="ManagerMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="ManagerResult" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="Rating" type="xs:int" />
+      <xs:element minOccurs="0" name="SelfCapability" type="xs:int" />
+      <xs:element minOccurs="0" name="SelfResult" type="xs:int" />
+      <xs:element minOccurs="0" name="TeamId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DevelopmentPriorities" nillable="true" type="tns:DevelopmentPriorities" />
+  <xs:complexType name="GoalDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompletedDays" type="xs:int" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OverallScore" type="xs:int" />
+      <xs:element minOccurs="0" name="RemainingDays" type="xs:int" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GoalDate" nillable="true" type="tns:GoalDate" />
+  <xs:complexType name="ArrayOfResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Results" nillable="true" type="tns:Results" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResults" nillable="true" type="tns:ArrayOfResults" />
+  <xs:complexType name="Results">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrrentResult" type="xs:int" />
+      <xs:element minOccurs="0" name="IsDevelopmentPriorities" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="PreviousResult" type="xs:int" />
+      <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Results" nillable="true" type="tns:Results" />
+  <xs:complexType name="ArrayOfDesignation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Designation" nillable="true" type="tns:Designation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDesignation" nillable="true" type="tns:ArrayOfDesignation" />
+</xs:schema>

@@ -1,0 +1,1088 @@
+﻿/*Newly added*/
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    background-size: 100% 100% !important;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -45px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+
+#target .hideFooterMenu {
+    background: #000 !important;
+    opacity: 0.1;
+    cursor: default;
+    color: #fff;
+}
+
+    #target .hideFooterMenu:hover {
+        background: #000 !important;
+        opacity: 0.1;
+        cursor: default;
+        color: #fff !important;
+    }
+
+    #target .hideFooterMenu p, #target .hideFooterMenu a {
+        color: #fff !important;
+        cursor: default;
+    }
+
+    #target .hideFooterMenu:hover p, #target .hideFooterMenu:hover a {
+        color: #fff !important;
+        cursor: default;
+    }
+
+.footerPart, .page-wrap:after {
+    height: 45px;
+}
+
+#sticky {
+    z-index: 9999;
+}
+
+.afterlogin img {
+    width: 45%;
+}
+
+.headerMenuHide {
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+    height: 0px;
+    padding-bottom: 100%;
+    cursor: default;
+}
+
+
+.headerNOHover li:hover p {
+    color: #fff !important;
+}
+
+
+.overallcontent {
+    margin: 0 auto;
+    width: 25%;
+    height: 200px;
+    background: #000;
+    border: 1px solid #e0b001;
+    top: 30%;
+    position: relative;
+    display: table;
+    padding-bottom: 1%;
+}
+
+.overallclose {
+    top: 0px;
+    background: none;
+    color: #e0b001;
+    right: 0%;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    padding: 4px 12px 6px 10px;
+}
+
+    .overallclose p {
+        color: #fff !important;
+        font-size: 25px !important;
+        font-weight: 700;
+    }
+
+
+.overallcontent div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.overallcontent p {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 5%;
+}
+
+.overallcontent a {
+    background: #e0b001;
+    border: 1px solid #000;
+    padding: 3px 15px 6px 15px;
+    color: #000;
+}
+
+    .overallcontent a:hover {
+        background: #000;
+        border: 1px solid #e0b001;
+        color: #fff;
+    }
+
+.overallpopup {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999999;
+    display: none;
+}
+
+.pane #indicator li img {
+    width: 100%;
+}
+
+/*Newly added*/
+
+
+.breadMenu {
+    margin: 1.5% 1.5%;
+    background: #fff;
+}
+
+.breadcrumb {
+    background: #fff;
+    background-color: #fff !IMPORTANT;
+    padding: .6% .8%;
+}
+
+    .breadcrumb a {
+        color: #000;
+    }
+
+/*#indicator li img {
+    width: 100%;
+}*/
+
+.login {
+    cursor: pointer;
+    width: 60%;
+    position: relative;
+    border-left: 1px solid #333;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    float: left;
+    padding-top: 5.5%;
+    padding-bottom: 7%;
+}
+
+.wallAward {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 10%;
+    position: relative;
+    float: left;
+    margin-left: 0%;
+    margin-right: 10%;
+    margin-top: 4.5%;
+}
+
+    .wallAward li {
+        float: left;
+        position: relative;
+        width: 100%;
+    }
+
+        .wallAward li:first-child {
+            margin-right: 30%;
+        }
+
+        .wallAward li a img {
+            width: 100%;
+        }
+
+
+.afterlogin .dropdowns {
+    padding-right: 15px;
+}
+
+#networkdrpdown {
+    background: url("../../Images/profile_border_img.png") no-repeat center right;
+    display: none !important;
+}
+
+#paidmember {
+    border: 0;
+}
+
+#cartlist {
+    border: 0;
+}
+
+.dropdowns {
+    width: 100%;
+}
+
+    .dropdowns a {
+        background: url("../../Images/images/login-arrow.png") no-repeat bottom right rgba(0, 0, 0, 0);
+        background-position: right 0 bottom 0;
+        color: #fff !important;
+        float: right;
+        text-decoration: none;
+        text-align: right;
+        min-width: 66%;
+        max-width: 66%;
+        word-wrap: break-word;
+        padding-bottom: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+    }
+
+.selectdd {
+    background: url("../../images/login-arrow-up.png") no-repeat bottom right rgba(0, 0, 0, 0) !important;
+    background-position: right 0 bottom 0;
+}
+
+.dropdowns img {
+    float: right;
+    max-width: 35px;
+    max-height: 35px;
+    width: 30%;
+    height: auto;
+    margin-left: 3%;
+}
+
+.login:hover > .dropdowns ul, .login:hover > .dropdowns .slimScrollDiv {
+    display: block;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.dropdowns ul {
+    position: absolute;
+    top: 100%;
+    width: 93%;
+    height: 60% !important;
+    display: none;
+    z-index: 99999999999999999999999999999;
+    background-color: #222327 !important;
+    border-radius: 0 0 15px 15px !important;
+}
+
+.dropdowns .slimScrollDiv {
+    position: absolute !important;
+    width: 108% !important;
+    top: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    display: none;
+}
+
+#networklist {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+}
+
+.dropdowns ul li {
+    padding: 0 0 5% 0;
+    width: 100%;
+    background: #222327 !important;
+    background-image: none !important;
+    float: left;
+    clear: both;
+}
+
+
+.clickdeeper {
+    background: url(../../Images/start/arrow_dig.png) no-repeat right top;
+    font-size: 15px;
+    color: #e0b001;
+    float: left;
+    white-space: nowrap;
+    left: -240%;
+    position: absolute;
+    bottom: 5%;
+    background-size: 25% 80%;
+    padding-right: 70%;
+    padding-top: 0px;
+    padding-bottom: 8%;
+    cursor: default;
+    font-weight: 600;
+}
+
+
+.dropdowns ul li a {
+    color: #fff !important;
+    background-image: none !important;
+    min-width: 95%;
+    max-width: 95%;
+    text-align: left !important;
+    padding: 3% 0 0 5% !important;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    line-height: 1.3;
+}
+
+#accsettings li a {
+    padding: 3% 0 0% 5% !important;
+}
+
+.dropdowns ul li:hover {
+    background: #e0b001 !important;
+    background-image: none !important;
+    color: #000;
+}
+
+    .dropdowns ul li:hover > a {
+        color: #000 !important;
+    }
+
+.cart {
+    color: #fff;
+    display: none;
+}
+
+    .cart img {
+        width: 20%;
+        height: auto;
+        float: left;
+        margin-right: 5%;
+        display: none;
+    }
+
+    .cart p {
+        padding: 5% 0 0;
+        color: #ffffff;
+        display: none;
+    }
+
+#simplemodal-container {
+    width: 23% !important;
+    height: 0 !important;
+    padding-bottom: 23% !important;
+    /*background: url("../../Images/other-popup-bg.png") no-repeat 0 0 #e5e5e5;*/
+    background: url("../../Images/other-popup-bg-new.png") no-repeat 0 0 #e5e5e5;
+    background-size: 100% 100%;
+}
+
+.becomePaidmember {
+    background: url(../../Images/paid-member.png) no-repeat left 8% center #e0b001;
+    background-size: 15% 84% !important;
+    height: 0;
+    padding-bottom: 22%;
+    padding-left: 28%;
+}
+
+    .becomePaidmember p {
+        color: #ffffff;
+        line-height: 1.1em;
+        font-size: 90%;
+        padding: 11% 0;
+        font-weight: 600;
+    }
+
+#target {
+    background: none repeat scroll 0 0 #454444;
+    bottom: 54px;
+    display: none;
+    float: right;
+    position: absolute;
+    right: 80px;
+    width: 15%;
+}
+
+#target {
+    bottom: 100%;
+    background: #222;
+    position: absolute;
+    right: 0;
+}
+
+    #target li:hover p {
+        color: #e0b001;
+    }
+
+    #target li {
+        clear: both;
+        float: left;
+        width: 100%;
+        cursor: pointer;
+        background: transparent !important;
+    }
+
+        #target li:hover {
+            background: #000 !important;
+        }
+
+        #target li span {
+            float: left;
+            margin: 2% 3% 2% 2%;
+            width: 9%;
+            height: 0;
+            padding-bottom: 9%;
+            font-size: 130%;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+            #target li span img {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                left: 0;
+                top: 0;
+            }
+
+        #target li p, #target li a {
+            float: left;
+            color: #fff;
+            margin: 1%;
+            padding: 1.5% 0 0;
+            text-decoration: none;
+            width: 82%;
+        }
+
+        #target li a {
+            width: 98% !important;
+        }
+
+
+
+.accordion {
+    display: table;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    position: relative;
+    height: 100%;
+}
+
+    .accordion a, .accordion h3 {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+        .accordion a.cacLogo {
+            /*background: url("../../Images/profile_border_img.png") no-repeat center left;*/
+            padding-left: 30px;
+            border-left: 1px solid #333;
+            cursor: default;
+        }
+
+.cacLogo img {
+    cursor: pointer;
+}
+
+
+.accordion h3 {
+    cursor: pointer;
+    width: 100px;
+    background: url(../../Images/menu_icon.png) no-repeat center;
+    position: relative;
+    background-size: 25% auto;
+}
+
+
+    .accordion h3:hover {
+        background: url(../../Images/menu_icon_hover.png) no-repeat center;
+        background-size: 25% auto;
+    }
+
+.accordion .down {
+    background: url(../../Images/menu_icon_hover.png) no-repeat center;
+    background-size: 25% auto;
+}
+
+.accordion div.pane {
+    background: none repeat scroll 0 0 #eee;
+    clear: both;
+    display: none;
+    float: left;
+    width: 95% !important;
+    position: absolute;
+    top: 101%;
+    z-index: 999999999;
+    left: 1%;
+    border: 1px solid #000;
+}
+
+.menuArrow {
+    position: absolute;
+    margin-top: -2.3%;
+    margin-left: .3%;
+}
+
+    .menuArrow img {
+        width: 80%;
+    }
+
+
+
+.pane li input:checked, .pane li input:not(:checked) {
+    display: none;
+}
+
+    .pane li input:checked + label {
+        margin-left: 0;
+        padding: 0;
+    }
+
+        .pane li input:checked + label p {
+            bottom: 7%;
+            color: #e0b001;
+        }
+
+.pane #indicator {
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+
+
+.pane ul li a label img {
+    display: none !important;
+}
+
+
+.select_start p, .select_feedback p, .select_result p, .select_managersync p, .select_communitysync p, .select_goals p {
+    color: #e0b001 !important;
+}
+
+.start_start {
+    background: url(../../Images/icons/start_icon.png)no-repeat top right #333;
+    background-size: 95% 95%;
+}
+
+    .start_start:hover {
+        background: url(../../Images/icons/start_icon_h.png)no-repeat top right #000;
+        background-size: 95% 95%;
+    }
+
+
+.select_start {
+    background: url(../../Images/icons/start_icon_h.png)no-repeat top right #000 !important;
+    background-size: 95% 95% !important;
+}
+
+.feedback_start {
+    background: url(../../Images/icons/start-feedback.png)no-repeat top right #333;
+    background-size: 90% 90%;
+}
+
+
+    .feedback_start:hover {
+        background: url(../../Images/icons/start-feedback_h.png)no-repeat top right #000;
+        background-size: 90% 90%;
+    }
+
+
+.select_feedback {
+    background: url(../../Images/icons/start-feedback_h.png)no-repeat top right #000 !important;
+    background-size: 90% 90% !important;
+}
+
+.result_start {
+    background: url(../../Images/icons/result_Icon.png)no-repeat top right #333;
+    background-size: 90% 90%;
+}
+
+
+    .result_start:hover {
+        background: url(../../Images/icons/result_Icon_h.png)no-repeat top right #000;
+        background-size: 90% 90%;
+    }
+
+.select_result {
+    background: url(../../Images/icons/result_Icon_h.png)no-repeat top right #000 !important;
+    background-size: 90% 90% !important;
+}
+
+
+
+.managersync_start {
+    background: url(../../Images/icons/start-sync.png)no-repeat top right #333;
+    background-size: 90% 90%;
+}
+
+    .managersync_start:hover {
+        background: url(../../Images/icons/start-sync_h.png)no-repeat top right #000;
+        background-size: 90% 90%;
+    }
+
+.select_managersync {
+    background: url(../../Images/icons/start-sync_h.png)no-repeat top right #000 !important;
+    background-size: 90% 90% !important;
+}
+
+
+.communitysync_start {
+    background: url(../../Images/icons/start-standing.png)no-repeat top right #333;
+    background-size: 85% 85%;
+}
+
+
+.resultMenuHide p, .managerMenuHide p, .communityMenuHide p, .goalsMenuHide p {
+    color: #fff;
+}
+
+.resultMenuHide:hover p, .managerMenuHide:hover p, .communityMenuHide:hover p, .goalsMenuHide:hover p {
+    color: #fff !important;
+}
+
+.resultMenuHide {
+    background: url(../../Images/icons/result_Icon.png)no-repeat top right #333 !important;
+    background-size: 100% 100% !important;
+    opacity: 0.2;
+}
+
+    .resultMenuHide:hover {
+        background: url(../../Images/icons/result_Icon.png)no-repeat top right #333 !important;
+        background-size: 100% 100% !important;
+        opacity: 0.2;
+    }
+
+.managerMenuHide {
+    background: url(../../Images/icons/start-sync.png)no-repeat top right #333 !important;
+    background-size: 100% 100% !important;
+    opacity: 0.2;
+}
+
+    .managerMenuHide:hover {
+        background: url(../../Images/icons/start-sync.png)no-repeat top right #333 !important;
+        background-size: 100% 100% !important;
+        opacity: 0.2;
+    }
+
+.communityMenuHide {
+    background: url(../../Images/icons/start-standing.png)no-repeat top right #333 !important;
+    background-size: 95% 95% !important;
+    opacity: 0.2;
+}
+
+    .communityMenuHide:hover {
+        background: url(../../Images/icons/start-standing.png)no-repeat top right #333 !important;
+        background-size: 95% 95% !important;
+        opacity: 0.2;
+    }
+
+
+
+
+.goalsMenuHide {
+    background: url(../../Images/icons/goals_icon.png)no-repeat top right #333 !important;
+    background-size: 110% 110% !important;
+    opacity: 0.2;
+}
+
+
+    .goalsMenuHide:hover {
+        background: url(../../Images/icons/goals_icon.png)no-repeat top right #333 !important;
+        background-size: 110% 110% !important;
+        opacity: 0.2;
+    }
+
+.communitysync_start:hover {
+    background: url(../../Images/icons/start-standing_h.png)no-repeat top right #000;
+    background-size: 85% 85%;
+}
+
+.select_communitysync {
+    background: url(../../Images/icons/start-standing_h.png)no-repeat top right #000 !important;
+    background-size: 85% 85% !important;
+}
+
+
+.goals_start {
+    background: url(../../Images/icons/goals_icon.png)no-repeat top right #333;
+    background-size: 95% 95%;
+}
+
+
+    .goals_start:hover {
+        background: url(../../Images/icons/goals_icon_h.png)no-repeat top right #000;
+        background-size: 95% 95%;
+    }
+
+
+.select_goals {
+    background: url(../../Images/icons/goals_icon_h.png)no-repeat top right #000 !important;
+    background-size: 95% 95% !important;
+}
+
+.pane li {
+    position: relative;
+    width: 15.5%;
+    padding-bottom: 15.5%;
+    float: left;
+    /*background: #333;*/
+    margin: 0 1% 1% 0;
+}
+
+    .pane li:hover {
+        background-color: #000;
+    }
+
+        .pane li:hover p {
+            color: #e0b001;
+        }
+
+    .pane li:last-child {
+        margin-right: 0;
+    }
+
+    .pane li p {
+        font-weight: 500;
+        position: absolute;
+        bottom: 7%;
+        left: 10%;
+        color: #fff;
+        font-size: 15px !important;
+    }
+
+    .pane li label {
+        cursor: pointer;
+        display: inline-block;
+        font-weight: normal;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pane li a {
+        color: #FFFFFF;
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+    }
+
+#indicator {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.bukatutup {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: table;
+    width: 70px;
+    height: 100%;
+    z-index: 9999999999999999999;
+    /*border-left: 1px solid #333;*/
+    text-align: center;
+}
+
+    .bukatutup span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.headerRight {
+    float: right;
+    width: 20%;
+    display: table;
+    text-align: right;
+    height: 100%;
+}
+
+.headerLeft {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000 !important; /* change if the mask should have another color then white */
+    opacity: 0.5;
+    z-index: 9999998; /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    top: 50%; /* centers the loading animation vertically one the screen */
+    background-image: url(../../images/loading3.gif); /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px; /* is width and height divided by two */
+    z-index: 9999999;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #5E5E5E;
+    opacity: 0.1;
+    z-index: 90;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+/*Newly Added*/
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+    .page-wrapper {
+        min-height: 100%;
+        /* equal to footer height */
+        margin-bottom: -38px;
+    }
+
+    .footerPart, .page-wrap:after {
+        height: 38px;
+    }
+
+    .centerPart h1 {
+        font-size: 1rem;
+    }
+
+    .cacLogo img {
+        width: 47%;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 35% 35%;
+        background-position-y: 20px;
+        background-position-x: 17px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
+    .pane li p {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1024px) {
+    .pane li p {
+        font-size: 13px !important;
+        line-height: 1.2;
+    }
+
+
+    .headerRight {
+        width: 23%;
+    }
+
+
+    .breadMenu {
+        margin: 2% 2% 1% 2%;
+    }
+}
+/*Newly Added*/
+
+
+@media screen and (min-width: 2900px) and (max-width: 3500px) {
+
+    .pane li p {
+        font-size: 28px !important;
+    }
+
+    .dropdowns a {
+        font-size: 25px;
+    }
+
+    .breadMenu a {
+        font-size: 120%;
+    }
+
+    #target li p, #target li a {
+        font-size: 130%;
+    }
+
+    .ui.menu .item {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media screen and (min-width: 2500px) and (max-width: 2900px) {
+
+    .overallclose {
+        right: -8.7%;
+        top: 0.2%;
+    }
+
+    .overallcontent {
+        width: 15% !important;
+    }
+
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 30% 30%;
+        background-position-y: 36px;
+        background-position-x: 38px;
+        width: 100px;
+    }
+
+
+
+    #kesslogo {
+        width: 36% !important;
+    }
+}
+
+
+@media screen and (min-width: 2001px) and (max-width: 2500px) {
+
+    .wallAward {
+        margin-top: 4.5%;
+    }
+
+
+    .login {
+        padding-top: 5.5%;
+        padding-bottom: 4.5%;
+    }
+
+
+    .overallcontent {
+        width: 20% !important;
+        height: 200px !important;
+    }
+
+
+
+
+    .headerMenu {
+        height: 80px;
+    }
+
+    .accordion {
+        height: 98%;
+    }
+
+
+        .accordion h3, .accordion h3:hover, .accordion .down {
+            background-size: 30% 35%;
+            background-position-y: 26px;
+            background-position-x: 30px;
+            width: 85px;
+        }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2000px) {
+
+    .clickdeeper {
+        left: -225%;
+        position: absolute;
+        background-size: 20% 65%;
+        padding-right: 55%;
+        padding-top: 0px;
+        padding-bottom: 8%;
+        cursor: default;
+        font-weight: 600;
+    }
+
+    .wallAward {
+        margin-top: 5.5%;
+    }
+
+    .login {
+        padding-top: 6%;
+        padding-bottom: 5.5%;
+    }
+
+    .overallcontent {
+        width: 20% !important;
+        height: 200px !important;
+    }
+
+    .headerMenu {
+        height: 80px;
+    }
+
+    .accordion {
+        height: 98%;
+    }
+
+    .dropdown-content {
+        top: 97%;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 30% 35%;
+        background-position-y: 26px;
+        background-position-x: 30px;
+        width: 85px;
+    }
+}
+
+
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
+    .afterlogin img {
+        width: 50%;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 28% 35%;
+        background-position-y: 20px;
+        background-position-x: 32px;
+        width: 85px;
+    }
+
+
+
+    .clickdeeper {
+        left: -215%;
+        background-size: 19% 60%;
+        padding-right: 50%;
+    }
+
+
+
+
+    .wallAward {
+        margin-top: 3.9%;
+    }
+
+    .login {
+        padding-top: 4.1%;
+    }
+}
+
+
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+
+
+    .clickdeeper {
+        left: -205%;
+        background-size: 18% 65%;
+        padding-right: 45%;
+        padding-top: 0%;
+        font-size: 14px;
+    }
+
+    .wallAward {
+        margin-top: 5.5%;
+    }
+
+    .login {
+        padding-top: 4.8%;
+        padding-bottom: 4.7%;
+    }
+}

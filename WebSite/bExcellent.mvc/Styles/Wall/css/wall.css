@@ -1,0 +1,3056 @@
+.dbpoeList {
+    float: right;
+    width: 14%;
+    position: absolute;
+    z-index: 999;
+    margin: 0 2.5%;
+}
+
+.post {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.poeimg {
+    float: left;
+    position: absolute;
+}
+
+    .poeimg img {
+        padding: 2%;
+        width: 25%;
+    }
+
+.dbpoeList p {
+    background: url("../../../Images/images/DashboardSelect-arrow.png") no-repeat #333 right;
+    background-size: auto 100%;
+    color: #fff;
+    padding: 5% 1% 4% 18%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    float: left;
+}
+
+.walldummy {
+    background-image: none !important;
+}
+
+.dbpoeList ul {
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    padding: 0.5% 0 1% 1%;
+    background: #fff;
+    display: none;
+}
+
+.dbpoeList li {
+    color: #808080;
+    padding: 0;
+    margin-bottom: 1%;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 98%;
+    float: left;
+}
+
+.selected {
+    background: #e0b001 !important;
+}
+
+.dbpoeList li a {
+    width: 96%;
+    float: left;
+    margin: 2%;
+}
+
+    .dbpoeList li a span {
+        float: left;
+        margin-top: 4%;
+        width: 80%;
+    }
+
+    .dbpoeList li a img {
+        float: left;
+        width: 15%;
+        margin-right: 5%;
+    }
+
+
+.wallpart {
+    padding: .0% 2%;
+}
+
+.wallleft {
+    width: 19%;
+    float: left;
+    margin-right: 3%;
+}
+
+    .wallleft h1 {
+        font-weight: normal;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 200%;
+    }
+
+.wallleftMenu {
+    border: 1px solid #333;
+    height: auto;
+    padding: 4%;
+    float: left;
+}
+
+    .wallleftMenu ul {
+        /*background: url(../../../Images/images/wallLeftBg.png) no-repeat;*/
+        margin: 0;
+        position: relative;
+        padding: 0;
+        height: auto;
+        float: left;
+        background-size: 100% 100%;
+    }
+
+.wallleft ul li {
+    float: left;
+    width: 100%;
+    height: 0;
+    height: 14%;
+    margin: 0 2.7% 2.7% 0;
+    overflow: hidden;
+    cursor: pointer;
+    padding-bottom: 3%;
+}
+
+    .wallleft ul li a {
+        width: 100%;
+        height: 100%;
+        right: 0;
+    }
+
+    .wallleft ul li p {
+        color: #fff;
+        font-size: 130%;
+        text-transform: uppercase;
+        bottom: 5;
+        width: 95%;
+        padding: 0 12px;
+        display: inline-block;
+        padding-top: 37%;
+    }
+
+.postVideo {
+    background: url(../../../Images/images/postVideoIcon.png) no-repeat top 15% right 12% #000;
+    opacity: .9;
+    width: 48.5% !important;
+    margin-bottom: 0 !important;
+    padding-top: 13.5%;
+}
+
+    .postVideo:hover {
+        background: url(../../../Images/images/postVideoIconHover.png) no-repeat top 15% right 12% #000;
+        opacity: 1;
+    }
+
+        .postVideo:hover p {
+            color: #e0b001;
+        }
+
+.videpreview {
+    width: 35%;
+    height: 90px;
+    position: relative;
+}
+
+.syncYammer {
+    background: url(../../../Images/images/syncyammerIcon.png) no-repeat top 15% right 12% #000;
+    opacity: .9;
+    width: 48.5% !important;
+    margin: 0 !important;
+    padding-top: 13.5%;
+}
+
+    .syncYammer:hover {
+        background: url(../../../Images/images/syncyammerIconHover.png) no-repeat top 15% right 12% #000;
+        opacity: 1;
+    }
+
+        .syncYammer:hover p {
+            color: #e0b001;
+        }
+
+.walltile {
+    background: url(../../../Images/images/walltileIcon.png) no-repeat top 15% right 5% #000;
+    opacity: .9;
+}
+
+    .walltile:hover {
+        background: url(../../../Images/images/walltileIconHover.png) no-repeat top 15% right 5% #000;
+        opacity: 1;
+    }
+
+        .walltile:hover p {
+            color: #e0b001;
+        }
+
+.sendAppreciation {
+    background: url(../../../Images/images/sendAppreciationIcon.png) no-repeat top 15% right 5% #000;
+    opacity: .9;
+}
+
+    .sendAppreciation:hover {
+        background: url(../../../Images/images/sendAppreciationIconHover.png) no-repeat top 15% right 5% #000;
+        opacity: 1;
+    }
+
+        .sendAppreciation:hover p {
+            color: #e0b001;
+        }
+
+
+
+.selectWall {
+    background: url(../../../Images/images/walltileIconHover.png) no-repeat top 15% right 5% #000;
+    opacity: 1;
+}
+
+    .selectWall a p {
+        color: #e0b001 !important;
+    }
+
+.selectSend {
+    background: url(../../../Images/images/sendAppreciationIconHover.png) no-repeat top 15% right 5% #000;
+    opacity: 1;
+}
+
+    .selectSend a p {
+        color: #e0b001 !important;
+    }
+
+.selectPost {
+    background: url(../../../Images/images/postVideoIconHover.png) no-repeat top 15% right 12% #000;
+    opacity: 1;
+}
+
+    .selectPost a p {
+        color: #e0b001 !important;
+    }
+
+.selectYammer {
+    background: url(../../../Images/images/syncyammerIconHover.png) no-repeat top 15% right 12% #000;
+    opacity: 1;
+}
+
+    .selectYammer a p {
+        color: #e0b001 !important;
+    }
+
+
+
+
+
+.wallRight {
+    width: 78%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+    .wallRight h1 {
+        font-weight: normal;
+        margin-bottom: 0;
+        float: left;
+        text-transform: uppercase;
+        display: table;
+    }
+
+        .wallRight h1 span {
+            font-size: 70%;
+            font-style: italic;
+            text-transform: none;
+            display: table-cell;
+            vertical-align: top;
+        }
+
+.wallRightContent {
+    border: 1px solid #999;
+    height: auto;
+    padding: 1%;
+    float: left;
+    height: 66%;
+    width: 100%;
+}
+
+
+
+.ui.search.dropdown {
+    background: #191919;
+    float: right;
+    width: 15%;
+    color: #fff;
+}
+
+
+.wallmsg {
+    background: rgba(0, 0, 0, 0.8);
+    width: 30%;
+    height: 30%;
+    margin: 0% 1% 1% 0;
+    float: left;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.wallprofileImages img {
+    float: left;
+    margin-right: 5%;
+    width: 15%;
+}
+
+    .wallprofileImages img:nth-child(2) {
+        width: 7%;
+        margin-top: 1%;
+    }
+
+    .wallprofileImages img:nth-child(3) {
+        width: 20%;
+    }
+
+.wallmsgcontent {
+    margin-top: 5%;
+    float: left;
+    width: 100%;
+}
+
+    .wallmsgcontent p {
+        color: #fff;
+        font-size: 120%;
+        line-height: 170%;
+        margin: 0;
+    }
+
+    .wallmsgcontent h2 {
+        color: #fff;
+        font-size: 160%;
+        line-height: 170%;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .wallmsgcontent a {
+        background: url(../../../Images/images/wallMore.png) no-repeat right;
+        padding-left: 30px;
+        color: #191919;
+    }
+
+        .wallmsgcontent a:hover {
+            background: url(../../../Images/images/wallMoreHover.png) no-repeat right;
+        }
+
+.Yellowselect {
+    border: 3px solid #e0b001;
+    background: url(../../../Images/images/selecttick.png)no-repeat top -1px right -1px rgba(0, 0, 0, 0.8);
+}
+
+
+/*------------------------------send-------------------------------------*/
+
+.slimScrollDiv, .scroll1 {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.sendProfileList ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.sendRight {
+    width: 78%;
+    float: left;
+}
+
+    .sendRight h1 {
+        font-weight: normal;
+        margin-bottom: 0;
+        float: left;
+        text-transform: uppercase;
+    }
+
+.SendAppreciationPart {
+    border: 1px solid #333;
+    height: auto;
+    padding: 1%;
+    float: left;
+    height: auto;
+    width: 80%;
+}
+
+.sendProfileList {
+    width: 30%;
+    margin-right: 3%;
+    float: left;
+    height: 580px;
+    /*position: relative;
+    height: 0;
+    padding-bottom: 45%;*/
+}
+
+.profileDetails {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    float: left;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.profileimage {
+    float: left;
+    width: 27%;
+}
+
+    .profileimage img {
+        width: 80%;
+    }
+
+.profileContent {
+    float: left;
+    margin-left: 0%;
+    padding-top: 3%;
+}
+
+    .profileContent h3 {
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-size: 110%;
+    }
+
+    .profileContent p {
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+    }
+
+.selectProfile {
+    border: 2px solid #e0b001 !important;
+    background: url(../../../Images/images/selecttick.png) no-repeat top right #111;
+    background-size: 13% 60%;
+}
+
+.sendDetails {
+    background: #333;
+    width: 67%;
+    float: left;
+    margin-left: 0%;
+    padding: 2%;
+}
+
+.sendProfileList ul {
+    margin: 0 4% 0 0;
+    padding: 0;
+}
+
+    .sendProfileList ul li {
+        list-style: none;
+        cursor: pointer;
+        border: 2px solid rgb(47, 47, 47);
+    }
+
+.sendDetails p {
+    color: #fff;
+    font-size: 100%;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+
+.badge ul {
+    margin: 0 0 16% 0;
+    padding: 0;
+}
+
+    .badge ul li {
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+        width: 33%;
+        border: 1px solid #fff;
+        height: 10%;
+        cursor: pointer;
+    }
+
+        .badge ul li:hover {
+            background: #000;
+        }
+
+
+
+        .badge ul li img {
+            float: left;
+            width: 25%;
+            margin: 5% 5% 0 0;
+        }
+
+        .badge ul li p {
+            float: left;
+            width: 65%;
+            margin-top: 28%;
+            margin-left: 5%;
+        }
+
+.award ul li img {
+    margin-top: 0 !important;
+}
+
+.contentWriter {
+    width: 100%;
+    padding-bottom: 19%;
+    border: 1px solid #fff;
+    background: #333;
+    padding-left: 5px;
+    font-size: 100%;
+    color: #fff;
+}
+
+.sendDetails .emailText {
+    width: 100%;
+    background: #333;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 100%;
+    color: #fff;
+}
+
+.sendapBut {
+    position: absolute;
+    right: 0px;
+    bottom: -3px;
+    width: 100%;
+    text-align: right;
+}
+
+    .sendapBut a {
+        background: #e0b001;
+        color: #000;
+        border: 1px solid #000;
+        text-decoration: none;
+        padding: 3px 8px 5px 8px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+        .sendapBut a:hover {
+            background: #000;
+            color: #fff;
+            border: 1px solid #e0b001;
+        }
+
+
+
+.postBtn {
+    float: right;
+    margin-top: 2%;
+}
+
+    .postBtn a {
+        background: #e0b001;
+        color: #000;
+        border: 1px solid #000;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-weight: 500;
+    }
+
+        .postBtn a:hover {
+            background: #000;
+            color: #fff;
+            border: 1px solid #e0b001;
+        }
+
+.palyIcon {
+    background: url(../../../Images/images/playIcon.png)no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.deletIcon {
+    background: url(../../../Images/images/deletIcon.png)no-repeat;
+    width: 30px;
+}
+
+.walldropdown {
+    width: 15%;
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+}
+
+.dropdown a {
+    text-decoration: none;
+}
+
+.dropdown [data-toggle="dropdown"] {
+    display: block;
+    position: relative;
+    border: solid 1px transparent;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 10px;
+    margin: 0;
+    outline: 0;
+    font-size: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #191919;
+}
+
+.dropdown [data-toggle="dropdown"] {
+    border-bottom: 1px solid #444;
+    background: #333;
+    color: #fff;
+}
+
+    .dropdown [data-toggle="dropdown"]:hover {
+        background: #333;
+    }
+
+.dropdown .icon-arrow {
+    position: absolute;
+    display: block;
+    font-size: 100%;
+    color: #fff;
+    top: 0;
+    right: 0;
+    background: url(../../../Images/images/dropdownarrow.png)no-repeat center #000;
+    width: 20px;
+    height: 20px;
+}
+
+    .dropdown .icon-arrow.open {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+    .dropdown .icon-arrow.close {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+.icon-arrow.close:hover {
+    border: none;
+}
+/*.dropdown .icon-arrow:before {
+  content: '\25BC';
+}*/
+
+.dropdown .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .dropdown .dropdown-menu li {
+        padding: 0;
+    }
+
+        .dropdown .dropdown-menu li a {
+            display: block;
+            color: #fff;
+            background: #444;
+            padding: 10px 10px;
+        }
+
+
+            .dropdown .dropdown-menu li a:hover {
+                background: #000;
+                color: #e0b001;
+            }
+
+.dropdown .show, .dropdown .hide {
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.dropdown .show {
+    display: block;
+    max-height: 9999px;
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    animation: showAnimation 0.5s ease-in-out;
+    -moz-animation: showAnimation 0.5s ease-in-out;
+    -webkit-animation: showAnimation 0.5s ease-in-out;
+    -webkit-transition: max-height 1s ease-in-out;
+    -moz-transition: max-height 1s ease-in-out;
+    -o-transition: max-height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
+}
+
+.dropdown .hide {
+    max-height: 0;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    animation: hideAnimation 0.4s ease-out;
+    -moz-animation: hideAnimation 0.4s ease-out;
+    -webkit-animation: hideAnimation 0.4s ease-out;
+    -webkit-transition: max-height 0.6s ease-out;
+    -moz-transition: max-height 0.6s ease-out;
+    -o-transition: max-height 0.6s ease-out;
+    transition: max-height 0.6s ease-out;
+}
+
+#videopopupcontainer {
+    z-index: 999999999;
+    position: fixed;
+    left: 30%;
+    top: 35%;
+    WIDTH: 34%;
+}
+
+    #videopopupcontainer .close {
+        top: -16px !important;
+        right: 1% !important;
+        padding: 10px !important;
+    }
+
+@media screen and (max-width: 2169px) and (min-width: 2001px) {
+
+    h1 {
+        font-size: 200% !important;
+    }
+
+    p {
+        font-size: 120% !important;
+    }
+
+    h2 {
+        font-size: 150% !important;
+    }
+
+
+
+    .dropdown .icon-arrow {
+        padding: 4% 6%;
+    }
+
+    .dropdown {
+        width: 245px;
+        margin-top: -0.5%;
+    }
+
+        .dropdown [data-toggle="dropdown"] {
+            padding: 4% 5%;
+            font-size: 15px;
+        }
+
+        .dropdown .dropdown-menu li a {
+            padding: 5% 5%;
+            font-size: 15px;
+        }
+
+    .sendAppreciation p {
+        padding-top: 42% !important;
+    }
+
+    .postvideo p {
+        padding-top: 46% !important;
+    }
+
+    .postBtn a {
+        padding: 5px 10px 7px 10px;
+        font-size: 120%;
+    }
+
+
+    .wallleft ul li p {
+        font-size: 120% !important;
+        padding-top: 36%;
+    }
+
+    .walltile {
+        padding-top: 7% !important;
+    }
+
+    .wallmsgcontent h2 {
+        font-size: 110%;
+    }
+
+    .wallmsgcontent p {
+        line-height: 150%;
+    }
+
+    .wallmsgcontent a {
+        background-size: 60% 80%;
+        padding-left: 30px;
+    }
+
+        .wallmsgcontent a:hover {
+            background-size: 60% 80%;
+            padding-left: 30px;
+        }
+
+    .Yellowselect {
+        background-size: 18% 28%;
+        border: 3px solid #e0b001;
+    }
+
+    .wallprofileImages img {
+        float: left;
+        margin-right: 5%;
+        width: 22%;
+    }
+
+        .wallprofileImages img:nth-child(2) {
+            width: 10%;
+            margin-top: 1%;
+        }
+
+        .wallprofileImages img:nth-child(3) {
+            width: 22%;
+        }
+}
+
+
+@media screen and (max-width: 2000px) and (min-width: 1701px) {
+
+    .videpreview {
+        height: 110px !important;
+    }
+
+    h1 {
+        font-size: 150% !important;
+    }
+
+    p {
+        font-size: 100% !important;
+    }
+
+    .walltile {
+        background-size: 25% 60%;
+    }
+
+        .walltile:hover {
+            background-size: 25% 60%;
+        }
+
+    .sendAppreciation {
+        background-size: 25% 60%;
+    }
+
+        .sendAppreciation:hover {
+            background-size: 25% 60%;
+        }
+
+    .postVideo {
+        background-size: 45% 55%;
+    }
+
+        .postVideo:hover {
+            background-size: 45% 55%;
+        }
+
+    .syncYammer {
+        background-size: 45% 55%;
+    }
+
+        .syncYammer:hover {
+            background-size: 45% 55%;
+        }
+
+    .dropdown {
+        width: 215px;
+    }
+
+        .dropdown [data-toggle="dropdown"] {
+            padding: 2% 4%;
+            font-size: 13px;
+        }
+
+        .dropdown .dropdown-menu li a {
+            padding: 3% 4%;
+            font-size: 13px;
+        }
+
+    .wallleft ul li p {
+        padding-top: 28%;
+    }
+
+    .sendAppreciation p {
+        padding-top: 34% !important;
+    }
+
+    .postvideo p {
+        padding-top: 30% !important;
+    }
+
+    .syncYammer p {
+        padding-top: 30% !important;
+    }
+
+    .wallleft ul li p {
+        padding-top: 27% !important;
+    }
+
+    .walltile, .sendAppreciation {
+        padding-top: 7% !important;
+    }
+
+    .wallmsgcontent h2 {
+        font-size: 110%;
+    }
+
+    .wallmsgcontent p {
+        line-height: 150%;
+    }
+
+    .wallmsgcontent a {
+        background-size: 60% 80%;
+        padding-left: 25px;
+    }
+
+        .wallmsgcontent a:hover {
+            background-size: 60% 80%;
+            padding-left: 25px;
+        }
+
+    .Yellowselect {
+        background-size: 17% 34%;
+        border: 2px solid #e0b001;
+    }
+
+    .wallprofileImages img {
+        float: left;
+        margin-right: 5%;
+        width: 17%;
+    }
+
+        .wallprofileImages img:nth-child(2) {
+            width: 8%;
+            margin-top: 1%;
+        }
+
+        .wallprofileImages img:nth-child(3) {
+            width: 20%;
+        }
+}
+
+
+
+@media screen and (max-width: 1700px) and (min-width: 1670px) {
+    h1 {
+        font-size: 150% !important;
+    }
+
+    p {
+        font-size: 100% !important;
+    }
+
+    .walltile {
+        background-size: 25% 60%;
+    }
+
+        .walltile:hover {
+            background-size: 25% 60%;
+        }
+
+    .sendAppreciation {
+        background-size: 25% 60%;
+    }
+
+        .sendAppreciation:hover {
+            background-size: 25% 60%;
+        }
+
+    .postVideo {
+        background-size: 45% 55%;
+    }
+
+        .postVideo:hover {
+            background-size: 45% 55%;
+        }
+
+    .syncYammer {
+        background-size: 45% 55%;
+    }
+
+        .syncYammer:hover {
+            background-size: 45% 55%;
+        }
+
+    .dropdown .icon-arrow {
+        padding: 5.5% 9%;
+    }
+
+    .dropdown {
+        width: 191px;
+    }
+
+        .dropdown [data-toggle="dropdown"] {
+            padding: 2% 4%;
+            font-size: 13px;
+        }
+
+        .dropdown .dropdown-menu li a {
+            padding: 3% 4%;
+            font-size: 13px;
+        }
+
+    .wallleft ul li p {
+        padding-top: 28%;
+    }
+
+    .postvideo p {
+        padding-top: 36% !important;
+    }
+
+    .syncYammer p {
+        padding-top: 36% !important;
+    }
+
+    .wallleft ul li p {
+        padding-top: 27% !important;
+    }
+
+    .walltile {
+        padding-top: 7% !important;
+    }
+
+    .wallmsgcontent h2 {
+        font-size: 100%;
+    }
+
+    .wallmsgcontent p {
+        line-height: 150%;
+    }
+
+    .wallmsgcontent a {
+        background-size: 60% 80%;
+        padding-left: 25px;
+    }
+
+        .wallmsgcontent a:hover {
+            background-size: 60% 80%;
+            padding-left: 25px;
+        }
+
+    .Yellowselect {
+        background-size: 17% 34%;
+        border: 2px solid #e0b001;
+    }
+
+    .wallprofileImages img {
+        float: left;
+        margin-right: 5%;
+        width: 20%;
+    }
+
+        .wallprofileImages img:nth-child(2) {
+            width: 8%;
+            margin-top: 1%;
+        }
+
+        .wallprofileImages img:nth-child(3) {
+            width: 20%;
+        }
+}
+
+
+
+@media screen and (max-width: 1669px) and (min-width: 1501px) {
+    .badge ul {
+        margin-bottom: 14%;
+    }
+
+    .videpreview {
+        height: 62px;
+    }
+
+    h1 {
+        font-size: 150% !important;
+    }
+
+    p {
+        font-size: 100% !important;
+    }
+
+    .walltile {
+        background-size: 25% 60%;
+    }
+
+        .walltile:hover {
+            background-size: 25% 60%;
+        }
+
+    .sendAppreciation {
+        background-size: 25% 60%;
+    }
+
+        .sendAppreciation:hover {
+            background-size: 25% 60%;
+        }
+
+    .postVideo {
+        background-size: 45% 55%;
+    }
+
+        .postVideo:hover {
+            background-size: 45% 55%;
+        }
+
+    .syncYammer {
+        background-size: 45% 55%;
+    }
+
+        .syncYammer:hover {
+            background-size: 45% 55%;
+        }
+
+    .dropdown .icon-arrow {
+        padding: 7%;
+        margin-right: 5px;
+    }
+
+    .dropdown {
+        width: 181px;
+    }
+
+        .dropdown [data-toggle="dropdown"] {
+            padding: 3% 4%;
+            font-size: 13px;
+        }
+
+        .dropdown .dropdown-menu li a {
+            padding: 3% 4%;
+            font-size: 13px;
+        }
+
+    .wallleft ul li p {
+        padding-top: 33%;
+    }
+
+    .postvideo p {
+        padding-top: 29% !important;
+    }
+
+    .syncYammer p {
+        padding-top: 29% !important;
+    }
+
+    .wallleft ul li p {
+        padding-top: 27%;
+    }
+
+    .walltile {
+        padding-top: 7% !important;
+    }
+
+    .wallmsgcontent h2 {
+        font-size: 100%;
+    }
+
+    .wallmsgcontent p {
+        line-height: 150%;
+    }
+
+    .wallmsgcontent a {
+        background-size: 60% 80%;
+        padding-left: 25px;
+    }
+
+        .wallmsgcontent a:hover {
+            background-size: 60% 80%;
+            padding-left: 25px;
+        }
+
+    .Yellowselect {
+        background-size: 17% 34%;
+        border: 2px solid #e0b001;
+    }
+
+    .wallprofileImages img {
+        float: left;
+        margin-right: 5%;
+        width: 17%;
+    }
+
+        .wallprofileImages img:nth-child(2) {
+            width: 8%;
+            margin-top: 1%;
+        }
+
+        .wallprofileImages img:nth-child(3) {
+            width: 20%;
+        }
+}
+
+
+
+
+@media screen and (max-width: 1500px) and (min-width: 1401px) {
+    .sendProfileList {
+        height: 480px;
+    }
+
+
+    h1 {
+        font-size: 150% !important;
+    }
+
+    p {
+        font-size: 80% !important;
+    }
+
+    .walltile {
+        background-size: 25% 60%;
+    }
+
+        .walltile:hover {
+            background-size: 25% 60%;
+        }
+
+    .sendAppreciation {
+        background-size: 25% 60%;
+    }
+
+        .sendAppreciation:hover {
+            background-size: 25% 60%;
+        }
+
+    .postVideo {
+        background-size: 50% 60%;
+    }
+
+        .postVideo:hover {
+            background-size: 50% 60%;
+        }
+
+    .syncYammer {
+        background-size: 50% 60%;
+    }
+
+        .syncYammer:hover {
+            background-size: 50% 60%;
+        }
+
+    .dropdown .icon-arrow {
+        padding: 2% 3%;
+    }
+
+    .dropdown {
+        width: 162px;
+    }
+
+        .dropdown [data-toggle="dropdown"] {
+            padding: 2% 4%;
+            font-size: 13px;
+        }
+
+        .dropdown .dropdown-menu li a {
+            padding: 3% 4%;
+            font-size: 13px;
+        }
+
+    .wallleft ul li p {
+        padding-top: 33%;
+    }
+
+    .postvideo p {
+        padding-top: 42% !important;
+    }
+
+    .postVideo p, .syncYammer p {
+        padding-top: 42% !important;
+    }
+
+    .wallleft ul li p {
+        padding-top: 33%;
+    }
+
+    .walltile {
+        padding-top: 7% !important;
+    }
+
+    .wallmsgcontent h2 {
+        font-size: 100%;
+    }
+
+    .wallmsgcontent p {
+        line-height: 150%;
+    }
+
+    .wallmsgcontent a {
+        background-size: 60% 80%;
+        padding-left: 20px;
+    }
+
+        .wallmsgcontent a:hover {
+            background-size: 60% 80%;
+            padding-left: 20px;
+        }
+
+    .Yellowselect {
+        background-size: 17% 34%;
+        border: 2px solid #e0b001;
+    }
+
+    .wallprofileImages img {
+        float: left;
+        margin-right: 5%;
+        width: 20%;
+    }
+
+        .wallprofileImages img:nth-child(2) {
+            width: 9%;
+            margin-top: 1%;
+        }
+
+        .wallprofileImages img:nth-child(3) {
+            width: 25%;
+        }
+}
+
+
+
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 60px !important;
+    }
+
+    #thelist1 ul {
+        padding: 0px;
+    }
+
+    .badge ul {
+        margin-bottom: 13%;
+    }
+
+
+    h1 {
+        font-size: 100% !important;
+    }
+
+
+    p {
+        font-size: 80% !important;
+    }
+
+    .walltile {
+        background-size: 25% 60%;
+    }
+
+        .walltile:hover {
+            background-size: 25% 60%;
+        }
+
+    .sendAppreciation {
+        background-size: 25% 60%;
+    }
+
+        .sendAppreciation:hover {
+            background-size: 25% 60%;
+        }
+
+    .postVideo {
+        background-size: 50% 60%;
+    }
+
+        .postVideo:hover {
+            background-size: 50% 60%;
+        }
+
+    .syncYammer {
+        background-size: 50% 60%;
+    }
+
+        .syncYammer:hover {
+            background-size: 50% 60%;
+        }
+
+    .dropdown .icon-arrow, .icon-arrow .open {
+        padding: 6% 9%;
+        height: 10px;
+        background-size: 80% 100%;
+        background-position-x: 0px;
+    }
+
+
+
+    .dropdown [data-toggle='dropdown'] {
+        padding: 1.2% 2%;
+    }
+
+    .dropdown {
+        width: 152px;
+    }
+
+        .dropdown [data-toggle="dropdown"] {
+            font-size: 13px;
+        }
+
+        .dropdown .dropdown-menu li a {
+            font-size: 13px;
+        }
+
+    .wallleft ul li p {
+        padding-top: 28%;
+    }
+
+    .walltile {
+        padding-top: 7% !important;
+    }
+
+    .wallmsgcontent h2 {
+        font-size: 100%;
+    }
+
+    .wallmsgcontent p {
+        line-height: 150%;
+    }
+
+    .wallmsgcontent a {
+        background-size: 60% 80%;
+        padding-left: 20px;
+    }
+
+        .wallmsgcontent a:hover {
+            background-size: 60% 80%;
+            padding-left: 20px;
+        }
+
+    .Yellowselect {
+        background-size: 15% 30%;
+        border: 2px solid #e0b001;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+
+
+
+    h1 {
+        font-size: 150% !important;
+    }
+
+    p {
+        font-size: 80% !important;
+    }
+
+    .walltile {
+        background-size: 25% 60%;
+    }
+
+        .walltile:hover {
+            background-size: 25% 60%;
+        }
+
+    .sendAppreciation {
+        background-size: 25% 60%;
+    }
+
+        .sendAppreciation:hover {
+            background-size: 25% 60%;
+        }
+
+    .postVideo {
+        background-size: 50% 60%;
+    }
+
+        .postVideo:hover {
+            background-size: 50% 60%;
+        }
+
+    .syncYammer {
+        background-size: 50% 60%;
+    }
+
+        .syncYammer:hover {
+            background-size: 50% 60%;
+        }
+
+    .dropdown .icon-arrow {
+        padding: 2% 3%;
+    }
+
+    .dropdown {
+        width: 152px;
+    }
+
+        .dropdown [data-toggle="dropdown"] {
+            padding: 2% 4%;
+            font-size: 13px;
+        }
+
+        .dropdown .dropdown-menu li a {
+            padding: 3% 4%;
+            font-size: 13px;
+        }
+
+    .wallleft ul li p {
+        padding-top: 28%;
+    }
+
+    .walltile {
+        padding-top: 7% !important;
+    }
+
+    .wallmsgcontent h2 {
+        font-size: 100%;
+    }
+
+    .wallmsgcontent p {
+        line-height: 150%;
+    }
+
+    .wallmsgcontent a {
+        background-size: 60% 80%;
+        padding-left: 20px;
+    }
+
+        .wallmsgcontent a:hover {
+            background-size: 60% 80%;
+            padding-left: 20px;
+        }
+
+    .Yellowselect {
+        background-size: 15% 30%;
+        border: 2px solid #e0b001;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+
+
+    h1 {
+        font-size: 120% !important;
+    }
+
+    .profileContent h3 {
+        font-size: 80%;
+    }
+
+
+
+    p {
+        font-size: 70% !important;
+    }
+
+    .walltile {
+        background-size: 25% 60%;
+    }
+
+        .walltile:hover {
+            background-size: 25% 60%;
+        }
+
+    .sendAppreciation {
+        background-size: 25% 60%;
+    }
+
+        .sendAppreciation:hover {
+            background-size: 25% 60%;
+        }
+
+    .postVideo {
+        background-size: 50% 60%;
+    }
+
+        .postVideo:hover {
+            background-size: 50% 60%;
+        }
+
+    .syncYammer {
+        background-size: 50% 60%;
+    }
+
+        .syncYammer:hover {
+            background-size: 50% 60%;
+        }
+
+    .dropdown .icon-arrow {
+        padding: 2% 3%;
+    }
+
+    .dropdown {
+        width: 152px;
+    }
+
+        .dropdown [data-toggle="dropdown"] {
+            padding: 2% 4%;
+            font-size: 13px;
+        }
+
+        .dropdown .dropdown-menu li a {
+            padding: 3% 4%;
+            font-size: 13px;
+        }
+
+    .wallleft ul li p {
+        padding-top: 28%;
+    }
+
+    .walltile {
+        padding-top: 7% !important;
+    }
+
+    .wallmsgcontent h2 {
+        font-size: 100%;
+    }
+
+    .wallmsgcontent p {
+        line-height: 150%;
+    }
+
+    .wallmsgcontent a {
+        background-size: 60% 80%;
+        padding-left: 20px;
+    }
+
+        .wallmsgcontent a:hover {
+            background-size: 60% 80%;
+            padding-left: 20px;
+        }
+
+    .Yellowselect {
+        background-size: 15% 30%;
+        border: 2px solid #e0b001;
+    }
+}
+/*My CSS*/
+
+
+.vs-context-menu {
+    display: none;
+    margin: 0;
+    min-height: 150px;
+    padding: 0;
+    position: fixed;
+    width: 10%;
+    z-index: 10;
+}
+
+
+    .vs-context-menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .vs-context-menu li {
+        background: #FFFFFF;
+        border: 0 none;
+        color: #000000;
+        cursor: pointer;
+        margin: 0 !important;
+        padding: 3%;
+        width: 100%;
+        list-style:;
+    }
+
+        .vs-context-menu li:hover {
+            background: #e0b001;
+            color: #ffffff;
+        }
+
+
+    .vs-context-menu li {
+        background: #fff;
+    }
+
+        .vs-context-menu li > a {
+            color: #fff;
+        }
+
+
+
+.poepopup, .popupW {
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 35%;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    z-index: 9999999 !important;
+    padding-bottom: 0.5%;
+}
+
+.poepopuphd, .popuphd, .cmntpopuphd {
+    background: #e0b001;
+    float: right;
+    text-align: center;
+    width: 7%;
+    padding: 1% 4.5% 5% 0%;
+    border: 1px solid #e0b001;
+    color: #000;
+}
+
+.poepopupcont .level {
+    float: left;
+    width: 8%;
+}
+
+.txtbx {
+    border: 1px solid #CCCCCC;
+    color: #808080;
+    padding: 1% 3%;
+    width: 79%;
+}
+
+.popupattach {
+    cursor: pointer;
+    float: right;
+    width: 3.8%;
+    overflow: hidden;
+    margin-top: 1%;
+}
+
+    .popupattach img {
+        width: 100%;
+        height: auto;
+    }
+
+.selectbadge {
+    background: #000;
+}
+
+.mailattach input, .popupattach input {
+    cursor: pointer;
+    margin-top: 0;
+    opacity: 0;
+    position: absolute;
+    background: white;
+    padding-bottom: 2.5%;
+    width: 4%;
+}
+
+.poepopupcont {
+    width: 100%;
+    margin: 7% auto 2%;
+    padding: 2% 2% 9% 2%;
+    background: #000;
+    border: 1px solid #e0b001;
+}
+
+
+.yammerpopupbg {
+    background: url("../../../Images/trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.yammerpopup {
+    margin: 10% auto 0;
+    width: 55%;
+    z-index: 99999;
+}
+
+.yammerpopupcont {
+    background: #000;
+    border: 1px solid #e0b001;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+    .yammerpopupcont img {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+.yammerpopupconthd {
+    background: none;
+    float: left;
+    padding-bottom: 0%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    margin-top: -4%;
+}
+
+    .yammerpopupconthd span {
+        float: right;
+        margin: 4% 0 0 0;
+        overflow: hidden;
+        padding: 1% 5% 1.5% 1.5%;
+        position: relative;
+        width: 0%;
+        cursor: pointer;
+        background: #000;
+        font-weight: bolder;
+        font-size: 18px;
+        right: -7%;
+        color: #fff;
+        border: 1px solid #e0b001;
+    }
+
+#Closeclick img:hover {
+    margin-top: -100%;
+}
+
+.yammerpopupconthd span img {
+    height: 200%;
+    margin-top: -200%;
+    position: absolute;
+    top: 107%;
+    width: 100%;
+}
+
+
+
+.yammerpopupcontholder {
+    overflow: hidden;
+    padding: 0% 0 2% 3%;
+    position: relative;
+    width: 96%;
+    z-index: 1;
+}
+
+.yammerpopupcont h1 {
+    color: #fff;
+    font-weight: lighter;
+    margin: 0% 0 0.5%;
+}
+
+.yammerpopupcontholder p {
+    color: #fff;
+}
+
+.yammerpopupcontholder .left {
+    float: left;
+    width: 300%;
+    position: relative;
+    height: 0;
+    padding-bottom: 73%;
+    overflow: hidden;
+}
+
+    .yammerpopupcontholder .left .holder {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .yammerpopupcontholder .left ul {
+        float: left;
+        width: 33.3%;
+    }
+
+#yammerNextPrevBtn {
+    width: 80%;
+}
+
+.yammerpopupcontholder .left li {
+    background: #111;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-weight: lighter;
+    margin: 1% 1% 0 0;
+    padding: 1% 1% 16% 1%;
+    position: relative;
+    width: 48.5%;
+    overflow: hidden;
+}
+
+    .yammerpopupcontholder .left li span {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .yammerpopupcontholder .left li .imgholder {
+        left: 3%;
+        position: absolute;
+        top: 7%;
+        width: 30%;
+    }
+
+.yammerpopupcontholder h3 {
+    font-size: 13px;
+}
+
+
+.yammerpopupcontholder h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 24% 0;
+}
+
+.yammerpopupcontholder .left li span img {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.yammerpopupcontholder .left li .imgholder img {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.yammerpopupcontholder .left li .conholder {
+    width: 58%;
+    position: absolute;
+    right: 3%;
+    top: 0;
+    height: 100%;
+}
+
+.yammerpopupcont .btm {
+    clear: both;
+    width: 103%;
+}
+
+.yammernavigation {
+    margin: 0 auto;
+    width: 20%;
+}
+
+    .yammernavigation li {
+        float: left;
+        margin: 8% 2%;
+        overflow: hidden;
+        padding-bottom: 43%;
+        position: relative;
+        width: 43%;
+        display: block;
+    }
+
+        .yammernavigation li img {
+            height: 200%;
+            margin-top: -100%;
+            position: absolute;
+            width: 100%;
+        }
+
+            .yammernavigation li img:hover {
+                margin-top: 0;
+                cursor: pointer;
+            }
+
+.btnholder {
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+    width: 101%;
+}
+
+.yammerpopupcont .btm .btn {
+    background: #e0b001;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    float: left;
+    margin: 1% 0% 2% 2%;
+    padding: 1.5% 2% 2% 2%;
+    text-align: center;
+    width: 46%;
+}
+
+    .yammerpopupcont .btm .btn:hover {
+        background: #000;
+        color: #e0b001;
+        border: 1px solid #e0b001;
+    }
+
+
+
+
+/*.poepopup, .popupW
+{
+    background: #FFFFFF;
+    border: 4px solid #5F5F5F;
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 35%;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    z-index: 9999999!important;
+    padding-bottom: 0.5%;
+}*/
+
+/*.poepopuphd, .popuphd, .cmntpopuphd
+{
+    background: #5F5F5F;
+    float: left;
+    text-align: right;
+    width: 100%;
+    padding: 1% 0;
+}*/
+
+.poepopupcont .level {
+    float: left;
+    width: 8%;
+}
+
+
+.poepopupbg {
+    /*background: url(../../../images/trans.png);*/
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+
+.trk_tabl .scroll2 {
+    padding-bottom: 85%;
+    position: relative;
+    /*width: 95% !important;*/
+    height: 0% !important;
+}
+
+.trk_tabl .slimScrollDiv {
+    height: 0 !important;
+    padding-bottom: 85%;
+    position: relative !important;
+}
+
+
+
+
+
+
+
+.sceditor-container {
+    background: #fff;
+    border-radius: 0;
+    width: 100% !important;
+}
+
+div.sceditor-toolbar {
+    background: none;
+    border-radius: 0;
+}
+
+div.sceditor-group {
+    width: 100%;
+    background: #fff;
+    border-radius: 0;
+}
+
+.sceditor-container iframe, .sceditor-container textarea {
+    background: none;
+}
+
+/*div.ltr p{ color: #fff !important;}*/
+.sceditor-button {
+    padding: 0 23px 0 8px;
+    margin: 0 5px;
+    border-radius: 0;
+}
+
+    .sceditor-button:hover, .sceditor-button:active, .sceditor-button.active {
+        padding: 0 23px 0 8px;
+        margin: 0 5px;
+        border-radius: 0;
+    }
+
+.btn_algn {
+    display: table;
+}
+
+    .btn_algn form {
+        width: 125px;
+    }
+
+    .btn_algn form, .btn_algn a.del {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+
+.mailattach {
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+    padding: 0.5% 0 0;
+}
+
+.addvideoBtn h5 {
+    color: #fff;
+}
+
+.wall2, .wall3 {
+    display: none;
+}
+
+
+.addvideo {
+    float: left;
+}
+
+
+.addvideoBtn {
+    float: left;
+    width: 100%;
+}
+
+.del {
+    background: #e0b001;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+    .del:hover {
+        background: #000;
+        color: #fff;
+        border: 1px solid #e0b001;
+    }
+
+
+.wallgoal {
+    color: #808080;
+    display: none;
+    height: auto;
+    left: 36%;
+    margin: 0 auto;
+    padding: 1.7% 0.3% 0.3%;
+    position: absolute;
+    top: 25%;
+    width: 28%;
+    z-index: 9999999 !important;
+}
+
+    .wallgoal .close {
+        margin-top: -4.3%;
+    }
+
+#wallactcontent {
+    background: #000;
+    float: left;
+    width: 100%;
+    padding: 2% 2% 6% 2%;
+    border: 1px solid #e0b001;
+}
+
+
+    #wallactcontent h2 {
+        font-size: 120%;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    #wallactcontent p {
+        font-size: 100%;
+        color: #fff;
+        padding: 2% 0 0 0;
+        margin: 0;
+    }
+/* For Wall Right Content*/
+#thelist1 {
+    clear: both;
+    overflow: hidden;
+    padding: 0% 1.1%;
+}
+
+    #thelist1 ul {
+        width: 100%;
+        padding: 15px 10px 0 40px;
+        margin: 0;
+    }
+
+.frame {
+    width: 25%;
+    float: left;
+}
+
+
+#thelist1 li {
+    background: url(../../../Images/images/wallmsgIcon.png)no-repeat top 8% left 22% rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    width: 98%;
+    height: 0;
+    padding: 3% 3% 40% 3%;
+    margin: 0px 0px 3% 0px;
+    position: relative;
+    list-style: none;
+    background-size: 7% 16%;
+}
+
+
+.youimg {
+    float: left;
+    width: 15%;
+    height: auto;
+}
+
+#wallactcontent .wallcomment {
+    overflow: visible;
+    position: relative;
+}
+
+
+/*.commentsel {
+  background: url("../../Images/selected.png") no-repeat scroll right top / 14% 35% rgba(0, 0, 0, 0);
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 99.5%;
+  border: 1px solid #e0b001;
+  height: 98.5%;
+}*/
+
+.dt {
+    clear: both;
+    padding: 1% 0 0 0;
+    color: #fff;
+}
+
+#thelist1 li h2 {
+    width: 100%;
+    height: 0;
+    padding-bottom: 7%;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 120%;
+    margin: 0;
+    font-weight: 600;
+}
+
+#thelist1 li p {
+    line-height: 17px;
+    margin-top: 3px;
+    color: #fff;
+    height: 35px;
+}
+
+.wallcomment {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 8.8% !important;
+    width: 90%;
+    color: #fff;
+    margin-top: -2%;
+}
+
+
+.clickmore {
+    background: url("../../../Images/images/wallMore.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    bottom: 16%;
+    float: right;
+    position: absolute;
+    right: 3%;
+    width: 4.5%;
+    padding-bottom: 4.5%;
+    cursor: pointer;
+}
+
+    .clickmore:hover {
+        background: url(../../../Images/images/wallMoreHover.png) no-repeat right;
+        background-size: 100% 100%;
+        float: right;
+        position: absolute;
+        right: 3%;
+        width: 4.5%;
+        padding-bottom: 4.5%;
+        cursor: pointer;
+    }
+
+
+/*#region Prev Next Button Styles*/
+.slidebtn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    top: 42%;
+}
+
+.prev, .nxt {
+    position: absolute;
+    color: #E5E5E5;
+    cursor: pointer;
+    text-indent: -99999px;
+    padding-bottom: 5%;
+    text-decoration: none;
+    width: 4%;
+}
+
+.prev {
+    background: url("../../../Images/images/preIcon.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    left: 0;
+}
+
+.nxt {
+    background: url("../../../Images/images/nextIcon.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    right: 0;
+}
+
+.prev:hover {
+    background: url("../../../Images/images/preIconHover.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+}
+
+.nxt:hover {
+    background: url("../../../Images/images/nextIconHover.png") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+}
+/*#endregion*/
+
+.pagination {
+    color: #FFFFFF;
+    float: left;
+    padding: 4.5% 0;
+    text-align: center;
+    width: 68%;
+}
+
+
+
+
+/*.commentsel {
+  background: url("../../../Images/selected.png") no-repeat scroll right top / 14% 35% rgba(0, 0, 0, 0);
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 99.5%;
+  border: 1px solid #e0b001;
+  height: 98.5%;
+}*/
+
+.poepopupcont .level {
+    float: left;
+    width: 8%;
+    background-color: #fff;
+    font-weight: 500;
+    padding: 6px 1px 6px 9px;
+}
+
+
+.textboxpopub {
+    background-color: #fff;
+}
+
+    .textboxpopub input {
+        width: 86%;
+    }
+
+
+
+div.wallgoal .close {
+    background: #e0b001;
+    padding: 0.5% 3% 4% 1.5%;
+    cursor: pointer;
+    float: right;
+    height: 0;
+    width: 3%;
+    border: 1px solid #e0b001;
+}
+
+    div.wallgoal .close p {
+        color: #fff;
+        font-size: 150%;
+    }
+
+
+    div.wallgoal .close:hover {
+        background: #000;
+        border: 1px solid #e0b001;
+    }
+
+.wallcomment a {
+    color: #e0b001;
+}
+
+
+div.frame > .column {
+    float: left;
+    margin-right: .5%;
+    width: 31.3%;
+}
+
+.commentsel {
+    background: url("../../../Images/selected.png") no-repeat scroll right top / 14% 35% rgba(0, 0, 0, 0);
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 1px solid #e0b001;
+    height: 100%;
+}
+
+
+.recieve img {
+    float: right;
+    width: 45.5%;
+    height: auto;
+    margin-left: 3%;
+}
+
+.recieve {
+    float: right;
+    height: auto !important;
+    margin-right: 13%;
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    width: 45%;
+}
+
+
+div#replypopup .close {
+    background: url("../../../Images/close.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    cursor: pointer;
+    float: right;
+    height: 0;
+    width: 3%;
+    padding-bottom: 3%;
+}
+
+
+div#videopopup .close {
+    background: url("../../../Images/close.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    cursor: pointer;
+    float: right;
+    height: 0;
+    width: 3%;
+    padding-bottom: 3%;
+}
+
+/*.column {
+    float: left;
+  margin-right: -15%;
+  width: 72.3%;
+}
+
+
+
+.commentsel {
+  background: url("../../Images/selected.png") no-repeat scroll right top / 14% 35% rgba(0, 0, 0, 0);
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 99.5%;
+  border: 1px solid #e0b001;
+  height: 98.5%;
+}
+
+
+.youimg {
+  float: left;
+  width: 15%;
+  height: auto;
+}
+
+      .recieve {
+  float: right;
+  height: auto !important;
+  margin-right: 13%;
+  position: absolute;
+  right: 2%;
+  top: 6%;
+  width: 60%;
+}
+
+
+.dt {
+    clear: both;
+    padding: 1% 0 0 0;
+}
+#thelist1 li h2 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 7%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.clickmore {
+  background: url("../../Images/expand_right.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background-size: 100% 100%;
+  bottom: 7%;
+  float: right;
+  position: absolute;
+  right: 4%;
+  width: 4.5%;
+  padding-bottom: 4.5%;
+  cursor: pointer;
+}*/
+
+.wallCenterTiles {
+    border: 1px solid #333;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+
+.signupbtn {
+    background-color: #e0b001 !important;
+    border: 1px solid #e0b001;
+    color: #000;
+    float: right;
+    margin: 2% 0;
+}
+
+    .signupbtn:hover {
+        background-color: #000 !important;
+        border: 1px solid #e0b001;
+        color: #e0b001;
+    }
+
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #808080; /* change if the mask should have another color then white */
+    opacity: 0.5;
+    z-index: 99999999999998; /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    top: 50%; /* centers the loading animation vertically one the screen */
+    background-image: url(../../../images/loading3.gif); /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px; /* is width and height divided by two */
+    z-index: 9999999;
+}
+
+.load {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 99999999;
+    display: none;
+}
+
+    .load img {
+        margin-top: 18%;
+    }
+
+
+.poepopupbg {
+    background: url(../../../images/trans.png);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+
+.descPostVideo {
+    margin-top: 2%;
+}
+
+
+
+.videpreview object {
+    width: 130%;
+    height: 110px;
+}
+
+.imgAddVideo {
+    width: 56px;
+}
+
+.filepath {
+    color: #FFF;
+}
+
+#PoeName {
+    margin: 3% 0 0 0;
+    line-height: 1.5;
+    visibility: hidden;
+}
+
+
+#ModuleName {
+    line-height: 1 !important;
+    margin-top: -6%;
+    color: #fff;
+    visibility: hidden;
+}
+
+.fileattach {
+    position: absolute;
+    margin-left: 15%;
+}
+
+
+/*Added*/
+#wallactcontent {
+    position: relative;
+}
+
+.wal_head {
+    font-family: inherit;
+    color: #fff;
+    font-weight: normal;
+}
+
+.wal_head {
+    position: relative;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2F2F2F;
+}
+
+    .wal_head h3 {
+        font-weight: normal;
+    }
+
+    .wal_head span {
+        position: absolute;
+        right: 0px;
+        bottom: 7px;
+        font-size: 11px;
+    }
+
+.trk_limg {
+    display: block;
+    margin: 10px 0px;
+}
+
+.trk_tabl {
+    border: 1px solid #2F2F2F;
+    border-bottom: none;
+}
+
+.trk_limg img {
+    width: 80px;
+    height: 80px;
+}
+
+.trk_tabl ul {
+    padding: 0px;
+    margin: 0px;
+    display: table;
+    width: 100%;
+}
+
+.trk_thead li {
+    padding: 10px !important;
+    background-color: #fff;
+    color: #000 !important;
+}
+
+.trk_tabl ul li {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 7px;
+    line-height: 17px;
+    border-bottom: 1px solid #2F2F2F;
+    color: #fff;
+}
+
+.trk_thead li:first-child {
+    font-weight: bold;
+    color: #000;
+    border-right: none !important;
+}
+
+.trk_thead li:last-child {
+    font-weight: normal;
+}
+
+.trk_tabl ul li:first-child, .trk_thead li:first-child {
+    width: 60%;
+    border-right: 1px solid #2F2F2F;
+}
+
+.trk_tabl ul li:last-child, .trk_thead li:last-child {
+    width: 40%;
+}
+
+.trk_tval li:last-child {
+    padding-top: 20px;
+}
+
+.goalTimeLine {
+    background-color: #ccc;
+    overflow: hidden;
+    position: relative;
+}
+
+    .goalTimeLine .wall_wdth {
+        background: url(../../../Images/new/trackYellowArrow.png) no-repeat top right !important;
+        text-align: right;
+        display: block;
+        height: 32px;
+    }
+
+.trk_dat {
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    font-size: 12px;
+}
+
+.trk_pnding {
+    position: absolute;
+    right: 15px;
+    font-size: 12px;
+    bottom: 10px;
+}
+
+.wal_trk {
+    text-align: right;
+    margin: 10px 10px -10px 0px !important;
+    font-weight: normal;
+}
+
+.tr_mname, .tr_qsts {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.tr_qsts {
+    padding-bottom: 0px;
+}
+/*Added*/
+
+.goalAchieved p {
+    /*padding: 2% 0;*/
+    padding-right: 10px;
+    margin: 0 2%;
+    font-size: 90%;
+    background: #e0b001;
+    float: left;
+    width: 96%;
+    text-align: right;
+    color: #000;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.goalNotMet p, .awaitingManagerFeedback p, .goalAchieved p, .goalTimeLine p {
+    height: 28px;
+    line-height: 28px;
+    padding: 0px 10px 0 0;
+    font-size: 85%;
+}
+
+.goalNotMet p {
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.wallgoal .close, .poepopuphd .close {
+    position: relative;
+}
+
+.wallcomment a {
+    padding-left: 5px;
+}
+
+
+.dropdowns ul {
+    z-index: 99999;
+}
+
+/*added by karthikeyan*/
+
+.popup {
+    background: #000;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 2% 0;
+    position: fixed;
+    z-index: 999999999;
+    display: none;
+    color: rgb(128, 128, 128);
+    text-align: center;
+    border: 1px solid #e0b001;
+    left: 42.5%;
+    top: 40%;
+    width: 15%;
+    height: 0;
+    padding-bottom: 7%;
+}
+
+    .popup p {
+        position: absolute;
+        top: 34%;
+        width: 90%;
+        left: 5%;
+        font-size: 120%;
+        color: #fff;
+    }
+
+.close {
+    float: right;
+    background-size: 50% 50%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 3.5%;
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    right: -8%;
+    border: 1px solid #e0b001;
+}
+
+
+.yammerOk {
+    text-align: center;
+    color: #000;
+    background: #e0b001;
+    border: 1px solid #000;
+    padding: 4px 15px 7px 15px;
+    font-size: 100%;
+}
+
+    .yammerOk:hover {
+        color: #e0b001;
+        background: #000;
+        border: 1px solid #e0b001;
+    }
+
+.sendapBut label {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+/*added by karthikeyan*/
+
+@media screen and (max-width: 1350px) and (min-width: 1024px) {
+    .videpreview {
+        height: 25px;
+    }
+
+    .badge ul li p {
+        margin-top: 20% !important;
+    }
+
+    .sendProfileList {
+        height: 340px;
+    }
+
+    .badge ul {
+        margin-bottom: 11.7% !important;
+    }
+
+    .walldropdown {
+        width: 14%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1500px) and (min-width: 1350px) {
+    .sendProfileList {
+        height: 397px;
+    }
+
+    .yammerpopupcontholder h3 {
+        font-size: 14px;
+        padding: 20% 0;
+    }
+
+    .yammerpopupcont .btm .btn {
+        font-size: 12px;
+    }
+
+    .yammerpopupconthd span {
+        padding: 1% 4.5% 1.5% 1.5%;
+        right: -7.2%;
+    }
+}
+
+@media screen and (max-width: 1900px) and (min-width: 1501px) {
+    .sendProfileList {
+        height: 500px;
+    }
+
+    .yammerpopupconthd span {
+        padding: 1% 3.8% 1.5% 1.5%;
+        right: -6.2%;
+    }
+
+    .yammerpopupconthd span {
+        padding: 1% 3.5% 1.5% 1.5%;
+        right: -5.8%;
+    }
+
+    .popup {
+        padding-bottom: 6%;
+    }
+}
+
+@media screen and (max-width: 2001px) and (min-width: 1901px) {
+    .sendProfileList {
+        height: 550px;
+    }
+
+    .yammerpopupconthd span {
+        padding: 1% 3.5% 1.5% 1.5%;
+        right: -5.8%;
+    }
+
+    .popup {
+        padding-bottom: 5.5%;
+    }
+}
+
+@media screen and (max-width: 2200px) and (min-width: 2001px) {
+
+    /*@media screen and (max-width:2560px) and (min-width:2000px)*/
+    .yammerpopupconthd span {
+        padding: 1% 3% 1.5% 1.5%;
+        right: -5.2%;
+        margin-top: 3.9%;
+    }
+
+
+
+    #thelist1 li p {
+        line-height: 22px;
+        margin-top: -1%;
+    }
+
+    .clickmore {
+        bottom: 20%;
+    }
+
+    .wallcomment {
+        font-size: 16px;
+    }
+
+    .sendProfileList {
+        height: 625px;
+    }
+
+    .wallpart {
+        padding: .0% 1.5%;
+    }
+
+
+    .postVideo, .syncYammer {
+        padding-top: 20.5%;
+    }
+
+    .popup {
+        padding-bottom: 4%;
+    }
+}
+
+
+@media screen and (max-width: 2560px) and (min-width: 2201px) {
+
+    /*@media screen and (max-width:2560px) and (min-width:2000px)*/
+    .yammerpopupconthd span {
+        padding: 1% 3% 1.5% 1.5%;
+        right: -5.2%;
+        margin-top: 3.9%;
+    }
+
+
+
+    #thelist1 li p {
+        line-height: 22px;
+        margin-top: -1%;
+    }
+
+    .clickmore {
+        bottom: 20%;
+    }
+
+    .wallcomment {
+        font-size: 16px;
+    }
+
+    .sendProfileList {
+        height: 732px;
+    }
+
+    .wallpart {
+        padding: .0% 1.5%;
+    }
+
+
+    .postVideo, .syncYammer {
+        padding-top: 20.5%;
+    }
+
+    .popup {
+        padding-bottom: 4%;
+    }
+}
+
+
+
+.yammerpopupconthd span:hover {
+    color: #000;
+    background: #e0b001;
+    border: 1px solid #000;
+}

@@ -1,0 +1,269 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <%--stylesheet--%>
+    <link href="../../Styles/Common/master.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/common.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/basic.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <%--Scripts--%>
+    <script src="../../Scripts/ref/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="../../Scripts/ref/editor/jquery.sceditor.min.js" type="text/javascript"></script>
+    <script type='text/javascript' src="../../Scripts/ref/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/myscroll.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../Scripts/ref/jquery.tabSlideOut.v1.4.1.js"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/ref/common.js"></script>
+    <script src="../../Scripts/ref/Account/SelectNetwork.js" type="text/javascript"></script>
+    <script src="../../Scripts/ref/Account/Login.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.simplemodal.js" type="text/javascript"></script>
+    <script src="../../Scripts/ref/Namespace.js"></script>
+    <script src="../../Scripts/ref/Requests.js"></script>
+    <script src="../../Scripts/ref/loadPhoto.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/plugin/handlebars/handlebars-1.0.js"></script>
+    <%-- <script type="text/javascript" src="https://assets.yammer.com/platform/yam.js"></script>--%>
+    <script src="../../Scripts/ref/MaxipoeMaster.js"></script>
+    <script src="../../Scripts/jquery.slimscroll.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#networklist').slimScroll();
+            disableFadeOut: true
+        });
+    </script>
+
+    <style type="text/css">
+        .popup
+        {
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -50px 0 0 -100px; /* [-(height/2)px 0 0 -(width/2)px] */
+            display: none;
+        }
+
+        .yj-hd h3, .yj-embed-narrow .yj-hd h3
+        {
+            display: none !important;
+        }
+
+        .yj-embed .yj-message-form-container
+        {
+            padding-top: 10px;
+        }
+
+        .yj-embed-wide .yj-hd, .yj-embed-narrow .yj-hd
+        {
+            background-color: #f3f3f3;
+        }
+
+        .yj-component
+        {
+            background-color: White;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function showPopup(id) {
+            var popup = document.getElementById(id);
+            popup.style.display = 'block';
+        };
+        function pageRedirect(page) {
+            window.location.href = page.value;
+        };
+    </script>
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="status">
+            &nbsp;
+        </div>
+    </div>
+    <div>
+
+        <input type="hidden" id="planMode" value="0" />
+        <input type="hidden" id="masterPlan" value="0" />
+        <div class="bg">
+            <div id="header">
+
+                <div class="main">
+                    <div class="accordion">
+                        <a href="/common/Index" id="imagelogo">
+                            <%-- <img src="../../Images/belogo-1920.png" alt="Bexcellent" align="left" />--%>
+                            <img src="../../Images/kessaku-logo.png" alt="Bexcellent" align="left" />
+                        </a>
+                        <h3 class="checkt">
+                            <img src="../../Images/blank.png" class="checkimg" /></h3>
+
+                        <div class="pane">
+
+                            <ul id="indicator">
+                                <li id="poelibraryHome"><a>
+                                    <input name="option" type="radio" />
+                                    <label for="poelibrary">
+                                        <img src="../../Images/icons/square-library.png" alt="REP Library" /><p>
+                                            REP Library
+                                        </p>
+                                    </label>
+                                </a></li>
+                                <li><a>
+                                    <input name="option" id="nWall" type="radio" value="../../wall/index" />
+                                    <label for="nWall">
+                                        <img src="../../Images/icons/start-wall.png" alt="Wall" /><p>
+                                            Wall
+                                        </p>
+                                    </label>
+                                </a></li>
+                                <li><a>
+                                    <input name="option" id="nNetwork" type="radio" value="../../Network/Network" />
+                                    <label for="nNetwork">
+                                        <img src="../../Images/icons/start-network.png" alt="Network" /><p>
+                                            Network
+                                        </p>
+                                    </label>
+                                </a></li>
+                                <li><a>
+                                    <input name="option" id="nFeedback" type="radio" value="../../Feedback/Feedback" />
+                                    <label for="nFeedback">
+                                        <img src="../../Images/icons/start-feedback.png" alt="Feedback" /><p>
+                                            Feedback
+                                        </p>
+                                    </label>
+                                </a></li>
+                                <li><a>
+                                    <input name="option" id="nStanding" type="radio" value="../../Standing/Standing" />
+                                    <label for="nStanding">
+                                        <img src="../../Images/icons/start-standing.png" alt="Standing" /><p>
+                                            Standing
+                                        </p>
+                                    </label>
+                                </a></li>
+                                <li><a>
+                                    <input name="option" id="nSync" type="radio" value="../../Sync/Sync" />
+                                    <label for="nSync">
+                                        <img src="../../Images/icons/start-sync.png" alt="Sync" /><p>
+                                            Sync
+                                        </p>
+                                    </label>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="login">
+                        <li class="dropdown lgn">
+                            <img src="../../Images/user.png" alt="User" align="right" id="myphoto" width="34px"
+                                height="34px" /><a href="#" id="loggedinUser">
+                                    <%
+                                        if (Session["Uname"] != null)
+                                        {
+                                            Response.Write(Session["Uname"].ToString());
+                                        }
+                                    %></a>
+                            <ul id="accsettings">
+                                <li id="changingPassword"><a href="#">Change Password</a></li>
+                                <li id="yourAcc"><a href="../SignUp/Accounts">Your Accounts</a></li>
+                                <li><a href="../Home/SignOut">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="login" id="networkdrpdown">
+                        <li class="dropdown nt">
+                            <img src="../../Images/icons/network-gray.png" alt="User" align="right" /><a id="ChooseyourNetwork" href="#"></a>
+
+                            <ul id="networklist">
+                                <li><a href="#">Network 1</a></li>
+                                <li><a href="#">Network 2</a></li>
+                                <li class="brdrnil"><a href="#">Network 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="login" id="paidmember">
+                    </ul>
+                    <ul class="login" id="cartlist">
+                    </ul>
+                </div>
+                <div id="hiddenValues" style="visibility: hidden">
+                    <input type="hidden" id="Subscriptionid" value="0" />
+                    <div id="userid" runat="server" style="visibility: hidden">
+                    </div>
+                    <div id="selectedpoe" runat="server" style="visibility: hidden">
+                    </div>
+                    <div id="createdFeedbacks" runat="server" style="visibility: hidden">
+                    </div>
+                    <div id="selectedPages" runat="server" style="visibility: hidden">
+                    </div>
+                </div>
+            </div>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="footer">
+                <div class="main">
+                    <div class="copyright">
+                        <span>© 2013 kessaku.com</span><span><a href="/Signup/Terms" target="_blank">Terms</a></span><span><a
+                            href="/Signup/Privacy" target="_blank">Privacy</a></span><span><a
+                                href="mailto:support@pipe9consulting.com">Support</a></span>
+                    </div>
+                    <div class="bukatutup">
+                        <span>
+                            <img src="../../Images/footer-menu.png"></span><p>
+                                Menu
+                            </p>
+                    </div>
+                    <div id="target">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form id="updateform" action="/Home/updateuserdetails">
+        <div id="basic-changePassword" style="display: none;">
+            <h1>Change Password</h1>
+            <p>
+                Please fill-in the details below
+            </p>
+            <p class="origin">
+                Email id
+            </p>
+            <input type="text" id="txtemailid" class="textspace" />
+            <br />
+            <p class="origin">
+                Current Password
+            </p>
+            <input type="password" id="curpassword" class="textspace" />
+            <br />
+            <p class="origin">
+                New Password
+            </p>
+            <input type="password" id="newpassword" class="textspace" />
+            <br />
+            <p class="origin">
+                Confirm New Password
+            </p>
+            <input type="password" id="Confirmpassword" class="textspace" />
+            <br />
+            <input type="submit" id="ChangePassbtn" value="Submit" class="origin" />
+            <label class="errormsg" id="UpdatemailLbl">
+            </label>
+        </div>
+    </form>
+</body>
+</html>
