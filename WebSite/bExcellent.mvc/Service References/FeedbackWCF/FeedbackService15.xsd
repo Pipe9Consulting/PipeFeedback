@@ -9,6 +9,7 @@
       <xs:element minOccurs="0" name="Designation" nillable="true" type="tns:Designation" />
       <xs:element minOccurs="0" name="Duration" nillable="true" type="xs:long" />
       <xs:element minOccurs="0" name="FeedbackDetails" nillable="true" type="tns:Feedback" />
+      <xs:element minOccurs="0" name="IsFbCompleted" type="xs:boolean" />
       <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Nooffbs" type="xs:int" />
       <xs:element minOccurs="0" name="POE" nillable="true" type="tns:POE" />
@@ -155,6 +156,7 @@
   <xs:element name="Zone" nillable="true" type="tns:Zone" />
   <xs:complexType name="Country">
     <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
       <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Id" type="xs:int" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />

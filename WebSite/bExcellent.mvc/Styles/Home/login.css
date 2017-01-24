@@ -7,14 +7,20 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../images/images/loginbg.jpg) !important;
+    /*background: url(../../images/images/loginbg.jpg) !important;
+    background-size: 100% !important;*/
+    background: #fff;
     font-family: Segoe UI;
-    background-size: 100% !important;
 }
 
 
 #basic-forgetPassword h1, #basic-forgetPassword p, #basic-forgetPassword input {
-    color: #fff;
+    color: #000;
+}
+
+.ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
+    background: rgba(255,255,255,.1);
+    color: #23a1a7;
 }
 
 #txtCaptcha {
@@ -64,7 +70,7 @@ body {
     font-weight: 400;
     margin: 0%;
     padding: 0;
-    color: #000;
+    color: #23a1a7;
 }
 
 .tileview h1 {
@@ -88,6 +94,10 @@ body {
     font-size: 125%;
 }
 
+.errormsg {
+    width: 100% !important;
+}
+
 .loginscreenleft {
     width: 37%;
     float: left;
@@ -95,7 +105,7 @@ body {
 }
 
     .loginscreenleft ul {
-        margin-top: 3%;
+        margin-top: 0%;
     }
 
 .loginrightpanel {
@@ -129,7 +139,7 @@ body {
 
 .loginscreen .txtarea {
     background: #FFFFFF;
-    border: 1px solid #808080;
+    border: 1px solid #84d1d5;
     padding: 1%;
     width: 100%;
     margin: 0% 0 3% 0;
@@ -196,11 +206,14 @@ body {
 }
 
 .loginscreen .btn {
-    background: none repeat scroll 0 0 #DEAF00;
-    border: 1px solid #808080;
-    color: #000;
+    background: none repeat scroll 0 0 #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    border-bottom: 5px solid #168f95;
+    color: #fff;
     font-weight: normal;
-    padding: 5px 15px 10px 15px;
+    padding: 5px 15px 5px 15px;
     cursor: pointer;
 }
 
@@ -208,10 +221,16 @@ body {
     text-decoration: underline;
 }
 
+
+
+
 .loginscreen .btn:hover {
-    background: none repeat scroll 0 0 #000;
-    border: 1px solid #e0b001;
-    color: #FFFFFF;
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px solid #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    border-bottom: 5px solid #168f95;
+    color: #23a1a7;
 }
 
 
@@ -314,7 +333,7 @@ p:empty {
 
     .loginscreen .btn {
         font-size: 220%;
-        padding: 4px 20px 13px 20px;
+        padding: 4px 20px 4px 20px;
         margin-bottom: 20px;
     }
 
@@ -496,7 +515,7 @@ p:empty {
     .loginscreen .btn {
         font-size: 115%;
         margin-bottom: 9px;
-        padding: 4px 15px 7px 15px;
+        padding: 4px 15px 4px 15px;
     }
 
     .loginscreen h1 {
@@ -571,7 +590,7 @@ p:empty {
     }
 
     .check p {
-        padding: .9% 0 0 0;
+        padding: 1% 0;
         font-size: 180%;
         margin-bottom: 1% !important;
     }
@@ -694,9 +713,6 @@ p:empty {
         margin-bottom: 0px !important;
         background-size: auto 60% !important;
     }
-
-
-
 
     .newuser {
         font-size: 13px;

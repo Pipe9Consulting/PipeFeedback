@@ -20,6 +20,7 @@
     <link href="../../Styles/signup/start.css" rel="stylesheet" />
     <link href="../../Styles/signup/innerHeaderFooter.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/signup/NewMaster.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <!-- endbower -->
 
     <!-- build:js scripts/vendor.js -->
@@ -225,14 +226,14 @@
 
 
                     <div class="accordion">
-
-                        <h3 class="checkt">
-                            <a href="#" class="cacIcon">
-                                <img src="../../Images/blank.png" class="checkimg" /></a></h3>
-                        <a href="/common/Index" id="imagelogo" class="cacLogo">
+                          <a href="/common/Index" id="imagelogo" class="cacLogo">
 
                             <img id="kesslogo" src="../../Images/images/CAC_logo.png" alt="Bexcellent" align="left" />
                         </a>
+                        <h3 class="checkt">
+                            <a href="#" class="cacIcon">
+                                <img src="../../Images/blank.png" class="checkimg" /></a></h3>
+                      
                         <div class="pane">
                             <div class="menuArrow">
                                 <img src="../../Images/menu_arrow.png" alt="REP Library" /><p>

@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd4" />
-  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
-  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd3" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
+  <xs:complexType name="ArrayOfZone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Zone" nillable="true" type="tns:Zone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfZone" nillable="true" type="tns:ArrayOfZone" />
+  <xs:complexType name="Zone">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Zone" nillable="true" type="tns:Zone" />
+  <xs:complexType name="ArrayOfTimeZone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TimeZone" nillable="true" type="tns:TimeZone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTimeZone" nillable="true" type="tns:ArrayOfTimeZone" />
+  <xs:complexType name="TimeZone">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TimeZone" nillable="true" type="tns:TimeZone" />
+  <xs:complexType name="ArrayOfCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountry" nillable="true" type="tns:ArrayOfCountry" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaId" type="xs:int" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
   <xs:complexType name="ArrayOfMinimizedPOE">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="MinimizedPOE" nillable="true" type="tns:MinimizedPOE" />
@@ -172,22 +214,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Question" nillable="true" type="tns:Question" />
-  <xs:complexType name="Zone">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="CountryId" type="xs:int" />
-      <xs:element minOccurs="0" name="Id" type="xs:int" />
-      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Zone" nillable="true" type="tns:Zone" />
-  <xs:complexType name="Country">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Id" type="xs:int" />
-      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Country" nillable="true" type="tns:Country" />
   <xs:complexType name="ArrayOfSubQuestion">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="SubQuestion" nillable="true" type="tns:SubQuestion" />
@@ -266,18 +292,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="WeightageValue" nillable="true" type="tns:WeightageValue" />
-  <xs:complexType name="ArrayOfCountry">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfCountry" nillable="true" type="tns:ArrayOfCountry" />
-  <xs:complexType name="ArrayOfZone">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Zone" nillable="true" type="tns:Zone" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfZone" nillable="true" type="tns:ArrayOfZone" />
   <xs:complexType name="ArrayOfNetwork">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Network" nillable="true" type="tns:Network" />
@@ -616,4 +630,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Results" nillable="true" type="tns:Results" />
+  <xs:complexType name="ArrayOfDesignation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Designation" nillable="true" type="tns:Designation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDesignation" nillable="true" type="tns:ArrayOfDesignation" />
 </xs:schema>

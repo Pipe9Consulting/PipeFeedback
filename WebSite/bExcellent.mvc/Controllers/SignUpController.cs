@@ -1363,7 +1363,7 @@ namespace bExcellent.mvc.Controllers
                 var user = (SignUpWCF.User)Session["user"];
                 var network = (SignUpWCF.Network)Session["network"];
                 YouData you = new YouData();
-                you.NetworkName = network.NetworkName;
+                iyou.NetworkName = network.NetworkName;
                 you.FirstName = user.FirstName;
                 you.LastName = user.LastName;
                 you.Email = user.EmailAddress;

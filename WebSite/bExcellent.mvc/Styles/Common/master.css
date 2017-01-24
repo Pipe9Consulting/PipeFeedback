@@ -144,14 +144,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     overflow: hidden;
 }
 
-.breadcrumb {
-    padding: 10px 15px;
-    background-color: #fff;
+.breadcrumb h1 {
+    color: #fff;
 }
-
-    .breadcrumb h1 {
-        color: #fff;
-    }
 
 .contenthold p {
     color: #fff;
@@ -161,7 +156,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     color: #333;
     font-weight: 400;
     text-decoration: none;
-    background: #fff;
+    background: #fafafa;
     /*padding: .5%;*/
     width: 96%;
 }

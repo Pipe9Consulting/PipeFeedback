@@ -1,13 +1,8 @@
 ﻿
 body {
-    background: url("../../Images/new/signUpBg.png") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+    background: #fff !important;
     background-size: 100% 95% !important;
 }
-
-.bg {
-    margin: 2%;
-}
-
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .row {
@@ -24,9 +19,10 @@ body {
     width: 9%;
     float: left;
     margin-right: 15%;
-    background: #000;
+    background: #fff;
     position: relative;
     padding-bottom: 8.5%;
+    border: 1px solid #999;
 }
 
     .signuptile .img, .signuptile p {
@@ -48,21 +44,27 @@ body {
     .signuptile p {
         bottom: 5%;
         left: 7%;
-        color: #fff;
+        color: #23a1a7;
         text-transform: uppercase;
     }
 
 .contenthold {
     float: left;
     width: 55%;
-    background: rgba(0, 0, 0, .8);
+    background: #f8f8f8;
     margin-top: 1%;
-    padding: 0.7% 1.5% 1.5% 1.5%;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    border: 1px solid #999;
 }
+
 
     .contenthold h1 {
         padding-top: 0 !important;
     }
+
+.accordion a.cacLogo {
+    padding-left: 18px;
+}
 
 .col {
     float: left;
@@ -73,8 +75,8 @@ body {
     float: left;
     width: 31%;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 150%;
+    color: #23a1a7;
+    font-size: 200%;
     font-weight: 400;
 }
 
@@ -82,7 +84,7 @@ body {
 .contenthold h2 {
     float: left;
     width: 31%;
-    color: #fff;
+    color: #000;
     font-size: 70%;
     font-weight: 400;
 }
@@ -103,23 +105,23 @@ body {
 
 .level {
     width: 20%;
-    color: #fff;
+    color: #000;
 }
 
 .txtcol, #textupload {
     width: 100%;
-    border: 1px solid #CBCBCB;
+    border: 1px solid #666;
     padding: 1% 1.5%;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.0);
+    color: #000;
+    background: #fff;
 }
 
 .selectcol {
     width: 100%;
-    border: 1px solid #CBCBCB;
+    border: 1px solid #666;
     padding: 1% 1.5%;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.0);
+    color: #000;
+    background: #fff;
     font-family: Segoe UI;
 }
 
@@ -130,7 +132,7 @@ option {
 .errormsg, .errormsgpay {
     background: url("../../Images/error.png") no-repeat scroll left center rgba(0, 0, 0, 0);
     background-size: 6% 100%;
-    color: #fff;
+    color: #000;
     padding: 0 0 0 8% !important;
     line-height: 1.5em;
     margin-top: 1%;
@@ -178,8 +180,13 @@ option {
         height: 100%;
     }
 
+.breadMenu {
+    margin-bottom: 0.5% !important;
+}
+
+
 .check label a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     line-height: 1.5em;
 }
@@ -208,18 +215,24 @@ option {
 
     .signupcol input, #btnUpload, #btnCrop {
         float: right;
-        background: none repeat scroll 0 0 #e0b001;
-        border: 1px solid #000;
-        color: #000;
+        background: none repeat scroll 0 0 #23a1a7;
+        border-left: 1px solid #23a1a7;
+        border-right: 1px solid #23a1a7;
+        border-top: 1px solid #23a1a7;
+        border-bottom: 3px solid #056e73;
+        padding: 1% 2% .7% 2%;
+        color: #fff;
         cursor: pointer;
         font-weight: bold;
-        padding: 1% 2%;
     }
 
         .signupcol input:hover {
-            background: none repeat scroll 0 0 #000;
-            border: 1px solid #e0b001;
-            color: #fff;
+            background: none repeat scroll 0 0 #fff;
+            border-left: 1px solid #23a1a7;
+            border-right: 1px solid #23a1a7;
+            border-top: 1px solid #23a1a7;
+            border-bottom: 3px solid #056e73;
+            color: #23a1a7;
         }
 
 
@@ -297,7 +310,7 @@ option {
         }
 
     #simplemodal-container .txtcol, #textupload {
-        border: 1px solid #CBCBCB;
+        border: 1px solid #666;
         color: #5E5E5E;
         padding: 2% 1.5%;
         width: 94%;
@@ -309,14 +322,18 @@ option {
 }
 
 #simplemodal-container .signupcol input, #btnUpload, #btnCrop {
-    background: none repeat scroll 0 0 #DEAF01;
-    border: 2px solid #6C6C6C;
-    color: #000;
     cursor: pointer;
     float: right;
     font-weight: bold;
-    padding: 1% 2%;
+    background: none repeat scroll 0 0 #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 3px solid #056e73;
+    padding: 1% 2% .7% 2%;
+    color: #fff;
 }
+
 
 #btnCrop {
     float: left;
@@ -326,6 +343,13 @@ option {
     padding: 0% 5%;
     height: 2.1em;
 }
+
+#simplemodal-container a.modalCloseImg {
+    background-size: 47% 60%;
+    right: -5px;
+    top: 14px;
+}
+
 
 #pnlUpload {
     left: 2%;
@@ -399,6 +423,12 @@ option {
 
     .signuptile {
         margin-top: 0% !important;
+    }
+
+    .accordion a.cacLogo {
+        padding-left: 10px;
+        margin-top: -7px;
+        position: absolute;
     }
 }
 

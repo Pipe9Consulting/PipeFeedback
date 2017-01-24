@@ -15,7 +15,7 @@ body {
     height: 100px;
     padding: 0 !important;
 }
- 
+
 .breadMenu {
     margin: 1.5% 1.5% .5% 1.5% !important;
     background: #fff;
@@ -70,11 +70,12 @@ html, body {
 /*------------------ Footer ********************************/
 
 .footerPart {
-    background: #111111;
+    background: #fff;
     height: 80px;
     position: absolute;
     left: 0;
     bottom: 0;
+    border-top: #b9babb;
     width: 100%;
 }
 
@@ -103,7 +104,7 @@ html, body {
     }
 
     .footerPart {
-            height: 70px;
+        height: 70px;
     }
 }
 

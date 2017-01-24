@@ -18,17 +18,17 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://192.168.1.98:8089/Signup.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8052/Signup.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Signup66.xsd" MetadataType="Schema" ID="0b18ea01-ba15-4e82-92b8-e1cd686f381a" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd0" />
-    <MetadataFile FileName="Signup11.wsdl" MetadataType="Wsdl" ID="63579efc-4bc2-48e4-8e37-dd6f99759b33" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?wsdl" />
-    <MetadataFile FileName="Signup67.xsd" MetadataType="Schema" ID="64d3f60e-2a59-42be-93bc-15de2d8f3391" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd2" />
-    <MetadataFile FileName="Signup68.xsd" MetadataType="Schema" ID="f33718ac-ecee-48f8-b07f-bc940f4de9ae" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd5" />
-    <MetadataFile FileName="Signup69.xsd" MetadataType="Schema" ID="9879f16e-77b9-4c4e-9028-033edf3794ce" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd1" />
-    <MetadataFile FileName="Signup610.xsd" MetadataType="Schema" ID="fb377ae1-7d9e-4e17-813d-85b5ccd14f36" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd4" />
-    <MetadataFile FileName="Signup611.xsd" MetadataType="Schema" ID="ed59b071-5654-4756-a80b-3438e458ff73" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?xsd=xsd3" />
-    <MetadataFile FileName="Signup.disco" MetadataType="Disco" ID="fbf1dec2-8227-4e41-874f-0d3fd66067bd" SourceId="1" SourceUrl="http://192.168.1.98:8089/Signup.svc?disco" />
+    <MetadataFile FileName="Signup2.wsdl" MetadataType="Wsdl" ID="1f8c2d06-7360-409c-850e-de2f77e37da3" SourceId="1" SourceUrl="http://localhost:8052/Signup.svc?wsdl" />
+    <MetadataFile FileName="Signup1.disco" MetadataType="Disco" ID="b98aeca8-ba8b-49da-adde-e4c9a68cf12f" SourceId="1" SourceUrl="http://localhost:8052/Signup.svc?disco" />
+    <MetadataFile FileName="Signup7.xsd" MetadataType="Schema" ID="35fffe80-d380-4801-86ed-e481ce8c0cc8" SourceId="1" SourceUrl="http://localhost:8052/Signup.svc?xsd=xsd1" />
+    <MetadataFile FileName="Signup8.xsd" MetadataType="Schema" ID="2b6b1e6a-5fe4-45ba-be38-42c1454bfe22" SourceId="1" SourceUrl="http://localhost:8052/Signup.svc?xsd=xsd0" />
+    <MetadataFile FileName="Signup9.xsd" MetadataType="Schema" ID="522981d8-50db-4af8-bab3-a3bd86eef19c" SourceId="1" SourceUrl="http://localhost:8052/Signup.svc?xsd=xsd3" />
+    <MetadataFile FileName="Signup10.xsd" MetadataType="Schema" ID="af494323-b32d-4b9d-8e52-6738b02e939e" SourceId="1" SourceUrl="http://localhost:8052/Signup.svc?xsd=xsd2" />
+    <MetadataFile FileName="Signup11.xsd" MetadataType="Schema" ID="74e4a52e-79b5-4fd6-bbd3-4e551ded372c" SourceId="1" SourceUrl="http://localhost:8052/Signup.svc?xsd=xsd5" />
+    <MetadataFile FileName="Signup12.xsd" MetadataType="Schema" ID="9e881a03-0b72-42ad-ae11-a9b52e882c20" SourceId="1" SourceUrl="http://localhost:8052/Signup.svc?xsd=xsd4" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

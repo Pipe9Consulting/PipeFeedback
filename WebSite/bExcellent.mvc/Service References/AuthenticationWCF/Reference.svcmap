@@ -18,16 +18,16 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://192.168.1.98:8089/Authentication.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8052/Authentication.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Authentication11.wsdl" MetadataType="Wsdl" ID="1c86fd56-820f-4753-9271-8152eae27cba" SourceId="1" SourceUrl="http://192.168.1.98:8089/Authentication.svc?wsdl" />
-    <MetadataFile FileName="Authentication55.xsd" MetadataType="Schema" ID="9a9c4b5f-9ccf-4778-b136-f1176fc23c79" SourceId="1" SourceUrl="http://192.168.1.98:8089/Authentication.svc?xsd=xsd1" />
-    <MetadataFile FileName="Authentication11.disco" MetadataType="Disco" ID="4606725b-5eae-4686-8d8b-6a93e440f7ea" SourceId="1" SourceUrl="http://192.168.1.98:8089/Authentication.svc?disco" />
-    <MetadataFile FileName="Authentication56.xsd" MetadataType="Schema" ID="69bc21a0-9826-4f5e-a676-dc4ebb407253" SourceId="1" SourceUrl="http://192.168.1.98:8089/Authentication.svc?xsd=xsd3" />
-    <MetadataFile FileName="Authentication57.xsd" MetadataType="Schema" ID="05c6977f-68fd-4a73-af17-219ecc746728" SourceId="1" SourceUrl="http://192.168.1.98:8089/Authentication.svc?xsd=xsd2" />
-    <MetadataFile FileName="Authentication58.xsd" MetadataType="Schema" ID="c455e34e-f8a8-41bf-88b4-5f3a1b25126e" SourceId="1" SourceUrl="http://192.168.1.98:8089/Authentication.svc?xsd=xsd0" />
-    <MetadataFile FileName="Authentication59.xsd" MetadataType="Schema" ID="73e89604-bb87-4303-ad54-9620b23e3bb9" SourceId="1" SourceUrl="http://192.168.1.98:8089/Authentication.svc?xsd=xsd4" />
+    <MetadataFile FileName="Authentication.disco" MetadataType="Disco" ID="704fe212-2031-44a4-96b8-c62e2ac90327" SourceId="1" SourceUrl="http://localhost:8052/Authentication.svc?disco" />
+    <MetadataFile FileName="Authentication.xsd" MetadataType="Schema" ID="2e0340ec-091c-4f79-8361-eed7f7d8356f" SourceId="1" SourceUrl="http://localhost:8052/Authentication.svc?xsd=xsd2" />
+    <MetadataFile FileName="Authentication1.xsd" MetadataType="Schema" ID="e2a7dd09-5b69-45aa-86ba-97c3e71aff69" SourceId="1" SourceUrl="http://localhost:8052/Authentication.svc?xsd=xsd3" />
+    <MetadataFile FileName="Authentication.wsdl" MetadataType="Wsdl" ID="73bbf967-0581-400e-bbe0-46b20e10a977" SourceId="1" SourceUrl="http://localhost:8052/Authentication.svc?wsdl" />
+    <MetadataFile FileName="Authentication2.xsd" MetadataType="Schema" ID="98ace87f-3e56-4942-89af-f86ba3ad5fe3" SourceId="1" SourceUrl="http://localhost:8052/Authentication.svc?xsd=xsd1" />
+    <MetadataFile FileName="Authentication3.xsd" MetadataType="Schema" ID="1cb94977-b666-4ac2-97da-0198d725aac7" SourceId="1" SourceUrl="http://localhost:8052/Authentication.svc?xsd=xsd0" />
+    <MetadataFile FileName="Authentication4.xsd" MetadataType="Schema" ID="1c134dcd-2672-47ad-8e14-b39d42564078" SourceId="1" SourceUrl="http://localhost:8052/Authentication.svc?xsd=xsd4" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

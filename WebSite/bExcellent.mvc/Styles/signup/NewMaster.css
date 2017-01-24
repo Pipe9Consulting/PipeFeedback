@@ -6,6 +6,17 @@
 html, body {
     height: 100%;
     background-size: 100% 100% !important;
+    font-family: 'Cuprum', sans-serif !important;
+}
+
+.ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
+    background: rgba(255,255,255,.1);
+    color: #23a1a7 !important;
+}
+
+.slimScrollBar {
+    background-color: #ee644e !important;
+    opacity: 0.9 !important;
 }
 
 .page-wrapper {
@@ -76,8 +87,8 @@ html, body {
     margin: 0 auto;
     width: 25%;
     height: 200px;
-    background: #000;
-    border: 1px solid #e0b001;
+    background: #fff;
+    border: 1px solid #f24d2f;
     top: 30%;
     position: relative;
     display: table;
@@ -96,10 +107,12 @@ html, body {
 }
 
     .overallclose p {
-        color: #fff !important;
-        font-size: 25px !important;
+        color: #f24d2f !important;
+        font-size: 20px !important;
         font-weight: 700;
+        font-family: arial;
     }
+
 
 
 .overallcontent div {
@@ -109,23 +122,29 @@ html, body {
 }
 
 .overallcontent p {
-    color: #fff;
+    color: #000;
     text-align: center;
     font-size: 16px;
     padding: 5%;
 }
 
 .overallcontent a {
-    background: #e0b001;
-    border: 1px solid #000;
-    padding: 3px 15px 6px 15px;
-    color: #000;
+    background: #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 3px solid #086a6f;
+    padding: 3px 15px 3px 15px;
+    color: #fff;
 }
 
     .overallcontent a:hover {
-        background: #000;
-        border: 1px solid #e0b001;
-        color: #fff;
+        background: #fff;
+        border-left: 1px solid #23a1a7;
+        border-right: 1px solid #23a1a7;
+        border-top: 1px solid #23a1a7;
+        border-bottom: 3px solid #086a6f;
+        color: #23a1a7;
     }
 
 .overallpopup {
@@ -145,18 +164,18 @@ html, body {
 
 
 .breadMenu {
-    margin: 1.5% 1.5%;
-    background: #fff;
+    margin: 0 0 2% 0;
+    background: #fafafa;
 }
 
 .breadcrumb {
-    background: #fff;
-    background-color: #fff !IMPORTANT;
+    background: #fafafa;
     padding: .6% .8%;
+    padding: 0.5% 1% 0.6% 1.7%;
 }
 
     .breadcrumb a {
-        color: #000;
+        color: #333;
     }
 
 /*#indicator li img {
@@ -167,7 +186,7 @@ html, body {
     cursor: pointer;
     width: 60%;
     position: relative;
-    border-left: 1px solid #333;
+    border-left: 1px solid #e5e5e5;
     display: table-cell;
     vertical-align: middle;
     height: 100%;
@@ -227,14 +246,14 @@ html, body {
     .dropdowns a {
         background: url("../../Images/images/login-arrow.png") no-repeat bottom right rgba(0, 0, 0, 0);
         background-position: right 0 bottom 0;
-        color: #fff !important;
+        color: #000 !important;
         float: right;
         text-decoration: none;
         text-align: right;
         min-width: 66%;
         max-width: 66%;
         word-wrap: break-word;
-        padding-bottom: 22px;
+        padding-bottom: 18px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -253,6 +272,7 @@ html, body {
     width: 30%;
     height: auto;
     margin-left: 3%;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .login:hover > .dropdowns ul, .login:hover > .dropdowns .slimScrollDiv {
@@ -293,12 +313,21 @@ html, body {
 .dropdowns ul li {
     padding: 0 0 5% 0;
     width: 100%;
-    background: #222327 !important;
+    background: #fff !important;
     background-image: none !important;
     float: left;
+    border-bottom: 1px solid #69c2c6;
     clear: both;
 }
 
+#accsettings .hideDiv {
+    border-bottom: 1px solid #69c2c6;
+    border-left: 1px solid #69c2c6;
+    border-right: 1px solid #69c2c6;
+    float: left;
+    height: auto;
+    width: 100%;
+}
 
 .clickdeeper {
     background: url(../../Images/start/arrow_dig.png) no-repeat right top;
@@ -319,7 +348,7 @@ html, body {
 
 
 .dropdowns ul li a {
-    color: #fff !important;
+    color: #000 !important;
     background-image: none !important;
     min-width: 95%;
     max-width: 95%;
@@ -336,13 +365,13 @@ html, body {
 }
 
 .dropdowns ul li:hover {
-    background: #e0b001 !important;
+    background: #23a1a7 !important;
     background-image: none !important;
-    color: #000;
+    color: #fff;
 }
 
     .dropdowns ul li:hover > a {
-        color: #000 !important;
+        color: #fff !important;
     }
 
 .cart {
@@ -469,13 +498,14 @@ html, body {
         display: table-cell;
         vertical-align: middle;
         height: 100%;
+        float: left;
     }
 
         .accordion a.cacLogo {
             /*background: url("../../Images/profile_border_img.png") no-repeat center left;*/
-            padding-left: 30px;
-            border-left: 1px solid #333;
+            padding-left: 2.2%;
             cursor: default;
+            float: left;
         }
 
 .cacLogo img {
@@ -509,10 +539,10 @@ html, body {
     float: left;
     width: 95% !important;
     position: absolute;
-    top: 101%;
+    top: 102%;
     z-index: 999999999;
     left: 1%;
-    border: 1px solid #000;
+    border: 1px solid #999;
 }
 
 .menuArrow {
@@ -555,78 +585,82 @@ html, body {
 
 
 .select_start p, .select_feedback p, .select_result p, .select_managersync p, .select_communitysync p, .select_goals p {
-    color: #e0b001 !important;
+    color: #23a1a7 !important;
+}
+
+.select_start, .select_feedback, .select_result, .select_managersync, .select_communitysync, .select_goals {
+    border: 1px solid #23a1a7 !important;
 }
 
 .start_start {
-    background: url(../../Images/icons/start_icon.png)no-repeat top right #333;
+    background: url(../../Images/icons/start_icon.png)no-repeat top right #fff;
     background-size: 95% 95%;
 }
 
     .start_start:hover {
-        background: url(../../Images/icons/start_icon_h.png)no-repeat top right #000;
+        background: url(../../Images/icons/start_icon_h.png)no-repeat top right #fff;
         background-size: 95% 95%;
     }
 
 
 .select_start {
-    background: url(../../Images/icons/start_icon_h.png)no-repeat top right #000 !important;
+    background: url(../../Images/icons/start_icon_h.png)no-repeat top right #fff !important;
     background-size: 95% 95% !important;
 }
 
 .feedback_start {
-    background: url(../../Images/icons/start-feedback.png)no-repeat top right #333;
+    background: url(../../Images/icons/start-feedback.png)no-repeat top right #fff;
     background-size: 90% 90%;
 }
 
 
     .feedback_start:hover {
-        background: url(../../Images/icons/start-feedback_h.png)no-repeat top right #000;
+        background: url(../../Images/icons/start-feedback_h.png)no-repeat top right #fff;
         background-size: 90% 90%;
     }
 
 
 .select_feedback {
-    background: url(../../Images/icons/start-feedback_h.png)no-repeat top right #000 !important;
+    background: url(../../Images/icons/start-feedback_h.png)no-repeat top right #fff !important;
     background-size: 90% 90% !important;
 }
 
 .result_start {
-    background: url(../../Images/icons/result_Icon.png)no-repeat top right #333;
+    background: url(../../Images/icons/result_Icon.png)no-repeat top right #fff;
     background-size: 90% 90%;
 }
 
 
     .result_start:hover {
-        background: url(../../Images/icons/result_Icon_h.png)no-repeat top right #000;
+        background: url(../../Images/icons/result_Icon_h.png)no-repeat top right #fff;
         background-size: 90% 90%;
     }
 
 .select_result {
-    background: url(../../Images/icons/result_Icon_h.png)no-repeat top right #000 !important;
+    background: url(../../Images/icons/result_Icon_h.png)no-repeat top right #fff !important;
     background-size: 90% 90% !important;
 }
 
 
 
 .managersync_start {
-    background: url(../../Images/icons/start-sync.png)no-repeat top right #333;
+    background: url(../../Images/icons/start-sync.png)no-repeat top right #fff;
     background-size: 90% 90%;
 }
 
     .managersync_start:hover {
-        background: url(../../Images/icons/start-sync_h.png)no-repeat top right #000;
+        background: url(../../Images/icons/start-sync_h.png)no-repeat top right #fff;
         background-size: 90% 90%;
     }
 
 .select_managersync {
-    background: url(../../Images/icons/start-sync_h.png)no-repeat top right #000 !important;
+    background: url(../../Images/icons/start-sync_h.png)no-repeat top right #fff !important;
     background-size: 90% 90% !important;
 }
 
 
 .communitysync_start {
-    background: url(../../Images/icons/start-standing.png)no-repeat top right #333;
+    background: url(../../Images/icons/start-standing.png)no-repeat top right #fff;
     background-size: 85% 85%;
 }
 
@@ -640,37 +674,37 @@ html, body {
 }
 
 .resultMenuHide {
-    background: url(../../Images/icons/result_Icon.png)no-repeat top right #333 !important;
+    background: url(../../Images/icons/result_Icon.png)no-repeat top right #fff !important;
     background-size: 100% 100% !important;
     opacity: 0.2;
 }
 
     .resultMenuHide:hover {
-        background: url(../../Images/icons/result_Icon.png)no-repeat top right #333 !important;
+        background: url(../../Images/icons/result_Icon.png)no-repeat top right #fff !important;
         background-size: 100% 100% !important;
         opacity: 0.2;
     }
 
 .managerMenuHide {
-    background: url(../../Images/icons/start-sync.png)no-repeat top right #333 !important;
+    background: url(../../Images/icons/start-sync.png)no-repeat top right #fff !important;
     background-size: 100% 100% !important;
     opacity: 0.2;
 }
 
     .managerMenuHide:hover {
-        background: url(../../Images/icons/start-sync.png)no-repeat top right #333 !important;
+        background: url(../../Images/icons/start-sync.png)no-repeat top right #fff !important;
         background-size: 100% 100% !important;
         opacity: 0.2;
     }
 
 .communityMenuHide {
-    background: url(../../Images/icons/start-standing.png)no-repeat top right #333 !important;
+    background: url(../../Images/icons/start-standing.png)no-repeat top right #fff !important;
     background-size: 95% 95% !important;
     opacity: 0.2;
 }
 
     .communityMenuHide:hover {
-        background: url(../../Images/icons/start-standing.png)no-repeat top right #333 !important;
+        background: url(../../Images/icons/start-standing.png)no-repeat top right #fff !important;
         background-size: 95% 95% !important;
         opacity: 0.2;
     }
@@ -679,37 +713,37 @@ html, body {
 
 
 .goalsMenuHide {
-    background: url(../../Images/icons/goals_icon.png)no-repeat top right #333 !important;
+    background: url(../../Images/icons/goals_icon.png)no-repeat top right #fff !important;
     background-size: 110% 110% !important;
     opacity: 0.2;
 }
 
 
     .goalsMenuHide:hover {
-        background: url(../../Images/icons/goals_icon.png)no-repeat top right #333 !important;
+        background: url(../../Images/icons/goals_icon.png)no-repeat top right #fff !important;
         background-size: 110% 110% !important;
         opacity: 0.2;
     }
 
 .communitysync_start:hover {
-    background: url(../../Images/icons/start-standing_h.png)no-repeat top right #000;
+    background: url(../../Images/icons/start-standing_h.png)no-repeat top right #fff;
     background-size: 85% 85%;
 }
 
 .select_communitysync {
-    background: url(../../Images/icons/start-standing_h.png)no-repeat top right #000 !important;
+    background: url(../../Images/icons/start-standing_h.png)no-repeat top right #fff !important;
     background-size: 85% 85% !important;
 }
 
 
 .goals_start {
-    background: url(../../Images/icons/goals_icon.png)no-repeat top right #333;
+    background: url(../../Images/icons/goals_icon.png)no-repeat top right #fff;
     background-size: 95% 95%;
 }
 
 
     .goals_start:hover {
-        background: url(../../Images/icons/goals_icon_h.png)no-repeat top right #000;
+        background: url(../../Images/icons/goals_icon_h.png)no-repeat top right #fff;
         background-size: 95% 95%;
     }
 
@@ -726,14 +760,16 @@ html, body {
     float: left;
     /*background: #333;*/
     margin: 0 1% 1% 0;
+    border: 1px solid #ccc;
 }
 
     .pane li:hover {
-        background-color: #000;
+        background-color: #fff;
+        border: 1px solid #23a1a7;
     }
 
         .pane li:hover p {
-            color: #e0b001;
+            color: #23a1a7;
         }
 
     .pane li:last-child {
@@ -745,7 +781,7 @@ html, body {
         position: absolute;
         bottom: 7%;
         left: 10%;
-        color: #fff;
+        color: #666;
         font-size: 15px !important;
     }
 
@@ -760,7 +796,7 @@ html, body {
     }
 
     .pane li a {
-        color: #FFFFFF;
+        color: #666;
         display: block;
         height: 100%;
         text-decoration: none;
@@ -859,13 +895,11 @@ html, body {
         font-size: 1rem;
     }
 
-    .cacLogo img {
-        width: 47%;
-    }
+
 
     .accordion h3, .accordion h3:hover, .accordion .down {
-        background-size: 35% 35%;
-        background-position-y: 20px;
+        background-size: 30% 29%;
+        background-position-y: 45px;
         background-position-x: 17px;
         width: 70px;
     }
@@ -886,11 +920,6 @@ html, body {
 
     .headerRight {
         width: 23%;
-    }
-
-
-    .breadMenu {
-        margin: 2% 2% 1% 2%;
     }
 }
 /*Newly Added*/
@@ -1025,9 +1054,10 @@ html, body {
 
     .accordion h3, .accordion h3:hover, .accordion .down {
         background-size: 30% 35%;
-        background-position-y: 26px;
+        background-position-y: 45px;
         background-position-x: 30px;
         width: 85px;
+        float: left;
     }
 }
 

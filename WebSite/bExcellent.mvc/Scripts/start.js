@@ -70,7 +70,6 @@ function TileNotfication() {
                 // alert(response.Team.length);
                 var totalcounts = 0;
                 for (var j = 0; j < response.Team.length; j++) {
-                    debugger;
                     teamHtml = teamHtml + response.Team[j].PoeName + ": " + response.Team[j].FBRequired + "</br>";
                     totalcounts = totalcounts + response.Team[j].FBRequired;
                 }

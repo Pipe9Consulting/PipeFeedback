@@ -15,6 +15,2335 @@ namespace bExcellent.mvc.CommonWCF {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Zone", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
+    [System.SerializableAttribute()]
+    public partial class Zone : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CountryIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CountryId {
+            get {
+                return this.CountryIdField;
+            }
+            set {
+                if ((this.CountryIdField.Equals(value) != true)) {
+                    this.CountryIdField = value;
+                    this.RaisePropertyChanged("CountryId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TimeZone", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
+    [System.SerializableAttribute()]
+    public partial class TimeZone : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Country", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
+    [System.SerializableAttribute()]
+    public partial class Country : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AreaIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AreaId {
+            get {
+                return this.AreaIdField;
+            }
+            set {
+                if ((this.AreaIdField.Equals(value) != true)) {
+                    this.AreaIdField = value;
+                    this.RaisePropertyChanged("AreaId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Code {
+            get {
+                return this.CodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CodeField, value) != true)) {
+                    this.CodeField = value;
+                    this.RaisePropertyChanged("Code");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="User", Namespace="")]
+    [System.SerializableAttribute()]
+    public partial class User : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.Zone AreaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CompanyNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CompanySizeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.Country CountryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int DesignationIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailAddressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool IsActiveField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<bool> IsAgreedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string JobTitleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> LastLoginField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private byte[] PhotoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StratPageModeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> SubscriptionidField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int UserIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string YammerTokenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string userNameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.Zone Area {
+            get {
+                return this.AreaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaField, value) != true)) {
+                    this.AreaField = value;
+                    this.RaisePropertyChanged("Area");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CompanyName {
+            get {
+                return this.CompanyNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompanyNameField, value) != true)) {
+                    this.CompanyNameField = value;
+                    this.RaisePropertyChanged("CompanyName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CompanySize {
+            get {
+                return this.CompanySizeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompanySizeField, value) != true)) {
+                    this.CompanySizeField = value;
+                    this.RaisePropertyChanged("CompanySize");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.Country Country {
+            get {
+                return this.CountryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int DesignationId {
+            get {
+                return this.DesignationIdField;
+            }
+            set {
+                if ((this.DesignationIdField.Equals(value) != true)) {
+                    this.DesignationIdField = value;
+                    this.RaisePropertyChanged("DesignationId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string EmailAddress {
+            get {
+                return this.EmailAddressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailAddressField, value) != true)) {
+                    this.EmailAddressField = value;
+                    this.RaisePropertyChanged("EmailAddress");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool IsActive {
+            get {
+                return this.IsActiveField;
+            }
+            set {
+                if ((this.IsActiveField.Equals(value) != true)) {
+                    this.IsActiveField = value;
+                    this.RaisePropertyChanged("IsActive");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<bool> IsAgreed {
+            get {
+                return this.IsAgreedField;
+            }
+            set {
+                if ((this.IsAgreedField.Equals(value) != true)) {
+                    this.IsAgreedField = value;
+                    this.RaisePropertyChanged("IsAgreed");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string JobTitle {
+            get {
+                return this.JobTitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.JobTitleField, value) != true)) {
+                    this.JobTitleField = value;
+                    this.RaisePropertyChanged("JobTitle");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> LastLogin {
+            get {
+                return this.LastLoginField;
+            }
+            set {
+                if ((this.LastLoginField.Equals(value) != true)) {
+                    this.LastLoginField = value;
+                    this.RaisePropertyChanged("LastLogin");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Photo {
+            get {
+                return this.PhotoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhotoField, value) != true)) {
+                    this.PhotoField = value;
+                    this.RaisePropertyChanged("Photo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int StratPageMode {
+            get {
+                return this.StratPageModeField;
+            }
+            set {
+                if ((this.StratPageModeField.Equals(value) != true)) {
+                    this.StratPageModeField = value;
+                    this.RaisePropertyChanged("StratPageMode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> Subscriptionid {
+            get {
+                return this.SubscriptionidField;
+            }
+            set {
+                if ((this.SubscriptionidField.Equals(value) != true)) {
+                    this.SubscriptionidField = value;
+                    this.RaisePropertyChanged("Subscriptionid");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int UserId {
+            get {
+                return this.UserIdField;
+            }
+            set {
+                if ((this.UserIdField.Equals(value) != true)) {
+                    this.UserIdField = value;
+                    this.RaisePropertyChanged("UserId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string YammerToken {
+            get {
+                return this.YammerTokenField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.YammerTokenField, value) != true)) {
+                    this.YammerTokenField = value;
+                    this.RaisePropertyChanged("YammerToken");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string userName {
+            get {
+                return this.userNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.userNameField, value) != true)) {
+                    this.userNameField = value;
+                    this.RaisePropertyChanged("userName");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Partner", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class Partner : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CountryNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DETField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ExtensionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int FBStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FileNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MPLIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OriginalPartnerNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PartnerNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PPAResults[] PartnerResultsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PlanIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RealFileNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int UserIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CountryName {
+            get {
+                return this.CountryNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryNameField, value) != true)) {
+                    this.CountryNameField = value;
+                    this.RaisePropertyChanged("CountryName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DET {
+            get {
+                return this.DETField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DETField, value) != true)) {
+                    this.DETField = value;
+                    this.RaisePropertyChanged("DET");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Extension {
+            get {
+                return this.ExtensionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionField, value) != true)) {
+                    this.ExtensionField = value;
+                    this.RaisePropertyChanged("Extension");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int FBStatus {
+            get {
+                return this.FBStatusField;
+            }
+            set {
+                if ((this.FBStatusField.Equals(value) != true)) {
+                    this.FBStatusField = value;
+                    this.RaisePropertyChanged("FBStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FileName {
+            get {
+                return this.FileNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FileNameField, value) != true)) {
+                    this.FileNameField = value;
+                    this.RaisePropertyChanged("FileName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MPLID {
+            get {
+                return this.MPLIDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MPLIDField, value) != true)) {
+                    this.MPLIDField = value;
+                    this.RaisePropertyChanged("MPLID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OriginalPartnerName {
+            get {
+                return this.OriginalPartnerNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OriginalPartnerNameField, value) != true)) {
+                    this.OriginalPartnerNameField = value;
+                    this.RaisePropertyChanged("OriginalPartnerName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PartnerName {
+            get {
+                return this.PartnerNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnerNameField, value) != true)) {
+                    this.PartnerNameField = value;
+                    this.RaisePropertyChanged("PartnerName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PPAResults[] PartnerResults {
+            get {
+                return this.PartnerResultsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnerResultsField, value) != true)) {
+                    this.PartnerResultsField = value;
+                    this.RaisePropertyChanged("PartnerResults");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PlanId {
+            get {
+                return this.PlanIdField;
+            }
+            set {
+                if ((this.PlanIdField.Equals(value) != true)) {
+                    this.PlanIdField = value;
+                    this.RaisePropertyChanged("PlanId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RealFileName {
+            get {
+                return this.RealFileNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RealFileNameField, value) != true)) {
+                    this.RealFileNameField = value;
+                    this.RaisePropertyChanged("RealFileName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int UserId {
+            get {
+                return this.UserIdField;
+            }
+            set {
+                if ((this.UserIdField.Equals(value) != true)) {
+                    this.UserIdField = value;
+                    this.RaisePropertyChanged("UserId");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PPAResults", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request")]
+    [System.SerializableAttribute()]
+    public partial class PPAResults : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AnswerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AnswerTextField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int QuestionIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Answer {
+            get {
+                return this.AnswerField;
+            }
+            set {
+                if ((this.AnswerField.Equals(value) != true)) {
+                    this.AnswerField = value;
+                    this.RaisePropertyChanged("Answer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AnswerText {
+            get {
+                return this.AnswerTextField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AnswerTextField, value) != true)) {
+                    this.AnswerTextField = value;
+                    this.RaisePropertyChanged("AnswerText");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int QuestionId {
+            get {
+                return this.QuestionIdField;
+            }
+            set {
+                if ((this.QuestionIdField.Equals(value) != true)) {
+                    this.QuestionIdField = value;
+                    this.RaisePropertyChanged("QuestionId");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PSEReports", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class PSEReports : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaLeadAliasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaLeadFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaLeadLastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CountryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ManagerAliasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ManagerFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ManagerLastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.Partner[] PartnersListField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneAliasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneLastNameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Area {
+            get {
+                return this.AreaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaField, value) != true)) {
+                    this.AreaField = value;
+                    this.RaisePropertyChanged("Area");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AreaLeadAlias {
+            get {
+                return this.AreaLeadAliasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaLeadAliasField, value) != true)) {
+                    this.AreaLeadAliasField = value;
+                    this.RaisePropertyChanged("AreaLeadAlias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AreaLeadFirstName {
+            get {
+                return this.AreaLeadFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaLeadFirstNameField, value) != true)) {
+                    this.AreaLeadFirstNameField = value;
+                    this.RaisePropertyChanged("AreaLeadFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AreaLeadLastName {
+            get {
+                return this.AreaLeadLastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaLeadLastNameField, value) != true)) {
+                    this.AreaLeadLastNameField = value;
+                    this.RaisePropertyChanged("AreaLeadLastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Country {
+            get {
+                return this.CountryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string EmailId {
+            get {
+                return this.EmailIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailIdField, value) != true)) {
+                    this.EmailIdField = value;
+                    this.RaisePropertyChanged("EmailId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ManagerAlias {
+            get {
+                return this.ManagerAliasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ManagerAliasField, value) != true)) {
+                    this.ManagerAliasField = value;
+                    this.RaisePropertyChanged("ManagerAlias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ManagerFirstName {
+            get {
+                return this.ManagerFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ManagerFirstNameField, value) != true)) {
+                    this.ManagerFirstNameField = value;
+                    this.RaisePropertyChanged("ManagerFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ManagerLastName {
+            get {
+                return this.ManagerLastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ManagerLastNameField, value) != true)) {
+                    this.ManagerLastNameField = value;
+                    this.RaisePropertyChanged("ManagerLastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.Partner[] PartnersList {
+            get {
+                return this.PartnersListField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnersListField, value) != true)) {
+                    this.PartnersListField = value;
+                    this.RaisePropertyChanged("PartnersList");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TimeZone {
+            get {
+                return this.TimeZoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneField, value) != true)) {
+                    this.TimeZoneField = value;
+                    this.RaisePropertyChanged("TimeZone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TimeZoneAlias {
+            get {
+                return this.TimeZoneAliasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneAliasField, value) != true)) {
+                    this.TimeZoneAliasField = value;
+                    this.RaisePropertyChanged("TimeZoneAlias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TimeZoneFirstName {
+            get {
+                return this.TimeZoneFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneFirstNameField, value) != true)) {
+                    this.TimeZoneFirstNameField = value;
+                    this.RaisePropertyChanged("TimeZoneFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TimeZoneLastName {
+            get {
+                return this.TimeZoneLastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneLastNameField, value) != true)) {
+                    this.TimeZoneLastNameField = value;
+                    this.RaisePropertyChanged("TimeZoneLastName");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PSMReports", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class PSMReports : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaLeadAliasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaLeadFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaLeadLastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CountryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DETField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IndFcous1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IndFcous2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ManagerAliasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ManagerFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ManagerLastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MplidField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PartnerNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PPAResults[] PartnerResultsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneAliasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeZoneLastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double XAxisField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double YAxisField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Area {
+            get {
+                return this.AreaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaField, value) != true)) {
+                    this.AreaField = value;
+                    this.RaisePropertyChanged("Area");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AreaLeadAlias {
+            get {
+                return this.AreaLeadAliasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaLeadAliasField, value) != true)) {
+                    this.AreaLeadAliasField = value;
+                    this.RaisePropertyChanged("AreaLeadAlias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AreaLeadFirstName {
+            get {
+                return this.AreaLeadFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaLeadFirstNameField, value) != true)) {
+                    this.AreaLeadFirstNameField = value;
+                    this.RaisePropertyChanged("AreaLeadFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AreaLeadLastName {
+            get {
+                return this.AreaLeadLastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaLeadLastNameField, value) != true)) {
+                    this.AreaLeadLastNameField = value;
+                    this.RaisePropertyChanged("AreaLeadLastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Country {
+            get {
+                return this.CountryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DET {
+            get {
+                return this.DETField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DETField, value) != true)) {
+                    this.DETField = value;
+                    this.RaisePropertyChanged("DET");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string EmailId {
+            get {
+                return this.EmailIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailIdField, value) != true)) {
+                    this.EmailIdField = value;
+                    this.RaisePropertyChanged("EmailId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IndFcous1 {
+            get {
+                return this.IndFcous1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IndFcous1Field, value) != true)) {
+                    this.IndFcous1Field = value;
+                    this.RaisePropertyChanged("IndFcous1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IndFcous2 {
+            get {
+                return this.IndFcous2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IndFcous2Field, value) != true)) {
+                    this.IndFcous2Field = value;
+                    this.RaisePropertyChanged("IndFcous2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ManagerAlias {
+            get {
+                return this.ManagerAliasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ManagerAliasField, value) != true)) {
+                    this.ManagerAliasField = value;
+                    this.RaisePropertyChanged("ManagerAlias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ManagerFirstName {
+            get {
+                return this.ManagerFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ManagerFirstNameField, value) != true)) {
+                    this.ManagerFirstNameField = value;
+                    this.RaisePropertyChanged("ManagerFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ManagerLastName {
+            get {
+                return this.ManagerLastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ManagerLastNameField, value) != true)) {
+                    this.ManagerLastNameField = value;
+                    this.RaisePropertyChanged("ManagerLastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Mplid {
+            get {
+                return this.MplidField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MplidField, value) != true)) {
+                    this.MplidField = value;
+                    this.RaisePropertyChanged("Mplid");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PartnerName {
+            get {
+                return this.PartnerNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnerNameField, value) != true)) {
+                    this.PartnerNameField = value;
+                    this.RaisePropertyChanged("PartnerName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PPAResults[] PartnerResults {
+            get {
+                return this.PartnerResultsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnerResultsField, value) != true)) {
+                    this.PartnerResultsField = value;
+                    this.RaisePropertyChanged("PartnerResults");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TimeZone {
+            get {
+                return this.TimeZoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneField, value) != true)) {
+                    this.TimeZoneField = value;
+                    this.RaisePropertyChanged("TimeZone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TimeZoneAlias {
+            get {
+                return this.TimeZoneAliasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneAliasField, value) != true)) {
+                    this.TimeZoneAliasField = value;
+                    this.RaisePropertyChanged("TimeZoneAlias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TimeZoneFirstName {
+            get {
+                return this.TimeZoneFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneFirstNameField, value) != true)) {
+                    this.TimeZoneFirstNameField = value;
+                    this.RaisePropertyChanged("TimeZoneFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TimeZoneLastName {
+            get {
+                return this.TimeZoneLastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeZoneLastNameField, value) != true)) {
+                    this.TimeZoneLastNameField = value;
+                    this.RaisePropertyChanged("TimeZoneLastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double XAxis {
+            get {
+                return this.XAxisField;
+            }
+            set {
+                if ((this.XAxisField.Equals(value) != true)) {
+                    this.XAxisField = value;
+                    this.RaisePropertyChanged("XAxis");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double YAxis {
+            get {
+                return this.YAxisField;
+            }
+            set {
+                if ((this.YAxisField.Equals(value) != true)) {
+                    this.YAxisField = value;
+                    this.RaisePropertyChanged("YAxis");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TopLeadsReport", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class TopLeadsReport : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] OverAllReportField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] YourReportField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] OverAllReport {
+            get {
+                return this.OverAllReportField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OverAllReportField, value) != true)) {
+                    this.OverAllReportField = value;
+                    this.RaisePropertyChanged("OverAllReport");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] YourReport {
+            get {
+                return this.YourReportField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.YourReportField, value) != true)) {
+                    this.YourReportField = value;
+                    this.RaisePropertyChanged("YourReport");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="StakeHolders", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class StakeHolders : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] AsiaPacificField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] CEEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] CanadaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] FranceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] GCRField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] GermanyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] IndiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] JapanField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] LatamField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] MEAField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] OverAllDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] UKField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] USField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSMReports[] WEField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] AsiaPacific {
+            get {
+                return this.AsiaPacificField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AsiaPacificField, value) != true)) {
+                    this.AsiaPacificField = value;
+                    this.RaisePropertyChanged("AsiaPacific");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] CEE {
+            get {
+                return this.CEEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CEEField, value) != true)) {
+                    this.CEEField = value;
+                    this.RaisePropertyChanged("CEE");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] Canada {
+            get {
+                return this.CanadaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CanadaField, value) != true)) {
+                    this.CanadaField = value;
+                    this.RaisePropertyChanged("Canada");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] France {
+            get {
+                return this.FranceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FranceField, value) != true)) {
+                    this.FranceField = value;
+                    this.RaisePropertyChanged("France");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] GCR {
+            get {
+                return this.GCRField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GCRField, value) != true)) {
+                    this.GCRField = value;
+                    this.RaisePropertyChanged("GCR");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] Germany {
+            get {
+                return this.GermanyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GermanyField, value) != true)) {
+                    this.GermanyField = value;
+                    this.RaisePropertyChanged("Germany");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] India {
+            get {
+                return this.IndiaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IndiaField, value) != true)) {
+                    this.IndiaField = value;
+                    this.RaisePropertyChanged("India");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] Japan {
+            get {
+                return this.JapanField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.JapanField, value) != true)) {
+                    this.JapanField = value;
+                    this.RaisePropertyChanged("Japan");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] Latam {
+            get {
+                return this.LatamField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LatamField, value) != true)) {
+                    this.LatamField = value;
+                    this.RaisePropertyChanged("Latam");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] MEA {
+            get {
+                return this.MEAField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MEAField, value) != true)) {
+                    this.MEAField = value;
+                    this.RaisePropertyChanged("MEA");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] OverAllData {
+            get {
+                return this.OverAllDataField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OverAllDataField, value) != true)) {
+                    this.OverAllDataField = value;
+                    this.RaisePropertyChanged("OverAllData");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] UK {
+            get {
+                return this.UKField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UKField, value) != true)) {
+                    this.UKField = value;
+                    this.RaisePropertyChanged("UK");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] US {
+            get {
+                return this.USField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.USField, value) != true)) {
+                    this.USField = value;
+                    this.RaisePropertyChanged("US");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSMReports[] WE {
+            get {
+                return this.WEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WEField, value) != true)) {
+                    this.WEField = value;
+                    this.RaisePropertyChanged("WE");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CompleteStatus", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class CompleteStatus : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AssesmentCompletedAMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AssesmentCompletedRMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AssesmentCompletedVMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AssesmentCreatedAMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AssesmentCreatedRMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AssesmentCreatedVMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PartnerAMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PartnerRMField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PartnerVMField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AssesmentCompletedAM {
+            get {
+                return this.AssesmentCompletedAMField;
+            }
+            set {
+                if ((this.AssesmentCompletedAMField.Equals(value) != true)) {
+                    this.AssesmentCompletedAMField = value;
+                    this.RaisePropertyChanged("AssesmentCompletedAM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AssesmentCompletedRM {
+            get {
+                return this.AssesmentCompletedRMField;
+            }
+            set {
+                if ((this.AssesmentCompletedRMField.Equals(value) != true)) {
+                    this.AssesmentCompletedRMField = value;
+                    this.RaisePropertyChanged("AssesmentCompletedRM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AssesmentCompletedVM {
+            get {
+                return this.AssesmentCompletedVMField;
+            }
+            set {
+                if ((this.AssesmentCompletedVMField.Equals(value) != true)) {
+                    this.AssesmentCompletedVMField = value;
+                    this.RaisePropertyChanged("AssesmentCompletedVM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AssesmentCreatedAM {
+            get {
+                return this.AssesmentCreatedAMField;
+            }
+            set {
+                if ((this.AssesmentCreatedAMField.Equals(value) != true)) {
+                    this.AssesmentCreatedAMField = value;
+                    this.RaisePropertyChanged("AssesmentCreatedAM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AssesmentCreatedRM {
+            get {
+                return this.AssesmentCreatedRMField;
+            }
+            set {
+                if ((this.AssesmentCreatedRMField.Equals(value) != true)) {
+                    this.AssesmentCreatedRMField = value;
+                    this.RaisePropertyChanged("AssesmentCreatedRM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AssesmentCreatedVM {
+            get {
+                return this.AssesmentCreatedVMField;
+            }
+            set {
+                if ((this.AssesmentCreatedVMField.Equals(value) != true)) {
+                    this.AssesmentCreatedVMField = value;
+                    this.RaisePropertyChanged("AssesmentCreatedVM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PartnerAM {
+            get {
+                return this.PartnerAMField;
+            }
+            set {
+                if ((this.PartnerAMField.Equals(value) != true)) {
+                    this.PartnerAMField = value;
+                    this.RaisePropertyChanged("PartnerAM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PartnerRM {
+            get {
+                return this.PartnerRMField;
+            }
+            set {
+                if ((this.PartnerRMField.Equals(value) != true)) {
+                    this.PartnerRMField = value;
+                    this.RaisePropertyChanged("PartnerRM");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PartnerVM {
+            get {
+                return this.PartnerVMField;
+            }
+            set {
+                if ((this.PartnerVMField.Equals(value) != true)) {
+                    this.PartnerVMField = value;
+                    this.RaisePropertyChanged("PartnerVM");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PPAReports", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class PPAReports : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.ReportContent[] AreaLeadPasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.ReportContent[] AssessmentCompletedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.ReportContent[] LastLoginField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.ReportContent[] PSEPasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.ReportContent[] PSMPasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.ReportContent[] PartnersCreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.ReportContent[] StakePasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.ReportContent[] TimezonePasswordField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.ReportContent[] AreaLeadPassword {
+            get {
+                return this.AreaLeadPasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaLeadPasswordField, value) != true)) {
+                    this.AreaLeadPasswordField = value;
+                    this.RaisePropertyChanged("AreaLeadPassword");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.ReportContent[] AssessmentCompleted {
+            get {
+                return this.AssessmentCompletedField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AssessmentCompletedField, value) != true)) {
+                    this.AssessmentCompletedField = value;
+                    this.RaisePropertyChanged("AssessmentCompleted");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.ReportContent[] LastLogin {
+            get {
+                return this.LastLoginField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastLoginField, value) != true)) {
+                    this.LastLoginField = value;
+                    this.RaisePropertyChanged("LastLogin");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.ReportContent[] PSEPassword {
+            get {
+                return this.PSEPasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PSEPasswordField, value) != true)) {
+                    this.PSEPasswordField = value;
+                    this.RaisePropertyChanged("PSEPassword");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.ReportContent[] PSMPassword {
+            get {
+                return this.PSMPasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PSMPasswordField, value) != true)) {
+                    this.PSMPasswordField = value;
+                    this.RaisePropertyChanged("PSMPassword");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.ReportContent[] PartnersCreated {
+            get {
+                return this.PartnersCreatedField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnersCreatedField, value) != true)) {
+                    this.PartnersCreatedField = value;
+                    this.RaisePropertyChanged("PartnersCreated");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.ReportContent[] StakePassword {
+            get {
+                return this.StakePasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StakePasswordField, value) != true)) {
+                    this.StakePasswordField = value;
+                    this.RaisePropertyChanged("StakePassword");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.ReportContent[] TimezonePassword {
+            get {
+                return this.TimezonePasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimezonePasswordField, value) != true)) {
+                    this.TimezonePasswordField = value;
+                    this.RaisePropertyChanged("TimezonePassword");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ReportContent", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class ReportContent : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MPLIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string EmailId {
+            get {
+                return this.EmailIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailIdField, value) != true)) {
+                    this.EmailIdField = value;
+                    this.RaisePropertyChanged("EmailId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MPLID {
+            get {
+                return this.MPLIDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MPLIDField, value) != true)) {
+                    this.MPLIDField = value;
+                    this.RaisePropertyChanged("MPLID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="MinimizedPOE", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
     [System.SerializableAttribute()]
     public partial class MinimizedPOE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -1024,339 +3353,6 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.SubscribedPoeDateField, value) != true)) {
                     this.SubscribedPoeDateField = value;
                     this.RaisePropertyChanged("SubscribedPoeDate");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="User", Namespace="")]
-    [System.SerializableAttribute()]
-    public partial class User : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bExcellent.mvc.CommonWCF.Zone AreaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CompanyNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CompanySizeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bExcellent.mvc.CommonWCF.Country CountryField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int DesignationIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EmailAddressField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string FirstNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsActiveField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<bool> IsAgreedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string JobTitleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> LastLoginField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LastNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PasswordField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private byte[] PhotoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StratPageModeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> SubscriptionidField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int UserIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string YammerTokenField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string userNameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bExcellent.mvc.CommonWCF.Zone Area {
-            get {
-                return this.AreaField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AreaField, value) != true)) {
-                    this.AreaField = value;
-                    this.RaisePropertyChanged("Area");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CompanyName {
-            get {
-                return this.CompanyNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CompanyNameField, value) != true)) {
-                    this.CompanyNameField = value;
-                    this.RaisePropertyChanged("CompanyName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CompanySize {
-            get {
-                return this.CompanySizeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CompanySizeField, value) != true)) {
-                    this.CompanySizeField = value;
-                    this.RaisePropertyChanged("CompanySize");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bExcellent.mvc.CommonWCF.Country Country {
-            get {
-                return this.CountryField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
-                    this.CountryField = value;
-                    this.RaisePropertyChanged("Country");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int DesignationId {
-            get {
-                return this.DesignationIdField;
-            }
-            set {
-                if ((this.DesignationIdField.Equals(value) != true)) {
-                    this.DesignationIdField = value;
-                    this.RaisePropertyChanged("DesignationId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string EmailAddress {
-            get {
-                return this.EmailAddressField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.EmailAddressField, value) != true)) {
-                    this.EmailAddressField = value;
-                    this.RaisePropertyChanged("EmailAddress");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string FirstName {
-            get {
-                return this.FirstNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
-                    this.FirstNameField = value;
-                    this.RaisePropertyChanged("FirstName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsActive {
-            get {
-                return this.IsActiveField;
-            }
-            set {
-                if ((this.IsActiveField.Equals(value) != true)) {
-                    this.IsActiveField = value;
-                    this.RaisePropertyChanged("IsActive");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<bool> IsAgreed {
-            get {
-                return this.IsAgreedField;
-            }
-            set {
-                if ((this.IsAgreedField.Equals(value) != true)) {
-                    this.IsAgreedField = value;
-                    this.RaisePropertyChanged("IsAgreed");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string JobTitle {
-            get {
-                return this.JobTitleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.JobTitleField, value) != true)) {
-                    this.JobTitleField = value;
-                    this.RaisePropertyChanged("JobTitle");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> LastLogin {
-            get {
-                return this.LastLoginField;
-            }
-            set {
-                if ((this.LastLoginField.Equals(value) != true)) {
-                    this.LastLoginField = value;
-                    this.RaisePropertyChanged("LastLogin");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string LastName {
-            get {
-                return this.LastNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
-                    this.LastNameField = value;
-                    this.RaisePropertyChanged("LastName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Password {
-            get {
-                return this.PasswordField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
-                    this.PasswordField = value;
-                    this.RaisePropertyChanged("Password");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public byte[] Photo {
-            get {
-                return this.PhotoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PhotoField, value) != true)) {
-                    this.PhotoField = value;
-                    this.RaisePropertyChanged("Photo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int StratPageMode {
-            get {
-                return this.StratPageModeField;
-            }
-            set {
-                if ((this.StratPageModeField.Equals(value) != true)) {
-                    this.StratPageModeField = value;
-                    this.RaisePropertyChanged("StratPageMode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> Subscriptionid {
-            get {
-                return this.SubscriptionidField;
-            }
-            set {
-                if ((this.SubscriptionidField.Equals(value) != true)) {
-                    this.SubscriptionidField = value;
-                    this.RaisePropertyChanged("Subscriptionid");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int UserId {
-            get {
-                return this.UserIdField;
-            }
-            set {
-                if ((this.UserIdField.Equals(value) != true)) {
-                    this.UserIdField = value;
-                    this.RaisePropertyChanged("UserId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string YammerToken {
-            get {
-                return this.YammerTokenField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.YammerTokenField, value) != true)) {
-                    this.YammerTokenField = value;
-                    this.RaisePropertyChanged("YammerToken");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string userName {
-            get {
-                return this.userNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.userNameField, value) != true)) {
-                    this.userNameField = value;
-                    this.RaisePropertyChanged("userName");
                 }
             }
         }
@@ -2518,160 +4514,6 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.SubQuestionIdField.Equals(value) != true)) {
                     this.SubQuestionIdField = value;
                     this.RaisePropertyChanged("SubQuestionId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Zone", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
-    [System.SerializableAttribute()]
-    public partial class Zone : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CountryIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CountryId {
-            get {
-                return this.CountryIdField;
-            }
-            set {
-                if ((this.CountryIdField.Equals(value) != true)) {
-                    this.CountryIdField = value;
-                    this.RaisePropertyChanged("CountryId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Country", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
-    [System.SerializableAttribute()]
-    public partial class Country : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Code {
-            get {
-                return this.CodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CodeField, value) != true)) {
-                    this.CodeField = value;
-                    this.RaisePropertyChanged("Code");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
                 }
             }
         }
@@ -8916,9 +10758,221 @@ namespace bExcellent.mvc.CommonWCF {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PSESurvey", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class PSESurvey : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bExcellent.mvc.CommonWCF.PSEAnswers[] AnswersField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int LastModuleIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bExcellent.mvc.CommonWCF.PSEAnswers[] Answers {
+            get {
+                return this.AnswersField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AnswersField, value) != true)) {
+                    this.AnswersField = value;
+                    this.RaisePropertyChanged("Answers");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int LastModuleId {
+            get {
+                return this.LastModuleIdField;
+            }
+            set {
+                if ((this.LastModuleIdField.Equals(value) != true)) {
+                    this.LastModuleIdField = value;
+                    this.RaisePropertyChanged("LastModuleId");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PSEAnswers", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response")]
+    [System.SerializableAttribute()]
+    public partial class PSEAnswers : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AnswerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int QuestionIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Answer {
+            get {
+                return this.AnswerField;
+            }
+            set {
+                if ((this.AnswerField.Equals(value) != true)) {
+                    this.AnswerField = value;
+                    this.RaisePropertyChanged("Answer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int QuestionId {
+            get {
+                return this.QuestionIdField;
+            }
+            set {
+                if ((this.QuestionIdField.Equals(value) != true)) {
+                    this.QuestionIdField = value;
+                    this.RaisePropertyChanged("QuestionId");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CommonWCF.Common")]
     public interface Common {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadAreaOfPartner", ReplyAction="http://tempuri.org/Common/LoadAreaOfPartnerResponse")]
+        bExcellent.mvc.CommonWCF.Zone[] LoadAreaOfPartner(int userid, int designationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadTimeZoneOfPartner", ReplyAction="http://tempuri.org/Common/LoadTimeZoneOfPartnerResponse")]
+        bExcellent.mvc.CommonWCF.TimeZone[] LoadTimeZoneOfPartner(int userid, int designationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadCountryOfPartner", ReplyAction="http://tempuri.org/Common/LoadCountryOfPartnerResponse")]
+        bExcellent.mvc.CommonWCF.Country[] LoadCountryOfPartner(int userid, int designationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadCountryByAreaId", ReplyAction="http://tempuri.org/Common/LoadCountryByAreaIdResponse")]
+        bExcellent.mvc.CommonWCF.Country[] LoadCountryByAreaId(int areaId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadAreaByZoneId", ReplyAction="http://tempuri.org/Common/LoadAreaByZoneIdResponse")]
+        bExcellent.mvc.CommonWCF.Zone[] LoadAreaByZoneId(int zoneId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadPartnersByAreaId", ReplyAction="http://tempuri.org/Common/LoadPartnersByAreaIdResponse")]
+        bExcellent.mvc.CommonWCF.User[] LoadPartnersByAreaId(int userid, int designationId, int areaId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadPartnersByCountryId", ReplyAction="http://tempuri.org/Common/LoadPartnersByCountryIdResponse")]
+        bExcellent.mvc.CommonWCF.User[] LoadPartnersByCountryId(int userid, int designationId, int countryId, int areaId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadPartnersByZoneId", ReplyAction="http://tempuri.org/Common/LoadPartnersByZoneIdResponse")]
+        bExcellent.mvc.CommonWCF.User[] LoadPartnersByZoneId(int userid, int designationId, int zoneId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetOverallPartnersByZone", ReplyAction="http://tempuri.org/Common/GetOverallPartnersByZoneResponse")]
+        bExcellent.mvc.CommonWCF.Partner[] GetOverallPartnersByZone(int userid, int designationId, int areaId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetOverallPartnersByArea", ReplyAction="http://tempuri.org/Common/GetOverallPartnersByAreaResponse")]
+        bExcellent.mvc.CommonWCF.Partner[] GetOverallPartnersByArea(int userid, int designationId, int areaId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetOverallPartnersByCountry", ReplyAction="http://tempuri.org/Common/GetOverallPartnersByCountryResponse")]
+        bExcellent.mvc.CommonWCF.Partner[] GetOverallPartnersByCountry(int userid, int designationId, int countryId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPartnerName", ReplyAction="http://tempuri.org/Common/GetPartnerNameResponse")]
+        string GetPartnerName(string mplId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPSEUserId", ReplyAction="http://tempuri.org/Common/GetPSEUserIdResponse")]
+        int GetPSEUserId(string emailid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPartnerId", ReplyAction="http://tempuri.org/Common/GetPartnerIdResponse")]
+        int GetPartnerId(string mplId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/InsertPartnerMapping", ReplyAction="http://tempuri.org/Common/InsertPartnerMappingResponse")]
+        void InsertPartnerMapping(int userId, int partnerId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPSEReports", ReplyAction="http://tempuri.org/Common/GetPSEReportsResponse")]
+        bExcellent.mvc.CommonWCF.PSEReports GetPSEReports(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPSMReports", ReplyAction="http://tempuri.org/Common/GetPSMReportsResponse")]
+        bExcellent.mvc.CommonWCF.PSMReports[] GetPSMReports(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetAreaReports", ReplyAction="http://tempuri.org/Common/GetAreaReportsResponse")]
+        bExcellent.mvc.CommonWCF.TopLeadsReport GetAreaReports(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetTimeZoneReports", ReplyAction="http://tempuri.org/Common/GetTimeZoneReportsResponse")]
+        bExcellent.mvc.CommonWCF.TopLeadsReport GetTimeZoneReports(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetStakeHolderReports", ReplyAction="http://tempuri.org/Common/GetStakeHolderReportsResponse")]
+        bExcellent.mvc.CommonWCF.StakeHolders GetStakeHolderReports();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetCompleteStatus", ReplyAction="http://tempuri.org/Common/GetCompleteStatusResponse")]
+        bExcellent.mvc.CommonWCF.CompleteStatus GetCompleteStatus(int userId, int deisgnationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetCompleteStatusByArea", ReplyAction="http://tempuri.org/Common/GetCompleteStatusByAreaResponse")]
+        bExcellent.mvc.CommonWCF.CompleteStatus GetCompleteStatusByArea(int userId, int deisgnationId, int areaId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetCompleteStatusByCountry", ReplyAction="http://tempuri.org/Common/GetCompleteStatusByCountryResponse")]
+        bExcellent.mvc.CommonWCF.CompleteStatus GetCompleteStatusByCountry(int userId, int deisgnationId, int countryId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetCompleteStatusByTimeZone", ReplyAction="http://tempuri.org/Common/GetCompleteStatusByTimeZoneResponse")]
+        bExcellent.mvc.CommonWCF.CompleteStatus GetCompleteStatusByTimeZone(int userId, int deisgnationId, int timeZone);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetOverAllPSEDet", ReplyAction="http://tempuri.org/Common/GetOverAllPSEDetResponse")]
+        bExcellent.mvc.CommonWCF.CompleteStatus GetOverAllPSEDet(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadCountryByZoneId", ReplyAction="http://tempuri.org/Common/LoadCountryByZoneIdResponse")]
+        bExcellent.mvc.CommonWCF.Country[] LoadCountryByZoneId(int zoneId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetAllPasswords", ReplyAction="http://tempuri.org/Common/GetAllPasswordsResponse")]
+        bExcellent.mvc.CommonWCF.PPAReports GetAllPasswords();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetReports", ReplyAction="http://tempuri.org/Common/GetReportsResponse")]
+        bExcellent.mvc.CommonWCF.PPAReports GetReports();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/IsZoneExists", ReplyAction="http://tempuri.org/Common/IsZoneExistsResponse")]
+        bool IsZoneExists(int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetOverallReportsCalculated", ReplyAction="http://tempuri.org/Common/GetOverallReportsCalculatedResponse")]
+        bExcellent.mvc.CommonWCF.StakeHolders GetOverallReportsCalculated();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPoEsByUserId", ReplyAction="http://tempuri.org/Common/GetPoEsByUserIdResponse")]
         bExcellent.mvc.CommonWCF.MinimizedPOE[] GetPoEsByUserId(int userId);
@@ -9297,6 +11351,57 @@ namespace bExcellent.mvc.CommonWCF {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/DeleteIncompleteFB", ReplyAction="http://tempuri.org/Common/DeleteIncompleteFBResponse")]
         void DeleteIncompleteFB(string feedbackId, int mode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPartners", ReplyAction="http://tempuri.org/Common/GetPartnersResponse")]
+        bExcellent.mvc.CommonWCF.Partner[] GetPartners(int userid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/InsertSurveyAnswer", ReplyAction="http://tempuri.org/Common/InsertSurveyAnswerResponse")]
+        void InsertSurveyAnswer(int questionId, int answerValue, string answer, int feedbackid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/CreateSurvey", ReplyAction="http://tempuri.org/Common/CreateSurveyResponse")]
+        int CreateSurvey(int userid, int poeid, int partnerId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/CompleteSurvey", ReplyAction="http://tempuri.org/Common/CompleteSurveyResponse")]
+        void CompleteSurvey(int feedbackId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetCompletedAnswers", ReplyAction="http://tempuri.org/Common/GetCompletedAnswersResponse")]
+        bExcellent.mvc.CommonWCF.PSESurvey GetCompletedAnswers(int feedbackid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/CreatePartner", ReplyAction="http://tempuri.org/Common/CreatePartnerResponse")]
+        void CreatePartner(int userid, string partnerName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/IsPartnerExist", ReplyAction="http://tempuri.org/Common/IsPartnerExistResponse")]
+        bool IsPartnerExist(int userId, string partnerName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPartnerResults", ReplyAction="http://tempuri.org/Common/GetPartnerResultsResponse")]
+        bExcellent.mvc.CommonWCF.PPAResults[] GetPartnerResults(int userId, int partnerId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/UpdatePartner", ReplyAction="http://tempuri.org/Common/UpdatePartnerResponse")]
+        void UpdatePartner(int userId, int partnerId, string partnerName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/DeletePartner", ReplyAction="http://tempuri.org/Common/DeletePartnerResponse")]
+        void DeletePartner(int userId, int partnerId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/UploadPlan", ReplyAction="http://tempuri.org/Common/UploadPlanResponse")]
+        void UploadPlan(int userId, int partnerId, int poeid, string filnename, string extension, string realFileName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/DeletePlan", ReplyAction="http://tempuri.org/Common/DeletePlanResponse")]
+        void DeletePlan(int userid, int partnerId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadUserRolesbyPartner", ReplyAction="http://tempuri.org/Common/LoadUserRolesbyPartnerResponse")]
+        bExcellent.mvc.CommonWCF.User[] LoadUserRolesbyPartner(int userid, int designationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/ListDesigantion", ReplyAction="http://tempuri.org/Common/ListDesigantionResponse")]
+        bExcellent.mvc.CommonWCF.Designation[] ListDesigantion(int userid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadTZUserRolesbyPartner", ReplyAction="http://tempuri.org/Common/LoadTZUserRolesbyPartnerResponse")]
+        bExcellent.mvc.CommonWCF.User[] LoadTZUserRolesbyPartner(int userid, int designationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetOverallPartners", ReplyAction="http://tempuri.org/Common/GetOverallPartnersResponse")]
+        bExcellent.mvc.CommonWCF.Partner[] GetOverallPartners(int userid, int designationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/LoadFilterPartners", ReplyAction="http://tempuri.org/Common/LoadFilterPartnersResponse")]
+        bExcellent.mvc.CommonWCF.User[] LoadFilterPartners(int userid, int designationId, int currentUserid);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -9324,6 +11429,126 @@ namespace bExcellent.mvc.CommonWCF {
         
         public CommonClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public bExcellent.mvc.CommonWCF.Zone[] LoadAreaOfPartner(int userid, int designationId) {
+            return base.Channel.LoadAreaOfPartner(userid, designationId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.TimeZone[] LoadTimeZoneOfPartner(int userid, int designationId) {
+            return base.Channel.LoadTimeZoneOfPartner(userid, designationId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Country[] LoadCountryOfPartner(int userid, int designationId) {
+            return base.Channel.LoadCountryOfPartner(userid, designationId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Country[] LoadCountryByAreaId(int areaId) {
+            return base.Channel.LoadCountryByAreaId(areaId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Zone[] LoadAreaByZoneId(int zoneId) {
+            return base.Channel.LoadAreaByZoneId(zoneId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.User[] LoadPartnersByAreaId(int userid, int designationId, int areaId) {
+            return base.Channel.LoadPartnersByAreaId(userid, designationId, areaId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.User[] LoadPartnersByCountryId(int userid, int designationId, int countryId, int areaId) {
+            return base.Channel.LoadPartnersByCountryId(userid, designationId, countryId, areaId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.User[] LoadPartnersByZoneId(int userid, int designationId, int zoneId) {
+            return base.Channel.LoadPartnersByZoneId(userid, designationId, zoneId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Partner[] GetOverallPartnersByZone(int userid, int designationId, int areaId) {
+            return base.Channel.GetOverallPartnersByZone(userid, designationId, areaId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Partner[] GetOverallPartnersByArea(int userid, int designationId, int areaId) {
+            return base.Channel.GetOverallPartnersByArea(userid, designationId, areaId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Partner[] GetOverallPartnersByCountry(int userid, int designationId, int countryId) {
+            return base.Channel.GetOverallPartnersByCountry(userid, designationId, countryId);
+        }
+        
+        public string GetPartnerName(string mplId) {
+            return base.Channel.GetPartnerName(mplId);
+        }
+        
+        public int GetPSEUserId(string emailid) {
+            return base.Channel.GetPSEUserId(emailid);
+        }
+        
+        public int GetPartnerId(string mplId) {
+            return base.Channel.GetPartnerId(mplId);
+        }
+        
+        public void InsertPartnerMapping(int userId, int partnerId) {
+            base.Channel.InsertPartnerMapping(userId, partnerId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.PSEReports GetPSEReports(int userId) {
+            return base.Channel.GetPSEReports(userId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.PSMReports[] GetPSMReports(int userId) {
+            return base.Channel.GetPSMReports(userId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.TopLeadsReport GetAreaReports(int userId) {
+            return base.Channel.GetAreaReports(userId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.TopLeadsReport GetTimeZoneReports(int userId) {
+            return base.Channel.GetTimeZoneReports(userId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.StakeHolders GetStakeHolderReports() {
+            return base.Channel.GetStakeHolderReports();
+        }
+        
+        public bExcellent.mvc.CommonWCF.CompleteStatus GetCompleteStatus(int userId, int deisgnationId) {
+            return base.Channel.GetCompleteStatus(userId, deisgnationId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.CompleteStatus GetCompleteStatusByArea(int userId, int deisgnationId, int areaId) {
+            return base.Channel.GetCompleteStatusByArea(userId, deisgnationId, areaId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.CompleteStatus GetCompleteStatusByCountry(int userId, int deisgnationId, int countryId) {
+            return base.Channel.GetCompleteStatusByCountry(userId, deisgnationId, countryId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.CompleteStatus GetCompleteStatusByTimeZone(int userId, int deisgnationId, int timeZone) {
+            return base.Channel.GetCompleteStatusByTimeZone(userId, deisgnationId, timeZone);
+        }
+        
+        public bExcellent.mvc.CommonWCF.CompleteStatus GetOverAllPSEDet(int userId) {
+            return base.Channel.GetOverAllPSEDet(userId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Country[] LoadCountryByZoneId(int zoneId) {
+            return base.Channel.LoadCountryByZoneId(zoneId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.PPAReports GetAllPasswords() {
+            return base.Channel.GetAllPasswords();
+        }
+        
+        public bExcellent.mvc.CommonWCF.PPAReports GetReports() {
+            return base.Channel.GetReports();
+        }
+        
+        public bool IsZoneExists(int userId) {
+            return base.Channel.IsZoneExists(userId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.StakeHolders GetOverallReportsCalculated() {
+            return base.Channel.GetOverallReportsCalculated();
         }
         
         public bExcellent.mvc.CommonWCF.MinimizedPOE[] GetPoEsByUserId(int userId) {
@@ -9828,6 +12053,74 @@ namespace bExcellent.mvc.CommonWCF {
         
         public void DeleteIncompleteFB(string feedbackId, int mode) {
             base.Channel.DeleteIncompleteFB(feedbackId, mode);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Partner[] GetPartners(int userid) {
+            return base.Channel.GetPartners(userid);
+        }
+        
+        public void InsertSurveyAnswer(int questionId, int answerValue, string answer, int feedbackid) {
+            base.Channel.InsertSurveyAnswer(questionId, answerValue, answer, feedbackid);
+        }
+        
+        public int CreateSurvey(int userid, int poeid, int partnerId) {
+            return base.Channel.CreateSurvey(userid, poeid, partnerId);
+        }
+        
+        public void CompleteSurvey(int feedbackId) {
+            base.Channel.CompleteSurvey(feedbackId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.PSESurvey GetCompletedAnswers(int feedbackid) {
+            return base.Channel.GetCompletedAnswers(feedbackid);
+        }
+        
+        public void CreatePartner(int userid, string partnerName) {
+            base.Channel.CreatePartner(userid, partnerName);
+        }
+        
+        public bool IsPartnerExist(int userId, string partnerName) {
+            return base.Channel.IsPartnerExist(userId, partnerName);
+        }
+        
+        public bExcellent.mvc.CommonWCF.PPAResults[] GetPartnerResults(int userId, int partnerId) {
+            return base.Channel.GetPartnerResults(userId, partnerId);
+        }
+        
+        public void UpdatePartner(int userId, int partnerId, string partnerName) {
+            base.Channel.UpdatePartner(userId, partnerId, partnerName);
+        }
+        
+        public void DeletePartner(int userId, int partnerId) {
+            base.Channel.DeletePartner(userId, partnerId);
+        }
+        
+        public void UploadPlan(int userId, int partnerId, int poeid, string filnename, string extension, string realFileName) {
+            base.Channel.UploadPlan(userId, partnerId, poeid, filnename, extension, realFileName);
+        }
+        
+        public void DeletePlan(int userid, int partnerId) {
+            base.Channel.DeletePlan(userid, partnerId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.User[] LoadUserRolesbyPartner(int userid, int designationId) {
+            return base.Channel.LoadUserRolesbyPartner(userid, designationId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Designation[] ListDesigantion(int userid) {
+            return base.Channel.ListDesigantion(userid);
+        }
+        
+        public bExcellent.mvc.CommonWCF.User[] LoadTZUserRolesbyPartner(int userid, int designationId) {
+            return base.Channel.LoadTZUserRolesbyPartner(userid, designationId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.Partner[] GetOverallPartners(int userid, int designationId) {
+            return base.Channel.GetOverallPartners(userid, designationId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.User[] LoadFilterPartners(int userid, int designationId, int currentUserid) {
+            return base.Channel.LoadFilterPartners(userid, designationId, currentUserid);
         }
     }
 }

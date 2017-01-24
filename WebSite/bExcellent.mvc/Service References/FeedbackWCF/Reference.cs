@@ -38,6 +38,9 @@ namespace bExcellent.mvc.FeedbackWCF {
         private bExcellent.mvc.FeedbackWCF.Feedback FeedbackDetailsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool IsFbCompletedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string JobTitleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -159,6 +162,19 @@ namespace bExcellent.mvc.FeedbackWCF {
                 if ((object.ReferenceEquals(this.FeedbackDetailsField, value) != true)) {
                     this.FeedbackDetailsField = value;
                     this.RaisePropertyChanged("FeedbackDetails");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool IsFbCompleted {
+            get {
+                return this.IsFbCompletedField;
+            }
+            set {
+                if ((this.IsFbCompletedField.Equals(value) != true)) {
+                    this.IsFbCompletedField = value;
+                    this.RaisePropertyChanged("IsFbCompleted");
                 }
             }
         }
@@ -2197,6 +2213,9 @@ namespace bExcellent.mvc.FeedbackWCF {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AreaIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CodeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -2212,6 +2231,19 @@ namespace bExcellent.mvc.FeedbackWCF {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AreaId {
+            get {
+                return this.AreaIdField;
+            }
+            set {
+                if ((this.AreaIdField.Equals(value) != true)) {
+                    this.AreaIdField = value;
+                    this.RaisePropertyChanged("AreaId");
+                }
             }
         }
         

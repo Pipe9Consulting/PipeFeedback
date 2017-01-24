@@ -5,13 +5,194 @@
       <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
-      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
-      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd4" />
-      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
-      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
-      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="Common_LoadAreaOfPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadAreaOfPartner" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadAreaOfPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadAreaOfPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadTimeZoneOfPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadTimeZoneOfPartner" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadTimeZoneOfPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadTimeZoneOfPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadCountryOfPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadCountryOfPartner" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadCountryOfPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadCountryOfPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadCountryByAreaId_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadCountryByAreaId" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadCountryByAreaId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadCountryByAreaIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadAreaByZoneId_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadAreaByZoneId" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadAreaByZoneId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadAreaByZoneIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadPartnersByAreaId_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPartnersByAreaId" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadPartnersByAreaId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPartnersByAreaIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadPartnersByCountryId_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPartnersByCountryId" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadPartnersByCountryId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPartnersByCountryIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadPartnersByZoneId_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPartnersByZoneId" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadPartnersByZoneId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPartnersByZoneIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallPartnersByZone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallPartnersByZone" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallPartnersByZone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallPartnersByZoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallPartnersByArea_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallPartnersByArea" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallPartnersByArea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallPartnersByAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallPartnersByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallPartnersByCountry" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallPartnersByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallPartnersByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPartnerName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnerName" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPartnerName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnerNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSEUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSEUserId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSEUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSEUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPartnerId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnerId" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPartnerId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnerIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_InsertPartnerMapping_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPartnerMapping" />
+  </wsdl:message>
+  <wsdl:message name="Common_InsertPartnerMapping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPartnerMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSEReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSEReports" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSEReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSEReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSMReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSMReports" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSMReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSMReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAreaReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreaReports" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAreaReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreaReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetTimeZoneReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeZoneReports" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetTimeZoneReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeZoneReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStakeHolderReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStakeHolderReports" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStakeHolderReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStakeHolderReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompleteStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteStatus" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompleteStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompleteStatusByArea_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteStatusByArea" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompleteStatusByArea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteStatusByAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompleteStatusByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteStatusByCountry" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompleteStatusByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteStatusByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompleteStatusByTimeZone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteStatusByTimeZone" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompleteStatusByTimeZone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteStatusByTimeZoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverAllPSEDet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverAllPSEDet" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverAllPSEDet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverAllPSEDetResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadCountryByZoneId_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadCountryByZoneId" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadCountryByZoneId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadCountryByZoneIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAllPasswords_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPasswords" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetAllPasswords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPasswordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReports" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_IsZoneExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsZoneExists" />
+  </wsdl:message>
+  <wsdl:message name="Common_IsZoneExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsZoneExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallReportsCalculated_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallReportsCalculated" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallReportsCalculated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallReportsCalculatedResponse" />
+  </wsdl:message>
   <wsdl:message name="Common_GetPoEsByUserId_InputMessage">
     <wsdl:part name="parameters" element="tns:GetPoEsByUserId" />
   </wsdl:message>
@@ -768,7 +949,229 @@
   <wsdl:message name="Common_DeleteIncompleteFB_OutputMessage">
     <wsdl:part name="parameters" element="tns:DeleteIncompleteFBResponse" />
   </wsdl:message>
+  <wsdl:message name="Common_GetPartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartners" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_InsertSurveyAnswer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSurveyAnswer" />
+  </wsdl:message>
+  <wsdl:message name="Common_InsertSurveyAnswer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSurveyAnswerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreateSurvey_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSurvey" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreateSurvey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSurveyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_CompleteSurvey_InputMessage">
+    <wsdl:part name="parameters" element="tns:CompleteSurvey" />
+  </wsdl:message>
+  <wsdl:message name="Common_CompleteSurvey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CompleteSurveyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompletedAnswers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompletedAnswers" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetCompletedAnswers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompletedAnswersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreatePartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePartner" />
+  </wsdl:message>
+  <wsdl:message name="Common_CreatePartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_IsPartnerExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsPartnerExist" />
+  </wsdl:message>
+  <wsdl:message name="Common_IsPartnerExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsPartnerExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPartnerResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnerResults" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPartnerResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnerResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdatePartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartner" />
+  </wsdl:message>
+  <wsdl:message name="Common_UpdatePartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_DeletePartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePartner" />
+  </wsdl:message>
+  <wsdl:message name="Common_DeletePartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_UploadPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadPlan" />
+  </wsdl:message>
+  <wsdl:message name="Common_UploadPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_DeletePlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlan" />
+  </wsdl:message>
+  <wsdl:message name="Common_DeletePlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadUserRolesbyPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadUserRolesbyPartner" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadUserRolesbyPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadUserRolesbyPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_ListDesigantion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListDesigantion" />
+  </wsdl:message>
+  <wsdl:message name="Common_ListDesigantion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListDesigantionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadTZUserRolesbyPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadTZUserRolesbyPartner" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadTZUserRolesbyPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadTZUserRolesbyPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallPartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallPartners" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetOverallPartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOverallPartnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadFilterPartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadFilterPartners" />
+  </wsdl:message>
+  <wsdl:message name="Common_LoadFilterPartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadFilterPartnersResponse" />
+  </wsdl:message>
   <wsdl:portType name="Common">
+    <wsdl:operation name="LoadAreaOfPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadAreaOfPartner" message="tns:Common_LoadAreaOfPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadAreaOfPartnerResponse" message="tns:Common_LoadAreaOfPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadTimeZoneOfPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadTimeZoneOfPartner" message="tns:Common_LoadTimeZoneOfPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadTimeZoneOfPartnerResponse" message="tns:Common_LoadTimeZoneOfPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadCountryOfPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadCountryOfPartner" message="tns:Common_LoadCountryOfPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadCountryOfPartnerResponse" message="tns:Common_LoadCountryOfPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadCountryByAreaId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadCountryByAreaId" message="tns:Common_LoadCountryByAreaId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadCountryByAreaIdResponse" message="tns:Common_LoadCountryByAreaId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadAreaByZoneId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadAreaByZoneId" message="tns:Common_LoadAreaByZoneId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadAreaByZoneIdResponse" message="tns:Common_LoadAreaByZoneId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadPartnersByAreaId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadPartnersByAreaId" message="tns:Common_LoadPartnersByAreaId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadPartnersByAreaIdResponse" message="tns:Common_LoadPartnersByAreaId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadPartnersByCountryId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadPartnersByCountryId" message="tns:Common_LoadPartnersByCountryId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadPartnersByCountryIdResponse" message="tns:Common_LoadPartnersByCountryId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadPartnersByZoneId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadPartnersByZoneId" message="tns:Common_LoadPartnersByZoneId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadPartnersByZoneIdResponse" message="tns:Common_LoadPartnersByZoneId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallPartnersByZone">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetOverallPartnersByZone" message="tns:Common_GetOverallPartnersByZone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetOverallPartnersByZoneResponse" message="tns:Common_GetOverallPartnersByZone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallPartnersByArea">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetOverallPartnersByArea" message="tns:Common_GetOverallPartnersByArea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetOverallPartnersByAreaResponse" message="tns:Common_GetOverallPartnersByArea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallPartnersByCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetOverallPartnersByCountry" message="tns:Common_GetOverallPartnersByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetOverallPartnersByCountryResponse" message="tns:Common_GetOverallPartnersByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnerName">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPartnerName" message="tns:Common_GetPartnerName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPartnerNameResponse" message="tns:Common_GetPartnerName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPSEUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPSEUserId" message="tns:Common_GetPSEUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPSEUserIdResponse" message="tns:Common_GetPSEUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnerId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPartnerId" message="tns:Common_GetPartnerId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPartnerIdResponse" message="tns:Common_GetPartnerId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPartnerMapping">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/InsertPartnerMapping" message="tns:Common_InsertPartnerMapping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/InsertPartnerMappingResponse" message="tns:Common_InsertPartnerMapping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPSEReports">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPSEReports" message="tns:Common_GetPSEReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPSEReportsResponse" message="tns:Common_GetPSEReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPSMReports">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPSMReports" message="tns:Common_GetPSMReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPSMReportsResponse" message="tns:Common_GetPSMReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaReports">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetAreaReports" message="tns:Common_GetAreaReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetAreaReportsResponse" message="tns:Common_GetAreaReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneReports">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetTimeZoneReports" message="tns:Common_GetTimeZoneReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetTimeZoneReportsResponse" message="tns:Common_GetTimeZoneReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStakeHolderReports">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetStakeHolderReports" message="tns:Common_GetStakeHolderReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetStakeHolderReportsResponse" message="tns:Common_GetStakeHolderReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetCompleteStatus" message="tns:Common_GetCompleteStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetCompleteStatusResponse" message="tns:Common_GetCompleteStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteStatusByArea">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetCompleteStatusByArea" message="tns:Common_GetCompleteStatusByArea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetCompleteStatusByAreaResponse" message="tns:Common_GetCompleteStatusByArea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteStatusByCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetCompleteStatusByCountry" message="tns:Common_GetCompleteStatusByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetCompleteStatusByCountryResponse" message="tns:Common_GetCompleteStatusByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteStatusByTimeZone">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetCompleteStatusByTimeZone" message="tns:Common_GetCompleteStatusByTimeZone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetCompleteStatusByTimeZoneResponse" message="tns:Common_GetCompleteStatusByTimeZone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOverAllPSEDet">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetOverAllPSEDet" message="tns:Common_GetOverAllPSEDet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetOverAllPSEDetResponse" message="tns:Common_GetOverAllPSEDet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadCountryByZoneId">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadCountryByZoneId" message="tns:Common_LoadCountryByZoneId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadCountryByZoneIdResponse" message="tns:Common_LoadCountryByZoneId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPasswords">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetAllPasswords" message="tns:Common_GetAllPasswords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetAllPasswordsResponse" message="tns:Common_GetAllPasswords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReports">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetReports" message="tns:Common_GetReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetReportsResponse" message="tns:Common_GetReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsZoneExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/IsZoneExists" message="tns:Common_IsZoneExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/IsZoneExistsResponse" message="tns:Common_IsZoneExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallReportsCalculated">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetOverallReportsCalculated" message="tns:Common_GetOverallReportsCalculated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetOverallReportsCalculatedResponse" message="tns:Common_GetOverallReportsCalculated_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetPoEsByUserId">
       <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPoEsByUserId" message="tns:Common_GetPoEsByUserId_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPoEsByUserIdResponse" message="tns:Common_GetPoEsByUserId_OutputMessage" />
@@ -1273,9 +1676,347 @@
       <wsdl:input wsaw:Action="http://tempuri.org/Common/DeleteIncompleteFB" message="tns:Common_DeleteIncompleteFB_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/Common/DeleteIncompleteFBResponse" message="tns:Common_DeleteIncompleteFB_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetPartners">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPartners" message="tns:Common_GetPartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPartnersResponse" message="tns:Common_GetPartners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSurveyAnswer">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/InsertSurveyAnswer" message="tns:Common_InsertSurveyAnswer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/InsertSurveyAnswerResponse" message="tns:Common_InsertSurveyAnswer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSurvey">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/CreateSurvey" message="tns:Common_CreateSurvey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/CreateSurveyResponse" message="tns:Common_CreateSurvey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CompleteSurvey">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/CompleteSurvey" message="tns:Common_CompleteSurvey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/CompleteSurveyResponse" message="tns:Common_CompleteSurvey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompletedAnswers">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetCompletedAnswers" message="tns:Common_GetCompletedAnswers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetCompletedAnswersResponse" message="tns:Common_GetCompletedAnswers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/CreatePartner" message="tns:Common_CreatePartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/CreatePartnerResponse" message="tns:Common_CreatePartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPartnerExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/IsPartnerExist" message="tns:Common_IsPartnerExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/IsPartnerExistResponse" message="tns:Common_IsPartnerExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnerResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPartnerResults" message="tns:Common_GetPartnerResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPartnerResultsResponse" message="tns:Common_GetPartnerResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/UpdatePartner" message="tns:Common_UpdatePartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/UpdatePartnerResponse" message="tns:Common_UpdatePartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/DeletePartner" message="tns:Common_DeletePartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/DeletePartnerResponse" message="tns:Common_DeletePartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/UploadPlan" message="tns:Common_UploadPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/UploadPlanResponse" message="tns:Common_UploadPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/DeletePlan" message="tns:Common_DeletePlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/DeletePlanResponse" message="tns:Common_DeletePlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserRolesbyPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadUserRolesbyPartner" message="tns:Common_LoadUserRolesbyPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadUserRolesbyPartnerResponse" message="tns:Common_LoadUserRolesbyPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListDesigantion">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/ListDesigantion" message="tns:Common_ListDesigantion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/ListDesigantionResponse" message="tns:Common_ListDesigantion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadTZUserRolesbyPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadTZUserRolesbyPartner" message="tns:Common_LoadTZUserRolesbyPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadTZUserRolesbyPartnerResponse" message="tns:Common_LoadTZUserRolesbyPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallPartners">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetOverallPartners" message="tns:Common_GetOverallPartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetOverallPartnersResponse" message="tns:Common_GetOverallPartners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadFilterPartners">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/LoadFilterPartners" message="tns:Common_LoadFilterPartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/LoadFilterPartnersResponse" message="tns:Common_LoadFilterPartners_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_Common" type="tns:Common">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadAreaOfPartner">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadAreaOfPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadTimeZoneOfPartner">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadTimeZoneOfPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadCountryOfPartner">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadCountryOfPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadCountryByAreaId">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadCountryByAreaId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadAreaByZoneId">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadAreaByZoneId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadPartnersByAreaId">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadPartnersByAreaId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadPartnersByCountryId">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadPartnersByCountryId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadPartnersByZoneId">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadPartnersByZoneId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallPartnersByZone">
+      <soap:operation soapAction="http://tempuri.org/Common/GetOverallPartnersByZone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallPartnersByArea">
+      <soap:operation soapAction="http://tempuri.org/Common/GetOverallPartnersByArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallPartnersByCountry">
+      <soap:operation soapAction="http://tempuri.org/Common/GetOverallPartnersByCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnerName">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPartnerName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPSEUserId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPSEUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnerId">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPartnerId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPartnerMapping">
+      <soap:operation soapAction="http://tempuri.org/Common/InsertPartnerMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPSEReports">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPSEReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPSMReports">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPSMReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaReports">
+      <soap:operation soapAction="http://tempuri.org/Common/GetAreaReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneReports">
+      <soap:operation soapAction="http://tempuri.org/Common/GetTimeZoneReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStakeHolderReports">
+      <soap:operation soapAction="http://tempuri.org/Common/GetStakeHolderReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteStatus">
+      <soap:operation soapAction="http://tempuri.org/Common/GetCompleteStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteStatusByArea">
+      <soap:operation soapAction="http://tempuri.org/Common/GetCompleteStatusByArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteStatusByCountry">
+      <soap:operation soapAction="http://tempuri.org/Common/GetCompleteStatusByCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteStatusByTimeZone">
+      <soap:operation soapAction="http://tempuri.org/Common/GetCompleteStatusByTimeZone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOverAllPSEDet">
+      <soap:operation soapAction="http://tempuri.org/Common/GetOverAllPSEDet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadCountryByZoneId">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadCountryByZoneId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPasswords">
+      <soap:operation soapAction="http://tempuri.org/Common/GetAllPasswords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReports">
+      <soap:operation soapAction="http://tempuri.org/Common/GetReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsZoneExists">
+      <soap:operation soapAction="http://tempuri.org/Common/IsZoneExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallReportsCalculated">
+      <soap:operation soapAction="http://tempuri.org/Common/GetOverallReportsCalculated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetPoEsByUserId">
       <soap:operation soapAction="http://tempuri.org/Common/GetPoEsByUserId" style="document" />
       <wsdl:input>
@@ -2403,6 +3144,159 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteIncompleteFB">
       <soap:operation soapAction="http://tempuri.org/Common/DeleteIncompleteFB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartners">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPartners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSurveyAnswer">
+      <soap:operation soapAction="http://tempuri.org/Common/InsertSurveyAnswer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSurvey">
+      <soap:operation soapAction="http://tempuri.org/Common/CreateSurvey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompleteSurvey">
+      <soap:operation soapAction="http://tempuri.org/Common/CompleteSurvey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompletedAnswers">
+      <soap:operation soapAction="http://tempuri.org/Common/GetCompletedAnswers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePartner">
+      <soap:operation soapAction="http://tempuri.org/Common/CreatePartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPartnerExist">
+      <soap:operation soapAction="http://tempuri.org/Common/IsPartnerExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnerResults">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPartnerResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartner">
+      <soap:operation soapAction="http://tempuri.org/Common/UpdatePartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePartner">
+      <soap:operation soapAction="http://tempuri.org/Common/DeletePartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadPlan">
+      <soap:operation soapAction="http://tempuri.org/Common/UploadPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePlan">
+      <soap:operation soapAction="http://tempuri.org/Common/DeletePlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserRolesbyPartner">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadUserRolesbyPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListDesigantion">
+      <soap:operation soapAction="http://tempuri.org/Common/ListDesigantion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadTZUserRolesbyPartner">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadTZUserRolesbyPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOverallPartners">
+      <soap:operation soapAction="http://tempuri.org/Common/GetOverallPartners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFilterPartners">
+      <soap:operation soapAction="http://tempuri.org/Common/LoadFilterPartners" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

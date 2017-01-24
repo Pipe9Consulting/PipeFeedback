@@ -1,10 +1,445 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
-  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd4" />
-  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
-  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
-  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd3" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" />
+  <xs:element name="LoadAreaOfPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadAreaOfPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="LoadAreaOfPartnerResult" nillable="true" type="q1:ArrayOfZone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadTimeZoneOfPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadTimeZoneOfPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="LoadTimeZoneOfPartnerResult" nillable="true" type="q2:ArrayOfTimeZone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadCountryOfPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadCountryOfPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="LoadCountryOfPartnerResult" nillable="true" type="q3:ArrayOfCountry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadCountryByAreaId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="areaId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadCountryByAreaIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="LoadCountryByAreaIdResult" nillable="true" type="q4:ArrayOfCountry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadAreaByZoneId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="zoneId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadAreaByZoneIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="LoadAreaByZoneIdResult" nillable="true" type="q5:ArrayOfZone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadPartnersByAreaId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+        <xs:element minOccurs="0" name="areaId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadPartnersByAreaIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoadPartnersByAreaIdResult" nillable="true" type="ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadPartnersByCountryId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+        <xs:element minOccurs="0" name="countryId" type="xs:int" />
+        <xs:element minOccurs="0" name="areaId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadPartnersByCountryIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoadPartnersByCountryIdResult" nillable="true" type="ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadPartnersByZoneId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+        <xs:element minOccurs="0" name="zoneId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadPartnersByZoneIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoadPartnersByZoneIdResult" nillable="true" type="ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallPartnersByZone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+        <xs:element minOccurs="0" name="areaId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallPartnersByZoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetOverallPartnersByZoneResult" nillable="true" type="q6:ArrayOfPartner" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallPartnersByArea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+        <xs:element minOccurs="0" name="areaId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallPartnersByAreaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetOverallPartnersByAreaResult" nillable="true" type="q7:ArrayOfPartner" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallPartnersByCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+        <xs:element minOccurs="0" name="countryId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallPartnersByCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetOverallPartnersByCountryResult" nillable="true" type="q8:ArrayOfPartner" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnerName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mplId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnerNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPartnerNameResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPSEUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPSEUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPSEUserIdResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnerId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mplId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnerIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPartnerIdResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPartnerMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPartnerMappingResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPSEReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPSEReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetPSEReportsResult" nillable="true" type="q9:PSEReports" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPSMReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPSMReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetPSMReportsResult" nillable="true" type="q10:ArrayOfPSMReports" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAreaReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAreaReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetAreaReportsResult" nillable="true" type="q11:TopLeadsReport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTimeZoneReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTimeZoneReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetTimeZoneReportsResult" nillable="true" type="q12:TopLeadsReport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStakeHolderReports">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStakeHolderReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStakeHolderReportsResult" nillable="true" type="q13:StakeHolders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompleteStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="deisgnationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompleteStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetCompleteStatusResult" nillable="true" type="q14:CompleteStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompleteStatusByArea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="deisgnationId" type="xs:int" />
+        <xs:element minOccurs="0" name="areaId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompleteStatusByAreaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetCompleteStatusByAreaResult" nillable="true" type="q15:CompleteStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompleteStatusByCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="deisgnationId" type="xs:int" />
+        <xs:element minOccurs="0" name="countryId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompleteStatusByCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetCompleteStatusByCountryResult" nillable="true" type="q16:CompleteStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompleteStatusByTimeZone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="deisgnationId" type="xs:int" />
+        <xs:element minOccurs="0" name="timeZone" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompleteStatusByTimeZoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetCompleteStatusByTimeZoneResult" nillable="true" type="q17:CompleteStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverAllPSEDet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverAllPSEDetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetOverAllPSEDetResult" nillable="true" type="q18:CompleteStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadCountryByZoneId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="zoneId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadCountryByZoneIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="LoadCountryByZoneIdResult" nillable="true" type="q19:ArrayOfCountry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPasswords">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPasswordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetAllPasswordsResult" nillable="true" type="q20:PPAReports" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReports">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetReportsResult" nillable="true" type="q21:PPAReports" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsZoneExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsZoneExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsZoneExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallReportsCalculated">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallReportsCalculatedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetOverallReportsCalculatedResult" nillable="true" type="q22:StakeHolders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="GetPoEsByUserId">
     <xs:complexType>
       <xs:sequence>
@@ -15,7 +450,7 @@
   <xs:element name="GetPoEsByUserIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetPoEsByUserIdResult" nillable="true" type="q1:ArrayOfMinimizedPOE" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetPoEsByUserIdResult" nillable="true" type="q23:ArrayOfMinimizedPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -29,7 +464,7 @@
   <xs:element name="GetMySubscribedPoesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMySubscribedPoesResult" nillable="true" type="q2:ArrayOfMinimizedPOE" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMySubscribedPoesResult" nillable="true" type="q24:ArrayOfMinimizedPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -44,7 +479,7 @@
   <xs:element name="GetMySubscribedPoeListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMySubscribedPoeListResult" nillable="true" type="q3:ArrayOfMinimizedPOE" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMySubscribedPoeListResult" nillable="true" type="q25:ArrayOfMinimizedPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -59,7 +494,7 @@
   <xs:element name="GetUserMappingDetailsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserMappingDetailsResult" nillable="true" type="q4:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserMappingDetailsResult" nillable="true" type="q26:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -73,7 +508,7 @@
   <xs:element name="GetAccountDetailResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetAccountDetailResult" nillable="true" type="q5:ArrayOfAccounts" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetAccountDetailResult" nillable="true" type="q27:ArrayOfAccounts" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -87,7 +522,7 @@
   <xs:element name="GetPoeContentResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetPoeContentResult" nillable="true" type="q6:PoeModules" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetPoeContentResult" nillable="true" type="q28:PoeModules" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -119,7 +554,7 @@
   <xs:element name="GetMyTeammembersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyTeammembersResult" nillable="true" type="q7:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyTeammembersResult" nillable="true" type="q29:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -135,7 +570,7 @@
   <xs:element name="GetMyGiveFbTeamResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyGiveFbTeamResult" nillable="true" type="q8:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyGiveFbTeamResult" nillable="true" type="q30:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -151,7 +586,7 @@
   <xs:element name="GetMyGiveFbTeamListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyGiveFbTeamListResult" nillable="true" type="q9:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyGiveFbTeamListResult" nillable="true" type="q31:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -167,7 +602,7 @@
   <xs:element name="GetMyReceiveFbTeamResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyReceiveFbTeamResult" nillable="true" type="q10:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyReceiveFbTeamResult" nillable="true" type="q32:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -183,7 +618,7 @@
   <xs:element name="GetMyManagersFeedbackResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyManagersFeedbackResult" nillable="true" type="q11:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyManagersFeedbackResult" nillable="true" type="q33:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -199,7 +634,7 @@
   <xs:element name="GetMyReceiveFbTeamListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyReceiveFbTeamListResult" nillable="true" type="q12:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyReceiveFbTeamListResult" nillable="true" type="q34:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -215,7 +650,7 @@
   <xs:element name="GetMyManagerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyManagerResult" nillable="true" type="q13:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyManagerResult" nillable="true" type="q35:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -231,7 +666,7 @@
   <xs:element name="GetMyCustomersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyCustomersResult" nillable="true" type="q14:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyCustomersResult" nillable="true" type="q36:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -247,7 +682,7 @@
   <xs:element name="GetMyPeersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyPeersResult" nillable="true" type="q15:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyPeersResult" nillable="true" type="q37:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -263,7 +698,7 @@
   <xs:element name="GetMyFullNetworkResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyFullNetworkResult" nillable="true" type="q16:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyFullNetworkResult" nillable="true" type="q38:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -279,7 +714,7 @@
   <xs:element name="GetNetworksUsersWallResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetNetworksUsersWallResult" nillable="true" type="q17:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetNetworksUsersWallResult" nillable="true" type="q39:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -325,7 +760,7 @@
   <xs:element name="GetMyDetailResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyDetailResult" nillable="true" type="q18:UserPOEMapping" />
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyDetailResult" nillable="true" type="q40:UserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -341,7 +776,7 @@
   <xs:element name="GetMyDetailWithAreaResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyDetailWithAreaResult" nillable="true" type="q19:UserPOEMapping" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyDetailWithAreaResult" nillable="true" type="q41:UserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -353,7 +788,7 @@
   <xs:element name="GetAllCountiesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetAllCountiesResult" nillable="true" type="q20:ArrayOfCountry" />
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetAllCountiesResult" nillable="true" type="q42:ArrayOfCountry" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -365,7 +800,7 @@
   <xs:element name="GetAllAreaResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetAllAreaResult" nillable="true" type="q21:ArrayOfZone" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetAllAreaResult" nillable="true" type="q43:ArrayOfZone" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -527,7 +962,7 @@
   <xs:element name="GetUserSubscriptionsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserSubscriptionsResult" nillable="true" type="q22:ArrayOfNetwork" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserSubscriptionsResult" nillable="true" type="q44:ArrayOfNetwork" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -541,7 +976,7 @@
   <xs:element name="GetMySubscriptionResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMySubscriptionResult" nillable="true" type="q23:ArrayOfNetwork" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMySubscriptionResult" nillable="true" type="q45:ArrayOfNetwork" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -557,7 +992,7 @@
   <xs:element name="GetMyActivitiesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetMyActivitiesResult" nillable="true" type="q24:ArrayOfV3_GetMyActivitiesResult" />
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetMyActivitiesResult" nillable="true" type="q46:ArrayOfV3_GetMyActivitiesResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -572,7 +1007,7 @@
   <xs:element name="GetUserListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetUserListResult" nillable="true" type="q25:ArrayOfV3_GetUserListByBatchIdResult" />
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetUserListResult" nillable="true" type="q47:ArrayOfV3_GetUserListByBatchIdResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -586,7 +1021,7 @@
   <xs:element name="GetDefaultUserSubscriptionResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetDefaultUserSubscriptionResult" nillable="true" type="q26:Network" />
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetDefaultUserSubscriptionResult" nillable="true" type="q48:Network" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -600,7 +1035,7 @@
   <xs:element name="GetOwnNetworkResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetOwnNetworkResult" nillable="true" type="q27:Network" />
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetOwnNetworkResult" nillable="true" type="q49:Network" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -705,7 +1140,7 @@
   <xs:element name="GetMyUsersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyUsersResult" nillable="true" type="q28:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyUsersResult" nillable="true" type="q50:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -720,7 +1155,7 @@
   <xs:element name="GetMyAllUsersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyAllUsersResult" nillable="true" type="q29:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyAllUsersResult" nillable="true" type="q51:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -738,7 +1173,7 @@
   <xs:element name="GetStandingResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStandingResult" nillable="true" type="q30:Standing" />
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStandingResult" nillable="true" type="q52:Standing" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -755,7 +1190,7 @@
   <xs:element name="GetStandingTileScoreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStandingTileScoreResult" nillable="true" type="q31:Standing" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStandingTileScoreResult" nillable="true" type="q53:Standing" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -769,7 +1204,7 @@
   <xs:element name="GetAvgWcsiScoreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetAvgWcsiScoreResult" nillable="true" type="q32:ArrayOfV3_GetStandingAvgWCSIScoreResult" />
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetAvgWcsiScoreResult" nillable="true" type="q54:ArrayOfV3_GetStandingAvgWCSIScoreResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -784,7 +1219,7 @@
   <xs:element name="GetUserRolesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserRolesResult" nillable="true" type="q33:ArrayOfUserRole" />
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserRolesResult" nillable="true" type="q55:ArrayOfUserRole" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -800,7 +1235,7 @@
   <xs:element name="GetUserPoeByRoleResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeByRoleResult" nillable="true" type="q34:ArrayOfPOE" />
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeByRoleResult" nillable="true" type="q56:ArrayOfPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -816,7 +1251,7 @@
   <xs:element name="GetUserPoeByTypeResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeByTypeResult" nillable="true" type="q35:ArrayOfPOE" />
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeByTypeResult" nillable="true" type="q57:ArrayOfPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -873,7 +1308,7 @@
   <xs:element name="GetMyGoalsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyGoalsResult" nillable="true" type="q36:ArrayOfModulesGoal" />
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetMyGoalsResult" nillable="true" type="q58:ArrayOfModulesGoal" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -887,7 +1322,7 @@
   <xs:element name="GetUserdetailsByMappingIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserdetailsByMappingIdResult" nillable="true" type="q37:UserPOEMapping" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserdetailsByMappingIdResult" nillable="true" type="q59:UserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -901,7 +1336,7 @@
   <xs:element name="GetUserDetailsByFbIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserDetailsByFbIdResult" nillable="true" type="q38:UserPOEMapping" />
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserDetailsByFbIdResult" nillable="true" type="q60:UserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -915,7 +1350,7 @@
   <xs:element name="GetFeedbacksByGroupIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetFeedbacksByGroupIdResult" nillable="true" type="q39:ArrayOfCreatedFeedback" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetFeedbacksByGroupIdResult" nillable="true" type="q61:ArrayOfCreatedFeedback" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -948,7 +1383,7 @@
   <xs:element name="GetSyncScoresResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncScoresResult" nillable="true" type="q40:SyncScoreCollection" />
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncScoresResult" nillable="true" type="q62:SyncScoreCollection" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -966,7 +1401,7 @@
   <xs:element name="GetSyncScoresOverallResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncScoresOverallResult" nillable="true" type="q41:SyncScoreCollection" />
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncScoresOverallResult" nillable="true" type="q63:SyncScoreCollection" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -983,7 +1418,7 @@
   <xs:element name="GetAvgSyncScoresResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetAvgSyncScoresResult" nillable="true" type="q42:SyncScoreCollection" />
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetAvgSyncScoresResult" nillable="true" type="q64:SyncScoreCollection" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1002,7 +1437,7 @@
   <xs:element name="GetSyncScoresByFbIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncScoresByFbIdResult" nillable="true" type="q43:SyncScoreCollection" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncScoresByFbIdResult" nillable="true" type="q65:SyncScoreCollection" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1021,7 +1456,7 @@
   <xs:element name="GetSyncTeamScoreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncTeamScoreResult" nillable="true" type="q44:SyncScoreCollection" />
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncTeamScoreResult" nillable="true" type="q66:SyncScoreCollection" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1039,7 +1474,7 @@
   <xs:element name="GetAvgSyncScoresByFbIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetAvgSyncScoresByFbIdResult" nillable="true" type="q45:SyncScoreCollection" />
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetAvgSyncScoresByFbIdResult" nillable="true" type="q67:SyncScoreCollection" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1055,7 +1490,7 @@
   <xs:element name="GetSyncWcsiDiffResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncWcsiDiffResult" nillable="true" type="q46:SyncWcsiDiff" />
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetSyncWcsiDiffResult" nillable="true" type="q68:SyncWcsiDiff" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1069,7 +1504,7 @@
   <xs:element name="GetPlanByIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetPlanByIdResult" nillable="true" type="q47:Plan" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetPlanByIdResult" nillable="true" type="q69:Plan" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1109,7 +1544,7 @@
   <xs:element name="GenerateManagerReportResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GenerateManagerReportResult" nillable="true" type="q48:ArrayOfManagerReports" />
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GenerateManagerReportResult" nillable="true" type="q70:ArrayOfManagerReports" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1123,7 +1558,7 @@
   <xs:element name="GenerateTeamReportResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GenerateTeamReportResult" nillable="true" type="q49:ArrayOfTeamReports" />
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GenerateTeamReportResult" nillable="true" type="q71:ArrayOfTeamReports" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1153,7 +1588,7 @@
   <xs:element name="GetYammerTopContentResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetYammerTopContentResult" nillable="true" type="q50:ArrayOfYammerContent" />
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetYammerTopContentResult" nillable="true" type="q72:ArrayOfYammerContent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1210,7 +1645,7 @@
   <xs:element name="GetStandingDataResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStandingDataResult" nillable="true" type="q51:StandingNew" />
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStandingDataResult" nillable="true" type="q73:StandingNew" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1227,7 +1662,7 @@
   <xs:element name="GetTopMembersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetTopMembersResult" nillable="true" type="q52:ArrayOfUserPOEMapping" />
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetTopMembersResult" nillable="true" type="q74:ArrayOfUserPOEMapping" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1245,7 +1680,7 @@
   <xs:element name="GetStandingPAContentResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStandingPAContentResult" nillable="true" type="q53:StandingPAContent" />
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetStandingPAContentResult" nillable="true" type="q75:StandingPAContent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1262,7 +1697,7 @@
   <xs:element name="GetDashBoardDetailsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetDashBoardDetailsResult" nillable="true" type="q54:DashBoard" />
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetDashBoardDetailsResult" nillable="true" type="q76:DashBoard" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1309,7 +1744,7 @@
   <xs:element name="GetDashBoardResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetDashBoardResult" nillable="true" type="q55:DashboardModel" />
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetDashBoardResult" nillable="true" type="q77:DashboardModel" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1341,7 +1776,7 @@
   <xs:element name="GetPathfindersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetPathfindersResult" nillable="true" type="q56:DashboardPathFinders" />
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetPathfindersResult" nillable="true" type="q78:DashboardPathFinders" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1453,7 +1888,7 @@
   <xs:element name="GetUserNotificationsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserNotificationsResult" nillable="true" type="q57:Notification" />
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserNotificationsResult" nillable="true" type="q79:Notification" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1484,7 +1919,7 @@
   <xs:element name="GetConnectHistoryResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetConnectHistoryResult" nillable="true" type="q58:ArrayOfv4_GetMentorConnectHistoryResult" />
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetConnectHistoryResult" nillable="true" type="q80:ArrayOfv4_GetMentorConnectHistoryResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1498,7 +1933,7 @@
   <xs:element name="GetQuestionsListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetQuestionsListResult" nillable="true" type="q59:ArrayOfQuestionLists" />
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetQuestionsListResult" nillable="true" type="q81:ArrayOfQuestionLists" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1515,7 +1950,7 @@
   <xs:element name="GetTrackTileScoreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetTrackTileScoreResult" nillable="true" type="q60:ArrayOfstring" />
+        <xs:element xmlns:q82="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetTrackTileScoreResult" nillable="true" type="q82:ArrayOfstring" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1534,7 +1969,7 @@
   <xs:element name="TrackModuleQuestionsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="TrackModuleQuestionsResult" nillable="true" type="q61:TrackGoal" />
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="TrackModuleQuestionsResult" nillable="true" type="q83:TrackGoal" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1566,7 +2001,7 @@
   <xs:element name="GetGoalsSharedResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetGoalsSharedResult" nillable="true" type="q62:ArrayOfv4_GetGoalssharedbyuserResult" />
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" minOccurs="0" name="GetGoalsSharedResult" nillable="true" type="q84:ArrayOfv4_GetGoalssharedbyuserResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1581,7 +2016,7 @@
   <xs:element name="GetUserPoeByRoleUpdatedResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeByRoleUpdatedResult" nillable="true" type="q63:ArrayOfPOE" />
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeByRoleUpdatedResult" nillable="true" type="q85:ArrayOfPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1595,7 +2030,7 @@
   <xs:element name="GetUserPoeManagerRoleResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeManagerRoleResult" nillable="true" type="q64:ArrayOfPOE" />
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeManagerRoleResult" nillable="true" type="q86:ArrayOfPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1609,7 +2044,7 @@
   <xs:element name="GetUserPoeTeamRoleResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeTeamRoleResult" nillable="true" type="q65:ArrayOfPOE" />
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserPoeTeamRoleResult" nillable="true" type="q87:ArrayOfPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1624,7 +2059,7 @@
   <xs:element name="GetUserRolesByProfileResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserRolesByProfileResult" nillable="true" type="q66:ArrayOfUserRole" />
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserRolesByProfileResult" nillable="true" type="q88:ArrayOfUserRole" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1638,7 +2073,7 @@
   <xs:element name="GetUserCurrentRoleResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserCurrentRoleResult" nillable="true" type="q67:ArrayOfUserRole" />
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserCurrentRoleResult" nillable="true" type="q89:ArrayOfUserRole" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1669,7 +2104,7 @@
   <xs:element name="GetManagerDevPrioritiesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetManagerDevPrioritiesResult" nillable="true" type="q68:ArrayOfDevelopmentPriorities" />
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetManagerDevPrioritiesResult" nillable="true" type="q90:ArrayOfDevelopmentPriorities" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1685,7 +2120,7 @@
   <xs:element name="GetTeamGoalDateResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetTeamGoalDateResult" nillable="true" type="q69:GoalDate" />
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetTeamGoalDateResult" nillable="true" type="q91:GoalDate" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1700,7 +2135,7 @@
   <xs:element name="GetSelfDevPrioritiesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetSelfDevPrioritiesResult" nillable="true" type="q70:ArrayOfDevelopmentPriorities" />
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetSelfDevPrioritiesResult" nillable="true" type="q92:ArrayOfDevelopmentPriorities" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1728,7 +2163,7 @@
   <xs:element name="GetSelfGoalDateResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetSelfGoalDateResult" nillable="true" type="q71:GoalDate" />
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetSelfGoalDateResult" nillable="true" type="q93:GoalDate" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1744,7 +2179,7 @@
   <xs:element name="GetTeamDevProgressResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetTeamDevProgressResult" nillable="true" type="q72:ArrayOfResults" />
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetTeamDevProgressResult" nillable="true" type="q94:ArrayOfResults" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1760,7 +2195,7 @@
   <xs:element name="GetManagerDevProgressResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetManagerDevProgressResult" nillable="true" type="q73:ArrayOfResults" />
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetManagerDevProgressResult" nillable="true" type="q95:ArrayOfResults" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1774,7 +2209,7 @@
   <xs:element name="GetSubscripedPoeByResultModeResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetSubscripedPoeByResultModeResult" nillable="true" type="q74:ArrayOfMinimizedPOE" />
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetSubscripedPoeByResultModeResult" nillable="true" type="q96:ArrayOfMinimizedPOE" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1803,7 +2238,7 @@
   <xs:element name="GetImportanceAnswerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetImportanceAnswerResult" nillable="true" type="q75:ArrayOfQuestionScore" />
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetImportanceAnswerResult" nillable="true" type="q97:ArrayOfQuestionScore" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1818,7 +2253,7 @@
   <xs:element name="GetDemographicAnswerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetDemographicAnswerResult" nillable="true" type="q76:ArrayOfQuestionScore" />
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetDemographicAnswerResult" nillable="true" type="q98:ArrayOfQuestionScore" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1847,7 +2282,7 @@
   <xs:element name="GetProductSurveyAnswerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetProductSurveyAnswerResult" nillable="true" type="q77:ArrayOfQuestionScore" />
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetProductSurveyAnswerResult" nillable="true" type="q99:ArrayOfQuestionScore" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1877,7 +2312,7 @@
   <xs:element name="GetUserNotificationsLatestResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetUserNotificationsLatestResult" nillable="true" type="q78:Notification" />
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetUserNotificationsLatestResult" nillable="true" type="q100:Notification" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1916,7 +2351,7 @@
   <xs:element name="GetUserRolesByProfileUpdatedResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserRolesByProfileUpdatedResult" nillable="true" type="q79:ArrayOfUserRole" />
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="GetUserRolesByProfileUpdatedResult" nillable="true" type="q101:ArrayOfUserRole" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1931,6 +2366,252 @@
   <xs:element name="DeleteIncompleteFBResponse">
     <xs:complexType>
       <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetPartnersResult" nillable="true" type="q102:ArrayOfPartner" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSurveyAnswer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="questionId" type="xs:int" />
+        <xs:element minOccurs="0" name="answerValue" type="xs:int" />
+        <xs:element minOccurs="0" name="answer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="feedbackid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSurveyAnswerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSurvey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="poeid" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSurveyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateSurveyResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompleteSurvey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="feedbackId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompleteSurveyResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompletedAnswers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="feedbackid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompletedAnswersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetCompletedAnswersResult" nillable="true" type="q103:PSESurvey" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePartnerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsPartnerExist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsPartnerExistResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsPartnerExistResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnerResults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnerResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" minOccurs="0" name="GetPartnerResultsResult" nillable="true" type="q104:ArrayOfPPAResults" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePartnerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePartnerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadPlan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+        <xs:element minOccurs="0" name="poeid" type="xs:int" />
+        <xs:element minOccurs="0" name="filnename" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="realFileName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadPlanResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePlan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePlanResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadUserRolesbyPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadUserRolesbyPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoadUserRolesbyPartnerResult" nillable="true" type="ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListDesigantion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListDesigantionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="ListDesigantionResult" nillable="true" type="q105:ArrayOfDesignation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadTZUserRolesbyPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadTZUserRolesbyPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoadTZUserRolesbyPartnerResult" nillable="true" type="ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallPartners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOverallPartnersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" minOccurs="0" name="GetOverallPartnersResult" nillable="true" type="q106:ArrayOfPartner" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadFilterPartners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
+        <xs:element minOccurs="0" name="designationId" type="xs:int" />
+        <xs:element minOccurs="0" name="currentUserid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadFilterPartnersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoadFilterPartnersResult" nillable="true" type="ArrayOfUser" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

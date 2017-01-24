@@ -11,20 +11,30 @@ body {
 }
 
 .headerMenu {
-    background: #000;
+    background: #fff;
     height: 100px;
     padding: 0 !important;
+    border-bottom: 1px solid #b9babb;
 }
+
+.ui.inverted.menu {
+    background: #fff;
+    box-shadow: none;
+}
+
+    .ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui) {
+        color: #161010;
+    }
 
 
 .breadMenu {
-    margin: 1% 1.5%;
-    background: #fff;
+    background: #f9f9f9;
+    margin-bottom: 1.5%;
 }
 
 .breadcrumb {
-    background: #fff;
-    padding: .6% .8%;
+    background: #f9f9f9;
+    padding: .6% 1.5%;
 }
 
     .breadcrumb a {
@@ -74,11 +84,12 @@ html, body {
 /*------------------ Footer ********************************/
 
 .footerPart {
-    background: #111111;
+    background: #fff;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    border-top: 1px solid #b9babb;
 }
 
 .ui.menu .item {
@@ -209,12 +220,8 @@ html, body {
         width: 13%;
     }
 
-    .cacLogo img {
-        width: 40%;
-    }
-
     .headerMenu {
-        height: 65px !important;
+        height: 80px !important;
     }
 
     .page-wrap {

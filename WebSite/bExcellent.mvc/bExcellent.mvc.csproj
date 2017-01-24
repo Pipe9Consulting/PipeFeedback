@@ -3611,8 +3611,23 @@
     </None>
     <None Include="Scripts\ref\editor\themes\monocons\monocons.eot" />
     <None Include="Scripts\ref\editor\themes\monocons\monocons.ttf" />
+    <Content Include="Service References\AuthenticationWCF\Authentication.wsdl" />
+    <None Include="Service References\AuthenticationWCF\Authentication.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\AuthenticationWCF\Authentication1.wsdl" />
-    <None Include="Service References\AuthenticationWCF\Authentication11.wsdl" />
+    <None Include="Service References\AuthenticationWCF\Authentication1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuthenticationWCF\Authentication2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuthenticationWCF\Authentication3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuthenticationWCF\Authentication4.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\AuthenticationWCF\Authentication5.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -3628,11 +3643,6 @@
     <None Include="Service References\AuthenticationWCF\Authentication54.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\AuthenticationWCF\Authentication55.xsd" />
-    <None Include="Service References\AuthenticationWCF\Authentication56.xsd" />
-    <None Include="Service References\AuthenticationWCF\Authentication57.xsd" />
-    <None Include="Service References\AuthenticationWCF\Authentication58.xsd" />
-    <None Include="Service References\AuthenticationWCF\Authentication59.xsd" />
     <None Include="Service References\AuthenticationWCF\bExcellent.mvc.AuthenticationWCF.AuthenticationResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -3642,6 +3652,9 @@
     <None Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.Accounts.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.CompleteStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.Country.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -3650,7 +3663,7 @@
     </None>
     <None Include="Service References\AuthenticationWCF\Authentication1.disco" />
     <None Include="Service References\AuthenticationWCF\Authentication11.disco" />
-    <Content Include="Service References\AuthenticationWCF\Authentication11.disco" />
+    <Content Include="Service References\AuthenticationWCF\Authentication.disco" />
     <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.ManagerReports1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -3669,6 +3682,9 @@
     <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.GoalDate.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.Designation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.MinimizedPOE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -3682,6 +3698,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.Notification1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.Partner.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.Plan.datasource">
@@ -3700,6 +3719,24 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.QuestionScore.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.PPAReports.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.PPAResults.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.PSEReports.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.PSESurvey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.PSMReports.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.StakeHolders.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.Standing.datasource">
@@ -3721,6 +3758,12 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.TrackGoal.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.TimeZone.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.TopLeadsReport.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.User.datasource">
@@ -3774,6 +3817,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\CommonWCF\Common14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonWCF\Common15.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\CommonWCF\Common2.xsd">
@@ -3904,7 +3950,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Service References\FeedbackWCF\FeedbackService1.disco" />
-    <Content Include="Service References\SignUpWCF\Signup.disco" />
+    <Content Include="Service References\SignUpWCF\Signup1.disco" />
     <Content Include="spa-managerGoal1.png" />
     <Content Include="StaticContents\CustomerRefContents.txt" />
     <Content Include="StaticContents\LatestNewsContents.txt" />
@@ -4163,15 +4209,22 @@
     <Content Include="Styles\KessakuStyles\fonts\Variable_bold-webfont.eot" />
     <Content Include="Styles\KessakuStyles\fonts\Variable_bold-webfont.ttf" />
     <None Include="Service References\SignUpWCF\Signup1.wsdl" />
-    <Content Include="Service References\SignUpWCF\Signup11.wsdl" />
+    <None Include="Service References\SignUpWCF\Signup10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SignUpWCF\Signup11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SignUpWCF\Signup12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\SignUpWCF\Signup2.wsdl" />
     <None Include="Service References\SignUpWCF\Signup6.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\SignUpWCF\Signup61.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SignUpWCF\Signup610.xsd" />
-    <None Include="Service References\SignUpWCF\Signup611.xsd" />
     <None Include="Service References\SignUpWCF\Signup62.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -4184,10 +4237,6 @@
     <None Include="Service References\SignUpWCF\Signup65.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SignUpWCF\Signup66.xsd" />
-    <None Include="Service References\SignUpWCF\Signup67.xsd" />
-    <None Include="Service References\SignUpWCF\Signup68.xsd" />
-    <None Include="Service References\SignUpWCF\Signup69.xsd" />
     <Content Include="Views\Sync\TrackGoals.aspx" />
     <Content Include="Views\Yammer\getCode.cshtml" />
     <Content Include="Views\Shared\EmptyPage.Master" />
@@ -4196,6 +4245,15 @@
     <Content Include="Views\Shared\MaxiPoe.Master" />
     <Content Include="Views\Shared\KessakuHome.Master" />
     <Content Include="Views\Shared\KessakuPoeLibrary.Master" />
+    <None Include="Service References\SignUpWCF\Signup7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SignUpWCF\Signup8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SignUpWCF\Signup9.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web References\authorize\ANetApiResponseType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

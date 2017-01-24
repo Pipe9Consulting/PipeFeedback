@@ -159,7 +159,7 @@
             url: '../../Common/GetPoeResultMode',
             success: function (response) {
                 //alert("1");
-                debugger;
+                //debugger;
                 if (response.Status != false) {
                     $('.headermenus').addClass('headerMenuHide');
                     $('.result_start').addClass('resultMenuHide');
@@ -218,7 +218,7 @@
         Common.ajaxsync({
             url: '../../Common/GetNotifications',
             success: function (response) {
-                debugger;
+                //debugger;
                 $('#menustar').hide();
                 var notifyhtml = '';
                 if (response.ManagerSync) {

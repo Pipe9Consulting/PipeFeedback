@@ -40,8 +40,8 @@
     left: 33%;
     width: auto;
     color: white;
-    background-color: #000 !important;
-    border: 1px solid #E0B001;
+    background-color: #fff !important;
+    border: 1px solid #ea4128;
     z-index: 9999999999 !important;
     padding: 0.5% 2% 2% 1.5%;
 }
@@ -58,7 +58,7 @@
     margin-top: 1%;
     background: none;
     padding: 1%;
-    border: 1px solid #fff;
+    border: 1px solid #73d1d5;
     width: 100%;
 }
 
@@ -128,8 +128,8 @@
     height: 500px;
     width: 450px;
     color: #bbb;
-    background-color: #000 !important;
-    border: 1px solid #E0B001;
+    background-color: #fff !important;
+    border: 1px solid #23a1a7;
     padding: 2%;
     z-index: 999999 !important;
 }
@@ -191,27 +191,27 @@
 }
 
 .simplemodal-data p {
-    color: #FFF;
+    color: #000;
 }
 
 #resetbtn, #ChangePassbtn {
-    background: none repeat scroll 0 0 #e0b001;
-    border: 1px solid #000;
+    background: none repeat scroll 0 0 #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 5px solid #168f95;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    color: #fff !important;
     padding: 1%;
-    color: #000;
     font-weight: bold;
 }
 
-    #resetbtn, #ChangePassbtn:hover {
-        background: none repeat scroll 0 0 #e0b001;
-        border: 1px solid #000;
-        color: #000;
-    }
-
-    #resetbtn, #ChangePassbtn:hover {
-        background: none repeat scroll 0 0 #000;
-        border: 1px solid #e0b001;
-        color: #e0b001;
+    #resetbtn:hover, #ChangePassbtn:hover {
+        background: none repeat scroll 0 0 #fff;
+        border-top: 1px solid #23a1a7;
+        border-bottom: 5px solid #168f95;
+        border-left: 1px solid #23a1a7;
+        border-right: 1px solid #23a1a7;
+        color: #23a1a7 !important;
     }
 
 
@@ -221,14 +221,14 @@
 }
 
 .simplemodal-data H1 {
-    color: #fff;
+    color: #000;
     margin-bottom: 3%;
     font-weight: normal;
 }
 
 
 .poelistlidummy {
-    background: rgba(0,0,0,0.8) !important;
+    background: #fff !important;
 }
 
 
@@ -266,7 +266,7 @@
 
 .close {
     float: right;
-    background: url(../../images/close.png) no-repeat center ;
+    background: url(../../images/close.png) no-repeat center;
     background-size: 50% 50%;
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -286,9 +286,7 @@
 }
 
 .close:hover {
-    background: url(../../images/close-hover.png) no-repeat center #000;
-    background-size: 50% 50%;
-    border: 1px solid #e0b001;
+    background: url(../../images/close-hover.png) no-repeat center #fff;
 }
 
 

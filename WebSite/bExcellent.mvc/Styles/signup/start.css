@@ -1,4 +1,7 @@
 
+body {
+    background: #fff;
+}
 
 
 .StartTitle h1 {
@@ -41,7 +44,7 @@
 }
 
 .startPart h1 {
-    color: #000;
+    color: #fff;
     font-weight: normal;
     width: 100%;
     padding: 2% 3.5% 0 3.5%;
@@ -65,7 +68,7 @@
 }
 
     .startBox h3 {
-        color: #fff;
+        color: #333;
         text-transform: uppercase;
         font-size: 150%;
         font-weight: 300;
@@ -75,7 +78,7 @@
     }
 
     .startBox p {
-        color: #fff;
+        color: #23a1a7;
         font-size: 100%;
         font-weight: 400;
         bottom: 0;
@@ -83,83 +86,95 @@
     }
 
     .startBox:hover h3 {
-        color: #e0b001;
+        color: #eb4830;
     }
 
     .startBox:hover p {
-        color: #fff;
+        color: #23a1a7;
     }
 
 .profile {
-    background: url(../../Images/images/profileIcon.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/images/profileIcon.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 18% 33%;
+    border: 1px solid #aaa;
 }
 
     .profile:hover {
-        background: url(../../Images/images/profileIcon2.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/images/profileIcon2.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
+        border: 1px solid #eb4830;
     }
 
 .feedback {
-    background: url(../../Images/start/completeSFB.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/start/completeSFB.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 18% 33%;
+    border: 1px solid #aaa;
 }
 
     .feedback:hover {
-        background: url(../../Images/start/completeSFB_h.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/start/completeSFB_h.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
+        border: 1px solid #eb4830;
     }
 
 .standing {
-    background: url(../../Images/start/resultsnew.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/start/resultsnew.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 18% 33%;
+    border: 1px solid #aaa;
 }
 
     .standing:hover {
-        background: url(../../Images/start/resultsnew_h.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/start/resultsnew_h.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
+        border: 1px solid #eb4830;
     }
 
 .goal {
-    background: url(../../Images/images/goalIcon.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/images/goalIcon.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 18% 33%;
+    border: 1px solid #aaa;
 }
 
     .goal:hover {
-        background: url(../../Images/images/goalIcon2.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/images/goalIcon2.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
+        border: 1px solid #eb4830;
     }
 
 .networks {
-    background: url(../../Images/start/provideTFB.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/start/provideTFB.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 18% 33%;
+    border: 1px solid #aaa;
 }
 
     .networks:hover {
-        background: url(../../Images/start/provideTFB_h.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/start/provideTFB_h.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
+        border: 1px solid #eb4830;
     }
 
 
 
 .managerSync {
-    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 38% 33%;
     width: 47% !important;
     float: left;
     margin-right: 6%;
     height: 330px;
+    border: 1px solid #aaa;
     position: relative;
 }
 
     .managerSync:hover {
-        background: url(../../Images/start/managersync_h.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/start/managersync_h.png) top 20px right 20px no-repeat #fff;
         background-size: 38% 33%;
+        border: 1px solid #eb4830;
     }
 
 
 .startSmallTile {
-    background: #000;
+    background: #f6f6f6;
     opacity: 0.7;
     position: absolute;
     z-index: 99999;
@@ -192,14 +207,14 @@
     }
 
 .startSyncNoOver:hover {
-    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #000 !important;
+    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #f6f6f6 !important;
     opacity: .4 !important;
     background-size: 38% 33% !important;
 }
 
 .startSyncNoOver {
     opacity: .4 !important;
-    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #000 !important;
+    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #fff !important;
     background-size: 38% 33% !important;
 }
 
@@ -212,46 +227,49 @@
     }
 
 .communitySync {
-    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 38% 33%;
     width: 47% !important;
     float: left;
     height: 330px;
     position: relative;
+    border: 1px solid #aaa;
 }
 
+
     .communitySync:hover {
-        background: url(../../Images/start/communitySync_h.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/start/communitySync_h.png) top 20px right 20px no-repeat #fff;
         background-size: 38% 33%;
+        border: 1px solid #eb4830;
     }
 
 .sync {
-    background: url(../../Images/start/trackGoals.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/start/trackGoals.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 18% 33%;
 }
 
     .sync:hover {
-        background: url(../../Images/start/trackGoals_h.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/start/trackGoals_h.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
     }
 
 .mentor {
-    background: url(../../Images/images/mentorIcon.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/images/mentorIcon.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 18% 33%;
 }
 
     .mentor:hover {
-        background: url(../../Images/images/mentorIcon2.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/images/mentorIcon2.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
     }
 
 .wall {
-    background: url(../../Images/images/wallIcon.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/images/wallIcon.png) top 20px right 20px no-repeat #f6f6f6;
     background-size: 18% 33%;
 }
 
     .wall:hover {
-        background: url(../../Images/images/wallIcon2.png) top 20px right 20px no-repeat #000;
+        background: url(../../Images/images/wallIcon2.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
     }
 
@@ -295,10 +313,10 @@
 #hover_content1, #hover_content2, #hover_content4 {
     height: auto;
     line-height: 1.1;
-    background: #e0b001;
-    border: 1px solid #000;
+    background: #23a1a7;
+    border: 1px solid #0a676b;
     width: 50%;
-    color: #000;
+    color: #fff;
     padding: 2%;
     display: none;
     position: absolute;
@@ -312,6 +330,15 @@
     color: #e0b001;
     font-size: 280%;
 }
+
+.SelecDisable .startTextArea {
+    opacity: 0.05;
+}
+
+.SelecDisable .noticationIcon {
+    opacity: 0.1;
+}
+
 
 .star_name {
     float: left;
@@ -330,10 +357,10 @@
 #hover_content3, #hover_content7 {
     height: auto;
     line-height: 1.1;
-    background: #e0b001;
-    border: 1px solid #000;
+    background: #23a1a7;
+    border: 1px solid #105f63;
     width: 50%;
-    color: #000;
+    color: #fff;
     padding: 2%;
     display: none;
     position: absolute;
@@ -346,10 +373,10 @@
 #hover_content5, #hover_content6 {
     height: auto;
     line-height: 1.1;
-    background: #e0b001;
-    border: 1px solid #000;
+    background: #23a1a7;
+    border: 1px solid #105f63;
     width: 80%;
-    color: #000;
+    color: #fff;
     padding: 3% 4% 4% 4%;
     display: none;
     position: absolute;
@@ -967,7 +994,7 @@
 
     .startPart h1 {
         font-size: 200%;
-        padding: 1.5% 3.5% 2% 2.4%;
+        padding: 1.5% 3.5% .7% 2.4%;
     }
 
 
@@ -1421,13 +1448,13 @@
 
 
 
-    .managerSync .star_name:hover, .communitySync .star_name:hover {
-        padding: 0px 0 3px 31px;
-        background-position-y: 0px !important;
-        background-size: 27px 27px;
-        line-height: 1 !important;
-        margin-left: 12px !important;
-    }
+        .managerSync .star_name:hover, .communitySync .star_name:hover {
+            padding: 0px 0 3px 31px;
+            background-position-y: 0px !important;
+            background-size: 27px 27px;
+            line-height: 1 !important;
+            margin-left: 12px !important;
+        }
 
 
     .startSmallTile {
@@ -1452,9 +1479,6 @@
         font-size: 85%;
     }
 
-
-
-
     .Star_Icon {
         font-size: 175% !important;
         line-height: 0.8;
@@ -1466,19 +1490,11 @@
     }
 
 
-    /*@media screen and (max-width:1600px) and (min-width:1024px)*/
-    .breadMenu {
-        margin: 2% 2% 1.5% 2% !important;
-    }
-
 
     .ui.grid > [class*='four column'].row > .column {
         width: 30.2% !important;
         margin-right: 4rem;
     }
-
-
-
 
     .ui.grid > .row > .column {
         margin-bottom: .8%;
@@ -1486,7 +1502,7 @@
 
     .startPart h1 {
         font-size: 200% !important;
-        padding: 1% 7.5% 1.5% 2.5%;
+        padding: 2.5% 7.5% 1.5% 4.5%;
     }
 
     .startBox {
@@ -1697,15 +1713,14 @@
     height: 0%;
     position: absolute;
     z-index: 999;
-    background: #111;
+    background: #000;
     top: 0%;
     width: 95.8%;
     left: 14px;
     padding-bottom: 49.5%;
     cursor: default;
-    opacity: 0.3;
+    opacity: 0.1;
 }
-
 
 
 .SelecDisable h3, .SelecDisable img {

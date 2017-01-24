@@ -1,8 +1,9 @@
 ﻿
 
 body {
-    background: url("../../Images/new/signUpBg.jpg") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
-    background-size: 100% 95% !important;
+    /*background: url("../../Images/new/signUpBg.jpg") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+    background-size: 100% 95% !important;*/
+    background: #fff;
 }
 
 
@@ -14,10 +15,12 @@ body {
     width: 9%;
     float: left;
     margin-right: 4.7%;
-    background: #000 !important;
+    background: #fff !important;
     position: relative;
     padding-bottom: 8.5%;
+    border: 1px solid #23a1a7;
 }
+
 
 
 .slimScrollBar, .slimScrollRail {
@@ -52,7 +55,7 @@ h1 {
 
 
 .signuptile .img img {
-    width: 18%;
+    width: 30%;
     height: 18%;
 }
 
@@ -62,7 +65,7 @@ h1 {
     bottom: 5%;
     left: 6%;
     text-transform: uppercase;
-    color: #e0b001;
+    color: #23a1a7;
 }
 
 .contenthold {
@@ -76,8 +79,7 @@ h1 {
 .midcol {
     width: 70%;
     float: left;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 2% 2% 1.5% 2%;
+    background-color: #fff;
 }
 
 .checkoutcol {
@@ -88,23 +90,24 @@ h1 {
 }
 
 .rightcol {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #f8f8f8;
     position: relative;
-    color: #FFF;
+    color: #000;
     width: 24%;
     float: right;
     padding: 1%;
     height: 0;
     padding-bottom: 41%;
+    border: 1px solid #666;
 }
 
 .addmngr h2 {
     cursor: pointer;
-    background: url(../../Images/new/addmngr-plus.png) right top no-repeat rgba(0, 0, 0, 0.0);
+    background: url(../../Images/new/addmngr-plus.png) right top no-repeat #fff;
     background-size: 3.8% 98%;
     padding: 1% 6% 1% 1%;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #000;
+    border: 1px solid #666;
     width: 100%;
     text-align: left;
     margin: 1% 0 0;
@@ -145,7 +148,7 @@ h1 {
 
 .mendatory {
     text-align: right;
-    color: #fff;
+    color: #ec5038;
 }
 
 .row {
@@ -162,7 +165,7 @@ h1 {
 
 .level {
     width: 20% !important;
-    color: #fff;
+    color: #000;
 }
 
 .checkoutcol .level {
@@ -180,16 +183,19 @@ h1 {
 .txtcol {
     width: 100%;
     padding: .5% 1%;
-    border: 1px solid #fff;
-    background: rgba(0, 0, 0, 0.0);
-    color: #fff;
+    border: 1px solid #23a1a7;
+    background: #fff;
+    color: #000;
 }
 
 .signupbtn {
-    background: #e0b001;
-    color: #000;
-    border: 1px solid #e0b001;
-    padding: 1% 3%;
+    background: #23a1a7;
+    color: #fff;
+    border-right: 1px solid #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 3px solid #07676c;
+    padding: 1% 3% .7% 3%;
     font-weight: bold;
     margin: 0 0;
     cursor: pointer;
@@ -201,9 +207,12 @@ h1 {
 }
 
 .signupbtn:hover {
-    background: #000;
-    color: #fff;
-    border: 1px solid #e0b001;
+    background: #fff;
+    color: #23a1a7;
+    border-right: 1px solid #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 3px solid #07676c;
 }
 
 .checkoutcol .errormsg, .checkoutcol .errormsgpay {
@@ -217,7 +226,7 @@ h1 {
 }
 
 .errormsg, .errormsgpay {
-    color: #fff;
+    color: #000;
     background: url(../../Images/error.png) no-repeat left;
     background-size: 4% 100%;
     padding: 1% 0 1% 5% !important;
@@ -238,7 +247,7 @@ h1 {
     width: 100%;
     color: #000;
     cursor: pointer;
-    border-bottom: 1px solid #000;
+    border: 1px solid #23a1a7;
 }
 
 .addselected {
@@ -265,7 +274,7 @@ h1 {
         background: url("/Images/poe-deselect.png") no-repeat left 2% top 54%;
         background-size: auto 70%;
         padding: 1.8% 0 3% 10%;
-        border: 1px solid #ccc;
+        border: 1px solid #23a1a7;
         border-top: 0;
         border-bottom: 0;
         cursor: pointer;
@@ -277,8 +286,8 @@ h1 {
         }
 
             .assignpoe1 li:last-child:hover {
-                background: #e0b001 !important;
-                color: #fff !important;
+                background: #23a1a7 !important;
+                color: #000 !important;
             }
 
     .assignpoe1 .assignpoe1select {
@@ -287,13 +296,13 @@ h1 {
     }
 
     .assignpoe1 li:last-child {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #23a1a7;
     }
 
 .countryselect, .selectcol {
     width: 100%;
-    padding: 0% 1% .5% 1%;
-    border: 1px solid #cbcbcb;
+    padding: 0.3% 1% .2% 1%;
+    border: 1px solid #23a1a7;
     color: #000;
 }
 
@@ -307,7 +316,7 @@ h1 {
 .welcomenote p {
     float: left;
     padding-top: 5%;
-    color: #ffffff;
+    color: #000;
 }
 
 .urntwrk li {
@@ -315,11 +324,11 @@ h1 {
 }
 
 .urntwrk p, .urntwrk div, .urntwrk span, .totalLeft, .totalRight {
-    color: #ffffff;
+    color: #000;
 }
 
 .urntwrk h2 {
-    color: #FFF;
+    color: #000;
     float: none;
     clear: both;
     text-align: left;
@@ -391,7 +400,7 @@ h1 {
     }
 
 .edit {
-    border-right: 1px solid #fff;
+    border-right: 1px solid #999;
     padding-right: 3%;
 }
 
@@ -438,12 +447,21 @@ h1 {
 }
 
 #CancelOrder, #cancelCheckout {
-    background: #fff;
+    background: #ec5038;
+    border-top: 1px solid #ec5038;
+    border-right: 1px solid #ec5038;
+    border-left: 1px solid #ec5038;
+    border-bottom: 3px solid #bc230b;
 }
 
 
     #CancelOrder:hover, #cancelCheckout:hover {
-        background: #000;
+        background: #fff;
+        border-top: 1px solid #ec5038;
+        border-right: 1px solid #ec5038;
+        border-left: 1px solid #ec5038;
+        border-bottom: 3px solid #bc230b;
+        color:#ec5038 !important;
     }
 
 .btm {
@@ -467,7 +485,7 @@ h1 {
 
 
 .slimScrollBar {
-    background: #000 !important;
+    background: #ec5038 !important;
 }
 
 .slimScrollRail {
@@ -587,7 +605,7 @@ h1 {
 
 .pageholder h1 {
     text-transform: uppercase;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .signuptxt b {
@@ -758,7 +776,7 @@ h1 {
 #tmchoosepoe .slimScrollDiv {
     overflow: hidden;
     padding-bottom: 20% !important;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #23a1a7;
 }
 
 #purchasedPoe {
@@ -821,10 +839,6 @@ h1 {
     overflow: hidden;
     padding-bottom: 20% !important;
     border-bottom: 1px solid #ccc;
-}
-
-.addmngr {
-    padding: 2%;
 }
 
 

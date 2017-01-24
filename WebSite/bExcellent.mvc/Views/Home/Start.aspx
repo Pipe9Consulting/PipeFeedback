@@ -6,17 +6,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <script src="../../Scripts/start.js" type="text/javascript"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url(../../Images/images/bodyBg-new.jpg) repeat !important;
-            font-family: Segoe UI;
-        }
-    </style>
-
-
-
     <input type="hidden" id="subidStart" value="0" />
     <input type="hidden" id="poeId" value="0" />
     <input type="hidden" id="selectedpoe" />

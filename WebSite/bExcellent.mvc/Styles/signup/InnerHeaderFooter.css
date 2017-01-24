@@ -2,7 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../images/images/bodyBg-new1.jpg) repeat;
+    /*background: url(../../images/images/bodyBg-new1.jpg) repeat;*/
+    background: #fff;
     font-family: Segoe UI;
 }
 
@@ -11,14 +12,15 @@ body {
 }
 
 .headerMenu {
-    background: #000;
-    height: 100px;
+    background: #fff;
+    height: 80px;
     padding: 0 .8% 0 0 !important;
+    border-bottom: 1px solid #b9babb;
 }
 
 .breadMenu {
-    margin: 1% 1.5%;
-    background: #fff;
+    margin: 0 0 2% 0;
+    background: #f1f1f1;
 }
 
 .centerPart {
@@ -64,18 +66,19 @@ html, body {
 /*------------------ Footer ********************************/
 
 .footerPart {
-    background: #111111;
+    background: #fff;
     height: 45px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     z-index: 999999;
+    border-top: 1px solid #b9babb;
 }
 
 .ui.inverted.menu {
     display: table;
-    background: #111111;
+    background: #fff;
     margin: 0px;
     height: 100%;
 }
@@ -85,6 +88,14 @@ html, body {
     vertical-align: middle;
 }
 
+.ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui) {
+    color: #000;
+}
+
+.ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
+    background: rgba(255,255,255,.1);
+    color: #23a1a7;
+}
 
 
 #notifyCont li a {
@@ -203,12 +214,9 @@ html, body {
 
 
 
-    .cacLogo img {
-        width: 63%;
-    }
+
 
     .headerMenu {
-        height: 65px !important;
         padding: 0 .7% !important;
     }
 
@@ -276,14 +284,14 @@ html, body {
 
     #notifyCont li a {
         padding: 3px 0 3px 30px;
-        background-size: 25px 25px;
+        background-size: 25px 24px;
         background-position-y: 1px;
     }
 
 
     #notifyCont li:hover a {
         padding: 3px 0 3px 30px;
-        background-size: 25px 25px;
+        background-size: 25px 24px;
         background-position-y: 1px;
     }
 
@@ -441,13 +449,16 @@ html, body {
     .dropdown-content ul {
         padding: 0;
         margin: 0;
+        border-bottom: 1px solid #69c2c6;
+        border-left: 1px solid #69c2c6;
+        border-right: 1px solid #69c2c6;
     }
 
         .dropdown-content ul li {
             color: #fff;
             padding: 5% 7%;
             list-style: none;
-            background: #333;
+            background: #fff;
             width: 100%;
             text-align: left;
             cursor: pointer;
@@ -455,16 +466,20 @@ html, body {
 
 
             .dropdown-content ul li:last-child {
-                border-top: 1px solid #555;
+                border-top: 1px solid #69c2c6;
             }
 
             .dropdown-content ul li:hover {
-                background: #e0b001;
+                background: #fff;
             }
 
             .dropdown-content ul li a {
-                color: #fff;
+                color: #000;
                 font-size: 15px;
+            }
+
+              .dropdown-content ul li:hover a{
+                color: #23a1a7;
             }
 
 

@@ -28,15 +28,13 @@
     }
 
 .networkTile {
-    border: 1px solid #333;
     width: 95%;
     height: 0%;
     float: left;
-    padding: 3% 0% 0% 3%;
 }
 
 .customertiles h1 {
-    color: rgba(0, 0, 0, 0.8);
+    color: #000;
     text-transform: uppercase;
     padding: 0;
     font-size: 150%;
@@ -47,31 +45,35 @@
     width: 47%;
     height: 0;
     padding-bottom: 43%;
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
     margin: 0 3% 2.9% 0;
     position: relative;
     cursor: pointer;
+    border: 1px solid #c5c5c5;
 }
 
+.networkscroll li p {
+    color: #fff !important;
+}
 
-    #wrapper .customertiles li p {
-        position: absolute;
-        left: 5%;
-        bottom: 5%;
-        color: #fff;
-        text-transform: uppercase;
-    }
+#wrapper .customertiles li p {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    color: #666;
+    text-transform: uppercase;
+}
 
-    #wrapper .customertiles li img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        right: 0;
-    }
+#wrapper .customertiles li img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+}
 
 #wrapper #scroller .yammerTile {
     width: 99.9% !important;
-    padding-bottom: 44.5% !important;
+    padding-bottom: 44% !important;
 }
 
 #wrapper #scroller #yousmallimg, .comingsoon {
@@ -87,15 +89,16 @@
     }
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selected .numbertile {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .poelistli p {
@@ -112,7 +115,7 @@
     width: 100%;
     padding-top: 18%;
     text-align: left;
-    color: #fff;
+    color: #666;
     font-size: 450%;
     padding-left: 5%;
 }
@@ -132,10 +135,10 @@
 }
 
     #wrapper #scroller .last li {
-        background: none repeat scroll 0 0 #222;
+        background: none repeat scroll 0 0 #fff;
         background-size: 18% 100%;
         border: 1px solid #D5D5D5;
-        width: 96%;
+        width: 97%;
         padding: 0% 2% 22% 0%;
         margin-right: 0;
         height: 0;
@@ -158,7 +161,7 @@
 
     .ntwrktext p {
         position: relative !important;
-        color: #fff !important;
+        color: #000 !important;
         padding: 0;
         left: 0 !important;
     }
@@ -184,12 +187,13 @@
     }
 
 .addmember {
-    top: -0.5%;
+    top: 0%;
     width: 20% !important;
-    background: url("../../Images/select-arrow.gif") no-repeat scroll right center #575757;
+    background: url("../../Images/select-arrow.gif") no-repeat scroll right center #fff;
+    border: 1px solid #23a1a7;
     background-size: 15% 100%;
-    padding: 0.5% 1%;
-    color: #fff;
+    padding: 0.2% 1% 0.1% 1%;
+    color: #000;
     position: absolute;
     right: 0px;
     cursor: pointer;
@@ -220,6 +224,14 @@
     width: 98%;
 }
 
+
+.sendinv ul{
+    border: 1px solid #23a1a7;
+    width: 101%;
+    margin-left: -0.5%;
+}
+
+
 #wrapper #scroller .customertiles .sendinv {
     display: none;
     float: right;
@@ -231,19 +243,20 @@
 }
 
     #wrapper #scroller .customertiles .sendinv li {
-        background: none repeat scroll 0 0 #444 !important;
+        background: none repeat scroll 0 0 #f8f8f8 !important;
         width: 100%;
         border: 0 none !important;
-        color: #fff;
+        color: #000;
         float: none;
         margin: 0;
         padding: 3%;
         height: auto;
         cursor: pointer;
+        border: 1px solid #23a1a7;
     }
 
         #wrapper #scroller .customertiles .sendinv li:hover {
-            background: #e0b001 !important;
+            background: #23a1a7 !important;
             color: #fff;
         }
 
@@ -254,20 +267,21 @@
 
 .network, .memberplace {
     clear: both;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     float: left;
     padding: 2% 2% 1% 2%;
     width: 60%;
+    background: #fafafa;
 }
 
 .selectmngr {
-    background: url("../../images/selected.png") no-repeat scroll right top #000 !important;
-    border: 1px solid #E0B001 !important;
+    background: url("../../images/selected.png") no-repeat scroll right top #fff !important;
+    border: 1px solid #23a1a7 !important;
     background-size: 13% 50% !important;
 }
 
 .rect {
-    background: rgba(0,0,0,0.8) !important;
+    background: #fff !important;
     float: none !important;
     height: 0 !important;
     position: relative !important;
@@ -289,8 +303,8 @@
         }
 
 #wrapper .selecpoe {
-    background: none repeat scroll 0 0 #E0B001 !important;
-    border: 0 none !important;
+    background: none repeat scroll 0 0 #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
 .browseimg {
@@ -334,8 +348,8 @@
 
 #wrapper #scroller .customertiles .browserdetails input, .countryselect {
     background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
-    border: 1px solid #333;
-    padding: 0.2% .5% 1% .6%;
+    border: 1px solid #96cacc;
+    padding: 0.5% .5% .5% .6%;
     width: 100%;
     color: #000;
 }
@@ -360,18 +374,24 @@
 }
 
 .editbtn:hover {
-    background: none repeat scroll 0 0 #000 !important;
-    border: 1px solid #e0b001;
-    color: #e0b001 !important;
+    background: none repeat scroll 0 0 #fff !important;
+    border-right: 1px solid #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 3px solid #067075;
+    color: #067075 !important;
 }
 
 .editbtn {
-    background: none repeat scroll 0 0 #e0b001 !important;
-    border: 1px solid #000;
-    color: #000 !important;
+    background: none repeat scroll 0 0 #23a1a7 !important;
+    border-right: 1px solid #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 3px solid #067075;
+    color: #fff !important;
     float: right;
     font-size: 90%;
-    padding: 1%;
+    padding: 1% 1% .6% 1%;
     text-align: center;
     width: auto !important;
     clear: both;
@@ -385,10 +405,13 @@ h5 {
 }
 
 #wrapper #scroller .customertiles .browsebtn {
-    background: none repeat scroll 0 0 #E0B001;
-    border: 1px solid #E0B001;
+    background: none repeat scroll 0 0 #23a1a7;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 3px solid #067075;
     color: #FFFFFF;
-    padding: 2.5% 3%;
+    padding: 2.5% 3% 2.2% 3%;
     margin: 0 0 4% 0.5%;
     float: left;
     cursor: pointer;
@@ -479,7 +502,7 @@ h5 {
 
 .close {
     float: right;
-    background: url(../../images/close.png) no-repeat center #e0b001;
+    background: url(../../images/close.png) no-repeat center #fff;
     background-size: 50% 50%;
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -489,13 +512,13 @@ h5 {
     top: 0%;
     right: 1%;
     position: relative;
-    border: 1px solid #e0b001;
+    border: 1px solid #23a1a7;
 }
 
     .close:hover {
-        background: url(../../images/close-hover.png) no-repeat center #000;
+        background: url(../../images/close-hover.png) no-repeat center #fff;
         background-size: 50% 50%;
-        border: 1px solid #e0b001;
+        border: 1px solid #ec5038;
     }
 
 
@@ -504,12 +527,13 @@ h5 {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     width: 99% !important;
-    background-color: #000;
+    background-color: #f8f8f8;
 }
 
 .network {
     width: 100%;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
 }
 
     .network ul {
@@ -564,23 +588,29 @@ h5 {
 }
 
 #wrapper #networkpopup .assignbtn {
-    background: none repeat scroll 0 0 #e0b001;
-    border: 1px solid #000;
+    background: none repeat scroll 0 0 #23a1a7;
+    border-bottom: 3px solid #0a6367;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    border-top: 1px solid #23a1a7;
     bottom: 3%;
     right: 3.5%;
     clear: both;
-    color: #000;
+    color: #fff;
     cursor: pointer;
-    padding: 1% 0;
+    padding: 1% 0 .7% 0;
     position: absolute;
     text-align: center;
     width: 15%;
 }
 
     #wrapper #networkpopup .assignbtn:hover {
-        background: none repeat scroll 0 0 #000;
-        border: 1px solid #e0b001;
-        color: #e0b001;
+        background: none repeat scroll 0 0 #fff;
+        border-bottom: 3px solid #0a6367;
+        border-left: 1px solid #23a1a7;
+        border-right: 1px solid #23a1a7;
+        border-top: 1px solid #23a1a7;
+        color: #23a1a7;
     }
 
 #wrapper #scroller .vs-context-menu {
@@ -946,7 +976,7 @@ h5 {
 
 .popup .close {
     float: right;
-    background: url(../../images/close.png) no-repeat center #e0b001;
+    background: url(../../images/close.png) no-repeat center #fff;
     background-size: 50% 50%;
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -955,18 +985,18 @@ h5 {
     position: absolute;
     top: -8%;
     right: 0%;
-    border: 1px solid #e0b001;
+    border: 1px solid #23a1a7;
 }
 
 .close:hover {
-    background: url(../../images/close-hover.png) no-repeat center #000;
+    background: url(../../images/close-hover.png) no-repeat center #fff;
     background-size: 50% 50%;
-    border: 1px solid #e0b001;
+    border: 1px solid #ec5038;
 }
 
 #errpopup .close {
     float: right;
-    background: url(../../images/close.png) no-repeat center #e0b001;
+    background: url(../../images/close.png) no-repeat center #fff;
     background-size: 50% 50%;
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -974,7 +1004,7 @@ h5 {
     cursor: pointer;
     position: absolute;
     top: -9%;
-    border: 1px solid #e0b001;
+    border: 1px solid #23a1a7;
     right: 0%;
 }
 
@@ -1519,9 +1549,7 @@ h5 {
 
 /*Newly Added*/
 .networkscroll {
-    border: 1px solid #333;
     width: 100%;
-    padding: 3% 0% 2% 3%;
     height: auto;
 }
 
@@ -1653,7 +1681,7 @@ h5 {
 
     .poelistli a p {
         line-height: 1.1;
-        padding-bottom: 7px;
+        padding-bottom: 2px;
     }
 }
 
@@ -1817,7 +1845,7 @@ h5 {
 
 
     .login {
-        padding: 2% 2% 1.6% 0;
+        padding: 6% 2% 1.6% 0;
     }
 
     .browserdetails ul li .left, .browserdetails ul li input {
