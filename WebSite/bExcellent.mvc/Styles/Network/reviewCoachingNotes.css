@@ -1,4 +1,4 @@
-..pageholder {
+.pageholder {
     padding-top: 0% !important;
 }
 
@@ -9,10 +9,11 @@
 }
 
 .networkTile {
-    border: 1px solid #333;
+    /*border: 1px solid #333;
+    padding: 3% 0% 0.5% 3%;*/
     width: 100%;
     float: left;
-    padding: 3% 0% 0.5% 3%;
+    
 }
 
 .customertiles h1 {
@@ -25,7 +26,8 @@
 #wrapper .customertiles li {
     float: left;
     height: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
+    border:1px solid #666;
     margin: 0 2.9% 2.9% 0;
     position: relative;
     cursor: pointer;
@@ -52,8 +54,9 @@
     position: absolute;
     left: 5%;
     bottom: 5%;
-    color: #fff;
+    color: #333;
     text-transform: uppercase;
+    font-size:14px;
 }
 
 #wrapper .customertiles li img {
@@ -75,15 +78,16 @@
 }
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border:1px solid #23a1a7;
 }
 
     .selected .numbertile {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .poelistli p {
@@ -180,7 +184,6 @@
     float: left;
     position: relative;
     padding: 2% 2% 15% 2%;
-    background: rgba(0,0,0,0.9);
 }
 
 #feedcontainer {
@@ -210,6 +213,10 @@
     padding-bottom: 2%;
 }
 
+.fbexperienceQn li:last-child {
+    border-bottom:none !important;
+}
+
 .fbexperienceQn li {
     list-style: none;
     padding: 2% 0 2% 0;
@@ -219,52 +226,53 @@
 }
 
     .fbexperienceQn li span {
-        background: #e0b001;
-        color: #000;
+        background: #23a1a7 ;
+        color: #fff ;
         line-height: 1;
-        font-size: 100%;
+        font-size: 130%;
         float: left;
         width: 3%;
         margin-right: 1%;
-        padding: 1%;
+        padding: .6% 1%.5% 1.1%;
+        font-weight:600;
     }
 
     .fbexperienceQn li p {
-        color: #fff;
-        font-size: 100%;
+        color: #000;
+        font-size: 130%;
         line-height: 1.5;
         float: left;
-        padding-top: 0.4%;
+        /*padding-top: 0.4%;*/
     }
 
 
 .scheduleBtn a {
-    background: #e0b001;
-    font-size: 100%;
+    background: #fff;
+    font-size: 150%;
     white-space: nowrap;
     text-decoration: none;
-    border: 1px solid #000;
+    border: 1px solid #23a1a7 ;
     padding: .5% 1%;
     float: right;
     margin-top: 2%;
-    color: #000;
-    font-weight: 500;
+    color: #23a1a7;
+    font-weight: 600;
 }
 
 
     .scheduleBtn a:hover {
-        background: #000;
-        color: #e0b001;
-        border: 1px solid #e0b001;
+        background: #fff;
+        color: #ec5038;
+        border: 1px solid #ec5038 ;
     }
 
 
 .reviewCoaching {
     width: 100%;
-    border: 1px solid #333;
+    border: 1px solid #666;
     height: 0;
     float: left;
-    padding: 1%;
+    padding:0 1%;
     height: 0%;
 }
 
@@ -279,9 +287,9 @@
 
 .reportanIssue input {
     background: none;
-    border: 1px solid #fff;
-    font-size: 100%;
-    color: #fff;
+    border: 1px solid #666;
+    font-size: 130%;
+    color: #000;
     padding: .9% 1% 0.9% 1%;
     width: 100%;
     margin-bottom: 2%;
@@ -294,9 +302,9 @@
 
 .reportanIssue textarea {
     background: none;
-    border: 1px solid #fff;
-    font-size: 100%;
-    color: #fff;
+    border: 1px solid #666;
+    font-size: 130%;
+    color: #000;
     padding: 1%;
     width: 100%;
     margin-bottom: 2%;
@@ -1432,15 +1440,15 @@ input[type="file"] {
 .ui-slider-handle {
     width: 3% !important;
     outline: medium none;
-    background: url("../../Images/slider-handle.png") no-repeat scroll 0% 0% transparent;
+    background: url("../../Images/slider-handle.png") no-repeat scroll 70% 50% transparent !important;
     background-size: 70% 92%;
     height: 0;
-    padding-bottom: 10%;
+    padding-bottom: 5.7%;
     position: absolute;
     z-index: 2;
     cursor: default;
-    margin-left: -0.4em;
-    margin-top: -0.6%;
+    margin-left: -0.8em;
+    margin-top: 0%;
 }
 
 .fbexperienceQn li:first-child {
@@ -1451,7 +1459,7 @@ input[type="file"] {
     background: url("../../Images/img/feedbackEX_sliderHover.png") no-repeat scroll 0% 0% transparent !important;
     background-size: auto 82% !important;
     height: 0 !important;
-    padding-bottom: 10%;
+    padding-bottom: 7%;
     position: absolute;
     z-index: 2;
 }
@@ -1501,7 +1509,7 @@ input[type="file"] {
     }
 
     #customertiles h1 {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -1668,7 +1676,7 @@ input[type="file"] {
     }
 
     .ui-slider-handle {
-        padding-bottom: 8.5% !important;
+        padding-bottom:5.1% !important;
     }
 
     .completeFBRight {
@@ -1676,14 +1684,14 @@ input[type="file"] {
     }
 
     .sliderdiv {
-        padding-top: 0.5%;
-        width: 50% !important;
-        padding-bottom: 3.5% !important;
+        padding-top: 0.4%;
+        width: 90% !important;
+        padding-bottom: 4.6% !important;
     }
 
     .scheduleBtn a {
-        padding: 4px 10px 4px 10px !important;
-        margin-top: 3%;
+        padding: 2px 10px !important;
+        margin-top: 5%;
     }
 
     .fbexperienceQn li {

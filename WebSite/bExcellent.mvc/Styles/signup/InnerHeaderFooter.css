@@ -209,12 +209,9 @@ html, body {
 
     .dropdown-content {
         width: 220px !important;
+        padding: 10px 0 0 0 !important;
+        background-color: #fff !important;
     }
-
-
-
-
-
 
     .headerMenu {
         padding: 0 .7% !important;
@@ -373,18 +370,23 @@ html, body {
 
 @media screen and (min-width: 2500px) and (max-width: 3060px) {
     .dropdowns a {
-        font-size: 15px !important;
+        font-size: 20px !important;
+    }
+
+    .ui.menu .item {
+        font-size: 1.2rem;
     }
 
     #notifyCont li a {
         padding: 4px 0 5px 35px;
-        background-size: 30px 30px;
+        background-size: 27px 27px;
+        font-size:17px;
         background-position-y: 1px;
     }
 
     #notifyCont li:hover a {
         padding: 4px 0 5px 35px;
-        background-size: 30px 30px;
+        background-size: 27px 27px;
         background-position-y: 1px;
     }
 
@@ -416,6 +418,10 @@ html, body {
         bottom: 20px;
         right: -15px;
         height: 25% !important;
+    }
+
+    .dropdown-content {
+        top: 100% !important;
     }
 }
 
@@ -478,7 +484,7 @@ html, body {
                 font-size: 15px;
             }
 
-              .dropdown-content ul li:hover a{
+            .dropdown-content ul li:hover a {
                 color: #23a1a7;
             }
 

@@ -29,7 +29,7 @@ body {
     float: right;
     margin-right: 16%;
     margin-top: -4%;
-    padding:.4% 1.5% .2% 1.5%;
+    padding: .4% 1.5% .2% 1.5%;
     color: #fff;
     font-weight: 600;
 }
@@ -117,14 +117,14 @@ body {
     background: url(../../images/feedback/takefbIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
-    background-size: 45% 45%;
+    background-size: 60% 55%;
     border: 1px solid #666;
 }
 
     .takefbIcon:hover {
         background: url(../../images/feedback/takefbIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
-        background-size: 45% 45%;
+        background-size: 60% 55%;
         border: 1px solid #23a1a7;
     }
 
@@ -132,14 +132,14 @@ body {
     background: url(../../images/feedback/givefbIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
-    background-size: 45% 45%;
+    background-size: 60% 55%;
     border: 1px solid #666;
 }
 
     .givefbIcon:hover {
         background: url(../../images/feedback/givefbIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
-        background-size: 45% 45%;
+        background-size: 60% 55%;
         border: 1px solid #23a1a7;
     }
 
@@ -147,14 +147,14 @@ body {
     background: url(../../images/feedback/requestfbIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
-    background-size: 45% 45%;
+    background-size: 60% 55%;
     border: 1px solid #23a1a7;
 }
 
     .requestfbIcon:hover {
         background: url(../../images/feedback/requestfbIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
-        background-size: 45% 45%;
+        background-size: 60% 55%;
         border: 1px solid #23a1a7;
     }
 
@@ -191,11 +191,11 @@ body {
 }
 
 .historySmall .historyfbIcon {
-    background-size: 40% 40%;
+    background-size: 50% 45%;
 }
 
     .historySmall .historyfbIcon:hover {
-        background-size: 40% 40%;
+        background-size: 50% 45%;
     }
 
 
@@ -229,7 +229,7 @@ body {
 .selectTake {
     background: url(../../images/feedback/takefbIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
-    background-size: 45% 45%;
+    background-size: 60% 55%;
     border: 1px solid #23a1a7;
 }
 
@@ -240,7 +240,7 @@ body {
 .selectGive {
     background: url(../../images/feedback/givefbIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
-    background-size: 45% 45%;
+    background-size: 60% 55%;
     border: 1px solid #23a1a7;
 }
 
@@ -251,7 +251,7 @@ body {
 .selectRequest {
     background: url(../../images/feedback/requestfbIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
-    background-size: 45% 45%;
+    background-size: 60% 55%;
     border: 1px solid #23a1a7;
 }
 
@@ -336,7 +336,8 @@ body {
 
 
 .profileCenter ul li:hover p {
-    color: #e0b001;
+    color: #fff;
+    background: #23a1a7;
 }
 
 .takefbRightPart {
@@ -394,6 +395,7 @@ body {
     float: left;
     margin-right: 1.5%;
     height: 65%;
+    border: 1px solid #666;
 }
 
 .fblsecondBox {
@@ -422,12 +424,16 @@ body {
 .boxone {
     background: #fff;
     margin-top: 106%;
-    height: 50%;
-    border-left: 1px solid #666;
+    height: auto;
+    /*border-left: 1px solid #666;
     border-right: 1px solid #666;
-    border-bottom: 1px solid #666;
-    border-top: 1px solid #23a1a7;
+    border-bottom: 1px solid #666;*/
+    /*border-top: 1px solid #23a1a7;*/
+    float: left;
+    width: 100%;
+    padding-bottom: 15px;
 }
+
 
     .boxone h2 {
         background: #f8f8f8;
@@ -450,9 +456,9 @@ body {
 
 
 .givefbcontent {
-    border: 1px solid #333;
+    /*border: 1px solid #333;*/
     float: left;
-    padding: 1.4% 1.4% 1.4% 1.5%;
+    /*padding: 1.4% 1.4% 1.4% 1.5%;*/
     width: 38%;
 }
 
@@ -505,6 +511,7 @@ body {
 .givefbInnermenu {
     width: 11%;
     float: left;
+    margin-right: 1%;
 }
 
     .givefbInnermenu ul {
@@ -526,12 +533,12 @@ body {
                 bottom: 0;
                 position: absolute;
                 padding: 5%;
-                color: #fff;
+                color: #666;
                 text-transform: uppercase;
             }
 
             .givefbInnermenu ul li:hover a {
-                color: #e0b001;
+                color: #23a1a7;
             }
 
 
@@ -616,6 +623,7 @@ body {
     float: left;
     margin-right: 2%;
     height: 50%;
+    border: 1px solid #666;
 }
 
 .quickFb {
@@ -662,60 +670,66 @@ body {
 }
 
 .selectTeam {
-    background: url(../../images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% #fff!important;
     background-size: 50% 50% !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectTeam a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectOtherTeam {
-    background: url(../../images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectOtherTeam a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 
 .selectPeers {
-    background: url(../../images/feedback/peersgfbIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../images/feedback/peersgfbIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectPeers a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .selectskip {
-    background: url(../../images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectskip a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectmanager {
-    background: url(../../images/feedback/rfbManagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../images/feedback/rfbManagerIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectmanager a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectcustomer {
-    background: /*url(../../images/feedback/customersIconHover.png)no-repeat top 15% right 12%*/ rgba(0, 0, 0, 1 ) !important;
+    background: /*url(../../images/feedback/customersIconHover.png)no-repeat top 15% right 12%*/ #fff !important;
     background-size: 50% 50% !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectcustomer a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
@@ -762,32 +776,35 @@ body {
     }
 
 .customerRFb {
-    background: /*url(../../images/feedback/customersIcon.png)no-repeat top 15% right 12%*/ rgba(0, 0, 0, .8 );
+    background: /*url(../../images/feedback/customersIcon.png)no-repeat top 15% right 12%*/ #fff;
     background-size: 50% 50%;
+    border: 1px solid #666;
 }
 
     .customerRFb:hover {
-        background: /*url(../../images/feedback/customersIconHover.png)no-repeat top 15% right 12%*/ rgba(0, 0, 0, 1 );
+        background: /*url(../../images/feedback/customersIconHover.png)no-repeat top 15% right 12%*/ #fff;
         background-size: 50% 50%;
     }
 
 .incompleteFB {
-    background: rgba(0, 0, 0, .8 );
+    background: #fff;
+    border: 1px solid #666;
     background-size: 50% 50%;
 }
 
     .incompleteFB:hover {
-        background: rgba(0, 0, 0, 1 );
+        background: #fff;
+        border: 1px solid #23a1a7;
         background-size: 50% 50%;
     }
 
 
         .incompleteFB:hover span {
-            color: #e0b001;
+            color: #23a1a7;
         }
 
     .incompleteFB span {
-        color: #fff;
+        color: #666;
         font-size: 400%;
         position: absolute;
         bottom: 35%;
@@ -796,12 +813,12 @@ body {
 
 
 .selectincompleteItem {
-    background: rgba(0, 0, 0, 1 ) !important;
+    background: #fff !important;
     background-size: 50% 50% !important;
 }
 
     .selectincompleteItem a, .selectincompleteItem span {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
@@ -825,7 +842,7 @@ body {
 .givefbContent {
     border: 1px solid #777;
     width: 84%;
-    margin-left: 1.5%;
+    /*margin-left: 1.5%;*/
     float: left;
     padding: 1% 0 1% 2%;
     overflow: hidden;
@@ -926,7 +943,7 @@ body {
     position: relative;
     height: 0%;
     width: 48%;
-    background: rgba(0, 0, 0, 0.8);
+    background: #f5f5f5;
     padding: 1% 1% 17% 1%;
     margin-right: 2%;
     margin-bottom: 2%;
@@ -938,12 +955,12 @@ body {
     position: relative;
     height: 0%;
     width: 48%;
-    background: #fff;
+    background: #f5f5f5;
     padding: 1% 1% 17% 1%;
     margin-right: 2%;
     margin-bottom: 2%;
     float: left;
-    border: 1px solid #999;
+    border: 1px solid #f5f5f5;
 }
 
 
@@ -989,11 +1006,11 @@ body {
 
 .givefbmessage .incompleteBtn a {
     line-height: 1.5;
-    border: 1px solid #000;
-    background: #e0b001;
+    border: 1px solid #23a1a7;
+    background: #fff;
     padding: 1% 2%;
     font-size: 80%;
-    color: #000;
+    color: #23a1a7;
     text-decoration: none;
     white-space: nowrap;
     float: right !important;
@@ -1007,7 +1024,7 @@ body {
 
     .givefbBtn a {
         background: #23a1a7;
-        padding: 1% 15% 4% 19%;
+        padding: 3% 15% 3% 19%;
         text-decoration: none;
         color: #fff;
         border-top: 1px solid #23a1a7;
@@ -1027,7 +1044,6 @@ body {
             border-left: 1px solid #23a1a7;
             border-right: 1px solid #23a1a7;
             border-bottom: 3px solid #077479;
-            padding: 4% 15% 7% 19%;
             text-decoration: none;
         }
 
@@ -1117,9 +1133,9 @@ body {
 }
 
     .givefbmessage a:hover {
-        border: 1px solid #e0b001;
-        background: #000;
-        color: #fff;
+        border: 1px solid #ec5038;
+        background: #fff;
+        color: #ec5038;
     }
 
 .givefbmessage h3 {
@@ -1220,8 +1236,8 @@ body {
 }
 
 .msgmidselectArrow {
-    background: url(../../images/feedback/selecttick.png) no-repeat top right #000 !important;
-    border: 1px solid #e0b001;
+    background: url(../../images/feedback/selecttick.png) no-repeat top right #fff !important;
+    border: 1px solid #23a1a7;
     background-size: 10% 30% !important;
 }
 
@@ -1264,10 +1280,6 @@ body {
 /*------------------------------------- Pagination--------------------------------------*/
 
 
-
-#giveFb h2 {
-    margin-left: 1.5%;
-}
 
 
 /*--------------------------------------------------------------*/
@@ -1557,13 +1569,15 @@ body {
         }
 
     .generalFb {
-        background-size: 100% 95%;
-        padding-bottom: 5%;
+        background-size: 100% 120%;
     }
 
     #selectallTeam {
-        margin-top: -2.5%;
+        margin-top: -3%;
+        font-size: 18px;
+        margin-right: 16%;
     }
+
 
     .feedbackStar h4 {
         right: 10px;
@@ -1601,11 +1615,11 @@ body {
 
     #takeFb .boxone {
         height: 280px;
-        margin-top: 70%;
+        margin-top: 80%;
     }
 
     #giveFb .boxone {
-        height: 350px;
+        height: 370px;
         margin-top: 65%;
     }
 
@@ -1628,12 +1642,12 @@ body {
     }
 
     .vertical-align--bottom a {
-        font-size: 130%;
+        font-size: 20px;
     }
 
-
     .givefbmessagedetails p, .clearIncomplete p {
-        font-size: 120%;
+        font-size: 140%;
+        line-height: 1.4;
     }
 
     .givefbmessage h3 {
@@ -1649,11 +1663,11 @@ body {
     }
 
     .boxone h3 {
-        font-size: 130%;
+        font-size: 22px;
     }
 
     .boxone p {
-        font-size: 120%;
+        font-size: 18px;
         padding: 4% 6% 1.5% 6%;
     }
 
@@ -1662,7 +1676,7 @@ body {
     }
 
     .takefbcontent p {
-        font-size: 120% !important;
+        font-size: 18px !important;
         margin-bottom: 5%;
     }
 
@@ -1673,7 +1687,7 @@ body {
 
     .boxone a {
         width: 80px;
-        font-size: 110%;
+        font-size: 17px;
     }
 
     .incompletefb p {
@@ -1685,9 +1699,13 @@ body {
     }
 
     .givefbBtn {
-        width: 8%;
+        width: 9%;
         margin-bottom: 2%;
     }
+
+        .givefbBtn a {
+            font-size: 20px;
+        }
 
     .recfbT .givefbslide {
         width: 50% !important;
@@ -3319,7 +3337,7 @@ body {
 
 
     .grpFbbaseTile {
-        font-size: 72% !important;
+        font-size: 85% !important;
     }
 
 
@@ -3333,7 +3351,7 @@ body {
 
 
     .generalFb {
-        background-size: 100% 90%;
+        background-size: 100% 100%;
     }
 
     .sendRequest {
@@ -3342,7 +3360,7 @@ body {
 
 
     .fbboxbtn2 p {
-        height: 43px;
+        height: 40px;
     }
 
     .fbboxbtn3 p {
@@ -3357,13 +3375,13 @@ body {
 
 
     #takeFb .boxone {
-        height: 195px;
-        margin-top: 60%;
+        height: 250px;
+        margin-top: 75%;
     }
 
 
     #takeFb .fbboxbtn p {
-        height: 117px;
+        height: 165px;
     }
 
 
@@ -3523,7 +3541,7 @@ body {
     }
 
     .histroyfb .givefbmessageDummy {
-        padding-bottom: 19.5%;
+        padding-bottom: 20.2%;
     }
 
     .givefbmessageDummy {
@@ -3590,7 +3608,7 @@ body {
     .clearIncomplete a {
         font-size: 14px;
         width: 35%;
-        padding: 0.2% 2% .7% 2%;
+        padding: 0.4% 2% .3% 2%;
     }
 
     .boxone {
@@ -3599,11 +3617,11 @@ body {
     }
 
     #giveFb .boxone {
-        height: 230px;
+        height: 272px;
     }
 
     .givefbmessage a {
-        font-size: 61% !important;
+        font-size: 80% !important;
     }
 
 
@@ -3612,10 +3630,9 @@ body {
         margin-top: 100%;
     }
 
-
     .takefbcontent .boxone {
-        height: 230px;
-        margin-top: 60%;
+        height: 250px;
+        margin-top: 80%;
     }
 
     .clearIncomplete {
@@ -3624,7 +3641,7 @@ body {
 
 
     .boxone h2 {
-        font-size: 100% !important;
+        font-size: 140% !important;
         background-size: 20% 90% !important;
     }
 
@@ -3642,13 +3659,13 @@ body {
 
 
     .givefbmessagedetails p, .clearIncomplete p {
-        font-size: 75%;
+        font-size: 85%;
         line-height: 1;
     }
 
 
     .givefbmessage h3 {
-        font-size: 78%;
+        font-size: 90%;
     }
 
     .givefbmessage img {
@@ -3665,7 +3682,7 @@ body {
 
         .givefbmessage .incompleteBtn a {
             font-size: 65%;
-            padding: .5% 2% 1% 2%;
+            padding: .7% 2% 1% 2%;
         }
 
     .givefbmessageDummy2 {
@@ -3682,17 +3699,17 @@ body {
     }
 
     .boxone h3 {
-        font-size: 110%;
-        padding: 1% 6% 0% 6%;
+        font-size: 130%;
+        padding: 3% 6% 0% 6%;
     }
 
     .boxone p {
-        font-size: 75%;
+        font-size: 100%;
         padding: 2% 6% 4% 6%;
     }
 
     .takefbcontent p {
-        font-size: 83% !important;
+        font-size: 100% !important;
     }
 
     .fblfristBox {
@@ -3703,7 +3720,7 @@ body {
 
     .boxone a {
         font-size: 85%;
-        padding: 3px 8px 5px 8px;
+        padding: 4px 8px 2px 8px;
         width: 60px;
         margin-right: 2%;
     }
@@ -3873,8 +3890,8 @@ body {
 
 
     #newpopup a {
-        background: #5e5e5e;
-        border: 1px solid #373737;
+        background: #fff;
+        border: 1px solid #ec5038;
         color: #fff;
         width: 90%;
         text-decoration: none;
@@ -3885,8 +3902,8 @@ body {
     }
 
         #newpopup a:hover {
-            background: #e0b001;
-            border: 1px solid #e0b001;
+            background: #fff;
+            border: 1px solid #ec5038;
         }
 
     #newpopup .close {
@@ -3897,7 +3914,7 @@ body {
 
 .close {
     float: right;
-    background: url(../../images/close.png) no-repeat center #e0b001;
+    background: url(../../images/close.png) no-repeat center #fff;
     background-size: 50% 50%;
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -3905,17 +3922,18 @@ body {
     cursor: pointer;
     position: absolute;
     top: -20%;
+    border: 1px solid #23a1a7;
     right: 0%;
 }
 
     .close:hover {
-        background: url(../../images/close-hover.png) no-repeat center #000;
+        background: url(../../images/close-hover.png) no-repeat center #fff;
         background-size: 50% 50%;
-        border: 1px solid #e0b001;
+        border: 1px solid #ec5038;
     }
 
 .popup {
-    background: #000;
+    background: #fff;
     background-size: 100% 100%;
     margin: 0 auto;
     padding: 2% 0;
@@ -3924,7 +3942,7 @@ body {
     display: none;
     color: rgb(128, 128, 128);
     text-align: center;
-    border: 1px solid #e0b001;
+    border: 1px solid #ec5038;
     left: 42.5%;
     top: 40%;
     width: 15%;
@@ -3943,11 +3961,12 @@ body {
 
 .clearYesbtn {
     text-decoration: none;
-    background: #e0b001;
-    color: #000;
+    background: #fff;
+    color: #23a1a7;
     padding: 2px 10px 5px 10px;
     margin-left: 10px;
     cursor: pointer;
+    border: 1px solid #23a1a7;
 }
 
     .clearYesbtn a {
@@ -3955,9 +3974,9 @@ body {
     }
 
     .clearYesbtn:hover {
-        background: #000;
-        color: #e0b001;
-        border: 1px solid #e0b001;
+        background: #fff;
+        color: #ec5038;
+        border: 1px solid #ec5038;
     }
 
 .clearSingleYesbtn {
@@ -3974,14 +3993,14 @@ body {
     }
 
     .clearSingleYesbtn:hover {
-        background: #000;
-        color: #e0b001;
-        border: 1px solid #e0b001;
+        background: #fff;
+        color: #23a1a7;
+        border: 1px solid #23a1a7;
     }
 
 .cleartextMsg {
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
     font-size: 100%;
 }
 
@@ -4209,7 +4228,7 @@ body {
 
 
 .selected p {
-    color: #e0b001 !important;
+    color: #009fda !important;
 }
 
 .rcnbackground .scroll2 {
@@ -4325,7 +4344,7 @@ body {
     }
 
     .slimScrollDiv, .scroll2 {
-        height: 474px !important;
+        height: 475px !important;
     }
 
     .rcnQestion .qn {

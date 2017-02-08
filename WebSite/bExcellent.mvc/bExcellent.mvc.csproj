@@ -3125,6 +3125,8 @@
     <Content Include="Images\slider-handle-1366.png" />
     <Content Include="Images\slider-handle-1600.png" />
     <Content Include="Images\slider-handle.png" />
+    <Content Include="Images\slider-handle2.png" />
+    <Content Include="Images\slider-handle3.png" />
     <Content Include="Images\small-img.png" />
     <Content Include="Images\small-img1.png" />
     <Content Include="Images\small-profile-pic.png" />

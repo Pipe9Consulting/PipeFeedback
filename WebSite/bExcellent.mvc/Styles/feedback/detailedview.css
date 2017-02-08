@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new1.jpg) repeat !important;
+    /*background: url(../../../Images/images/bodyBg-new1.jpg) repeat !important;*/
     font-family: Segoe UI;
     background-size: 100% 100% !important;
 }
@@ -53,7 +53,7 @@ body {
 
 .overallProductSurvey .surveyAreas p {
     padding-bottom: 15px;
-    font-size: 120%;
+    font-size: 130%;
     color: #000;
 }
 
@@ -227,7 +227,7 @@ body {
 
 
 .rateOverall .ui-slider-handle {
-    background: url("../../Images/slider-handle.png") no-repeat scroll 0% 0% transparent;
+    background: url("../../Images/slider-handle.png") no-repeat scroll 50% 50% transparent;
 }
 
 .slidecontent1 li p {
@@ -320,7 +320,8 @@ body {
 }
 
 #poemodule li {
-    background: rgba(0,0,0,0.8);
+    background: #fff;
+    border: 1px solid #666;
     width: 47% !important;
     height: 0;
     padding-bottom: 48%;
@@ -333,15 +334,17 @@ body {
 }
 
 .selected {
-    background: rgba(0,0,0,1) !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
 #poemodule li:hover {
-    background: rgba(0,0,0,1);
+    background: #fff !important;
+    border: 1px solid #23a1a7;
 }
 
     #poemodule li:hover p, .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
@@ -359,16 +362,16 @@ body {
 
 #poemodule p {
     text-transform: uppercase;
-    color: #fff;
+    color: #333;
     position: absolute;
     bottom: 5%;
     left: 7%;
-    font-size: 100%;
+    font-size: 130%;
     font-weight: lighter;
     width: 80%;
     font-weight: 400;
+    line-height: 1.2;
 }
-
 
 /*#poemodule li:hover p {
     color: #e0b001;
@@ -510,7 +513,7 @@ body {
     }
 
         .questions li h2 {
-            font-size: 100%;
+            font-size: 130%;
             margin: 0.1% 0 0 0;
             color: #333;
             font-weight: 500;
@@ -635,14 +638,15 @@ body {
     outline: medium none;
     background: url("../../Images/slider-handle.png") no-repeat scroll 0% 0% transparent;
     background-size: 100% 100%;
-    height: 0;
-    padding-bottom: 9.3%;
+    height: 0px;
+    padding-bottom: 5.7% !important;
     position: absolute;
     z-index: 2;
     cursor: default;
-    margin-left: -0.4em;
-    margin-top: -0.6%;
+    margin-left: -0.6em !important;
+    margin-top: 0% !important;
 }
+
 
 #quickviewli .ui-slider-range, .ui-slider-range {
     background: url("../../Images/feedback-slider-1920.png") no-repeat scroll 0% 0% transparent !important;
@@ -653,7 +657,13 @@ body {
     z-index: 2;
 }
 
+.capabilityQuestion .ui-slider-handle {
+    background: url("../../Images/slider-handle3.png") no-repeat scroll 50% 50% transparent;
+}
 
+.freqOverall .ui-slider-handle {
+    background: url("../../Images/slider-handle2.png") no-repeat scroll 50% 50% transparent;
+}
 
 #primarynav .quicknav {
     width: 12%;
@@ -836,7 +846,7 @@ body {
 }
 
 .qn {
-    background: none repeat scroll 0% 0% rgb(224, 176, 1);
+    background: #23a1a7;
     color: rgb(255, 255, 255);
     text-align: center;
     float: left;
@@ -844,7 +854,7 @@ body {
     margin-bottom: 3%;
     margin-right: 1%;
     width: 3.5%;
-    padding: 0.1% 0px 0.5% 0;
+    padding: 0.1% 0px 0.2%;
     font-size: 170%;
 }
 
@@ -996,7 +1006,7 @@ body {
 .slimScrollDiv, .scroll1 {
     width: 105% !important;
     height: 10% !important;
-    padding-bottom: 161% !important;
+    padding-bottom: 144% !important;
     position: relative;
 }
 
@@ -1010,7 +1020,7 @@ body {
 .slimScrollDiv, .scroll3 {
     width: 105% !important;
     height: 0 !important;
-    padding-bottom: 170% !important;
+    padding-bottom: 153% !important;
     position: relative;
 }
 
@@ -2300,8 +2310,8 @@ body {
     position: absolute;
     width: 90%;
     margin: 0;
-    padding: 3% 1% 1% 3.5%;
-    border: 1px solid #333;
+    /*padding: 3% 1% 1% 3.5%;
+    border: 1px solid #333;*/
 }
 
 
@@ -2412,9 +2422,38 @@ body {
     #primarynav ul {
         bottom: 1px;
     }
+
+    .capabilityQuestion {
+        margin: 0% 0;
+    }
+
+    .sliderimg {
+        width: 100% !important;
+        float: none;
+        margin: 0% 0 0;
+        clear: both;
+    }
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1439px) {
+
+    .rateOverall .ui-slider-handle {
+        background: url("../../Images/slider-handle.png") no-repeat scroll 25% 50% transparent;
+        margin-left: -0.7em !important;
+    }
+
+    .capabilityQuestion .ui-slider-handle {
+        margin-left: -0.7em !important;
+    }
+
+    .capabilityQuestion {
+        margin: .5% 0 0% 0;
+    }
+
+
+    .freqOverall .ui-slider-handle {
+        margin-left: -0.7em !important;
+    }
 
     .frequencydiv {
         margin-bottom: -1%;
@@ -2443,10 +2482,6 @@ body {
         font-size: 10px !important;
     }
 
-    .breadMenu {
-        margin: 2% 2% .5% 2% !important;
-    }
-
     .feedbackIntro .slimScrollDiv, .feedbackIntro .profilesscroll {
         padding-bottom: 145% !important;
     }
@@ -2465,7 +2500,7 @@ body {
     }
 
     .questionPart {
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
 
     .questions {
@@ -2530,9 +2565,14 @@ body {
         margin-bottom: 2.5%;
     }
 
+    .rateQuestions {
+        font-size: 14px !important;
+    }
+
     .questionarea p, .frequency h4, .frequency p, .SI3 {
-        font-size: 12px;
-        line-height: 1.1;
+        font-size: 16px;
+        padding: 0% 1% 0% 0%;
+        line-height: 1;
     }
 
     .importanceDefArea .frq_img img {
@@ -2555,6 +2595,10 @@ body {
     .importanceDefArea .frq_cnt {
         left: -20px;
         position: relative;
+    }
+
+    .SI3 span {
+        font-size: 13px;
     }
 }
 
@@ -3230,9 +3274,49 @@ body {
 
 
 @media screen and (min-width: 2170px) and (max-width: 2600px) {
+
+    .OverallLastSurvey h3 {
+        font-size: 130% !important;
+    }
+
+    .feedbackcomplete p {
+        font-size: 120% !important;
+    }
+
+    #survQuestion1, #survQuestion2, #survQuestion3, #survQuestion4 {
+        font-size:17px !important;
+    }
+
+    .prevfb, .nxtfb {
+        padding-bottom: 4%;
+        width: 3%;
+    }
+
+    .scale_cnt h3 {
+        font-size: 115%;
+    }
+
+    .questionarea p {
+        font-size: 22px;
+    }
+
+    .scale_cnt p {
+        font-size: 120%;
+    }
+
+    .scale_dfn {
+        padding-top: 1.5%;
+    }
+
+
     .feedbackIntro .slimScrollDiv, .feedbackIntro .profilesscroll {
         padding-bottom: 200% !important;
     }
+
+    .questions li h2 {
+        margin: 0.1% 0 1% 0;
+    }
+
 
     .overallProductSurvey {
         height: 740px !important;
@@ -3240,7 +3324,7 @@ body {
 
 
     .scaleDefPart {
-        margin-left: 10.3% !important;
+        margin-left: 8.8% !important;
     }
 
 
@@ -3270,8 +3354,17 @@ body {
     }
 
     #poemodule p {
-        font-size: 125%;
+        font-size: 20px;
     }
+
+    .SI3 span {
+        font-size: 19px;
+    }
+
+    .SI3 {
+        font-size: 20px;
+    }
+
 
     .sliderimg {
         width: 100% !important;
@@ -4133,7 +4226,7 @@ table {
 
 
 .managerFeedbackArea {
-    border: 1px solid #333;
+    border: 1px solid #666;
     width: 97%;
     overflow: hidden;
     position: relative;
@@ -4143,7 +4236,7 @@ table {
     background: url("../../Images/img/rate-slidebgHover.png") no-repeat scroll 0% 0% transparent;
     background-size: auto 100% !important;
     height: 0 !important;
-    padding-bottom: 8.1%;
+    padding-bottom: 5.7%;
     position: absolute;
     z-index: 2;
 }
@@ -4169,19 +4262,22 @@ table {
     }
 
     .feedbackcomplete p {
-        font-size: 100%;
+        font-size: 115%;
         margin: .5% 0 0 0;
         color: #000;
-        line-height: 1.5;
+        line-height: 1.3;
     }
 
     .feedbackcomplete a {
-        background: #e0b001;
+        background: #fff;
         text-decoration: none;
-        border: 1px solid #000;
-        font-size: 100%;
-        padding: .5% .7%;
-        color: #000;
+        border-left: 1px solid #23a1a7;
+        border-right: 1px solid #23a1a7;
+        border-top: 1px solid #23a1a7;
+        border-bottom: 3px solid #23a1a7;
+        font-size: 130%;
+        padding: .5% .7% .4% .7%;
+        color: #23a1a7;
         cursor: pointer;
         float: right;
     }
@@ -4197,12 +4293,15 @@ table {
 
 
     .feedbackcomplete a:hover {
-        color: #e0b001;
-        background: #000;
+        color: #ea3a1f;
+        background: #fff;
         text-decoration: none;
-        border: 1px solid #e0b001;
-        font-size: 100%;
-        padding: .5% .7%;
+        border-left: 1px solid #ea3a1f;
+        border-right: 1px solid #ea3a1f;
+        border-top: 1px solid #ea3a1f;
+        border-bottom: 3px solid #ea3a1f;
+        font-size: 130%;
+        padding: .5% .7% .4% .7%;
     }
 
 
@@ -4229,7 +4328,7 @@ table {
 
 .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
     float: left;
-    width: 7.4%;
+    width: 5.2%;
 }
 
 
@@ -4254,7 +4353,7 @@ table {
     float: left;
     position: relative;
     margin-left: 11.3%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 
@@ -4262,18 +4361,18 @@ table {
     margin-right: 4%;
     width: 10%;
     float: left;
-    background: #000;
+    background: #fff;
 }
 
     .scaleDefMenu ul {
-        background: #333;
+        background: #fff;
         margin: 0;
         padding: 0;
         height: 100px;
     }
 
         .scaleDefMenu ul li {
-            border-bottom: 1px solid #666;
+            /*border-bottom: 1px solid #666;*/
             background-size: 70% 100%;
             padding: 30% 28%;
             list-style: none;
@@ -4283,7 +4382,7 @@ table {
 
             .scaleDefMenu ul li:hover {
                 background-size: 70% 100%;
-                border-bottom: 1px solid #666;
+                /*border-bottom: 1px solid #666;*/
             }
 
 .select_impt_menu span {
@@ -4327,42 +4426,63 @@ table {
 }
 
 .impt_menu {
-    background: url("../../Images/Feedback/self_impt.png") no-repeat center #333;
+    background: url("../../Images/Feedback/self_imptH.png") no-repeat center #fff;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
 }
 
     .impt_menu:hover {
-        background: url("../../Images/Feedback/self_imptH.png") no-repeat center #000;
+        background: url("../../Images/Feedback/self_impt.png") no-repeat center #ea3a1f;
+        border-top: 1px solid #666;
+        border-left: 1px solid #666;
+        border-right: 1px solid #666;
     }
 
 .select_impt_menu {
-    background: url("../../Images/Feedback/self_imptH.png") no-repeat center #000;
+    background: url("../../Images/Feedback/self_impt.png") no-repeat center #ea3a1f;
     padding: 30% 28% !important;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
 }
 
 .cpty_menu {
-    background: url("../../Images/Feedback/self_capt.png") no-repeat center #333;
+    background: url("../../Images/Feedback/self_captH.png") no-repeat center #fff;
+    border: 1px solid #666 !important;
 }
 
     .cpty_menu:hover {
-        background: url("../../Images/Feedback/self_captH.png") no-repeat center #000;
+        background: url("../../Images/Feedback/self_capt.png") no-repeat center #2465ea;
+        border: 1px solid #666 !important;
     }
 
 .select_cpty_menu {
-    background: url("../../Images/Feedback/self_captH.png") no-repeat center #000;
+    background: url("../../Images/Feedback/self_capt.png") no-repeat center #2465ea;
     padding: 30% 28% !important;
+    border: 1px solid #666 !important;
 }
 
 .frqt_menu {
-    background: url("../../Images/Feedback/self_fret.png") no-repeat center #333;
+    background: url("../../Images/Feedback/self_fretH.png") no-repeat center #fff;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
 }
 
     .frqt_menu:hover {
-        background: url("../../Images/Feedback/self_fretH.png") no-repeat center #000;
+        background: url("../../Images/Feedback/self_fret.png") no-repeat center #249fa4;
+        border-bottom: 1px solid #666;
+        border-left: 1px solid #666;
+        border-right: 1px solid #666;
     }
 
 .select_frqt_menu {
-    background: url("../../Images/Feedback/self_fretH.png") no-repeat center #000;
+    background: url("../../Images/Feedback/self_fret.png") no-repeat center #249fa4;
     padding: 30% 28% !important;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
 }
 
 .importanceDef {
@@ -4431,12 +4551,13 @@ table {
         text-transform: uppercase;
         font-weight: bold;
         color: #333;
-        font-size: 85%;
+        font-size: 100%;
     }
 
     .scale_cnt p {
         color: #000;
-        font-size: 90%;
+        font-size: 110%;
+        line-height: 1.2;
     }
 
 
@@ -4447,6 +4568,8 @@ table {
     .sticklr {
         top: 25.7% !important;
     }
+
+
 
     .contentholder {
         width: 72%;
@@ -4545,7 +4668,7 @@ table {
 
 .OverallLastSurvey h3 {
     color: #000;
-    font-size: 100%;
+    font-size: 140%;
     padding-bottom: 5px;
     border-bottom: 1px solid #000;
     line-height: 1.2;

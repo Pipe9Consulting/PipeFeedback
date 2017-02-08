@@ -93,19 +93,19 @@
         }
 
         .sliderdivRateQuestion1 {
-            background-image: url(../../Images/img/rate-slidebgHover1.png) !important;
+            background-image: url(../../Images/Feedback/selfImp_1.png) !important;
         }
 
         .sliderdivRateQuestion2 {
-            background-image: url(../../Images/img/rate-slidebgHover2.png) !important;
+            background-image: url(../../Images/Feedback/selfImp_2.png) !important;
         }
 
         .sliderdivRateQuestion3 {
-            background-image: url(../../Images/img/rate-slidebgHover3.png) !important;
+            background-image: url(../../Images/Feedback/selfImp_3.png) !important;
         }
 
         .sliderdivRateQuestion4 {
-            background-image: url(../../Images/img/rate-slidebgHover4.png) !important;
+            background-image: url(../../Images/Feedback/selfImp_4.png) !important;
         }
 
         .sliderdivCapQuestion1 {
@@ -415,7 +415,7 @@
                     </div>
                     <!--end .accordion-section-->
 
-                    <div class="accordion-section">
+                    <div class="accordion-section FrequencyMenu">
                         <a class="accordion-section-title requestMenu" href="#accordion-3">Frequency Definitions</a>
                         <div id="accordion-3" class="accordion-section-content">
 
@@ -510,7 +510,7 @@
 
                                     </div>
                                 </div>
-                                <div class="frequency">
+                                <div class="frequency bottomLine">
                                     <h4>Scope</h4>
                                     <div>
                                         <span class="tickfbimg">

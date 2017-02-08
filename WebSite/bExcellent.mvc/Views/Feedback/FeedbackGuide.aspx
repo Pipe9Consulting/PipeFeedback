@@ -50,19 +50,19 @@
 
 
         #managerFeedContent .sliderdivRateQuestion1 {
-            background-image: url("../../Images/img/rate-slidebgHover1.png") !important;
+            background-image: url("../../Images/Feedback/selfImp_1.png") !important;
         }
 
         #managerFeedContent .sliderdivRateQuestion2 {
-            background-image: url(../../Images/img/rate-slidebgHover2.png) !important;
+            background-image: url("../../Images/Feedback/selfImp_2.png") !important;
         }
 
         #managerFeedContent .sliderdivRateQuestion3 {
-            background-image: url(../../Images/img/rate-slidebgHover3.png) !important;
+            background-image: url("../../Images/Feedback/selfImp_3.png") !important;
         }
 
         #managerFeedContent .sliderdivRateQuestion4 {
-            background-image: url(../../Images/img/rate-slidebgHover4.png) !important;
+            background-image: url("../../Images/Feedback/selfImp_4.png") !important;
         }
 
 

@@ -136,6 +136,7 @@ html, body {
     border-bottom: 3px solid #086a6f;
     padding: 3px 15px 3px 15px;
     color: #fff;
+    font-size: 15px;
 }
 
     .overallcontent a:hover {
@@ -164,14 +165,14 @@ html, body {
 
 
 .breadMenu {
-    margin: 0 0 2% 0;
+    margin: 0 0 1.5% 0;
     background: #fafafa;
 }
 
 .breadcrumb {
     background: #fafafa;
     padding: .6% .8%;
-    padding: 0.5% 1% 0.6% 1.7%;
+    padding: 0.5% 1% 0.6% 1.5%;
 }
 
     .breadcrumb a {
@@ -436,7 +437,7 @@ html, body {
 }
 
     #target li:hover p {
-        color: #e0b001;
+        color: #ea3a1f;
     }
 
     #target li {
@@ -448,7 +449,7 @@ html, body {
     }
 
         #target li:hover {
-            background: #000 !important;
+            background: #fff !important;
         }
 
         #target li span {
@@ -519,6 +520,7 @@ html, body {
     background: url(../../Images/menu_icon.png) no-repeat center;
     position: relative;
     background-size: 25% auto;
+    border-right:1px solid #f1f1f1;
 }
 
 
@@ -895,13 +897,11 @@ html, body {
         font-size: 1rem;
     }
 
-
-
     .accordion h3, .accordion h3:hover, .accordion .down {
-        background-size: 30% 29%;
-        background-position-y: 45px;
+        background-size: 40% 30%;
+        background-position-y: 28px;
         background-position-x: 17px;
-        width: 70px;
+        width: 60px;
     }
 }
 
@@ -950,27 +950,53 @@ html, body {
 
 @media screen and (min-width: 2500px) and (max-width: 2900px) {
 
+    .overallcontent p {
+        font-size: 20px;
+    }
+
     .overallclose {
-        right: -8.7%;
-        top: 0.2%;
+        right: 0.7%;
+        top: 1.2%;
+    }
+
+    .overallcontent a {
+        font-size: 20px;
+    }
+
+
+    .dropdowns img {
+        max-width: 46px;
+        max-height: 46px;
+        border-radius: 25px 25px 25px 25px;
     }
 
     .overallcontent {
         width: 15% !important;
     }
 
-
     .accordion h3, .accordion h3:hover, .accordion .down {
-        background-size: 30% 30%;
-        background-position-y: 36px;
+        background-size: 25% 24%;
+        background-position-y: 43px;
         background-position-x: 38px;
         width: 100px;
     }
 
+    .headerMenu {
+        height: 110px;
+    }
+
+    .breadMenu a {
+        font-size: 16px;
+    }
 
 
     #kesslogo {
-        width: 36% !important;
+        width: 210px !important;
+        padding-top: 10px;
+    }
+
+    .page-wrapper {
+        min-height: 0px;
     }
 }
 
@@ -1098,6 +1124,9 @@ html, body {
 
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
 
+    .accordion a.cacLogo {
+        padding-left: 2.2%;
+    }
 
     .clickdeeper {
         left: -205%;
@@ -1108,11 +1137,15 @@ html, body {
     }
 
     .wallAward {
-        margin-top: 5.5%;
+        margin-top: 8%;
     }
 
     .login {
-        padding-top: 4.8%;
+        padding-top: 7%;
         padding-bottom: 4.7%;
+    }
+
+    .headerRight .dropdown {
+        margin-top: 5px;
     }
 }

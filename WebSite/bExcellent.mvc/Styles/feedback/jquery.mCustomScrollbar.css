@@ -91,7 +91,7 @@ y-axis
 		height: auto;
 	}
 
-	.mCSB_scrollTools a + .mCSB_draggerContainer{ margin: 20px 0; }
+	.mCSB_scrollTools a + .mCSB_draggerContainer{ margin: 20px 7px; }
 
 	.mCSB_scrollTools .mCSB_draggerRail{
 		width: 2px;

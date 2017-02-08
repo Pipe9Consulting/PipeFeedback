@@ -81,20 +81,20 @@
         }
 
          .sliderdivSurveyQuestion1 {
-            background-image: url(../../Images/img/survey_2.png) !important;
+            background-image: url(../../Images/img/survey_1.png) !important;
         }
 
        .sliderdivSurveyQuestion2 {
-            background-image: url(../../Images/img/survey_3.png) !important;
+            background-image: url(../../Images/img/survey_2.png) !important;
         }
         .sliderdivSurveyQuestion3 {
-            background-image: url(../../Images/img/survey_4.png) !important;
+            background-image: url(../../Images/img/survey_3.png) !important;
         }
          .sliderdivSurveyQuestion4 {
-            background-image: url(../../Images/img/survey_5.png) !important;
+            background-image: url(../../Images/img/survey_4.png) !important;
         }
           .sliderdivSurveyQuestion5 {
-            background-image: url(../../Images/img/survey_6.png) !important;
+            background-image: url(../../Images/img/survey_5.png) !important;
         }
         .sliderdiv {
             cursor: pointer;

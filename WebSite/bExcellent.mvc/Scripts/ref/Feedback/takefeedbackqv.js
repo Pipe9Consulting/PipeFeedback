@@ -24,7 +24,7 @@
             url: option.url,
             data: (option.data) ? option.data : null,
             success: function (response) {
-                debugger;
+                //debugger;
                 var html = "";
                 if (response.ModuleOrderNumber == 0) {
                     var htmlDiv = "<img src='../../Images/KessakuImage/" + $('#selectedpoe').val() + "_pane.png'>";

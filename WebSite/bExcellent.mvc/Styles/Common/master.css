@@ -384,7 +384,10 @@ h1 {
 
 #target {
     bottom: 100%;
-    background: #222;
+    background: #fff;
+    border-left:1px solid #ea3a1f;
+    border-right:1px solid #ea3a1f;
+    border-top:1px solid #ea3a1f;
     position: absolute;
     right: 0;
     z-index: 9999999999;
@@ -396,7 +399,11 @@ h1 {
         width: 100%;
         cursor: pointer;
         background: transparent !important;
+        border-bottom-color: #ea3a1f;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
     }
+
 
         /*#target li:hover {
             background: #e0b001 !important;
@@ -409,7 +416,7 @@ h1 {
             height: 0;
             padding-bottom: 9%;
             font-size: 130%;
-            color: #fff;
+            color: #333;
             text-align: center;
             position: relative;
         }
@@ -424,7 +431,7 @@ h1 {
 
         #target li p, #target li a {
             float: left;
-            color: #fff;
+            color: #333;
             margin: 1%;
             padding: 1.5% 0 0;
             text-decoration: none;
@@ -1575,7 +1582,7 @@ p.errormsg:empty {
     }
 
         .dropdown ul li a {
-            padding: 3% 0 3% 5% !important;
+            padding: 3% 0 16% 16% !important;
         }
 }
 

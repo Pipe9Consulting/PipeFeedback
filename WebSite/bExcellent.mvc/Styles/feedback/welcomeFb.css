@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new1.jpg) repeat !important;
+    /*background: url(../../../Images/images/bodyBg-new1.jpg) repeat !important;*/
     font-family: Segoe UI;
     background-size: 100% 100% !important;
 }
@@ -92,23 +92,23 @@ body {
 
 
     .welcomeContent a {
-        background: #e0b001;
-        border: 1px solid #000000;
-        color: #000;
+        background: #fff;
+        border: 1px solid #23a1a7;
+        color: #23a1a7;
         text-align: center;
-        padding: 1% 2% 1.2% 2%;
+        padding: 1% 2% 1% 2%;
         float: right;
-        font-size: 120%;
+        font-size: 130%;
         font-weight: 600;
     }
 
         .welcomeContent a:hover {
-            background: #000;
-            border: 1px solid #e0b001;
-            color: #e0b001;
+            background: #fff;
+            border: 1px solid #ea3a1f;
+            color: #ea3a1f;
         }
 
-@media screen and (max-width: 3500px) and (min-width: 2600px) {
+@media screen and (max-width: 3500px) and (min-width: 2500px) {
     .welcomeContent p {
         font-size: 180%;
     }

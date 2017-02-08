@@ -13047,7 +13047,7 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 		    //debugger;
 		    //alert(this.elementSize.width);
 		    pixelMouse = position.x - this.elementOffset.left - (this._clickOffset ? this._clickOffset.left : 0);
-		    debugger;
+		    //debugger;
 		    //pixelMouse = pixelMouse + 42;
 		    var valTotal = this._valueMax() - this._valueMin();
 		    if (valTotal == 4) {

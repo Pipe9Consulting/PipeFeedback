@@ -1989,7 +1989,7 @@ function validateIntial() {
 }
 
 function LoadDrpDownChange() {
-    debugger;
+    //debugger;
     //$('#survQuestion1').on('change', function () {
     //    var answer = $('#survQuestion1 :selected').val();
     //    if (answer != 0) {

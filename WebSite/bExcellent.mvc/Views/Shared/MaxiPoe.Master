@@ -226,14 +226,15 @@
 
 
                     <div class="accordion">
-                          <a href="/common/Index" id="imagelogo" class="cacLogo">
-
-                            <img id="kesslogo" src="../../Images/images/CAC_logo.png" alt="Bexcellent" align="left" />
-                        </a>
                         <h3 class="checkt">
                             <a href="#" class="cacIcon">
                                 <img src="../../Images/blank.png" class="checkimg" /></a></h3>
-                      
+                        <a href="/common/Index" id="imagelogo" class="cacLogo">
+
+                            <img id="kesslogo" src="../../Images/images/CAC_logo.png" alt="Bexcellent" align="left" />
+                        </a>
+
+
                         <div class="pane">
                             <div class="menuArrow">
                                 <img src="../../Images/menu_arrow.png" alt="REP Library" /><p>
@@ -364,7 +365,8 @@
 
                     <div class="dropdown">
                         <span class="dropImage">
-                            <span class="menuStar" id="menustar" style="display:none"><img src="../../Images/start/menu_starIcon.png" /></span>
+                            <span class="menuStar" id="menustar" style="display: none">
+                                <img src="../../Images/start/menu_starIcon.png" /></span>
                             <img src="../../Images/start/wall_icon.png" alt="User" align="right" title="Notifications" /></span>
                         <div class="dropdown-content">
                             <ul id="notifyCont">
