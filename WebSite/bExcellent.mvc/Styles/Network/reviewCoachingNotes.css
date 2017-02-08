@@ -1440,7 +1440,7 @@ input[type="file"] {
 .ui-slider-handle {
     width: 3% !important;
     outline: medium none;
-    background: url("../../Images/slider-handle.png") no-repeat scroll 70% 50% transparent !important;
+    background: url("../../Images/slider-handle2.png") no-repeat scroll 70% 50% transparent !important;
     background-size: 70% 92%;
     height: 0;
     padding-bottom: 5.7%;

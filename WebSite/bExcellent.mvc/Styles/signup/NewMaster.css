@@ -570,7 +570,7 @@ html, body {
 
         .pane li input:checked + label p {
             bottom: 7%;
-            color: #e0b001;
+            color: #23a1a7;
         }
 
 .pane #indicator {
