@@ -1,7 +1,7 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: url(../../Images/images/bodyBg-new4.jpg) repeat !important;
+    /*background: url(../../Images/images/bodyBg-new4.jpg) repeat !important;*/
     font-family: Segoe UI;
     background-size: 100% 100% !important;
 }
@@ -21,11 +21,11 @@
 }
 
 .networkTile {
-    border: 1px solid #333;
     width: 95%;
     height: 0%;
     float: left;
-    padding: 3% 0% 1% 3%;
+    /*padding: 3% 0% 1% 3%;
+    border: 1px solid #333;*/
 }
 
 
@@ -35,51 +35,51 @@
 
 
 .nwTile {
-    background: url(../../Images/images/Feedback/IconHover0.png)no-repeat top 15% right 15% rgba(0,0,0,0.8);
+    background: url(../../Images/images/Feedback/IconHover0.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50%;
 }
 
     .nwTile:hover {
-        background: url(../../Images/images/Feedback/IconHover0_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+        background: url(../../Images/images/Feedback/IconHover0_selected.png)no-repeat top 15% right 15% #fff;
         background-size: 50% 50%;
     }
 
 .select_nwTile {
-    background: url(../../Images/images/Feedback/IconHover0_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1) !important;
+    background: url(../../Images/images/Feedback/IconHover0_selected.png)no-repeat top 15% right 15% #fff !important;
     background-size: 50% 50% !important;
 }
 
 
 
 .mngrTile {
-    background: url(../../Images/images/Feedback/IconHover1.png)no-repeat top 15% right 15% rgba(0,0,0,0.8);
+    background: url(../../Images/images/Feedback/IconHover1.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50%;
 }
 
     .mngrTile:hover {
-        background: url(../../Images/images/Feedback/IconHover1_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+        background: url(../../Images/images/Feedback/IconHover1_selected.png)no-repeat top 15% right 15% #fff;
         background-size: 50% 50%;
     }
 
 .select_mngrTile {
-    background: url(../../Images/images/Feedback/IconHover1_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+    background: url(../../Images/images/Feedback/IconHover1_selected.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50% !important;
 }
 
 
 
 .teamTile {
-    background: url(../../Images/images/Feedback/IconHover2.png)no-repeat top 18% right 7% rgba(0,0,0,0.8);
+    background: url(../../Images/images/Feedback/IconHover2.png)no-repeat top 18% right 7% #fff;
     background-size: 30% 55%;
 }
 
     .teamTile:hover {
-        background: url(../../Images/images/Feedback/IconHover2_selected.png)no-repeat top 18% right 7% rgba(0,0,0,1);
+        background: url(../../Images/images/Feedback/IconHover2_selected.png)no-repeat top 18% right 7% #fff;
         background-size: 30% 55%;
     }
 
 .select_teamTile {
-    background: url(../../Images/images/Feedback/IconHover2_selected.png)no-repeat top 18% right 7% rgba(0,0,0,1);
+    background: url(../../Images/images/Feedback/IconHover2_selected.png)no-repeat top 18% right 7% #fff;
     background-size: 30% 55% !important;
 }
 
@@ -87,17 +87,17 @@
 
 
 .skipTile {
-    background: url(../../Images/images/Feedback/IconHover3.png)no-repeat top 15% right 15% rgba(0,0,0,0.8);
+    background: url(../../Images/images/Feedback/IconHover3.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50%;
 }
 
     .skipTile:hover {
-        background: url(../../Images/images/Feedback/IconHover3_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+        background: url(../../Images/images/Feedback/IconHover3_selected.png)no-repeat top 15% right 15% #fff;
         background-size: 50% 50%;
     }
 
 .select_skipTile {
-    background: url(../../Images/images/Feedback/IconHover3_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+    background: url(../../Images/images/Feedback/IconHover3_selected.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50% !important;
 }
 
@@ -105,17 +105,17 @@
 
 
 .custTile {
-    background: url(../../Images/images/Feedback/IconHover4.png)no-repeat top 15% right 15% rgba(0,0,0,0.8);
+    background: url(../../Images/images/Feedback/IconHover4.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50%;
 }
 
     .custTile:hover {
-        background: url(../../Images/images/Feedback/IconHover4_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+        background: url(../../Images/images/Feedback/IconHover4_selected.png)no-repeat top 15% right 15% #fff;
         background-size: 50% 50%;
     }
 
 .select_custTile {
-    background: url(../../Images/images/Feedback/IconHover4_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+    background: url(../../Images/images/Feedback/IconHover4_selected.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50% !important;
 }
 
@@ -123,17 +123,17 @@
 
 
 .peerTile {
-    background: url(../../Images/images/Feedback/IconHover5.png)no-repeat top 15% right 15% rgba(0,0,0,0.8);
+    background: url(../../Images/images/Feedback/IconHover5.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50%;
 }
 
     .peerTile:hover {
-        background: url(../../Images/images/Feedback/IconHover5_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+        background: url(../../Images/images/Feedback/IconHover5_selected.png)no-repeat top 15% right 15% #fff;
         background-size: 50% 50%;
     }
 
 .select_peerTile {
-    background: url(../../Images/images/Feedback/IconHover5_selected.png)no-repeat top 15% right 15% rgba(0,0,0,1);
+    background: url(../../Images/images/Feedback/IconHover5_selected.png)no-repeat top 15% right 15% #fff;
     background-size: 50% 50% !important;
 }
 
@@ -157,10 +157,10 @@
     margin: 0 2.9% 2.9% 0;
     position: relative;
     cursor: pointer;
+    /*border: 1px solid #23a1a7;*/
 }
 
     #wrapper .customertiles li p {
-        color: #fff;
         line-height: 1.2;
         text-transform: uppercase;
     }
@@ -171,7 +171,7 @@
     }*/
 
     #wrapper .customertiles li:hover p {
-        color: #e0b001;
+        color: #23a1a7;
     }
 
 
@@ -223,7 +223,7 @@
 }
 
 .selectedStiles p {
-    color: #e0b001 !important;
+    color: #23a1a7 !important;
 }
 
 .stiles {
@@ -231,12 +231,18 @@
 }
 
 .poelistli p {
-    background: url(../../Images/trans.png);
+    background: rgba(0,0,0,.8);
     width: 100%;
     padding: 3% 1% 3% 5%;
     position: absolute;
     left: 0 !important;
     bottom: 0 !important;
+    color: #fff;
+}
+
+.poelistli:hover p {
+    background: #23a1a7 !important;
+    color: #fff !important;
 }
 
 .numbertile {
@@ -1335,117 +1341,145 @@ h5 {
     padding: 2%;
 }
 
-/*.networkTile ul {
+.networkTile ul {
     /*background: url("../../../Images/images/feedback/fbmenubg.png") no-repeat right top !important;*/
-height: auto; float: left; background-size: 100% 100% !important; width: 97% !important;
+    height: auto;
+    float: left;
+    background-size: 100% 100% !important;
+    width: 97% !important;
 }
 
-*/ .teamTile .numbertile {
+
+    .networkTile ul li p {
+        color: #333;
+        font-size: 14px;
+    }
+
+.teamTile .numbertile {
     padding-top: 8%;
     padding-left: 2%;
 }
 
+.selectedStiles {
+    border: 1px solid #23a1a7 !important;
+}
+
 .teamTile p {
     left: 3% !important;
+    color: #333;
+    font-size: 14px;
+}
+
+.networkTile ul li {
+    border: 1px solid #666;
 }
 
 .givefbcontent {
-    border: 1px solid #333;
+    /*border: 1px solid #333;*/
     float: left;
     width: 90%;
-    padding: 1.5%;
+    /*padding: 1.5%;*/
 }
 
 .fblfristBox {
-    background: url(../../../Images/feedback/bigPicturebg.jpg)no-repeat;
+    background: url(../../../Images/feedback/bigPicturebg.jpg)no-repeat #fff;
     background-size: 100% 100%;
     width: 32.3%;
     float: left;
     margin-right: 1.5%;
     height: 65%;
     padding-bottom: 2%;
+    border: 1px solid #666;
 }
 
 .boxone {
-    background: rgba(0, 0, 0, 0.9);
+    background: #fff;
     margin-top: 85%;
     height: 50%;
 }
 
 .fblfristBox .boxone h2 {
-    background: url(../../../Images/images/feedback/bigPictureIcon.png)no-repeat top 270% right 5% #000;
+    background: url(../../../Images/images/feedback/bigPictureIcon.png)no-repeat top 270% right 5% #fff;
     background-size: 22% 90%;
-    font-size: 120%;
-    padding: 5% 5% 10% 5%;
-    color: #fff;
+    font-size: 140%;
+    padding: 5% 5% 5% 5%;
+    color: #000;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
     text-transform: uppercase;
 }
 
 
 .fblsecondBox .boxone h2 {
-    background: url(../../../Images/images/feedback/practiceAreasIcon.png)no-repeat top 270% right 5% #000;
+    background: url(../../../Images/images/feedback/practiceAreasIcon.png)no-repeat top 270% right 5% #fff;
     background-size: 22% 92%;
-    font-size: 120%;
-    padding: 5% 5% 10% 5%;
-    color: #fff;
+    font-size: 140%;
+    padding: 5% 5% 5% 5%;
+    color: #000;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
     text-transform: uppercase;
 }
 
 .fblsecondBox {
-    background: url(../../../Images/feedback/practiceAreasBg.jpg)no-repeat;
+    background: url(../../../Images/feedback/practiceAreasBg.jpg)no-repeat #fff;
     background-size: 100% 100%;
     width: 32.3%;
     float: left;
     margin-right: 1.5%;
     height: 65%;
     padding-bottom: 2%;
+    border: 1px solid #666;
 }
 
 
 .fblthirdBox {
-    background: url(../../../Images/feedback/excellenceActionbg.jpg)no-repeat;
+    background: url(../../../Images/feedback/excellenceActionbg.jpg)no-repeat #fff;
     background-size: 100% 100%;
     width: 32.3%;
     float: left;
     height: 65%;
     padding-bottom: 2%;
+    border: 1px solid #666;
 }
 
     .fblthirdBox .boxone h2 {
-        background: url(../../../Images/images/feedback/excellenceActionIcon.png)no-repeat top 270% right 5% #000;
+        background: url(../../../Images/images/feedback/excellenceActionIcon.png)no-repeat top 270% right 5% #fff;
         background-size: 22% 93%;
-        font-size: 120%;
-        padding: 5% 5% 10% 5%;
-        color: #fff;
+        font-size: 140%;
+        padding: 5% 5% 5% 5%;
+        color: #000;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #666;
         text-transform: uppercase;
     }
 
 .boxone p {
     width: 100%;
     height: 180px;
-    color: #fff;
+    color: #000;
     font-size: 110%;
     padding: 2% 6% 2% 6%;
 }
 
 
 .boxone a {
-    background: #e0b001;
+    background: #fff;
     text-decoration: none;
     padding: 1% 4% 2% 4%;
     margin: 0 6%;
-    font-size: 110%;
-    color: #000;
+    font-size: 130%;
+    color: #23a1a7;
     font-weight: 500;
-    border: 1px solid #000;
+    border: 1px solid #23a1a7;
     display: inline-block;
     float: right;
 }
 
     .boxone a:hover {
-        background: #000;
-        color: #e0b001;
-        border: 1px solid #e0b001;
+        background: #fff;
+        color: #eb4830;
+        border: 1px solid #eb4830;
     }
 
 
@@ -1636,27 +1670,26 @@ height: auto; float: left; background-size: 100% 100% !important; width: 97% !im
 }
 
 .selectArrow p {
-    color: #e0b001 !important;
+    color: #fff !important;
+    background: #23a1a7 !important;
 }
 
 
-
-
 .msgsmallselectArrow {
-    background: url(../../images/feedback/selecttick.png) no-repeat top right #000 !important;
+    background: url(../../images/feedback/selecttick.png) no-repeat top right #fff !important;
     border: 1px solid #e0b001;
     background-size: 15% 50% !important;
 }
 
 .msgmidselectArrow {
-    background: url(../../images/feedback/selecttick.png) no-repeat top right #000 !important;
+    background: url(../../images/feedback/selecttick.png) no-repeat top right #fff !important;
     border: 1px solid #e0b001;
     background-size: 15% 30% !important;
 }
 
 
 .msglargeselectArrow {
-    background: url(../../images/feedback/selecttick.png) no-repeat top right #000 !important;
+    background: url(../../images/feedback/selecttick.png) no-repeat top right #fff !important;
     border: 1px solid #e0b001;
     background-size: 15% 25% !important;
 }
@@ -1681,9 +1714,9 @@ height: auto; float: left; background-size: 100% 100% !important; width: 97% !im
 
 /*Newly Added*/
 .networkscroll {
-    border: 1px solid #333;
+    /*border: 1px solid #333;
+    padding: 3% 0% 3% 3%;*/
     width: 100%;
-    padding: 3% 0% 3% 3%;
     height: auto;
 }
 
@@ -1731,8 +1764,12 @@ height: auto; float: left; background-size: 100% 100% !important; width: 97% !im
 
 @media screen and (min-width: 2201px) and (max-width: 2600px) {
 
+    .networkTile ul li p {
+        font-size: 22px;
+    }
+
     .slimScrollDiv, .scroll2 {
-        height: 445px !important;
+        height: 465px !important;
     }
 
     .scroll1 {
@@ -1869,7 +1906,7 @@ height: auto; float: left; background-size: 100% 100% !important; width: 97% !im
 
 @media screen and (min-width: 1365px) and (max-width: 1400px) {
     .boxone p {
-        font-size: 100%;
+        font-size: 130%;
         height: 120px !important;
     }
 
@@ -1887,7 +1924,7 @@ height: auto; float: left; background-size: 100% 100% !important; width: 97% !im
 
 
     .slimScrollDiv, .scroll2 {
-        height: 222px !important;
+        height: 233px !important;
     }
 
 
@@ -1909,7 +1946,7 @@ height: auto; float: left; background-size: 100% 100% !important; width: 97% !im
     }
 
     .networkscroll ul li p {
-        font-size: 85%;
+        font-size: 100%;
     }
 
 

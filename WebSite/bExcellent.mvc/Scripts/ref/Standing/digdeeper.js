@@ -131,7 +131,7 @@
            $('.selectedIndicator').find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val() + $('.selectedIndicator').attr("data-value") + "h" + ".png");
        });
                 $('.selectingArea').click(function () {
-                    debugger;
+                   // debugger;
                     $('.q3').hide();
                     $('.q2').show().css('opacity', '0.4');
                     imagenumber = $(this).attr('data-value');

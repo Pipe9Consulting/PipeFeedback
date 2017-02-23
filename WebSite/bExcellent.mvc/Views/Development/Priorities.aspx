@@ -40,6 +40,14 @@
 
         }
     </script>
+    <div class="breadcrumb">
+        <a href="../Common/Index">Home </a>
+        <i>&nbsp>&nbsp</i>
+        <a href="../Development/Development">Development</a>
+        <i>&nbsp>&nbsp</i>
+        <a href="../Development/Priorities">Priorities</a>
+    </div>
+
     <div class="container-fluid">
         <%
             var t = 0;
@@ -68,16 +76,7 @@
         <input type="hidden" id="selectPoe" value="0" />
         <input type="hidden" id="scaleMode" value="0" />
         <div class="row">
-            <div class="col-sm-12">
-                <div class="breadcrumb">
-                    <a href="../Common/Index">Home </a>
-                    <i>&nbsp>&nbsp</i>
-                    <a href="../Development/Development">Development</a>
-                    <i>&nbsp>&nbsp</i>
-                    <a href="../Development/Priorities">Priorities</a>
-                </div>
 
-            </div>
             <div class="col-sm-3">
                 <div class="priorities_tiles">
                     <h2>PRIORITIES</h2>

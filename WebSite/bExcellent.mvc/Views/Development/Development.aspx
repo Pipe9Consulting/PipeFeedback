@@ -9,6 +9,12 @@
     <link href="../../Styles/Devpriorities/bootstrap.min.css" rel="stylesheet" />
     <link href="../../Styles/Devpriorities/develop.css" rel="stylesheet" />
     <script src="../../Scripts/ref/DevPriorities/devLanding.js"></script>
+            <div class="breadcrumb">
+                <a href="../Common/Index">Home </a>
+                <i>&nbsp>&nbsp</i>
+                <a href="../Devlopment/Devlopment">Development</a>
+            </div>
+
     <div class="container-fluid">
         <%
             var t = 0;
@@ -21,15 +27,9 @@
         %>
 
         <input type="hidden" id="selectedPoe" value="<%:t%>" />
+      
         <div class="row">
-            <div class="col-sm-12">
-                <div class="breadcrumb">
-                    <a href="../Common/Index">Home </a>
-                    <i>&nbsp>&nbsp</i>
-                    <a href="../Devlopment/Devlopment">Development</a>
-                </div>
 
-            </div>
             <div class="col-sm-3">
 
                 <div class="priorities_tiles">

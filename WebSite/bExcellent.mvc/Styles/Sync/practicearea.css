@@ -8,23 +8,24 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new2.jpg)no-repeat !important;
+    /*background: url(../../../Images/images/bodyBg-new2.jpg)no-repeat !important;*/
     font-family: Segoe UI;
     background-size: 100% 100% !important;
 }
 
 
 #UserlistDigin li:hover .number, #UserlistDigin li:hover p {
-    color: #e0b001 !important;
+    color: #23a1a7 !important;
 }
 
 #UserlistDigin li:hover {
-    background: #000;
+    border: 1px solid #23a1a7;
+    background: #fff;
 }
 
 h1.lft_head {
     font-weight: 400;
-    color: rgba(0,0,0,0.8);
+    color: #333;
     text-transform: uppercase;
     padding: 0px !important;
 }
@@ -87,7 +88,7 @@ h1.lft_head {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 5%;
     left: 5%;
 }
@@ -191,7 +192,7 @@ h1.lft_head {
 }
 
 .chartdiv {
-    border: 1px solid #333;
+    border: 1px solid #666;
     float: left;
     padding: 2% 8% 1% 2%;
     position: relative;
@@ -220,7 +221,7 @@ h1.lft_head {
 }
 
     .legend li {
-        color: #808080;
+        color: #333;
         padding: 0 0 0 13%;
         margin-bottom: 2%;
         white-space: nowrap;
@@ -765,10 +766,10 @@ h1.lft_head {
 .scroll1 {
     width: 100% !important;
     height: 0 !important;
-    padding-bottom: 147.5% !important;
+    padding-bottom: 148.5% !important;
     position: relative;
-    border: 1px solid #333;
-    padding: 3% 0 3% 3%;
+    /*border: 1px solid #333;
+    padding: 3% 0 3% 3%;*/
 }
 
 
@@ -1262,10 +1263,7 @@ h1.lft_head {
         font-size: 88.5%;
     }
 
-    .breadMenu {
-        margin: 1.5% 1.5% 0.5% 1.5% !important;
-    }
-
+    
     #ReqFeedbackSubmit.send {
         margin-bottom: 10px !important;
     }
@@ -1744,7 +1742,8 @@ h1.lft_head {
     padding-bottom: 49.7%;
     height: 0;
     float: left;
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
+    border: 1px solid #666;
     list-style: none;
     margin: 0 3% 3% 0;
     position: relative;
@@ -1773,7 +1772,7 @@ h1.lft_head {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 5%;
     left: 5%;
     width: 90%;
@@ -2037,7 +2036,7 @@ h1.lft_head {
 }
 
     .legend li {
-        color: #808080;
+        color: #333;
         padding: 0 0 0 13%;
         margin-bottom: 1%;
         white-space: nowrap;
@@ -2163,7 +2162,7 @@ h1.lft_head {
 }
 
 .dummychartdiv {
-    background: rgba(0,0,0,0.3) !important;
+    background: #f5f5f5 !important;
     padding-bottom: 50.5% !important;
     cursor: default !important;
 }
@@ -2292,13 +2291,7 @@ h1.lft_head {
         font-size: 18px;
     }
 
-    .midstatus {
-        height: 14%;
-        right: 2.6%;
-        top: 34%;
-        width: 6%;
-        padding: 1.5% 1.5% 0.5% .5%;
-    }
+
 
 
     .breadcrumb a {
@@ -2316,8 +2309,8 @@ h1.lft_head {
 
     .markerholder li p {
         height: 46px;
-        line-height: 38px;
-        width: 50px;
+        line-height: 43px;
+        width: 40px;
     }
 
 
@@ -2349,7 +2342,7 @@ h1.lft_head {
         padding-top: 1.6%;
         right: 3.5%;
         height: 11%;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .dwnstatus {
@@ -2359,9 +2352,18 @@ h1.lft_head {
         width: 6%;
         top: 36.5%;
         right: 3%;
-        font-size: 16px;
+        font-size: 18px;
     }
 
+
+    .midstatus {
+        height: 14%;
+        right: 2.6%;
+        top: 34%;
+        width: 6%;
+        padding: 2% 1.5% 0.5% .5%;
+        font-size: 18px;
+    }
 
     .chartarea {
         width: 92.5%;
@@ -2388,10 +2390,10 @@ h1.lft_head {
         line-height: 28px !important;
     }
 
-    .dropdown ul li a {
+    /*.dropdown ul li a {
         padding: 3% 0 2% 5% !important;
         height: 30px;
-    }
+    }*/
 
     #diginsyncPoeContent tr th:first-child {
         padding-left: 9px;
@@ -2413,7 +2415,7 @@ h1.lft_head {
 
 
     .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
-        background-size: 50px 100% !important;
+        background-size: 40px 100% !important;
     }
 
 
@@ -3408,8 +3410,8 @@ h1.lft_head {
 
     .markerholder li p {
         height: 26px;
-        line-height: 21px;
-        width: 24px;
+        line-height: 23px;
+        width: 23px;
     }
 
 
@@ -3418,7 +3420,7 @@ h1.lft_head {
         height: 13%;
         top: 33%;
         right: 2%;
-        padding: 1.3% 0.5% 0.3% .5%;
+        padding: 2% 0.5% 0.3% .5%;
     }
 
 
@@ -3749,8 +3751,15 @@ h1.lft_head {
 
 .nonselecteds-tiles {
     cursor: auto !important;
-    background: rgba(0, 0, 0, 0.8);
+    background: #f5f5f5 !important;
+    border: 1px solid #666 !important;
 }
+
+    .nonselecteds-tiles:hover {
+        cursor: auto !important;
+        background: #f5f5f5;
+        border: 1px solid #666 !important;
+    }
 
 /*-----------------------------------------------------*/
 
@@ -4060,15 +4069,16 @@ h1.lft_head {
 /*****************************Quickview Style***************************************************/
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7;
 }
 
     .selected .number {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .frequencydiv {
@@ -5096,16 +5106,17 @@ slidecontent12 {
         }
 
 .legend p {
-    background: url("../../Images/select-arrow.png") no-repeat #777777 right;
+    background: url("../../Images/select-arrow.png") no-repeat #f5f5f5 right;
     background-size: auto 100%;
-    color: #fff;
+    color: #333;
     padding: 1.5% 1% 2% 5%;
     display: block;
     cursor: pointer;
+    border: 1px solid #666;
 }
 
 .legend ul {
-    border: 1px solid #ccc;
+    border: 1px solid #666;
     float: left;
     width: 100%;
     padding: 1.5% 0 1.5% 5%;
@@ -5118,7 +5129,7 @@ slidecontent12 {
 }
 
 .legendwn {
-    background: url("../../Images/select-arrow-up.png") no-repeat #5e5e5e right !important;
+    background: url("../../Images/select-arrow-up.png") no-repeat #f5f5f5 right !important;
     background-size: auto 100% !important;
 }
 
@@ -8225,5 +8236,5 @@ body .ui-tooltip {
 
 
 .coltwo h1 {
-    color: #000 !important;
+    color: #333 !important;
 }

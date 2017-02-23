@@ -71,7 +71,7 @@
     });
 
     $('.poemodule').click(function () {
-      debugger;
+      //debugger;
         $('#charttitle_top').html($(this).find('p').html());
         selectedModule = $(this).attr('data-moduleorder');
         $('.chartdiv').hide();
@@ -89,7 +89,7 @@
         }
         //alert(totalSlides);
         SliderLoad(totalSlides);
-        debugger;
+        //debugger;
         var ctrl = $(this);
         var selectedimgname = $(this).attr('data-imgname');
         ctrl.addClass('selected');
@@ -216,7 +216,7 @@ var excellenceactions = {
 
                         // poemodules = poemodules + "<li id ='li" + moduleresponse[mt].ModuleOrderNumber + "' data-value=" + moduleresponse[mt].ModuleId + "' data-moduleorder=" + moduleresponse[mt].ModuleOrderNumber + "  class='takesf " + img + "Tile" + ((moduleresponse[mt].ModuleOrderNumber == 1) ? ' selected select' + img : '') + " limod" + moduleresponse[mt].ModuleOrderNumber + "'><p>" + moduleresponse[mt].ModuleName + "</p></li>";
 
-                        poemodules = poemodules + "<li class='poemodule' id ='li" + moduleresponse[mt].ModuleOrderNumber + "' data-value='" + moduleresponse[mt].ModuleId + "' data-imgname='" + image + img + "' data-moduleorder='" + moduleresponse[mt].ModuleOrderNumber + "'>  <div class='icon " + img + "Tile" + ((moduleresponse[mt].ModuleOrderNumber == 1) ? ' select' + img : '') + " limod" + moduleresponse[mt].ModuleOrderNumber + "'> '<img src='../../Images/icons/" + image + img + ".png' alt=''></div><p>" + moduleresponse[mt].ModuleName + "</p></li>";
+                        poemodules = poemodules + "<li class='poemodule' id ='li" + moduleresponse[mt].ModuleOrderNumber + "' data-value='" + moduleresponse[mt].ModuleId + "' data-imgname='" + image + img + "' data-moduleorder='" + moduleresponse[mt].ModuleOrderNumber + "'>  <div class='icon " + img + "Tile" + ((moduleresponse[mt].ModuleOrderNumber == 1) ? ' select' + img : '') + " limod" + moduleresponse[mt].ModuleOrderNumber + "'><img src='../../Images/icons/" + image + img + ".png' alt=''></div><p>" + moduleresponse[mt].ModuleName + "</p></li>";
                     }
                 }
 
@@ -400,7 +400,7 @@ var excellenceactions = {
     },
 
     onLoad: function (current, pages, selectedLevel) {
-        debugger;
+        //debugger;
         if (current != 1) {
            
             var previousPage = (current - 1);
@@ -481,7 +481,7 @@ var excellenceactions = {
         
     },
     NextEI: function (current, page) {
-        debugger;
+        //debugger;
         selectedSlide = $('.chartdiv').filter(function () {
             return $(this).css('display') == 'block';
         });
@@ -602,7 +602,7 @@ var excellenceactions = {
 };
 
 function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage) {
-    debugger;
+    //debugger;
     var numberOfSlide = Math.ceil(loadQuestion.length / 5);
     var commhtml = "<div class='chartslide'>";
     var dummyhtml = "";
@@ -767,7 +767,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                                         "</div><div class='charttitle' id='chartLoc'></div>" +
                                     "</div>";
         }
-        // debugger;
+        //debugger;
 
 
 
@@ -886,7 +886,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                                         "</div><div class='charttitle' id='chartLoc'></div>" +
                                     "</div>";
         }
-        // debugger;
+        //debugger;
 
 
 
@@ -1095,7 +1095,7 @@ function SliderLoad(numberOfSlide) {
     }
     var prevmoduleHTML = "<a href='#' class='prev' id='prevModule' onclick='excellenceactions.PrevModule()'>Previous</a>";
     var nextmoduleHtml = "<a href='#' class='nxt' id='nextModule' onclick='excellenceactions.NextModule()'>Next</a>";
-    debugger;
+    //debugger;
     if (newquestionScore <= 5) {
         //$('.slidebtn').html(prevmoduleHTML + nextHtml);
        // $('.slidebtn').hide();

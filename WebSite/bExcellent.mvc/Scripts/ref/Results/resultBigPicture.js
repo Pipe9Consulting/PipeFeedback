@@ -590,7 +590,7 @@ function GetBreadCrumbAndName() {
                 default:
                     break;
             }
-            var breadCrumb = ' <a href="../Common/Index"> Home </a> >  <a href="../FeedbackResults/FeedbackResults"> Feedback Results </a> > ' + bvalue + ' > The Big Picture';
+            var breadCrumb = ' <a href="../Common/Index"> Home </a> >  <a href="../FeedbackResults/FeedbackResults"> Feedback Results </a> ><a> ' + bvalue + '</a> > <a>The Big Picture</a>';
             $('.breadcrumb').html(breadCrumb);
             //$('.legend1').text(lvalue);
             $('#choosenTile').val(response);

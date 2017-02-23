@@ -228,7 +228,8 @@
 
 
 .poelistlidummy {
-    background: #fff !important;
+    background: #f5f5f5 !important;
+    border: 1px solid #999 !important;
 }
 
 

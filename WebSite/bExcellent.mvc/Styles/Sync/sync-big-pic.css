@@ -7,18 +7,19 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new2.jpg)no-repeat !important;
+    /*background: url(../../../Images/images/bodyBg-new2.jpg)no-repeat !important;
+    background-size: 100% 100% !important;*/
     font-family: Segoe UI;
-    background-size: 100% 100% !important;
 }
 
 
 #userList li:hover .number, #userList li:hover p {
-    color: #e0b001 !important;
+    color: #23a1a7 !important;
 }
 
 #userList li:hover {
-    background: #000;
+    background: #fff;
+    border: 1px solid #23a1a7;
 }
 
 .pageholder h1 {
@@ -623,7 +624,6 @@ standTable table {
     width: 94% !important;
     position: absolute;
     height: 96.5%;
-    margin: 3%;
 }
 
 .slimScrollDiv {
@@ -646,7 +646,6 @@ h1, .tsf {
     height: 0 !important;
     padding-bottom: 138% !important;
     position: relative;
-    border: 1px solid #333;
 }
 /******************End**************************/
 @media screen and (min-width: 2560px) {
@@ -1282,16 +1281,17 @@ h1, .tsf {
 
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
     .selected .number {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .stand li {
@@ -1299,11 +1299,12 @@ h1, .tsf {
     padding-bottom: 45%;
     height: 0;
     float: left;
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
     list-style: none;
     margin: 0 3% 3% 0;
     position: relative;
     cursor: pointer;
+    border: 1px solid #666;
 }
 
     /*.stand li:nth-child(2) {
@@ -1356,7 +1357,7 @@ h1, .tsf {
     left: 5%;
     width: 90%;
     text-transform: uppercase;
-    font-size: 80%;
+    font-size: 130%;
 }
 
 .indexright {
@@ -1698,7 +1699,7 @@ h1, .tsf {
         width: 3%;
         top: 41%;
         right: 3.5%;
-        padding: .9% 0.6% 0.6% 0.4%;
+        padding: 1% 0.6% 0.6% 0.6%;
     }
 
     .dwnstatus {
@@ -1706,7 +1707,7 @@ h1, .tsf {
         width: 3%;
         top: 42.5%;
         right: 3.5%;
-        padding: .3% .8% 0.5% .6%;
+        padding: .3% .8% 0.5% .8%;
     }
 
     .midstatus {
@@ -1714,7 +1715,7 @@ h1, .tsf {
         width: 3%;
         top: 41.5%;
         right: 3.5%;
-        padding: .7% 2.5% 0.5% .8%;
+        padding: .9% 2.5% 0.5% .8%;
     }
 
     .stand {
@@ -1741,12 +1742,6 @@ h1, .tsf {
         width: 94.5%;
     }
 
-
-    .login {
-        padding-top: 2% !important;
-    }
-
-
     .patable .slimScrollDiv, .scroll6 {
         padding-bottom: 3px!important;
         height: 180px !important;
@@ -1768,7 +1763,7 @@ h1, .tsf {
     }
 
     #userList p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
 

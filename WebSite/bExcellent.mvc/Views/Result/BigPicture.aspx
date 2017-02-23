@@ -39,7 +39,7 @@
 
     <input type="hidden" id="hidCompletedTile" value="<%:showCompletedTile%>" />
     <div class="sixteen wide column breadMenu">
-        <div class="ui breadcrumb"><a href="../Common/Index">Home </a><a href="../FeedbackResults/BigPicture">Feedback Results </a>The Big Picture</div>
+        <div class="ui breadcrumb"><a href="../Common/Index">Home </a><a href="../FeedbackResults/BigPicture">Feedback Results </a> <a href="#">The Big Picture </a></div>
     </div>
     <input type="hidden" id="choosenTile" value="0" />
     <%

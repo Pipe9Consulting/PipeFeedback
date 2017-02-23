@@ -4,7 +4,6 @@ body {
     padding: 0;
     /*background: url(../../images/images/bodyBg-new1.jpg) repeat;*/
     background: #fff;
-    font-family: Segoe UI;
 }
 
 .headerPart {
@@ -374,13 +373,13 @@ html, body {
     }
 
     .ui.menu .item {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     #notifyCont li a {
         padding: 4px 0 5px 35px;
         background-size: 27px 27px;
-        font-size:17px;
+        font-size: 17px;
         background-position-y: 1px;
     }
 
@@ -501,4 +500,9 @@ html, body {
 
 .dropImage {
     cursor: pointer;
+}
+
+
+.ui.menu .item {
+    font-size: 1.4rem;
 }

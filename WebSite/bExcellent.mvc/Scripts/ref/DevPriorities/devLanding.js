@@ -43,7 +43,7 @@ var devLanding = {
         Common.ajaxsync({
             url: '/Common/GetNetworkSubscribedPoes',
             success: function (response) {
-                debugger;
+                //debugger;
                 // alert();
                 var html = '';
                 var poeids = '';

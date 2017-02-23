@@ -1,9 +1,9 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new2.jpg)no-repeat !important;
+    /*background: url(../../../Images/images/bodyBg-new2.jpg)no-repeat !important;
+    background-size: 100% 100% !important;*/
     font-family: Segoe UI;
-    background-size: 100% 100% !important;
 }
 
 
@@ -18,11 +18,12 @@
 }
 
 #practiceAreaList li:hover p {
-    color: #e0b001;
+    color: #23a1a7;
 }
 
 #practiceAreaList li:hover {
-    background: #000;
+    background: #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
 .chartsmlplaceholder {
@@ -31,11 +32,12 @@
 }
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .stand li {
@@ -43,7 +45,8 @@
     padding-bottom: 46%;
     height: 0;
     float: left;
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
+    border: 1px solid #666;
     list-style: none;
     margin: 0 3% 3% 0;
     position: relative;
@@ -61,7 +64,7 @@
 .digqn {
     width: 5.5%;
     color: #ffffff;
-    background: #e0b001;
+    background: #23a1a7;
     text-align: center;
     font-size: 113%;
     float: left;
@@ -96,10 +99,15 @@
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 5%;
     left: 7%;
+    font-size: 20px;
+    line-height: 1.2;
+    right: 5%;
+    text-transform: uppercase;
 }
+
 
 .chartholder {
     width: 70%;
@@ -124,7 +132,7 @@
 }
 
 .chartdiv {
-    border: 1px solid #333;
+    border: 1px solid #666;
     float: left;
     padding: 2% 8% 1% 2%;
     position: relative;
@@ -143,10 +151,10 @@
 }
 
 
-.syncEITile {
+/*.syncEITile {
     border: 1px solid #333;
     padding: 3%;
-}
+}*/
 
 /*.syncEITile ul {
         background: url("../../Images/new/syncEItilesBg.png") no-repeat;
@@ -812,16 +820,19 @@
     }
 
 .addmember {
-    background: url("../../images/select-arrow.png") no-repeat scroll right center / 11% 100% #575757;
-    color: #FFFFFF;
-    padding: 2% 0 2% 5%;
+    background: url("../../images/select-arrow.png") no-repeat scroll right center / 11% 100% #f5f5f5;
+    border: 1px solid #666;
+    color: #000;
+    padding: 1% 0 0.5% 5%;
     position: relative;
     width: 100%;
     cursor: pointer;
+    margin-top: 6px;
 }
 
+
     .addmember p {
-        color: #fff;
+        color: #000;
         width: 83%;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -831,39 +842,42 @@
 .sendinv {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 101%;
     top: 100%;
     z-index: 5;
-    left: 0;
+    left: -1px;
 }
 
     .sendinv li {
         background: #fff;
-        color: #808080;
+        color: #000;
         width: 100%;
         padding: 2% 2% 2% 4% !important;
         float: left;
         clear: both;
         font-weight: normal;
-        border-left: 1px solid #ccc;
-        border-right: 1px solid #ccc;
+        border-left: 1px solid #666;
+        border-right: 1px solid #666;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
     }
 
         .sendinv li:last-child {
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #666;
         }
 
         .sendinv li:hover {
-            background: #e0b001;
-            color: #fff;
+            background: #fff;
+            color: #23a1a7;
+            border-left: 1px solid #23a1a7;
+            border-right: 1px solid #23a1a7;
+            border-bottom: 1px solid #23a1a7;
             cursor: pointer;
         }
 
 .scroll1 ul {
-    width: 98% !important;
+    width: 95% !important;
     position: absolute;
     height: 100%;
 }
@@ -1839,7 +1853,7 @@
     width: 75%;
     float: left;
     overflow: hidden;
-    border: 1px solid #333;
+    border: 1px solid #666;
     position: relative;
 }
 
@@ -2022,6 +2036,10 @@
 
 
 @media screen and (max-width: 2570px) and (min-width: 2170px) {
+    .digdev {
+        font-size: 21px;
+    }
+
 
     .status {
         width: 6%;
@@ -2148,6 +2166,11 @@
 
 
 @media screen and (max-width: 2169px) and (min-width: 1930px) {
+
+    .digdev {
+        font-size: 21px;
+    }
+
 
     .dwnstatus {
         right: 2%;
@@ -2517,6 +2540,13 @@
 
 @media screen and (max-width: 1439px) and (min-width: 1365px) {
 
+    .stand li p {
+        font-size: 15px;
+    }
+
+    .digdev {
+        font-size: 14px;
+    }
 
 
     .dummychartdiv {
@@ -2608,7 +2638,7 @@
     }
 
 .dummychartdiv {
-    background: rgba(0,0,0,0.3) !important;
+    background: rgba(0,0,0,0.03) !important;
     padding-bottom: 44.4%;
 }
 
@@ -2627,6 +2657,11 @@
 
 
 @media screen and (min-width: 1359px) and (max-width: 1364px) {
+
+    .stand li p {
+        font-size: 15px;
+    }
+
 
     .stand {
         width: 17% !important;
@@ -2730,6 +2765,11 @@
 
 
 @media screen and (min-width: 1280px) and (max-width: 1364px) {
+
+    .stand li p {
+        font-size: 15px;
+    }
+
 
     .stand {
         width: 17% !important;
@@ -4003,9 +4043,17 @@
     display: table;
 }
 
-.digqn, .digdev {
+.digqn {
     display: table-cell;
-    color: #333;
+    color: #fff;
+    vertical-align: middle;
+    padding: 2px 5px;
+}
+
+
+.digdev {
+    display: table-cell;
+    color: #000;
     vertical-align: middle;
     padding: 2px 5px;
 }
@@ -4421,5 +4469,6 @@
 
 
 .dummytile {
-    background: rgba(0, 0, 0, 0.8);
+    background: #f5f5f5;
+    border: 1px solid #999;
 }

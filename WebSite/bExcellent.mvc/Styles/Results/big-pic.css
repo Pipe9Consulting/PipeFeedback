@@ -1,13 +1,13 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: url(../../Images/images/bodyBg-new4.jpg) repeat !important;
+    /*background: url(../../Images/images/bodyBg-new4.jpg) repeat !important;*/
     font-family: Segoe UI;
     background-size: 100% 100% !important;
 }
 
 .moduleHove p {
-    color: #e0b001 !important;
+    color: #23a1a7 !important;
 }
 
 
@@ -16,7 +16,7 @@
     margin-right: 5%;
     float: left;
 }
- 
+
 
 /*.resultTab {
     background: url(../../../Images/icons/BigpictureIcon0.png) no-repeat top 15% right 15% rgba(0,0,0,0.8) !important;
@@ -72,10 +72,6 @@
     width: 500% !important;
     background: #000 !important;
     padding: 5% 10%;
-}
-
-.breadMenu {
-    margin: 1.5% 1.5% 0 1.5% !important;
 }
 
 .patable {
@@ -203,7 +199,7 @@ standTable table {
 }
 
 .chartdiv {
-    border: 1px solid #333;
+    border: 1px solid #666;
     float: left;
     padding: 3% 5% 1% 4%;
     position: relative;
@@ -216,7 +212,7 @@ standTable table {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin-top: 3%;
-    color: #000;
+    color: #666;
     font-weight: 700;
 }
 
@@ -707,10 +703,9 @@ standTable table {
 }
 
 .resultsTIle ul {
-    width: 94% !important;
+    width: 100% !important;
     position: absolute;
     height: 96.5%;
-    margin: 3%;
 }
 
 
@@ -720,7 +715,6 @@ standTable table {
     height: 0 !important;
     padding-bottom: 48% !important;
     position: relative;
-    border: 1px solid #333;
 }
 /******************End**************************/
 
@@ -1486,16 +1480,17 @@ standTable table {
 
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
     .selected .number {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .stand li {
@@ -1503,7 +1498,8 @@ standTable table {
     padding-bottom: 45%;
     height: 0;
     float: left;
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
+    border: 1px solid #666;
     list-style: none;
     margin: 0 3% 3% 0;
     position: relative;
@@ -1552,11 +1548,12 @@ standTable table {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 3%;
     left: 5%;
     width: 90%;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .indexright {
@@ -1812,7 +1809,7 @@ standTable table {
 
 
         .standBPInfo:hover p {
-            color: #e0b001 !important;
+            color: #23a1a7 !important;
         }
 
 .selectstandBPInfo {
@@ -1821,21 +1818,20 @@ standTable table {
 
 
     .selectstandBPInfo p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 /*********************************************** Designer Css Start***********************************************************/
 @media screen and (min-width: 2170px) and (max-width: 2600px) {
 
     .legend1, .legend2, .legend3, .legend4, .legend5, .legend6 {
-        background-size: 24% 100% !important;
+        background-size: 28% 100% !important;
+        padding-left: 8%;
     }
 
     .patable table tr td:first-child {
         width: 59% !important;
     }
-
-
 
     .managerModel {
         padding-bottom: 46% !important;
@@ -1947,10 +1943,6 @@ standTable table {
     }
 
 
-    .login {
-        padding-top: 2% !important;
-    }
-
 
     .patable .slimScrollDiv, .scroll6 {
         padding-bottom: 3px !important;
@@ -1973,7 +1965,7 @@ standTable table {
     }
 
     #userList p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
 
@@ -2658,6 +2650,11 @@ standTable table {
 
 @media screen and (min-width: 1359px) and (max-width: 1439px) {
 
+    .legend1, .legend2 {
+        background-size: 24% 85% !important;
+        padding-left: 10%;
+        font-size: 14px;
+    }
 
 
     .legendTenure {
@@ -5680,7 +5677,7 @@ body .ui-tooltip {
 
 .chartarea li p {
     color: #fff;
-    font-size: 100%;
+    font-size: 110%;
     padding-right: 40px;
 }
 

@@ -1,9 +1,9 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: url(../../Images/images/bodyBg-new4.jpg) repeat !important;
     font-family: Segoe UI;
-    background-size: 100% 100% !important;
+    /*background-size: 100% 100% !important;
+    background: url(../../Images/images/bodyBg-new4.jpg) repeat !important;*/
 }
 
 .stand {
@@ -24,15 +24,17 @@
 }
 
 .moduleHove p {
-    color: #e0b001 !important;
+    color: #69c2c6 !important;
 }
 
 #userList li:hover {
-    background: #000;
+    background: #fff;
+    border: 1px solid #23a1a7;
 }
 
 #poemodule li:hover {
-    background: #000;
+    background: #fff;
+    border: 1px solid #23a1a7;
 }
 
 
@@ -166,7 +168,7 @@ standTable table {
 }
 
 .chartdiv {
-    border: 1px solid #333;
+    border: 1px solid #666;
     /*float: left;*/
     padding: 2% 5% 1% 5%;
     position: relative;
@@ -735,7 +737,6 @@ standTable table {
     width: 94% !important;
     position: absolute;
     height: 96.5%;
-    margin: 3%;
 }
 
 
@@ -745,7 +746,6 @@ standTable table {
     height: 0 !important;
     padding-bottom: 48% !important;
     position: relative;
-    border: 1px solid #333;
 }
 /******************End**************************/
 
@@ -1521,24 +1521,30 @@ standTable table {
 }
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
-    .selected p {
-        color: #e0b001 !important;
-    }
+.stand .selected p {
+    color: #23a1a7 !important;
+}
 
 
-    .selected .number {
-        color: #e0b001 !important;
-    }
+.stand ul li:hover p {
+    color: #23a1a7 !important;
+}
+
+.selected .number {
+    color: #23a1a7 !important;
+}
 
 .stand li {
     width: 48.5%;
     padding-bottom: 45%;
     height: 0;
     float: left;
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
+    border: 1px solid #666;
     list-style: none;
     margin: 0 3% 3% 0;
     position: relative;
@@ -1587,12 +1593,13 @@ standTable table {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333 !important;
     bottom: 3%;
     left: 5%;
     width: 90%;
     text-transform: uppercase;
-    font-size: 90%;
+    font-size: 120%;
+    line-height: 1.2;
 }
 
 .indexright {
@@ -1784,11 +1791,11 @@ standTable table {
     }
 
         .pageBtn-Part a:hover {
-            background: #E0AF01;
+            background: #23a1a7;
         }
 
 .SelectPagebtn {
-    background: #E0AF01 !important;
+    background: #23a1a7 !important;
 }
 
 .desctablepoe {
@@ -1847,7 +1854,7 @@ standTable table {
     }
 
         .standBPInfo:hover p {
-            color: #e0b001 !important;
+            color: #23a1a7 !important;
         }
 
 .selectstandBPInfo {
@@ -1856,20 +1863,29 @@ standTable table {
 
 
     .selectstandBPInfo p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
+
+.emptyTiles {
+    cursor:default !important;
+}
+
+.emptyTiles:hover {
+    border:1px solid #666 !important;
+    background:#fff !important;
+}
 
 
 
 /*********************************************** Designer Css Start***********************************************************/
 @media screen and (min-width: 2170px) and (max-width: 2600px) {
     .resultsQn span {
-        padding: .1% .5% .3% .8% !important;
+        padding: .3% .5% .2% .8% !important;
     }
 
     .chartarea ul li p {
-        font-size: 104%;
+        font-size: 120%;
     }
 
     .slidebtn {
@@ -1886,6 +1902,10 @@ standTable table {
 
     .patable table tr td:first-child {
         width: 59% !important;
+    }
+
+    .stand ul li p {
+        font-size: 20px;
     }
 
 
@@ -1989,11 +2009,6 @@ standTable table {
 
     .indexright table {
         width: 94.5%;
-    }
-
-
-    .login {
-        padding-top: 2% !important;
     }
 
 
@@ -2225,7 +2240,6 @@ standTable table {
 
     .breadMenu {
         margin: 1.5% 1.5% 1% 1.5% !important;
-
     }
 
 
@@ -2723,7 +2737,7 @@ standTable table {
     }
 
     .resultsQn span {
-        padding: 2px 3px 3px 7px !important;
+        padding: 3px 3px 2px 7px !important;
     }
 
 
@@ -5760,8 +5774,8 @@ body .ui-tooltip {
 
     .resultsQn span {
         font-size: 100%;
-        background: #000;
-        color: #e0b001;
+        background: #23a1a7;
+        color: #fff;
         margin-right: 1%;
     }
 
@@ -5776,14 +5790,14 @@ body .ui-tooltip {
 .scroll2 ul {
     position: absolute;
     height: 50%;
-    width: 94.5%;
+    width: 90%;
 }
 
 .poeMainDiv {
     margin-bottom: 5%;
-    border: 1px solid #333;
+    /*border: 1px solid #333;
+    padding: 3% 4px 0px 3%;*/
     width: 100% !important;
-    padding: 3% 4px 0px 3%;
     height: auto;
     float: left;
 }

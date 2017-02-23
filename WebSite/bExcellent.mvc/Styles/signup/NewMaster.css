@@ -333,7 +333,7 @@ html, body {
 .clickdeeper {
     background: url(../../Images/start/arrow_dig.png) no-repeat right top;
     font-size: 15px;
-    color: #e0b001;
+    color: #23a1a7;
     float: left;
     white-space: nowrap;
     left: -240%;
@@ -431,7 +431,8 @@ html, body {
 
 #target {
     bottom: 100%;
-    background: #222;
+    background: #fff;
+    border:1px solid #eb4830;
     position: absolute;
     right: 0;
 }
@@ -474,7 +475,7 @@ html, body {
 
         #target li p, #target li a {
             float: left;
-            color: #fff;
+            color: #000;
             margin: 1%;
             padding: 1.5% 0 0;
             text-decoration: none;
@@ -484,8 +485,6 @@ html, body {
         #target li a {
             width: 98% !important;
         }
-
-
 
 .accordion {
     display: table;
@@ -520,7 +519,7 @@ html, body {
     background: url(../../Images/menu_icon.png) no-repeat center;
     position: relative;
     background-size: 25% auto;
-    border-right:1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
 }
 
 
@@ -949,6 +948,11 @@ html, body {
 }
 
 @media screen and (min-width: 2500px) and (max-width: 2900px) {
+
+    .clickdeeper {
+        font-size: 18px;
+    }
+
 
     .overallcontent p {
         font-size: 20px;

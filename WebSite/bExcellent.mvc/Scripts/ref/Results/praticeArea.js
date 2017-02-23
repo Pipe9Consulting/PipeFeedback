@@ -247,7 +247,7 @@ var createchart = {
 
 
     loadPracticeResults: function (response) {
-        debugger;
+        //debugger;
         var numberOfSlide = Math.ceil(response.PracticeAreaContent.length / 5);
 
         var html = '<div class="chartdiv"><div id="resultChart">';
@@ -1735,7 +1735,7 @@ function GetBreadCrumbAndName() {
                 default:
                     break;
             }
-            var breadCrumb = '<a href="../Common/Index"> Home </a> >  <a href="../FeedbackResults/FeedbackResults"> Feedback Results </a> > ' + bvalue + ' > Practice Area';
+            var breadCrumb = '<a href="../Common/Index"> Home </a> >  <a href="../FeedbackResults/FeedbackResults"> Feedback Results </a> > <a> ' + bvalue + ' </a> > > <a> Practice Area </a>';
             $('.breadcrumb').html(breadCrumb);
             //$('.legend1').text(lvalue);
             $('#choosenTile').val(response);

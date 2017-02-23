@@ -1,9 +1,8 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
-    font-family: Segoe UI;
-    background-size: 100% 100% !important;
+    /*background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
+    background-size: 100% 100% !important;*/
 }
 
 
@@ -14,25 +13,7 @@
 }
 
 .hideboxtile span {
-    background: #000;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    cursor: default;
-}
-
-.hideboxtile:hover {
-    background: url(../../Images/icons/iconTeam.png)no-repeat top right rgba(0, 0, 0, .8) !important;
-    background-size: 100% 100% !important;
-}
-
-    .hideboxtile:hover p {
-        color: #fff !important;
-    }
-
-    .hideboxtileAll span {
-    background: #000;
+    background: #f5f5f5;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -41,10 +22,42 @@
 }
 
 
+.hideboxtile {
+    border: 1px solid #ccc !important;
+}
 
-    .hideboxtileAll:hover p {
-        color: #fff !important;
+    .hideboxtile:hover {
+        background: url(../../Images/icons/iconTeam.png)no-repeat top right #f5f5f5 !important;
+        background-size: 100% 100% !important;
+        border: 1px solid #ccc !important;
     }
+
+        .hideboxtile:hover p {
+            color: #333 !important;
+        }
+
+.hideboxtileAll span {
+    background: #f5f5f5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    cursor: default;
+}
+
+.hideboxtileAll {
+    border: 1px solid #ccc !important;
+}
+
+    .hideboxtileAll:hover {
+        background: url(../../Images/icons/iconAll.png)no-repeat top right #f5f5f5 !important;
+        background-size: 100% 100% !important;
+        border: 1px solid #ccc !important;
+    }
+
+        .hideboxtileAll:hover p {
+            color: #333 !important;
+        }
 
 h1.lft_head {
     padding: 0px !important;
@@ -57,34 +70,35 @@ h1.lft_head {
     clear: both;
 }
 
-.breadMenu {
-    margin: 1.5% 1.5% 0% 1.5% !important;
-}
 
 .communitytile:hover p, .areaTeamtile:hover p, .tenuretile:hover p, .alltile:hover p {
-    color: #e0b001;
+    color: #23a1a7;
 }
 
 
 
 .selectcommunity:hover p, .selectAreaTeam:hover p, .selectTenure:hover p, .selectAll:hover p {
-    color: #e0b001;
+    color: #23a1a7;
 }
 
 .communitytile:hover {
-    background: url(../../Images/new/iconCommunityHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconCommunityHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7;
 }
 
 .areaTeamtile:hover {
-    background: url(../../Images/new/iconTeamHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconTeamHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7;
 }
 
 .tenuretile:hover {
-    background: url(../../Images/new/iconTenureHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconTenureHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7;
 }
 
 .alltile:hover {
-    background: url(../../Images/icons/iconAll.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconAll.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7;
 }
 
 #seekSherpas .slimScrollDiv {
@@ -114,8 +128,8 @@ h1 {
     color: #000 !important;
 }
 
-.pa2 h1, .pa4 h1 {
-    padding: 15px 0px 5px !important;
+.pa2 h1, .pa4 h1, .pa6 h1, .pa8 h1, .pa10 h1, .pa12 h1, .pa14 h1, .pa16 h1 {
+    padding: 10px 0 0 0 !important;
     color: #000 !important;
 }
 
@@ -128,6 +142,7 @@ h1 {
     margin: 0 3% 3% 0;
     position: relative;
     cursor: pointer;
+    border: 1px solid #666;
 }
 
 .stand h1 {
@@ -143,8 +158,8 @@ h1 {
 
 
 .standpracticeArea {
-    border: 1px solid #333;
-    padding: 3% 0 0% 3%;
+    /*border: 1px solid #333;
+    padding: 3% 0 0% 3%;*/
     float: left;
     width: 100%;
     height: auto;
@@ -188,7 +203,7 @@ h1 {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 5%;
     left: 5%;
     width: 90%;
@@ -415,7 +430,7 @@ h1 {
     overflow: hidden;
     border: 1px solid #333;
     position: absolute;
-    padding-bottom: 45%;
+    padding-bottom: 44.9%;
 }
 
 
@@ -442,14 +457,20 @@ h1 {
     }
 
 .chartdiv {
-    border: 1px solid #333;
+    border: 1px solid #666;
     float: left;
     padding: 2% 8% 1% 2%;
     position: relative;
     width: 100%;
     margin-bottom: 0%;
-    cursor: pointer;
+    cursor: default;
 }
+
+
+/*.selectFBtwocol {
+    border: 1px solid #23a1a7 !important;
+    background: url("../../Images/select.png") no-repeat scroll right top/ 7% 18%;
+}*/
 
 .charttitle, .charttitle1 {
     text-align: center;
@@ -475,7 +496,7 @@ h1 {
 }
 
     .legend li {
-        color: #808080;
+        color: #333;
         padding: 0 0 0 13%;
         margin-bottom: 1%;
         white-space: nowrap;
@@ -496,13 +517,13 @@ h1 {
 
 
 .dummychartdiv {
-    background: rgba(0,0,0,0.3) !important;
+    background: rgba(0,0,0,0.03) !important;
     cursor: default !important;
     padding-bottom: 43.8% !important;
 }
 
 .legendTenure li {
-    color: #808080;
+    color: #333;
     padding: 0 0 0 13%;
     margin-bottom: 2%;
     white-space: nowrap;
@@ -1093,22 +1114,23 @@ h1 {
 }
 
 .legend p {
-    background: url("../../Images/select-arrow.png") no-repeat #777777 right;
+    background: url("../../Images/select-arrow.png") no-repeat #f5f5f5 right;
     background-size: auto 100%;
-    color: #fff;
+    color: #000;
     padding: 1.5% 1% 2% 5%;
     display: block;
     cursor: pointer;
+    border: 1px solid #23a1a7;
 }
 
 /**/
 .legendwn {
-    background: url("../../Images/select-arrow-up.png") no-repeat #777777 right !important;
+    background: url("../../Images/select-arrow-up.png") no-repeat #fff right !important;
     background-size: auto 100% !important;
 }
 
 #all .legend ul {
-    border: 1px solid #ccc;
+    border: 1px solid #23a1a7;
     float: left;
     width: 100%;
     padding: 1.5% 0 1.5% 5%;
@@ -1117,7 +1139,7 @@ h1 {
 }
 
 .legend ul {
-    border: 1px solid #ccc;
+    border: 1px solid #23a1a7;
     float: left;
     width: 100%;
     padding: 1.5% 0 1.5% 5%;
@@ -1524,7 +1546,7 @@ h1 {
 
     .markerholder li p {
         height: 26px;
-        line-height: 20px;
+        line-height: 21px;
         width: 22px;
     }
 
@@ -2873,10 +2895,6 @@ slidecontent12 {
 }
 
 
-.selectFBtwocol {
-    border: 1px solid rgb(224, 176, 1) !important;
-    background: url("../../Images/select.png") no-repeat scroll right top/ 7% 18%;
-}
 
 
 
@@ -2907,7 +2925,7 @@ slidecontent12 {
 }*/
 
 .legendwn {
-    background: url("../../Images/select-arrow-up.png") no-repeat #5e5e5e right !important;
+    background: url("../../Images/select-arrow-up.png") no-repeat #f5f5f5 right !important;
     background-size: auto 100% !important;
 }
 
@@ -3262,6 +3280,11 @@ slidecontent12 {
 
 @media screen and (min-width: 2170px) and (max-width: 2600px) {
 
+      .chartsmlplaceholder:nth-child(2) .dummychartdiv {
+        margin-top: -1.3%;
+    }
+
+
     .readinessResoucesIcon p {
         top: 44% !important;
     }
@@ -3316,6 +3339,7 @@ slidecontent12 {
         width: 6% !important;
         right: 3% !important;
         top: 36.5% !important;
+        font-size: 21px;
         padding: 0.4% 1% 0% .6% !important;
     }
 
@@ -3326,16 +3350,19 @@ slidecontent12 {
         right: 3% !important;
         height: 11.5%;
         width: 6%;
-        padding: 1.3% .5% 0 .5%;
+        font-size: 21px;
+        padding: 1.7% .5% 0 .5%;
     }
 
     .midstatus {
-        height: 14%;
+        height: 13%;
         right: 2.6%;
-        top: 34%;
+        top: 34.5%;
         width: 6%;
+        font-size: 21px;
         padding: 1.3% 1.1% 0 0;
     }
+
 
 
     /*.markermp {
@@ -3373,6 +3400,21 @@ slidecontent12 {
     }
 
 
+    .stand li p {
+        color: #333;
+        left: 7%;
+        font-size: 21px;
+    }
+
+
+    .stand li {
+        background-size: 100% 100% !important;
+    }
+
+        .stand li:hover {
+            background-size: 100% 100% !important;
+        }
+
     .poeheaderArea h3 {
         padding-top: 2%;
     }
@@ -3398,9 +3440,11 @@ slidecontent12 {
 
     .markerholder li p {
         height: 36px;
-        line-height: 45px;
-        width: 48px;
+        line-height: 50px;
+        width: 45px;
+        font-size: 110%;
     }
+
 
     .mentorsPanel p {
         font-size: 120%;
@@ -5024,12 +5068,20 @@ slidecontent12 {
         padding: 5px 0px 0px !important;
     }
 
+    .lft_head span {
+        font-size: 13px;
+    }
+
+    .stand li p {
+        font-size: 14px;
+    }
+
+
     .charttile {
         font-size: 12px;
         line-height: 0.7;
         padding-bottom: 5px;
     }
-
 
 
     .standpracticeArea ul li {
@@ -5063,7 +5115,7 @@ slidecontent12 {
     }
 
     .chartholder {
-        padding-bottom: 43.5% !important;
+        padding-bottom: 42.9% !important;
     }
 
     .readinessResoucesIcon p {
@@ -5086,9 +5138,6 @@ slidecontent12 {
         background-size: 50% 50% !important;
     }
 
-    .login {
-        padding: 2% 2% 1.6% 0;
-    }
 
     .mentorsPanel li a p {
         font-size: 70% !important;
@@ -5215,22 +5264,21 @@ slidecontent12 {
         width: 20%;
     }
 
-
-
     .status {
-        padding: 1% 0.6% 1.3% .2%;
-        height: 12%;
-        right: 2.8%;
+        padding: 1.7% 0.6% 1.3% .2%;
+        height: 13%;
+        right: 1.8%;
         top: 33%;
-        width: 6%;
+        width: 7%;
     }
+
 
     .dwnstatus {
         padding: .1% 0.3% .5% 0%;
         height: 12%;
-        right: 3%;
+        right: 2%;
         top: 36%;
-        width: 6%;
+        width: 7%;
     }
 
 
@@ -5243,14 +5291,14 @@ slidecontent12 {
             font-size: 85% !important;
         }
 
-
     .midstatus {
         height: 20%;
         top: 30.5%;
-        padding: 2.6% 1.3% 2% 0;
-        width: 6.3%;
-        right: 2.8%;
+        padding: 3% 1.3% 2% 0;
+        width: 7.3%;
+        right: 1.8%;
     }
+
 
 
     .managerRating p, .keyActions p {
@@ -5262,7 +5310,7 @@ slidecontent12 {
     }
 
     .legend p {
-        font-size: 9px;
+        font-size: 11px;
     }
 
 
@@ -5351,6 +5399,9 @@ slidecontent12 {
         padding-bottom: 47.6% !important;
     }
 
+    .chartsmlplaceholder:nth-child(2) .dummychartdiv {
+        margin-top: 2.5%;
+    }
 
 
     .coltwo {
@@ -5880,7 +5931,7 @@ slidecontent12 {
 
 
         .legenddropdown li:hover {
-            background: #e0b001;
+            background: #23a1a7;
             color: #fff;
         }
 
@@ -6116,95 +6167,101 @@ slidecontent12 {
 
 
 .communitytile {
-    background: url(../../Images/icons/iconCommunity.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconCommunity.png)no-repeat top right #fff;
 }
 
 
 
 .selectcommunity {
-    background: url(../../Images/new/iconCommunityHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconCommunityHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectcommunity p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 
 .areaTeamtile {
-    background: url(../../Images/icons/iconTeam.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconTeam.png)no-repeat top right #fff;
 }
 
 
 .selectAreaTeam {
-    background: url(../../Images/new/iconTeamHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconTeamHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectAreaTeam p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .pathfinderstile {
-    background: url(../../Images/icons/mentor_icon.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/mentor_icon.png)no-repeat top right #fff;
 }
 
 
 
 .selectpathfinders {
-    background: url(../../Images/icons/mentor_icon_h.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/icons/mentor_icon_h.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectpathfinders p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 
 .tenuretile {
-    background: url(../../Images/icons/iconTenure.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconTenure.png)no-repeat top right #fff;
 }
 
 
 
 .selectTenure {
-    background: url(../../Images/new/iconTenureHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconTenureHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectTenure p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .previoustile {
-    background: url(../../Images/icons/iconPrevious.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconPrevious.png)no-repeat top right #fff;
 }
 
 
 
 .selectPrevious {
-    background: url(../../Images/new/iconPreviousHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconPreviousHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectPrevious p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 
 .alltile {
-    background: url(../../Images/icons/iconAll.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconAll.png)no-repeat top right #fff;
 }
 
 
 
 
 .selectAll {
-    background: url(../../Images/new/IconAllHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/IconAllHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectAll p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 

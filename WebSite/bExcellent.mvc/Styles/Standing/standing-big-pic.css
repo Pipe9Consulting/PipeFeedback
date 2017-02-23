@@ -1,9 +1,8 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
-    font-family: Segoe UI;
-    background-size: 100% 100% !important;
+    /*background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
+    background-size: 100% 100% !important;*/
 }
 
 
@@ -18,26 +17,26 @@
 }
 
 .hideboxtile span {
-    background: #000;
+    background: #f5f5f5;
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
     cursor: default;
+    opacity: 0.8;
 }
 
 .hideboxtile:hover {
-    background: url(../../Images/icons/iconTeam.png)no-repeat top right rgba(0, 0, 0, .8) !important;
+    background: url(../../Images/icons/iconTeam.png)no-repeat top right #f5f5f5 !important;
+    border: 1px solid #666 !important;
 }
 
 
-.hideboxtile:hover p{
-    color: #fff !important;
-    
-}
+    .hideboxtile:hover p {
+        color: #333 !important;
+    }
 
-    .hideboxtileAll span {
-    background: #000;
+.hideboxtileAll span {
+    background: #f5f5f5;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -46,18 +45,17 @@
 }
 
 .hideboxtileAll:hover {
-    background-size: 100% 100% !important;
-    background: url(../../Images/icons/iconAll.png)no-repeat top right rgba(0, 0, 0, .8) !important;
-
+    background: url(../../Images/icons/iconAll.png)no-repeat top right #fff !important;
+    border: 1px solid #666 !important;
 }
 
     .hideboxtileAll:hover p {
-        color: #fff !important;
+        color: #333 !important;
     }
 
 .standBigpicture {
-    border: 1px solid #333;
-    padding: 3% 0 0% 3%;
+    /*border: 1px solid #333;
+    padding: 3% 0 0% 3%;*/
     float: left;
     height: auto;
     width: 100%;
@@ -85,118 +83,130 @@
 
 
 .stand ul li:hover p {
-    color: #e0b001;
+    color: #23a1a7;
 }
 
 
 .communitytile {
-    background: url(../../Images/icons/iconCommunity.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconCommunity.png)no-repeat top right #fff;
 }
 
     .communitytile:hover {
-        background: url(../../Images/new/iconCommunityHover.png)no-repeat top right rgba(0, 0, 0, 1);
+        background: url(../../Images/new/iconCommunityHover.png)no-repeat top right #fff;
+        border: 1px solid #23a1a7 !important;
     }
 
 
 .selectcommunity {
-    background: url(../../Images/new/iconCommunityHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconCommunityHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectcommunity p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 
 .areaTeamtile {
-    background: url(../../Images/icons/iconTeam.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconTeam.png)no-repeat top right #fff;
 }
 
     .areaTeamtile:hover {
-        background: url(../../Images/new/iconTeamHover.png)no-repeat top right rgba(0, 0, 0, 1);
+        background: url(../../Images/new/iconTeamHover.png)no-repeat top right #fff;
+        border: 1px solid #23a1a7;
     }
 
 
 .selectAreaTeam {
-    background: url(../../Images/new/iconTeamHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconTeamHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectAreaTeam p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .pathfinderstile {
-    background: url(../../Images/icons/mentor_icon.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/mentor_icon.png)no-repeat top right #fff;
 }
 
     .pathfinderstile:hover {
-        background: url(../../Images/icons/mentor_icon_h.png)no-repeat top right rgba(0, 0, 0, 1);
+        background: url(../../Images/icons/mentor_icon_h.png)no-repeat top right #fff;
+        border: 1px solid #23a1a7 !important;
     }
 
 
 .selectpathfinders {
-    background: url(../../Images/icons/mentor_icon_h.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/icons/mentor_icon_h.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectpathfinders p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 
 .tenuretile {
-    background: url(../../Images/icons/iconTenure.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconTenure.png)no-repeat top right #fff;
 }
 
     .tenuretile:hover {
-        background: url(../../Images/new/iconTenureHover.png)no-repeat top right rgba(0, 0, 0, 1);
+        background: url(../../Images/new/iconTenureHover.png)no-repeat top right #fff;
+        border: 1px solid #23a1a7;
     }
 
 
 .selectTenure {
-    background: url(../../Images/new/iconTenureHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconTenureHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectTenure p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .previoustile {
-    background: url(../../Images/icons/iconPrevious.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconPrevious.png)no-repeat top right #fff;
 }
 
     .previoustile:hover {
-        background: url(../../Images/new/iconPreviousHover.png)no-repeat top right rgba(0, 0, 0, 1);
+        background: url(../../Images/new/iconPreviousHover.png)no-repeat top right #fff;
+        border: 1px solid #23a1a7 !important;
     }
 
 
 .selectPrevious {
-    background: url(../../Images/new/iconPreviousHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/iconPreviousHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectPrevious p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 
 .alltile {
-    background: url(../../Images/icons/iconAll.png)no-repeat top right rgba(0, 0, 0, .8);
+    background: url(../../Images/icons/iconAll.png)no-repeat top right #fff;
 }
 
     .alltile:hover {
-        background: url(../../Images/new/IconAllHover.png)no-repeat top right rgba(0, 0, 0, 1);
+        background: url(../../Images/new/IconAllHover.png)no-repeat top right #fff;
+        border: 1px solid #23a1a7;
     }
 
 
 .selectAll {
-    background: url(../../Images/new/IconAllHover.png)no-repeat top right rgba(0, 0, 0, 1);
+    background: url(../../Images/new/IconAllHover.png)no-repeat top right #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectAll p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
@@ -228,6 +238,7 @@
     list-style: none;
     margin: 0 3% 3% 0;
     position: relative;
+    border: 1px solid #666;
     cursor: pointer;
 }
 
@@ -259,13 +270,13 @@
 .stand li p {
     text-transform: uppercase;
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 5%;
     left: 5%;
 }
 
 .chartdiv {
-    border: 1px solid #333;
+    border: 1px solid #666;
     float: left;
     padding: 5% 5% 1% 5%;
     position: relative;
@@ -292,7 +303,7 @@
 }
 
     .legend li {
-        color: #808080;
+        color: #000;
         padding: 0 0 0 15%;
         margin-bottom: 2%;
         white-space: nowrap;
@@ -323,21 +334,22 @@
 
 
 #tenure .legend p {
-    background: url("../../Images/select-arrow.png") no-repeat #5e5e5e right;
+    background: url("../../Images/select-arrow.png") no-repeat #f5f5f5 right;
     background-size: auto 100%;
-    color: #fff;
+    color: #000;
     padding: 1.5% 1% 2% 5%;
     display: block;
     cursor: pointer;
+    border: 1px solid #23a1a7;
 }
 
 .legendwn {
-    background: url("../../Images/select-arrow-up.png") no-repeat #5e5e5e right !important;
+    background: url("../../Images/select-arrow-up.png") no-repeat #f5f5f5 right !important;
     background-size: auto 100% !important;
 }
 
 #tenure .legend ul {
-    border: 1px solid #ccc;
+    border: 1px solid #23a1a7;
     float: left;
     width: 94%;
     padding: 1.5% 0 1.5% 5%;
@@ -366,7 +378,7 @@
 
 
         .legenddropdown li:hover {
-            background: #e0b001;
+            background: #23a1a7;
             color: #fff;
         }
 
@@ -1353,16 +1365,17 @@
     }
 
     .markerholder li {
-        margin-left: 17px;
+        margin-left: 18px;
         margin-top: 3px;
         padding-bottom: 42px;
     }
 
         .markerholder li p {
             height: 32px;
-            line-height: 32px;
-            width: 34px;
+            line-height: 34px;
+            width: 35px;
         }
+
 
     .indexright {
         top: 19.5%;
@@ -2020,9 +2033,11 @@
 
 
 @media screen and (min-width: 1365px) and (max-width: 1439px) {
-    .login {
-        padding: 1.8% 2% 1.8% 0;
+
+    .stand li p {
+        font-size: 14px;
     }
+
 
     .sticklr > li > a {
         width: 65px !important;
@@ -2136,10 +2151,6 @@
         top: 6.8%;
         margin-left: -5px;
         width: 51px;
-    }
-
-    .dropdown ul li a {
-        padding: 2% 0 3% 5% !important;
     }
 
     #accsettings li a {
@@ -2613,6 +2624,10 @@
         top: 14.3% !important;
     }
 
+    .stand li {
+        background-size: 100% 100% !important;
+    }
+
     .status {
         top: 40.5%;
         width: 3.5%;
@@ -2761,6 +2776,10 @@
             width: 45px;
         }
 
+    .stand li {
+        background-size: 100% 100%;
+    }
+
     .pageBtn-Part a {
         font-size: 12px;
     }
@@ -2773,6 +2792,10 @@
     .hlpcont, .hlpheading, .patable tr td, .patable tr th {
         font-size: 120% !important;
         line-height: 1.5 !important;
+    }
+
+    .stand li {
+        background-size: 100% 100% !important;
     }
 
     .sticklr {
@@ -2825,6 +2848,10 @@
         width: 63%;
     }
 
+
+    .stand li {
+        background-size: 100% 100%;
+    }
 
     .legenddropdown ul {
         width: 99% !important;
@@ -2919,6 +2946,11 @@
     .pageBtn-Part a {
         font-size: 12px;
     }
+
+    .stand li p {
+        left: 7%;
+        font-size: 21px;
+    }
 }
 
 
@@ -2937,6 +2969,19 @@
     .sticklr {
         top: 11.5% !important;
     }
+
+    .stand li {
+        background-size: 100% 100% !important;
+    }
+
+        .stand li:hover {
+            background-size: 100% 100% !important;
+        }
+
+        .stand li p {
+            left: 7%;
+            font-size: 21px;
+        }
 
     .managerModel .patable .pageBtn-Part {
         margin-top: 10.5% !important;
@@ -3000,8 +3045,8 @@
         right: 4.5%;
         height: 5.5%;
         padding: .9% 0.6% 0.6% 0.5%;
+        font-size: 20px;
     }
-
 
 
     .dwnstatus {
@@ -3009,6 +3054,7 @@
         width: 3%;
         right: 4%;
         height: 5.5%;
+        font-size: 20px;
         padding: 0.3% 0.6% 0.6% 0.5%;
     }
 
@@ -3018,6 +3064,7 @@
         width: 3%;
         right: 4.2%;
         height: 9%;
+        font-size: 20px;
     }
 
 
@@ -3035,9 +3082,6 @@
         top: 40px;
     }
 
-    .dropdown ul li a {
-        padding: 2% 0 2% 5% !important;
-    }
 
     #accsettings li a {
         padding: 2% 0 1% 5% !important;
@@ -3075,11 +3119,10 @@
 
 
     .markerholder li {
-        margin-left: 26px;
+        margin-left: 27px;
         margin-top: 21px;
         padding-bottom: 66px;
     }
-
 
         .markerholder li p {
             height: 44px;
@@ -3092,10 +3135,6 @@
     background: none !important;
     top: 0px !important;
 }
-
-
-
-
 
 
 

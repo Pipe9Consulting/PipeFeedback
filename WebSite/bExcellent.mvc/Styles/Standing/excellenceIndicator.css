@@ -1,9 +1,8 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
-    font-family: Segoe UI;
-    background-size: 100% 100% !important;
+    /*background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
+    background-size: 100% 100% !important;*/
 }
 
 
@@ -24,11 +23,12 @@ h1, .tsf {
 
 
 .selectedIndicator p {
-    color: #e0b001 !important;
+    color: #23a1a7 !important;
 }
 
 .selectedIndicator {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
 .stand li {
@@ -40,17 +40,19 @@ h1, .tsf {
     margin: 0 3% 3% 0;
     position: relative;
     cursor: pointer;
-    background: rgba(0,0,0,0.8);
+    background: #fff;
+    border: 1px solid #666;
 }
 
 .dummytile {
-    background: rgba(0, 0, 0, 0.8);
+    background: #f5f5f5;
+    border: 1px solid #666;
 }
 
-.stand .scroll1 {
+/*.stand .scroll1 {
     border: 1px solid #333;
     padding: 3%;
-}
+}*/
 
 .rectangle {
     width: 97% !important;
@@ -62,26 +64,28 @@ h1, .tsf {
     }
 
 .selectStand {
-    background: rgba(0, 0, 0, 1) !important;
+    background: #fff;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectStand p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 5%;
     left: 5%;
 }
 
 .stand li:hover {
-    background: rgba(0, 0, 0, 1);
+    background: #fff;
+    border: 1px solid #23a1a7;
 }
 
     .stand li:hover p {
-        color: #e0b001;
+        color: #23a1a7;
     }
 
 .stand li span {
@@ -439,7 +443,7 @@ h1 {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 5%;
     left: 6%;
     width: 90%;
@@ -685,14 +689,14 @@ h1 {
 }
 
     .legenddropdown li:hover {
-        background: #e0b001;
+        background: #23a1a7;
         color: #fff;
     }
 
 .legenddropdown ul {
     padding: 0% !important;
-    margin: 0% !important;
-    width: 98% !important;
+    margin: -1px 0% !important;
+    width: 99.5% !important;
 }
 
 .legend1 {
@@ -1170,13 +1174,14 @@ h1 {
 }
 
 #legendAll .legend p {
-    background: url("../../Images/select-arrow.png") no-repeat #5e5e5e right;
+    background: url("../../Images/select-arrow.png") no-repeat #f5f5f5 right;
     background-size: auto 100%;
-    color: #fff;
+    color: #333;
     padding: 1.5% 1% 2% 5%;
     display: block;
     cursor: pointer;
     font-size: 70%;
+    border: 1px solid #23a1a7;
 }
 
 .stand h1 {
@@ -1188,27 +1193,28 @@ h1 {
 .excellenceTiles {
     width: 13%;
     position: absolute;
-    right: 6.9%;
+    right: 6.83%;
     margin-top: -0.5%;
 }
 
 
     .excellenceTiles p {
-        background: url("../../Images/select-arrow.png") no-repeat #5e5e5e right;
+        background: url("../../Images/select-arrow.png") no-repeat #f5f5f5 right;
         background-size: auto 100%;
-        color: #fff;
+        color: #333;
         padding: 1.5% 1% 2% 5%;
         display: block;
         cursor: pointer;
+        border: 1px solid #666;
     }
 
 .legendwn {
-    background: url("../../Images/select-arrow-up.png") no-repeat #5e5e5e right !important;
+    background: url("../../Images/select-arrow-up.png") no-repeat #f5f5f5 right !important;
     background-size: auto 100% !important;
 }
 
 #legendAll .legend ul {
-    border: 1px solid #ccc;
+    border: 1px solid #23a1a7;
     float: left;
     width: 94%;
     padding: 1.5% 0 1.5% 5%;
@@ -1217,7 +1223,7 @@ h1 {
 }
 
 .excellenceTiles ul {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #23a1a7;
     float: left;
     display: none;
     position: absolute;
@@ -1226,23 +1232,23 @@ h1 {
 }
 
     .excellenceTiles ul li {
-        background: #333;
-        color: #fff;
+        background: #fff;
+        color: #333;
         width: 100%;
         padding: 2% 2% 2% 4% !important;
         float: left;
         clear: both;
         font-weight: normal;
-        border-left: 1px solid #ccc;
-        border-right: 1px solid #ccc;
+        border-left: 1px solid #23a1a7;
+        border-right: 1px solid #23a1a7;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
     }
 
         .excellenceTiles ul li:hover {
-            background: #000;
-            color: #e0b001 !important;
+            background: #23a1a7;
+            color: #fff !important;
             cursor: pointer;
         }
 
@@ -1925,7 +1931,7 @@ h1 {
 }
 
 .dummychartdiv {
-    background: rgba(0,0,0,0.3) !important;
+    background: rgba(0,0,0,0.03) !important;
     padding-bottom: 52.5%;
     margin-bottom: 1.5%;
 }
@@ -2155,8 +2161,16 @@ h1 {
 
 @media screen and (min-width: 1365px) and (max-width: 1439px) {
 
+    .excellenceTiles p {
+        font-size: 14px;
+    }
+
+    .stand li p {
+        font-size: 14px;
+    }
+
     #selfHeader span {
-        font-size: 56% !important;
+        font-size: 80% !important;
     }
 
 
@@ -2165,23 +2179,23 @@ h1 {
     }
 
     .stand li {
-        padding-bottom: 47%;
+        padding-bottom: 46%;
     }
 
 
     .excellenceTiles {
         margin-top: 0%;
-        right: 5%;
-        width: 7%;
+        right: 4.9%;
+        width: 9%;
+    }
+
+    .EiQtext {
+        font-size: 15px;
     }
 
 
     .sticklr > li > a {
         width: 65px !important;
-    }
-
-    .login {
-        padding: 2% 2% 1.6% 0;
     }
 
     .stand li {
@@ -2204,7 +2218,7 @@ h1 {
         padding: 2.5% 0.3% .5% .2%;
         height: 10%;
         right: 4%;
-        top: 37%;
+        top: 38%;
         width: 5%;
     }
 
@@ -2213,17 +2227,26 @@ h1 {
         padding: 1% 0.3% .4% .1%;
         height: 10%;
         right: 4%;
-        top: 40.5%;
+        top: 41%;
         width: 5%;
     }
 
 
     .midstatus {
         height: 10%;
-        top: 36%;
+        top: 37%;
         padding: 4% 1.3% 3% 0;
         width: 5%;
         right: 3.5%;
+    }
+
+
+    #legendAll .legend p {
+        font-size: 90%;
+    }
+
+    .legend2all .drplegend li {
+        font-size: 95% !important;
     }
 
 
@@ -2231,14 +2254,6 @@ h1 {
         width: 37% !important;
     }
 
-
-    .midstatus {
-        height: 10%;
-        top: 36%;
-        padding: 4% 1.3% 3% 0;
-        width: 5%;
-        right: 3.5%;
-    }
 
     .patable {
         margin-top: .5%;
@@ -2264,12 +2279,17 @@ h1 {
     }
 
     .coltwo {
-        width: 37%;
+        width: 42%;
     }
 
     #wrapper .customertiles h1, h1 {
         padding: 0 !important;
     }
+
+    #tilesub li {
+        font-size: 14px;
+    }
+
 
     .markerholder li {
         padding-bottom: 32px;
@@ -2931,10 +2951,19 @@ h1 {
         top: 14% !important;
     }
 
+    .stand li p {
+        font-size: 21px;
+    }
+
     .excellenceTiles {
         width: 8% !important;
         margin-top: 0% !important;
     }
+
+    .EiQtext {
+        font-size: 22px;
+    }
+
 
 
     .EiQno {
@@ -2991,7 +3020,7 @@ h1 {
 
 
     .dummychartdiv {
-        padding-bottom: 43.8%;
+        padding-bottom: 43%;
         margin-bottom: 2%;
     }
 
@@ -3093,7 +3122,7 @@ h1 {
     width: 5.5%;
     padding: 0% 1% 7% 1%;
     color: #ffffff;
-    background: #e0b001;
+    background: #23a1a7;
     text-align: center;
     font-size: 130%;
     float: left;
@@ -4615,7 +4644,14 @@ h1 {
     width: 22px;
 }
 
-.EiQno, .EiQtext {
+.EiQno {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
+.EiQtext {
     display: table-cell;
     vertical-align: middle;
     color: #000;

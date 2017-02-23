@@ -95,15 +95,16 @@
 
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border:1px solid #23a1a7 !important;
 }
 
     .selected .numbertile {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 

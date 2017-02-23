@@ -1,7 +1,7 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: url(../../Images/images/bodyBg-new4.jpg) repeat !important;
+    /*background: url(../../Images/images/bodyBg-new4.jpg) repeat !important;*/
     font-family: Segoe UI;
     background-size: 100% 100% !important;
 }
@@ -37,16 +37,23 @@
 
 
 .moduleHove p {
-    color: #e0b001 !important;
+    color: #23a1a7 !important;
 }
 
 #userList li:hover {
-    background: #000;
+    background: #fff;
+    border: 1px solid #23a1a7;
 }
 
-.breadMenu {
-    margin: 1.5% 1.5% 0.5% 1.5% !important;
+
+#userList li:hover {
+    background: #fff;
+    border: 1px solid #23a1a7;
 }
+
+/*.breadMenu {
+    margin: 1.5% 1.5% 0.5% 1.5% !important;
+}*/
 
 
 .standInfo {
@@ -173,6 +180,7 @@ standTable table {
         margin-right: 5%;
         margin-top: 13%;
         padding-top: 5%;
+        color: #333;
     }
 
 
@@ -180,13 +188,13 @@ standTable table {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 5%;
     left: 5%;
 }
 
 .chartdiv {
-    border: 1px solid #333;
+    border: 1px solid #666;
     float: left;
     padding: 2% 5% 1% 5%;
     position: relative;
@@ -343,6 +351,7 @@ standTable table {
 
 .chartarea ul li p {
     color: #fff;
+    font-size: 13px;
     margin-right: 8%;
 }
 
@@ -736,7 +745,6 @@ standTable table {
     width: 94% !important;
     position: absolute;
     height: 96.5%;
-    margin: 3%;
 }
 
 
@@ -746,7 +754,6 @@ standTable table {
     height: 0 !important;
     padding-bottom: 48% !important;
     position: relative;
-    border: 1px solid #333;
 }
 
 
@@ -1445,11 +1452,12 @@ standTable table {
 }
 
 .selected {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selected p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
@@ -1462,7 +1470,8 @@ standTable table {
     padding-bottom: 45%;
     height: 0;
     float: left;
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
+    border: 1px solid #666;
     list-style: none;
     margin: 0 3% 3% 0;
     position: relative;
@@ -1511,11 +1520,12 @@ standTable table {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 3%;
     left: 5%;
     width: 90%;
     text-transform: uppercase;
+    font-size: 13px;
 }
 
 .indexright {
@@ -1794,6 +1804,7 @@ standTable table {
 
     .chartarea ul li p {
         margin-right: 3%;
+        font-size: 20px;
         margin-top: 0.5%;
     }
 
@@ -1850,15 +1861,10 @@ standTable table {
         font-size: 120% !important;
     }
 
-    .legend1 {
-        background-size: 4% 80%;
+    .legend1, .legend2 {
+        background-size: 28% 100% !important;
+        font-size: 18px;
     }
-
-    .legend2 {
-        background-size: 4% 80%;
-    }
-
-
 
     .legend li {
         padding: 0 0 0 7%;
@@ -1914,11 +1920,6 @@ standTable table {
     }
 
 
-    .login {
-        padding-top: 2% !important;
-    }
-
-
     .patable .slimScrollDiv, .scroll6 {
         padding-bottom: 3px !important;
         height: 180px !important;
@@ -1940,7 +1941,7 @@ standTable table {
     }
 
     #userList p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
 
@@ -2649,6 +2650,12 @@ standTable table {
 
 
 @media screen and (min-width: 1359px) and (max-width: 1439px) {
+
+    .legend1, .legend2 {
+        background-size: 24% 85% !important;
+        padding-left: 10%;
+        font-size: 14px;
+    }
 
     .pageholder {
         margin: 0% 1.5% 0.5% !important;

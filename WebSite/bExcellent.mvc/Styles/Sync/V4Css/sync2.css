@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new2.jpg)no-repeat !important;
     font-family: Segoe UI;
-    background-size: 100% 100% !important;
+    /*background-size: 100% 100% !important;
+    background: url(../../../Images/images/bodyBg-new2.jpg)no-repeat !important;*/
 }
 
 
@@ -62,10 +62,8 @@ body {
 }
 
 .takeFeedbackLeft {
-    border: 1px solid #333;
     float: left;
     width: 100%;
-    padding: 3% 0 0 3%;
     background-size: 100% 100%;
 }
 
@@ -76,7 +74,7 @@ body {
     margin: 0 3% 3% 0;
     position: relative;
     float: left;
-    padding-bottom: 40%;
+    padding-bottom: 43%;
 }
 
 .incompletefbMenu {
@@ -101,16 +99,18 @@ body {
 }
 
 .selfStd {
-    background: url(../../../Images/images/feedback/selfIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    background: url(../../../Images/images/feedback/selfIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
     background-size: 45% 45%;
+    border: 1px solid #666;
 }
 
     .selfStd:hover {
-        background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #000;
+        background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
         background-size: 45% 45%;
+        border: 1px solid #23a1a7;
     }
 
     .selfStd img, .teamStd img {
@@ -123,52 +123,56 @@ body {
     }
 
 .teamStd {
-    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
     background-size: 45% 45%;
+    border: 1px solid #666;
 }
 
 
 
     .teamStd:hover {
-        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
         background-size: 45% 45%;
+        border: 1px solid #23a1a7;
     }
 
         .selfStd:hover a, .teamStd:hover a {
-            color: #e0b001 !important;
+            color: #23a1a7 !important;
         }
 
 
 .selectSelf {
-    background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #000;
+    background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     background-size: 45% 45%;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectSelf a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
     .selectSelf p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectTeam {
-    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 10% #000;
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     background-size: 45% 45%;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectTeam a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selectTeam p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
@@ -204,13 +208,13 @@ body {
 }
 
     .vertical-align--bottom a {
-        color: #fff;
+        color: #333;
         font-size: 150%;
         padding: 0 12px;
         position: relative;
-        bottom: 10px;
         display: block;
         text-transform: uppercase;
+        bottom: 8px;
     }
 
 /*.vertical-align-wrap:hover a {
@@ -229,9 +233,7 @@ body {
 }
 
 .profileCenter {
-    border: 1px solid #333;
     width: 100%;
-    padding: 3% 0 1% 3%;
     height: auto;
     float: left;
 }
@@ -288,7 +290,7 @@ body {
 }
 
 .selectArrow span {
-    border: 2px solid #e0b001;
+    border: 2px solid #23a1a7;
     background: url(../../../Images/images/feedback/selecttick.png)no-repeat top right;
     height: 100%;
     width: 100%;
@@ -300,7 +302,8 @@ body {
 }
 
 .selectArrow p {
-    color: #e0b001;
+    color: #fff;
+    background: #23a1a7;
 }
 
 .profileCenter ul li:hover img {
@@ -310,7 +313,8 @@ body {
 }
 
 .profileCenter ul li:hover p {
-    color: #e0b001;
+    color: #fff;
+    background: #23a1a7;
 }
 
 .takefbRightPart {
@@ -319,16 +323,11 @@ body {
 }
 
 .givefbcontent {
-    border: 1px solid #333;
     float: left;
     width: 99%;
-    padding: 1.5%;
 }
 
-
-
 .requestfbcontent {
-    border: 1px solid #999;
     float: left;
     width: 66%;
     padding: 1.5%;
@@ -340,6 +339,7 @@ body {
     float: left;
     width: 66%;
     padding: 1.5%;
+    border: 1px solid #666;
 }
 
 
@@ -356,6 +356,7 @@ body {
     float: left;
     margin-right: 1.5%;
     height: 65%;
+    border: 1px solid #666;
 }
 
 .fblsecondBox {
@@ -365,6 +366,7 @@ body {
     float: left;
     margin-right: 1.5%;
     height: 65%;
+    border: 1px solid #666;
 }
 
 .fblthirdBox {
@@ -373,6 +375,7 @@ body {
     width: 32.3%;
     float: left;
     height: 65%;
+    border: 1px solid #666;
 }
 
 .takefbcontent p {
@@ -380,24 +383,25 @@ body {
 }
 
 .boxone {
-    background: rgba(0, 0, 0, 0.9);
+    background: #fff;
     margin-top: 106%;
     height: 50%;
 }
 
     .boxone h2 {
-        background: #000;
+        background: #fff;
         width: 100%;
-        color: #fff;
+        color: #000;
         font-size: 170%;
         padding: 6%;
         font-weight: normal;
-        border-bottom: 1px solid #222;
+        border-bottom: 1px solid #666;
+        border-top: 1px solid #666;
     }
 
     .boxone h3 {
         width: 100%;
-        color: #fff;
+        color: #000;
         font-size: 150%;
         padding: 5% 6% 0% 6%;
         margin: 0;
@@ -405,30 +409,30 @@ body {
     }
 
     .boxone p {
-        height: 135px;
+        height: 122px;
         width: 100%;
-        color: #fff;
+        color: #000;
         font-size: 110%;
         padding: 2% 6% 2% 6%;
     }
 
     .boxone a {
         float: right;
-        background: #e0b001;
+        background: #fff;
         text-decoration: none;
-        padding: 2% 4% 3% 4%;
+        padding: 2.5% 4% 2% 4%;
         margin: 3% 6% 0 6%;
         font-size: 130%;
-        color: #000;
+        color: #23a1a7;
         font-weight: 500;
-        border: 1px solid #000;
+        border: 1px solid #23a1a7;
         display: inline-block;
     }
 
         .boxone a:hover {
-            background: #000;
-            color: #e0b001;
-            border: 1px solid #e0b001;
+            background: #fff;
+            color: #eb4830;
+            border: 1px solid #eb4830;
         }
 
 .boxbottom {
@@ -529,53 +533,53 @@ body {
 }
 
 .generalFb .boxone h2 {
-    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 270% right 5% #000;
+    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 270% right 5% #fff;
     background-size: 22% 90%;
     font-size: 120%;
 }
 
 
 .quickFb .boxone h2 {
-    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 270% right 5% #000;
+    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 270% right 5% #fff;
     background-size: 22% 90%;
     font-size: 120%;
 }
 
 
 .fblfristBox .boxone h2 {
-    background: url(../../../Images/images/feedback/bigPictureIcon.png)no-repeat top 270% right 5% #000;
+    background: url(../../../Images/images/feedback/bigPictureIcon.png)no-repeat top 270% right 5% #fff;
     background-size: 20% 90%;
     font-size: 120%;
 }
 
 .fblsecondBox .boxone h2 {
-    background: url(../../../Images/images/feedback/practiceAreasIcon.png)no-repeat top 270% right 5% #000;
+    background: url(../../../Images/images/feedback/practiceAreasIcon.png)no-repeat top 270% right 5% #fff;
     background-size: 20% 92%;
     font-size: 120%;
 }
 
 .fblthirdBox .boxone h2 {
-    background: url(../../../Images/images/feedback/excellenceActionIcon.png)no-repeat top 270% right 5% #000;
+    background: url(../../../Images/images/feedback/excellenceActionIcon.png)no-repeat top 270% right 5% #fff;
     background-size: 20% 93%;
     font-size: 120%;
 }
 
 .selectTeam {
-    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 5% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 5% #fff !important;
     background-size: 45% 45% !important;
 }
 
     .selectTeam a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectOtherTeam {
-    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
 }
 
     .selectOtherTeam a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
@@ -585,7 +589,7 @@ body {
 }
 
 .selectPeers {
-    background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
 }
 
@@ -595,7 +599,7 @@ body {
 
 
 .selectskip {
-    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
 }
 
@@ -604,7 +608,7 @@ body {
     }
 
 .selectmanager {
-    background: url(../../../Images/images/feedback/rfbManagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/rfbManagerIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
 }
 
@@ -613,7 +617,7 @@ body {
     }
 
 .selectcustomer {
-    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
 }
 
@@ -623,66 +627,66 @@ body {
 
 
 .teamGfbIcon {
-    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 15% right 12% #fff;
     background-size: 50% 50%;
 }
 
     .teamGfbIcon:hover {
-        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% #fff;
         background-size: 50% 50%;
     }
 
 .otherteamGfbIcon {
-    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 15% right 12% #fff;
     background-size: 50% 50%;
 }
 
     .otherteamGfbIcon:hover {
-        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% #fff;
         background-size: 50% 50%;
     }
 
 
 .skipLevelRfb {
-    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 15% right 12% #fff;
     background-size: 50% 50%;
 }
 
     .skipLevelRfb:hover {
-        background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% #fff;
         background-size: 50% 50%;
     }
 
 
 .managerRfb {
-    background: url(../../../Images/images/feedback/rfbManagerIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background: url(../../../Images/images/feedback/rfbManagerIcon.png)no-repeat top 15% right 12% #fff;
     background-size: 50% 50%;
 }
 
     .managerRfb:hover {
-        background: url(../../../Images/images/feedback/rfbManagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background: url(../../../Images/images/feedback/rfbManagerIconHover.png)no-repeat top 15% right 12% #fff;
         background-size: 50% 50%;
     }
 
 .customerRFb {
-    background: url(../../../Images/images/feedback/customersIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background: url(../../../Images/images/feedback/customersIcon.png)no-repeat top 15% right 12% #fff;
     background-size: 50% 50%;
 }
 
     .customerRFb:hover {
-        background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 15% right 12% #fff;
         background-size: 50% 50%;
     }
 
 
 .peersGfbIcon {
-    background: url(../../../Images/images/feedback/peersgfbIcon.png)no-repeat top 15% right 12% rgba(0, 0, 0, .8 );
+    background: url(../../../Images/images/feedback/peersgfbIcon.png)no-repeat top 15% right 12% #fff;
     background-size: 50% 50%;
 }
 
 
     .peersGfbIcon:hover {
-        background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 );
+        background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 15% right 12% #fff;
         background-size: 50% 50%;
     }
 
@@ -995,7 +999,7 @@ body {
     }
 
     .vertical-align--bottom a {
-        font-size: 120%;
+        font-size: 150%;
     }
 
     .incompletefb p {
@@ -1037,7 +1041,7 @@ body {
 
 
     .boxone p {
-        font-size: 120%;
+        font-size: 135%;
         line-height: 1.5;
     }
 
@@ -1047,11 +1051,11 @@ body {
 
     .boxone a {
         margin-top: 3%;
-        font-size: 90%;
+        font-size: 140%;
     }
 
     .profileCenter p {
-        font-size: 100%;
+        font-size: 120% !important;
         bottom: 0%;
     }
 }
@@ -1502,7 +1506,7 @@ body {
     }
 
     .vertical-align--bottom a {
-        font-size: 90%;
+        font-size: 110%;
     }
 
     .incompletefb p {
@@ -1544,9 +1548,9 @@ body {
 
 
     .boxone p {
-        font-size: 75%;
+        font-size: 100%;
         line-height: 16px;
-        margin-top: -3%;
+        margin-top: 2%;
     }
 
 
@@ -1555,14 +1559,14 @@ body {
     }
 
     .boxone a {
-        font-size: 90%;
+        font-size: 100%;
     }
 
 
     .profileCenter p {
-        font-size: 70% !important;
+        font-size: 85% !important;
         bottom: 0%;
-        padding: 2px 2px 3px 6px;
+        padding: 3px 2px 2px 6px;
         line-height: 1.1;
     }
 }

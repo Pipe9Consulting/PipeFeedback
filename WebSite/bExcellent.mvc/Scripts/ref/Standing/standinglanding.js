@@ -4,7 +4,7 @@ var standing = {
         Common.ajaxsync({
             url: '/Standing/GetUserRolesByProfile',
             success: function (response) {
-               debugger;
+               //debugger;
                 $('.stiles').hide();
                 for (var i = 0; i < response.length; i++) {
                     switch (response[i].RoleId) {

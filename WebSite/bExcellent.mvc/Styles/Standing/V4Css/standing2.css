@@ -1,9 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
-    font-family: Segoe UI;
-    background-size: 100% 100% !important;
+    /*background: url(../../../Images/images/bodyBg-new3.jpg)no-repeat !important;
+    background-size: 100% 100% !important;*/
 }
 
 
@@ -36,10 +35,8 @@ body {
 }
 
 .takeFeedbackLeft {
-    border: 1px solid #333;
     float: left;
     width: 100%;
-    padding: 3% 0 0 3%;
     /*background: url(../../../Images/images/feedback/fbmenubg.png) no-repeat center;*/
     background-size: 94.5% 96.5%;
 }
@@ -76,36 +73,41 @@ body {
 }
 
 .selfStd {
-    background: url(../../../Images/images/feedback/selfIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    background: url(../../../Images/images/feedback/selfIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
     background-size: 45% 45%;
+    border: 1px solid #666;
 }
 
     .selfStd:hover {
-        background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #000;
+        background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
         background-size: 45% 45%;
+        border: 1px solid #23a1a7;
     }
 
 .managerStd {
-    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
+    border: 1px solid #666;
     background-size: 45% 45%;
 }
 
     .managerStd:hover {
-        background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #000;
+        background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
         background-size: 45% 45%;
+        border: 1px solid #23a1a7;
     }
 
 .skipStd {
-    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    background: url(../../../Images/images/feedback/skiplevelmanagerIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
     background-size: 45% 45%;
+    border: 1px solid #666;
 }
 
 .dummytile {
@@ -115,145 +117,154 @@ body {
 }
 
 .skipStd:hover {
-    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #000;
+    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     background-size: 45% 45%;
+    border: 1px solid #23a1a7;
 }
 
 
 .partnersStd {
-    background: url(../../../Images/images/feedback/customersIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    background: url(../../../Images/images/feedback/customersIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
+    border: 1px solid #666;
     background-size: 45% 45%;
 }
 
     .partnersStd:hover {
-        background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #000;
+        background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
         background-size: 45% 45%;
+        border: 1px solid #23a1a7;
     }
 
 
 
 .peersStd {
-    background: url(../../../Images/images/feedback/peersgfbIcon.png)no-repeat top 10% right 10% rgba(0, 0, 0, 0.9);
+    background: url(../../../Images/images/feedback/peersgfbIcon.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     cursor: pointer;
     background-size: 45% 45%;
+    border: 1px solid #666;
 }
 
     .peersStd:hover {
-        background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 10% right 10% #000;
+        background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 10% right 10% #fff;
         display: table-cell;
         background-size: 45% 45%;
+        border: 1px solid #23a1a7;
     }
 
 
 
 
 .teamStd {
-    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 10% right 3.5% rgba(0, 0, 0, 0.9);
+    background: url(../../../Images/images/feedback/teamMemberIcon.png)no-repeat top 10% right 3.5% #fff;
     display: table-cell;
     cursor: pointer;
     background-size: 20% 40%;
+    border: 1px solid #666;
 }
 
 
 
     .teamStd:hover {
-        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 3.5% rgba(0, 0, 0, 1);
+        background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 3.5% #fff;
         display: table-cell;
         background-size: 20% 40%;
+        border: 1px solid #23a1a7;
     }
 
 
 .selectSelf {
-    background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #000;
+    background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     background-size: 45% 45%;
+    border: 1px solid #23a1a7;
 }
 
     .selectSelf a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
     .selectSelf p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectManager {
-    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #000;
+    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
+    border: 1px solid #23a1a7;
     background-size: 45% 45%;
 }
 
     .selectManager a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selectManager p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .selectTeam {
-    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 10% #000;
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     background-size: 45% 45%;
+    border: 1px solid #666;
 }
 
     .selectTeam a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selectTeam p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .selectSkip {
-    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 10% right 10% #000;
     display: table-cell;
     background-size: 45% 45%;
 }
 
     .selectSkip a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selectSkip p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectPartners {
-    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #000;
+    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     background-size: 45% 45%;
 }
 
     .selectPartners a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selectPartners p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .selectPeers {
-    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #000;
+    background: url(../../../Images/images/feedback/customersIconHover.png)no-repeat top 10% right 10% #fff;
     display: table-cell;
     background-size: 45% 45%;
 }
 
     .selectPeers a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
     .selectPeers p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
@@ -265,11 +276,11 @@ body {
     font-size: 250%;
     margin: 10% 0;
     padding: 0 9%;
-    color: #fff;
+    color: #000;
 }
 
 .vertical-align-wrap:hover p {
-    color: #e0b001;
+    color: #23a1a7;
 }
 
 
@@ -279,7 +290,7 @@ body {
 }
 
     .vertical-align--bottom a {
-        color: #fff;
+        color: #333;
         font-size: 150%;
         padding: 0 15px;
         position: relative;
@@ -290,7 +301,7 @@ body {
     }
 
 .vertical-align-wrap:hover a {
-    color: #e0b001;
+    color: #23a1a7;
 }
 
 
@@ -305,9 +316,9 @@ body {
 }
 
 .profileCenter {
-    border: 1px solid #333;
+    /*border: 1px solid #333;*/
     width: 100% !important;
-    padding: 3% 0 0 3%;
+    /*padding: 3% 0 0 3%;*/
     height: auto;
     float: left;
 }
@@ -364,7 +375,7 @@ body {
 }
 
 .selectArrow span {
-    border: 2px solid #e0b001;
+    border: 2px solid #23a1a7;
     background: url(../../../Images/images/feedback/selecttick.png)no-repeat top right;
     height: 100%;
     width: 100%;
@@ -376,7 +387,8 @@ body {
 }
 
 .selectArrow p {
-    color: #e0b001;
+    color: #fff;
+    background: #23a1a7 !important;
 }
 
 .profileCenter ul li:hover img {
@@ -386,7 +398,8 @@ body {
 }
 
 .profileCenter ul li:hover p {
-    color: #e0b001;
+    color: #fff;
+    background: #23a1a7 !important;
 }
 
 .takefbRightPart {
@@ -395,10 +408,8 @@ body {
 }
 
 .givefbcontent {
-    border: 1px solid #333;
     float: left;
     width: 99%;
-    padding: 1.5%;
 }
 
 
@@ -432,6 +443,7 @@ body {
     float: left;
     margin-right: 1.5%;
     height: 65%;
+    border: 1px solid #666;
 }
 
 .fblsecondBox {
@@ -441,6 +453,7 @@ body {
     float: left;
     margin-right: 1.5%;
     height: 65%;
+    border: 1px solid #666;
 }
 
 .fblthirdBox {
@@ -449,6 +462,7 @@ body {
     width: 32.3%;
     float: left;
     height: 65%;
+    border: 1px solid #666;
 }
 
 .takefbcontent p {
@@ -456,17 +470,18 @@ body {
 }
 
 .boxone {
-    background: rgba(0, 0, 0, 0.9);
+    background: #fff;
     margin-top: 106%;
     height: 50%;
 }
 
     .boxone h2 {
-        background: #000;
+        background: #fff;
         width: 100%;
-        color: #fff;
+        color: #000;
         font-size: 170%;
-        border-bottom: 1px solid #222;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #666;
         padding: 6%;
         font-weight: normal;
     }
@@ -482,7 +497,7 @@ body {
 
     .boxone p {
         width: 100%;
-        color: #fff;
+        color: #000;
         font-size: 110%;
         padding: 2% 6% 5% 6%;
         height: 100px;
@@ -490,26 +505,29 @@ body {
 
     .boxone a {
         float: right;
-        background: #e0b001;
+        background: #fff;
         text-decoration: none;
-        padding: 2% 4% 2.5% 4%;
+        padding: 2% 4% 2% 4%;
         margin: 0 6%;
         font-size: 130%;
-        color: #000;
+        color: #23a1a7;
         font-weight: 500;
-        border: 1px solid #000;
+        border: 1px solid #23a1a7;
     }
 
         .boxone a:hover {
-            background: #000;
-            color: #e0b001;
-            border: 1px solid #e0b001;
+            background: #fff;
+            color: #eb4830;
+            border: 1px solid #eb4830;
         }
 
 .boxbottom {
     margin-top: 3%;
 }
 
+#target li span {
+    width: 7%;
+}
 
 
 /*-------------------------------Give Inner----------------------------------------------*/
@@ -604,74 +622,76 @@ body {
 }
 
 .generalFb .boxone h2 {
-    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 270% right 5% #000;
+    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 270% right 5% #fff;
     background-size: 22% 90%;
     font-size: 120%;
 }
 
 
 .quickFb .boxone h2 {
-    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 20px right 15px #000;
+    background: url(../../../Images/images/feedback/takeFbIcon.png)no-repeat top 20px right 15px #fff;
     background-size: 22% 90%;
     font-size: 120%;
 }
 
 
 .fblfristBox .boxone h2 {
-    background: url(../../../Images/images/feedback/bigPictureIcon.png)no-repeat top 20px right 15px #000;
+    background: url(../../../Images/images/feedback/bigPictureIcon.png)no-repeat top 20px right 15px #fff;
     background-size: contain;
     font-size: 120%;
 }
 
 .fblsecondBox .boxone h2 {
-    background: url(../../../Images/images/feedback/practiceAreasIcon.png)no-repeat top 10px right 15px #000;
+    background: url(../../../Images/images/feedback/practiceAreasIcon.png)no-repeat top 10px right 15px #fff;
     background-size: contain;
     font-size: 120%;
 }
 
 .fblthirdBox .boxone h2 {
-    background: url(../../../Images/images/feedback/excellenceActionIcon.png)no-repeat top 6px right 15px #000;
+    background: url(../../../Images/images/feedback/excellenceActionIcon.png)no-repeat top 6px right 15px #fff;
     background-size: contain;
     font-size: 120%;
 }
 
 .selectTeam {
-    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 18% right 5% rgba(0, 0, 0, 1 ) !important;
-    background-size: 25% 55% !important;
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 10% right 3.5% #fff !important;
+    background-size: 20% 40% !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectTeam a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectOtherTeam {
-    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/teamMemberIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectOtherTeam a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 
 .selectPeers {
-    background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 10% right 10% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/peersgfbIconHover.png)no-repeat top 10% right 10% #fff!important;
     background-size: 45% 45% !important;
 }
 
     .selectPeers a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 
 .selectskip {
-    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% rgba(0, 0, 0, 1 ) !important;
+    background: url(../../../Images/images/feedback/skiplevelmanagerIconHover.png)no-repeat top 15% right 12% #fff !important;
     background-size: 50% 50% !important;
 }
 
     .selectskip a {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .selectmanager {
@@ -1037,10 +1057,6 @@ body {
     }
 
 
-    .login {
-        padding: 3% 2% 2% 0;
-    }
-
     .accordion a {
         margin-top: -0.7%;
     }
@@ -1083,7 +1099,7 @@ body {
     }
 
     .vertical-align--bottom a {
-        font-size: 130%;
+        font-size: 150%;
     }
 
     .incompletefb p {
@@ -1125,7 +1141,7 @@ body {
 
 
     .boxone p {
-        font-size: 120%;
+        font-size: 130%;
         line-height: 1.5;
         padding-bottom: 5% !important;
         height: 150px;
@@ -1136,11 +1152,11 @@ body {
     }
 
     .boxone a {
-        font-size: 90%;
+        font-size: 140%;
     }
 
     .profileCenter p {
-        font-size: 120%;
+        font-size: 120% !important;
         bottom: 0%;
     }
 
@@ -1149,7 +1165,7 @@ body {
     }
 
     .profileCenter img {
-        height: 210px;
+        height: 218px;
     }
 }
 
@@ -1734,7 +1750,7 @@ body {
     }
 
     .vertical-align-wrap p {
-        font-size: 200%;
+        font-size: 260%;
     }
 
     .scroll2 {
@@ -1780,7 +1796,7 @@ body {
     }
 
     .vertical-align--bottom a {
-        font-size: 90%;
+        font-size: 110%;
         padding: 0 5px 0 10px;
     }
 
@@ -1825,7 +1841,7 @@ body {
     }
 
     .boxone p {
-        font-size: 80%;
+        font-size: 105%;
         line-height: 1.5;
     }
 
@@ -1834,18 +1850,19 @@ body {
     }
 
     .boxone a {
-        font-size: 90%;
+        font-size: 110%;
     }
 
-    .profileCenter p {
-        font-size: 69% !important;
-        bottom: 0%;
-        padding: 2px 2px 4px 6px;
-    }
+.profileCenter p {
+    font-size: 90% !important;
+    bottom: 0%;
+    padding: 3px 2px 1px 6px;
+    line-height: 1.2;
+}
 
 
     .profileCenter img {
-        height: 105px;
+        height: 110px;
     }
 }
 
