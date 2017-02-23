@@ -14,6 +14,14 @@
             // $('#usrList').slimscroll();
         });
     </script>
+
+    <div class="breadcrumb">
+        <a href="../Common/Index">Home </a>
+        <i>&nbsp>&nbsp</i>
+        <a href="../Development/Development">Development</a>
+        <i>&nbsp>&nbsp</i>
+        <a href="../Development/Progress">Progress</a>
+    </div>
     <div class="container-fluid">
         <%
             var t = 0;
@@ -30,16 +38,7 @@
         <input type="hidden" id="selectPoe" />
         <div class="row">
 
-            <div class="col-sm-12">
-                <div class="breadcrumb">
-                    <a href="../Common/Index">Home </a>
-                    <i>&nbsp>&nbsp</i>
-                    <a href="../Development/Development">Development</a>
-                    <i>&nbsp>&nbsp</i>
-                    <a href="../Development/Progress">Progress</a>
-                </div>
 
-            </div>
 
             <div class="col-sm-3">
                 <div class="user_tiles">

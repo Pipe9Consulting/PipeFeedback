@@ -5,9 +5,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../Images/DevPriorities/Landing/bodyBg-new5.jpg)no-repeat !important;
+    /*background: url(../../Images/DevPriorities/Landing/bodyBg-new5.jpg)no-repeat !important;
     font-family: Segoe UI;
-    background-size: 100% 100% !important;
+    background-size: 100% 100% !important;*/
 }
 
 .row {
@@ -24,7 +24,7 @@ h2 {
 }
 
 p {
-    font-size: 100%;
+    font-size: 120%;
 }
 
 .clearfix {
@@ -74,7 +74,7 @@ p {
     opacity: .8 !important;
     right: 0.3% !important;
     margin-top: 5px;
-    background-color: #e0b001 !important;
+    background-color: #eb4830 !important;
     height: 50% !important;
 }
 
@@ -107,7 +107,7 @@ p {
         }
 
             .user_tiles ul li:hover p, .user_tiles ul li:hover span {
-                color: #e0b001;
+                color: #23a1a7;
             }
 
         .user_tiles ul li p {
@@ -140,11 +140,12 @@ p {
 }
 
 .selectTiles {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7;
 }
 
     .selectTiles p, .selectTiles span {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .priorities_part2 h2 {
@@ -177,7 +178,7 @@ p {
 }
 
     .frquencyHeader li {
-        background: #333333;
+        background: #23a1a7;
         list-style: none;
         float: left;
         color: #fff;
@@ -631,7 +632,7 @@ p {
 
     .progress_practiceArea li {
         height: 100px;
-        background: #333;
+        background: #fff;
         padding: 1% 1%;
         text-align: center;
         width: 18.8%;
@@ -639,26 +640,29 @@ p {
         float: left;
         margin: 1% 0 1% 1%;
         cursor: pointer;
+        border: 1px solid #666;
     }
 
         .progress_practiceArea li:hover {
-            background: #000;
+            background: #fff;
+            border: 1px solid #23a1a7 !important;
         }
 
             .progress_practiceArea li:hover p {
-                color: #e0b001;
+                color: #23a1a7;
             }
 
 .selectAP {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectAP p {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .progress_practiceArea p {
-    color: #fff;
+    color: #333;
     line-height: 1.2;
     margin: 0%;
     padding: 0;
@@ -666,6 +670,20 @@ p {
 
 
 @media screen and (max-width: 1500px) and (min-width: 1000px) {
+    /*@media screen and (max-width:1400px) and (min-width:1300px)*/
+    .login {
+        padding-top: 5.5%;
+    }
+
+    .user_tiles ul li {
+        width: 42%;
+        padding: 0 0% 40% 0;
+    }
+
+
+    .breadcrumb {
+        margin-top: 0%;
+    }
 
     .frequency_scale li {
         font-size: 60% !important;
@@ -673,7 +691,7 @@ p {
     }
 
     .modNmaeview {
-        font-size: 120% !important;
+        font-size: 130% !important;
     }
 
     /*@media screen and (max-width:1400px) and (min-width:1300px)*/
@@ -700,7 +718,7 @@ p {
     }
 
     .frquencyContent ul:last-child .hover_content {
-        margin-top: -6% !important;
+        margin-top: -8% !important;
     }
 }
 
@@ -799,6 +817,10 @@ p {
         padding-bottom: 25%;
     }
 
+    .user_tiles ul li {
+        font-size: 18px;
+    }
+
     .frquencyContent ul li {
         min-height: 80px;
     }
@@ -847,7 +869,7 @@ p {
 @media screen and (max-width: 2600px) and (min-width: 1800px) {
 
     .frquencyContent ul li {
-        font-size: 120%;
+        font-size: 150%;
         line-height: 1.2;
     }
 
@@ -855,9 +877,13 @@ p {
         left: -190%;
     }
 
+    .frequency_scale li {
+        padding: 1% 0 !important;
+    }
+
 
     .modNmaeview {
-        font-size: 160%;
+        font-size: 220%;
     }
 
     .frquencyContent ul li .moduleTier {
@@ -894,11 +920,10 @@ p {
         top: -22%;
     }
 
-
-
     .progress_practiceArea li {
-        height: 135px;
-        padding: 2% 1%;
+        height: 155px;
+        padding: 3% 1%;
+        font-size: 120%;
     }
 
 
@@ -931,11 +956,11 @@ p {
     }
 
     .frquencyHeader li {
-        font-size: 130%;
+        font-size: 160%;
     }
 
     P {
-        font-size: 130%;
+        font-size: 140%;
     }
 
     .button_menu {
@@ -947,7 +972,7 @@ p {
 @media screen and (max-width: 2600px) and (min-width: 2500px) {
 
     .hover_content {
-        margin-top: 2.5% !important;
+        margin-top: 3% !important;
     }
 
     h2 {
@@ -955,7 +980,7 @@ p {
     }
 
     .frquencyContent ul:last-child .hover_content {
-        margin-top: -2% !important;
+        margin-top: -5.5% !important;
     }
 
     .frquencyContent ul li {
@@ -976,8 +1001,8 @@ p {
 
 
 #usrList {
-    border: 1px solid #333;
-    padding: 2% 0 76% 2% !important;
+    /*border: 1px solid #333;
+    padding: 2% 0 76% 2% !important;*/
     width: 85% !important;
 }
 
@@ -992,8 +1017,8 @@ p {
 
 .select_list {
     border-bottom: 1PX solid #999;
-    background: #666 !important;
-    color: #e0b001 !important;
+    background: #e4feff !important;
+    color: #000 !important;
 }
 
 
@@ -1021,25 +1046,25 @@ p {
 }
 
 .frquencyContent .slimScrollBar, .frquencyContent .slimScrollRail {
-    background-color: #e0b001 !important;
+    background-color: #23a1a7 !important;
     opacity: 0.8 !important;
     height: 50% !important;
 }
 
 
 .select_list .actionMore {
-    color: #e0b001;
+    color: #000;
 }
 
     .select_list .actionMore:hover {
-        color: #fff;
+        color: #eb4830;
     }
 
 .hover_content {
     display: none;
     color: #000;
     background: #fff;
-    border: 1px solid #e0b001;
+    border: 1px solid #eb4830;
     position: absolute;
     width: 30%;
     margin-top: 5.5%;
@@ -1054,7 +1079,7 @@ p {
     }
 
 .actionMore:hover {
-    color: #e0b001;
+    color: #eb4830;
     text-decoration: underline;
 }
 
@@ -1072,7 +1097,7 @@ p {
 
 
 .select_list .managerSpan, .select_list .youSpan {
-    color: #e0b001 !important;
+    color: #000 !important;
 }
 
 
@@ -1080,3 +1105,18 @@ p {
 .frequency_scale li {
     min-height: 0 !important;
 }
+
+
+.breadcrumb {
+    padding: 0.7% 1% 0.5% 2% !important;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 0;
+    margin-top: -0.5%;
+}
+
+
+    .breadcrumb a {
+        font-size: 1.1em;
+    }
