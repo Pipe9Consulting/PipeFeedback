@@ -18,9 +18,10 @@
     </script>
 
     <style>
-        .slimScrollBar, .slimScrollRail {
-            background: #fff !important;
+        .headerRight {
+            display: none;
         }
+
 
         .wallAward {
             display: none;

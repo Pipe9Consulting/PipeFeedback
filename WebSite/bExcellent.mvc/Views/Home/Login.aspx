@@ -72,7 +72,7 @@
                     <div class="loginscreenleft">
                         <form method="POST" action="/Home/Login">
                             <%: Html.AntiForgeryToken() %>
-                            <h1>LOG IN</h1>
+                            <h1>SIGN IN</h1>
                             <p>
                                 Email
                             </p>

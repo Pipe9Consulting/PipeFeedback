@@ -435,6 +435,7 @@ html, body {
     float: left;
     width: 10% !important;
     margin-right: 10%;
+    display:none !important;
 }
 
 

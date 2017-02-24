@@ -78,7 +78,7 @@
 
 .selected {
     background: #fff !important;
-    border: 1px solid #23a1a7;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selected .numbertile {
@@ -1532,11 +1532,16 @@ input[type="file"] {
     }
 
     .ui-slider-handle {
-        padding-bottom: 8.5% !important;
+        padding-bottom: 5.1% !important;
     }
 
     #wrapper .customertiles li p {
         font-size: 20px;
+    }
+
+    .sliderdiv {
+        width: 64% !important;
+        padding-bottom: 2.65%;
     }
 }
 

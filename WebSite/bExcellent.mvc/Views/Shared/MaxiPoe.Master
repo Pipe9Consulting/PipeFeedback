@@ -42,8 +42,8 @@
     <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/common.css" rel="stylesheet" type="text/css" />--%>
     <link href="../../Styles/basic.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="../../Images/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../Images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../../Images/favicon.png" type="image/x-icon" />
     <%--Scripts--%>
     <script src="../../Scripts/ref/jquery-1.8.3.min.js" type="text/javascript"></script>
     <script src="../../Scripts/ref/editor/jquery.sceditor.min.js" type="text/javascript"></script>

@@ -18,9 +18,6 @@
     </script>
 
     <style>
-        .slimScrollBar, .slimScrollRail {
-            background: #fff !important;
-        }
 
         .wallAward {
             display: none;
@@ -34,15 +31,19 @@
             margin-bottom: 1.5%;
         }
 
+        .headerRight {
+            display: none;
+        }
 
-            .breadcrumb, .breadcrumb a {
-                width: 99%;
-            }
+        .breadcrumb, .breadcrumb a {
+            width: 99%;
+        }
     </style>
+    <div class="breadcrumb">
+        <a href="../Common/Index">Home </a>> Privacy Policy
+    </div>
     <div class="pageholder">
-        <div class="breadcrumb">
-            <a href="../Common/Index">Home </a>> Privacy Policy
-        </div>
+
         <div class="termsandpolicy">
             <h1>Privacy Policy</h1>
             <div class="signuptile">

@@ -863,6 +863,10 @@ p {
     h2 {
         font-size: 180% !important;
     }
+
+    .user_tiles {
+        font-size:160%;
+    }
 }
 
 
