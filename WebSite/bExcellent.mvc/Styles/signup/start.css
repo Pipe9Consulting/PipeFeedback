@@ -174,19 +174,21 @@ body {
 
 
 .startSmallTile {
-    background: #f6f6f6;
-    opacity: 0.7;
+    background: #eee;
+    opacity: 0.92;
     position: absolute;
     z-index: 99999;
-    width: 100%;
+    width: 101%;
     height: 0px;
-    padding-bottom: 91.5%;
+    padding-bottom: 103.5%;
     cursor: default;
-    margin-left: -8.5%;
+    margin-left: -37px;
+    margin-top: -1px;
 }
 
+
 .startManagerNoOver:hover {
-    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #000 !important;
+    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #f6f6f6 !important;
     opacity: .4 !important;
     background-size: 38% 33% !important;
 }
@@ -194,7 +196,7 @@ body {
 .startManagerNoOver {
     opacity: .4 !important;
     background-size: 38% 33% !important;
-    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #000;
+    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #fff;
 }
 
 
@@ -350,7 +352,6 @@ body {
     margin: 0 0 0 5px;
     background: url(../../Images/start/notification_start.png) left center no-repeat;
     padding: 0 0 0 30px;
-    background-position-y: 2px;
 }
 
     .star_name:hover {
@@ -467,10 +468,30 @@ body {
 
 
 @media screen and (max-width: 3600px) and (min-width: 2600px) {
-    .startPart h1 {
-        padding: 3% 3.5% 3% 3.5%;
-        font-size: 300%;
+    .hideColumn {
+        padding-bottom: 46% !important;
     }
+
+
+    .startPart h1 {
+        padding: 3% 3.5% 2.2% 4.5%;
+        font-size: 400%;
+    }
+
+    .startBox p {
+        font-size: 200%;
+        padding: .5% 0% .5% 50px;
+    }
+
+    #hover_content1, #hover_content2, #hover_content3, #hover_content4, #hover_content5, #hover_content6, #hover_content7, #hover_content8, #hover_content9, #hover_content10, #hover_content11, #hover_content12 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+        #hover_content1 span, #hover_content2 span, #hover_content3 span, #hover_content4 span, #hover_content5 span, #hover_content6 span, #hover_content7 span, #hover_content8 span, #hover_content9 span, #hover_content10 span, #hover_content11 span, #hover_content12 span {
+            top: -27px;
+        }
+
 
     .goal {
         background-size: 20% 33%;
@@ -485,7 +506,7 @@ body {
     }
 
         .startBox h3 {
-            font-size: 300%;
+            font-size: 350%;
         }
 
     .noticationIcon {
@@ -506,23 +527,30 @@ body {
     }
 
 
-    #hover_content1 span, #hover_content2 span, #hover_content4 span {
+    #hover_content1 span, #hover_content4 span {
+        top: 91%;
+        left: 1.5%;
+    }
+
+    #hover_content2 span {
         top: 94%;
         left: 1.5%;
     }
 
     #hover_content1, #hover_content2, #hover_content4 {
         right: -41%;
-        top: 60%;
-        font-size: 150%;
+        top: 53%;
+        font-size: 180%;
+        line-height: 1.4;
     }
 
+
     #hover_content4 {
-        top: 54%;
+        top: 45%;
     }
 
     #hover_content2 {
-        top: 50%;
+        top: 38%;
     }
 
     .startBox {
@@ -532,33 +560,40 @@ body {
     #hover_content5 {
         padding: 3% 4% 4% 4%;
         right: -65%;
-        font-size: 150%;
-        top: 7%;
+        font-size: 180%;
+        top: -34%;
     }
 
     #hover_content6 {
         padding: 3% 4% 4% 4%;
-        right: -65%;
-        font-size: 150%;
-        top: 39%;
+        right: -64%;
+        font-size: 180%;
+        top: 22%;
+        line-height: 1.4;
     }
 
-        #hover_content5 span, #hover_content6 span {
-            top: 97%;
-        }
+
+    #hover_content5 span {
+        top: 97.5%;
+    }
+
+    #hover_content6 span {
+        top: 96%;
+    }
 
     #hover_content3 {
-        font-size: 150%;
-        top: 55%;
+        font-size: 180%;
+        top: 43%;
     }
 
+
     #hover_content7 {
-        font-size: 150%;
-        top: 60%;
+        font-size: 180%;
+        top: 51%;
     }
 
         #hover_content3 span, #hover_content7 span {
-            top: 93%;
+            top: 91.5%;
         }
 }
 
@@ -1467,8 +1502,8 @@ body {
 
 
     .startSmallTile {
-        padding-bottom: 95.5%;
-        margin-left: -9.5%;
+        padding-bottom: 97%;
+        margin-left: -9%;
     }
 
 
@@ -1729,13 +1764,13 @@ body {
     height: 0%;
     position: absolute;
     z-index: 999;
-    background: #000;
+    background: #f6f6f6;
     top: 0%;
     width: 95.8%;
     left: 14px;
     padding-bottom: 49.5%;
     cursor: default;
-    opacity: 0.1;
+    opacity: 0.7;
 }
 
 
