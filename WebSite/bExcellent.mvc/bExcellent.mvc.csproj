@@ -660,6 +660,8 @@
     <Content Include="Images\collapse.png" />
     <Content Include="Images\coming-soon.png" />
     <Content Include="Images\comingsoon.png" />
+    <Content Include="Images\Common\popup_close.png" />
+    <Content Include="Images\Common\popup_closeH.png" />
     <Content Include="Images\comparision_view.png" />
     <Content Include="Images\connect-icon.png" />
     <Content Include="Images\contact-bg.jpg" />

@@ -11,7 +11,7 @@
     <script type="text/javascript">
         //        popup window for changepassword and frogetpassword///
         $(document).ready(function () {
-           
+
             $('.afterlogin').hide();
             $('.checkt').hide();
             $('#beforeLogin').hide();
@@ -194,6 +194,7 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                     <%--Forgrt Password content--%>
                     <div id="basic-forgetPassword" style="display: none; position: absolute;">
                         <div class="close">
+                            
                         </div>
                         <h1>Forgot Password</h1>
                         <p style="margin-top: 5px;">

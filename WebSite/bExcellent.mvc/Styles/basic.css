@@ -41,9 +41,10 @@
     width: auto;
     color: white;
     background-color: #fff !important;
-    border: 1px solid #ea4128;
     z-index: 9999999999 !important;
     padding: 0.5% 2% 2% 1.5%;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 7px;
 }
 
     #basic-forgetPassword h1 {
@@ -60,7 +61,37 @@
     padding: 1%;
     border: 1px solid #73d1d5;
     width: 100%;
+    color: #000;
 }
+
+.close {
+    background: url('../Images/Common/popup_close.png') no-repeat left center !important;
+    background-size: 60px 60px !important;
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+    color: #fff;
+    font-size: 41px;
+    font-weight: 300;
+    text-shadow: none !important;
+    margin-top: -7% !important;
+    margin-right: -12% !important;
+    font-family: arial;
+    float: right;
+}
+
+
+
+    .close:focus, .close:hover {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        filter: alpha(opacity=50);
+        background: url('../Images/Common/popup_closeH.png') no-repeat left center !important;
+        background-size: 60px 60px !important;
+        opacity: 1;
+    }
+
 
 .origin {
     margin-top: 3%;
@@ -129,9 +160,10 @@
     width: 450px;
     color: #bbb;
     background-color: #fff !important;
-    border: 1px solid #23a1a7;
     padding: 2%;
     z-index: 999999 !important;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px #666;
 }
 
     #simplemodal-container code {
@@ -153,19 +185,27 @@
 
 
 
-        #simplemodal-container a.modalCloseImg {
-            background: url(../Images/close.png) no-repeat;
-            background-size: 80% 70%;
-            height: 0px;
-            z-index: 999999999;
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            cursor: pointer;
-        }
+#resetbtn, #ChangePassbtn {
+    background: none repeat scroll 0 0 #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 5px solid #168f95;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    color: #fff !important;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 130%;
+    padding: 5px 10px 3px 10px;
+    float: right;
+}
 
 
-    /*#simplemodal-container a.modalCloseImg:hover {
+
+#simplemodal-container a.modalCloseImg:hover {
+    background: url(../Images/Common/popup_closeH.png) no-repeat;
+    background-size: 80% 80%;
+}
+/*#simplemodal-container a.modalCloseImg:hover {
                 background: url(../Images/close-hover.png) no-repeat;
                 background-size: 50% 50% !important;
                 width: 5%;
@@ -181,9 +221,9 @@
                 border: 1px solid #e0b001;
             }*/
 
-    #simplemodal-container h3 {
-        color: #5E5E5E;
-    }
+#simplemodal-container h3 {
+    color: #5E5E5E;
+}
 
 #imgUploadedImage {
     max-height: 400px;
@@ -233,22 +273,6 @@
 }
 
 
-@media screen and (max-width: 2600px) and (min-width: 2170px) {
-
-
-
-    #basic-changePassword {
-        top: 28%;
-        height: 470px;
-        padding-top: 1%;
-    }
-
-        #basic-changePassword .close {
-            padding: 2.8% !important;
-            top: -7% !important;
-        }
-}
-
 
 .popupbg {
     background: url(../../Images/trans.png);
@@ -265,17 +289,7 @@
     color: black;
 }
 
-.close {
-    float: right;
-    background: url(../../images/close.png) no-repeat center;
-    background-size: 50% 50%;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0%;
-}
+
 
 #basic-forgetPassword .close {
     padding: 2.8% !important;
@@ -286,9 +300,62 @@
     top: -5%;
 }
 
-.close:hover {
-    background: url(../../images/close-hover.png) no-repeat center #fff;
+
+
+@media screen and (max-width: 3600px) and (min-width: 2600px) {
+
+    input {
+        font-size: 25px;
+    }
+
+    #basic-changePassword {
+        top: 28%;
+        height: 470px;
+        padding-top: 1%;
+    }
+
+        #basic-changePassword .close {
+            padding: 2.8% !important;
+            top: -7% !important;
+        }
+
+    .captcha_style {
+        font-size: 35px;
+        width: 340px;
+    }
+
+    .captcha_btn {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    #basic-forgetPassword {
+        width: 25%;
+    }
+
+        #basic-forgetPassword p {
+            font-size: 25px;
+        }
 }
+
+
+@media screen and (max-width: 2600px) and (min-width: 2170px) {
+
+
+
+    #basic-changePassword {
+        top: 28%;
+        height: 470px;
+        padding-top: 1%;
+    }
+
+        #basic-changePassword .close {
+            padding: 2.8% !important;
+            top: -7% !important;
+        }
+}
+
 
 
 @media screen and (max-width: 2169px) and (min-width: 2001px) {
@@ -308,10 +375,31 @@
     }
 
 
+    .simplemodal-data p {
+        font-size: 16px;
+    }
 
-        #basic-changePassword .close {
-            padding: 2.8% !important;
-            top: -6% !important;
+    #basic-changePassword .close {
+        padding: 2.8% !important;
+        top: -6% !important;
+    }
+
+    .close {
+        background-size: 40px 40px !important;
+        margin-top: -9% !important;
+        margin-right: -19% !important;
+    }
+
+    .close {
+        background-size: 40px 40px !important;
+        margin-top: -8% !important;
+        margin-right: -15% !important;
+    }
+
+        .close:hover {
+            background-size: 40px 40px !important;
+            margin-top: -8% !important;
+            margin-right: -15% !important;
         }
 }
 

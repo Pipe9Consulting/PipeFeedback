@@ -145,7 +145,7 @@ html, body {
     }
 
     .cacLogo img {
-        width: 43%;
+        width: 80%;
     }
 
     .headerMenu {
@@ -270,6 +270,9 @@ html, body {
 
 
 @media screen and (max-width: 1930px) and (min-width: 1800px) {
+    .cacLogo img {
+        width: 150px !important;
+    }
 
     .dropImage img {
         width: 450% !important;
@@ -367,7 +370,7 @@ html, body {
 }
 
 
-@media screen and (min-width: 2500px) and (max-width: 3060px) {
+@media screen and (min-width: 2500px) and (max-width: 2800px) {
     .dropdowns a {
         font-size: 20px !important;
     }
@@ -426,6 +429,141 @@ html, body {
 
 
 
+@media screen and (min-width: 2500px) and (max-width: 2860px) {
+    .dropdowns a {
+        font-size: 20px !important;
+    }
+
+    .ui.menu .item {
+        font-size: 1.1rem !important;
+    }
+
+    #notifyCont li a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        font-size: 17px;
+        background-position-y: 1px;
+    }
+
+    #notifyCont li:hover a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        background-position-y: 1px;
+    }
+
+    .wallleft ul li p {
+        font-size: 112% !important;
+    }
+
+    .dropdown .icon-arrow {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .dropImage img {
+        width: 450% !important;
+        height: 100px;
+        margin: 0 0 10px 0 !important;
+        margin-bottom: 43px;
+    }
+
+    .menuStar img {
+        bottom: 15px;
+        right: -20px;
+    }
+
+    .menuStar img {
+        width: 50% !important;
+        bottom: 20px;
+        right: -15px;
+        height: 25% !important;
+    }
+
+    .dropdown-content {
+        top: 100% !important;
+    }
+
+    .headerMenu {
+        height: 170px;
+    }
+
+    .cacLogo img {
+        width: 220%;
+    }
+}
+
+@media screen and (min-width: 2860px) and (max-width: 3500px) {
+    .dropdowns a {
+        font-size: 20px !important;
+    }
+
+    .ui.menu .item {
+        font-size: 1.1rem !important;
+    }
+
+    #notifyCont li a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        font-size: 17px;
+        background-position-y: 1px;
+    }
+
+    #notifyCont li:hover a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        background-position-y: 1px;
+    }
+
+    .wallleft ul li p {
+        font-size: 112% !important;
+    }
+
+    .dropdown .icon-arrow {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .dropImage img {
+        width: 450% !important;
+        height: 100px;
+        margin: 0 0 10px 0 !important;
+        margin-bottom: 43px;
+    }
+
+    .menuStar img {
+        bottom: 15px;
+        right: -20px;
+    }
+
+    .menuStar img {
+        width: 50% !important;
+        bottom: 20px;
+        right: -15px;
+        height: 25% !important;
+    }
+
+    .dropdown-content {
+        top: 100% !important;
+    }
+
+    .headerMenu {
+        height: 170px;
+    }
+
+    .cacLogo img {
+        width: 220%;
+    }
+
+    .dropdowns a {
+        font-size: 30px !important;
+        background-size: 7% 20% !important;
+        padding-top: 15px;
+        margin-right: 10px;
+    }
+}
+
+
+
 /************************************************** Notification Dropdown ************************************************************************/
 
 
@@ -435,7 +573,7 @@ html, body {
     float: left;
     width: 10% !important;
     margin-right: 10%;
-    display:none !important;
+    display: none !important;
 }
 
 

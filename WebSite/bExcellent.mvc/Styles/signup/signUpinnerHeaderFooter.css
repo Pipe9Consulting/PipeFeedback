@@ -102,7 +102,31 @@ html, body {
     height: 50px;
 }
 
-@media screen and (max-width: 3500px) and (min-width: 2200px) {
+
+
+
+@media screen and (max-width: 3500px) and (min-width: 2800px) {
+
+    .cacLogo img {
+        width: 300px;
+    }
+
+    .headerMenu {
+        height: 160px;
+    }
+
+    .ui.menu .item {
+        padding: 1.2% 1.5% 1.1% 1.5%;
+        font-size: 25px;
+    }
+
+    .footerPart, .page-wrap::after {
+        height: 100px;
+    }
+}
+
+
+@media screen and (max-width: 2800px) and (min-width: 2200px) {
 
     .ui.menu .item {
         padding: 1.2% 1.5% 1.1% 1.5%;
@@ -110,11 +134,11 @@ html, body {
     }
 
     .cacLogo img {
-        width: 210px;
+        width: 300px;
     }
 
     .headerMenu {
-        height: 120px;
+        height: 160px;
     }
 }
 
@@ -126,6 +150,9 @@ html, body {
 
 
 @media screen and (max-width: 2000px) and (min-width: 1701px) {
+    .cacLogo img {
+        width: 20% !important;
+    }
 
     .footerPart, .page-wrap:after {
         height: 60px;
@@ -178,7 +205,7 @@ html, body {
     }
 
     .cacLogo img {
-        width: 45%;
+        width: 20%;
     }
 
     .headerMenu {
@@ -264,7 +291,7 @@ html, body {
     }
 
     .cacLogo img {
-        width: 63%;
+        width: 20%;
     }
 
     .headerMenu {
@@ -293,7 +320,7 @@ html, body {
     }
 
     .cacLogo img {
-        width: 81%;
+        width: 20%;
     }
 
     .headerMenu {

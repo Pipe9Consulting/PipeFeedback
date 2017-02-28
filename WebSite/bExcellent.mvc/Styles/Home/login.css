@@ -291,7 +291,13 @@ p:empty {
     }
 
     .loginscreen {
-        margin-top: 10.5% !important;
+        margin-top: 8% !important;
+    }
+
+    .check p {
+        background-size: 2% 100%;
+        padding: 0% 3% 0% 3% !important;
+        background-position-y: center;
     }
 
 
@@ -301,15 +307,15 @@ p:empty {
 
 
     .loginscreenleft p {
-        font-size: 200%;
+        font-size: 250%;
     }
 
     .loginscreen h1 {
-        font-size: 300%;
+        font-size: 400%;
     }
 
     .loginscreen .btn {
-        font-size: 200%;
+        font-size: 300%;
     }
 
     .loginscreen .txtarea {
@@ -370,10 +376,18 @@ p:empty {
 
 
 @media screen and (max-width: 2000px) and (min-width: 1801px) {
+    #basic-forgetPassword p, #basic-forgetPassword input {
+        font-size: 18px;
+    }
 
     .check p {
         font-size: 130% !important;
     }
+
+    .captcha_style {
+        padding: 7px 0;
+    }
+
 
     .loginscreenleft p {
         font-size: 150%;
@@ -391,6 +405,7 @@ p:empty {
 
     .loginscreen h1 {
         font-size: 250%;
+        margin-top: 20px;
     }
 
     .loginrightpanel p {

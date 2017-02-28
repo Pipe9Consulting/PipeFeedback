@@ -928,24 +928,62 @@ html, body {
 
 @media screen and (min-width: 2900px) and (max-width: 3500px) {
 
+
     .pane li p {
-        font-size: 28px !important;
+        font-size: 35px !important;
+        line-height: 1.2;
     }
+
+    .bukatutup span img {
+        width: 70%;
+        right: 30px;
+        position: relative;
+    }
+
+    .accordion h3 {
+        width: 140px;
+        background-size: 30% auto;
+    }
+
+        .accordion h3:hover {
+            background-size: 30% auto;
+        }
+
+
+    .footerPart, .page-wrap::after {
+        height: 100px;
+    }
+
+    .login {
+        padding-top: 7.5%;
+    }
+
 
     .dropdowns a {
         font-size: 25px;
     }
 
     .breadMenu a {
-        font-size: 120%;
+        font-size: 180%;
     }
+
+    .breadMenu i {
+        font-size: 180%;
+    }
+
+    .dropdowns img {
+        max-width: 70px;
+        max-height: 70px;
+        border-radius: 35px 35px 35px 35px;
+    }
+
 
     #target li p, #target li a {
         font-size: 130%;
     }
 
     .ui.menu .item {
-        font-size: 1.2rem !important;
+        font-size: 1.8rem !important;
     }
 }
 
@@ -1047,6 +1085,15 @@ html, body {
 
 @media screen and (min-width: 1900px) and (max-width: 2000px) {
 
+    .dropdowns a {
+        font-size: 16px;
+    }
+
+    .pane li p {
+        font-size: 20px !important;
+    }
+
+
     .clickdeeper {
         left: -225%;
         position: absolute;
@@ -1086,8 +1133,7 @@ html, body {
 
     .accordion h3, .accordion h3:hover, .accordion .down {
         background-size: 30% 35%;
-        background-position-y: 45px;
-        background-position-x: 30px;
+        background-position-y: center;
         width: 85px;
         float: left;
     }
@@ -1114,15 +1160,13 @@ html, body {
         padding-right: 50%;
     }
 
-
-
-
     .wallAward {
         margin-top: 3.9%;
     }
 
     .login {
-        padding-top: 4.1%;
+        padding-top: 4%;
+        padding-bottom: 4%;
     }
 }
 
