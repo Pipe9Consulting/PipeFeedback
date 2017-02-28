@@ -2,7 +2,7 @@
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" />
   <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" />
-  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
+  <xs:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
   <xs:complexType name="ArrayOfPartner">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Partner" nillable="true" type="tns:Partner" />
@@ -61,19 +61,32 @@
       <xs:element minOccurs="0" name="AreaLeadAlias" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="AreaLeadFirstName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="AreaLeadLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Completions" type="xs:int" />
       <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="DET" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HighVelocity" type="xs:int" />
       <xs:element minOccurs="0" name="IndFcous1" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="IndFcous2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IndustrySpecialist" type="xs:int" />
       <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ManagerAlias" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ManagerFirstName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ManagerLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModeName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Mplid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Omnivores" type="xs:int" />
+      <xs:element minOccurs="0" name="Order" type="xs:int" />
+      <xs:element minOccurs="0" name="OverallCount" type="xs:int" />
+      <xs:element minOccurs="0" name="OverallHighVelocity" type="xs:int" />
+      <xs:element minOccurs="0" name="OverallIndustrySpecialist" type="xs:int" />
+      <xs:element minOccurs="0" name="OverallOmnivores" type="xs:int" />
+      <xs:element minOccurs="0" name="OverallPresident" type="xs:int" />
       <xs:element minOccurs="0" name="PartnerName" nillable="true" type="xs:string" />
       <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" minOccurs="0" name="PartnerResults" nillable="true" type="q2:ArrayOfPPAResults" />
+      <xs:element minOccurs="0" name="Partners" type="xs:int" />
+      <xs:element minOccurs="0" name="President" type="xs:int" />
       <xs:element minOccurs="0" name="TimeZone" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZoneAlias" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZoneFirstName" nillable="true" type="xs:string" />
@@ -317,6 +330,7 @@
       <xs:element minOccurs="0" name="SkipLevelmanager" nillable="true" type="tns:StandingScore" />
       <xs:element minOccurs="0" name="Team" nillable="true" type="tns:StandingScore" />
       <xs:element minOccurs="0" name="TeamMember" nillable="true" type="tns:StandingScore" />
+      <xs:element minOccurs="0" name="TeamTenure" nillable="true" type="tns:Tenure" />
       <xs:element minOccurs="0" name="Tenure" nillable="true" type="tns:Tenure" />
       <xs:element minOccurs="0" name="You" nillable="true" type="tns:StandingScore" />
     </xs:sequence>

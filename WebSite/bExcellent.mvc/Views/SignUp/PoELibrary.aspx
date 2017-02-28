@@ -497,6 +497,24 @@
                 <div class="poecolumn poemargintop">
 
                     <ul id="microsoft" style="display: block;">
+                        <li id="poe27">
+                            <img src="../../Images/KessakuImage/MarketingCommunicationsManager.png" width="600" height="600" />
+                            <p>
+                                Marketing Communications Manager
+                            </p>
+                        </li>
+                         <li id="poe28">
+                            <img src="../../Images/KessakuImage/MarketingCommunicationsManager.png" width="600" height="600" />
+                            <p>
+                               Partner/Channel Marketing Manager
+                            </p>
+                        </li>
+                         <li id="Li1">
+                            <img src="../../Images/KessakuImage/MarketingCommunicationsManager.png" width="600" height="600" />
+                            <p>
+                               Product Marketing Manager
+                            </p>
+                        </li>
                         <li id="poe24">
                             <img src="../../Images/KessakuImage/SalesInsightsManager.png" width="600" height="600" />
                             <p>

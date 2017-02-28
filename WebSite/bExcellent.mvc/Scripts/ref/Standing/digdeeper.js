@@ -75,13 +75,26 @@
                     } else if (selectedli == 3) {
                         LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Sherpas.ModuleScores[m].QuestionScores, (m + 1), 3, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
                     } else if (selectedli == 4) {
-                        LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow12.ModuleScores[m].QuestionScores, (m + 1), 4, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        if ($('#controlclicked').val() == "3") {
+                            LoadHtml(response.TeamTenure.TenureBelow12.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow12.ModuleScores[m].QuestionScores, (m + 1), 4, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        } else {
+                            LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow12.ModuleScores[m].QuestionScores, (m + 1), 4, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        }
+                        
                     } else if (selectedli == 5) {
                         LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Previous.ModuleScores[m].QuestionScores, (m + 1), 5, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
                     } else if (selectedli == 6) {
-                        LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow36.ModuleScores[m].QuestionScores, (m + 1), 6, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        if ($('#controlclicked').val() == "3") {
+                            LoadHtml(response.TeamTenure.TenureBelow36.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow36.ModuleScores[m].QuestionScores, (m + 1), 6, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        } else {
+                            LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow36.ModuleScores[m].QuestionScores, (m + 1), 6, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        }
                     } else if (selectedli == 7) {
-                        LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureAbove36.ModuleScores[m].QuestionScores, (m + 1), 7, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        if ($('#controlclicked').val() == "3") {
+                            LoadHtml(response.TeamTenure.TenureAbove36.ModuleScores[m].QuestionScores, response.Tenure.TenureAbove36.ModuleScores[m].QuestionScores, (m + 1), 7, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        } else {
+                            LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureAbove36.ModuleScores[m].QuestionScores, (m + 1), 7, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        }
                     }
                     loadRightArrowUpdated(parseInt($('#controlclicked').val()), selectedli);
                 }
@@ -655,7 +668,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                             "</div> </div> <div class='pointer'></div> <div class='" + sclass + "' id='Toppa1'></div> </div> </div>";
                     } else {
                         commhtml = commhtml + "<div class='chartsmlplaceholder pa1' data-value=" + numberOfSlide + "> <div class='eqscon'><div class='EiQno'>" + (count + 1) + "</div><div class='EiQtext'>" + loadQuestion[count].ShortQuetionText + "</div></div> <div class='chartdiv' id=''>" +
-                           " <div class='legend'> <ul> <li class='legend1'>You</li> <li class='legend2all'> <div id='legendAll'> <div class='legend legenders legenddropdown'> <p class='legendText'>0 - 12 Months</p> <ul class='drplegend'> <li value='4'>0 - 12 Months</li> <li  value='6'>13 - 36 Months</li> <li  value='7'>36+ Months</li>  </ul> </div> " +
+                           " <div class='legend'> <ul> <li class='legend1'>You</li> <li class='legend2all'> <div id='legendAll'> <div class='legend legenders legenddropdown'> <p class='legendText'>0 - 12 Months</p> <ul class='drplegend'> <li value='4'>0 - 12 Months</li> <li  value='6'>13 - 24 Months</li> <li  value='7'>25+ Months</li>  </ul> </div> " +
                             "</div></li> </ul> </div><div class='chart'> <div class='chartop'></div> <div class='chartbg'> <div class='chartarea'> <ul> <li class='progressbar1' style='width: " + yourscorePercentage + "%;' id='Toppa1Pro1'> " +
                            " </li> <li class='progressbar2' style='width: " + tilescorePercentage + "%;' id='Toppa1Pro2'>  </li> </ul> </div> </div> <div class='chartbtm'> <div class='markerholder'>" +
                            " <ul> <li class='markergray' style='display:none; width:" + tilescorePercentage + "%;" + margins + "' id='Toppa1Mar2'> <p></p> </li> <li class='markeramper' style='display:none; width: " + yourscorePercentage + "%;' id='Toppa1Mar1'> <p></p> </li> </ul> </div> " +

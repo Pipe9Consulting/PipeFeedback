@@ -13,6 +13,7 @@ using bExcellent.Service.Util.Domain;
 using bExcellent.Service.Util.Request;
 using bExcellent.Service.Util.Response;
 using System.IO;
+using bExcellent.Service.BusinessLogic.Common;
 using TimeZone = bExcellent.Service.Util.Domain.TimeZone;
 
 namespace bExcellent.Service
@@ -3120,6 +3121,54 @@ namespace bExcellent.Service
             {
                 var common = new BusinessLogic.Common.Common();
                 return common.GetOverallReportsCalculated();
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
+            return null;
+        }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public List<PSMReports> GetReportsCalculated(int userId, int mode)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                return common.GetReportsCalculated(userId, mode);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
+            return null;
+        }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public List<getAxis> GetPSEReportCalculated(int userId, int partnerId, string mplId)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                return common.GetPSEReportCalculated(userId, partnerId, mplId);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
+            return null;
+        }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public List<PPAResults> GetStakeHolderReportCalculated()
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                return common.GetStakeHolderReportCalculated();
             }
             catch (Exception e)
             {

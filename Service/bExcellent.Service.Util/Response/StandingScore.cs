@@ -40,6 +40,7 @@ namespace bExcellent.Service.Util.Response
         public StandingScore Sherpas { get; set; }
 
         public Tenure Tenure { get; set; }
+        public Tenure TeamTenure { get; set; }
 
         public StandingScore Previous { get; set; }
 
@@ -159,7 +160,7 @@ namespace bExcellent.Service.Util.Response
 
         public double ModuleScorePercentage { get; set; }
 
-        public int Moduleorder { get;set; }
+        public int Moduleorder { get; set; }
     }
 
     public class QuestionScore

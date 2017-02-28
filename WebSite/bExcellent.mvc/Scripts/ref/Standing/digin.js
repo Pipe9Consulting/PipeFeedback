@@ -28,119 +28,143 @@
                         ]
                     };
                     createchart.loadchartdata(topallChart, "Toppa" + (j + 1));
-                    var nxtLine = {
-                        "values": [{
-                            "name": "You",
-                            "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
-                            "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
-                        },
-                            {
-                                "name": "NextinLine",
-                                // "score": (response.NextinLine.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
-                                "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].ModuleScorePercentage,
-                                "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].Modulescore
-                            },
-                            {
-                                "name": "Maximum",
-                                // "score": (response.NextinLine.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
-                                "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : 100,
-                                "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Team.ModuleScores[j].WeightageScore).toFixed()
-                            }
-                        ]
-                    };
+                    //var nxtLine = {
+                    //    "values": [{
+                    //        "name": "You",
+                    //        "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
+                    //        "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
+                    //    },
+                    //        {
+                    //            "name": "NextinLine",
+                    //            // "score": (response.NextinLine.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
+                    //            "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].ModuleScorePercentage,
+                    //            "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].Modulescore
+                    //        },
+                    //        {
+                    //            "name": "Maximum",
+                    //            // "score": (response.NextinLine.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
+                    //            "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : 100,
+                    //            "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Team.ModuleScores[j].WeightageScore).toFixed()
+                    //        }
+                    //    ]
+                    //};
 
-                    createchart.loadchartdata(nxtLine, "Nxtpa" + (j + 1));
+                    //createchart.loadchartdata(nxtLine, "Nxtpa" + (j + 1));
 
-                    var rstCommunity = {
-                        "values": [{
-                            "name": "You",
-                            "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
-                            "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
-                        },
-                            {
-                                "name": "RestofCommunity",
-                                "score": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].ModuleScorePercentage,
-                                "DisplayScore": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].Modulescore
-                            },
-                            {
-                                "name": "Maximum",
-                                "score": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : 100,
-                                "DisplayScore": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Sherpas.ModuleScores[j].WeightageScore).toFixed()
-                            }
-                        ]
-                    };
-                    createchart.loadchartdata(rstCommunity, "Rstpa" + (j + 1));
-                    var tenurechart = {
-                        "values": [{
-                            "name": "You",
-                            "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
-                            "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
-                        },
-                            {
-                                "name": "RestofCommunity",
-                                "score": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : response.Tenure.TenureBelow12.ModuleScores[j].ModuleScorePercentage,
-                                "DisplayScore": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : response.Tenure.TenureBelow12.ModuleScores[j].Modulescore
-                            },
-                            {
-                                "name": "Maximum",
-                                "score": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : 100,
-                                "DisplayScore": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Tenure.TenureBelow12.ModuleScores[j].WeightageScore).toFixed()
-                            }
-                        ]
-                    };
-                    createchart.loadchartdata(tenurechart, "tenpa" + (j + 1));
-
-                    var previous = {
-                        "values": [{
-                            "name": "You",
-                            "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
-                            "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
-                        },
-                            {
-                                "name": "Prev",
-                                //"score": (response.Previous.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
-                                "score": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].ModuleScorePercentage,
-                                "DisplayScore": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].Modulescore
-                            },
-                            {
-                                "name": "Maximum",
-                                //"score": (response.Previous.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
-                                "score": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : 100,
-                                "DisplayScore": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Previous.ModuleScores[j].WeightageScore).toFixed()
-                            }
-                        ]
-                    };
-                    createchart.loadchartdata(previous, "Prevpa" + (j + 1));
-
-                    var all = {
-                        "values": [
+                    //var rstCommunity = {
+                    //    "values": [{
+                    //        "name": "You",
+                    //        "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
+                    //        "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
+                    //    },
+                    //        {
+                    //            "name": "RestofCommunity",
+                    //            "score": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].ModuleScorePercentage,
+                    //            "DisplayScore": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].Modulescore
+                    //        },
+                    //        {
+                    //            "name": "Maximum",
+                    //            "score": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : 100,
+                    //            "DisplayScore": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Sherpas.ModuleScores[j].WeightageScore).toFixed()
+                    //        }
+                    //    ]
+                    //};
+                    //createchart.loadchartdata(rstCommunity, "Rstpa" + (j + 1));
+                    if ($('#choosenTile').val() == "3") {
+                        var tenurechart = {
+                            "values": [
+                                {
+                                    "name": "You",
+                                    "score": (response.TeamTenure.TenureBelow12.ModuleScores == null || response.TeamTenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : response.TeamTenure.TenureBelow12.ModuleScores[j].ModuleScorePercentage,
+                                    "DisplayScore": (response.TeamTenure.TenureBelow12.ModuleScores == null || response.TeamTenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : response.TeamTenure.TenureBelow12.ModuleScores[j].Modulescore,
+                                },
+                                {
+                                    "name": "RestofCommunity",
+                                    "score": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : response.Tenure.TenureBelow12.ModuleScores[j].ModuleScorePercentage,
+                                    "DisplayScore": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : response.Tenure.TenureBelow12.ModuleScores[j].Modulescore
+                                },
+                                {
+                                    "name": "Maximum",
+                                    "score": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : 100,
+                                    "DisplayScore": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Tenure.TenureBelow12.ModuleScores[j].WeightageScore).toFixed()
+                                }
+                            ]
+                        };
+                        createchart.loadchartdata(tenurechart, "tenpa" + (j + 1));
+                    } else {
+                        var tenurechart = {
+                            "values": [
                                 {
                                     "name": "You",
                                     "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
                                     "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
                                 },
-                             {
-                                 "name": "Top",
-                                 "score": (response.Community.ModuleScores == null || response.Community.ModuleScores[j] == undefined) ? 0 : response.Community.ModuleScores[j].ModuleScorePercentage,
-                                 "DisplayScore": (response.Community.ModuleScores == null || response.Community.ModuleScores[j] == undefined) ? 0 : response.Community.ModuleScores[j].Modulescore
-                             },
-                                {
-                                    "name": "NextinLine",
-                                    "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].ModuleScorePercentage,
-                                    "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].Modulescore
-                                },
                                 {
                                     "name": "RestofCommunity",
-                                    "score": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].ModuleScorePercentage,
-                                    "DisplayScore": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].Modulescore
+                                    "score": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : response.Tenure.TenureBelow12.ModuleScores[j].ModuleScorePercentage,
+                                    "DisplayScore": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : response.Tenure.TenureBelow12.ModuleScores[j].Modulescore
                                 },
                                 {
-                                    "name": "Prev",
-                                    "score": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].ModuleScorePercentage,
-                                    "DisplayScore": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].Modulescore
-                                }]
-                    };
-                    createchart.loadchartdata(all, "Allpa" + (j + 1));
+                                    "name": "Maximum",
+                                    "score": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : 100,
+                                    "DisplayScore": (response.Tenure.TenureBelow12.ModuleScores == null || response.Tenure.TenureBelow12.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Tenure.TenureBelow12.ModuleScores[j].WeightageScore).toFixed()
+                                }
+                            ]
+                        };
+                        createchart.loadchartdata(tenurechart, "tenpa" + (j + 1));
+                    }
+
+                    //var previous = {
+                    //    "values": [{
+                    //        "name": "You",
+                    //        "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
+                    //        "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
+                    //    },
+                    //        {
+                    //            "name": "Prev",
+                    //            //"score": (response.Previous.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
+                    //            "score": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].ModuleScorePercentage,
+                    //            "DisplayScore": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].Modulescore
+                    //        },
+                    //        {
+                    //            "name": "Maximum",
+                    //            //"score": (response.Previous.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
+                    //            "score": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : 100,
+                    //            "DisplayScore": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Previous.ModuleScores[j].WeightageScore).toFixed()
+                    //        }
+                    //    ]
+                    //};
+                    //createchart.loadchartdata(previous, "Prevpa" + (j + 1));
+
+                    //var all = {
+                    //    "values": [
+                    //            {
+                    //                "name": "You",
+                    //                "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
+                    //                "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
+                    //            },
+                    //         {
+                    //             "name": "Top",
+                    //             "score": (response.Community.ModuleScores == null || response.Community.ModuleScores[j] == undefined) ? 0 : response.Community.ModuleScores[j].ModuleScorePercentage,
+                    //             "DisplayScore": (response.Community.ModuleScores == null || response.Community.ModuleScores[j] == undefined) ? 0 : response.Community.ModuleScores[j].Modulescore
+                    //         },
+                    //            {
+                    //                "name": "NextinLine",
+                    //                "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].ModuleScorePercentage,
+                    //                "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].Modulescore
+                    //            },
+                    //            {
+                    //                "name": "RestofCommunity",
+                    //                "score": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].ModuleScorePercentage,
+                    //                "DisplayScore": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].Modulescore
+                    //            },
+                    //            {
+                    //                "name": "Prev",
+                    //                "score": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].ModuleScorePercentage,
+                    //                "DisplayScore": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].Modulescore
+                    //            }]
+                    //};
+                    //createchart.loadchartdata(all, "Allpa" + (j + 1));
                 }
             },
             error: function (err) {
@@ -676,7 +700,7 @@ $(document).ready(function () {
             $('#tenures, #tenures .bn1').show();
         }
         $('#tenures .bn2, #tenures .p2 ').hide();
-       
+
         $('#tenure .q1').show("slow");
         $('#tenure .q1').animate({ 'margin-left': '2%' }, { duration: 0 });
         $('#tenure .q1').css('opacity', '2');
@@ -1460,8 +1484,8 @@ function LoadHtml(totalpa) {
                         "<li class='scale4'>100%</li> </ul> </div> <div class='pointer'> </div> <div class='status' id='Rstpa" + (count + 1) + "'> </div><div class='charttile'>Level of Excellence</div> </div> </div>";
 
                     tenurehtml = tenurehtml + "<div class='chartsmlplaceholder pa" + (count + 1) + "'> <h1></h1> <div id='li" + count + "' class='chartdiv " + (i == 0 ? "selectFBtwocol" : "") + "'  onclick='LoadPracticeArea(this," + (count + 1) + ")' data-value=" + totalpa[count].ModuleId + "> " +
-                        "<div class='legend legendTenure'><p>Legend</p> <ul> <li class='legend1'>You</li> <li class='legend2'>Tenure</li> <li class='legendmp'>Excellence</li> </ul> </div> <div class='legend legenddropdown'> <p class='tenuretext'>0 - 12 Months</p> <ul class='drplegends'> <li data-value='1'>0 - 12 Months</li> <li data-value='2'>13 - 36 Months</li> " +
-                        "<li  data-value='3'>36+ Months</li></ul> </div>" +
+                        "<div class='legend legendTenure'><p>Legend</p> <ul> <li class='legend1'>You</li> <li class='legend2'>Tenure</li> <li class='legendmp'>Excellence</li> </ul> </div> <div class='legend legenddropdown'> <p class='tenuretext'>0 - 12 Months</p> <ul class='drplegends'> <li data-value='1'>0 - 12 Months</li> <li data-value='2'>13 - 24 Months</li> " +
+                        "<li  data-value='3'>25+ Months</li></ul> </div>" +
                         "<div class='chart'> <div class='chartop'></div> <div class='chartbg'> <div class='chartarea'> <ul> <li class='progressbar1' style='width: 0%' id='tenpa" + (count + 1) + "Pro1'>  </li> " +
                         "<li class='progressbar2' style='width: 0%' id='tenpa" + (count + 1) + "Pro2'>  </li> </ul> </div> </div> <div class='chartbtm'> <div class='markerholder'> <ul>" +
                         " <li class='markergray tenuregray' style='width: 0%' id='tenpa" + (count + 1) + "Mar2'> <p> </p> </li> <li class='markeramper tenureramper' style='width: 0%' id='tenpa" + (count + 1) + "Mar1'> <p> </p> </li> <li class='markermp tenuregray' style='width: 100%' id='tenpa" + (count + 1) + "Mar3'> <p> </p> </li> </ul> </div> " +
@@ -1686,7 +1710,7 @@ function LoadTenureChart(mode) {
         url: '/Standing/GetStandingScore',
         success: function (response) {
             var modulescore = null;
-
+            var teamTenureModule = null;
             $('.tenuregray').removeAttr("style");
             $('.tenuregray').removeAttr("style");
             $('.tenureramper').removeAttr("style");
@@ -1694,12 +1718,27 @@ function LoadTenureChart(mode) {
             switch (mode) {
                 case 1:
                     modulescore = response.Tenure.TenureBelow12;
+                    if ($('#choosenTile').val() == "3") {
+                        teamTenureModule = response.TeamTenure.TenureBelow12;
+                    } else {
+                        teamTenureModule = response.You;
+                    }
                     break;
                 case 2:
                     modulescore = response.Tenure.TenureBelow36;
+                    if ($('#choosenTile').val() == "3") {
+                        teamTenureModule = response.TeamTenure.TenureBelow36;
+                    } else {
+                        teamTenureModule = response.You;
+                    }
                     break;
                 case 3:
                     modulescore = response.Tenure.TenureAbove36;
+                    if ($('#choosenTile').val() == "3") {
+                        teamTenureModule = response.TeamTenure.TenureAbove36;
+                    } else {
+                        teamTenureModule = response.You;
+                    }
                     break;
                 default:
             }
@@ -1707,8 +1746,8 @@ function LoadTenureChart(mode) {
                 var tenurechart = {
                     "values": [{
                         "name": "You",
-                        "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].TotalModuleScore,
-                        "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
+                        "score": (teamTenureModule.ModuleScores == null || teamTenureModule.ModuleScores[j] == undefined) ? 0 : teamTenureModule.ModuleScores[j].TotalModuleScore,
+                        "DisplayScore": (teamTenureModule.ModuleScores == null || teamTenureModule.ModuleScores[j] == undefined) ? 0 : teamTenureModule.ModuleScores[j].Modulescore,
                     },
                     {
                         "name": "RestofCommunity",

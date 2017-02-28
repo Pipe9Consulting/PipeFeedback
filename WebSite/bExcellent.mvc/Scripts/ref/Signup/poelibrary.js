@@ -378,6 +378,7 @@ var poelibrary = {
                     newtext = (i == 0) ? "<div class='new'><img src='../../Images/new.png' width='49' height='47' alt='New' /></div>" : "";
                     html = html + "<div class='" + classtext + "' id='poe" + response[i].POEId + "'><img src='../../Images/" + response[i].Name.replace("&", "").replace(/\ /g, "") + ".png' alt='" + response[i].Name + "' />" + newtext + "<div class='" + classtext + "title'><span>" + response[i].Name + "</span></div></div>";
                     $('#poe' + response[i].POEId).live('click', function () {
+                       // alert('er');
                         var poeid = parseInt((this).id.replace("poe", ""));
                         $('#poeimg').attr('src', '');
                         $('#microsoftpoeimg').attr('src', '');

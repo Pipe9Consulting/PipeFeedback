@@ -8,9 +8,10 @@
       <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd3" />
       <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Response" />
       <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" />
-      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
-      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
-      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.BusinessLogic.Common" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Enumeration" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.DataAccess" />
+      <xsd:import schemaLocation="http://localhost:8052/Common.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="Common_LoadAreaOfPartner_InputMessage">
@@ -192,6 +193,24 @@
   </wsdl:message>
   <wsdl:message name="Common_GetOverallReportsCalculated_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOverallReportsCalculatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetReportsCalculated_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportsCalculated" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetReportsCalculated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportsCalculatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSEReportCalculated_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSEReportCalculated" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSEReportCalculated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSEReportCalculatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStakeHolderReportCalculated_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStakeHolderReportCalculated" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetStakeHolderReportCalculated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStakeHolderReportCalculatedResponse" />
   </wsdl:message>
   <wsdl:message name="Common_GetPoEsByUserId_InputMessage">
     <wsdl:part name="parameters" element="tns:GetPoEsByUserId" />
@@ -1172,6 +1191,18 @@
       <wsdl:input wsaw:Action="http://tempuri.org/Common/GetOverallReportsCalculated" message="tns:Common_GetOverallReportsCalculated_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/Common/GetOverallReportsCalculatedResponse" message="tns:Common_GetOverallReportsCalculated_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetReportsCalculated">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetReportsCalculated" message="tns:Common_GetReportsCalculated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetReportsCalculatedResponse" message="tns:Common_GetReportsCalculated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPSEReportCalculated">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPSEReportCalculated" message="tns:Common_GetPSEReportCalculated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPSEReportCalculatedResponse" message="tns:Common_GetPSEReportCalculated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStakeHolderReportCalculated">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetStakeHolderReportCalculated" message="tns:Common_GetStakeHolderReportCalculated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetStakeHolderReportCalculatedResponse" message="tns:Common_GetStakeHolderReportCalculated_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetPoEsByUserId">
       <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPoEsByUserId" message="tns:Common_GetPoEsByUserId_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPoEsByUserIdResponse" message="tns:Common_GetPoEsByUserId_OutputMessage" />
@@ -2010,6 +2041,33 @@
     </wsdl:operation>
     <wsdl:operation name="GetOverallReportsCalculated">
       <soap:operation soapAction="http://tempuri.org/Common/GetOverallReportsCalculated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsCalculated">
+      <soap:operation soapAction="http://tempuri.org/Common/GetReportsCalculated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPSEReportCalculated">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPSEReportCalculated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStakeHolderReportCalculated">
+      <soap:operation soapAction="http://tempuri.org/Common/GetStakeHolderReportCalculated" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

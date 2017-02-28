@@ -547,7 +547,7 @@ var feedback = {
                 var html = "";//"<li class='first'> </li>";
                 var poeids = '';
                 for (var i = 0; i < response.length; i++) {
-                    html = html + " <li id ='poeli" + response[i].POEId + "' value=" + response[i].POEId + " data-cap='" + response[i].IsCapability + "' data-survey='" + response[i].IsSurvey + "' class='poelistli'><a> <div class='icon'> <img src='../../Images/" + response[i].POEName.replace("&", "") + "_Intro.png' alt='" + response[i].POEName + "' class='img' /></div> <p> " + response[i].POEName + "</p> </a><span></span></li>";
+                    html = html + " <li id ='poeli" + response[i].POEId + "' value=" + response[i].POEId + " data-cap='" + response[i].IsCapability + "' data-survey='" + response[i].IsSurvey + "' class='poelistli'><a> <div class='icon'> <img src='../../Images/" + response[i].POEName.replace("&", "").replace("/", "") + "_Intro.png' alt='" + response[i].POEName + "' class='img' /></div> <p> " + response[i].POEName + "</p> </a><span></span></li>";
                     poeids = poeids + response[i].POEId + '%';
                 }
                 if (response.length < 4) {

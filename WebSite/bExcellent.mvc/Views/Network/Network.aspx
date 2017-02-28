@@ -359,15 +359,15 @@
                                                     Members<br />
                                                 </p>
                                             </li>
-                                            <li class="peerTile" tabindex="4">
+                                            <%--<li class="peerTile" tabindex="4">
                                                 <div class="icon singleline">
                                                     <img src="../../Images/networkIcon4.png" alt="Blogs" />
                                                 </div>
                                                 <p>
                                                     Your Peers
                                                 </p>
-                                            </li>
-                                            <li class="custTile" tabindex="5">
+                                            </li>--%>
+                                          <%--  <li class="custTile" tabindex="5">
                                                 <div class="icon doubleline">
                                                     <img src="../../Images/networkIcon5.png" alt="Blogs" />
                                                 </div>
@@ -375,12 +375,12 @@
                                                     Your Customers<br />
                                                     & Partners<br />
                                                 </p>
-                                            </li>
-                                            <li class="yammerTile" tabindex="6">
+                                            </li>--%>
+                                           <%-- <li class="yammerTile" tabindex="6">
                                                 <img src="../../Images/networkIcon6.png" /><p>
                                                     Add Members from Yammer
                                                 </p>
-                                            </li>
+                                            </li>--%>
                                         </ul>
                                     </div>
                                 </div>
@@ -560,7 +560,7 @@
 
                                 <div class="customertiles stars last urntwrk">
                                     <h1 style="padding: 0 !important;">Your Network</h1>
-                                    <div class="addmember">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Take)
                                         <div class="sendinv">
                                             <ul>
@@ -656,7 +656,7 @@
                                 <!--Your Manager-->
                                 <div class="customertiles stars last ntwrk urmngr">
                                     <h1 style="padding: 0 !important;">Your Managers</h1>
-                                    <div class="addmember">
+                                    <div class="addmember" style="display:none">
                                         Send Request (Give)
                                         <div class="sendinv">
                                             <ul>
@@ -680,7 +680,7 @@
                                 <!--Team Member-->
                                 <div class="customertiles stars last teammembr">
                                     <h1 style="padding: 0 !important;">Your Team Members</h1>
-                                    <div class="addmember">
+                                    <div class="addmember" style="display:none">
                                         Send Request (Take)
                                         <div class="sendinv">
                                             <ul>
@@ -704,7 +704,7 @@
                                 <!--Your Peers-->
                                 <div class="customertiles stars last urpeer">
                                     <h1 style="padding: 0 !important;">Your Peers</h1>
-                                    <div class="addmember">
+                                    <div class="addmember" style="display:none">
                                         Send Request (Take)
                                         <div class="sendinv">
                                             <ul>
@@ -728,7 +728,7 @@
                                 <!--Add Yammer-->
                                 <div id="addyammeruser" class="customertiles stars last yammmerusr">
                                     <h1>Add Members from Yammer</h1>
-                                    <div class="addmember">
+                                    <div class="addmember" style="display:none">
                                         <span id="drpdownTxtvalues">Choose a Yammer Group</span>
                                         <div class="sendinv">
                                             <ul id="yammerGroups">
@@ -752,7 +752,7 @@
                                 <!--Your Customers-->
                                 <div class="customertiles stars last custpart">
                                     <h1 style="padding: 0 !important;">Your Customers & Partners</h1>
-                                    <div class="addmember">
+                                    <div class="addmember" style="display:none">
                                         Send Request (Give)
                                         <div class="sendinv">
                                             <ul>

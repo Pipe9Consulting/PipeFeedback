@@ -1765,6 +1765,31 @@
     <Content Include="Images\icons\library-white_Selected.png" />
     <Content Include="Images\icons\manager-small_Selected.png" />
     <Content Include="Images\icons\manager-smal_Selected.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager1-small.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager1-small_selected.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager1.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager1h.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager1_S.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager2-small.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager2-small_selected.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager2.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager2h.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager2_S.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager3-small.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager3-small_selected.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager3.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager3h.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager3_S.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager4-small.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager4-small_selected.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager4.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager4h.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager4_S.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager5-small.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager5-small_selected.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager5.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager5h.png" />
+    <Content Include="Images\icons\MarketingCommunicationsManager5_S.png" />
     <Content Include="Images\icons\marketing_selected.png" />
     <Content Include="Images\icons\MBSSolutionSpecialist1-small.png" />
     <Content Include="Images\icons\MBSSolutionSpecialist1.png" />
@@ -1800,6 +1825,31 @@
     <Content Include="Images\icons\network-ico.png" />
     <Content Include="Images\icons\BigpictureIcon1.png" />
     <Content Include="Images\icons\network-small_Selected.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager1-small.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager1-small_selected.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager1.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager1h.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager1_S.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager2-small.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager2-small_selected.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager2.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager2h.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager2_S.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager3-small.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager3-small_selected.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager3.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager3h.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager3_S.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager4-small.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager4-small_selected.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager4.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager4h.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager4_S.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager5-small.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager5-small_selected.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager5.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager5h.png" />
+    <Content Include="Images\icons\PartnerChannelMarketingManager5_S.png" />
     <Content Include="Images\icons\PartnerSalesManager1h.png" />
     <Content Include="Images\icons\PartnerSalesManager2h.png" />
     <Content Include="Images\icons\PartnerSalesManager3h.png" />
@@ -2501,6 +2551,8 @@
     <Content Include="Images\KessakuImage\Leaders-Make-the-Future.jpg" />
     <Content Include="Images\KessakuImage\LeadersMakeTheFuture_poe.jpg" />
     <Content Include="Images\KessakuImage\logo.png" />
+    <Content Include="Images\KessakuImage\MarketingCommunicationsManager.png" />
+    <Content Include="Images\KessakuImage\MarketingCommunicationsManager_pane.png" />
     <Content Include="Images\KessakuImage\MBS Solution Specialist_Intro.png" />
     <Content Include="Images\KessakuImage\MBSSolutionSpecialist_pane.png" />
     <Content Include="Images\KessakuImage\MBSSolutionSpecialist_resources.png" />
@@ -2516,6 +2568,8 @@
     <Content Include="Images\KessakuImage\no-photo.jpg" />
     <Content Include="Images\KessakuImage\no-photo.png" />
     <Content Include="Images\KessakuImage\pain-chain.png" />
+    <Content Include="Images\KessakuImage\PartnerChannelMarketingManager.png" />
+    <Content Include="Images\KessakuImage\PartnerChannelMarketingManager_pane.png" />
     <Content Include="Images\KessakuImage\PartnerSalesManager_poe.jpg" />
     <Content Include="Images\KessakuImage\PartnerTechnologyStrategist.png" />
     <Content Include="Images\KessakuImage\PartnerTechnologyStrategist_pane.png" />
@@ -2554,6 +2608,8 @@
     <Content Include="Images\KessakuImage\PoE\InsideSales_large.png" />
     <Content Include="Images\KessakuImage\PoE\LeadersMaketheFuture_large.png" />
     <Content Include="Images\KessakuImage\PoE\LeadersMaketheFuture_poe.jpg" />
+    <Content Include="Images\KessakuImage\PoE\MarketingCommunicationsManager_large.png" />
+    <Content Include="Images\KessakuImage\PoE\PartnerChannelMarketingManager_large.png" />
     <Content Include="Images\KessakuImage\PoE\PartnerSalesManager_large.png" />
     <Content Include="Images\KessakuImage\PoE\PartnerSalesManager_poe.jpg" />
     <Content Include="Images\KessakuImage\PoE\PartnerTechnologyStrategist_large.png" />
@@ -2855,6 +2911,8 @@
     <Content Include="Images\map-home.png" />
     <Content Include="Images\map-placeholder.png" />
     <Content Include="Images\map_view.png" />
+    <Content Include="Images\MarketingCommunicationsManager.png" />
+    <Content Include="Images\Marketing Communications Manager_Intro.png" />
     <Content Include="Images\master.png" />
     <Content Include="Images\Matrix3.jpg" />
     <Content Include="Images\Matrix_diag.jpg" />
@@ -3033,6 +3091,8 @@
     <Content Include="Images\Partner-Sales-Manager-module4-graph.png" />
     <Content Include="Images\Partner-Sales-Manager-module5-graph.png" />
     <Content Include="Images\Partner-Sales-Manager-module6-graph.png" />
+    <Content Include="Images\PartnerChannel Marketing Manager_Intro.png" />
+    <Content Include="Images\PartnerChannelMarketingManager.png" />
     <Content Include="Images\PartnerSalesManager.png" />
     <Content Include="Images\PartnerSalesManager_Intro.png" />
     <Content Include="Images\PartnerSalesManager_poe.png" />
@@ -3605,6 +3665,7 @@
     <None Include="Properties\PublishProfiles\KessakuNew.pubxml" />
     <None Include="Properties\PublishProfiles\Kessaku_new.pubxml" />
     <None Include="Properties\PublishProfiles\Pipe9Consulting.pubxml" />
+    <None Include="Properties\PublishProfiles\pipe9feedback.pubxml" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\profile2.pubxml" />
     <None Include="Properties\Settings.settings">
@@ -3685,6 +3746,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.Designation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.getAxis.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.MinimizedPOE.datasource">
@@ -3822,6 +3886,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\CommonWCF\Common15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonWCF\Common16.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\CommonWCF\Common2.xsd">

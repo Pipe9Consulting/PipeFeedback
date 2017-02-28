@@ -30,6 +30,19 @@ namespace bExcellent.Service.Util.Response
         public string DET { get; set; }
         public double XAxis { get; set; }
         public double YAxis { get; set; }
+        public int Partners { get; set; }
+        public int Order { get; set; }
+        public int Completions { get; set; }
+        public int Omnivores { get; set; }
+        public int HighVelocity { get; set; }
+        public int IndustrySpecialist { get; set; }
+        public int President { get; set; }
+        public int OverallCount { get; set; }
+        public string ModeName { get; set; }
+        public int OverallOmnivores { get; set; }
+        public int OverallHighVelocity { get; set; }
+        public int OverallIndustrySpecialist { get; set; }
+        public int OverallPresident { get; set; }
         public List<PPAResults> PartnerResults { get; set; }
     }
 }
