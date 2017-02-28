@@ -928,16 +928,17 @@ html, body {
 
 @media screen and (min-width: 2900px) and (max-width: 3500px) {
 
+
     .pane li p {
         font-size: 35px !important;
         line-height: 1.2;
     }
 
     .bukatutup span img {
-    width: 70%;
-    right: 30px;
-    position: relative;
-}
+        width: 70%;
+        right: 30px;
+        position: relative;
+    }
 
     .accordion h3 {
         width: 140px;
@@ -1084,6 +1085,15 @@ html, body {
 
 @media screen and (min-width: 1900px) and (max-width: 2000px) {
 
+    .dropdowns a {
+        font-size: 16px;
+    }
+
+    .pane li p {
+        font-size: 20px !important;
+    }
+
+
     .clickdeeper {
         left: -225%;
         position: absolute;
@@ -1123,8 +1133,7 @@ html, body {
 
     .accordion h3, .accordion h3:hover, .accordion .down {
         background-size: 30% 35%;
-        background-position-y: 45px;
-        background-position-x: 30px;
+        background-position-y: center;
         width: 85px;
         float: left;
     }
@@ -1151,15 +1160,13 @@ html, body {
         padding-right: 50%;
     }
 
-
-
-
     .wallAward {
         margin-top: 3.9%;
     }
 
     .login {
-        padding-top: 4.1%;
+        padding-top: 4%;
+        padding-bottom: 4%;
     }
 }
 

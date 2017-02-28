@@ -887,6 +887,10 @@ body {
 
 @media screen and (max-width: 2000px) and (min-width: 1701px) {
 
+    .startSmallTile {
+        width: 106.5%;
+        padding-bottom: 96.5%;
+    }
 
     .managerSync .star_name, .communitySync .star_name {
         padding: 0px 0 0 37px;
@@ -922,7 +926,8 @@ body {
         width: 60%;
         padding: 1.5% 2% 2% 2%;
         right: -48.5%;
-        top: 51%;
+        top: 47%;
+        font-size:16px;
     }
 
     .star_name {
@@ -937,6 +942,8 @@ body {
     #hover_content8, #hover_content9 {
         left: 73px;
         top: 62px;
+        font-size: 16px;
+        line-height: 1.2;
     }
 
 
@@ -960,21 +967,24 @@ body {
         width: 60%;
         padding: 1.5% 2% 2% 2%;
         right: -48.5%;
-        top: 46%;
+        top: 42%;
+        font-size: 16px;
     }
 
     #hover_content4 {
         width: 60%;
         padding: 1.5% 2% 2% 2%;
         right: -48.5%;
-        top: 46%;
+        top: 42%;
+        font-size: 16px;
     }
 
     #hover_content3, #hover_content7 {
         width: 60%;
         padding: 1.5% 2% 2% 2%;
         right: 4.5%;
-        top: 51%;
+        top: 48%;
+        font-size:16px;
     }
 
     .hideColumn {
@@ -986,15 +996,19 @@ body {
         width: 130%;
         padding: 3% 4% 4% 4%;
         right: -109.5%;
-        top: 15%;
+        top: 2%;
+        line-height: 1.2;
+        font-size: 16px;
     }
 
     #hover_content6 {
         width: 130%;
         padding: 3% 4% 4% 4%;
         right: -109.5%;
-        top: 40%;
+        top: 35%;
+        font-size: 16px;
     }
+
 
 
     .breadMenu {
@@ -1287,7 +1301,6 @@ body {
 
 
     .managerSync .noticationIcon, .communitySync .noticationIcon {
-        bottom: 6%;
         right: 15px;
     }
 

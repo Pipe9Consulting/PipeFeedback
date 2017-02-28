@@ -145,7 +145,7 @@ html, body {
     }
 
     .cacLogo img {
-        width: 43%;
+        width: 80%;
     }
 
     .headerMenu {
@@ -270,6 +270,9 @@ html, body {
 
 
 @media screen and (max-width: 1930px) and (min-width: 1800px) {
+    .cacLogo img {
+        width: 150px !important;
+    }
 
     .dropImage img {
         width: 450% !important;

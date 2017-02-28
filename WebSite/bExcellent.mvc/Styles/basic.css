@@ -61,6 +61,7 @@
     padding: 1%;
     border: 1px solid #73d1d5;
     width: 100%;
+    color: #000;
 }
 
 .close {
@@ -159,9 +160,10 @@
     width: 450px;
     color: #bbb;
     background-color: #fff !important;
-    border: 1px solid #23a1a7;
     padding: 2%;
     z-index: 999999 !important;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px #666;
 }
 
     #simplemodal-container code {
@@ -183,19 +185,27 @@
 
 
 
-        #simplemodal-container a.modalCloseImg {
-            background: url(../Images/close.png) no-repeat;
-            background-size: 80% 70%;
-            height: 0px;
-            z-index: 999999999;
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            cursor: pointer;
-        }
+#resetbtn, #ChangePassbtn {
+    background: none repeat scroll 0 0 #23a1a7;
+    border-top: 1px solid #23a1a7;
+    border-bottom: 5px solid #168f95;
+    border-left: 1px solid #23a1a7;
+    border-right: 1px solid #23a1a7;
+    color: #fff !important;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 130%;
+    padding: 5px 10px 3px 10px;
+    float: right;
+}
 
 
-    /*#simplemodal-container a.modalCloseImg:hover {
+
+#simplemodal-container a.modalCloseImg:hover {
+    background: url(../Images/Common/popup_closeH.png) no-repeat;
+    background-size: 80% 80%;
+}
+/*#simplemodal-container a.modalCloseImg:hover {
                 background: url(../Images/close-hover.png) no-repeat;
                 background-size: 50% 50% !important;
                 width: 5%;
@@ -211,9 +221,9 @@
                 border: 1px solid #e0b001;
             }*/
 
-    #simplemodal-container h3 {
-        color: #5E5E5E;
-    }
+#simplemodal-container h3 {
+    color: #5E5E5E;
+}
 
 #imgUploadedImage {
     max-height: 400px;
@@ -365,10 +375,31 @@
     }
 
 
+    .simplemodal-data p {
+        font-size: 16px;
+    }
 
-        #basic-changePassword .close {
-            padding: 2.8% !important;
-            top: -6% !important;
+    #basic-changePassword .close {
+        padding: 2.8% !important;
+        top: -6% !important;
+    }
+
+    .close {
+        background-size: 40px 40px !important;
+        margin-top: -9% !important;
+        margin-right: -19% !important;
+    }
+
+    .close {
+        background-size: 40px 40px !important;
+        margin-top: -8% !important;
+        margin-right: -15% !important;
+    }
+
+        .close:hover {
+            background-size: 40px 40px !important;
+            margin-top: -8% !important;
+            margin-right: -15% !important;
         }
 }
 
