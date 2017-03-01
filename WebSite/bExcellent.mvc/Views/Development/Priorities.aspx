@@ -107,7 +107,7 @@
                         <div class="accordion">
 
                             <div class="accordion-section" id="trackerArea">
-                                <a class="accordion-section-title trackerMenu" href="#accordion-1">Time Tracker Options</a>
+                                <a class="accordion-section-title trackerMenu" href="#accordion-1">Time Tracker</a>
                                 <div id="accordion-1" class="accordion-section-content">
 
                                     <a href="#" id="showscaleView" class="boardView scaleViews">Timeline View</a>

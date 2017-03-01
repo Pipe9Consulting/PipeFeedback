@@ -139,7 +139,7 @@
 ----------------------------------*/
     .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
         font-weight: normal;
-        color: #999;
+        color: #000;
     }
 
         .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
@@ -148,9 +148,9 @@
         }
 
     .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-        background: #e0b001;
+        background: #eb4830;
         font-weight: normal;
-        color: #000;
+        color: #fff;
     }
 
         .ui-state-hover a, .ui-state-hover a:hover {
@@ -177,8 +177,8 @@
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-    background: #e0b001;
-    color: #000;
+    background: #eb4830;
+    color: #fff;
 }
 
     .ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
@@ -1560,7 +1560,7 @@ button.ui-button::-moz-focus-inner {
     width: 100%;
     padding: .0em 0em .5em 1.5em;
     display: none;
-    background: #000;
+    background: #fff;
 }
 
 .ui-datepicker-calendar th span {
@@ -1568,32 +1568,33 @@ button.ui-button::-moz-focus-inner {
     font-weight: normal;
 }
 
-#btnDate{
+#btnDate {
     float: right;
     padding: .5% 2% 1.5% 2%;
-    color: #000;
-    background: #e0b001;
-    border: 1px solid #000;
+    color: #23a1a7;
+    background: #fff;
+    border: 1px solid #23a1a7;
 }
 
-#btnDate:hover{
-    float: right;
-    padding: .5% 2% 1.5% 2%;
-    color: #e0b001;
-    background: #000;
-    border: 1px solid #e0b001;
-}
 
+    #btnDate:hover {
+        float: right;
+        padding: .5% 2% 1.5% 2%;
+        color: #eb4830;
+        background: #fff;
+        border: 1px solid #eb4830;
+    }
 
 .ui-datepicker .ui-datepicker-header {
     position: relative;
     padding: .2em 0;
-    background: #000;
+    background: #fff;
     border: 0;
-    color: #fff;
+    color: #000;
     font-weight: normal;
     text-transform: uppercase;
 }
+
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
     position: absolute;

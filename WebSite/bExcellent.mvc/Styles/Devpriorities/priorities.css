@@ -147,7 +147,7 @@ p {
 }
 
     .user_tiles ul li {
-        background: rgba(0,0,0,0.8);
+        background: #fff;
         width: 47.5%;
         float: left;
         padding: 0 0% 44% 0;
@@ -155,18 +155,20 @@ p {
         margin: 0 2% 2% 0;
         list-style: none;
         cursor: pointer;
+        border: 1px solid #666;
     }
 
         .user_tiles ul li:hover {
-            background: rgba(0,0,0,1);
+            background: #fff;
+            border: 1px solid #23a1a7;
         }
 
             .user_tiles ul li:hover p, .user_tiles ul li:hover span {
-                color: #e0b001;
+                color: #23a1a7;
             }
 
         .user_tiles ul li p {
-            color: #fff;
+            color: #333;
             text-transform: uppercase;
             margin: 0;
             padding: 0 4% 2% 4%;
@@ -181,7 +183,7 @@ p {
 
         .user_tiles ul li span {
             display: none;
-            color: #fff;
+            color: #333;
             padding: 0 2%;
             font-size: 250%;
             margin: 0;
@@ -195,11 +197,12 @@ p {
 }
 
 .selectTiles {
-    background: #000 !important;
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectTiles p, .selectTiles span {
-        color: #e0b001 !important;
+        color: #23a1a7 !important;
     }
 
 .priorities_part2 h2 {
@@ -357,7 +360,7 @@ p {
 
 
 #option_menu .slimScrollBar, #option_menu .slimScrollRail {
-    background: #ccc !important;
+    background: #eb4830 !important;
     height: 50% !important;
 }
 
@@ -391,8 +394,8 @@ p {
 }
 
 #usrList {
-    border: 1px solid #333;
-    padding: 2% 0 .5% 2% !important;
+    /*border: 1px solid #333;
+    padding: 2% 0 .5% 2% !important;*/
     width: 85% !important;
     position: relative;
 }
@@ -1011,10 +1014,11 @@ body {
     left: 0px;
     z-index: -1;
     content: '';
-    background: -webkit-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
-    background: -moz-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
-    background: -o-radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
-    background: radial-gradient(30%, rgba(255,255,255,0.15), rgba(0,0,0,0)), url('img/body-bg.png');
+    /*background: -webkit-radial-gradient(30%, rgba(255,255,255,0.15), #fff), url('img/body-bg.png');
+    background: -moz-radial-gradient(30%, rgba(255,255,255,0.15), #fff), url('img/body-bg.png');
+    background: -o-radial-gradient(30%, rgba(255,255,255,0.15), #fff), url('img/body-bg.png');
+    background: radial-gradient(30%, rgba(255,255,255,0.15), #fff), url('img/body-bg.png');*/
+    background: #fff;
 }
 
 .site-header-wrap {
@@ -1048,8 +1052,8 @@ body {
     background: #000;
     transition: all linear 0.15s;
     /* Type */
-    font-size: 1.200em;
-    color: #fff !important;
+    font-size: 1.3em;
+    color: #000 !important;
 }
 
 .updateMenu {
@@ -1058,6 +1062,7 @@ body {
     background-position: 2% 45%;
     background-size: 10% 70%;
     text-transform: uppercase;
+    border: 1px solid #666 !important;
 }
 
 .requestMenu {
@@ -1066,6 +1071,9 @@ body {
     background-position: 2% 45%;
     background-size: 10% 70%;
     text-transform: uppercase;
+    border: 1px solid #23a1a7;
+    display: none !important;
+    border: 1px solid #666 !important;
 }
 
 
@@ -1074,20 +1082,22 @@ body {
     padding-left: 15%;
     background-position: 2% 45%;
     background-size: 10% 70%;
+    border: 1px solid #666 !important;
     text-transform: uppercase;
 }
 
 
 .profilemenu {
-    background: url(../../Images/DevPriorities/Priorities/viewprofile.png)no-repeat left center;
+    background: url(../../Images/DevPriorities/Priorities/viewprofile.png)no-repeat left center #fff;
     padding-left: 15%;
     background-position: 2% 45%;
     background-size: 10% 70%;
     text-transform: uppercase;
+    border: 1px solid #666 !important;
 }
 
 .boardView {
-    background: url(../../Images/DevPriorities/Priorities/board.png)no-repeat left center #000;
+    background: url(../../Images/DevPriorities/Priorities/board.png)no-repeat left center #fff;
     white-space: nowrap;
     width: 100%;
     position: relative;
@@ -1098,38 +1108,40 @@ body {
     height: 50px;
     padding-top: 3%;
     padding-bottom: 5%;
-    border-bottom: 1px solid #333;
-    color: #fff;
+    border-bottom: 1px solid #666;
+    color: #000;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 120%;
     padding-right: 246px;
+    color: #eb4830 !important;
+    display: none !important;
 }
 
 
     .boardView:hover {
-        background: url(../../Images/DevPriorities/Priorities/board.png)no-repeat left center #e0b001;
+        background: url(../../Images/DevPriorities/Priorities/board.png)no-repeat left center #fff;
         background-position: 2% 45%;
         background-size: 10% 70%;
         text-decoration: none;
-        color: #fff;
+        color: #333;
+        border-bottom: 1px solid #666;
     }
 
 
 .tracker_show {
-    background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #000;
+    background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #fff;
     white-space: nowrap;
     width: 100%;
     position: relative;
-    padding-left: 15%;
-    background-position: 2% 45%;
-    background-size: 10% 70%;
+    padding-left: 24%;
+    background-position: 12% 45%;
+    background-size: 12% 120%;
     text-transform: uppercase;
     height: 50px;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    border-bottom: 1px solid #333;
-    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #222;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 120%;
@@ -1137,22 +1149,31 @@ body {
 }
 
 
+
     .tracker_show:hover {
-        background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #e0b001;
-        background-position: 2% 45%;
-        background-size: 10% 70%;
+        background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #fff;
+        background-position: 12% 45%;
+        background-size: 12% 120%;
         text-decoration: none;
-        color: #fff;
+        color: #222;
     }
 
 
 
 .hideTrace {
-    background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #000 !important;
+    background: url(../../Images/DevPriorities/Priorities/hide_tracker.png)no-repeat left center #fff !important;
+    background-position: 12% 45% !important;
+    background-size: 12% 120% !important;
+    text-decoration: none;
+    color: #222;
 }
 
     .hideTrace:hover {
-        background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #e0b001 !important;
+        background: url(../../Images/DevPriorities/Priorities/hide_tracker.png)no-repeat left center #fff !important;
+        background-position: 12% 45% !important;
+        background-size: 12% 120% !important;
+        text-decoration: none;
+        color: #222;
     }
 
 
@@ -1207,7 +1228,7 @@ body {
     }
 
 .main {
-    margin-top: 12.6%;
+    margin-top: 0;
 }
 
 .accordion-section-content h3 {
@@ -1222,27 +1243,30 @@ body {
 }
 
 .accordion-section-content p {
-    color: #fff;
+    color: #000;
     font-size: 90%;
 }
 
 .accordion-section-title.active, .accordion-section-title:hover {
-    background-color: #e0b001;
+    background-color: #fff;
     /* Type */
     text-decoration: none;
-    border-bottom: 0px solid #333;
+    border: 0px solid #23a1a7;
 }
 
 .accordion-section:last-child .accordion-section-title {
     border-bottom: none;
+    border: 1px solid #333;
 }
 
 /*----- Section Content -----*/
 .accordion-section-content {
     padding: 15px;
     display: none;
-    border-bottom: 1px solid #333;
+    border: 1px solid #333;
+    background: #fff;
 }
+
 
 .sendRequest {
     background: #e0b001;
@@ -1281,7 +1305,7 @@ body {
 
 .blankBox {
     float: left;
-    background: #000;
+    background: #fff;
     padding-bottom: 15%;
     text-align: center;
     vertical-align: middle;
@@ -1307,7 +1331,7 @@ body {
     position: relative;
     vertical-align: middle;
     padding-top: 16.6%;
-    color: #fff;
+    color: #000;
     font-size: 130%;
 }
 
@@ -1321,7 +1345,7 @@ body {
     }
 
 .accordion h4 {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -1600,9 +1624,10 @@ body {
     }
 
         .flapper .digit div {
-            color: #f0f0f0;
+            color: #000;
             padding: 0px;
-            background-color: #333;
+            background-color: #fff;
+            line-height: 1 !important;
         }
 
     /* LIGHT */
@@ -1620,7 +1645,7 @@ body {
 
 
 .sliderboardView {
-    background: #333;
+    background: #fff;
     width: 101%;
     float: left;
     text-align: center;
@@ -1670,7 +1695,7 @@ body {
 
 
 .sliderboardView h3 {
-    color: #fff;
+    color: #000;
     margin-bottom: 0px;
     text-transform: uppercase;
     font-weight: 300;
@@ -1694,17 +1719,17 @@ body {
 }
 
 .completedDate .flapper .digit div {
-    color: #e0b001 !important;
+    color: #eb4830 !important;
 }
 
 
 .remainingDate .flapper .digit div {
-    color: red !important;
+    color: #eb4830 !important;
 }
 
-.priorities_part2 .accordion a {
+/*.priorities_part2 .accordion a {
     display: table !important;
-}
+}*/
 
 
 @media screen and (max-width: 2600px) and (min-width: 1800px) {
@@ -1980,7 +2005,7 @@ body {
     }
 
     #accordion-4 {
-        padding-bottom: 113% !important;
+        padding-bottom: 115% !important;
     }
 
 

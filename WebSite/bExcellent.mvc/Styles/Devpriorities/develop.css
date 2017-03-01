@@ -400,7 +400,7 @@ a:focus, a:hover {
 @media screen and (max-width: 1800px) and (min-width: 1000px) {
     .user_tiles ul li p {
         font-size: 90%;
-        line-height: 1.2;
+        line-height: 1.1;
     }
 
     .priorities_tiles ul li p {
