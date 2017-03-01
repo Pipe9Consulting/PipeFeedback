@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PSE_Live" Class="bExcellentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-EO7LTA8F\SQLEXPRESS;Initial Catalog=PSE_Live;User ID=sa" SettingsObjectName="bExcellent.Service.DataAccess.Properties.Settings" SettingsPropertyName="PSE_LiveConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Kessaku_Demo" Class="bExcellentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-EO7LTA8F\SQLEXPRESS;Initial Catalog=Kessaku_Demo;User ID=sa" SettingsObjectName="bExcellent.Service.DataAccess.Properties.Settings" SettingsPropertyName="Kessaku_DemoConnectionString" Provider="System.Data.SqlClient" />
   <Function Name="dbo.GetAllCountries" Method="GetAllCountries">
     <ElementType Name="GetAllCountriesResult">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -3437,6 +3437,19 @@
       <Column Name="Numbers" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.PPA_GetOverAllPartnersByDesignation" Method="GetOverAllPartnersByDesignation">
+    <Parameter Name="Userid" Parameter="userid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="designationId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="PPA_GetOverAllPartnersByDesignationResult">
+      <Column Name="PartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DET" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CountryName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Timezone" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
   <Function Name="dbo.PPA_GenerateReportPowerBi" Method="GenerateReportPowerBi">
     <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
     <Parameter Name="PartnerId" Parameter="partnerId" Type="System.Int32" DbType="Int" />
@@ -3445,6 +3458,36 @@
       <Column Name="Answer" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="AnswerValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="POEModuleId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModuleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Question" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="BriefQuestion" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ReportQuestion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.V3_GetTenureFbidsForTeam" Method="GetTenureFbidsForTeam">
+    <Parameter Name="poeid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="userid" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="minTenure" Type="System.Int32" DbType="Int" />
+    <Parameter Name="maxTenure" Type="System.Int32" DbType="Int" />
+    <ElementType Name="V3_GetTenureFbidsForTeamResult">
+      <Column Name="Parent_POEMappingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Child_POEMappingId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubscriptionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="poeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="zoneid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CountryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmailID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="teammemberuserid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="managerid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="managerFirstname" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="managerlastname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="manageremailid" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="POEFeedbackId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Tenure" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TeamId" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

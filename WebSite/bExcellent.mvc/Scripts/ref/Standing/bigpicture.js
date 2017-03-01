@@ -16,79 +16,95 @@
                                 }]
                 };
                 createchart.loadchartdata(topallChart, "topall");
-                //Team
-                var nxtallChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                                {
-                                    "name": "nxt",
-                                    "score": response.Team.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(nxtallChart, "nxtall");
-                //Sherpas
-                var rstallChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                                {
-                                    "name": "rst",
-                                    "score": response.Sherpas.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(rstallChart, "rstall");
-                //Previous
-                var prvallChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                                {
-                                    "name": "prv",
-                                    "score": response.Previous.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(prvallChart, "prvall");
+                ////Team
+                //var nxtallChart = {
+                //    "values": [{
+                //        "name": "You",
+                //        "score": response.You.WcsiScore
+                //    },
+                //                {
+                //                    "name": "nxt",
+                //                    "score": response.Team.WcsiScore
+                //                }]
+                //};
+                //createchart.loadchartdata(nxtallChart, "nxtall");
+                ////Sherpas
+                //var rstallChart = {
+                //    "values": [{
+                //        "name": "You",
+                //        "score": response.You.WcsiScore
+                //    },
+                //                {
+                //                    "name": "rst",
+                //                    "score": response.Sherpas.WcsiScore
+                //                }]
+                //};
+                //createchart.loadchartdata(rstallChart, "rstall");
+                ////Previous
+                //var prvallChart = {
+                //    "values": [{
+                //        "name": "You",
+                //        "score": response.You.WcsiScore
+                //    },
+                //                {
+                //                    "name": "prv",
+                //                    "score": response.Previous.WcsiScore
+                //                }]
+                //};
+                //createchart.loadchartdata(prvallChart, "prvall");
 
-                //Tenure
-                var tenureChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                                {
-                                    "name": "tenure",
-                                    "score": response.Tenure.TenureBelow12.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(tenureChart, "tenures");
-
-                var allallChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                        {
-                            "name": "comm",
-                            "score": response.Community.WcsiScore
+                if ($('#choosenTile').val() == "3") {
+                    //Tenure
+                    var tenureChart = {
+                        "values": [{
+                            "name": "You",
+                            "score": response.TeamTenure.TenureBelow12.WcsiScore
                         },
-                                {
-                                    "name": "Top",
-                                    "score": response.Team.WcsiScore
-                                },
-                                {
-                                    "name": "Last",
-                                    "score": response.Sherpas.WcsiScore
-                                },
-                                {
-                                    "name": "Rest",
-                                    "score": response.Previous.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(allallChart, "allall");
+                                    {
+                                        "name": "tenure",
+                                        "score": response.Tenure.TenureBelow12.WcsiScore
+                                    }]
+                    };
+                    createchart.loadchartdata(tenureChart, "tenures");
+                } else {
+                    //Tenure
+                    var tenureChart = {
+                        "values": [{
+                            "name": "You",
+                            "score": response.You.WcsiScore
+                        },
+                                    {
+                                        "name": "tenure",
+                                        "score": response.Tenure.TenureBelow12.WcsiScore
+                                    }]
+                    };
+                    createchart.loadchartdata(tenureChart, "tenures");
+                }
+                
+
+                //var allallChart = {
+                //    "values": [{
+                //        "name": "You",
+                //        "score": response.You.WcsiScore
+                //    },
+                //        {
+                //            "name": "comm",
+                //            "score": response.Community.WcsiScore
+                //        },
+                //                {
+                //                    "name": "Top",
+                //                    "score": response.Team.WcsiScore
+                //                },
+                //                {
+                //                    "name": "Last",
+                //                    "score": response.Sherpas.WcsiScore
+                //                },
+                //                {
+                //                    "name": "Rest",
+                //                    "score": response.Previous.WcsiScore
+                //                }]
+                //};
+                //createchart.loadchartdata(allallChart, "allall");
             },
             error: function () {
             }
@@ -666,21 +682,37 @@ function LoadTenureGraph(mode) {
         url: '/Standing/GetStandingScore',
         success: function (response) {
             var modulescore = null;
+            var modulescoreTeam = null;
             switch (mode) {
                 case 1:
                     modulescore = response.Tenure.TenureBelow12;
+                    if ($('#choosenTile').val() == "3") {
+                        modulescoreTeam = response.TeamTenure.TenureBelow12.WcsiScore;
+                    } else {
+                        modulescoreTeam = response.You.WcsiScore;
+                    }
                     break;
                 case 2:
                     modulescore = response.Tenure.TenureBelow36;
+                    if ($('#choosenTile').val() == "3") {
+                        modulescoreTeam = response.TeamTenure.TenureBelow36.WcsiScore;
+                    } else {
+                        modulescoreTeam = response.You.WcsiScore;
+                    }
                     break;
                 case 3:
                     modulescore = response.Tenure.TenureAbove36;
+                    if ($('#choosenTile').val() == "3") {
+                        modulescoreTeam = response.TeamTenure.TenureAbove36.WcsiScore;
+                    } else {
+                        modulescoreTeam = response.You.WcsiScore;
+                    }
                     break;
                 default: }
             var tenureChart = {
                 "values": [{
                     "name": "You",
-                    "score": response.You.WcsiScore
+                    "score": modulescoreTeam
                 },
                             {
                                 "name": "tenure",

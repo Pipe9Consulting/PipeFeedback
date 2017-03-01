@@ -379,8 +379,8 @@
                                     <p id="tenuretext">0 - 12 Months</p>
                                     <ul class="drplegends" id="tenureLegendClick">
                                         <li data-value="1">0 - 12 Months</li>
-                                        <li data-value="2">13 - 36 Months</li>
-                                        <li data-value="3">36+ Months</li>
+                                        <li data-value="2">13 - 24 Months</li>
+                                        <li data-value="3">25+ Months</li>
                                     </ul>
                                 </div>
                                 <div class="chart">

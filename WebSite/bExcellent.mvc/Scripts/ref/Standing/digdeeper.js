@@ -62,8 +62,8 @@
                     //img = $('#selectedpoeDigdeep').val() + (m + 1);
                     //paHtml = paHtml + "<li id='pa" + (m + 1) + "' class='pa selectingArea' data-value=" + (m + 1) + "><div class='number syncnumber' id='PaVal" + (m + 1) + "'></div> <img src='../Images/icons/" + img + ".png'><p> " + response.PracticeAreaContent[m].ModuleName + " </p> </li>";
 
-                    img = $('#selectedpoeDigdeep').val() + (m + 1);
-                    imagename = $('#selectedpoeDigdeep').val();
+                    img = $('#selectedpoeDigdeep').val().replace("/", "") + (m + 1);
+                    imagename = $('#selectedpoeDigdeep').val().replace("/", "");
                     //paHtml = paHtml + "<li id='pa" + (m + 1) + "' class='pa selectingArea " + img + "Tile' data-value=" + (m + 1) + "><div class='number syncnumber' id='PaVal" + (m + 1) + "'></div><p> " + response.PracticeAreaContent[m].ModuleName + " </p> </li>";
                     paHtml = paHtml + "<li id='pa" + (m + 1) + "' class='pa selectingArea' data-value=" + (m + 1) + "><img src='../Images/icons/" + img + ".png' /><p> " + response.PracticeAreaContent[m].ModuleName + " </p> </li>";
                     if (selectedli == 1) {
@@ -75,13 +75,26 @@
                     } else if (selectedli == 3) {
                         LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Sherpas.ModuleScores[m].QuestionScores, (m + 1), 3, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
                     } else if (selectedli == 4) {
-                        LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow12.ModuleScores[m].QuestionScores, (m + 1), 4, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        if ($('#controlclicked').val() == "3") {
+                            LoadHtml(response.TeamTenure.TenureBelow12.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow12.ModuleScores[m].QuestionScores, (m + 1), 4, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        } else {
+                            LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow12.ModuleScores[m].QuestionScores, (m + 1), 4, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        }
+                        
                     } else if (selectedli == 5) {
                         LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Previous.ModuleScores[m].QuestionScores, (m + 1), 5, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
                     } else if (selectedli == 6) {
-                        LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow36.ModuleScores[m].QuestionScores, (m + 1), 6, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        if ($('#controlclicked').val() == "3") {
+                            LoadHtml(response.TeamTenure.TenureBelow36.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow36.ModuleScores[m].QuestionScores, (m + 1), 6, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        } else {
+                            LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureBelow36.ModuleScores[m].QuestionScores, (m + 1), 6, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        }
                     } else if (selectedli == 7) {
-                        LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureAbove36.ModuleScores[m].QuestionScores, (m + 1), 7, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        if ($('#controlclicked').val() == "3") {
+                            LoadHtml(response.TeamTenure.TenureAbove36.ModuleScores[m].QuestionScores, response.Tenure.TenureAbove36.ModuleScores[m].QuestionScores, (m + 1), 7, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        } else {
+                            LoadHtml(response.You.ModuleScores[m].QuestionScores, response.Tenure.TenureAbove36.ModuleScores[m].QuestionScores, (m + 1), 7, response.PracticeAreaContent[m].Questions, response.You.ModuleScores[m].WeightageScore);
+                        }
                     }
                     loadRightArrowUpdated(parseInt($('#controlclicked').val()), selectedli);
                 }
@@ -124,11 +137,11 @@
                 $('.selectingArea').hover(
        function () {
            removeImgAttrHover();
-           $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val() + $(this).attr("data-value") + "h" + ".png");
+           $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val().replace("/", "") + $(this).attr("data-value") + "h" + ".png");
        }, function () {
            //alert('123')
            removeImgAttrHover();
-           $('.selectedIndicator').find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val() + $('.selectedIndicator').attr("data-value") + "h" + ".png");
+           $('.selectedIndicator').find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val().replace("/", "") + $('.selectedIndicator').attr("data-value") + "h" + ".png");
        });
                 $('.selectingArea').click(function () {
                    // debugger;
@@ -143,7 +156,7 @@
                    // alert();
                     removeImgAttr();
                     $(this).addClass('selectedIndicator');
-                    img = $('#selectedpoeDigdeep').val() + imagenumber + "h";
+                    img = $('#selectedpoeDigdeep').val().replace("/", "") + imagenumber + "h";
                     $(this).find("img").attr("src", "../Images/icons/" + img + ".png");
 
                     var pa = $(this).attr("data-value");
@@ -553,7 +566,7 @@ $(document).ready(function () {
 
 });
 function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage) {
-
+   // debugger;
     var numberOfSlide = Math.ceil(loadQuestion.length / 4);
     var commhtml = " <div class='chartslide'>";
     var dummyhtml = "";
@@ -605,12 +618,14 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                         count = i;
                     }
                     if (tilescore.length > 0) {
+                       // debugger;
                         //yourscorePercentage = youscore[count].ScorePercentage;
                         tilescorePercentage = tilescore[count].ScorePercentage;
                         //yourscoreWeightingScore = (youscore[count].ScorePercentage / 25) * perQuestionWeightage;
                         tilescoreWeightingScore = (tilescore[count].ScorePercentage / 25) * perQuestionWeightage;
                     }
                     if (youscore.length > 0) {
+                      //  debugger;
                         yourscorePercentage = youscore[count].ScorePercentage;
                         yourscoreWeightingScore = (youscore[count].ScorePercentage / 25) * perQuestionWeightage;
                     }
@@ -655,7 +670,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                             "</div> </div> <div class='pointer'></div> <div class='" + sclass + "' id='Toppa1'></div> </div> </div>";
                     } else {
                         commhtml = commhtml + "<div class='chartsmlplaceholder pa1' data-value=" + numberOfSlide + "> <div class='eqscon'><div class='EiQno'>" + (count + 1) + "</div><div class='EiQtext'>" + loadQuestion[count].ShortQuetionText + "</div></div> <div class='chartdiv' id=''>" +
-                           " <div class='legend'> <ul> <li class='legend1'>You</li> <li class='legend2all'> <div id='legendAll'> <div class='legend legenders legenddropdown'> <p class='legendText'>0 - 12 Months</p> <ul class='drplegend'> <li value='4'>0 - 12 Months</li> <li  value='6'>13 - 36 Months</li> <li  value='7'>36+ Months</li>  </ul> </div> " +
+                           " <div class='legend'> <ul> <li class='legend1'>You</li> <li class='legend2all'> <div id='legendAll'> <div class='legend legenders legenddropdown'> <p class='legendText'>0 - 12 Months</p> <ul class='drplegend'> <li value='4'>0 - 12 Months</li> <li  value='6'>13 - 24 Months</li> <li  value='7'>25+ Months</li>  </ul> </div> " +
                             "</div></li> </ul> </div><div class='chart'> <div class='chartop'></div> <div class='chartbg'> <div class='chartarea'> <ul> <li class='progressbar1' style='width: " + yourscorePercentage + "%;' id='Toppa1Pro1'> " +
                            " </li> <li class='progressbar2' style='width: " + tilescorePercentage + "%;' id='Toppa1Pro2'>  </li> </ul> </div> </div> <div class='chartbtm'> <div class='markerholder'>" +
                            " <ul> <li class='markergray' style='display:none; width:" + tilescorePercentage + "%;" + margins + "' id='Toppa1Mar2'> <p></p> </li> <li class='markeramper' style='display:none; width: " + yourscorePercentage + "%;' id='Toppa1Mar1'> <p></p> </li> </ul> </div> " +
@@ -673,7 +688,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
         }
         commhtml = commhtml + "</div>";
     }
-
+    debugger;
     margins = "";
     commhtml = commhtml + "</div>";
     $('#paLevel' + palevel + '').html("" + commhtml);
@@ -874,7 +889,7 @@ function loadRightArrowUpdated(type, drpSelect) {
 function removeImgAttr() {
     var count = 1;
     $('#stndmenu li').each(function () {
-        var img = $('#selectedpoeDigdeep').val() + count;
+        var img = $('#selectedpoeDigdeep').val().replace("/", "") + count;
         $(this).find("img").attr("src", "../Images/icons/" + img + ".png");
         $(this).removeClass('selectedIndicator');
         count++;
@@ -884,7 +899,7 @@ function removeImgAttr() {
 function removeImgAttrHover() {
     var count = 1;
     $('#stndmenu li').each(function() {
-        var img = $('#selectedpoeDigdeep').val() + count;
+        var img = $('#selectedpoeDigdeep').val().replace("/","") + count;
         if (!$(this).hasClass('selectedIndicator')) {
             $(this).find("img").attr("src", "../Images/icons/" + img + ".png");
         }

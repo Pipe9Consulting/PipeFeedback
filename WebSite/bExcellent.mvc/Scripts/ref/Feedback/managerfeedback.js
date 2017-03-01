@@ -19,7 +19,7 @@
                 var html = "";
                 if (response != null) {
                     if (response.ModuleOrderNumber == 0) {
-                        var htmlDiv = "<img src='../../Images/KessakuImage/" + $('#selectedpoe').val() + "_pane.png'>";
+                        var htmlDiv = "<img src='../../Images/KessakuImage/" + $('#selectedpoe').val().replace("/", "") + "_pane.png'>";
                         $('#poeintroslidecount').html(response.ModuleIntroSlideCount);
                         $('#poeintro0').html(htmlDiv + response.ModuleIntro);
                         $('#poeintro1').html(response.ModuleIntro1);
@@ -76,7 +76,7 @@
                         //$('#keyaction5').html(response.KeyAction5);
 
                         moduleName = $('#poemodule>li.selected').find('p').html();
-                        imgSrc = $('#selectedpoe').val() + response.ModuleOrderNumber;
+                        imgSrc = $('#selectedpoe').val().replace("/", "") + response.ModuleOrderNumber;
 
                         $('#moduleintroslidecount').html(response.ModuleIntroSlideCount);
                         $('#moduleintro0').html('<div class="practiceAreaTitle"><h2>' + moduleName + '</h2><img src="../Images/icons/' + imgSrc + '.png" /></div>' + response.ModuleIntro);
@@ -186,7 +186,7 @@
                         var t = parseInt(moduleorder);
                         var l = parseInt(moduleid);
                         for (var m = moduleorder; m >= 1; m--) {
-                            var img = $('#selectedpoe').val() + m;
+                            var img = $('#selectedpoe').val().replace("/", "") + m;
                             //$('#li' + moduleorder).attr('onclick', 'manager_feedback.loadcompletedPAQuestion(' + moduleid + ',' + moduleorder + ')');
                             $('#li' + t).attr('onclick', 'manager_feedback.loadcompletedPAQuestion(' + l + ',' + t + ')');
                             newcompletedPa2 = "<li id=lit" + m + "><a href='javascript:manager_feedback.loadcompletedPAQuestion(" + l + "," + t + ")'><span><img src='../../Images/icons/" + img + "-small.png' /></span><p>" + $('#li' + m).text() + "</p></a></li>" + newcompletedPa2;
@@ -440,9 +440,9 @@
 
                             // $('#li' + (parseInt(nextmod) - 1)).addClass('select' + $('#selectedpoe').val() + (parseInt(nextmod) - 1)).addClass('selected');
                             $('#li' + (parseInt(curmod) - 1)).removeClass('selected');
-                            $('#li' + (parseInt(curmod) - 1)).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + (parseInt(curmod) - 1) + ".png");
+                            $('#li' + (parseInt(curmod) - 1)).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + (parseInt(curmod) - 1) + ".png");
                             $('#li' + (parseInt(nextmod) - 1)).addClass('selected');
-                            $('#li' + (parseInt(nextmod) - 1)).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + (parseInt(nextmod) - 1) + "h.png");
+                            $('#li' + (parseInt(nextmod) - 1)).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + (parseInt(nextmod) - 1) + "h.png");
 
                             $('#poemoduleName').text($('#li' + (parseInt(nextmod) - 1)).find('p').text());
                             manager_feedback.loadDetailViewPAQuestions({ url: '../../Feedback/GetQuestions', data: { 'moduleId': $('#modulehdn' + nextmod).val() }, moduleorder: nextmod });
@@ -1028,12 +1028,12 @@
                     modulehidden = modulehidden + "<input type='hidden' id='modulehdn" + (i + 1) + "' value=" + response[i].ModuleId + " />";
 
                     if (response[i].ModuleOrderNumber > 0) {
-                        var img = $('#selectedpoe').val() + response[i].ModuleOrderNumber;
+                        var img = $('#selectedpoe').val().replace("/", "") + response[i].ModuleOrderNumber;
                         //module = module + "<li id ='li" + response[i].ModuleOrderNumber + "' data-value=" + response[i].ModuleId + "  class='" + img + "Tile" + ((response[i].ModuleOrderNumber == 1) ? ' select' + img + ' selected' : '') + "'><p>" + response[i].ModuleName + "</p></li>";
                         module = module + "<li id ='li" + response[i].ModuleOrderNumber + "' data-value=" + response[i].ModuleId + "  class='" + ((response[i].ModuleOrderNumber == 1) ? 'selected' : '') + "'><img src='../Images/icons/" + img + ".png' /><p>" + response[i].ModuleName + "</p></li>";
                     }
                     if (response[i].ModuleOrderNumber > 0) {
-                        var img = $('#selectedpoe').val() + response[i].ModuleOrderNumber;
+                        var img = $('#selectedpoe').val().replace("/", "") + response[i].ModuleOrderNumber;
                         modulehdnstr = modulehdnstr + "<li id ='lihdn" + response[i].ModuleOrderNumber + "' class='" + img + "Tile'><p>" + response[i].ModuleName + "</p></li>";
                     }
                 }
@@ -1059,18 +1059,18 @@
 
                 $('#poemodule').html(module);
 
-                $('#poemodule li').first().find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + 1 + "h" + ".png");
+                $('#poemodule li').first().find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + 1 + "h" + ".png");
                 $('#poemoduleName').text($('#poemodule li').first().find('p').text());
                 var status = parseInt($('#fbStatus').val());
                 $('#totalmodules').val(response.length);
                 if (status == 1) {
                     manager_feedback.loadDetailViewPAQuestions({ url: '../../Feedback/GetQuestions', data: { 'moduleId': $('#lastSavedModuleId').val() }, moduleorder: parseInt($('#lastSavedModuleOrder').val()) + 1 });
                     $('#poemodule li').each(function (index, item) {
-                        $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + (index + 1) + ".png");
+                        $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + (index + 1) + ".png");
                         $(this).removeClass('selected');
                     });
                     $('#li' + parseInt($('#lastSavedModuleOrder').val())).addClass('selected');
-                    $('#li' + parseInt($('#lastSavedModuleOrder').val())).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + $('#lastSavedModuleOrder').val() + "h" + ".png");
+                    $('#li' + parseInt($('#lastSavedModuleOrder').val())).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + $('#lastSavedModuleOrder').val() + "h" + ".png");
                     $('#poemoduleName').text($('#li' + parseInt($('#lastSavedModuleOrder').val())).find('p').text());
                     //$('#poemodule li').each(function (index, item) { $(this).removeClass('select' + $('#selectedpoe').val() + (index + 1)) });
                     // $('#li' + parseInt($('#lastSavedModuleOrder').val())).addClass('selected').addClass('select' + $('#selectedpoe').val() + $('#lastSavedModuleOrder').val());
@@ -1117,7 +1117,7 @@
     },
     //Load completed practise area
     loadCompletedPracticeArea: function (moduleid, moduleorder) {
-        var img = $('#selectedpoe').val() + moduleorder;
+        var img = $('#selectedpoe').val().replace("/", "") + moduleorder;
         var loadedPA = $('#target ul').html();
         var newcompletedPA = '';
         $('#li' + moduleorder).attr('onclick', 'manager_feedback.loadcompletedPAQuestion(' + moduleid + ',' + moduleorder + ')');
@@ -1147,9 +1147,9 @@
         //$('#li' + (parseInt(curmod) - 1)).removeClass('select' + $('#selectedpoe').val() + (parseInt(curmod) - 1)).removeClass('selected');
         // $('#li' + (parseInt(moduleorder))).addClass('select' + $('#selectedpoe').val() + (parseInt(moduleorder))).addClass('selected');
         $('#li' + (parseInt(curmod) - 1)).removeClass('selected');
-        $('#li' + (parseInt(curmod) - 1)).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + (parseInt(curmod) - 1) + ".png");
+        $('#li' + (parseInt(curmod) - 1)).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + (parseInt(curmod) - 1) + ".png");
         $('#li' + (parseInt(moduleorder))).addClass('selected');
-        $('#li' + (parseInt(moduleorder))).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + (parseInt(moduleorder)) + "h.png");
+        $('#li' + (parseInt(moduleorder))).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + (parseInt(moduleorder)) + "h.png");
         $('#poemoduleName').text($('#li' + (parseInt(moduleorder))).find('p').text());
         $('#currentmoduleOrder').val((parseInt(moduleorder) + 1));
         $('#currentQuestionorder').val(0);
@@ -1529,11 +1529,11 @@ $(document).ready(function () {
     $('#poemodule li').hover(
       function () {
           removeAttrHover();
-          $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + $(this).attr("id").replace("li", "") + "h" + ".png");
+          $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + $(this).attr("id").replace("li", "") + "h" + ".png");
       }, function () {
           // alert('123')
           removeAttrHover();
-          $('#poemodule>li.selected').find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + $('#poemodule>li.selected').attr("id").replace("li", "") + "h" + ".png");
+          $('#poemodule>li.selected').find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + $('#poemodule>li.selected').attr("id").replace("li", "") + "h" + ".png");
       });
 });
 
@@ -1565,7 +1565,7 @@ function removeAttrHover() {
     var count = 1;
     $('#poemodule li').each(function () {
         if (!$(this).hasClass('selected')) {
-            $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val() + count + ".png");
+            $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoe').val().replace("/", "") + count + ".png");
         }
         count++;
     });

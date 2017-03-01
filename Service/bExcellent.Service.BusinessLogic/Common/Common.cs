@@ -787,5 +787,18 @@ namespace bExcellent.Service.BusinessLogic.Common
             return DataAccess.GetOverallReportsCalculated();
         }
 
+        public List<PSMReports> GetReportsCalculated(int userId, int mode)
+        {
+            return DataAccess.GetReportsCalculated(userId, mode);
+        }
+        public List<getAxis> GetPSEReportCalculated(int userId, int partnerId, string mplId)
+        {
+            return DataAccess.GetPSEReportCalculated(userId, partnerId, mplId);
+        }
+
+        public List<PPAResults> GetStakeHolderReportCalculated()
+        {
+            return DataAccess.GetStakeHolderReportCalculated();
+        }
     }
 }

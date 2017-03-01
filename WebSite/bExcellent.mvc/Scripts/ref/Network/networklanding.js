@@ -884,7 +884,7 @@ var network = {
                 var poeids = "";
                 if (response != null) {
                     for (var i = 0; i < response.length; i++) {
-                        html = html + " <li id ='poeli" + response[i].POEId + "' value=" + response[i].POEId + " class='poelistli'><a> <div class='icon'> <img src='../../Images/" + response[i].POEName.replace("&", "") + "_Intro.png' alt='" + response[i].POEName + "' class='img grayscale' /></div> <p> " + response[i].POEName + "</p> </a><span></span></li>";
+                        html = html + " <li id ='poeli" + response[i].POEId + "' value=" + response[i].POEId + " class='poelistli'><a> <div class='icon'> <img src='../../Images/" + response[i].POEName.replace("&", "").replace('/', "") + "_Intro.png' alt='" + response[i].POEName + "' class='img grayscale' /></div> <p> " + response[i].POEName + "</p> </a><span></span></li>";
                         poeids = poeids + response[i].POEId + '%';
                     }
                     if (response.length < 4) {

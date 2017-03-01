@@ -27,6 +27,7 @@
     <MetadataFile FileName="Common12.xsd" MetadataType="Schema" ID="07c88d31-030e-4727-b2bd-defeb85b3871" SourceId="1" SourceUrl="http://localhost:8052/Common.svc?xsd=xsd2" />
     <MetadataFile FileName="Common9.xsd" MetadataType="Schema" ID="f77fba4e-4640-4be4-a248-3ce002c086ef" SourceId="1" SourceUrl="http://localhost:8052/Common.svc?xsd=xsd4" />
     <MetadataFile FileName="Common11.xsd" MetadataType="Schema" ID="872d134f-6660-45e9-b87f-ea032c801ab9" SourceId="1" SourceUrl="http://localhost:8052/Common.svc?xsd=xsd0" />
+    <MetadataFile FileName="Common16.xsd" MetadataType="Schema" ID="dfff80ad-a20e-45e4-954b-35a5f24ee787" SourceId="1" SourceUrl="http://localhost:8052/Common.svc?xsd=xsd9" />
     <MetadataFile FileName="Common15.xsd" MetadataType="Schema" ID="fa8ee537-7b82-4414-b952-d65c46e295f7" SourceId="1" SourceUrl="http://localhost:8052/Common.svc?xsd=xsd8" />
     <MetadataFile FileName="Common10.xsd" MetadataType="Schema" ID="e49813f0-ac85-4e28-8111-8e04455b3617" SourceId="1" SourceUrl="http://localhost:8052/Common.svc?xsd=xsd1" />
     <MetadataFile FileName="Common13.xsd" MetadataType="Schema" ID="b8049e27-18b5-4896-bcf3-338a86afdf12" SourceId="1" SourceUrl="http://localhost:8052/Common.svc?xsd=xsd7" />

@@ -809,10 +809,10 @@
                         <li id="Peers" class="peersGfbIcon "><a href="#">Feedback Given</a></li>--%>
                        
                         
-                        <li id="customer" class="customerRFb selectcustomer"><a href="#">Feedback Completed</a></li>
-                        <li id="incompleteItem" class="incompleteFB ">
+                       <%-- <li id="customer" class="customerRFb selectcustomer"><a href="#">Feedback Completed</a></li>--%>
+                       <%-- <li id="incompleteItem" class="incompleteFB ">
                             <span id="incompleteFbCount">55</span>
-                            <a href="#">Incomplete Feedback</a></li>
+                            <a href="#">Incomplete Feedback</a></li>--%>
                        
                     </ul>
                 </div>

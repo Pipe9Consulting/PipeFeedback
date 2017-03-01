@@ -7,13 +7,13 @@
                 //debugger;
                 var htm = '';
                 for (var i = 0; i < response.TScore.ModuleScores.length; i++) {
-                    var img = $('#selectedpoe').val() + (i + 1);//$('#selectedpoe').val() + response.RScore.ModuleScores[i].ModuleOrderNumber;
+                    var img = $('#selectedpoe').val().replace('/', "") + (i + 1);//$('#selectedpoe').val() + response.RScore.ModuleScores[i].ModuleOrderNumber;
                     var difference = 0;
                     var statusImg = "";
                     var maxscore = response.RScore.ModuleScores[i].WeightageScore;
                     var scoreperNob = (((maxscore) / (response.RScore.ModuleScores[i].QuestionScores.length)) / 4).toFixed(1);
                     if (response.RScore.ModuleScores != null && response.TScore.ModuleScores != null) {
-                        img = $('#selectedpoe').val() + response.RScore.ModuleScores[i].ModuleOrderNumber;
+                        img = $('#selectedpoe').val().replace('/', "") + response.RScore.ModuleScores[i].ModuleOrderNumber;
                         for (var j = 0; j < response.RScore.ModuleScores[i].QuestionScores.length; j++) {
                             var type = $('#selectedTypedeep').val();
                             var youscore = 0;
@@ -917,12 +917,12 @@ $(document).ready(function () {
     $('#practiceAreaList li').hover(
      function () {
          removeAttrHover();
-         $(this).find('img').attr("src", "../../Images/icons/" + $('#selectedpoe').val() + (parseInt($(this).attr("value")) + 1) + "h" + ".png");
+         $(this).find('img').attr("src", "../../Images/icons/" + $('#selectedpoe').val().replace('/',"") + (parseInt($(this).attr("value")) + 1) + "h" + ".png");
          $(this).addClass('moduleHove');
      }, function () {
          // alert('123')
          removeAttrHover();
-         $('#practiceAreaList>li.selected').find('img').attr("src", "../../Images/icons/" + $('#selectedpoe').val() + (parseInt($('#practiceAreaList>li.selected').attr("value")) + 1) + "h" + ".png");
+         $('#practiceAreaList>li.selected').find('img').attr("src", "../../Images/icons/" + $('#selectedpoe').val().replace('/', "") + (parseInt($('#practiceAreaList>li.selected').attr("value")) + 1) + "h" + ".png");
          $('#practiceAreaList>li.selected').addClass('moduleHove');
      });
 });
@@ -987,7 +987,7 @@ function removeAttrHover() {
     var count = 1;
     $('#practiceAreaList li').each(function () {
         if (!$(this).hasClass('selected')) {
-            $(this).find('img').attr("src", "../../Images/icons/" + $('#selectedpoe').val() + count + ".png");
+            $(this).find('img').attr("src", "../../Images/icons/" + $('#selectedpoe').val().replace('/', "") + count + ".png");
             $(this).removeClass("moduleHove");
         }
         count++;

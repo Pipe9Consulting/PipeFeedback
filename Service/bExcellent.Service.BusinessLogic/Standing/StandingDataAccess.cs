@@ -273,7 +273,7 @@ namespace bExcellent.Service.BusinessLogic.Standing
             return standingdata;
         }
 
-        public StandingScore GetAvgStandingScore(string feedbackid, int poeId,int userid = 0)
+        public StandingScore GetAvgStandingScore(string feedbackid, int poeId, int userid = 0)
         {
             double c1 = 0;
             double c2 = 0;
@@ -292,7 +292,7 @@ namespace bExcellent.Service.BusinessLogic.Standing
                 Childindex1Score = (Math.Round(c1, MidpointRounding.AwayFromZero)) * 2,
                 Childindex2Score = (Math.Round(c2, MidpointRounding.AwayFromZero)) * 2,
                 WcsiScore = Math.Round(wcsiscore, MidpointRounding.AwayFromZero),
-                ModuleScores = GetAvgModuleAverage(feedbackid, poeId,userid)
+                ModuleScores = GetAvgModuleAverage(feedbackid, poeId, userid)
             };
         }
 
@@ -304,7 +304,7 @@ namespace bExcellent.Service.BusinessLogic.Standing
             }
         }
 
-        public List<ModuleScore> GetAvgModuleAverage(string fbid, int poeId,int userid =0)
+        public List<ModuleScore> GetAvgModuleAverage(string fbid, int poeId, int userid = 0)
         {
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
@@ -475,38 +475,52 @@ namespace bExcellent.Service.BusinessLogic.Standing
                     break;
             }
             var you = GetYouFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), subid, tileclicked, domain);
-            var previous = GetPrevFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), subid, tileclicked, domain);
+            // var previous = GetPrevFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), subid, tileclicked, domain);
             var community = GetRestFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type);
 
             var tenurebelow13 = GetTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 0, 13);
-            var tenurebelow36 = GetTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 13, 37);
-            var tenureabove36 = GetTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 37, 150);
+            var tenurebelow36 = GetTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 13, 24);
+            var tenureabove36 = GetTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 25, 300);
 
-            var sherpasFbid = GetSherbasFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
-            var teamFbid = GetTeamFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
+            // var sherpasFbid = GetSherbasFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
+            // var teamFbid = GetTeamFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
             var youStand = GetAvgStandingScore(you, poeid);
-            var previousStand = GetAvgStandingScore(previous, poeid);
+            // var previousStand = GetAvgStandingScore(previous, poeid);
             var communityStand = GetAvgStandingScore(community, poeid);
             var tenurebelow13Stand = GetAvgStandingScore(tenurebelow13, poeid);
             var tenurebelow36Stand = GetAvgStandingScore(tenurebelow36, poeid);
             var tenureabove36Stand = GetAvgStandingScore(tenureabove36, poeid);
-            var sherpasStand = GetAvgStandingScore(sherpasFbid, poeid);
-            var teamStand = GetAvgStandingScore(teamFbid, poeid);
+            // var sherpasStand = GetAvgStandingScore(sherpasFbid, poeid);
+            // var teamStand = GetAvgStandingScore(teamFbid, poeid);
             var tenure = new Tenure
                              {
                                  TenureBelow12 = tenurebelow13Stand,
                                  TenureBelow36 = tenurebelow36Stand,
                                  TenureAbove36 = tenureabove36Stand
                              };
+            var teamTenure = new Tenure();
+            if (tileclicked == 3)
+            {
+                var teamTenurebelow13 = GetTeamTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 0, 13);
+                var teamTenurebelow36 = GetTeamTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 13, 24);
+                var teamTenureabove36 = GetTeamTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 25, 300);
+                var teamTenurebelow13Stand = GetAvgStandingScore(teamTenurebelow13, poeid);
+                var teamTenurebelow36Stand = GetAvgStandingScore(teamTenurebelow36, poeid);
+                var teamTenureabove36Stand = GetAvgStandingScore(teamTenureabove36, poeid);
+                teamTenure.TenureBelow12 = teamTenurebelow13Stand;
+                teamTenure.TenureBelow36 = teamTenurebelow36Stand;
+                teamTenure.TenureAbove36 = teamTenureabove36Stand;
+            }
             var poe = new POEBL();
             var standingdata = new StandingNew
             {
                 You = youStand,
-                Previous = previousStand,
+                // Previous = previousStand,
                 Community = communityStand,
                 Tenure = tenure,
-                Sherpas = sherpasStand,
-                Team = teamStand,
+                TeamTenure = teamTenure,
+                //  Sherpas = sherpasStand,
+                // Team = teamStand,
                 PracticeAreaContent = GetPracticeAreaQuestions(poeid),
                 PoeGoal = GetPoeGoal(poeid)
             };
@@ -623,7 +637,24 @@ namespace bExcellent.Service.BusinessLogic.Standing
             }
             return "0";
         }
+        public string GetTeamTenureFbidString(int poeid, string userid, string domain, int type, int min, int max)
+        {
+            var fbids = string.Empty;
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                var returnvalue = context.GetTenureFbidsForTeam(poeid, userid, min, max).ToList();
 
+                if (returnvalue.Count != 0)
+                {
+                    fbids = returnvalue.Aggregate(fbids, (current, fblist) => current + fblist.POEFeedbackId + ",");
+                }
+            }
+            if (!string.IsNullOrEmpty(fbids))
+            {
+                return fbids.Substring(fbids.Length - 1, 1) == "," ? fbids.Substring(0, fbids.Length - 1) : fbids;
+            }
+            return "0";
+        }
         public string GetSherbasFbidString(int poeid, string userid, int type, string domain)
         {
             var fbids = string.Empty;
@@ -933,7 +964,7 @@ namespace bExcellent.Service.BusinessLogic.Standing
                                         var tempusers = string.Join(",",
                                                             feed68To85.Where(m => m.wcsi == d.wcsi && !users.ToString().Contains(Convert.ToInt32(m.Forid).ToString())).Select(
                                                                 m => m.Forid.ToString()));
-                                        users = users  + ((tempusers == "") ? "" : (!string.IsNullOrEmpty(users) ? "," : "") + tempusers);
+                                        users = users + ((tempusers == "") ? "" : (!string.IsNullOrEmpty(users) ? "," : "") + tempusers);
                                         if (tempusers != "")
                                         {
                                             maximumUsers = maximumUsers + d.count;
@@ -959,7 +990,7 @@ namespace bExcellent.Service.BusinessLogic.Standing
                                 }
                                 else
                                 {
-                                    var tempusers = 
+                                    var tempusers =
                                     users = users + (!string.IsNullOrEmpty(users) ? "," : "") +
                                             string.Join(",", feed68To85.Select(m => m.Forid.ToString()).Distinct());
                                     maximumUsers = maximumUsers + feed68To85.Count;
