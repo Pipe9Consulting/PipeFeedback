@@ -127,7 +127,7 @@
                     <div class="loginscreenleft">
                         <form method="POST" action="/Microsoft/Login">
                             <%: Html.AntiForgeryToken() %>
-                            <h1>LOG IN</h1>
+                            <h1>Sign In</h1>
                             <p>
                                 Email
                             </p>
@@ -167,7 +167,7 @@
                                         <% } %>
                                         <p class="errormsg"><%:ViewBag.errormsg%></p>
                                     </div>
-                                    <input type="submit" class="btn" value="Log In" />
+                                    <input type="submit" class="btn" value="Sign In" />
                                 </li>
                                 <%--<li><a href="/Yammer/getYammer">Yammer</a></li>--%>
                                 <li>
