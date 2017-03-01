@@ -3033,6 +3033,14 @@ body {
         font-size: 18px;
     }
 
+    .rateOverall .ui-slider-handle {
+        background: url("../../Images/slider-handle.png") no-repeat scroll 20% 50% transparent;
+    }
+
+    .scaleDefPart {
+        margin-left: 9.3% !important;
+    }
+
     .SI3 {
         margin: .5% 0;
     }
@@ -3080,11 +3088,11 @@ body {
 
     .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
         float: left;
-        width: 4.9% !important;
+        width: 3.5% !important;
     }
 
     .sliderdiv {
-        right: -2% !important;
+        right: -1.5% !important;
     }
 
 
@@ -3284,7 +3292,7 @@ body {
     }
 
     #survQuestion1, #survQuestion2, #survQuestion3, #survQuestion4 {
-        font-size:17px !important;
+        font-size: 17px !important;
     }
 
     .prevfb, .nxtfb {

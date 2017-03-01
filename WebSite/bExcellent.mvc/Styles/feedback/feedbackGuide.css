@@ -936,11 +936,13 @@ p {
     }
 
     .sliderdiv {
-        right: -6.5%;
+        right: -6%;
     }
 
+
+
     #managerFeedContent .sliderdiv {
-        right: -7.5%;
+        right: -6%;
     }
 
     .slidercontent p {
@@ -956,7 +958,7 @@ p {
     }
 
     .slidercontent img {
-        width: 19%;
+        width: 16%;
     }
 
     .teamcapRemoved .ratingRemoved .slidercontent img {
@@ -982,11 +984,11 @@ p {
     }
 
     .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
-        width: 5.4%;
+        width: 4%;
     }
 
     #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
-        width: 5.9%;
+        width: 4.1%;
     }
 
     .teamUser span {
@@ -1035,8 +1037,8 @@ p {
     }
 
     .teamUser {
-        width: 11%;
-        margin-top: 8.4%;
+        width: 10.5%;
+        margin-top: 7.7%;
     }
 
     .teamcapratingRemoved .teamUser {
@@ -1090,8 +1092,15 @@ p {
     }
 
     .beginBtn {
-        margin-top: -22%;
-        margin-right: -4.7%;
+        margin-top: -23%;
+        margin-right: -6%;
+        background-size: 55% 65% !important;
+    }
+
+    .beginBtn:hover{
+        margin-top: -23%;
+        margin-right: -6%;
+        background-size: 55% 65% !important;
     }
 
     .selfcapRemoved .beginBtn {

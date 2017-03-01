@@ -88,14 +88,15 @@ html, body {
     width: 25%;
     height: 200px;
     background: #fff;
-    border: 1px solid #f24d2f;
     top: 30%;
     position: relative;
     display: table;
     padding-bottom: 1%;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 7px;
 }
 
-.overallclose {
+/*.overallclose {
     top: 0px;
     background: none;
     color: #e0b001;
@@ -104,15 +105,50 @@ html, body {
     float: right;
     cursor: pointer;
     padding: 4px 12px 6px 10px;
+    background: url('../Images/Common/popup_close.png') no-repeat left center !important;
+    background-size: 60px 60px !important;
+    width: 40px;
+    height: 40px;
+}*/
+
+.overallclose p {
+    color: #f24d2f !important;
+    font-size: 20px !important;
+    font-weight: 700;
+    font-family: arial;
+    display: none;
 }
 
-    .overallclose p {
-        color: #f24d2f !important;
-        font-size: 20px !important;
-        font-weight: 700;
-        font-family: arial;
-    }
 
+.overallclose {
+    background: url('../../Images/Common/popup_close.png') no-repeat right center !important;
+    background-size: 40px 40px !important;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    color: #fff;
+    font-size: 41px;
+    font-weight: 300;
+    text-shadow: none !important;
+    margin-top: -5% !important;
+    margin-right: -5% !important;
+    font-family: arial;
+    float: right;
+    right: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+
+    .overallclose:focus, .overallclose:hover {
+        text-decoration: none;
+        background: url('../../Images/Common/popup_closeH.png') no-repeat right center !important;
+        background-size: 40px 40px !important;
+        opacity: 1;
+        cursor: pointer;
+    }
 
 
 .overallcontent div {
@@ -1111,7 +1147,7 @@ html, body {
 
     .login {
         padding-top: 6%;
-        padding-bottom: 5.5%;
+        padding-bottom: 4.5%;
     }
 
     .overallcontent {

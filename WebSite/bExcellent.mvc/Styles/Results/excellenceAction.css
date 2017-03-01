@@ -951,7 +951,7 @@ standTable table {
 
 @media screen and (max-width: 1920px) and (min-width: 1760px) {
     .resultsQn span {
-        padding: .1% .4% .3% .8%;
+        padding: .2% .4% .1% .8%;
     }
 
     .cententMiddle p {
@@ -1868,13 +1868,13 @@ standTable table {
 
 
 .emptyTiles {
-    cursor:default !important;
+    cursor: default !important;
 }
 
-.emptyTiles:hover {
-    border:1px solid #666 !important;
-    background:#fff !important;
-}
+    .emptyTiles:hover {
+        border: 1px solid #666 !important;
+        background: #fff !important;
+    }
 
 
 
@@ -2237,9 +2237,8 @@ standTable table {
 
 
 @media screen and (min-width: 1690px) and (max-width: 1929px) {
-
-    .breadMenu {
-        margin: 1.5% 1.5% 1% 1.5% !important;
+    .breadcrumb {
+        padding:.8% 1.6%  !important;
     }
 
 

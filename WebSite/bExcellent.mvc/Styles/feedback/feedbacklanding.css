@@ -29,7 +29,7 @@ body {
     float: right;
     margin-right: 16%;
     margin-top: -4%;
-    padding: .4% 1.5% .2% 1.5%;
+    padding: .4% 1.5% .4% 1.5%;
     color: #fff;
     font-weight: 600;
 }
@@ -1335,7 +1335,7 @@ body {
 
 
     #recfbTeampaging .paginationfb ul {
-        width: 19% !important;
+        width: 19.1% !important;
     }
 
     .paginationfb ul {
@@ -2055,6 +2055,9 @@ body {
 }
 
 @media screen and (max-width: 2000px) and (min-width: 1701px) {
+    .profileCenter p {
+        font-size: 98% !important;
+    }
 
     .deleteIncomplete img {
         width: 100% !important;
@@ -2188,7 +2191,7 @@ body {
     }
 
     #selectallTeam {
-        margin-right: 30.5%;
+        margin-right: 32%;
         margin-top: -3.2%;
     }
 
@@ -2294,7 +2297,7 @@ body {
     }
 
     .slimScrollDiv, .scroll2 {
-        height: 353px !important;
+        height: 355px !important;
     }
 
     .slimScrollDiv, .scroll3 {
@@ -2367,7 +2370,7 @@ body {
 
 
     .vertical-align--bottom a {
-        font-size: 110%;
+        font-size: 120%;
     }
 
     #giveFb .fbboxbtn2 p {
@@ -2413,8 +2416,8 @@ body {
 
 
     .boxone a {
-        font-size: 110%;
-        padding: 2% 4% 3% 4% !important;
+        font-size: 120%;
+        padding: 2% 4% 2% 4% !important;
         width: 80px;
         display: inline-block;
     }

@@ -1360,7 +1360,7 @@
     }
 
     .vertical-align--bottom a {
-        font-size: 90%;
+        font-size: 120%;
     }
 
     .incompletefb p {
@@ -1402,7 +1402,7 @@
 
 
     .boxone p {
-        font-size: 100%;
+        font-size: 110%;
         line-height: 1.5;
         height: 150px;
     }
@@ -1412,7 +1412,7 @@
     }
 
     .boxone a {
-        font-size: 90%;
+        font-size: 120%;
     }
 
     .profileCenter p {
@@ -1422,7 +1422,7 @@
     }
 
     .profileCenter img {
-        height: 157px;
+        height: 164px;
     }
 }
 

@@ -919,6 +919,10 @@ standTable table {
         padding-bottom: 50% !important;
     }
 
+    .chartarea ul li p {
+        font-size: 18px;
+    }
+
 
 
 
@@ -2147,6 +2151,10 @@ standTable table {
 @media screen and (min-width: 1690px) and (max-width: 1929px) {
     .charttitle {
         margin-top: 1% !important;
+    }
+
+    .stand li p {
+        font-size: 17px;
     }
 
 

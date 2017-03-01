@@ -420,7 +420,7 @@ body {
         float: right;
         background: #fff;
         text-decoration: none;
-        padding: 2.5% 4% 2% 4%;
+        padding: 2.5% 4% 2.5% 4%;
         margin: 3% 6% 0 6%;
         font-size: 130%;
         color: #23a1a7;
@@ -1169,7 +1169,7 @@ body {
     }
 
     .vertical-align--bottom a {
-        font-size: 90%;
+        font-size: 120%;
     }
 
     .incompletefb p {
@@ -1211,8 +1211,9 @@ body {
 
 
     .boxone p {
-        font-size: 90%;
+        font-size: 115%;
         line-height: 20px;
+        padding: 4% 6% 2% 6%;
     }
 
     .requestfbcontent .boxone p {
@@ -1220,7 +1221,7 @@ body {
     }
 
     .boxone a {
-        font-size: 90%;
+        font-size: 115%;
     }
 
     .profileCenter p {
