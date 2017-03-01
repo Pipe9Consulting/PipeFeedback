@@ -1004,12 +1004,53 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 return goaldatesList;
             }
         }
-        public void UpdateGoalDate(int tmid, DateTime goaldate)
+        public void UpdateGoalDate(int tmid, DateTime goaldate, int userid)
         {
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
                 context.UpdateGoalDatesForTM(tmid, goaldate);
+                
             }
+        }
+        public void SendEmailUpdated(DateTime goaldate, int userid)
+        {
+            // Log("WCF-SendEmail-IN");
+            try
+            {
+                Common.Common Common=new Common.Common();
+                var user = Common.GetUserDetailsByMappingId(userid);
+                string _from = ConfigurationManager.AppSettings["fromEmail"];
+                string emailServer = ConfigurationManager.AppSettings["mailServer"];
+                string _userId = ConfigurationManager.AppSettings["emailUserId"];
+                string _pwd = ConfigurationManager.AppSettings["emailPassword"];
+                string _bcc = ConfigurationManager.AppSettings["bccEmail"];
+                string _to = ConfigurationManager.AppSettings["mailTo1"];
+
+                if (_to.Trim() == string.Empty)
+                {
+                    _to = user.User.EmailAddress;
+                }
+                var subject = "Coaching Date";
+                var content = "";
+                MailMessage objEmail = new MailMessage(_from, _to, subject, content);
+
+                objEmail.Bcc.Add(_bcc);
+
+                objEmail.IsBodyHtml = true;
+
+                SmtpClient emailClient = new SmtpClient(emailServer);
+                System.Net.NetworkCredential basicAuthenticationInfo = new System.Net.NetworkCredential(_userId, _pwd);
+
+                emailClient.Host = emailServer;
+                emailClient.UseDefaultCredentials = false;
+                emailClient.Credentials = basicAuthenticationInfo;
+                emailClient.Send(objEmail);
+
+            }
+            catch (Exception ex)
+            {
+            }
+            //Log("WCF-SendEmail-OUT");
         }
         public List<v4_GetGoalssharedbyuserResult> GetGoalsShared(int userid, int foruserid, int PoeId, int subid, string domain)
         {

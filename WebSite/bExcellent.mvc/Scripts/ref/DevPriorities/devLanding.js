@@ -142,9 +142,9 @@ var devLanding = {
             success: function (response) {
                 $('#clickProgress').on('click', function () {
                     var selectedPoe = parseInt($('#selectedPoe').val());
-                    if (poe == 15 || poe == 16 || poe == 17) {
+                   // if (poe == 15 || poe == 16 || poe == 17) {
                         window.location = "../Development/Progress";
-                    }
+                   // }
                 });
             },
             error: function (err) {

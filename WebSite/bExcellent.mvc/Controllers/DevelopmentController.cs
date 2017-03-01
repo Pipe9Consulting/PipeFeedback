@@ -182,7 +182,7 @@ namespace bExcellent.mvc.Controllers
 
             if (Session["id"] != null)
             {
-                common.UpdateGoalDate(tmid, Convert.ToDateTime(date));
+                common.UpdateGoalDate(tmid, Convert.ToDateTime(date), int.Parse(Session["id"].ToString()));
                 return JsonResponse(true);
             }
             else

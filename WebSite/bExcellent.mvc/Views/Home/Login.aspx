@@ -8,10 +8,15 @@
     <link href="../../Styles/Home/login.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/basic.css" rel="stylesheet" />
     <link href="../../Styles/KessakuStyles/poe.css" rel="stylesheet" />
+    <style type="text/css">
+        .bukatutup {
+            display: none !important;
+        }
+    </style>
     <script type="text/javascript">
         //        popup window for changepassword and frogetpassword///
         $(document).ready(function () {
-
+            $('.bukatutup').hide();
             $('.afterlogin').hide();
             $('.checkt').hide();
             $('#beforeLogin').hide();
@@ -23,7 +28,7 @@
                 " <p>Pricing</p> </a></li> <li data-value='reqDemoHdr'><a href='../#CloudAsCoach?slice=8'><span class='footermenu5'></span> " +
                 "<p>Request a Demo</p> </a></li> <li data-value=''><a href='../Home/Login'><span class='footermenu6'></span> <p>Members</p> </a></li>";
             $('#target').html(targetHtml);
-            $('.bukatutup').show();
+          //  $('.bukatutup').show();
             $('#emailid').focus();
             $('#yammerClick').click(function () {
                 window.location = "/Yammer/getYammer";
@@ -31,6 +36,7 @@
             $('#signUpUser').click(function () {
                 window.location.href = "../SignUp/Register";
             });
+            $('.bukatutup').hide();
             document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
         });
     </script>

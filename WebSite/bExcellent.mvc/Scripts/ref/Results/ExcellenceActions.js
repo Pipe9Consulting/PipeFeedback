@@ -211,8 +211,8 @@ var excellenceactions = {
                 var practiceArea1 = (moduleresponse.length < 7 ? (7 - moduleresponse.length) : 0);
                 for (var mt = 0; mt < moduleresponse.length; mt++) {
                     if (moduleresponse[mt].ModuleOrderNumber > 0) {
-                        var image = $('#selectedpoename').val();
-                        var img = $('#selectedpoe').val() + moduleresponse[mt].ModuleOrderNumber;
+                        var image = $('#selectedpoename').val().replace("/", "");
+                        var img = $('#selectedpoe').val().replace("/","") + moduleresponse[mt].ModuleOrderNumber;
 
                         // poemodules = poemodules + "<li id ='li" + moduleresponse[mt].ModuleOrderNumber + "' data-value=" + moduleresponse[mt].ModuleId + "' data-moduleorder=" + moduleresponse[mt].ModuleOrderNumber + "  class='takesf " + img + "Tile" + ((moduleresponse[mt].ModuleOrderNumber == 1) ? ' selected select' + img : '') + " limod" + moduleresponse[mt].ModuleOrderNumber + "'><p>" + moduleresponse[mt].ModuleName + "</p></li>";
 
@@ -1043,12 +1043,12 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
     $('#poemodule li').hover(
      function () {
          removeAttrHover();
-         $(this).find('img').attr("src", "../../Images/icons/" + $('#selectedpoename').val() + (parseInt($(this).attr("data-moduleorder"))) + "h" + ".png");
+         $(this).find('img').attr("src", "../../Images/icons/" + $('#selectedpoename').val().replace("/","") + (parseInt($(this).attr("data-moduleorder"))) + "h" + ".png");
          $(this).addClass('moduleHove');
      }, function () {
          // alert('123')
          removeAttrHover();
-         $('#poemodule>li.selected').find('img').attr("src", "../../Images/icons/" + $('#selectedpoename').val() + (parseInt($('#poemodule>li.selected').attr("data-moduleorder"))) + "h" + ".png");
+         $('#poemodule>li.selected').find('img').attr("src", "../../Images/icons/" + $('#selectedpoename').val().replace("/", "") + (parseInt($('#poemodule>li.selected').attr("data-moduleorder"))) + "h" + ".png");
          $('#poemodule>li.selected').addClass('moduleHove');
      });
     $('#userList li').click(function () {
@@ -1158,7 +1158,7 @@ function removeAttrHover() {
     var count = 1;
     $('#poemodule li').each(function () {
         if (!$(this).hasClass('selected')) {
-            $(this).find('img').attr("src", "../../Images/icons/" + $('#selectedpoename').val() + count + ".png");
+            $(this).find('img').attr("src", "../../Images/icons/" + $('#selectedpoename').val().replace("/", "") + count + ".png");
             $(this).removeClass("moduleHove");
         }
         count++;

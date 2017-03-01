@@ -697,10 +697,10 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
         $('#pagemax').val(numberOfSlide);
     }
     if (mode == 6) {
-        $('.legendText').text("13 - 36 Months");
+        $('.legendText').text("13 - 24 Months");
     }
     if (mode == 7) {
-        $('.legendText').text("36+ Months");
+        $('.legendText').text("25+ Months");
     }
     GetBreadCrumbAndName();
 }
