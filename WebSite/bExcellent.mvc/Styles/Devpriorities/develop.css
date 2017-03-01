@@ -368,9 +368,12 @@ a:focus, a:hover {
 
 
 @media screen and (max-width: 2000px) and (min-width: 1800px) {
+    .develop_content a {
+        font-size: 120%;
+    }
 
     p {
-        font-size: 100% !important;
+        font-size: 120% !important;
     }
 
     h2 {
