@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    TileNotfication();
+    //TileNotfication();
     //DashBoard();
     //ShowZoomError();
     //hideTilesFunc();

@@ -161,6 +161,48 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
             }
         }
 
+        public void SendCompletionMail(V3_GetFeedbackByIdResult feedback)
+        {
+            Common.Common Common = new Common.Common();
+            if (feedback.FeedbackType == 1)
+            {
+                var user = Common.GetUserDetailsByMappingId(feedback.For.GetValueOrDefault());
+                var userName = user.User.FirstName + " " + user.User.LastName;
+                var rolename = user.POE.Name;
+                var contentstring = Constant.SelfFeedbackCompletedNew;
+                var subject = "SelfFeedback Completed";
+                var to = user.User.EmailAddress;
+                var emailContenttemp = string.Empty;
+                var emailContent = string.Empty;
+                emailContenttemp = string.Format(contentstring,
+                                        userName,
+                                        DateTime.Now.ToShortDateString(),
+                                        rolename
+                                      );
+                emailContent = string.Format(Constant.EmailTemplate, emailContenttemp);
+                SendEmailUpdated(subject, emailContent, to);
+
+            }
+            else
+            {
+                var user = Common.GetUserDetailsByMappingId(feedback.RequestedFrom.GetValueOrDefault());
+                var userName = user.User.FirstName + " " + user.User.LastName;
+                var rolename = user.POE.Name;
+                var contentstring = Constant.ManagerFeedbackCompleted;
+                var subject = "SelfFeedback Completed";
+                var to = user.User.EmailAddress;
+                var emailContenttemp = string.Empty;
+                var emailContent = string.Empty;
+                emailContenttemp = string.Format(contentstring,
+                                        userName,
+                                        DateTime.Now.ToShortDateString(),
+                                        rolename
+                                      );
+                emailContent = string.Format(Constant.EmailTemplate, emailContenttemp);
+                SendEmailUpdated(subject, emailContent, to);
+            }
+        }
+
         public void CreateFbCompleteActivity(V3_GetFeedbackByIdResult feedback)
         {
             //Log("WCF-CreateFbCompleteActivity:FBID::" + feedback.POEFeedbackId + "-IN");
@@ -615,7 +657,44 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
             }
             //Log("WCF-SendEmail-OUT");
         }
+        public void SendEmailUpdated(string subject, string content, string to)
+        {
+            // Log("WCF-SendEmail-IN");
+            try
+            {
+                string _from = ConfigurationManager.AppSettings["fromEmail"];
+                string emailServer = ConfigurationManager.AppSettings["mailServer"];
+                string _userId = ConfigurationManager.AppSettings["emailUserId"];
+                string _pwd = ConfigurationManager.AppSettings["emailPassword"];
+                string _bcc = ConfigurationManager.AppSettings["bccEmail"];
+                string _to = ConfigurationManager.AppSettings["mailTo1"];
+                string credentialText = string.Empty;
+                string footerText = string.Empty;
 
+                if (_to.Trim() == string.Empty)
+                {
+                    _to = to;
+                }
+
+                MailMessage objEmail = new MailMessage(_from, _to, subject, content);
+
+                objEmail.Bcc.Add(_bcc);
+
+                objEmail.IsBodyHtml = true;
+
+                SmtpClient emailClient = new SmtpClient(emailServer);
+                System.Net.NetworkCredential basicAuthenticationInfo = new System.Net.NetworkCredential(_userId, _pwd);
+
+                emailClient.Host = emailServer;
+                emailClient.UseDefaultCredentials = false;
+                emailClient.Credentials = basicAuthenticationInfo;
+                emailClient.Send(objEmail);
+            }
+            catch (Exception ex)
+            {
+            }
+            //Log("WCF-SendEmail-OUT");
+        }
         /// <summary>
         /// Creates the feedback for take.
         /// </summary>

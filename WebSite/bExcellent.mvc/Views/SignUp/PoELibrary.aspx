@@ -510,7 +510,7 @@
                             </p>
                         </li>
                          <li id="poe29">
-                            <img src="../../Images/KessakuImage/MarketingCommunicationsManager.png" width="600" height="600" />
+                            <img src="../../Images/KessakuImage/ProductMarketingManager.png" width="600" height="600" />
                             <p>
                                Product Marketing Manager
                             </p>
