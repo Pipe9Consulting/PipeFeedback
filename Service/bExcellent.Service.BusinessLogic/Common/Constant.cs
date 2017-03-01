@@ -34,5 +34,6 @@ namespace bExcellent.Service.BusinessLogic.Common
         public const string PlanExpired = "<P>Hello {0}, </P><P>Your Pipe9consulting Trial Account will expire in {1}:</P><P>Name of Network:{2}<BR>Date Trial Started :{3}<BR>Date Trial Expires :{4}</P><P>You can continue using Pipe9consulting <a href='{5}' target='_blank' style='color:#353535'>here</a></P>";
         public const string ShareResource = "<P>Hi {0},</P><P>{1} has shared <a href='{2}' target='_blank' style='color:#353535'>{3}</a> resource material with you. Please click on the hyperlink to access the resource.  </P>";
         public const string SelfFeedbackCompletedNew = "<P>Hello {0}</P><P>{1}&nbsp; completed feedback on the Role Excellence Profile (REP) for {2}.</P><P>Date Completed:{3}<BR>You can view their feedback results <a href='{4}' target='_blank' style='color:#353535'>here</a>.</P>";
+        public const string ManagerFeedbackCompleted = "<P>Hello {0}</P><P>{1}&nbsp; completed feedback on the Role Excellence Profile (REP) for {2}.</P><P>Date Completed:{3}<BR>You can view their feedback results <a href='{4}' target='_blank' style='color:#353535'>here</a>.</P>";
     }
 }
