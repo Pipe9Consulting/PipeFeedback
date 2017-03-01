@@ -13046,17 +13046,17 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 		    pixelTotal = this.elementSize.width;
 		    //debugger;
 		    pixelMouse = position.x - this.elementOffset.left - (this._clickOffset ? this._clickOffset.left : 0);
-		   // debugger
+		   //debugger
 		   // pixelMouse = pixelMouse + 42;
 			if ($(window).width() == 1366) {
-			    if (pixelMouse < 104) {
-			        pixelMouse = 104;
-			    } else if (pixelMouse > 115 && pixelMouse < 212) {
-			        pixelMouse = 212;
-			    } else if (pixelMouse > 227 && pixelMouse < 324) {
-			        pixelMouse = 324;
-			    } else if (pixelMouse > 338 && pixelMouse < 432) {
-			        pixelMouse = 432;
+			    if (pixelMouse < 111) {
+			        pixelMouse = 111;
+			    } else if (pixelMouse > 120 && pixelMouse < 230) {
+			        pixelMouse = 230;
+			    } else if (pixelMouse > 236 && pixelMouse < 343) {
+			        pixelMouse = 343;
+			    } else if (pixelMouse > 351 && pixelMouse < 456) {
+			        pixelMouse = 456;
 			    }
 			} else if ($(window).width() == 1600) {
 			    if (pixelMouse < 110) {
@@ -13069,14 +13069,14 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 			        pixelMouse = 467;
 			    }
 			} else if ($(window).width() == 1920) {
-			    if (pixelMouse < 149) {
-			        pixelMouse = 149;
-			    } else if (pixelMouse > 168 && pixelMouse < 304) {
-			        pixelMouse = 304;
-			    } else if (pixelMouse > 321 && pixelMouse < 460) {
-			        pixelMouse = 460;
-			    } else if (pixelMouse > 475 && pixelMouse < 616) {
-			        pixelMouse = 616;
+			    if (pixelMouse < 155) {
+			        pixelMouse = 155;
+			    } else if (pixelMouse > 169 && pixelMouse < 321) {
+			        pixelMouse = 321;
+			    } else if (pixelMouse > 338 && pixelMouse < 484) {
+			        pixelMouse = 484;
+			    } else if (pixelMouse > 498 && pixelMouse < 644) {
+			        pixelMouse = 644;
 			    }
 			} else if ($(window).width() == 2160) {
 			    if (pixelMouse < 164) {
