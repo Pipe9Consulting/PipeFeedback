@@ -312,10 +312,10 @@ a:focus, a:hover {
     padding: 0;
 }
 
-.scroll2 {
+/*.scroll2 {
     border: 1px solid #333;
     padding: 2.5% 0% 0% 3%;
-}
+}*/
 
 
 @media all and (min-width:768px) {
