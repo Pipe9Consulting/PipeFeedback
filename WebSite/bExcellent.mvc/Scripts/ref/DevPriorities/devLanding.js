@@ -48,7 +48,7 @@ var devLanding = {
                 var html = '';
                 var poeids = '';
                 for (var i = 0; i < response.length; i++) {
-                    html = html + " <li id ='poeli" + response[i].POEId + "' value=" + response[i].POEId + " class='poelistli' data-cap=" + response[i].IsCapability + "><img src='../../Images/" + response[i].POEName.replace("&", "") + "_Intro.png' alt='" + response[i].POEName + "'' /> <p> " + response[i].POEName + "</p><span></span></li>";
+                    html = html + " <li id ='poeli" + response[i].POEId + "' value=" + response[i].POEId + " class='poelistli' data-cap=" + response[i].IsCapability + "><img src='../../Images/" + response[i].POEName.replace("&", "").replace("/", "") + "_Intro.png' alt='" + response[i].POEName + "'' /> <p> " + response[i].POEName + "</p><span></span></li>";
                     poeids = poeids + response[i].POEId + '%';
                 }
                 if (response.length < 4) {
