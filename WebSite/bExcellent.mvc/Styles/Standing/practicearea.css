@@ -3280,7 +3280,7 @@ slidecontent12 {
 
 @media screen and (min-width: 2170px) and (max-width: 2600px) {
 
-      .chartsmlplaceholder:nth-child(2) .dummychartdiv {
+    .chartsmlplaceholder:nth-child(2) .dummychartdiv {
         margin-top: -1.3%;
     }
 
@@ -3956,13 +3956,6 @@ slidecontent12 {
         top: -120% !important;
     }
 
-
-
-
-    .login {
-        padding: 3% 2% 3% 0;
-    }
-
     #setContent {
         font-size: 120% !important;
     }
@@ -3998,7 +3991,7 @@ slidecontent12 {
         width: 6% !important;
         right: 3% !important;
         top: 36.5% !important;
-        padding: 0.3% 1% 0% .6% !important;
+        padding: 0.6% 1% 0% .6% !important;
     }
 
     .status {
@@ -4006,7 +3999,7 @@ slidecontent12 {
         right: 3% !important;
         height: 11.5%;
         width: 6%;
-        padding: 1.1% .5% 0 .5%;
+        padding: 1.6% .5% 0 .2%;
     }
 
     .midstatus {
@@ -4014,7 +4007,7 @@ slidecontent12 {
         right: 2.6%;
         top: 34%;
         width: 6%;
-        padding: 1.5% 1.1% 0 0;
+        padding: 1.7% 1.1% 0 0;
     }
 
 

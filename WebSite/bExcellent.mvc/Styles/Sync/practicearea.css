@@ -72,7 +72,7 @@ h1.lft_head {
     position: absolute;
     bottom: 13%;
     left: 3%;
-    color: #fff;
+    color: #333;
 }
 
 .stand li img {
@@ -971,10 +971,6 @@ h1.lft_head {
         width: 40px;
     }
 
-    .breadMenu {
-        margin: 1.5% 1.5% 0.5% 1.5% !important;
-    }
-
     #all .markergray, #all .markermp, #all .markeramper, #all .marker3, #all .marker4, #all .marker5 {
         background-size: 32px 76%;
     }
@@ -1021,15 +1017,11 @@ h1.lft_head {
 
     .markerholder li p {
         height: 36px;
-        line-height: 32px;
+        line-height: 34px;
         width: 35px;
     }
 
-    .breadMenu {
-        margin: 1.5% 1.5% 0.5% 1.5% !important;
-    }
-
-    #all .markergray, #all .markermp, #all .markeramper, #all .marker3, #all .marker4, #all .marker5 {
+     #all .markergray, #all .markermp, #all .markeramper, #all .marker3, #all .marker4, #all .marker5 {
         background-size: 35px 78%;
     }
 
@@ -1263,7 +1255,7 @@ h1.lft_head {
         font-size: 88.5%;
     }
 
-    
+
     #ReqFeedbackSubmit.send {
         margin-bottom: 10px !important;
     }
@@ -2729,7 +2721,7 @@ h1.lft_head {
     }
 
     .status {
-        padding: 1.5% 0.6% 1.5% .5%;
+        padding: 2% 0.6% 1.5% .5%;
         height: 12%;
         right: 3%;
         top: 33%;
@@ -2760,7 +2752,7 @@ h1.lft_head {
     .midstatus {
         height: 14%;
         top: 33%;
-        padding: 1.6% 1.5% 1% 0;
+        padding: 1.9% 1.5% 1% 0;
         width: 6%;
         right: 3%;
         font-size: 90%;

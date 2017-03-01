@@ -118,7 +118,7 @@ standTable table {
     position: absolute;
     bottom: 10%;
     left: 3%;
-    color: #fff;
+    color: #333;
 }
 
 .stand li img {
@@ -765,7 +765,7 @@ h1, .tsf {
     .markerholder li p {
         height: 44px;
         line-height: 44px;
-        width: 49px;
+        width: 52px;
     }
 
 
@@ -1352,7 +1352,7 @@ h1, .tsf {
 
 .stand li p {
     position: absolute;
-    color: #ffffff;
+    color: #333;
     bottom: 3%;
     left: 5%;
     width: 90%;
@@ -2029,7 +2029,7 @@ h1, .tsf {
         width: 3.2%;
         top: 41%;
         right: 3.7%;
-        padding: .9% 0.6% 0.6% 0.4%;
+        padding: 1.2% 0.6% 0.6% 0.4%;
     }
 
     .dwnstatus {
@@ -2037,7 +2037,7 @@ h1, .tsf {
         width: 3%;
         top: 42.8%;
         right: 3.9%;
-        padding: 0.1% 0.6% 0.6% 0.4%;
+        padding: 0.2% 0.6% 0.6% 0.4%;
     }
 
     .midstatus {
@@ -2045,7 +2045,7 @@ h1, .tsf {
         width: 3.5%;
         top: 40%;
         right: 3%;
-        padding: 1.4% 1.5% 0.5% .7%;
+        padding: 1.6% 1.5% 0.5% .7%;
     }
 
     .markerholder li {
