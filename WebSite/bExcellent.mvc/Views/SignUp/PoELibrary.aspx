@@ -504,12 +504,12 @@
                             </p>
                         </li>
                          <li id="poe28">
-                            <img src="../../Images/KessakuImage/MarketingCommunicationsManager.png" width="600" height="600" />
+                            <img src="../../Images/KessakuImage/PartnerChannelMarketingManager.png" width="600" height="600" />
                             <p>
                                Partner/Channel Marketing Manager
                             </p>
                         </li>
-                         <li id="Li1">
+                         <li id="poe29">
                             <img src="../../Images/KessakuImage/MarketingCommunicationsManager.png" width="600" height="600" />
                             <p>
                                Product Marketing Manager

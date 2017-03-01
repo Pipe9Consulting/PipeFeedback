@@ -62,8 +62,8 @@
                     //img = $('#selectedpoeDigdeep').val() + (m + 1);
                     //paHtml = paHtml + "<li id='pa" + (m + 1) + "' class='pa selectingArea' data-value=" + (m + 1) + "><div class='number syncnumber' id='PaVal" + (m + 1) + "'></div> <img src='../Images/icons/" + img + ".png'><p> " + response.PracticeAreaContent[m].ModuleName + " </p> </li>";
 
-                    img = $('#selectedpoeDigdeep').val() + (m + 1);
-                    imagename = $('#selectedpoeDigdeep').val();
+                    img = $('#selectedpoeDigdeep').val().replace("/", "") + (m + 1);
+                    imagename = $('#selectedpoeDigdeep').val().replace("/", "");
                     //paHtml = paHtml + "<li id='pa" + (m + 1) + "' class='pa selectingArea " + img + "Tile' data-value=" + (m + 1) + "><div class='number syncnumber' id='PaVal" + (m + 1) + "'></div><p> " + response.PracticeAreaContent[m].ModuleName + " </p> </li>";
                     paHtml = paHtml + "<li id='pa" + (m + 1) + "' class='pa selectingArea' data-value=" + (m + 1) + "><img src='../Images/icons/" + img + ".png' /><p> " + response.PracticeAreaContent[m].ModuleName + " </p> </li>";
                     if (selectedli == 1) {
@@ -137,11 +137,11 @@
                 $('.selectingArea').hover(
        function () {
            removeImgAttrHover();
-           $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val() + $(this).attr("data-value") + "h" + ".png");
+           $(this).find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val().replace("/", "") + $(this).attr("data-value") + "h" + ".png");
        }, function () {
            //alert('123')
            removeImgAttrHover();
-           $('.selectedIndicator').find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val() + $('.selectedIndicator').attr("data-value") + "h" + ".png");
+           $('.selectedIndicator').find('img').attr("src", "../Images/icons/" + $('#selectedpoeDigdeep').val().replace("/", "") + $('.selectedIndicator').attr("data-value") + "h" + ".png");
        });
                 $('.selectingArea').click(function () {
                    // debugger;
@@ -156,7 +156,7 @@
                    // alert();
                     removeImgAttr();
                     $(this).addClass('selectedIndicator');
-                    img = $('#selectedpoeDigdeep').val() + imagenumber + "h";
+                    img = $('#selectedpoeDigdeep').val().replace("/", "") + imagenumber + "h";
                     $(this).find("img").attr("src", "../Images/icons/" + img + ".png");
 
                     var pa = $(this).attr("data-value");
@@ -566,7 +566,7 @@ $(document).ready(function () {
 
 });
 function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage) {
-
+   // debugger;
     var numberOfSlide = Math.ceil(loadQuestion.length / 4);
     var commhtml = " <div class='chartslide'>";
     var dummyhtml = "";
@@ -618,12 +618,14 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                         count = i;
                     }
                     if (tilescore.length > 0) {
+                       // debugger;
                         //yourscorePercentage = youscore[count].ScorePercentage;
                         tilescorePercentage = tilescore[count].ScorePercentage;
                         //yourscoreWeightingScore = (youscore[count].ScorePercentage / 25) * perQuestionWeightage;
                         tilescoreWeightingScore = (tilescore[count].ScorePercentage / 25) * perQuestionWeightage;
                     }
                     if (youscore.length > 0) {
+                      //  debugger;
                         yourscorePercentage = youscore[count].ScorePercentage;
                         yourscoreWeightingScore = (youscore[count].ScorePercentage / 25) * perQuestionWeightage;
                     }
@@ -686,7 +688,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
         }
         commhtml = commhtml + "</div>";
     }
-
+    debugger;
     margins = "";
     commhtml = commhtml + "</div>";
     $('#paLevel' + palevel + '').html("" + commhtml);
@@ -887,7 +889,7 @@ function loadRightArrowUpdated(type, drpSelect) {
 function removeImgAttr() {
     var count = 1;
     $('#stndmenu li').each(function () {
-        var img = $('#selectedpoeDigdeep').val() + count;
+        var img = $('#selectedpoeDigdeep').val().replace("/", "") + count;
         $(this).find("img").attr("src", "../Images/icons/" + img + ".png");
         $(this).removeClass('selectedIndicator');
         count++;
@@ -897,7 +899,7 @@ function removeImgAttr() {
 function removeImgAttrHover() {
     var count = 1;
     $('#stndmenu li').each(function() {
-        var img = $('#selectedpoeDigdeep').val() + count;
+        var img = $('#selectedpoeDigdeep').val().replace("/","") + count;
         if (!$(this).hasClass('selectedIndicator')) {
             $(this).find("img").attr("src", "../Images/icons/" + img + ".png");
         }

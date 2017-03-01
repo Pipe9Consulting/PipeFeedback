@@ -404,19 +404,19 @@ var poelibrary = {
             success: function (response) {
                 var plan = $('#Plans').val();
                 if (plan != 3) {
-                    $('#poeimg').attr("src", "../../../Images/" + response.Name.replace("&", "").replace(/\ /g, "") + ".png");
+                    $('#poeimg').attr("src", "../../../Images/" + response.Name.replace("&", "").replace(/\ /g, "").replace("/", "") + ".png");
                     $('#selectedpoename').html(response.Name);
                     $('#poeintocontent').html("<div class='poetxtarea'><h1>" + response.Name + "</h1><P>" + response.IntroContent + "</P></div>");
                     $('#poepopupcont,.poepopupbg').fadeIn("slow");
                     $('#selectedpoeid').val(poeid);
                 } else if (plan == 3 && response.PoeFlag != 2) {
-                    $('#microsoftpoeimg').attr("src", "../../../Images/" + response.Name.replace("&", "").replace(/\ /g, "") + ".png");
+                    $('#microsoftpoeimg').attr("src", "../../../Images/" + response.Name.replace("&", "").replace(/\ /g, "").replace("/", "") + ".png");
                     $('#selectedpoename').html(response.Name);
                     $('#Microsoftpoeintocontent').html("<div class='poetxtarea'><h1>" + response.Name + "</h1><P>" + response.IntroContent + "</P></div>");
                     $('#microsoftpublicpoepoup,.poepopupbg').fadeIn("slow");
                     $('#selectedpoeid').val(poeid);
                 } else {
-                    $('#microsoftownpoeimg').attr("src", "../../../Images/" + response.Name.replace("&", "").replace(/\ /g, "") + ".png");
+                    $('#microsoftownpoeimg').attr("src", "../../../Images/" + response.Name.replace("&", "").replace(/\ /g, "").replace("/", "") + ".png");
                     $('#selectedpoename').html(response.Name);
                     $('#microsoftownpoecontent').html("<div class='poetxtarea'><h1>" + response.Name + "</h1><P>" + response.IntroContent + "</P></div>");
                     $('#microsoftownpoe,.poepopupbg').fadeIn("slow");
@@ -641,9 +641,9 @@ var poelibrary = {
                                 paidtext = (totcount == 0) ? getpaidopt : "";
 
                                 if (totcount < 3) {
-                                    html = html + "<li  id='SelectPoe" + response[totcount].POEId + "'><span > " + Delbtn + "</div><img src='../../Images/KessakuImage/poe/" + response[totcount].Name.replace("&", "").replace(/\ /g, "") + "_large.png' alt='" + response[totcount].Name + "' />" + newtext + "<p>" + response[totcount].Name + "</p>" + paidtext + "</span></li>";
+                                    html = html + "<li  id='SelectPoe" + response[totcount].POEId + "'><span > " + Delbtn + "</div><img src='../../Images/KessakuImage/poe/" + response[totcount].Name.replace("&", "").replace(/\ /g, "").replace("/", "") + "_large.png' alt='" + response[totcount].Name + "' />" + newtext + "<p>" + response[totcount].Name + "</p>" + paidtext + "</span></li>";
                                 } else {
-                                    html1 = html1 + "<li  id='SelectPoe" + response[totcount].POEId + "'><span > " + Delbtn + "</div><img src='../../Images/KessakuImage/" + response[totcount].Name.replace("&", "").replace(/\ /g, "") + "_poe.jpg' alt='" + response[totcount].Name + "' />" + newtext + "<p>" + response[totcount].Name + "</p>" + paidtext + "</span></li>";
+                                    html1 = html1 + "<li  id='SelectPoe" + response[totcount].POEId + "'><span > " + Delbtn + "</div><img src='../../Images/KessakuImage/" + response[totcount].Name.replace("&", "").replace(/\ /g, "").replace("/", "") + "_poe.jpg' alt='" + response[totcount].Name + "' />" + newtext + "<p>" + response[totcount].Name + "</p>" + paidtext + "</span></li>";
                                 }
                             } else {
                                 if (totcount < 3) {
