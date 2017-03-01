@@ -185,27 +185,24 @@
 
 
 
-#resetbtn, #ChangePassbtn {
-    background: none repeat scroll 0 0 #23a1a7;
-    border-top: 1px solid #23a1a7;
-    border-bottom: 5px solid #168f95;
-    border-left: 1px solid #23a1a7;
-    border-right: 1px solid #23a1a7;
-    color: #fff !important;
-    padding: 1%;
-    font-weight: 500;
-    font-size: 130%;
-    padding: 5px 10px 3px 10px;
-    float: right;
-}
+        #simplemodal-container a.modalCloseImg {
+            background: url(../Images/Common/popup_close.png) no-repeat;
+            background-size: 80% 80%;
+            height: 0px;
+            z-index: 999999999;
+            position: absolute;
+            right: -25px;
+            top: -15px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+        }
 
-
-
-#simplemodal-container a.modalCloseImg:hover {
-    background: url(../Images/Common/popup_closeH.png) no-repeat;
-    background-size: 80% 80%;
-}
-/*#simplemodal-container a.modalCloseImg:hover {
+            #simplemodal-container a.modalCloseImg:hover {
+                background: url(../Images/Common/popup_closeH.png) no-repeat;
+                background-size: 80% 80%;
+            }
+    /*#simplemodal-container a.modalCloseImg:hover {
                 background: url(../Images/close-hover.png) no-repeat;
                 background-size: 50% 50% !important;
                 width: 5%;
@@ -221,9 +218,9 @@
                 border: 1px solid #e0b001;
             }*/
 
-#simplemodal-container h3 {
-    color: #5E5E5E;
-}
+    #simplemodal-container h3 {
+        color: #5E5E5E;
+    }
 
 #imgUploadedImage {
     max-height: 400px;
@@ -234,6 +231,7 @@
     color: #000;
 }
 
+
 #resetbtn, #ChangePassbtn {
     background: none repeat scroll 0 0 #23a1a7;
     border-top: 1px solid #23a1a7;
@@ -241,17 +239,19 @@
     border-left: 1px solid #23a1a7;
     border-right: 1px solid #23a1a7;
     color: #fff !important;
-    padding: 1%;
-    font-weight: bold;
+    padding: 5px 15px 3px 15px;
+    font-weight: 500;
+    font-size: 130%;
+    float: right;
 }
 
     #resetbtn:hover, #ChangePassbtn:hover {
         background: none repeat scroll 0 0 #fff;
-        border-top: 1px solid #23a1a7;
-        border-bottom: 5px solid #168f95;
-        border-left: 1px solid #23a1a7;
-        border-right: 1px solid #23a1a7;
-        color: #23a1a7 !important;
+        border-top: 1px solid #eb4830;
+        border-bottom: 5px solid #eb4830;
+        border-left: 1px solid #eb4830;
+        border-right: 1px solid #eb4830;
+        color: #eb4830 !important;
     }
 
 
