@@ -2188,6 +2188,7 @@
       <xs:sequence>
         <xs:element minOccurs="0" name="tmid" type="xs:int" />
         <xs:element minOccurs="0" name="goaldate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="userid" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

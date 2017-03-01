@@ -11967,7 +11967,7 @@ namespace bExcellent.mvc.CommonWCF {
         bExcellent.mvc.CommonWCF.DevelopmentPriorities[] GetSelfDevPriorities(int userid, int PoeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/UpdateGoalDate", ReplyAction="http://tempuri.org/Common/UpdateGoalDateResponse")]
-        void UpdateGoalDate(int tmid, System.DateTime goaldate);
+        void UpdateGoalDate(int tmid, System.DateTime goaldate, int userid);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetSelfGoalDate", ReplyAction="http://tempuri.org/Common/GetSelfGoalDateResponse")]
         bExcellent.mvc.CommonWCF.GoalDate GetSelfGoalDate(int userId, int poeId);
@@ -12665,8 +12665,8 @@ namespace bExcellent.mvc.CommonWCF {
             return base.Channel.GetSelfDevPriorities(userid, PoeId);
         }
         
-        public void UpdateGoalDate(int tmid, System.DateTime goaldate) {
-            base.Channel.UpdateGoalDate(tmid, goaldate);
+        public void UpdateGoalDate(int tmid, System.DateTime goaldate, int userid) {
+            base.Channel.UpdateGoalDate(tmid, goaldate, userid);
         }
         
         public bExcellent.mvc.CommonWCF.GoalDate GetSelfGoalDate(int userId, int poeId) {
