@@ -204,7 +204,7 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                         </div>
                         <h1>Forgot Password</h1>
                         <p style="margin-top: 5px;">
-                            Please fill in the below details, we will send password to your email address
+                            Please enter the required information below and we will send you a password reminder email.
                         </p>
                         <p class="origin">
                             Enter your email
@@ -225,7 +225,7 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                         <label class="errormsg" id="captchatext">
                         </label>
                         <br />
-                        <input type="button" id="resetbtn" value="Reset Password" class="origin" />
+                        <input type="button" id="resetbtn" value="Send My Password" class="origin" />
                         <br />
                     </div>
                     <form id="updateform" action="/Home/updateuserdetails">
