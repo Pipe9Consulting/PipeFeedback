@@ -475,7 +475,7 @@ namespace bExcellent.Service.BusinessLogic.Standing
                     break;
             }
             var you = GetYouFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), subid, tileclicked, domain);
-            // var previous = GetPrevFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), subid, tileclicked, domain);
+            var previous = GetPrevFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), subid, tileclicked, domain);
             var community = GetRestFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type);
 
             var tenurebelow13 = GetTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 0, 13);
@@ -485,7 +485,7 @@ namespace bExcellent.Service.BusinessLogic.Standing
             // var sherpasFbid = GetSherbasFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
             // var teamFbid = GetTeamFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
             var youStand = GetAvgStandingScore(you, poeid);
-            // var previousStand = GetAvgStandingScore(previous, poeid);
+             var previousStand = GetAvgStandingScore(previous, poeid);
             var communityStand = GetAvgStandingScore(community, poeid);
             var tenurebelow13Stand = GetAvgStandingScore(tenurebelow13, poeid);
             var tenurebelow36Stand = GetAvgStandingScore(tenurebelow36, poeid);
@@ -515,7 +515,7 @@ namespace bExcellent.Service.BusinessLogic.Standing
             var standingdata = new StandingNew
             {
                 You = youStand,
-                // Previous = previousStand,
+                Previous = previousStand,
                 Community = communityStand,
                 Tenure = tenure,
                 TeamTenure = teamTenure,

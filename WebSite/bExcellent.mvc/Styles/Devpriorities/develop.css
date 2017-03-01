@@ -312,10 +312,10 @@ a:focus, a:hover {
     padding: 0;
 }
 
-.scroll2 {
+/*.scroll2 {
     border: 1px solid #333;
     padding: 2.5% 0% 0% 3%;
-}
+}*/
 
 
 @media all and (min-width:768px) {
@@ -368,9 +368,12 @@ a:focus, a:hover {
 
 
 @media screen and (max-width: 2000px) and (min-width: 1800px) {
+    .develop_content a {
+        font-size: 120%;
+    }
 
     p {
-        font-size: 100% !important;
+        font-size: 120% !important;
     }
 
     h2 {

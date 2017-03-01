@@ -1779,6 +1779,46 @@ namespace bExcellent.Service.BusinessLogic.Common
             emailClient.UseDefaultCredentials = false;
             emailClient.Credentials = basicAuthenticationInfo;
             emailClient.Send(objEmail);
+           // SendEmailUpdated(subject, from);
+        }
+      
+        public void SendEmailUpdated(string subject, string emailid)
+        {
+            // Log("WCF-SendEmail-IN");
+            try
+            {
+                // var user = Common.GetUserDetailsByMappingId(userId);
+                string _from = ConfigurationManager.AppSettings["fromEmail"];
+                string emailServer = ConfigurationManager.AppSettings["mailServer"];
+                string _userId = ConfigurationManager.AppSettings["emailUserId"];
+                string _pwd = ConfigurationManager.AppSettings["emailPassword"];
+                string _bcc = ConfigurationManager.AppSettings["bccEmail"];
+                string _to = ConfigurationManager.AppSettings["mailTo1"];
+               
+                if (_to.Trim() == string.Empty)
+                {
+                    _to = emailid;
+                }
+                var content = "";
+                MailMessage objEmail = new MailMessage(_from, _to, subject, content);
+
+                objEmail.Bcc.Add(_bcc);
+
+                objEmail.IsBodyHtml = true;
+
+                SmtpClient emailClient = new SmtpClient(emailServer);
+                System.Net.NetworkCredential basicAuthenticationInfo = new System.Net.NetworkCredential(_userId, _pwd);
+
+                emailClient.Host = emailServer;
+                emailClient.UseDefaultCredentials = false;
+                emailClient.Credentials = basicAuthenticationInfo;
+                emailClient.Send(objEmail);
+               
+            }
+            catch (Exception ex)
+            {
+            }
+            //Log("WCF-SendEmail-OUT");
         }
         public void SendPlanNotification()
         {

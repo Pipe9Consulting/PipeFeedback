@@ -244,9 +244,9 @@
     $("#preloader").delay(100).fadeOut("slow");
     var poeid = parseInt($('#selectedPoeId').val());
     if(poeid==15 || poeid==16 || poeid==17) {
-        $('#dropmenus').show();
+       $('#dropmenus').show();
     } else {
-        $('#dropmenus').hide();
+       $('#dropmenus').show();
     }
 
 });
@@ -569,7 +569,7 @@ var devLanding = {
             success: function (response) {
                 if (response != null) {
                     $('#selectPoe').val(response.Name.replace("&", "").replace(/\ /g, ""));
-                    var html = "<h4>" + response.Name + "</h4><img src='../../Images/KessakuImage/" + response.Name.replace("&", "").replace(/\ /g, "") + "_pane.png' /><p>" + response.IntroContent + "</p>";//<a  onclick='DownloadPDF()' class='sendRequest'>Download</a>
+                    var html = "<h4>" + response.Name + "</h4><img src='../../Images/KessakuImage/" + response.Name.replace("&", "").replace(/\ /g, "").replace("/","") + "_pane.png' /><p>" + response.IntroContent + "</p>";//<a  onclick='DownloadPDF()' class='sendRequest'>Download</a>
                     $('#accordion-4').html(html);
                 }
             },

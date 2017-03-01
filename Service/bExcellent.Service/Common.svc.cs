@@ -2111,13 +2111,13 @@ namespace bExcellent.Service
         }
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
-        public void UpdateGoalDate(int tmid, DateTime goaldate)
+        public void UpdateGoalDate(int tmid, DateTime goaldate, int userid)
         {
 
             try
             {
                 var common = new BusinessLogic.Goal.GoalDataAccess();
-                common.UpdateGoalDate(tmid, goaldate);
+                common.UpdateGoalDate(tmid, goaldate,userid);
             }
             catch (Exception e)
             {

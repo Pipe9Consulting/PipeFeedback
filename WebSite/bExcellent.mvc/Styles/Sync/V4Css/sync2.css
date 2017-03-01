@@ -145,9 +145,9 @@ body {
 
 
 .selectSelf {
-    background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 10% #fff;
+    background: url(../../../Images/images/feedback/selfIconHover.png)no-repeat top 10% right 3% #fff;
     display: table-cell;
-    background-size: 45% 45%;
+    background-size: 25% 45%;
     border: 1px solid #23a1a7 !important;
 }
 
