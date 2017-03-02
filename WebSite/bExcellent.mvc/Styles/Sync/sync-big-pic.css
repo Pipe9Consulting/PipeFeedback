@@ -980,6 +980,10 @@ h1, .tsf {
 
 @media screen and (max-width: 1366px) and (min-width: 1280px) {
 
+    .stand li p {
+        font-size: 110% !important;
+        line-height: 1;
+    }
 
 
     .markergray, .markeramper, .marker3, .marker4, .marker5 {
@@ -1358,6 +1362,7 @@ h1, .tsf {
     width: 90%;
     text-transform: uppercase;
     font-size: 130%;
+    line-height:1;
 }
 
 .indexright {

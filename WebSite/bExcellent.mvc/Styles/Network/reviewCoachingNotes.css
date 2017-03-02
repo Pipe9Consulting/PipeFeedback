@@ -1549,12 +1549,23 @@ input[type="file"] {
 
 @media screen and (max-width: 2000px) and (min-width: 1701px) {
 
+    .sliderdiv {
+        width: 60% !important;
+        padding-bottom: 2.4%;
+    }
+
+    .ui-slider-range {
+        padding-bottom: 6.9%;
+    }
+
+
+
     .reportanIssue input {
         padding: .6% 1% 0.7% 1%;
     }
 
     .ui-slider-handle {
-        padding-bottom: 8.5% !important;
+        padding-bottom: 5% !important;
     }
 
     .fbexperienceQn {
