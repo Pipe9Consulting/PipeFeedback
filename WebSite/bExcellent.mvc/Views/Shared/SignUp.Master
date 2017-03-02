@@ -19,13 +19,10 @@
     <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/common.css" rel="stylesheet" type="text/css" />
-<<<<<<< HEAD
     <link rel="shortcut icon" href="http://beta.pipe9consulting.com/img/p9/favicon-32x32.png" type="image/x-icon" />
     <link rel="icon" href="http://beta.pipe9consulting.com/img/p9/favicon-32x32.png" type="image/x-icon" />
-=======
   <link rel="shortcut icon" href="../../Images/favicon.png" type="image/x-icon" />
     <%--<link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />--%>
->>>>>>> 5e00df2713e9d7d666c1b27f68190ee4596156f2
     <%--scripts--%>
     <%-- <script src="../../Scripts/ref/jquery-1.8.3.js" type="text/javascript"></script>--%>
     <script type="text/javascript" src="../../Scripts/ref/jquery-1.8.3.min.js"></script>

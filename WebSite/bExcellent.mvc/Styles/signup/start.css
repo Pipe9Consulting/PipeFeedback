@@ -94,7 +94,7 @@ body {
     }
 
 .profile {
-    background: url(../../Images/images/profileIcon.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/images/profileIcon.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
     border: 1px solid #aaa;
 }
@@ -106,7 +106,7 @@ body {
     }
 
 .feedback {
-    background: url(../../Images/start/completeSFB.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/start/completeSFB.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
     border: 1px solid #aaa;
 }
@@ -118,7 +118,7 @@ body {
     }
 
 .standing {
-    background: url(../../Images/start/resultsnew.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/start/resultsnew.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
     border: 1px solid #aaa;
 }
@@ -130,7 +130,7 @@ body {
     }
 
 .goal {
-    background: url(../../Images/images/goalIcon.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/images/goalIcon.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
     border: 1px solid #aaa;
 }
@@ -142,7 +142,7 @@ body {
     }
 
 .networks {
-    background: url(../../Images/start/provideTFB.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/start/provideTFB.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
     border: 1px solid #aaa;
 }
@@ -156,7 +156,7 @@ body {
 
 
 .managerSync {
-    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #fff;
     background-size: 38% 33%;
     width: 47% !important;
     float: left;
@@ -229,7 +229,7 @@ body {
     }
 
 .communitySync {
-    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #fff;
     background-size: 38% 33%;
     width: 47% !important;
     float: left;
@@ -246,7 +246,7 @@ body {
     }
 
 .sync {
-    background: url(../../Images/start/trackGoals.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/start/trackGoals.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
     border: 1px solid #aaa;
 }
@@ -258,7 +258,7 @@ body {
     }
 
 .mentor {
-    background: url(../../Images/images/mentorIcon.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/images/mentorIcon.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
     border: 1px solid #aaa;
 }
@@ -270,7 +270,7 @@ body {
     }
 
 .wall {
-    background: url(../../Images/images/wallIcon.png) top 20px right 20px no-repeat #f6f6f6;
+    background: url(../../Images/images/wallIcon.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
 }
 

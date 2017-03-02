@@ -856,23 +856,9 @@ h1 {
     margin: 0 5px;
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1439px) {
-
-    .addmngr h2, .active {
-        background-size: 4.8% 98% !important;
-    }
 
 
-    .midcol {
-        width: 70%;
-    }
-
-    .addform {
-        padding: 3% 3.8% 41% 3.8%;
-    }
-}
-
-@media screen and (min-width: 2500px) and (max-width:3500px) {
+@media screen and (min-width: 2200px) and (max-width:3500px) {
     .signuptile p {
         bottom: 6%;
         left: 5%;
@@ -890,7 +876,15 @@ h1 {
     }
 }
 
-@media screen and (min-width: 1600px) and (max-width: 1669px) {
+
+@media screen and (min-width: 1700px) and (max-width:2200px) {
+    .signuptile p {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1500px) and (max-width: 1700px) {
 
     .addmngr h2, .active {
         background-size: 4.8% 98% !important;
@@ -909,16 +903,50 @@ h1 {
     }
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
-    .terms p, .terms b {
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .ui.menu .item {
+        font-size: 1.4rem !important;
+    }
+
+    .terms a, .privacy a {
+        font-size: 17px;
+    }
+
+    .signuptxt strong {
+        font-size: 20px;
+    }
+
+
+    .addmngr h2, .active {
+        background-size: 4.8% 98% !important;
+    }
+
+    .signuptxt li div {
+        font-size: 14px;
+    }
+
+    .signuptxt h5 {
+        font-size: 150% !important;
+    }
+
+
+    .midcol {
+        width: 70%;
+    }
+
+    .addform {
+        padding: 3% 3.8% 41% 3.8%;
+    }
+
+    .terms p{
         font-size: 130% !important;
     }
 
     p, b {
-        font-size: 130% !important;
+        font-size: 150% !important;
     }
 
-    h6, strong {
+    h6 {
         font-size: 160% !important;
     }
 
@@ -937,12 +965,12 @@ h1 {
     }
 
     .accordion a.cacLogo {
-        padding-left: 1.4%;
+        padding-left: 3%;
         margin-top: 0px !important;
     }
 }
 
-@media screen and (max-width: 1279px) and (min-width: 1024px) {
+@media screen and (max-width: 1200px) and (min-width: 900px) {
     .contenthold {
         padding-bottom: 50%;
     }
@@ -962,4 +990,12 @@ h1 {
     .row {
         font-size: 80%;
     }
+}
+
+
+
+.terms p span {
+    color:#000;
+    font-size:100%;
+    font-weight:700;
 }
