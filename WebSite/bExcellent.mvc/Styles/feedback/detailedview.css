@@ -2503,6 +2503,10 @@ body {
         margin-bottom: 0px;
     }
 
+    .feedbackcomplete p b {
+        font-size:14px;
+    }
+
     .questions {
         padding: .5% 0 0% 0px !important;
     }
