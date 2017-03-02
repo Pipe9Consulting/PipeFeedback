@@ -270,14 +270,14 @@
                             <h2>Self-Feedback</h2>
                             <div class="fbboxbtn2">
                                 <h3>Resume</h3>
-                                <p>Continue where you left off</p>
+                                <p>You have a partially completed Feedback session. Continue where you left off?</p>
                                 <a class="" id="resumeSelf" data-value="" href="">Resume</a>
 
                             </div>
                             <div style="clear: both;"></div>
                             <div class="fbboxbtn2">
                                 <h3>Start Over</h3>
-                                <p>Start Feedback from the beginning</p>
+                                <p>Discard your partially completed Feedback session and start over?</p>
                                 <a href="javascript:;" id="startNormal" class="">Start</a>
 
                             </div>
@@ -308,14 +308,14 @@
                             <h2>Team Members</h2>
                             <div class="fbboxbtn2">
                                 <h3>Resume</h3>
-                                <p>Continue where you left off</p>
+                                <p>You have a partially completed Feedback session. Continue where you left off?</p>
                                 <a class="allteammemfb" id="resumeTeamfb" data-value="givefbTeam" href="">Resume</a>
 
                             </div>
                             <div style="clear: both;"></div>
                             <div class="fbboxbtn2">
                                 <h3>Start Over</h3>
-                                <p>Start Feedback from the beginning.</p>
+                                <p>Discard your partially completed Feedback session and start over?</p>
                                 <a href="javascript:;" id="Teammembers" class="chooseindividuals">Start</a>
 
                             </div>
