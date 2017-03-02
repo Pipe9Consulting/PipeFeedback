@@ -24,7 +24,7 @@
                 " <p>Pricing</p> </a></li> <li data-value='reqDemoHdr'><a href='../#CloudAsCoach?slice=8'><span class='footermenu5'></span> " +
                 "<p>Request a Demo</p> </a></li> <li data-value=''><a href='../Home/Login'><span class='footermenu6'></span> <p>Members</p> </a></li>";
             $('#target').html(targetHtml);
-            $('.bukatutup').show();
+            $('.bukatutup').hide();
             $('#emailid').focus();
             $('#yammerClick').click(function () {
                 window.location = "/Yammer/getYammer";
