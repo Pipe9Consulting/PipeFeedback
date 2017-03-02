@@ -3432,9 +3432,13 @@ body {
         height: 89px;
     }
 
-    .historySmall {
-        padding-bottom: 45%;
+    .historySmall, .takeFeedbackMenu {
+        padding-bottom: 48%;
         width: 46.9%;
+    }
+
+    #target .historySmall {
+        padding-bottom: 18%;
     }
 
     .profileCenter ul li {
@@ -3476,8 +3480,8 @@ body {
 
 
     .profileCenter p {
-        font-size: 70% !important;
-        line-height: 1.2;
+        font-size: 80% !important;
+        line-height: 1.1;
         padding: 4px 2px 3px 6px !important;
     }
 
@@ -3531,10 +3535,7 @@ body {
         width: 53%;
     }
 
-    .takeFeedbackMenu, .historySmall {
-        padding-bottom: 48%;
-        width: 46.9%;
-    }
+
 
     .incompletefbMenu {
         width: 96.8%;
@@ -4431,4 +4432,9 @@ body {
 
 .giveSingletile .fblthirdBox {
     width: 100% !important;
+}
+
+
+#target .historySmall {
+    padding-bottom: 18%;
 }
