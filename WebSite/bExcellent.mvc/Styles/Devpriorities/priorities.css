@@ -404,7 +404,7 @@ p {
 #accordion-4 {
     width: 100% !important;
     height: 0!important;
-    padding-bottom: 69% !important;
+    padding-bottom: 60% !important;
     position: relative;
 }
 
@@ -412,7 +412,7 @@ p {
     width: 100% !important;
     height: 0!important;
     position: relative;
-    padding-bottom: 64%;
+    padding-bottom: 66%;
 }
 
 #option_menu .accordion h3 {
@@ -1487,12 +1487,14 @@ body {
             }
 
             .flapper.L .digit, .flapper.L .digit div {
-                height: 28px;
+                height: 26px;
                 width: 26px;
                 font-size: inherit;
                 line-height: inherit;
                 font-weight: 400;
+                padding-top: 2px;
             }
+
 
 
 /*.flapper.L .digit .top {
@@ -1662,7 +1664,7 @@ body {
     .calendarText label {
         margin: 0;
         font-size: 80%;
-        color: #fff;
+        color: #000;
         text-transform: uppercase;
         text-align: center;
         font-weight: 400;
@@ -2037,6 +2039,10 @@ body {
         font-size: 120%;
     }
 
+    .calendarText label {
+        margin-top: 8px;
+    }
+
 
     .startgoalDate .calendarText {
         padding: 1% 1.5%;
@@ -2044,6 +2050,7 @@ body {
 
     .flapper.L .digit, .flapper.L .digit div {
         width: 40px;
+        height: 30px;
     }
 
     .completedDate .calendarText {
@@ -2184,6 +2191,10 @@ body {
 
 
 @media screen and (max-width:1500px) and (min-width:1200px) {
+    #usrList li p {
+        font-size: 100% !important;
+        line-height:1;
+    }
 
     .breadcrumb {
         margin-top: 0%;
@@ -2196,7 +2207,7 @@ body {
 
     .sliderboardView {
         width: 102%;
-        margin: .5% 0.5% 0.5% -1%;
+        margin: .5% 0.5% 0% -1%;
     }
 
 
