@@ -156,7 +156,7 @@ namespace bExcellent.Service.BusinessLogic.Sync
                 rid = fbid;
                 //if (frmid == 0)
                 //{
-                    tid = GetRecentSelfFBid(poeid, userid, subid);
+                tid = GetRecentSelfFBid(poeid, userid, subid);
                 //}
                 //else
                 //{
@@ -389,7 +389,7 @@ namespace bExcellent.Service.BusinessLogic.Sync
             var youscore = GetWcsiScore(tid);
             var mgrscore = GetWcsiScore(rid);
             double diffwcsi = 0;
-            if (youscore.ci1 != 0.0 && mgrscore.ci1 != 0.0)
+            if (youscore.ci1 != null && mgrscore.ci1 != null && youscore.ci1 != 0.0 && mgrscore.ci1 != 0.0)
             {
                 diffwcsi = (Math.Round(mgrscore.ci1.GetValueOrDefault(0) +
                               mgrscore.ci2.GetValueOrDefault(0), MidpointRounding.AwayFromZero)) -
@@ -405,20 +405,20 @@ namespace bExcellent.Service.BusinessLogic.Sync
         }
         public double WcsiScoreOfManager(int userid, int poeid, int subid, int usermapping, int type)
         {
-           // int tid = 0;
+            // int tid = 0;
             int rid = 0;
             if (type == 1)
             {
-               // tid = GetRecentSelfFBid(poeid, userid, subid);
+                // tid = GetRecentSelfFBid(poeid, userid, subid);
                 rid = GetRecentRcvdFBidByUser(poeid, userid, subid, usermapping);
             }
             else
             {
                 Common.Common common = new Common.Common();
                 rid = GetRecentTmRcvdFBid(poeid, userid, subid, usermapping);
-               // tid = GetRecentTmSelfFBidByUser(usermapping, subid);
+                // tid = GetRecentTmSelfFBidByUser(usermapping, subid);
             }
-           // var youscore = GetWcsiScore(tid);
+            // var youscore = GetWcsiScore(tid);
             var mgrscore = GetWcsiScore(rid);
             double diffwcsi = 0;
             if (mgrscore.ci1 != 0.0)

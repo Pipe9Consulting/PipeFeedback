@@ -109,6 +109,8 @@
             success: function (response) {
                 if (response == true) {
                     login.forgetpassword({ url: '../../Common/getpassword', data: { 'emailaddress': $('#txtforgetmail').val() } });
+                    //$('#masterMsgCont').text("Your Password is sent to your email id sucessfully");
+                    //$('#overallCont').show();
                     alert("Your Password is sent to your email id sucessfully");
                     $.modal.close();
                 } else {

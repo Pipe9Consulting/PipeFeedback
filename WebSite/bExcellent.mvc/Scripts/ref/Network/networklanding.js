@@ -475,12 +475,12 @@ var network = {
         });
 
         //
-        $('.netmgr').live('click', function () {
-            $(this).toggleClass('selectmngr');
-        });
-        $('.netteam').live('click', function () {
-            $(this).toggleClass('selectmngr');
-        });
+        //$('.netmgr').live('click', function () {
+        //    $(this).toggleClass('selectmngr');
+        //});
+        //$('.netteam').live('click', function () {
+        //    $(this).toggleClass('selectmngr');
+        //});
         $('.netcust').live('click', function () {
             $(this).toggleClass('selectmngr');
         });
@@ -1405,19 +1405,30 @@ var network = {
                 }
 
                 if (response.length == 0) {
-                    Common.ajaxsync({
-                        url: '/Common/AssignPoeAndYammerBind',
-                        success: function (responses) {
-                            if (responses != null && responses.Yammer == true && responses.Mapping == false) {
-                                $('.assignhide').hide();
-                                html = "<div class='networkholder'><ul><li class='rect' id='assignPersonMngr'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Add a new member to your network and assign a REP </p> </li> </ul> </div>";
-                            } else if (responses != null && responses.IsSub == true || responses != null && responses.SubId == -1) {
-                                html = "<div class='networkholder'><ul> <li class='rect' id='assignpoeManager'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Assign this REP to a Member</p> </li> <li class='rect' id='assignPersonMngr'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Add a new member to your network and assign this REP</p> </li> </ul> </div>";
-                            }
-                        },
-                        error: function (err) {
+                    //Common.ajaxsync({
+                    //    url: '/Common/AssignPoeAndYammerBind',
+                    //    success: function (responses) {
+                    //        if (responses != null && responses.Yammer == true && responses.Mapping == false) {
+                    //            $('.assignhide').hide();
+                    //            html = "<div class='networkholder'><ul><li class='rect' id='assignPersonMngr'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Add a new member to your network and assign a REP </p> </li> </ul> </div>";
+                    //        } else if (responses != null && responses.IsSub == true || responses != null && responses.SubId == -1) {
+                    //            html = "<div class='networkholder'><ul> <li class='rect' id='assignpoeManager'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Assign this REP to a Member</p> </li> <li class='rect' id='assignPersonMngr'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Add a new member to your network and assign this REP</p> </li> </ul> </div>";
+                    //        }
+                    //    },
+                    //    error: function (err) {
+                    //    }
+                    //});
+                    //var emptyHtml = "";
+                    html = '<div class="coltwo">';
+                    for (var i = 0; i < 8; i++) {
+                        
+                        html = html + "<li class='nonselect'></li>";
+                        if (i == 3) {
+                            html = html + "</div><div class='coltwo'>";
                         }
-                    });
+                    }
+                    html = html + "</div>";
+
                 }
                 $('#sliderbtn').append("<div id='slidemgr' class='sliderdiv'>" + slidehtml + "</div>");
                 //$('#slidemgr').hide();
@@ -1544,19 +1555,29 @@ var network = {
                     }
                 }
                 if (response.length == 0) {
-                    Common.ajaxsync({
-                        url: '/Common/AssignPoeAndYammerBind',
-                        success: function (responses) {
-                            if (responses != null && responses.Yammer == true && responses.Mapping == false) {
-                                $('.assignhide').hide();
-                                html = "<div class='networkholder'><ul><li class='rect' id='assignPersonTm'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Add a new member to your network and assign a REP </p> </li> </ul> </div>";
-                            } else if (responses != null && responses.IsSub == true || responses != null && responses.SubId == -1) {
-                                html = "<div class='networkholder'><ul> <li class='rect' id='assignpoeTeam'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Assign this REP to a Member</p> </li> <li class='rect' id='assignPersonTm'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Add a new member to your network and assign this REP</p> </li> </ul> </div>";
-                            }
-                        },
-                        error: function (err) {
+                    //Common.ajaxsync({
+                    //    url: '/Common/AssignPoeAndYammerBind',
+                    //    success: function (responses) {
+                    //        if (responses != null && responses.Yammer == true && responses.Mapping == false) {
+                    //            $('.assignhide').hide();
+                    //            html = "<div class='networkholder'><ul><li class='rect' id='assignPersonTm'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Add a new member to your network and assign a REP </p> </li> </ul> </div>";
+                    //        } else if (responses != null && responses.IsSub == true || responses != null && responses.SubId == -1) {
+                    //            html = "<div class='networkholder'><ul> <li class='rect' id='assignpoeTeam'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Assign this REP to a Member</p> </li> <li class='rect' id='assignPersonTm'> <div class='img'> <img src='../../Images/icons/add-user_ico.png' /></div> <p> Add a new member to your network and assign this REP</p> </li> </ul> </div>";
+                    //        }
+                    //    },
+                    //    error: function (err) {
+                    //    }
+                    //});
+                    html = '<div class="coltwo">';
+                    for (var i = 0; i < 8; i++) {
+
+                        html = html + "<li class='nonselect'></li>";
+                        if (i == 3) {
+                            html = html + "</div><div class='coltwo'>";
                         }
-                    });
+                    }
+                    html = html + "</div>";
+
                 }
                 $('#sliderbtn').append("<div id='slideteam' class='sliderdiv'>" + slidehtml + "</div>");
                 //$('#slideteam').hide();

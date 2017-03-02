@@ -179,7 +179,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                                         DateTime.Now.ToShortDateString(),
                                         rolename
                                       );
-                emailContent = string.Format(Constant.EmailTemplate, emailContenttemp);
+                emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
                 SendEmailUpdated(subject, emailContent, to);
 
             }
@@ -198,7 +198,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                                         DateTime.Now.ToShortDateString(),
                                         rolename
                                       );
-                emailContent = string.Format(Constant.EmailTemplate, emailContenttemp);
+                emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
                 SendEmailUpdated(subject, emailContent, to);
             }
         }
@@ -292,6 +292,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                 emailContent = string.Format(Constant.EmailTemplate, emailContenttemp);
                 SendEmail(subject, emailContent, to);
             }
+            SendCompletionMail(feedback);
             //Log("WCF-CreateFbCompleteActivity:FBID::" + feedback.POEFeedbackId + "-OUT");
             //UserPOEMapping memberdetails = Common.GetUserDetailsByMappingId(request.RequestedFrom);
         }

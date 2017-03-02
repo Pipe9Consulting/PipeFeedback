@@ -22,7 +22,7 @@
     <script src="../../Scripts/ref/Results/resultlanding1.js" type="text/javascript"></script>
     <script src="../../Scripts/jquery.slimscroll.js" type="text/javascript"></script>
     <%-- For Photo Upload--%>
-
+   
     <style>
         #simplemodal-container {
             background: none repeat scroll 0 0 #E5E5E5;
@@ -30,6 +30,9 @@
             width: 42% !important;
             left: 29% !important;
         }
+        /*div.bukatutup {
+            display:none;
+        }*/
     </style>
 
     <input type="hidden" id="OwnSubStatus" value="0" />

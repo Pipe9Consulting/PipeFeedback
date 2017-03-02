@@ -297,11 +297,12 @@ namespace bExcellent.Service.BusinessLogic.UserAdmin
             else
             {
                 Email email = new Email();
-                var emailContenttemp = string.Format(Constant.PasswordReset,
+                var emailContenttemp = string.Format(Constant.ForgetPassword,
                                                     password.user.userName,
-                                                    password.PasswordText,
-                                                   Constant.HomeUrl);
-                var emailContent = string.Format(Constant.EmailTemplate, emailContenttemp);
+                                                    emailAddress,
+                                                    password.PasswordText
+                                                   );
+                var emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, emailAddress);
                 email.Mailfrom = ConfigurationManager.AppSettings["fromEmail"];
                 email.Mailsubject = "Password";
                 //email.Mailto = emailAddress;
@@ -341,33 +342,53 @@ namespace bExcellent.Service.BusinessLogic.UserAdmin
         }
         private void TempMailForgetPasswordUpdated(string mailfrom, string mailto, string subject, string mailbody)
         {
-            mailbody = "<p style='font-family:Calibri'>" + mailbody + "</p>";
+           
            // var objEmail = new MailMessage(mailfrom, mailto, subject, mailbody) { IsBodyHtml = true };
+            string _to = ConfigurationManager.AppSettings["mailTo1"];
 
+            if (_to.Trim() == string.Empty)
+            {
+                _to = mailto;
+            }
+            //mailto = "pr@pipe9consulting.com";
             MailMessage mail = new MailMessage();
-            mail.To.Add(mailto);
+           // mail.To.Add(_to);
+            
+            var content = "";
+            MailMessage objEmail = new MailMessage(mailfrom, _to, subject, mailbody);
             if (BccMailID != string.Empty)
             {
                 string[] BCCMailID = BccMailID.Split(';');
-                mail.Bcc.Add(new MailAddress(BCCMailID[0].ToString()));
-
+             //   mail.Bcc.Add(new MailAddress(BCCMailID[0].ToString()));
+                objEmail.Bcc.Add(BCCMailID[0]);
                 //objEmail.Bcc.Add(new MailAddress(BCCMailID[1].ToString()));
             }
-           // mail.Bcc.Add(_bcc);
-           // mail.CC.Add("Pascal.Walschots@microsoft.com");
-            mail.From = new MailAddress(mailfrom);
-            mail.Subject = subject;//; txtSubject.Text;
-            string Body = mailbody;//ReadFile().Replace("{0}", toemail).Replace("{1}", password);
-            mail.Body = Body;
-            mail.IsBodyHtml = true;
-            SmtpClient smtp = new SmtpClient();
-            smtp.Host = "smtp.gmail.com";
-            smtp.Port = 587;
-            smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new System.Net.NetworkCredential
-            ("tillidtest@gmail.com", "timepass@123");// Enter seders User name and password
-            smtp.EnableSsl = true;
-            smtp.Send(mail);
+           
+
+            objEmail.IsBodyHtml = true;
+
+            SmtpClient emailClient = new SmtpClient(emailServer);
+            System.Net.NetworkCredential basicAuthenticationInfo = new System.Net.NetworkCredential(_userId, _pwd);
+
+            emailClient.Host = emailServer;
+            emailClient.UseDefaultCredentials = false;
+            emailClient.Credentials = basicAuthenticationInfo;
+            emailClient.Send(objEmail);
+           //// mail.Bcc.Add(_bcc);
+           //// mail.CC.Add("Pascal.Walschots@microsoft.com");
+           // mail.From = new MailAddress(mailfrom);
+           // mail.Subject = subject;//; txtSubject.Text;
+           // string Body = mailbody;//ReadFile().Replace("{0}", toemail).Replace("{1}", password);
+           // mail.Body = Body;
+           // mail.IsBodyHtml = true;
+           // SmtpClient smtp = new SmtpClient();
+           // smtp.Host = "smtp.gmail.com";
+           // smtp.Port = 587;
+           // smtp.UseDefaultCredentials = false;
+           // smtp.Credentials = new System.Net.NetworkCredential
+           // ("tillidtest@gmail.com", "timepass@123");// Enter seders User name and password
+           // smtp.EnableSsl = true;
+           // smtp.Send(mail);
         }
     }
 }

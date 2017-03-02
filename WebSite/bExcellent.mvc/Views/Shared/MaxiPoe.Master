@@ -416,7 +416,7 @@
                                 <div class="hideDiv">
                                     <li id="redirectAccount"><a href="#">Account</a></li>
                                     <li id="redirectNetwork"><a href="#">Network</a></li>
-                                    <li id="redirectProfiles"><a href="#">Profiles</a></li>
+                                    <%--<li id="redirectProfiles"><a href="#">Profiles</a></li>--%>
                                     <li id="changingPassword"><a href="#">Change Password</a></li>
                                     <%-- <li id="yourAcc"><a href="../SignUp/Accounts">Your Accounts</a></li>--%>
                                     <li><a href="../Feedback/CompletedFeedback?mode=1">Feedback on Your<br />
