@@ -924,7 +924,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
             $('#' + id + '> div > div#q2 ul').css('padding-top', '12%');
 
         }
-
+       
         if (innerLiLength == 12) {
 
             //$('#' + id + '> div > div#' + innerId + ' ul').css('padding-top', '5%');
@@ -945,14 +945,32 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
             $('#' + id + '> div > div#q2 ul').css('padding-top', '5%');
 
         }
-
+      //  alert(q2length);
         if (q2length == 12) {
+           
 
             $('#' + id + '> div > div#q2 ul').css('padding-top', '5%');
 
         }
         
+        if (q2length == 6) {
 
+            $('#' + id + '> div > div#q2 ul').css('padding-top', '16%');
+
+        }
+        if (innerLiLength == 6) {
+
+            //$('#' + id + '> div > div#' + innerId + ' ul').css('padding-top', '5%');
+            $('#' + id + '> div > div#q1 ul').css('padding-top', '12%');
+           // $('#' + id + '> div > div#q2 ul').css('padding-top', '12%');
+            // $('#' + id + '> div > div#q2 ul').css('padding-top', '12%');
+
+        }
+        if (innerLiLength == 9) {
+
+            $('#' + id + '> div > div#q1 ul').css('padding-top', '12%');
+
+        }
 
     });
     // alert(count);
