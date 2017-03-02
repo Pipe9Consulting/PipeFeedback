@@ -187,6 +187,10 @@ html, body {
         width: 13%;
     }
 
+    .ui.menu .item {
+        font-size: 1.1rem;
+    }
+
     #notifyCont li a {
         padding: 2px 0 5px 30px;
         background-size: 23px 23px !important;

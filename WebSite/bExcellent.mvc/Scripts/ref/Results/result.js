@@ -7,6 +7,7 @@ $(function () {
     $('#errpopup').draggable();
     $("#dragassignpoe").draggable();
     $('.scroll1').slimScroll();
+   
     $('#emailid').focus(function () {
         $(this).val('');
     });
@@ -60,7 +61,7 @@ $(document).ready(function () {
     $('.close').click(function () {
         $('#networkpopup,.poepopupbg,.vs-context-menu').fadeOut("slow");
     });
-
+    
     (function ($) {
         jQuery.fn.vscontext = function (options) {
             var defaults = {

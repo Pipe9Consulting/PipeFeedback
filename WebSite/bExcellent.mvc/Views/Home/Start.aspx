@@ -274,7 +274,7 @@
 
                         </div>
                         <div id="hover_content5">
-                            Manager Sync is a view option that enables you  to identify perception gaps. For Managers, it provides a comparison of the Self-Feedback of your Team Members and the Team-Feedback you have provided to them. For Individual Contributors, it enables you to compare your Self-Feedback with the Feedback you have received from your Manager.
+                            Manager Sync is a view option that enables you  to identify perception gaps. For Managers, it provides a comparison of the Self-Feedback of your Team Members and the Team-Feedback you have provided to them.
                             <span>
                                 <img src="../../Images/start/hover_arrow.png" /></span>
                         </div>

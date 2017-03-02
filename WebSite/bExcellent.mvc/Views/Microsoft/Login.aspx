@@ -248,7 +248,7 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                     <div id="basic-forgetPassword" style="display: none; position: absolute;">
                         <div class="close">
                         </div>
-                        <h1>Forgot Password</h1>
+                        <h1>Forgot your password?</h1>
                         <p style="margin-top: 5px;">
                            Please enter the required information below and we will send you a password reminder email.
                         </p>
@@ -265,7 +265,7 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                         </div>
                         <div style="clear: both"></div>
                         <p class="origin">
-                            Enter the above text
+                            Enter the security code above
                         </p>
                         <input type="text" id="txtInput" class="textspace" />
                         <label class="errormsg" id="captchatext">

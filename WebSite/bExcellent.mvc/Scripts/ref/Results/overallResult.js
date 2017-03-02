@@ -81,6 +81,7 @@ $(document).ready(function () {
 
     $("#status").fadeIn();
     $("#preloader").delay(100).fadeIn("slow");
+    $('.bukatutup').hide();
     //var selectedPoe = $('#selectedPoeValueStanding').val();
     //var tempVal = 0;
     //if (selectedPoe != 0) {

@@ -19,6 +19,8 @@
     <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/fonts/fonts.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/common.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="http://beta.pipe9consulting.com/img/p9/favicon-32x32.png" type="image/x-icon" />
+    <link rel="icon" href="http://beta.pipe9consulting.com/img/p9/favicon-32x32.png" type="image/x-icon" />
   <link rel="shortcut icon" href="../../Images/favicon.png" type="image/x-icon" />
     <%--<link rel="icon" href="../../Images/favicon.ico" type="image/x-icon" />--%>
     <%--scripts--%>
