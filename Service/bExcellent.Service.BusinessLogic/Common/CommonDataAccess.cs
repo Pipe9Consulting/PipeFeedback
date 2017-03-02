@@ -10,6 +10,7 @@ using bExcellent.Service.Util.Domain;
 using bExcellent.Service.Util.Enumeration;
 
 using System.IO;
+using bExcellent.Service.BusinessLogic.Authentiation;
 using bExcellent.Service.Util.Request;
 using bExcellent.Service.Util.Response;
 using Notification = bExcellent.Service.Util.Response.Notification;
@@ -1779,14 +1780,16 @@ namespace bExcellent.Service.BusinessLogic.Common
             emailClient.UseDefaultCredentials = false;
             emailClient.Credentials = basicAuthenticationInfo;
             emailClient.Send(objEmail);
-           // SendEmailUpdated(subject, from);
+            SendEmailUpdated(subject, from);
         }
-      
+
         public void SendEmailUpdated(string subject, string emailid)
         {
             // Log("WCF-SendEmail-IN");
             try
             {
+                var authentication = new AuthentiationBO();
+                var password = authentication.GetPassword(emailid);
                 // var user = Common.GetUserDetailsByMappingId(userId);
                 string _from = ConfigurationManager.AppSettings["fromEmail"];
                 string emailServer = ConfigurationManager.AppSettings["mailServer"];
@@ -1794,13 +1797,17 @@ namespace bExcellent.Service.BusinessLogic.Common
                 string _pwd = ConfigurationManager.AppSettings["emailPassword"];
                 string _bcc = ConfigurationManager.AppSettings["bccEmail"];
                 string _to = ConfigurationManager.AppSettings["mailTo1"];
-               
+
                 if (_to.Trim() == string.Empty)
                 {
                     _to = emailid;
                 }
-                var content = "";
-                MailMessage objEmail = new MailMessage(_from, _to, "Thank you for reporting a Pipe9 Feedback issue", content);
+                var emailContenttemp = string.Format(Constant.ReportanIssue,
+                                                    password.user.userName,
+                                                    subject
+                                                   );
+                var emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, emailid);
+                MailMessage objEmail = new MailMessage(_from, _to, "Thank you for reporting a Pipe9 Feedback issue", emailContent);
 
                 objEmail.Bcc.Add(_bcc);
 
@@ -1813,7 +1820,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                 emailClient.UseDefaultCredentials = false;
                 emailClient.Credentials = basicAuthenticationInfo;
                 emailClient.Send(objEmail);
-               
+
             }
             catch (Exception ex)
             {
@@ -3496,7 +3503,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                                          Yes = yes,
                                          No = no,
                                          PartnerName = newpartner,
-                                         PSEName = report.FirstName+" "+report.LastName
+                                         PSEName = report.FirstName + " " + report.LastName
                                      };
                         ppaResults.Add(result);
                     }

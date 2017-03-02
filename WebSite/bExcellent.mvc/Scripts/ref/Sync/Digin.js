@@ -9,7 +9,7 @@
                     var scorestr = score > 0 ? "+" + score : score;
                     html = html + "  <li  id='usrDiginli" + i + "' value=" + response[i].UserPOEMappingId + ">" +
                         "<div class='number' id='synavgDigin" + response[i].UserPOEMappingId + "'>" +
-                         scorestr + "</div>" +
+                         (scorestr == "0" ? "" : scorestr) + "</div>" +
                          "<img  class='syncu' src='/Uploadify/LoadImageHandler.ashx?id=" + response[i].User.UserId + "&rnd=" + Math.random() + "' width='61' height='61' alt='User' />" +
                         "<p>" +
                         response[i].User.FirstName + " " + response[i].User.LastName +
