@@ -307,7 +307,7 @@ namespace bExcellent.Service.BusinessLogic.UserAdmin
                 //email.Mailto = emailAddress;
                 //email.Mailbody = emailContent;
                 //email.SendMail();
-                TempMailForgetPasswordUpdated(ConfigurationManager.AppSettings["fromEmail"], emailAddress, "Password",
+                TempMailForgetPasswordUpdated(ConfigurationManager.AppSettings["fromEmail"], emailAddress, "You requested a Pipe9 Feedback password reminder",
                                        emailContent);
                 return "Your password has been sent to your registered email address. Please check your inbox. If you do not find an email in your inbox, please check your junk/spam folders. Thank you!";
             }

@@ -1030,7 +1030,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 {
                     _to = user.User.EmailAddress;
                 }
-                var subject = "Coaching Date";
+                var subject = "You have set a new coaching date";
                 var content = "";
                 MailMessage objEmail = new MailMessage(_from, _to, subject, content);
 

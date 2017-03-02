@@ -1800,7 +1800,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     _to = emailid;
                 }
                 var content = "";
-                MailMessage objEmail = new MailMessage(_from, _to, subject, content);
+                MailMessage objEmail = new MailMessage(_from, _to, "Thank you for reporting a Pipe9 Feedback issue", content);
 
                 objEmail.Bcc.Add(_bcc);
 
