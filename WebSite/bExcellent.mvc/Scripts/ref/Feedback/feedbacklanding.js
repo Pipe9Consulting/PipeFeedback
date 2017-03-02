@@ -2,6 +2,7 @@
     $("#status").fadeIn();
     $("#preloader").delay(100).fadeIn("slow");
     //$('.takefbRightPart ').hide();
+    feedback.loadlastmenu();
     Common.setTopMenu(2);
     $('.takefeedback').hide();
     $('.breadcrumb').hide();
@@ -16,7 +17,7 @@
         },
         success: function () {
             feedback.loadControls();
-            feedback.loadlastmenu();
+           
             feedback.IsOwnSubscribtion();
         },
         complete: function () {
@@ -524,7 +525,7 @@ var feedback = {
     //Loading footer menu
     loadlastmenu: function () {
         $('.breadcrumb').show();
-        var html = "<li class='takeFBtile'><a><span><img src='../../Images/Icons/take-small.png'/></span><p> Self-Feedback  </p></a></li> <li class='giveFBtile'><a><span><img src='../../Images/Icons/give-small.png'/></span> <p> Give Feedack </p></a></li> <li class='invitetile'><a><span><img src='../../Images/Icons/invite-small.png'/></span><p> Request Feedback </p></a></li> <li class='historytile'><a><span><img src='../../Images/Icons/history-small.png'/></span><p> Completion History </p></a></li>";
+        var html = "<li class='takeFBtile'><a><span><img src='../../Images/Icons/take-small.png'/></span><p> Self-Feedback  </p></a></li> <li class='giveFBtile'><a><span><img src='../../Images/Icons/give-small.png'/></span> <p> Team Feedack </p></a></li> <li class='historytile'><a><span><img src='../../Images/Icons/history-small.png'/></span><p> Completion History </p></a></li>";
         $('#target ul').html(html);
     },
     //Redirect to Quickview page

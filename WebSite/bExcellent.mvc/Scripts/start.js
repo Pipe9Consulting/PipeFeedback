@@ -370,7 +370,7 @@ function hideTilesFunc(mode) {
             if (response.Status) {
                 html =
       "<li class=" + self + "><a href='../../Feedback/Feedback?mode=2'><span><img src='../../Images/Start/self_feedback_small.png' /></span><p>Complete Self-Feedback</p></a></li>" +
-         "<li class=" + team + "><a href='../../Feedback/Feedback?mode=1'><span><img src='../../Images/Start/provideTFB.png' /></span><p>Provide Team-Feedback</p></a></li>" +
+         "<li class=" + team + "><a><span><img src='../../Images/Start/provideTFB.png' /></span><p>Provide Team-Feedback</p></a></li>" +
           "<li class='hideFooterMenu resulthidermenu'><a><span><img src='../../Images/Start/feedbackresults_small.png' /></span><p>Feedback Results</p></a></li>" +
           "<li class='hideFooterMenu managerhidermenu'><a><span><img src='../../Images/Start/managersync_small.png' /></span><p>Manager Sync</p></a></li>" +
           "<li class='hideFooterMenu managerhidermenu'><a><span><img src='../../Images/Start/communitySync_small.png' /></span><p>Community Sync</p></a></li>" +
@@ -383,8 +383,8 @@ function hideTilesFunc(mode) {
          "<li><a href='../../result/result'><span><img src='../../Images/Start/feedbackresults_small.png' /></span><p>Feedback Results</p></a></li>" +
          "<li><a href='../../managersync/managersync'><span><img src='../../Images/Start/managersync_small.png' /></span><p>Manager Sync</p></a></li>" +
          "<li><a href='../../communitysync/communitysync'><span><img src='../../Images/Start/communitySync_small.png' /></span><p>Community Sync</p></a></li>" +
-              "<li><a href='../../Goal/Index'><span><img src='../../Images/Icons/goal-small.png' /></span><p>Development Priorities</p></a></li>" +
-              "<li><a href='../../Goal/index'><span><img src='../../Images/Start/trackProgress.png' /></span><p>Track Development Progress</p></a></li>";
+              "<li><a href='../../Development/Development'><span><img src='../../Images/Icons/goal-small.png' /></span><p>Development Priorities</p></a></li>" +
+              "<li><a href='../../Development/Development'><span><img src='../../Images/Start/trackProgress.png' /></span><p>Track Development Progress</p></a></li>";
                }
             $('#target ul').html(html);
             

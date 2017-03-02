@@ -194,8 +194,8 @@
                 }
                // alert(IsHSP);
                 if (!IsHSP) {
-                    $('.sync').addClass('SelecDisable');
-                    $('.newNotify').addClass('hideColumn');
+                   // $('.sync').addClass('SelecDisable');
+                   // $('.newNotify').addClass('hideColumn');
                 } else {
                     $('.sync').removeClass('SelecDisable');
                     $('.newNotify').removeClass('hideColumn');
