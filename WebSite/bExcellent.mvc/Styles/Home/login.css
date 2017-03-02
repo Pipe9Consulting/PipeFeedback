@@ -206,12 +206,9 @@ body {
 }
 
 .loginscreen .btn {
-    background: none repeat scroll 0 0 #23a1a7;
-    border-top: 1px solid #23a1a7;
-    border-left: 1px solid #23a1a7;
-    border-right: 1px solid #23a1a7;
-    border-bottom: 5px solid #168f95;
-    color: #fff;
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #23a1a7;
+    color: #23a1a7;
     font-weight: normal;
     padding: 5px 15px 5px 15px;
     cursor: pointer;
@@ -226,11 +223,8 @@ body {
 
 .loginscreen .btn:hover {
     background: none repeat scroll 0 0 #fff;
-    border-top: 1px solid #23a1a7;
-    border-left: 1px solid #23a1a7;
-    border-right: 1px solid #23a1a7;
-    border-bottom: 5px solid #168f95;
-    color: #23a1a7;
+    border: 1px solid #eb4830;
+    color: #eb4830;
 }
 
 

@@ -989,7 +989,7 @@ h1, .tsf {
     .markerholder li p {
         height: 32px;
         line-height: 38px;
-        width: 32px;
+        width: 35px;
     }
 
     .indexright {
@@ -2520,7 +2520,7 @@ h1, .tsf {
         width: 3.5%;
         top: 40.5%;
         right: 3%;
-        padding: .9% 0.6% 0.6% 0.3%;
+        padding: 1.1% 0.6% 0.6% 0.3%;
     }
 
     .legend1, .legend2 {

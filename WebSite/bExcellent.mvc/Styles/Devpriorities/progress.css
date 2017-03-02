@@ -92,7 +92,7 @@ p {
 }
 
     .user_tiles ul li {
-        background: rgba(0,0,0,0.8);
+        background: #fff;
         width: 48%;
         float: left;
         padding: 0 0% 44% 0;
@@ -100,10 +100,13 @@ p {
         margin: 0 2% 2% 0;
         list-style: none;
         cursor: pointer;
+        border: 1px solid #666;
     }
 
+
         .user_tiles ul li:hover {
-            background: rgba(0,0,0,1);
+            background: #fff;
+            border:1px solid #23a1a7;
         }
 
             .user_tiles ul li:hover p, .user_tiles ul li:hover span {
@@ -112,7 +115,7 @@ p {
 
         .user_tiles ul li p {
             text-transform: uppercase;
-            color: #fff;
+            color: #333;
             margin: 0;
             padding: 0 4% 2% 4%;
         }
@@ -865,7 +868,7 @@ p {
     }
 
     .user_tiles {
-        font-size:160%;
+        font-size: 160%;
     }
 }
 

@@ -237,13 +237,10 @@
 
 
 #resetbtn, #ChangePassbtn {
-    background: none repeat scroll 0 0 #23a1a7;
-    border-top: 1px solid #23a1a7;
-    border-bottom: 5px solid #168f95;
-    border-left: 1px solid #23a1a7;
-    border-right: 1px solid #23a1a7;
-    color: #fff !important;
-    padding: 5px 15px 3px 15px;
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #23a1a7;
+    color: #23a1a7 !important;
+    padding: 5px 15px 5px 15px;
     font-weight: 500;
     font-size: 130%;
     float: right;
@@ -251,10 +248,7 @@
 
     #resetbtn:hover, #ChangePassbtn:hover {
         background: none repeat scroll 0 0 #fff;
-        border-top: 1px solid #eb4830;
-        border-bottom: 5px solid #eb4830;
-        border-left: 1px solid #eb4830;
-        border-right: 1px solid #eb4830;
+        border: 1px solid #eb4830;
         color: #eb4830 !important;
     }
 

@@ -471,28 +471,22 @@ body {
 }
 
 .boxone a {
-    background: #23a1a7;
+    background: #fff;
     text-decoration: none;
-    padding: 5px 8px 4px 8px;
+    padding: 5px 8px 7px 8px;
     margin: 0 6%;
-    font-size: 130%;
-    color: #fff;
+    font-size: 150%;
+    color: #23a1a7;
     font-weight: 500;
-    border-top: 1px solid #23a1a7;
-    border-left: 1px solid #23a1a7;
-    border-right: 1px solid #23a1a7;
-    border-bottom: 3px solid #037277;
+    border: 1px solid #23a1a7;
     float: right;
     text-align: center;
 }
 
     .boxone a:hover {
         background: #fff;
-        color: #23a1a7;
-        border-top: 1px solid #23a1a7;
-        border-left: 1px solid #23a1a7;
-        border-right: 1px solid #23a1a7;
-        border-bottom: 3px solid #037277;
+        color: #eb4830;
+        border: 1px solid #eb4830;
     }
 
 .boxbottom {
@@ -1024,14 +1018,11 @@ body {
 }
 
     .givefbBtn a {
-        background: #23a1a7;
+        background: #fff;
         padding: 3% 15% 3% 19%;
         text-decoration: none;
-        color: #fff;
-        border-top: 1px solid #23a1a7;
-        border-left: 1px solid #23a1a7;
-        border-right: 1px solid #23a1a7;
-        border-bottom: 3px solid #077479;
+        color: #23a1a7;
+        border: 1px solid #23a1a7;
         font-weight: 600;
         margin-top: 2%;
         white-space: nowrap;
@@ -1040,11 +1031,8 @@ body {
 
         .givefbBtn a:Hover {
             background: #fff;
-            color: #23a1a7;
-            border-top: 1px solid #23a1a7;
-            border-left: 1px solid #23a1a7;
-            border-right: 1px solid #23a1a7;
-            border-bottom: 3px solid #077479;
+            color: #eb4830;
+            border: 1px solid #eb4830;
             text-decoration: none;
         }
 
@@ -3775,8 +3763,8 @@ body {
 
 
     .boxone a {
-        font-size: 85%;
-        padding: 4px 8px 2px 8px;
+        font-size: 100%;
+        padding: 4px 8px 4px 8px;
         width: 60px;
         margin-right: 2%;
     }
