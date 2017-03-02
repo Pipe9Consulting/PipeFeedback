@@ -14,10 +14,11 @@
             $('.scroll1').slimScroll();
         });
     </script>
-    <div class="pageholder">
-        <div class="breadcrumb" style="margin:1% 0 3% 0;">
+      <div class="breadcrumb" style="margin:0% 0 3% 0; width:100%">
             <a href="../Common/Index">Home </a>> Program Definitions
         </div>
+    <div class="pageholder">
+      
         <div class="termsandpolicy" style="margin-top: -1.8%;">
             <h1>Program Definitions</h1>
             <div class="signuptile">
@@ -39,8 +40,8 @@
                <%-- <h1>Microsoft HSP</h1>--%>
                 <%--    <div class="scroll1">--%>
                 <p>
-                    The <strong>Role Excellence Profile</strong> is a business tool that aligns the work of teams to a definition, 
-                    or standard, of excellence for the role they perform. <strong>Role Excellence Profile</strong> Feedback is intended to promote the definition, creation, and adoption of strategies, tools, processes, readiness and best practices that aid and accelerate development and the achievement of excellence in role. 
+                    The <span>Role Excellence Profile</span> is a business tool that aligns the work of teams to a definition, 
+                    or standard, of excellence for the role they perform. <span>Role Excellence Profile</span> Feedback is intended to promote the definition, creation, and adoption of strategies, tools, processes, readiness and best practices that aid and accelerate development and the achievement of excellence in role. 
 
                 </p>
 

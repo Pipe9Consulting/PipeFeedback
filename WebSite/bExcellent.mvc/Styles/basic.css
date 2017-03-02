@@ -45,10 +45,12 @@
     padding: 0.5% 2% 2% 1.5%;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
     border-radius: 7px;
+    border:1px solid #23a1a7
 }
 
     #basic-forgetPassword h1 {
         font-weight: normal;
+        margin-top:20px;
     }
 
 #forgetpassword {
@@ -66,9 +68,9 @@
 
 .close {
     background: url('../Images/Common/popup_close.png') no-repeat left center !important;
-    background-size: 60px 60px !important;
-    width: 60px;
-    height: 60px;
+    background-size: 45px 45px !important;
+    width: 45px;
+    height: 45px;
     opacity: 1;
     color: #fff;
     font-size: 41px;
@@ -88,7 +90,7 @@
         cursor: pointer;
         filter: alpha(opacity=50);
         background: url('../Images/Common/popup_closeH.png') no-repeat left center !important;
-        background-size: 60px 60px !important;
+        background-size: 45px 45px !important;
         opacity: 1;
     }
 
@@ -386,20 +388,10 @@
 
     .close {
         background-size: 40px 40px !important;
-        margin-top: -9% !important;
-        margin-right: -19% !important;
-    }
-
-    .close {
-        background-size: 40px 40px !important;
-        margin-top: -8% !important;
-        margin-right: -15% !important;
     }
 
         .close:hover {
             background-size: 40px 40px !important;
-            margin-top: -8% !important;
-            margin-right: -15% !important;
         }
 }
 

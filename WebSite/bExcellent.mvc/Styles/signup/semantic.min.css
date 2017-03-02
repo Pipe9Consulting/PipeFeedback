@@ -13146,28 +13146,28 @@ a.ui.red.label:hover, a.ui.red.labels .label:hover {
 
 .ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
     background: rgba(255,255,255,.1);
-    color: #fff;
+    color: #23a1a7;
 }
 
 .ui.inverted.menu .item .menu .link.item:hover, .ui.inverted.menu .item .menu a.item:hover {
     background: 0 0;
-    color: #fff;
+    color: #23a1a7;
 }
 
 .ui.inverted.menu .dropdown.item:active, .ui.inverted.menu .link.item:active, .ui.inverted.menu a.item:active {
     background: rgba(255,255,255,.15);
-    color: #fff;
+    color: #23a1a7;
 }
 
 .ui.inverted.menu .active.item {
     box-shadow: none!important;
     background: rgba(255,255,255,.2);
-    color: #fff!important;
+    color: #23a1a7!important;
 }
 
 .ui.inverted.vertical.menu .item .menu .active.item {
     background: 0 0;
-    color: #fff;
+    color: #23a1a7;
 }
 
 .ui.inverted.pointing.menu .active.item:after {
