@@ -547,8 +547,8 @@ p {
 
 .blankBox {
     float: left;
-    background: #000;
-    padding-bottom: 20.2%;
+    background: #fff;
+    padding-bottom: 19.2%;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
@@ -564,7 +564,7 @@ p {
     position: relative;
     vertical-align: middle;
     padding-top: 19%;
-    color: #fff;
+    color: #000;
     font-size: 130%;
 }
 
