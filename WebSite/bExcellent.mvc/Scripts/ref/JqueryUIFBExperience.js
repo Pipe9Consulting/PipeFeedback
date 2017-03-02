@@ -13070,14 +13070,14 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 			        pixelMouse = 338;
 			    }
 			} else if ($(window).width() == 1920) {
-			    if (pixelMouse < 96) {
-			        pixelMouse = 96;
-			    } else if (pixelMouse > 109 && pixelMouse < 202) {
-			        pixelMouse = 202;
-			    } else if (pixelMouse > 210 && pixelMouse < 303) {
-			        pixelMouse = 303;
-			    } else if (pixelMouse > 314 && pixelMouse < 407) {
-			        pixelMouse = 407;
+			    if (pixelMouse < 146) {
+			        pixelMouse = 146;
+			    } else if (pixelMouse > 160 && pixelMouse < 307) {
+			        pixelMouse = 307;
+			    } else if (pixelMouse > 318 && pixelMouse < 456) {
+			        pixelMouse = 456;
+			    } else if (pixelMouse > 471 && pixelMouse < 612) {
+			        pixelMouse = 612;
 			    }
 			} else if ($(window).width() == 2160) {
 			    if (pixelMouse < 109) {
