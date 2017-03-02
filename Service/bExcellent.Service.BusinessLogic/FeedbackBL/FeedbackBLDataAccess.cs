@@ -170,7 +170,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                 var userName = user.User.FirstName + " " + user.User.LastName;
                 var rolename = user.POE.Name;
                 var contentstring = Constant.SelfFeedbackCompletedNew;
-                var subject = "SelfFeedback Completed";
+                var subject = "Thank you for completing Self-Feedback";
                 var to = user.User.EmailAddress;
                 var emailContenttemp = string.Empty;
                 var emailContent = string.Empty;
@@ -189,7 +189,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                 var userName = user.User.FirstName + " " + user.User.LastName;
                 var rolename = user.POE.Name;
                 var contentstring = Constant.ManagerFeedbackCompleted;
-                var subject = "SelfFeedback Completed";
+                var subject = "Thank you for completing Team-Feedback";
                 var to = user.User.EmailAddress;
                 var emailContenttemp = string.Empty;
                 var emailContent = string.Empty;

@@ -17,29 +17,29 @@
                 };
                 createchart.loadchartdata(topallChart, "topall");
                 //Team
-                var nxtallChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                                {
-                                    "name": "nxt",
-                                    "score": response.Team.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(nxtallChart, "nxtall");
+                //var nxtallChart = {
+                //    "values": [{
+                //        "name": "You",
+                //        "score": response.You.WcsiScore
+                //    },
+                //                {
+                //                    "name": "nxt",
+                //                    "score": response.Team.WcsiScore
+                //                }]
+                //};
+                //createchart.loadchartdata(nxtallChart, "nxtall");
                 //Sherpas
-                var rstallChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                                {
-                                    "name": "rst",
-                                    "score": response.Sherpas.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(rstallChart, "rstall");
+                //var rstallChart = {
+                //    "values": [{
+                //        "name": "You",
+                //        "score": response.You.WcsiScore
+                //    },
+                //                {
+                //                    "name": "rst",
+                //                    "score": response.Sherpas.WcsiScore
+                //                }]
+                //};
+               // createchart.loadchartdata(rstallChart, "rstall");
                 //Previous
                 var prvallChart = {
                     "values": [{
@@ -54,41 +54,41 @@
                 createchart.loadchartdata(prvallChart, "prvall");
 
                 //Tenure
-                var tenureChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                                {
-                                    "name": "tenure",
-                                    "score": response.Tenure.TenureBelow12.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(tenureChart, "tenures");
+                //var tenureChart = {
+                //    "values": [{
+                //        "name": "You",
+                //        "score": response.You.WcsiScore
+                //    },
+                //                {
+                //                    "name": "tenure",
+                //                    "score": response.Tenure.TenureBelow12.WcsiScore
+                //                }]
+                //};
+                //createchart.loadchartdata(tenureChart, "tenures");
 
-                var allallChart = {
-                    "values": [{
-                        "name": "You",
-                        "score": response.You.WcsiScore
-                    },
-                        {
-                            "name": "comm",
-                            "score": response.Community.WcsiScore
-                        },
-                                {
-                                    "name": "Top",
-                                    "score": response.Team.WcsiScore
-                                },
-                                {
-                                    "name": "Last",
-                                    "score": response.Sherpas.WcsiScore
-                                },
-                                {
-                                    "name": "Rest",
-                                    "score": response.Previous.WcsiScore
-                                }]
-                };
-                createchart.loadchartdata(allallChart, "allall");
+                //var allallChart = {
+                //    "values": [{
+                //        "name": "You",
+                //        "score": response.You.WcsiScore
+                //    },
+                //        {
+                //            "name": "comm",
+                //            "score": response.Community.WcsiScore
+                //        },
+                //                {
+                //                    "name": "Top",
+                //                    "score": response.Team.WcsiScore
+                //                },
+                //                {
+                //                    "name": "Last",
+                //                    "score": response.Sherpas.WcsiScore
+                //                },
+                //                {
+                //                    "name": "Rest",
+                //                    "score": response.Previous.WcsiScore
+                //                }]
+                //};
+                //createchart.loadchartdata(allallChart, "allall");
             },
             error: function () {
             }
