@@ -94,6 +94,7 @@ html, body {
     padding-bottom: 1%;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
     border-radius: 7px;
+    border: 1px solid #23a1a7;
 }
 
 /*.overallclose {
@@ -476,7 +477,7 @@ html, body {
 }
 
     #target li:hover p {
-        color: #ea3a1f;
+        color: #23a1a7;
     }
 
     #target li {
@@ -950,7 +951,7 @@ html, body {
 
 @media screen and (max-width: 1600px) and (min-width: 1024px) {
     .pane li p {
-        font-size: 13px !important;
+        font-size: 15px !important;
         line-height: 1.2;
     }
 

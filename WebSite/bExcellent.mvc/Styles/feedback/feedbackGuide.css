@@ -1141,7 +1141,7 @@ p {
 
 
     .rateSlider .ui-slider-handle {
-        background: url("../../Images/slider-handle.png") no-repeat scroll 30% 50% transparent;
+        background: url("../../Images/slider-handle.png") no-repeat scroll 25% 50% transparent;
     }
 
 
@@ -1165,7 +1165,7 @@ p {
 
 
     #selfFeedCont .questionPart {
-        margin-left: 18%;
+        margin-left: 22%;
     }
 
 
@@ -1256,8 +1256,8 @@ p {
     }
 
     .sliderdiv {
-        width: 600px !important;
-        right: -6.5%;
+        width: 63% !important;
+        right: -6%;
     }
 
     .OverallScale {
@@ -1297,13 +1297,13 @@ p {
 
 
     .ratingscaleTeamRemoved .teamUser {
-        margin-top: 1.8%;
+        margin-top: 1%;
     }
 
 
     .ratingscaleTeamRemoved .beginBtn {
         margin-top: -21%;
-        margin-right: -5.3%;
+        margin-right: -6%;
         text-indent: -4%;
     }
 
@@ -1355,7 +1355,7 @@ p {
     }
 
     .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
-        width: 4.2%;
+        width: 3.8%;
     }
 
     .teamFeedback .freqOverall .freqImg, .teamFeedback .capOverall .capImg, .teamFeedback .rateOverall .rateImg {

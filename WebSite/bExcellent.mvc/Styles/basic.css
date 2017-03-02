@@ -45,12 +45,12 @@
     padding: 0.5% 2% 2% 1.5%;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
     border-radius: 7px;
-    border:1px solid #23a1a7
+    border: 1px solid #23a1a7;
 }
 
     #basic-forgetPassword h1 {
         font-weight: normal;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
 #forgetpassword {
@@ -76,8 +76,8 @@
     font-size: 41px;
     font-weight: 300;
     text-shadow: none !important;
-    margin-top: -7% !important;
-    margin-right: -12% !important;
+    margin-top: -6% !important;
+    margin-right: -9% !important;
     font-family: arial;
     float: right;
 }
@@ -135,6 +135,8 @@
     font-size: 12px;
     background: url("../Images/error.png") no-repeat left;
     padding: 3px 0 3px 30px;
+    top: 15px;
+    position: relative;
 }
 
 

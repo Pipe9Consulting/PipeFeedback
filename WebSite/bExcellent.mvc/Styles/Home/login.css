@@ -393,10 +393,14 @@ p:empty {
         font-size: 150%;
     }
 
+    /*@media screen and (max-width:2000px) and (min-width:1801px)*/
     .errormsg {
         margin-bottom: 0px !important;
-        padding-left: 40px !important;
+        padding-left: 30px !important;
+        font-size: 17px !important;
+        top: 25px !important;
     }
+
 
     .loginscreen .btn {
         font-size: 150%;

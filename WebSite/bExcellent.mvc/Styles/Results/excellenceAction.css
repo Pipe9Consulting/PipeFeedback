@@ -2238,7 +2238,7 @@ standTable table {
 
 @media screen and (min-width: 1690px) and (max-width: 1929px) {
     .breadcrumb {
-        padding:.8% 1.6%  !important;
+        padding: .8% 1.6% !important;
     }
 
 
@@ -2730,10 +2730,6 @@ standTable table {
 
 @media screen and (min-width: 1359px) and (max-width: 1439px) {
 
-
-    .breadMenu {
-        margin: 2% 2% .5% 2% !important;
-    }
 
     .resultsQn span {
         padding: 3px 3px 2px 7px !important;

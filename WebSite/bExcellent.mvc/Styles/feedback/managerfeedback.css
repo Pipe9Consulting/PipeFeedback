@@ -1903,6 +1903,10 @@ h1 {
         width: 12% !important;
     }
 
+    #questions .slimScrollDiv {
+        padding-bottom: 34%;
+    }
+
 
     #option_menu {
         top: 24.4% !important;
@@ -1915,6 +1919,11 @@ h1 {
 
     .mngrfbGoal3 {
         height: 180px !important;
+    }
+
+
+    .noImportance .mngrfbGoal3 {
+        height: 270px !important;
     }
 
     .accordion-section-content p {
@@ -4438,7 +4447,7 @@ h1 {
     }
 
     .frequency h4 {
-        font-size: 120%;
+        font-size: 130%;
         width: 92%;
         margin: 3.5% 0 2% 4%;
         height: auto;
@@ -4815,7 +4824,7 @@ div.sceditor-toolbar {
     float: left;
     position: relative;
     margin: 2% 0;
-    padding-left: 5%;
+    padding-left: 9%;
 }
 
 .hidingImportance {
@@ -4927,7 +4936,7 @@ div.sceditor-toolbar {
         text-transform: uppercase;
         font-weight: bold;
         color: #000;
-        font-size: 90%;
+        font-size: 110%;
     }
 
     .slidercontent p {
