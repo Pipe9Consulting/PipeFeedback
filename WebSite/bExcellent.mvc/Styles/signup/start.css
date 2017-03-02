@@ -175,7 +175,7 @@ body {
 
 .startSmallTile {
     background: #eee;
-    opacity: 0.92;
+    opacity: 0.7;
     position: absolute;
     z-index: 99999;
     width: 101%;
@@ -197,6 +197,7 @@ body {
     opacity: .4 !important;
     background-size: 38% 33% !important;
     background: url(../../Images/start/managersync.png) top 20px right 20px no-repeat #fff;
+    border: 1px solid #666 !important;
 }
 
 
@@ -212,6 +213,7 @@ body {
     background: url(../../Images/start/communitySync.png) top 20px right 20px no-repeat #f6f6f6 !important;
     opacity: .4 !important;
     background-size: 38% 33% !important;
+    border: 1px solid #666 !important;
 }
 
 .startSyncNoOver {
@@ -888,9 +890,11 @@ body {
 @media screen and (max-width: 2000px) and (min-width: 1701px) {
 
     .startSmallTile {
-        width: 106.5%;
+        width: 101.5%;
         padding-bottom: 96.5%;
+        margin-left: -25px;
     }
+
 
     .managerSync .star_name, .communitySync .star_name {
         padding: 0px 0 0 37px;
@@ -927,7 +931,7 @@ body {
         padding: 1.5% 2% 2% 2%;
         right: -48.5%;
         top: 47%;
-        font-size:16px;
+        font-size: 16px;
     }
 
     .star_name {
@@ -984,7 +988,7 @@ body {
         padding: 1.5% 2% 2% 2%;
         right: 4.5%;
         top: 48%;
-        font-size:16px;
+        font-size: 16px;
     }
 
     .hideColumn {
