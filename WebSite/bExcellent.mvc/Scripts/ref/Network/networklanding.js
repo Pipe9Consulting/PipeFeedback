@@ -475,12 +475,12 @@ var network = {
         });
 
         //
-        $('.netmgr').live('click', function () {
-            $(this).toggleClass('selectmngr');
-        });
-        $('.netteam').live('click', function () {
-            $(this).toggleClass('selectmngr');
-        });
+        //$('.netmgr').live('click', function () {
+        //    $(this).toggleClass('selectmngr');
+        //});
+        //$('.netteam').live('click', function () {
+        //    $(this).toggleClass('selectmngr');
+        //});
         $('.netcust').live('click', function () {
             $(this).toggleClass('selectmngr');
         });
