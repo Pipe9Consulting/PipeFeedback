@@ -11,11 +11,11 @@
 #paidmember {
     border: 0;
 }
- 
+
 #cartlist {
     border: 0;
 }
- 
+
 .dropdowns {
     width: 100%;
 }
@@ -80,12 +80,12 @@
 }
 
 .accordion {
-        display: table;
-        width: 100%;
-        padding: 0% 0% 0% 0%;
-        position: relative;
-        height: 100%;
-    }
+    display: table;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    position: relative;
+    height: 100%;
+}
 
     .accordion a, .accordion h3 {
         display: table-cell;
@@ -93,9 +93,9 @@
         height: 100%;
     }
 
-    .accordion a.cacLogo {
-        padding-left: 30px;
-    }
+        .accordion a.cacLogo {
+            padding-left: 30px;
+        }
 
     .accordion h3 {
         cursor: pointer;
@@ -105,9 +105,9 @@
     }
 
 
-    .accordion h3:hover {
-        background: url(../../Images/menu_icon_hover.png) no-repeat center;
-    }
+        .accordion h3:hover {
+            background: url(../../Images/menu_icon_hover.png) no-repeat center;
+        }
 
     .accordion .down {
         background: url(../../Images/menu_icon_hover.png) no-repeat center;
@@ -284,7 +284,7 @@
         #target li a {
             width: 98% !important;
         }
- 
+
 
 .menuArrow {
     position: absolute;
@@ -420,7 +420,7 @@
 .headerLeft {
     float: left;
     width: 50%;
-    height:100%;
+    height: 100%;
 }
 
 #preloader {
@@ -462,9 +462,9 @@
     -o-user-select: none;
 }
 
-  
+
 @media screen and (max-width: 2600px) and (min-width: 2170px) {
-    
+
     .ui.menu {
         height: 80px;
     }
@@ -475,7 +475,7 @@
 }
 
 @media screen and (max-width: 2169px) and (min-width: 2001px) {
-    
+
     .ui.menu {
         height: 80px;
     }
@@ -500,40 +500,61 @@
     .ui.menu {
         height: 53px;
     }
+
+    .cacLogo img {
+        width: 24% !important;
+    }
 }
 
 @media screen and (max-width: 1669px) and (min-width: 1501px) {
 
-
+    .cacLogo img {
+        width: 24% !important;
+    }
 }
 
 @media screen and (max-width: 1500px) and (min-width: 1401px) {
 
     .bukatutup {
-            padding: 1% 0 1.1% 0;
+        padding: 1% 0 1.1% 0;
     }
+
     .ui.menu {
-        height:51px;
+        height: 51px;
+    }
+
+    .cacLogo img {
+        width: 24% !important;
     }
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1301px) {
 
     .bukatutup {
-        padding:1.1% 0 1.1% 0;
+        padding: 1.1% 0 1.1% 0;
     }
-    
+
+    .cacLogo img {
+        width: 24% !important;
+    }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1201px) {
     .bukatutup {
-        padding:1.2% 0 1.2% 0;
+        padding: 1.2% 0 1.2% 0;
     }
-    
+
+    .cacLogo img {
+        width: 24% !important;
+    }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1000px) {
-     .bukatutup {
-        padding:1.7% 0 1.7% 0;
+    .bukatutup {
+        padding: 1.7% 0 1.7% 0;
+    }
+
+    .cacLogo img {
+        width: 24% !important;
     }
 }

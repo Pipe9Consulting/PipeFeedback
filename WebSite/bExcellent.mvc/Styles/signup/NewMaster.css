@@ -953,6 +953,10 @@ html, body {
     .headerRight {
         width: 23%;
     }
+
+    .cacLogo img {
+        width: 52% !important;
+    }
 }
 /*Newly Added*/
 
@@ -1151,11 +1155,7 @@ html, body {
     }
 
     .headerMenu {
-        height: 80px;
-    }
-
-    .accordion {
-        height: 98%;
+        height: 100px;
     }
 
     .dropdown-content {
@@ -1163,7 +1163,7 @@ html, body {
     }
 
     .accordion h3, .accordion h3:hover, .accordion .down {
-        background-size: 30% 35%;
+        background-size: 30% 25%;
         background-position-y: center;
         width: 85px;
         float: left;

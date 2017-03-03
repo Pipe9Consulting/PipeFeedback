@@ -870,6 +870,14 @@ h1 {
         height: 18%;
     }
 
+    .termsandpolicy {
+        margin-top: 0px !important;
+    }
+
+    .signuptxt {
+        margin-top: 1.3%;
+    }
+
 
     .accordion a.cacLogo {
         padding-left: 3% !important;
@@ -880,6 +888,10 @@ h1 {
 @media screen and (min-width: 1700px) and (max-width:2200px) {
     .signuptile p {
         font-size: 20px;
+    }
+
+    .cacLogo img {
+        margin-left: 9px;
     }
 }
 
@@ -938,7 +950,7 @@ h1 {
         padding: 3% 3.8% 41% 3.8%;
     }
 
-    .terms p{
+    .terms p {
         font-size: 130% !important;
     }
 
@@ -965,7 +977,7 @@ h1 {
     }
 
     .accordion a.cacLogo {
-        padding-left: 3%;
+        padding-left: 2%;
         margin-top: 0px !important;
     }
 }
@@ -995,7 +1007,7 @@ h1 {
 
 
 .terms p span {
-    color:#000;
-    font-size:100%;
-    font-weight:700;
+    color: #000;
+    font-size: 100%;
+    font-weight: 700;
 }

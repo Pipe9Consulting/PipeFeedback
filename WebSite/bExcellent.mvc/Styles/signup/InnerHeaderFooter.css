@@ -188,7 +188,11 @@ html, body {
     }
 
     .ui.menu .item {
-        font-size: 1.1rem;
+        font-size: 1rem !important;
+    }
+
+    .cacLogo img {
+        width: 52% !important;
     }
 
     #notifyCont li a {
@@ -252,6 +256,10 @@ html, body {
     .headerMenu {
         height: 65px !important;
     }
+
+    .cacLogo img {
+        width: 52% !important;
+    }
 }
 
 
@@ -269,14 +277,19 @@ html, body {
     .headerMenu {
         height: 65px !important;
     }
+
+    .cacLogo img {
+        width: 52% !important;
+    }
 }
 
 
 
 @media screen and (max-width: 1930px) and (min-width: 1800px) {
     .cacLogo img {
-        width: 150px !important;
+        width: 65% !important;
     }
+
 
     .dropImage img {
         width: 450% !important;

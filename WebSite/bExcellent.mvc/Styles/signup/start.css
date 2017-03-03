@@ -616,6 +616,11 @@ body {
         left: 10px;
     }
 
+    .startSmallTile {
+        width: 102%;
+        padding-bottom: 92%;
+        margin-left: -35px;
+    }
 
     .startBox {
         height: 330px;
@@ -894,6 +899,8 @@ body {
         padding-bottom: 96.5%;
         margin-left: -25px;
     }
+
+
 
 
     .managerSync .star_name, .communitySync .star_name {
