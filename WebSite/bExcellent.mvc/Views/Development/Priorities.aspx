@@ -179,14 +179,15 @@
                             <div class="clearfix"></div>
                             <div id="animation_demo" class="calendarText">
                                 <div class="display slow">
-                                    <input class="slow L" id='date1' /><input class="slow L" id='date2' /><div class="clearfix"></div>
-                                    <label>Day</label>
+                                   <input class="slow L" id='month1' /><input class="slow L" id='month2' /><div class="clearfix"></div>
+                                    <label>Month</label>
                                 </div>
                             </div>
                             <div id="animation_demo" class="calendarText">
                                 <div class="display slow">
-                                    <input class="slow L" id='month1' /><input class="slow L" id='month2' /><div class="clearfix"></div>
-                                    <label>Month</label>
+                                      <input class="slow L" id='date1' /><input class="slow L" id='date2' /><div class="clearfix"></div>
+                                    <label>Day</label>
+                                   
                                 </div>
                             </div>
                             <div id="animation_demo" class="calendarText">
@@ -236,15 +237,16 @@
                             <div class="clearfix"></div>
                             <div id="animation_demo" class="calendarText">
                                 <div class="display slow">
-                                    <input class="slow L" id='coachDate1' /><input class="slow L" id='coachDate2' />
-                                    <div class="clearfix"></div>
-                                    <label>Day</label>
+                                   <input class="slow L" id='coachMonth1' /><input class="slow L" id='coachMonth2' /><div class="clearfix"></div>
+                                    <label>Month</label>
                                 </div>
                             </div>
                             <div id="animation_demo" class="calendarText">
                                 <div class="display slow">
-                                    <input class="slow L" id='coachMonth1' /><input class="slow L" id='coachMonth2' /><div class="clearfix"></div>
-                                    <label>Month</label>
+                                      <input class="slow L" id='coachDate1' /><input class="slow L" id='coachDate2' />
+                                    <div class="clearfix"></div>
+                                    <label>Day</label>
+                                   
                                 </div>
                             </div>
                             <div id="animation_demo" class="calendarText">

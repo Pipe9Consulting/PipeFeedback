@@ -457,8 +457,15 @@ var devLanding = {
             success: function (response) {
                 //alert(response.StartDate);
                 // debugger;
+               
                 $('#tmStartDate').html("Start Date<br />" + response.StartDate);
                 $('#tmEndDate').html("Next Coaching Date<br />" + response.EndDate);
+                var date = response.EndDate.split('.')[2];
+                var endingdate = response.EndDate;
+                if (date == 001) {
+                    endingdate = "01.07.2017";
+                }
+                
                 $('#dayRemaining').html(response.RemainingDays + " Days Remaining");
                 $('#completedDays').html(response.CompletedDays + " Days Completed");
                 var percentage = (response.CompletedDays / response.OverallScore) * 100;
@@ -485,7 +492,7 @@ var devLanding = {
                     $('#year' + (k + 1)).val(splitStartdate[2][k]).change();
                 }
                 //End date
-                var splitEnddate = response.EndDate.split('.');
+                var splitEnddate = endingdate.split('.');
                 for (var l = 0; l < splitEnddate[0].length; l++) {
                     $('#coachDate' + (l + 1)).val(splitEnddate[0][l]).change();
                 }
@@ -515,7 +522,13 @@ var devLanding = {
                     }
                 }
                 //Remaining days
-                var remainingDays = response.RemainingDays.toString();
+                var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+                var firstDate = new Date(splitStartdate[2], splitStartdate[1], splitStartdate[0]);
+                var secondDate = new Date(splitEnddate[2], splitEnddate[1], splitEnddate[0]);
+
+                var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay)));
+                //alert(diffDays);
+                var remainingDays = diffDays.toString();// response.RemainingDays.toString();
                 if (remainingDays.length == 1) {
                     $('#remainingDays1').val(0).change();
                     $('#remainingDays2').val(0).change();
