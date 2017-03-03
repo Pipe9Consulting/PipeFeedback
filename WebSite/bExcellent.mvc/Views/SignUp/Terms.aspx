@@ -30,7 +30,7 @@
 
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb">
-            <a href="../Common/Index">Home </a>> Terms of Services
+            <a href="../Common/Index">Home </a> <a>></a> <a>Terms of Services</a>
         </div>
     </div>
 

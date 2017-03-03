@@ -1007,9 +1007,15 @@ p {
     }
 
     .ratingscaleTeamRemoved .beginBtn {
-        margin-top: -20%;
-        margin-right: -4.7%;
+        margin-top: -19%;
+        margin-right: -6%;
     }
+
+     .ratingscaleTeamRemoved .beginBtn:hover {
+        margin-top: -19% !important;
+        margin-right: -6% !important;
+    }
+
 
 
     .ratingscaleRemoved .teamUser span {

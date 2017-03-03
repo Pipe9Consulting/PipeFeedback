@@ -958,16 +958,23 @@ html, body {
         width: 52% !important;
     }
 }
-/*Newly Added*/
 
 
 @media screen and (min-width: 2900px) and (max-width: 3500px) {
 
+    .breadcrumb a {
+        font-size: 25px !important;
+    }
+
+    .cacLogo img {
+        width: 65%;
+    }
 
     .pane li p {
-        font-size: 35px !important;
-        line-height: 1.2;
+        font-size: 37px !important;
+        line-height: 1.1;
     }
+
 
     .bukatutup span img {
         width: 70%;
@@ -976,12 +983,13 @@ html, body {
     }
 
     .accordion h3 {
-        width: 140px;
-        background-size: 30% auto;
+        background-size: 31% 25% !important;
+        width: 140px !important;
     }
 
+
         .accordion h3:hover {
-            background-size: 30% auto;
+            background-size: 31% 25% !important;
         }
 
 

@@ -3344,6 +3344,8 @@
     <Content Include="Images\Start\feedbackresults_small.png" />
     <Content Include="Images\Start\feedbackresults_small_h.png" />
     <Content Include="Images\Start\feedbackresults_small_Selected.png" />
+    <Content Include="Images\Start\goalIcon.png" />
+    <Content Include="Images\Start\goalIcon2.png" />
     <Content Include="Images\Start\header_arrow.png" />
     <Content Include="Images\Start\hover_arrow.png" />
     <Content Include="Images\Start\hover_arrow_up.png" />
@@ -3366,7 +3368,10 @@
     <Content Include="Images\Start\provideTFB.png" />
     <Content Include="Images\Start\provideTFB_h.png" />
     <Content Include="Images\Start\provideTFB_Selected.png" />
+    <Content Include="Images\Start\provide_samll.png" />
+    <Content Include="Images\Start\provide_samll_h.png" />
     <Content Include="Images\Start\provide_samll_TFB_h.png" />
+    <Content Include="Images\Start\provide_small_Selected.png" />
     <Content Include="Images\Start\resultnew_Icon.png" />
     <Content Include="Images\Start\resultnew_Icon_h.png" />
     <Content Include="Images\Start\resultsFB.png" />

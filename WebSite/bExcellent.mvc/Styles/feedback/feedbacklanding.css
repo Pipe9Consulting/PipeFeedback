@@ -24,21 +24,21 @@ body {
     }
 
 #selectallTeam {
-    background: #23a1a7;
+    background: #fff;
     border: 1px solid #23a1a7;
     float: right;
     margin-right: 16%;
     margin-top: -4%;
     padding: .4% 1.5% .4% 1.5%;
-    color: #fff;
+    color: #23a1a7;
     font-weight: 600;
 }
 
     #selectallTeam:hover {
         background: #fff;
-        border: 1px solid #23a1a7;
+        border: 1px solid #eb4830;
         float: right;
-        color: #23a1a7;
+        color: #eb4830;
     }
 
 
@@ -835,7 +835,7 @@ body {
 
 .givefbContent {
     border: 1px solid #777;
-    width: 84%;
+    width: 100%;
     /*margin-left: 1.5%;*/
     float: left;
     padding: 1% 0 1% 2%;
@@ -1198,7 +1198,7 @@ body {
 .paginationfb ul li a {
     background: url(../../images/feedback/pageBg.png) no-repeat center;
     background-size: 100% 100%;
-    padding: 2px 8px 3px 8px;
+    padding: 4px 8px 2px 8px;
     line-height: 30px;
     font-size: 100%;
     color: #fff;
@@ -1208,6 +1208,7 @@ body {
 
     .paginationfb ul li a:hover {
         background: url(../../images/feedback/pageBgHover.png) no-repeat;
+        background-size: 98% 98% !important;
         cursor: pointer;
         color: #000;
     }
@@ -1216,7 +1217,9 @@ body {
 .activeArrow {
     background: url(../../images/feedback/pageBgHover.png) repeat !important;
     color: #000 !important;
+    background-size: 98% 98% !important;
 }
+
 
 .msgsmallselectArrow {
     background: url(../../images/feedback/selecttick.png) no-repeat top right #000 !important;
@@ -2071,7 +2074,10 @@ body {
         background-size: 100% 85%;
     }
 
-
+    .paginationfb {
+        margin-top: 30px;
+        margin-left: 25px;
+    }
 
 
     .fblthirdBox {
@@ -2099,7 +2105,6 @@ body {
         height: 220px;
     }
 
-    /*@media screen and (max-width:2000px) and (min-width:1701px)*/
     #takeFb .takefbcontent {
         width: 35%;
     }
@@ -2130,7 +2135,7 @@ body {
 
 
     .histroyfb .givefbmessageDummy {
-        padding-bottom: 22.2%;
+        padding-bottom: 20.7%;
     }
 
     .popup p {
@@ -2172,6 +2177,7 @@ body {
 
     .historyfbslide {
         height: 480px;
+        width: 50%;
     }
 
     .givefbmessage {
@@ -2179,7 +2185,7 @@ body {
     }
 
     #selectallTeam {
-        margin-right: 32%;
+        margin-right: 24.5%;
         margin-top: -3.2%;
     }
 
@@ -2195,9 +2201,8 @@ body {
 
 
     .givefbContent {
-        padding-bottom: .5%;
         padding: 1% 0 1% 1.5%;
-        width: 68%;
+        width: 75.5%;
     }
 
     .takefeedback h2 {
@@ -3372,11 +3377,16 @@ body {
 
 
     #selectallTeam {
-        border: 0;
-        margin-right: 16%;
+        margin-right: 2.2%;
         margin-top: -4%;
         padding: .3% 1.5%;
     }
+
+    .paginationfb {
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+
 
 
     .grpFbbaseTile {
@@ -3509,7 +3519,7 @@ body {
     }
 
     .paginationfb ul li a {
-        padding: 1px 5px 1px 4px;
+        padding: 2px 6px 1px 5px;
         font-size: 90%;
         line-height: 25px;
     }
@@ -3585,7 +3595,8 @@ body {
     }
 
     .histroyfb .givefbmessageDummy {
-        padding-bottom: 20.2%;
+        padding-bottom: 18%;
+        margin-bottom: 1.5%;
     }
 
     .givefbmessageDummy {
@@ -3616,7 +3627,7 @@ body {
     }
 
     .historyBtn {
-        margin-top: 3%;
+        margin-top: 0%;
     }
 
     .incompleteBtn a {
@@ -3721,20 +3732,27 @@ body {
     }
 
     .givefbmessage {
-        padding-bottom: 3px;
+        padding: .5% 1%;
+        margin-bottom: 1.5%;
     }
 
-        .givefbmessage .incompleteBtn a {
-            font-size: 65%;
-            padding: .7% 2% 1% 2%;
-        }
+
+    .givefbContent {
+        width: 97.8% !important;
+    }
+
+
+    .givefbmessage .incompleteBtn a {
+        font-size: 65%;
+        padding: .7% 2% 1% 2%;
+    }
 
     .givefbmessageDummy2 {
         padding-bottom: 10.7%;
     }
 
     .givefbBtn {
-        width: 13%;
+        width: 10%;
         margin-bottom: 3%;
     }
 
@@ -3885,6 +3903,7 @@ body {
 
 .incompfbslide, .historyfbslide {
     float: left;
+    width: 50%;
 }
 
 .popupbg {

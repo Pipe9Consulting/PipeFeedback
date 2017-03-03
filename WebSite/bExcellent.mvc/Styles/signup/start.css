@@ -96,7 +96,7 @@ body {
 .profile {
     background: url(../../Images/images/profileIcon.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
 }
 
     .profile:hover {
@@ -108,7 +108,7 @@ body {
 .feedback {
     background: url(../../Images/start/completeSFB.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
 }
 
     .feedback:hover {
@@ -120,7 +120,7 @@ body {
 .standing {
     background: url(../../Images/start/resultsnew.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
 }
 
     .standing:hover {
@@ -130,13 +130,13 @@ body {
     }
 
 .goal {
-    background: url(../../Images/images/goalIcon.png) top 20px right 20px no-repeat #fff;
+    background: url(../../Images/start/goalIcon.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
 }
 
     .goal:hover {
-        background: url(../../Images/images/goalIcon2.png) top 20px right 20px no-repeat #fff;
+        background: url(../../Images/start/goalIcon2.png) top 20px right 20px no-repeat #fff;
         background-size: 18% 33%;
         border: 1px solid #eb4830;
     }
@@ -144,7 +144,7 @@ body {
 .networks {
     background: url(../../Images/start/provideTFB.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
 }
 
     .networks:hover {
@@ -162,7 +162,7 @@ body {
     float: left;
     margin-right: 6%;
     height: 330px;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
     position: relative;
 }
 
@@ -237,7 +237,7 @@ body {
     float: left;
     height: 330px;
     position: relative;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
 }
 
 
@@ -250,7 +250,7 @@ body {
 .sync {
     background: url(../../Images/start/trackGoals.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
 }
 
     .sync:hover {
@@ -262,7 +262,7 @@ body {
 .mentor {
     background: url(../../Images/images/mentorIcon.png) top 20px right 20px no-repeat #fff;
     background-size: 18% 33%;
-    border: 1px solid #aaa;
+    border: 1px solid #23a1a7;
 }
 
     .mentor:hover {

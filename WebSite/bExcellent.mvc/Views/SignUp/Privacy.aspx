@@ -40,7 +40,7 @@
         }
     </style>
     <div class="breadcrumb">
-        <a href="../Common/Index">Home </a>> Privacy Policy
+        <a href="../Common/Index">Home </a><a>></a> <a>Privacy Policy</a>
     </div>
     <div class="pageholder">
 

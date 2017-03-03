@@ -1433,9 +1433,10 @@ h1 {
         height: 290px !important;
     }
 
-    .noImportance .mngrfb {
+    .noImportance, .noImportance .mngrfb {
         height: 385px !important;
     }
+
 
 
     .sticklr > li > a > p {
@@ -1904,7 +1905,7 @@ h1 {
     }
 
     #questions .slimScrollDiv {
-        padding-bottom: 34%;
+        padding-bottom: 20%;
     }
 
 
@@ -5052,6 +5053,12 @@ div.sceditor-toolbar {
 
 
 .questions .dummy-slimscrollbar-backgound .slimScrollBar, .questions .dummy-slimscrollbar-backgound .slimScrollRail {
+    opacity: 0 !important;
+    top: 0px !important;
+}
+
+
+.questions .lessthanScale .slimScrollBar, .questions .lessthanScale .slimScrollRail {
     opacity: 0 !important;
     top: 0px !important;
 }

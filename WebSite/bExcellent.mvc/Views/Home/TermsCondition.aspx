@@ -14,12 +14,12 @@
             $('.scroll1').slimScroll();
         });
     </script>
-      <div class="breadcrumb" style="margin:0% 0 3% 0; width:100%">
-            <a href="../Common/Index">Home </a>> Program Definitions
-        </div>
+    <div class="breadcrumb" style="margin: 0% 0 3% 0; width: 100%">
+        <a href="../Common/Index">Home </a><a>> </a><a>Program Definitions</a>
+    </div>
     <div class="pageholder">
-      
-        <div class="termsandpolicy" style="margin-top: -1.8%;">
+
+        <div class="termsandpolicy">
             <h1>Program Definitions</h1>
             <div class="signuptile">
                 <div class="img">
@@ -32,12 +32,11 @@
         </div>
 
 
-        <div class="signuptxt terms">
-
+        <div class="signuptxt terms proDef">
 
             <div>
 
-               <%-- <h1>Microsoft HSP</h1>--%>
+                <%-- <h1>Microsoft HSP</h1>--%>
                 <%--    <div class="scroll1">--%>
                 <p>
                     The <span>Role Excellence Profile</span> is a business tool that aligns the work of teams to a definition, 
@@ -74,7 +73,7 @@
 
                     <li><span></span>
                         <div>
-                          Access to individual information and results cannot be provided to business managers, sales managers, or others who work on behalf of the employee’s direct management chain or outside of the Role Excellence Profile Feedback process. 
+                            Access to individual information and results cannot be provided to business managers, sales managers, or others who work on behalf of the employee’s direct management chain or outside of the Role Excellence Profile Feedback process. 
                         </div>
                     </li>
                 </ul>
@@ -82,11 +81,11 @@
             </div>
 
 
-            <div style="clear: both; margin-top:5%"></div>
+            <div style="clear: both; margin-top: 5%"></div>
 
 
 
-           <%-- <h1>Microsoft MBS</h1>
+            <%-- <h1>Microsoft MBS</h1>
           
             <p>
                 The <strong>Role Excellence Profile</strong> is a business tool that aligns the work of teams to definitions of excellence for the role they perform. The <strong>World Class Selling project</strong> is a business initiative that promotes the definition and adoption of World Class Selling strategies, tools, processes, readiness and practices.
@@ -125,7 +124,6 @@
                     </div>
                 </li>
             </ul>--%>
-           
         </div>
     </div>
 </asp:Content>

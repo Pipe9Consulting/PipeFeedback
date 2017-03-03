@@ -114,9 +114,9 @@ standTable table {
     }
 
 .number {
-    font-size: 400%;
+    font-size: 300%;
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 3%;
     color: #333;
 }
@@ -1361,7 +1361,6 @@ h1, .tsf {
     left: 5%;
     width: 90%;
     text-transform: uppercase;
-    font-size: 130%;
     line-height:1;
 }
 
@@ -2533,8 +2532,7 @@ h1, .tsf {
     }
 
     .number {
-        font-size: 250%;
-        bottom: 30%;
+        bottom: 25%;
     }
 
     .dwnstatus {

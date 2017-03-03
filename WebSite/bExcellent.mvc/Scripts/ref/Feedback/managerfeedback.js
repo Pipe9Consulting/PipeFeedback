@@ -359,22 +359,25 @@
                 //else {
                 //    $('.mngrfb').parents('.slimScrollDiv').find('.slimScrollBar').hide();
                 //}
-                
+               
                 if (userresponse.length <= 3 && $('#capabilityMode').val() == 0) {
-                    $('.slimScrollDiv').addClass('lessthanScale');
+
                     $('.mngrfb').parents('.slimScrollDiv').addClass('dummy-slimscrollbar-backgound');
                     $('.mngrfb').parents('.slimScrollDiv').find('.slimScrollBar').addClass('dummy-slimscrollbar-backgound');
-                }else
-                if (userresponse.length <= 2) {
-                    $('.mngrfb').parents('.slimScrollDiv').addClass('dummy-slimscrollbar-backgound');
-                    $('.mngrfb').parents('.slimScrollDiv').find('.slimScrollBar').addClass('dummy-slimscrollbar-backgound');
-                }
-                else {
-                    // $('.mngrfb').slimScroll();
-                    $('.mngrfb').parents('.slimScrollDiv').find('.slimScrollBar').hide();
-                }
+                } else
+                    if (userresponse.length <= 2) {
+                        $('.mngrfb').parents('.slimScrollDiv').addClass('dummy-slimscrollbar-backgound');
+                        $('.mngrfb').parents('.slimScrollDiv').find('.slimScrollBar').addClass('dummy-slimscrollbar-backgound');
+                    }
+                    else {
+                        // $('.mngrfb').slimScroll();
+                        $('.mngrfb').parents('.slimScrollDiv').find('.slimScrollBar').hide();
+                    }
                 if (manager_feedback.userratingcount != 0) {
                     $('.mngrfb').parents('.slimScrollDiv').addClass('noImportance');
+                    if (userresponse.length <= 3) {
+                        $('.mngrfb').parents('.slimScrollDiv').addClass('lessthanScale');
+                    }
                 }
 
             },
@@ -499,7 +502,7 @@
     saveQuestionData: function (questionids, current) {
         //alert(questionids + "," + current);
         //debugger;
-        
+
         var response = questionids.slice(0, -1).split(",");
         //var capability = questionids.slice(0, -1).split(",")[0].replace('Qno', 'capability');
         // alert(capability);
@@ -1469,7 +1472,7 @@ $(document).ready(function () {
         $("#preloader").fadeIn();
         setTimeout(function () {
             manager_feedback.completefeedback();
-            
+
             var result = $('#resultmode').val();
             if (result == "True") {
                 window.location = "../../Home/Start";

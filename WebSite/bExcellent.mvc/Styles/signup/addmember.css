@@ -27,8 +27,9 @@ body {
 
 
 .slimScrollBar, .slimScrollRail {
-    margin-top: 2% !important;
+    height: 100px !important;
 }
+
 
 .signuptile .img, .signuptile p {
     position: absolute;
@@ -611,7 +612,6 @@ h1 {
 
 .pageholder h1 {
     text-transform: uppercase;
-    font-weight: 600;
 }
 
 .signuptxt b {
@@ -857,12 +857,11 @@ h1 {
 }
 
 
-
-@media screen and (min-width: 2200px) and (max-width:3500px) {
+@media screen and (min-width: 2800px) and (max-width:3500px) {
     .signuptile p {
         bottom: 6%;
         left: 5%;
-        font-size: 21px;
+        font-size: 32px;
     }
 
     .signuptile .img img {
@@ -870,14 +869,68 @@ h1 {
         height: 18%;
     }
 
+    .signuptxt h5 {
+        font-size: 160%;
+    }
+
+    .signuptxt h6 {
+        font-size: 160%;
+    }
+
+    .slimScrollBar, .slimScrollRail {
+        margin-top: 0% !important;
+        width: 10px !important;
+        height: 30% !important;
+    }
+
+    .terms a, .privacy a {
+        font-size: 25px;
+    }
+
     .termsandpolicy {
         margin-top: 0px !important;
     }
 
-    .signuptxt {
-        margin-top: 1.3%;
+    .accordion a.cacLogo {
+        padding-left: 3% !important;
     }
 
+    h1, .tsf {
+        font-size: 37px;
+        padding: 10px 0;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .cacLogo img {
+        width: 330px;
+    }
+
+    .terms li div {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 2200px) and (max-width:2800px) {
+    .signuptile p {
+        bottom: 6%;
+        left: 5%;
+        font-size: 26px;
+    }
+
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    .signuptile .img img {
+        width: 18%;
+        height: 18%;
+    }
 
     .accordion a.cacLogo {
         padding-left: 3% !important;
@@ -921,7 +974,7 @@ h1 {
     }
 
     .terms a, .privacy a {
-        font-size: 17px;
+        font-size: 100%;
     }
 
     .signuptxt strong {
@@ -955,6 +1008,10 @@ h1 {
     }
 
     p, b {
+        font-size: 120% !important;
+    }
+
+    .signuptile p {
         font-size: 150% !important;
     }
 
@@ -1010,4 +1067,9 @@ h1 {
     color: #000;
     font-size: 100%;
     font-weight: 700;
+}
+
+
+.proDef {
+    margin-top: 1.7%;
 }
