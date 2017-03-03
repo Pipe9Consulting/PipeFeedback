@@ -626,7 +626,7 @@ var feedback = {
     loadfbmenuHtml: function (poeid, role) {
         feedback.loadCommonContent();
         // debugger;
-        //alert(role);
+       // alert(role);
         if (role == 1) {
             //alert("1");
             $('.takeFBtile').show();
@@ -1400,10 +1400,14 @@ var feedback = {
                     if (data.FeedbackDetails.FeedbackStatus == 1) {
                         var hrefSingle1 = "/feedback/ResumeFeedbak?feedbackid=" + data.FeedbackDetails.FeedbackId + "&feedbacktype=" + data.FeedbackDetails.FeedbackType + "&feedbackfor=" + data.FeedbackDetails.RequestedForId + "&status=" + data.FeedbackDetails.FeedbackStatus + "&poeid=" + data.POE.POEId + "";
                         $('#isSelfResume').val(1);
+                        $('#takefbResume').show();
+                        $('#takeFb').hide();
                         $('#resumeSelf').attr("href", hrefSingle1);
                     } else {
                         $('#isSelfResume').val(0);
-                        $('#resumeSelf').attr("href", "")
+                        $('#takefbResume').hide();
+                        $('#takeFb').show();
+                        $('#resumeSelf').attr("href", "");
                     }
                     break;
                 } else {

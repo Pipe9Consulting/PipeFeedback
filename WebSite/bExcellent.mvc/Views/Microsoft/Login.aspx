@@ -12,7 +12,7 @@
     <script type="text/javascript">
         //        popup window for changepassword and frogetpassword///
         $(document).ready(function () {
-            document.cookie ="Showzoom=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            document.cookie = "Showzoom=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
             $('.afterlogin').hide();
             $('.checkt').hide();
             $('#beforeLogin').hide();
@@ -60,37 +60,38 @@
                 margin-left: 31.4%;
                 margin-top: 13.6% !important;
             }
+        }
 
-            @media screen and (max-width: 2000px) and (min-width: 1701px) {
-                .loginscreenleft {
-                    margin-left: 31.3%;
-                    margin-top: 9%;
-                }
+        @media screen and (max-width: 2000px) and (min-width: 1701px) {
+            .loginscreenleft {
+                margin-left: 31.3%;
+                margin-top: 9%;
+            }
+        }
+
+
+        @media screen and (max-width: 1700px) and (min-width: 1501px) {
+            .loginscreenleft {
+                margin-left: 31.3%;
+                margin-top: 6.8%;
             }
 
 
-            @media screen and (max-width: 1700px) and (min-width: 1501px) {
-                .loginscreenleft {
-                    margin-left: 31.3%;
-                    margin-top: 6.8%;
-                }
+            .loginscreen h1 {
+                font-size: 300%;
+            }
+        }
 
-
-                .loginscreen h1 {
-                    font-size: 300%;
-                }
+        @media screen and (max-width: 1500px) and (min-width: 1201px) {
+            .loginscreen h1 {
+                font-size: 250%;
             }
 
-            @media screen and (max-width: 1500px) and (min-width: 1201px) {
-                .loginscreen h1 {
-                    font-size: 250%;
-                }
-
-                .loginscreenleft {
-                    margin-left: 31.2%;
-                    margin-top: 6%;
-                }
+            .loginscreenleft {
+                margin-left: 31.2%;
+                margin-top: 6%;
             }
+        }
     </style>
     <body>
         <div class="popupbg">
@@ -250,7 +251,7 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                         </div>
                         <h1>Forgot your password?</h1>
                         <p style="margin-top: 5px;">
-                           Please enter the required information below and we will send you a password reminder email.
+                            Please enter the required information below and we will send you a password reminder email.
                         </p>
                         <p class="origin">
                             Enter your email
@@ -309,5 +310,6 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                     </form>
                 </div>
             </div>
+        </div>
     </body>
 </asp:Content>

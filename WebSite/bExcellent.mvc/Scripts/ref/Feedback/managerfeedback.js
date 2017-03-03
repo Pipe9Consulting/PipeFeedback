@@ -361,6 +361,7 @@
                 //}
                 
                 if (userresponse.length <= 3 && $('#capabilityMode').val() == 0) {
+                    $('.slimScrollDiv').addClass('lessthanScale');
                     $('.mngrfb').parents('.slimScrollDiv').addClass('dummy-slimscrollbar-backgound');
                     $('.mngrfb').parents('.slimScrollDiv').find('.slimScrollBar').addClass('dummy-slimscrollbar-backgound');
                 }else

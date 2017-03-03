@@ -1009,7 +1009,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
                 context.UpdateGoalDatesForTM(tmid, goaldate);
-                
+                SendEmailUpdated(goaldate, userid);
             }
         }
         public void SendEmailUpdated(DateTime goaldate, int userid)
@@ -1017,7 +1017,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
             // Log("WCF-SendEmail-IN");
             try
             {
-                Common.Common Common=new Common.Common();
+                Common.Common Common = new Common.Common();
                 var user = Common.GetUserDetailsByMappingId(userid);
                 string _from = ConfigurationManager.AppSettings["fromEmail"];
                 string emailServer = ConfigurationManager.AppSettings["mailServer"];
@@ -1025,14 +1025,20 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 string _pwd = ConfigurationManager.AppSettings["emailPassword"];
                 string _bcc = ConfigurationManager.AppSettings["bccEmail"];
                 string _to = ConfigurationManager.AppSettings["mailTo1"];
-
+                var userName = user.User.FirstName + " " + user.User.LastName;
                 if (_to.Trim() == string.Empty)
                 {
                     _to = user.User.EmailAddress;
                 }
                 var subject = "You have set a new coaching date";
-                var content = "";
-                MailMessage objEmail = new MailMessage(_from, _to, subject, content);
+                var emailContenttemp = string.Empty;
+                var emailContent = string.Empty;
+                emailContenttemp = string.Format(Constant.CoachingDate,
+                                        userName,
+                                        goaldate.ToShortDateString()
+                                      );
+                emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
+                MailMessage objEmail = new MailMessage(_from, _to, subject, emailContent);
 
                 objEmail.Bcc.Add(_bcc);
 
@@ -1929,7 +1935,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 }
                 else
                 {
-                   return previousDevPriority;
+                    return previousDevPriority;
 
                 }
             }
