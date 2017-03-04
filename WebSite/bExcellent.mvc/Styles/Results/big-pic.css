@@ -212,7 +212,7 @@ standTable table {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin-top: 3%;
-    color: #666;
+    color: #333;
     font-weight: 700;
 }
 
@@ -724,6 +724,14 @@ standTable table {
         height: 505px !important;
     }
 
+    .charttitle {
+        font-size: 25px;
+    }
+
+    .stand li p {
+        font-size: 30px;
+    }
+
 
     .slidebtn {
         width: 100% !important;
@@ -738,10 +746,6 @@ standTable table {
         font-size: 100% !important;
     }
 
-    .breadMenu {
-        margin: 1.5% 1.5% 1% 1.5% !important;
-    }
-
     .stand h1, .chartsmlplaceholder h1 {
         font-size: 150% !important;
     }
@@ -751,7 +755,7 @@ standTable table {
     }
 
     .stand li p {
-        font-size: 130%;
+        font-size: 130% !important;
     }
 }
 

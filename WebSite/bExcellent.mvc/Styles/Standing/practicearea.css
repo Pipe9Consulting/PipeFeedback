@@ -3276,9 +3276,349 @@ slidecontent12 {
     top: 0px !important;
 }
 
+@media screen and (min-width: 2800px) and (max-width: 3500px) {
+
+    .chartsmlplaceholder:nth-child(2) .dummychartdiv {
+        margin-top: -1.3%;
+    }
+
+    .lft_head {
+        font-size: 35px;
+    }
+
+    .chartsmlplaceholder h1 {
+        font-size: 30px;
+    }
+
+    .pageholder p {
+        font-size: 25px;
+    }
 
 
-@media screen and (min-width: 2170px) and (max-width: 2600px) {
+    .charttile {
+        font-size: 22px;
+    }
+
+    .readinessResoucesIcon p {
+        top: 44% !important;
+    }
+
+    .peersPanel {
+        width: 500% !important;
+        top: 0% !important;
+    }
+
+    .mentorsPanel {
+        width: 500% !important;
+        top: -15% !important;
+    }
+
+    .readinessResources {
+        width: 500% !important;
+        top: -124% !important;
+    }
+
+    .sticklr {
+        top: 19.3% !important;
+    }
+
+    #setContent {
+        font-size: 120% !important;
+    }
+
+    .scroll1 {
+        padding-bottom: 500px !important;
+    }
+
+    .hlpheading, .hlpcont, #papoeContentsScroll td, #papoeContentsScroll th, .content3 p, .feedbackIntro p, .mentorsPanel p, .keyActions p, .readinessResources p, .peersPanel p {
+        font-size: 120% !important;
+        line-height: 1.4 !important;
+    }
+
+        .feedbackIntro p b {
+            font-size: 105% !important;
+            line-height: 1.4;
+        }
+
+    .content3 h2, .feedbackIntro h3, .mentorsPanel h2, .keyActions h2, .readinessResources h1, .readinessResources h3, .peersPanel h2 {
+        font-size: 140% !important;
+        line-height: 1.4;
+    }
+
+    .sticklr > li > a > p {
+        font-size: 109% !important;
+    }
+
+    .dwnstatus {
+        width: 6% !important;
+        right: 3% !important;
+        top: 36.5% !important;
+        font-size: 21px;
+        padding: 0.6% 1% 0% .6% !important;
+    }
+
+
+
+    .status {
+        top: 34% !important;
+        right: 3% !important;
+        height: 11.5%;
+        width: 6%;
+        font-size: 21px;
+        padding: 1.7% .5% 0 .5%;
+    }
+
+    .midstatus {
+        height: 13%;
+        right: 2.6%;
+        top: 34.5%;
+        width: 6%;
+        font-size: 21px;
+        padding: 1.5% 1.1% 0 0;
+    }
+
+
+
+    /*.markermp {
+        margin-top: 0.7% !important;
+        left: -0.6% !important;
+    }*/
+
+    .indexright .pageBtn-Part a {
+        font-size: 14px;
+    }
+
+    .patable table tr th:nth-child(2) {
+        width: 26%;
+    }
+
+    .patable table tr th:first-child {
+        width: 55%;
+    }
+
+    .patable table tr td:first-child {
+        width: 58%;
+    }
+
+    .markerholder li {
+        padding-bottom: 61px !important;
+    }
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        width: 269px !important;
+        height: 200px !important;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 47% !important;
+    }
+
+
+    .stand li p {
+        color: #333;
+        left: 7%;
+        font-size: 25px;
+    }
+
+
+    .stand li {
+        background-size: 100% 100% !important;
+    }
+
+        .stand li:hover {
+            background-size: 100% 100% !important;
+        }
+
+    .poeheaderArea h3 {
+        padding-top: 2%;
+    }
+
+    .slidebtn {
+        bottom: -1px !important;
+    }
+
+    .legenddropdown {
+        width: 20% !important;
+    }
+
+
+    .legendTenure {
+        left: 24%;
+    }
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 45px 55px !important;
+        padding: 2px 0 0 0;
+    }
+
+
+    .markerholder li p {
+        height: 36px;
+        line-height: 50px;
+        width: 45px;
+        font-size: 110%;
+    }
+
+
+    .mentorsPanel p {
+        font-size: 120%;
+    }
+
+    .chartholder {
+        padding-bottom: 45.5%;
+    }
+
+
+    .markerholder li {
+        margin-left: 19px;
+        padding-bottom: 46px;
+        margin-top: 12px;
+    }
+
+    .hlpcont {
+        font-size: 90%;
+    }
+
+
+    .slider-img {
+        margin-top: 3%;
+    }
+
+
+
+
+
+    .stand {
+        width: 20% !important;
+    }
+
+    .resourcesPA p {
+        font-size: 90%;
+    }
+
+    .managerModel {
+        padding-bottom: 59.5% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 57% !important;
+    }
+
+    .teamModel {
+        padding-bottom: 64% !important;
+    }
+
+    .selfModel .margindown {
+        margin-top: 6.7% !important;
+        margin-right: 4.5%;
+    }
+
+    .managerModel .margindown {
+        margin-top: 8% !important;
+        margin-right: 4.5%;
+    }
+
+    .teamModel .margindown {
+        margin-top: 10.5% !important;
+        margin-right: 4.5%;
+    }
+
+
+    .selfModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 14%;
+    }
+
+
+    .managerModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 20%;
+    }
+
+    .teamModel .spaRight-des {
+        margin-left: 2%;
+        margin-top: 18%;
+    }
+
+    .selfModel .patable {
+        margin-top: 10% !important;
+    }
+
+    .managerModel .patable {
+        margin-top: 12% !important;
+    }
+
+    .teamModel .patable {
+        margin-top: 12% !important;
+    }
+
+
+        .teamModel .patable .pageBtn-Part {
+            margin-top: 12.5% !important;
+            margin-right: -1% !important;
+        }
+
+
+    .quickview {
+        padding-top: 2%;
+    }
+
+
+
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 545px !important;
+    }
+
+    #quickviewli {
+        height: 1300px !important;
+    }
+
+    .spaRight-des {
+        margin: 11% 0 4% 2%;
+    }
+
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 30px;
+    }
+
+    .modelcontent .slimScrollDiv {
+        height: 180px !important;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 8.5% 80%;
+    }
+
+
+    .coltwo {
+        width: 40%;
+    }
+
+    #tenure .legend p {
+        font-size: 80%;
+    }
+
+
+
+    .spaRight-des p {
+        font-size: 120%;
+    }
+
+    .legenddropdown ul {
+        width: 99% !important;
+    }
+
+
+    .PoeRecourceContents {
+        margin-top: -7% !important;
+    }
+}
+
+
+
+@media screen and (min-width: 2170px) and (max-width: 2800px) {
 
     .chartsmlplaceholder:nth-child(2) .dummychartdiv {
         margin-top: -1.3%;
@@ -3601,9 +3941,6 @@ slidecontent12 {
 
 @media screen and (min-width: 1930px) and (max-width: 2169px) {
 
-    .breadMenu {
-        margin: 1.5% 1.5% 1% 1.5% !important;
-    }
 
     .charttile {
         color: #000;

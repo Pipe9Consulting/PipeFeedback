@@ -13093,21 +13093,21 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 			        pixelMouse = 169;
 			    } else if (pixelMouse > 184 && pixelMouse < 344) {
 			        pixelMouse = 344;
-			    } else if (pixelMouse > 361 && pixelMouse < 517) {
+			    } else if (pixelMouse > 358 && pixelMouse < 517) {
 			        pixelMouse = 517;
 			    } else if (pixelMouse > 531 && pixelMouse < 692) {
 			        pixelMouse = 692;
 			    }
 			}
 			else if ($(window).width() == 3000) {
-			    if (pixelMouse < 170) {
-			        pixelMouse = 170;
-			    } else if (pixelMouse > 186 && pixelMouse < 342) {
-			        pixelMouse = 342;
-			    } else if (pixelMouse > 356 && pixelMouse < 518) {
-			        pixelMouse = 518;
-			    } else if (pixelMouse > 531 && pixelMouse < 693) {
-			        pixelMouse = 693;
+			    if (pixelMouse < 244) {
+			        pixelMouse = 244;
+			    } else if (pixelMouse > 262 && pixelMouse < 500) {
+			        pixelMouse = 500;
+			    } else if (pixelMouse > 511 && pixelMouse < 745) {
+			        pixelMouse = 745;
+			    } else if (pixelMouse > 761 && pixelMouse < 992) {
+			        pixelMouse = 992;
 			    }
 			}
 		} else {

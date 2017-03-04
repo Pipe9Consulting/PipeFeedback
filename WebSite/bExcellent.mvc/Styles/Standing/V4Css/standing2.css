@@ -1032,12 +1032,140 @@ body {
 
 @media screen and (max-width: 3600px) and (min-width: 2600px) {
 
+
+    #target li span {
+        width: 9%;
+    }
+
     .boxone h2 {
         font-size: 200% !important;
     }
 
     .vertical-align--bottom a {
         font-size: 200% !important;
+    }
+
+    .fblfristBox {
+        background-size: 100% 110%;
+    }
+
+
+    .fblthirdBox {
+        background-size: 100% 110%;
+    }
+
+    .fblsecondBox {
+        background-size: 100% 120%;
+    }
+
+
+    .accordion a {
+        margin-top: -0.7%;
+    }
+
+    .takeFeedbackMenu {
+        padding-bottom: 44%;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 44%;
+    }
+
+    .vertical-align-wrap p {
+        font-size: 500%;
+        padding-left: 5%;
+    }
+
+    .teamStd p {
+        padding-left: 3% !important;
+        margin-bottom: 4%;
+    }
+
+    .scroll2 {
+        padding-bottom: 95%;
+    }
+
+
+    .boxone {
+        height: 330px;
+        margin-top: 100%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+
+    .givefbmessagedetails p {
+        font-size: 75%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 150%;
+    }
+
+    .incompletefb p {
+        font-size: 300%;
+    }
+
+    .selecthistory {
+        background-size: 20% 50%;
+    }
+
+    .historyfbIcon:hover {
+        background-size: 20% 50%;
+    }
+
+    .takefeedback h2 {
+        font-size: 35px;
+    }
+
+    .boxone h2 {
+        font-size: 220% !important;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 21.7% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.7% !important;
+    }
+
+    .histroyArea .givefbmessageDummy {
+        padding-bottom: 17.2% !important;
+    }
+
+    .boxone p {
+        font-size: 180%;
+        line-height: 1.5;
+        padding-bottom: 5% !important;
+        height: 150px;
+    }
+
+    .requestfbcontent .boxone p {
+        font-size: 95%;
+    }
+
+    .boxone a {
+        font-size: 180%;
+    }
+
+    .profileCenter p {
+        font-size: 150% !important;
+        bottom: 0%;
+    }
+
+    .scroll2 {
+        padding-bottom: 94% !important;
+    }
+
+    .profileCenter img {
+        height: 256px;
     }
 }
 
@@ -1854,12 +1982,12 @@ body {
         font-size: 110%;
     }
 
-.profileCenter p {
-    font-size: 90% !important;
-    bottom: 0%;
-    padding: 3px 2px 1px 6px;
-    line-height: 1.1;
-}
+    .profileCenter p {
+        font-size: 90% !important;
+        bottom: 0%;
+        padding: 3px 2px 1px 6px;
+        line-height: 1.1;
+    }
 
 
     .profileCenter img {

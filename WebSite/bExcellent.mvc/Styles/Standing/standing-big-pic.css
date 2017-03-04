@@ -2963,7 +2963,7 @@
 
 
 
-@media screen and (min-width: 2170px) and (max-width: 2600px) {
+@media screen and (min-width: 2170px) and (max-width: 2800px) {
     .selfModel .patable .pageBtn-Part {
         margin-top: 9% !important;
     }
@@ -3074,11 +3074,6 @@
         font-size: 20px;
     }
 
-
-
-
-
-
     .chartGoalright {
         background-size: 100% 86%;
         top: 41px;
@@ -3137,6 +3132,184 @@
             width: 51px;
         }
 }
+
+
+
+
+@media screen and (min-width: 2800px) and (max-width: 3500px) {
+    .selfModel .patable .pageBtn-Part {
+        margin-top: 9% !important;
+    }
+
+    .hlpcont, .hlpheading, .patable tr td, .patable tr th {
+        font-size: 120% !important;
+        line-height: 1.5 !important;
+    }
+
+    .pageholder h1 {
+        font-size: 35px;
+    }
+
+    .sticklr {
+        top: 11.5% !important;
+    }
+
+    .stand li {
+        background-size: 100% 100% !important;
+    }
+
+        .stand li:hover {
+            background-size: 100% 100% !important;
+        }
+
+        .stand li p {
+            left: 7%;
+            font-size: 25px;
+        }
+
+    .managerModel .patable .pageBtn-Part {
+        margin-top: 10.5% !important;
+    }
+
+    .teamModel .patable .pageBtn-Part {
+        margin-top: 12.5% !important;
+    }
+
+    .selfModel .patable {
+        margin-top: 4%;
+    }
+
+    .managerModel .patable {
+        margin-top: 5%;
+    }
+
+    .teamModel .patable {
+        margin-top: 7%;
+    }
+
+    .teamModel {
+        padding-bottom: 68% !important;
+    }
+
+    .managerModel {
+        padding-bottom: 62% !important;
+    }
+
+    .selfModel {
+        padding-bottom: 59% !important;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legend6, .legend7, .legend8, .legend9, .legend10 {
+        background-size: 11% 90%;
+        font-size: 25px;
+    }
+
+
+    #bigpicPoeContent1 tr th:first-child {
+        width: 64%;
+    }
+
+    #bigpicPoeContent1 tr th:last-child {
+        width: 14.5%;
+    }
+
+    #bigpicPoeContent1 tr td:nth-child(2) {
+    }
+
+    #bigpicPoeContent1 tr td:first-child {
+        width: 65%;
+    }
+
+    .pageBtn-Part a {
+        font-size: 12px;
+    }
+
+
+    .status {
+        top: 41%;
+        width: 3.5%;
+        right: 4.5%;
+        height: 6%;
+        padding: 1% 0.6% 0.6% 0.5%;
+        font-size: 24px;
+    }
+
+    .dwnstatus {
+        top: 42%;
+        width: 3.5%;
+        right: 4%;
+        height: 6%;
+        font-size: 25px;
+        padding: 0.3% 0.6% 0.6% 0.5%;
+    }
+
+    .midstatus {
+        top: 40%;
+        width: 3.5%;
+        right: 4.2%;
+        height: 9%;
+        font-size: 24px;
+    }
+
+    .chartGoalright {
+        background-size: 100% 86%;
+        top: 41px;
+    }
+
+    .chartGoalleft {
+        background-size: 50% 86%;
+        top: 40px;
+    }
+
+
+    #accsettings li a {
+        padding: 2% 0 1% 5% !important;
+    }
+
+
+
+    .goalChartArea ul {
+        top: -28.5%;
+        margin-left: -2.2px;
+    }
+
+    .legenddropdown ul {
+        width: 100% !important;
+    }
+
+    .legendwn {
+        margin: 0 -2px 0 0%;
+    }
+
+    .legenddropdown {
+        width: 12% !important;
+    }
+
+
+
+    #bigpicPoeContent1 .slimScrollDiv {
+        padding-bottom: 22% !important;
+    }
+
+
+    .markergray, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 60px 70px;
+    }
+
+    .markerholder li {
+        margin-left: 30px;
+        margin-top: 28px;
+        padding-bottom: 70px;
+    }
+
+        .markerholder li p {
+            height: 45px;
+            line-height: 58px;
+            width: 60px;
+        }
+}
+
+
 
 .dummy-slimscrollbar-backgound {
     background: none !important;

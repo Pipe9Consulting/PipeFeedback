@@ -653,18 +653,7 @@ h1, .tsf {
         background-size: 60px 80px;
     }
 
-    .markerholder li p {
-        height: 60px;
-        line-height: 60px;
-        width: 60px;
-    }
-
-    .markerholder li {
-        margin-left: 30px;
-        margin-top: 1.7%;
-        padding-bottom: 80px;
-    }
-
+    /*@media screen and (min-width:2560px)*/
     .progressbar1 p, .progressbar2 p {
         width: 33px;
     }
@@ -680,23 +669,50 @@ h1, .tsf {
         font-size: 30px !important;
     }
 
-    .dwnstatus {
-        right: 3%;
-        width: 3.5%;
-        height: 6%;
-        top: 42.5%;
-        padding: 0.6% 0.6% 0.6% 0.6%;
+    .markerholder li p {
+        height: 60px;
+        line-height: 65px;
+        width: 60px;
     }
 
+    .legend {
+        right: -14%;
+    }
+
+
+    .legend1, .legend2 {
+        background-size: 7% 100%;
+        font-size: 25px;
+    }
+
+    .stand li p {
+        font-size: 24px;
+    }
+
+    .markerholder li {
+        margin-left: 30px;
+        margin-top: 1.2%;
+        padding-bottom: 80px;
+    }
+
+
+    .dwnstatus {
+        right: 3%;
+        width: 4%;
+        height: 7%;
+        top: 42%;
+        padding: 0.4% 0.6% 0.6% 0.6%;
+        font-size: 30px;
+    }
 
     .midstatus {
         height: 9%;
-        right: 3.6%;
+        right: 3%;
         top: 40%;
-        width: 3%;
-        padding: 1.5% 1.5% 0.5% .8%;
+        width: 4%;
+        padding: 1.2% 1.5% 0.5% .8%;
+        font-size: 30px;
     }
-
 
     .breadMenu a {
         font-size: 100% !important;
@@ -705,9 +721,10 @@ h1, .tsf {
     .status {
         width: 4%;
         height: 6.5%;
-        padding: 1.2% 0.6% 0.6% 0.4%;
+        padding: .9% 0.6% 0.6% 0.4%;
         right: 2.8%;
         top: 40.2%;
+        font-size: 30px;
     }
 }
 
@@ -1361,7 +1378,7 @@ h1, .tsf {
     left: 5%;
     width: 90%;
     text-transform: uppercase;
-    line-height:1;
+    line-height: 1;
 }
 
 .indexright {
@@ -1710,17 +1727,18 @@ h1, .tsf {
         height: 5.5%;
         width: 3%;
         top: 42.5%;
-        right: 3.5%;
-        padding: .3% .8% 0.5% .8%;
+        right: 4%;
+        padding: .4% .8% 0.5% .8%;
     }
 
     .midstatus {
         height: 6%;
         width: 3%;
         top: 41.5%;
-        right: 3.5%;
-        padding: .9% 2.5% 0.5% .8%;
+        right: 4%;
+        padding: .8% 1.2% 0.5% .7%;
     }
+
 
     .stand {
         width: 16%;

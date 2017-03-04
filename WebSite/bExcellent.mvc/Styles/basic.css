@@ -302,9 +302,60 @@
 
 @media screen and (max-width: 3600px) and (min-width: 2600px) {
 
+    #simplemodal-container a.modalCloseImg {
+        background-size: 80% 80% !important;
+        right: -45px !important;
+        top: -27px !important;
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+        #simplemodal-container a.modalCloseImg:hover {
+            background-size: 80% 80% !important;
+            right: -45px !important;
+            top: -27px !important;
+            width: 80px !important;
+            height: 80px !important;
+        }
+
+    .breadcrumb {
+        font-size: 30px;
+    }
+
+
+
     input {
         font-size: 25px;
     }
+
+    #basic-changePassword input {
+        font-size: 25px !important;
+    }
+
+
+    #basic-changePassword h1 {
+        font-size: 50px;
+        margin-top: 6% !important;
+    }
+
+    #resetbtn, #ChangePassbtn {
+        padding: 10px 15px 10px 15px !important;
+        font-size: 180% !important;
+    }
+
+    .close {
+        background-size: 60px 60px !important;
+        width: 60px !important;
+        height: 60px !important;
+        margin-right: -13% !important;
+    }
+
+        .close:hover {
+            background-size: 60px 60px !important;
+            width: 60px !important;
+            height: 60px !important;
+            margin-right: -13% !important;
+        }
 
     #basic-changePassword {
         top: 28%;

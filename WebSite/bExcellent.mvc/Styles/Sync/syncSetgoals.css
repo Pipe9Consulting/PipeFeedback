@@ -85,14 +85,6 @@
 }
 
 
-.slimScrollBar {
-    background: #ccc !important;
-}
-
-.slimScrollRail {
-    background: #ccc !important;
-}
-
 
 .selected {
     background: #fff !important;
@@ -1160,6 +1152,3 @@ div .wallgoal .close {
         float: left;
         cursor: pointer;
     }
-.slimScrollBar, .slimScrollRail {
-    background-color:#ccc !important;
-}

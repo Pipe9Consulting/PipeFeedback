@@ -325,10 +325,57 @@ a:focus, a:hover {
 }
 
 
+@media screen and (max-width: 3600px) and (min-width: 2800px) {
+
+    .develop_content p {
+        height: 150px;
+    }
 
 
+    p {
+        font-size: 24px !important;
+    }
 
-@media screen and (max-width: 2600px) and (min-width: 2000px) {
+    .develop_content a {
+        font-size: 24px;
+    }
+
+    .breadcrumb {
+        padding: 18px 1.5% 12px 1.5%;
+    }
+
+
+    .priorities_tiles ul li p {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    h3 {
+        font-size: 180% !important;
+    }
+
+    .user_tiles ul li {
+        width: 47%;
+    }
+
+        .user_tiles ul li p {
+            font-size: 22px !important;
+            line-height: 1.1;
+        }
+
+    .option_part {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 2800px) and (min-width: 2000px) {
+    .develop_content p {
+        height: 150px;
+    }
 
     p {
         font-size: 140% !important;

@@ -962,12 +962,52 @@ html, body {
 
 @media screen and (min-width: 2900px) and (max-width: 3500px) {
 
+    .clickdeeper {
+        font-size: 30px !important;
+        left: -480% !important;
+        background-size: 25% 60% !important;
+        padding-right: 110% !important;
+        padding-bottom: 20% !important;
+    }
+
+    .ui.breadcrumb a {
+        font-size: 22px !important;
+    }
+
+    .ui.breadcrumb {
+        font-size: 22px !important;
+    }
+
+    .overallcontent p {
+        font-size: 30px;
+        padding: 5% 0 3% 0;
+    }
+
+    .overallcontent a {
+        padding: 3px 25px 3px 25px;
+        font-size: 30px;
+    }
+
+    .overallclose {
+        background-size: 60px 60px !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+
+        .overallclose:hover {
+            background-size: 60px 60px !important;
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+
     .breadcrumb a {
         font-size: 25px !important;
     }
 
     .cacLogo img {
-        width: 65%;
+        width: 330px;
     }
 
     .pane li p {
@@ -983,13 +1023,12 @@ html, body {
     }
 
     .accordion h3 {
-        background-size: 31% 25% !important;
-        width: 140px !important;
+        background-size: 27% 25% !important;
+        width: 170px !important;
     }
 
-
         .accordion h3:hover {
-            background-size: 31% 25% !important;
+            background-size: 27% 25% !important;
         }
 
 
@@ -1022,15 +1061,29 @@ html, body {
 
 
     #target li p, #target li a {
-        font-size: 130%;
+        font-size: 25px;
     }
 
     .ui.menu .item {
-        font-size: 1.8rem !important;
+        font-size: 25px !important;
     }
 }
 
 @media screen and (min-width: 2500px) and (max-width: 2900px) {
+
+
+    .breadcrumb {
+        font-size: 17px;
+    }
+
+    .pane li p {
+        font-size: 23px !important;
+    }
+
+
+    #target li p, #target li a {
+        font-size: 21px !important;
+    }
 
     .clickdeeper {
         font-size: 18px;
@@ -1090,6 +1143,10 @@ html, body {
 
 @media screen and (min-width: 2001px) and (max-width: 2500px) {
 
+    .cacLogo img {
+        width: 164px;
+    }
+
     .wallAward {
         margin-top: 4.5%;
     }
@@ -1124,6 +1181,13 @@ html, body {
             background-position-x: 30px;
             width: 85px;
         }
+}
+
+
+@media screen and (min-width: 1940px) and (max-width: 2000px) {
+    .cacLogo img {
+        width: 65%;
+    }
 }
 
 @media screen and (min-width: 1900px) and (max-width: 2000px) {

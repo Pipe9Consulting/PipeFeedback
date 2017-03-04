@@ -819,10 +819,6 @@ standTable table {
         font-size: 100% !important;
     }
 
-    .breadMenu {
-        margin: 1.5% 1.5% 1% 1.5% !important;
-    }
-
     .stand h1, .chartsmlplaceholder h1 {
         font-size: 150% !important;
     }

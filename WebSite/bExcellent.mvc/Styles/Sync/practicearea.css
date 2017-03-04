@@ -1021,7 +1021,7 @@ h1.lft_head {
         width: 35px;
     }
 
-     #all .markergray, #all .markermp, #all .markeramper, #all .marker3, #all .marker4, #all .marker5 {
+    #all .markergray, #all .markermp, #all .markeramper, #all .marker3, #all .marker4, #all .marker5 {
         background-size: 35px 78%;
     }
 
@@ -2183,7 +2183,258 @@ h1.lft_head {
     width: 98% !important;
 }
 
-@media screen and (min-width: 2170px) and (max-width: 2600px) {
+
+@media screen and (min-width: 2800px) and (max-width: 3500px) {
+
+    h1.lft_head {
+        font-size: 35px;
+    }
+
+    .charttile {
+        font-size: 22px !important;
+    }
+
+
+    .stand li p {
+        bottom: 3%;
+        left: 7%;
+        font-size: 24px;
+    }
+
+    .chartholder h1 {
+        font-size: 28px;
+    }
+
+    #readinessAccordion {
+        height: 600px !important;
+    }
+
+    .readinessResources .slimScrollDiv {
+        height: 600px !important;
+    }
+
+    #seekSherpas .slimScrollDiv {
+        height: 340px !important;
+    }
+
+    #seekSherpas #seekSherpasMentors {
+        height: 340px !important;
+    }
+
+    .mentorsPanel {
+        top: 0% !important;
+        width: 500% !important;
+    }
+
+    .readinessResources {
+        top: -100% !important;
+        width: 500% !important;
+    }
+
+    .sticklr {
+        top: 19% !important;
+    }
+
+    .coltwo {
+        width: 40%;
+    }
+
+
+    .cententMiddle p {
+        font-size: 130%;
+    }
+
+    .managerModel {
+        padding-bottom: 45% !important;
+    }
+
+        .managerModel .hlprow {
+            padding-top: 15.5% !important;
+        }
+
+        .managerModel .margindown {
+            margin-top: 9.5% !important;
+        }
+
+        .managerModel .patable .pageBtn-Part {
+            margin-top: 3% !important;
+            margin-right: 5%;
+        }
+
+    .teamModel {
+        padding-bottom: 45.5% !important;
+    }
+
+        .teamModel .hlprow {
+            padding-top: 14% !important;
+            padding-bottom: 11%;
+        }
+
+        .teamModel .patable .pageBtn-Part {
+            margin-top: 3% !important;
+            margin-right: 5%;
+        }
+
+    .markermp {
+        margin-top: 2% !important;
+    }
+
+    .slidecontent12 .slimScrollDiv, .scroll5 {
+        height: 545px !important;
+    }
+
+    .sceditor-container iframe, .sceditor-container textarea {
+        height: 200px !important;
+    }
+
+    .legend1, .legend2, .legend3, .legend4, .legend5, .legendmp {
+        background-size: 8.5% 80%;
+        background-position: 0 2px;
+    }
+
+    .slidebtn {
+        bottom: -2px;
+    }
+
+    .pageBtn-Part a {
+        font-size: 14px;
+    }
+
+    .markerholder li p {
+        font-size: 18px;
+    }
+
+
+
+
+    .breadcrumb a {
+        font-size: 18px;
+    }
+
+    .breadcrumb {
+        font-size: 18px;
+    }
+
+    .charttitle, .charttitle1 {
+        width: 95.3%;
+    }
+
+    .markerholder li p {
+        height: 46px;
+        line-height: 46px;
+        width: 44px;
+    }
+
+    .dummychartdiv {
+        padding-bottom: 47.5% !important;
+    }
+
+    #header, .headr {
+        height: 9em !important;
+    }
+
+    .stand {
+        width: 16%;
+    }
+
+    .slide {
+        width: 48%;
+    }
+
+    p, div, li, a, span, input, td, th, #wrapper .videolist li h2, select, option, textarea {
+        font-size: 18px;
+    }
+
+
+    .status {
+        width: 6%;
+        top: 34%;
+        padding-top: 1.6%;
+        right: 3.5%;
+        height: 10%;
+        font-size: 18px;
+    }
+
+    .dwnstatus {
+        padding-top: 1%;
+        padding-bottom: 0.5%;
+        height: 11.5%;
+        width: 6%;
+        top: 36.5%;
+        right: 3%;
+        font-size: 18px;
+    }
+
+
+    .midstatus {
+        height: 14%;
+        right: 2.6%;
+        top: 33%;
+        width: 6%;
+        padding: 2% 1.5% 0.5% .5%;
+        font-size: 18px;
+    }
+
+    .chartarea {
+        width: 92.5%;
+    }
+
+    .chartbg {
+        padding-bottom: 30.5%;
+    }
+
+    .hlprow {
+        margin-left: 15px;
+    }
+
+        .hlprow p {
+            font-size: 120%;
+        }
+
+    .patable .slimScrollDiv, .scroll2 {
+        height: 200px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .firstid, .secondid, .thirdid, .forthid {
+        line-height: 28px !important;
+    }
+
+    /*.dropdown ul li a {
+        padding: 3% 0 2% 5% !important;
+        height: 30px;
+    }*/
+
+    #diginsyncPoeContent tr th:first-child {
+        padding-left: 9px;
+        width: 60%;
+    }
+
+    #diginsyncPoeContent tr td:first-child {
+        width: 63%;
+    }
+
+    #diginsyncPoeContent tr th:last-child {
+        width: 17%;
+    }
+
+    .markerholder li {
+        margin-left: 24px;
+        margin-top: 1.8%;
+    }
+
+
+    .markergray, .markermp, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 45px 100% !important;
+    }
+
+
+    .stand li {
+        padding-bottom: 49.4%;
+    }
+}
+
+@media screen and (min-width: 2170px) and (max-width: 2800px) {
     #readinessAccordion {
         height: 600px !important;
     }

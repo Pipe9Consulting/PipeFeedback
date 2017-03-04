@@ -106,7 +106,7 @@ p {
 
         .user_tiles ul li:hover {
             background: #fff;
-            border:1px solid #23a1a7;
+            border: 1px solid #23a1a7;
         }
 
             .user_tiles ul li:hover p, .user_tiles ul li:hover span {
@@ -144,7 +144,7 @@ p {
 
 .selectTiles {
     background: #fff !important;
-    border: 1px solid #23a1a7;
+    border: 1px solid #23a1a7 !important;
 }
 
     .selectTiles p, .selectTiles span {
@@ -1006,6 +1006,124 @@ p {
 }
 
 
+
+@media screen and (max-width: 3500px) and (min-width: 2600px) {
+
+    .frquencyContent ul li {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .frequency_scale li {
+        padding: 1% 0 !important;
+    }
+
+
+    .modNmaeview {
+        font-size: 30px;
+    }
+
+    .frquencyContent ul li .moduleTier {
+        font-size: 80% !important;
+    }
+
+    .frquencyContent ul li .frequency_scale li {
+        font-size: 70% !important;
+        min-height: 0 !important;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 150% !important;
+    }
+
+    .managerSpan {
+        top: -100%;
+        padding-top: 5%;
+    }
+
+
+    .youSpan {
+        top: -18%;
+        padding-bottom: 4%;
+    }
+
+    .progress_practiceArea p {
+        font-size: 28px;
+    }
+
+    .hover_content {
+        margin-top: 3% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -2.5% !important;
+    }
+
+
+    .youSpan {
+        top: -22%;
+    }
+
+    .progress_practiceArea li {
+        height: 200px;
+        padding: 3% 1%;
+        font-size: 120%;
+    }
+
+        .progress_practiceArea li img {
+            width: 45%;
+        }
+
+
+    #option_menu {
+        top: 3.9%;
+        right: 1.1%;
+    }
+
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    #devprogress {
+        padding-bottom: 45%;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 45%;
+    }
+
+
+    .frequency_scale li {
+        min-height: 0 !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 100px;
+    }
+
+    .frquencyHeader li {
+        font-size: 28px;
+    }
+
+    P {
+        font-size: 26px;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-bottom: 0.3%;
+    }
+}
 
 #usrList {
     /*border: 1px solid #333;

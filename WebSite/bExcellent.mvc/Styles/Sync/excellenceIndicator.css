@@ -2035,7 +2035,154 @@
 }
 
 
-@media screen and (max-width: 2570px) and (min-width: 2170px) {
+@media screen and (max-width: 3500px) and (min-width:2800px) {
+    .digdev {
+        font-size: 21px;
+    }
+
+    .pageholder h1 {
+        font-size: 35px;
+    }
+
+
+    .slimScrollDiv .scroll1 {
+        padding-bottom: 148% !important;
+    }
+
+
+    .stand li p {
+        font-size: 25px;
+    }
+
+    .status {
+        width: 6%;
+        height: 12%;
+        padding: 1.8% 0.8% .8% 0.6%;
+        right: 3%;
+        top: 36.2%;
+    }
+
+    .syncEIDrop {
+        right: 6% !important;
+        margin-top: -0.2%;
+    }
+
+
+    .dwnstatus {
+        right: 3%;
+        width: 6%;
+        height: 12%;
+        top: 39%;
+        padding: 0.6% 0.8% 0.6% 0.7%;
+    }
+
+
+    .midstatus {
+        height: 14%;
+        right: 3%;
+        top: 36.5%;
+        width: 6%;
+        padding: 1.6% 1.5% 0.5% .8%;
+    }
+
+
+
+    .indexright table {
+        width: 93.5%;
+    }
+
+    .digqn-dummy {
+        width: 0 !important;
+    }
+
+    .cententMiddle p {
+        font-size: 120%;
+    }
+
+    .legend1 {
+        background-size: 8% auto;
+    }
+
+    .legend2 {
+        background-size: 8% auto;
+    }
+
+    .legend3 {
+        background-size: 8% 80%;
+    }
+
+    .legend4 {
+        background-size: 8% 80%;
+    }
+
+    .legend5 {
+        background-size: 8% 80%;
+    }
+
+    .hlprow {
+        margin: 7% 0 0% 0;
+    }
+
+    .legend {
+        width: 40%;
+    }
+
+        .legend li {
+            font-size: 20px;
+        }
+
+    .digdev {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+
+    .model {
+        padding-bottom: 40% !important;
+    }
+
+    .margindown {
+        margin-top: 50px !important;
+        margin-right: 5%;
+    }
+
+    .stand {
+        width: 16%;
+    }
+
+    .slimScrollDiv .scroll1 {
+        padding-bottom: 149% !important;
+    }
+
+    .coltwo {
+        width: 40%;
+    }
+
+    .markergray, .markeramper, .marker3, .marker4, .marker5 {
+        background-size: 53px 100%;
+    }
+
+
+    .syncnumber {
+        padding-top: 22% !important;
+        font-size: 300%;
+    }
+
+    .markerholder li p {
+        height: 46px;
+        line-height: 50px;
+        width: 53px;
+    }
+
+
+    .patable .slimScrollDiv, .scroll2 {
+        padding-bottom: 0 !important;
+        width: 104% !important;
+        height: 195px !important;
+    }
+}
+
+@media screen and (max-width: 2800px) and (min-width: 2170px) {
     .digdev {
         font-size: 21px;
     }

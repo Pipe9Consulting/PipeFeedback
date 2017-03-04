@@ -1756,13 +1756,34 @@ h5 {
 /*Newly Added*/
 
 
-@media screen and (min-width: 2600px) and (max-width: 3600px) {
+@media screen and (min-width: 2800px) and (max-width: 3600px) {
     .slimScrollDiv, .scroll2 {
         height: 505px !important;
     }
+
+    #teammemberscore {
+        font-size: 350% !important;
+    }
+
+
+    .networkTile ul li p {
+        font-size: 28px !important;
+    }
+
+    .boxone p {
+        font-size: 130%;
+    }
+
+    .fblfristBox .boxone h2 {
+        font-size: 150%;
+    }
+
+    .customertiles h1 {
+        font-size: 180%;
+    }
 }
 
-@media screen and (min-width: 2201px) and (max-width: 2600px) {
+@media screen and (min-width: 2201px) and (max-width: 2800px) {
 
     .networkTile ul li p {
         font-size: 22px;

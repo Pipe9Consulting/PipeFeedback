@@ -2504,7 +2504,7 @@ body {
     }
 
     .feedbackcomplete p b {
-        font-size:14px;
+        font-size: 14px;
     }
 
     .questions {
@@ -3464,6 +3464,16 @@ body {
 
 
 @media screen and (min-width: 2600px) and (max-width: 3500px) {
+
+    .feedbackcomplete p {
+        font-size: 125%;
+        line-height: 1.5;
+    }
+
+        .feedbackcomplete p b {
+            font-size: 125%;
+        }
+
 
     .surveyAreas {
         padding-top: 1.8%;

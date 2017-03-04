@@ -1734,20 +1734,287 @@ body {
 }*/
 
 
-@media screen and (max-width: 2600px) and (min-width: 1800px) {
+@media screen and (max-width: 3500px) and (min-width: 2800px) {
+
+    .accordion-section-title {
+        font-size: 25px;
+    }
+
+    .trackerMenu {
+        padding-left: 15%;
+        background-size: 10% 80%;
+    }
+
+    .updateMenu {
+        padding-left: 15%;
+        background-size: 10% 80%;
+    }
+
+
+    .profilemenu {
+        padding-left: 15%;
+        background-size: 10% 80%;
+    }
+
+
+    .ddummyerror {
+        margin-left: 0.7%;
+        width: 73.7%;
+    }
 
     .sliderboardView {
         width: 100.6%;
         margin: .5% 0.5% 0.5% -0.3%;
     }
+
+    .modNmaeview {
+        font-size: 28px;
+    }
+
+    .frquencyContent li .frequency_scale li {
+        font-size: 70% !important;
+    }
+
+
+    .frquencyContent ul li {
+        padding: .4% 1% .3% 1%;
+    }
+
+
+    p {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    h1 {
+        font-size: 200% !important;
+    }
+
+    h4 {
+        font-size: 25px !important;
+    }
+
+    .tracker_show {
+        background-size: 13% 130% !important;
+        font-size: 25px;
+    }
+
+        .tracker_show:hover {
+            background-size: 13% 130% !important;
+            font-size: 25px;
+        }
+
+    .hideTrace {
+        background-size: 13% 130% !important;
+    }
+
+        .hideTrace:hover {
+            background-size: 13% 130% !important;
+        }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-top: 0.5%;
+        margin-bottom: 0.3%;
+    }
+
+    .calendarText label {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+
+    #option_menu {
+        right: 0.7%;
+        top: 3.9%;
+        width: 600px !important;
+    }
+
+    .profilelist ul li {
+        font-size: 140%;
+    }
+
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 42% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 42% !important;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 35%;
+    }
+
+    #profileListsView {
+        padding-bottom: 35% !important;
+    }
+
+
+    .digit {
+        font-size: 120% !important;
+    }
+
+
+    .moduleTier {
+        font-size: 100% !important;
+    }
+
+    .ui-datepicker td span, .ui-datepicker td a {
+        height: 34px !important;
+        width: 32px !important;
+        font-size: 20px !important;
+    }
+
+    .ui-datepicker .ui-datepicker-title {
+        font-size: 22px;
+    }
+
+    .ui-datepicker th {
+        font-size: 18px;
+    }
+
+    #btnDate {
+        font-size: 22px;
+    }
+
+
+    .frequency_scale li span:first-child, .frequency_scale li span {
+        font-size: 100% !important;
+    }
+
+    .frequency_scale {
+        margin-top: 0.4% !important;
+    }
+
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 100%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 95% !important;
+    }
+
+    .accordion-section-content p {
+        font-size: 22px !important;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 55px;
+        padding-top: 7px;
+        font-size: 35px;
+        height: 40px;
+    }
+
+    .startgoalDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .frquencyContent li {
+        font-size: 24px !important;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+
+    h3 {
+        font-size: 200% !important;
+    }
+
+    .user_tiles ul li {
+        width: 47%;
+    }
+
+        .user_tiles ul li p {
+            font-size: 26px !important;
+        }
+
+    .option_part {
+        width: 70%;
+    }
+
+    .startDate, .endDate {
+        font-size: 170%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 10px 0;
+        font-size: 150%;
+    }
+
+    .frquencyHeader li {
+        font-size: 28px;
+    }
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 30%;
+    }
+
+        .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 30% !important;
+        }
+
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40%;
+    }
+
+        .hidScaleTracker .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 40% !important;
+        }
+
+    .managerSpan {
+        padding-bottom: 16%;
+        top: -90%;
+    }
+
+
+    .youSpan {
+        padding-top: 15%;
+        top: 4%;
+    }
+
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 90px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
 }
 
 
-@media screen and (max-width: 2600px) and (min-width: 1800px) {
+@media screen and (max-width: 2800px) and (min-width: 1800px) {
 
     .ddummyerror {
         margin-left: 0.7%;
         width: 73.7%;
+    }
+
+    .sliderboardView {
+        width: 100.6%;
+        margin: .5% 0.5% 0.5% -0.3%;
     }
 
     .modNmaeview {
@@ -1848,6 +2115,11 @@ body {
 
     .flapper.L .digit, .flapper.L .digit div {
         width: 45px;
+        height: 30px;
+    }
+
+    .calendarText label {
+        margin-top: 10px;
     }
 
     .startgoalDate .calendarText {
@@ -2193,7 +2465,7 @@ body {
 @media screen and (max-width:1500px) and (min-width:1200px) {
     #usrList li p {
         font-size: 100% !important;
-        line-height:1;
+        line-height: 1;
     }
 
     .breadcrumb {
@@ -2306,3 +2578,4 @@ body {
 .frquencyContent ul:last-child .hover_content {
     margin-top: -5%;
 }
+

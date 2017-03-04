@@ -110,19 +110,19 @@ body {
 
 @media screen and (max-width: 3500px) and (min-width: 2500px) {
     .welcomeContent p {
-        font-size: 180%;
+        font-size: 220%;
     }
 
     .welcomeContent ul li {
-        font-size: 180%;
+        font-size: 220%;
     }
 
     .welcomeContent h2 {
-        font-size: 200%;
+        font-size: 240%;
     }
 
     .welcomeContent a {
-        font-size: 200%;
+        font-size: 240%;
     }
 }
 

@@ -450,12 +450,112 @@ p {
 
 
 /***********************************************************************************************************************************************/
+@media screen and (max-width: 3500px) and (min-width: 2800px) {
+    .questiontaken {
+        font-size: 22px;
+    }
 
-@media screen and (max-width: 2600px) and (min-width: 2200px) {
+
+    p {
+        font-size: 200%;
+    }
 
     .qn {
         padding: .4% 0% .3% 0%;
+        font-size: 200%;
     }
+
+
+    #managerFeedContent .OverallScale {
+        width: 80%;
+    }
+
+    #managerFeedContent .slidercontent p {
+        font-size: 170% !important;
+    }
+
+    #managerFeedContent .sliderimg {
+        margin: 3% 0 10% 0;
+    }
+
+    #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
+        width: 4.7%;
+    }
+
+    #managerFeedContent .sliderdiv {
+        right: -6%;
+    }
+
+
+    .sliderdiv {
+        width: 1000px !important;
+        right: -5%;
+    }
+
+    .questionPart {
+        margin-left: 12%;
+    }
+
+    .slidercontent h4 {
+        font-size: 160%;
+    }
+
+
+    .teamUser {
+        margin-top: 7.8%;
+    }
+
+        .teamUser span {
+            font-size: 130%;
+        }
+
+
+    .questionarea p {
+        font-size: 230%;
+    }
+
+    .SI3 {
+        font-size: 24px;
+    }
+
+    .sliderimg {
+        margin: 3% 0 6% 0;
+    }
+
+    .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
+        width: 3.6%;
+    }
+
+    .beginBtn {
+        background-size: 90% 100% !important;
+        margin-right: -3.9%;
+    }
+
+        .beginBtn:hover {
+            background-size: 90% 100% !important;
+            margin-right: -3.9%;
+        }
+
+    .ui-slider-handle {
+        margin-left: -0.9em;
+    }
+
+    /*.ratingscaleRemoved .teamUser {
+        margin-top: 4.3% !important;
+    }*/
+
+    #managerFeedContent .ratingRemoved {
+        width: 110% !important;
+        margin-left: 10% !important;
+    }
+
+    .ratingscaleTeamRemoved .beginBtn {
+        margin-top: -27% !important;
+    }
+}
+
+@media screen and (max-width: 2800px) and (min-width: 2200px) {
+
 
 
     #selfFeedCont .questionPart {
@@ -1011,10 +1111,10 @@ p {
         margin-right: -6%;
     }
 
-     .ratingscaleTeamRemoved .beginBtn:hover {
-        margin-top: -19% !important;
-        margin-right: -6% !important;
-    }
+        .ratingscaleTeamRemoved .beginBtn:hover {
+            margin-top: -19% !important;
+            margin-right: -6% !important;
+        }
 
 
 
@@ -1103,11 +1203,11 @@ p {
         background-size: 55% 65% !important;
     }
 
-    .beginBtn:hover{
-        margin-top: -23%;
-        margin-right: -6%;
-        background-size: 55% 65% !important;
-    }
+        .beginBtn:hover {
+            margin-top: -23%;
+            margin-right: -6%;
+            background-size: 55% 65% !important;
+        }
 
     .selfcapRemoved .beginBtn {
         margin-top: -18%;
@@ -1371,11 +1471,21 @@ p {
     .questionPart {
         margin-top: 5px;
     }
+
+    .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
+        width: 3.5%;
+    }
+
+    .detailedarea .slidercontent img {
+        width: 21%;
+        margin-right: 3%;
+        margin-top: 3%;
+    }
 }
 
 
 
-@media screen and (max-width: 3000px) and (min-width: 1800px) {
+@media screen and (max-width: 2800px) and (min-width: 1800px) {
 
     .sliderdiv {
         width: 700px !important;

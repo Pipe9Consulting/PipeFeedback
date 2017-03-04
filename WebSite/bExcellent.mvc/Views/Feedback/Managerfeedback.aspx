@@ -128,25 +128,25 @@
             cursor: pointer;
         }
     </style>
-     <%
-            var t = 0;
+    <%
+        var t = 0;
 
-            if (Session["SelectedCapability"] != null)
-            {
-                t = int.Parse(Session["SelectedCapability"].ToString());
-            }
-            var resultmode = "";
+        if (Session["SelectedCapability"] != null)
+        {
+            t = int.Parse(Session["SelectedCapability"].ToString());
+        }
+        var resultmode = "";
 
-            if (Session["PoEResultMode"] != null)
-            {
-                resultmode = Session["PoEResultMode"].ToString();
-            }
+        if (Session["PoEResultMode"] != null)
+        {
+            resultmode = Session["PoEResultMode"].ToString();
+        }
 
-        %>
-     <input type="hidden" id="capabilityMode" value="<%:t %>" />
+    %>
+    <input type="hidden" id="capabilityMode" value="<%:t %>" />
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb">
-            <a href="../Common/Index">Home</a> > <a href="../Feedback/Feedback?Mode=1">Feedback</a> > Give Feedback
+            <a href="../Common/Index">Home</a> <a>></a><a href="../Feedback/Feedback?Mode=1">Feedback</a> <a>></a><a> Give Feedback</a>
         </div>
     </div>
     <div class="slidebtn" id="bigslide" style="display: none;">
@@ -179,7 +179,7 @@
         <input type="hidden" id="lastsavedMinutes" />
         <input type="hidden" id="lastsavedSeconds" />
         <input type="hidden" id="prevMode" value="0" />
-         <input type="hidden" id="resultmode" value="<%:resultmode %>" />
+        <input type="hidden" id="resultmode" value="<%:resultmode %>" />
         <div style="visibility: hidden" id="modules">
         </div>
     </div>
