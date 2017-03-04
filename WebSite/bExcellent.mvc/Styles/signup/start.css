@@ -474,6 +474,10 @@ body {
         padding-bottom: 46% !important;
     }
 
+    .login {
+        width: 72% !important;
+        margin-left: 23% !important;
+    }
 
     .startPart h1 {
         padding: 3% 3.5% 2.2% 4.5%;
@@ -563,7 +567,7 @@ body {
         padding: 3% 4% 4% 4%;
         right: -65%;
         font-size: 180%;
-        top: -34%;
+        top: 0%;
     }
 
     #hover_content6 {
@@ -576,7 +580,7 @@ body {
 
 
     #hover_content5 span {
-        top: 97.5%;
+        top: 97%;
     }
 
     #hover_content6 span {
