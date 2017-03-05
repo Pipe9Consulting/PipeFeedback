@@ -1003,7 +1003,15 @@ html, body {
 
 
     .breadcrumb a {
-        font-size: 25px !important;
+        font-size: 22px !important;
+    }
+
+     .breadMenu a {
+        font-size: 22px;
+    }
+
+    .breadMenu i {
+        font-size: 25px;
     }
 
     .cacLogo img {
@@ -1045,13 +1053,7 @@ html, body {
         font-size: 25px;
     }
 
-    .breadMenu a {
-        font-size: 180%;
-    }
-
-    .breadMenu i {
-        font-size: 180%;
-    }
+   
 
     .dropdowns img {
         max-width: 70px;
