@@ -805,6 +805,10 @@ standTable table {
         height: 505px !important;
     }
 
+    .chartarea ul li p {
+        font-size: 25px !important;
+    }
+
 
     #target li p, #target li a {
         font-size: 110% !important;
@@ -828,7 +832,7 @@ standTable table {
     }
 
     .stand li p {
-        font-size: 130%;
+        font-size: 130% !important;
     }
 }
 
