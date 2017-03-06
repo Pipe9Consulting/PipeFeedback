@@ -937,16 +937,12 @@ html, body {
     }
 }
 
-@media screen and (max-width: 2560px) and (min-width: 1921px) {
-    .pane li p {
-        font-size: 20px !important;
-    }
-}
+
 
 @media screen and (max-width: 1600px) and (min-width: 1024px) {
     .pane li p {
-        font-size: 15px !important;
-        line-height: 1.2;
+        font-size: 17px !important;
+        line-height: 1.1;
     }
 
 
@@ -955,7 +951,7 @@ html, body {
     }
 
     .cacLogo img {
-        width: 52% !important;
+        width: 125px !important;
     }
 }
 
@@ -1006,7 +1002,7 @@ html, body {
         font-size: 22px !important;
     }
 
-     .breadMenu a {
+    .breadMenu a {
         font-size: 22px;
     }
 
@@ -1053,7 +1049,7 @@ html, body {
         font-size: 25px;
     }
 
-   
+
 
     .dropdowns img {
         max-width: 70px;
@@ -1144,10 +1140,11 @@ html, body {
 
 
 @media screen and (min-width: 2001px) and (max-width: 2500px) {
-
-    .cacLogo img {
-        width: 164px;
+    .pane li p {
+        font-size: 25px !important;
+        line-height: 1.2;
     }
+
 
     .wallAward {
         margin-top: 4.5%;
@@ -1166,7 +1163,9 @@ html, body {
     }
 
 
-
+    .cacLogo img {
+        width: 150px;
+    }
 
     .headerMenu {
         height: 80px;
@@ -1176,13 +1175,17 @@ html, body {
         height: 98%;
     }
 
+    .footerPart .item {
+        font-size: 18px;
+    }
 
-        .accordion h3, .accordion h3:hover, .accordion .down {
-            background-size: 30% 35%;
-            background-position-y: 26px;
-            background-position-x: 30px;
-            width: 85px;
-        }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 30% 35%;
+        background-position-y: 26px;
+        background-position-x: 30px;
+        width: 85px;
+    }
 }
 
 
@@ -1248,6 +1251,10 @@ html, body {
 @media screen and (min-width: 1401px) and (max-width: 1700px) {
     .afterlogin img {
         width: 50%;
+    }
+
+    .breadcrumb {
+        padding: 0.5% 1% 0.6% 2%;
     }
 
     .accordion h3, .accordion h3:hover, .accordion .down {

@@ -50,17 +50,6 @@
             }
         }
 
-        @media screen and (max-width: 2200px) and (min-width: 2001px) {
-            .loginscreen h1 {
-                font-size: 400%;
-            }
-
-            .loginscreenleft {
-                margin-right: 3%;
-                margin-left: 31.4%;
-                margin-top: 13.6% !important;
-            }
-        }
 
         @media screen and (max-width: 2000px) and (min-width: 1701px) {
             .loginscreenleft {

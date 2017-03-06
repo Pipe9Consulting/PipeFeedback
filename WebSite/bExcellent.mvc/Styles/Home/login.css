@@ -278,7 +278,7 @@ p:empty {
 }
 
 
-@media screen and (max-width: 3500px) and (min-width: 2601px) {
+@media screen and (max-width: 3500px) and (min-width: 2800px) {
 
     body {
         background-size: 100% 100% !important;
@@ -317,9 +317,27 @@ p:empty {
     }
 }
 
-@media screen and (max-width: 2600px) and (min-width: 2001px) {
 
+@media screen and (max-width: 2800px) and (min-width: 2400px) {
 
+    .loginscreen h1 {
+        font-size: 35px;
+    }
+
+    .loginscreen p {
+        font-size: 20px;
+    }
+
+    .loginscreenleft {
+        margin-right: 3%;
+        margin-left: 31.4%;
+        margin-top: 9% !important;
+    }
+
+    .close {
+        margin-right: -9% !important;
+        margin-top: -5% !important;
+    }
 
     .errormsg {
         margin-bottom: 0px !important;
@@ -328,38 +346,103 @@ p:empty {
     }
 
     .loginscreenleft p {
-        font-size: 220%;
+        font-size: 25px;
     }
 
     .loginscreen .btn {
-        font-size: 220%;
+        font-size: 25px;
         padding: 4px 20px 4px 20px;
         margin-bottom: 20px;
     }
 
-    .loginscreen h1 {
-        font-size: 300%;
-    }
-
     .loginrightpanel p {
-        font-size: 220%;
+        font-size: 25px;
         line-height: 1.5;
     }
 
     .loginrightpanel ul li {
-        font-size: 220%;
+        font-size: 25px;
         padding: 1.5% 0;
         line-height: 1.3;
     }
 
 
     .loginrightpanel a {
-        font-size: 220%;
+        font-size: 25px;
         line-height: 2;
     }
 
     .signUp h2 {
-        font-size: 220%;
+        font-size: 30px;
+        margin-bottom: 2%;
+    }
+
+    body {
+        background-size: 102% !important;
+    }
+}
+
+@media screen and (max-width: 2400px) and (min-width: 2000px) {
+
+    .loginscreen h1 {
+        font-size: 45px;
+    }
+
+
+    #basic-forgetPassword h1 {
+        font-size: 35px;
+    }
+
+    .loginscreen p {
+        font-size: 20px;
+    }
+
+    .loginscreenleft {
+        margin-right: 3%;
+        margin-left: 31.4%;
+        margin-top: 9% !important;
+    }
+
+    .close {
+        margin-top: -5% !important;
+    }
+
+    .errormsg {
+        margin-bottom: 0px !important;
+        padding-left: 32px !important;
+        background-size: auto 23px !important;
+        font-size: 18px !important;
+    }
+
+    .loginscreenleft p {
+        font-size: 25px;
+    }
+
+    .loginscreen .btn {
+        font-size: 25px;
+        padding: 4px 20px 4px 20px;
+        margin-bottom: 20px;
+    }
+
+    .loginrightpanel p {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .loginrightpanel ul li {
+        font-size: 25px;
+        padding: 1.5% 0;
+        line-height: 1.3;
+    }
+
+
+    .loginrightpanel a {
+        font-size: 25px;
+        line-height: 2;
+    }
+
+    .signUp h2 {
+        font-size: 30px;
         margin-bottom: 2%;
     }
 

@@ -752,8 +752,10 @@ body {
 @media screen and (max-width: 2469px) and (min-width: 2001px) {
 
     .startSmallTile {
-        padding-bottom: 93.5%;
+        padding-bottom: 101.5%;
+        margin-left: -25px;
     }
+
 
     #hover_content8, #hover_content9 {
         left: 70px;
@@ -762,28 +764,28 @@ body {
 
 
     #hover_content1 {
-        right: -39%;
-        top: 56%;
+        right: -38.5%;
+        top: 53%;
     }
 
     #hover_content2 {
-        right: -39%;
-        top: 45%;
+        right: -38.5%;
+        top: 48%;
     }
 
     #hover_content4 {
-        right: -39%;
-        top: 51%;
+        right: -38.5%;
+        top: 48%;
     }
 
     #hover_content3, #hover_content7 {
-        right: 5%;
-        top: 56%;
+        right: 6%;
+        top: 53%;
     }
 
     #hover_content5 {
-        right: -80%;
-        top: 22%;
+        right: -79%;
+        top: 38%;
         width: 100%;
     }
 
@@ -801,10 +803,6 @@ body {
         right: 20px !important;
     }
 
-    .accordion a {
-        margin-top: -0.7% !important;
-    }
-
     /*@media screen and (max-width:2169px) and (min-width:2001px)*/
     .hideColumn {
         width: 95.8% !important;
@@ -817,14 +815,15 @@ body {
 
 
     .startBox {
-        height: 300px;
+        height: 280px;
         width: 100%;
     }
 
     .startPart h1 {
-        font-size: 300%;
-        padding: 1% 3.5% 1.5% 2.6%;
+        font-size: 340%;
+        padding: 1.7% 5% 1% 4%;
     }
+
 
         .startPart h1 span {
             margin-right: 6%;
@@ -882,7 +881,7 @@ body {
     }
 
     .ui.grid > [class*='four column'].row > .column {
-        width: 31.53% !important;
+        width: 31% !important;
         margin-right: 4rem;
     }
 
@@ -1292,7 +1291,7 @@ body {
         width: 130%;
         padding: 3% 4% 4% 4%;
         right: -107.5%;
-        top: -5%;
+        top:15%;
     }
 
 
@@ -1322,7 +1321,7 @@ body {
 
     .startBox:hover {
         background-position-y: 15px;
-        background-position-x: 357px;
+        background-position-x: 330px;
     }
 
 
@@ -1330,7 +1329,7 @@ body {
         height: 200px !important;
         width: 100%;
         background-position-y: 15px;
-        background-position-x: 357px;
+        background-position-x: 330px;
     }
 
     .managerSync, .communitySync {
@@ -1350,7 +1349,7 @@ body {
 
     .startPart h1 {
         font-size: 200%;
-        padding: 1.1% 5% 2.1% 3%;
+        padding: 2.5% 5% 2.1% 4%;
     }
 
     .startBox h3 {

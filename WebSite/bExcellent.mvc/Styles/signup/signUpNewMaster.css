@@ -481,11 +481,15 @@
     }
 
     .footerPart {
-        height: 81px;
+        height: 60px;
     }
 
     .bukatutup {
         padding: 1.1% 0 1.1% 0;
+    }
+
+    .cacLogo img {
+        width: 200px;
     }
 }
 
