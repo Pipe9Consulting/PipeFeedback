@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/MaxiPoe.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Welcome
+    Pipe9 Feedback - Welcome
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -94,7 +94,7 @@
             <h2>Please Note:</h2>
             <ul>
 
-                <li>Your personal data will not be used or shared with anyone besides your team members and key stakeholders involved in the MSA Marketing Capability Study.</li>
+                <li>The REP Feedback results will only be shared with key stakeholders involved in the MSA Marketing Capability Study.</li>
                 <li>The REP is not a substitute for setting priorities or plans, nor should it be used as the basis for performance reviews</li>
                 <li>The REP is not to be used as a direct measure of performance, nor should the Actions described be tied directly to a specific review score. </li>
             </ul>
