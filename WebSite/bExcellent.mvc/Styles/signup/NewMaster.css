@@ -951,7 +951,7 @@ html, body {
     }
 
     .cacLogo img {
-        width: 125px !important;
+        width: 150px !important;
     }
 }
 
@@ -1202,9 +1202,10 @@ html, body {
     }
 
     .pane li p {
-        font-size: 20px !important;
+        font-size: 22px !important;
+        line-height: 1.1;
+        padding-right: 5%;
     }
-
 
     .clickdeeper {
         left: -225%;

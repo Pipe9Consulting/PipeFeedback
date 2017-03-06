@@ -130,6 +130,11 @@ html, body {
         width: 50%;
     }
 
+    .ui.menu .item {
+        font-size: 15px;
+    }
+
+
     .headerMenu {
         height: 85px !important;
     }
@@ -146,6 +151,10 @@ html, body {
 
     .cacLogo img {
         width: 80%;
+    }
+
+    .ui.menu .item {
+        font-size: 15px;
     }
 
     .headerMenu {
@@ -188,7 +197,7 @@ html, body {
     }
 
     .ui.menu .item {
-        font-size: 1rem !important;
+        font-size: 14px !important;
     }
 
     .cacLogo img {
@@ -289,6 +298,11 @@ html, body {
     .cacLogo img {
         width: 65% !important;
     }
+
+    .ui.menu .item {
+        font-size: 15px;
+    }
+
 
 
     .dropImage img {
@@ -452,7 +466,7 @@ html, body {
     }
 
     .ui.menu .item {
-        font-size:17px !important;
+        font-size: 17px !important;
     }
 
     #notifyCont li a {

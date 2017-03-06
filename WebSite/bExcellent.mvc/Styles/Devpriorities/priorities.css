@@ -559,33 +559,34 @@ p {
     display: none;
 }
 
-
-
-
-.frquencyContent li:first-child {
-    width: 3%;
-    border-right: 1px solid #999;
-    text-align: center;
+.frquencyContent li {
+    border-bottom: 1px solid #aaa;
 }
 
-.frquencyContent li:nth-child(2) {
-    width: 17%;
-}
+    .frquencyContent li:first-child {
+        width: 3%;
+        border-right: 1px solid #999;
+        text-align: center;
+    }
+
+    .frquencyContent li:nth-child(2) {
+        width: 17%;
+    }
 
 
-.frquencyContent li:first-child img {
-    float: left;
-    width: 20%;
-}
+    .frquencyContent li:first-child img {
+        float: left;
+        width: 20%;
+    }
 
-.frquencyContent li:nth-child(3) {
-    border-left: 1px solid #999;
-    border-right: 1px solid #999;
-    width: 45%;
-    min-height: 55px;
-    font-size: 100%;
-    line-height: 1.2;
-}
+    .frquencyContent li:nth-child(3) {
+        border-left: 1px solid #999;
+        border-right: 1px solid #999;
+        width: 45%;
+        min-height: 55px;
+        font-size: 100%;
+        line-height: 1.2;
+    }
 
 .frequency_scale li {
     min-height: 0 !important;
@@ -996,7 +997,7 @@ p {
 .select_list {
     background: #333;
     color: #e0b001 !important;
-    border-bottom: 1PX solid #999;
+    /*border-bottom: 1PX solid #999;*/
 }
 /*------------------------------------*\
 -------- Page Styles: Accordion
@@ -2578,4 +2579,3 @@ body {
 .frquencyContent ul:last-child .hover_content {
     margin-top: -5%;
 }
-
