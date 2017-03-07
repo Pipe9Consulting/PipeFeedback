@@ -2783,11 +2783,11 @@ body {
     }
 
     .profileCenter ul li {
-        height: 140px !important;
+        height: 134px !important;
     }
 
     .slimScrollDiv, .scroll2 {
-        height: 293px !important;
+        height: 298px !important;
     }
 
     .requestscroll .slimScrollDiv {
@@ -2829,10 +2829,16 @@ body {
 
     .givefbBtn {
         margin-bottom: 2%;
+        width: 9%;
+    }
+
+
+    #selectallTeam {
+        margin-right: 0%;
     }
 
     .givefbmessageDummy2 {
-        padding-bottom: 11.5%;
+        padding-bottom: 8.5%;
     }
 
     .givefbContent {
@@ -2908,7 +2914,7 @@ body {
     }
 
     .paginationfb ul {
-        width: 19.5%;
+        width: 12.5%;
     }
 
     .histroyfb .givefbmessageDummy {
@@ -3019,7 +3025,7 @@ body {
     }
 
     .givefbmessage img {
-        width: 22%;
+        width: 16%;
     }
 
     .givefbmessage .incompleteBtn p {
@@ -3822,6 +3828,25 @@ body {
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1201px) {
+
+    .fristpage {
+        margin-left: -3.7%;
+    }
+
+    .prepage {
+        margin-left: -2.5%;
+    }
+
+    .lastpage {
+        margin-left: 1.3%;
+    }
+
+    .historyBtn {
+        width: 55%;
+        margin: -12px 0 1% 0;
+    }
+
+
     .boxone {
         height: 57%;
         margin-top: 73%;
@@ -3849,6 +3874,7 @@ body {
 
     .boxone p {
         font-size: 80% !important;
+        padding: 1% 6% 1% 6%;
     }
 
     .boxone a {
@@ -4463,15 +4489,62 @@ body {
 @media screen and (max-width: 1281px) and (min-width: 1024px) {
 
     .profileCenter ul li {
-        height: 86px;
+        height: 112px;
+    }
+
+    .givefbmessage h3 {
+        font-size: 80%;
+    }
+
+    .completedMsg {
+        width: 45% !important;
+    }
+
+    .paginationfb ul li a {
+        line-height: 27px;
+    }
+
+
+    .givefbmessageDummy2 {
+        padding: 1% 1% 9.8% 1%;
+    }
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 15.7%;
+    }
+
+    .givefbmessage img {
+        width: 16%;
+    }
+
+    .givefbmessage .incompleteBtn p {
+        font-size: 70%;
+    }
+
+    #selectallTeam {
+        margin-right: 0%;
     }
 
     .slimScrollDiv, .scroll2 {
-        height: 170px !important;
+        height: 235px !important;
     }
+
+    .givefbBtn {
+        width: 10%;
+        margin-bottom: 1.5%;
+    }
+
+    .paginationfb ul {
+        width: 15%;
+    }
+
 
     .profileCenter p {
         font-size: 65%;
+    }
+
+    .givefbmessagedetails p {
+        font-size: 70%;
     }
 }
 /*Profile Details*/

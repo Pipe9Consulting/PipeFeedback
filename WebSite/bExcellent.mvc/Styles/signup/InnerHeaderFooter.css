@@ -267,7 +267,11 @@ html, body {
     }
 
     .cacLogo img {
-        width: 52% !important;
+        width: 125px !important;
+    }
+
+    .ui.menu .item {
+        font-size: 13px !important;
     }
 }
 

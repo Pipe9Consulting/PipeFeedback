@@ -914,46 +914,7 @@ html, body {
 }
 
 /*Newly Added*/
-@media screen and (max-width: 1366px) and (min-width: 1024px) {
-    .page-wrapper {
-        min-height: 100%;
-        /* equal to footer height */
-        margin-bottom: -38px;
-    }
 
-    .footerPart, .page-wrap:after {
-        height: 38px;
-    }
-
-    .centerPart h1 {
-        font-size: 1rem;
-    }
-
-    .accordion h3, .accordion h3:hover, .accordion .down {
-        background-size: 40% 30%;
-        background-position-y: 28px;
-        background-position-x: 17px;
-        width: 60px;
-    }
-}
-
-
-
-@media screen and (max-width: 1600px) and (min-width: 1024px) {
-    .pane li p {
-        font-size: 17px !important;
-        line-height: 1.1;
-    }
-
-
-    .headerRight {
-        width: 23%;
-    }
-
-    .cacLogo img {
-        width: 150px !important;
-    }
-}
 
 
 @media screen and (min-width: 2900px) and (max-width: 3500px) {
@@ -1265,7 +1226,9 @@ html, body {
         width: 85px;
     }
 
-
+    .cacLogo img {
+        width: 125px !important;
+    }
 
     .clickdeeper {
         left: -215%;
@@ -1284,8 +1247,42 @@ html, body {
 }
 
 
-
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
+
+    .page-wrapper {
+        min-height: 100%;
+        /* equal to footer height */
+        margin-bottom: -38px;
+    }
+
+    .footerPart, .page-wrap:after {
+        height: 38px;
+    }
+
+    .centerPart h1 {
+        font-size: 1rem;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 40% 30%;
+        background-position-y: 28px;
+        background-position-x: 17px;
+        width: 60px;
+    }
+
+    .pane li p {
+        font-size: 17px !important;
+        line-height: 1.1;
+    }
+
+
+    .headerRight {
+        width: 23%;
+    }
+
+    .cacLogo img {
+        width: 150px !important;
+    }
 
     .accordion a.cacLogo {
         padding-left: 2.2%;
@@ -1310,5 +1307,47 @@ html, body {
 
     .headerRight .dropdown {
         margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    .pane li p {
+        font-size: 15px !important;
+        line-height: 1.1;
+        padding-right: 5%;
+    }
+
+
+    .login {
+        padding-bottom: 4%;
+    }
+
+
+    .headerRight {
+        width: 23%;
+    }
+
+    .cacLogo img {
+        width: 125px !important;
+    }
+
+    .page-wrapper {
+        min-height: 100%;
+        margin-bottom: -38px;
+        width: 99.95%;
+    }
+
+    .footerPart, .page-wrap:after {
+        height: 38px;
+    }
+
+    .centerPart h1 {
+        font-size: 1rem;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 30% 25%;
+        width: 60px;
     }
 }
