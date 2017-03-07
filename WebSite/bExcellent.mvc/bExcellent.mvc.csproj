@@ -329,6 +329,8 @@
     <Content Include="Images\AO_Sales_Manager_intro.png" />
     <Content Include="Images\arrow.png" />
     <Content Include="Images\astd-logo.png" />
+    <Content Include="Images\Audience Marketing Manager_Intro.png" />
+    <Content Include="Images\AudienceMarketingManager.png" />
     <Content Include="Images\axxon-small.png" />
     <Content Include="Images\axxon.png" />
     <Content Include="Images\background-img-1600.png" />
@@ -1344,6 +1346,21 @@
     <Content Include="Images\icons\AOSalesManager6.png" />
     <Content Include="Images\icons\AOSalesManager6h.png" />
     <Content Include="Images\icons\AOSalesManager6_S.png" />
+    <Content Include="Images\icons\AudienceMarketingManager1-small.png" />
+    <Content Include="Images\icons\AudienceMarketingManager1-small_selected.png" />
+    <Content Include="Images\icons\AudienceMarketingManager1.png" />
+    <Content Include="Images\icons\AudienceMarketingManager1h.png" />
+    <Content Include="Images\icons\AudienceMarketingManager1_S.png" />
+    <Content Include="Images\icons\AudienceMarketingManager2-small.png" />
+    <Content Include="Images\icons\AudienceMarketingManager2-small_selected.png" />
+    <Content Include="Images\icons\AudienceMarketingManager2.png" />
+    <Content Include="Images\icons\AudienceMarketingManager2h.png" />
+    <Content Include="Images\icons\AudienceMarketingManager2_S.png" />
+    <Content Include="Images\icons\AudienceMarketingManager3-small.png" />
+    <Content Include="Images\icons\AudienceMarketingManager3-small_selected.png" />
+    <Content Include="Images\icons\AudienceMarketingManager3.png" />
+    <Content Include="Images\icons\AudienceMarketingManager3h.png" />
+    <Content Include="Images\icons\AudienceMarketingManager3_S.png" />
     <Content Include="Images\icons\belogo-1366.png" />
     <Content Include="Images\icons\benefits-of-leader.png" />
     <Content Include="Images\icons\benefits-of-manager.png" />
@@ -2416,6 +2433,8 @@
     <Content Include="Images\KessakuImage\arrow-dark.png" />
     <Content Include="Images\KessakuImage\arrow-light.png" />
     <Content Include="Images\KessakuImage\ASTD-webcast.jpg" />
+    <Content Include="Images\KessakuImage\AudienceMarketingManager.png" />
+    <Content Include="Images\KessakuImage\AudienceMarketingManager_pane.png" />
     <Content Include="Images\KessakuImage\border-bg.png" />
     <Content Include="Images\KessakuImage\borderYellowbg.png" />
     <Content Include="Images\KessakuImage\borderYellowbg2.png" />
@@ -2645,6 +2664,7 @@
     <Content Include="Images\KessakuImage\PoE\AOAMManager_large.png" />
     <Content Include="Images\KessakuImage\PoE\AOProductSpecialist_large.png" />
     <Content Include="Images\KessakuImage\PoE\AOSalesManager_large.png" />
+    <Content Include="Images\KessakuImage\PoE\AudienceMarketingManager_large.png" />
     <Content Include="Images\KessakuImage\PoE\build-ur-own.jpg" />
     <Content Include="Images\KessakuImage\PoE\ChallengerSelling_large.png" />
     <Content Include="Images\KessakuImage\PoE\ChallengerSelling_poe.jpg" />
@@ -3370,7 +3390,6 @@
     <Content Include="Images\Start\provideTFB_Selected.png" />
     <Content Include="Images\Start\provide_samll.png" />
     <Content Include="Images\Start\provide_samll_h.png" />
-    <Content Include="Images\Start\provide_samll_TFB_h.png" />
     <Content Include="Images\Start\provide_small_Selected.png" />
     <Content Include="Images\Start\resultnew_Icon.png" />
     <Content Include="Images\Start\resultnew_Icon_h.png" />

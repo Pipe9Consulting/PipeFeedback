@@ -167,7 +167,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
             if (feedback.FeedbackType == 1)
             {
                 var user = Common.GetUserDetailsByMappingId(feedback.For.GetValueOrDefault());
-                var userName = user.User.FirstName + " " + user.User.LastName;
+                var userName = user.User.FirstName;
                 var rolename = user.POE.Name;
                 var contentstring = Constant.SelfFeedbackCompletedNew;
                 var subject = "Thank you for completing Self-Feedback";
@@ -176,7 +176,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                 var emailContent = string.Empty;
                 emailContenttemp = string.Format(contentstring,
                                         userName,
-                                        DateTime.Now.ToShortDateString(),
+                                        String.Format("{0:MM/dd/yyyy}", DateTime.Now).Replace("-", "/"),
                                         rolename
                                       );
                 emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
@@ -186,7 +186,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
             else
             {
                 var user = Common.GetUserDetailsByMappingId(feedback.RequestedFrom.GetValueOrDefault());
-                var userName = user.User.FirstName + " " + user.User.LastName;
+                var userName = user.User.FirstName;
                 var rolename = user.POE.Name;
                 var contentstring = Constant.ManagerFeedbackCompleted;
                 var subject = "Thank you for completing Team-Feedback";
@@ -195,7 +195,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                 var emailContent = string.Empty;
                 emailContenttemp = string.Format(contentstring,
                                         userName,
-                                        DateTime.Now.ToShortDateString(),
+                                         String.Format("{0:MM/dd/yyyy}", DateTime.Now).Replace("-", "/"),
                                         rolename
                                       );
                 emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);

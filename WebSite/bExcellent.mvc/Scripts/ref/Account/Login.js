@@ -112,7 +112,8 @@
                     //$('#masterMsgCont').text("Your Password is sent to your email id sucessfully");
                     //$('#overallCont').show();
                     alert("Your Password is sent to your email id sucessfully");
-                    $.modal.close();
+                    $("#basic-forgetPassword").modal('hide');
+                    //$.modal.close();
                 } else {
                     $('#txtInput').val('');
                     $('#findid').text("Please enter your correct emailid");
