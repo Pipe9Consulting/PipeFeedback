@@ -1803,7 +1803,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     _to = emailid;
                 }
                 var emailContenttemp = string.Format(Constant.ReportanIssue,
-                                                    password.user.userName,
+                                                    password.user.FirstName,
                                                     subject
                                                    );
                 var emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, emailid);

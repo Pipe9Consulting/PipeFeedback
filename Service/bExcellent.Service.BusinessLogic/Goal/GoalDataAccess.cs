@@ -1025,7 +1025,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 string _pwd = ConfigurationManager.AppSettings["emailPassword"];
                 string _bcc = ConfigurationManager.AppSettings["bccEmail"];
                 string _to = ConfigurationManager.AppSettings["mailTo1"];
-                var userName = user.User.FirstName + " " + user.User.LastName;
+                var userName = user.User.FirstName;
                 if (_to.Trim() == string.Empty)
                 {
                     _to = user.User.EmailAddress;
@@ -1035,7 +1035,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 var emailContent = string.Empty;
                 emailContenttemp = string.Format(Constant.CoachingDate,
                                         userName,
-                                        goaldate.ToShortDateString()
+                                        String.Format("{0:MM/dd/yyyy}", goaldate).Replace("-","/")
                                       );
                 emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
                 MailMessage objEmail = new MailMessage(_from, _to, subject, emailContent);

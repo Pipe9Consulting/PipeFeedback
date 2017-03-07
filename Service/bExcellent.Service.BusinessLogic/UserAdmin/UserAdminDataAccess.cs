@@ -298,7 +298,7 @@ namespace bExcellent.Service.BusinessLogic.UserAdmin
             {
                 Email email = new Email();
                 var emailContenttemp = string.Format(Constant.ForgetPassword,
-                                                    password.user.userName,
+                                                    password.user.FirstName,
                                                     emailAddress,
                                                     password.PasswordText
                                                    );
