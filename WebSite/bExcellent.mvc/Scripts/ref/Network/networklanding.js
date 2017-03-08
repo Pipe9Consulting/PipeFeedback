@@ -2062,7 +2062,7 @@ var network = {
             url: option.url,
             data: option.data,
             success: function (response) {
-                $('#masterMsgCont').text("Your profile has been<br/> updated successfully");
+                $('#masterMsgCont').text("Your profile has been updated successfully");
                 $('#overallCont').show();
                 //$('#infos').html(' Your profile has been<br/> updated successfully');
                 //$(".popupbg,.popup").show();

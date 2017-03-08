@@ -433,11 +433,11 @@ namespace bExcellent.mvc.Controllers
 
             if (wave == 1)
             {
-                var allFeedbackDetailsAccountManager = common.GenerateManagerReport(18).SelectMany((a, b) => new List<ManagerReports>
+                var allFeedbackDetailsAccountManager = common.GenerateManagerReport(27).SelectMany((a, b) => new List<ManagerReports>
                                               {
                                                   new ManagerReports
                                                       {
-                                                         PoeName = a.PoeName+"(STANDARD)",
+                                                         PoeName = a.PoeName,
                                                           Area = a.Area,
                                                           Country = a.Country,
                                                           TeamName = a.TeamName,
@@ -447,145 +447,12 @@ namespace bExcellent.mvc.Controllers
                                                           Status = a.Status,
                                                           CompletedOn = a.CompletedOn,
                                                           Relation = a.Relation,
-                                                          PoEArea = "STANDARD",
+                                                          PoEArea = "1",
                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
 
                                                       }
                                               }).ToList();
-                var allFeedbackDetailsSalesManager = common.GenerateManagerReport(19).SelectMany((a, b) => new List<ManagerReports>
-                                              {
-                                                  new ManagerReports
-                                                      {
-                                                          PoeName = a.PoeName+"(EMEA)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          TeamName = a.TeamName,
-                                                          TeamEmail = a.TeamEmail,
-                                                          ManagerName = a.ManagerName,
-                                                          ManagerEmail = a.ManagerEmail,
-                                                          Status = a.Status,
-                                                          CompletedOn = a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                            PoEArea = "EMEA",
-                                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-
-                                                      }
-                                              }).ToList();
-                var allFeedbackDetailsAMManager = common.GenerateManagerReport(20).SelectMany((a, b) => new List<ManagerReports>
-                                              {
-                                                  new ManagerReports
-                                                      {
-                                                          PoeName = a.PoeName+"(MIDMARKET)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          TeamName = a.TeamName,
-                                                          TeamEmail = a.TeamEmail,
-                                                          ManagerName = a.ManagerName,
-                                                          ManagerEmail = a.ManagerEmail,
-                                                          Status = a.Status,
-                                                          CompletedOn = a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea = "MIDMARKET",
-                                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-
-                                                      }
-                                              }).ToList();
-                var allFeedbackDetailsAccountManager5 = common.GenerateManagerReport(21).SelectMany((a, b) => new List<ManagerReports>
-                                              {
-                                                  new ManagerReports
-                                                      {
-                                                         PoeName = a.PoeName+"(STRATEGIC)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          TeamName = a.TeamName,
-                                                          TeamEmail = a.TeamEmail,
-                                                          ManagerName = a.ManagerName,
-                                                          ManagerEmail = a.ManagerEmail,
-                                                          Status = a.Status,
-                                                          CompletedOn = a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                           PoEArea = "STRATEGIC",
-                                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-
-                                                      }
-                                              }).ToList();
-                var allFeedbackDetailsSalesManager4 = common.GenerateManagerReport(22).SelectMany((a, b) => new List<ManagerReports>
-                                              {
-                                                  new ManagerReports
-                                                      {
-                                                          PoeName = a.PoeName+"(STANDARD)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          TeamName = a.TeamName,
-                                                          TeamEmail = a.TeamEmail,
-                                                          ManagerName = a.ManagerName,
-                                                          ManagerEmail = a.ManagerEmail,
-                                                          Status = a.Status,
-                                                          CompletedOn = a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                           PoEArea = "STANDARD",
-                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-
-                                                      }
-                                              }).ToList();
-                var allFeedbackDetailsAMManager3 = common.GenerateManagerReport(23).SelectMany((a, b) => new List<ManagerReports>
-                                              {
-                                                  new ManagerReports
-                                                      {
-                                                          PoeName = a.PoeName+"(US&CA)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          TeamName = a.TeamName,
-                                                          TeamEmail = a.TeamEmail,
-                                                          ManagerName = a.ManagerName,
-                                                          ManagerEmail = a.ManagerEmail,
-                                                          Status = a.Status,
-                                                          CompletedOn = a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                           PoEArea = "US&CA",
-                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-
-                                                      }
-                                              }).ToList();
-                var allFeedbackDetailsAMManager7 = common.GenerateManagerReport(24).SelectMany((a, b) => new List<ManagerReports>
-                                              {
-                                                  new ManagerReports
-                                                      {
-                                                          PoeName = a.PoeName+"(STANDARD)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          TeamName = a.TeamName,
-                                                          TeamEmail = a.TeamEmail,
-                                                          ManagerName = a.ManagerName,
-                                                          ManagerEmail = a.ManagerEmail,
-                                                          Status = a.Status,
-                                                          CompletedOn = a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea = "STANDARD",
-                                                           LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-
-                                                      }
-                                              }).ToList();
-                var allFeedbackDetailsAMManager8 = common.GenerateManagerReport(25).SelectMany((a, b) => new List<ManagerReports>
-                                              {
-                                                  new ManagerReports
-                                                      {
-                                                          PoeName = a.PoeName+"(MIDMARKET)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          TeamName = a.TeamName,
-                                                          TeamEmail = a.TeamEmail,
-                                                          ManagerName = a.ManagerName,
-                                                          ManagerEmail = a.ManagerEmail,
-                                                          Status = a.Status,
-                                                          CompletedOn = a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                           PoEArea = "MIDMARKET",
-                                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                      }
-
-                                              }).ToList();
-                var allFeedbackDetailsAMManager9 = common.GenerateManagerReport(26).SelectMany((a, b) => new List<ManagerReports>
+                var allFeedbackDetailsSalesManager = common.GenerateManagerReport(28).SelectMany((a, b) => new List<ManagerReports>
                                               {
                                                   new ManagerReports
                                                       {
@@ -599,25 +466,158 @@ namespace bExcellent.mvc.Controllers
                                                           Status = a.Status,
                                                           CompletedOn = a.CompletedOn,
                                                           Relation = a.Relation,
-                                                          PoEArea = "SALESMANAGER",
-                                                           LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                                                            PoEArea = "1",
+                                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
 
                                                       }
-
                                               }).ToList();
+                var allFeedbackDetailsAMManager = common.GenerateManagerReport(29).SelectMany((a, b) => new List<ManagerReports>
+                                              {
+                                                  new ManagerReports
+                                                      {
+                                                          PoeName = a.PoeName,
+                                                          Area = a.Area,
+                                                          Country = a.Country,
+                                                          TeamName = a.TeamName,
+                                                          TeamEmail = a.TeamEmail,
+                                                          ManagerName = a.ManagerName,
+                                                          ManagerEmail = a.ManagerEmail,
+                                                          Status = a.Status,
+                                                          CompletedOn = a.CompletedOn,
+                                                          Relation = a.Relation,
+                                                          PoEArea = "1",
+                                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+
+                                                      }
+                                              }).ToList();
+                var allFeedbackDetailsAccountManager5 = common.GenerateManagerReport(30).SelectMany((a, b) => new List<ManagerReports>
+                                              {
+                                                  new ManagerReports
+                                                      {
+                                                         PoeName = a.PoeName,
+                                                          Area = a.Area,
+                                                          Country = a.Country,
+                                                          TeamName = a.TeamName,
+                                                          TeamEmail = a.TeamEmail,
+                                                          ManagerName = a.ManagerName,
+                                                          ManagerEmail = a.ManagerEmail,
+                                                          Status = a.Status,
+                                                          CompletedOn = a.CompletedOn,
+                                                          Relation = a.Relation,
+                                                           PoEArea = "1",
+                                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+
+                                                      }
+                                              }).ToList();
+                //var allFeedbackDetailsSalesManager4 = common.GenerateManagerReport(22).SelectMany((a, b) => new List<ManagerReports>
+                //                              {
+                //                                  new ManagerReports
+                //                                      {
+                //                                          PoeName = a.PoeName+"(STANDARD)",
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          TeamName = a.TeamName,
+                //                                          TeamEmail = a.TeamEmail,
+                //                                          ManagerName = a.ManagerName,
+                //                                          ManagerEmail = a.ManagerEmail,
+                //                                          Status = a.Status,
+                //                                          CompletedOn = a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                           PoEArea = "STANDARD",
+                //                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+
+                //                                      }
+                //                              }).ToList();
+                //var allFeedbackDetailsAMManager3 = common.GenerateManagerReport(23).SelectMany((a, b) => new List<ManagerReports>
+                //                              {
+                //                                  new ManagerReports
+                //                                      {
+                //                                          PoeName = a.PoeName+"(US&CA)",
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          TeamName = a.TeamName,
+                //                                          TeamEmail = a.TeamEmail,
+                //                                          ManagerName = a.ManagerName,
+                //                                          ManagerEmail = a.ManagerEmail,
+                //                                          Status = a.Status,
+                //                                          CompletedOn = a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                           PoEArea = "US&CA",
+                //                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+
+                //                                      }
+                //                              }).ToList();
+                //var allFeedbackDetailsAMManager7 = common.GenerateManagerReport(24).SelectMany((a, b) => new List<ManagerReports>
+                //                              {
+                //                                  new ManagerReports
+                //                                      {
+                //                                          PoeName = a.PoeName+"(STANDARD)",
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          TeamName = a.TeamName,
+                //                                          TeamEmail = a.TeamEmail,
+                //                                          ManagerName = a.ManagerName,
+                //                                          ManagerEmail = a.ManagerEmail,
+                //                                          Status = a.Status,
+                //                                          CompletedOn = a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                          PoEArea = "STANDARD",
+                //                                           LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+
+                //                                      }
+                //                              }).ToList();
+                //var allFeedbackDetailsAMManager8 = common.GenerateManagerReport(25).SelectMany((a, b) => new List<ManagerReports>
+                //                              {
+                //                                  new ManagerReports
+                //                                      {
+                //                                          PoeName = a.PoeName+"(MIDMARKET)",
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          TeamName = a.TeamName,
+                //                                          TeamEmail = a.TeamEmail,
+                //                                          ManagerName = a.ManagerName,
+                //                                          ManagerEmail = a.ManagerEmail,
+                //                                          Status = a.Status,
+                //                                          CompletedOn = a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                           PoEArea = "MIDMARKET",
+                //                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                //                                      }
+
+                //                              }).ToList();
+                //var allFeedbackDetailsAMManager9 = common.GenerateManagerReport(26).SelectMany((a, b) => new List<ManagerReports>
+                //                              {
+                //                                  new ManagerReports
+                //                                      {
+                //                                          PoeName = a.PoeName,
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          TeamName = a.TeamName,
+                //                                          TeamEmail = a.TeamEmail,
+                //                                          ManagerName = a.ManagerName,
+                //                                          ManagerEmail = a.ManagerEmail,
+                //                                          Status = a.Status,
+                //                                          CompletedOn = a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                          PoEArea = "SALESMANAGER",
+                //                                           LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+
+                //                                      }
+
+                //                              }).ToList();
 
                 var allFeedbacks = new List<ManagerReports>();
                 allFeedbacks.AddRange(allFeedbackDetailsAccountManager);
                 allFeedbacks.AddRange(allFeedbackDetailsSalesManager);
                 allFeedbacks.AddRange(allFeedbackDetailsAMManager);
 
-                allFeedbacks.AddRange(allFeedbackDetailsSalesManager4);
+              //  allFeedbacks.AddRange(allFeedbackDetailsSalesManager4);
                 allFeedbacks.AddRange(allFeedbackDetailsAccountManager5);
-                allFeedbacks.AddRange(allFeedbackDetailsAMManager3);
+                //allFeedbacks.AddRange(allFeedbackDetailsAMManager3);
 
-                allFeedbacks.AddRange(allFeedbackDetailsAMManager7);
-                allFeedbacks.AddRange(allFeedbackDetailsAMManager8);
-                allFeedbacks.AddRange(allFeedbackDetailsAMManager9);
+               // allFeedbacks.AddRange(allFeedbackDetailsAMManager7);
+               // allFeedbacks.AddRange(allFeedbackDetailsAMManager8);
+               // allFeedbacks.AddRange(allFeedbackDetailsAMManager9);
                // allFeedbacks.AddRange(allFeedbackDetailsAMManager3);
                 //allFeedbacks.AddRange(allFeedbackDetailsAccountExeecutive);
                 //allFeedbacks.AddRange(allFeedbackDetailsadsolSpecilaistt);

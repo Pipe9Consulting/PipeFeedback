@@ -602,7 +602,7 @@ var excellenceactions = {
 };
 
 function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage) {
-    //debugger;
+    debugger;
     var numberOfSlide = Math.ceil(loadQuestion.length / 5);
     var commhtml = "<div class='chartslide'>";
     var dummyhtml = "";
@@ -656,7 +656,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                                     "<div class='chartbg'>" +
                                         "<div class='chartarea'>" +
                                             "<ul>";
-    if (loadQuestion.length == 9 || loadQuestion.length == 10 || loadQuestion.length == 11 || loadQuestion.length == 5 || loadQuestion.length == 4 || loadQuestion.length == 3 || loadQuestion.length == 2 || loadQuestion.length == 1) {
+    if (loadQuestion.length == 9 || loadQuestion.length == 10 || loadQuestion.length == 11 || loadQuestion.length == 12 || loadQuestion.length == 5 || loadQuestion.length == 4 || loadQuestion.length == 3 || loadQuestion.length == 2 || loadQuestion.length == 1) {
         for (var j = 0; j < numberOfSlide ; j++) {
             //commhtml = commhtml + twoClass;
 
