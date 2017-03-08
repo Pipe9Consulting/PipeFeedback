@@ -96,6 +96,7 @@ namespace bExcellent.mvc.Controllers
         [SessionExpireReport]
         public ActionResult ReportsPage()
         {
+            ViewBag.RetrievePassword ="1";
             //if (Session["Uname"] != null)
             //{
             //    ViewBag.RetrievePassword = Session["RetrievePassword"];
@@ -183,135 +184,7 @@ namespace bExcellent.mvc.Controllers
             int wave = 1;
             if (wave == 1)
             {
-                var allFeedbackDetailsAccountManager = common.GenerateTeamReport(18).SelectMany((a, b) => new List<TeamReportsMSA>
-                                              {
-                                                  new TeamReportsMSA
-                                                      {
-                                                          PoeName = a.PoeName+"(STANDARD)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          Name = a.Name,
-                                                          Email = a.Email,
-                                                          Status = a.Status ,
-                                                          CompletedOn =a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea="STANDARD",
-                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                        }
-                                              }).ToList();
-                var allFeedbackDetailsSalesManager = common.GenerateTeamReport(19).SelectMany((a, b) => new List<TeamReportsMSA>
-                                              {
-                                                  new TeamReportsMSA
-                                                      {
-                                                          PoeName = a.PoeName+"(EMEA)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          Name = a.Name,
-                                                          Email = a.Email,
-                                                          Status = a.Status ,
-                                                          CompletedOn =a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea="EMEA",
-                                                          LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                        }
-                                              }).ToList();
-                var allFeedbackDetailsAMManager = common.GenerateTeamReport(20).SelectMany((a, b) => new List<TeamReportsMSA>
-                                              {
-                                                  new TeamReportsMSA
-                                                      {
-                                                          PoeName = a.PoeName+"(MIDMARKET)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          Name = a.Name,
-                                                          Email = a.Email,
-                                                          Status = a.Status ,
-                                                          CompletedOn =a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea="MIDMARKET",
-                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                        }
-                                              }).ToList();
-                var allFeedbackDetailsAccountExeecutive = common.GenerateTeamReport(21).SelectMany((a, b) => new List<TeamReportsMSA>
-                                              {
-                                                  new TeamReportsMSA
-                                                      {
-                                                          PoeName = a.PoeName+"(STRATEGIC)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          Name = a.Name,
-                                                          Email = a.Email,
-                                                          Status = a.Status ,
-                                                          CompletedOn =a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea="STRATEGIC",
-                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                        }
-                                              }).ToList();
-                var allFeedbackDetailsadsolSpecilaistt = common.GenerateTeamReport(22).SelectMany((a, b) => new List<TeamReportsMSA>
-                                              {
-                                                  new TeamReportsMSA
-                                                      {
-                                                          PoeName = a.PoeName+"(STANDARD)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          Name = a.Name,
-                                                          Email = a.Email,
-                                                          Status = a.Status ,
-                                                          CompletedOn =a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea="STANDARD",
-                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                        }
-                                              }).ToList();
-                var allFeedbackDetailsProductSpecialist = common.GenerateTeamReport(23).SelectMany((a, b) => new List<TeamReportsMSA>
-                                              {
-                                                  new TeamReportsMSA
-                                                      {
-                                                          PoeName = a.PoeName+"(US&CA)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          Name = a.Name,
-                                                          Email = a.Email,
-                                                          Status = a.Status ,
-                                                          CompletedOn =a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea="US&CA",
-                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                        }
-                                              }).ToList();
-                var allFeedbackDetailsProductSpecialist1 = common.GenerateTeamReport(24).SelectMany((a, b) => new List<TeamReportsMSA>
-                                              {
-                                                  new TeamReportsMSA
-                                                      {
-                                                          PoeName = a.PoeName+"(STANDARD)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          Name = a.Name,
-                                                          Email = a.Email,
-                                                          Status = a.Status ,
-                                                          CompletedOn =a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea="STANDARD",
-                                                           LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                        }
-                                              }).ToList();
-                var allFeedbackDetailsProductSpecialist2 = common.GenerateTeamReport(25).SelectMany((a, b) => new List<TeamReportsMSA>
-                                              {
-                                                  new TeamReportsMSA
-                                                      {
-                                                          PoeName = a.PoeName+"(MIDMARKET)",
-                                                          Area = a.Area,
-                                                          Country = a.Country,
-                                                          Name = a.Name,
-                                                          Email = a.Email,
-                                                          Status = a.Status ,
-                                                          CompletedOn =a.CompletedOn,
-                                                          Relation = a.Relation,
-                                                          PoEArea="MIDMARKET",
-                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
-                                                        }
-                                              }).ToList();
-                var allFeedbackDetailsProductSpecialist3 = common.GenerateTeamReport(26).SelectMany((a, b) => new List<TeamReportsMSA>
+                var allFeedbackDetailsAccountManager = common.GenerateTeamReport(27).SelectMany((a, b) => new List<TeamReportsMSA>
                                               {
                                                   new TeamReportsMSA
                                                       {
@@ -323,21 +196,149 @@ namespace bExcellent.mvc.Controllers
                                                           Status = a.Status ,
                                                           CompletedOn =a.CompletedOn,
                                                           Relation = a.Relation,
-                                                          PoEArea="SALES MANAGER",
+                                                          PoEArea="",
                                                             LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
                                                         }
                                               }).ToList();
+                var allFeedbackDetailsSalesManager = common.GenerateTeamReport(28).SelectMany((a, b) => new List<TeamReportsMSA>
+                                              {
+                                                  new TeamReportsMSA
+                                                      {
+                                                          PoeName = a.PoeName,
+                                                          Area = a.Area,
+                                                          Country = a.Country,
+                                                          Name = a.Name,
+                                                          Email = a.Email,
+                                                          Status = a.Status ,
+                                                          CompletedOn =a.CompletedOn,
+                                                          Relation = a.Relation,
+                                                          PoEArea="",
+                                                          LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                                                        }
+                                              }).ToList();
+                var allFeedbackDetailsAMManager = common.GenerateTeamReport(29).SelectMany((a, b) => new List<TeamReportsMSA>
+                                              {
+                                                  new TeamReportsMSA
+                                                      {
+                                                          PoeName = a.PoeName,
+                                                          Area = a.Area,
+                                                          Country = a.Country,
+                                                          Name = a.Name,
+                                                          Email = a.Email,
+                                                          Status = a.Status ,
+                                                          CompletedOn =a.CompletedOn,
+                                                          Relation = a.Relation,
+                                                          PoEArea="",
+                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                                                        }
+                                              }).ToList();
+                var allFeedbackDetailsAccountExeecutive = common.GenerateTeamReport(30).SelectMany((a, b) => new List<TeamReportsMSA>
+                                              {
+                                                  new TeamReportsMSA
+                                                      {
+                                                          PoeName = a.PoeName,
+                                                          Area = a.Area,
+                                                          Country = a.Country,
+                                                          Name = a.Name,
+                                                          Email = a.Email,
+                                                          Status = a.Status ,
+                                                          CompletedOn =a.CompletedOn,
+                                                          Relation = a.Relation,
+                                                          PoEArea="",
+                                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                                                        }
+                                              }).ToList();
+                //var allFeedbackDetailsadsolSpecilaistt = common.GenerateTeamReport(22).SelectMany((a, b) => new List<TeamReportsMSA>
+                //                              {
+                //                                  new TeamReportsMSA
+                //                                      {
+                //                                          PoeName = a.PoeName+"(STANDARD)",
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          Name = a.Name,
+                //                                          Email = a.Email,
+                //                                          Status = a.Status ,
+                //                                          CompletedOn =a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                          PoEArea="STANDARD",
+                //                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                //                                        }
+                //                              }).ToList();
+                //var allFeedbackDetailsProductSpecialist = common.GenerateTeamReport(23).SelectMany((a, b) => new List<TeamReportsMSA>
+                //                              {
+                //                                  new TeamReportsMSA
+                //                                      {
+                //                                          PoeName = a.PoeName+"(US&CA)",
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          Name = a.Name,
+                //                                          Email = a.Email,
+                //                                          Status = a.Status ,
+                //                                          CompletedOn =a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                          PoEArea="US&CA",
+                //                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                //                                        }
+                //                              }).ToList();
+                //var allFeedbackDetailsProductSpecialist1 = common.GenerateTeamReport(24).SelectMany((a, b) => new List<TeamReportsMSA>
+                //                              {
+                //                                  new TeamReportsMSA
+                //                                      {
+                //                                          PoeName = a.PoeName+"(STANDARD)",
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          Name = a.Name,
+                //                                          Email = a.Email,
+                //                                          Status = a.Status ,
+                //                                          CompletedOn =a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                          PoEArea="STANDARD",
+                //                                           LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                //                                        }
+                //                              }).ToList();
+                //var allFeedbackDetailsProductSpecialist2 = common.GenerateTeamReport(25).SelectMany((a, b) => new List<TeamReportsMSA>
+                //                              {
+                //                                  new TeamReportsMSA
+                //                                      {
+                //                                          PoeName = a.PoeName+"(MIDMARKET)",
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          Name = a.Name,
+                //                                          Email = a.Email,
+                //                                          Status = a.Status ,
+                //                                          CompletedOn =a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                          PoEArea="MIDMARKET",
+                //                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                //                                        }
+                //                              }).ToList();
+                //var allFeedbackDetailsProductSpecialist3 = common.GenerateTeamReport(26).SelectMany((a, b) => new List<TeamReportsMSA>
+                //                              {
+                //                                  new TeamReportsMSA
+                //                                      {
+                //                                          PoeName = a.PoeName,
+                //                                          Area = a.Area,
+                //                                          Country = a.Country,
+                //                                          Name = a.Name,
+                //                                          Email = a.Email,
+                //                                          Status = a.Status ,
+                //                                          CompletedOn =a.CompletedOn,
+                //                                          Relation = a.Relation,
+                //                                          PoEArea="SALES MANAGER",
+                //                                            LastLogin=(a.LastLogin!=string.Empty)?"Yes":"no"
+                //                                        }
+                //                              }).ToList();
 
                 var allFeedbacks = new List<TeamReportsMSA>();
                 allFeedbacks.AddRange(allFeedbackDetailsAccountManager);
                 allFeedbacks.AddRange(allFeedbackDetailsSalesManager);
                 allFeedbacks.AddRange(allFeedbackDetailsAMManager);
                 allFeedbacks.AddRange(allFeedbackDetailsAccountExeecutive);
-                allFeedbacks.AddRange(allFeedbackDetailsadsolSpecilaistt);
-                allFeedbacks.AddRange(allFeedbackDetailsProductSpecialist);
-                allFeedbacks.AddRange(allFeedbackDetailsProductSpecialist1); 
-                allFeedbacks.AddRange(allFeedbackDetailsProductSpecialist2);
-                allFeedbacks.AddRange(allFeedbackDetailsProductSpecialist3);
+                //allFeedbacks.AddRange(allFeedbackDetailsadsolSpecilaistt);
+                //allFeedbacks.AddRange(allFeedbackDetailsProductSpecialist);
+                //allFeedbacks.AddRange(allFeedbackDetailsProductSpecialist1); 
+                //allFeedbacks.AddRange(allFeedbackDetailsProductSpecialist2);
+                //allFeedbacks.AddRange(allFeedbackDetailsProductSpecialist3);
                 var dataTable = ToDataTable(allFeedbacks);
                 if (dataTable.Rows.Count > 0)
                 {

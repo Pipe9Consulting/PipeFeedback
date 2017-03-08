@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/report.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/SignUp.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     ReportsPage
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <script type="text/javascript">
         $(".report").click(function () {
             $(this).addClass("selected").siblings().removeClass("selected");
@@ -12,7 +12,7 @@
     </script>
     <link href="../../Styles/Common/master.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/Microsoft/login.css" rel="stylesheet" type="text/css" />
-    <div class="reportbackground"></div>
+    <div class=""></div>
     <div class="pageholder">
         <div class="breadcrumb">Home > Reports</div>
         <h1>Reports</h1>
@@ -34,12 +34,11 @@
                 </div>
                 <input type="submit" value="Manager" />
                 <p>
-                    All up Manager
-Completion Report(MSA)
+                    All up Manager Completion Report
                 </p>
             </div>
         </form>
-         <form method="POST" action="../Report/GetReportsForTeamMemberHSP">
+        <%-- <form method="POST" action="../Report/GetReportsForTeamMemberHSP">
             <div class="report">
                 <img src="../../Images/team-member-report.png" />
                 <div class="icon">
@@ -60,22 +59,22 @@ Completion Report(MSA)
                     All up Manager Completion Report(HSP)
                 </p>
             </div>
-        </form>
+        </form>--%>
         <%if (ViewBag.RetrievePassword != null)
           {
         %>
         <div class="reportbtn">
             <a href="../Report/RetrievePassword" target="_blank">Retrieve Password</a>
         </div>
-        <div class="reportbtn">
+        <%--<div class="reportbtn">
             <a href="../DataDumb/DataDumbReport" target="_blank">Get Report</a>
-        </div>
-        <form method="POST" action="../Report/GetUpdatedPasswordLists">
+        </div>--%>
+       <%-- <form method="POST" action="../Report/GetUpdatedPasswordLists">
             <div class="reportbtn">
-                <%-- <a href="../DataDumb/DataDumbReport" target="_blank">Password Detail</a>--%>
+             
                 <input type="submit" value="Password Details" />
             </div>
-        </form>
+        </form>--%>
         <%}%>
     </div>
 </asp:Content>

@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/report.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/SignUp.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     Login
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <link href="../../Styles/Common/master.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/Microsoft/login.css" rel="stylesheet" type="text/css" />
     <style>
@@ -13,7 +13,7 @@
             display: none;
         }
     </style>
-    <div class="loginbackground"></div>
+    <div class=""></div>
     <div class="pageholder">
        <%-- <img src="../../Images/Feedback/menuSelect_arrow.png" />--%>
         <div class="breadcrumb">Home > Reports Login</div>

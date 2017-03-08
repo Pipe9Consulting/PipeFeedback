@@ -20,7 +20,7 @@ namespace ExcelGenerator
         // Lookup for Excel column reference prefixes
         private static string[] ExcelColumnReferenceLookup =
         {
-            "A"
+            "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S"
            
         };
 
