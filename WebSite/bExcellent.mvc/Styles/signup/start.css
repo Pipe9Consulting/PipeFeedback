@@ -1291,7 +1291,7 @@ body {
         width: 130%;
         padding: 3% 4% 4% 4%;
         right: -107.5%;
-        top:15%;
+        top: 15%;
     }
 
 
@@ -1693,13 +1693,49 @@ body {
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1201px) {
+    #hover_content3, #hover_content7 {
+        right: 9.5%;
+        top: 14%;
+    }
+
+    #hover_content2 {
+        right: -31.5%;
+        top: -10%;
+    }
+
+    #hover_content4 {
+        right: -31.5%;
+        top: 13%;
+    }
+
+    #hover_content1 {
+        right: -31.5%;
+        top: 23%;
+    }
+
+    #hover_content5 {
+        width: 140%;
+        right: -115%;
+        top: -7%;
+    }
+
+    #hover_content6 {
+        width: 140%;
+        right: -115%;
+        top: 3%;
+    }
+
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        right: 10px;
+    }
+
     .hideColumn {
         width: 96.8%;
         padding-bottom: 43.5%;
     }
 
     .startBox {
-        height: 100px !important;
+        height: 150px !important;
     }
 
     .noticationIcon img {
@@ -1714,6 +1750,11 @@ body {
         font-size: 150%;
     }
 
+    .ui.grid > [class*='four column'].row > .column {
+        width: 30% !important;
+        margin-right: 4rem;
+    }
+
     .startBox h3 {
         font-size: 120%;
     }
@@ -1723,7 +1764,7 @@ body {
     }
 
     .startColumn {
-        margin: 0 0 !important;
+        margin: 2% 0 !important;
     }
 
     .startColumn3 {
@@ -1733,10 +1774,47 @@ body {
     .startColumn3 {
         padding: 12px 0 18px 0 !important;
     }
+
+    .startPart h1 {
+        font-size: 25px !important;
+        padding: 2% 4% 1% 4%;
+    }
 }
 
 
 @media screen and (max-width: 1200px) and (min-width: 1000px) {
+    #hover_content3, #hover_content7 {
+        right: 9.5%;
+        top: 14%;
+    }
+
+    #hover_content2 {
+        right: -31.5%;
+        top: -10%;
+    }
+
+    #hover_content4 {
+        right: -31.5%;
+        top: 13%;
+    }
+
+    #hover_content1 {
+        right: -31.5%;
+        top: 23%;
+    }
+
+    #hover_content5 {
+        width: 140%;
+        right: -115%;
+        top: -7%;
+    }
+
+    #hover_content6 {
+        width: 140%;
+        right: -115%;
+        top: 3%;
+    }
+
     .startPart {
         padding-top: 15px!important;
     }

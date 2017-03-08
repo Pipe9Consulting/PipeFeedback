@@ -2365,24 +2365,53 @@ body {
     margin-top: 10%;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-    .sticklr {
-        top: 20% !important;
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
+
+
+    .sticklr > li > a {
+        background-size: 50% 50%;
+        padding-bottom: 75% !important;
+        width: 50px !important;
     }
 
-        .sticklr > li > a {
-            background-size: 50% 50%;
-            padding-bottom: 75% !important;
-            width: 50px !important;
+        .sticklr > li > a > p {
+            font-size: 70% !important;
+            line-height: 10px;
         }
 
-            .sticklr > li > a > p {
-                font-size: 70% !important;
-                line-height: 10px;
-            }
-}
+    .rateThisQuestion {
+        width: 70%;
+    }
 
-@media screen and (min-width: 1280px) and (max-width: 1350px) {
+
+    .detailedarea .ui-slider-handle {
+        margin-left: -1em !important;
+        width: 3% !important;
+    }
+
+    .capabilityQuestion .ui-slider-handle {
+        background: url("../../Images/slider-handle3.png") no-repeat scroll 10% 50% transparent;
+    }
+
+
+
+    .SI3 {
+        font-size: 10px;
+    }
+
+    .questionarea p {
+        font-size: 13px;
+    }
+
+    .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
+        width: 5.5% !important;
+    }
+
+    .sliderdiv {
+        width: 94% !important;
+    }
+
+
     .sticklr {
         top: 22% !important;
     }
