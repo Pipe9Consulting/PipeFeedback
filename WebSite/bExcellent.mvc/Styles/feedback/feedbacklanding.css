@@ -2468,98 +2468,186 @@ body {
 }
 
 @media screen and (max-width: 1700px) and (min-width: 1670px) {
+    body {
+        zoom: 80%;
+    }
 
-    .fbboxbtn3 p {
-        height: 217px;
+    .profileCenter p {
+        font-size: 98% !important;
+    }
+
+    .deleteIncomplete img {
+        width: 100% !important;
+    }
+
+    .slidercontent p {
+        width: 70%;
+    }
+
+
+    .clearIncomplete a {
+        width: 31%;
+        margin-bottom: 0.5%;
+    }
+
+
+
+    .generalFb {
+        background-size: 100% 90%;
+    }
+
+    .sendRequest {
+        background-size: 100% 85%;
+    }
+
+    .paginationfb {
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+
+    .fblthirdBox {
+        background-size: 100% 81%;
     }
 
     .fbboxbtn2 p {
-        height: 65px;
+        height: 60px;
+    }
+
+    .fbboxbtn3 p {
+        height: 273px;
     }
 
     .sendRequest .boxone, .askRequest .boxone {
-        height: 330px;
+        height: 305px;
         margin-top: 75%;
     }
 
-
-
-    .innerrequestfbcontent .boxone {
-        height: 200px;
-        margin-top: 100%;
-    }
-
-
-
+        .sendRequest .boxone p, .askRequest .boxone p {
+            height: 100px;
+        }
 
     .fbboxbtn p {
-        height: 213px;
+        height: 220px;
     }
 
-    .givefbmessage .incompleteBtn p {
-        padding-right: 2%;
+    #takeFb .takefbcontent {
+        width: 35%;
     }
 
-    .givefbmessagedetails {
-        margin-bottom: 0px;
+    #takeFb .fbboxbtn2 p {
+        height: 60px;
     }
+
+    #takeFb .boxone {
+        height: 255px;
+        margin-top: 73%;
+    }
+
+    #takeFb .boxone {
+        height: 265px;
+        margin-top: 61%;
+    }
+
+
+    #takeFb .fbboxbtn p {
+        height: 135px;
+    }
+
+
+    .givefbmessageDummy3 {
+        padding: 1% 1% 14.6% 1%;
+    }
+
 
     .histroyfb .givefbmessageDummy {
-        padding-bottom: 22.3%;
+        padding-bottom: 20.7%;
     }
 
-
-    .givefbContent {
-        padding: 1% 0 1.5% 2%;
+    .popup p {
+        top: 18%;
     }
 
-    .givefbmessageDummy {
-        padding: 1% 1% 13.5% 1%;
+    #newpopup p {
+        font-size: 16px;
     }
+
+    .givefbmessage .incompleteBtn {
+        padding: 0% 0 0 0;
+    }
+
+        .givefbmessage .incompleteBtn p {
+            padding-right: 2%;
+        }
 
     .givefbBtn {
-        width: 16.6%;
+        margin-bottom: 2%;
+        width: 10.5%;
     }
 
+        .givefbBtn a {
+            padding: 4% 17% 7% 15%;
+        }
 
-    #newpopup {
-        width: 12% !important;
-        padding-bottom: 8.7% !important;
+    .givefbmessageDummy2 {
+        padding-bottom: 12.2%;
     }
-
-        #newpopup .close {
-            top: -10.5% !important;
-            right: 0% !important;
-        }
-
-
-        #newpopup p {
-            font-size: 14px;
-        }
 
     .takefbcontent {
-        width: 75%;
+        width: 37%;
     }
 
     .incompfbslide {
-        height: 520px;
-    }
-
-    .paginationfb ul li a {
-        padding: 2px 7px 3px 6px;
-        font-size: 90%;
-    }
-
-    .historyfbslide {
         height: 530px;
     }
 
-    .sendreqbtn a {
-        font-size: 70% !important;
+    .historyfbslide {
+        height: 480px;
+        width: 50%;
+    }
+
+    .givefbmessage {
+        padding: 1% 1% .5% 1%;
+    }
+
+    #selectallTeam {
+        margin-right: 24.5%;
+        margin-top: -3.2%;
+    }
+
+    .feedbackStar h4 {
+        right: 7px;
+        bottom: 6px;
+        font-size: 90%;
+        background-size: 23px 23px;
+        line-height: 1.5;
+        padding: 0 0 3px 26px;
+    }
+
+
+
+    .givefbContent {
+        padding: 1% 0 1% 1.5%;
+        width: 75.5%;
     }
 
     .takefeedback h2 {
         font-size: 160%;
+    }
+
+    #receiveFb .boxone h2 {
+        font-size: 140% !important;
+        background-size: 20% 75% !important;
+    }
+
+
+    .sendRequest .boxone, .askRequest .boxone {
+        height: 230px;
+        margin-top: 70%;
+    }
+
+    #receiveFb .requestfbcontent {
+        width: 55%;
     }
 
     .requestfbcontent {
@@ -2568,11 +2656,6 @@ body {
 
     .takefbRightPart {
         width: 53%;
-    }
-
-    .takeFeedbackMenu, .historySmall {
-        padding-bottom: 48%;
-        width: 46.9%;
     }
 
     .incompletefbMenu {
@@ -2584,34 +2667,62 @@ body {
         font-size: 120%;
     }
 
+    .requestscroll .slimScrollDiv {
+        height: 0 !important;
+        padding-bottom: 46.5%;
+    }
+
+    .scroll5 {
+        height: 165px !important;
+    }
+
     .prepage {
-        width: 1.7%;
-        margin-left: -2.2%;
-        padding-bottom: 1.8%;
+        width: 1.6%;
+        padding-bottom: 1.6%;
+        margin-left: -2%;
     }
 
     .fristpage {
-        width: 1.7%;
-        margin-left: -3.3%;
-        padding-bottom: 1.8%;
+        width: 1.6%;
+        padding-bottom: 1.6%;
+        margin-left: -3%;
     }
 
     .paginationfb ul {
-        width: 18.7%;
+        width: 18.4%;
+    }
+
+
+    #recfbTeampaging .paginationfb ul {
+        width: 17.7% !important;
+    }
+
+
+    .lastpage {
+        width: 1.6%;
+        padding-bottom: 1.6%;
+        margin-left: 1.2%;
     }
 
 
     .nextpage {
-        width: 1.7%;
-        margin-left: 0.3%;
-        padding-bottom: 1.8%;
+        width: 1.6%;
+        padding-bottom: 1.6%;
+        margin-left: 0.2%;
     }
 
-    .lastpage {
-        width: 1.7%;
-        margin-left: 1.3%;
-        padding-bottom: 1.8%;
+    .profileCenter ul li {
+        height: 169px !important;
     }
+
+    .slimScrollDiv, .scroll2 {
+        height: 355px !important;
+    }
+
+    .slimScrollDiv, .scroll3 {
+        height: 353px !important;
+    }
+
 
     .completedMsg {
         width: 35%;
@@ -2621,6 +2732,18 @@ body {
         margin-top: 3%;
     }
 
+    .histroyArea .givefbmessage img {
+        width: 16%;
+    }
+
+
+    #newpopup {
+        padding-bottom: 6.5% !important;
+    }
+
+        #newpopup .close {
+            top: -13.5% !important;
+        }
 
 
     .incompleteBtn p {
@@ -2628,8 +2751,7 @@ body {
     }
 
     .histroyArea {
-        height: 0;
-        padding-bottom: 70%;
+        height: 615px;
     }
 
 
@@ -2647,26 +2769,31 @@ body {
     }
 
     .boxone {
-        height: 320px;
-        margin-top: 90%;
+        height: 350px;
+        margin-top: 75%;
+    }
+
+    #giveFb .boxone {
+        height: 340px;
     }
 
     .clearIncomplete {
-        margin-bottom: 3%;
+        margin: -1% 0 2% 0;
     }
 
-    .sendRequest .boxone h2, .askRequest .boxone h2 {
-        font-size: 100% !important;
-    }
 
     .boxone h2 {
-        font-size: 130% !important;
-        background-size: 23% 90% !important;
+        font-size: 140% !important;
+        background-size: 20% 90% !important;
     }
 
 
     .vertical-align--bottom a {
-        font-size: 110%;
+        font-size: 120%;
+    }
+
+    #giveFb .fbboxbtn2 p {
+        height: 60px;
     }
 
 
@@ -2675,222 +2802,258 @@ body {
     }
 
     .givefbmessage h3 {
-        font-size: 95%;
-    }
-
-    .rcnQestion .qn {
-        width: 3.8%;
+        font-size: 90%;
     }
 
     .givefbmessage .incompleteBtn p {
-        font-size: 85%;
+        font-size: 92%;
     }
 
     .givefbmessage .incompleteBtn a {
-        font-size: 85%;
+        font-size: 95%;
     }
 
     .boxone h3 {
         font-size: 130%;
-        padding: 2% 6% 0% 6%;
+        padding: 2% 6% 0% 6% !important;
     }
 
     .boxone p {
         font-size: 100%;
-        padding: 1% 6% 2% 6%;
+        padding: 2% 6% 5% 6%;
     }
 
     .takefbcontent p {
-        font-size: 100% !important;
+        font-size: 110% !important;
     }
 
     .fblfristBox {
         height: 85%;
+        background-size: 100% 90%;
     }
-
-    .clearIncomplete a {
-        padding: .2% 2% .6% 2%;
-        margin-bottom: 1%;
-    }
-
 
     .boxone a {
-        font-size: 90%;
+        font-size: 120%;
+        padding: 2% 4% 2% 4% !important;
+        width: 80px;
+        display: inline-block;
     }
 
 
     .incompletefb p {
-        font-size: 350%;
+        font-size: 430%;
     }
 
-    .profileCenter ul li {
-        height: 148px !important;
+    .innerrequestfbcontent .boxone h2 {
+        font-size: 110% !important;
     }
 
-    .slimScrollDiv, .scroll2 {
-        height: 310px !important;
+    .givefbmessageDummy {
+        padding-bottom: 12.2%;
     }
-
-    .requestscroll .slimScrollDiv, .scroll5 {
-        height: 150px !important;
-    }
-}
-
-@media screen and (max-width: 1669px) and (min-width: 1501px) {
-
-    .incompleteFB span {
-        font-size: 250%;
-    }
-
-    .fbboxbtn3 p {
-        height: 203px;
-    }
-
-    .fbboxbtn2 p {
-        height: 65px;
-    }
-
-    .sendRequest .boxone, .askRequest .boxone {
-        height: 317px;
-        margin-top: 60%;
-    }
-
-
-    .fbboxbtn p {
-        height: 200px;
-    }
-
-    .takefeedback {
-        margin: 0 2% !important;
-    }
-
-    #newpopup {
-        padding-bottom: 7% !important;
-    }
-
-        #newpopup p {
-            font-size: 14px !important;
-        }
-
-        #newpopup .close {
-            top: -12.5% !important;
-            right: -0.5% !important;
-        }
-
-
-    .sendreqbtn a {
-        font-size: 70% !important;
-    }
-
-    .profileCenter ul li {
-        height: 134px !important;
-    }
-
-    .slimScrollDiv, .scroll2 {
-        height: 298px !important;
-    }
-
-    .requestscroll .slimScrollDiv {
-        height: 0px !important;
-        padding-bottom: 135px;
-    }
-
-
 
     .innerrequestfbcontent .boxone {
-        height: 155px;
+        height: 195px;
         margin-top: 75%;
     }
 
 
-
-
-        .innerrequestfbcontent .boxone h2 {
-            font-size: 90% !important;
-            background-size: 20% 90% !important;
-        }
-
         .innerrequestfbcontent .boxone p {
-            font-size: 80% !important;
+            font-size: 100%;
+        }
+}
+
+@media screen and (max-width: 1669px) and (min-width: 1501px) {
+
+    body {
+        zoom: 80%;
+    }
+
+    .profileCenter p {
+        font-size: 98% !important;
+    }
+
+    .deleteIncomplete img {
+        width: 100% !important;
+    }
+
+    .slidercontent p {
+        width: 70%;
+    }
+
+
+    .clearIncomplete a {
+        width: 31%;
+        margin-bottom: 0.5%;
+    }
+
+
+
+    .generalFb {
+        background-size: 100% 90%;
+    }
+
+    .sendRequest {
+        background-size: 100% 85%;
+    }
+
+    .paginationfb {
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+
+    .fblthirdBox {
+        background-size: 100% 81%;
+    }
+
+    .fbboxbtn2 p {
+        height: 60px;
+    }
+
+    .fbboxbtn3 p {
+        height: 273px;
+    }
+
+    .sendRequest .boxone, .askRequest .boxone {
+        height: 305px;
+        margin-top: 75%;
+    }
+
+        .sendRequest .boxone p, .askRequest .boxone p {
+            height: 100px;
         }
 
-
-    .givefbmessageDummy {
-        padding-bottom: 11.9%;
+    .fbboxbtn p {
+        height: 220px;
     }
+
+    #takeFb .takefbcontent {
+        width: 35%;
+    }
+
+    #takeFb .fbboxbtn2 p {
+        height: 60px;
+    }
+
+    #takeFb .boxone {
+        height: 255px;
+        margin-top: 73%;
+    }
+
+    #takeFb .boxone {
+        height: 265px;
+        margin-top: 61%;
+    }
+
+
+    #takeFb .fbboxbtn p {
+        height: 135px;
+    }
+
 
     .givefbmessageDummy3 {
-        padding-bottom: 16%;
+        padding: 1% 1% 14.6% 1%;
     }
 
-    .requestscroll .slimScrollDiv .scroll5 {
-        padding-bottom: 45%;
+
+    .histroyfb .givefbmessageDummy {
+        padding-bottom: 20.7%;
     }
+
+    .popup p {
+        top: 18%;
+    }
+
+    #newpopup p {
+        font-size: 16px;
+    }
+
+    .givefbmessage .incompleteBtn {
+        padding: 0% 0 0 0;
+    }
+
+        .givefbmessage .incompleteBtn p {
+            padding-right: 2%;
+        }
 
     .givefbBtn {
         margin-bottom: 2%;
-        width: 9%;
+        width: 10.5%;
     }
 
-
-    #selectallTeam {
-        margin-right: 0%;
-    }
+        .givefbBtn a {
+            padding: 4% 17% 7% 15%;
+        }
 
     .givefbmessageDummy2 {
-        padding-bottom: 8.5%;
-    }
-
-    .givefbContent {
-        padding-bottom: 1%;
-    }
-
-    .givefbmessage .incompleteBtn p {
-        padding-right: 2%;
+        padding-bottom: 12.2%;
     }
 
     .takefbcontent {
-        width: 75%;
+        width: 37%;
     }
 
     .incompfbslide {
-        height: 450px;
-    }
-
-    .paginationfb ul li a {
-        padding: 2px 7px 3px 6px;
-        font-size: 90%;
+        height: 530px;
     }
 
     .historyfbslide {
-        height: 470px;
+        height: 480px;
+        width: 50%;
+    }
+
+    .givefbmessage {
+        padding: 1% 1% .5% 1%;
+    }
+
+    #selectallTeam {
+        margin-right: 24.5%;
+        margin-top: -3.2%;
+    }
+
+    .feedbackStar h4 {
+        right: 7px;
+        bottom: 6px;
+        font-size: 90%;
+        background-size: 23px 23px;
+        line-height: 1.5;
+        padding: 0 0 3px 26px;
     }
 
 
+
+    .givefbContent {
+        padding: 1% 0 1% 1.5%;
+        width: 75.5%;
+    }
+
     .takefeedback h2 {
-        font-size: 140%;
+        font-size: 160%;
+    }
+
+    #receiveFb .boxone h2 {
+        font-size: 140% !important;
+        background-size: 20% 75% !important;
+    }
+
+
+    .sendRequest .boxone, .askRequest .boxone {
+        height: 230px;
+        margin-top: 70%;
+    }
+
+    #receiveFb .requestfbcontent {
+        width: 55%;
     }
 
     .requestfbcontent {
         width: 70%;
     }
 
-
-
-    #takeFb {
-        width: 25%;
+    .takefbRightPart {
+        width: 53%;
     }
-
-
-    .requestFb {
-        width: 54%;
-    }
-
-    .takeFeedbackMenu, .historySmall {
-        padding-bottom: 48%;
-        width: 46.9%;
-    }
-
 
     .incompletefbMenu {
         width: 96.8%;
@@ -2898,58 +3061,65 @@ body {
     }
 
     .givefbContent p {
-        font-size: 100%;
+        font-size: 120%;
+    }
+
+    .requestscroll .slimScrollDiv {
+        height: 0 !important;
+        padding-bottom: 46.5%;
+    }
+
+    .scroll5 {
+        height: 165px !important;
     }
 
     .prepage {
-        width: 1.7%;
+        width: 1.6%;
+        padding-bottom: 1.6%;
         margin-left: -2%;
-        padding-bottom: 1.8%;
     }
 
     .fristpage {
-        width: 1.7%;
+        width: 1.6%;
+        padding-bottom: 1.6%;
         margin-left: -3%;
-        padding-bottom: 1.8%;
     }
 
     .paginationfb ul {
-        width: 12.5%;
-    }
-
-    .histroyfb .givefbmessageDummy {
-        padding-bottom: 20.9%;
-    }
-
-    .popup p {
-        top: 18% !important;
-        font-size: 100% !important;
-    }
-
-    .givefbmessageDummy {
-        padding-bottom: 11.8%;
+        width: 18.4%;
     }
 
 
+    #recfbTeampaging .paginationfb ul {
+        width: 17.7% !important;
+    }
 
-    .clearIncomplete a {
-        font-size: 14px;
-        padding-bottom: .8% !important;
-        width: 30%;
+
+    .lastpage {
+        width: 1.6%;
+        padding-bottom: 1.6%;
+        margin-left: 1.2%;
     }
 
 
     .nextpage {
-        width: 1.7%;
+        width: 1.6%;
+        padding-bottom: 1.6%;
         margin-left: 0.2%;
-        padding-bottom: 1.8%;
     }
 
-    .lastpage {
-        width: 1.7%;
-        margin-left: 1.2%;
-        padding-bottom: 1.8%;
+    .profileCenter ul li {
+        height: 169px !important;
     }
+
+    .slimScrollDiv, .scroll2 {
+        height: 355px !important;
+    }
+
+    .slimScrollDiv, .scroll3 {
+        height: 353px !important;
+    }
+
 
     .completedMsg {
         width: 35%;
@@ -2959,36 +3129,49 @@ body {
         margin-top: 3%;
     }
 
-    .incompleteBtn a {
-        margin-top: 0%;
+    .histroyArea .givefbmessage img {
+        width: 16%;
     }
+
+
+    #newpopup {
+        padding-bottom: 6.5% !important;
+    }
+
+        #newpopup .close {
+            top: -13.5% !important;
+        }
+
 
     .incompleteBtn p {
         width: 35% !important;
     }
 
     .histroyArea {
-        height: 0;
-        padding-bottom: 64%;
+        height: 615px;
     }
 
 
 
         .histroyArea .paginationfb ul {
-            width: 15.5%;
+            width: 15%;
         }
 
     .givefbInnermenu ul li a {
-        font-size: 90%;
+        font-size: 100%;
     }
 
     #HistoryTaken {
-        margin-top: 1%;
+        margin-top: 0%;
     }
 
     .boxone {
-        height: 300px;
-        margin-top: 65%;
+        height: 350px;
+        margin-top: 75%;
+    }
+
+    #giveFb .boxone {
+        height: 340px;
     }
 
     .clearIncomplete {
@@ -2997,77 +3180,86 @@ body {
 
 
     .boxone h2 {
-        font-size: 110% !important;
+        font-size: 140% !important;
         background-size: 20% 90% !important;
     }
 
 
     .vertical-align--bottom a {
-        font-size: 110%;
+        font-size: 120%;
     }
 
-    .histroyArea .givefbmessage img {
-        width: 16%;
+    #giveFb .fbboxbtn2 p {
+        height: 60px;
     }
+
 
     .givefbmessagedetails p, .clearIncomplete p {
-        font-size: 80%;
-        line-height: 1.3;
-    }
-
-    .profileCenter p {
-        font-size: 80% !important;
-        padding: 4px 8px 6px 8px !important;
+        font-size: 100%;
     }
 
     .givefbmessage h3 {
         font-size: 90%;
     }
 
-    .givefbmessage img {
-        width: 16%;
-    }
-
     .givefbmessage .incompleteBtn p {
-        font-size: 80%;
+        font-size: 92%;
     }
 
     .givefbmessage .incompleteBtn a {
-        font-size: 78%;
-        padding: 1% 2% 1.5% 2%;
-    }
-
-    .givefbmessagedetails {
-        margin-bottom: 0%;
+        font-size: 95%;
     }
 
     .boxone h3 {
-        font-size: 110%;
-        padding: 1% 6% 0% 6% !important;
+        font-size: 130%;
+        padding: 2% 6% 0% 6% !important;
     }
 
     .boxone p {
-        font-size: 90%;
-        padding: 2% 6% 4% 6%;
+        font-size: 100%;
+        padding: 2% 6% 5% 6%;
     }
 
     .takefbcontent p {
-        font-size: 90% !important;
+        font-size: 110% !important;
     }
 
     .fblfristBox {
         height: 85%;
+        background-size: 100% 90%;
     }
 
 
+
     .boxone a {
-        font-size: 85%;
+        font-size: 120%;
+        padding: 2% 4% 2% 4% !important;
+        width: 80px;
+        display: inline-block;
     }
 
 
     .incompletefb p {
-        font-size: 350%;
+        font-size: 430%;
     }
+
+    .innerrequestfbcontent .boxone h2 {
+        font-size: 110% !important;
+    }
+
+    .givefbmessageDummy {
+        padding-bottom: 12.2%;
+    }
+
+    .innerrequestfbcontent .boxone {
+        height: 195px;
+        margin-top: 75%;
+    }
+
+
+        .innerrequestfbcontent .boxone p {
+            font-size: 100%;
+        }
 }
 
 
@@ -3084,7 +3276,9 @@ body {
         height: 77px;
     }
 
-
+    body {
+        zoom: 80%;
+    }
 
     .fbboxbtn p {
         height: 170px;
@@ -3898,22 +4092,51 @@ body {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1000px) {
+    body {
+        zoom: 85%;
+    }
+
+    .givefbBtn {
+        width: 10%;
+    }
+
+    .completedMsg {
+        width: 50% !important;
+    }
+
+    .fristpage {
+        margin-left: -3.7%;
+    }
+
+    .prepage {
+        margin-left: -2.5%;
+    }
+
+    .lastpage {
+        margin-left: 1.3%;
+    }
+
+    .historyBtn {
+        width: 55%;
+        margin: -12px 0 1% 0;
+    }
+
 
     .boxone {
         height: 57%;
-        margin-top: 93%;
+        margin-top: 62%;
+    }
+
+    .profilePicture img {
+        height: 47%;
     }
 
     .vertical-align--bottom a {
-        font-size: 75%;
-    }
-
-    .incompletefb p {
-        font-size: 170%;
+        font-size: 100%;
     }
 
     .takefeedback h2 {
-        font-size: 100%;
+        font-size: 150%;
     }
 
     .boxone h2 {
@@ -3925,7 +4148,8 @@ body {
     }
 
     .boxone p {
-        font-size: 80%;
+        font-size: 80% !important;
+        padding: 1% 6% 1% 6%;
     }
 
     .boxone a {
@@ -3934,18 +4158,125 @@ body {
         margin-bottom: 5px;
     }
 
+    .slimScrollDiv {
+        height: 0 !important;
+        padding-bottom: 230px;
+    }
 
-    .takefbcontent p {
+    .scroll2 {
+        height: 220px !important;
+    }
+
+    .incompletefb p {
+        font-size: 250%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+    body {
+        zoom: 65%;
+    }
+
+    #selectallTeam {
+        margin-right: 0%;
+    }
+
+
+    .profileCenter p {
+        font-size: 75% !important;
+    }
+
+    .profileCenter ul li {
+        height: 124px !important;
+    }
+
+    .slimScrollDiv, .scroll2 {
+        height: 335px !important;
+    }
+
+    .fristpage {
+        margin-left: -3.7%;
+    }
+
+    .prepage {
+        margin-left: -2.5%;
+    }
+
+    .lastpage {
+        margin-left: 1.3%;
+    }
+
+    .historyBtn {
+        width: 50%;
+        margin: -10px 0 1% 0;
+    }
+
+    .givefbmessage {
+        margin-bottom: 1%;
+    }
+
+    .paginationfb ul {
+        width: 14%;
+        margin-top: -50px;
+    }
+
+
+    .boxone {
+        height: 57%;
+        margin-top: 62%;
+    }
+
+    .profilePicture img {
+        height: 47%;
+    }
+
+    .vertical-align--bottom a {
+        font-size: 100%;
+    }
+
+    .takefeedback h2 {
+        font-size: 150%;
+    }
+
+    .boxone h2 {
+        font-size: 130%;
+    }
+
+    .boxone h3 {
+        font-size: 110%;
+    }
+
+    .boxone p {
         font-size: 80% !important;
+        padding: 1% 6% 1% 6%;
+    }
+
+    .boxone a {
+        font-size: 90%;
+        display: inline-block;
+        margin-bottom: 5px;
     }
 
     .slimScrollDiv {
         height: 0 !important;
-        padding-bottom: 180px;
+        padding-bottom: 258px;
+    }
+
+    .givefbmessage img {
+        width: 20%;
+    }
+
+    .givefbmessageDummy2 {
+        padding: 0% 1% 11.5% 1%;
     }
 
     .scroll2 {
-        height: 170px !important;
+        height: 262px !important;
+    }
+
+    .incompletefb p {
+        font-size: 250%;
     }
 }
 

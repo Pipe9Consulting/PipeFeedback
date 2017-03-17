@@ -654,6 +654,81 @@ p:empty {
 }
 
 
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+
+    body {
+        zoom: 65%;
+    }
+
+    .check p {
+        font-size: 100% !important;
+    }
+
+
+    .errormsg {
+        font-size: 14px !important;
+        margin-bottom: 0px !important;
+        background-size: auto 35% !important;
+    }
+
+    .pageholder {
+        margin: 0% 2.2%;
+    }
+
+    .loginscreenleft p {
+        font-size: 115%;
+    }
+
+    .loginrightpanel li {
+        margin-left: 4%;
+    }
+
+    .loginscreen .btn {
+        font-size: 115%;
+        margin-bottom: 9px;
+        padding: 4px 15px 4px 15px;
+    }
+
+    .loginscreen h1 {
+        font-size: 180%;
+    }
+
+    .loginrightpanel p {
+        font-size: 115%;
+        line-height: 1.5;
+    }
+
+    .loginrightpanel ul li {
+        font-size: 115%;
+        padding: 1% 0;
+        line-height: 1.3;
+    }
+
+
+    .loginrightpanel a {
+        font-size: 115%;
+        line-height: 1.5;
+    }
+
+    .signUp h2 {
+        font-size: 115%;
+        margin-bottom: 2%;
+    }
+
+    .individuals {
+        width: 40%;
+    }
+
+    .managers {
+        width: 55%;
+    }
+
+    .signUp {
+        margin-top: 2%;
+    }
+}
+
+
 .errormsg {
     clear: both;
     margin-top: 3%;

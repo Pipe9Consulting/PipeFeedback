@@ -1701,8 +1701,8 @@ h1 {
 
 
     #option_menu {
-        top: 27% !important;
-        right: 8.8% !important;
+        top: 19.6% !important;
+        right: 2% !important;
     }
 
     #connectMFB .slimScrollDiv, .scroll3 {
@@ -2151,17 +2151,199 @@ h1 {
 
 
 
-@media screen and (min-width: 1280px) and (max-width: 1350px) {
+@media screen and (min-width: 1200px) and (max-width: 1350px) {
+    .rateThisQuestion .ui-slider-handle {
+        background: url("../../Images/slider-handle.png") no-repeat scroll 20% 50% transparent !important;
+    }
+
+    .capbabiltyScaleArea .ui-slider-handle {
+        background: url("../../Images/slider-handle3.png") no-repeat scroll 30% 50% transparent !important;
+    }
+
+    .frequencyScaleArea .ui-slider-handle {
+        background: url("../../Images/slider-handle2.png") no-repeat scroll 30% 50% transparent !important;
+    }
+
+
+    .feedbackIntro {
+        padding-bottom: 10px !important;
+    }
+
+    .questions .slimScrollRail {
+        background-color: red !important;
+        opacity: 0.2 !important;
+        margin-top: 1%;
+        right: 0.3% !important;
+        width: 4px !important;
+        height: 46% !important;
+    }
+
+    .frequency .tickfbimg img {
+        width: 50% !important;
+        margin-left: 25px;
+    }
+
+    .capabilityAreaRemoved .frequencyArea .slidercontent img {
+        width: 12% !important;
+    }
+
+    #questions .slimScrollDiv {
+        padding-bottom: 20%;
+    }
+
+
+    #option_menu {
+        top: 24.4% !important;
+        right: 2% !important;
+    }
+
+    .questionarea p {
+        font-size: 14px !important;
+    }
+
+    .mngrfbGoal3 {
+        height: 180px !important;
+    }
+
+
+    .noImportance .mngrfbGoal3 {
+        height: 270px !important;
+    }
+
+    .accordion-section-content p {
+        color: #fff;
+        font-size: 120% !important;
+    }
+
+    .frequency h4 {
+        margin: 3% 4% 1% 4% !important;
+    }
+
+
+    #accordion-4 .frequency h4 {
+        margin: 1% 4% 1% 4% !important;
+    }
+
+    .frequency img {
+        width: 9% !important;
+        margin-bottom: 0% !important;
+        margin-top: 2% !important;
+    }
+
+    .contentholder {
+        height: 430px;
+    }
+
     .poeheaderIcon {
         width: 20%;
     }
 
+    .frequency p {
+        line-height: 1.3 !important;
+    }
 
-    .mngrfb {
-        height: 345px;
+    .button_menu {
+        margin-top: 0.5% !important;
+    }
+
+    .pageholder {
+        margin: 0% 2% 0.5% !important;
+    }
+
+    .profileSummary {
+        height: 420px !important;
+    }
+
+    .contentholder {
+        /*margin-top: 1.9%;*/
+    }
+
+    .content3 li {
+        padding-bottom: 16.5% !important;
+    }
+
+    .content3 h1 {
+        padding: 5% 4% !important;
+    }
+
+    .sticklr {
+        top: 27% !important;
+    }
+
+    #poetraits {
+        width: 400% !important;
+        top: 0% !important;
     }
 
 
+    .feedbackIntro {
+        width: 400% !important;
+        top: -100% !important;
+    }
+
+    .dosdonts {
+        width: 450% !important;
+        top: -114% !important;
+    }
+
+    .importanceShowing {
+        width: 450% !important;
+        top: -228% !important;
+    }
+
+    .whatIsRate {
+        width: 470% !important;
+        top: 7% !important;
+    }
+
+    .ui.breadcrumb {
+        font-size: 13px !important;
+    }
+
+    #poemodule p {
+        font-size: 125% !important;
+    }
+
+    .sticklr > li > a > p {
+        font-size: 85% !important;
+        line-height: 1.2 !important;
+    }
+
+    .sticklr > li > a {
+        width: 50px;
+    }
+
+    .feedbackIntro p {
+        font-size: 90%;
+        line-height: 1.3;
+    }
+
+
+    /*.questions .slimScrollRail {
+        height: 43% !important;
+    }*/
+
+    .poeheaderArea h2 {
+        padding: 5.5% 0 0 2% !important;
+    }
+
+    .sticklr p {
+        font-size: 90% !important;
+        line-height: 1.3 !important;
+    }
+
+    .mngrfbGoals {
+        height: 210px !important;
+    }
+
+    .questionContainer .mngrfbGoals {
+        height: 250px !important;
+    }
+
+
+    .questionContainer .noImportance .mngrfbGoals {
+        height: 285px !important;
+    }
 
 
     #connectMFB .slimScrollDiv, .scroll3 {
@@ -2169,26 +2351,250 @@ h1 {
     }
 
     #aboutContent .slimScrollDiv, .scroll2 {
-        height: 429px !important;
+        height: 500px !important;
     }
 
     .sceditor-container iframe {
-        height: 210px !important;
+        height: 230px !important;
     }
 
 
     #primarynav ul {
-        bottom: -1px;
+        bottom: 1px;
     }
 
 
     #conektul {
-        bottom: 6px !important;
+        bottom: 9px !important;
+    }
+
+    .item-container img {
+        margin-top: 1.3%;
     }
 }
 
 
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .rateThisQuestion .ui-slider-handle {
+        background: url("../../Images/slider-handle.png") no-repeat scroll 20% 50% transparent !important;
+    }
 
+    .capbabiltyScaleArea .ui-slider-handle {
+        background: url("../../Images/slider-handle3.png") no-repeat scroll 30% 50% transparent !important;
+    }
+
+    .frequencyScaleArea .ui-slider-handle {
+        background: url("../../Images/slider-handle2.png") no-repeat scroll 30% 50% transparent !important;
+    }
+
+
+    .feedbackIntro {
+        padding-bottom: 10px !important;
+    }
+
+    .questions .slimScrollRail {
+        background-color: red !important;
+        opacity: 0.2 !important;
+        margin-top: 1%;
+        right: 0.3% !important;
+        width: 4px !important;
+        height: 46% !important;
+    }
+
+    .frequency .tickfbimg img {
+        width: 50% !important;
+        margin-left: 25px;
+    }
+
+    .capabilityAreaRemoved .frequencyArea .slidercontent img {
+        width: 12% !important;
+    }
+
+    #questions .slimScrollDiv {
+        padding-bottom: 20%;
+    }
+
+
+    #option_menu {
+        top: 24.4% !important;
+        right: 2% !important;
+    }
+
+    .questionarea p {
+        font-size: 14px !important;
+    }
+
+    .mngrfbGoal3 {
+        height: 180px !important;
+    }
+
+
+    .noImportance .mngrfbGoal3 {
+        height: 270px !important;
+    }
+
+    .accordion-section-content p {
+        color: #fff;
+        font-size: 120% !important;
+    }
+
+    .frequency h4 {
+        margin: 3% 4% 1% 4% !important;
+    }
+
+
+    #accordion-4 .frequency h4 {
+        margin: 1% 4% 1% 4% !important;
+    }
+
+    .frequency img {
+        width: 9% !important;
+        margin-bottom: 0% !important;
+        margin-top: 2% !important;
+    }
+
+    .contentholder {
+        height: 430px;
+    }
+
+    .poeheaderIcon {
+        width: 20%;
+    }
+
+    .frequency p {
+        line-height: 1.3 !important;
+    }
+
+    .button_menu {
+        margin-top: 0.5% !important;
+    }
+
+    .pageholder {
+        margin: 0% 2% 0.5% !important;
+    }
+
+    .profileSummary {
+        height: 420px !important;
+    }
+
+    .contentholder {
+        /*margin-top: 1.9%;*/
+    }
+
+    .content3 li {
+        padding-bottom: 16.5% !important;
+    }
+
+    .content3 h1 {
+        padding: 5% 4% !important;
+    }
+
+    .sticklr {
+        top: 27% !important;
+    }
+
+    #poetraits {
+        width: 400% !important;
+        top: 0% !important;
+    }
+
+
+    .feedbackIntro {
+        width: 400% !important;
+        top: -100% !important;
+    }
+
+    .dosdonts {
+        width: 450% !important;
+        top: -114% !important;
+    }
+
+    .importanceShowing {
+        width: 450% !important;
+        top: -228% !important;
+    }
+
+    .whatIsRate {
+        width: 470% !important;
+        top: 7% !important;
+    }
+
+    .ui.breadcrumb {
+        font-size: 13px !important;
+    }
+
+    #poemodule p {
+        font-size: 125% !important;
+    }
+
+    .sticklr > li > a > p {
+        font-size: 85% !important;
+        line-height: 1.2 !important;
+    }
+
+    .sticklr > li > a {
+        width: 50px;
+    }
+
+    .feedbackIntro p {
+        font-size: 90%;
+        line-height: 1.3;
+    }
+
+
+    /*.questions .slimScrollRail {
+        height: 43% !important;
+    }*/
+
+    .poeheaderArea h2 {
+        padding: 5.5% 0 0 2% !important;
+    }
+
+    .sticklr p {
+        font-size: 90% !important;
+        line-height: 1.3 !important;
+    }
+
+    .mngrfbGoals {
+        height: 210px !important;
+    }
+
+    .questionContainer .mngrfbGoals {
+        height: 250px !important;
+    }
+
+
+    .questionContainer .noImportance .mngrfbGoals {
+        height: 285px !important;
+    }
+
+
+    #connectMFB .slimScrollDiv, .scroll3 {
+        height: 429px !important;
+    }
+
+    #aboutContent .slimScrollDiv, .scroll2 {
+        height: 500px !important;
+    }
+
+    .sceditor-container iframe {
+        height: 230px !important;
+    }
+
+
+    #primarynav ul {
+        bottom: 1px;
+    }
+
+
+    #conektul {
+        bottom: 9px !important;
+    }
+
+    .item-container img {
+        margin-top: 1.3%;
+    }
+}
 
 
 

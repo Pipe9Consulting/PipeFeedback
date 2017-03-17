@@ -49,7 +49,7 @@
         <div class="ui grid startPart">
             <div class="doubling four column row startColumn">
 
-                <div class="column" style="display: none;">
+                <div class="column" style="display: none !important;">
                     <h1>YOU</h1>
                 </div>
                 <div class="column">
@@ -67,7 +67,7 @@
 
             <div class="doubling four column row startColumn">
 
-                <div class="column " style="display: none;">
+                <div class="column " style="display: none !important;">
                     <div class="startBox profile">
 
 

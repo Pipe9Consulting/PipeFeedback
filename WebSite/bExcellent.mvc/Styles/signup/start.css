@@ -1736,6 +1736,7 @@ body {
 
     .startBox {
         height: 150px !important;
+        width: 100%;
     }
 
     .noticationIcon img {
@@ -1782,7 +1783,11 @@ body {
 }
 
 
-@media screen and (max-width: 1200px) and (min-width: 1000px) {
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+    body {
+        zoom: 80%;
+    }
+
     #hover_content3, #hover_content7 {
         right: 9.5%;
         top: 14%;
@@ -1815,8 +1820,8 @@ body {
         top: 3%;
     }
 
-    .startPart {
-        padding-top: 15px!important;
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        right: 10px;
     }
 
     .hideColumn {
@@ -1824,15 +1829,13 @@ body {
         padding-bottom: 43.5%;
     }
 
-
-
     .startBox {
-        height: 100px !important;
+        height: 150px !important;
+        width: 100%;
     }
 
     .noticationIcon img {
         width: 60%;
-        margin-right: -10px;
     }
 
     .StartTitle h1 {
@@ -1840,27 +1843,142 @@ body {
     }
 
     .StartPart h1 {
-        font-size: 130%;
+        font-size: 150%;
+    }
+
+    .ui.grid > [class*='four column'].row > .column {
+        width: 30% !important;
+        margin-right: 4rem;
     }
 
     .startBox h3 {
-        font-size: 100%;
+        font-size: 120%;
     }
 
     .startBox p {
-        font-size: 70%;
+        font-size: 80%;
     }
 
     .startColumn {
-        margin: 0 0 !important;
-    }
-
-    .startColumn2 {
-        padding: 25px 0 !important;
+        margin: 2% 0 !important;
     }
 
     .startColumn3 {
-        padding: 0 0 30px 0 !important;
+        padding: 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 12px 0 18px 0 !important;
+    }
+
+    .startPart h1 {
+        font-size: 25px !important;
+        padding: 2% 4% 1% 4%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+    body {
+        zoom: 70%;
+    }
+
+    .noticationIcon {
+        bottom: 13%;
+        right: 30px;
+    }
+
+    .startTextArea {
+        bottom: 25px;
+    }
+
+
+    #hover_content3, #hover_content7 {
+        right: 6.5%;
+        top: 18%;
+    }
+
+    #hover_content2 {
+        right: -34.5%;
+        top: 0%;
+    }
+
+    #hover_content4 {
+        right: -34.5%;
+        top: 18%;
+    }
+
+    #hover_content1 {
+        right: -130%;
+        top: 26%;
+    }
+
+    #hover_content5 {
+        width: 140%;
+        right: -115%;
+        top: -7%;
+    }
+
+    #hover_content6 {
+        width: 140%;
+        right: -115%;
+        top: 3%;
+    }
+
+    .managerSync .noticationIcon, .communitySync .noticationIcon {
+        right: 10px;
+    }
+
+    .hideColumn {
+        width: 96.8%;
+        padding-bottom: 43.5%;
+    }
+
+    .startBox {
+        height: 150px !important;
+        width: 100%;
+    }
+
+    .noticationIcon img {
+        width: 60%;
+    }
+
+    .StartTitle h1 {
+        font-size: 150%;
+    }
+
+    .StartPart h1 {
+        font-size: 150%;
+    }
+
+    .ui.grid > [class*='four column'].row > .column {
+        width: 30% !important;
+        margin-right: 4rem;
+    }
+
+    .startBox h3 {
+        font-size: 120%;
+    }
+
+    .startBox p {
+        font-size: 80%;
+    }
+
+    .startColumn {
+        margin: 2% 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 0 0 !important;
+    }
+
+    .startColumn3 {
+        padding: 12px 0 18px 0 !important;
+    }
+
+    .startPart h1 {
+        font-size: 25px !important;
+        padding: 2% 4% 1% 4%;
     }
 }
 

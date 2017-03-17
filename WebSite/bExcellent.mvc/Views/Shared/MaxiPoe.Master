@@ -75,22 +75,10 @@
                 //window.resizeTo(1366, 446);
 
             }
-            var zoomlevel = 1;
-
-            $("body").dblclick(function (ev) {
-                zoomlevel = 1;
-
-
-
-                $(this).css({
-                    "-moz-transform": "scale(" + zoomlevel + ")",
-                    "-webkit-transform": "scale(" + zoomlevel + ")",
-                    "-o-transform": "scale(" + zoomlevel + ")",
-                    "-ms-transform": "scale(" + zoomlevel + ")"
-                });
-
-
-            });
+            var scale = 'scale(1)';
+            document.body.style.webkitTransform = 100;    // Chrome, Opera, Safari
+            document.body.style.msTransform = 100;       // IE 9
+            document.body.style.transform = 100;
         });
     </script>
 

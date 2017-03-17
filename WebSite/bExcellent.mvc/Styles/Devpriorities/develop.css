@@ -444,7 +444,94 @@ a:focus, a:hover {
     }
 }
 
-@media screen and (max-width: 1800px) and (min-width: 1000px) {
+@media screen and (max-width: 1800px) and (min-width: 1400px) {
+    .user_tiles ul li p {
+        font-size: 90%;
+        line-height: 1.1;
+    }
+
+    .priorities_tiles ul li p {
+        font-size: 15px;
+    }
+
+
+    .h2, h2 {
+        font-size: 19px;
+    }
+
+    .login {
+        padding-top: 5.5% !important;
+        padding-bottom: 7% !important;
+    }
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1300px) {
+    .user_tiles ul li p {
+        font-size: 90%;
+        line-height: 1.1;
+    }
+
+    .priorities_tiles ul li p {
+        font-size: 15px;
+    }
+
+
+    .h2, h2 {
+        font-size: 19px;
+    }
+
+    .login {
+        padding-top: 5.5% !important;
+        padding-bottom: 7% !important;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1200px) {
+    .user_tiles ul li p {
+        font-size: 90%;
+        line-height: 1.1;
+    }
+
+    .priorities_tiles ul li p {
+        font-size: 15px;
+    }
+
+
+    .h2, h2 {
+        font-size: 19px;
+    }
+
+    .login {
+        padding-top: 5.5% !important;
+        padding-bottom: 7% !important;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .user_tiles ul li p {
+        font-size: 90%;
+        line-height: 1.1;
+    }
+
+    .priorities_tiles ul li p {
+        font-size: 15px;
+    }
+
+
+    .h2, h2 {
+        font-size: 19px;
+    }
+
+    .login {
+        padding-top: 5.5% !important;
+        padding-bottom: 7% !important;
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
     .user_tiles ul li p {
         font-size: 90%;
         line-height: 1.1;

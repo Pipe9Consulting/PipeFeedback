@@ -12027,7 +12027,7 @@ a.ui.red.label:hover, a.ui.red.labels .label:hover {
     }
 
     .ui.grid > [class*="three column"].doubling.row > .column, .ui.grid > [class*="four column"].doubling.row > .column, .ui[class*="three column"].doubling.grid > .column, .ui[class*="three column"].doubling.grid > .row > .column, .ui[class*="four column"].doubling.grid > .column, .ui[class*="four column"].doubling.grid > .row > .column {
-        width: 50%!important;
+        width: 50%;
     }
 
     .ui.grid > [class*="five column"].doubling.row > .column, .ui.grid > [class*="six column"].doubling.row > .column, .ui.grid > [class*="seven column"].doubling.row > .column, .ui[class*="five column"].doubling.grid > .column, .ui[class*="five column"].doubling.grid > .row > .column, .ui[class*="six column"].doubling.grid > .column, .ui[class*="six column"].doubling.grid > .row > .column, .ui[class*="seven column"].doubling.grid > .column, .ui[class*="seven column"].doubling.grid > .row > .column {

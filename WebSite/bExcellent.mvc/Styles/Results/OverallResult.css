@@ -782,11 +782,8 @@
 
 
 .givefbContent {
-    border: 1px solid #999;
     width: 82%;
-    margin-left: 3%;
     float: left;
-    padding: 1% 0 1% 2%;
 }
 
 
@@ -1454,7 +1451,7 @@
     }
 
     .takefeedback {
-        margin-top: 2%l;
+        margin-top: 2%;
     }
 
     .poelistli a div img {
@@ -1603,7 +1600,7 @@
     }
 
     .vertical-align--bottom a {
-        font-size: 90%;
+        font-size: 120%;
     }
 
     .incompletefb p {
@@ -1917,76 +1914,42 @@
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1201px) {
-    .vertical-align-wrap p {
-        font-size: 200%;
+
+    .takeFeedbackMenu {
+        padding-bottom: 42%;
+    }
+
+    .fblthirdBox {
+        background-size: 100% 103%;
+    }
+
+
+    .fblfristBox {
+        background-size: 100% 82%;
+    }
+
+    .takeFeedbackLeft {
+        width: 97% !IMPORTANT;
+    }
+
+    .profileCenter ul li {
+        padding-bottom: 44% !important;
     }
 
     .scroll2 {
-        padding-bottom: 96% !important;
-    }
-
-
-
-    .accordion h3 {
-        padding-bottom: 16%;
-    }
-
-    .breadMenu {
-        margin-bottom: 0% !important;
-    }
-
-    .teamStd p {
-        padding-left: 5%;
-        margin-bottom: 5%;
-    }
-
-
-
-    .profileCenter ul li {
-        padding-bottom: 45%;
-    }
-
-
-
-    .profilePicture img {
-        height: 47%;
+        padding-bottom: 94% !important;
     }
 
     .vertical-align-wrap p {
-        font-size: 200%;
+        font-size: 350%;
+        margin-bottom: 4%;
     }
-
-
-    .takeFeedbackMenu {
-        padding-bottom: 43% !important;
-    }
-
-    .incompletefbMenu {
-        padding-bottom: 43% !important;
-    }
-
-    .accordion h3 {
-        padding-bottom: 16%;
-    }
-
-    .breadMenu {
-        margin-bottom: 0% !important;
-    }
-
-    .teamStd p {
-        padding-left: 5%;
-        margin-bottom: 5%;
-    }
-
-
-
-
-
 
     .boxone {
-        height: 260px;
-        margin-top: 80%;
+        height: 273px;
+        margin-top: 114%;
     }
+
 
     .profilePicture img {
         height: 47%;
@@ -1998,12 +1961,7 @@
     }
 
     .vertical-align--bottom a {
-        font-size: 90%;
-        padding: 0 5px 0 10px;
-    }
-
-    .breadcrumb {
-        margin-top: 0;
+        font-size: 120%;
     }
 
     .incompletefb p {
@@ -2045,100 +2003,27 @@
 
 
     .boxone p {
-        font-size: 80%;
-        line-height: 1.5;
-    }
-
-
-    .requestfbcontent .boxone p {
-        font-size: 95%;
-    }
-
-    .boxone a {
-        font-size: 90%;
-    }
-
-    .profileCenter p {
-        font-size: 80%;
-        bottom: 0%;
-    }
-
-    .profileCenter img {
-        height: 105px;
-    }
-
-    .givefbmessagedetails p {
-        font-size: 75%;
-    }
-
-    .vertical-align--bottom a {
-        font-size: 80%;
-        padding: 0 5px 0 10px;
-    }
-
-    .breadcrumb {
-        margin-top: 0;
-    }
-
-    .incompletefb p {
-        font-size: 300%;
-    }
-
-    .selecthistory {
-        background-size: 20% 50%;
-    }
-
-    .historyfbIcon:hover {
-        background-size: 20% 50%;
-    }
-
-    .takefeedback h2 {
-        font-size: 150%;
-    }
-
-    .boxone h2 {
-        font-size: 130%;
-    }
-
-    .boxone h3 {
         font-size: 110%;
-    }
-
-    .histroyfb .givefbmessageDummy {
-        padding-bottom: 21.7% !important;
-    }
-
-    .givefbmessageDummy {
-        padding-bottom: 12.7% !important;
-    }
-
-    .histroyArea .givefbmessageDummy {
-        padding-bottom: 17.2% !important;
-    }
-
-
-
-    .boxone p {
-        font-size: 80%;
         line-height: 1.5;
+        height: 180px;
     }
-
 
     .requestfbcontent .boxone p {
         font-size: 95%;
     }
 
     .boxone a {
-        font-size: 90%;
+        font-size: 120%;
     }
 
     .profileCenter p {
-        font-size: 80%;
+        font-size: 100%;
         bottom: 0%;
+        padding: 2px 8px 5px 8px;
     }
 
     .profileCenter img {
-        height: 105px;
+        height: 121px;
     }
 }
 
