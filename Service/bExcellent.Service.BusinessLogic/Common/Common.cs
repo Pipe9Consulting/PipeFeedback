@@ -800,5 +800,15 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             return DataAccess.GetStakeHolderReportCalculated();
         }
+
+        public List<PPAResults> GetReportsCalcNext(int userId, int mode)
+        {
+            return DataAccess.GetReportsCalcNext(userId, mode);
+        }
+
+        public List<getAxis> GetPSEReportCalculatedNew(int userId, int partnerId, string mplId)
+        {
+            return DataAccess.GetPSEReportCalculatedNew(userId, partnerId, mplId);
+        }
     }
 }

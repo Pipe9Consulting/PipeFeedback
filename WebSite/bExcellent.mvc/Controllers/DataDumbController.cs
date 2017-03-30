@@ -21,7 +21,444 @@ namespace bExcellent.mvc.Controllers
         {
             return View();
         }
+        public void GetMSAReport()
+        {
+            DataTable dataTable = MSAReportDump();
+            
+            string filename = "Manager DataDump Report.xlsx";
 
+            //    string templatePath = HttpContext.Current.Server.MapPath("~/") + "\\Reports\\ExcelTemplates\\DataDump.xlsx";
+            string templatePath = System.Web.HttpContext.Current.Server.MapPath("~/") + "ExcelTemplates\\MSADataDump.xlsx";
+
+            MemoryStream ms2 = ExcelReportGenerator.GenerateReport(dataTable, templatePath, 2, "Manager Report");
+
+            //passed down to the client
+
+            System.Web.HttpContext.Current.Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+
+            System.Web.HttpContext.Current.Response.AddHeader("content-disposition", string.Format("attachment;filename={0}", filename));
+
+            ms2.Position = 0;
+
+            ms2.WriteTo(System.Web.HttpContext.Current.Response.OutputStream);
+            System.Web.HttpContext.Current.Response.End();
+        }
+        internal DataTable MSAReportDump()
+        {
+            var feedback = new FeedbackServiceClient();
+            DataTable table = MSATableStructure();
+            var userwithid = feedback.GetManagerReportDumb(2, 27);
+            //Frequency
+            foreach (ManagerFeedback userFeedback in userwithid)
+            {
+                int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
+                DataRow dr = table.NewRow();
+
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Marketing Communications Manager";
+                dr["Answer Type"] = "Frequency";
+                var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = wcsiScore.FirstOrDefault().wcsi;
+                int colid = 10;
+                var poeResults = feedback.GetModuleScores(feedBackid.ToString(), 27);
+                foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
+                {
+                    foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
+                    {
+                        dr[colid] = (Questions.Score == null) ? "0" : Questions.Score.ToString();
+                        colid++;
+                    }
+                }
+
+                table.Rows.Add(dr);
+            }
+            //Capability
+            foreach (ManagerFeedback userFeedback in userwithid)
+            {
+                int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
+                DataRow dr = table.NewRow();
+
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Marketing Communications Manager";
+                dr["Answer Type"] = "Capability";
+               // var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = 0;
+                int colid = 10;
+                var poeResults = feedback.GetCapabilityModuleScores(feedBackid.ToString(), 27);
+                foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
+                {
+                    foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
+                    {
+                        dr[colid] = (Questions.Score == null) ? "0" : Questions.Score.ToString();
+                        colid++;
+                    }
+                }
+
+                table.Rows.Add(dr);
+            }
+            //Importance
+            foreach (ManagerFeedback userFeedback in userwithid)
+            {
+               
+                DataRow dr = table.NewRow();
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Marketing Communications Manager";
+                dr["Answer Type"] = "Importance";
+                // var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = 0;
+                int colid = 10;
+               // var common = new CommonClient();
+                var poeResults = common.GetImportanceAnswer(managerDetails.User.UserId, 27);
+                foreach (QuestionScore feedbackResultse in poeResults)
+                {
+                    dr[colid] = (feedbackResultse.Answers == null) ? "0" : feedbackResultse.Answers;
+                    colid++;
+                }
+
+                table.Rows.Add(dr);
+            }
+            // Partner/Channel
+            var partnerMapping = feedback.GetManagerReportDumb(2, 28);
+            //Frequency
+            foreach (ManagerFeedback userFeedback in partnerMapping)
+            {
+                int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
+                DataRow dr = table.NewRow();
+
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Partner/Channel Marketing Manager";
+                dr["Answer Type"] = "Frequency";
+                var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = wcsiScore.FirstOrDefault().wcsi;
+                int colid = 10;
+                var poeResults = feedback.GetModuleScores(feedBackid.ToString(), 28);
+                foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
+                {
+                    foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
+                    {
+                        dr[colid] = (Questions.Score == null) ? "0" : Questions.Score.ToString();
+                        colid++;
+                    }
+                }
+
+                table.Rows.Add(dr);
+            }
+            //Capability
+            foreach (ManagerFeedback userFeedback in partnerMapping)
+            {
+                int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
+                DataRow dr = table.NewRow();
+
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Partner/Channel Marketing Manager";
+                dr["Answer Type"] = "Capability";
+              //  var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] =0;
+                int colid = 10;
+                var poeResults = feedback.GetCapabilityModuleScores(feedBackid.ToString(), 28);
+                foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
+                {
+                    foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
+                    {
+                        dr[colid] = (Questions.Score == null) ? "0" : Questions.Score.ToString();
+                        colid++;
+                    }
+                }
+
+                table.Rows.Add(dr);
+            }
+            //Importance
+            foreach (ManagerFeedback userFeedback in partnerMapping)
+            {
+               
+                DataRow dr = table.NewRow();
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Partner/Channel Marketing Manager";
+                dr["Answer Type"] = "Importance";
+                //  var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = 0;
+                int colid = 10;
+                var poeResults = common.GetImportanceAnswer(managerDetails.User.UserId, 28);
+                foreach (QuestionScore feedbackResultse in poeResults)
+                {
+                    dr[colid] = (feedbackResultse.Answers == null) ? "0" : feedbackResultse.Answers;
+                    colid++;
+                }
+
+                table.Rows.Add(dr);
+            }
+            // Product Marketing Manager
+            var productmarketing = feedback.GetManagerReportDumb(2, 29);
+            //Frequency
+            foreach (ManagerFeedback userFeedback in productmarketing)
+            {
+                int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
+                DataRow dr = table.NewRow();
+
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Product Marketing Manager";
+                dr["Answer Type"] = "Frequency";
+                var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = wcsiScore.FirstOrDefault().wcsi;
+                int colid = 10;
+                var poeResults = feedback.GetModuleScores(feedBackid.ToString(), 29);
+                foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
+                {
+                    foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
+                    {
+                        dr[colid] = (Questions.Score == null) ? "0" : Questions.Score.ToString();
+                        colid++;
+                    }
+                }
+
+                table.Rows.Add(dr);
+            }
+            //Capability
+            foreach (ManagerFeedback userFeedback in productmarketing)
+            {
+                int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
+                DataRow dr = table.NewRow();
+
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Product Marketing Manager";
+                dr["Answer Type"] = "Capability";
+               // var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = 0;
+                int colid = 10;
+                var poeResults = feedback.GetCapabilityModuleScores(feedBackid.ToString(), 29);
+                foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
+                {
+                    foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
+                    {
+                        dr[colid] = (Questions.Score == null) ? "0" : Questions.Score.ToString();
+                        colid++;
+                    }
+                }
+
+                table.Rows.Add(dr);
+            }
+            //Frequency
+            foreach (ManagerFeedback userFeedback in productmarketing)
+            {
+                DataRow dr = table.NewRow();
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Product Marketing Manager";
+                dr["Answer Type"] = "Importance";
+                // var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = 0;
+                int colid = 10;
+                var poeResults = common.GetImportanceAnswer(managerDetails.User.UserId, 29);
+                foreach (QuestionScore feedbackResultse in poeResults)
+                {
+                    dr[colid] = (feedbackResultse.Answers == null) ? "0" : feedbackResultse.Answers;
+                    colid++;
+                }
+
+                table.Rows.Add(dr);
+            }
+            // Product Marketing Manager
+            var audience = feedback.GetManagerReportDumb(2, 30);
+            //Frequency
+            foreach (ManagerFeedback userFeedback in audience)
+            {
+                int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
+                DataRow dr = table.NewRow();
+
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Audience Marketing Manager";
+                dr["Answer Type"] = "Frequency";
+                var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = wcsiScore.FirstOrDefault().wcsi;
+                int colid = 10;
+                var poeResults = feedback.GetModuleScores(feedBackid.ToString(), 30);
+                foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
+                {
+                    foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
+                    {
+                        dr[colid] = (Questions.Score == null) ? "0" : Questions.Score.ToString();
+                        colid++;
+                    }
+                }
+
+                table.Rows.Add(dr);
+            }
+            //Capability
+            foreach (ManagerFeedback userFeedback in audience)
+            {
+                int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
+                DataRow dr = table.NewRow();
+
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Audience Marketing Manager";
+                dr["Answer Type"] = "Capability";
+               // var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = 0;
+                int colid = 10;
+                var poeResults = feedback.GetCapabilityModuleScores(feedBackid.ToString(), 30);
+                foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
+                {
+                    foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
+                    {
+                        dr[colid] = (Questions.Score == null) ? "0" : Questions.Score.ToString();
+                        colid++;
+                    }
+                }
+
+                table.Rows.Add(dr);
+            }
+            //Importance
+            foreach (ManagerFeedback userFeedback in audience)
+            {
+                
+                DataRow dr = table.NewRow();
+                var common = new CommonClient();
+                var managerDetails = common.GetUserdetailsByMappingId(userFeedback.MangagerPoeId);
+                var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
+                dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Team member Full Name"] = teamMemberDetails.User.FirstName + " " + teamMemberDetails.User.LastName;
+                dr["Team member Alias"] = teamMemberDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
+                dr["Relation"] = managerDetails.Designation.Name;
+                dr["Area"] = managerDetails.User.Country.Name;
+                dr["Country/Location"] = managerDetails.User.Area.Name;
+                dr["Role Excellence Profile"] = "Audience Marketing Manager";
+                dr["Answer Type"] = "Importance";
+                // var wcsiScore = common.GetAvgWcsiScore(feedBackid.ToString());
+                dr["WCSI Score"] = 0;
+                int colid = 10;
+                var poeResults = common.GetImportanceAnswer(managerDetails.User.UserId, 30);
+                foreach (QuestionScore feedbackResultse in poeResults)
+                {
+                    dr[colid] = (feedbackResultse.Answers == null) ? "0" : feedbackResultse.Answers;
+                    colid++;
+                }
+
+                table.Rows.Add(dr);
+            }
+            return table;
+           
+        }
+        internal DataTable MSATableStructure()
+        {
+            DataTable table = new DataTable();
+
+            table.Columns.Add("Maanger Full Name");
+
+            table.Columns.Add("Manager Alias");
+            table.Columns.Add("Team member Full Name");
+            table.Columns.Add("Team member Alias");
+            table.Columns.Add("Relation");
+            table.Columns.Add("Area");
+            table.Columns.Add("Country/Location");
+            table.Columns.Add("Role Excellence Profile");
+            table.Columns.Add("Answer Type");
+            table.Columns.Add("WCSI Score");
+            for (int i = 1; i <= 34; i++)
+            {
+                table.Columns.Add("Q" + i);
+            }
+
+            return table;
+        }
         public void GetManagerReport(int poeid)
         {
             DataTable dataTable = ManagerReportDump(poeid);
@@ -386,6 +823,7 @@ namespace bExcellent.mvc.Controllers
             var feedback = new FeedbackServiceClient();
             DataTable table = ManagerTableStructure();
             var userwithid = feedback.GetManagerReportDumb(2, poeid);
+         
             foreach (ManagerFeedback userFeedback in userwithid)
             {
                 int feedBackid = (userFeedback.FeedbackId == null) ? 0 : userFeedback.FeedbackId.Value;
@@ -513,7 +951,7 @@ namespace bExcellent.mvc.Controllers
 
             return table;
         }
-
+        
         public void GetTeammemberDataDumb(int poeidval)
         {
             DataTable dataTable = TeamMemberReportDump(poeidval);

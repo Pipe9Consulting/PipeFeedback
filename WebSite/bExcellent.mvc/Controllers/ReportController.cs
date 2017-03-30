@@ -110,7 +110,7 @@ namespace bExcellent.mvc.Controllers
 
         public void GetReportsForTeamMember()
         {
-            const string filename = "All up Team member Completion Report(MSA).xlsx";
+            const string filename = "All up Team member Completion Report.xlsx";
             DataTable dataTable = GetAllTeammemberReport();
             string templatePath = System.Web.HttpContext.Current.Server.MapPath("~/") + "\\ExcelTemplates\\AllTeammbrReportTempMSA.xlsx";
             MemoryStream ms2 = ExcelReportGenerator.GenerateReport(dataTable, templatePath, 2, "Team member Report");
@@ -134,7 +134,7 @@ namespace bExcellent.mvc.Controllers
         }
         public void GetReportsForManager()
         {
-            const string filename = "All up Manager Completion Report(MSA).xlsx";
+            const string filename = "All up Manager Completion Report.xlsx";
             DataTable dataTable = GetAllManagerReport();
             string templatePath = System.Web.HttpContext.Current.Server.MapPath("~/") + "\\ExcelTemplates\\AllManagerReportMSA.xlsx";
             MemoryStream ms2 = ExcelReportGenerator.GenerateReport(dataTable, templatePath, 2, "Manager Report");

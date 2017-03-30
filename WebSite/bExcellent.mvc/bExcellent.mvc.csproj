@@ -3716,6 +3716,7 @@
     <Content Include="ExcelTemplates\TeamDataDumps.xlsx" />
     <Content Include="ExcelTemplates\SurveyDump.xlsx" />
     <Content Include="ExcelTemplates\ProductSurveyDump.xlsx" />
+    <Content Include="ExcelTemplates\MSADataDump.xlsx" />
     <None Include="ExcelTemplates\TeammbrReportTemp.xlsx" />
     <None Include="ExcelTemplates\Template.xlsx" />
     <None Include="ExcelTemplates\TemplateTeam.xlsx" />

@@ -3177,5 +3177,37 @@ namespace bExcellent.Service
             }
             return null;
         }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public List<PPAResults> GetReportsCalcNext(int userId, int mode)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                return common.GetReportsCalcNext(userId,mode);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
+            return null;
+        }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public List<getAxis> GetPSEReportCalculatedNew(int userId, int partnerId, string mplId)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                return common.GetPSEReportCalculatedNew(userId, partnerId, mplId);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
+            return null;
+        }
     }
 }

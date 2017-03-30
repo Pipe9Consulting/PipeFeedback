@@ -13,6 +13,7 @@ namespace bExcellent.Service.Util.Response
         public string EmailId { get; set; }
         public string Country { get; set; }
         public string Area { get; set; }
+        public string Role { get; set; }
         public string TimeZone { get; set; }
         public string ManagerFirstName { get; set; }
         public string ManagerLastName { get; set; }

@@ -23,7 +23,7 @@
                     <img src="../../Images/team-ico.png" />
                 </div>
                 <input type="submit" value="teammember" />
-                <p>All up Team Member Completion Report(MSA)</p>
+                <p>All up Team Member Completion Report</p>
             </div>
         </form>
         <form method="POST" action="../Report/GetReportsForManager">

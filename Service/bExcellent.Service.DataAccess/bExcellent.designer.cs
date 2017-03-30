@@ -22,7 +22,7 @@ namespace bExcellent.Service.DataAccess
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Kessaku_Demo")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="PSE_Live")]
 	public partial class bExcellentDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -33,7 +33,7 @@ namespace bExcellent.Service.DataAccess
     #endregion
 		
 		public bExcellentDataContext() : 
-				base(global::bExcellent.Service.DataAccess.Properties.Settings.Default.Kessaku_DemoConnectionString, mappingSource)
+				base(global::bExcellent.Service.DataAccess.Properties.Settings.Default.PSE_LiveConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -1798,13 +1798,6 @@ namespace bExcellent.Service.DataAccess
 			return ((ISingleResult<PPA_FilterPartnersByDesignationResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetPartnersFB")]
-		public ISingleResult<PPA_GetPartnersFBResult> GetPartnersFB([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PartnerId", DbType="Int")] System.Nullable<int> partnerId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, partnerId);
-			return ((ISingleResult<PPA_GetPartnersFBResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_LoadPartnersTimeZone")]
 		public ISingleResult<PPA_LoadPartnersTimeZoneResult> LoadPartnersTimeZone([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DesignationId", DbType="Int")] System.Nullable<int> designationId)
 		{
@@ -1952,20 +1945,6 @@ namespace bExcellent.Service.DataAccess
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetAllReports")]
-		public ISingleResult<PPA_GetAllReportsResult> GetAllReports()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<PPA_GetAllReportsResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetPSMReports")]
-		public ISingleResult<PPA_GetPSMReportsResult> GetPSMReports([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> deisgnationId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, deisgnationId);
-			return ((ISingleResult<PPA_GetPSMReportsResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetAllReportsByArea")]
 		public ISingleResult<PPA_GetAllReportsByAreaResult> GetAllReportsByArea([global::System.Data.Linq.Mapping.ParameterAttribute(Name="AreaId", DbType="Int")] System.Nullable<int> areaId)
 		{
@@ -2050,13 +2029,6 @@ namespace bExcellent.Service.DataAccess
 			return ((ISingleResult<PPA_IsExistUserZoneResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetOverAllPartnersByDesignation")]
-		public ISingleResult<PPA_GetOverAllPartnersByDesignationResult> GetOverAllPartnersByDesignation([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> designationId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, designationId);
-			return ((ISingleResult<PPA_GetOverAllPartnersByDesignationResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GenerateReportPowerBi")]
 		public ISingleResult<PPA_GenerateReportPowerBiResult> GenerateReportPowerBi([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PartnerId", DbType="Int")] System.Nullable<int> partnerId)
 		{
@@ -2069,6 +2041,48 @@ namespace bExcellent.Service.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), poeid, userid, minTenure, maxTenure);
 			return ((ISingleResult<V3_GetTenureFbidsForTeamResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetPartnersFB")]
+		public ISingleResult<PPA_GetPartnersFBResult> GetPartnersFB([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PartnerId", DbType="Int")] System.Nullable<int> partnerId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, partnerId);
+			return ((ISingleResult<PPA_GetPartnersFBResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetLastPartnersCompleted")]
+		public ISingleResult<PPA_GetLastPartnersCompletedResult> GetLastPartnersCompleted([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PartnerId", DbType="Int")] System.Nullable<int> partnerId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, partnerId);
+			return ((ISingleResult<PPA_GetLastPartnersCompletedResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetPSMReports")]
+		public ISingleResult<PPA_GetPSMReportsResult> GetPSMReports([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> deisgnationId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, deisgnationId);
+			return ((ISingleResult<PPA_GetPSMReportsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetAllReports")]
+		public ISingleResult<PPA_GetAllReportsResult> GetAllReports()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<PPA_GetAllReportsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GenerateReportPowerBiUpdated")]
+		public ISingleResult<PPA_GenerateReportPowerBiUpdatedResult> GenerateReportPowerBiUpdated([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PartnerId", DbType="Int")] System.Nullable<int> partnerId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, partnerId);
+			return ((ISingleResult<PPA_GenerateReportPowerBiUpdatedResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PPA_GetOverAllPartnersByDesignation")]
+		public ISingleResult<PPA_GetOverAllPartnersByDesignationResult> GetOverAllPartnersByDesignation([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> designationId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, designationId);
+			return ((ISingleResult<PPA_GetOverAllPartnersByDesignationResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -31612,50 +31626,6 @@ namespace bExcellent.Service.DataAccess
 		}
 	}
 	
-	public partial class PPA_GetPartnersFBResult
-	{
-		
-		private int _POEFeedbackId;
-		
-		private System.Nullable<int> _Status;
-		
-		public PPA_GetPartnersFBResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEFeedbackId", DbType="Int NOT NULL")]
-		public int POEFeedbackId
-		{
-			get
-			{
-				return this._POEFeedbackId;
-			}
-			set
-			{
-				if ((this._POEFeedbackId != value))
-				{
-					this._POEFeedbackId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
-		public System.Nullable<int> Status
-		{
-			get
-			{
-				return this._Status;
-			}
-			set
-			{
-				if ((this._Status != value))
-				{
-					this._Status = value;
-				}
-			}
-		}
-	}
-	
 	public partial class PPA_LoadPartnersTimeZoneResult
 	{
 		
@@ -32891,346 +32861,6 @@ namespace bExcellent.Service.DataAccess
 				if ((this._id != value))
 				{
 					this._id = value;
-				}
-			}
-		}
-	}
-	
-	public partial class PPA_GetAllReportsResult
-	{
-		
-		private string _FirstName;
-		
-		private string _LastName;
-		
-		private string _EmailID;
-		
-		private int _PartnerId;
-		
-		private int _UserId;
-		
-		private string _Name;
-		
-		private string _MPLID;
-		
-		private string _Area;
-		
-		private string _TimeZone;
-		
-		public PPA_GetAllReportsResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
-		public string FirstName
-		{
-			get
-			{
-				return this._FirstName;
-			}
-			set
-			{
-				if ((this._FirstName != value))
-				{
-					this._FirstName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string LastName
-		{
-			get
-			{
-				return this._LastName;
-			}
-			set
-			{
-				if ((this._LastName != value))
-				{
-					this._LastName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="NVarChar(100)")]
-		public string EmailID
-		{
-			get
-			{
-				return this._EmailID;
-			}
-			set
-			{
-				if ((this._EmailID != value))
-				{
-					this._EmailID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PartnerId", DbType="Int NOT NULL")]
-		public int PartnerId
-		{
-			get
-			{
-				return this._PartnerId;
-			}
-			set
-			{
-				if ((this._PartnerId != value))
-				{
-					this._PartnerId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", DbType="Int NOT NULL")]
-		public int UserId
-		{
-			get
-			{
-				return this._UserId;
-			}
-			set
-			{
-				if ((this._UserId != value))
-				{
-					this._UserId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(60)")]
-		public string Name
-		{
-			get
-			{
-				return this._Name;
-			}
-			set
-			{
-				if ((this._Name != value))
-				{
-					this._Name = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MPLID", DbType="NVarChar(50)")]
-		public string MPLID
-		{
-			get
-			{
-				return this._MPLID;
-			}
-			set
-			{
-				if ((this._MPLID != value))
-				{
-					this._MPLID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Area", DbType="NVarChar(60)")]
-		public string Area
-		{
-			get
-			{
-				return this._Area;
-			}
-			set
-			{
-				if ((this._Area != value))
-				{
-					this._Area = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TimeZone", DbType="NVarChar(60)")]
-		public string TimeZone
-		{
-			get
-			{
-				return this._TimeZone;
-			}
-			set
-			{
-				if ((this._TimeZone != value))
-				{
-					this._TimeZone = value;
-				}
-			}
-		}
-	}
-	
-	public partial class PPA_GetPSMReportsResult
-	{
-		
-		private string _FirstName;
-		
-		private string _LastName;
-		
-		private string _EmailID;
-		
-		private int _PartnerId;
-		
-		private int _UserId;
-		
-		private string _Name;
-		
-		private string _MPLID;
-		
-		private string _Area;
-		
-		private string _TimeZone;
-		
-		public PPA_GetPSMReportsResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
-		public string FirstName
-		{
-			get
-			{
-				return this._FirstName;
-			}
-			set
-			{
-				if ((this._FirstName != value))
-				{
-					this._FirstName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string LastName
-		{
-			get
-			{
-				return this._LastName;
-			}
-			set
-			{
-				if ((this._LastName != value))
-				{
-					this._LastName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="NVarChar(100)")]
-		public string EmailID
-		{
-			get
-			{
-				return this._EmailID;
-			}
-			set
-			{
-				if ((this._EmailID != value))
-				{
-					this._EmailID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PartnerId", DbType="Int NOT NULL")]
-		public int PartnerId
-		{
-			get
-			{
-				return this._PartnerId;
-			}
-			set
-			{
-				if ((this._PartnerId != value))
-				{
-					this._PartnerId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", DbType="Int NOT NULL")]
-		public int UserId
-		{
-			get
-			{
-				return this._UserId;
-			}
-			set
-			{
-				if ((this._UserId != value))
-				{
-					this._UserId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(60)")]
-		public string Name
-		{
-			get
-			{
-				return this._Name;
-			}
-			set
-			{
-				if ((this._Name != value))
-				{
-					this._Name = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MPLID", DbType="NVarChar(50)")]
-		public string MPLID
-		{
-			get
-			{
-				return this._MPLID;
-			}
-			set
-			{
-				if ((this._MPLID != value))
-				{
-					this._MPLID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Area", DbType="NVarChar(60)")]
-		public string Area
-		{
-			get
-			{
-				return this._Area;
-			}
-			set
-			{
-				if ((this._Area != value))
-				{
-					this._Area = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TimeZone", DbType="NVarChar(60)")]
-		public string TimeZone
-		{
-			get
-			{
-				return this._TimeZone;
-			}
-			set
-			{
-				if ((this._TimeZone != value))
-				{
-					this._TimeZone = value;
 				}
 			}
 		}
@@ -34646,140 +34276,6 @@ namespace bExcellent.Service.DataAccess
 		}
 	}
 	
-	public partial class PPA_GetOverAllPartnersByDesignationResult
-	{
-		
-		private int _PartnerId;
-		
-		private string _DET;
-		
-		private string _CountryName;
-		
-		private string _Area;
-		
-		private string _Timezone;
-		
-		private string _FirstName;
-		
-		private string _LastName;
-		
-		public PPA_GetOverAllPartnersByDesignationResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PartnerId", DbType="Int NOT NULL")]
-		public int PartnerId
-		{
-			get
-			{
-				return this._PartnerId;
-			}
-			set
-			{
-				if ((this._PartnerId != value))
-				{
-					this._PartnerId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DET", DbType="NVarChar(50)")]
-		public string DET
-		{
-			get
-			{
-				return this._DET;
-			}
-			set
-			{
-				if ((this._DET != value))
-				{
-					this._DET = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CountryName", DbType="NVarChar(60)")]
-		public string CountryName
-		{
-			get
-			{
-				return this._CountryName;
-			}
-			set
-			{
-				if ((this._CountryName != value))
-				{
-					this._CountryName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Area", DbType="NVarChar(60)")]
-		public string Area
-		{
-			get
-			{
-				return this._Area;
-			}
-			set
-			{
-				if ((this._Area != value))
-				{
-					this._Area = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Timezone", DbType="NVarChar(60)")]
-		public string Timezone
-		{
-			get
-			{
-				return this._Timezone;
-			}
-			set
-			{
-				if ((this._Timezone != value))
-				{
-					this._Timezone = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
-		public string FirstName
-		{
-			get
-			{
-				return this._FirstName;
-			}
-			set
-			{
-				if ((this._FirstName != value))
-				{
-					this._FirstName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string LastName
-		{
-			get
-			{
-				return this._LastName;
-			}
-			set
-			{
-				if ((this._LastName != value))
-				{
-					this._LastName = value;
-				}
-			}
-		}
-	}
-	
 	public partial class PPA_GenerateReportPowerBiResult
 	{
 		
@@ -35259,6 +34755,846 @@ namespace bExcellent.Service.DataAccess
 				if ((this._TeamId != value))
 				{
 					this._TeamId = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PPA_GetPartnersFBResult
+	{
+		
+		private int _POEFeedbackId;
+		
+		private System.Nullable<int> _Status;
+		
+		private System.Nullable<System.DateTime> _startdate;
+		
+		public PPA_GetPartnersFBResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEFeedbackId", DbType="Int NOT NULL")]
+		public int POEFeedbackId
+		{
+			get
+			{
+				return this._POEFeedbackId;
+			}
+			set
+			{
+				if ((this._POEFeedbackId != value))
+				{
+					this._POEFeedbackId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
+		public System.Nullable<int> Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this._Status = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_startdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> startdate
+		{
+			get
+			{
+				return this._startdate;
+			}
+			set
+			{
+				if ((this._startdate != value))
+				{
+					this._startdate = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PPA_GetLastPartnersCompletedResult
+	{
+		
+		private System.Nullable<System.DateTime> _startdate;
+		
+		private int _POEFeedbackId;
+		
+		public PPA_GetLastPartnersCompletedResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_startdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> startdate
+		{
+			get
+			{
+				return this._startdate;
+			}
+			set
+			{
+				if ((this._startdate != value))
+				{
+					this._startdate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEFeedbackId", DbType="Int NOT NULL")]
+		public int POEFeedbackId
+		{
+			get
+			{
+				return this._POEFeedbackId;
+			}
+			set
+			{
+				if ((this._POEFeedbackId != value))
+				{
+					this._POEFeedbackId = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PPA_GetPSMReportsResult
+	{
+		
+		private string _FirstName;
+		
+		private string _LastName;
+		
+		private string _EmailID;
+		
+		private int _PartnerId;
+		
+		private int _UserId;
+		
+		private string _Name;
+		
+		private string _MPLID;
+		
+		private string _Area;
+		
+		private string _Roles;
+		
+		private string _TimeZone;
+		
+		public PPA_GetPSMReportsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
+		public string FirstName
+		{
+			get
+			{
+				return this._FirstName;
+			}
+			set
+			{
+				if ((this._FirstName != value))
+				{
+					this._FirstName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string LastName
+		{
+			get
+			{
+				return this._LastName;
+			}
+			set
+			{
+				if ((this._LastName != value))
+				{
+					this._LastName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="NVarChar(100)")]
+		public string EmailID
+		{
+			get
+			{
+				return this._EmailID;
+			}
+			set
+			{
+				if ((this._EmailID != value))
+				{
+					this._EmailID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PartnerId", DbType="Int NOT NULL")]
+		public int PartnerId
+		{
+			get
+			{
+				return this._PartnerId;
+			}
+			set
+			{
+				if ((this._PartnerId != value))
+				{
+					this._PartnerId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", DbType="Int NOT NULL")]
+		public int UserId
+		{
+			get
+			{
+				return this._UserId;
+			}
+			set
+			{
+				if ((this._UserId != value))
+				{
+					this._UserId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(60)")]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this._Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MPLID", DbType="NVarChar(50)")]
+		public string MPLID
+		{
+			get
+			{
+				return this._MPLID;
+			}
+			set
+			{
+				if ((this._MPLID != value))
+				{
+					this._MPLID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Area", DbType="NVarChar(60)")]
+		public string Area
+		{
+			get
+			{
+				return this._Area;
+			}
+			set
+			{
+				if ((this._Area != value))
+				{
+					this._Area = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Roles", DbType="NVarChar(100)")]
+		public string Roles
+		{
+			get
+			{
+				return this._Roles;
+			}
+			set
+			{
+				if ((this._Roles != value))
+				{
+					this._Roles = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TimeZone", DbType="NVarChar(60)")]
+		public string TimeZone
+		{
+			get
+			{
+				return this._TimeZone;
+			}
+			set
+			{
+				if ((this._TimeZone != value))
+				{
+					this._TimeZone = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PPA_GetAllReportsResult
+	{
+		
+		private string _FirstName;
+		
+		private string _LastName;
+		
+		private string _EmailID;
+		
+		private int _PartnerId;
+		
+		private int _UserId;
+		
+		private string _Name;
+		
+		private string _MPLID;
+		
+		private string _Area;
+		
+		private string _Roles;
+		
+		private string _TimeZone;
+		
+		public PPA_GetAllReportsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
+		public string FirstName
+		{
+			get
+			{
+				return this._FirstName;
+			}
+			set
+			{
+				if ((this._FirstName != value))
+				{
+					this._FirstName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string LastName
+		{
+			get
+			{
+				return this._LastName;
+			}
+			set
+			{
+				if ((this._LastName != value))
+				{
+					this._LastName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="NVarChar(100)")]
+		public string EmailID
+		{
+			get
+			{
+				return this._EmailID;
+			}
+			set
+			{
+				if ((this._EmailID != value))
+				{
+					this._EmailID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PartnerId", DbType="Int NOT NULL")]
+		public int PartnerId
+		{
+			get
+			{
+				return this._PartnerId;
+			}
+			set
+			{
+				if ((this._PartnerId != value))
+				{
+					this._PartnerId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", DbType="Int NOT NULL")]
+		public int UserId
+		{
+			get
+			{
+				return this._UserId;
+			}
+			set
+			{
+				if ((this._UserId != value))
+				{
+					this._UserId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(60)")]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this._Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MPLID", DbType="NVarChar(50)")]
+		public string MPLID
+		{
+			get
+			{
+				return this._MPLID;
+			}
+			set
+			{
+				if ((this._MPLID != value))
+				{
+					this._MPLID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Area", DbType="NVarChar(60)")]
+		public string Area
+		{
+			get
+			{
+				return this._Area;
+			}
+			set
+			{
+				if ((this._Area != value))
+				{
+					this._Area = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Roles", DbType="NVarChar(100)")]
+		public string Roles
+		{
+			get
+			{
+				return this._Roles;
+			}
+			set
+			{
+				if ((this._Roles != value))
+				{
+					this._Roles = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TimeZone", DbType="NVarChar(60)")]
+		public string TimeZone
+		{
+			get
+			{
+				return this._TimeZone;
+			}
+			set
+			{
+				if ((this._TimeZone != value))
+				{
+					this._TimeZone = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PPA_GenerateReportPowerBiUpdatedResult
+	{
+		
+		private int _QuestionId;
+		
+		private string _Answer;
+		
+		private System.Nullable<int> _AnswerValue;
+		
+		private int _POEModuleId;
+		
+		private string _ModuleName;
+		
+		private string _Question;
+		
+		private string _BriefQuestion;
+		
+		private string _ReportQuestion;
+		
+		private int _POEFeedbackId;
+		
+		private System.Nullable<System.DateTime> _StartDate;
+		
+		public PPA_GenerateReportPowerBiUpdatedResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
+		public int QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="NVarChar(200)")]
+		public string Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AnswerValue", DbType="Int")]
+		public System.Nullable<int> AnswerValue
+		{
+			get
+			{
+				return this._AnswerValue;
+			}
+			set
+			{
+				if ((this._AnswerValue != value))
+				{
+					this._AnswerValue = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
+		public int POEModuleId
+		{
+			get
+			{
+				return this._POEModuleId;
+			}
+			set
+			{
+				if ((this._POEModuleId != value))
+				{
+					this._POEModuleId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
+		public string ModuleName
+		{
+			get
+			{
+				return this._ModuleName;
+			}
+			set
+			{
+				if ((this._ModuleName != value))
+				{
+					this._ModuleName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Question", DbType="Text NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public string Question
+		{
+			get
+			{
+				return this._Question;
+			}
+			set
+			{
+				if ((this._Question != value))
+				{
+					this._Question = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BriefQuestion", DbType="Text NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public string BriefQuestion
+		{
+			get
+			{
+				return this._BriefQuestion;
+			}
+			set
+			{
+				if ((this._BriefQuestion != value))
+				{
+					this._BriefQuestion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReportQuestion", DbType="NVarChar(MAX)")]
+		public string ReportQuestion
+		{
+			get
+			{
+				return this._ReportQuestion;
+			}
+			set
+			{
+				if ((this._ReportQuestion != value))
+				{
+					this._ReportQuestion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEFeedbackId", DbType="Int NOT NULL")]
+		public int POEFeedbackId
+		{
+			get
+			{
+				return this._POEFeedbackId;
+			}
+			set
+			{
+				if ((this._POEFeedbackId != value))
+				{
+					this._POEFeedbackId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StartDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> StartDate
+		{
+			get
+			{
+				return this._StartDate;
+			}
+			set
+			{
+				if ((this._StartDate != value))
+				{
+					this._StartDate = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PPA_GetOverAllPartnersByDesignationResult
+	{
+		
+		private int _PartnerId;
+		
+		private string _DET;
+		
+		private string _CountryName;
+		
+		private string _Area;
+		
+		private string _Timezone;
+		
+		private string _FirstName;
+		
+		private string _LastName;
+		
+		private string _Role;
+		
+		private string _MPLID;
+		
+		public PPA_GetOverAllPartnersByDesignationResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PartnerId", DbType="Int NOT NULL")]
+		public int PartnerId
+		{
+			get
+			{
+				return this._PartnerId;
+			}
+			set
+			{
+				if ((this._PartnerId != value))
+				{
+					this._PartnerId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DET", DbType="NVarChar(50)")]
+		public string DET
+		{
+			get
+			{
+				return this._DET;
+			}
+			set
+			{
+				if ((this._DET != value))
+				{
+					this._DET = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CountryName", DbType="NVarChar(60)")]
+		public string CountryName
+		{
+			get
+			{
+				return this._CountryName;
+			}
+			set
+			{
+				if ((this._CountryName != value))
+				{
+					this._CountryName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Area", DbType="NVarChar(60)")]
+		public string Area
+		{
+			get
+			{
+				return this._Area;
+			}
+			set
+			{
+				if ((this._Area != value))
+				{
+					this._Area = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Timezone", DbType="NVarChar(60)")]
+		public string Timezone
+		{
+			get
+			{
+				return this._Timezone;
+			}
+			set
+			{
+				if ((this._Timezone != value))
+				{
+					this._Timezone = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
+		public string FirstName
+		{
+			get
+			{
+				return this._FirstName;
+			}
+			set
+			{
+				if ((this._FirstName != value))
+				{
+					this._FirstName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string LastName
+		{
+			get
+			{
+				return this._LastName;
+			}
+			set
+			{
+				if ((this._LastName != value))
+				{
+					this._LastName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Role", DbType="NVarChar(100)")]
+		public string Role
+		{
+			get
+			{
+				return this._Role;
+			}
+			set
+			{
+				if ((this._Role != value))
+				{
+					this._Role = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MPLID", DbType="NVarChar(50)")]
+		public string MPLID
+		{
+			get
+			{
+				return this._MPLID;
+			}
+			set
+			{
+				if ((this._MPLID != value))
+				{
+					this._MPLID = value;
 				}
 			}
 		}

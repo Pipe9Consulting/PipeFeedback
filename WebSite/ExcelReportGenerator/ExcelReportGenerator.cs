@@ -20,7 +20,9 @@ namespace ExcelGenerator
         // Lookup for Excel column reference prefixes
         private static string[] ExcelColumnReferenceLookup =
         {
-            "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S"
+            "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+            "AA","AB","AC","AD","AE","AF","AG","AH","AI","AJ","AK","AL","AM","AN","AO","AP","AQ","AR","AS","AT","AU","AV","AW","AX","AY","AZ",
+             "BA","BB","BC","BD","BE","BF","BG","BH","BI","BJ","BK","BL","BM","BN","BO","BP","BQ","BR","BS","BT","BU","BV","BW","BX","BY","BZ",
            
         };
 
@@ -566,13 +568,13 @@ namespace ExcelGenerator
            // WorkbookPart workbookPart = ssDoc.WorkbookPart;
             //WorksheetPart worksheetPart = workbookPart.WorksheetParts.First();
 
-            string sheetName1 = workbookPart.Workbook.Descendants<Sheet>().ElementAt(1).Name;
-            string relId = workbookPart.Workbook.Descendants<Sheet>().First(s => sheetName1.Equals(s.Name)).Id;
-            workbookPart.Workbook.WorkbookProperties.RefreshAllConnections = true;
-            WorksheetPart worksheetPart1 = (WorksheetPart)workbookPart.GetPartById(relId);
-            worksheetPart1.Worksheet.Reload();
-            //Thread.Sleep(5000);
-            worksheetPart1.Worksheet.Reload();
+            //string sheetName1 = workbookPart.Workbook.Descendants<Sheet>().ElementAt(1).Name;
+            //string relId = workbookPart.Workbook.Descendants<Sheet>().First(s => sheetName1.Equals(s.Name)).Id;
+            //workbookPart.Workbook.WorkbookProperties.RefreshAllConnections = true;
+            //WorksheetPart worksheetPart1 = (WorksheetPart)workbookPart.GetPartById(relId);
+            //worksheetPart1.Worksheet.Reload();
+            ////Thread.Sleep(5000);
+            //worksheetPart1.Worksheet.Reload();
         }
 
         private static Worksheet GetWorksheet(SpreadsheetDocument document, string worksheetName)

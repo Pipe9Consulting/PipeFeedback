@@ -2544,10 +2544,16 @@ namespace bExcellent.Service.BusinessLogic.Common
                     var fbStatus = context.GetPartnersFB(userid, partner.PartnerId).FirstOrDefault();
                     var plan = context.GetPartnersPlan(userid, partner.PartnerId).FirstOrDefault();
                     var partnerName = context.GetMPLIDName(partner.PartnerName).FirstOrDefault();
+                    var lastCompleted = context.GetLastPartnersCompleted(userid, partner.PartnerId).FirstOrDefault();
                     var fbMode = 0;
+                    var completedOn = "";
                     if (fbStatus != null)
                     {
                         fbMode = (int)fbStatus.Status;
+                    }
+                    if (lastCompleted != null)
+                    {
+                        completedOn = Convert.ToDateTime(lastCompleted.startdate).ToShortDateString();
                     }
                     var partners = new Partner
                                        {
@@ -2559,7 +2565,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                                            Extension = (plan != null) ? plan.Extension : "",
                                            PlanId = (plan != null) ? plan.planid : 0,
                                            RealFileName = (plan != null) ? plan.RealFileName : "",
-                                           UserId = userid
+                                           UserId = userid,
+                                           CompletedOn = completedOn
                                        };
                     partnerList.Add(partners);
                 }
@@ -3370,6 +3377,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     pseRepot.TimeZoneAlias = tmZone.EmailId.Replace("@microsoft.com", "");
                     pseRepot.Mplid = report.MPLID;
                     pseRepot.Order = counts;
+                    pseRepot.Role = report.Roles;
                     var partnername = context.GetMPLIDName(report.MPLID).ToList();
                     if (partnername.Count != 0)
                     {
@@ -3391,7 +3399,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.HighVelocity = 0;
                         pseRepot.IndustrySpecialist = 0;
                         pseRepot.President = 0;
-                        pseRepot.ModeName = "Omnivores";
+                        pseRepot.ModeName = "3. Omnivores";
                         omnivores = omnivores + 1;
                     }
                     else if (axisvalue.XAxis < 10 && axisvalue.YAxis < 5.1)
@@ -3400,7 +3408,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.HighVelocity = 1;
                         pseRepot.IndustrySpecialist = 0;
                         pseRepot.President = 0;
-                        pseRepot.ModeName = "High Velocity";
+                        pseRepot.ModeName = "2. High Velocity";
                         highVelocity = highVelocity + 1;
                     }
                     else if (axisvalue.XAxis < 5.1 && axisvalue.YAxis < 10)
@@ -3409,7 +3417,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.HighVelocity = 0;
                         pseRepot.IndustrySpecialist = 1;
                         pseRepot.President = 0;
-                        pseRepot.ModeName = "Industry Specialists";
+                        pseRepot.ModeName = "4. Industry Specialists";
                         industrySpecialists = industrySpecialists + 1;
                     }
                     else
@@ -3418,7 +3426,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.HighVelocity = 0;
                         pseRepot.IndustrySpecialist = 0;
                         pseRepot.President = 1;
-                        pseRepot.ModeName = "Presidents Club";
+                        pseRepot.ModeName = "1. President's Club";
                         presidentsClub = presidentsClub + 1;
                     }
 
@@ -3439,21 +3447,49 @@ namespace bExcellent.Service.BusinessLogic.Common
                     report.OverallIndustrySpecialist = industrySpecialists;
                     report.OverallPresident = presidentsClub;
                 }
-                OverallReportlist.AddRange(totalprogress.Select(prog => new PSMReports
-                                                                        {
-                                                                            Partners = 1,
-                                                                            Completions = 0,
-                                                                            DET = prog.DET,
-                                                                            TimeZone = prog.TimeZone,
-                                                                            Area = prog.Area,
-                                                                            Country = prog.Country,
-                                                                            FirstName = prog.FirstName,
-                                                                            LastName = prog.LastName
-                                                                            //Omnivores = 0,
-                                                                            //HighVelocity = 0,
-                                                                            //IndustrySpecialist = 0,
-                                                                            //President = 0
-                                                                        }));
+                foreach (var prog in totalprogress)
+                {
+                    var Reports = new PSMReports();
+                    Reports.Partners = 1;
+                    Reports.Completions = 0;
+                    Reports.DET = prog.DET;
+                    Reports.TimeZone = prog.TimeZone;
+                    Reports.Area = prog.Area;
+                    Reports.Country = prog.Country;
+                    Reports.FirstName = prog.FirstName;
+                    Reports.LastName = prog.LastName;
+                    Reports.Role = prog.Role;
+                    Reports.Mplid = prog.Mplid;
+                    var partnername = context.GetMPLIDName(Reports.Mplid).ToList();
+                    if (partnername.Count != 0)
+                    {
+                        var partner = partnername.FirstOrDefault();
+                        Reports.PartnerName = partner.PartnerName;
+                        Reports.DET = partner.DET;
+                    }
+                    else
+                    {
+                        Reports.PartnerName = Reports.Mplid;
+                        Reports.DET = "MBS Account Managed_Sol";
+
+                    }
+
+                    OverallReportlist.Add(Reports);
+                }
+                //OverallReportlist.AddRange(totalprogress.Select(prog => new PSMReports
+                //                                                        {
+                //                                                            Partners = 1,
+                //                                                            Completions = 0,
+                //                                                            DET = prog.DET,
+                //                                                            TimeZone = prog.TimeZone,
+                //                                                            Area = prog.Area,
+                //                                                            Country = prog.Country,
+                //                                                            FirstName = prog.FirstName,
+                //                                                            LastName = prog.LastName,
+                //                                                            Role = prog.Role,
+                //                                                            Mplid=prog.Mplid,
+                                                                            
+                //                                                        }));
 
                 topLeadReport.OverAllData = OverallReportlist;
                 return topLeadReport;
@@ -3503,7 +3539,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                                          Yes = yes,
                                          No = no,
                                          PartnerName = newpartner,
-                                         PSEName = report.FirstName + " " + report.LastName
+                                         PSEName = report.FirstName + " " + report.LastName,
+                                         Roles = report.Roles
                                      };
                         ppaResults.Add(result);
                     }
@@ -3521,13 +3558,13 @@ namespace bExcellent.Service.BusinessLogic.Common
                 // var userDetails = context.GetPSMReports(userId, 4).ToList();
                 var totalprogress = CompleteReports(userId, mode);
                 var overallDetails = context.GetPSMReports(userId, mode).ToList();
-                var OverallReportlist = new List<PSMReports>();
                 var omnivores = 0;
                 var highVelocity = 0;
                 var industrySpecialists = 0;
                 var presidentsClub = 0;
                 var overallCount = overallDetails.Count();
-                var counts = 0;
+                var counts = 1;
+                var overallReportlist = new List<PSMReports>();
                 foreach (var report in overallDetails)
                 {
                     var masnagerDetails = context.PSEManager(report.UserId).FirstOrDefault();
@@ -3551,6 +3588,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     pseRepot.TimeZoneAlias = tmZone.EmailId.Replace("@microsoft.com", "");
                     pseRepot.Mplid = report.MPLID;
                     pseRepot.Order = counts;
+                    pseRepot.Role = report.Roles;
                     var partnername = context.GetMPLIDName(report.MPLID).ToList();
                     if (partnername.Count != 0)
                     {
@@ -3562,6 +3600,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     {
                         pseRepot.PartnerName = report.MPLID;
                         pseRepot.DET = "MBS Account Managed_Sol";
+
                     }
                     var axisvalue = GetAxisvalue(report.UserId, report.PartnerId);
 
@@ -3571,7 +3610,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.HighVelocity = 0;
                         pseRepot.IndustrySpecialist = 0;
                         pseRepot.President = 0;
-                        pseRepot.ModeName = "Omnivores";
+                        pseRepot.ModeName = "3. Omnivores";
                         omnivores = omnivores + 1;
                     }
                     else if (axisvalue.XAxis < 10 && axisvalue.YAxis < 5.1)
@@ -3580,7 +3619,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.HighVelocity = 1;
                         pseRepot.IndustrySpecialist = 0;
                         pseRepot.President = 0;
-                        pseRepot.ModeName = "High Velocity";
+                        pseRepot.ModeName = "2. High Velocity";
                         highVelocity = highVelocity + 1;
                     }
                     else if (axisvalue.XAxis < 5.1 && axisvalue.YAxis < 10)
@@ -3589,7 +3628,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.HighVelocity = 0;
                         pseRepot.IndustrySpecialist = 1;
                         pseRepot.President = 0;
-                        pseRepot.ModeName = "Industry Specialists";
+                        pseRepot.ModeName = "4. Industry Specialists";
                         industrySpecialists = industrySpecialists + 1;
                     }
                     else
@@ -3598,9 +3637,10 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.HighVelocity = 0;
                         pseRepot.IndustrySpecialist = 0;
                         pseRepot.President = 1;
-                        pseRepot.ModeName = "Presidents Club";
+                        pseRepot.ModeName = "1. President's Club";
                         presidentsClub = presidentsClub + 1;
                     }
+
                     pseRepot.OverallCount = overallCount;
                     pseRepot.XAxis = axisvalue.XAxis;
                     pseRepot.YAxis = axisvalue.YAxis;
@@ -3608,28 +3648,119 @@ namespace bExcellent.Service.BusinessLogic.Common
                     pseRepot.IndFcous2 = axisvalue.IndustryF2;
                     pseRepot.Partners = 1;
                     pseRepot.Completions = 1;
-                    OverallReportlist.Add(pseRepot);
+                    overallReportlist.Add(pseRepot);
                     counts++;
                 }
-                foreach (var report in OverallReportlist)
+                foreach (var report in overallReportlist)
                 {
                     report.OverallOmnivores = omnivores;
                     report.OverallHighVelocity = highVelocity;
                     report.OverallIndustrySpecialist = industrySpecialists;
                     report.OverallPresident = presidentsClub;
                 }
-                OverallReportlist.AddRange(totalprogress.Select(prog => new PSMReports
+                foreach (var prog in totalprogress)
                 {
-                    Partners = 1,
-                    Completions = 0,
-                    DET = prog.DET,
-                    TimeZone = prog.TimeZone,
-                    Area = prog.Area,
-                    Country = prog.Country,
-                    FirstName = prog.FirstName,
-                    LastName = prog.LastName
-                }));
-                return OverallReportlist;
+                    var Reports = new PSMReports();
+                    Reports.Partners = 1;
+                    Reports.Completions = 0;
+                    Reports.DET = prog.DET;
+                    Reports.TimeZone = prog.TimeZone;
+                    Reports.Area = prog.Area;
+                    Reports.Country = prog.Country;
+                    Reports.FirstName = prog.FirstName;
+                    Reports.LastName = prog.LastName;
+                    Reports.Role = prog.Role;
+                    Reports.Mplid = prog.Mplid;
+                    var partnername = context.GetMPLIDName(Reports.Mplid).ToList();
+                    if (partnername.Count != 0)
+                    {
+                        var partner = partnername.FirstOrDefault();
+                        Reports.PartnerName = partner.PartnerName;
+                        Reports.DET = partner.DET;
+                    }
+                    else
+                    {
+                        Reports.PartnerName = Reports.Mplid;
+                        Reports.DET = "MBS Account Managed_Sol";
+
+                    }
+
+                    overallReportlist.Add(Reports);
+                }
+                //overallReportlist.AddRange(totalprogress.Select(prog => new PSMReports
+                //                                                        {
+                //                                                            Partners = 1,
+                //                                                            Completions = 0,
+                //                                                            DET = prog.DET,
+                //                                                            TimeZone = prog.TimeZone,
+                //                                                            Area = prog.Area,
+                //                                                            Country = prog.Country,
+                //                                                            FirstName = prog.FirstName,
+                //                                                            LastName = prog.LastName,
+                //                                                            Role = prog.Role
+                //                                                            //Omnivores = 0,
+                //                                                            //HighVelocity = 0,
+                //                                                            //IndustrySpecialist = 0,
+                //                                                            //President = 0
+                //                                                        }));
+
+                //  overallReportlist.OverAllData = overallReportlist;
+                return overallReportlist;
+            }
+        }
+        public List<PPAResults> GetReportsCalcNext(int userId, int mode)
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                var overallDetails = context.GetPSMReports(userId, mode).ToList();
+                var ppaResults = new List<PPAResults>();
+                foreach (var report in overallDetails)
+                {
+                    var answerlist = context.GenerateReportPowerBi(report.UserId, report.PartnerId).ToList();
+                    foreach (var answer in answerlist)
+                    {
+                        var yes = -1;
+                        var no = -1;
+                        if (answer.Answer.ToLower() == "yes")
+                        {
+                            yes = 1;
+                            no = 0;
+                        }
+                        else if (answer.Answer.ToLower() == "no")
+                        {
+                            yes = 0;
+                            no = 1;
+                        }
+                        var newpartner = report.MPLID;
+                        var partnername = context.GetMPLIDName(report.MPLID).ToList();
+                        if (partnername.Count != 0)
+                        {
+                            var partner = partnername.FirstOrDefault();
+                            newpartner = partner.PartnerName;
+                        }
+                        var result = new PPAResults
+                        {
+                            QuestionId = answer.QuestionId,
+                            Answer = (int)answer.AnswerValue,
+                            AnswerText = answer.Answer,
+                            ModuleId = answer.POEModuleId,
+                            Question = answer.ReportQuestion,
+                            ModuleName = answer.ModuleName,
+                            Area = report.Area,
+                            TimeZone = report.TimeZone,
+                            Country = report.Name,
+                            Yes = yes,
+                            No = no,
+                            PartnerName = newpartner,
+                            PSEName = report.FirstName + " " + report.LastName,
+                            Roles = report.Roles
+                        };
+                        ppaResults.Add(result);
+                    }
+
+                }
+
+                return ppaResults;
             }
         }
         public getAxis GetAxisvalue(int userId, int partnerId)
@@ -3665,6 +3796,7 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
+              //  GetPSEReportCalculatedNew(userId, partnerId, mplId);
                 var getaxis = new getAxis();
                 var getlistAxis = new List<getAxis>();
                 var usrList = context.GenerateReportPowerBi(userId, partnerId).ToList();
@@ -3758,6 +3890,150 @@ namespace bExcellent.Service.BusinessLogic.Common
                 return getlistAxis;
             }
         }
+        public List<getAxis> GetPSEReportCalculatedNew(int userId, int partnerId, string mplId)
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+              
+                var getlistAxis = new List<getAxis>();
+                var usrList = context.GenerateReportPowerBiUpdated(userId, partnerId).ToList();
+                var grpPartner = from usr in usrList
+                                 group usr by usr.POEFeedbackId
+                                     into g
+                                     select new { Feedbackid = g.Key, Answers = g.ToList() };
+                var startIndex = 1;
+                foreach (var grp in grpPartner)
+                {
+                    var date = String.Format("{0:MM/dd/yyyy}", grp.Answers.FirstOrDefault().StartDate);
+                    var momentum = grp.Answers.Where(a => a.POEModuleId == 1).ToList();
+                    var marketting = grp.Answers.Where(a => a.POEModuleId == 2).ToList();
+                    var sales = grp.Answers.Where(a => a.POEModuleId == 3).ToList();
+                    var focus = grp.Answers.Where(a => a.POEModuleId == 4 && a.QuestionId != 29 && a.QuestionId != 30).ToList();
+                    var services = grp.Answers.Where(a => a.POEModuleId == 5).ToList();
+                    var ip = grp.Answers.Where(a => a.POEModuleId == 6).ToList();
+
+                    var momentValue = ((double)(momentum.Sum(a => a.AnswerValue)) / 59) * 10;
+                    var markettingValue = ((double)(marketting.Sum(a => a.AnswerValue)) / 55) * 10;
+                    var salesValue = ((double)(sales.Sum(a => a.AnswerValue)) / 53) * 10;
+                    var focusValue = ((double)(focus.Sum(a => a.AnswerValue)) / 45) * 10;
+                    var servicesValue = ((double)(services.Sum(a => a.AnswerValue)) / 32) * 10;
+                    var ipValue = ((double)(ip.Sum(a => a.AnswerValue)) / 39) * 10;
+                    var xAxis = ((double)(momentValue + markettingValue + salesValue)) / 3;
+                    var yAxis = (focusValue + servicesValue + ipValue) / 3;
+                    if (startIndex == 1)
+                    {
+                        foreach (var answer in grp.Answers)
+                        {
+                            var getaxis1 = new getAxis
+                                           {
+                                               ModuleName = answer.ModuleName,
+                                               Answer = answer.Answer,
+                                               AnswerValue =
+                                                   (answer.QuestionId == 29 || answer.QuestionId == 30)
+                                                       ? -1
+                                                       : (int) answer.AnswerValue,
+                                               Question = answer.Question,
+                                               FullQuestion = answer.BriefQuestion,
+                                               Title =
+                                                   (answer.POEModuleId == 1 || answer.POEModuleId == 2 ||
+                                                    answer.POEModuleId == 3)
+                                                       ? "Customer Acquisition"
+                                                       : "Industry Focus"
+                                               //XAxis = xAxis,
+                                               //YAxis = yAxis,
+                                              // StartDate = String.Format("{0:MM/dd/yyyy}", answer.StartDate)
+
+
+                                           };
+                            getlistAxis.Add(getaxis1);
+                        }
+                    }
+                    var getaxis = new getAxis();
+                    getaxis.ActualPerformance = momentValue;
+                    getaxis.PerformanceGap = 10 - (double)momentValue;
+                    // getaxis.ReportId = reportId;
+                    getaxis.SolutionName = "Core Momentum";
+                    getaxis.StartDate = date;
+                    getaxis.XAxis = xAxis;
+                    getaxis.YAxis = yAxis;
+                    //  getaxis.Title = "Customer Acquisition";
+                    getlistAxis.Add(getaxis);
+
+
+                    var getaxis2 = new getAxis();
+                    getaxis2.ActualPerformance = markettingValue;
+                    getaxis2.PerformanceGap = 10 - (double)markettingValue;
+                    getaxis2.SolutionName = "Marketing";
+                    getaxis2.StartDate = date;
+                    getaxis2.XAxis = xAxis;
+                    getaxis2.YAxis = yAxis;
+                    // getaxis2.Title = "Customer Acquisition";
+                    getlistAxis.Add(getaxis2);
+
+                    var getaxis3 = new getAxis();
+                    getaxis3.ActualPerformance = salesValue;
+                    getaxis3.PerformanceGap = 10 - (double)salesValue;
+                    getaxis3.SolutionName = "Sales";
+                    getaxis3.StartDate = date;
+                    getaxis3.XAxis = xAxis;
+                    getaxis3.YAxis = yAxis;
+                    // getaxis3.Title = "Customer Acquisition";
+                    getlistAxis.Add(getaxis3);
+
+                    var getaxis4 = new getAxis();
+                    getaxis4.ActualPerformance = focusValue;
+                    getaxis4.PerformanceGap = 10 - (double)focusValue;
+                    getaxis4.SolutionName = "Focus";
+                    getaxis4.StartDate = date;
+                    getaxis4.XAxis = xAxis;
+                    getaxis4.YAxis = yAxis;
+                    //  getaxis4.Title = " Industry Focus";
+                    getlistAxis.Add(getaxis4);
+
+                    var getaxis5 = new getAxis();
+                    getaxis5.ActualPerformance = servicesValue;
+                    getaxis5.PerformanceGap = 10 - (double)servicesValue;
+                    getaxis5.SolutionName = "Services";
+                    getaxis5.StartDate = date;
+                    getaxis5.XAxis = xAxis;
+                    getaxis5.YAxis = yAxis;
+                    //getaxis5.Title = " Industry Focus";
+                    getlistAxis.Add(getaxis5);
+
+                    var getaxis6 = new getAxis();
+                    getaxis6.ActualPerformance = ipValue;
+                    getaxis6.PerformanceGap = 10 - (double)ipValue;
+                    getaxis6.SolutionName = "IP";
+                    getaxis6.StartDate = date;
+                    getaxis6.XAxis = xAxis;
+                    getaxis6.YAxis = yAxis;
+                    var partnername = context.GetMPLIDName(mplId).ToList();
+                    var partnerNameByMPLID = mplId;
+                    if (partnername.Count != 0)
+                    {
+                        var partner = partnername.FirstOrDefault();
+                        partnerNameByMPLID = partner.PartnerName;
+
+                    }
+
+                    getaxis6.PartnerName = partnerNameByMPLID;
+                    //   getaxis6.Title = " Industry Focus";
+                    getlistAxis.Add(getaxis6);
+
+                    //var getaxis9 = new getAxis();
+
+                    //getaxis9.StartDate = date;
+                    //getaxis9.XAxis = xAxis;
+                    //getaxis9.YAxis = yAxis;
+                    ////  getaxis4.Title = " Industry Focus";
+                    //getlistAxis.Add(getaxis9);
+                    startIndex++;
+                }
+
+
+                return getlistAxis;
+            }
+        }
         public List<PSMReports> OverAllReportsByArea(int areaId)
         {
 
@@ -3834,7 +4110,9 @@ namespace bExcellent.Service.BusinessLogic.Common
                                                               Area = partner.Area,
                                                               Country = partner.CountryName,
                                                               FirstName = partner.FirstName,
-                                                              LastName = partner.LastName
+                                                              LastName = partner.LastName,
+                                                              Role = partner.Role,
+                                                              Mplid = partner.MPLID
                                                           }));
             }
             return statusList;
@@ -4024,6 +4302,7 @@ namespace bExcellent.Service.BusinessLogic.Common
         public double XAxis { get; set; }
         public double YAxis { get; set; }
         public string IndustryF1 { get; set; }
+        public string StartDate { get; set; }
         public string IndustryF2 { get; set; }
         public double ActualPerformance { get; set; }
         public double PerformanceGap { get; set; }

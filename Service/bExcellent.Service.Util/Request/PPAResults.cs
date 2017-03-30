@@ -9,6 +9,7 @@ namespace bExcellent.Service.Util.Request
     {
         public int QuestionId { get; set; }
         public String AnswerText { get; set; }
+        public String Roles { get; set; }
         public String Question { get; set; }
         public String ModuleName { get; set; }
         public int Answer { get; set; }

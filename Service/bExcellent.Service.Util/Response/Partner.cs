@@ -21,6 +21,9 @@ namespace bExcellent.Service.Util.Response
         public string Extension { get; set; }
         public string RealFileName { get; set; }
         public string CountryName { get; set; }
+        public string CompletedOn { get; set; }
+        public int LastPartnerId { get; set; }
+        public string LastPaartnerName { get; set; }
         public List<PPAResults> PartnerResults { get; set; }
         
     }
