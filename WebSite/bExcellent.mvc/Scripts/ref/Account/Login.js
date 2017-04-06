@@ -56,6 +56,7 @@
     loadforgetdata: function () {
         $('#resetbtn').click(function () {
             var str1 = document.getElementById('txtCaptcha').value;
+           // alert(str1);
             var captchatext = str1.replace(/ /g, '');
             var str2 = document.getElementById('txtInput').value;
             var x = $('#txtforgetmail').val();
@@ -96,6 +97,13 @@
             url: option.url,
             data: option.data,
             success: function (response) {
+                alert(response);
+                if (response) {
+                    
+                    //alert("Your password reminder email has been sent. Please check your Junk Folder.");
+                    $("#basic-forgetPassword").modal('hide');
+                    $('#generalPopup').modal("show");
+                }
             },
             error: function (err) {
             }
@@ -111,7 +119,8 @@
                     login.forgetpassword({ url: '../../Common/getpassword', data: { 'emailaddress': $('#txtforgetmail').val() } });
                     //$('#masterMsgCont').text("Your Password is sent to your email id sucessfully");
                     //$('#overallCont').show();
-                    alert("Your Password is sent to your email id sucessfully");
+                    $('#generalPopup').modal();
+                    //alert("Your password reminder email has been sent. Please check your Junk Folder.");
                     $("#basic-forgetPassword").modal('hide');
                     //$.modal.close();
                 } else {

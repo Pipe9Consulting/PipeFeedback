@@ -154,15 +154,7 @@
     </script>
 
 
-    <div id="generalPopup" style="display: none; position: absolute;">
-        <div class="close">
-        </div>
-        <p style="margin-top: 5px;">
-            Please enter the required information below and we will send you a password reminder email.
-        </p>
-
-        <input type="button" id="resetbtn" value="ok" class="origin" />
-    </div>
+ 
 
 
 </head>

@@ -5,6 +5,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js"></script>
     <script src="../../Scripts/ref/Account/Login.js"></script>
     <link href="../../Styles/Home/login.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/basic.css" rel="stylesheet" />
@@ -233,7 +234,15 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                         </div>
 
                     </div>
+                    <div id="generalPopup" style="display: none; position: absolute;">
+                        <div class="close">
+                        </div>
+                        <p style="margin-top: 5px;">
+                            Your password reminder email has been sent. Please check your Junk Folder.
+                        </p>
 
+                        <input type="button" id="okbtn" value="ok" class="origin" />
+                    </div>
                     <%--Forgrt Password content--%>
                     <div id="basic-forgetPassword" style="display: none; position: absolute;">
                         <div class="close">
