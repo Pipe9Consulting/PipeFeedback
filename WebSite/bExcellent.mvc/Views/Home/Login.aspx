@@ -78,7 +78,7 @@
                     <div class="loginscreenleft">
                         <form method="POST" action="/Home/Login">
                             <%: Html.AntiForgeryToken() %>
-                            <h1>SIGN IN</h1>
+                            <h1 data-toggle="modal" data-target="#myModal">SIGN IN</h1>
                             <p>
                                 Email
                             </p>
