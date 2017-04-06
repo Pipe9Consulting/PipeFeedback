@@ -97,12 +97,12 @@
             url: option.url,
             data: option.data,
             success: function (response) {
-                alert(response);
+               // alert(response);
                 if (response) {
                     
                     //alert("Your password reminder email has been sent. Please check your Junk Folder.");
-                    $("#basic-forgetPassword").modal('hide');
-                    $('#generalPopup').modal("show");
+                    //$("#basic-forgetPassword").modal('hide');
+                    //$('#generalPopup').modal("show");
                 }
             },
             error: function (err) {
@@ -119,9 +119,11 @@
                     login.forgetpassword({ url: '../../Common/getpassword', data: { 'emailaddress': $('#txtforgetmail').val() } });
                     //$('#masterMsgCont').text("Your Password is sent to your email id sucessfully");
                     //$('#overallCont').show();
-                    $('#generalPopup').modal();
+                    $("#basic-forgetPassword").hide();
+                    $('.popupbg').hide();
+                    $('#myModal').modal();
                     //alert("Your password reminder email has been sent. Please check your Junk Folder.");
-                    $("#basic-forgetPassword").modal('hide');
+                   
                     //$.modal.close();
                 } else {
                     $('#txtInput').val('');
@@ -161,7 +163,7 @@ $(document).ready(function () {
     
     $("#preloader").delay(100).fadeOut("slow");
     $('#emailid').focus();
-    $('#changePassword').live('click', function () {
+    $('#changePassword').on('click', function () {
         $('.popupbg').show();
         $('#basic-changePassword').show();
 

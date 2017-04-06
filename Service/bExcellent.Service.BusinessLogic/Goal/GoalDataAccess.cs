@@ -671,7 +671,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //rarely-SomewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic4 = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 2).ToList();
+                    var devPriorityLogic4 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 4).ToList();
                     if (devPriorityLogic4.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic4.Count;
@@ -717,7 +717,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //inconsistently-somewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic6 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 2).ToList();
+                    var devPriorityLogic6 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 3).ToList();
                     if (devPriorityLogic6.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic6.Count;
@@ -740,7 +740,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-VeryImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic7 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 1).ToList();
+                    var devPriorityLogic7 = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 2).ToList();
                     if (devPriorityLogic7.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic7.Count;
@@ -763,7 +763,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-Important
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic8 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 2).ToList();
+                    var devPriorityLogic8 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 2).ToList();
                     if (devPriorityLogic8.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic8.Count;
@@ -786,7 +786,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-somewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 3).ToList();
+                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 2).ToList();
                     if (devPriorityLogic9.Count != 0)
                     {
                         //intialbucketCount = intialbucketCount + devPriorityLogic9.Count;

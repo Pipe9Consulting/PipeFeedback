@@ -3554,6 +3554,7 @@
     <Content Include="Scripts\ref\Account\SelectNetwork.js" />
     <Content Include="Scripts\ref\Account\twitter.js" />
     <Content Include="Scripts\ref\bootstrap.min.js" />
+    <Content Include="Scripts\ref\Bootstrap_latest.js" />
     <Content Include="Scripts\ref\common.js" />
     <Content Include="Scripts\ref\Dashboard\dash-1.10.0-jquery-ui.js" />
     <Content Include="Scripts\ref\Dashboard\Dashboardlanding.js" />
