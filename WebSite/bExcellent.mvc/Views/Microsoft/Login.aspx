@@ -5,11 +5,12 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<script type="text/javascript" language="javascript" src="../../Scripts/ref/bootstrap.min.js"></script>
     <script src="../../Scripts/ref/Account/Login.js"></script>
     <link href="../../Styles/Home/login.css" rel="stylesheet" type="text/css" />
     <link href="../../Styles/basic.css" rel="stylesheet" />
     <link href="../../Styles/KessakuStyles/poe.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         //        popup window for changepassword and frogetpassword///
         $(document).ready(function () {
@@ -35,6 +36,159 @@
             });
         });
     </script>
+
+
+
+    <%--******************************************************************** Popup ***********************************************************--%>
+
+
+    <style>
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1040;
+            background-color: #000000;
+        }
+
+            .modal-backdrop.fade {
+                opacity: 0;
+                display: none;
+            }
+
+                .modal-backdrop,
+                .modal-backdrop.fade.in {
+                    opacity: 0.4;
+                    filter: alpha(opacity=80);
+                    display: block;
+                }
+
+        .modal {
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            z-index: 1050;
+            width: 560px;
+            margin-left: -280px;
+            background-color: #ffffff;
+            border: 1px solid #999;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            *border: 1px solid #999;
+            /* IE6-7 */
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding-box;
+            background-clip: padding-box;
+            outline: none;
+        }
+
+            .modal.fade {
+                -webkit-transition: opacity .3s linear, top .3s ease-out;
+                -moz-transition: opacity .3s linear, top .3s ease-out;
+                -o-transition: opacity .3s linear, top .3s ease-out;
+                transition: opacity .3s linear, top .3s ease-out;
+                top: -25%;
+            }
+
+                .modal.fade.in {
+                    top: 35%;
+                }
+
+        .modal-header {
+            padding: 9px 15px;
+        }
+
+            .modal-header .close {
+                margin-top: 2px;
+                border: none;
+            }
+
+
+        .modal-body {
+            position: relative;
+            overflow-y: auto;
+            max-height: 400px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .alartPopupOk {
+            background: none repeat scroll 0 0 #fff;
+            border: 1px solid #23a1a7;
+            color: #23a1a7 !important;
+            padding: 5px 15px 5px 15px;
+            font-weight: 500;
+            font-size: 130%;
+        }
+
+            .alartPopupOk:hover {
+                background: none repeat scroll 0 0 #fff;
+                border: 1px solid #eb4830;
+                color: #eb4830 !important;
+            }
+
+        .alartPopup .close {
+            margin-right: -8% !important;
+        }
+
+
+        .alartPopup .modal-content {
+            margin-bottom: 30px;
+        }
+
+
+        .alartPopup h3 {
+            margin: 0 0 20px 0;
+        }
+
+
+        @media (max-width: 767px) {
+            .modal {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                width: auto;
+                margin: 0;
+            }
+
+                .modal.fade {
+                    top: -100px;
+                }
+
+                    .modal.fade.in {
+                        top: 20px;
+                    }
+        }
+    </style>
+
+    <div id="myModal" class="modal fade alartPopup" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Some text in the modal.</h3>
+                    <a href="#" class="alartPopupOk">Ok</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <%--******************************************************************** Popup ************************************************************--%>
 
     <style>
         .loginscreenleft {
@@ -140,6 +294,9 @@
                             </p>
                             <ul>
                                 <li>
+
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
                                     <p id="forgetpassword">
                                         Forgot Password?
                                     </p>
@@ -234,15 +391,7 @@ receiving <strong>feedback</strong>. Get started on your <strong>journey to exce
                         </div>
 
                     </div>
-                    <div id="generalPopup" style="display: none; position: absolute;">
-                        <div class="close">
-                        </div>
-                        <p style="margin-top: 5px;">
-                            Your password reminder email has been sent. Please check your Junk Folder.
-                        </p>
 
-                        <input type="button" id="okbtn" value="ok" class="origin" />
-                    </div>
                     <%--Forgrt Password content--%>
                     <div id="basic-forgetPassword" style="display: none; position: absolute;">
                         <div class="close">
