@@ -116,7 +116,7 @@
                     //$.modal.close();
                 } else {
                     $('#txtInput').val('');
-                    $('#findid').text("Please enter your correct emailid");
+                    $('#findid').text("This email is not valid");
                     $('#findid').show();
                 }
             },

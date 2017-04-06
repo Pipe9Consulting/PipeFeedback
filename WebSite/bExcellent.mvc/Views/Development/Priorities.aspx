@@ -12,6 +12,11 @@
     <script src="../../Scripts/ref/DevPriorities/jshashtable.js"></script>
     <script src="../../Scripts/ref/DevPriorities/jquery.flapper.js"></script>
     <script src="../../Scripts/ref/DevPriorities/devPriorities.js"></script>
+    <style>
+        .profilemenu {
+            cursor: pointer;
+        }
+    </style>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#profileListsView').slimscroll();
@@ -143,9 +148,9 @@
                                 <!--end .accordion-section-content-->
                             </div>
                             <!--end .accordion-section-->
-
+                    <%--        href="#accordion-4"--%>
                             <div class="accordion-section">
-                                <a class="accordion-section-title profilemenu" href="#accordion-4">View profile</a>
+                                <a class="accordion-section-title profilemenu">View profile</a>
                                 <div id="accordion-4" class="accordion-section-content">
                                 </div>
                                 <!--end .accordion-section-content-->

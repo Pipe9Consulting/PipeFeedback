@@ -3719,6 +3719,10 @@
     <Content Include="ExcelTemplates\ProductSurveyDump.xlsx" />
     <Content Include="ExcelTemplates\MSADataDump.xlsx" />
     <Content Include="ExcelTemplates\MSADevPriorities.xlsx" />
+    <Content Include="ExcelTemplates\MSA27.docx" />
+    <Content Include="ExcelTemplates\MSA28.docx" />
+    <Content Include="ExcelTemplates\MSA29.docx" />
+    <Content Include="ExcelTemplates\MSA30.docx" />
     <None Include="ExcelTemplates\TeammbrReportTemp.xlsx" />
     <None Include="ExcelTemplates\Template.xlsx" />
     <None Include="ExcelTemplates\TemplateTeam.xlsx" />

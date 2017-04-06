@@ -25,6 +25,9 @@
         $('#coachDateCont').hide();
         TextChange(1);
     }
+    $('.profilemenu').on('click', function() {
+        window.open("../ExcelTemplates/MSA27.docx","_blank");
+    });
     $('#usrList li').on('click', function () {
         $("#status").fadeIn();
         $("#preloader").delay(100).fadeIn("slow");
