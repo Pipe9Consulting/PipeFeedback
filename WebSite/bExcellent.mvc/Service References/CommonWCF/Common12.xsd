@@ -45,6 +45,30 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="ArrayOfDevelopmentPriorities">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DevelopmentPriorities" nillable="true" type="tns:DevelopmentPriorities" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDevelopmentPriorities" nillable="true" type="tns:ArrayOfDevelopmentPriorities" />
+  <xs:complexType name="DevelopmentPriorities">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bucketorder" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrentFeedbackId" type="xs:int" />
+      <xs:element minOccurs="0" name="ManagerCapability" type="xs:int" />
+      <xs:element minOccurs="0" name="ManagerMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="ManagerResult" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="Rating" type="xs:int" />
+      <xs:element minOccurs="0" name="SelfCapability" type="xs:int" />
+      <xs:element minOccurs="0" name="SelfResult" type="xs:int" />
+      <xs:element minOccurs="0" name="TeamId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DevelopmentPriorities" nillable="true" type="tns:DevelopmentPriorities" />
   <xs:complexType name="ArrayOfMinimizedPOE">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="MinimizedPOE" nillable="true" type="tns:MinimizedPOE" />
@@ -577,30 +601,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="TrackGoal" nillable="true" type="tns:TrackGoal" />
-  <xs:complexType name="ArrayOfDevelopmentPriorities">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="DevelopmentPriorities" nillable="true" type="tns:DevelopmentPriorities" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfDevelopmentPriorities" nillable="true" type="tns:ArrayOfDevelopmentPriorities" />
-  <xs:complexType name="DevelopmentPriorities">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Bucketorder" type="xs:int" />
-      <xs:element minOccurs="0" name="CurrentFeedbackId" type="xs:int" />
-      <xs:element minOccurs="0" name="ManagerCapability" type="xs:int" />
-      <xs:element minOccurs="0" name="ManagerMappingId" type="xs:int" />
-      <xs:element minOccurs="0" name="ManagerResult" type="xs:int" />
-      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ModuleOrder" type="xs:int" />
-      <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
-      <xs:element minOccurs="0" name="Rating" type="xs:int" />
-      <xs:element minOccurs="0" name="SelfCapability" type="xs:int" />
-      <xs:element minOccurs="0" name="SelfResult" type="xs:int" />
-      <xs:element minOccurs="0" name="TeamId" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="DevelopmentPriorities" nillable="true" type="tns:DevelopmentPriorities" />
   <xs:complexType name="GoalDate">
     <xs:sequence>
       <xs:element minOccurs="0" name="CompletedDays" type="xs:int" />

@@ -68,6 +68,7 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="QuestionText" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Questionid" type="xs:int" />
+      <xs:element minOccurs="0" name="ReportQuestion" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Score" type="xs:double" />
       <xs:element minOccurs="0" name="ScorePercentage" type="xs:double" />
       <xs:element minOccurs="0" name="ShortQuetionText" nillable="true" type="xs:string" />

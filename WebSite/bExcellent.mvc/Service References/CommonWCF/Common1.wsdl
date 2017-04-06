@@ -212,6 +212,30 @@
   <wsdl:message name="Common_GetStakeHolderReportCalculated_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetStakeHolderReportCalculatedResponse" />
   </wsdl:message>
+  <wsdl:message name="Common_GetReportsCalcNext_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportsCalcNext" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetReportsCalcNext_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportsCalcNextResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSEReportCalculatedNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSEReportCalculatedNew" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetPSEReportCalculatedNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPSEReportCalculatedNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSelfDevPrioritiesReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelfDevPrioritiesReport" />
+  </wsdl:message>
+  <wsdl:message name="Common_GetSelfDevPrioritiesReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelfDevPrioritiesReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="Common_ToolRequestAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:ToolRequestAccess" />
+  </wsdl:message>
+  <wsdl:message name="Common_ToolRequestAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ToolRequestAccessResponse" />
+  </wsdl:message>
   <wsdl:message name="Common_GetPoEsByUserId_InputMessage">
     <wsdl:part name="parameters" element="tns:GetPoEsByUserId" />
   </wsdl:message>
@@ -1203,6 +1227,22 @@
       <wsdl:input wsaw:Action="http://tempuri.org/Common/GetStakeHolderReportCalculated" message="tns:Common_GetStakeHolderReportCalculated_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/Common/GetStakeHolderReportCalculatedResponse" message="tns:Common_GetStakeHolderReportCalculated_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetReportsCalcNext">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetReportsCalcNext" message="tns:Common_GetReportsCalcNext_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetReportsCalcNextResponse" message="tns:Common_GetReportsCalcNext_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPSEReportCalculatedNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPSEReportCalculatedNew" message="tns:Common_GetPSEReportCalculatedNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPSEReportCalculatedNewResponse" message="tns:Common_GetPSEReportCalculatedNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDevPrioritiesReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/GetSelfDevPrioritiesReport" message="tns:Common_GetSelfDevPrioritiesReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/GetSelfDevPrioritiesReportResponse" message="tns:Common_GetSelfDevPrioritiesReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ToolRequestAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/Common/ToolRequestAccess" message="tns:Common_ToolRequestAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Common/ToolRequestAccessResponse" message="tns:Common_ToolRequestAccess_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetPoEsByUserId">
       <wsdl:input wsaw:Action="http://tempuri.org/Common/GetPoEsByUserId" message="tns:Common_GetPoEsByUserId_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/Common/GetPoEsByUserIdResponse" message="tns:Common_GetPoEsByUserId_OutputMessage" />
@@ -2068,6 +2108,42 @@
     </wsdl:operation>
     <wsdl:operation name="GetStakeHolderReportCalculated">
       <soap:operation soapAction="http://tempuri.org/Common/GetStakeHolderReportCalculated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsCalcNext">
+      <soap:operation soapAction="http://tempuri.org/Common/GetReportsCalcNext" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPSEReportCalculatedNew">
+      <soap:operation soapAction="http://tempuri.org/Common/GetPSEReportCalculatedNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDevPrioritiesReport">
+      <soap:operation soapAction="http://tempuri.org/Common/GetSelfDevPrioritiesReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToolRequestAccess">
+      <soap:operation soapAction="http://tempuri.org/Common/ToolRequestAccess" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

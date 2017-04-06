@@ -2236,22 +2236,6 @@
       <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.V3_GetAvgFeedbackResult" Method="GetAvgFeedbackResult">
-    <Parameter Name="feedbackID" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="moduleid" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="userid" Type="System.Int32" DbType="Int" />
-    <ElementType Name="V3_GetAvgFeedbackResultResult">
-      <Column Name="Answer" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Percentage" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="POEModuleId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="QuestionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Question" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="ShortQuestion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="weightingValue" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="GoalDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="GoalsetDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.V4_DelModuleQuestionsDate" Method="DelModuleQuestionsDate">
     <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
     <Parameter Name="Poeid" Parameter="poeid" Type="System.Int32" DbType="Int" />
@@ -2809,13 +2793,6 @@
     <ElementType Name="V3_GetUserPoeByResultModeResult">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.MS_GetImportaanceAnsByUserId" Method="GetImportaanceAnsByUserId">
-    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
-    <Parameter Name="PoeId" Parameter="poeId" Type="System.Int32" DbType="Int" />
-    <ElementType Name="MS_GetImportaanceAnsByUserIdResult">
-      <Column Name="Rating" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.MS_GetUsersListByPoE" Method="GetUsersListByPoE">
@@ -3517,6 +3494,43 @@
       <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Role" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="MPLID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.MS_GetImportaanceAnsByUserId" Method="GetImportaanceAnsByUserId">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PoeId" Parameter="poeId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MS_GetImportaanceAnsByUserIdResult">
+      <Column Name="Rating" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Questionid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.V3_GetAvgFeedbackResult" Method="GetAvgFeedbackResult">
+    <Parameter Name="feedbackID" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="moduleid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="userid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="V3_GetAvgFeedbackResultResult">
+      <Column Name="Answer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Percentage" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="POEModuleId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuestionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Question" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ShortQuestion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SideBarText" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="weightingValue" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GoalDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GoalsetDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ReportQuestion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ppa_InsertToolAccessReq" Method="InsertToolAccessReq">
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="LastName" Parameter="lastName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="EmailID" Parameter="emailID" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Role" Parameter="role" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Country" Parameter="country" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ManagerAlias" Parameter="managerAlias" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="ppa_InsertToolAccessReqResult">
+      <Column Name="Exist" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>

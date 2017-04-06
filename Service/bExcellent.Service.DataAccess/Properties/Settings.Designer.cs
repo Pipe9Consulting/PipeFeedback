@@ -119,5 +119,16 @@ namespace bExcellent.Service.DataAccess.Properties {
                 return ((string)(this["PSE_LiveConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-EO7LTA8F\\SQLEXPRESS;Initial Catalog=Kessaku_Live;User ID=sa;Pa" +
+            "ssword=sa@123!")]
+        public string Kessaku_LiveConnectionString {
+            get {
+                return ((string)(this["Kessaku_LiveConnectionString"]));
+            }
+        }
     }
 }

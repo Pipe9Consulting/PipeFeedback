@@ -19,6 +19,7 @@
       <xs:element minOccurs="0" name="PartnerName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="Roles" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZone" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Yes" type="xs:int" />
     </xs:sequence>

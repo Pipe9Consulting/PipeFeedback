@@ -2415,7 +2415,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                 var getMangers = context.GetImportaanceAnsByUserId(userid, poeid).ToList();
                 var userList = getMangers.Select(users => new QuestionScore
                 {
-                    Answers = users.Rating.ToString()
+                    Answers = users.Rating.ToString(),
+                  Questionid =users.Questionid.Value
                 }).ToList();
                 return userList;
             }
@@ -4294,6 +4295,66 @@ namespace bExcellent.Service.BusinessLogic.Common
                     return false;
                 }
             }
+        }
+        public bool ToolRequestAccess(string firstname, string lastname, string alias, string manageralias, string role, string country)
+        {
+            var content = "<p>First Name: " + firstname + "</p><br/><p>Last Name: " + lastname +
+                          "</p><br/><p>Microsoft Alias: " + alias + "</p><br/><p>Manager Alias: " + manageralias +
+                          "</p><br/><p>Role: " + role + "</p><br/><p>Country: " + country + "</p><br/>";
+            ToolRequestEmail(content);
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                var insertData = context.InsertToolAccessReq(firstname, lastname, alias, role,
+                   country, manageralias);
+                if (insertData.FirstOrDefault().Exist == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+        }
+        public void ToolRequestEmail(string content)
+        {
+            // Log("WCF-SendEmail-IN");
+            try
+            {
+                // var user = Common.GetUserDetailsByMappingId(userId);
+                string _from = ConfigurationManager.AppSettings["fromEmail"];
+                string emailServer = ConfigurationManager.AppSettings["mailServer"];
+                string _userId = ConfigurationManager.AppSettings["emailUserId"];
+                string _pwd = ConfigurationManager.AppSettings["emailPassword"];
+                string _bcc = ConfigurationManager.AppSettings["bccEmail"];
+               // string _to = ConfigurationManager.AppSettings["mailTo1"];
+
+                //if (_to.Trim() == string.Empty)
+                //{
+                string _to = "admin@pipe9consulting.com";
+                //}
+
+                var emailContent = string.Format(Constant.EmailTemplateNew, content, _to);
+                MailMessage objEmail = new MailMessage(_from, _to, "Tool Access Request", emailContent);
+
+                objEmail.Bcc.Add(_bcc);
+
+                objEmail.IsBodyHtml = true;
+
+                SmtpClient emailClient = new SmtpClient(emailServer);
+                System.Net.NetworkCredential basicAuthenticationInfo = new System.Net.NetworkCredential(_userId, _pwd);
+
+                emailClient.Host = emailServer;
+                emailClient.UseDefaultCredentials = false;
+                emailClient.Credentials = basicAuthenticationInfo;
+                emailClient.Send(objEmail);
+
+            }
+            catch (Exception ex)
+            {
+            }
+            //Log("WCF-SendEmail-OUT");
         }
     }
 

@@ -13,6 +13,7 @@
       <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="CompanySize" nillable="true" type="xs:string" />
       <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain" minOccurs="0" name="Country" nillable="true" type="q2:Country" />
+      <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="DesignationId" type="xs:int" />
       <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
@@ -21,8 +22,10 @@
       <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="LastLogin" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ManagerAlias" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Photo" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="StratPageMode" type="xs:int" />
       <xs:element minOccurs="0" name="Subscriptionid" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="UserId" type="xs:int" />

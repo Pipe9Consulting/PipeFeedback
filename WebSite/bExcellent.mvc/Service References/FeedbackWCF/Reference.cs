@@ -3472,6 +3472,9 @@ namespace bExcellent.mvc.FeedbackWCF {
         private int QuestionidField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReportQuestionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private double ScoreField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -3512,6 +3515,19 @@ namespace bExcellent.mvc.FeedbackWCF {
                 if ((this.QuestionidField.Equals(value) != true)) {
                     this.QuestionidField = value;
                     this.RaisePropertyChanged("Questionid");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ReportQuestion {
+            get {
+                return this.ReportQuestionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReportQuestionField, value) != true)) {
+                    this.ReportQuestionField = value;
+                    this.RaisePropertyChanged("ReportQuestion");
                 }
             }
         }

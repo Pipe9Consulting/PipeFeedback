@@ -101,6 +101,7 @@
     <Compile Include="Response\StakeHolders.cs" />
     <Compile Include="Response\StandingScore.cs" />
     <Compile Include="Response\SyncScore.cs" />
+    <Compile Include="Response\Toolrequest.cs" />
     <Compile Include="Response\TopLeadsReport.cs" />
     <Compile Include="Utils\Email.cs" />
   </ItemGroup>

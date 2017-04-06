@@ -3209,5 +3209,37 @@ namespace bExcellent.Service
             }
             return null;
         }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public List<DevelopmentPriorities> GetSelfDevPrioritiesReport(int userid, int PoeId)
+        {
+            try
+            {
+                var common = new BusinessLogic.Goal.GoalDataAccess();
+                return common.GetSelfDevPrioritiesReport(userid, PoeId);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
+            return null;
+        }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public bool ToolRequestAccess(string firstname,string lastname,string alias,string manageralias,string role,string country)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                return common.ToolRequestAccess(firstname, lastname, alias, manageralias, role, country);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
+            return false;
+        }
     }
 }

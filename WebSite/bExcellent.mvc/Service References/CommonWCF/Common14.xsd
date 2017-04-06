@@ -20,6 +20,7 @@
       <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ReportId" type="xs:int" />
       <xs:element minOccurs="0" name="SolutionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="XAxis" type="xs:double" />
       <xs:element minOccurs="0" name="YAxis" type="xs:double" />

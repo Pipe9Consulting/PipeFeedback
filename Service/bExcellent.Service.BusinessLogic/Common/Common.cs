@@ -810,5 +810,10 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             return DataAccess.GetPSEReportCalculatedNew(userId, partnerId, mplId);
         }
+
+        public bool ToolRequestAccess(string firstname, string lastname, string alias, string manageralias, string role, string country)
+        {
+            return DataAccess.ToolRequestAccess(firstname, lastname, alias, manageralias, role, country);
+        }
     }
 }

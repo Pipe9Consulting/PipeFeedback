@@ -136,6 +136,7 @@ namespace bExcellent.Service.Util.Response
         public string QuestionText { get; set; }
 
         public string ShortQuetionText { get; set; }
+        public string ReportQuestion { get; set; }
 
         public double Score { get; set; }
 

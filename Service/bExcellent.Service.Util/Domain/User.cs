@@ -67,6 +67,12 @@ namespace bExcellent.Service.Util.Domain
 
             [DataMember]
             public string YammerToken { get; set; }
+            [DataMember]
+            public string Role { get; set; }
+            [DataMember]
+            public string ManagerAlias { get; set; }
+            [DataMember]
+            public string CountryName { get; set; }
 
         //public List<Feedback> FeedbackDetails { get; set; }
     }

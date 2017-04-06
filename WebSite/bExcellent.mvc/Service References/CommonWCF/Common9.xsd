@@ -11,12 +11,15 @@
   <xs:element name="ArrayOfPartner" nillable="true" type="tns:ArrayOfPartner" />
   <xs:complexType name="Partner">
     <xs:sequence>
+      <xs:element minOccurs="0" name="CompletedOn" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="DET" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="FBStatus" type="xs:int" />
       <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LastPaartnerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastPartnerId" type="xs:int" />
       <xs:element minOccurs="0" name="MPLID" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="OriginalPartnerName" nillable="true" type="xs:string" />
@@ -87,6 +90,7 @@
       <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Request" minOccurs="0" name="PartnerResults" nillable="true" type="q2:ArrayOfPPAResults" />
       <xs:element minOccurs="0" name="Partners" type="xs:int" />
       <xs:element minOccurs="0" name="President" type="xs:int" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZone" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZoneAlias" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZoneFirstName" nillable="true" type="xs:string" />

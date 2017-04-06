@@ -266,6 +266,9 @@ namespace bExcellent.mvc.CommonWCF {
         private bExcellent.mvc.CommonWCF.Country CountryField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CountryNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int DesignationIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -290,10 +293,16 @@ namespace bExcellent.mvc.CommonWCF {
         private string LastNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ManagerAliasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string PasswordField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private byte[] PhotoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RoleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int StratPageModeField;
@@ -368,6 +377,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.CountryField, value) != true)) {
                     this.CountryField = value;
                     this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CountryName {
+            get {
+                return this.CountryNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryNameField, value) != true)) {
+                    this.CountryNameField = value;
+                    this.RaisePropertyChanged("CountryName");
                 }
             }
         }
@@ -477,6 +499,19 @@ namespace bExcellent.mvc.CommonWCF {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ManagerAlias {
+            get {
+                return this.ManagerAliasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ManagerAliasField, value) != true)) {
+                    this.ManagerAliasField = value;
+                    this.RaisePropertyChanged("ManagerAlias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Password {
             get {
                 return this.PasswordField;
@@ -498,6 +533,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.PhotoField, value) != true)) {
                     this.PhotoField = value;
                     this.RaisePropertyChanged("Photo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Role {
+            get {
+                return this.RoleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RoleField, value) != true)) {
+                    this.RoleField = value;
+                    this.RaisePropertyChanged("Role");
                 }
             }
         }
@@ -587,6 +635,9 @@ namespace bExcellent.mvc.CommonWCF {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CompletedOnField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CountryNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -603,6 +654,12 @@ namespace bExcellent.mvc.CommonWCF {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastPaartnerNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int LastPartnerIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string MPLIDField;
@@ -635,6 +692,19 @@ namespace bExcellent.mvc.CommonWCF {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CompletedOn {
+            get {
+                return this.CompletedOnField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompletedOnField, value) != true)) {
+                    this.CompletedOnField = value;
+                    this.RaisePropertyChanged("CompletedOn");
+                }
             }
         }
         
@@ -712,6 +782,32 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.IdField.Equals(value) != true)) {
                     this.IdField = value;
                     this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastPaartnerName {
+            get {
+                return this.LastPaartnerNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastPaartnerNameField, value) != true)) {
+                    this.LastPaartnerNameField = value;
+                    this.RaisePropertyChanged("LastPaartnerName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int LastPartnerId {
+            get {
+                return this.LastPartnerIdField;
+            }
+            set {
+                if ((this.LastPartnerIdField.Equals(value) != true)) {
+                    this.LastPartnerIdField = value;
+                    this.RaisePropertyChanged("LastPartnerId");
                 }
             }
         }
@@ -873,6 +969,9 @@ namespace bExcellent.mvc.CommonWCF {
         private int QuestionIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RolesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TimeZoneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1027,6 +1126,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.QuestionIdField.Equals(value) != true)) {
                     this.QuestionIdField = value;
                     this.RaisePropertyChanged("QuestionId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Roles {
+            get {
+                return this.RolesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RolesField, value) != true)) {
+                    this.RolesField = value;
+                    this.RaisePropertyChanged("Roles");
                 }
             }
         }
@@ -1452,6 +1564,9 @@ namespace bExcellent.mvc.CommonWCF {
         private int PresidentField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RoleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TimeZoneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1865,6 +1980,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.PresidentField.Equals(value) != true)) {
                     this.PresidentField = value;
                     this.RaisePropertyChanged("President");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Role {
+            get {
+                return this.RoleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RoleField, value) != true)) {
+                    this.RoleField = value;
+                    this.RaisePropertyChanged("Role");
                 }
             }
         }
@@ -2756,6 +2884,9 @@ namespace bExcellent.mvc.CommonWCF {
         private string SolutionNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StartDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TitleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -2931,6 +3062,19 @@ namespace bExcellent.mvc.CommonWCF {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string StartDate {
+            get {
+                return this.StartDateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StartDateField, value) != true)) {
+                    this.StartDateField = value;
+                    this.RaisePropertyChanged("StartDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Title {
             get {
                 return this.TitleField;
@@ -2965,6 +3109,243 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.YAxisField.Equals(value) != true)) {
                     this.YAxisField = value;
                     this.RaisePropertyChanged("YAxis");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DevelopmentPriorities", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
+    [System.SerializableAttribute()]
+    public partial class DevelopmentPriorities : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int BucketorderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CurrentFeedbackIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ManagerCapabilityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ManagerMappingIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ManagerResultField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModuleNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ModuleOrderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string QuestionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int QuestionIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int RatingField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int SelfCapabilityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int SelfResultField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TeamIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Bucketorder {
+            get {
+                return this.BucketorderField;
+            }
+            set {
+                if ((this.BucketorderField.Equals(value) != true)) {
+                    this.BucketorderField = value;
+                    this.RaisePropertyChanged("Bucketorder");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CurrentFeedbackId {
+            get {
+                return this.CurrentFeedbackIdField;
+            }
+            set {
+                if ((this.CurrentFeedbackIdField.Equals(value) != true)) {
+                    this.CurrentFeedbackIdField = value;
+                    this.RaisePropertyChanged("CurrentFeedbackId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ManagerCapability {
+            get {
+                return this.ManagerCapabilityField;
+            }
+            set {
+                if ((this.ManagerCapabilityField.Equals(value) != true)) {
+                    this.ManagerCapabilityField = value;
+                    this.RaisePropertyChanged("ManagerCapability");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ManagerMappingId {
+            get {
+                return this.ManagerMappingIdField;
+            }
+            set {
+                if ((this.ManagerMappingIdField.Equals(value) != true)) {
+                    this.ManagerMappingIdField = value;
+                    this.RaisePropertyChanged("ManagerMappingId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ManagerResult {
+            get {
+                return this.ManagerResultField;
+            }
+            set {
+                if ((this.ManagerResultField.Equals(value) != true)) {
+                    this.ManagerResultField = value;
+                    this.RaisePropertyChanged("ManagerResult");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ModuleName {
+            get {
+                return this.ModuleNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModuleNameField, value) != true)) {
+                    this.ModuleNameField = value;
+                    this.RaisePropertyChanged("ModuleName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ModuleOrder {
+            get {
+                return this.ModuleOrderField;
+            }
+            set {
+                if ((this.ModuleOrderField.Equals(value) != true)) {
+                    this.ModuleOrderField = value;
+                    this.RaisePropertyChanged("ModuleOrder");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Question {
+            get {
+                return this.QuestionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.QuestionField, value) != true)) {
+                    this.QuestionField = value;
+                    this.RaisePropertyChanged("Question");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int QuestionId {
+            get {
+                return this.QuestionIdField;
+            }
+            set {
+                if ((this.QuestionIdField.Equals(value) != true)) {
+                    this.QuestionIdField = value;
+                    this.RaisePropertyChanged("QuestionId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Rating {
+            get {
+                return this.RatingField;
+            }
+            set {
+                if ((this.RatingField.Equals(value) != true)) {
+                    this.RatingField = value;
+                    this.RaisePropertyChanged("Rating");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SelfCapability {
+            get {
+                return this.SelfCapabilityField;
+            }
+            set {
+                if ((this.SelfCapabilityField.Equals(value) != true)) {
+                    this.SelfCapabilityField = value;
+                    this.RaisePropertyChanged("SelfCapability");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SelfResult {
+            get {
+                return this.SelfResultField;
+            }
+            set {
+                if ((this.SelfResultField.Equals(value) != true)) {
+                    this.SelfResultField = value;
+                    this.RaisePropertyChanged("SelfResult");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TeamId {
+            get {
+                return this.TeamIdField;
+            }
+            set {
+                if ((this.TeamIdField.Equals(value) != true)) {
+                    this.TeamIdField = value;
+                    this.RaisePropertyChanged("TeamId");
                 }
             }
         }
@@ -10753,243 +11134,6 @@ namespace bExcellent.mvc.CommonWCF {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DevelopmentPriorities", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
-    [System.SerializableAttribute()]
-    public partial class DevelopmentPriorities : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int BucketorderField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CurrentFeedbackIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ManagerCapabilityField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ManagerMappingIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ManagerResultField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ModuleNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ModuleOrderField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string QuestionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int QuestionIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int RatingField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SelfCapabilityField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SelfResultField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int TeamIdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Bucketorder {
-            get {
-                return this.BucketorderField;
-            }
-            set {
-                if ((this.BucketorderField.Equals(value) != true)) {
-                    this.BucketorderField = value;
-                    this.RaisePropertyChanged("Bucketorder");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CurrentFeedbackId {
-            get {
-                return this.CurrentFeedbackIdField;
-            }
-            set {
-                if ((this.CurrentFeedbackIdField.Equals(value) != true)) {
-                    this.CurrentFeedbackIdField = value;
-                    this.RaisePropertyChanged("CurrentFeedbackId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ManagerCapability {
-            get {
-                return this.ManagerCapabilityField;
-            }
-            set {
-                if ((this.ManagerCapabilityField.Equals(value) != true)) {
-                    this.ManagerCapabilityField = value;
-                    this.RaisePropertyChanged("ManagerCapability");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ManagerMappingId {
-            get {
-                return this.ManagerMappingIdField;
-            }
-            set {
-                if ((this.ManagerMappingIdField.Equals(value) != true)) {
-                    this.ManagerMappingIdField = value;
-                    this.RaisePropertyChanged("ManagerMappingId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ManagerResult {
-            get {
-                return this.ManagerResultField;
-            }
-            set {
-                if ((this.ManagerResultField.Equals(value) != true)) {
-                    this.ManagerResultField = value;
-                    this.RaisePropertyChanged("ManagerResult");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ModuleName {
-            get {
-                return this.ModuleNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ModuleNameField, value) != true)) {
-                    this.ModuleNameField = value;
-                    this.RaisePropertyChanged("ModuleName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ModuleOrder {
-            get {
-                return this.ModuleOrderField;
-            }
-            set {
-                if ((this.ModuleOrderField.Equals(value) != true)) {
-                    this.ModuleOrderField = value;
-                    this.RaisePropertyChanged("ModuleOrder");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Question {
-            get {
-                return this.QuestionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.QuestionField, value) != true)) {
-                    this.QuestionField = value;
-                    this.RaisePropertyChanged("Question");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int QuestionId {
-            get {
-                return this.QuestionIdField;
-            }
-            set {
-                if ((this.QuestionIdField.Equals(value) != true)) {
-                    this.QuestionIdField = value;
-                    this.RaisePropertyChanged("QuestionId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Rating {
-            get {
-                return this.RatingField;
-            }
-            set {
-                if ((this.RatingField.Equals(value) != true)) {
-                    this.RatingField = value;
-                    this.RaisePropertyChanged("Rating");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SelfCapability {
-            get {
-                return this.SelfCapabilityField;
-            }
-            set {
-                if ((this.SelfCapabilityField.Equals(value) != true)) {
-                    this.SelfCapabilityField = value;
-                    this.RaisePropertyChanged("SelfCapability");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SelfResult {
-            get {
-                return this.SelfResultField;
-            }
-            set {
-                if ((this.SelfResultField.Equals(value) != true)) {
-                    this.SelfResultField = value;
-                    this.RaisePropertyChanged("SelfResult");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int TeamId {
-            get {
-                return this.TeamIdField;
-            }
-            set {
-                if ((this.TeamIdField.Equals(value) != true)) {
-                    this.TeamIdField = value;
-                    this.RaisePropertyChanged("TeamId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GoalDate", Namespace="http://schemas.datacontract.org/2004/07/bExcellent.Service.Util.Domain")]
     [System.SerializableAttribute()]
     public partial class GoalDate : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -11636,6 +11780,18 @@ namespace bExcellent.mvc.CommonWCF {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetStakeHolderReportCalculated", ReplyAction="http://tempuri.org/Common/GetStakeHolderReportCalculatedResponse")]
         bExcellent.mvc.CommonWCF.PPAResults[] GetStakeHolderReportCalculated();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetReportsCalcNext", ReplyAction="http://tempuri.org/Common/GetReportsCalcNextResponse")]
+        bExcellent.mvc.CommonWCF.PPAResults[] GetReportsCalcNext(int userId, int mode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPSEReportCalculatedNew", ReplyAction="http://tempuri.org/Common/GetPSEReportCalculatedNewResponse")]
+        bExcellent.mvc.CommonWCF.getAxis[] GetPSEReportCalculatedNew(int userId, int partnerId, string mplId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetSelfDevPrioritiesReport", ReplyAction="http://tempuri.org/Common/GetSelfDevPrioritiesReportResponse")]
+        bExcellent.mvc.CommonWCF.DevelopmentPriorities[] GetSelfDevPrioritiesReport(int userid, int PoeId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/ToolRequestAccess", ReplyAction="http://tempuri.org/Common/ToolRequestAccessResponse")]
+        bool ToolRequestAccess(string firstname, string lastname, string alias, string manageralias, string role, string country);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPoEsByUserId", ReplyAction="http://tempuri.org/Common/GetPoEsByUserIdResponse")]
         bExcellent.mvc.CommonWCF.MinimizedPOE[] GetPoEsByUserId(int userId);
         
@@ -12223,6 +12379,22 @@ namespace bExcellent.mvc.CommonWCF {
         
         public bExcellent.mvc.CommonWCF.PPAResults[] GetStakeHolderReportCalculated() {
             return base.Channel.GetStakeHolderReportCalculated();
+        }
+        
+        public bExcellent.mvc.CommonWCF.PPAResults[] GetReportsCalcNext(int userId, int mode) {
+            return base.Channel.GetReportsCalcNext(userId, mode);
+        }
+        
+        public bExcellent.mvc.CommonWCF.getAxis[] GetPSEReportCalculatedNew(int userId, int partnerId, string mplId) {
+            return base.Channel.GetPSEReportCalculatedNew(userId, partnerId, mplId);
+        }
+        
+        public bExcellent.mvc.CommonWCF.DevelopmentPriorities[] GetSelfDevPrioritiesReport(int userid, int PoeId) {
+            return base.Channel.GetSelfDevPrioritiesReport(userid, PoeId);
+        }
+        
+        public bool ToolRequestAccess(string firstname, string lastname, string alias, string manageralias, string role, string country) {
+            return base.Channel.ToolRequestAccess(firstname, lastname, alias, manageralias, role, country);
         }
         
         public bExcellent.mvc.CommonWCF.MinimizedPOE[] GetPoEsByUserId(int userId) {

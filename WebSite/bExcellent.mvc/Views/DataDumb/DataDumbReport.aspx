@@ -60,7 +60,7 @@ Data Dump
                 </p>
             </div>
         </form>
-         <form id="getimpSubmit" method="POST" action="../DataDumb/GetImportanceReport">
+         <form id="getimpSubmit" method="POST" action="../DataDumb/GetMSAPrioritiesReport">
             <input type="hidden" id="poeidImp" name="poeid" value="0" />
             <div class="report" id="getimportanceReport">
                 <img src="../../Images/manager-report.png" />

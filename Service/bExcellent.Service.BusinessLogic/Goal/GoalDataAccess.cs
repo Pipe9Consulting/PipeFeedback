@@ -1035,7 +1035,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 var emailContent = string.Empty;
                 emailContenttemp = string.Format(Constant.CoachingDate,
                                         userName,
-                                        String.Format("{0:MM/dd/yyyy}", goaldate).Replace("-","/")
+                                        String.Format("{0:MM/dd/yyyy}", goaldate).Replace("-", "/")
                                       );
                 emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
                 MailMessage objEmail = new MailMessage(_from, _to, subject, emailContent);
@@ -1270,7 +1270,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //rarely-SomewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic4 = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 2).ToList();
+                    var devPriorityLogic4 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 4).ToList();
                     if (devPriorityLogic4.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic4.Count;
@@ -1318,7 +1318,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //inconsistently-somewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic6 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 2).ToList();
+                    var devPriorityLogic6 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 3).ToList();
                     if (devPriorityLogic6.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic6.Count;
@@ -1342,7 +1342,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-VeryImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic7 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 1).ToList();
+                    var devPriorityLogic7 = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 2).ToList();
                     if (devPriorityLogic7.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic7.Count;
@@ -1366,7 +1366,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-Important
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic8 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 2).ToList();
+                    var devPriorityLogic8 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 2).ToList();
                     if (devPriorityLogic8.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic8.Count;
@@ -1390,7 +1390,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-somewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 3).ToList();
+                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 2).ToList();
                     if (devPriorityLogic9.Count != 0)
                     {
                         //intialbucketCount = intialbucketCount + devPriorityLogic9.Count;
@@ -1492,7 +1492,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //rarely-SomewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic4 = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 2).ToList();
+                    var devPriorityLogic4 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 4).ToList();
                     if (devPriorityLogic4.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic4.Count;
@@ -1540,7 +1540,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //inconsistently-somewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic6 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 2).ToList();
+                    var devPriorityLogic6 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 3).ToList();
                     if (devPriorityLogic6.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic6.Count;
@@ -1564,7 +1564,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-VeryImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic7 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 1).ToList();
+                    var devPriorityLogic7 = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 2).ToList();
                     if (devPriorityLogic7.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic7.Count;
@@ -1588,7 +1588,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-Important
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic8 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 2).ToList();
+                    var devPriorityLogic8 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 2).ToList();
                     if (devPriorityLogic8.Count != 0)
                     {
                         intialbucketCount = intialbucketCount + devPriorityLogic8.Count;
@@ -1612,7 +1612,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 //Frequently-somewhatImportant
                 if (devPriorityCount > intialbucketCount)
                 {
-                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 3).ToList();
+                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 2).ToList();
                     if (devPriorityLogic9.Count != 0)
                     {
                         //intialbucketCount = intialbucketCount + devPriorityLogic9.Count;
@@ -1626,6 +1626,297 @@ namespace bExcellent.Service.BusinessLogic.Goal
                             ModuleOrder = eachPriority.ModuleOrder,
                             ManagerCapability = (int)eachPriority.Capability,
                             Bucketorder = 9,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                return listDevPriority;
+            }
+
+        }
+        public List<DevelopmentPriorities> GetCurrentDevPrioritiesReport(int userid, int PoeId)
+        {
+            int devPriorityCount = 500;
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                var developmentPriorites = context.GetCurrentUserDevPriorities(userid, PoeId).ToList();
+                var devPrioVeryImportant = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 4).ToList();
+                var intialbucketCount = devPrioVeryImportant.Count;
+                var listDevPriority = new List<DevelopmentPriorities>();
+                if (intialbucketCount != 0)
+                {
+                    listDevPriority.AddRange(devPrioVeryImportant.Select(eachPriority => new DevelopmentPriorities
+                    {
+                        ManagerResult = (int)eachPriority.Answer,
+                        QuestionId = eachPriority.QuestionId,
+                        Rating = (int)eachPriority.Rating,
+                        Question = eachPriority.ShortQuestion,
+                        ModuleName = eachPriority.ModuleName,
+                        ModuleOrder = eachPriority.ModuleOrder,
+                        ManagerCapability = (int)eachPriority.Capability,
+                        Bucketorder = 1,
+                        CurrentFeedbackId = eachPriority.FeedbackId,
+                        ManagerMappingId = (int)eachPriority.ManagerId,
+                        TeamId = (int)eachPriority.TeamId
+                    }));
+                }
+                //Rarely-Important
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityImportant = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 3).ToList();
+                    if (devPriorityImportant.Count != 0)
+                    {
+                        intialbucketCount = intialbucketCount + devPriorityImportant.Count;
+                        listDevPriority.AddRange(devPriorityImportant.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 2,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                //Inconsistently-veryImportant
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPrioritySomeImportant = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 4).ToList();
+                    if (devPrioritySomeImportant.Count != 0)
+                    {
+                        intialbucketCount = intialbucketCount + devPrioritySomeImportant.Count;
+                        listDevPriority.AddRange(devPrioritySomeImportant.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 3,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                //rarely-SomewhatImportant
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic4 = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 2).ToList();
+                    if (devPriorityLogic4.Count != 0)
+                    {
+                        intialbucketCount = intialbucketCount + devPriorityLogic4.Count;
+                        listDevPriority.AddRange(devPriorityLogic4.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 7,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                //inconsistently-Important
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic5 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 3).ToList();
+                    if (devPriorityLogic5.Count != 0)
+                    {
+                        intialbucketCount = intialbucketCount + devPriorityLogic5.Count;
+                        listDevPriority.AddRange(devPriorityLogic5.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 5,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                //inconsistently-somewhatImportant
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic6 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 2).ToList();
+                    if (devPriorityLogic6.Count != 0)
+                    {
+                        intialbucketCount = intialbucketCount + devPriorityLogic6.Count;
+                        listDevPriority.AddRange(devPriorityLogic6.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 8,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                //Frequently-VeryImportant
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic7 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 4).ToList();
+                    if (devPriorityLogic7.Count != 0)
+                    {
+                        intialbucketCount = intialbucketCount + devPriorityLogic7.Count;
+                        listDevPriority.AddRange(devPriorityLogic7.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 4,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                //Frequently-Important
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic8 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 3).ToList();
+                    if (devPriorityLogic8.Count != 0)
+                    {
+                        intialbucketCount = intialbucketCount + devPriorityLogic8.Count;
+                        listDevPriority.AddRange(devPriorityLogic8.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 6,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                //Frequently-somewhatImportant
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 2).ToList();
+                    if (devPriorityLogic9.Count != 0)
+                    {
+                        //intialbucketCount = intialbucketCount + devPriorityLogic9.Count;
+                        listDevPriority.AddRange(devPriorityLogic9.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 9,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 1 && a.Rating == 1).ToList();
+                    if (devPriorityLogic9.Count != 0)
+                    {
+                        //intialbucketCount = intialbucketCount + devPriorityLogic9.Count;
+                        listDevPriority.AddRange(devPriorityLogic9.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 10,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 2 && a.Rating == 1).ToList();
+                    if (devPriorityLogic9.Count != 0)
+                    {
+                        //intialbucketCount = intialbucketCount + devPriorityLogic9.Count;
+                        listDevPriority.AddRange(devPriorityLogic9.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 11,
+                            CurrentFeedbackId = eachPriority.FeedbackId,
+                            ManagerMappingId = (int)eachPriority.ManagerId,
+                            TeamId = (int)eachPriority.TeamId
+                        }));
+
+                    }
+                }
+                if (devPriorityCount > intialbucketCount)
+                {
+                    var devPriorityLogic9 = developmentPriorites.Where(a => a.Answer == 3 && a.Rating == 1).ToList();
+                    if (devPriorityLogic9.Count != 0)
+                    {
+                        //intialbucketCount = intialbucketCount + devPriorityLogic9.Count;
+                        listDevPriority.AddRange(devPriorityLogic9.Select(eachPriority => new DevelopmentPriorities
+                        {
+                            ManagerResult = (int)eachPriority.Answer,
+                            QuestionId = eachPriority.QuestionId,
+                            Rating = (int)eachPriority.Rating,
+                            Question = eachPriority.ShortQuestion,
+                            ModuleName = eachPriority.ModuleName,
+                            ModuleOrder = eachPriority.ModuleOrder,
+                            ManagerCapability = (int)eachPriority.Capability,
+                            Bucketorder = 12,
                             CurrentFeedbackId = eachPriority.FeedbackId,
                             ManagerMappingId = (int)eachPriority.ManagerId,
                             TeamId = (int)eachPriority.TeamId
@@ -1862,6 +2153,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                     CurrentFeedbackId = (int)priority.CurrentFeedbackId,
                     ManagerMappingId = (int)priority.FeedbackFrom,
                     TeamId = (int)priority.TeamId,
+
                 }).ToList();
             }
         }
@@ -1939,6 +2231,48 @@ namespace bExcellent.Service.BusinessLogic.Goal
 
                 }
             }
+
+
+
+        }
+        public List<DevelopmentPriorities> GetSelfDevPrioritiesReport(int userid, int poeId)
+        {
+            var devPriorities = GetCurrentDevPrioritiesReport(userid, poeId);
+            var selffb = GetSelfFbResult(userid, poeId);
+            if (devPriorities.Count != 0 && selffb.Count != 0)
+            {
+                var devPrioritiesAll =
+                    (from dev in devPriorities
+                     join self in selffb on dev.QuestionId equals self.QuestionId
+                     select new DevelopmentPriorities
+                     {
+                         Question = dev.Question,
+                         ManagerResult = dev.ManagerResult,
+                         SelfResult = self.SelfResult,
+                         QuestionId = dev.QuestionId,
+                         ModuleName = dev.ModuleName,
+                         Rating = dev.Rating,
+                         ModuleOrder = dev.ModuleOrder,
+                         SelfCapability = self.SelfCapability,
+                         ManagerCapability = dev.ManagerCapability,
+                         ManagerMappingId = dev.ManagerMappingId,
+                         CurrentFeedbackId = dev.CurrentFeedbackId,
+                         TeamId = dev.TeamId,
+                         Bucketorder = dev.Bucketorder
+                     }).ToList();
+                //UpdateDevelopmentPrioritiesSelf(devPrioritiesAll, userid, PoeId);
+                return devPrioritiesAll;
+            }
+            else if (devPriorities.Count != 0)
+            {
+                // UpdateDevelopmentPrioritiesSelf(devPriorities, userid, PoeId);
+                return devPriorities;
+            }
+            else
+            {
+                return null;
+            }
+
 
 
 

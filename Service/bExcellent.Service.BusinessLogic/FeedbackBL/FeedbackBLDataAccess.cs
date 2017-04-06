@@ -1858,10 +1858,11 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                                 new DataDumbQuestionScore()
                                     {
                                         ShortQuetionText = a.ShortQuestion,
-                                        QuestionText =a.Question,
+                                        QuestionText =a.SideBarText,
                                         Questionid = a.QuestionId.GetValueOrDefault(),
                                         Score = a.Answer.GetValueOrDefault(0),
                                         ScorePercentage = a.Percentage.GetValueOrDefault(0),
+                                        ReportQuestion=a.ReportQuestion
                                     }
                             }).ToList();
             }

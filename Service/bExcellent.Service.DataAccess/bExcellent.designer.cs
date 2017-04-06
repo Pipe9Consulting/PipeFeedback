@@ -1210,13 +1210,6 @@ namespace bExcellent.Service.DataAccess
 			return ((ISingleResult<V3_GetFeedbackResultResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V3_GetAvgFeedbackResult")]
-		public ISingleResult<V3_GetAvgFeedbackResultResult> GetAvgFeedbackResult([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(MAX)")] string feedbackID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string moduleid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), feedbackID, moduleid, userid);
-			return ((ISingleResult<V3_GetAvgFeedbackResultResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_DelModuleQuestionsDate")]
 		public int DelModuleQuestionsDate([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Poeid", DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Questionid", DbType="Int")] System.Nullable<int> questionid)
 		{
@@ -1565,13 +1558,6 @@ namespace bExcellent.Service.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid);
 			return ((ISingleResult<V3_GetUserPoeByResultModeResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.MS_GetImportaanceAnsByUserId")]
-		public ISingleResult<MS_GetImportaanceAnsByUserIdResult> GetImportaanceAnsByUserId([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PoeId", DbType="Int")] System.Nullable<int> poeId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeId);
-			return ((ISingleResult<MS_GetImportaanceAnsByUserIdResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.MS_GetUsersListByPoE")]
@@ -2083,6 +2069,27 @@ namespace bExcellent.Service.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, designationId);
 			return ((ISingleResult<PPA_GetOverAllPartnersByDesignationResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.MS_GetImportaanceAnsByUserId")]
+		public ISingleResult<MS_GetImportaanceAnsByUserIdResult> GetImportaanceAnsByUserId([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PoeId", DbType="Int")] System.Nullable<int> poeId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeId);
+			return ((ISingleResult<MS_GetImportaanceAnsByUserIdResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V3_GetAvgFeedbackResult")]
+		public ISingleResult<V3_GetAvgFeedbackResultResult> GetAvgFeedbackResult([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(MAX)")] string feedbackID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string moduleid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), feedbackID, moduleid, userid);
+			return ((ISingleResult<V3_GetAvgFeedbackResultResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ppa_InsertToolAccessReq")]
+		public ISingleResult<ppa_InsertToolAccessReqResult> InsertToolAccessReq([global::System.Data.Linq.Mapping.ParameterAttribute(Name="FirstName", DbType="NVarChar(50)")] string firstName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LastName", DbType="NVarChar(50)")] string lastName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmailID", DbType="NVarChar(100)")] string emailID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Role", DbType="NVarChar(200)")] string role, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Country", DbType="NVarChar(100)")] string country, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ManagerAlias", DbType="NVarChar(100)")] string managerAlias)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstName, lastName, emailID, role, country, managerAlias);
+			return ((ISingleResult<ppa_InsertToolAccessReqResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -3133,7 +3140,7 @@ namespace bExcellent.Service.DataAccess
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -8955,7 +8962,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -9945,7 +9952,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -10301,7 +10308,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image")]
 		public System.Data.Linq.Binary picture
 		{
 			get
@@ -25236,176 +25243,6 @@ namespace bExcellent.Service.DataAccess
 		}
 	}
 	
-	public partial class V3_GetAvgFeedbackResultResult
-	{
-		
-		private System.Nullable<int> _Answer;
-		
-		private System.Nullable<double> _Percentage;
-		
-		private System.Nullable<int> _POEModuleId;
-		
-		private System.Nullable<int> _QuestionId;
-		
-		private string _Question;
-		
-		private string _ShortQuestion;
-		
-		private System.Nullable<double> _weightingValue;
-		
-		private System.Nullable<System.DateTime> _GoalDate;
-		
-		private System.Nullable<System.DateTime> _GoalsetDate;
-		
-		public V3_GetAvgFeedbackResultResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
-		public System.Nullable<int> Answer
-		{
-			get
-			{
-				return this._Answer;
-			}
-			set
-			{
-				if ((this._Answer != value))
-				{
-					this._Answer = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Percentage", DbType="Float")]
-		public System.Nullable<double> Percentage
-		{
-			get
-			{
-				return this._Percentage;
-			}
-			set
-			{
-				if ((this._Percentage != value))
-				{
-					this._Percentage = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int")]
-		public System.Nullable<int> POEModuleId
-		{
-			get
-			{
-				return this._POEModuleId;
-			}
-			set
-			{
-				if ((this._POEModuleId != value))
-				{
-					this._POEModuleId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int")]
-		public System.Nullable<int> QuestionId
-		{
-			get
-			{
-				return this._QuestionId;
-			}
-			set
-			{
-				if ((this._QuestionId != value))
-				{
-					this._QuestionId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Question", DbType="Text", UpdateCheck=UpdateCheck.Never)]
-		public string Question
-		{
-			get
-			{
-				return this._Question;
-			}
-			set
-			{
-				if ((this._Question != value))
-				{
-					this._Question = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ShortQuestion", DbType="Text", UpdateCheck=UpdateCheck.Never)]
-		public string ShortQuestion
-		{
-			get
-			{
-				return this._ShortQuestion;
-			}
-			set
-			{
-				if ((this._ShortQuestion != value))
-				{
-					this._ShortQuestion = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_weightingValue", DbType="Float")]
-		public System.Nullable<double> weightingValue
-		{
-			get
-			{
-				return this._weightingValue;
-			}
-			set
-			{
-				if ((this._weightingValue != value))
-				{
-					this._weightingValue = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GoalDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> GoalDate
-		{
-			get
-			{
-				return this._GoalDate;
-			}
-			set
-			{
-				if ((this._GoalDate != value))
-				{
-					this._GoalDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GoalsetDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> GoalsetDate
-		{
-			get
-			{
-				return this._GoalsetDate;
-			}
-			set
-			{
-				if ((this._GoalsetDate != value))
-				{
-					this._GoalsetDate = value;
-				}
-			}
-		}
-	}
-	
 	public partial class V4_GetDevPriorityQuestionsResult
 	{
 		
@@ -29943,32 +29780,6 @@ namespace bExcellent.Service.DataAccess
 				if ((this._Name != value))
 				{
 					this._Name = value;
-				}
-			}
-		}
-	}
-	
-	public partial class MS_GetImportaanceAnsByUserIdResult
-	{
-		
-		private System.Nullable<int> _Rating;
-		
-		public MS_GetImportaanceAnsByUserIdResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rating", DbType="Int")]
-		public System.Nullable<int> Rating
-		{
-			get
-			{
-				return this._Rating;
-			}
-			set
-			{
-				if ((this._Rating != value))
-				{
-					this._Rating = value;
 				}
 			}
 		}
@@ -35595,6 +35406,282 @@ namespace bExcellent.Service.DataAccess
 				if ((this._MPLID != value))
 				{
 					this._MPLID = value;
+				}
+			}
+		}
+	}
+	
+	public partial class MS_GetImportaanceAnsByUserIdResult
+	{
+		
+		private System.Nullable<int> _Rating;
+		
+		private System.Nullable<int> _Questionid;
+		
+		public MS_GetImportaanceAnsByUserIdResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rating", DbType="Int")]
+		public System.Nullable<int> Rating
+		{
+			get
+			{
+				return this._Rating;
+			}
+			set
+			{
+				if ((this._Rating != value))
+				{
+					this._Rating = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Questionid", DbType="Int")]
+		public System.Nullable<int> Questionid
+		{
+			get
+			{
+				return this._Questionid;
+			}
+			set
+			{
+				if ((this._Questionid != value))
+				{
+					this._Questionid = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V3_GetAvgFeedbackResultResult
+	{
+		
+		private System.Nullable<int> _Answer;
+		
+		private System.Nullable<double> _Percentage;
+		
+		private System.Nullable<int> _POEModuleId;
+		
+		private System.Nullable<int> _QuestionId;
+		
+		private string _Question;
+		
+		private string _ShortQuestion;
+		
+		private string _SideBarText;
+		
+		private System.Nullable<double> _weightingValue;
+		
+		private System.Nullable<System.DateTime> _GoalDate;
+		
+		private System.Nullable<System.DateTime> _GoalsetDate;
+		
+		private string _ReportQuestion;
+		
+		public V3_GetAvgFeedbackResultResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
+		public System.Nullable<int> Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Percentage", DbType="Float")]
+		public System.Nullable<double> Percentage
+		{
+			get
+			{
+				return this._Percentage;
+			}
+			set
+			{
+				if ((this._Percentage != value))
+				{
+					this._Percentage = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int")]
+		public System.Nullable<int> POEModuleId
+		{
+			get
+			{
+				return this._POEModuleId;
+			}
+			set
+			{
+				if ((this._POEModuleId != value))
+				{
+					this._POEModuleId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int")]
+		public System.Nullable<int> QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Question", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string Question
+		{
+			get
+			{
+				return this._Question;
+			}
+			set
+			{
+				if ((this._Question != value))
+				{
+					this._Question = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ShortQuestion", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string ShortQuestion
+		{
+			get
+			{
+				return this._ShortQuestion;
+			}
+			set
+			{
+				if ((this._ShortQuestion != value))
+				{
+					this._ShortQuestion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string SideBarText
+		{
+			get
+			{
+				return this._SideBarText;
+			}
+			set
+			{
+				if ((this._SideBarText != value))
+				{
+					this._SideBarText = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_weightingValue", DbType="Float")]
+		public System.Nullable<double> weightingValue
+		{
+			get
+			{
+				return this._weightingValue;
+			}
+			set
+			{
+				if ((this._weightingValue != value))
+				{
+					this._weightingValue = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GoalDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> GoalDate
+		{
+			get
+			{
+				return this._GoalDate;
+			}
+			set
+			{
+				if ((this._GoalDate != value))
+				{
+					this._GoalDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GoalsetDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> GoalsetDate
+		{
+			get
+			{
+				return this._GoalsetDate;
+			}
+			set
+			{
+				if ((this._GoalsetDate != value))
+				{
+					this._GoalsetDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReportQuestion", DbType="NVarChar(MAX)")]
+		public string ReportQuestion
+		{
+			get
+			{
+				return this._ReportQuestion;
+			}
+			set
+			{
+				if ((this._ReportQuestion != value))
+				{
+					this._ReportQuestion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ppa_InsertToolAccessReqResult
+	{
+		
+		private int _Exist;
+		
+		public ppa_InsertToolAccessReqResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Exist", DbType="Int NOT NULL")]
+		public int Exist
+		{
+			get
+			{
+				return this._Exist;
+			}
+			set
+			{
+				if ((this._Exist != value))
+				{
+					this._Exist = value;
 				}
 			}
 		}
