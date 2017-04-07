@@ -3724,6 +3724,10 @@
     <Content Include="ExcelTemplates\MSA28.docx" />
     <Content Include="ExcelTemplates\MSA29.docx" />
     <Content Include="ExcelTemplates\MSA30.docx" />
+    <Content Include="ExcelTemplates\MSA AMM_FY17 REP_2-28-17_FINAL.docx" />
+    <Content Include="ExcelTemplates\MSA MCM_FY17 REP_9-30-16_FINAL.docx" />
+    <Content Include="ExcelTemplates\MSA PCMM_FY17 REP_9-30-16_FINAL.docx" />
+    <Content Include="ExcelTemplates\MSA PMM_FY17 REP_9-30-16_FINAL.docx" />
     <None Include="ExcelTemplates\TeammbrReportTemp.xlsx" />
     <None Include="ExcelTemplates\Template.xlsx" />
     <None Include="ExcelTemplates\TemplateTeam.xlsx" />

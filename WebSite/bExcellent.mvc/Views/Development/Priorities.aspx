@@ -151,8 +151,8 @@
                     <%--        href="#accordion-4"--%>
                             <div class="accordion-section">
                                 <a class="accordion-section-title profilemenu">View profile</a>
-                                <div id="accordion-4" class="accordion-section-content">
-                                </div>
+                               <%-- <div id="accordion-4" class="accordion-section-content">
+                                </div>--%>
                                 <!--end .accordion-section-content-->
                             </div>
                             <!--end .accordion-section-->

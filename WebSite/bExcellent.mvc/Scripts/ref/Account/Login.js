@@ -63,15 +63,19 @@
             var atpos = x.indexOf("@");
             var dotpos = x.lastIndexOf(".");
             if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
-                $('#lbls').hide();
-                alert("Please enter your emailid");
+               // $('#lbls').hide();
+                $('#findid').text("Please enter your email");
+                $('#findid').show();
+                // alert("Please enter your emailid");
             } else if (captchatext != str2) {
+                $('#findid').hide();
                 $('#captchatext').text("Retry the Above Text");
                 $('#captchatext').show();
                 $('#txtInput').val('');
                 //alert('Enter the above text Correctly');
             } else {
                 $('#lbls').hide();
+                $('#findid').hide();
                 login.checkforgetMailid({ url: '../../Common/CheckEmailId', data: { 'emailaddress': $('#txtforgetmail').val() } });
             }
         });
@@ -172,7 +176,11 @@ $(document).ready(function () {
         DrawCaptcha();
         $('#basic-forgetPassword').show();
         $('.popupbg').show();
+        $('#findid').hide();
+        $('#captchatext').hide();
+        $('#txtInput').val("");
         $('#txtforgetmail').val($('#emailid').val());
+
     });
     $('#yammerClick').click(function () {
         window.location = "/Yammer/getYammer";

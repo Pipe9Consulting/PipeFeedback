@@ -24,8 +24,59 @@ namespace CheckSite
 
         private static void Main(string[] args)
         {
-            var common = new bExcellent.Service.BusinessLogic.Common.CommonDataAccess();
-            var t = common.GetPSMReports(101);
+            //var common = new bExcellent.Service.BusinessLogic.Common.CommonDataAccess();
+            try
+            {
+                //Configuration config = WebConfigurationManager.OpenWebConfiguration(HttpContext.Current.Request.ApplicationPath);
+                //MailSettingsSectionGroup settings = (MailSettingsSectionGroup)config.GetSectionGroup("system.net/mailSettings");
+
+                SmtpClient sc = new SmtpClient("smtp.gmail.com");
+
+                System.Net.Mail.MailMessage msg = new System.Net.Mail.MailMessage();
+
+                msg.From = new MailAddress("tillidtest@gmail.com");
+                msg.To.Add(new MailAddress("pr@pipe9consulting.com"));
+                msg.Subject = "r";
+                msg.Body ="r";
+                StringBuilder str = new StringBuilder();
+                str.AppendLine("BEGIN:VCALENDAR");
+                str.AppendLine("PRODID:-//" + "pr@pipe9consulting.com");
+                str.AppendLine("VERSION:2.0");
+                str.AppendLine("METHOD:REQUEST");
+                str.AppendLine("BEGIN:VEVENT");
+
+                str.AppendLine(string.Format("DTSTART:{0:yyyyMMddTHHmmssZ}", DateTime.Now.ToUniversalTime().ToString("yyyyMMdd\\THHmmss\\Z")));
+                str.AppendLine(string.Format("DTSTAMP:{0:yyyyMMddTHHmmssZ}", (Convert.ToDateTime("20/05/2017") - DateTime.Now).Minutes.ToString()));
+                str.AppendLine(string.Format("DTEND:{0:yyyyMMddTHHmmssZ}", Convert.ToDateTime("20/05/2017").ToUniversalTime().ToString("yyyyMMdd\\THHmmss\\Z")));
+                //str.AppendLine(string.Format("DTSTART:{0:yyyyMMddTHHmmssZ}", objApptEmail.StartDate.ToString()));
+                //str.AppendLine(string.Format("DTSTAMP:{0:yyyyMMddTHHmmssZ}", DateTime.UtcNow));
+                //str.AppendLine(string.Format("DTEND:{0:yyyyMMddTHHmmssZ}", objApptEmail.EndDate.ToString()));
+               // str.AppendLine("LOCATION:" + objApptEmail.Location);
+                str.AppendLine(string.Format("DESCRIPTION:{0}", ""));
+                str.AppendLine(string.Format("X-ALT-DESC;FMTTYPE=text/html:{0}", "bdy"));
+                str.AppendLine(string.Format("SUMMARY:{0}", "call"));
+                str.AppendLine(string.Format("ORGANIZER:MAILTO:{0}", "pr@pipe9consulting.com"));
+                str.AppendLine(string.Format("ATTENDEE;CN=\"{0}\";RSVP=TRUE:mailto:{1}", msg.To[0].DisplayName, msg.To[0].Address));
+                str.AppendLine("BEGIN:VALARM");
+                str.AppendLine("TRIGGER:-PT15M");
+                str.AppendLine("ACTION:DISPLAY");
+                str.AppendLine("DESCRIPTION:Reminder");
+                str.AppendLine("END:VALARM");
+                str.AppendLine("END:VEVENT");
+                str.AppendLine("END:VCALENDAR");
+                System.Net.Mime.ContentType ct = new System.Net.Mime.ContentType("text/calendar");
+                ct.Parameters.Add("method", "REQUEST");
+                AlternateView avCal = AlternateView.CreateAlternateViewFromString(str.ToString(), ct);
+                msg.AlternateViews.Add(avCal);
+                NetworkCredential nc = new NetworkCredential("tillidtest@gmail.com", "pipe9@123");
+                sc.Port = 587;
+                sc.EnableSsl = true;
+                sc.Credentials = nc;
+                sc.Send(msg);
+               
+            }
+            catch { }
+         //   var t = common.GetPSMReports(101);
             var c = 9;
             //double k = (double)12.0/11.0;
             //var ki = k;

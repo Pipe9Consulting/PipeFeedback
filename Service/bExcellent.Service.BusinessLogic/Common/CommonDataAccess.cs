@@ -3903,9 +3903,23 @@ namespace bExcellent.Service.BusinessLogic.Common
                                      into g
                                      select new { Feedbackid = g.Key, Answers = g.ToList() };
                 var startIndex = 1;
+                var loppIndex = 1;
+                var fbid = 0;
                 foreach (var grp in grpPartner)
                 {
                     var date = String.Format("{0:MM/dd/yyyy}", grp.Answers.FirstOrDefault().StartDate);
+                    fbid = grp.Answers.FirstOrDefault().POEFeedbackId;
+                    var lengthpartner = grpPartner.Count();
+                    if (lengthpartner >= 2)
+                    {
+                        date = date + "(" + loppIndex + ")";
+                        //var partnerList = grpPartner.ToList();
+                        //var date1 = String.Format("{0:MM/dd/yyyy}", partnerList[0].Answers.FirstOrDefault().StartDate);
+                        //var date2 = String.Format("{0:MM/dd/yyyy}", partnerList[1].Answers.FirstOrDefault().StartDate);
+                        // if(date1==date2)
+
+                    }
+                   
                     var momentum = grp.Answers.Where(a => a.POEModuleId == 1).ToList();
                     var marketting = grp.Answers.Where(a => a.POEModuleId == 2).ToList();
                     var sales = grp.Answers.Where(a => a.POEModuleId == 3).ToList();
@@ -3957,6 +3971,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis.StartDate = date;
                     getaxis.XAxis = xAxis;
                     getaxis.YAxis = yAxis;
+                    getaxis.fbId = fbid;
                     //  getaxis.Title = "Customer Acquisition";
                     getlistAxis.Add(getaxis);
 
@@ -3968,6 +3983,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis2.StartDate = date;
                     getaxis2.XAxis = xAxis;
                     getaxis2.YAxis = yAxis;
+                    getaxis2.fbId = fbid;
                     // getaxis2.Title = "Customer Acquisition";
                     getlistAxis.Add(getaxis2);
 
@@ -3978,6 +3994,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis3.StartDate = date;
                     getaxis3.XAxis = xAxis;
                     getaxis3.YAxis = yAxis;
+                    getaxis3.fbId = fbid;
                     // getaxis3.Title = "Customer Acquisition";
                     getlistAxis.Add(getaxis3);
 
@@ -3988,6 +4005,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis4.StartDate = date;
                     getaxis4.XAxis = xAxis;
                     getaxis4.YAxis = yAxis;
+                    getaxis4.fbId = fbid;
                     //  getaxis4.Title = " Industry Focus";
                     getlistAxis.Add(getaxis4);
 
@@ -3998,6 +4016,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis5.StartDate = date;
                     getaxis5.XAxis = xAxis;
                     getaxis5.YAxis = yAxis;
+                    getaxis5.fbId = fbid;
                     //getaxis5.Title = " Industry Focus";
                     getlistAxis.Add(getaxis5);
 
@@ -4008,6 +4027,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis6.StartDate = date;
                     getaxis6.XAxis = xAxis;
                     getaxis6.YAxis = yAxis;
+                    getaxis6.fbId = fbid;
                     var partnername = context.GetMPLIDName(mplId).ToList();
                     var partnerNameByMPLID = mplId;
                     if (partnername.Count != 0)
@@ -4029,6 +4049,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     ////  getaxis4.Title = " Industry Focus";
                     //getlistAxis.Add(getaxis9);
                     startIndex++;
+                    loppIndex++;
                 }
 
 
@@ -4376,5 +4397,6 @@ namespace bExcellent.Service.BusinessLogic.Common
         public int ReportId { get; set; }
         public string Title { get; set; }
         public string PartnerName { get; set; }
+        public int fbId { get; set; }
     }
 }

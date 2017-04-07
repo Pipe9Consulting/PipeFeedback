@@ -25,9 +25,31 @@
         $('#coachDateCont').hide();
         TextChange(1);
     }
-    $('.profilemenu').on('click', function() {
-        window.open("../ExcelTemplates/MSA27.docx","_blank");
+    $('.profilemenu').on('click', function () {
+        var poeid = $('#selectedPoeId').val();
+        if (poeid == 27) {
+            window.open("../ExcelTemplates/MSA MCM_FY17 REP_9-30-16_FINAL.docx", "_blank");
+        }
+        if (poeid == 28) {
+            window.open("../ExcelTemplates/MSA PCMM_FY17 REP_9-30-16_FINAL.docx", "_blank");
+        }
+        if (poeid == 29) {
+            window.open("../ExcelTemplates/MSA PMM_FY17 REP_9-30-16_FINAL.docx", "_blank");
+        }
+        if (poeid == 30) {
+            window.open("../ExcelTemplates/MSA AMM_FY17 REP_2-28-17_FINAL.docx", "_blank");
+        }
+        //openWord("../ExcelTemplates/MSA27.docx");
     });
+    function openWord(spath) {
+        var pause = 0;
+        var wdDialogFileOpen = 80;
+        var wdApp = new ActiveXObject("Word.Application");
+        wdApp.Visible = 'True';
+        var wdDoc = wdApp.Documents;
+        wdDoc.Open(spath);
+        document.form1.submit();
+    }
     $('#usrList li').on('click', function () {
         $("#status").fadeIn();
         $("#preloader").delay(100).fadeIn("slow");
@@ -246,10 +268,10 @@
     $("#status").fadeOut();
     $("#preloader").delay(100).fadeOut("slow");
     var poeid = parseInt($('#selectedPoeId').val());
-    if(poeid==15 || poeid==16 || poeid==17) {
-       $('#dropmenus').show();
+    if (poeid == 15 || poeid == 16 || poeid == 17) {
+        $('#dropmenus').show();
     } else {
-       $('#dropmenus').show();
+        $('#dropmenus').show();
     }
 
 });
@@ -460,7 +482,7 @@ var devLanding = {
             success: function (response) {
                 //alert(response.StartDate);
                 // debugger;
-               
+
                 $('#tmStartDate').html("Start Date<br />" + response.StartDate);
                 $('#tmEndDate').html("Next Coaching Date<br />" + response.EndDate);
                 var date = response.EndDate.split('.')[2];
@@ -468,7 +490,7 @@ var devLanding = {
                 if (date == 001) {
                     endingdate = "01.07.2017";
                 }
-                
+
                 $('#dayRemaining').html(response.RemainingDays + " Days Remaining");
                 $('#completedDays').html(response.CompletedDays + " Days Completed");
                 var percentage = (response.CompletedDays / response.OverallScore) * 100;
@@ -585,7 +607,7 @@ var devLanding = {
             success: function (response) {
                 if (response != null) {
                     $('#selectPoe').val(response.Name.replace("&", "").replace(/\ /g, ""));
-                    var html = "<h4>" + response.Name + "</h4><img src='../../Images/KessakuImage/" + response.Name.replace("&", "").replace(/\ /g, "").replace("/","") + "_pane.png' /><p>" + response.IntroContent + "</p>";//<a  onclick='DownloadPDF()' class='sendRequest'>Download</a>
+                    var html = "<h4>" + response.Name + "</h4><img src='../../Images/KessakuImage/" + response.Name.replace("&", "").replace(/\ /g, "").replace("/", "") + "_pane.png' /><p>" + response.IntroContent + "</p>";//<a  onclick='DownloadPDF()' class='sendRequest'>Download</a>
                     $('#accordion-4').html(html);
                 }
             },
@@ -623,7 +645,7 @@ var devLanding = {
         Common.ajaxsync({
             url: '/Development/LoadManagerName',
             success: function (response) {
-               // alert(response);
+                // alert(response);
                 $('#fullname').val(response);
             },
             error: function (err) {

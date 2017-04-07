@@ -147,6 +147,7 @@
 
         .alartPopup h3 {
             margin: 0 0 20px 0;
+            font-weight: 400;
         }
 
 
@@ -179,7 +180,7 @@
                     <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <h3>Your password reminder email has been sent. Please check your Junk Folder.</h3>
+                    <h3>Your password reminder email has been sent.<br/> Please check your Junk Folder.</h3>
                     <a href="#" data-dismiss="modal" class="alartPopupOk">Ok</a>
                 </div>
 
