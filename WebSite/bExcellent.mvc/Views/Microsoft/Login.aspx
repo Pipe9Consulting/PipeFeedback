@@ -94,7 +94,7 @@
                 -moz-transition: opacity .3s linear, top .3s ease-out;
                 -o-transition: opacity .3s linear, top .3s ease-out;
                 transition: opacity .3s linear, top .3s ease-out;
-                top: -25%;
+                top: -30%;
             }
 
                 .modal.fade.in {
@@ -135,7 +135,8 @@
             }
 
         .alartPopup .close {
-            margin-right: -8% !important;
+            margin-right: -6% !important;
+            margin-top: -4% !important;
         }
 
 
