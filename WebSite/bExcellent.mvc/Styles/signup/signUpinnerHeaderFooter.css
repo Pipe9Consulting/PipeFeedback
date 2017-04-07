@@ -346,3 +346,14 @@ html, body {
     }
 }
 /*KT Added*/
+
+
+
+.cacLogo {
+    cursor: default;
+}
+
+
+.cacLogo img{
+    cursor: pointer;
+}

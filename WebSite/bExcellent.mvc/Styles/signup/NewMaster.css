@@ -1435,3 +1435,14 @@ body {
         width: 60px;
     }
 }
+
+
+
+.cacLogo {
+    cursor: default;
+}
+
+
+.cacLogo img{
+    cursor: pointer;
+}
