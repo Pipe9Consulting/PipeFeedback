@@ -246,6 +246,7 @@
     font-weight: 500;
     font-size: 130%;
     float: right;
+    margin-top: 20px;
 }
 
     #resetbtn:hover, #ChangePassbtn:hover {
