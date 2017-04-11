@@ -604,11 +604,9 @@
             </p>
             <input type="password" id="Confirmpassword" class="textspace" />
             <br />
-            <label class="errormsg" id="UpdatemailLbl">
-            </label>
-
+            <label class="errormsg" id="UpdatemailLbl"></label>
             <input type="submit" id="ChangePassbtn" value="Submit" class="origin" />
-                    </div>
+        </div>
     </form>
 </body>
 </html>

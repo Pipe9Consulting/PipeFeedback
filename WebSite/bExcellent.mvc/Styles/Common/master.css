@@ -603,14 +603,13 @@ h1 {
         display: none;
     }
     */
-#simplemodal-container {
+/*#simplemodal-container {
     width: 23% !important;
     height: 0 !important;
     padding-bottom: 23% !important;
-    /*background: url("../../Images/other-popup-bg.png") no-repeat 0 0 #e5e5e5;*/
     background: url("../../Images/other-popup-bg-new.png") no-repeat 0 0 #e5e5e5;
     background-size: 100% 100%;
-}
+}*/
 
 .becomePaidmember {
     background: url(../../Images/paid-member.png) no-repeat left 8% center #e0b001;
