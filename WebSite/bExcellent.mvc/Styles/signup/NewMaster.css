@@ -430,7 +430,7 @@ body {
 #simplemodal-container {
     width: 23% !important;
     height: 0 !important;
-    padding-bottom: 25% !important;
+    padding-bottom: 30% !important;
     /*background: url("../../Images/other-popup-bg.png") no-repeat 0 0 #e5e5e5;*/
     background: url("../../Images/other-popup-bg-new.png") no-repeat 0 0 #e5e5e5;
     background-size: 100% 100%;
@@ -1436,12 +1436,9 @@ body {
     }
 }
 
-
-
 .cacLogo {
     cursor: default;
 }
-
 
 .cacLogo img{
     cursor: pointer;
