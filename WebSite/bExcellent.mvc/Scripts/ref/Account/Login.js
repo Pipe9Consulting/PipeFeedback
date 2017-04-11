@@ -33,20 +33,35 @@
             var atpos = mail.indexOf("@");
             var dotpos = mail.lastIndexOf(".");
             if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= mail.length) {
-                alert("Please enter your valid  emailid");
+                //alert("Please enter your valid  emailid");
                 return false;
             }
             else if ($('#curpassword').val().trim() == '') {
-                alert("Please enter your current password"); return false;
+                //alert("Please enter your current password");
+                $('#UpdatemailLbl').html("Please enter current password");
+                $('#UpdatemailLbl').show();
+                return false;
             }
             else if ($('#newpassword').val().trim() == '') {
-                alert("Please enter your new password"); return false;
+                $('#UpdatemailLbl').html("Please enter new password");
+                $('#UpdatemailLbl').show();
+                return false;
+            }
+            else if ($('#Confirmpassword').val().trim() == '') {
+                $('#UpdatemailLbl').html("Please confirm new password");
+                $('#UpdatemailLbl').show();
+                // $('#modalMailSuccess').modal();
+                //alert("Please enter your new password");
+                return false;
             }
                 //else if ($('#Confirmpassword').val().trim() == '') {
                 //    alert("Please enter your confirm new password");
                 //}
             else if (val1 != val2) {
-                alert("New Password and confirm password could be same "); return false;
+                $('#UpdatemailLbl').html("New password and confirm new password should be same ");
+                //$('#modalMailSuccess').modal(); 
+                $('#UpdatemailLbl').show();
+                return false;
             } else {
                 login.checkUpdateMailid({ url: '../../Home/Updateuserdetails', data: { 'emailId': $('#txtemailid').val(), 'password': $('#curpassword').val() } });
             }
@@ -147,11 +162,13 @@
             success: function (response) {
                 if (response == true) {
                     login.updatepassword({ url: '../../Common/updatePassword', data: { 'userName': $('#txtemailid').val(), 'password': $('#newpassword').val() } });
-                    alert("Your Password is Updated Sucessfully");
+                    //alert("Your Password is Updated Sucessfully");
+                    $('#masterMsgCont').html(" Your password has been updated successfully");
+                    $('#overallCont').show();
                    // window.location = "../../Home/SignOut";
                     $.modal.close();
                 } else {
-                    $('#UpdatemailLbl').text("Please enter your valid  emailid");
+                    $('#UpdatemailLbl').text("Please enter correct password");
                     $('#UpdatemailLbl').show();
                     return false;
                 }
