@@ -21,6 +21,8 @@
       <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
       <xs:element minOccurs="0" name="Roles" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Xaxis" type="xs:double" />
+      <xs:element minOccurs="0" name="Yaxis" type="xs:double" />
       <xs:element minOccurs="0" name="Yes" type="xs:int" />
     </xs:sequence>
   </xs:complexType>

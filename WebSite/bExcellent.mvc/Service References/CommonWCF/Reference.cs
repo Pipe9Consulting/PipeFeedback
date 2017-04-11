@@ -278,6 +278,9 @@ namespace bExcellent.mvc.CommonWCF {
         private string FirstNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime GoalDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool IsActiveField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -429,6 +432,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
                     this.FirstNameField = value;
                     this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime GoalDate {
+            get {
+                return this.GoalDateField;
+            }
+            set {
+                if ((this.GoalDateField.Equals(value) != true)) {
+                    this.GoalDateField = value;
+                    this.RaisePropertyChanged("GoalDate");
                 }
             }
         }
@@ -975,6 +991,12 @@ namespace bExcellent.mvc.CommonWCF {
         private string TimeZoneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double XaxisField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double YaxisField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int YesField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -1152,6 +1174,32 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.TimeZoneField, value) != true)) {
                     this.TimeZoneField = value;
                     this.RaisePropertyChanged("TimeZone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Xaxis {
+            get {
+                return this.XaxisField;
+            }
+            set {
+                if ((this.XaxisField.Equals(value) != true)) {
+                    this.XaxisField = value;
+                    this.RaisePropertyChanged("Xaxis");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Yaxis {
+            get {
+                return this.YaxisField;
+            }
+            set {
+                if ((this.YaxisField.Equals(value) != true)) {
+                    this.YaxisField = value;
+                    this.RaisePropertyChanged("Yaxis");
                 }
             }
         }
@@ -2895,6 +2943,12 @@ namespace bExcellent.mvc.CommonWCF {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private double YAxisField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string axisField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int fbIdField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -3109,6 +3163,32 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.YAxisField.Equals(value) != true)) {
                     this.YAxisField = value;
                     this.RaisePropertyChanged("YAxis");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string axis {
+            get {
+                return this.axisField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.axisField, value) != true)) {
+                    this.axisField = value;
+                    this.RaisePropertyChanged("axis");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int fbId {
+            get {
+                return this.fbIdField;
+            }
+            set {
+                if ((this.fbIdField.Equals(value) != true)) {
+                    this.fbIdField = value;
+                    this.RaisePropertyChanged("fbId");
                 }
             }
         }

@@ -1165,7 +1165,7 @@ namespace bExcellent.mvc.Controllers
         public JsonResult GetPassword(string emailAddress)
         {
             var common = new CommonClient();
-          //  var returnValue = common.GetPassword(emailAddress);
+          var returnValue = common.GetPassword(emailAddress);
             return JsonResponse(true);
         }
 

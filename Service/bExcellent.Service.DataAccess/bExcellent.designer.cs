@@ -22,7 +22,7 @@ namespace bExcellent.Service.DataAccess
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="PSE_Live")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Kessaku_Live")]
 	public partial class bExcellentDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -33,7 +33,7 @@ namespace bExcellent.Service.DataAccess
     #endregion
 		
 		public bExcellentDataContext() : 
-				base(global::bExcellent.Service.DataAccess.Properties.Settings.Default.PSE_LiveConnectionString, mappingSource)
+				base(global::bExcellent.Service.DataAccess.Properties.Settings.Default.Kessaku_LiveConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -2090,6 +2090,13 @@ namespace bExcellent.Service.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), firstName, lastName, emailID, role, country, managerAlias);
 			return ((ISingleResult<ppa_InsertToolAccessReqResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetUsersGoalDates")]
+		public ISingleResult<V4_GetUsersGoalDatesResult> GetUsersGoalDates()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<V4_GetUsersGoalDatesResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -35682,6 +35689,86 @@ namespace bExcellent.Service.DataAccess
 				if ((this._Exist != value))
 				{
 					this._Exist = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V4_GetUsersGoalDatesResult
+	{
+		
+		private string _FirstName;
+		
+		private string _LastName;
+		
+		private string _EmailID;
+		
+		private System.Nullable<System.DateTime> _GoalDate;
+		
+		public V4_GetUsersGoalDatesResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
+		public string FirstName
+		{
+			get
+			{
+				return this._FirstName;
+			}
+			set
+			{
+				if ((this._FirstName != value))
+				{
+					this._FirstName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string LastName
+		{
+			get
+			{
+				return this._LastName;
+			}
+			set
+			{
+				if ((this._LastName != value))
+				{
+					this._LastName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="NVarChar(100)")]
+		public string EmailID
+		{
+			get
+			{
+				return this._EmailID;
+			}
+			set
+			{
+				if ((this._EmailID != value))
+				{
+					this._EmailID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GoalDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> GoalDate
+		{
+			get
+			{
+				return this._GoalDate;
+			}
+			set
+			{
+				if ((this._GoalDate != value))
+				{
+					this._GoalDate = value;
 				}
 			}
 		}

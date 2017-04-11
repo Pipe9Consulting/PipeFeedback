@@ -49,8 +49,6 @@ namespace DemoCloudAsCoachService
 
         internal class LiveYammerNotoficationJob : ILiveYammerNotoficationJob
         {
-            private bExcellent.Service.BusinessLogic.Common.Common common = new bExcellent.Service.BusinessLogic.Common.Common();
-
             /// <summary>
             /// Called by the <see cref="T:Quartz.IScheduler" /> when a <see cref="T:Quartz.ITrigger" />
             /// fires that is associated with the <see cref="T:Quartz.IJob" />.
@@ -66,7 +64,6 @@ namespace DemoCloudAsCoachService
             /// </remarks>
             public void Execute(IJobExecutionContext context)
             {
-                //common.SendPlanNotification();
                 GetYammerContent();
             }
             public static void GetYammerContent()
@@ -74,22 +71,40 @@ namespace DemoCloudAsCoachService
                 TraceService("GetYammerContent");
                 bExcellent.Service.BusinessLogic.Common.Common common = new bExcellent.Service.BusinessLogic.Common.Common();
 
-                var getyammer = common.GetYammerTopContent();
-                foreach (var yammerContent in getyammer)
+                var Goal = common.GetGoalDates();
+                foreach (var date in Goal)
                 {
-                    if (yammerContent.Groupid != null)
+                    var goalDate = Convert.ToDateTime(date.GoalDate);
+                    var currentDate = DateTime.Now;
+                    var days = (goalDate - currentDate).TotalDays;
+                    var count = 1;
+                    if (days > 7 && days < 8)
                     {
-                        SendYammerGroup(yammerContent.ToMailid, yammerContent.Subject, yammerContent.Description,
-                                       yammerContent.ImageUrl, yammerContent.YammerToken, yammerContent.Groupid);
-                        UpdateYammerContent(yammerContent.ID);
+                        TraceService("Send Mail-" + count);
+                        count++;
                     }
                     else
                     {
-                        SendYammerUser(yammerContent.ToMailid, yammerContent.Subject, yammerContent.Description,
-                                       yammerContent.ImageUrl, yammerContent.YammerToken);
-                        UpdateYammerContent(yammerContent.ID);
+                        TraceService(" Not Send Mail-" + count);
+                        count++;
                     }
                 }
+                //var getyammer = common.GetYammerTopContent();
+                //foreach (var yammerContent in getyammer)
+                //{
+                //    if (yammerContent.Groupid != null)
+                //    {
+                //        SendYammerGroup(yammerContent.ToMailid, yammerContent.Subject, yammerContent.Description,
+                //                       yammerContent.ImageUrl, yammerContent.YammerToken, yammerContent.Groupid);
+                //        UpdateYammerContent(yammerContent.ID);
+                //    }
+                //    else
+                //    {
+                //        SendYammerUser(yammerContent.ToMailid, yammerContent.Subject, yammerContent.Description,
+                //                       yammerContent.ImageUrl, yammerContent.YammerToken);
+                //        UpdateYammerContent(yammerContent.ID);
+                //    }
+                //}
             }
 
             public static void SendYammerUser(string emailid, string subject, string description, string imageurl, string yammertoken)
@@ -131,7 +146,7 @@ namespace DemoCloudAsCoachService
                         streamWriter.Flush();
                     }
                     var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-                   
+
                     using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                     {
                         streamReader.ReadToEnd();

@@ -24,6 +24,8 @@
       <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="XAxis" type="xs:double" />
       <xs:element minOccurs="0" name="YAxis" type="xs:double" />
+      <xs:element minOccurs="0" name="axis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fbId" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="getAxis" nillable="true" type="tns:getAxis" />

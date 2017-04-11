@@ -28,16 +28,16 @@
     $('.profilemenu').on('click', function () {
         var poeid = $('#selectedPoeId').val();
         if (poeid == 27) {
-            window.open("../ExcelTemplates/MSA MCM_FY17 REP_9-30-16_FINAL.docx", "_blank");
+            window.open("../ExcelTemplates/MSA_MCM_FY17_REP_9-30-16_FINAL.pdf", "_blank");
         }
         if (poeid == 28) {
-            window.open("../ExcelTemplates/MSA PCMM_FY17 REP_9-30-16_FINAL.docx", "_blank");
+            window.open("../ExcelTemplates/MSA_PCMM_FY17_REP_9-30-16_FINAL.pdf", "_blank");
         }
         if (poeid == 29) {
-            window.open("../ExcelTemplates/MSA PMM_FY17 REP_9-30-16_FINAL.docx", "_blank");
+            window.open("../ExcelTemplates/MSA_PMM_FY17_REP_9-30-16_FINAL.pdf", "_blank");
         }
         if (poeid == 30) {
-            window.open("../ExcelTemplates/MSA AMM_FY17 REP_2-28-17_FINAL.docx", "_blank");
+            window.open("../ExcelTemplates/MSA_AMM_FY17_REP_2-28-17_FINAL.pdf", "_blank");
         }
         //openWord("../ExcelTemplates/MSA27.docx");
     });

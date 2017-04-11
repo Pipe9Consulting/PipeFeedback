@@ -815,5 +815,10 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             return DataAccess.ToolRequestAccess(firstname, lastname, alias, manageralias, role, country);
         }
+
+        public List<User> GetGoalDates()
+        {
+            return DataAccess.GetGoalDates();
+        }
     }
 }

@@ -21,5 +21,7 @@ namespace bExcellent.Service.Util.Request
         public int No { get; set; }
         public String PartnerName { get; set; }
         public String PSEName { get; set; }
+        public double Xaxis { get; set; }
+        public double Yaxis { get; set; }
     }
 }

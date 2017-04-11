@@ -903,6 +903,9 @@ namespace bExcellent.mvc.FeedbackWCF {
         private bExcellent.mvc.FeedbackWCF.Country CountryField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CountryNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int DesignationIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -927,10 +930,16 @@ namespace bExcellent.mvc.FeedbackWCF {
         private string LastNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ManagerAliasField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string PasswordField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private byte[] PhotoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RoleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int StratPageModeField;
@@ -1005,6 +1014,19 @@ namespace bExcellent.mvc.FeedbackWCF {
                 if ((object.ReferenceEquals(this.CountryField, value) != true)) {
                     this.CountryField = value;
                     this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CountryName {
+            get {
+                return this.CountryNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryNameField, value) != true)) {
+                    this.CountryNameField = value;
+                    this.RaisePropertyChanged("CountryName");
                 }
             }
         }
@@ -1114,6 +1136,19 @@ namespace bExcellent.mvc.FeedbackWCF {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ManagerAlias {
+            get {
+                return this.ManagerAliasField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ManagerAliasField, value) != true)) {
+                    this.ManagerAliasField = value;
+                    this.RaisePropertyChanged("ManagerAlias");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Password {
             get {
                 return this.PasswordField;
@@ -1135,6 +1170,19 @@ namespace bExcellent.mvc.FeedbackWCF {
                 if ((object.ReferenceEquals(this.PhotoField, value) != true)) {
                     this.PhotoField = value;
                     this.RaisePropertyChanged("Photo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Role {
+            get {
+                return this.RoleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RoleField, value) != true)) {
+                    this.RoleField = value;
+                    this.RaisePropertyChanged("Role");
                 }
             }
         }

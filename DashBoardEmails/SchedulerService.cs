@@ -40,7 +40,7 @@ namespace DashBoardEmails
         private static void AddJobs()
         {
             TraceService("start service");
-            const string cronExpPlan = "0 0/1 15 * * ?";  // need to replace for every day 12 am :0 0 0 1/1 * ? *
+            const string cronExpPlan = "0 0/3 * 1/1 * ? *";  // need to replace for every day 12 am :0 0 0 1/1 * ? *
             var planNotificationJob = new PlanNotificationJob();
             var planNotificationJobDetail = new JobDetailImpl("DashBoardPlanNotificationJob", "DashBoardPlanNotificationGroup", planNotificationJob.GetType());
             var planNotificationtrigger = new CronTriggerImpl("DashBoardPlanNotificationTrigger", "DashBoardPlanNotificationGroup", cronExpPlan);
@@ -62,11 +62,8 @@ namespace DashBoardEmails
 
         private static void ListPOe()
         {
-            var common = new bExcellent.Service.BusinessLogic.Common.Common();
-            var listPoe = common.GetAllPoEs().Where(a => a.PoeFlag == 2).ToList();
-            foreach (var poe in listPoe)
-            {
-            }
+            TraceService("Tracing by 3 mins");
+           
         }
 
         //Demo Purpose

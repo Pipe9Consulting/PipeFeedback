@@ -73,7 +73,8 @@ namespace bExcellent.Service.Util.Domain
             public string ManagerAlias { get; set; }
             [DataMember]
             public string CountryName { get; set; }
-
+            [DataMember]
+            public DateTime GoalDate { get; set; }
         //public List<Feedback> FeedbackDetails { get; set; }
     }
 

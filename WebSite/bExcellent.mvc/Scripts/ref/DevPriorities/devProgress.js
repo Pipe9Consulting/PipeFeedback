@@ -317,6 +317,6 @@ function TextChange(mode) {
     } else {
         $('#reqFeedCont').html("Send request to self feedback");
         $('#nofeedCont').html("Manager feedback required");
-        $('#tblHeader').html("Development Progress – <span>Compare your previous and Latest Feedback for the selected Team Member.</span>");
+        $('#tblHeader').html("Development Progress – <span>Compare your previous and latest Feedback for the selected Team Member.</span>");
     }
 }

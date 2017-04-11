@@ -304,11 +304,11 @@ namespace bExcellent.Service.BusinessLogic.UserAdmin
                                                    );
                 var emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, emailAddress);
                 email.Mailfrom = ConfigurationManager.AppSettings["fromEmail"];
-                email.Mailsubject = "Password";
+                email.Mailsubject = ConfigurationManager.AppSettings["passwordSubject"];
                 //email.Mailto = emailAddress;
                 //email.Mailbody = emailContent;
                 //email.SendMail();
-                TempMailForgetPasswordUpdated(ConfigurationManager.AppSettings["fromEmail"], emailAddress, ConfigurationManager.AppSettings["fromEmail"],
+                TempMailForgetPasswordUpdated(ConfigurationManager.AppSettings["fromEmail"], emailAddress, ConfigurationManager.AppSettings["passwordSubject"],
                                        emailContent);
                 return "Your password has been sent to your registered email address. Please check your inbox. If you do not find an email in your inbox, please check your junk/spam folders. Thank you!";
             }

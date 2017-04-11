@@ -2416,7 +2416,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                 var userList = getMangers.Select(users => new QuestionScore
                 {
                     Answers = users.Rating.ToString(),
-                  Questionid =users.Questionid.Value
+                    Questionid = users.Questionid.Value
                 }).ToList();
                 return userList;
             }
@@ -3326,6 +3326,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     pseRepot.TimeZoneLastName = tmZone.LastName;
                     pseRepot.TimeZoneAlias = tmZone.EmailId.Replace("@microsoft.com", "");
                     pseRepot.Mplid = report.MPLID;
+                    pseRepot.Role = report.Roles;
                     var partnername = context.GetMPLIDName(report.MPLID).ToList();
                     if (partnername.Count != 0)
                     {
@@ -3394,7 +3395,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     }
                     var axisvalue = GetAxisvalue(report.UserId, report.PartnerId);
 
-                    if (axisvalue.XAxis < 5.1 && axisvalue.YAxis < 5.1)
+                    if (axisvalue.XAxis < 5.2 && axisvalue.YAxis < 5.2)
                     {
                         pseRepot.Omnivores = 1;
                         pseRepot.HighVelocity = 0;
@@ -3403,7 +3404,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.ModeName = "3. Omnivores";
                         omnivores = omnivores + 1;
                     }
-                    else if (axisvalue.XAxis < 10 && axisvalue.YAxis < 5.1)
+                    else if (axisvalue.XAxis < 10.2 && axisvalue.YAxis < 5.2)
                     {
                         pseRepot.Omnivores = 0;
                         pseRepot.HighVelocity = 1;
@@ -3412,7 +3413,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.ModeName = "2. High Velocity";
                         highVelocity = highVelocity + 1;
                     }
-                    else if (axisvalue.XAxis < 5.1 && axisvalue.YAxis < 10)
+                    else if (axisvalue.XAxis < 5.9 && axisvalue.YAxis < 10.2)
                     {
                         pseRepot.Omnivores = 0;
                         pseRepot.HighVelocity = 0;
@@ -3489,7 +3490,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                 //                                                            LastName = prog.LastName,
                 //                                                            Role = prog.Role,
                 //                                                            Mplid=prog.Mplid,
-                                                                            
+
                 //                                                        }));
 
                 topLeadReport.OverAllData = OverallReportlist;
@@ -3605,7 +3606,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     }
                     var axisvalue = GetAxisvalue(report.UserId, report.PartnerId);
 
-                    if (axisvalue.XAxis < 5.1 && axisvalue.YAxis < 5.1)
+                    if (axisvalue.XAxis < 5.2 && axisvalue.YAxis < 5.2)
                     {
                         pseRepot.Omnivores = 1;
                         pseRepot.HighVelocity = 0;
@@ -3614,7 +3615,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.ModeName = "3. Omnivores";
                         omnivores = omnivores + 1;
                     }
-                    else if (axisvalue.XAxis < 10 && axisvalue.YAxis < 5.1)
+                    else if (axisvalue.XAxis < 10.2 && axisvalue.YAxis < 5.2)
                     {
                         pseRepot.Omnivores = 0;
                         pseRepot.HighVelocity = 1;
@@ -3623,7 +3624,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.ModeName = "2. High Velocity";
                         highVelocity = highVelocity + 1;
                     }
-                    else if (axisvalue.XAxis < 5.1 && axisvalue.YAxis < 10)
+                    else if (axisvalue.XAxis < 5.9 && axisvalue.YAxis < 10.2)
                     {
                         pseRepot.Omnivores = 0;
                         pseRepot.HighVelocity = 0;
@@ -3797,7 +3798,7 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
-              //  GetPSEReportCalculatedNew(userId, partnerId, mplId);
+                //  GetPSEReportCalculatedNew(userId, partnerId, mplId);
                 var getaxis = new getAxis();
                 var getlistAxis = new List<getAxis>();
                 var usrList = context.GenerateReportPowerBi(userId, partnerId).ToList();
@@ -3895,7 +3896,7 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
-              
+
                 var getlistAxis = new List<getAxis>();
                 var usrList = context.GenerateReportPowerBiUpdated(userId, partnerId).ToList();
                 var grpPartner = from usr in usrList
@@ -3919,7 +3920,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                         // if(date1==date2)
 
                     }
-                   
+
                     var momentum = grp.Answers.Where(a => a.POEModuleId == 1).ToList();
                     var marketting = grp.Answers.Where(a => a.POEModuleId == 2).ToList();
                     var sales = grp.Answers.Where(a => a.POEModuleId == 3).ToList();
@@ -3946,7 +3947,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                                                AnswerValue =
                                                    (answer.QuestionId == 29 || answer.QuestionId == 30)
                                                        ? -1
-                                                       : (int) answer.AnswerValue,
+                                                       : (int)answer.AnswerValue,
                                                Question = answer.Question,
                                                FullQuestion = answer.BriefQuestion,
                                                Title =
@@ -3956,7 +3957,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                                                        : "Industry Focus"
                                                //XAxis = xAxis,
                                                //YAxis = yAxis,
-                                              // StartDate = String.Format("{0:MM/dd/yyyy}", answer.StartDate)
+                                               // StartDate = String.Format("{0:MM/dd/yyyy}", answer.StartDate)
 
 
                                            };
@@ -3969,8 +3970,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                     // getaxis.ReportId = reportId;
                     getaxis.SolutionName = "Core Momentum";
                     getaxis.StartDate = date;
-                    getaxis.XAxis = xAxis;
-                    getaxis.YAxis = yAxis;
+                    //  getaxis.XAxis = xAxis;
+                    // getaxis.YAxis = yAxis;
                     getaxis.fbId = fbid;
                     //  getaxis.Title = "Customer Acquisition";
                     getlistAxis.Add(getaxis);
@@ -3981,8 +3982,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis2.PerformanceGap = 10 - (double)markettingValue;
                     getaxis2.SolutionName = "Marketing";
                     getaxis2.StartDate = date;
-                    getaxis2.XAxis = xAxis;
-                    getaxis2.YAxis = yAxis;
+                    //  getaxis2.XAxis = xAxis;
+                    //  getaxis2.YAxis = yAxis;
                     getaxis2.fbId = fbid;
                     // getaxis2.Title = "Customer Acquisition";
                     getlistAxis.Add(getaxis2);
@@ -3992,8 +3993,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis3.PerformanceGap = 10 - (double)salesValue;
                     getaxis3.SolutionName = "Sales";
                     getaxis3.StartDate = date;
-                    getaxis3.XAxis = xAxis;
-                    getaxis3.YAxis = yAxis;
+                    // getaxis3.XAxis = xAxis;
+                    // getaxis3.YAxis = yAxis;
                     getaxis3.fbId = fbid;
                     // getaxis3.Title = "Customer Acquisition";
                     getlistAxis.Add(getaxis3);
@@ -4003,8 +4004,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis4.PerformanceGap = 10 - (double)focusValue;
                     getaxis4.SolutionName = "Focus";
                     getaxis4.StartDate = date;
-                    getaxis4.XAxis = xAxis;
-                    getaxis4.YAxis = yAxis;
+                    // getaxis4.XAxis = xAxis;
+                    // getaxis4.YAxis = yAxis;
                     getaxis4.fbId = fbid;
                     //  getaxis4.Title = " Industry Focus";
                     getlistAxis.Add(getaxis4);
@@ -4014,8 +4015,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis5.PerformanceGap = 10 - (double)servicesValue;
                     getaxis5.SolutionName = "Services";
                     getaxis5.StartDate = date;
-                    getaxis5.XAxis = xAxis;
-                    getaxis5.YAxis = yAxis;
+                    //  getaxis5.XAxis = xAxis;
+                    // getaxis5.YAxis = yAxis;
                     getaxis5.fbId = fbid;
                     //getaxis5.Title = " Industry Focus";
                     getlistAxis.Add(getaxis5);
@@ -4025,8 +4026,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                     getaxis6.PerformanceGap = 10 - (double)ipValue;
                     getaxis6.SolutionName = "IP";
                     getaxis6.StartDate = date;
-                    getaxis6.XAxis = xAxis;
-                    getaxis6.YAxis = yAxis;
+                    //  getaxis6.XAxis = xAxis;
+                    //   getaxis6.YAxis = yAxis;
                     getaxis6.fbId = fbid;
                     var partnername = context.GetMPLIDName(mplId).ToList();
                     var partnerNameByMPLID = mplId;
@@ -4041,13 +4042,15 @@ namespace bExcellent.Service.BusinessLogic.Common
                     //   getaxis6.Title = " Industry Focus";
                     getlistAxis.Add(getaxis6);
 
-                    //var getaxis9 = new getAxis();
+                    var getaxis9 = new getAxis();
 
-                    //getaxis9.StartDate = date;
-                    //getaxis9.XAxis = xAxis;
-                    //getaxis9.YAxis = yAxis;
-                    ////  getaxis4.Title = " Industry Focus";
-                    //getlistAxis.Add(getaxis9);
+                    getaxis9.StartDate = date;
+                    getaxis9.XAxis = xAxis;
+                    getaxis9.YAxis = yAxis;
+                    getaxis9.axis = "yes";
+                    //  getaxis4.Title = " Industry Focus";
+                    getlistAxis.Add(getaxis9);
+
                     startIndex++;
                     loppIndex++;
                 }
@@ -4317,6 +4320,27 @@ namespace bExcellent.Service.BusinessLogic.Common
                 }
             }
         }
+        public List<User> GetGoalDates()
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                var usersList = context.GetUsersGoalDates();
+                var listUsers = new List<User>();
+                foreach (var usr in usersList)
+                {
+                    var user = new User
+                               {
+                                   FirstName = usr.FirstName,
+                                   LastName = usr.LastName,
+                                   EmailAddress = usr.EmailID,
+                                   GoalDate = (usr.GoalDate != null) ? (DateTime)usr.GoalDate : DateTime.Now
+
+                               };
+                    listUsers.Add(user);
+                }
+                return listUsers;
+            }
+        }
         public bool ToolRequestAccess(string firstname, string lastname, string alias, string manageralias, string role, string country)
         {
             var content = "<p>First Name: " + firstname + "</p><br/><p>Last Name: " + lastname +
@@ -4349,7 +4373,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                 string _userId = ConfigurationManager.AppSettings["emailUserId"];
                 string _pwd = ConfigurationManager.AppSettings["emailPassword"];
                 string _bcc = ConfigurationManager.AppSettings["bccEmail"];
-               // string _to = ConfigurationManager.AppSettings["mailTo1"];
+                // string _to = ConfigurationManager.AppSettings["mailTo1"];
 
                 //if (_to.Trim() == string.Empty)
                 //{
@@ -4398,5 +4422,6 @@ namespace bExcellent.Service.BusinessLogic.Common
         public string Title { get; set; }
         public string PartnerName { get; set; }
         public int fbId { get; set; }
+        public string axis { get; set; }
     }
 }

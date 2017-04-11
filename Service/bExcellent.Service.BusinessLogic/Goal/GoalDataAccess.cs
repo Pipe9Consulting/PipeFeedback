@@ -1010,6 +1010,12 @@ namespace bExcellent.Service.BusinessLogic.Goal
             {
                 context.UpdateGoalDatesForTM(tmid, goaldate);
                 SendEmailUpdated(goaldate, userid);
+                var currentDate = DateTime.Now;
+                var days = (goaldate - currentDate).TotalDays;
+                if (days <= 7)
+                {
+                    SendEmailCoachingDate(goaldate, userid, tmid);
+                }
             }
         }
         public void SendEmailUpdated(DateTime goaldate, int userid)
@@ -1018,17 +1024,17 @@ namespace bExcellent.Service.BusinessLogic.Goal
             try
             {
                 Common.Common Common = new Common.Common();
-                var user = Common.GetUserDetailsByMappingId(userid);
+                var user = Common.GetUserById(userid);
                 string _from = ConfigurationManager.AppSettings["fromEmail"];
                 string emailServer = ConfigurationManager.AppSettings["mailServer"];
                 string _userId = ConfigurationManager.AppSettings["emailUserId"];
                 string _pwd = ConfigurationManager.AppSettings["emailPassword"];
                 string _bcc = ConfigurationManager.AppSettings["bccEmail"];
                 string _to = ConfigurationManager.AppSettings["mailTo1"];
-                var userName = user.User.FirstName;
+                var userName = user.FirstName;
                 if (_to.Trim() == string.Empty)
                 {
-                    _to = user.User.EmailAddress;
+                    _to = user.EmailAddress;
                 }
                 var subject = "You have set a new coaching date";
                 var emailContenttemp = string.Empty;
@@ -1037,7 +1043,54 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                         userName,
                                         String.Format("{0:MM/dd/yyyy}", goaldate).Replace("-", "/")
                                       );
-                emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
+                emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.EmailAddress);
+                MailMessage objEmail = new MailMessage(_from, _to, subject, emailContent);
+
+                objEmail.Bcc.Add(_bcc);
+
+                objEmail.IsBodyHtml = true;
+
+                SmtpClient emailClient = new SmtpClient(emailServer);
+                System.Net.NetworkCredential basicAuthenticationInfo = new System.Net.NetworkCredential(_userId, _pwd);
+
+                emailClient.Host = emailServer;
+                emailClient.UseDefaultCredentials = false;
+                emailClient.Credentials = basicAuthenticationInfo;
+                emailClient.Send(objEmail);
+
+            }
+            catch (Exception ex)
+            {
+            }
+            //Log("WCF-SendEmail-OUT");
+        }
+        public void SendEmailCoachingDate(DateTime goaldate, int userid,int tmId)
+        {
+            // Log("WCF-SendEmail-IN");
+            try
+            {
+                Common.Common Common = new Common.Common();
+                var user = Common.GetUserById(userid);
+                var teammember = Common.GetUserDetailsByMappingId(tmId);
+                string _from = ConfigurationManager.AppSettings["fromEmail"];
+                string emailServer = ConfigurationManager.AppSettings["mailServer"];
+                string _userId = ConfigurationManager.AppSettings["emailUserId"];
+                string _pwd = ConfigurationManager.AppSettings["emailPassword"];
+                string _bcc = ConfigurationManager.AppSettings["bccEmail"];
+                string _to = ConfigurationManager.AppSettings["mailTo1"];
+                var userName = user.FirstName;
+                if (_to.Trim() == string.Empty)
+                {
+                    _to = user.EmailAddress;
+                }
+                var subject = "You have an upcoming coaching date";
+                var emailContenttemp = string.Empty;
+                var emailContent = string.Empty;
+                emailContenttemp = string.Format(Constant.CoachingDateReminder,
+                                        userName,teammember.User.FirstName,
+                                        String.Format("{0:MM/dd/yyyy}", goaldate).Replace("-", "/")
+                                      );
+                emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.EmailAddress);
                 MailMessage objEmail = new MailMessage(_from, _to, subject, emailContent);
 
                 objEmail.Bcc.Add(_bcc);
