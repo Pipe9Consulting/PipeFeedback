@@ -100,14 +100,6 @@
             });
         }
     </script>
-    <style>
-        #simplemodal-container {
-            background: none repeat scroll 0 0 #E5E5E5;
-            padding-bottom: 29% !important;
-            width: 42% !important;
-            left: 29% !important;
-        }
-    </style>
 
 
     <%

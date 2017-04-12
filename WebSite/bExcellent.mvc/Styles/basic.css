@@ -20,13 +20,10 @@
     cursor: pointer;
     margin: 0 auto;
     display: block;
-    width: 22%;
-    /*background-color: black;*/
     position: fixed;
-    left: 39%;
     z-index: 2147483647;
-    top: 25%;
-    height: 200px;
+    height: 400px;
+    width: 360px;
     padding: .2% 2% 0 2%;
     color: white;
 }
@@ -58,7 +55,6 @@
 }
 
 .textspace {
-    margin-top: 1%;
     background: none;
     padding: 1%;
     border: 1px solid #73d1d5;
@@ -134,11 +130,14 @@
 .errormsg {
     color: red;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 12px !important;
     background: url("../Images/error.png") no-repeat left;
     padding: 3px 0 3px 30px;
-    top: 15px;
+    top: 10px;
     position: relative;
+    float: left;
+    width: 110%;
+    height: 20px;
 }
 
 
@@ -162,11 +161,12 @@
 }*/
 
 #simplemodal-container {
-    height: 500px;
-    width: 450px;
+    height: 400px !important;
+    padding-bottom: 21% !important;
+    width: 400px !important;
     color: #bbb;
     background-color: #fff !important;
-    padding: 2%;
+    padding: 1%;
     z-index: 999999 !important;
     border-radius: 6px;
     box-shadow: 3px 3px 3px #666;
@@ -246,6 +246,7 @@
     font-weight: 500;
     font-size: 130%;
     float: right;
+    margin-top: 20px;
 }
 
     #resetbtn:hover, #ChangePassbtn:hover {
@@ -419,15 +420,8 @@
 
 @media screen and (max-width: 2000px) and (min-width: 1701px) {
 
-    #basic-changePassword {
-        top: 30% !important;
-        height: 400px;
-        padding-top: 1%;
-    }
-
-
     .simplemodal-data p {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     #basic-changePassword .close {
@@ -504,23 +498,39 @@
         color: #000;
         margin-bottom: 3%;
         font-weight: normal;
-        margin-top: -15%;
+        margin-top: 0%;
+        font-size: 24px;
     }
 
-
-
+    .simplemodal-data p {
+        font-size: 16px;
+    }
 
     #basic-changePassword {
-        top: 27% !important;
+        top: 24%;
+    }
+
+    #resetbtn, #ChangePassbtn {
+        font-size: 18px;
+    }
+
+    #basic-changePassword .textspace {
+        font-size: 14px;
+    }
+
+    #basic-changePassword {
         height: 333px;
         padding-top: .5%;
     }
 
+    #simplemodal-container {
+        padding-bottom: 32% !important;
+    }
 
-        #basic-changePassword .close {
-            padding: 3.8% !important;
-            top: -6.5% !important;
-        }
+    #basic-changePassword .close {
+        padding: 3.8% !important;
+        top: -6.5% !important;
+    }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1201px) {

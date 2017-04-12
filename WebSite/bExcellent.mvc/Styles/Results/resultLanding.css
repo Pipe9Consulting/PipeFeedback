@@ -1214,21 +1214,13 @@ h5 {
     padding: 5% 0 0 0;
 }
 
-#simplemodal-container {
-    background: none repeat scroll 0 0 #E5E5E5;
-    padding-bottom: 29% !important;
-    width: 38% !important;
+
+
+
+#simplemodal-container .browseright {
+    float: right;
+    width: 33%;
 }
-
-    #simplemodal-container a.modalCloseImg {
-        padding-bottom: 1.5% !important;
-        width: 1.5% !important;
-    }
-
-    #simplemodal-container .browseright {
-        float: right;
-        width: 33%;
-    }
 
 #pnlUpload {
     left: 2%;
