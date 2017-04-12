@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Mail;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ using Quartz.Impl;
 using Quartz.Impl.Triggers;
 using System.Web;
 using bExcellent.Service.BusinessLogic;
+using bExcellent.Service.BusinessLogic.Common;
 
 namespace DemoCloudAsCoachService
 {
@@ -74,7 +76,9 @@ namespace DemoCloudAsCoachService
                 var Goal = common.GetGoalDates();
                 foreach (var date in Goal)
                 {
-                    var goalDate = Convert.ToDateTime(date.GoalDate);
+                    string EmailTemplateNew = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'> <html> <head><title></title></head> <body style='background: #f5f5f5;'> <table border='0' cellspacing='0' cellpadding='5' style='width: 100%; background: #f5f5f5;'> <tr> <td width='25%'></td> <td width='50%'> <table width='100%' border='0' cellspacing='0' cellpadding='5' style='margin: 0 auto; background: #f5f5f5;'> <tr> <td bgcolor='#f5f5f5' style='text-align:center;'> <table width='100%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td style='text-align:center;' width:'90%'><a href='http://www.pipe9consulting.com' target='_blank'> <img src='https://www.pipe9feedback.com/Images/overall/P9_logo_new.png' alt='pipe9Consulting' border='0' style='outline: 0' width='80' /> </a></td> </tr> </table> </td> </tr> </table> <table width='520px' border='0' cellspacing='0' cellpadding='5' style='margin: 0 auto; background: #fff; border: 1px solid #e5e5e5;'> <tr> <td bgcolor='#fff' style='font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333; line-height: 1.5;'> <table width='95%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #fff;'>&nbsp;</td> </tr> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333;'>{0} <p>Regards, </p> <p>The Pipe9 Team </p> </td> </tr> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #fff;'>&nbsp;</td> </tr> </table> </td> </tr> </table> <table width='520px' border='0' cellspacing='0' cellpadding='2' style='margin: 0 auto; background: #f5f5f5;'> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 1.7; color: #333;'> <p>&nbsp;</p> <p>This e-mail was sent to <a href='mailto:{1}' style='color: #23a1a7; text-decoration: none;'><font style='color: #23a1a7; text-decoration: none;'>{1}</font></a> and contains information directly related to your Pipe9 Feedback account. This is a one-time email. You received this email because of your participation on the Pipe9 Feedback tool. Please do not reply to this email. If you want to contact us, please contact  <a href='mailto:support@pipe9consulting.com' style='color: #23a1a7; text-decoration: none;'><font color='#23a1a7'>support@pipe9consulting.com</font></a>. </p> <p>&nbsp;</p> </td> </tr> <tr> <td style='background: #f5f5f5; border-top: 1px solid #23a1a7;'> <table width='100%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td width='100%'> <div style='font-family: Arial, Helvetica, sans-serif; color: #333; font-size: 10px;'>&copy; 2017, Pipe9 consulting. All Rights Reserved </div> </td> </tr> </table> </td> </tr> </table> </td> <td width='25%'></td> </tr> </table> </body> </html>";
+                    string CoachingDateReminder = " <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'> Hello <span>{0},</span> </p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'> Your coaching date is one week away. </p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'> Your coaching date for {1} is on {2}. Please sign into your Pipe9 Feedback account and provide updated Team-Feedback to {1}. This will enable you to track the progress each of your team members has made since that last time you provided Team-Feedback.</p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'> If you have any questions, please contact <a href='mailto:support@pipe9consulting.com' style='color: #23a1a7'>support@pipe9consulting.com</a>. </p>";
+                    var goalDate = Convert.ToDateTime(date.goalDate);
                     var currentDate = DateTime.Now;
                     var days = (goalDate - currentDate).TotalDays;
                     var count = 1;
@@ -107,6 +111,48 @@ namespace DemoCloudAsCoachService
                 //}
             }
 
+            public void SendRemider(string managerAlias,string emailContents)
+            {
+                try
+                {
+                    string _from = ConfigurationManager.AppSettings["fromEmail"];
+                    string emailServer = ConfigurationManager.AppSettings["mailServer"];
+                    string _userId = ConfigurationManager.AppSettings["emailUserId"];
+                    string _pwd = ConfigurationManager.AppSettings["emailPassword"];
+                    string _bcc = ConfigurationManager.AppSettings["bccEmail"];
+                    string _to = ConfigurationManager.AppSettings["mailTo1"];
+                   // var userName = managerName;
+                    if (_to.Trim() == string.Empty)
+                    {
+                        _to = managerAlias;
+                    }
+                    var subject = "You have an upcoming coaching date";
+                   // var emailContenttemp = string.Empty;
+                    var emailContent = emailContents;
+                    //emailContenttemp = string.Format(Constant.CoachingDateReminder,
+                    //                        userName, teammember.User.FirstName,
+                    //                        String.Format("{0:MM/dd/yyyy}", goaldate).Replace("-", "/")
+                    //                      );
+                    //emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.EmailAddress);
+                    MailMessage objEmail = new MailMessage(_from, _to, subject, emailContent);
+
+                    objEmail.Bcc.Add(_bcc);
+
+                    objEmail.IsBodyHtml = true;
+
+                    SmtpClient emailClient = new SmtpClient(emailServer);
+                    System.Net.NetworkCredential basicAuthenticationInfo = new System.Net.NetworkCredential(_userId, _pwd);
+
+                    emailClient.Host = emailServer;
+                    emailClient.UseDefaultCredentials = false;
+                    emailClient.Credentials = basicAuthenticationInfo;
+                    emailClient.Send(objEmail);
+
+                }
+                catch (Exception ex)
+                {
+                }
+            }
             public static void SendYammerUser(string emailid, string subject, string description, string imageurl, string yammertoken)
             {
                 try

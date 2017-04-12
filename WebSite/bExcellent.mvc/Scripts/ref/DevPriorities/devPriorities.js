@@ -481,7 +481,7 @@ var devLanding = {
             url: option.url,
             success: function (response) {
                 //alert(response.StartDate);
-                // debugger;
+           //     debugger;
 
                 $('#tmStartDate').html("Start Date<br />" + response.StartDate);
                 $('#tmEndDate').html("Next Coaching Date<br />" + response.EndDate);
@@ -548,9 +548,12 @@ var devLanding = {
                 }
                 //Remaining days
                 var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-                var firstDate = new Date(splitStartdate[2], splitStartdate[1], splitStartdate[0]);
-                var secondDate = new Date(splitEnddate[2], splitEnddate[1], splitEnddate[0]);
-
+                var d = new Date();
+             //   debugger;
+                //var firstDate = new Date(splitStartdate[2], splitStartdate[1], splitStartdate[0]);
+                //var secondDate = new Date(splitEnddate[2], splitEnddate[1], splitEnddate[0]);
+                var secondDate = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+                var firstDate = new Date(splitEnddate[2]+"-"+splitEnddate[1]+"-"+ splitEnddate[0]);
                 var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay)));
                 //alert(diffDays);
                 var remainingDays = diffDays.toString();// response.RemainingDays.toString();

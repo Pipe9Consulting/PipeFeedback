@@ -3147,7 +3147,7 @@ namespace bExcellent.Service.DataAccess
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -8969,7 +8969,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -9959,7 +9959,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -10315,7 +10315,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary picture
 		{
 			get
@@ -35697,78 +35697,114 @@ namespace bExcellent.Service.DataAccess
 	public partial class V4_GetUsersGoalDatesResult
 	{
 		
-		private string _FirstName;
+		private string _MamangerName;
 		
-		private string _LastName;
+		private string _TeamMemberName;
 		
-		private string _EmailID;
+		private string _ManagerAlias;
 		
-		private System.Nullable<System.DateTime> _GoalDate;
+		private System.Nullable<System.DateTime> _Goaldate;
+		
+		private System.Nullable<System.DateTime> _ManagerSetDate;
+		
+		private System.Nullable<bool> _ISGoalShared;
 		
 		public V4_GetUsersGoalDatesResult()
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
-		public string FirstName
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MamangerName", DbType="NVarChar(86)")]
+		public string MamangerName
 		{
 			get
 			{
-				return this._FirstName;
+				return this._MamangerName;
 			}
 			set
 			{
-				if ((this._FirstName != value))
+				if ((this._MamangerName != value))
 				{
-					this._FirstName = value;
+					this._MamangerName = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string LastName
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TeamMemberName", DbType="NVarChar(86)")]
+		public string TeamMemberName
 		{
 			get
 			{
-				return this._LastName;
+				return this._TeamMemberName;
 			}
 			set
 			{
-				if ((this._LastName != value))
+				if ((this._TeamMemberName != value))
 				{
-					this._LastName = value;
+					this._TeamMemberName = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailID", DbType="NVarChar(100)")]
-		public string EmailID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ManagerAlias", DbType="NVarChar(100)")]
+		public string ManagerAlias
 		{
 			get
 			{
-				return this._EmailID;
+				return this._ManagerAlias;
 			}
 			set
 			{
-				if ((this._EmailID != value))
+				if ((this._ManagerAlias != value))
 				{
-					this._EmailID = value;
+					this._ManagerAlias = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GoalDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> GoalDate
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Goaldate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Goaldate
 		{
 			get
 			{
-				return this._GoalDate;
+				return this._Goaldate;
 			}
 			set
 			{
-				if ((this._GoalDate != value))
+				if ((this._Goaldate != value))
 				{
-					this._GoalDate = value;
+					this._Goaldate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ManagerSetDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ManagerSetDate
+		{
+			get
+			{
+				return this._ManagerSetDate;
+			}
+			set
+			{
+				if ((this._ManagerSetDate != value))
+				{
+					this._ManagerSetDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ISGoalShared", DbType="Bit")]
+		public System.Nullable<bool> ISGoalShared
+		{
+			get
+			{
+				return this._ISGoalShared;
+			}
+			set
+			{
+				if ((this._ISGoalShared != value))
+				{
+					this._ISGoalShared = value;
 				}
 			}
 		}

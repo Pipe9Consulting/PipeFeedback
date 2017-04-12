@@ -4320,20 +4320,20 @@ namespace bExcellent.Service.BusinessLogic.Common
                 }
             }
         }
-        public List<User> GetGoalDates()
+        public List<GoalEmail> GetGoalDates()
         {
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
                 var usersList = context.GetUsersGoalDates();
-                var listUsers = new List<User>();
+                var listUsers = new List<GoalEmail>();
                 foreach (var usr in usersList)
                 {
-                    var user = new User
+                    var user = new GoalEmail
                                {
-                                   FirstName = usr.FirstName,
-                                   LastName = usr.LastName,
-                                   EmailAddress = usr.EmailID,
-                                   GoalDate = (usr.GoalDate != null) ? (DateTime)usr.GoalDate : DateTime.Now
+                                   ManagerName = usr.MamangerName,
+                                   ManagerAlias = usr.ManagerAlias,
+                                   tmName = usr.TeamMemberName,
+                                   goalDate = (usr.Goaldate != null) ? (DateTime)usr.Goaldate : DateTime.Now
 
                                };
                     listUsers.Add(user);

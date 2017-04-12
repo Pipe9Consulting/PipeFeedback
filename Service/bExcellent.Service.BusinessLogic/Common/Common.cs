@@ -816,7 +816,7 @@ namespace bExcellent.Service.BusinessLogic.Common
             return DataAccess.ToolRequestAccess(firstname, lastname, alias, manageralias, role, country);
         }
 
-        public List<User> GetGoalDates()
+        public List<GoalEmail> GetGoalDates()
         {
             return DataAccess.GetGoalDates();
         }

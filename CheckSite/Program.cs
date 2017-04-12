@@ -28,7 +28,7 @@ namespace CheckSite
             var Goal = common.GetGoalDates();
             foreach (var date in Goal)
             {
-                var goalDate = Convert.ToDateTime(date.GoalDate);
+                var goalDate = Convert.ToDateTime(date.goalDate);
                 var currentDate = DateTime.Now;
                 var days = (goalDate - currentDate).TotalDays;
                 if (days > 7 && days < 8)

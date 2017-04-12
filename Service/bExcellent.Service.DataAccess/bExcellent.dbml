@@ -3535,10 +3535,12 @@
   </Function>
   <Function Name="dbo.V4_GetUsersGoalDates" Method="GetUsersGoalDates">
     <ElementType Name="V4_GetUsersGoalDatesResult">
-      <Column Name="FirstName" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
-      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="EmailID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="GoalDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MamangerName" Type="System.String" DbType="NVarChar(86)" CanBeNull="true" />
+      <Column Name="TeamMemberName" Type="System.String" DbType="NVarChar(86)" CanBeNull="true" />
+      <Column Name="ManagerAlias" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Goaldate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ManagerSetDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISGoalShared" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

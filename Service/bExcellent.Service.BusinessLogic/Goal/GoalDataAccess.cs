@@ -871,7 +871,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
             }
             else
             {
-                if (previousDevPriority[0].CurrentFeedbackId != devPriorities[0].CurrentFeedbackId)
+                if (devPriorities.Count!=0&&(previousDevPriority[0].CurrentFeedbackId != devPriorities[0].CurrentFeedbackId))
                 {
                     var devpriorities = previousDevPriority.Union(devPriorities).GroupBy(a => a.QuestionId).Select(grp => grp.First()).ToList();
                     var developmentPrioritieses = devpriorities as List<DevelopmentPriorities> ?? devpriorities.ToList().GroupBy(a => a.QuestionId).Select(grp => grp.First()).ToList();

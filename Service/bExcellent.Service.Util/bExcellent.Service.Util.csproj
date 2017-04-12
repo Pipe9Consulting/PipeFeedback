@@ -88,6 +88,7 @@
     <Compile Include="Response\DashBoard.cs" />
     <Compile Include="Response\DET.cs" />
     <Compile Include="Response\DIYQuestions.cs" />
+    <Compile Include="Response\GoalEmail.cs" />
     <Compile Include="Response\Notification.cs" />
     <Compile Include="Response\OutstandingFeedbacks.cs" />
     <Compile Include="Response\Partner.cs" />
