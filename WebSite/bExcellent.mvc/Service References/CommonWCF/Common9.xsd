@@ -69,15 +69,19 @@
       <xs:element minOccurs="0" name="DET" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Focus" type="xs:double" />
       <xs:element minOccurs="0" name="HighVelocity" type="xs:int" />
       <xs:element minOccurs="0" name="IndFcous1" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="IndFcous2" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="IndustrySpecialist" type="xs:int" />
+      <xs:element minOccurs="0" name="Ip" type="xs:double" />
       <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ManagerAlias" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ManagerFirstName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ManagerLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Marketting" type="xs:double" />
       <xs:element minOccurs="0" name="ModeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Momentum" type="xs:double" />
       <xs:element minOccurs="0" name="Mplid" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Omnivores" type="xs:int" />
       <xs:element minOccurs="0" name="Order" type="xs:int" />
@@ -91,10 +95,13 @@
       <xs:element minOccurs="0" name="Partners" type="xs:int" />
       <xs:element minOccurs="0" name="President" type="xs:int" />
       <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sales" type="xs:double" />
+      <xs:element minOccurs="0" name="Services" type="xs:double" />
       <xs:element minOccurs="0" name="TimeZone" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZoneAlias" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZoneFirstName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TimeZoneLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
       <xs:element minOccurs="0" name="XAxis" type="xs:double" />
       <xs:element minOccurs="0" name="YAxis" type="xs:double" />
     </xs:sequence>

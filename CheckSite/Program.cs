@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -24,19 +25,80 @@ namespace CheckSite
 
         private static void Main(string[] args)
         {
-            var common = new bExcellent.Service.BusinessLogic.Common.CommonDataAccess();
-            var Goal = common.GetGoalDates();
+            bExcellent.Service.BusinessLogic.Common.Common common = new bExcellent.Service.BusinessLogic.Common.Common();
+
+            var Goal = common.GetGoalDates().GroupBy(a => a.ManagerId);
+            var counts = 1;
             foreach (var date in Goal)
             {
-                var goalDate = Convert.ToDateTime(date.goalDate);
+                string EmailTemplateNew = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'> <html> <head><title></title></head> <body style='background: #f5f5f5;'> <table border='0' cellspacing='0' cellpadding='5' style='width: 100%; background: #f5f5f5;'> <tr> <td width='25%'></td> <td width='50%'> <table width='100%' border='0' cellspacing='0' cellpadding='5' style='margin: 0 auto; background: #f5f5f5;'> <tr> <td bgcolor='#f5f5f5' style='text-align:center;'> <table width='100%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td style='text-align:center;' width:'90%'><a href='http://www.pipe9consulting.com' target='_blank'> <img src='https://www.pipe9feedback.com/Images/overall/P9_logo_new.png' alt='pipe9Consulting' border='0' style='outline: 0' width='80' /> </a></td> </tr> </table> </td> </tr> </table> <table width='520px' border='0' cellspacing='0' cellpadding='5' style='margin: 0 auto; background: #fff; border: 1px solid #e5e5e5;'> <tr> <td bgcolor='#fff' style='font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333; line-height: 1.5;'> <table width='95%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #fff;'>&nbsp;</td> </tr> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333;'>{0} <p>Regards, </p> <p>The Pipe9 Team </p> </td> </tr> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #fff;'>&nbsp;</td> </tr> </table> </td> </tr> </table> <table width='520px' border='0' cellspacing='0' cellpadding='2' style='margin: 0 auto; background: #f5f5f5;'> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 1.7; color: #333;'> <p>&nbsp;</p> <p>This e-mail was sent to <a href='mailto:{1}' style='color: #23a1a7; text-decoration: none;'><font style='color: #23a1a7; text-decoration: none;'>{1}</font></a> and contains information directly related to your Pipe9 Feedback account. This is a one-time email. You received this email because of your participation on the Pipe9 Feedback tool. Please do not reply to this email. If you want to contact us, please contact  <a href='mailto:support@pipe9consulting.com' style='color: #23a1a7; text-decoration: none;'><font color='#23a1a7'>support@pipe9consulting.com</font></a>. </p> <p>&nbsp;</p> </td> </tr> <tr> <td style='background: #f5f5f5; border-top: 1px solid #23a1a7;'> <table width='100%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td width='100%'> <div style='font-family: Arial, Helvetica, sans-serif; color: #333; font-size: 10px;'>&copy; 2017, Pipe9 consulting. All Rights Reserved </div> </td> </tr> </table> </td> </tr> </table> </td> <td width='25%'></td> </tr> </table> </body> </html>";
+
+                var goalDates = date.FirstOrDefault().goalDate;
+                var managerName = date.FirstOrDefault().ManagerName;
+                var managerAlias = date.FirstOrDefault().ManagerAlias;
+                var goalDate = Convert.ToDateTime(goalDates);
                 var currentDate = DateTime.Now;
                 var days = (goalDate - currentDate).TotalDays;
-                if (days > 7 && days < 8)
+                var count = 1;
+                goalDates = Convert.ToDateTime("2017-05-12");
+                managerAlias = "gabyfe@microsoft.com";
+                //if (days > 7 && days < 8)
+                //{
+                var teammembers = "Michelle";
+                //var tmCount = date.Count();
+                //var tmcounts = 1;
+                //foreach (var name in date)
+                //{
+                   
+                //    if (tmCount == 1)
+                //    {
+                //        teammembers = name.tmName + ", ";
+                //    }
+                //    else
+                //    {
+                //        if (tmCount == tmcounts)
+                //        {
+                //            teammembers = teammembers.Substring(0, teammembers.Length - 2) + " and " + name.tmName+", ";
+                //        }
+                //        else
+                //        {
+                //            teammembers = teammembers + name.tmName + ", ";
+                //        }
+                        
+                //    }
+                //    tmcounts++;
+                //}
+                string coachingDateReminder = " <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'> Hello <span>Gaby,</span> </p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'>Your coaching date is two days away. </p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'>Your coaching date for " + teammembers + " is on " + goalDates.ToString("MM-dd-yyyy",CultureInfo.InvariantCulture) + ". Please sign into your <a href='https://www.pipe9feedback.com/' style='color: #23a1a7'>Pipe9 Feedback</a> account and provide updated Team-Feedback to " + teammembers + ". This will enable you to track the progress each of your team members have made since that last time you provided Team-Feedback.</p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'> This coaching date can be adjusted at any time by navigating to the Development Priorities feature within the tool. If you have any questions, please contact <a href='mailto:support@pipe9consulting.com' style='color: #23a1a7'>support@pipe9consulting.com</a>. </p>";
+                var emailTemplate = string.Format(EmailTemplateNew, coachingDateReminder, managerAlias);
+                if (counts == 1)
                 {
-                    //Send Mail
+                 SendRemider(managerAlias, emailTemplate);
+                    counts++;
                 }
+
+                // count++;
+                //}
+                //else
+                //{
+
+                //    count++;
+                //}
             }
-           
+
+            var common1 = new bExcellent.Service.BusinessLogic.Common.CommonDataAccess();
+            var Goal1 = common1.GetOverallReportsCalculated();
+            var t = 1;
+            //foreach (var date in Goal)
+            //{
+            //    var goalDate = Convert.ToDateTime(date.goalDate);
+            //    var currentDate = DateTime.Now;
+            //    var days = (goalDate - currentDate).TotalDays;
+            //    if (days > 7 && days < 8)
+            //    {
+            //        //Send Mail
+            //    }
+            //}
+
             //var common = new bExcellent.Service.BusinessLogic.Common.CommonDataAccess();
             try
             {
@@ -50,7 +112,7 @@ namespace CheckSite
                 msg.From = new MailAddress("tillidtest@gmail.com");
                 msg.To.Add(new MailAddress("pr@pipe9consulting.com"));
                 msg.Subject = "r";
-                msg.Body ="r";
+                msg.Body = "r";
                 StringBuilder str = new StringBuilder();
                 str.AppendLine("BEGIN:VCALENDAR");
                 str.AppendLine("PRODID:-//" + "pr@pipe9consulting.com");
@@ -64,7 +126,7 @@ namespace CheckSite
                 //str.AppendLine(string.Format("DTSTART:{0:yyyyMMddTHHmmssZ}", objApptEmail.StartDate.ToString()));
                 //str.AppendLine(string.Format("DTSTAMP:{0:yyyyMMddTHHmmssZ}", DateTime.UtcNow));
                 //str.AppendLine(string.Format("DTEND:{0:yyyyMMddTHHmmssZ}", objApptEmail.EndDate.ToString()));
-               // str.AppendLine("LOCATION:" + objApptEmail.Location);
+                // str.AppendLine("LOCATION:" + objApptEmail.Location);
                 str.AppendLine(string.Format("DESCRIPTION:{0}", ""));
                 str.AppendLine(string.Format("X-ALT-DESC;FMTTYPE=text/html:{0}", "bdy"));
                 str.AppendLine(string.Format("SUMMARY:{0}", "call"));
@@ -86,10 +148,10 @@ namespace CheckSite
                 sc.EnableSsl = true;
                 sc.Credentials = nc;
                 sc.Send(msg);
-               
+
             }
             catch { }
-         //   var t = common.GetPSMReports(101);
+            //   var t = common.GetPSMReports(101);
             var c = 9;
             //double k = (double)12.0/11.0;
             //var ki = k;
@@ -122,7 +184,7 @@ namespace CheckSite
             //{
             //  question.WeightagePerQuestion = ((double)question.Importance / sumOfallWeightage) * precentageForSurvey;
             //}
-           
+
             //SurveyAnswers color = (SurveyAnswers)System.Enum.Parse(typeof(SurveyAnswers), "Trivial");
             //int animalNumber = (int)Enum.Parse(typeof(SurveyAnswers), "Trivial");
             //string x = ((SurveyAnswers)4).ToString();
@@ -391,7 +453,48 @@ namespace CheckSite
 
             PostOnWall(cononicalurl, description, subject, yammertoken);
         }
+        public static void SendRemider(string managerAlias, string emailContents)
+        {
+            try
+            {
+                string _from = ConfigurationManager.AppSettings["fromEmail"];
+                string emailServer = ConfigurationManager.AppSettings["mailServer"];
+                string _userId = ConfigurationManager.AppSettings["emailUserId"];
+                string _pwd = ConfigurationManager.AppSettings["emailPassword"];
+                string _bcc = ConfigurationManager.AppSettings["bccEmail"];
+                string _to = ConfigurationManager.AppSettings["mailTo1"];
+                // var userName = managerName;
+                if (_to.Trim() == string.Empty)
+                {
+                    _to = managerAlias;
+                }
+                var subject = "You have an upcoming coaching date";
+                // var emailContenttemp = string.Empty;
+                var emailContent = emailContents;
+                //emailContenttemp = string.Format(Constant.CoachingDateReminder,
+                //                        userName, teammember.User.FirstName,
+                //                        String.Format("{0:MM/dd/yyyy}", goaldate).Replace("-", "/")
+                //                      );
+                //emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.EmailAddress);
+                MailMessage objEmail = new MailMessage(_from, _to, subject, emailContent);
 
+                objEmail.Bcc.Add(_bcc);
+
+                objEmail.IsBodyHtml = true;
+
+                SmtpClient emailClient = new SmtpClient(emailServer);
+                System.Net.NetworkCredential basicAuthenticationInfo = new System.Net.NetworkCredential(_userId, _pwd);
+
+                emailClient.Host = emailServer;
+                emailClient.UseDefaultCredentials = false;
+                emailClient.Credentials = basicAuthenticationInfo;
+                emailClient.Send(objEmail);
+
+            }
+            catch (Exception ex)
+            {
+            }
+        }
         public static void SendYammerGroup(string emailid, string subject, string description, string imageurl, string yammertoken, string groupid)
         {
             var span = new TimeSpan(DateTime.Now.GetHashCode());
@@ -592,10 +695,10 @@ namespace CheckSite
     }
     enum SurveyAnswers
     {
-        None=1,
-        Trivial=2,
-        Regular=3,
-        Important=4,
-        Critical=5
+        None = 1,
+        Trivial = 2,
+        Regular = 3,
+        Important = 4,
+        Critical = 5
     };
 }

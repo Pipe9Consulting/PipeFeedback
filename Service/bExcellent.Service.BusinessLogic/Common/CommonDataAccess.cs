@@ -3431,10 +3431,16 @@ namespace bExcellent.Service.BusinessLogic.Common
                         pseRepot.ModeName = "1. President's Club";
                         presidentsClub = presidentsClub + 1;
                     }
-
+                    pseRepot.PartnerResults = GetPartnerResults(report.UserId, report.PartnerId);
                     pseRepot.OverallCount = overallCount;
                     pseRepot.XAxis = axisvalue.XAxis;
                     pseRepot.YAxis = axisvalue.YAxis;
+                    pseRepot.Momentum = axisvalue.Momentum;
+                    pseRepot.Marketting = axisvalue.Marketting;
+                    pseRepot.Sales = axisvalue.Sales;
+                    pseRepot.Focus = axisvalue.Focus;
+                    pseRepot.Services = axisvalue.Services;
+                    pseRepot.Ip = axisvalue.IP;
                     pseRepot.IndFcous1 = axisvalue.IndustryF1;
                     pseRepot.IndFcous2 = axisvalue.IndustryF2;
                     pseRepot.Partners = 1;
@@ -3451,6 +3457,9 @@ namespace bExcellent.Service.BusinessLogic.Common
                 }
                 foreach (var prog in totalprogress)
                 {
+                    var masnagerDetails = context.PSEManager(prog.UserId).FirstOrDefault();
+                    var aldetails = context.PSEAreaLead(prog.UserId).FirstOrDefault();
+                    var tmZone = context.PSETimeZoneLead(prog.UserId).FirstOrDefault();
                     var Reports = new PSMReports();
                     Reports.Partners = 1;
                     Reports.Completions = 0;
@@ -3460,6 +3469,17 @@ namespace bExcellent.Service.BusinessLogic.Common
                     Reports.Country = prog.Country;
                     Reports.FirstName = prog.FirstName;
                     Reports.LastName = prog.LastName;
+
+                    Reports.ManagerFirstName = masnagerDetails.FirstName;
+                    Reports.ManagerLastName = masnagerDetails.LastName;
+                    Reports.ManagerAlias = masnagerDetails.EmailId.Replace("@microsoft.com", ""); 
+                    Reports.AreaLeadFirstName = aldetails.FirstName;
+                    Reports.AreaLeadLastName = aldetails.LastName;
+                    Reports.AreaLeadAlias = aldetails.EmailId.Replace("@microsoft.com", ""); 
+                    Reports.TimeZoneFirstName = tmZone.FirstName;
+                    Reports.TimeZoneLastName = tmZone.LastName;
+                    Reports.TimeZoneAlias = tmZone.EmailId.Replace("@microsoft.com", "");
+
                     Reports.Role = prog.Role;
                     Reports.Mplid = prog.Mplid;
                     var partnername = context.GetMPLIDName(Reports.Mplid).ToList();
@@ -3789,6 +3809,12 @@ namespace bExcellent.Service.BusinessLogic.Common
                 var yAxis = (focusValue + servicesValue + ipValue) / 3;
                 getaxis.XAxis = xAxis;
                 getaxis.YAxis = yAxis;
+                getaxis.Momentum = momentValue;
+                getaxis.Marketting = markettingValue;
+                getaxis.Sales = salesValue;
+                getaxis.Focus = focusValue;
+                getaxis.Services = servicesValue;
+                getaxis.IP = ipValue;
                 getaxis.IndustryF1 = focus1.FirstOrDefault(a => a.QuestionId == 29).Answer;
                 getaxis.IndustryF2 = focus1.FirstOrDefault(a => a.QuestionId == 30).Answer;
                 return getaxis;
@@ -4137,7 +4163,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                                                               FirstName = partner.FirstName,
                                                               LastName = partner.LastName,
                                                               Role = partner.Role,
-                                                              Mplid = partner.MPLID
+                                                              Mplid = partner.MPLID,
+                                                              UserId=partner.UserId
                                                           }));
             }
             return statusList;
@@ -4333,7 +4360,8 @@ namespace bExcellent.Service.BusinessLogic.Common
                                    ManagerName = usr.MamangerName,
                                    ManagerAlias = usr.ManagerAlias,
                                    tmName = usr.TeamMemberName,
-                                   goalDate = (usr.Goaldate != null) ? (DateTime)usr.Goaldate : DateTime.Now
+                                   goalDate = (usr.Goaldate != null) ? (DateTime)usr.Goaldate : DateTime.Now,
+                                   ManagerId=(int) usr.MamangerId
 
                                };
                     listUsers.Add(user);
@@ -4407,6 +4435,14 @@ namespace bExcellent.Service.BusinessLogic.Common
     {
         public double XAxis { get; set; }
         public double YAxis { get; set; }
+
+        public double Momentum { get; set; }
+        public double Marketting { get; set; }
+        public double Sales { get; set; }
+        public double Focus { get; set; }
+        public double Services { get; set; }
+        public double IP { get; set; }
+
         public string IndustryF1 { get; set; }
         public string StartDate { get; set; }
         public string IndustryF2 { get; set; }

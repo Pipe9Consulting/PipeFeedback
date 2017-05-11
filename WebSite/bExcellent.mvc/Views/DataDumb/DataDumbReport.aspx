@@ -46,7 +46,7 @@
                 <p>All up Team Member Data Dump</p>
             </div>
         </form>
-        <form id="getsubmit" method="POST" action="../DataDumb/GetMSAReport">
+        <form id="getsubmit" method="POST" action="../DataDumb/GetPSEReport">
             <input type="hidden" id="poeid" name="poeid" value="0" />
             <div class="report" id="getmanagerReport">
                 <img src="../../Images/manager-report.png" />

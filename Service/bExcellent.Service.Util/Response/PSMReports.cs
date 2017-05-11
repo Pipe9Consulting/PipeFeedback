@@ -36,6 +36,15 @@ namespace bExcellent.Service.Util.Response
         public int Completions { get; set; }
         public int Omnivores { get; set; }
         public int HighVelocity { get; set; }
+
+
+        public double Momentum { get; set; }
+        public double Marketting { get; set; }
+        public double Sales { get; set; }
+        public double Focus { get; set; }
+        public double Services { get; set; }
+        public double Ip { get; set; }
+
         public int IndustrySpecialist { get; set; }
         public int President { get; set; }
         public int OverallCount { get; set; }
@@ -44,6 +53,7 @@ namespace bExcellent.Service.Util.Response
         public int OverallHighVelocity { get; set; }
         public int OverallIndustrySpecialist { get; set; }
         public int OverallPresident { get; set; }
+        public int UserId { get; set; }
         public List<PPAResults> PartnerResults { get; set; }
     }
 }

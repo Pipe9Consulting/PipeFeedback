@@ -7,6 +7,7 @@ namespace bExcellent.Service.Util.Response
 {
     public class GoalEmail
     {
+        public int ManagerId { get; set; }
         public string ManagerName { get; set; }
         public string ManagerAlias { get; set; }
         public string tmName { get; set; }

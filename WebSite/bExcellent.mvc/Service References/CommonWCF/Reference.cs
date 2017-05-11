@@ -1549,6 +1549,9 @@ namespace bExcellent.mvc.CommonWCF {
         private string FirstNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double FocusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int HighVelocityField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1559,6 +1562,9 @@ namespace bExcellent.mvc.CommonWCF {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IndustrySpecialistField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double IpField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string LastNameField;
@@ -1573,7 +1579,13 @@ namespace bExcellent.mvc.CommonWCF {
         private string ManagerLastNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double MarkettingField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ModeNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double MomentumField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string MplidField;
@@ -1615,6 +1627,12 @@ namespace bExcellent.mvc.CommonWCF {
         private string RoleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double SalesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double ServicesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TimeZoneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1625,6 +1643,9 @@ namespace bExcellent.mvc.CommonWCF {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TimeZoneLastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int UserIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private double XAxisField;
@@ -1760,6 +1781,19 @@ namespace bExcellent.mvc.CommonWCF {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Focus {
+            get {
+                return this.FocusField;
+            }
+            set {
+                if ((this.FocusField.Equals(value) != true)) {
+                    this.FocusField = value;
+                    this.RaisePropertyChanged("Focus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int HighVelocity {
             get {
                 return this.HighVelocityField;
@@ -1807,6 +1841,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.IndustrySpecialistField.Equals(value) != true)) {
                     this.IndustrySpecialistField = value;
                     this.RaisePropertyChanged("IndustrySpecialist");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Ip {
+            get {
+                return this.IpField;
+            }
+            set {
+                if ((this.IpField.Equals(value) != true)) {
+                    this.IpField = value;
+                    this.RaisePropertyChanged("Ip");
                 }
             }
         }
@@ -1864,6 +1911,19 @@ namespace bExcellent.mvc.CommonWCF {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Marketting {
+            get {
+                return this.MarkettingField;
+            }
+            set {
+                if ((this.MarkettingField.Equals(value) != true)) {
+                    this.MarkettingField = value;
+                    this.RaisePropertyChanged("Marketting");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string ModeName {
             get {
                 return this.ModeNameField;
@@ -1872,6 +1932,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.ModeNameField, value) != true)) {
                     this.ModeNameField = value;
                     this.RaisePropertyChanged("ModeName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Momentum {
+            get {
+                return this.MomentumField;
+            }
+            set {
+                if ((this.MomentumField.Equals(value) != true)) {
+                    this.MomentumField = value;
+                    this.RaisePropertyChanged("Momentum");
                 }
             }
         }
@@ -2046,6 +2119,32 @@ namespace bExcellent.mvc.CommonWCF {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Sales {
+            get {
+                return this.SalesField;
+            }
+            set {
+                if ((this.SalesField.Equals(value) != true)) {
+                    this.SalesField = value;
+                    this.RaisePropertyChanged("Sales");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Services {
+            get {
+                return this.ServicesField;
+            }
+            set {
+                if ((this.ServicesField.Equals(value) != true)) {
+                    this.ServicesField = value;
+                    this.RaisePropertyChanged("Services");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string TimeZone {
             get {
                 return this.TimeZoneField;
@@ -2093,6 +2192,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.TimeZoneLastNameField, value) != true)) {
                     this.TimeZoneLastNameField = value;
                     this.RaisePropertyChanged("TimeZoneLastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int UserId {
+            get {
+                return this.UserIdField;
+            }
+            set {
+                if ((this.UserIdField.Equals(value) != true)) {
+                    this.UserIdField = value;
+                    this.RaisePropertyChanged("UserId");
                 }
             }
         }
@@ -2905,7 +3017,13 @@ namespace bExcellent.mvc.CommonWCF {
         private int AnswerValueField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double FocusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FullQuestionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double IPField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string IndustryF1Field;
@@ -2914,7 +3032,13 @@ namespace bExcellent.mvc.CommonWCF {
         private string IndustryF2Field;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double MarkettingField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ModuleNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double MomentumField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string PartnerNameField;
@@ -2927,6 +3051,12 @@ namespace bExcellent.mvc.CommonWCF {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int ReportIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double SalesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double ServicesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string SolutionNameField;
@@ -2999,6 +3129,19 @@ namespace bExcellent.mvc.CommonWCF {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Focus {
+            get {
+                return this.FocusField;
+            }
+            set {
+                if ((this.FocusField.Equals(value) != true)) {
+                    this.FocusField = value;
+                    this.RaisePropertyChanged("Focus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string FullQuestion {
             get {
                 return this.FullQuestionField;
@@ -3007,6 +3150,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.FullQuestionField, value) != true)) {
                     this.FullQuestionField = value;
                     this.RaisePropertyChanged("FullQuestion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double IP {
+            get {
+                return this.IPField;
+            }
+            set {
+                if ((this.IPField.Equals(value) != true)) {
+                    this.IPField = value;
+                    this.RaisePropertyChanged("IP");
                 }
             }
         }
@@ -3038,6 +3194,19 @@ namespace bExcellent.mvc.CommonWCF {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Marketting {
+            get {
+                return this.MarkettingField;
+            }
+            set {
+                if ((this.MarkettingField.Equals(value) != true)) {
+                    this.MarkettingField = value;
+                    this.RaisePropertyChanged("Marketting");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string ModuleName {
             get {
                 return this.ModuleNameField;
@@ -3046,6 +3215,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.ModuleNameField, value) != true)) {
                     this.ModuleNameField = value;
                     this.RaisePropertyChanged("ModuleName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Momentum {
+            get {
+                return this.MomentumField;
+            }
+            set {
+                if ((this.MomentumField.Equals(value) != true)) {
+                    this.MomentumField = value;
+                    this.RaisePropertyChanged("Momentum");
                 }
             }
         }
@@ -3098,6 +3280,32 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.ReportIdField.Equals(value) != true)) {
                     this.ReportIdField = value;
                     this.RaisePropertyChanged("ReportId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Sales {
+            get {
+                return this.SalesField;
+            }
+            set {
+                if ((this.SalesField.Equals(value) != true)) {
+                    this.SalesField = value;
+                    this.RaisePropertyChanged("Sales");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Services {
+            get {
+                return this.ServicesField;
+            }
+            set {
+                if ((this.ServicesField.Equals(value) != true)) {
+                    this.ServicesField = value;
+                    this.RaisePropertyChanged("Services");
                 }
             }
         }

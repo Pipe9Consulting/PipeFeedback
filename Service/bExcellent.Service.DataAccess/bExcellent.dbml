@@ -3481,21 +3481,6 @@
       <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.PPA_GetOverAllPartnersByDesignation" Method="GetOverAllPartnersByDesignation">
-    <Parameter Name="Userid" Parameter="userid" Type="System.Int32" DbType="Int" />
-    <Parameter Name="designationId" Type="System.Int32" DbType="Int" />
-    <ElementType Name="PPA_GetOverAllPartnersByDesignationResult">
-      <Column Name="PartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DET" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="CountryName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
-      <Column Name="Area" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
-      <Column Name="Timezone" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
-      <Column Name="FirstName" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
-      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Role" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="MPLID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.MS_GetImportaanceAnsByUserId" Method="GetImportaanceAnsByUserId">
     <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
     <Parameter Name="PoeId" Parameter="poeId" Type="System.Int32" DbType="Int" />
@@ -3533,9 +3518,26 @@
       <Column Name="Exist" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
+  <Function Name="dbo.PPA_GetOverAllPartnersByDesignation" Method="GetOverAllPartnersByDesignation">
+    <Parameter Name="Userid" Parameter="userid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="designationId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="PPA_GetOverAllPartnersByDesignationResult">
+      <Column Name="PartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DET" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CountryName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Timezone" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Role" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MPLID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
   <Function Name="dbo.V4_GetUsersGoalDates" Method="GetUsersGoalDates">
     <ElementType Name="V4_GetUsersGoalDatesResult">
       <Column Name="MamangerName" Type="System.String" DbType="NVarChar(86)" CanBeNull="true" />
+      <Column Name="MamangerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TeamMemberName" Type="System.String" DbType="NVarChar(86)" CanBeNull="true" />
       <Column Name="ManagerAlias" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="Goaldate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />

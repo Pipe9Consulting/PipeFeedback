@@ -43,6 +43,28 @@ namespace bExcellent.mvc.Controllers
             ms2.WriteTo(System.Web.HttpContext.Current.Response.OutputStream);
             System.Web.HttpContext.Current.Response.End();
         }
+        public void GetPSEReport()
+        {
+            DataTable dataTable = PSEReportDump();
+
+            string filename = "PSE DataDump Report.xlsx";
+
+            //    string templatePath = HttpContext.Current.Server.MapPath("~/") + "\\Reports\\ExcelTemplates\\DataDump.xlsx";
+            string templatePath = System.Web.HttpContext.Current.Server.MapPath("~/") + "ExcelTemplates\\PSE_DataDumb.xlsx";
+
+            MemoryStream ms2 = ExcelReportGenerator.GenerateReport(dataTable, templatePath, 2, "Manager Report");
+
+            //passed down to the client
+
+            System.Web.HttpContext.Current.Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+
+            System.Web.HttpContext.Current.Response.AddHeader("content-disposition", string.Format("attachment;filename={0}", filename));
+
+            ms2.Position = 0;
+
+            ms2.WriteTo(System.Web.HttpContext.Current.Response.OutputStream);
+            System.Web.HttpContext.Current.Response.End();
+        }
         public void GetMSAPrioritiesReport()
         {
             DataTable dataTable = MSAPrioritiesDump();
@@ -64,6 +86,60 @@ namespace bExcellent.mvc.Controllers
 
             ms2.WriteTo(System.Web.HttpContext.Current.Response.OutputStream);
             System.Web.HttpContext.Current.Response.End();
+        }
+        internal DataTable PSEReportDump()
+        {
+            //  var feedback = new FeedbackServiceClient();
+            DataTable table = PSETableStructure();
+            var commonClient = new CommonClient();
+            var report = commonClient.GetOverallReportsCalculated().OverAllData;
+            foreach (var a in report)
+            {
+                DataRow dr = table.NewRow();
+                dr["MPLID"] = a.Mplid;
+                dr["PartnerName"] = a.PartnerName;
+                dr["TimeZone"] = a.TimeZone;
+                dr["Area"] = a.Area;
+                dr["Country"] = a.Country;
+                dr["DET"] = a.DET;
+                dr["PSE"] = a.FirstName + " " + a.LastName;
+
+                dr["Manager"] = a.ManagerFirstName + " " + a.ManagerLastName;
+                dr["Mgr Alias"] = a.ManagerAlias;
+
+                dr["AreaLead"] = a.AreaLeadFirstName + " " + a.AreaLeadLastName;
+                dr["AL Alias"] = a.AreaLeadAlias;
+
+                dr["TZ Lead"] = a.TimeZoneFirstName + " " + a.TimeZoneLastName;
+                dr["TZ Alias"] = a.TimeZoneAlias;
+                dr["Completions"] = a.Completions;
+                dr["Role"] = a.Role;
+                dr["Momentum"] = a.Momentum;
+                dr["Marketting"] = a.Marketting;
+                dr["Sales"] = a.Sales;
+                dr["Focus"] = a.Focus;
+                dr["Services"] = a.Services;
+                dr["IP"] = a.Ip;
+                dr["CustomerAcquistion"] = Math.Round(a.XAxis, 2);
+                dr["IndustryFocus"] = Math.Round(a.YAxis, 2);
+                dr["IndustryFocus1"] = a.IndFcous1;
+                dr["IndustryFocus2"] = a.IndFcous2;
+                int counts = 1;
+                if (a.PartnerResults != null)
+                {
+                    foreach (var ans in a.PartnerResults)
+                    {
+                        dr["Q" + counts] = ans.Answer;
+                        counts++;
+                    }
+                }
+
+
+
+                table.Rows.Add(dr);
+            }
+            return table;
+
         }
         internal DataTable MSAReportDump()
         {
@@ -172,7 +248,7 @@ namespace bExcellent.mvc.Controllers
                 var impScore = common.GetImportanceAnswer(managerDetails.User.UserId, poeid);
                 var priorities = common.GetSelfDevPrioritiesReport(teamMemberDetails.User.UserId, poeid);
                 //  var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
-                var getSelfFbid =(selfpoe2.FirstOrDefault(a => a.UserId == userFeedback.TeammenberPoeId.Value && poeid == teamMemberDetails.POE.POEId)!=null)?selfpoe2.FirstOrDefault(a => a.UserId == userFeedback.TeammenberPoeId.Value && poeid == teamMemberDetails.POE.POEId).FeedbackId:0;
+                var getSelfFbid = (selfpoe2.FirstOrDefault(a => a.UserId == userFeedback.TeammenberPoeId.Value && poeid == teamMemberDetails.POE.POEId) != null) ? selfpoe2.FirstOrDefault(a => a.UserId == userFeedback.TeammenberPoeId.Value && poeid == teamMemberDetails.POE.POEId).FeedbackId : 0;
                 var selfwcsiScore = common.GetAvgWcsiScore(getSelfFbid.ToString());
                 DataDumbScore getSelfresult = new DataDumbScore();
                 DataDumbScore selfcapScore = new DataDumbScore();
@@ -204,13 +280,13 @@ namespace bExcellent.mvc.Controllers
                     foreach (DataDumbModuleScore c in selfcapScore.ModuleScores)
                     {
                         selfoverallmanagercapscore =
-                            (int) (selfoverallmanagercapscore + c.QuestionScores.Sum(a => a.Score));
+                            (int)(selfoverallmanagercapscore + c.QuestionScores.Sum(a => a.Score));
                         //capCount = capCount + c.QuestionScores.Count();
                     }
                 }
                 double selfcapScoreLast = (double)selfoverallmanagercapscore / capCount;
                 var selffinalCap = ((double)selfcapScoreLast / 4) * 100;
-                var selfimpScoreCalc = (selfimpScore!=null)?selfimpScore.Sum(a => Convert.ToInt32(a.Answers)):0;
+                var selfimpScoreCalc = (selfimpScore != null) ? selfimpScore.Sum(a => Convert.ToInt32(a.Answers)) : 0;
                 double selfimpSocorelast = (double)selfimpScoreCalc / capCount;
                 var selffinalimp = ((double)selfimpSocorelast / 4) * 100;
                 foreach (DataDumbModuleScore feedbackResultse in poeResults.ModuleScores)
@@ -218,8 +294,8 @@ namespace bExcellent.mvc.Controllers
                     foreach (DataDumbQuestionScore Questions in feedbackResultse.QuestionScores)
                     {
                         DataRow dr = table.NewRow();
-                        var getCapScore = (capScore.ModuleScores!=null)?capScore.ModuleScores.FirstOrDefault(a => a.Moduleid == feedbackResultse.Moduleid).QuestionScores:null;
-                        var getselfCapresult = (selfcapScore.ModuleScores!=null)?selfcapScore.ModuleScores.FirstOrDefault(a => a.Moduleid == feedbackResultse.Moduleid).QuestionScores:null;
+                        var getCapScore = (capScore.ModuleScores != null) ? capScore.ModuleScores.FirstOrDefault(a => a.Moduleid == feedbackResultse.Moduleid).QuestionScores : null;
+                        var getselfCapresult = (selfcapScore.ModuleScores != null) ? selfcapScore.ModuleScores.FirstOrDefault(a => a.Moduleid == feedbackResultse.Moduleid).QuestionScores : null;
                         dr["Maanger Full Name"] = managerDetails.User.FirstName + " " + managerDetails.User.LastName;
                         dr["Manager Alias"] = managerDetails.User.EmailAddress.Replace("@microsoft.com", ""); ;
                         dr["Team member Full Name"] = "MSA0" + ((usecount.ToString().Length == 1) ? "0" + usecount : usecount.ToString());
@@ -235,11 +311,11 @@ namespace bExcellent.mvc.Controllers
                         dr["Module Id"] = feedbackResultse.Moduleid;
                         dr["Module Name"] = feedbackResultse.ModuleName;
                         dr["Manager Frequency"] = Questions.Score;
-                        dr["Manager Capability"] = (getCapScore!=null)?getCapScore.FirstOrDefault(a => a.Questionid == Questions.Questionid).Score:0;
+                        dr["Manager Capability"] = (getCapScore != null) ? getCapScore.FirstOrDefault(a => a.Questionid == Questions.Questionid).Score : 0;
                         dr["Manager Importance"] = impScore.FirstOrDefault(a => a.Questionid == Questions.Questionid).Answers;
                         dr["Self Frequency"] = (getSelfresult.ModuleScores != null) ? getSelfresult.ModuleScores.FirstOrDefault(a => a.Moduleid == feedbackResultse.Moduleid).QuestionScores.FirstOrDefault(a => a.Questionid == Questions.Questionid).Score : 0;
-                        dr["Self Capability"] = (getselfCapresult!=null)?getselfCapresult.FirstOrDefault(a => a.Questionid == Questions.Questionid).Score:0;
-                        dr["Self Importance"] = (selfimpScore!=null)?selfimpScore.FirstOrDefault(a => a.Questionid == Questions.Questionid).Answers:"0";
+                        dr["Self Capability"] = (getselfCapresult != null) ? getselfCapresult.FirstOrDefault(a => a.Questionid == Questions.Questionid).Score : 0;
+                        dr["Self Importance"] = (selfimpScore != null) ? selfimpScore.FirstOrDefault(a => a.Questionid == Questions.Questionid).Answers : "0";
                         dr["MF Overall"] = managerwcsiScore.FirstOrDefault().wcsi;
                         dr["MC Overall"] = finalCap;
                         dr["MI Overall"] = finalimp;
@@ -366,7 +442,7 @@ namespace bExcellent.mvc.Controllers
                 var capScore = feedback.GetCapabilityModuleScores(feedBackid.ToString(), poeid);
                 var impScore = common.GetImportanceAnswer(managerDetails.User.UserId, poeid);
                 var priorities = common.GetSelfDevPrioritiesReport(teamMemberDetails.User.UserId, poeid);
-              //  var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
+                //  var teamMemberDetails = common.GetUserdetailsByMappingId(userFeedback.TeammenberPoeId.Value);
                 var getSelfFbid = getSelfScore.FirstOrDefault(a => a.UserId == userFeedback.TeammenberPoeId.Value && poeid == teamMemberDetails.POE.POEId).FeedbackId;
                 var selfwcsiScore = common.GetAvgWcsiScore(getSelfFbid.ToString());
                 var getSelfresult = feedback.GetModuleScores(getSelfFbid.ToString(), poeid);
@@ -376,11 +452,11 @@ namespace bExcellent.mvc.Controllers
                 var capCount = 0;
                 foreach (DataDumbModuleScore c in capScore.ModuleScores)
                 {
-                    overallmanagercapscore = (int) (overallmanagercapscore + c.QuestionScores.Sum(a => a.Score));
+                    overallmanagercapscore = (int)(overallmanagercapscore + c.QuestionScores.Sum(a => a.Score));
                     capCount = capCount + c.QuestionScores.Count();
                 }
-                double capScoreLast = (double)overallmanagercapscore/capCount;
-                var finalCap = ((double)capScoreLast/4)*100;
+                double capScoreLast = (double)overallmanagercapscore / capCount;
+                var finalCap = ((double)capScoreLast / 4) * 100;
                 var impScoreCalc = impScore.Sum(a => Convert.ToInt32(a.Answers));
                 double impSocorelast = (double)impScoreCalc / capCount;
                 var finalimp = ((double)impSocorelast / 4) * 100;
@@ -429,7 +505,7 @@ namespace bExcellent.mvc.Controllers
                         dr["SF Overall"] = selfwcsiScore.FirstOrDefault().wcsi;
                         dr["SC Overall"] = selffinalCap;
                         dr["SI Overall"] = selffinalimp;
-                        dr["Development Priorities"] = (priorities.FirstOrDefault(a => a.QuestionId == Questions.Questionid)!=null)?priorities.FirstOrDefault(a => a.QuestionId == Questions.Questionid).Bucketorder:0;
+                        dr["Development Priorities"] = (priorities.FirstOrDefault(a => a.QuestionId == Questions.Questionid) != null) ? priorities.FirstOrDefault(a => a.QuestionId == Questions.Questionid).Bucketorder : 0;
                         table.Rows.Add(dr);
                     }
 
@@ -1654,6 +1730,51 @@ namespace bExcellent.mvc.Controllers
             //  table.Columns.Add("FeedbackID");
             table.Columns.Add("Area");
             table.Columns.Add("Country/Location");
+            for (int i = 1; i <= 50; i++)
+            {
+                table.Columns.Add("Q" + i);
+            }
+            return table;
+        }
+        internal DataTable PSETableStructure()
+        {
+            DataTable table = new DataTable();
+
+            table.Columns.Add("MPLID");
+
+            table.Columns.Add("PartnerName");
+            table.Columns.Add("TimeZone");
+            table.Columns.Add("Area");
+            table.Columns.Add("Country");
+
+            table.Columns.Add("DET");
+
+            table.Columns.Add("PSE");
+            table.Columns.Add("Manager");
+            table.Columns.Add("Mgr Alias");
+            table.Columns.Add("AreaLead");
+            table.Columns.Add("AL Alias");
+            table.Columns.Add("TZ Lead");
+
+            table.Columns.Add("TZ Alias");
+            table.Columns.Add("Completions");
+
+            table.Columns.Add("Role");
+
+
+
+            table.Columns.Add("Momentum");
+            table.Columns.Add("Marketting");
+            table.Columns.Add("Sales");
+            table.Columns.Add("Focus");
+            table.Columns.Add("Services");
+            table.Columns.Add("IP");
+
+            table.Columns.Add("CustomerAcquistion");
+            table.Columns.Add("IndustryFocus");
+
+            table.Columns.Add("IndustryFocus1");
+            table.Columns.Add("IndustryFocus2");
             for (int i = 1; i <= 50; i++)
             {
                 table.Columns.Add("Q" + i);
