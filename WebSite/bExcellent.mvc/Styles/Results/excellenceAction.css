@@ -2057,6 +2057,9 @@ standTable table {
 }
 
 @media screen and (min-width: 1930px) and (max-width: 2169px) {
+    .stand li p {
+        font-size: 90%;
+    }
 
     .legend1, .legend2, .legend3, .legend4, .legend5, .legend6 {
         padding-left: 15%;
@@ -2068,7 +2071,7 @@ standTable table {
 
 
     .resultsQn span {
-        padding: 1px 6px 4px 9px;
+        padding: 3px 6px 3px 9px;
     }
 
 

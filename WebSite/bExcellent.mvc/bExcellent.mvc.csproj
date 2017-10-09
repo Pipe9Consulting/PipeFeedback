@@ -663,6 +663,7 @@
     <Content Include="Images\collapse.png" />
     <Content Include="Images\coming-soon.png" />
     <Content Include="Images\comingsoon.png" />
+    <Content Include="Images\Common\bg.png" />
     <Content Include="Images\Common\popup_close.png" />
     <Content Include="Images\Common\popup_closeH.png" />
     <Content Include="Images\comparision_view.png" />
@@ -3273,6 +3274,7 @@
     <Content Include="Images\sogetti-small.png" />
     <Content Include="Images\sollution-seller.jpg" />
     <Content Include="Images\sollution-seller.png" />
+    <Content Include="Images\Solution Sales Specialist_Intro.png" />
     <Content Include="Images\solution-selling.png" />
     <Content Include="Images\SolutionSelling.png" />
     <Content Include="Images\SolutionSpecialist\AccountManager.jpg" />

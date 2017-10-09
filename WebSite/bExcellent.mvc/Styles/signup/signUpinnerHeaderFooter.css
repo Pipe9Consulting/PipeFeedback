@@ -2,9 +2,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../../images/images/bodyBg.png) repeat;
+    background:url(../../Images/Common/bg.png) no-repeat;
+            background-size:100% 100%;
     font-family: Segoe UI;
 }
+
+
 
 .headerPart {
     margin: 0 !important;

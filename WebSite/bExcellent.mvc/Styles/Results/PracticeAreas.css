@@ -1971,8 +1971,16 @@ standTable table {
         top: 9%;
     }
 
-    .breadMenu {
-        margin: 1.5% 1.5% 1% 1.5% !important;
+    .resultPa ul li:first-child {
+        margin-top: 17%;
+    }
+
+    .resultPa ul li{
+        font-size:138%;
+    }
+
+    .resultPa ul li:last-child {
+        margin-top: 11%;
     }
 
 

@@ -533,7 +533,7 @@
     <div class="sixteen wide column footerPart">
 
         <div class="ui inverted menu">
-            <span class="item">© 2016 PIPE9 Consulting</span>
+            <span class="item">© 2017 PIPE9 Consulting</span>
             <a class="item" href="#" id="gotoTerms">Terms</a>
             <a class="item" href="#" id="gotoPrivacy">Privacy</a>
             <a class="item" href="mailto:support@pipe9consulting.com">Support</a>

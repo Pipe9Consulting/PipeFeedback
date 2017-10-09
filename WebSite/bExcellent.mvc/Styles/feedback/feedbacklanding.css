@@ -1794,7 +1794,7 @@ body {
 
 @media screen and (max-width: 2169px) and (min-width: 2001px) {
     .slimScrollDiv, .scroll2 {
-        height: 392px !important;
+        height: 394px !important;
     }
 
     .deleteIncomplete img {
@@ -1902,7 +1902,7 @@ body {
     }
 
     .scroll2 {
-        height: 396px !important;
+        height: 398px !important;
     }
 
     .prepage {
@@ -2017,7 +2017,7 @@ body {
     }
 
     .givefbmessagedetails p, .clearIncomplete p {
-        font-size: 120%;
+        font-size: 119%;
     }
 
     .givefbmessage h3 {
@@ -4743,7 +4743,12 @@ body {
         list-style: none;
         position: relative;
         height: 166px;
+        border: 1px solid #666;
     }
+
+.selectArrow {
+     border: 1px solid #23a1a7;
+}
 
         .profileCenter ul li:nth-child(even) {
             margin-right: 0%;
