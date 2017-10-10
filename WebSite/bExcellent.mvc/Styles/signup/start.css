@@ -1563,8 +1563,8 @@ body {
 
 
     .ui.grid > [class*='four column'].row > .column {
-        width: 30.2% !important;
-        margin-right: 4rem;
+        width: 30.5% !important;
+        margin-right: 3.4rem;
     }
 
     .ui.grid > .row > .column {
