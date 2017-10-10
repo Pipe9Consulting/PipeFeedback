@@ -3380,6 +3380,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     pseRepot.Mplid = report.MPLID;
                     pseRepot.Order = counts;
                     pseRepot.Role = report.Roles;
+                    pseRepot.CompletedOn = (DateTime) report.startdate;
                     var partnername = context.GetMPLIDName(report.MPLID).ToList();
                     if (partnername.Count != 0)
                     {

@@ -1534,6 +1534,9 @@ namespace bExcellent.mvc.CommonWCF {
         private string AreaLeadLastNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CompletedOnField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int CompletionsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1711,6 +1714,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((object.ReferenceEquals(this.AreaLeadLastNameField, value) != true)) {
                     this.AreaLeadLastNameField = value;
                     this.RaisePropertyChanged("AreaLeadLastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime CompletedOn {
+            get {
+                return this.CompletedOnField;
+            }
+            set {
+                if ((this.CompletedOnField.Equals(value) != true)) {
+                    this.CompletedOnField = value;
+                    this.RaisePropertyChanged("CompletedOn");
                 }
             }
         }

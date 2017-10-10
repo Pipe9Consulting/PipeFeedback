@@ -51,9 +51,23 @@ namespace bExcellent.mvc.Controllers
         //    return JsonResponse();
         //}
 
-        [SessionExpireFilter]
-        public ActionResult Start()
+        //[SessionExpireFilter]
+        public ActionResult Start(int? userId)
         {
+            //For pipe9 cloud development
+            if (userId != null)
+            {
+                var signUp = new SignupClient();
+                var suser = signUp.GetUserById((int)userId);
+                Session["user"] = suser;
+                var loggeduserName = suser.FirstName + " " + suser.LastName;
+                ViewData["username"] = loggeduserName;
+                Session["Uname"] = loggeduserName;
+                Session["emailid"] = suser.EmailAddress;
+                Session["id"] = (int)userId;
+                Session["domain"] = suser.EmailAddress.Split('@')[1];
+                Session["subid"] = -1;
+            }
             if (Session["id"] != null)
             {
                 var commonWcfClient = new CommonWCF.CommonClient();
@@ -65,6 +79,9 @@ namespace bExcellent.mvc.Controllers
             byte[] userImage = common.GetUserPhoto(int.Parse(Session["id"].ToString())).Photo;
 
             ViewBag.userImage = userImage;
+
+           
+           
             Session["DashboardMappingId"] = null;
             Session["GivenClick"] = null;
             return View();

@@ -173,7 +173,8 @@
                 //    '<div class="frequency"><div class="frq_dfn"><div class="frq_img"><img src="../../Images/frequently.png" alt="frequently" /></div><div class="frq_cnt"><h3>Frequently</h3><p>The Excellence Action is frequently demonstrated, but further improvement is possible.</p></div></div></div>' +
                 //    '<div class="frequency"><div class="frq_dfn"><div class="frq_img"><img src="../../Images/always.png" alt="Always" /></div><div class="frq_cnt"><h3>Always</h3><p>The Excellence Action is always demonstrated. Excellence has been achieved.</p></div></div></div>' +
                 //    '</div> ';
-                var userratingcount = details_feedback.GetUserRatingByPoeId(response[0].QuestionId);
+                var userratingcount = 0;
+                //var userratingcount = details_feedback.GetUserRatingByPoeId(response[0].QuestionId);
                 $('#userratingcount').val(userratingcount);
                 var selectPoe = parseInt($('#selectPoe').val());
                 var surveyHtml = "";
@@ -275,7 +276,7 @@
                     }
                     questionhtml += "<div class='capabilityQuestion'><div class='SI3 capabalititys'><span>Capability Scale: </span>Select how ready you are to demonstrate this Excellence Action</div>" +
                             "<div class='capOverall'><div class='capImg'><img src='../../Images/Feedback/cap_icon.png' width='61' height='61' alt='User'></div><div id='capability" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " style='width: 562px; height: 50px; cursor: pointer;' class='sliderdiv'>" +
-                            "<img src='../../Images/Feedback/cap2bg.png'></div></div></div><div class='clearfix'></div><div class='sliderimg'><div class='SI3'><span>Frequency Scale: </span>Select how often you demonstrate this Excellence Action</div>" +
+                            "<img src='../../Images/Feedback/cap2bg.png'></div></div></div><div class='clearfix'></div><div class='sliderimg'><div class='SI3'><span>Frequency Scale: </span>Select how consistently you demonstrate this Excellence Action</div>" +
                     "<div class='freqOverall'><div class='freqImg'><img src='../../Images/Feedback/frq_icon.png' width='61' height='61' alt='User' ></div>" +
                         "<div id='Qno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " style='width: 562px; height: 50px !important; cursor: pointer;' class='sliderdiv'>" +
                     "<img src='../../Images/img/slidebg1.png' />" +

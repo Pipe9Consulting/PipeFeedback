@@ -422,7 +422,8 @@
                                     <li><a href="../Feedback/CompletedFeedback?mode=1">Feedback on Your<br />
                                         Experience</a></li>
                                     <li><a href="../Feedback/CompletedFeedback?mode=2">Report an Issue</a></li>
-                                    <li><a href="../../Home/SignOut">Sign Out</a></li>
+                                    <%--<li><a href="../../Home/SignOut">Sign Out</a></li>--%>
+                                    <li><a href="http://demo.pipe9cloud.com/">Sign Out</a></li>
                                 </div>
                             </ul>
                         </li>

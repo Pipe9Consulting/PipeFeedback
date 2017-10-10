@@ -29,6 +29,7 @@ namespace bExcellent.Service.Util.Response
         public string Mplid { get; set; }
         public string PartnerName { get; set; }
         public string DET { get; set; }
+        public DateTime CompletedOn { get; set; }
         public double XAxis { get; set; }
         public double YAxis { get; set; }
         public int Partners { get; set; }

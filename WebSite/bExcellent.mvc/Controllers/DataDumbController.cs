@@ -103,7 +103,7 @@ namespace bExcellent.mvc.Controllers
                 dr["Country"] = a.Country;
                 dr["DET"] = a.DET;
                 dr["PSE"] = a.FirstName + " " + a.LastName;
-
+                dr["PSE Alias"] = a.EmailId;
                 dr["Manager"] = a.ManagerFirstName + " " + a.ManagerLastName;
                 dr["Mgr Alias"] = a.ManagerAlias;
 
@@ -124,16 +124,22 @@ namespace bExcellent.mvc.Controllers
                 dr["IndustryFocus"] = Math.Round(a.YAxis, 2);
                 dr["IndustryFocus1"] = a.IndFcous1;
                 dr["IndustryFocus2"] = a.IndFcous2;
+
                 int counts = 1;
                 if (a.PartnerResults != null)
                 {
+                    //var count = 0;
                     foreach (var ans in a.PartnerResults)
                     {
-                        dr["Q" + counts] = ans.Answer;
-                        counts++;
+                        if (counts <= 50)
+                        {
+                            dr["Q" + counts] = ans.Answer;
+                            counts++;
+                        }
+
                     }
                 }
-
+                dr["CompletedOn"] = a.CompletedOn.ToString("MM-dd-yyyy");
 
 
                 table.Rows.Add(dr);
@@ -1730,7 +1736,7 @@ namespace bExcellent.mvc.Controllers
             //  table.Columns.Add("FeedbackID");
             table.Columns.Add("Area");
             table.Columns.Add("Country/Location");
-            for (int i = 1; i <= 50; i++)
+            for (int i = 1; i <= 52; i++)
             {
                 table.Columns.Add("Q" + i);
             }
@@ -1750,6 +1756,8 @@ namespace bExcellent.mvc.Controllers
             table.Columns.Add("DET");
 
             table.Columns.Add("PSE");
+            //dr["PSE Alias"] 
+            table.Columns.Add("PSE Alias");
             table.Columns.Add("Manager");
             table.Columns.Add("Mgr Alias");
             table.Columns.Add("AreaLead");
@@ -1779,6 +1787,7 @@ namespace bExcellent.mvc.Controllers
             {
                 table.Columns.Add("Q" + i);
             }
+            table.Columns.Add("CompletedOn");
             return table;
         }
         internal DataTable ProductSurveyTableStructure()

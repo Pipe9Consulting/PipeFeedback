@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     //debugger;
-    var getUserRating = feedbackGuide.GetUserRatingByPoeId();
+    var getUserRating = 0;
+    //var getUserRating = feedbackGuide.GetUserRatingByPoeId();
     var capabilityMode = $('#capabilityMode').val();
     // alert(getUserRating);
     var selctedmode = $('#selectedMode').val();

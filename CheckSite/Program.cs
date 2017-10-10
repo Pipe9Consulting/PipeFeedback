@@ -41,7 +41,7 @@ namespace CheckSite
                 var days = (goalDate - currentDate).TotalDays;
                 var count = 1;
                 goalDates = Convert.ToDateTime("2017-05-12");
-                managerAlias = "gabyfe@microsoft.com";
+                managerAlias = "";
                 //if (days > 7 && days < 8)
                 //{
                 var teammembers = "Michelle";

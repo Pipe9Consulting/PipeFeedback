@@ -47,7 +47,9 @@
                     'fileDesc': 'Image Files',
                     'scriptData': { RequireUploadifySessionSync: true, SecurityToken: UploadifyAuthCookie, SessionId: UploadifySessionId },
                     'onComplete': function (event, ID, fileObj, response, data) {
+                        
                         response = $.parseJSON(response);
+                        alert(response.Status);
                         if (response.Status == 'OK') {
                             $("#pnlUpload").hide();
                             $("#pnlUploadedImage").show();

@@ -64,6 +64,7 @@
       <xs:element minOccurs="0" name="AreaLeadAlias" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="AreaLeadFirstName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="AreaLeadLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompletedOn" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Completions" type="xs:int" />
       <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="DET" nillable="true" type="xs:string" />
