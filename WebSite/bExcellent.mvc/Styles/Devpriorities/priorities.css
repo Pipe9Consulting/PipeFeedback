@@ -2005,6 +2005,28 @@ body {
     }
 }
 
+@media screen and (max-width: 2300px) and (min-width: 2000px) {
+
+    .ui.menu .item {
+        font-size: 1.7rem;
+    }
+
+    .breadcrumb {
+        padding: 1% 1% 0.6% 1.5% !important;
+    }
+}
+
+
+@media screen and (max-width: 2000px) and (min-width: 1800px) {
+
+    .ui.menu .item {
+        font-size: 1.7rem;
+    }
+
+    .breadcrumb {
+        padding: 1% 1% 0.6% 1.5% !important;
+    }
+}
 
 @media screen and (max-width: 2800px) and (min-width: 1800px) {
 

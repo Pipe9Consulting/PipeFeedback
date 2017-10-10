@@ -1105,7 +1105,7 @@ body {
 
 
     .login {
-        padding-top: 5.5%;
+        padding-top: 10%;
         padding-bottom: 4.5%;
     }
 
@@ -1117,11 +1117,11 @@ body {
 
 
     .cacLogo img {
-        width: 150px;
+        width: 225px;
     }
 
     .headerMenu {
-        height: 80px;
+        height: 120px;
     }
 
     .accordion {
@@ -1134,8 +1134,8 @@ body {
 
 
     .accordion h3, .accordion h3:hover, .accordion .down {
-        background-size: 30% 35%;
-        background-position-y: 26px;
+        background-size: 35% 26%;
+        background-position-y: 46px;
         background-position-x: 30px;
         width: 85px;
     }
