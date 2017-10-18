@@ -4425,6 +4425,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Views\Microsoft\Tests.cshtml" />
+    <Content Include="Views\Feedback\FeedbackLanding.cshtml" />
     <None Include="Web References\authorize\ANetApiResponseType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
