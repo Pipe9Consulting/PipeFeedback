@@ -22,11 +22,11 @@ namespace bExcellent.mvc.App_Start
             //redirect to login page if session is not found
             if (ctx.Session == null)
             {
-                filterContext.Result = new RedirectResult("~/Microsoft/Login");
+                filterContext.Result = new RedirectResult("https://demo.pipe9cloud.com");
             }
             else if (ctx.Session["id"] == null)
             {
-                filterContext.Result = new RedirectResult("~/Microsoft/Login");
+                filterContext.Result = new RedirectResult("https://demo.pipe9cloud.com");
             }
             
 
@@ -47,11 +47,12 @@ namespace bExcellent.mvc.App_Start
                             var redirectto = httpCookie.Value;
                             if (redirectto == "login")
                             {
-                                filterContext.Result = new RedirectResult("~/Microsoft/Login");
+                                filterContext.Result = new RedirectResult("https://demo.pipe9cloud.com");
                             }
                             else
                             {
-                                filterContext.Result = new RedirectResult("~/");
+                               // filterContext.Result = new RedirectResult("~/");
+                                filterContext.Result = new RedirectResult("https://demo.pipe9cloud.com");
                             }
                         }
                     }
@@ -66,11 +67,13 @@ namespace bExcellent.mvc.App_Start
                             var redirectto = httpCookie.Value;
                             if (redirectto == "login")
                             {
-                                filterContext.Result = new RedirectResult("~/Microsoft/Login");
+                                //filterContext.Result = new RedirectResult("~/Microsoft/Login");
+                                filterContext.Result = new RedirectResult("https://demo.pipe9cloud.com");
                             }
                             else
                             {
-                                filterContext.Result = new RedirectResult("~/");
+                                //filterContext.Result = new RedirectResult("~/");
+                                filterContext.Result = new RedirectResult("https://demo.pipe9cloud.com");
                             }
                         }
                     }

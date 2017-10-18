@@ -833,6 +833,7 @@
     <Content Include="Images\edit.png" />
     <Content Include="Images\email-icon.png" />
     <Content Include="Images\email-logo.png" />
+    <Content Include="Images\erin.jpg" />
     <Content Include="Images\error.png" />
     <Content Include="Images\event1.png" />
     <Content Include="Images\event2.png" />
@@ -4423,6 +4424,7 @@
     <None Include="Service References\SignUpWCF\Signup9.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Views\Microsoft\Tests.cshtml" />
     <None Include="Web References\authorize\ANetApiResponseType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
