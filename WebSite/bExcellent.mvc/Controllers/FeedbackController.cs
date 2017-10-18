@@ -1941,7 +1941,7 @@ namespace bExcellent.mvc.Controllers
             return JsonResponse(1);
         }
 
-        public ActionResult FeedbackLanding()
+        public ActionResult Feedback()
         {
             // CommonController.Log(Session["id"].ToString() + "::" + "Feedback-View");       
             //if (TempData["fromstart"] == null)

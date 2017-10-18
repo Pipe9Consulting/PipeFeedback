@@ -4285,7 +4285,7 @@
     <Content Include="Views\Feedback\Goal.aspx" />
     <Content Include="Views\Feedback\PeerFeedback.aspx" />
     <Content Include="Views\Feedback\Quickview.aspx" />
-    <Content Include="Views\Feedback\Feedback.aspx" />
+    <Content Include="Views\Feedback\Feedbacks.aspx" />
     <Content Include="Views\Feedback\Managerfeedback.aspx" />
     <Content Include="Views\Feedback\ReqManagerFeedback.aspx" />
     <Content Include="Views\Feedback\ResumeManagerfeedback.aspx" />
@@ -4425,7 +4425,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Views\Microsoft\Tests.cshtml" />
-    <Content Include="Views\Feedback\FeedbackLanding.cshtml" />
+    <Content Include="Views\Feedback\Feedback.cshtml" />
     <None Include="Web References\authorize\ANetApiResponseType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
