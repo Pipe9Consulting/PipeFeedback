@@ -833,6 +833,7 @@
     <Content Include="Images\edit.png" />
     <Content Include="Images\email-icon.png" />
     <Content Include="Images\email-logo.png" />
+    <Content Include="Images\erin.jpg" />
     <Content Include="Images\error.png" />
     <Content Include="Images\event1.png" />
     <Content Include="Images\event2.png" />
@@ -4284,7 +4285,7 @@
     <Content Include="Views\Feedback\Goal.aspx" />
     <Content Include="Views\Feedback\PeerFeedback.aspx" />
     <Content Include="Views\Feedback\Quickview.aspx" />
-    <Content Include="Views\Feedback\Feedback.aspx" />
+    <Content Include="Views\Feedback\Feedbacks.aspx" />
     <Content Include="Views\Feedback\Managerfeedback.aspx" />
     <Content Include="Views\Feedback\ReqManagerFeedback.aspx" />
     <Content Include="Views\Feedback\ResumeManagerfeedback.aspx" />
@@ -4423,6 +4424,8 @@
     <None Include="Service References\SignUpWCF\Signup9.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Views\Microsoft\Tests.cshtml" />
+    <Content Include="Views\Feedback\Feedback.cshtml" />
     <None Include="Web References\authorize\ANetApiResponseType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

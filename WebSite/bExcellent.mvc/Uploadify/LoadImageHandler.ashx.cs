@@ -11,7 +11,7 @@ namespace bExcellent.mvc.Uploadify
     /// <summary>
     /// Summary description for LoadImageHandler
     /// </summary>
-    public class LoadImageHandler : IHttpHandler
+    public class LoadImageHandler : IHttpHandler, System.Web.SessionState.IReadOnlySessionState 
     {
 
         public void ProcessRequest(HttpContext context)
@@ -21,12 +21,23 @@ namespace bExcellent.mvc.Uploadify
             context.Response.ContentType = "image/pjpeg";
             if(image.Length==1||image.Length==0)
             {
+                var userId = int.Parse(context.Session["id"].ToString());
                 string path = HttpContext.Current.Server.MapPath("/Images/icons/you-b.png");
+                if (userId == 480)
+                {
+                    path = HttpContext.Current.Server.MapPath("/Images/erin.jpg");
+                }
+                if (userId == 486)
+                {
+                    path = HttpContext.Current.Server.MapPath("/Images/Betty.jpg");
+                }  
+               // string 
                 context.Response.WriteFile(path); 
-            }
+            } 
             else 
                 context.Response.BinaryWrite(image);
             context.Response.End();
+            
         }
 
         public bool IsReusable

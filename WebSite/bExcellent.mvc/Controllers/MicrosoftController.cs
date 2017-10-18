@@ -89,6 +89,7 @@ namespace bExcellent.mvc.Controllers
 
                 if (returnValue.IsAuthenticated)
                 {
+                    Session.Add("userId", loggedinUser.UserId);
                     if (Request.Cookies["redirectionval"] != null)
                     {
                         Response.Cookies.Remove("redirectionval");
@@ -290,6 +291,11 @@ namespace bExcellent.mvc.Controllers
             SignupClient common = new SignupClient();
             var network = common.GetNetworkById(id);
             Session["network"] = network;
+        }
+
+        public ActionResult Tests()
+        {
+            return View();
         }
     }
 }
