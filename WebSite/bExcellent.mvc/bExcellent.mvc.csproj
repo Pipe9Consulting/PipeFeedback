@@ -3181,6 +3181,7 @@
     <Content Include="Images\peers-ico.png" />
     <Content Include="Images\peers.png" />
     <Content Include="Images\perform.png" />
+    <Content Include="Images\Pipe9Feedback\Common\p9_logo.png" />
     <Content Include="Images\pixer.png" />
     <Content Include="Images\plus.png" />
     <Content Include="Images\poe-anatomy-bg.jpg" />
@@ -3544,6 +3545,9 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\mediaqueries.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\Pipe9Feedback\Common\bootstrap.min.js" />
+    <Content Include="Scripts\Pipe9Feedback\Common\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\Pipe9Feedback\Common\jquery-ui.js" />
     <Content Include="Scripts\plugin\handlebars\handlebars-1.0.js" />
     <Content Include="Scripts\plugin\jquery-cookie\jquery.cookie.js" />
     <Content Include="Scripts\plugin\jquery\jquery-1.8.2.min.js" />
@@ -4213,6 +4217,11 @@
     <Content Include="Styles\mystyle.css" />
     <Content Include="Styles\network.css" />
     <Content Include="Styles\Network\network.css" />
+    <Content Include="Styles\Pipe9FeedbackStyles\Common\bootstrap-theme.min.css" />
+    <Content Include="Styles\Pipe9FeedbackStyles\Common\bootstrap.min.css" />
+    <Content Include="Styles\Pipe9FeedbackStyles\Common\layout.css" />
+    <Content Include="Styles\Pipe9FeedbackStyles\Common\reset.css" />
+    <Content Include="Styles\Pipe9FeedbackStyles\Feedback\feedback-landing.css" />
     <Content Include="Styles\Results\big-pic.css" />
     <Content Include="Styles\Results\excellenceAction.css" />
     <Content Include="Styles\Results\OverallResult.css" />

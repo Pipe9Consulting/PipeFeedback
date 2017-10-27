@@ -1,0 +1,77 @@
+﻿.leftmenu_tiles {
+    width: 20%;
+    float: left;
+    position: relative;
+}
+
+    .leftmenu_tiles ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .leftmenu_tiles ul li {
+            margin: 0;
+            padding: 0 0 1% 1%;
+            width: 49.5%;
+        }
+
+        .leftmenu_tiles ul li {
+            margin: 0 3% 3% 0;
+            padding: 0 0 1% 1%;
+            width: 47%;
+            border: 1px solid #666;
+            background-size: 60% 55%;
+            position: relative;
+            float: left;
+        }
+
+            .leftmenu_tiles ul li:hover {
+                border: 1px solid #23a1a7;
+            }
+
+            .leftmenu_tiles ul li p {
+                margin: 0;
+                padding: 0 0 1% 1%;
+                width: 100%;
+                position: absolute;
+                bottom: 3%;
+                left: 0;
+                float: left;
+            }
+
+.self_menutile {
+    background: url(../../images/feedback/takefbIcon.png)no-repeat top 10% right 10% #fff;
+}
+
+    .self_menutile:hover {
+        background: url(../../images/feedback/takefbIconHover.png)no-repeat top 10% right 10% #fff;
+    }
+
+.self_menutile {
+    background: url(../../images/feedback/takefbIconHover.png)no-repeat top 10% right 10% #fff;
+}
+
+
+.team_menutile {
+    background: url(../../images/feedback/givefbIcon.png)no-repeat top 10% right 10% #fff;
+}
+
+    .team_menutile:hover {
+        background: url(../../images/feedback/givefbIconHover.png)no-repeat top 10% right 10% #fff;
+    }
+
+.select_team_menutile {
+    background: url(../../images/feedback/givefbIconHover.png)no-repeat top 10% right 10% #fff;
+}
+
+.history_menutile {
+    background: url(../../images/feedback/historyfbIcon.png)no-repeat top 10% right 10% #fff;
+}
+
+    .history_menutile:hover {
+        background: url(../../images/feedback/historyfbIconHover.png)no-repeat top 10% right 10% #fff;
+    }
+
+.select_history_menutile {
+    background: url(../../images/feedback/historyfbIconHover.png)no-repeat top 10% right 10% #fff;
+}

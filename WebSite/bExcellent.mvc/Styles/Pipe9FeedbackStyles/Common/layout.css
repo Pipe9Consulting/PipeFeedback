@@ -1,0 +1,123 @@
+﻿body {
+    font-family: "Cuprum",sans-serif;
+}
+
+
+
+/*************************Layout Header Part Start************************/
+.p9f_header {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #b9babb;
+    background: #fff;
+    position: relative;
+    padding: 0 1%;
+}
+
+.p9_logo {
+    float: left;
+    margin: 0;
+    padding: .5% 0;
+}
+
+
+    .p9_logo img {
+        width: 28%;
+    }
+
+/*************************Layout Header Part End************************/
+
+
+/*************************Layout Body Part Start************************/
+
+.p9f_body {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.p9f_breadcrumb {
+    margin: 0 0 1.5% 0;
+    background: #fafafa;
+    padding: .5% 1%;
+    position: absolute;
+    width: 100%;
+}
+
+    .p9f_breadcrumb ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .p9f_breadcrumb ul li {
+            margin: 0;
+            padding: 0;
+            float: left;
+            color: #333;
+        }
+
+            .p9f_breadcrumb ul li a {
+                color: #333;
+                text-decoration: none;
+            }
+
+                .p9f_breadcrumb ul li a:hover {
+                    color: #23a1a7;
+                    text-decoration: none;
+                }
+
+            .p9f_breadcrumb ul li.bc_arrow {
+                font-family: 'Segoe UI';
+            }
+
+
+.container {
+    width: 100%;
+    padding: 0 1%;
+}
+
+/*************************Layout Body Part End************************/
+
+/*************************Layout Footer Part Start************************/
+.p9f_footer {
+    height: 38px;
+    border-top: 1px solid #999;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0 1%;
+}
+
+
+
+    .p9f_footer ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .p9f_footer ul li {
+            margin: 0;
+            padding: .7% 0 0 2%;
+            list-style: none;
+            color: #333;
+            float: left;
+        }
+
+            .p9f_footer ul li:first-child {
+                padding: .7% 0 0 0%;
+            }
+
+
+            .p9f_footer ul li a {
+                text-decoration: none;
+                color: #333;
+            }
+
+
+                .p9f_footer ul li a:hover {
+                    text-decoration: none;
+                    color: #23a1a7;
+                }
+/*************************Layout Footer Part End************************/
