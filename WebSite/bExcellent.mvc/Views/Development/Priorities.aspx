@@ -272,7 +272,7 @@
                             <li>#</li>
                             <li>Practice Area</li>
                             <li>Excellence Actions</li>
-                            <li id="feqScale">Frequency</li>
+                            <%--<li id="feqScale">Frequency</li>--%>
                         </ul>
                         <div class="clearfix"></div>
                         <div class="frquencyContent" id="devPrioritiesCont">
