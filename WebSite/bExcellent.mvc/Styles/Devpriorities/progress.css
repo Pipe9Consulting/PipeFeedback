@@ -155,7 +155,7 @@ p {
     margin: 0;
     text-transform: uppercase;
     float: left;
-    width: 90%;
+    width: 50%;
 }
 
 
@@ -186,8 +186,8 @@ p {
         float: left;
         color: #fff;
         text-transform: uppercase;
-        padding: .2% 1% .3% 1%;
-        text-align: center;
+        padding: .4% 1% .3% .7%;
+        text-align: left;
     }
 
 
@@ -205,12 +205,12 @@ p {
 
         .frquencyHeader li:nth-child(3) {
             border-right: 1px solid #999;
-            width: 40%;
+            width: 76%;
         }
 
         .frquencyHeader li:nth-child(4) {
             border-right: 1px solid #999;
-            width: 35%;
+            width: 8%;
         }
 
         .frquencyHeader li:nth-child(5) {
@@ -257,7 +257,7 @@ p {
 }
 
 .frquencyContent li:nth-child(3) {
-    width: 40%;
+    width: 76%;
 }
 
 .frquencyContent li {
@@ -269,7 +269,7 @@ p {
 }
 
 .frquencyContent li:nth-child(4) {
-    width: 35%;
+    width: 8%;
 }
 
 .frquencyContent li:nth-child(5) {
@@ -288,15 +288,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(2) {
-    background: #ddd;
-}
-
-.frquencyContent ul:first-child {
-    background: #fff;
-}
-
-.frquencyContent ul:nth-child(2) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(3) {
@@ -304,7 +296,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(4) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(5) {
@@ -312,7 +304,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(6) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(7) {
@@ -320,7 +312,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(8) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(9) {
@@ -328,7 +320,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(10) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(11) {
@@ -336,7 +328,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(12) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(13) {
@@ -344,7 +336,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(14) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(15) {
@@ -352,7 +344,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(16) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(17) {
@@ -360,7 +352,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(18) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(19) {
@@ -368,7 +360,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(20) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(21) {
@@ -376,7 +368,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(22) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(23) {
@@ -384,7 +376,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(24) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(25) {
@@ -392,7 +384,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(26) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(27) {
@@ -400,7 +392,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(28) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(29) {
@@ -408,7 +400,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(30) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(31) {
@@ -416,7 +408,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(32) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(33) {
@@ -424,7 +416,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(34) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(35) {
@@ -432,7 +424,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(36) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(37) {
@@ -440,7 +432,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(38) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(39) {
@@ -448,7 +440,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(40) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(41) {
@@ -456,7 +448,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(42) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(43) {
@@ -464,7 +456,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(44) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(45) {
@@ -472,7 +464,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(46) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(47) {
@@ -480,7 +472,7 @@ p {
 }
 
 .frquencyContent ul:nth-child(48) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frquencyContent ul:nth-child(49) {
@@ -488,51 +480,74 @@ p {
 }
 
 .frquencyContent ul:nth-child(50) {
-    background: #ddd;
+    background: #f1f1f1;
 }
 
 .frequency_scale {
     margin: 0%;
-    height: auto !important;
     padding: 0%;
     background: none !important;
-    border-top: 2px solid #aaa;
-    border-bottom: 2px solid #aaa;
+    border: 1px solid #007176;
 }
 
     .frequency_scale li {
-        color: #fff;
-        padding: .8% 0 1.2% 0 !important;
+        color: #000;
         font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
         font-weight: bold;
-        text-transform: uppercase;
+        margin-top: 5%;
         text-align: center;
         border: none !important;
     }
 
         .frequency_scale li:first-child {
-            background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
             background-size: 105% 100% !important;
             width: 25%;
+            border-right: 1px solid #007176 !important;
+            background: #dcf1f1; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #dcf1f1, #bae2e3); /* Standard syntax */
         }
 
         .frequency_scale li:nth-child(2) {
-            background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
             background-size: 105% 100% !important;
             border: 0;
             width: 25%;
+            font-size: 65%;
+            border-right: 1px solid #007176 !important;
+            background: #bae2e3; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #bae2e3, #84cbce); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #bae2e3, #84cbce); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #bae2e3, #84cbce); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #bae2e3, #84cbce); /* Standard syntax */
         }
 
         .frequency_scale li:nth-child(3) {
-            background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
             background-size: 100% 100% !important;
             width: 25%;
+            border-right: 1px solid #007176 !important;
+            background: #84cbce; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #84cbce, #4bb2b7); /* Standard syntax */
         }
 
         .frequency_scale li:nth-child(4) {
-            background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
             background-size: 100% 100% !important;
             width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #4bb2b7, #23a1a7); /* Standard syntax */
         }
 
 .selectManager {
@@ -576,8 +591,8 @@ p {
     background: url(../../Images/DevPriorities/Priorities/frequencyManager.png)no-repeat center;
     background-size: 25px 15px !important;
     position: absolute;
-    padding-bottom: 26%;
-    top: -98%;
+    padding-bottom: 45%;
+    top: -60%;
     text-transform: uppercase;
     left: 0%;
     color: #000 !important;
@@ -597,8 +612,8 @@ p {
     background: url(../../Images/DevPriorities/Priorities/frequencyYou.png)no-repeat center;
     background-size: 25px 15px !important;
     position: absolute;
-    padding-top: 28%;
-    top: -5%;
+    padding-top: 50%;
+    top: 35%;
     text-transform: uppercase;
     right: 0px;
     width: 100%;
@@ -673,6 +688,242 @@ p {
 }
 
 
+/********************************************************************************************************************************************************/
+
+.dp_fci {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+.dp_freq {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.dp_capab {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.dp_importnt {
+    float: left;
+    width: 32%;
+}
+
+.clr {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+
+
+.capability_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border: 1px solid #0b47c2;
+}
+
+    .capability_scale li {
+        color: #000;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+    .capability_scale li {
+        min-height: 0px !important;
+        text-transform: uppercase;
+        min-height: 0px;
+    }
+
+
+        .capability_scale li:first-child {
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #ccdbfa; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ccdbfa, #aec6f7); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(2) {
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #f7c4bc; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #aec6f7, #7da3f2); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(3) {
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #7da3f2; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #7da3f2, #4b80ee); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(4) {
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #4b80ee, #2767ea); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #4b80ee, #2767ea); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #4b80ee, #2767ea); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #4b80ee, #2767ea); /* Standard syntax */
+            font-size: 70%;
+        }
+
+
+
+
+.important_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border: 1px solid #eb4329;
+}
+
+    .important_scale li {
+        color: #000;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+    .important_scale li {
+        min-height: 0px !important;
+        text-transform: uppercase;
+        min-height: 0px;
+    }
+
+
+        .important_scale li:first-child {
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #fae1dd; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #fae1dd, #f7c4bc); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(2) {
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #f7c4bc; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7c4bc, #f39586); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #f7c4bc, #f39586); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7c4bc, #f39586); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #f7c4bc, #f39586); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(3) {
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #f39586; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f39586, #ee654f); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #f39586, #ee654f); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f39586, #ee654f); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #f39586, #ee654f); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(4) {
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #ee654f, #eb442a); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ee654f, #eb442a); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ee654f, #eb442a); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ee654f, #eb442a); /* Standard syntax */
+            font-size: 70%;
+        }
+
+
+.frquencyContent .important_scale li, .frquencyContent .frequency_scale li, .frquencyContent .capability_scale li {
+    height: 30px;
+    min-height: 30px !important;
+    font-size: 70% !important;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-top: 2px;
+}
+
+.dp_frqprogress img {
+    width: 100%;
+}
+
+.dp_no, .dp_practicearea, .dp_qetions {
+    padding-top: .4% !important;
+}
+
+.dp_legends ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+    .dp_legends ul li {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+        .dp_legends ul li:first-child {
+            background: url(../../Images\Common\dp_leg_freq.png)no-repeat left center;
+        }
+
+        .dp_legends ul li:nth-child(2) {
+            background: url(../../Images/Common/de_leg_cap.png)no-repeat left center;
+        }
+
+        .dp_legends ul li:nth-child(3) {
+            background: url(../../Images/Common/de_leg_imp.png)no-repeat left center;
+        }
+
 @media screen and (max-width: 1500px) and (min-width: 1000px) {
     /*@media screen and (max-width:1400px) and (min-width:1300px)*/
     .login {
@@ -684,6 +935,9 @@ p {
         padding: 0 0% 40% 0;
     }
 
+    .priorities_part2 h2 {
+        width: 72%;
+    }
 
     .breadcrumb {
         margin-top: 0%;
@@ -713,7 +967,8 @@ p {
 
 
     .hover_content {
-        margin-top: 3.7% !important;
+        margin-top: 0% !important;
+        right: 1% !important;
     }
 
 
@@ -722,7 +977,7 @@ p {
     }
 
     .frquencyContent ul:last-child .hover_content {
-        margin-top: -8% !important;
+        bottom: -20%;
     }
 }
 
@@ -766,22 +1021,26 @@ p {
 
 @media screen and (max-width:2000px) and (min-width:1800px) {
 
+    .priorities_part2 h2 {
+        width: 75%;
+    }
+
     .managerSpan {
-        top: -95% !important;
+        top: -80% !important;
         padding-top: 2%;
     }
 
     .youSpan {
-        top: -4% !important;
-        padding-bottom: 2% !important;
+        top: 6% !important;
+        padding-bottom: 15% !important;
     }
 
     #devprogress {
-        padding-bottom: 40% !important;
+        padding-bottom: 45% !important;
     }
 
     .prioitiesFrequency .slimScrollDiv {
-        padding-bottom: 40% !important;
+        padding-bottom: 45% !important;
     }
 
     .frquencyContent ul:last-child .hover_content {
@@ -802,13 +1061,16 @@ p {
     }
 
     .modNmaeview {
-        font-size: 160% !important;
+        font-size: 200% !important;
     }
 
     .frequency_scale li {
         min-height: 0px !important;
     }
 
+    .dp_qetions div:first-child {
+        font-size: 85%;
+    }
 
     .clickdeeper {
         left: -175% !important;
@@ -920,9 +1182,9 @@ p {
         font-size: 80% !important;
     }
 
-    .frquencyContent ul li .frequency_scale li {
+    .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
         font-size: 70% !important;
-        min-height: 0 !important;
+        min-height: 35px !important;
     }
 
     h2 {
@@ -935,7 +1197,7 @@ p {
 
     .managerSpan {
         top: -100%;
-        padding-top: 2%;
+        padding-top: 7%;
     }
 
 
@@ -990,7 +1252,7 @@ p {
     }
 
     P {
-        font-size: 90%;
+        font-size: 130%;
     }
 
     .button_menu {
@@ -1268,3 +1530,13 @@ p {
     .breadcrumb a {
         font-size: 1.1em;
     }
+
+
+#target li p, #target li a {
+    float: left;
+    color: #000;
+    margin: 1%;
+    padding: 0 0 0;
+    text-decoration: none;
+    width: 82%;
+}

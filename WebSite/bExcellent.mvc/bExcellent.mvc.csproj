@@ -665,6 +665,9 @@
     <Content Include="Images\coming-soon.png" />
     <Content Include="Images\comingsoon.png" />
     <Content Include="Images\Common\bg.png" />
+    <Content Include="Images\Common\dp_leg_cap.png" />
+    <Content Include="Images\Common\dp_leg_freq.png" />
+    <Content Include="Images\Common\dp_leg_imp.png" />
     <Content Include="Images\Common\popup_close.png" />
     <Content Include="Images\Common\popup_closeH.png" />
     <Content Include="Images\comparision_view.png" />

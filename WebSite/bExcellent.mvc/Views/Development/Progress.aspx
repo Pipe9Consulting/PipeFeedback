@@ -49,6 +49,7 @@
             </div>
             <div class="col-sm-9 priorities_part2">
                 <h2 id="tblHeader">lorum Ipsum <span>- Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</span></h2>
+                <div class="dp_legends"><ul><li>Frquency</li><li>Capability</li><li>Importance</li></ul></div>
                 <input type="button" class="button_menu" onclick="Show_Div(option_menu)" />
 
                 <div id="option_menu" class="optView" style="display: none; width: auto;">
@@ -73,8 +74,7 @@
                             <li>#</li>
                             <li>Practice Area</li>
                             <li>Excellence Actions</li>
-                            <li>Frequency</li>
-                            <li>Progress</li>
+                            <li>Growth</li>
 
                         </ul>
                         <div class="clearfix"></div>
