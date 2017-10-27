@@ -169,6 +169,7 @@
     </Compile>
     <Compile Include="Models\DomainData.cs" />
     <Compile Include="Models\DomainRoute.cs" />
+    <Compile Include="Models\FeedbackLanding.cs" />
     <Compile Include="Models\ImageProcessing.cs" />
     <Compile Include="Models\LoginRequest.cs" />
     <Compile Include="Models\MediaAssetUploadModel.cs" />
@@ -4648,6 +4649,10 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Service\bExcellent.Service.Util\bExcellent.Service.Util.csproj">
+      <Project>{fad7a872-198b-44f4-8c24-16990079e423}</Project>
+      <Name>bExcellent.Service.Util</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ExcelReportGenerator\ExcelReportGenerator.csproj">
       <Project>{fc734d6a-66a4-4d3d-b142-656430cc5b12}</Project>
       <Name>ExcelReportGenerator</Name>

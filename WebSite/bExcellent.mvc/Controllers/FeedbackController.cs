@@ -14,6 +14,7 @@ using System.Web;
 using CreatedFeedback = bExcellent.mvc.FeedbackWCF.CreatedFeedback;
 using SignupRequest = bExcellent.mvc.SignUpWCF.SignupRequest;
 using UserPOEMapping = bExcellent.mvc.SignUpWCF.UserPOEMapping;
+using bExcellent.mvc.Models;
 
 namespace bExcellent.mvc.Controllers
 {
@@ -1943,6 +1944,66 @@ namespace bExcellent.mvc.Controllers
 
         public ActionResult Feedback()
         {
+            var common = new CommonClient();
+            var feedback=new FeedbackServiceClient();
+            var feedbacklanding = new FeedbackLanding();
+            
+            //var poe=Session["SelectedPoe"].ToString();
+            //Session["SelectedPoe"] = 0;
+            //feedbacklanding.Role = common.GetUserRole(int.Parse(Session["id"].ToString()), int.Parse(Session["SelectedPoe"].ToString()), int.Parse(Session["subid"].ToString()));
+            var poeDetails = common.GetMySubscribedPoeList(int.Parse(Session["id"].ToString()), int.Parse(Session["subid"].ToString()));
+            //feedbacklanding.PoEList = poeDetails.ToList();
+            //feedbacklanding.Role = feedback.GetPoEResultMode(int.Parse(Session["id"].ToString()), int.Parse(Session["SelectedPoe"].ToString()));
+            //feedbacklanding.MinimizedPOE = returnValue.ToList();
+            //(IList<MinimizedPOE>)
+            //if (feedbacklanding.poeMode != null && mode != 2)
+            //{
+            //    Session["FeedbackPage"] = mode;
+
+            //    var managerPoE = feedback.GetUserPoeManagerRole(int.Parse(Session["id"].ToString())).ToList();
+            //    if (Session["SelectedPoe"] != null)
+            //    {
+            //        int poeid = int.Parse(Session["SelectedPoe"].ToString());
+            //        if (managerPoE.Count(a => a.POEId == poeid) != 0)
+            //        {
+            //            Session["SelectedPoe"] = poeid;
+            //        }
+            //        else
+            //        {
+            //            Session["SelectedPoe"] = managerPoE.FirstOrDefault().POEId;
+            //        }
+
+            //    }
+            //    else
+            //    {
+            //        Session["SelectedPoe"] = managerPoE.FirstOrDefault().POEId;
+            //    }
+
+            //}
+            //else if (mode != null && mode != 1)
+            //{
+            //    Session["FeedbackPage"] = null;
+            //    var teampoe = feedback.GetUserPoeTeamRole(int.Parse(Session["id"].ToString())).ToList();
+            //    if (Session["SelectedPoe"] != null)
+            //    {
+            //        int poeid = int.Parse(Session["SelectedPoe"].ToString());
+            //        if (teampoe.Count(a => a.POEId == poeid) != 0)
+            //        {
+            //            Session["SelectedPoe"] = poeid;
+            //        }
+            //        else
+            //        {
+            //            Session["SelectedPoe"] = teampoe.FirstOrDefault().POEId;
+            //        }
+
+            //    }
+            //    else
+            //    {
+            //        Session["SelectedPoe"] = teampoe.FirstOrDefault().POEId;
+            //    }
+
+            //    //Session["SelectedPoe"] = null;
+            //}
             // CommonController.Log(Session["id"].ToString() + "::" + "Feedback-View");       
             //if (TempData["fromstart"] == null)
             //    TempData["fromstart"] = 0;
