@@ -380,9 +380,13 @@ var devLanding = {
                             }
 
                             html = html + "<ul><li>" + (i + 1) + "</li><li><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
-                                "<li><div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div>" + moreText + "</li>" +
-                                "<li> <ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>Frequently " + selectedRole3 + "</li> " +
-                                "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul> </li> </ul>";
+                                "<li><div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Not Ready " + selectedRole1 + "</li> <li class='" + selected2 + "'>Somewhat Ready " + selectedRole2 + "</li> <li class='" + selected3 + "'>Ready " + selectedRole3 + "</li> " +
+                                "<li class='" + selected4 + "'>Very Ready " + selectedRole4 + "</li> </ul></div><div class='dp_capab'></div><div class='dp_importnt'></div></div>" + moreText + "</li>" +
+                                "</ul>";
+                            //html = html + "<ul><li>" + (i + 1) + "</li><li><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
+                            //    "<li><div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div>" + moreText + "</li>" +
+                            //    "<li> <ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>Frequently " + selectedRole3 + "</li> " +
+                            //    "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul> </li> </ul>";
                         } else {
                             if (response[i].ManagerCapability == 1) {
                                 selected1 = "selectManager";
@@ -413,9 +417,9 @@ var devLanding = {
                             }
 
                             html = html + "<ul><li>" + (i + 1) + "</li><li><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
-                                "<li><div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div>" + moreText + "</li>" +
-                                "<li> <ul class='frequency_scale'> <li class='" + selected1 + "'>Not Ready " + selectedRole1 + "</li> <li class='" + selected2 + "'>Somewhat Ready " + selectedRole2 + "</li> <li class='" + selected3 + "'>Ready " + selectedRole3 + "</li> " +
-                                "<li class='" + selected4 + "'>Very Ready " + selectedRole4 + "</li> </ul> </li> </ul>";
+                                "<li><div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Not Ready " + selectedRole1 + "</li> <li class='" + selected2 + "'>Somewhat Ready " + selectedRole2 + "</li> <li class='" + selected3 + "'>Ready " + selectedRole3 + "</li> " +
+                                "<li class='" + selected4 + "'>Very Ready " + selectedRole4 + "</li> </ul></div><div class='dp_capab'></div><div class='dp_importnt'></div></div>" + moreText + "</li>" +
+                                "</ul>";
                         }
                     }
                     $('#devPrioritiesCont').html(html);
