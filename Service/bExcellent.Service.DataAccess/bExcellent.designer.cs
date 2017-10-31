@@ -22,7 +22,7 @@ namespace bExcellent.Service.DataAccess
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="PSE_Live")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Kessaku_Beta")]
 	public partial class bExcellentDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -33,7 +33,7 @@ namespace bExcellent.Service.DataAccess
     #endregion
 		
 		public bExcellentDataContext() : 
-				base(global::bExcellent.Service.DataAccess.Properties.Settings.Default.PSE_LiveConnectionString, mappingSource)
+				base(global::bExcellent.Service.DataAccess.Properties.Settings.Default.Kessaku_BetaConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -1336,34 +1336,6 @@ namespace bExcellent.Service.DataAccess
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetDevManagerCurrentFb")]
-		public ISingleResult<V4_GetDevManagerCurrentFbResult> GetDevManagerCurrentFb([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mgrMappingid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, mgrMappingid);
-			return ((ISingleResult<V4_GetDevManagerCurrentFbResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetDevManagerPrevFb")]
-		public ISingleResult<V4_GetDevManagerPrevFbResult> GetDevManagerPrevFb([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mgrMappingid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, mgrMappingid);
-			return ((ISingleResult<V4_GetDevManagerPrevFbResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetDevTeamCurrentFb")]
-		public ISingleResult<V4_GetDevTeamCurrentFbResult> GetDevTeamCurrentFb([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> tmMappingid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, tmMappingid);
-			return ((ISingleResult<V4_GetDevTeamCurrentFbResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetDevTeamPrevFb")]
-		public ISingleResult<V4_GetDevTeamPrevFbResult> GetDevTeamPrevFb([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> tmMappingid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, tmMappingid);
-			return ((ISingleResult<V4_GetDevTeamPrevFbResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.v4_IuUserRating")]
 		public int IuUserRating([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="QuestionId", DbType="Int")] System.Nullable<int> questionId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Rating", DbType="Int")] System.Nullable<int> rating, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Feedbackid", DbType="Int")] System.Nullable<int> feedbackid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeId)
 		{
@@ -1383,20 +1355,6 @@ namespace bExcellent.Service.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), feedbackId, questionId, answer, comment, answerType, status);
 			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetSelfFBResultsTM")]
-		public ISingleResult<V4_GetSelfFBResultsTMResult> GetSelfFBResultsTM([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Poeid", DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mappingId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, mappingId);
-			return ((ISingleResult<V4_GetSelfFBResultsTMResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetSelfFBResults")]
-		public ISingleResult<V4_GetSelfFBResultsResult> GetSelfFBResults([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Poeid", DbType="Int")] System.Nullable<int> poeid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid);
-			return ((ISingleResult<V4_GetSelfFBResultsResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_DevPrioritiesbulkImport")]
@@ -2097,6 +2055,48 @@ namespace bExcellent.Service.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<PPA_GetAllReportsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetSelfFBResultsTM")]
+		public ISingleResult<V4_GetSelfFBResultsTMResult> GetSelfFBResultsTM([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Poeid", DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mappingId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, mappingId);
+			return ((ISingleResult<V4_GetSelfFBResultsTMResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetSelfFBResults")]
+		public ISingleResult<V4_GetSelfFBResultsResult> GetSelfFBResults([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Poeid", DbType="Int")] System.Nullable<int> poeid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid);
+			return ((ISingleResult<V4_GetSelfFBResultsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetDevManagerPrevFb")]
+		public ISingleResult<V4_GetDevManagerPrevFbResult> GetDevManagerPrevFb([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mgrMappingid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, mgrMappingid);
+			return ((ISingleResult<V4_GetDevManagerPrevFbResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetDevManagerCurrentFb")]
+		public ISingleResult<V4_GetDevManagerCurrentFbResult> GetDevManagerCurrentFb([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mgrMappingid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, mgrMappingid);
+			return ((ISingleResult<V4_GetDevManagerCurrentFbResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetDevTeamCurrentFb")]
+		public ISingleResult<V4_GetDevTeamCurrentFbResult> GetDevTeamCurrentFb([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> tmMappingid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, tmMappingid);
+			return ((ISingleResult<V4_GetDevTeamCurrentFbResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetDevTeamPrevFb")]
+		public ISingleResult<V4_GetDevTeamPrevFbResult> GetDevTeamPrevFb([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> tmMappingid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, tmMappingid);
+			return ((ISingleResult<V4_GetDevTeamPrevFbResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -3147,7 +3147,7 @@ namespace bExcellent.Service.DataAccess
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -8969,7 +8969,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -9959,7 +9959,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -10315,7 +10315,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image")]
 		public System.Data.Linq.Binary picture
 		{
 			get
@@ -26506,470 +26506,6 @@ namespace bExcellent.Service.DataAccess
 		}
 	}
 	
-	public partial class V4_GetDevManagerCurrentFbResult
-	{
-		
-		private int _ModuleOrder;
-		
-		private int _POEModuleId;
-		
-		private string _ModuleName;
-		
-		private int _QuestionId;
-		
-		private string _SideBarText;
-		
-		private System.Nullable<int> _Answer;
-		
-		public V4_GetDevManagerCurrentFbResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
-		public int ModuleOrder
-		{
-			get
-			{
-				return this._ModuleOrder;
-			}
-			set
-			{
-				if ((this._ModuleOrder != value))
-				{
-					this._ModuleOrder = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
-		public int POEModuleId
-		{
-			get
-			{
-				return this._POEModuleId;
-			}
-			set
-			{
-				if ((this._POEModuleId != value))
-				{
-					this._POEModuleId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
-		public string ModuleName
-		{
-			get
-			{
-				return this._ModuleName;
-			}
-			set
-			{
-				if ((this._ModuleName != value))
-				{
-					this._ModuleName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
-		public int QuestionId
-		{
-			get
-			{
-				return this._QuestionId;
-			}
-			set
-			{
-				if ((this._QuestionId != value))
-				{
-					this._QuestionId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
-		public string SideBarText
-		{
-			get
-			{
-				return this._SideBarText;
-			}
-			set
-			{
-				if ((this._SideBarText != value))
-				{
-					this._SideBarText = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
-		public System.Nullable<int> Answer
-		{
-			get
-			{
-				return this._Answer;
-			}
-			set
-			{
-				if ((this._Answer != value))
-				{
-					this._Answer = value;
-				}
-			}
-		}
-	}
-	
-	public partial class V4_GetDevManagerPrevFbResult
-	{
-		
-		private int _ModuleOrder;
-		
-		private int _POEModuleId;
-		
-		private string _ModuleName;
-		
-		private int _QuestionId;
-		
-		private string _SideBarText;
-		
-		private System.Nullable<int> _Answer;
-		
-		public V4_GetDevManagerPrevFbResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
-		public int ModuleOrder
-		{
-			get
-			{
-				return this._ModuleOrder;
-			}
-			set
-			{
-				if ((this._ModuleOrder != value))
-				{
-					this._ModuleOrder = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
-		public int POEModuleId
-		{
-			get
-			{
-				return this._POEModuleId;
-			}
-			set
-			{
-				if ((this._POEModuleId != value))
-				{
-					this._POEModuleId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
-		public string ModuleName
-		{
-			get
-			{
-				return this._ModuleName;
-			}
-			set
-			{
-				if ((this._ModuleName != value))
-				{
-					this._ModuleName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
-		public int QuestionId
-		{
-			get
-			{
-				return this._QuestionId;
-			}
-			set
-			{
-				if ((this._QuestionId != value))
-				{
-					this._QuestionId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
-		public string SideBarText
-		{
-			get
-			{
-				return this._SideBarText;
-			}
-			set
-			{
-				if ((this._SideBarText != value))
-				{
-					this._SideBarText = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
-		public System.Nullable<int> Answer
-		{
-			get
-			{
-				return this._Answer;
-			}
-			set
-			{
-				if ((this._Answer != value))
-				{
-					this._Answer = value;
-				}
-			}
-		}
-	}
-	
-	public partial class V4_GetDevTeamCurrentFbResult
-	{
-		
-		private int _ModuleOrder;
-		
-		private int _POEModuleId;
-		
-		private string _ModuleName;
-		
-		private int _QuestionId;
-		
-		private string _SideBarText;
-		
-		private System.Nullable<int> _Answer;
-		
-		public V4_GetDevTeamCurrentFbResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
-		public int ModuleOrder
-		{
-			get
-			{
-				return this._ModuleOrder;
-			}
-			set
-			{
-				if ((this._ModuleOrder != value))
-				{
-					this._ModuleOrder = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
-		public int POEModuleId
-		{
-			get
-			{
-				return this._POEModuleId;
-			}
-			set
-			{
-				if ((this._POEModuleId != value))
-				{
-					this._POEModuleId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
-		public string ModuleName
-		{
-			get
-			{
-				return this._ModuleName;
-			}
-			set
-			{
-				if ((this._ModuleName != value))
-				{
-					this._ModuleName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
-		public int QuestionId
-		{
-			get
-			{
-				return this._QuestionId;
-			}
-			set
-			{
-				if ((this._QuestionId != value))
-				{
-					this._QuestionId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
-		public string SideBarText
-		{
-			get
-			{
-				return this._SideBarText;
-			}
-			set
-			{
-				if ((this._SideBarText != value))
-				{
-					this._SideBarText = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
-		public System.Nullable<int> Answer
-		{
-			get
-			{
-				return this._Answer;
-			}
-			set
-			{
-				if ((this._Answer != value))
-				{
-					this._Answer = value;
-				}
-			}
-		}
-	}
-	
-	public partial class V4_GetDevTeamPrevFbResult
-	{
-		
-		private int _ModuleOrder;
-		
-		private int _POEModuleId;
-		
-		private string _ModuleName;
-		
-		private int _QuestionId;
-		
-		private string _SideBarText;
-		
-		private System.Nullable<int> _Answer;
-		
-		public V4_GetDevTeamPrevFbResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
-		public int ModuleOrder
-		{
-			get
-			{
-				return this._ModuleOrder;
-			}
-			set
-			{
-				if ((this._ModuleOrder != value))
-				{
-					this._ModuleOrder = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
-		public int POEModuleId
-		{
-			get
-			{
-				return this._POEModuleId;
-			}
-			set
-			{
-				if ((this._POEModuleId != value))
-				{
-					this._POEModuleId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
-		public string ModuleName
-		{
-			get
-			{
-				return this._ModuleName;
-			}
-			set
-			{
-				if ((this._ModuleName != value))
-				{
-					this._ModuleName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
-		public int QuestionId
-		{
-			get
-			{
-				return this._QuestionId;
-			}
-			set
-			{
-				if ((this._QuestionId != value))
-				{
-					this._QuestionId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
-		public string SideBarText
-		{
-			get
-			{
-				return this._SideBarText;
-			}
-			set
-			{
-				if ((this._SideBarText != value))
-				{
-					this._SideBarText = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
-		public System.Nullable<int> Answer
-		{
-			get
-			{
-				return this._Answer;
-			}
-			set
-			{
-				if ((this._Answer != value))
-				{
-					this._Answer = value;
-				}
-			}
-		}
-	}
-	
 	public partial class V4_CreateCapabilityFeedbackResult
 	{
 		
@@ -26991,130 +26527,6 @@ namespace bExcellent.Service.DataAccess
 				if ((this._FeedbackId != value))
 				{
 					this._FeedbackId = value;
-				}
-			}
-		}
-	}
-	
-	public partial class V4_GetSelfFBResultsTMResult
-	{
-		
-		private int _QuestionId;
-		
-		private System.Nullable<int> _Answer;
-		
-		private System.Nullable<int> _Capability;
-		
-		public V4_GetSelfFBResultsTMResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
-		public int QuestionId
-		{
-			get
-			{
-				return this._QuestionId;
-			}
-			set
-			{
-				if ((this._QuestionId != value))
-				{
-					this._QuestionId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
-		public System.Nullable<int> Answer
-		{
-			get
-			{
-				return this._Answer;
-			}
-			set
-			{
-				if ((this._Answer != value))
-				{
-					this._Answer = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capability", DbType="Int")]
-		public System.Nullable<int> Capability
-		{
-			get
-			{
-				return this._Capability;
-			}
-			set
-			{
-				if ((this._Capability != value))
-				{
-					this._Capability = value;
-				}
-			}
-		}
-	}
-	
-	public partial class V4_GetSelfFBResultsResult
-	{
-		
-		private int _QuestionId;
-		
-		private System.Nullable<int> _Answer;
-		
-		private System.Nullable<int> _Capability;
-		
-		public V4_GetSelfFBResultsResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
-		public int QuestionId
-		{
-			get
-			{
-				return this._QuestionId;
-			}
-			set
-			{
-				if ((this._QuestionId != value))
-				{
-					this._QuestionId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
-		public System.Nullable<int> Answer
-		{
-			get
-			{
-				return this._Answer;
-			}
-			set
-			{
-				if ((this._Answer != value))
-				{
-					this._Answer = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capability", DbType="Int")]
-		public System.Nullable<int> Capability
-		{
-			get
-			{
-				return this._Capability;
-			}
-			set
-			{
-				if ((this._Capability != value))
-				{
-					this._Capability = value;
 				}
 			}
 		}
@@ -35859,6 +35271,774 @@ namespace bExcellent.Service.DataAccess
 				if ((this._startdate != value))
 				{
 					this._startdate = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V4_GetSelfFBResultsTMResult
+	{
+		
+		private int _QuestionId;
+		
+		private System.Nullable<int> _Answer;
+		
+		private System.Nullable<int> _Capability;
+		
+		private System.Nullable<int> _Rating;
+		
+		public V4_GetSelfFBResultsTMResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
+		public int QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
+		public System.Nullable<int> Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capability", DbType="Int")]
+		public System.Nullable<int> Capability
+		{
+			get
+			{
+				return this._Capability;
+			}
+			set
+			{
+				if ((this._Capability != value))
+				{
+					this._Capability = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rating", DbType="Int")]
+		public System.Nullable<int> Rating
+		{
+			get
+			{
+				return this._Rating;
+			}
+			set
+			{
+				if ((this._Rating != value))
+				{
+					this._Rating = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V4_GetSelfFBResultsResult
+	{
+		
+		private int _QuestionId;
+		
+		private System.Nullable<int> _Answer;
+		
+		private System.Nullable<int> _Capability;
+		
+		private System.Nullable<int> _Rating;
+		
+		public V4_GetSelfFBResultsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
+		public int QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
+		public System.Nullable<int> Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capability", DbType="Int")]
+		public System.Nullable<int> Capability
+		{
+			get
+			{
+				return this._Capability;
+			}
+			set
+			{
+				if ((this._Capability != value))
+				{
+					this._Capability = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rating", DbType="Int")]
+		public System.Nullable<int> Rating
+		{
+			get
+			{
+				return this._Rating;
+			}
+			set
+			{
+				if ((this._Rating != value))
+				{
+					this._Rating = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V4_GetDevManagerPrevFbResult
+	{
+		
+		private int _ModuleOrder;
+		
+		private int _POEModuleId;
+		
+		private string _ModuleName;
+		
+		private int _QuestionId;
+		
+		private string _SideBarText;
+		
+		private System.Nullable<int> _Answer;
+		
+		private System.Nullable<int> _Capability;
+		
+		private System.Nullable<int> _rating;
+		
+		public V4_GetDevManagerPrevFbResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
+		public int ModuleOrder
+		{
+			get
+			{
+				return this._ModuleOrder;
+			}
+			set
+			{
+				if ((this._ModuleOrder != value))
+				{
+					this._ModuleOrder = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
+		public int POEModuleId
+		{
+			get
+			{
+				return this._POEModuleId;
+			}
+			set
+			{
+				if ((this._POEModuleId != value))
+				{
+					this._POEModuleId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
+		public string ModuleName
+		{
+			get
+			{
+				return this._ModuleName;
+			}
+			set
+			{
+				if ((this._ModuleName != value))
+				{
+					this._ModuleName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
+		public int QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string SideBarText
+		{
+			get
+			{
+				return this._SideBarText;
+			}
+			set
+			{
+				if ((this._SideBarText != value))
+				{
+					this._SideBarText = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
+		public System.Nullable<int> Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capability", DbType="Int")]
+		public System.Nullable<int> Capability
+		{
+			get
+			{
+				return this._Capability;
+			}
+			set
+			{
+				if ((this._Capability != value))
+				{
+					this._Capability = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_rating", DbType="Int")]
+		public System.Nullable<int> rating
+		{
+			get
+			{
+				return this._rating;
+			}
+			set
+			{
+				if ((this._rating != value))
+				{
+					this._rating = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V4_GetDevManagerCurrentFbResult
+	{
+		
+		private int _ModuleOrder;
+		
+		private int _POEModuleId;
+		
+		private string _ModuleName;
+		
+		private int _QuestionId;
+		
+		private string _SideBarText;
+		
+		private System.Nullable<int> _Answer;
+		
+		private System.Nullable<int> _Capability;
+		
+		private System.Nullable<int> _Rating;
+		
+		public V4_GetDevManagerCurrentFbResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
+		public int ModuleOrder
+		{
+			get
+			{
+				return this._ModuleOrder;
+			}
+			set
+			{
+				if ((this._ModuleOrder != value))
+				{
+					this._ModuleOrder = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
+		public int POEModuleId
+		{
+			get
+			{
+				return this._POEModuleId;
+			}
+			set
+			{
+				if ((this._POEModuleId != value))
+				{
+					this._POEModuleId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
+		public string ModuleName
+		{
+			get
+			{
+				return this._ModuleName;
+			}
+			set
+			{
+				if ((this._ModuleName != value))
+				{
+					this._ModuleName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
+		public int QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string SideBarText
+		{
+			get
+			{
+				return this._SideBarText;
+			}
+			set
+			{
+				if ((this._SideBarText != value))
+				{
+					this._SideBarText = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
+		public System.Nullable<int> Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capability", DbType="Int")]
+		public System.Nullable<int> Capability
+		{
+			get
+			{
+				return this._Capability;
+			}
+			set
+			{
+				if ((this._Capability != value))
+				{
+					this._Capability = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rating", DbType="Int")]
+		public System.Nullable<int> Rating
+		{
+			get
+			{
+				return this._Rating;
+			}
+			set
+			{
+				if ((this._Rating != value))
+				{
+					this._Rating = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V4_GetDevTeamCurrentFbResult
+	{
+		
+		private int _ModuleOrder;
+		
+		private int _POEModuleId;
+		
+		private string _ModuleName;
+		
+		private int _QuestionId;
+		
+		private string _SideBarText;
+		
+		private System.Nullable<int> _Answer;
+		
+		private System.Nullable<int> _Capability;
+		
+		private System.Nullable<int> _rating;
+		
+		public V4_GetDevTeamCurrentFbResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
+		public int ModuleOrder
+		{
+			get
+			{
+				return this._ModuleOrder;
+			}
+			set
+			{
+				if ((this._ModuleOrder != value))
+				{
+					this._ModuleOrder = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
+		public int POEModuleId
+		{
+			get
+			{
+				return this._POEModuleId;
+			}
+			set
+			{
+				if ((this._POEModuleId != value))
+				{
+					this._POEModuleId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
+		public string ModuleName
+		{
+			get
+			{
+				return this._ModuleName;
+			}
+			set
+			{
+				if ((this._ModuleName != value))
+				{
+					this._ModuleName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
+		public int QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string SideBarText
+		{
+			get
+			{
+				return this._SideBarText;
+			}
+			set
+			{
+				if ((this._SideBarText != value))
+				{
+					this._SideBarText = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
+		public System.Nullable<int> Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capability", DbType="Int")]
+		public System.Nullable<int> Capability
+		{
+			get
+			{
+				return this._Capability;
+			}
+			set
+			{
+				if ((this._Capability != value))
+				{
+					this._Capability = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_rating", DbType="Int")]
+		public System.Nullable<int> rating
+		{
+			get
+			{
+				return this._rating;
+			}
+			set
+			{
+				if ((this._rating != value))
+				{
+					this._rating = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V4_GetDevTeamPrevFbResult
+	{
+		
+		private int _ModuleOrder;
+		
+		private int _POEModuleId;
+		
+		private string _ModuleName;
+		
+		private int _QuestionId;
+		
+		private string _SideBarText;
+		
+		private System.Nullable<int> _Answer;
+		
+		private System.Nullable<int> _Capability;
+		
+		private System.Nullable<int> _rating;
+		
+		public V4_GetDevTeamPrevFbResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
+		public int ModuleOrder
+		{
+			get
+			{
+				return this._ModuleOrder;
+			}
+			set
+			{
+				if ((this._ModuleOrder != value))
+				{
+					this._ModuleOrder = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
+		public int POEModuleId
+		{
+			get
+			{
+				return this._POEModuleId;
+			}
+			set
+			{
+				if ((this._POEModuleId != value))
+				{
+					this._POEModuleId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleName", DbType="NVarChar(50)")]
+		public string ModuleName
+		{
+			get
+			{
+				return this._ModuleName;
+			}
+			set
+			{
+				if ((this._ModuleName != value))
+				{
+					this._ModuleName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
+		public int QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SideBarText", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string SideBarText
+		{
+			get
+			{
+				return this._SideBarText;
+			}
+			set
+			{
+				if ((this._SideBarText != value))
+				{
+					this._SideBarText = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
+		public System.Nullable<int> Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capability", DbType="Int")]
+		public System.Nullable<int> Capability
+		{
+			get
+			{
+				return this._Capability;
+			}
+			set
+			{
+				if ((this._Capability != value))
+				{
+					this._Capability = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_rating", DbType="Int")]
+		public System.Nullable<int> rating
+		{
+			get
+			{
+				return this._rating;
+			}
+			set
+			{
+				if ((this._rating != value))
+				{
+					this._rating = value;
 				}
 			}
 		}

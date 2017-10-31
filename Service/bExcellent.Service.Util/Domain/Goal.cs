@@ -149,6 +149,8 @@ namespace bExcellent.Service.Util.Domain
         public int ManagerMappingId { get; set; }
         public int CurrentFeedbackId { get; set; }
         public int TeamId { get; set; }
+        public int ManagerRating { get; set; }
+        public int SelfRating { get; set; }
     }
     public class Results
     {

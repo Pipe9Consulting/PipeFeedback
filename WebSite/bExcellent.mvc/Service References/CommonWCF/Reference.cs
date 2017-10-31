@@ -3449,6 +3449,9 @@ namespace bExcellent.mvc.CommonWCF {
         private int ManagerMappingIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ManagerRatingField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int ManagerResultField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -3468,6 +3471,9 @@ namespace bExcellent.mvc.CommonWCF {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int SelfCapabilityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int SelfRatingField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int SelfResultField;
@@ -3533,6 +3539,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.ManagerMappingIdField.Equals(value) != true)) {
                     this.ManagerMappingIdField = value;
                     this.RaisePropertyChanged("ManagerMappingId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ManagerRating {
+            get {
+                return this.ManagerRatingField;
+            }
+            set {
+                if ((this.ManagerRatingField.Equals(value) != true)) {
+                    this.ManagerRatingField = value;
+                    this.RaisePropertyChanged("ManagerRating");
                 }
             }
         }
@@ -3624,6 +3643,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.SelfCapabilityField.Equals(value) != true)) {
                     this.SelfCapabilityField = value;
                     this.RaisePropertyChanged("SelfCapability");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SelfRating {
+            get {
+                return this.SelfRatingField;
+            }
+            set {
+                if ((this.SelfRatingField.Equals(value) != true)) {
+                    this.SelfRatingField = value;
+                    this.RaisePropertyChanged("SelfRating");
                 }
             }
         }

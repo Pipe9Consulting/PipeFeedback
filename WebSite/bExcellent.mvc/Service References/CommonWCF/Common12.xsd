@@ -57,6 +57,7 @@
       <xs:element minOccurs="0" name="CurrentFeedbackId" type="xs:int" />
       <xs:element minOccurs="0" name="ManagerCapability" type="xs:int" />
       <xs:element minOccurs="0" name="ManagerMappingId" type="xs:int" />
+      <xs:element minOccurs="0" name="ManagerRating" type="xs:int" />
       <xs:element minOccurs="0" name="ManagerResult" type="xs:int" />
       <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ModuleOrder" type="xs:int" />
@@ -64,6 +65,7 @@
       <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
       <xs:element minOccurs="0" name="Rating" type="xs:int" />
       <xs:element minOccurs="0" name="SelfCapability" type="xs:int" />
+      <xs:element minOccurs="0" name="SelfRating" type="xs:int" />
       <xs:element minOccurs="0" name="SelfResult" type="xs:int" />
       <xs:element minOccurs="0" name="TeamId" type="xs:int" />
     </xs:sequence>
