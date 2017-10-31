@@ -156,6 +156,10 @@ namespace bExcellent.Service.Util.Domain
     {
         public int CurrrentResult { get; set; }
         public int PreviousResult { get; set; }
+        public int CurrrentCapability { get; set; }
+        public int PreviousCapability { get; set; }
+        public int CurrrentImportance { get; set; }
+        public int PreviousImportance { get; set; }
         public int QuestionId { get; set; }
         public int ModuleId { get; set; }
         public string Question { get; set; }

@@ -11587,6 +11587,12 @@ namespace bExcellent.mvc.CommonWCF {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CurrrentCapabilityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CurrrentImportanceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int CurrrentResultField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -11600,6 +11606,12 @@ namespace bExcellent.mvc.CommonWCF {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int ModuleOrderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PreviousCapabilityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PreviousImportanceField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int PreviousResultField;
@@ -11617,6 +11629,32 @@ namespace bExcellent.mvc.CommonWCF {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CurrrentCapability {
+            get {
+                return this.CurrrentCapabilityField;
+            }
+            set {
+                if ((this.CurrrentCapabilityField.Equals(value) != true)) {
+                    this.CurrrentCapabilityField = value;
+                    this.RaisePropertyChanged("CurrrentCapability");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CurrrentImportance {
+            get {
+                return this.CurrrentImportanceField;
+            }
+            set {
+                if ((this.CurrrentImportanceField.Equals(value) != true)) {
+                    this.CurrrentImportanceField = value;
+                    this.RaisePropertyChanged("CurrrentImportance");
+                }
             }
         }
         
@@ -11681,6 +11719,32 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.ModuleOrderField.Equals(value) != true)) {
                     this.ModuleOrderField = value;
                     this.RaisePropertyChanged("ModuleOrder");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PreviousCapability {
+            get {
+                return this.PreviousCapabilityField;
+            }
+            set {
+                if ((this.PreviousCapabilityField.Equals(value) != true)) {
+                    this.PreviousCapabilityField = value;
+                    this.RaisePropertyChanged("PreviousCapability");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PreviousImportance {
+            get {
+                return this.PreviousImportanceField;
+            }
+            set {
+                if ((this.PreviousImportanceField.Equals(value) != true)) {
+                    this.PreviousImportanceField = value;
+                    this.RaisePropertyChanged("PreviousImportance");
                 }
             }
         }

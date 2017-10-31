@@ -621,11 +621,15 @@
   <xs:element name="ArrayOfResults" nillable="true" type="tns:ArrayOfResults" />
   <xs:complexType name="Results">
     <xs:sequence>
+      <xs:element minOccurs="0" name="CurrrentCapability" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrrentImportance" type="xs:int" />
       <xs:element minOccurs="0" name="CurrrentResult" type="xs:int" />
       <xs:element minOccurs="0" name="IsDevelopmentPriorities" type="xs:boolean" />
       <xs:element minOccurs="0" name="ModuleId" type="xs:int" />
       <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ModuleOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="PreviousCapability" type="xs:int" />
+      <xs:element minOccurs="0" name="PreviousImportance" type="xs:int" />
       <xs:element minOccurs="0" name="PreviousResult" type="xs:int" />
       <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="QuestionId" type="xs:int" />

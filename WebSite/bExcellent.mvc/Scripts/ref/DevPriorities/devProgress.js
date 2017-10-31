@@ -142,6 +142,23 @@ var devProgress = {
                         var selectedRole4 = "";
                         var goaldiff = 0;
                         
+                        var capselected1 = "";
+                        var capselected2 = "";
+                        var capselected3 = "";
+                        var capselected4 = "";
+                        var capselectedRole1 = "";
+                        var capselectedRole2 = "";
+                        var capselectedRole3 = "";
+                        var capselectedRole4 = "";
+
+                        var impselected1 = "";
+                        var impselected2 = "";
+                        var impselected3 = "";
+                        var impselected4 = "";
+                        var impselectedRole1 = "";
+                        var impselectedRole2 = "";
+                        var impselectedRole3 = "";
+                        var impselectedRole4 = "";
                         var moreText = response[i].Question; //135
                         if (response[i].Question.length > 95) {
                             moreText = response[i].Question.substring(0, 95) + "<span class='actionMore'>more..</span>";
@@ -175,6 +192,61 @@ var devProgress = {
                             selectedRole4 = selectedRole4 + "<span class='youSpan'>PREVIOUS </span>";
                         }
 
+                        if (response[i].CurrrentCapability == 1) {
+                            capselected1 = "selectManager";
+                            capselectedRole1 = "<span class='managerSpan'>Latest</span>";
+                        } else if (response[i].CurrrentCapability == 2) {
+                            capselected2 = "selectManager";
+                            capselectedRole2 = "<span class='managerSpan'>Latest</span>";
+                        } else if (response[i].CurrrentCapability == 3) {
+                            capselected3 = "selectManager";
+                            capselectedRole3 = "<span class='managerSpan'>Latest</span>";
+                        } else if (response[i].CurrrentCapability == 4) {
+                            capselected4 = "selectManager";
+                            capselectedRole4 = "<span class='managerSpan'>Latest</span>";
+                        }
+
+                        if (response[i].PreviousCapability == 1) {
+                            capselected1 = "selectYou";
+                            capselectedRole1 = capselectedRole1 + "<span class='youSpan'>PREVIOUS </span>";
+                        } else if (response[i].PreviousCapability == 2) {
+                            capselected2 = "selectYou";
+                            capselectedRole2 = capselectedRole2 + "<span class='youSpan'>PREVIOUS </span>";
+                        } else if (response[i].PreviousCapability == 3) {
+                            capselected3 = "selectYou";
+                            capselectedRole3 = capselectedRole3 + "<span class='youSpan'>PREVIOUS </span>";
+                        } else if (response[i].PreviousCapability == 4) {
+                            capselected4 = "selectYou";
+                            capselectedRole4 = capselectedRole4 + "<span class='youSpan'>PREVIOUS </span>";
+                        }
+
+                        if (response[i].CurrrentImportance == 1) {
+                            impselected1 = "selectManager";
+                            impselectedRole1 = "<span class='managerSpan'>Latest</span>";
+                        } else if (response[i].CurrrentImportance == 2) {
+                            impselected2 = "selectManager";
+                            impselectedRole2 = "<span class='managerSpan'>Latest</span>";
+                        } else if (response[i].CurrrentImportance == 3) {
+                            impselected3 = "selectManager";
+                            impselectedRole3 = "<span class='managerSpan'>Latest</span>";
+                        } else if (response[i].CurrrentImportance == 4) {
+                            impselected4 = "selectManager";
+                            impselectedRole4 = "<span class='managerSpan'>Latest</span>";
+                        }
+
+                        if (response[i].PreviousImportance == 1) {
+                            impselected1 = "selectYou";
+                            impselectedRole1 = impselectedRole1 + "<span class='youSpan'>PREVIOUS </span>";
+                        } else if (response[i].PreviousImportance == 2) {
+                            impselected2 = "selectYou";
+                            impselectedRole2 = impselectedRole2 + "<span class='youSpan'>PREVIOUS </span>";
+                        } else if (response[i].PreviousImportance == 3) {
+                            impselected3 = "selectYou";
+                            impselectedRole3 = impselectedRole3 + "<span class='youSpan'>PREVIOUS </span>";
+                        } else if (response[i].PreviousImportance == 4) {
+                            impselected4 = "selectYou";
+                            impselectedRole4 = impselectedRole4 + "<span class='youSpan'>PREVIOUS </span>";
+                        }
                         if (response[i].PreviousResult != 0) {
                             goaldiff = (response[i].CurrrentResult) - (response[i].PreviousResult);
                             switch (goaldiff) {
@@ -212,9 +284,9 @@ var devProgress = {
                            
                             html = html + "<ul class=" + select + "><li class='dp_no' style='vertical-align: top;'>" + count + "</li><li class='dp_practicearea' style='vertical-align: top;'><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
                                 "<li class='dp_qetions'><div>" + moreText + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>Frequently " + selectedRole3 + "</li> " +
-                                "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul> </div><div class='dp_capab'><ul class='capability_scale'> <li class='selectYou'>Not Ready <span class='youSpan'>Manager</span></li> <li class='selectManager'>Somewhat Ready <span class='managerSpan'>You</span></li> <li class=''>Ready</li> " +
-                                "<li class=''>Very Ready</li> </ul></div><div class='dp_importnt'><ul class='important_scale'> <li class='selectYou'>Not important <span class='youSpan'>Manager</span></li> <li class='selectManager'>Somewhat Important <span class='managerSpan'>You</span></li> <li class=''>Important</li> " +
-                                "<li class=''>Critical</li> </ul></div></div></li>" + "<li class='dp_frqprogress'>" + progressImage + "</li> </ul>";
+                                "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul> </div><div class='dp_capab'><ul class='capability_scale'> <li class='" + capselected1 + "'>Not Ready " + capselectedRole1 + "</li> <li class='" + capselected2 + "'>Somewhat Ready " + capselectedRole2 + "</li> <li class='" + capselected3 + "'>Ready " + capselectedRole3 + "</li> " +
+                                "<li class='" + capselected4 + "'>Very Ready " + capselectedRole4 + "</li> </ul></div><div class='dp_importnt'><ul class='important_scale'> <li class='" + impselected1 + "'>Not important " + impselectedRole1 + "</li> <li class='" + impselected2 + "'>Somewhat Important " + impselectedRole2 + "</li> <li class='" + impselected3 + "'>Important " + impselectedRole3 + "</li> " +
+                                "<li class='" + impselected4 + "'>Critical " + impselectedRole4 + "</li> </ul></div></div></li>" + "<li class='dp_frqprogress'>" + progressImage + "</li> </ul>";
                             count++;
                         }
                     }

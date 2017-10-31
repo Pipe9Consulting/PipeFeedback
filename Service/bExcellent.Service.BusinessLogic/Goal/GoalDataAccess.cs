@@ -821,7 +821,9 @@ namespace bExcellent.Service.BusinessLogic.Goal
                     {
                         QuestionId = result.QuestionId,
                         SelfResult = (int)result.Answer,
-                        SelfCapability = (int)result.Capability
+                        SelfCapability = (int)result.Capability,
+                        SelfRating = (int)result.Rating
+                        
                     }));
                 }
                 return selfResultList;
@@ -852,7 +854,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                         ManagerCapability = dev.ManagerCapability,
                                         SelfCapability = self.SelfCapability,
                                         ManagerMappingId = dev.ManagerMappingId,
-                                        CurrentFeedbackId = dev.CurrentFeedbackId
+                                        CurrentFeedbackId = dev.CurrentFeedbackId,
+                                        SelfRating = self.SelfRating
                                     }).ToList();
                     //.OrderBy(a => a.ModuleOrder).ToList();
                     UpdateDevelopmentPriorities(devPrioritiesAll, userid, PoeId, mappingId);
@@ -893,7 +896,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                            ManagerCapability = dev.ManagerCapability,
                                            SelfCapability = self.SelfCapability,
                                            ManagerMappingId = dev.ManagerMappingId,
-                                           CurrentFeedbackId = dev.CurrentFeedbackId
+                                           CurrentFeedbackId = dev.CurrentFeedbackId,
+                                           SelfRating = self.SelfRating
                                        }).ToList();
                     }
                     using (var context = DataContextFactory.GetIntelliSetDataContext())
@@ -914,7 +918,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                             ManagerCapability = (int)self.Capability,
                             SelfCapability = dev.SelfCapability,
                             ManagerMappingId = dev.ManagerMappingId,
-                            CurrentFeedbackId = self.FeedbackId
+                            CurrentFeedbackId = self.FeedbackId,
+                            SelfRating = (int)self.Rating
                         }).ToList();
                         UpdateDevelopmentPriorities(devPrioritiesManager, userid, PoeId, mappingId);
                         return devPrioritiesManager;
@@ -940,7 +945,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                  ManagerCapability = dev.ManagerCapability,
                                  SelfCapability = self.SelfCapability,
                                  ManagerMappingId = dev.ManagerMappingId,
-                                 CurrentFeedbackId = dev.CurrentFeedbackId
+                                 CurrentFeedbackId = dev.CurrentFeedbackId,
+                                 SelfRating = self.SelfRating
                              }).ToList();
                         //.OrderBy(a => a.ModuleOrder).ToList();
                         return devPrioritiesAll;
@@ -1144,7 +1150,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                         ManagerCapability = dev.ManagerCapability,
                                         ManagerMappingId = dev.ManagerMappingId,
                                         CurrentFeedbackId = dev.CurrentFeedbackId,
-                                        TeamId = dev.TeamId
+                                        TeamId = dev.TeamId,
+                                        SelfRating = self.SelfRating
                                     }).ToList();
                     UpdateDevelopmentPrioritiesSelf(devPrioritiesAll, userid, PoeId);
                     return devPrioritiesAll;
@@ -1184,7 +1191,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                 SelfCapability = self.SelfCapability,
                                 ManagerMappingId = dev.ManagerMappingId,
                                 CurrentFeedbackId = dev.CurrentFeedbackId,
-                                TeamId = dev.TeamId
+                                TeamId = dev.TeamId,
+                                SelfRating = self.SelfRating
                             }).ToList();
                     }
                     using (var context = DataContextFactory.GetIntelliSetDataContext())
@@ -1206,7 +1214,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                             SelfCapability = dev.SelfCapability,
                             ManagerMappingId = dev.ManagerMappingId,
                             CurrentFeedbackId = self.FeedbackId,
-                            TeamId = dev.TeamId
+                            TeamId = dev.TeamId,
+                            SelfRating = dev.SelfRating
                         }).ToList();
                         UpdateDevelopmentPrioritiesSelf(devPrioritiesManager, userid, PoeId);
                         return devPrioritiesManager;
@@ -1232,7 +1241,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                  SelfCapability = self.SelfCapability,
                                  ManagerMappingId = dev.ManagerMappingId,
                                  CurrentFeedbackId = dev.CurrentFeedbackId,
-                                 TeamId = dev.TeamId
+                                 TeamId = dev.TeamId,
+                                 SelfRating = self.SelfRating
                              }).ToList();
                         //.OrderBy(a => a.ModuleOrder).ToList();
                         return devPrioritiesAll;
@@ -1993,7 +2003,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                                                             {
                                                                                 QuestionId = result.QuestionId,
                                                                                 SelfResult = (int)result.Answer,
-                                                                                SelfCapability = (int)result.Capability
+                                                                                SelfCapability = (int)result.Capability,
+                                                                                SelfRating = (int) result.Rating
                                                                             }));
                 }
                 return selfResultList;
@@ -2014,7 +2025,9 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                                           ModuleName = fb.ModuleName,
                                                           QuestionId = fb.QuestionId,
                                                           Question = fb.SideBarText,
-                                                          ModuleId = fb.POEModuleId
+                                                          ModuleId = fb.POEModuleId,
+                                                          PreviousCapability = (int) fb.Capability,
+                                                          PreviousImportance = (int) fb.Rating
                                                       }).ToList();
                 }
                 return null;
@@ -2034,7 +2047,9 @@ namespace bExcellent.Service.BusinessLogic.Goal
                         ModuleName = fb.ModuleName,
                         QuestionId = fb.QuestionId,
                         Question = fb.SideBarText,
-                        ModuleId = fb.POEModuleId
+                        ModuleId = fb.POEModuleId,
+                        PreviousCapability = (int) fb.Capability,
+                        PreviousImportance = (int) fb.rating
                     }).ToList();
                 }
                 return null;
@@ -2054,7 +2069,9 @@ namespace bExcellent.Service.BusinessLogic.Goal
                         ModuleName = fb.ModuleName,
                         QuestionId = fb.QuestionId,
                         Question = fb.SideBarText,
-                        ModuleId = fb.POEModuleId
+                        ModuleId = fb.POEModuleId,
+                        CurrrentCapability = (int) fb.Capability,
+                        CurrrentImportance=(int) fb.rating
                     }).ToList();
                 }
                 return null;
@@ -2074,7 +2091,9 @@ namespace bExcellent.Service.BusinessLogic.Goal
                         ModuleName = fb.ModuleName,
                         QuestionId = fb.QuestionId,
                         Question = fb.SideBarText,
-                        ModuleId = fb.POEModuleId
+                        ModuleId = fb.POEModuleId,
+                        PreviousCapability = (int) fb.Capability,
+                        PreviousImportance = (int) fb.rating
                     }).ToList();
                 }
                 return null;
@@ -2098,6 +2117,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                     {
                         var fbresult = currentFb.FirstOrDefault(a => a.QuestionId == resultPrev.QuestionId);
                         fbresult.PreviousResult = resultPrev.PreviousResult;
+                        fbresult.PreviousCapability = resultPrev.PreviousCapability;
+                        fbresult.PreviousImportance = resultPrev.PreviousImportance;
                     }
                 }
                 return currentFb;
@@ -2122,6 +2143,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                     {
                         var fbresult = currentFb.FirstOrDefault(a => a.QuestionId == resultPrev.QuestionId);
                         fbresult.PreviousResult = resultPrev.PreviousResult;
+                        fbresult.PreviousCapability = resultPrev.PreviousCapability;
+                        fbresult.PreviousImportance = resultPrev.PreviousImportance;
                     }
                 }
                 return currentFb;
@@ -2185,7 +2208,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                                                     ModuleName = priority.ModuleName,
                                                                     Question = priority.SideBarText,
                                                                     CurrentFeedbackId = (int)priority.CurrentFeedbackId,
-                                                                    ManagerMappingId = (int)priority.FeedbackFrom
+                                                                    ManagerMappingId = (int)priority.FeedbackFrom,
+                                                                    Rating = (priority.PriorityOrder == 2 || priority.PriorityOrder==5)?3:4
                                                                 }).ToList();
             }
         }
@@ -2206,7 +2230,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                     CurrentFeedbackId = (int)priority.CurrentFeedbackId,
                     ManagerMappingId = (int)priority.FeedbackFrom,
                     TeamId = (int)priority.TeamId,
-
+                    Rating = (priority.PriorityOrder == 2 || priority.PriorityOrder == 5) ? 3 : 4
                 }).ToList();
             }
         }
