@@ -148,10 +148,20 @@
                             <div class="rateImg">
                                 <img src="../../Images/Feedback/imp_icon.png" width="61" height="61" alt="User">
                             </div>
-                            <div class="sliderdiv rateSlider" style="width: 562px; height: 50px; cursor: pointer;">
+                            <div class="impscale_bg">
+                                <div class="impscale_over">
+                                    <button class="impbtn1">Not Important</button>
+                                    <button class="impbtn2">Somewhat Important</button>
+                                    <button class="impbtn3">Important</button>
+                                    <button class="impbtn4">Critical</button>
+                                </div>
+                                <div class="impscale_handle"></div>
+                                <div class="impadddiv"></div>
+                            </div>
+                            <%--<div class="sliderdiv rateSlider" style="width: 562px; height: 50px; cursor: pointer;">
                                 <img src="../../Images/img/rate_slidebg.png"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div>
                                 <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
-                            </div>
+                            </div>--%>
                         </div>
                         <div class="clearfix"></div>
                         <div class="capabilityQuestion">
@@ -160,10 +170,20 @@
                                 <div class="capImg">
                                     <img src="../../Images/Feedback/cap_icon.png" width="61" height="61" alt="User">
                                 </div>
-                                <div class="sliderdiv capSlider" style="width: 562px; height: 50px; cursor: pointer;">
+                                <div class="capscale_bg">
+                                    <div class="capscale_over">
+                                        <button class="capbtn1">NOT Ready</button>
+                                        <button class="capbtn2">Somewhat Ready</button>
+                                        <button class="capbtn3">Ready</button>
+                                        <button class="capbtn4">Very Ready</button>
+                                    </div>
+                                    <div class="capscale_handle"></div>
+                                    <div class="capadddiv"></div>
+                                </div>
+                                <%--<div class="sliderdiv capSlider" style="width: 562px; height: 50px; cursor: pointer;">
                                     <img src="../../Images/Feedback/cap2bg.png"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div>
                                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -173,10 +193,20 @@
                                 <div class="freqImg">
                                     <img src="../../Images/Feedback/frq_icon.png" width="61" height="61" alt="User">
                                 </div>
-                                <div class="sliderdiv freqSlider" style="width: 562px; height: 50px; cursor: pointer;">
+                                <div class="freqscale_bg">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Never</button>
+                                        <button class="freqbtn2">SOMEtimes</button>
+                                        <button class="freqbtn3">Frequently</button>
+                                        <button class="freqbtn4">Always</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                                <%--<div class="sliderdiv freqSlider" style="width: 562px; height: 50px; cursor: pointer;">
                                     <img src="../../Images/img/slidebg1.png"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div>
                                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                     </div>
@@ -431,8 +461,8 @@
                 $(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle3");
             });
 
-           
-        
+
+
         });
     </script>
 </asp:Content>
