@@ -449,6 +449,554 @@ p {
 }
 
 
+/*-----------------------------*/
+            .impscale_bg {
+            width: 100%;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            background: url(../../Images/Common/rate_slidebg.png)no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            margin-top: 0.5%;
+            float: left;
+        }
+
+        .impscale_over {
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 100%;
+            z-index: 99;
+            position: relative;
+        }
+
+        .impscale_bg button {
+            cursor: pointer;
+            height: 50px;
+            outline: none;
+            color: #333;
+            text-align: left;
+            padding-left: 1.5%;
+            font-weight:400;
+            font-size: 120%;
+            font-family: 'Cuprum', sans-serif;
+        }
+
+
+        .impbtn1 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .impbtn2 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .impbtn3 {
+            width: 25%;
+            padding: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            margin: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .impbtn4 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+        }
+
+        .impscaleover1 {
+            width: 25%;
+            height: 50px;
+            position: absolute;
+            float: left;
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            color: #fff !important;
+           
+        }
+
+        .impscaleover2 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 50%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .impscaleover3 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 75%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .impscaleover4 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .impscale_handle {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            cursor: pointer;
+        }
+
+        .impscale_handle1 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 24.5%;
+        }
+
+        .impscale_handle2 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 49.5%;
+        }
+
+        .impscale_handle3 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 74.5%;
+        }
+
+        .impscale_handle4 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 99.5%;
+        }
+
+        .addcolor {
+            color: #fff !important;
+        }
+
+
+/*--------------------------Scale-------------------------------------*/
+.capscale_bg {
+            width: 100%;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            background: url(../../Images/Common/rate_slidebg.png)no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            margin-top: 0.5%;
+            float: left;
+        }
+
+        .capscale_over {
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 100%;
+            z-index: 99;
+            position: relative;
+        }
+
+        .capscale_bg button {
+            cursor: pointer;
+            height: 50px;
+            outline: none;
+            color: #333;
+            text-align: left;
+            padding-left: 1.5%;
+            font-weight:400;
+            font-size: 120%;
+            font-family: 'Cuprum', sans-serif;
+        }
+
+
+        .capbtn1 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .capbtn2 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .capbtn3 {
+            width: 25%;
+            padding: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            margin: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .capbtn4 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+        }
+
+        .capscaleover1 {
+            width: 25%;
+            height: 50px;
+            position: absolute;
+            float: left;
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            color: #fff !important;
+            
+        }
+
+        .capscaleover2 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 50%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .capscaleover3 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 75%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .capscaleover4 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .capscale_handle {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            cursor: pointer;
+        }
+
+        .capscale_handle1 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 24.5%;
+        }
+
+        .capscale_handle2 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 49.5%;
+        }
+
+        .capscale_handle3 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 74.5%;
+        }
+
+        .capscale_handle4 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 99.5%;
+        }
+
+        .addcolor {
+            color: #fff !important;
+        }
+
+
+/*----------------------------------------------------------------*/
+
+            .freqscale_bg {
+            width: 100%;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            background: url(../../Images/Common/rate_slidebg.png)no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            margin-top: 0.5%;
+            float: left;
+        }
+
+        .freqscale_over {
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 100%;
+            z-index: 99;
+            position: relative;
+        }
+
+        .freqscale_bg button {
+            cursor: pointer;
+            height: 50px;
+            outline: none;
+            color: #333;
+            text-align: left;
+            padding-left: 1.5%;
+            font-weight:400;
+            font-size: 120%;
+            font-family: 'Cuprum', sans-serif;
+        }
+
+
+        .freqbtn1 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .freqbtn2 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .freqbtn3 {
+            width: 25%;
+            padding: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            margin: 0;
+            float: left;
+            z-index: 99;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .freqbtn4 {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.0);
+            border: 0;
+            float: left;
+            z-index: 99;
+        }
+
+        .freqscaleover1 {
+            width: 25%;
+            height: 50px;
+            position: absolute;
+            float: left;
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            color: #fff !important;
+     
+        }
+
+        .freqscaleover2 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 50%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .freqscaleover3 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 75%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .freqscaleover4 {
+            background: #f7b4ab; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+            background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            float: left;
+        }
+
+        .freqscale_handle {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            cursor: pointer;
+        }
+
+        .freqscale_handle1 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 24.5%;
+        }
+
+        .freqscale_handle2 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 49.5%;
+        }
+
+        .freqscale_handle3 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 74.5%;
+        }
+
+        .freqscale_handle4 {
+            width: 6px;
+            background: #d9280e;
+            height: 57px;
+            position: absolute;
+            top: -3px;
+            z-index: 99;
+            left: 99.5%;
+        }
+
+        .addcolor {
+            color: #fff !important;
+        }
 /***********************************************************************************************************************************************/
 @media screen and (max-width: 3500px) and (min-width: 2800px) {
     .questiontaken {

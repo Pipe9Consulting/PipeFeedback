@@ -670,6 +670,7 @@
     <Content Include="Images\Common\dp_leg_imp.png" />
     <Content Include="Images\Common\popup_close.png" />
     <Content Include="Images\Common\popup_closeH.png" />
+    <Content Include="Images\Common\rate_slidebg.png" />
     <Content Include="Images\comparision_view.png" />
     <Content Include="Images\connect-icon.png" />
     <Content Include="Images\contact-bg.jpg" />
@@ -4298,7 +4299,7 @@
     <Content Include="Views\Feedback\Goal.aspx" />
     <Content Include="Views\Feedback\PeerFeedback.aspx" />
     <Content Include="Views\Feedback\Quickview.aspx" />
-    <Content Include="Views\Feedback\Feedbacks.aspx" />
+    <Content Include="Views\Feedback\Feedback.aspx" />
     <Content Include="Views\Feedback\Managerfeedback.aspx" />
     <Content Include="Views\Feedback\ReqManagerFeedback.aspx" />
     <Content Include="Views\Feedback\ResumeManagerfeedback.aspx" />
@@ -4438,7 +4439,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Views\Microsoft\Tests.cshtml" />
-    <Content Include="Views\Feedback\Feedback.cshtml" />
+    <Content Include="Views\Feedback\Feedbackss.cshtml" />
     <None Include="Web References\authorize\ANetApiResponseType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

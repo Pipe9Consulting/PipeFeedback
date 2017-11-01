@@ -915,6 +915,9 @@ namespace bExcellent.mvc.FeedbackWCF {
         private string FirstNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime GoalDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool IsActiveField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1066,6 +1069,19 @@ namespace bExcellent.mvc.FeedbackWCF {
                 if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
                     this.FirstNameField = value;
                     this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime GoalDate {
+            get {
+                return this.GoalDateField;
+            }
+            set {
+                if ((this.GoalDateField.Equals(value) != true)) {
+                    this.GoalDateField = value;
+                    this.RaisePropertyChanged("GoalDate");
                 }
             }
         }

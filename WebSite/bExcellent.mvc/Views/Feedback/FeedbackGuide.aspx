@@ -244,10 +244,20 @@
                                 <div class="rateImg">
                                     <img src="../../Images/Feedback/imp_icon.png" width="61" height="61" alt="User">
                                 </div>
-                                <div class="sliderdiv rateSlider" style="width: 562px; height: 50px; cursor: pointer;">
+                                <div class="impscale_bg">
+                                    <div class="impscale_over">
+                                        <button class="impbtn1">NOT IMPORTANT</button>
+                                        <button class="impbtn2">SOMEWHAT IMPORTANT</button>
+                                        <button class="impbtn3">IMPORTANT</button>
+                                        <button class="impbtn4">CRITICAL</button>
+                                    </div>
+                                    <div class="impscale_handle"></div>
+                                    <div class="impadddiv"></div>
+                                </div>
+                                <%--<div class="sliderdiv rateSlider" style="width: 562px; height: 50px; cursor: pointer;">
                                     <img src="../../Images/img/rate_slidebg.png"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div>
                                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
-                                </div>
+                                </div>--%>
                             </div>
                             <div class="clearfix"></div>
                             <div class="capabilityQuestion">
@@ -256,10 +266,20 @@
                                     <div class="capImg">
                                         <img src="../../Images/Feedback/cap_icon.png" width="61" height="61" alt="User">
                                     </div>
-                                    <div class="sliderdiv capSlider" style="width: 562px; height: 50px; cursor: pointer;">
+                                    <div class="capscale_bg">
+                                        <div class="capscale_over">
+                                            <button class="capbtn1">NOT IMPORTANT</button>
+                                            <button class="capbtn2">SOMEWHAT IMPORTANT</button>
+                                            <button class="capbtn3">IMPORTANT</button>
+                                            <button class="capbtn4">CRITICAL</button>
+                                        </div>
+                                        <div class="capscale_handle"></div>
+                                        <div class="capadddiv"></div>
+                                    </div>
+                                    <%--<div class="sliderdiv capSlider" style="width: 562px; height: 50px; cursor: pointer;">
                                         <img src="../../Images/Feedback/cap2bg.png"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
-                                    </div>
+                                    </div>--%>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -269,10 +289,20 @@
                                     <div class="freqImg">
                                         <img src="../../Images/Feedback/frq_icon.png" width="61" height="61" alt="User">
                                     </div>
-                                    <div class="sliderdiv freqSlider" style="width: 562px; height: 50px; cursor: pointer;">
+                                    <div class="freqscale_bg">
+                                        <div class="freqscale_over">
+                                            <button class="freqbtn1">NOT IMPORTANT</button>
+                                            <button class="freqbtn2">SOMEWHAT IMPORTANT</button>
+                                            <button class="freqbtn3">IMPORTANT</button>
+                                            <button class="freqbtn4">CRITICAL</button>
+                                        </div>
+                                        <div class="freqscale_handle"></div>
+                                        <div class="freqadddiv"></div>
+                                    </div>
+                                    <%--<div class="sliderdiv freqSlider" style="width: 562px; height: 50px; cursor: pointer;">
                                         <img src="../../Images/img/slidebg1.png"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
-                                    </div>
+                                    </div>--%>
                                 </div>
                             </div>
                         </div>
@@ -287,4 +317,122 @@
 
 
     </div>
+    <script>
+        $(document).ready(function () {
+            //Important
+            $('.impbtn1').click(function () {
+                $(".impadddiv").addClass("impscaleover1");
+                $(".impscale_handle").addClass("impscale_handle1");
+                $(".impbtn1").addClass("addcolor");
+                $(".impbtn2, .impbtn3, .impbtn4").removeClass("addcolor");
+                $(".impadddiv").removeClass("impscaleover2").removeClass("impscaleover3").removeClass("impscaleover4");
+                $(".impscale_handle").removeClass("impscale_handle2").removeClass("impscale_handle3").removeClass("impscale_handle4");
+            });
+            $('.impbtn2').click(function () {
+                $(".impadddiv").addClass("impscaleover2");
+                $(".impscale_handle").addClass("impscale_handle2");
+                $(".impbtn2").addClass("addcolor");
+                $(".impbtn1, .impbtn3, .impbtn4").removeClass("addcolor");
+                $(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover3").removeClass("impscaleover4");
+                $(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle3").removeClass("impscale_handle4");
+            });
+            $('.impbtn3').click(function () {
+                $(".impadddiv").addClass("impscaleover3");
+                $(".impscale_handle").addClass("impscale_handle3");
+                $(".impbtn3").addClass("addcolor");
+                $(".impbtn1, .impbtn2, .impbtn4").removeClass("addcolor");
+                $(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover2").removeClass("impscaleover4");
+                $(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle2").removeClass("impscale_handle4");
+            });
+            $('.impbtn4').click(function () {
+                $(".impadddiv").addClass("impscaleover4");
+                $(".impscale_handle").addClass("impscale_handle4");
+                $(".impbtn4").addClass("addcolor");
+                $(".impbtn1, .impbtn2, .impbtn3").removeClass("addcolor");
+                $(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover2").removeClass("impscaleover3");
+                $(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle2").removeClass("impscale_handle3");
+            });
+
+            //Capability
+
+            $('.capbtn1').click(function () {
+                $(".capadddiv").addClass("capscaleover1");
+                $(".capscale_handle").addClass("capscale_handle1");
+                $(".capbtn1").addClass("addcolor");
+                $(".capbtn2, .capbtn3, .capbtn4").removeClass("addcolor");
+                $(".capadddiv").removeClass("capscaleover2").removeClass("capscaleover3").removeClass("capscaleover4");
+                $(".capscale_handle").removeClass("capscale_handle2").removeClass("capscale_handle3").removeClass("capscale_handle4");
+            });
+
+            $('.capbtn2').click(function () {
+                $(".capadddiv").addClass("capscaleover2");
+                $(".capscale_handle").addClass("capscale_handle2");
+                $(".capbtn2").addClass("addcolor");
+                $(".capbtn1, .capbtn3, .capbtn4").removeClass("addcolor");
+                $(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover3").removeClass("capscaleover4");
+                $(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle3").removeClass("capscale_handle4");
+            });
+
+            $('.capbtn3').click(function () {
+                $(".capadddiv").addClass("capscaleover3");
+                $(".capscale_handle").addClass("capscale_handle3");
+                $(".capbtn3").addClass("addcolor");
+                $(".capbtn1, .capbtn2, .capbtn4").removeClass("addcolor");
+                $(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover2").removeClass("capscaleover4");
+                $(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle2").removeClass("capscale_handle4");
+            });
+
+            $('.capbtn4').click(function () {
+                $(".capadddiv").addClass("capscaleover4");
+                $(".capscale_handle").addClass("capscale_handle4");
+                $(".capbtn4").addClass("addcolor");
+                $(".capbtn1, .capbtn2, .capbtn3").removeClass("addcolor");
+                $(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover2").removeClass("capscaleover3");
+                $(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle2").removeClass("capscale_handle3");
+            });
+
+
+
+            //frequency
+
+            $('.freqbtn1').click(function () {
+                $(".freqadddiv").addClass("freqscaleover1");
+                $(".freqscale_handle").addClass("freqscale_handle1");
+                $(".freqbtn1").addClass("addcolor");
+                $(".freqbtn2, .freqbtn3, .freqbtn4").removeClass("addcolor");
+                $(".freqadddiv").removeClass("freqscaleover2").removeClass("freqscaleover3").removeClass("freqscaleover4");
+                $(".freqscale_handle").removeClass("freqscale_handle2").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
+            });
+
+            $('.freqbtn2').click(function () {
+                $(".freqadddiv").addClass("freqscaleover2");
+                $(".freqscale_handle").addClass("freqscale_handle2");
+                $(".freqbtn2").addClass("addcolor");
+                $(".freqbtn1, .freqbtn3, .freqbtn4").removeClass("addcolor");
+                $(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover3").removeClass("freqscaleover4");
+                $(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
+            });
+
+            $('.freqbtn3').click(function () {
+                $(".freqadddiv").addClass("freqscaleover3");
+                $(".freqscale_handle").addClass("freqscale_handle3");
+                $(".freqbtn3").addClass("addcolor");
+                $(".freqbtn1, .freqbtn2, .freqbtn4").removeClass("addcolor");
+                $(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover4");
+                $(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle4");
+            });
+
+            $('.freqbtn4').click(function () {
+                $(".freqadddiv").addClass("freqscaleover4");
+                $(".freqscale_handle").addClass("freqscale_handle4");
+                $(".freqbtn4").addClass("addcolor");
+                $(".freqbtn1, .freqbtn2, .freqbtn3").removeClass("addcolor");
+                $(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover3");
+                $(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle3");
+            });
+
+           
+        
+        });
+    </script>
 </asp:Content>
