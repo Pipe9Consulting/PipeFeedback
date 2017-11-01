@@ -2108,8 +2108,12 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 var previousFb = GetTeamPrevFB(userid, poeId, tmid);
                 foreach (var priority in devPriorities)
                 {
-                    var fbresult = currentFb.FirstOrDefault(a => a.QuestionId == priority.QuestionId);
-                    fbresult.IsDevelopmentPriorities = true;
+                    if (currentFb != null)
+                    {
+                        var fbresult = currentFb.FirstOrDefault(a => a.QuestionId == priority.QuestionId);
+                        if (fbresult != null) fbresult.IsDevelopmentPriorities = true;
+                    }
+                    
                 }
                 if (previousFb != null)
                 {
@@ -2134,8 +2138,12 @@ namespace bExcellent.Service.BusinessLogic.Goal
                 var previousFb = GetManagerPrevFB(userid, poeId, tmid);
                 foreach (var priority in devPriorities)
                 {
-                    var fbresult = currentFb.FirstOrDefault(a => a.QuestionId == priority.QuestionId);
-                    fbresult.IsDevelopmentPriorities = true;
+                    if (currentFb != null)
+                    {
+                        var fbresult = currentFb.FirstOrDefault(a => a.QuestionId == priority.QuestionId);
+                        if (fbresult != null) fbresult.IsDevelopmentPriorities = true; 
+                    }
+                    
                 }
                 if (previousFb != null)
                 {
