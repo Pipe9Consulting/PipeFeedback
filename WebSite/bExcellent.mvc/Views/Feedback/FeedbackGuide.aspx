@@ -246,10 +246,10 @@
                                 </div>
                                 <div class="impscale_bg">
                                     <div class="impscale_over">
-                                        <button class="impbtn1">NOT IMPORTANT</button>
-                                        <button class="impbtn2">SOMEWHAT IMPORTANT</button>
-                                        <button class="impbtn3">IMPORTANT</button>
-                                        <button class="impbtn4">CRITICAL</button>
+                                        <button class="impbtn1">Not Important</button>
+                                        <button class="impbtn2">Somewhat Important</button>
+                                        <button class="impbtn3">Important</button>
+                                        <button class="impbtn4">Critical</button>
                                     </div>
                                     <div class="impscale_handle"></div>
                                     <div class="impadddiv"></div>
@@ -268,10 +268,10 @@
                                     </div>
                                     <div class="capscale_bg">
                                         <div class="capscale_over">
-                                            <button class="capbtn1">NOT IMPORTANT</button>
-                                            <button class="capbtn2">SOMEWHAT IMPORTANT</button>
-                                            <button class="capbtn3">IMPORTANT</button>
-                                            <button class="capbtn4">CRITICAL</button>
+                                            <button class="capbtn1">NOT Ready</button>
+                                            <button class="capbtn2">Somewhat Ready</button>
+                                            <button class="capbtn3">Ready</button>
+                                            <button class="capbtn4">Very Ready</button>
                                         </div>
                                         <div class="capscale_handle"></div>
                                         <div class="capadddiv"></div>
@@ -291,10 +291,10 @@
                                     </div>
                                     <div class="freqscale_bg">
                                         <div class="freqscale_over">
-                                            <button class="freqbtn1">NOT IMPORTANT</button>
-                                            <button class="freqbtn2">SOMEWHAT IMPORTANT</button>
-                                            <button class="freqbtn3">IMPORTANT</button>
-                                            <button class="freqbtn4">CRITICAL</button>
+                                            <button class="freqbtn1">Never</button>
+                                            <button class="freqbtn2">SOMEtimes</button>
+                                            <button class="freqbtn3">Frequently</button>
+                                            <button class="freqbtn4">Always</button>
                                         </div>
                                         <div class="freqscale_handle"></div>
                                         <div class="freqadddiv"></div>
