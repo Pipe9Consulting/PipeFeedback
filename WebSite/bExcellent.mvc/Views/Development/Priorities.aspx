@@ -266,7 +266,7 @@
                 </div>
                 <div id="listView">
                     <h2>lorum Ipsum <span>- Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</span></h2>
-                    <div class="dp_legends"><ul><li>Frquency</li><li>Capability</li><li>Importance</li></ul></div>
+                    <div class="dp_legends"><ul><li>Frequency</li><li>Capability</li><li>Importance</li></ul></div>
                     <div class="col-sm-12 prioitiesFrequency">
 
                         <ul class="frquencyHeader">
