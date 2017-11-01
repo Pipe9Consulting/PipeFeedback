@@ -10,6 +10,10 @@ body {
     background-size: 100% 100% !important;*/
 }
 
+.dp_qetions div, .dp_practicearea span {
+    color: #000;
+}
+
 .row {
     margin-right: 0;
 }
@@ -187,7 +191,7 @@ p {
         color: #fff;
         text-transform: uppercase;
         padding: .4% 1% .3% .7%;
-        text-align: left;
+        text-align: center;
     }
 
 
@@ -909,19 +913,22 @@ p {
         float: left;
         list-style: none;
         margin: 0;
-        padding: 0 10px;
+        padding: 1px 10px 0 20px;
+        text-transform: uppercase;
+        background-size: 20px 25px;
     }
 
         .dp_legends ul li:first-child {
-            background: url(../../Images\Common\dp_leg_freq.png)no-repeat left center;
+            background: url(../../Images/Common/dp_leg_freq.png)no-repeat left center;
         }
 
+
         .dp_legends ul li:nth-child(2) {
-            background: url(../../Images/Common/de_leg_cap.png)no-repeat left center;
+            background: url(../../Images/Common/dp_leg_cap.png)no-repeat left center;
         }
 
         .dp_legends ul li:nth-child(3) {
-            background: url(../../Images/Common/de_leg_imp.png)no-repeat left center;
+            background: url(../../Images/Common/dp_leg_imp.png)no-repeat left center;
         }
 
 @media screen and (max-width: 1500px) and (min-width: 1000px) {
@@ -936,8 +943,19 @@ p {
     }
 
     .priorities_part2 h2 {
-        width: 72%;
+        width: 68%;
     }
+
+    .dp_frqprogress img {
+        width: 100%;
+        margin-top: 32%;
+    }
+
+    .dp_legends ul li {
+        padding: 2px 10px 0 20px;
+        background-size: 15px 15px !important;
+    }
+
 
     .breadcrumb {
         margin-top: 0%;
@@ -1051,9 +1069,6 @@ p {
         min-height: 80px !important;
     }
 
-    .hover_content {
-        margin-top: 3.2% !important;
-    }
 
     .frquencyContent ul li {
         font-size: 100%;
@@ -1077,75 +1092,6 @@ p {
     }
 }
 
-@media screen and (max-width:2500px) and (min-width:2000px) {
-    .managerSpan {
-        top: -90% !important;
-        padding-bottom: 25%;
-    }
-
-    .user_tiles ul li {
-        font-size: 18px;
-    }
-
-    .frquencyContent ul li {
-        min-height: 80px;
-    }
-
-    .hover_content {
-        margin-top: 2.8% !important;
-    }
-
-    .frquencyContent li:nth-child(3) {
-        min-height: 75px !important;
-    }
-
-    .frquencyContent ul:last-child .hover_content {
-        margin-top: -3.5% !important;
-    }
-
-    .frquencyContent ul li {
-        font-size: 125% !important;
-        line-height: 1.2;
-    }
-
-    .user_tiles ul li span {
-        font-size: 350% !important;
-    }
-
-    .youSpan {
-        top: -5% !important;
-        padding-bottom: 2%;
-    }
-
-    .modNmaeview {
-        font-size: 110% !important;
-    }
-
-    .frequency_scale li {
-        min-height: 0px !important;
-    }
-
-
-    h2 {
-        font-size: 180% !important;
-    }
-
-    .user_tiles {
-        font-size: 160%;
-    }
-}
-
-@media screen and (max-width: 2300px) and (min-width: 2000px) {
-
-    .ui.menu .item {
-        font-size: 1.7rem;
-    }
-
-    .breadcrumb {
-        padding: 1% 1% 0.6% 1.5% !important;
-    }
-}
-
 
 @media screen and (max-width: 2000px) and (min-width: 1800px) {
 
@@ -1153,12 +1099,15 @@ p {
         font-size: 1.7rem;
     }
 
+    .dp_legends ul li {
+        padding: 2px 15px 0 20px;
+        background-size: 15px 15px !important;
+    }
+
+
     .breadcrumb {
         padding: 1% 1% 0.6% 1.5% !important;
     }
-}
-
-@media screen and (max-width: 2600px) and (min-width: 1800px) {
 
     .frquencyContent ul li {
         font-size: 150%;
@@ -1168,6 +1117,11 @@ p {
     .clickdeeper {
         left: -190%;
     }
+
+    .dp_frqprogress img {
+        margin-top: 28%;
+    }
+
 
     .frequency_scale li {
         padding: 1% 0 !important;
@@ -1261,10 +1215,316 @@ p {
     }
 }
 
-@media screen and (max-width: 2600px) and (min-width: 2500px) {
+@media screen and (max-width: 2300px) and (min-width: 2000px) {
+
+    .managerSpan {
+        top: -55% !important;
+        padding-bottom: 30%;
+    }
+
+    .user_tiles ul li {
+        font-size: 18px;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px;
+    }
 
     .hover_content {
-        margin-top: 3% !important;
+        margin-top: 2.8% !important;
+    }
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 75px !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -3.5% !important;
+    }
+
+    .frquencyContent ul li {
+        font-size: 125% !important;
+        line-height: 1.2;
+    }
+
+    .user_tiles ul li span {
+        font-size: 350% !important;
+    }
+
+    .youSpan {
+        top: -5% !important;
+        padding-bottom: 2%;
+    }
+
+    .modNmaeview {
+        font-size: 125% !important;
+    }
+
+    .frequency_scale li {
+        min-height: 0px !important;
+    }
+
+
+    .user_tiles {
+        font-size: 160%;
+    }
+
+    .frquencyContent ul li {
+        font-size: 150%;
+        line-height: 1.2;
+    }
+
+    .priorities_part2 h2 {
+        width: 73%;
+    }
+
+    .ui.menu .item {
+        font-size: 1.7rem;
+    }
+
+    .breadcrumb {
+        padding: 1% 1% 0.6% 1.5% !important;
+    }
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .dp_legends ul li {
+        padding: 1px 20px 0 25px;
+        font-size: 120%;
+        background-size: 20px 25px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .frequency_scale li {
+        padding: 1% 0 !important;
+    }
+
+
+    .frquencyContent ul li .moduleTier {
+        font-size: 80% !important;
+    }
+
+    .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
+        font-size: 70% !important;
+        min-height: 35px !important;
+    }
+
+
+    h3 {
+        font-size: 150% !important;
+    }
+
+    .youSpan {
+        top: -30%;
+        padding-bottom: 20%;
+    }
+
+
+    .progress_practiceArea li {
+        height: 155px;
+        padding: 3% 1%;
+        font-size: 120%;
+    }
+
+
+    #option_menu {
+        top: 3.9%;
+        right: 1.1%;
+    }
+
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+    .dp_frqprogress img {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 25%;
+    }
+
+
+    #devprogress {
+        padding-bottom: 54%;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 54%;
+    }
+
+
+    .frequency_scale li {
+        min-height: 0 !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 60px;
+    }
+
+    .frquencyHeader li {
+        font-size: 160%;
+    }
+
+    P {
+        font-size: 120%;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-bottom: 0.3%;
+    }
+
+    .hover_content {
+        margin-top: 0% !important;
+        right: 0 !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -5.5% !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px;
+    }
+
+
+    #option_menu {
+        width: 45% !important;
+    }
+}
+
+
+@media screen and (max-width: 2600px) and (min-width: 2200px) {
+    .frquencyContent ul li {
+        font-size: 150%;
+        line-height: 1.2;
+    }
+
+    .priorities_part2 h2 {
+        width: 75%;
+    }
+
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .dp_legends ul li {
+        padding: 1px 20px 0 25px;
+        font-size: 120%;
+        background-size: 20px 25px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .frequency_scale li {
+        padding: 1% 0 !important;
+    }
+
+
+    .modNmaeview {
+        font-size: 220%;
+    }
+
+    .frquencyContent ul li .moduleTier {
+        font-size: 80% !important;
+    }
+
+    .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
+        font-size: 70% !important;
+        min-height: 35px !important;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 150% !important;
+    }
+
+    .managerSpan {
+        top: -100%;
+        padding-top: 7%;
+    }
+
+
+
+    .youSpan {
+        top: -30%;
+        padding-bottom: 20%;
+    }
+
+
+    .progress_practiceArea li {
+        height: 155px;
+        padding: 3% 1%;
+        font-size: 120%;
+    }
+
+
+    #option_menu {
+        top: 3.9%;
+        right: 1.1%;
+    }
+
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+    .dp_frqprogress img {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 27%;
+    }
+
+    #devprogress {
+        padding-bottom: 48%;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 48%;
+    }
+
+
+    .frequency_scale li {
+        min-height: 0 !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 60px;
+    }
+
+    .frquencyHeader li {
+        font-size: 160%;
+    }
+
+    P {
+        font-size: 160%;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-bottom: 0.3%;
+    }
+
+    .hover_content {
+        margin-top: 0% !important;
+        right: 0 !important;
     }
 
     h2 {
@@ -1281,9 +1541,10 @@ p {
 
 
     .managerSpan {
-        top: -100%;
-        padding-top: 4% !important;
+        top: -120%;
+        padding-top: 20% !important;
     }
+
 
     #option_menu {
         width: 45% !important;
@@ -1293,6 +1554,17 @@ p {
 
 
 @media screen and (max-width: 3500px) and (min-width: 2600px) {
+
+    .dp_legends ul li {
+        padding: 2px 20px 0 32px;
+        background-size: 25px 25px !important;
+        font-size: 150%;
+    }
+
+    .priorities_part2 h2 {
+        width: 76%;
+    }
+
 
     .frquencyContent ul li {
         font-size: 25px;
@@ -1316,10 +1588,11 @@ p {
         font-size: 80% !important;
     }
 
-    .frquencyContent ul li .frequency_scale li {
-        font-size: 70% !important;
-        min-height: 0 !important;
+    .frquencyContent .important_scale li, .frquencyContent .frequency_scale li, .frquencyContent .capability_scale li {
+        height: 30px;
+        min-height: 45px !important;
     }
+
 
     h2 {
         font-size: 35px;
@@ -1331,31 +1604,43 @@ p {
 
     .managerSpan {
         top: -100%;
-        padding-top: 5%;
+        padding-top: 16%;
+        background-size: 35px 25px !important;
+    }
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
 
     .youSpan {
         top: -18%;
-        padding-bottom: 4%;
+        padding-bottom: 12%;
+        background-size: 35px 25px !important;
     }
 
+    .dp_frqprogress img {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 26%;
+    }
+
+
     .progress_practiceArea p {
-        font-size: 28px;
+        font-size: 24px;
+        line-height: 1.1;
     }
 
     .hover_content {
-        margin-top: 3% !important;
+        margin-top: 0% !important;
+        right: 0% !important;
     }
 
     .frquencyContent ul:last-child .hover_content {
         margin-top: -2.5% !important;
     }
 
-
-    .youSpan {
-        top: -22%;
-    }
 
     .progress_practiceArea li {
         height: 200px;
@@ -1380,11 +1665,11 @@ p {
 
 
     #devprogress {
-        padding-bottom: 45%;
+        padding-bottom: 55%;
     }
 
     .prioitiesFrequency .slimScrollDiv {
-        padding-bottom: 45%;
+        padding-bottom: 55%;
     }
 
 
@@ -1401,7 +1686,7 @@ p {
     }
 
     P {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .button_menu {
@@ -1477,11 +1762,11 @@ p {
     border: 1px solid #eb4830;
     position: absolute;
     width: 30%;
-    margin-top: 5.5%;
-    right: 50%;
+    right: 0%;
     text-align: left;
     padding: .5% .8%;
     z-index: 2147483647;
+    margin-top: 0;
 }
 
     .hover_content span {

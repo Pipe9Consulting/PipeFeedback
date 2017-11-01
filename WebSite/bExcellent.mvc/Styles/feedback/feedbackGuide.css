@@ -581,8 +581,9 @@ p {
 }
 
 .impscale_handle {
-    width: 6px;
-    background: #d9280e;
+    width: 11px;
+    left: -7px;
+    background: url("../../Images/slider-handle.png") no-repeat scroll 0% 50% transparent;
     height: 30px;
     position: absolute;
     z-index: 99;
@@ -590,38 +591,19 @@ p {
 }
 
 .impscale_handle1 {
-    width: 6px;
-    background: #d9280e;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 24.5%;
+    left: 23.2%;
 }
 
 .impscale_handle2 {
-    width: 6px;
-    background: #d9280e;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 49.5%;
+    left: 48.2%;
 }
 
 .impscale_handle3 {
-    width: 6px;
-    background: #d9280e;
-    height: 30px;
-    z-index: 99;
-    left: 74.5%;
+    left: 73.2%;
 }
 
 .impscale_handle4 {
-    width: 6px;
-    background: #d9280e;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 99.5%;
+    left: 98.2%;
 }
 
 .addcolor {
@@ -757,8 +739,9 @@ p {
 }
 
 .capscale_handle {
-    width: 6px;
-    background: #0842b9;
+    width: 10px;
+    background: url("../../Images/slider-handle3.png") no-repeat scroll 40% 50% transparent !important;
+    left: -7px;
     height: 30px;
     position: absolute;
     z-index: 99;
@@ -766,39 +749,19 @@ p {
 }
 
 .capscale_handle1 {
-    width: 6px;
-    background: #0842b9;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 24.5%;
+    left: 23.2%;
 }
 
 .capscale_handle2 {
-    width: 6px;
-    background: #0842b9;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 49.5%;
+    left: 48.2%;
 }
 
 .capscale_handle3 {
-    width: 6px;
-    background: #0842b9;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 74.5%;
+    left: 73.2%;
 }
 
 .capscale_handle4 {
-    width: 6px;
-    background: #0842b9;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 99.5%;
+    left: 98.2%;
 }
 
 .addcolor {
@@ -935,8 +898,9 @@ p {
 }
 
 .freqscale_handle {
-    width: 6px;
-    background: #035054;
+    width: 10px;
+    left: -7px;
+    background: url("../../Images/slider-handle2.png") no-repeat scroll 40% 50% transparent !important;
     height: 30px;
     position: absolute;
     z-index: 99;
@@ -944,39 +908,19 @@ p {
 }
 
 .freqscale_handle1 {
-    width: 6px;
-    background: #035054;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 24.5%;
+    left: 23.2%;
 }
 
 .freqscale_handle2 {
-    width: 6px;
-    background: #035054;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 49.5%;
+    left: 48.2%;
 }
 
 .freqscale_handle3 {
-    width: 6px;
-    background: #035054;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 74.5%;
+    left: 73.2%;
 }
 
 .freqscale_handle4 {
-    width: 6px;
-    background: #035054;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    left: 99.5%;
+    left: 98.2%;
 }
 
 .addcolor {
@@ -2017,7 +1961,7 @@ p {
 
     #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
         width: 4%;
-        margin-right: 1%;
+        margin-right: 2%;
     }
 
     #managerFeedContent .questionPart {

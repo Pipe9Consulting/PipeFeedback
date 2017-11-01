@@ -160,8 +160,25 @@ var devProgress = {
                         var impselectedRole3 = "";
                         var impselectedRole4 = "";
                         var moreText = response[i].Question; //135
-                        if (response[i].Question.length > 95) {
-                            moreText = response[i].Question.substring(0, 95) + "<span class='actionMore'>more..</span>";
+                        //if (response[i].Question.length > 95) {
+                        //    moreText = response[i].Question.substring(0, 95) + "<span class='actionMore'>more..</span>";
+                        //}
+                        var resolution = $(window).width();
+                        // alert(resolution);
+                        if (resolution <= 1366) {
+                            if (response[i].Question.length > 120) {
+                                moreText = response[i].Question.substring(0, 120) + "<span class='actionMore'>more..</span>";
+                            }
+                        }
+                        if (resolution > 1366 && resolution <= 1950) {
+                            if (response[i].Question.length > 130) {
+                                moreText = response[i].Question.substring(0, 130) + "<span class='actionMore'>more..</span>";
+                            }
+                        }
+                        if (resolution > 1950 && resolution <= 3000) {
+                            if (response[i].Question.length > 160) {
+                                moreText = response[i].Question.substring(0, 160) + "<span class='actionMore'>more..</span>";
+                            }
                         }
                         var progressImage = "";
                         if (response[i].CurrrentResult == 1) {

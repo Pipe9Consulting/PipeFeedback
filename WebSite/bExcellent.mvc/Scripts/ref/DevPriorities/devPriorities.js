@@ -366,8 +366,8 @@ var devLanding = {
                             }
                         }
                         if (resolution > 1950 && resolution <= 3000) {
-                            if (response[i].Question.length > 160) {
-                                moreText = response[i].Question.substring(0, 160) + "<span class='actionMore'>more..</span>";
+                            if (response[i].Question.length > 150) {
+                                moreText = response[i].Question.substring(0, 150) + "<span class='actionMore'>more..</span>";
                             }
                         }
                         //alert(moreText);
