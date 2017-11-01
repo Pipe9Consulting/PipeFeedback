@@ -365,6 +365,11 @@ var devLanding = {
                                 moreText = response[i].Question.substring(0, 165) + "<span class='actionMore'>more..</span>";
                             }
                         }
+                        if (resolution > 1950 && resolution <= 3000) {
+                            if (response[i].Question.length > 170) {
+                                moreText = response[i].Question.substring(0, 170) + "<span class='actionMore'>more..</span>";
+                            }
+                        }
                         //alert(moreText);
                         var designation = "Manager";
                         if ($('#userMode').val() == 2) {
@@ -433,7 +438,7 @@ var devLanding = {
                                 capselectedRole4 = capselectedRole4 + "<span class='youSpan'>" + name + "</span>";
                             }
 
-                            debugger;
+                            //debugger;
                             if (response[i].Rating == 1) {
                                 impselected1 = "selectManager";
                                 impselectedRole1 = "<span class='managerSpan'>" + designation + "</span>";
