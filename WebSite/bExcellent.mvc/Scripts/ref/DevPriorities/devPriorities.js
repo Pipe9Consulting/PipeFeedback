@@ -353,10 +353,18 @@ var devLanding = {
                         var impselectedRole3 = "";
                         var impselectedRole4 = "";
                         var moreText = response[i].Question; //135
-                        if (response[i].Question.length > 125) {
-                            moreText = response[i].Question.substring(0, 125) + "<span class='actionMore'>more..</span>";
+                        var resolution = $(window).width();
+                        // alert(resolution);
+                        if (resolution <= 1366) {
+                            if (response[i].Question.length > 125) {
+                                moreText = response[i].Question.substring(0, 125) + "<span class='actionMore'>more..</span>";
+                            }
                         }
-
+                        if (resolution > 1366&&resolution <= 1950) {
+                            if (response[i].Question.length > 165) {
+                                moreText = response[i].Question.substring(0, 165) + "<span class='actionMore'>more..</span>";
+                            }
+                        }
                         //alert(moreText);
                         var designation = "Manager";
                         if ($('#userMode').val() == 2) {
