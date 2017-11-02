@@ -76,6 +76,7 @@ p {
         float: left;
         position: relative;
         width: 5.4%;
+        margin-right: 2%;
     }
 
 .SI3 {
@@ -599,11 +600,12 @@ p {
 }
 
 .impscale_handle3 {
-    left: 73.2%;
+    left: 73.5%;
 }
 
 .impscale_handle4 {
-    left: 98.2%;
+    left: auto;
+    right: 0;
 }
 
 .addcolor {
@@ -761,7 +763,8 @@ p {
 }
 
 .capscale_handle4 {
-    left: 98.2%;
+    left: auto;
+    right: 0;
 }
 
 .addcolor {
@@ -920,7 +923,8 @@ p {
 }
 
 .freqscale_handle4 {
-    left: 98.2%;
+    left: auto;
+    right: 0;
 }
 
 .addcolor {
@@ -928,6 +932,77 @@ p {
 }
 /***********************************************************************************************************************************************/
 @media screen and (max-width: 3500px) and (min-width: 2800px) {
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 57px;
+        font-size: 125%;
+    }
+
+    .capabilityQuestion {
+        margin: 1% 0 0 0;
+    }
+
+
+    .impscale_handle, .capscale_handle, .freqscale_handle {
+        width: 20px;
+    }
+
+
+    .capscale_handle, .freqscale_handle {
+        left: -10px;
+    }
+
+    .capscale_handle1, .freqscale_handle1 {
+        left: 23.5%;
+    }
+
+    .capscale_handle2, .freqscale_handle2 {
+        left: 48.4%;
+    }
+
+    .impscale_handle2 {
+        left: 48.5%;
+    }
+
+    .impscale_handle1 {
+        left: 23.4%;
+    }
+
+
+    .impscale_handle4 {
+        left: 98.4%;
+    }
+
+
+    .capscale_handle3, .freqscale_handle3 {
+        left: 73.5%;
+    }
+
+    .capscale_handle4, .freqscale_handle4 {
+        left: 98.3%;
+    }
+
+    .impscale_bg, .capscale_bg, .freqscale_bg {
+        width: 72%;
+    }
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            padding-top: 2px;
+        }
+
+
+        .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+            height: 57px;
+            font-size: 125%;
+        }
+
+
+
+        .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+            height: 57px;
+            font-size: 125%;
+        }
+
     .questiontaken {
         font-size: 22px;
     }
@@ -952,7 +1027,7 @@ p {
     }
 
     #managerFeedContent .sliderimg {
-        margin: 3% 0 10% 0;
+        margin: .5% 0 10% 0;
     }
 
     #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
@@ -1000,7 +1075,7 @@ p {
     }
 
     .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
-        width: 3.6%;
+        width: 4.2%;
     }
 
     .beginBtn {
@@ -1033,6 +1108,41 @@ p {
 
 @media screen and (max-width: 2800px) and (min-width: 2200px) {
 
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 40px;
+        font-size: 110%;
+    }
+
+    .impscale_handle {
+        width: 13px;
+    }
+
+    .impscale_bg, .capscale_bg, .freqscale_bg {
+        width: 72%;
+    }
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            padding-top: 2px;
+        }
+
+
+        .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+            height: 40px;
+            font-size: 110%;
+        }
+
+    .capscale_handle {
+        width: 13px;
+    }
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 40px;
+        font-size: 110%;
+    }
+
+    .freqscale_handle {
+        width: 13px;
+    }
 
 
     #selfFeedCont .questionPart {
@@ -1123,7 +1233,7 @@ p {
     }
 
     .capabilityQuestion {
-        margin: 2% 0 0 0;
+        margin: 1% 0 0 0;
     }
 
     .sliderimg {
@@ -1241,6 +1351,42 @@ p {
 
 @media screen and (max-width: 2200px) and (min-width: 2000px) {
 
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 40px;
+        font-size: 110%;
+    }
+
+    .impscale_handle {
+        width: 13px;
+    }
+
+    .impscale_bg, .capscale_bg, .freqscale_bg {
+        width: 85%;
+    }
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            padding-top: 4px;
+        }
+
+
+        .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+            height: 40px;
+            font-size: 110%;
+        }
+
+    .capscale_handle {
+        width: 13px;
+    }
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 40px;
+        font-size: 110%;
+    }
+
+    .freqscale_handle {
+        width: 13px;
+    }
+
     .teamcapratingRemoved .frequencyArea {
         width: 100%;
         float: left;
@@ -1298,7 +1444,7 @@ p {
 
 
     .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
-        width: 6%;
+        width: 4.4%;
     }
 
     .sliderdiv {
@@ -1370,8 +1516,8 @@ p {
     }
 
     .teamUser {
-        width: 13%;
-        margin-top: 9.6%;
+        width: 10%;
+        margin-top: 8.6%;
     }
 
 
@@ -1419,7 +1565,7 @@ p {
 
 
     #managerFeedContent .freqOverall .freqImg, #managerFeedContent .capOverall .capImg, #managerFeedContent .rateOverall .rateImg {
-        width: 6.6%;
+        width: 4.8%;
     }
 
     #managerFeedContent .sliderdiv {
@@ -1432,12 +1578,12 @@ p {
     }
 
     .capabilityQuestion {
-        margin: 4% 0 0 0;
+        margin: 2% 0 0 0;
     }
 
     .sliderimg {
         width: 100% !important;
-        margin: 4% 0 0 0;
+        margin: 2% 0 0 0;
     }
 
     .rateThisQuestion {
@@ -1482,6 +1628,39 @@ p {
 }
 
 @media screen and (max-width: 2000px) and (min-width: 1800px) {
+
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 40px;
+        font-size: 105%;
+    }
+
+    .impscale_handle {
+        width: 13px;
+    }
+
+    .impscale_bg, .capscale_bg, .freqscale_bg {
+        width: 75%;
+    }
+
+
+        .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+            height: 40px;
+            font-size: 105%;
+        }
+
+    .capscale_handle {
+        width: 13px;
+    }
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 40px;
+        font-size: 105%;
+    }
+
+    .freqscale_handle {
+        width: 13px;
+    }
 
     #selfFeedCont .questionPart {
         margin-left: 23%;
@@ -1666,7 +1845,7 @@ p {
 
 
     .capabilityQuestion {
-        margin: 3% 0 0 0;
+        margin: 2% 0 0 0;
     }
 
     .sliderimg {

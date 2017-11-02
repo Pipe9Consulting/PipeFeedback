@@ -11,7 +11,7 @@ body {
 }
 
 .impscale_bg {
-    width: 70%;
+    width: 100%;
     height: 30px;
     margin: 0;
     padding: 0;
@@ -159,11 +159,12 @@ body {
 }
 
 .impscale_handle4 {
-    left: 98.2%;
+    left: auto !important;
+    right: 0;
 }
 
 .capscale_bg {
-    width: 70%;
+    width: 100%;
     height: 30px;
     margin: 0;
     padding: 0;
@@ -311,11 +312,12 @@ body {
 }
 
 .capscale_handle4 {
-    left: 98.2%;
+    left: auto !important;
+    right: 0;
 }
 
 .freqscale_bg {
-    width: 70%;
+    width: 100%;
     height: 30px;
     margin: 0;
     padding: 0;
@@ -463,7 +465,8 @@ body {
 }
 
 .freqscale_handle4 {
-    left: 98.2%;
+    left: auto !important;
+    right: 0;
 }
 
 .addcolor {
@@ -2342,6 +2345,35 @@ h1 {
 
 @media screen and (max-width: 1439px) and (min-width: 1365px) {
 
+    .rateThisQuestion {
+        width: 57.2%;
+    }
+
+    
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 25px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 25px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 25px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 115%;
+        }
+
     .rateThisQuestion .ui-slider-handle {
         background: url("../../Images/slider-handle.png") no-repeat scroll 20% 50% transparent !important;
     }
@@ -2564,6 +2596,48 @@ h1 {
 }
 
 @media screen and (min-width: 1351px) and (max-width: 1364px) {
+
+     .rateThisQuestion {
+        width: 57.2%;
+    }
+
+    
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 25px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 25px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 25px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 115%;
+        }
+
+    .rateThisQuestion .ui-slider-handle {
+        background: url("../../Images/slider-handle.png") no-repeat scroll 20% 50% transparent !important;
+    }
+
+    .capbabiltyScaleArea .ui-slider-handle {
+        background: url("../../Images/slider-handle3.png") no-repeat scroll 30% 50% transparent !important;
+    }
+
+    .frequencyScaleArea .ui-slider-handle {
+        background: url("../../Images/slider-handle2.png") no-repeat scroll 30% 50% transparent !important;
+    }
+
     .poeheaderIcon {
         width: 20%;
     }
@@ -2612,6 +2686,48 @@ h1 {
 
 
 @media screen and (min-width: 1200px) and (max-width: 1350px) {
+
+     .rateThisQuestion {
+        width: 57.2%;
+    }
+
+    
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 25px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 25px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 25px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 115%;
+        }
+
+    .rateThisQuestion .ui-slider-handle {
+        background: url("../../Images/slider-handle.png") no-repeat scroll 20% 50% transparent !important;
+    }
+
+    .capbabiltyScaleArea .ui-slider-handle {
+        background: url("../../Images/slider-handle3.png") no-repeat scroll 30% 50% transparent !important;
+    }
+
+    .frequencyScaleArea .ui-slider-handle {
+        background: url("../../Images/slider-handle2.png") no-repeat scroll 30% 50% transparent !important;
+    }
+
     .rateThisQuestion .ui-slider-handle {
         background: url("../../Images/slider-handle.png") no-repeat scroll 20% 50% transparent !important;
     }
@@ -5524,7 +5640,7 @@ div.sceditor-toolbar {
 }
 
 .rateThisQuestion {
-    width: 80.7%;
+    width: 57.2%;
     height: 0 !important;
     padding-bottom: 6%;
     float: none;
@@ -5661,7 +5777,7 @@ div.sceditor-toolbar {
 .rate_question {
     padding-bottom: 1.5%;
     float: left;
-    width: 70%;
+    width: 97%;
     margin-left: 12.9%;
     margin-top: 0.5%;
     position: relative;
@@ -5670,7 +5786,7 @@ div.sceditor-toolbar {
     .rate_question .user {
         float: left;
         margin-right: 1.8%;
-        width: 4.7%;
+        width: 3.3%;
     }
 
 
@@ -5958,7 +6074,7 @@ div.sceditor-toolbar {
     .capbabiltyScaleArea .user {
         float: left;
         width: 5.2%;
-        margin-right: 2%;
+        margin-right: 2.7%;
     }
 
     .capbabiltyScaleArea .sliderimg {
@@ -5977,7 +6093,7 @@ div.sceditor-toolbar {
     .frequencyScaleArea .user {
         float: left;
         width: 5.2%;
-        margin-right: 2%;
+        margin-right: 2.7%;
         margin-top: 0.4%;
     }
 

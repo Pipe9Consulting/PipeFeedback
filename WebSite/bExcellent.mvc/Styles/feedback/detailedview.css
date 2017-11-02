@@ -11,8 +11,8 @@ body {
 }
 
 .impscale_bg {
-    width: 70%;
-    height: 30px;
+    width: 90%;
+    height: 34px;
     margin: 0;
     padding: 0;
     background: url(../../Images/Common/rate_slidebg.png)no-repeat;
@@ -28,17 +28,19 @@ body {
     width: 100%;
     z-index: 99;
     position: relative;
+    height: 34px;
 }
 
 .impscale_bg button {
     cursor: pointer;
-    height: 30px;
+    height: 34px;
     outline: none;
     color: #333;
     text-align: left;
     padding-left: 1.7%;
     font-weight: 400;
-    font-size: 90%;
+    font-size: 125%;
+    padding-top: 2px;
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
 }
@@ -87,9 +89,13 @@ body {
     z-index: 99;
 }
 
+
+.impadddiv {
+    height: 34px;
+}
+
 .impscaleover1 {
     width: 25%;
-    height: 30px;
     position: absolute;
     float: left;
     background: #f7b4ab; /* For browsers that do not support gradients */
@@ -100,6 +106,7 @@ body {
     color: #fff !important;
 }
 
+
 .impscaleover2 {
     background: #f7b4ab; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
@@ -107,7 +114,6 @@ body {
     background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
     background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
     width: 50%;
-    height: 30px;
     position: absolute;
     float: left;
 }
@@ -119,7 +125,6 @@ body {
     background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
     background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
     width: 75%;
-    height: 30px;
     position: absolute;
     float: left;
 }
@@ -131,7 +136,6 @@ body {
     background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
     background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
     width: 100%;
-    height: 30px;
     position: absolute;
     float: left;
 }
@@ -140,7 +144,7 @@ body {
     width: 11px;
     left: -7px;
     background: url("../../Images/slider-handle.png") no-repeat scroll 0% 50% transparent;
-    height: 30px;
+    height: 34px;
     position: absolute;
     z-index: 99;
     cursor: pointer;
@@ -159,12 +163,16 @@ body {
 }
 
 .impscale_handle4 {
-    left: 98.2%;
+    left: auto !important;
+    right: 0;
 }
 
+
+
+
 .capscale_bg {
-    width: 70%;
-    height: 30px;
+    width: 90%;
+    height: 34px;
     margin: 0;
     padding: 0;
     background: url(../../Images/Common/rate_slidebg.png)no-repeat;
@@ -184,17 +192,21 @@ body {
 
 .capscale_bg button {
     cursor: pointer;
-    height: 30px;
+    height: 34px;
     outline: none;
     color: #333;
     text-align: left;
     padding-left: 1.5%;
     font-weight: 400;
-    font-size: 90%;
+    font-size: 125%;
+    padding-top: 2px;
     text-transform: uppercase;
     font-family: 'Cuprum', sans-serif;
 }
 
+.capadddiv {
+    height: 34px;
+}
 
 .capbtn1 {
     width: 25%;
@@ -241,7 +253,6 @@ body {
 
 .capscaleover1 {
     width: 25%;
-    height: 30px;
     position: absolute;
     float: left;
     background: #f7b4ab; /* For browsers that do not support gradients */
@@ -259,7 +270,6 @@ body {
     background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
     background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 50%;
-    height: 30px;
     position: absolute;
     float: left;
 }
@@ -271,7 +281,6 @@ body {
     background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
     background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 75%;
-    height: 30px;
     position: absolute;
     float: left;
 }
@@ -283,7 +292,6 @@ body {
     background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
     background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 100%;
-    height: 30px;
     position: absolute;
     float: left;
 }
@@ -292,7 +300,7 @@ body {
     width: 10px;
     background: url("../../Images/slider-handle3.png") no-repeat scroll 40% 50% transparent !important;
     left: -7px;
-    height: 30px;
+    height: 34px;
     position: absolute;
     z-index: 99;
     cursor: pointer;
@@ -311,12 +319,13 @@ body {
 }
 
 .capscale_handle4 {
-    left: 98.2%;
+    left: auto !important;
+    right: 0;
 }
 
 .freqscale_bg {
-    width: 70%;
-    height: 30px;
+    width: 90%;
+    height: 34px;
     margin: 0;
     padding: 0;
     background: url(../../Images/Common/rate_slidebg.png)no-repeat;
@@ -336,16 +345,22 @@ body {
 
 .freqscale_bg button {
     cursor: pointer;
-    height: 30px;
+    height: 34px;
     outline: none;
     color: #333;
     text-align: left;
     padding-left: 1.5%;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 90%;
+    font-size: 125%;
+    padding-top: 2px;
     font-family: 'Cuprum', sans-serif;
 }
+
+.freqadddiv {
+    height: 34px;
+}
+
 
 
 .freqbtn1 {
@@ -401,7 +416,6 @@ body {
     background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
     background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
     color: #fff !important;
-    height: 30px;
 }
 
 .freqscaleover2 {
@@ -413,7 +427,6 @@ body {
     width: 50%;
     position: absolute;
     float: left;
-    height: 30px;
 }
 
 .freqscaleover3 {
@@ -425,7 +438,6 @@ body {
     width: 75%;
     position: absolute;
     float: left;
-    height: 30px;
 }
 
 .freqscaleover4 {
@@ -437,14 +449,13 @@ body {
     width: 100%;
     position: absolute;
     float: left;
-    height: 30px;
 }
 
 .freqscale_handle {
     width: 10px;
     left: -7px;
     background: url("../../Images/slider-handle2.png") no-repeat scroll 40% 50% transparent !important;
-    height: 30px;
+    height: 34px;
     position: absolute;
     z-index: 99;
     cursor: pointer;
@@ -463,8 +474,10 @@ body {
 }
 
 .freqscale_handle4 {
-    left: 98.2%;
+    left: auto !important;
+    right: 0;
 }
+
 
 .addcolor {
     color: #fff !important;
@@ -3526,6 +3539,27 @@ body {
         font-size: 18px;
     }
 
+    .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
+        left: 23.7%;
+    }
+
+    .freqscale_handle2, .capscale_handle2, .impscale_handle2 {
+        left: 48.7%;
+    }
+
+    .freqscale_handle3, .capscale_handle3, .impscale_handle3 {
+        left: 73.7%;
+    }
+
+    .impscale_bg, .capscale_bg, .freqscale_bg {
+        width: 80%;
+    }
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 115%;
+        }
+
+
     .rateOverall .ui-slider-handle {
         background: url("../../Images/slider-handle.png") no-repeat scroll 20% 50% transparent;
     }
@@ -3581,7 +3615,7 @@ body {
 
     .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
         float: left;
-        width: 3.5% !important;
+        width: 3.8% !important;
     }
 
     .sliderdiv {
@@ -3669,9 +3703,45 @@ body {
 }
 
 @media screen and (min-width: 1930px) and (max-width: 2169px) {
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 50px;
+    }
 
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 50px;
+    }
 
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 50px;
+    }
 
+    .freqscale_handle, .capscale_handle, .impscale_handle {
+        width: 15px;
+    }
+
+    .freqscale_handle, .capscale_handle {
+        left: -8px;
+    }
+
+    .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
+        left: 23.7% !important;
+    }
+
+    .freqscale_handle2, .capscale_handle2, .impscale_handle2 {
+        left: 48.7% !important;
+    }
+
+    .freqscale_handle3, .capscale_handle3, .impscale_handle3 {
+        left: 73.7% !important;
+    }
+
+    .impscale_bg, .capscale_bg, .freqscale_bg {
+        width: 90%;
+    }
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 115%;
+        }
 
 
 
@@ -3712,7 +3782,7 @@ body {
     }
 
     .rateThisQuestion {
-        width: 75% !important;
+        width: 90% !important;
     }
 
     .sticklr > li > a {
@@ -3775,6 +3845,45 @@ body {
 
 
 @media screen and (min-width: 2170px) and (max-width: 2600px) {
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 50px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 50px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 50px;
+    }
+
+    .freqscale_handle, .capscale_handle, .impscale_handle {
+        width: 15px;
+    }
+
+    .freqscale_handle, .capscale_handle {
+        left: -8px;
+    }
+
+    .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
+        left: 23.7% !important;
+    }
+
+    .freqscale_handle2, .capscale_handle2, .impscale_handle2 {
+        left: 48.7% !important;
+    }
+
+    .freqscale_handle3, .capscale_handle3, .impscale_handle3 {
+        left: 73.7% !important;
+    }
+
+    .impscale_bg, .capscale_bg, .freqscale_bg {
+        width: 90%;
+    }
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 130%;
+        }
 
     .OverallLastSurvey h3 {
         font-size: 130% !important;
@@ -3887,7 +3996,7 @@ body {
     }
 
     .rateThisQuestion {
-        width: 64% !important;
+        width: 80% !important;
         padding-bottom: 0% !important;
     }
 
@@ -3953,6 +4062,51 @@ body {
 
 
 @media screen and (min-width: 2600px) and (max-width: 3500px) {
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 60px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 60px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 60px;
+    }
+
+    .freqscale_handle, .capscale_handle, .impscale_handle {
+        width: 15px;
+    }
+
+    .freqscale_handle, .capscale_handle {
+        left: -8px;
+    }
+
+    .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
+        left: 23.7% !important;
+    }
+
+    .freqscale_handle2, .capscale_handle2, .impscale_handle2 {
+        left: 48.7% !important;
+    }
+
+    .freqscale_handle3, .capscale_handle3, .impscale_handle3 {
+        left: 73.7% !important;
+    }
+
+    .impscale_bg, .capscale_bg, .freqscale_bg {
+        width: 90%;
+    }
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 115%;
+        }
+
+    .scaleDefPart {
+        margin-left: 10.3% !important;
+    }
+
 
     .feedbackcomplete p {
         font-size: 125%;
@@ -4840,6 +4994,7 @@ table {
 .freqOverall .freqImg, .capOverall .capImg, .rateOverall .rateImg {
     float: left;
     width: 5.2%;
+    margin-right: 2%;
 }
 
 
