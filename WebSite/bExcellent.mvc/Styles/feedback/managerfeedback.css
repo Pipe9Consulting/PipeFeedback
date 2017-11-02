@@ -1319,6 +1319,40 @@ h1 {
 
 
 @media screen and (max-width: 3500px) and (min-width: 2600px) {
+
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+    .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
+        left: 23.9% !important;
+    }
+
+    .freqscale_handle2, .capscale_handle2, .impscale_handle2 {
+        left: 48.9% !important;
+    }
+
+    .freqscale_handle3, .capscale_handle3, .impscale_handle3 {
+        left: 73.9% !important;
+    }
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 49px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 49px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 49px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 115%;
+        }
     #aboutContent .slimScrollDiv, .scroll2 {
         padding-bottom: 139% !important;
     }
@@ -1390,6 +1424,40 @@ h1 {
 
 
 @media screen and (max-width: 2600px) and (min-width: 2170px) {
+
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+    .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
+        left: 23.9% !important;
+    }
+
+    .freqscale_handle2, .capscale_handle2, .impscale_handle2 {
+        left: 48.9% !important;
+    }
+
+    .freqscale_handle3, .capscale_handle3, .impscale_handle3 {
+        left: 73.9% !important;
+    }
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 49px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 49px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 49px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 115%;
+        }
 
     .slidercontent p {
         font-size: 98% !important;
@@ -1596,6 +1664,47 @@ h1 {
 }
 
 @media screen and (max-width: 2169px) and (min-width: 1930px) {
+
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+    .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
+        left: 23.7% !important;
+    }
+
+    .freqscale_handle2, .capscale_handle2, .impscale_handle2 {
+        left: 48.7% !important;
+    }
+
+    .freqscale_handle3, .capscale_handle3, .impscale_handle3 {
+        left: 73.7% !important;
+    }
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 40px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 40px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 40px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 100%;
+        }
+
+
+    .userIconArea span {
+        line-height: 1;
+        padding: 3% 3% 4% 3%;
+    }
+
     .capabilityAreaRemoved .frequencyArea {
         width: 52% !IMPORTANT;
         left: 6% !important;
@@ -1617,7 +1726,7 @@ h1 {
 
 
     .rate_question .user {
-        width: 4.7% !important;
+        width: 3.2% !important;
     }
 
     .frequency .tickfbimg img {
@@ -1771,6 +1880,40 @@ h1 {
 }
 
 @media screen and (max-width: 1929px) and (min-width: 1690px) {
+
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+    .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
+        left: 23.7% !important;
+    }
+
+    .freqscale_handle2, .capscale_handle2, .impscale_handle2 {
+        left: 48.7% !important;
+    }
+
+    .freqscale_handle3, .capscale_handle3, .impscale_handle3 {
+        left: 73.7% !important;
+    }
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 37px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 37px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 37px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 100%;
+        }
 
     .questions .slimScrollRail {
         background-color: red !important;
@@ -1959,6 +2102,30 @@ h1 {
 
 @media screen and (max-width: 1689px) and (min-width: 1610px) {
 
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 25px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 25px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 25px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 100%;
+        }
+
     .questions .slimScrollRail {
         background-color: red !important;
         opacity: 0.2 !important;
@@ -2059,6 +2226,30 @@ h1 {
 
 
 @media screen and (max-width: 1609px) and (min-width: 1450px) {
+
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 25px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 25px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 25px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 100%;
+        }
 
     .contentholder {
         height: 500px;
@@ -2213,6 +2404,31 @@ h1 {
 
 
 @media screen and (max-width: 1449px) and (min-width: 1440px) {
+
+    .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+        font-size: 100%;
+        padding-top: 2px;
+    }
+
+
+
+    .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
+        height: 25px;
+    }
+
+    .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
+        height: 25px;
+    }
+
+    .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
+        height: 25px;
+    }
+
+
+        .impscale_bg button, .capscale_bg button, .freqscale_bg button {
+            font-size: 100%;
+        }
+
     .poeheaderIcon {
         width: 20%;
     }
@@ -2349,7 +2565,7 @@ h1 {
         width: 57.2%;
     }
 
-    
+
     .impscale_bg button, .capscale_bg button, .freqscale_bg button {
         font-size: 100%;
         padding-top: 2px;
@@ -2371,7 +2587,7 @@ h1 {
 
 
         .impscale_bg button, .capscale_bg button, .freqscale_bg button {
-            font-size: 115%;
+            font-size: 100%;
         }
 
     .rateThisQuestion .ui-slider-handle {
@@ -2597,11 +2813,11 @@ h1 {
 
 @media screen and (min-width: 1351px) and (max-width: 1364px) {
 
-     .rateThisQuestion {
+    .rateThisQuestion {
         width: 57.2%;
     }
 
-    
+
     .impscale_bg button, .capscale_bg button, .freqscale_bg button {
         font-size: 100%;
         padding-top: 2px;
@@ -2687,11 +2903,11 @@ h1 {
 
 @media screen and (min-width: 1200px) and (max-width: 1350px) {
 
-     .rateThisQuestion {
+    .rateThisQuestion {
         width: 57.2%;
     }
 
-    
+
     .impscale_bg button, .capscale_bg button, .freqscale_bg button {
         font-size: 100%;
         padding-top: 2px;
@@ -5640,7 +5856,7 @@ div.sceditor-toolbar {
 }
 
 .rateThisQuestion {
-    width: 57.2%;
+    width: 58.3%;
     height: 0 !important;
     padding-bottom: 6%;
     float: none;
