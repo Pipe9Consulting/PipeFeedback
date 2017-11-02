@@ -10,6 +10,466 @@ body {
     background-size: 100% 100% !important;
 }
 
+.impscale_bg {
+    width: 70%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: url(../../Images/Common/rate_slidebg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    float: left;
+}
+
+.impscale_over {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+}
+
+.impscale_bg button {
+    cursor: pointer;
+    height: 30px;
+    outline: none;
+    color: #333;
+    text-align: left;
+    padding-left: 1.7%;
+    font-weight: 400;
+    font-size: 90%;
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.impbtn1 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.impbtn2 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.impbtn3 {
+    width: 25%;
+    padding: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    margin: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.impbtn4 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+}
+
+.impscaleover1 {
+    width: 25%;
+    height: 30px;
+    position: absolute;
+    float: left;
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+    color: #fff !important;
+}
+
+.impscaleover2 {
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    float: left;
+}
+
+.impscaleover3 {
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+    width: 75%;
+    height: 30px;
+    position: absolute;
+    float: left;
+}
+
+.impscaleover4 {
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #f7b4ab, #eb4329); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #f7b4ab, #eb4329); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #f7b4ab, #eb4329); /* Standard syntax */
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    float: left;
+}
+
+.impscale_handle {
+    width: 11px;
+    left: -7px;
+    background: url("../../Images/slider-handle.png") no-repeat scroll 0% 50% transparent;
+    height: 30px;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.impscale_handle1 {
+    left: 23.2%;
+}
+
+.impscale_handle2 {
+    left: 48.2%;
+}
+
+.impscale_handle3 {
+    left: 73.2%;
+}
+
+.impscale_handle4 {
+    left: 98.2%;
+}
+
+.capscale_bg {
+    width: 70%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: url(../../Images/Common/rate_slidebg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    float: left;
+}
+
+.capscale_over {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+}
+
+.capscale_bg button {
+    cursor: pointer;
+    height: 30px;
+    outline: none;
+    color: #333;
+    text-align: left;
+    padding-left: 1.5%;
+    font-weight: 400;
+    font-size: 90%;
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+}
+
+
+.capbtn1 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.capbtn2 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.capbtn3 {
+    width: 25%;
+    padding: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    margin: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.capbtn4 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+}
+
+.capscaleover1 {
+    width: 25%;
+    height: 30px;
+    position: absolute;
+    float: left;
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
+    color: #fff !important;
+}
+
+.capscaleover2 {
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    float: left;
+}
+
+.capscaleover3 {
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
+    width: 75%;
+    height: 30px;
+    position: absolute;
+    float: left;
+}
+
+.capscaleover4 {
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    float: left;
+}
+
+.capscale_handle {
+    width: 10px;
+    background: url("../../Images/slider-handle3.png") no-repeat scroll 40% 50% transparent !important;
+    left: -7px;
+    height: 30px;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.capscale_handle1 {
+    left: 23.2%;
+}
+
+.capscale_handle2 {
+    left: 48.2%;
+}
+
+.capscale_handle3 {
+    left: 73.2%;
+}
+
+.capscale_handle4 {
+    left: 98.2%;
+}
+
+.freqscale_bg {
+    width: 70%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: url(../../Images/Common/rate_slidebg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    float: left;
+}
+
+.freqscale_over {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+}
+
+.freqscale_bg button {
+    cursor: pointer;
+    height: 30px;
+    outline: none;
+    color: #333;
+    text-align: left;
+    padding-left: 1.5%;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-family: 'Cuprum', sans-serif;
+}
+
+
+.freqbtn1 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.freqbtn2 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.freqbtn3 {
+    width: 25%;
+    padding: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    margin: 0;
+    float: left;
+    z-index: 99;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.freqbtn4 {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    float: left;
+    z-index: 99;
+}
+
+.freqscaleover1 {
+    width: 25%;
+    position: absolute;
+    float: left;
+    background: #d2ebec; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    color: #fff !important;
+    height: 30px;
+}
+
+.freqscaleover2 {
+    background: #d2ebec; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    width: 50%;
+    position: absolute;
+    float: left;
+    height: 30px;
+}
+
+.freqscaleover3 {
+    background: #d2ebec; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    width: 75%;
+    position: absolute;
+    float: left;
+    height: 30px;
+}
+
+.freqscaleover4 {
+    background: #d2ebec; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    width: 100%;
+    position: absolute;
+    float: left;
+    height: 30px;
+}
+
+.freqscale_handle {
+    width: 10px;
+    left: -7px;
+    background: url("../../Images/slider-handle2.png") no-repeat scroll 40% 50% transparent !important;
+    height: 30px;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.freqscale_handle1 {
+    left: 23.2%;
+}
+
+.freqscale_handle2 {
+    left: 48.2%;
+}
+
+.freqscale_handle3 {
+    left: 73.2%;
+}
+
+.freqscale_handle4 {
+    left: 98.2%;
+}
+
+.addcolor {
+    color: #fff !important;
+}
+
 .slideout {
     background: url("../../images/collapse-bg.png") repeat-x scroll center right rgb(229, 229, 229);
     position: fixed;

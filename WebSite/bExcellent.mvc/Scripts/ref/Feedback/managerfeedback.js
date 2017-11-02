@@ -1575,3 +1575,123 @@ function removeAttrHover() {
         count++;
     });
 }
+function LoadSliderEvent() {
+    $('.impbtn1').click(function () {
+        $(this).parents('.impscale_bg').attr("data-rating", 1);
+        $(this).parents('.impscale_bg').find(".impadddiv").addClass("impscaleover1");
+        $(this).parents('.impscale_bg').find(".impscale_handle").addClass("impscale_handle1");
+        $(this).parents('.impscale_bg').find(".impbtn1").addClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn2").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn3").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn4").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impadddiv").removeClass("impscaleover2").removeClass("impscaleover3").removeClass("impscaleover4");
+        $(this).parents('.impscale_bg').find(".impscale_handle").removeClass("impscale_handle2").removeClass("impscale_handle3").removeClass("impscale_handle4");
+    });
+    $('.impbtn2').click(function () {
+        $(this).parents('.impscale_bg').attr("data-rating", 2);
+        $(this).parents('.impscale_bg').find(".impadddiv").addClass("impscaleover2");
+        $(this).parents('.impscale_bg').find(".impscale_handle").addClass("impscale_handle2");
+        $(this).parents('.impscale_bg').find(".impbtn2").addClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn1, .impbtn3, .impbtn4").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover3").removeClass("impscaleover4");
+        $(this).parents('.impscale_bg').find(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle3").removeClass("impscale_handle4");
+    });
+    $('.impbtn3').click(function () {
+        $(this).parents('.impscale_bg').attr("data-rating", 3);
+        $(this).parents('.impscale_bg').find(".impadddiv").addClass("impscaleover3");
+        $(this).parents('.impscale_bg').find(".impscale_handle").addClass("impscale_handle3");
+        $(this).parents('.impscale_bg').find(".impbtn3").addClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn1, .impbtn2, .impbtn4").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover2").removeClass("impscaleover4");
+        $(this).parents('.impscale_bg').find(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle2").removeClass("impscale_handle4");
+    });
+    $('.impbtn4').click(function () {
+        $(this).parents('.impscale_bg').attr("data-rating", 4);
+        $(this).parents('.impscale_bg').find(".impadddiv").addClass("impscaleover4");
+        $(this).parents('.impscale_bg').find(".impscale_handle").addClass("impscale_handle4");
+        $(this).parents('.impscale_bg').find(".impbtn4").addClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn1, .impbtn2, .impbtn3").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover2").removeClass("impscaleover3");
+        $(this).parents('.impscale_bg').find(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle2").removeClass("impscale_handle3");
+    });
+
+    //Capability
+    $('.capbtn1').click(function () {
+        $(this).parents('.capscale_bg').attr("data-answer", 1);
+        $(this).parents('.capscale_bg').find(".capadddiv").addClass("capscaleover1");
+        $(this).parents('.capscale_bg').find(".capscale_handle").addClass("capscale_handle1");
+        $(this).parents('.capscale_bg').find(".capbtn1").addClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capbtn2, .capbtn3, .capbtn4").removeClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capadddiv").removeClass("capscaleover2").removeClass("capscaleover3").removeClass("capscaleover4");
+        $(this).parents('.capscale_bg').find(".capscale_handle").removeClass("capscale_handle2").removeClass("capscale_handle3").removeClass("capscale_handle4");
+    });
+
+    $('.capbtn2').click(function () {
+        $(this).parents('.capscale_bg').attr("data-answer", 2);
+        $(this).parents('.capscale_bg').find(".capadddiv").addClass("capscaleover2");
+        $(this).parents('.capscale_bg').find(".capscale_handle").addClass("capscale_handle2");
+        $(this).parents('.capscale_bg').find(".capbtn2").addClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capbtn1, .capbtn3, .capbtn4").removeClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover3").removeClass("capscaleover4");
+        $(this).parents('.capscale_bg').find(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle3").removeClass("capscale_handle4");
+    });
+
+    $('.capbtn3').click(function () {
+        $(this).parents('.capscale_bg').attr("data-answer", 3);
+        $(this).parents('.capscale_bg').find(".capadddiv").addClass("capscaleover3");
+        $(this).parents('.capscale_bg').find(".capscale_handle").addClass("capscale_handle3");
+        $(this).parents('.capscale_bg').find(".capbtn3").addClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capbtn1, .capbtn2, .capbtn4").removeClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover2").removeClass("capscaleover4");
+        $(this).parents('.capscale_bg').find(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle2").removeClass("capscale_handle4");
+    });
+
+    $('.capbtn4').click(function () {
+        $(this).parents('.capscale_bg').attr("data-answer", 4);
+        $(this).parents('.capscale_bg').find(".capadddiv").addClass("capscaleover4");
+        $(this).parents('.capscale_bg').find(".capscale_handle").addClass("capscale_handle4");
+        $(this).parents('.capscale_bg').find(".capbtn4").addClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capbtn1, .capbtn2, .capbtn3").removeClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover2").removeClass("capscaleover3");
+        $(this).parents('.capscale_bg').find(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle2").removeClass("capscale_handle3");
+    });
+    $('.freqbtn1').click(function () {
+        $(this).parents('.freqscale_bg').attr("data-answer", 1);
+        $(this).parents('.freqscale_bg').find(".freqadddiv").addClass("freqscaleover1");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").addClass("freqscale_handle1");
+        $(this).parents('.freqscale_bg').find(".freqbtn1").addClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqbtn2, .freqbtn3, .freqbtn4").removeClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover2").removeClass("freqscaleover3").removeClass("freqscaleover4");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle2").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
+    });
+
+    $('.freqbtn2').click(function () {
+        $(this).parents('.freqscale_bg').attr("data-answer", 2);
+        $(this).parents('.freqscale_bg').find(".freqadddiv").addClass("freqscaleover2");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").addClass("freqscale_handle2");
+        $(this).parents('.freqscale_bg').find(".freqbtn2").addClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn3, .freqbtn4").removeClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover3").removeClass("freqscaleover4");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
+    });
+
+    $('.freqbtn3').click(function () {
+        $(this).parents('.freqscale_bg').attr("data-answer", 3);
+        $(this).parents('.freqscale_bg').find(".freqadddiv").addClass("freqscaleover3");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").addClass("freqscale_handle3");
+        $(this).parents('.freqscale_bg').find(".freqbtn3").addClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn2, .freqbtn4").removeClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover4");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle4");
+    });
+
+    $('.freqbtn4').click(function () {
+        $(this).parents('.freqscale_bg').attr("data-answer", 4);
+        $(this).parents('.freqscale_bg').find(".freqadddiv").addClass("freqscaleover4");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").addClass("freqscale_handle4");
+        $(this).parents('.freqscale_bg').find(".freqbtn4").addClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn2, .freqbtn3").removeClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover3");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle3");
+    });
+}
