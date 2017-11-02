@@ -1325,6 +1325,10 @@ h1 {
         padding-top: 2px;
     }
 
+    .freqscale_handle, .capscale_handle, .impscale_handle {
+        width: 15px;
+    }
+
     .freqscale_handle1, .capscale_handle1, .impscale_handle1 {
         left: 23.9% !important;
     }
@@ -1338,21 +1342,27 @@ h1 {
     }
 
     .freqscale_bg, .freqscale_bg button, .freqbtn1, .freqbtn2, .freqbtn3, .freqbtn4, .freqscale_handle, .freqscaleover, .freqscaleover1, .freqscaleover2, .freqscaleover3, .freqscaleover4 {
-        height: 49px;
+        height: 55px;
     }
 
     .capscale_bg, .capscale_bg button, .capbtn1, .capbtn2, .capbtn3, .capbtn4, .capscale_handle, .capscaleover, .capscaleover1, .capscaleover2, .capscaleover3, .capscaleover4 {
-        height: 49px;
+        height: 55px;
     }
 
     .impscale_bg, .impscale_bg button, .impbtn1, .impbtn2, .impbtn3, .impbtn4, .impscale_handle, .impscaleover, .impscaleover1, .impscaleover2, .impscaleover3, .impscaleover4 {
-        height: 49px;
+        height: 55px;
     }
 
 
         .impscale_bg button, .capscale_bg button, .freqscale_bg button {
             font-size: 115%;
         }
+
+    .userIconArea span {
+        line-height: 1;
+    }
+
+
     #aboutContent .slimScrollDiv, .scroll2 {
         padding-bottom: 139% !important;
     }
