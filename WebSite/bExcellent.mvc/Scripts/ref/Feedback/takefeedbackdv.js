@@ -258,8 +258,8 @@
                     //var questaken = (modord * totque) + quetionid;
                     var questaken = totalCompletedQuestions + quetionid;
                     var ratinghtml = "<div class='rateThisQuestion'><div class='SI3 rateQuestions'><span>Importance Scale: </span>Select how important this Excellence Action is in your market</div>" +
-                            "<div class='rateOverall'><div class='rateImg'><img src='../../Images/Feedback/imp_icon.png' width='61' height='61' alt='User'></div><div id='Rno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " style='width: 562px; height: 50px; cursor: pointer;' class='sliderdiv'>" +
-                            "<img src='../../Images/img/rate_slidebg.png'></div></div><div class='clearfix'></div>";
+                            "<div class='rateOverall'><div class='rateImg'><img src='../../Images/Feedback/imp_icon.png' width='61' height='61' alt='User'></div> <div class='impscale_bg' id='Rno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-rating='0'> <div class='impscale_over'> <button class='impbtn1' data-order='1'>Not Important</button> <button class='impbtn2' data-order='2'>Somewhat Important</button> <button class='impbtn3' data-order='3'>Important</button> <button class='impbtn4' data-order='4'>Critical</button> </div> <div class='impscale_handle'></div> <div class='impadddiv'></div> </div>" +
+                       "</div><div class='clearfix'></div>";
 
                     var SideBarContent = response[i].SideBarTitle;
                     var questionhtml = " <li id='q" + response[i].QuestionOrderNumber + "' value=" + questaken + " " + (i < 5 ? "" : "style='display:none'") + "><div class='questionPart'> <div class='questiontaken' >Action " + questaken + "/" + $('#totalQuestions').val() +
@@ -275,12 +275,12 @@
                         questionhtml += "<div class='rateThisQuestion'>";
                     }
                     questionhtml += "<div class='capabilityQuestion'><div class='SI3 capabalititys'><span>Capability Scale: </span>Select how ready you are to demonstrate this Excellence Action</div>" +
-                            "<div class='capOverall'><div class='capImg'><img src='../../Images/Feedback/cap_icon.png' width='61' height='61' alt='User'></div><div id='capability" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " style='width: 562px; height: 50px; cursor: pointer;' class='sliderdiv'>" +
-                            "<img src='../../Images/Feedback/cap2bg.png'></div></div></div><div class='clearfix'></div><div class='sliderimg'><div class='SI3'><span>Frequency Scale: </span>Select how consistently you demonstrate this Excellence Action</div>" +
+                            "<div class='capOverall'><div class='capImg'><img src='../../Images/Feedback/cap_icon.png' width='61' height='61' alt='User'></div><div class='capscale_bg' id='capability" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='capscale_over'> <button class='capbtn1'>NOT Ready</button> <button class='capbtn2'>Somewhat Ready</button> <button class='capbtn3'>Ready</button> <button class='capbtn4'>Very Ready</button> </div> <div class='capscale_handle'></div> <div class='capadddiv'></div> </div>" +
+                            "</div></div><div class='clearfix'></div><div class='sliderimg'><div class='SI3'><span>Frequency Scale: </span>Select how consistently you demonstrate this Excellence Action</div>" +
                     "<div class='freqOverall'><div class='freqImg'><img src='../../Images/Feedback/frq_icon.png' width='61' height='61' alt='User' ></div>" +
-                        "<div id='Qno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " style='width: 562px; height: 50px !important; cursor: pointer;' class='sliderdiv'>" +
-                    "<img src='../../Images/img/slidebg1.png' />" +
-                    "</div></div></div></div></div><div class='clearfix'></div>" + freqhtml;
+                        "<div class='freqscale_bg' id='Qno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='freqscale_over'> <button class='freqbtn1'>Never</button> <button class='freqbtn2'>SOMEtimes</button> <button class='freqbtn3'>Frequently</button> <button class='freqbtn4'>Always</button> </div> <div class='freqscale_handle'></div> <div class='freqadddiv'></div> </div>" +
+
+                    "</div></div></div></div><div class='clearfix'></div>" + freqhtml;
 
                     var stringhidden = "";
                     //debugger;
@@ -367,6 +367,7 @@
                     //alert(option.moduleorder);
                     $('#p1').hide();
                 }
+                LoadSliderEvent();
                 $('#lihdn' + (parseInt(option.moduleorder) - 1)).removeClass('selected');
                 if (!$('#lihdn' + (parseInt(option.moduleorder))).hasClass('emptyTile'))
                     $('#lihdn' + (parseInt(option.moduleorder))).addClass('selected');
@@ -881,15 +882,15 @@
         var savePOEResultRequests = [];
         for (var j = 0; j < parseInt($('#totalQuestionsformodule').val()) ; j++) {
             var savePOEResultRequest = new Requests.SavePOEResultRequest();
-            savePOEResultRequest.Answer = parseInt($('#Qno' + (j + 1)).data("answer"));
+            savePOEResultRequest.Answer = parseInt($('#Qno' + (j + 1)).attr("data-answer"));
             savePOEResultRequest.AnswerType = 1;
-            savePOEResultRequest.ModuleNumber = $('#Qno' + (j + 1)).data("moduleid");
-            savePOEResultRequest.CapabilityAnswer = parseInt($('#capability' + (j + 1)).data("answer"));
-            savePOEResultRequest.QuestionId = $('#Qno' + (j + 1)).data("question");
+            savePOEResultRequest.ModuleNumber = $('#Qno' + (j + 1)).attr("data-moduleid");
+            savePOEResultRequest.CapabilityAnswer = parseInt($('#capability' + (j + 1)).attr("data-answer"));
+            savePOEResultRequest.QuestionId = $('#Qno' + (j + 1)).attr("data-question");
             savePOEResultRequest.Comment = null;
             savePOEResultRequest.FeedbackStatus = 1;
-            savePOEResultRequest.UserRating = ($('#Rno' + (j + 1)).length > 0) ? $('#Rno' + (j + 1)).data("rating") : 0;
-            savePOEResultRequest.Notes = $('#Qno' + (j + 1)).data('Notes');
+            savePOEResultRequest.UserRating = ($('#Rno' + (j + 1)).length > 0) ? $('#Rno' + (j + 1)).attr("data-rating") : 0;
+            savePOEResultRequest.Notes = "";
             savePOEResultRequest.Subject = '';
             savePOEResultRequests.push(savePOEResultRequest);
         }
@@ -900,15 +901,15 @@
         var savePOEResultRequests = [];
         var savePOEResultRequest = new Requests.SavePOEResultRequest();
         var currentno = element.replace(/[^0-9\.]+/g, '');
-        savePOEResultRequest.Answer = parseInt($('#' + element).data("answer"));
+        savePOEResultRequest.Answer = parseInt($('#' + element).attr("data-answer"));
         savePOEResultRequest.AnswerType = 1;
-        savePOEResultRequest.ModuleNumber = $('#' + element).data("moduleid");
-        savePOEResultRequest.QuestionId = $('#' + element).data("question");
+        savePOEResultRequest.ModuleNumber = $('#' + element).attr("data-moduleid");
+        savePOEResultRequest.QuestionId = $('#' + element).attr("data-question");
         savePOEResultRequest.Comment = null;
         savePOEResultRequest.FeedbackStatus = 1;
-        savePOEResultRequest.CapabilityAnswer = parseInt($('#capability' + currentno).data("answer"));
-        savePOEResultRequest.UserRating = ($('#Rno' + currentno).length > 0) ? $('#Rno' + currentno).data("rating") : 0;
-        savePOEResultRequest.Notes = $('#' + element).data("Notes");
+        savePOEResultRequest.CapabilityAnswer = parseInt($('#capability' + currentno).attr("data-answer"));
+        savePOEResultRequest.UserRating = ($('#Rno' + currentno).length > 0) ? $('#Rno' + currentno).attr("data-rating") : 0;
+        savePOEResultRequest.Notes = '';
         savePOEResultRequest.Subject = '';
         savePOEResultRequests.push(savePOEResultRequest);
         saveFeedbackResults(savePOEResultRequests);
@@ -945,148 +946,159 @@
             var ans = details_feedback.loadSelectedAnswer({ data: { 'feedbackId': 0, 'questionId': response[i].QuestionId } });
             var rating = details_feedback.loadSelectedRating({ data: { 'feedbackId': 0, 'questionId': response[i].QuestionId } });
             var capability = details_feedback.loadSelectedCapability({ data: { 'feedbackId': 0, 'questionId': response[i].QuestionId } });
-            $('#' + element).data("answer", ans);
-            $('#' + capbalitityelement).data("answer", capability);
-            $('#' + rateelement).data("rating", rating);
-            $('#' + element).data("Notes", details_feedback.loadSelectedNotes({ data: { 'feedbackId': 0, 'questionId': response[i].QuestionId } }));
-            $('#' + rateelement).slider({
-                min: 0,
-                max: 4,
-                range: "min",
-                value: rating,
-                slide: function (event, ui) {
-                    if (ui.value != 0) {
-                        $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion1');
-                        $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion2');
-                        $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion3');
-                        $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion4');
-                    }
+            //$('#' + element).data("answer", ans);
+            //$('#' + capbalitityelement).data("answer", capability);
+            // $('#' + rateelement).data("rating", rating);
+            $('#' + rateelement).attr("data-rating", rating);
+            $('#' + element).attr("data-answer", ans);
+            $('#' + capbalitityelement).attr("data-answer", capability);
+            if (rating != 0) {
+                $('#' + rateelement).find('.impbtn' + rating).click();
+            }
+            if (capability != 0) {
+                $('#' + capbalitityelement).find('.capbtn' + capability).click();
+            }
+            if (ans != 0) {
+                $('#' + element).find('.freqbtn' + ans).click();
+            }
+            // $('#' + element).data("Notes", details_feedback.loadSelectedNotes({ data: { 'feedbackId': 0, 'questionId': response[i].QuestionId } }));
+            //$('#' + rateelement).slider({
+            //    min: 0,
+            //    max: 4,
+            //    range: "min",
+            //    value: rating,
+            //    slide: function (event, ui) {
+            //        if (ui.value != 0) {
+            //            $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion1');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion2');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion3');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion4');
+            //        }
 
-                    if (ui.value == 1) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion1');
-                    } else if (ui.value == 2) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion2');
-                    } else if (ui.value == 3) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion3');
-                    } else if (ui.value == 4) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion4');
-                    }
-                    if (ui.value == 0) {
+            //        if (ui.value == 1) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion1');
+            //        } else if (ui.value == 2) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion2');
+            //        } else if (ui.value == 3) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion3');
+            //        } else if (ui.value == 4) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion4');
+            //        }
+            //        if (ui.value == 0) {
 
-                        event.preventDefault();
-                        $('#' + event.target.id).data("rating", 0);
-                    } else {
+            //            event.preventDefault();
+            //            $('#' + event.target.id).data("rating", 0);
+            //        } else {
 
-                        $('#' + event.target.id).data("rating", ui.value);
-                    }
-                },
-                create: function (event, ui) {
-                    if (rating == 1) {
-                        // alert('first');
-                        $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion1');
-                    } else if (rating == 2) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion2');
-                    } else if (rating == 3) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion3');
-                    } else if (rating == 4) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion4');
-                    }
-                }
-            });
-            $('#' + capbalitityelement).slider({
-                min: 0,
-                max: 4,
-                range: "min",
-                value: capability,
-                slide: function (event, ui) {
-                    if (ui.value != 0) {
-                        $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion1');
-                        $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion2');
-                        $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion3');
-                        $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion4');
-                    }
+            //            $('#' + event.target.id).data("rating", ui.value);
+            //        }
+            //    },
+            //    create: function (event, ui) {
+            //        if (rating == 1) {
+            //            // alert('first');
+            //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion1');
+            //        } else if (rating == 2) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion2');
+            //        } else if (rating == 3) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion3');
+            //        } else if (rating == 4) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion4');
+            //        }
+            //    }
+            //});
+            //$('#' + capbalitityelement).slider({
+            //    min: 0,
+            //    max: 4,
+            //    range: "min",
+            //    value: capability,
+            //    slide: function (event, ui) {
+            //        if (ui.value != 0) {
+            //            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion1');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion2');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion3');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion4');
+            //        }
 
-                    if (ui.value == 1) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion1');
-                    } else if (ui.value == 2) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion2');
-                    } else if (ui.value == 3) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion3');
-                    } else if (ui.value == 4) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion4');
-                    }
-                    if (ui.value == 0) {
+            //        if (ui.value == 1) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion1');
+            //        } else if (ui.value == 2) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion2');
+            //        } else if (ui.value == 3) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion3');
+            //        } else if (ui.value == 4) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion4');
+            //        }
+            //        if (ui.value == 0) {
 
-                        event.preventDefault();
-                        $('#' + event.target.id).data("answer", 0);
-                    } else {
+            //            event.preventDefault();
+            //            $('#' + event.target.id).data("answer", 0);
+            //        } else {
 
-                        $('#' + event.target.id).data("answer", ui.value);
-                    }
-                },
-                create: function (event, ui) {
-                    if (capability == 1) {
-                        // alert('first');
-                        $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion1');
-                    } else if (capability == 2) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion2');
-                    } else if (capability == 3) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion3');
-                    } else if (capability == 4) {
-                        $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion4');
-                    }
-                }
-            });
-            //alert($('#' + element).find('.ui-slider-range').length);
-            // $('#' + element).slider('slide');
-            $('#' + element).slider({
-                min: 0,
-                max: 4,
-                range: "min",
-                value: ans,
-                slide: function (event, ui) {
-                    if (ui.value != 0) {
-                        $(this).find('.ui-slider-range').removeClass('sliderdiv1');
-                        $(this).find('.ui-slider-range').removeClass('sliderdiv2');
-                        $(this).find('.ui-slider-range').removeClass('sliderdiv3');
-                        $(this).find('.ui-slider-range').removeClass('sliderdiv4');
-                    }
-                    //if (ui.value == 0) {
-                    //    $(this).find('.ui-slider-range').addClass('sliderdiv1');
-                    //} else
-                    if (ui.value == 1) {
-                        $(this).find('.ui-slider-range').addClass('sliderdiv1');
-                    } else if (ui.value == 2) {
-                        $(this).find('.ui-slider-range').addClass('sliderdiv2');
-                    } else if (ui.value == 3) {
-                        $(this).find('.ui-slider-range').addClass('sliderdiv3');
-                    } else if (ui.value == 4) {
-                        $(this).find('.ui-slider-range').addClass('sliderdiv4');
-                    }
+            //            $('#' + event.target.id).data("answer", ui.value);
+            //        }
+            //    },
+            //    create: function (event, ui) {
+            //        if (capability == 1) {
+            //            // alert('first');
+            //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion1');
+            //        } else if (capability == 2) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion2');
+            //        } else if (capability == 3) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion3');
+            //        } else if (capability == 4) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion4');
+            //        }
+            //    }
+            //});
+
+            //$('#' + element).slider({
+            //    min: 0,
+            //    max: 4,
+            //    range: "min",
+            //    value: ans,
+            //    slide: function (event, ui) {
+            //        if (ui.value != 0) {
+            //            $(this).find('.ui-slider-range').removeClass('sliderdiv1');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdiv2');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdiv3');
+            //            $(this).find('.ui-slider-range').removeClass('sliderdiv4');
+            //        }
+            //        //if (ui.value == 0) {
+            //        //    $(this).find('.ui-slider-range').addClass('sliderdiv1');
+            //        //} else
+            //        if (ui.value == 1) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdiv1');
+            //        } else if (ui.value == 2) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdiv2');
+            //        } else if (ui.value == 3) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdiv3');
+            //        } else if (ui.value == 4) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdiv4');
+            //        }
 
 
-                    //(this).find('.ui-slider-range').css("background", "url(../../Images/img/slidebg2-2.png)  no-repeat");
-                    if (ui.value == 0) {
+            //        //(this).find('.ui-slider-range').css("background", "url(../../Images/img/slidebg2-2.png)  no-repeat");
+            //        if (ui.value == 0) {
 
-                        event.preventDefault();
-                        $('#' + event.target.id).data("answer", 0);
-                    } else {
-                        $('#' + event.target.id).data("answer", ui.value);
-                    }
-                },
-                create: function (event, ui) {
-                    if (ans == 1) {
-                        // alert('first');
-                        $(this).find('.ui-slider-range').addClass('sliderdiv1');
-                    } else if (ans == 2) {
-                        $(this).find('.ui-slider-range').addClass('sliderdiv2');
-                    } else if (ans == 3) {
-                        $(this).find('.ui-slider-range').addClass('sliderdiv3');
-                    } else if (ans == 4) {
-                        $(this).find('.ui-slider-range').addClass('sliderdiv4');
-                    }
-                }
-            });
+            //            event.preventDefault();
+            //            $('#' + event.target.id).data("answer", 0);
+            //        } else {
+            //            $('#' + event.target.id).data("answer", ui.value);
+            //        }
+            //    },
+            //    create: function (event, ui) {
+            //        if (ans == 1) {
+            //            // alert('first');
+            //            $(this).find('.ui-slider-range').addClass('sliderdiv1');
+            //        } else if (ans == 2) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdiv2');
+            //        } else if (ans == 3) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdiv3');
+            //        } else if (ans == 4) {
+            //            $(this).find('.ui-slider-range').addClass('sliderdiv4');
+            //        }
+            //    }
+            //});
         }
     },
     prevclick: function (current, previous) {
@@ -1178,20 +1190,19 @@
     },
     nextclick: function (current, next) {
         //debugger;
-        if (($('#Rno' + current).data('rating') == 0 || $('#Rno' + current).data('rating') == undefined) && $('#Rno' + current).length != 0) {
+        if (($('#Rno' + current).attr('data-rating') == 0 || $('#Rno' + current).attr('data-rating') == undefined) && $('#Rno' + current).length != 0) {
             $('#masterMsgCont').text("Please finish responding before progressing.");
             $('#overallCont').show();
-            //alert('Please rate this Excellence Action');
         }
-        else if ($('#capability' + current).data('answer') == 0 && $('#capabilityMode').val() != 0) {
+        else if ($('#capability' + current).attr('data-answer') == 0 && $('#capabilityMode').val() != 0) {
             $('#masterMsgCont').text("Please finish responding before progressing.");
             $('#overallCont').show();
-            // alert('Please indicate a frequency that represents how often this Excellence Action is demonstrated');
+
         }
-        else if ($('#Qno' + current).data('answer') == 0) {
+        else if ($('#Qno' + current).attr('data-answer') == 0) {
             $('#masterMsgCont').text("Please finish responding before progressing.");
             $('#overallCont').show();
-            // alert('Please indicate a frequency that represents how often this Excellence Action is demonstrated');
+
         }
         else {
             //details_feedback.UpdateFeedbackNotes();
@@ -1918,7 +1929,7 @@ $(document).ready(function () {
             $(item).removeClass('select' + $(item).attr('id'));
         });
     });
-    
+
     $('#poemodule li').hover(
        function () {
            removeAttrHover();
@@ -2038,4 +2049,124 @@ function SaveAnswer(data) {
     if (answer != 0) {
         saveDemographicResult(questionid, answer);
     }
+}
+function LoadSliderEvent() {
+    $('.impbtn1').click(function () {
+        $(this).parents('.impscale_bg').attr("data-rating", 1);
+        $(this).parents('.impscale_bg').find(".impadddiv").addClass("impscaleover1");
+        $(this).parents('.impscale_bg').find(".impscale_handle").addClass("impscale_handle1");
+        $(this).parents('.impscale_bg').find(".impbtn1").addClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn2").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn3").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn4").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impadddiv").removeClass("impscaleover2").removeClass("impscaleover3").removeClass("impscaleover4");
+        $(this).parents('.impscale_bg').find(".impscale_handle").removeClass("impscale_handle2").removeClass("impscale_handle3").removeClass("impscale_handle4");
+    });
+    $('.impbtn2').click(function () {
+        $(this).parents('.impscale_bg').attr("data-rating", 2);
+        $(this).parents('.impscale_bg').find(".impadddiv").addClass("impscaleover2");
+        $(this).parents('.impscale_bg').find(".impscale_handle").addClass("impscale_handle2");
+        $(this).parents('.impscale_bg').find(".impbtn2").addClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn1, .impbtn3, .impbtn4").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover3").removeClass("impscaleover4");
+        $(this).parents('.impscale_bg').find(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle3").removeClass("impscale_handle4");
+    });
+    $('.impbtn3').click(function () {
+        $(this).parents('.impscale_bg').attr("data-rating", 3);
+        $(this).parents('.impscale_bg').find(".impadddiv").addClass("impscaleover3");
+        $(this).parents('.impscale_bg').find(".impscale_handle").addClass("impscale_handle3");
+        $(this).parents('.impscale_bg').find(".impbtn3").addClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn1, .impbtn2, .impbtn4").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover2").removeClass("impscaleover4");
+        $(this).parents('.impscale_bg').find(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle2").removeClass("impscale_handle4");
+    });
+    $('.impbtn4').click(function () {
+        $(this).parents('.impscale_bg').attr("data-rating", 4);
+        $(this).parents('.impscale_bg').find(".impadddiv").addClass("impscaleover4");
+        $(this).parents('.impscale_bg').find(".impscale_handle").addClass("impscale_handle4");
+        $(this).parents('.impscale_bg').find(".impbtn4").addClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impbtn1, .impbtn2, .impbtn3").removeClass("addcolor");
+        $(this).parents('.impscale_bg').find(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover2").removeClass("impscaleover3");
+        $(this).parents('.impscale_bg').find(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle2").removeClass("impscale_handle3");
+    });
+
+    //Capability
+    $('.capbtn1').click(function () {
+        $(this).parents('.capscale_bg').attr("data-answer", 1);
+        $(this).parents('.capscale_bg').find(".capadddiv").addClass("capscaleover1");
+        $(this).parents('.capscale_bg').find(".capscale_handle").addClass("capscale_handle1");
+        $(this).parents('.capscale_bg').find(".capbtn1").addClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capbtn2, .capbtn3, .capbtn4").removeClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capadddiv").removeClass("capscaleover2").removeClass("capscaleover3").removeClass("capscaleover4");
+        $(this).parents('.capscale_bg').find(".capscale_handle").removeClass("capscale_handle2").removeClass("capscale_handle3").removeClass("capscale_handle4");
+    });
+
+    $('.capbtn2').click(function () {
+        $(this).parents('.capscale_bg').attr("data-answer", 2);
+        $(this).parents('.capscale_bg').find(".capadddiv").addClass("capscaleover2");
+        $(this).parents('.capscale_bg').find(".capscale_handle").addClass("capscale_handle2");
+        $(this).parents('.capscale_bg').find(".capbtn2").addClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capbtn1, .capbtn3, .capbtn4").removeClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover3").removeClass("capscaleover4");
+        $(this).parents('.capscale_bg').find(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle3").removeClass("capscale_handle4");
+    });
+
+    $('.capbtn3').click(function () {
+        $(this).parents('.capscale_bg').attr("data-answer", 3);
+        $(this).parents('.capscale_bg').find(".capadddiv").addClass("capscaleover3");
+        $(this).parents('.capscale_bg').find(".capscale_handle").addClass("capscale_handle3");
+        $(this).parents('.capscale_bg').find(".capbtn3").addClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capbtn1, .capbtn2, .capbtn4").removeClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover2").removeClass("capscaleover4");
+        $(this).parents('.capscale_bg').find(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle2").removeClass("capscale_handle4");
+    });
+
+    $('.capbtn4').click(function () {
+        $(this).parents('.capscale_bg').attr("data-answer", 4);
+        $(this).parents('.capscale_bg').find(".capadddiv").addClass("capscaleover4");
+        $(this).parents('.capscale_bg').find(".capscale_handle").addClass("capscale_handle4");
+        $(this).parents('.capscale_bg').find(".capbtn4").addClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capbtn1, .capbtn2, .capbtn3").removeClass("addcolor");
+        $(this).parents('.capscale_bg').find(".capadddiv").removeClass("capscaleover1").removeClass("capscaleover2").removeClass("capscaleover3");
+        $(this).parents('.capscale_bg').find(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle2").removeClass("capscale_handle3");
+    });
+    $('.freqbtn1').click(function () {
+        $(this).parents('.freqscale_bg').attr("data-answer", 1);
+        $(this).parents('.freqscale_bg').find(".freqadddiv").addClass("freqscaleover1");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").addClass("freqscale_handle1");
+        $(this).parents('.freqscale_bg').find(".freqbtn1").addClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqbtn2, .freqbtn3, .freqbtn4").removeClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover2").removeClass("freqscaleover3").removeClass("freqscaleover4");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle2").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
+    });
+
+    $('.freqbtn2').click(function () {
+        $(this).parents('.freqscale_bg').attr("data-answer", 2);
+        $(this).parents('.freqscale_bg').find(".freqadddiv").addClass("freqscaleover2");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").addClass("freqscale_handle2");
+        $(this).parents('.freqscale_bg').find(".freqbtn2").addClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn3, .freqbtn4").removeClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover3").removeClass("freqscaleover4");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
+    });
+
+    $('.freqbtn3').click(function () {
+        $(this).parents('.freqscale_bg').attr("data-answer", 3);
+        $(this).parents('.freqscale_bg').find(".freqadddiv").addClass("freqscaleover3");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").addClass("freqscale_handle3");
+        $(this).parents('.freqscale_bg').find(".freqbtn3").addClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn2, .freqbtn4").removeClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover4");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle4");
+    });
+
+    $('.freqbtn4').click(function () {
+        $(this).parents('.freqscale_bg').attr("data-answer", 4);
+        $(this).parents('.freqscale_bg').find(".freqadddiv").addClass("freqscaleover4");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").addClass("freqscale_handle4");
+        $(this).parents('.freqscale_bg').find(".freqbtn4").addClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn2, .freqbtn3").removeClass("addcolor");
+        $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover3");
+        $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle3");
+    });
 }

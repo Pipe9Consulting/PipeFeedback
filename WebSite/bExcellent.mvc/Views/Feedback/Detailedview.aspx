@@ -80,25 +80,31 @@
             background-image: url(../../Images/Feedback/cap2-4.png) !important;
         }
 
-         .sliderdivSurveyQuestion1 {
+        .sliderdivSurveyQuestion1 {
             background-image: url(../../Images/img/survey_1.png) !important;
         }
 
-       .sliderdivSurveyQuestion2 {
+        .sliderdivSurveyQuestion2 {
             background-image: url(../../Images/img/survey_2.png) !important;
         }
+
         .sliderdivSurveyQuestion3 {
             background-image: url(../../Images/img/survey_3.png) !important;
         }
-         .sliderdivSurveyQuestion4 {
+
+        .sliderdivSurveyQuestion4 {
             background-image: url(../../Images/img/survey_4.png) !important;
         }
-          .sliderdivSurveyQuestion5 {
+
+        .sliderdivSurveyQuestion5 {
             background-image: url(../../Images/img/survey_5.png) !important;
         }
+
         .sliderdiv {
             cursor: pointer;
         }
+
+        
     </style>
     <%
         var t = 0;
@@ -165,10 +171,10 @@
         <input type="hidden" id="lastsavedMinutes" />
         <input type="hidden" id="lastsavedSeconds" />
         <input type="hidden" id="prevMode" value="0" />
-         <input type="hidden" id="totalsurveQuestions" />
-         <input type="hidden" id="userratingcount" />
-         <input type="hidden" id="totalsurveSubQuestions" />
-         <input type="hidden" id="resultmode" value="<%:resultmode %>" />
+        <input type="hidden" id="totalsurveQuestions" />
+        <input type="hidden" id="userratingcount" />
+        <input type="hidden" id="totalsurveSubQuestions" />
+        <input type="hidden" id="resultmode" value="<%:resultmode %>" />
         <div style="visibility: hidden" id="modules">
         </div>
     </div>
