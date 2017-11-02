@@ -209,8 +209,8 @@
                     var capids = "";
                     var sideBarContent = response[i].SideBarTitle;
                     var ratinghtml = "<div class='clr'></div><div class='rate_question'><div class='user'><img src='../../Images/Feedback/Icon/importanceIcon.png'></div><div class='rateThisQuestion'>" +
-                            "<div id='Rno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " style='width: 562px; height: 50px; cursor: pointer;  margin: 2%;' class='sliderdiv'>" +
-                            "<img src='../../Images/img/rate_slidebg.png'></div></div></div>";
+                            "<div class='impscale_bg' id='Rno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-rating='0'> <div class='impscale_over'> <button class='impbtn1' data-order='1'>Not Important</button> <button class='impbtn2' data-order='2'>Somewhat Important</button> <button class='impbtn3' data-order='3'>Important</button> <button class='impbtn4' data-order='4'>Critical</button> </div> <div class='impscale_handle'></div> <div class='impadddiv'></div> </div>" +
+                            "</div></div>";
 
                     var questionhtml = " <li id='q" + response[i].QuestionOrderNumber + "' class= '" + ((manager_feedback.userratingcount == 1) ? "questionContainer" : "questionratingContainer") + "' value=" + questaken + " " + (i < 5 ? "" : "style='display:none'") + "> <div class='questiontaken' >Action " + questaken + "/" + $('#totalQuestions').val() +
                         "</div>" +
@@ -234,13 +234,13 @@
                            "<img src='../../Images/Feedback/Icon/capabilityIcon.png'>" +
                            "</div>" +
                             "<div class='sliderimg'>" +
-                            "<div id='capability" + response[i].QuestionOrderNumber + "fno" + userresponse[j].FeedBackId + "' data-feedback=" + userresponse[j].FeedBackId + " data-question=" + response[i].QuestionId + " data-user=" + userresponse[j].Teammember.User.UserId + " data-moduleid=" + option.data.moduleId + " style='width: 562px; height: 62px; cursor: pointer;' class='sliderdiv'>" +
-                            "<img src='../../Images/Feedback/cap2bg.png' /></div></div></div><div class='clr'></div><div class='frequencyScaleArea'><div class='user'>" +
+                            "<div class='capscale_bg' id='capability" + response[i].QuestionOrderNumber + "fno" + userresponse[j].FeedBackId + "' data-feedback=" + userresponse[j].FeedBackId + " data-question=" + response[i].QuestionId + " data-user=" + userresponse[j].Teammember.User.UserId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='capscale_over'> <button class='capbtn1'>NOT Ready</button> <button class='capbtn2'>Somewhat Ready</button> <button class='capbtn3'>Ready</button> <button class='capbtn4'>Very Ready</button> </div> <div class='capscale_handle'></div> <div class='capadddiv'></div> </div>" +
+                            "</div></div><div class='clr'></div><div class='frequencyScaleArea'><div class='user'>" +
                            "<img src='../../Images/Feedback/Icon/frequencyIcon.png'>" +
                            "</div>" +
                             "<div class='sliderimg'>" +
-                            "<div id='Qno" + response[i].QuestionOrderNumber + "fno" + userresponse[j].FeedBackId + "' data-feedback=" + userresponse[j].FeedBackId + " data-question=" + response[i].QuestionId + " data-user=" + userresponse[j].Teammember.User.UserId + " data-moduleid=" + option.data.moduleId + " style='width: 562px; height: 62px; cursor: pointer;' class='sliderdiv'>" +
-                            "<img src='../../Images/img/slidebg1.png' /></div></div></div></div></div>";
+                            "<div class='freqscale_bg' id='Qno" + response[i].QuestionOrderNumber + "fno" + userresponse[j].FeedBackId + "' data-feedback=" + userresponse[j].FeedBackId + " data-question=" + response[i].QuestionId + " data-user=" + userresponse[j].Teammember.User.UserId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='freqscale_over'> <button class='freqbtn1'>Never</button> <button class='freqbtn2'>SOMEtimes</button> <button class='freqbtn3'>Frequently</button> <button class='freqbtn4'>Always</button> </div> <div class='freqscale_handle'></div> <div class='freqadddiv'></div> </div>" +
+                            "</div></div></div></div>";
                     }
 
                     questionhtml = questionhtml + "</div> <input type='hidden' id='curq" + response[i].QuestionOrderNumber + "' value=" + sliderids + " /><input type='hidden' id='curCap" + response[i].QuestionOrderNumber + "' value=" + capids + " />";
@@ -299,6 +299,7 @@
                         $('#coachDateCont').hide();
                         $('.OverallScale').addClass('capabilityAreaRemoved');
                     }
+                LoadSliderEvent();
                 $('#lihdn' + (parseInt(option.moduleorder) - 1)).removeClass('selected');
                 if (!$('#lihdn' + (parseInt(option.moduleorder))).hasClass('emptyTile'))
                     $('#lihdn' + (parseInt(option.moduleorder))).addClass('selected');
@@ -400,7 +401,7 @@
         $("#status,#preloader").show();//.promise().done( function () {
         //setTimeout(function () {
         var current = $('.nxtfb:visible').attr('id').replace('bn', '');
-        if (($('#Rno' + current).data('rating') == 0 || $('#Rno' + current).data('rating') == undefined) && $('#Rno' + current).length != 0) {
+        if (($('#Rno' + current).attr('data-rating') == 0 || $('#Rno' + current).attr('data-rating') == undefined) && $('#Rno' + current).length != 0) {
             $('#masterMsgCont').text("Please finish responding before progressing.");
             $('#overallCont').show();
             $("#status,#preloader").hide();
@@ -510,14 +511,14 @@
         var savePOEResultRequests = [];
         for (var i = 0; i < response.length; i++) {
             var savePOEResultRequest = new Requests.SavePOEResultRequest();
-            savePOEResultRequest.Answer = parseInt($('#' + response[i]).data("answer"));
+            savePOEResultRequest.Answer = parseInt($('#' + response[i]).attr("data-answer"));
             savePOEResultRequest.AnswerType = 1;
-            savePOEResultRequest.ModuleNumber = $('#' + response[i]).data("moduleid");
-            savePOEResultRequest.CapabilityAnswer = parseInt($('#' + response[i].replace('Qno', 'capability')).data("answer"));
-            savePOEResultRequest.QuestionId = $('#' + response[i]).data("question");
-            savePOEResultRequest.FeedbackId = $('#' + response[i]).data("feedback");
-            savePOEResultRequest.UserRating = ($('#Rno' + current).length > 0 && i == 0) ? $('#Rno' + current).data("rating") : 0;
-            savePOEResultRequest.Notes = $('#' + response[i]).data("Notes");
+            savePOEResultRequest.ModuleNumber = $('#' + response[i]).attr("data-moduleid");
+            savePOEResultRequest.CapabilityAnswer = parseInt($('#' + response[i].replace('Qno', 'capability')).attr("data-answer"));
+            savePOEResultRequest.QuestionId = $('#' + response[i]).attr("data-question");
+            savePOEResultRequest.FeedbackId = $('#' + response[i]).attr("data-feedback");
+            savePOEResultRequest.UserRating = ($('#Rno' + current).length > 0 && i == 0) ? $('#Rno' + current).attr("data-rating") : 0;
+            savePOEResultRequest.Notes = '';
             savePOEResultRequest.Comment = null;
             savePOEResultRequest.FeedbackStatus = 1;
             savePOEResultRequests.push(savePOEResultRequest);
@@ -533,14 +534,14 @@
         var j = 1;
         for (var i = 0; i < response.length; i++) {
             var savePOEResultRequest = new Requests.SavePOEResultRequest();
-            savePOEResultRequest.Answer = parseInt($('#' + response[i]).data("answer"));
+            savePOEResultRequest.Answer = parseInt($('#' + response[i]).attr("data-answer"));
             savePOEResultRequest.AnswerType = 1;
-            savePOEResultRequest.ModuleNumber = $('#' + response[i]).data("moduleid");
-            savePOEResultRequest.CapabilityAnswer = parseInt($('#' + response[i].replace('Qno', 'capability')).data("answer"));
-            savePOEResultRequest.QuestionId = $('#' + response[i]).data("question");
-            savePOEResultRequest.FeedbackId = $('#' + response[i]).data("feedback");
-            savePOEResultRequest.UserRating = ($('#Rno' + j).length > 0 && i % userscount == 0) ? $('#Rno' + j).data("rating") : 0;
-            savePOEResultRequest.Notes = $('#' + response[i]).data("Notes");
+            savePOEResultRequest.ModuleNumber = $('#' + response[i]).attr("data-moduleid");
+            savePOEResultRequest.CapabilityAnswer = parseInt($('#' + response[i].replace('Qno', 'capability')).attr("data-answer"));
+            savePOEResultRequest.QuestionId = $('#' + response[i]).attr("data-question");
+            savePOEResultRequest.FeedbackId = $('#' + response[i]).attr("data-feedback");
+            savePOEResultRequest.UserRating = ($('#Rno' + j).length > 0 && i % userscount == 0) ? $('#Rno' + j).attr("data-rating") : 0;
+            savePOEResultRequest.Notes = '';
             savePOEResultRequest.Comment = null;
             savePOEResultRequest.FeedbackStatus = 1;
             savePOEResultRequests.push(savePOEResultRequest);
@@ -584,149 +585,174 @@
                 var element = 'Qno' + response[i].QuestionOrderNumber + 'fno' + userresponse[j].FeedBackId;
                 var rateelement = 'Rno' + response[i].QuestionOrderNumber;
                 var capabilityelement = 'capability' + response[i].QuestionOrderNumber + 'fno' + userresponse[j].FeedBackId;
-                $('#' + element).data("answer", manager_feedback.loadSelectedAnswer({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } }));
-                $('#' + capabilityelement).data("answer", manager_feedback.loadSelectedCapability({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } }));
+                var ans = manager_feedback.loadSelectedAnswer({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } });
+                var cap = manager_feedback.loadSelectedCapability({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } });
+                $('#' + element).attr("data-answer", ans);
+                $('#' + capabilityelement).attr("data-answer", cap);
                 $('#' + element).data("Notes", manager_feedback.loadSelectedNotes({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } }));
+              //  debugger;
                 if (j == 0) {
                     var rates = manager_feedback.loadSelectedRating({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } });
-                    $('#' + rateelement).data("rating", manager_feedback.loadSelectedRating({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } }));
+                    var ratingScore = manager_feedback.loadSelectedRating({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } });
+                    $('#' + rateelement).attr("data-rating", ratingScore);
+                    if (ratingScore != 0) {
+                       // alert(ratingScore);
+                        $('#' + rateelement).find('.impbtn' + ratingScore).addClass('addcolor');
+                        $('#' + rateelement).find('.impscale_handle').addClass('impscale_handle' + ratingScore);
+                        $('#' + rateelement).find('.impadddiv').addClass('impscaleover' + ratingScore);
+                    }
+                    
+                   
+                    //$('#' + rateelement).slider({
+                    //    min: 0,
+                    //    max: 4,
+                    //    range: "min",
+                    //    value: manager_feedback.loadSelectedRating({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } }),
+                    //    slide: function (event, ui) {
+                    //        if (ui.value != 0) {
+                    //            $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion1');
+                    //            $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion2');
+                    //            $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion3');
+                    //            $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion4');
+                    //        }
 
-                    $('#' + rateelement).slider({
-                        min: 0,
-                        max: 4,
-                        range: "min",
-                        value: manager_feedback.loadSelectedRating({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } }),
-                        slide: function (event, ui) {
-                            if (ui.value != 0) {
-                                $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion1');
-                                $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion2');
-                                $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion3');
-                                $(this).find('.ui-slider-range').removeClass('sliderdivRateQuestion4');
-                            }
-
-                            if (ui.value == 1) {
-                                $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion1');
-                            } else if (ui.value == 2) {
-                                $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion2');
-                            } else if (ui.value == 3) {
-                                $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion3');
-                            } else if (ui.value == 4) {
-                                $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion4');
-                            }
-                            if (ui.value == 0) {
-                                event.preventDefault();
-                                $('#' + event.target.id).data("rating", 1);
-                            } else {
-                                $('#' + event.target.id).data("rating", ui.value);
-                            }
-                        },
-                        create: function (event, ui) {
-                            if (rates == 1) {
-                                // alert('first');
-                                $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion1');
-                            } else if (rates == 2) {
-                                $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion2');
-                            } else if (rates == 3) {
-                                $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion3');
-                            } else if (rates == 4) {
-                                $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion4');
-                            }
-                        }
-                    });
+                    //        if (ui.value == 1) {
+                    //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion1');
+                    //        } else if (ui.value == 2) {
+                    //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion2');
+                    //        } else if (ui.value == 3) {
+                    //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion3');
+                    //        } else if (ui.value == 4) {
+                    //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion4');
+                    //        }
+                    //        if (ui.value == 0) {
+                    //            event.preventDefault();
+                    //            $('#' + event.target.id).data("rating", 1);
+                    //        } else {
+                    //            $('#' + event.target.id).data("rating", ui.value);
+                    //        }
+                    //    },
+                    //    create: function (event, ui) {
+                    //        if (rates == 1) {
+                    //            // alert('first');
+                    //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion1');
+                    //        } else if (rates == 2) {
+                    //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion2');
+                    //        } else if (rates == 3) {
+                    //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion3');
+                    //        } else if (rates == 4) {
+                    //            $(this).find('.ui-slider-range').addClass('sliderdivRateQuestion4');
+                    //        }
+                    //    }
+                    //});
                 }
-                var cap = manager_feedback.loadSelectedCapability({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } });
-                $('#' + capabilityelement).slider({
-                    min: 0,
-                    max: 4,
-                    range: "min",
-                    value: cap,
-                    slide: function (event, ui) {
-                        if (ui.value != 0) {
-                            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion1');
-                            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion2');
-                            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion3');
-                            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion4');
-                        }
-                        //if (ui.value == 0) {
-                        //    $(this).find('.ui-slider-range').addClass('sliderdiv1');
-                        //} else
-                        if (ui.value == 1) {
-                            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion1');
-                        } else if (ui.value == 2) {
-                            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion2');
-                        } else if (ui.value == 3) {
-                            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion3');
-                        } else if (ui.value == 4) {
-                            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion4');
-                        }
+                //var cap = manager_feedback.loadSelectedCapability({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } });
+                $('#' + capabilityelement).attr('data-answer', cap);
+                if (parseInt(cap) != 0) {
+                    $('#' + capabilityelement).find('.capbtn' + cap).addClass('addcolor');
+                    $('#' + capabilityelement).find('.capscale_handle').addClass('capscale_handle' + cap);
+                    $('#' + capabilityelement).find('.capadddiv').addClass('capscaleover' + cap);
+                   // alert(cap);
+                    //$('#' + capabilityelement).find('.capbtn' + cap).click();
+                }
+                //$('#' + capabilityelement).slider({
+                //    min: 0,
+                //    max: 4,
+                //    range: "min",
+                //    value: cap,
+                //    slide: function (event, ui) {
+                //        if (ui.value != 0) {
+                //            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion1');
+                //            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion2');
+                //            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion3');
+                //            $(this).find('.ui-slider-range').removeClass('sliderdivCapQuestion4');
+                //        }
+                //        //if (ui.value == 0) {
+                //        //    $(this).find('.ui-slider-range').addClass('sliderdiv1');
+                //        //} else
+                //        if (ui.value == 1) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion1');
+                //        } else if (ui.value == 2) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion2');
+                //        } else if (ui.value == 3) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion3');
+                //        } else if (ui.value == 4) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion4');
+                //        }
 
-                        if (ui.value == 0) {
-                            event.preventDefault();
-                            $('#' + event.target.id).data("answer", 1);
-                        } else {
-                            $('#' + event.target.id).data("answer", ui.value);
-                        }
-                    },
-                    create: function (event, ui) {
-                        if (cap == 1) {
-                            // alert('first');
-                            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion1');
-                        } else if (cap == 2) {
-                            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion2');
-                        } else if (cap == 3) {
-                            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion3');
-                        } else if (cap == 4) {
-                            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion4');
-                        }
-                    }
-                });
-                var ans = manager_feedback.loadSelectedAnswer({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } });
+                //        if (ui.value == 0) {
+                //            event.preventDefault();
+                //            $('#' + event.target.id).data("answer", 1);
+                //        } else {
+                //            $('#' + event.target.id).data("answer", ui.value);
+                //        }
+                //    },
+                //    create: function (event, ui) {
+                //        if (cap == 1) {
+                //            // alert('first');
+                //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion1');
+                //        } else if (cap == 2) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion2');
+                //        } else if (cap == 3) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion3');
+                //        } else if (cap == 4) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdivCapQuestion4');
+                //        }
+                //    }
+                //});
+               // var ans = manager_feedback.loadSelectedAnswer({ data: { 'feedbackId': userresponse[j].FeedBackId, 'questionId': response[i].QuestionId } });
+                $('#' + element).attr('data-answer', ans);
+                if (ans != 0) {
+                    $('#' + element).find('.freqbtn' + cap).addClass('addcolor');
+                    $('#' + element).find('.freqscale_handle').addClass('freqscale_handle' + cap);
+                    $('#' + element).find('.freqadddiv').addClass('freqscaleover' + cap);
+                   // $('#' + element).find('.freqbtn' + ans).click();
+                }
+                //$('#' + element).slider({
+                //    min: 0,
+                //    max: 4,
+                //    range: "min",
+                //    value: ans,
+                //    slide: function (event, ui) {
+                //        if (ui.value != 0) {
+                //            $(this).find('.ui-slider-range').removeClass('sliderdiv1');
+                //            $(this).find('.ui-slider-range').removeClass('sliderdiv2');
+                //            $(this).find('.ui-slider-range').removeClass('sliderdiv3');
+                //            $(this).find('.ui-slider-range').removeClass('sliderdiv4');
+                //        }
+                //        //if (ui.value == 0) {
+                //        //    $(this).find('.ui-slider-range').addClass('sliderdiv1');
+                //        //} else
+                //        if (ui.value == 1) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdiv1');
+                //        } else if (ui.value == 2) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdiv2');
+                //        } else if (ui.value == 3) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdiv3');
+                //        } else if (ui.value == 4) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdiv4');
+                //        }
 
-                $('#' + element).slider({
-                    min: 0,
-                    max: 4,
-                    range: "min",
-                    value: ans,
-                    slide: function (event, ui) {
-                        if (ui.value != 0) {
-                            $(this).find('.ui-slider-range').removeClass('sliderdiv1');
-                            $(this).find('.ui-slider-range').removeClass('sliderdiv2');
-                            $(this).find('.ui-slider-range').removeClass('sliderdiv3');
-                            $(this).find('.ui-slider-range').removeClass('sliderdiv4');
-                        }
-                        //if (ui.value == 0) {
-                        //    $(this).find('.ui-slider-range').addClass('sliderdiv1');
-                        //} else
-                        if (ui.value == 1) {
-                            $(this).find('.ui-slider-range').addClass('sliderdiv1');
-                        } else if (ui.value == 2) {
-                            $(this).find('.ui-slider-range').addClass('sliderdiv2');
-                        } else if (ui.value == 3) {
-                            $(this).find('.ui-slider-range').addClass('sliderdiv3');
-                        } else if (ui.value == 4) {
-                            $(this).find('.ui-slider-range').addClass('sliderdiv4');
-                        }
-
-                        if (ui.value == 0) {
-                            event.preventDefault();
-                            $('#' + event.target.id).data("answer", 1);
-                        } else {
-                            $('#' + event.target.id).data("answer", ui.value);
-                        }
-                    },
-                    create: function (event, ui) {
-                        if (ans == 1) {
-                            // alert('first');
-                            $(this).find('.ui-slider-range').addClass('sliderdiv1');
-                        } else if (ans == 2) {
-                            $(this).find('.ui-slider-range').addClass('sliderdiv2');
-                        } else if (ans == 3) {
-                            $(this).find('.ui-slider-range').addClass('sliderdiv3');
-                        } else if (ans == 4) {
-                            $(this).find('.ui-slider-range').addClass('sliderdiv4');
-                        }
-                    }
-                });
+                //        if (ui.value == 0) {
+                //            event.preventDefault();
+                //            $('#' + event.target.id).data("answer", 1);
+                //        } else {
+                //            $('#' + event.target.id).data("answer", ui.value);
+                //        }
+                //    },
+                //    create: function (event, ui) {
+                //        if (ans == 1) {
+                //            // alert('first');
+                //            $(this).find('.ui-slider-range').addClass('sliderdiv1');
+                //        } else if (ans == 2) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdiv2');
+                //        } else if (ans == 3) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdiv3');
+                //        } else if (ans == 4) {
+                //            $(this).find('.ui-slider-range').addClass('sliderdiv4');
+                //        }
+                //    }
+                //});
             }
         }
     },
@@ -1245,7 +1271,7 @@
         var items = $('#curq' + current).val().split(',');
         $(items).each(function (index, item) {
             if (item != '') {
-                if ($('#' + item).data('answer') == 0) {
+                if ($('#' + item).attr('data-answer') == 0) {
                     result = false;
                 }
             }
@@ -1259,7 +1285,7 @@
             // alert(item);
             if (item != '') {
                 // alert($('#' + item).data('answer'));
-                if ($('#' + item).data('answer') == 0) {
+                if ($('#' + item).attr('data-answer') == 0) {
                     result = false;
                 }
             }
