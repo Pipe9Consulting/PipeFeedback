@@ -482,16 +482,16 @@ namespace bExcellent.Service.BusinessLogic.Standing
             var tenurebelow36 = GetTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 13, 24);
             var tenureabove36 = GetTenureFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), domain, type, 25, 300);
 
-            // var sherpasFbid = GetSherbasFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
-            // var teamFbid = GetTeamFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
+            var sherpasFbid = GetSherbasFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
+            var teamFbid = GetTeamFbidString(poeid, userid.ToString(CultureInfo.InvariantCulture), type, domain);
             var youStand = GetAvgStandingScore(you, poeid);
              var previousStand = GetAvgStandingScore(previous, poeid);
             var communityStand = GetAvgStandingScore(community, poeid);
             var tenurebelow13Stand = GetAvgStandingScore(tenurebelow13, poeid);
             var tenurebelow36Stand = GetAvgStandingScore(tenurebelow36, poeid);
             var tenureabove36Stand = GetAvgStandingScore(tenureabove36, poeid);
-            // var sherpasStand = GetAvgStandingScore(sherpasFbid, poeid);
-            // var teamStand = GetAvgStandingScore(teamFbid, poeid);
+            var sherpasStand = GetAvgStandingScore(sherpasFbid, poeid);
+            var teamStand = GetAvgStandingScore(teamFbid, poeid);
             var tenure = new Tenure
                              {
                                  TenureBelow12 = tenurebelow13Stand,
@@ -519,8 +519,8 @@ namespace bExcellent.Service.BusinessLogic.Standing
                 Community = communityStand,
                 Tenure = tenure,
                 TeamTenure = teamTenure,
-                //  Sherpas = sherpasStand,
-                // Team = teamStand,
+                Sherpas = sherpasStand,
+                Team = teamStand,
                 PracticeAreaContent = GetPracticeAreaQuestions(poeid),
                 PoeGoal = GetPoeGoal(poeid)
             };

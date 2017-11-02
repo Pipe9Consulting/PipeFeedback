@@ -100,7 +100,8 @@
                         
                        
                     </li>
-                    <li id="nextinline" class="areaTeamtile hideboxtile">
+                    <%--hideboxtile--%>
+                    <li id="nextinline" class="areaTeamtile">
                         <p>
                             Area Team
                         </p>
@@ -109,7 +110,8 @@
                     <%--<li id="prev" class="previoustile">
                         <p>Previous                    </p>
                     </li>--%>
-                    <li id="alltile" class="alltile hideboxtileAll">
+                    <%--hideboxtileAll--%>
+                    <li id="alltile" class="alltile">
                         <p>
                             All
                         </p>

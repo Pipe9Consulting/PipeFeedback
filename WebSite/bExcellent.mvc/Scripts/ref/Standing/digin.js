@@ -28,28 +28,28 @@
                         ]
                     };
                     createchart.loadchartdata(topallChart, "Toppa" + (j + 1));
-                    //var nxtLine = {
-                    //    "values": [{
-                    //        "name": "You",
-                    //        "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
-                    //        "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
-                    //    },
-                    //        {
-                    //            "name": "NextinLine",
-                    //            // "score": (response.NextinLine.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
-                    //            "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].ModuleScorePercentage,
-                    //            "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].Modulescore
-                    //        },
-                    //        {
-                    //            "name": "Maximum",
-                    //            // "score": (response.NextinLine.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
-                    //            "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : 100,
-                    //            "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Team.ModuleScores[j].WeightageScore).toFixed()
-                    //        }
-                    //    ]
-                    //};
+                    var nxtLine = {
+                        "values": [{
+                            "name": "You",
+                            "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
+                            "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
+                        },
+                            {
+                                "name": "NextinLine",
+                                // "score": (response.NextinLine.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
+                                "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].ModuleScorePercentage,
+                                "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].Modulescore
+                            },
+                            {
+                                "name": "Maximum",
+                                // "score": (response.NextinLine.ModuleScores[j] == undefined) ? 0 : response.TopPerformer.ModuleScores[j].ModuleScorePercentage
+                                "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : 100,
+                                "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : parseFloat(response.Team.ModuleScores[j].WeightageScore).toFixed()
+                            }
+                        ]
+                    };
 
-                    //createchart.loadchartdata(nxtLine, "Nxtpa" + (j + 1));
+                    createchart.loadchartdata(nxtLine, "Nxtpa" + (j + 1));
 
                     //var rstCommunity = {
                     //    "values": [{
@@ -136,35 +136,35 @@
                     //};
                     //createchart.loadchartdata(previous, "Prevpa" + (j + 1));
 
-                    //var all = {
-                    //    "values": [
-                    //            {
-                    //                "name": "You",
-                    //                "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
-                    //                "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
-                    //            },
-                    //         {
-                    //             "name": "Top",
-                    //             "score": (response.Community.ModuleScores == null || response.Community.ModuleScores[j] == undefined) ? 0 : response.Community.ModuleScores[j].ModuleScorePercentage,
-                    //             "DisplayScore": (response.Community.ModuleScores == null || response.Community.ModuleScores[j] == undefined) ? 0 : response.Community.ModuleScores[j].Modulescore
-                    //         },
-                    //            {
-                    //                "name": "NextinLine",
-                    //                "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].ModuleScorePercentage,
-                    //                "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].Modulescore
-                    //            },
-                    //            {
-                    //                "name": "RestofCommunity",
-                    //                "score": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].ModuleScorePercentage,
-                    //                "DisplayScore": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].Modulescore
-                    //            },
-                    //            {
-                    //                "name": "Prev",
-                    //                "score": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].ModuleScorePercentage,
-                    //                "DisplayScore": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].Modulescore
-                    //            }]
-                    //};
-                    //createchart.loadchartdata(all, "Allpa" + (j + 1));
+                    var all = {
+                        "values": [
+                                {
+                                    "name": "You",
+                                    "score": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].ModuleScorePercentage,
+                                    "DisplayScore": (response.You.ModuleScores == null || response.You.ModuleScores[j] == undefined) ? 0 : response.You.ModuleScores[j].Modulescore,
+                                },
+                             {
+                                 "name": "Top",
+                                 "score": (response.Community.ModuleScores == null || response.Community.ModuleScores[j] == undefined) ? 0 : response.Community.ModuleScores[j].ModuleScorePercentage,
+                                 "DisplayScore": (response.Community.ModuleScores == null || response.Community.ModuleScores[j] == undefined) ? 0 : response.Community.ModuleScores[j].Modulescore
+                             },
+                                {
+                                    "name": "NextinLine",
+                                    "score": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].ModuleScorePercentage,
+                                    "DisplayScore": (response.Team.ModuleScores == null || response.Team.ModuleScores[j] == undefined) ? 0 : response.Team.ModuleScores[j].Modulescore
+                                },
+                                {
+                                    "name": "RestofCommunity",
+                                    "score": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].ModuleScorePercentage,
+                                    "DisplayScore": (response.Sherpas.ModuleScores == null || response.Sherpas.ModuleScores[j] == undefined) ? 0 : response.Sherpas.ModuleScores[j].Modulescore
+                                },
+                                {
+                                    "name": "Prev",
+                                    "score": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].ModuleScorePercentage,
+                                    "DisplayScore": (response.Previous.ModuleScores == null || response.Previous.ModuleScores[j] == undefined) ? 0 : response.Previous.ModuleScores[j].Modulescore
+                                }]
+                    };
+                    createchart.loadchartdata(all, "Allpa" + (j + 1));
                 }
             },
             error: function (err) {
@@ -605,30 +605,30 @@ $(document).ready(function () {
         $('#top .q2').css('opacity', '0.4');
     });
     $('#nextinline').click(function () {
-        //var ctrl = $(this);
-        //$(this).addClass('selectAreaTeam');
-        //$('#comm').removeClass('selectpathfinders');
-        //$('#tenureTile').removeClass('selectTenure');
-        //$('#prev').removeClass('selectPrevious');
-        //$('#allclick').removeClass('selectAll');
-        //$('#topperform').removeClass('selectcommunity');
-        //LoadPracticeArea('.pa1', 1);
-        ////$('.pa1').find('.chartdiv').addClass('selectFBtwocol');
-        //$('.q3').hide();
-        //$('#nxtline').show();
-        //$('#top,#community, #previous, #all,#tenure').hide();
-        //$('.slidebtn').hide();
-        //if (pagecount != 1) {
-        //    $('#nxtslide .pagination').text('Page 1 of ' + pagecount + '');
-        //    $('#nxtslide, #nxtslide .bn1 ').show();
-        //}
-        //$('#nxtslide .p2 ,#nxtslide .bn3, #nxtslide .p3').hide();
+        var ctrl = $(this);
+        $(this).addClass('selectAreaTeam');
+        $('#comm').removeClass('selectpathfinders');
+        $('#tenureTile').removeClass('selectTenure');
+        $('#prev').removeClass('selectPrevious');
+        $('#allclick').removeClass('selectAll');
+        $('#topperform').removeClass('selectcommunity');
+        LoadPracticeArea('.pa1', 1);
+        //$('.pa1').find('.chartdiv').addClass('selectFBtwocol');
+        $('.q3').hide();
+        $('#nxtline').show();
+        $('#top,#community, #previous, #all,#tenure').hide();
+        $('.slidebtn').hide();
+        if (pagecount != 1) {
+            $('#nxtslide .pagination').text('Page 1 of ' + pagecount + '');
+            $('#nxtslide, #nxtslide .bn1 ').show();
+        }
+        $('#nxtslide .p2 ,#nxtslide .bn3, #nxtslide .p3').hide();
 
-        //$('#nxtline .q1').show("slow");
-        //$('#nxtline .q1').animate({ 'margin-left': '2%' }, { duration: 0 });
-        //$('#nxtline .q1').css('opacity', '2');
-        //$('#nxtline .q2').css("margin-left", "-6%");
-        //$('#nxtline .q2').css('opacity', '0.4');
+        $('#nxtline .q1').show("slow");
+        $('#nxtline .q1').animate({ 'margin-left': '2%' }, { duration: 0 });
+        $('#nxtline .q1').css('opacity', '2');
+        $('#nxtline .q2').css("margin-left", "-6%");
+        $('#nxtline .q2').css('opacity', '0.4');
     });
     $('#comm').click(function () {
         var ctrl = $(this);
@@ -708,28 +708,28 @@ $(document).ready(function () {
         $('#tenure .q2').css('opacity', '0.4');
     });
     $('#allclick').click(function () {
-        //var ctrl = $(this);
-        //$(this).addClass('selectAll');
-        //$('#nextinline').removeClass('selectAreaTeam');
-        //$('#comm').removeClass('selectpathfinders');
-        //$('#tenureTile').removeClass('selectTenure');
-        //$('#prev').removeClass('selectPrevious');
-        //$('#topperform').removeClass('selectcommunity');
-        //LoadPracticeArea('.pa1', 1);
-        //$('#all').show();
-        //$('#top, #nxtline, #community, #previous,#tenure').hide();
-        //$('.slidebtn').hide();
-        //if (pagecount != 1) {
-        //    $('#allpagination .pagination').text('Page 1 of ' + pagecount + '');
-        //    $('#allpagination, #allpagination .bn1').show();
-        //}
-        //$('#allpagination .bn2, #allpagination .p2 ').hide();
-        ////$('#allpagination .pagination').text('Page 1 of 2');
-        //$('#allpagination .q1').show("slow");
-        //$('#all .q1').animate({ 'margin-left': '2%' }, { duration: 0 });
-        //$('#all .q1').css('opacity', '2');
-        //$('#all .q2').css('margin-left', '-6%');
-        //$('#all .q2').css('opacity', '0.4');
+        var ctrl = $(this);
+        $(this).addClass('selectAll');
+        $('#nextinline').removeClass('selectAreaTeam');
+        $('#comm').removeClass('selectpathfinders');
+        $('#tenureTile').removeClass('selectTenure');
+        $('#prev').removeClass('selectPrevious');
+        $('#topperform').removeClass('selectcommunity');
+        LoadPracticeArea('.pa1', 1);
+        $('#all').show();
+        $('#top, #nxtline, #community, #previous,#tenure').hide();
+        $('.slidebtn').hide();
+        if (pagecount != 1) {
+            $('#allpagination .pagination').text('Page 1 of ' + pagecount + '');
+            $('#allpagination, #allpagination .bn1').show();
+        }
+        $('#allpagination .bn2, #allpagination .p2 ').hide();
+        //$('#allpagination .pagination').text('Page 1 of 2');
+        $('#allpagination .q1').show("slow");
+        $('#all .q1').animate({ 'margin-left': '2%' }, { duration: 0 });
+        $('#all .q1').css('opacity', '2');
+        $('#all .q2').css('margin-left', '-6%');
+        $('#all .q2').css('opacity', '0.4');
 
     });
 

@@ -140,7 +140,7 @@
             <p>Community</p>
             <ul id="tilesub">
                 <li data-value="1">Community</li>
-              <%--  <li data-value="2">Area Team</li>--%>
+                <li data-value="2">Area Team</li>
                 <%--<li data-value="3">Mentors</li>--%>
                 <li data-value="4">Tenure Group</li>
                 <%--<li data-value="5">Previous</li>--%>

@@ -17,17 +17,17 @@
                 };
                 createchart.loadchartdata(topallChart, "topall");
                 ////Team
-                //var nxtallChart = {
-                //    "values": [{
-                //        "name": "You",
-                //        "score": response.You.WcsiScore
-                //    },
-                //                {
-                //                    "name": "nxt",
-                //                    "score": response.Team.WcsiScore
-                //                }]
-                //};
-                //createchart.loadchartdata(nxtallChart, "nxtall");
+                var nxtallChart = {
+                    "values": [{
+                        "name": "You",
+                        "score": response.You.WcsiScore
+                    },
+                                {
+                                    "name": "nxt",
+                                    "score": response.Team.WcsiScore
+                                }]
+                };
+                createchart.loadchartdata(nxtallChart, "nxtall");
                 ////Sherpas
                 //var rstallChart = {
                 //    "values": [{
@@ -82,29 +82,29 @@
                 }
                 
 
-                //var allallChart = {
-                //    "values": [{
-                //        "name": "You",
-                //        "score": response.You.WcsiScore
-                //    },
-                //        {
-                //            "name": "comm",
-                //            "score": response.Community.WcsiScore
-                //        },
-                //                {
-                //                    "name": "Top",
-                //                    "score": response.Team.WcsiScore
-                //                },
-                //                {
-                //                    "name": "Last",
-                //                    "score": response.Sherpas.WcsiScore
-                //                },
-                //                {
-                //                    "name": "Rest",
-                //                    "score": response.Previous.WcsiScore
-                //                }]
-                //};
-                //createchart.loadchartdata(allallChart, "allall");
+                var allallChart = {
+                    "values": [{
+                        "name": "You",
+                        "score": response.You.WcsiScore
+                    },
+                        {
+                            "name": "comm",
+                            "score": response.Community.WcsiScore
+                        },
+                                {
+                                    "name": "Top",
+                                    "score": response.Team.WcsiScore
+                                },
+                                {
+                                    "name": "Last",
+                                    "score": response.Sherpas.WcsiScore
+                                },
+                                {
+                                    "name": "Rest",
+                                    "score": response.Previous.WcsiScore
+                                }]
+                };
+                createchart.loadchartdata(allallChart, "allall");
             },
             error: function () {
             }
@@ -359,16 +359,16 @@ $(document).ready(function () {
         $('#bigslide .prev,#bigslide .nxt').hide();
     });
     $('#nextinline').click(function () {
-        //$('#nxtline').show();
-        //$('#nextinline').addClass("selectAreaTeam");
-        //$('#topperform').removeClass("selectcommunity");
-        //$('#comm').removeClass("selectpathfinders");
-        //$('#tenureTile').removeClass("selectTenure");
-        //$('#prev').removeClass("selectPrevious");
-        //$('#alltile').removeClass("selectAll");
-        //$('#top,#community, #previous, #all,#tenure').hide();
-        //$('#bigslide').hide();
-        //$('#bigslide .prev,#bigslide .nxt').hide();
+        $('#nxtline').show();
+        $('#nextinline').addClass("selectAreaTeam");
+        $('#topperform').removeClass("selectcommunity");
+        $('#comm').removeClass("selectpathfinders");
+        $('#tenureTile').removeClass("selectTenure");
+        $('#prev').removeClass("selectPrevious");
+        $('#alltile').removeClass("selectAll");
+        $('#top,#community, #previous, #all,#tenure').hide();
+        $('#bigslide').hide();
+        $('#bigslide .prev,#bigslide .nxt').hide();
     });
     $('#comm').click(function () {
         $('#community').show();
@@ -407,16 +407,16 @@ $(document).ready(function () {
         $('#bigslide #p1,#bigslide #bn1').show();
     });
     $('#alltile').click(function () {
-        //$('#all').show();
-        //$('#alltile').addClass("selectAll");
-        //$('#nextinline').removeClass("selectAreaTeam");
-        //$('#comm').removeClass("selectpathfinders");
-        //$('#tenureTile').removeClass("selectTenure");
-        //$('#prev').removeClass("selectPrevious");
-        //$('#topperform').removeClass("selectcommunity");
-        //$('#top, #nxtline, #community, #previous,#tenure').hide();
-        //$('#bigslide').show();
-        //$('#bigslide #p1,#bigslide #bn1').show();
+        $('#all').show();
+        $('#alltile').addClass("selectAll");
+        $('#nextinline').removeClass("selectAreaTeam");
+        $('#comm').removeClass("selectpathfinders");
+        $('#tenureTile').removeClass("selectTenure");
+        $('#prev').removeClass("selectPrevious");
+        $('#topperform').removeClass("selectcommunity");
+        $('#top, #nxtline, #community, #previous,#tenure').hide();
+        $('#bigslide').show();
+        $('#bigslide #p1,#bigslide #bn1').show();
     });
     $(".stand li").click(function () {
         $(this).addClass("selected");
