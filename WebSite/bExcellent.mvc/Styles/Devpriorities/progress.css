@@ -1079,6 +1079,7 @@ p {
 
     .modNmaeview {
         font-size: 200% !important;
+        line-height: 1;
     }
 
     .frequency_scale li {
@@ -1116,6 +1117,8 @@ p {
         line-height: 1.2;
     }
 
+
+
     .clickdeeper {
         left: -190%;
     }
@@ -1138,9 +1141,21 @@ p {
         font-size: 80% !important;
     }
 
+    .dp_fci {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    .dp_frqprogress img {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+
+
     .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
-        font-size: 70% !important;
-        min-height: 35px !important;
+        font-size: 11px !important;
+        min-height: 30px !important;
     }
 
     h2 {
