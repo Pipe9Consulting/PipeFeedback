@@ -11617,6 +11617,9 @@ namespace bExcellent.mvc.CommonWCF {
         private int PreviousResultField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PriorityOrderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string QuestionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -11758,6 +11761,19 @@ namespace bExcellent.mvc.CommonWCF {
                 if ((this.PreviousResultField.Equals(value) != true)) {
                     this.PreviousResultField = value;
                     this.RaisePropertyChanged("PreviousResult");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PriorityOrder {
+            get {
+                return this.PriorityOrderField;
+            }
+            set {
+                if ((this.PriorityOrderField.Equals(value) != true)) {
+                    this.PriorityOrderField = value;
+                    this.RaisePropertyChanged("PriorityOrder");
                 }
             }
         }

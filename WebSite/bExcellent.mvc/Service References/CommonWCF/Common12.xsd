@@ -631,6 +631,7 @@
       <xs:element minOccurs="0" name="PreviousCapability" type="xs:int" />
       <xs:element minOccurs="0" name="PreviousImportance" type="xs:int" />
       <xs:element minOccurs="0" name="PreviousResult" type="xs:int" />
+      <xs:element minOccurs="0" name="PriorityOrder" type="xs:int" />
       <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
     </xs:sequence>

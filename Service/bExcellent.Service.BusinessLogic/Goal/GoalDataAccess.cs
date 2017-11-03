@@ -850,6 +850,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                         QuestionId = dev.QuestionId,
                                         ModuleName = dev.ModuleName,
                                         Rating = dev.Rating,
+                                        Bucketorder = dev.Bucketorder,
                                         ModuleOrder = dev.ModuleOrder,
                                         ManagerCapability = dev.ManagerCapability,
                                         SelfCapability = self.SelfCapability,
@@ -892,6 +893,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                            QuestionId = dev.QuestionId,
                                            ModuleName = dev.ModuleName,
                                            Rating = dev.Rating,
+                                           Bucketorder = dev.Bucketorder,
                                            ModuleOrder = dev.ModuleOrder,
                                            ManagerCapability = dev.ManagerCapability,
                                            SelfCapability = self.SelfCapability,
@@ -914,6 +916,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                             QuestionId = dev.QuestionId,
                             ModuleName = dev.ModuleName,
                             Rating = dev.Rating,
+                            Bucketorder = dev.Bucketorder,
                             ModuleOrder = dev.ModuleOrder,
                             ManagerCapability = (int)self.Capability,
                             SelfCapability = dev.SelfCapability,
@@ -941,6 +944,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                  QuestionId = dev.QuestionId,
                                  ModuleName = dev.ModuleName,
                                  Rating = dev.Rating,
+                                 Bucketorder = dev.Bucketorder,
                                  ModuleOrder = dev.ModuleOrder,
                                  ManagerCapability = dev.ManagerCapability,
                                  SelfCapability = self.SelfCapability,
@@ -2111,7 +2115,11 @@ namespace bExcellent.Service.BusinessLogic.Goal
                     if (currentFb != null)
                     {
                         var fbresult = currentFb.FirstOrDefault(a => a.QuestionId == priority.QuestionId);
-                        if (fbresult != null) fbresult.IsDevelopmentPriorities = true;
+                        if (fbresult != null)
+                        {
+                            fbresult.IsDevelopmentPriorities = true;
+                            fbresult.PriorityOrder = priority.Bucketorder;
+                        }
                     }
                     
                 }
@@ -2125,7 +2133,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                         fbresult.PreviousImportance = resultPrev.PreviousImportance;
                     }
                 }
-                return currentFb;
+                if (currentFb != null) return currentFb.OrderBy(a => a.PriorityOrder).ToList();
             }
             return null;
         }
@@ -2141,7 +2149,11 @@ namespace bExcellent.Service.BusinessLogic.Goal
                     if (currentFb != null)
                     {
                         var fbresult = currentFb.FirstOrDefault(a => a.QuestionId == priority.QuestionId);
-                        if (fbresult != null) fbresult.IsDevelopmentPriorities = true; 
+                        if (fbresult != null)
+                        {
+                            fbresult.IsDevelopmentPriorities = true;
+                            fbresult.PriorityOrder = priority.Bucketorder;
+                        }
                     }
                     
                 }
@@ -2155,7 +2167,7 @@ namespace bExcellent.Service.BusinessLogic.Goal
                         fbresult.PreviousImportance = resultPrev.PreviousImportance;
                     }
                 }
-                return currentFb;
+                if (currentFb != null) return currentFb.OrderBy(a=>a.PriorityOrder).ToList();
             }
             return null;
         }
