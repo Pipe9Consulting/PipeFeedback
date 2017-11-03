@@ -10,6 +10,12 @@ body {
     font-family: Segoe UI;*/
 }
 
+.qncontent, .modNmaeview, .qnumber {
+    color: #000;
+}
+
+
+
 .breadcrumb {
     padding: 0.5% 1% 0.6% 1.5% !important;
     margin-bottom: 0px;
@@ -500,6 +506,9 @@ p {
     padding: 1%;
 }
 
+
+
+
 .frquencyHeader {
     margin: 0;
     width: 100%;
@@ -514,7 +523,7 @@ p {
         color: #fff;
         text-transform: uppercase;
         padding: 0.4% .3% .2% .7%;
-        text-align: left;
+        text-align: center;
     }
 
         .frquencyHeader li:first-child {
@@ -891,7 +900,6 @@ p {
     top: -100%;
     text-transform: uppercase;
     left: 0%;
-    font-weight: normal;
     background-size: 25px 15px;
     font-size: 100%;
     width: 100%;
@@ -914,7 +922,6 @@ p {
     top: -8%;
     text-transform: uppercase;
     right: 0%;
-    font-weight: normal;
     background-size: 25px 15px;
     font-size: 100%;
     width: 100%;
@@ -3051,7 +3058,7 @@ body {
     }
 
     .priorities_part2 h2 {
-        width: 75%;
+        width: 73%;
     }
 
     .dp_legends ul li {
@@ -3062,6 +3069,10 @@ body {
     .dp_fci {
         margin-top: 2%;
         margin-bottom: 2%;
+    }
+
+    .qnumber {
+        padding-top: .6% !important;
     }
 }
 
@@ -3429,6 +3440,14 @@ body {
         font-size: 80% !important;
     }
 
+    .qncontent {
+        font-size: 115%;
+    }
+
+    .frquencyContent li.qnumber {
+        padding-top: 0.7%;
+        font-size: 140% !important;
+    }
 
 
     #devPrioritiesCont {
@@ -3438,7 +3457,7 @@ body {
 
 
         #devPrioritiesCont ul li span {
-            font-size: 110%;
+            font-size: 140%;
         }
 
     .managerSpan, .youSpan {

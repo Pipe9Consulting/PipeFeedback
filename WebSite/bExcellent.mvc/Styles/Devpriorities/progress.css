@@ -604,7 +604,9 @@ p {
     width: 100%;
 }
 
-
+.dp_no {
+    color: #000;
+}
 
 .selectYou {
     position: relative;
