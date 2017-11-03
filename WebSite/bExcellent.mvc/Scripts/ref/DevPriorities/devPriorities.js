@@ -27,6 +27,7 @@
     }
     $('.profilemenu').on('click', function () {
         var poeid = $('#selectedPoeId').val();
+        //alert(poeid);
         if (poeid == 27) {
             window.open("../ExcelTemplates/MSA_MCM_FY17_REP_9-30-16_FINAL.pdf", "_blank");
         }
@@ -38,6 +39,9 @@
         }
         if (poeid == 30) {
             window.open("../ExcelTemplates/MSA_AMM_FY17_REP_2-28-17_FINAL.pdf", "_blank");
+        }
+        if (poeid == 31) {
+            window.open("../ExcelTemplates/Solution Sales Specialist.docx");
         }
         //openWord("../ExcelTemplates/MSA27.docx");
     });

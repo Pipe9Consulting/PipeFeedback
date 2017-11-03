@@ -3745,6 +3745,7 @@
     <Content Include="ExcelTemplates\MSA_PCMM_FY17_REP_9-30-16_FINAL.PDF" />
     <Content Include="ExcelTemplates\MSA_PMM_FY17_REP_9-30-16_FINAL.PDF" />
     <Content Include="ExcelTemplates\PSE_DataDumb.xlsx" />
+    <Content Include="ExcelTemplates\Solution Sales Specialist.docx" />
     <None Include="ExcelTemplates\TeammbrReportTemp.xlsx" />
     <None Include="ExcelTemplates\Template.xlsx" />
     <None Include="ExcelTemplates\TemplateTeam.xlsx" />
