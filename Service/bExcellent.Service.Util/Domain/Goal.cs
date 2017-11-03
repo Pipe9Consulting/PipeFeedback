@@ -162,6 +162,7 @@ namespace bExcellent.Service.Util.Domain
         public int PreviousImportance { get; set; }
         public int QuestionId { get; set; }
         public int ModuleId { get; set; }
+        public int PriorityOrder { get; set; }
         public string Question { get; set; }
         public string ModuleName { get; set; }
         public int ModuleOrder { get; set; }
