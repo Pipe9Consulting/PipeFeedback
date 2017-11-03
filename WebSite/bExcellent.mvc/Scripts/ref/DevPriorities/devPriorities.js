@@ -43,6 +43,9 @@
         if (poeid == 31) {
             window.open("../ExcelTemplates/Solution Sales Specialist.docx");
         }
+        if (poeid == 7) {
+            window.open("../ExcelTemplates/Specialist_Sales_Manager.docx");
+        }
         //openWord("../ExcelTemplates/MSA27.docx");
     });
     function openWord(spath) {
