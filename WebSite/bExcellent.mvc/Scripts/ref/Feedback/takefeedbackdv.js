@@ -147,14 +147,14 @@
                     " <div class='scale_cnt'> <h3>Not Important</h3> <p>Not important for success in your market.</p> </div> </div> <div class='scale_dfn'> <div class='scale_img'> <img alt='inconsistently' src='../../Images/Feedback/Icon/importants2.png'> </div>" +
                     " <div class='scale_cnt'> <h3>Somewhat Important</h3> <p>Somewhat important for success in your market.</p> </div> </div> <div class='scale_dfn'> <div class='scale_img'> <img alt='frequently' src='../../Images/Feedback/Icon/importants3.png'> </div> " +
                     "<div class='scale_cnt'> <h3>Important</h3> <p>Important for success in your market.</p> </div> </div> <div class='scale_dfn'> <div class='scale_img'> <img alt='Always' src='../../Images/Feedback/Icon/importants4.png'> </div> " +
-                    "<div class='scale_cnt'> <h3>Critical</h3> <p>Critical for success in your market.</p> </div> </div> </div> <div class='capabilityDef' id='capabilityDef'> <h2>Capability Definitions</h2> <div class='scale_dfn'> <div class='scale_img'> <img alt='Rarely' src='../../Images/Feedback/Icon/capability2.png'> </div> " +
-                    "<div class='scale_cnt'> <h3>Introductory</h3> <p>I am not ready to demonstrate this Excellence Action.</p> </div> </div> " +
+                    "<div class='scale_cnt'> <h3>Critical</h3> <p>Critical for success in your market.</p> </div> </div> </div> <div class='capabilityDef' id='capabilityDef'> <h2>Proficiency Definitions</h2> <div class='scale_dfn'> <div class='scale_img'> <img alt='Rarely' src='../../Images/Feedback/Icon/capability2.png'> </div> " +
+                    "<div class='scale_cnt'> <h3>Introductory</h3> <p>Introductory Level Proficiency.</p> </div> </div> " +
                     "<div class='scale_dfn'> <div class='scale_img'> <img alt='inconsistently' src='../../Images/Feedback/Icon/capability1.png'> </div>" +
-                    " <div class='scale_cnt'> <h3>Intermediate</h3> <p>I am somewhat ready to demonstrate this Excellence Action.</p> </div> </div> " +
+                    " <div class='scale_cnt'> <h3>Intermediate</h3> <p>Intermediate Level Proficiency.</p> </div> </div> " +
                     "<div class='scale_dfn'> <div class='scale_img'> <img alt='frequently' src='../../Images/Feedback/Icon/capability3.png'> </div>" +
-                    " <div class='scale_cnt'> <h3>Experienced</h3> <p>I am ready to demonstrate this Excellence Action.</p> </div> </div> <div class='scale_dfn'> " +
+                    " <div class='scale_cnt'> <h3>Experienced</h3> <p>Experienced Level Proficiency.</p> </div> </div> <div class='scale_dfn'> " +
                     "<div class='scale_img'> <img alt='Always' src='../../Images/Feedback/Icon/capability4.png'> </div> " +
-                    "<div class='scale_cnt'> <h3>Expert</h3> <p>I am very ready to demonstrate this Excellence Action.</p> </div> </div> </div>" +
+                    "<div class='scale_cnt'> <h3>Expert</h3> <p>Expert Level Proficiency.</p> </div> </div> </div>" +
                     " <div class='freqDef' id='freqDef'> <h2>Frequency Definitions</h2> <div class='scale_dfn'> " +
                     "<div class='scale_img'> <img alt='Rarely' src='../../Images/Feedback/Icon/frequency1.png'> </div> <div class='scale_cnt'> <h3>Never</h3> <p>I never demonstrate this Excellence Action.</p> </div> </div>" +
                     " <div class='scale_dfn'> <div class='scale_img'> <img alt='inconsistently' src='../../Images/Feedback/Icon/frequency2.png'> </div> " +
@@ -275,13 +275,22 @@
                     } else {
                         questionhtml += "<div class='rateThisQuestion'>";
                     }
-                    questionhtml += "<div class='capabilityQuestion'><div class='SI3 capabalititys'><span>Capability Scale: </span>Select how ready you are to demonstrate this Excellence Action</div>" +
-                            "<div class='capOverall'><div class='capImg'><img src='../../Images/Feedback/cap_icon.png' width='61' height='61' alt='User'></div><div class='capscale_bg' id='capability" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='capscale_over'> <button class='capbtn1'>Introductory</button> <button class='capbtn2'>Intermediate</button> <button class='capbtn3'>Experienced</button> <button class='capbtn4'>Expert</button> </div> <div class='capscale_handle'></div> <div class='capadddiv'></div> </div>" +
-                            "</div></div><div class='clearfix'></div><div class='sliderimg'><div class='SI3'><span>Frequency Scale: </span>Select how consistently you demonstrate this Excellence Action</div>" +
-                    "<div class='freqOverall'><div class='freqImg'><img src='../../Images/Feedback/frq_icon.png' width='61' height='61' alt='User' ></div>" +
-                        "<div class='freqscale_bg' id='Qno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='freqscale_over'> <button class='freqbtn1'>Never</button> <button class='freqbtn2'>SOMEtimes</button> <button class='freqbtn3'>Frequently</button> <button class='freqbtn4'>Always</button> </div> <div class='freqscale_handle'></div> <div class='freqadddiv'></div> </div>" +
+                    //questionhtml += "<div class='capabilityQuestion'><div class='SI3 capabalititys'><span>Capability Scale: </span>Select how ready you are to demonstrate this Excellence Action</div>" +
+                    //        "<div class='capOverall'><div class='capImg'><img src='../../Images/Feedback/cap_icon.png' width='61' height='61' alt='User'></div><div class='capscale_bg' id='capability" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='capscale_over'> <button class='capbtn1'>Introductory</button> <button class='capbtn2'>Intermediate</button> <button class='capbtn3'>Experienced</button> <button class='capbtn4'>Expert</button> </div> <div class='capscale_handle'></div> <div class='capadddiv'></div> </div>" +
+                    //        "</div></div><div class='clearfix'></div><div class='sliderimg'><div class='SI3'><span>Frequency Scale: </span>Select how consistently you demonstrate this Excellence Action</div>" +
+                    //"<div class='freqOverall'><div class='freqImg'><img src='../../Images/Feedback/frq_icon.png' width='61' height='61' alt='User' ></div>" +
+                    //    "<div class='freqscale_bg' id='Qno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='freqscale_over'> <button class='freqbtn1'>Never</button> <button class='freqbtn2'>SOMEtimes</button> <button class='freqbtn3'>Frequently</button> <button class='freqbtn4'>Always</button> </div> <div class='freqscale_handle'></div> <div class='freqadddiv'></div> </div>" +
 
-                    "</div></div></div></div><div class='clearfix'></div>" + freqhtml;
+                    //"</div></div></div></div><div class='clearfix'></div>" + freqhtml;
+
+
+                    questionhtml += "<div class='capabilityQuestion'><div class='SI3 capabalititys'><span>Proficiency Scale: </span>Select your proficiency level for this Excellence Action</div>" +
+                           "<div class='capOverall'><div class='capImg'><img src='../../Images/Feedback/cap_icon.png' width='61' height='61' alt='User'></div><div class='capscale_bg' id='capability" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='capscale_over'> <button class='capbtn1'>Introductory</button> <button class='capbtn2'>Intermediate</button> <button class='capbtn3'>Experienced</button> <button class='capbtn4'>Expert</button> </div> <div class='capscale_handle'></div> <div class='capadddiv'></div> </div>" +
+                           "</div></div><div class='clearfix'></div><div class='sliderimg'><div class='SI3'><span>Frequency Scale: </span>Select how consistently you demonstrate this Excellence Action</div>" +
+                   "<div class='freqOverall'><div class='freqImg'><img src='../../Images/Feedback/frq_icon.png' width='61' height='61' alt='User' ></div>" +
+                       "<div class='freqscale_bg' id='Qno" + response[i].QuestionOrderNumber + "' data-question=" + response[i].QuestionId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='freqscale_over'> <button class='freqbtn1'>Never</button> <button class='freqbtn2'>SOMEtimes</button> <button class='freqbtn3'>Frequently</button> <button class='freqbtn4'>Always</button> </div> <div class='freqscale_handle'></div> <div class='freqadddiv'></div> </div>" +
+
+                   "</div></div></div></div><div class='clearfix'></div>" + freqhtml;
 
                     var stringhidden = "";
                     //debugger;

@@ -165,7 +165,8 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="capabilityQuestion">
-                            <div class="SI3 capabalititys"><span>Capability Scale: </span>Select how ready you are to demonstrate this Excellence Action</div>
+                           <%-- <div class="SI3 capabalititys"><span>Capability Scale: </span>Select how ready you are to demonstrate this Excellence Action</div>--%>
+                             <div class="SI3 capabalititys"><span>Proficiency Scale: </span>Select your proficiency level for this Excellence Action</div>
                             <div class="capOverall">
                                 <div class="capImg">
                                     <img src="../../Images/Feedback/cap_icon.png" width="61" height="61" alt="User">
@@ -252,8 +253,9 @@
                         </div>
                         <div class="capabilityArea">
                             <div class="slidercontent">
-                                <img src="../../Images/Feedback/Icon/capabilityIcon.png"><h4>Capability Scale</h4>
-                                <p>Select how ready your team member is to demonstrate this Excellence Action</p>
+                                <img src="../../Images/Feedback/Icon/capabilityIcon.png"><h4>Proficiency Scale</h4>
+                               <%-- <p>Select how ready your team member is to demonstrate this Excellence Action</p>--%>
+                                 <p>Select how proficient your team member is for this Excellence Action</p>
                             </div>
                         </div>
                         <div class="frequencyArea">
