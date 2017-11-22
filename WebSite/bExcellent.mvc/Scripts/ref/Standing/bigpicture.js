@@ -92,7 +92,7 @@
                             "score": response.Community.WcsiScore
                         },
                                 {
-                                    "name": "Top",
+                                    "name": "nxt",
                                     "score": response.Team.WcsiScore
                                 },
                                 {

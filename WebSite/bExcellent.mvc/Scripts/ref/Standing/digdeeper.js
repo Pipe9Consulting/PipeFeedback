@@ -664,7 +664,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                     if (mode != 4 && mode != 6 && mode != 7) {
 
                         commhtml = commhtml + "<div class='chartsmlplaceholder pa1' data-value=" + numberOfSlide + "><div class='eqscon'><div class='EiQno'>" + (count + 1) + "</div><div class='EiQtext'>" + loadQuestion[count].ShortQuetionText + "</div></div> <div class='chartdiv' id=''>" +
-                            "  <div class='legend'> <ul> <li class='legend1'>You</li> <li class='legend2'>" + legendText + "</li> </ul> </div><div class='chart'> <div class='chartop'></div> <div class='chartbg'> <div class='chartarea'> <ul> <li class='progressbar1' style='width: " + yourscorePercentage + "%;' id='Toppa1Pro1'> " +
+                            "  <div class='legend'> <ul> <li class='legend1'>You</li> <li class='legend2all'>" + legendText + "</li> </ul> </div><div class='chart'> <div class='chartop'></div> <div class='chartbg'> <div class='chartarea'> <ul> <li class='progressbar1' style='width: " + yourscorePercentage + "%;' id='Toppa1Pro1'> " +
                             " </li> <li class='progressbar2' style='width: " + tilescorePercentage + "%;' id='Toppa1Pro2'>  </li> </ul> </div> </div> <div class='chartbtm'> <div class='markerholder'>" +
                             " <ul> <li class='markergray' style='display:none; width:" + tilescorePercentage + "%;" + margins + "' id='Toppa1Mar2'> <p></p> </li> <li class='markeramper' style='display:none; width: " + yourscorePercentage + "%;' id='Toppa1Mar1'> <p></p> </li> </ul> </div> " +
                             "</div> </div> <div class='pointer'></div> <div class='" + sclass + "' id='Toppa1'></div> </div> </div>";

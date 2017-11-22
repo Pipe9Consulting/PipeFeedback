@@ -1514,14 +1514,14 @@ function LoadHtml(totalpa) {
                     //    " <li class='scale1' id='Li6'>25%</li> <li class='scale2' id='Li7'>50%</li> <li class='scale3' id='Li8'>75%</li> " +
                     //    "<li class='scale4' id='Li9'>100%</li> </ul> </div> <div class='charttile'>Level of Excellence</div></div> </div>";
                     allhtml = allhtml + "<div class='chartsmlplaceholder pa" + (count + 1) + "'> <h1></h1> <div id='li" + count + "' class='chartdiv " + (i == 0 ? "selectFBtwocol" : "") + "'  onclick='LoadPracticeArea(this," + (count + 1) + ")' data-value=" + totalpa[count].ModuleId + "> <div class='legend'> <p>Legend</p> <ul> <li class='legend1'>You</li>" +
-                     " <li class='legend3'>Community</li> <li class='legend2'>Area Team</li> " +
+                     " <li class='legend2'>Community</li> <li class='legend3'>Area Team</li> " +
                      "</ul> </div> <div class='chart'> <div class='chartop'> </div> <div class='chartbg'> <div class='chartarea'> <ul>" +
                      " <li class='progressbar1' style='width: 0%' id='Allpa" + (count + 1) + "Pro1'>  </li> <li class='progressbar2' style='width: 0%' id='Allpa" + (count + 1) + "Pro2'> " +
                      " </li> <li class='progressbar3' style='width: 0%' id='Allpa" + (count + 1) + "Pro3'> <p> </p> </li> " +
 
                      " </ul> </div> </div> <div class='chartbtm'> <div class='markerholder'> <ul> <li class='markeramper' style='width: 0%' id='Allpa" + (count + 1) + "Mar1'>" +
-                     " <p> 20 </p> </li> <li class='marker3' style='width: 0%' id='Allpa" + (count + 1) + "Mar2'> <p> 30 </p> </li>" +
-                     " <li class='markergray' style='width: 0%' id='Allpa" + (count + 1) + "Mar3'> <p>  </p> </li> " +
+                     " <p> 20 </p> </li> <li class='markergray' style='width: 0%' id='Allpa" + (count + 1) + "Mar2'> <p> 30 </p> </li>" +
+                     " <li class='marker3' style='width: 0%' id='Allpa" + (count + 1) + "Mar3'> <p>  </p> </li> " +
                      "  </ul> </div> </div> <ul class='scale' id='Ul2'>" +
                      " <li class='scale1' id='Li6'>25%</li> <li class='scale2' id='Li7'>50%</li> <li class='scale3' id='Li8'>75%</li> " +
                      "<li class='scale4' id='Li9'>100%</li> </ul> </div> <div class='charttile'>Level of Excellence</div></div> </div>";

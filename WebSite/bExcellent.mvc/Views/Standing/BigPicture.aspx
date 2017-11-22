@@ -169,7 +169,7 @@
                                     <div class="chartbtm">
                                         <div class="markerholder">
                                             <ul>
-                                                <li class="markergray" style="width: 0%" id="topallmar2">
+                                                <li class="marker3" style="width: 0%" id="topallmar2">
                                                     <p>
                                                         50
                                                     </p>
@@ -242,7 +242,7 @@
                                     <div class="chartbtm">
                                         <div class="markerholder">
                                             <ul>
-                                                <li class="markergray" style="width: 0%" id="nxtallmar2">
+                                                <li class="marker3" style="width: 0%" id="nxtallmar2">
                                                     <p>
                                                         50
                                                     </p>
@@ -326,7 +326,7 @@
                                     <div class="chartbtm">
                                         <div class="markerholder">
                                             <ul>
-                                                <li class="markergray" style="width: 0%" id="rstallmar2">
+                                                <li class="marker3" style="width: 0%" id="rstallmar2">
                                                     <p>
                                                         50
                                                     </p>
@@ -416,7 +416,7 @@
                                     <div class="chartbtm">
                                         <div class="markerholder">
                                             <ul>
-                                                <li class="markergray" style="width: 0%" id="tenuresmar2">
+                                                <li class="marker3" style="width: 0%" id="tenuresmar2">
                                                     <p>
                                                         50
                                                     </p>
@@ -539,8 +539,8 @@
                                 <div class="legendTenure">
                                     <ul>
                                         <li class="legend1">You</li>
-                                        <li class="legend3">Community</li>
-                                        <li class="legend4">Area Team</li>
+                                        <li class="legend4">Community</li>
+                                        <li class="legend3">Area Team</li>
                                        <%-- <li class="legend5">Mentors</li>
                                         <li class="legend6">Previous</li>--%>
                                     </ul>
