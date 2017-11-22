@@ -126,7 +126,7 @@
 
     //Load Questions
     loadDetailViewPAQuestions: function (option) {
-        debugger;
+        //debugger;
         //alert('am in');
         // details_feedback.loadModuleAndPoeContent({ url: '../../Feedback/GetIntoContent', data: { 'moduleId': parseInt(option.data.moduleId) } });
         $('#moduleid').val(option.data.moduleId);
@@ -254,6 +254,7 @@
                 }
 
                 //var userratingcount = details_feedback.GetUserRatingByPoeId(response[0].QuestionId);
+                var questionCount = response.length;
                 for (var i = 0; i < response.length; i++) {
                     var quetionid = response[i].QuestionOrderNumber;
                     //var questaken = (modord * totque) + quetionid;
@@ -334,6 +335,9 @@
                 $('#pagetxt').html('Page ' + response[0].QuestionOrderNumber + ' of ' + $('#totalQuestionsformodule').val());
                 $('.pageholder').hide().fadeIn('slow');
                 $('#questions').hide().html(html).fadeIn('slow');
+                if (parseInt(questionCount) == 1) {
+                    $('.feedbackcomplete').hide();
+                }
                 if ($('#capabilityMode').val() == 0) {
                     $('.capabilityQuestion').hide();
                     $('.cpty_menu').hide();
@@ -772,7 +776,7 @@
             //alert('Please indicate a frequency that represents how often this Excellence Action is demonstrated');
         }
         else {
-            $('.feedbackcomplete,.surveyQuestions,.surveyAreas').show();
+            $('.surveyQuestions,.surveyAreas').show();
             var scrollToInt = 0 + 'px';
             if (parseInt($('#totalmodules').val()) > 7) {
                 scrollToInt = $('.scroll1')[0].scrollHeight + 'px';
@@ -826,7 +830,8 @@
                             //    details_feedback.completefeedback();
                             //    window.location = "../../Feedback/Connect";
                             //}, 1000);
-
+                            $('.feedbackcomplete').show();
+                           // $('#q1').hide();
                             var firstTime = parseInt($('#userratingcount').val());
                             // alert(firstTime);
                             //alert($('#surveyMode').val());
@@ -835,6 +840,7 @@
                                 currentqn = $('.nxtfb:visible').attr('id').replace('bn', '');
                                 $('#q' + (currentqn - 1)).hide('slow');
                                 $('#q' + currentqn).css({ 'opacity': '0.2', 'left': '-10.7%' });
+                                $('#q' + currentqn).css({ 'position': 'relative', 'margin-left': '0' });
                                 $('.feedbackcomplete').css({ 'position': 'relative', 'left': '-9.6%', 'margin-left': '0' });
                                 $('.nxtfb:visible').hide();
                                 $('.prevfb:visible').hide();
@@ -1655,7 +1661,7 @@
                 //$("#preloader").delay(100).fadeIn("slow");
             },
             success: function (response) {
-                debugger;
+                //debugger;
                 //$("#status").fadeOut();
                 //$("#preloader").delay(100).fadeOut("slow");
                 $('#selectedanswer').val(response.Answer > 4 || response == 0 ? 0 : response.Answer);
@@ -1784,6 +1790,11 @@
         $('.questions').removeClass('overallProductSurvey');
         if ($('#surveyMode').val() != 1 || firstTime != 0) {
             var lastid = $('.feedbackcomplete').prev().attr('id').replace('q', '');
+            // alert(lastid);
+            if (lastid == 1) {
+                $('#q' + lastid).css({ 'position': '', 'margin-left': '' });
+            }
+            
             $('.feedbackcomplete').prev().prev().show();
             $('.feedbackcomplete').prev().css('opacity', '1');
             $('.feedbackcomplete').css({ 'margin-left': '1.5%', 'left': '-8%' });
