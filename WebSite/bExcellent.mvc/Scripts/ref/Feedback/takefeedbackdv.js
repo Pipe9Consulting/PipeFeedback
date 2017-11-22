@@ -126,6 +126,7 @@
 
     //Load Questions
     loadDetailViewPAQuestions: function (option) {
+        debugger;
         //alert('am in');
         // details_feedback.loadModuleAndPoeContent({ url: '../../Feedback/GetIntoContent', data: { 'moduleId': parseInt(option.data.moduleId) } });
         $('#moduleid').val(option.data.moduleId);
@@ -1645,6 +1646,7 @@
                 //$("#preloader").delay(100).fadeIn("slow");
             },
             success: function (response) {
+                debugger;
                 //$("#status").fadeOut();
                 //$("#preloader").delay(100).fadeOut("slow");
                 $('#selectedanswer').val(response.Answer > 4 || response == 0 ? 0 : response.Answer);
