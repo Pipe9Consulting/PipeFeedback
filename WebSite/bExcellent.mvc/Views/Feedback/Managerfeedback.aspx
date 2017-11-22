@@ -377,7 +377,7 @@
 
                             <div>
                                 <div class="frequency">
-                                    <img alt="Rarely" src="../../Images/Feedback/Icon/capability2.png"><h4>Not Ready</h4>
+                                    <img alt="Rarely" src="../../Images/Feedback/Icon/capability2.png"><h4>Introductory</h4>
                                     <p>
                                         This team member is not ready to demonstrate this Excellence Action.
 
@@ -385,7 +385,7 @@
                                     </p>
                                 </div>
                                 <div class="frequency">
-                                    <img alt="inconsistently" src="../../Images/Feedback/Icon/capability1.png"><h4>Somewhat Ready</h4>
+                                    <img alt="inconsistently" src="../../Images/Feedback/Icon/capability1.png"><h4>Intermediate</h4>
                                     <p>
                                         This team member is somewhat ready to demonstrate this Excellence Action.
 
@@ -393,7 +393,7 @@
                                     </p>
                                 </div>
                                 <div class="frequency">
-                                    <img alt="frequently" src="../../Images/Feedback/Icon/capability3.png"><h4>Ready</h4>
+                                    <img alt="frequently" src="../../Images/Feedback/Icon/capability3.png"><h4>Experienced</h4>
                                     <p>
                                         This team member is ready to demonstrate this Excellence Action.
 
@@ -401,7 +401,7 @@
                                     </p>
                                 </div>
                                 <div class="frequency">
-                                    <img alt="Always" src="../../Images/Feedback/Icon/capability4.png"><h4>Very Ready</h4>
+                                    <img alt="Always" src="../../Images/Feedback/Icon/capability4.png"><h4>Expert</h4>
                                     <p>
                                         This team member is very ready to demonstrate this Excellence Action.
 

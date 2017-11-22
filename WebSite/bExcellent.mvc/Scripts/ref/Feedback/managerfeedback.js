@@ -234,7 +234,7 @@
                            "<img src='../../Images/Feedback/Icon/capabilityIcon.png'>" +
                            "</div>" +
                             "<div class='sliderimg'>" +
-                            "<div class='capscale_bg' id='capability" + response[i].QuestionOrderNumber + "fno" + userresponse[j].FeedBackId + "' data-feedback=" + userresponse[j].FeedBackId + " data-question=" + response[i].QuestionId + " data-user=" + userresponse[j].Teammember.User.UserId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='capscale_over'> <button class='capbtn1'>NOT Ready</button> <button class='capbtn2'>Somewhat Ready</button> <button class='capbtn3'>Ready</button> <button class='capbtn4'>Very Ready</button> </div> <div class='capscale_handle'></div> <div class='capadddiv'></div> </div>" +
+                            "<div class='capscale_bg' id='capability" + response[i].QuestionOrderNumber + "fno" + userresponse[j].FeedBackId + "' data-feedback=" + userresponse[j].FeedBackId + " data-question=" + response[i].QuestionId + " data-user=" + userresponse[j].Teammember.User.UserId + " data-moduleid=" + option.data.moduleId + " data-answer='0'> <div class='capscale_over'> <button class='capbtn1'>Introductory</button> <button class='capbtn2'>Intermediate</button> <button class='capbtn3'>Experienced</button> <button class='capbtn4'>Expert</button> </div> <div class='capscale_handle'></div> <div class='capadddiv'></div> </div>" +
                             "</div></div><div class='clr'></div><div class='frequencyScaleArea'><div class='user'>" +
                            "<img src='../../Images/Feedback/Icon/frequencyIcon.png'>" +
                            "</div>" +

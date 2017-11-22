@@ -172,10 +172,10 @@
                                 </div>
                                 <div class="capscale_bg">
                                     <div class="capscale_over">
-                                        <button class="capbtn1">NOT Ready</button>
-                                        <button class="capbtn2">Somewhat Ready</button>
-                                        <button class="capbtn3">Ready</button>
-                                        <button class="capbtn4">Very Ready</button>
+                                        <button class="capbtn1">Introductory</button>
+                                        <button class="capbtn2">Intermediate</button>
+                                        <button class="capbtn3">Experienced</button>
+                                        <button class="capbtn4">Expert</button>
                                     </div>
                                     <div class="capscale_handle"></div>
                                     <div class="capadddiv"></div>
@@ -298,10 +298,10 @@
                                     </div>
                                     <div class="capscale_bg">
                                         <div class="capscale_over">
-                                            <button class="capbtn1">NOT Ready</button>
-                                            <button class="capbtn2">Somewhat Ready</button>
-                                            <button class="capbtn3">Ready</button>
-                                            <button class="capbtn4">Very Ready</button>
+                                            <button class="capbtn1">Introductory</button>
+                                            <button class="capbtn2">Intermediate</button>
+                                            <button class="capbtn3">Experienced</button>
+                                            <button class="capbtn4">Expert</button>
                                         </div>
                                         <div class="capscale_handle"></div>
                                         <div class="capadddiv"></div>
