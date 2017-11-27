@@ -23,6 +23,13 @@ namespace bExcellent.mvc.Controllers
         {
             return View();
         }
-
+        public ActionResult Welcome()
+        {
+            return View();
+        }
+        public ActionResult FeedbackGuide()
+        {
+            return View();
+        }
     }
 }

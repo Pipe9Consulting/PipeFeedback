@@ -4524,6 +4524,8 @@
     <Content Include="Views\Feedback\Feedbackss.cshtml" />
     <Content Include="Views\TechnicalFeedback\SelfFeedback.cshtml" />
     <Content Include="Views\TechnicalFeedback\ManagerFeedback.cshtml" />
+    <Content Include="Views\TechnicalFeedback\Welcome.cshtml" />
+    <Content Include="Views\TechnicalFeedback\FeedbackGuide.cshtml" />
     <None Include="Web References\authorize\ANetApiResponseType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

@@ -1450,12 +1450,26 @@ namespace bExcellent.mvc.Controllers
         public ActionResult RedirectWelcome(int? mode, string userIds)
         {
             Session["fbmode"] = mode;
-            if (!string.IsNullOrEmpty(userIds))
+            var poeId = int.Parse(Session["SelectedPoe"].ToString());
+            if (poeId != 34)
             {
-                Session["fbmode"] = 2;
-                Session["userIds"] = userIds;
+                if (!string.IsNullOrEmpty(userIds))
+                {
+                    Session["fbmode"] = 2;
+                    Session["userIds"] = userIds;
+                }
+                return RedirectToAction("Welcome", "Feedback");
             }
-            return RedirectToAction("Welcome", "Feedback");
+            else
+            {
+                if (!string.IsNullOrEmpty(userIds))
+                {
+                    Session["fbmode"] = 2;
+                    Session["userIds"] = userIds;
+                }
+                return RedirectToAction("Welcome", "TechnicalFeedback");
+            }
+            
         }
         /// <summary>
         /// Feedbacks this instance.
