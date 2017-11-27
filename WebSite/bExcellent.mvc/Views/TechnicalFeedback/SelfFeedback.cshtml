@@ -4,6 +4,7 @@
 <link href="~/Styles/Common/jquery.mCustomScrollbar.css" rel="stylesheet" />
 
 <link href="~/Styles/self-product.css" rel="stylesheet" />
+<input type="hidden" id="selectedanswer" />
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb">
             <a href="../Common/Index">Home</a> <a>></a><a href="../Feedback/Feedback?Mode=1">Feedback</a> <a>></a><a> Self-Feedback</a>
@@ -18,11 +19,11 @@
             <ul class="poemodule">
                @* <img src="~/Images/icons/AzureInfraTsp-Product5h.png" />*@
                 
-                <li class="selected modImg1"><img src="~/Images/icons/AzureInfraTsp-Product1h.png" /><p>Microsoft Azure</p></li>
-                <li class="modImg2"><img src="~/Images/icons/AzureInfraTsp-Product2.png" /><p>Security</p></li>
-                <li class="modImg3"><img src="~/Images/icons/AzureInfraTsp-Product3.png" /><p>Operations &amp; Management </p></li>
-                <li class="modImg4"><img src="~/Images/icons/AzureInfraTsp-Product4.png" /><p>Developer Tools</p></li>
-                <li class="modImg5"><img src="~/Images/icons/AzureInfraTsp-Product5.png" /><p>Debugging and Performance</p></li>
+                <li class="selected modImg1" data-moduleId="210"><img src="~/Images/icons/AzureInfraTsp-Product1h.png" /><p>Microsoft Azure</p></li>
+                <li class="modImg2" data-moduleId="211"><img src="~/Images/icons/AzureInfraTsp-Product2.png" /><p>Security</p></li>
+                <li class="modImg3" data-moduleId="212"><img src="~/Images/icons/AzureInfraTsp-Product3.png" /><p>Operations &amp; Management </p></li>
+                <li class="modImg4" data-moduleId="213"><img src="~/Images/icons/AzureInfraTsp-Product4.png" /><p>Developer Tools</p></li>
+                <li class="modImg5" data-moduleId="214"><img src="~/Images/icons/AzureInfraTsp-Product5.png" /><p>Debugging and Performance</p></li>
                @* <li><img src="../Images/icons/SolutionSalesSpecialist6.png"><p>Continuous Learning and Professional Growth</p></li>*@
             </ul>
 
@@ -48,7 +49,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1062" id="freqScale1">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -61,11 +62,11 @@
                                 </div>
 
                                 <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Azure Active Directory</p>
+                                    <p class="qn">2</p><p class="moduleqncontent">Single Sign-On</p>
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1063" id="freqScale2">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -85,7 +86,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1064" id="freqScale3">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -106,7 +107,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1065" id="freqScale4">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -128,7 +129,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1066" id="freqScale5">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -141,11 +142,11 @@
                                 </div>
 
                                 <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">PowerShell</p>
+                                    <p class="qn">2</p><p class="moduleqncontent">Azure PowerShell</p>
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1067" id="freqScale6">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -167,7 +168,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1068" id="freqScale7">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -188,7 +189,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1069" id="freqScale8">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -210,7 +211,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1070" id="freqScale9">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -227,7 +228,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1071" id="freqScale10">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -244,7 +245,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1072" id="freqScale11">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -261,7 +262,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1073" id="freqScale12">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -278,7 +279,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1074" id="freqScale13">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -295,7 +296,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1075" id="freqScale14">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -312,7 +313,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1076" id="freqScale15">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -333,7 +334,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1077" id="freqScale16">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -354,7 +355,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1078" id="freqScale17">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -372,7 +373,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1079" id="freqScale18">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -390,7 +391,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1080" id="freqScale19">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -411,7 +412,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1081" id="freqScale20">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -429,7 +430,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1082" id="freqScale21">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -447,7 +448,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1083" id="freqScale22">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -469,7 +470,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1084" id="freqScale23">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -487,7 +488,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1085" id="freqScale24">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -505,7 +506,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1086" id="freqScale25">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -526,7 +527,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1087" id="freqScale26">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -544,7 +545,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1088" id="freqScale27">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -562,7 +563,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1089" id="freqScale28">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -580,7 +581,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1090" id="freqScale29">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -603,7 +604,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1091" id="freqScale30">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -621,7 +622,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1092" id="freqScale31">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -640,7 +641,7 @@
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
                                     <img src="~/Images/Product/cap_icon.png" />
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1093" id="freqScale32">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -674,7 +675,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1094" id="freqScale33">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -691,7 +692,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1095" id="freqScale34">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -711,7 +712,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1096" id="freqScale35">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -728,7 +729,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1097" id="freqScale36">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -758,7 +759,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1098" id="freqScale37">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -777,7 +778,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1099" id="freqScale38">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -794,7 +795,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1100" id="freqScale39">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -811,7 +812,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1101" id="freqScale40">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -836,7 +837,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1102" id="freqScale41">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -864,7 +865,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1103" id="freqScale42">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -881,7 +882,7 @@
                                 </div>
                                 <div class="qnscale">
                                     <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0">
+                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1104" id="freqScale43">
                                         <div class="freqscale_over">
                                             <button class="freqbtn1">Introductory</button>
                                             <button class="freqbtn2">Intermediate</button>
@@ -925,8 +926,10 @@
 
 
 @section scripts{
+   @* <script src="~/Scripts/ref/common.js"></script>
+    <script src="~/Scripts/ref/Requests.js"></script>*@
     <script src="~/Scripts/ref/Common/jquery-2.1.4.min.js"></script>
     <script src="~/Scripts/ref/Common/jssor.slider.min.js"></script>
-    <script src="~/Scripts/ref/Common/jquery.mCustomScrollbar.js"></script>
+    <script src="~/Scripts/ref/Common/jquery.mCustomScrollbar.js"></script>   
     <script src="~/Scripts/ref/TechnicalFeedback/SelfFeedback.js"></script> 
     }
