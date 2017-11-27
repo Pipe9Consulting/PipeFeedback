@@ -91,7 +91,7 @@
        // alert(parseInt(jssor_1_slider.$CurrentIndex()));
         
         if (sliderValidation(parseInt(jssor_1_slider.$CurrentIndex()))) {
-
+                
             if (parseInt(jssor_1_slider.$CurrentIndex()) == 0) {
                 $(".modImg2").addClass('selected').siblings('li').removeClass('selected');
                 $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
