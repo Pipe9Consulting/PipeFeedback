@@ -501,7 +501,8 @@ var createchart = {
 
             $("#q" + pages).animate({ 'margin-left': '-2%' }, { duration: 0 });
             $("#q" + pages).show().css('opacity', '0.4');
-            $('#q3').hide();
+            $('#q3,#q4,#q5,#q6,#q7,#q8').hide();
+           // $('#q4').hide();
             $('#pagetxt').html(' Page ' + previousPage + ' of ' + pages);
             //setTimeout(function () {
             //$("#q" + current).show();
@@ -549,15 +550,27 @@ var createchart = {
         }
         else {
             var previousPage = (current - 1);
+         //   alert(previousPage);
             $('.prev,.nxt').hide();
             $('#p' + previousPage + ',#bn' + previousPage).show();
-            $("#q" + previousPage).show("slow");
-            $('#q' + previousPage).animate({ 'margin-left': '5%' }, { duration: 1000 });
-            $('#q' + previousPage).css('opacity', '2');
-            $('#q' + current).animate({ 'margin-left': '-2%' }, { duration: 1000 });
+            $("#q" + previousPage).show();
+            $("#q" + (previousPage - 1)).show();
+            if (current == 2) {
+                $('#q' + previousPage).animate({ 'margin-left': '5%' }, { duration: 1000 });
+            } else {
+                $('#q' + previousPage).animate({ 'margin-left': '-3%' }, { duration: 1000 });
+            }
+           
+          
+            $('#q' + previousPage).css({ 'opacity': '2' });
+           
+                $('#q' + current).css({ 'margin-left': '-2%' });
+          
+           
             $('#q' + current).css('opacity', '0.4');
+            $('#q' + (current + 1)).hide();
             $('#pagetxt').html(' Page ' + previousPage + ' of ' + pages);
-            $('#q3').hide();
+            //$('#q3').hide();
             //setTimeout(function () {
             $("#q" + current).show();
             //}, 1000);
@@ -592,17 +605,29 @@ var createchart = {
         else {
             //debugger;
             var nextPage = (current + 1);
-            if (page == nextPage)
+            $('.prev,.nxt').hide();
+            if (page == nextPage) {
                 $('#bn' + nextPage).hide();
+            } else {
+                $('#bn' + nextPage).show();
+            }
             //var firstPage = (current - 1);
             //var secondPage = (page - current);
-            $('.prev,.nxt').hide();
+           
             $('#p' + nextPage).show();
-
+            var previous = current - 1;
+            if (previous != 0) {
+                $("#q" + previous).hide();
+            }
             $("#q" + current).animate({ 'margin-left': '-35%' }, { duration: 1000 });
             $("#q" + current).css('opacity', '0.4');
             $("#q" + nextPage).animate({ 'margin-left': '-3%' }, { duration: 1000 });
             $("#q" + nextPage).css('opacity', '2');
+
+            $("#q" + (nextPage+1)).animate({ 'margin-left': '-2%' }, { duration: 500 });
+            $("#q" + (nextPage + 1)).css('opacity', '0.4');
+            setTimeout(function () { $("#q" + (nextPage + 1)).show(); }, 600);
+           // 
             if (page == 3) {
                 $("#q" + page).animate({ 'margin-left': '-2%' }, { duration: 500 });
                 $("#q" + page).css('opacity', '0.4');
