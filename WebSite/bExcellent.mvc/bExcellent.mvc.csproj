@@ -3276,6 +3276,13 @@
     <Content Include="Images\privacy.png" />
     <Content Include="Images\Product Marketing Manager_Intro.png" />
     <Content Include="Images\ProductMarketingManager.png" />
+    <Content Include="Images\Product\a13.png" />
+    <Content Include="Images\Product\cap_icon.png" />
+    <Content Include="Images\Product\loading.gif" />
+    <Content Include="Images\Product\rate_slidebg.png" />
+    <Content Include="Images\Product\slider-handle.png" />
+    <Content Include="Images\Product\slider-handle2.png" />
+    <Content Include="Images\Product\slider-handle3.png" />
     <Content Include="Images\profile_border_img.png" />
     <Content Include="Images\profile_down_arrow.png" />
     <Content Include="Images\profile_photo.png" />
@@ -3636,6 +3643,9 @@
     <Content Include="Scripts\ref\bootstrap.min.js" />
     <Content Include="Scripts\ref\Bootstrap_latest.js" />
     <Content Include="Scripts\ref\common.js" />
+    <Content Include="Scripts\ref\Common\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\ref\Common\jquery.mCustomScrollbar.js" />
+    <Content Include="Scripts\ref\Common\jssor.slider.min.js" />
     <Content Include="Scripts\ref\Dashboard\dash-1.10.0-jquery-ui.js" />
     <Content Include="Scripts\ref\Dashboard\Dashboardlanding.js" />
     <Content Include="Scripts\ref\Dashboard\dashjquery-1.7.2min.js" />
@@ -4215,6 +4225,7 @@
     <Content Include="Styles\Common\css\InnerHeaderFooter.css" />
     <Content Include="Styles\Common\css\semantic.min.css" />
     <Content Include="Styles\Common\css\skin.css" />
+    <Content Include="Styles\Common\jquery.mCustomScrollbar.css" />
     <Content Include="Styles\Common\master.css" />
     <Content Include="Styles\connect.css" />
     <Content Include="Styles\datepicker.css" />
@@ -4332,6 +4343,7 @@
     <Content Include="Styles\start.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Styles\Stylesheet1.css" />
+    <Content Include="Styles\self-product.css" />
     <Content Include="Styles\Sync.css" />
     <Content Include="Styles\Sync\excellenceIndicator.css" />
     <Content Include="Styles\Sync\digdeeper.css" />
