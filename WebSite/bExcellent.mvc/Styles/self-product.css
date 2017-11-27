@@ -8,6 +8,7 @@
         */
 .jssorb01 {
     position: absolute;
+    display: none;
 }
 
     .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
