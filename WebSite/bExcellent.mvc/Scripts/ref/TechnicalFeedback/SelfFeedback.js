@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     LoadScale();
-
+    $('#module1').addClass('currentPageJssor');
+    $('#module2').addClass('nextPageJssor');
     $(".modImg1").mouseover(function () {
         $(this).addClass('selected');
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1h.png');
@@ -89,7 +90,7 @@
         //debugger;
        // alert(parseInt(jssor_1_slider.$CurrentIndex()));
         
-        if (SliderValidation(parseInt(jssor_1_slider.$CurrentIndex()))) {
+        if (sliderValidation(parseInt(jssor_1_slider.$CurrentIndex()))) {
 
             if (parseInt(jssor_1_slider.$CurrentIndex()) == 0) {
                 $(".modImg2").addClass('selected').siblings('li').removeClass('selected');
@@ -116,7 +117,9 @@
                 $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');               
             }
             $('.jssora13l').show();
+           
             jssor_1_slider.$Next();
+            nextJssor((jssor_1_slider.$CurrentIndex() + 1));
         } else {
             alert('Please finish responding before progressing.');
         }
@@ -150,11 +153,12 @@
         }
         $('.jssora13r').show();
         jssor_1_slider.$Prev();
+        prevJssor((jssor_1_slider.$CurrentIndex() + 1));
     });
     
 
 
-    function SliderValidation(current) {
+    function sliderValidation(current) {
        // debugger;
         var validate = true;
         if (current == 0) {
@@ -202,6 +206,17 @@
         
         return validate;
     }
+    function nextJssor(currentPos) {
+        $('#module' + (currentPos - 1)).removeClass('leftPageJssor');
+        $('#module' + currentPos).removeClass('currentPageJssor').removeClass('currentPageJssor').addClass('leftPageJssor');
+        $('#module' + (currentPos + 1)).removeClass('nextPageJssor').removeClass('leftPageJssor').addClass('currentPageJssor');
+        $('#module' + (currentPos + 2)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+    }
+    function prevJssor(currentPos) {
+        $('#module' + currentPos).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+        $('#module' + (currentPos - 1)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
+        $('#module' + (currentPos - 2)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
+    }
    
 });
 function LoadScale() {
@@ -244,4 +259,5 @@ function LoadScale() {
         $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover3");
         $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle3");
     });
+    
 }
