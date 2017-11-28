@@ -40,9 +40,45 @@
     <input type="button" class="button_menu" id="module-name" />
 
     <div id="option_menu" class="optView">
-        <ul class="progress_practiceArea">
-
-        </ul>
+        <div class="capabilityDef" id="capabilityDef" style="display: block;">
+            <h2>Proficiency Definitions</h2>
+            <div class="scale_dfn">
+                <div class="scale_img">
+                    <img alt="Rarely" src="../../Images/Feedback/Icon/capability2.png">
+                </div>
+                <div class="scale_cnt">
+                    <h3>Introductory</h3>
+                    <p>Introductory Level Proficiency.</p>
+                </div>
+            </div>
+            <div class="scale_dfn">
+                <div class="scale_img">
+                    <img alt="inconsistently" src="../../Images/Feedback/Icon/capability1.png">
+                </div>
+                <div class="scale_cnt">
+                    <h3>Intermediate</h3>
+                    <p>Intermediate Level Proficiency.</p>
+                </div>
+            </div>
+            <div class="scale_dfn">
+                <div class="scale_img">
+                    <img alt="frequently" src="../../Images/Feedback/Icon/capability3.png">
+                </div>
+                <div class="scale_cnt">
+                    <h3>Experienced</h3>
+                    <p>Experienced Level Proficiency.</p>
+                </div>
+            </div>
+            <div class="scale_dfn">
+                <div class="scale_img">
+                    <img alt="Always" src="../../Images/Feedback/Icon/capability4.png">
+                </div>
+                <div class="scale_cnt">
+                    <h3>Expert</h3>
+                    <p>Expert Level Proficiency.</p>
+                </div>
+            </div>
+        </div>
 
 
     </div>
@@ -1191,6 +1227,29 @@
             $(window).on("load", function () {
                 $(".content_progress").mCustomScrollbar();
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+       
+            $("#module-name").click(function () {
+                $("#option_menu").fadeToggle();
+
+            });
+            $(window).on("load", function () {
+                $(".content_progress").mCustomScrollbar();
+            });
+
+
+        });
+
+        $(document).click(function (event) {
+            //alert($(event.target).parents().hasClass("optView"));
+            if (!$(event.target).hasClass("button_menu")) {
+                if (!$(event.target).parents().hasClass("optView")) {
+                    $('#option_menu').hide(250);
+                }
+            }
         });
     </script>
 }

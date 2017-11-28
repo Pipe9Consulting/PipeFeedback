@@ -3713,7 +3713,7 @@ body {
     }
 
     .profileCenter ul li, .profileCenter ul li img {
-        height: 121px !important;
+        height: 120px !important;
     }
 
 
@@ -3721,6 +3721,7 @@ body {
         font-size: 80% !important;
         line-height: 1.1;
         padding: 4px 2px 3px 6px !important;
+        bottom: -2%;
     }
 
 
