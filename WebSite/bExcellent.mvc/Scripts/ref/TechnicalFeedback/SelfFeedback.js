@@ -113,6 +113,7 @@
             if (parseInt(jssor_1_slider.$CurrentIndex()) == 4) {
                 $(".modImg5").removeClass('selected');
                 $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
+                $('.jssora13r').hide();
             }
             $('.jssora13l').show();
 
@@ -130,6 +131,7 @@
             $(".modImg1").addClass('selected').siblings('li').removeClass('selected');
             $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1h.png');
             $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
+            $('.jssora13l').hide();
         }
         if (parseInt(jssor_1_slider.$CurrentIndex()) == 2) {
             $(".modImg2").addClass('selected').siblings('li').removeClass('selected');

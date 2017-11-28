@@ -478,7 +478,14 @@ var feedback = {
             $(this).addClass('selected');
         });
         $('.give').live('click', function () {
-            $(this).toggleClass('msgmidselectArrow');
+            var poeid = $('#selectedPoeValueFeedback').val();
+           // alert(poeid);
+            if (poeid != 34) {
+                $(this).toggleClass('msgmidselectArrow');
+            } else {
+                $(this).addClass('msgmidselectArrow').siblings().removeClass('msgmidselectArrow');
+            }
+            
         });
         $('.clearfb').live('click', function () {
             $("#status").fadeIn();
@@ -576,6 +583,7 @@ var feedback = {
                 });
 
                 var selectedPoe = $('#selectedPoeValueFeedback').val();
+               
 
                 if (selectedPoe == 0) {
                     feedback.loadfeedbackMenu(response[0].POEId);
@@ -600,6 +608,11 @@ var feedback = {
     //    set feedback menu
     loadfeedbackMenu: function (poeid) {
         //debugger;
+        if (poeid == 34) {
+            $('#selectallTeam').hide();
+        } else {
+            $('#selectallTeam').show();
+        }
         if (poeid != 0) {
             $('.poelistli').removeClass('selectArrow');
             $('#poeli' + poeid).addClass('selectArrow');

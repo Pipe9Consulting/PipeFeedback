@@ -402,7 +402,7 @@ var excellenceactions = {
     onLoad: function (current, pages, selectedLevel) {
         //debugger;
         if (current != 1) {
-           
+           // alert(pages);
             var previousPage = (current - 1);
             $('.prev,.nxt').hide();
             $('#p' + previousPage + ',#bn' + previousPage).show();
@@ -418,14 +418,23 @@ var excellenceactions = {
                 $('#paLevel' + selectedLevel).find("#q" + (pages - 1)).show().css('opacity', '0.4');
                 $('#pagetxt').html(' Page ' + previousPage + ' of ' + pages);
             } else {
-                $('#paLevel' + selectedLevel).find("#q" + pages).animate({ 'margin-left': '82%' }, { duration: 0 });
-                $('#paLevel' + selectedLevel).find("#q" + pages).show().css('position', 'absolute');
-                $('#paLevel' + selectedLevel).find("#q" + pages).show().css('width', '63%');
-                $('#paLevel' + selectedLevel).find("#q" + pages).show().css('opacity', '0.4');
-                $('#pagetxt').html(' Page ' + previousPage + ' of ' + pages);
+                if (pages == 7) {
+                    $('#paLevel' + selectedLevel).find("#q2").animate({ 'margin-left': '82%' }, { duration: 0 });
+                    $('#paLevel' + selectedLevel).find("#q2").show().css('position', 'absolute');
+                    $('#paLevel' + selectedLevel).find("#q2").show().css('width', '63%');
+                    $('#paLevel' + selectedLevel).find("#q2").show().css('opacity', '0.4');
+                    $('#pagetxt').html(' Page ' + previousPage + ' of ' + pages);
+                } else {
+                    $('#paLevel' + selectedLevel).find("#q" + pages).animate({ 'margin-left': '82%' }, { duration: 0 });
+                    $('#paLevel' + selectedLevel).find("#q" + pages).show().css('position', 'absolute');
+                    $('#paLevel' + selectedLevel).find("#q" + pages).show().css('width', '63%');
+                    $('#paLevel' + selectedLevel).find("#q" + pages).show().css('opacity', '0.4');
+                    $('#pagetxt').html(' Page ' + previousPage + ' of ' + pages);
+                }
+               
             }
 
-            $('#paLevel' + selectedLevel).find("#q3").hide();
+            $('#paLevel' + selectedLevel).find("#q3,#q4,#q5,#q6,#q7,#q8").hide();
             setTimeout(function () {
                 $('#paLevel' + selectedLevel).find("#q" + current).show();
                
@@ -447,7 +456,7 @@ var excellenceactions = {
             var previousPage = (current - 1);
             $('.prev,.nxt').hide();
             $('#p' + previousPage + ',#bn' + previousPage).show();
-            $('#' + selectedLevel).find("#q" + previousPage).show("slow");
+            $('#' + selectedLevel).find("#q" + previousPage).show();
             $('#' + selectedLevel).find('#q' + previousPage).animate({ 'margin-left': '13%' }, { duration: 1000 });
             $('#' + selectedLevel).find('#q' + previousPage).css('opacity', '2');
             //$('#q' + pages).animate({ 'margin-left': '-3%' }, { duration: 1000 });
@@ -457,6 +466,16 @@ var excellenceactions = {
                 $('#' + selectedLevel).find("#q" + current).show().css('position', 'absolute');
                 $('#' + selectedLevel).find("#q" + current).show().css('width', '63%');
                 $('#' + selectedLevel).find("#q" + current).show().css('opacity', '0.4');
+            } else if (pages == 7) {
+                $('#' + selectedLevel).find("#q" + pages).hide()
+                $('#' + selectedLevel).find("#q" + current).animate({ 'margin-left': '82%' }, { duration: 1000 });
+                $('#' + selectedLevel).find("#q" + current).show().css('position', 'absolute');
+                $('#' + selectedLevel).find("#q" + current).show().css('width', '63%');
+                $('#' + selectedLevel).find("#q" + current).show().css('opacity', '0.4');
+                
+                setTimeout(function () {
+                    $('#' + selectedLevel).find("#q" + (current +1)).hide();
+                }, 800);
             } else {
                 $('#' + selectedLevel).find("#q" + pages).animate({ 'margin-left': '82%' }, { duration: 1000 });
                 $('#' + selectedLevel).find("#q" + pages).show().css('position', 'absolute');
@@ -496,7 +515,7 @@ var excellenceactions = {
             $('#' + selectedLevel).find("#q3").hide();
             $('#' + selectedLevel).find("#q" + nextPage).show();
             $('#' + selectedLevel).find("#q" + current).animate({ 'margin-left': '-59%' }, { duration: 1000 });
-            $('#' + selectedLevel).find("#q" + current).show().css('opacity', '0.4')
+            $('#' + selectedLevel).find("#q" + current).show().css('opacity', '0.4');
             $('#' + selectedLevel).find("#q" + nextPage).animate({ 'margin-left': '15%' }, { duration: 1000 });
             $('#' + selectedLevel).find("#q" + nextPage).show().css('opacity', '2');
             if (current == 1) {
@@ -508,6 +527,56 @@ var excellenceactions = {
 
                 }, 1000);
                 
+            }
+            if (current == 2) {
+                setTimeout(function () {
+                    $('#' + selectedLevel).find("#q4").show().css('opacity', '0.4');
+                    $('#' + selectedLevel).find("#q4").show().css('position', 'absolute');
+                    $('#' + selectedLevel).find("#q4").show().css('width', '63%');
+                    $('#' + selectedLevel).find("#q4").css({ 'margin-left': '85%' });
+
+                }, 1000);
+
+            }
+            if (current == 3) {
+                setTimeout(function () {
+                    $('#' + selectedLevel).find("#q5").show().css('opacity', '0.4');
+                    $('#' + selectedLevel).find("#q5").show().css('position', 'absolute');
+                    $('#' + selectedLevel).find("#q5").show().css('width', '63%');
+                    $('#' + selectedLevel).find("#q5").css({ 'margin-left': '85%' });
+
+                }, 1000);
+
+            }
+            if (current == 4) {
+                setTimeout(function () {
+                    $('#' + selectedLevel).find("#q6").show().css('opacity', '0.4');
+                    $('#' + selectedLevel).find("#q6").show().css('position', 'absolute');
+                    $('#' + selectedLevel).find("#q6").show().css('width', '63%');
+                    $('#' + selectedLevel).find("#q6").css({ 'margin-left': '85%' });
+
+                }, 1000);
+
+            }
+            if (current == 5) {
+                setTimeout(function () {
+                    $('#' + selectedLevel).find("#q7").show().css('opacity', '0.4');
+                    $('#' + selectedLevel).find("#q7").show().css('position', 'absolute');
+                    $('#' + selectedLevel).find("#q7").show().css('width', '63%');
+                    $('#' + selectedLevel).find("#q7").css({ 'margin-left': '85%' });
+
+                }, 1000);
+
+            }
+            if (current == 6) {
+                setTimeout(function () {
+                    $('#' + selectedLevel).find("#q8").show().css('opacity', '0.4');
+                    $('#' + selectedLevel).find("#q8").show().css('position', 'absolute');
+                    $('#' + selectedLevel).find("#q8").show().css('width', '63%');
+                    $('#' + selectedLevel).find("#q8").css({ 'margin-left': '85%' });
+
+                }, 1000);
+
             }
             if (firstPage != 0)
                 $('#' + selectedLevel).find("#q" + firstPage).animate({ 'margin-left': '-73%' }, { duration: 1000 });
@@ -522,6 +591,10 @@ var excellenceactions = {
             $('#bn2').show();
         }
         if (current == 2 && page == 3) {
+            $('#nextModule').show();
+            //$('#bn2').show();
+        }
+        if (current == 6 && page == 7) {
             $('#nextModule').show();
             //$('#bn2').show();
         }
@@ -559,6 +632,7 @@ var excellenceactions = {
 
     },
     LoadSliderbtn: function (numberOfSlide) {
+        //alert(numberOfSlide);
         var prevNavHtml = "";
         var nxtNavHtml = "";
         var o = 0;
@@ -602,7 +676,7 @@ var excellenceactions = {
 };
 
 function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage) {
-    debugger;
+    //debugger;
     var numberOfSlide = Math.ceil(loadQuestion.length / 5);
     var commhtml = "<div class='chartslide'>";
     var dummyhtml = "";
@@ -656,7 +730,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                                     "<div class='chartbg'>" +
                                         "<div class='chartarea'>" +
                                             "<ul>";
-    if (loadQuestion.length == 9 || loadQuestion.length == 10 || loadQuestion.length == 11 || loadQuestion.length == 12 || loadQuestion.length == 5 || loadQuestion.length == 4 || loadQuestion.length == 3 || loadQuestion.length == 2 || loadQuestion.length == 1) {
+    if (loadQuestion.length == 9 || loadQuestion.length == 10 || loadQuestion.length == 32 || loadQuestion.length == 11 || loadQuestion.length == 12 || loadQuestion.length == 5 || loadQuestion.length == 4 || loadQuestion.length == 3 || loadQuestion.length == 2 || loadQuestion.length == 1) {
         for (var j = 0; j < numberOfSlide ; j++) {
             //commhtml = commhtml + twoClass;
 
@@ -1091,7 +1165,7 @@ function SliderLoad(numberOfSlide) {
     var m = 0;
     var newquestionScore = (4 * numberOfSlide);
     var totalNoofPages = (numberOfSlide > 1 ? "<div class='pagination' id='pagetxt'>Page 1 of " + numberOfSlide + "</div>" : "");
-
+   // alert(numberOfSlide);
     for (; o < newquestionScore ; o++) {
         var questionId = o + 1;
         if (o == 0) {
@@ -1114,6 +1188,10 @@ function SliderLoad(numberOfSlide) {
     var prevmoduleHTML = "<a href='#' class='prev' id='prevModule' onclick='excellenceactions.PrevModule()'>Previous</a>";
     var nextmoduleHtml = "<a href='#' class='nxt' id='nextModule' onclick='excellenceactions.NextModule()'>Next</a>";
     //debugger;
+    //alert(newquestionScore);
+    if (numberOfSlide == 7) {
+        prevNavHtml = prevNavHtml + "<a href='#' class='prev' id='p7' onclick='excellenceactions.PreviewEI(7,7)'>Previous</a>";
+    }
     if (newquestionScore <= 5) {
         //$('.slidebtn').html(prevmoduleHTML + nextHtml);
        // $('.slidebtn').hide();
