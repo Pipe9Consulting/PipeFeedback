@@ -3774,6 +3774,8 @@
     <Content Include="Scripts\ref\Sync\Sync.js" />
     <Content Include="Scripts\ref\Sync\syncdigdeeper.js" />
     <Content Include="Scripts\ref\Sync\synclanding.js" />
+    <Content Include="Scripts\ref\TechnicalFeedback\ManagerFeedback.js" />
+    <Content Include="Scripts\ref\TechnicalFeedback\SelfFeedback.js" />
     <Content Include="Scripts\ref\test.js" />
     <Content Include="Scripts\ref\V4wall.js" />
     <Content Include="Scripts\ref\wall.js" />
@@ -4526,6 +4528,10 @@
     <Content Include="Views\Feedback\Feedbackss.cshtml" />
     <Content Include="Views\TechnicalFeedback\SelfFeedback.cshtml" />
     <Content Include="Views\TechnicalFeedback\ManagerFeedback.cshtml" />
+    <Content Include="Views\TechnicalFeedback\Progress.cshtml" />
+    <Content Include="Views\TechnicalFeedback\Priorities.cshtml" />
+    <Content Include="Views\TechnicalFeedback\Welcome.cshtml" />
+    <Content Include="Views\TechnicalFeedback\FeedbackGuide.cshtml" />
     <None Include="Web References\authorize\ANetApiResponseType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

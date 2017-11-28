@@ -63,6 +63,7 @@ namespace bExcellent.mvc.Controllers
             CreateFeedback(request);
             // CommonController.Log(Session["id"].ToString() + "::" + "CreateManagerFeedback-OUT");
         }
+
         public ActionResult Welcome()
         {
             return View();
@@ -103,6 +104,16 @@ namespace bExcellent.mvc.Controllers
             {
                 // CommonController.Log(Session["id"].ToString() + "::" + "CreateFeedback-SessionNULL");
             }
+        }
+        [SessionExpireFilter]
+        public ActionResult Progress()
+        {
+            return View();
+        }
+        [SessionExpireFilter]
+        public ActionResult Priorities()
+        {
+            return View();
         }
     }
 }
