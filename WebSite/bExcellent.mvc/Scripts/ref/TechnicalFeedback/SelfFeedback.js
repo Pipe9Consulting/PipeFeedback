@@ -221,26 +221,25 @@
     $("#btnSubmitSign").on('click', function () {
         //debugger;
         if (validateIntial()) {
+            //$("#completeModal").show();
             $("#completeModal").modal('show');
         }
     });
     $("#btnCompleteOk").on('click', function () {
+        //debugger;
         $("#completeModal").modal('hide');
         completeFeedback();       
     });
 
     function validateIntial() {
         //debugger;
-        var trimtext = $('#fbinitial').val().trim();
-        //var poeid = $('#selectPoe').val();
-
-        if (trimtext != '') {
-            // alert(trimtext);
+        var trimtext = $('#fbinitial').val().trim();      
+        if (trimtext != '') {         
             var regex = new RegExp("^[a-zA-Z ]+$");
             if (regex.test(trimtext)) {
                 return true;
             } else {
-                $('#errmsg_cont').text("Special characters are not allowed in this field");
+                $('#errmsg_cont').text("Special characters are not allowed in this field");         
                 $('#signsubmit').modal('show');
                 return false;
             }
@@ -252,55 +251,22 @@
     }
 
 
-    function completeFeedback() {
-        //$("#status").fadeIn();
-        //$("#preloader").fadeIn();
-        $.ajax({
-            url: "/Feedback/CompleteTakeFeedback",
-            type: "POST",
-            data: JSON.stringify({ 'fbinitial': $('#fbinitial').val() }),
-            dataType: "json",
-            async: false,
-            //traditional: true,
-            contentType: "application/json; charset=utf-8",
+    function completeFeedback() {       
+        Common.ajaxSyncPost({
+            url: '../../Feedback/CompleteTakeFeedback',
+            data: { fbinitial: $('#fbinitial').val() },        
             success: function (response) {
-                debugger;
-                //alert($('#resultmode').val());
                 var result = $('#resultmode').val();
-                        if (result == "True") {
-                            window.location = "../../Home/Start";
-                        } else {
-                            window.location = "../../Results/Results";
-                        }
-                        
+                if (result == "True") {
+                    window.location = "../../Home/Start";
+                } else {
+                    window.location = "../../Results/Results";
+                }           
             },
-            error: function () {
-
+            error: function (err) {           
             }
         });
-        //Common.ajaxSyncPost({
-        //    url: '../../Feedback/CompleteTakeFeedback',
-        //    data: { fbinitial: $('#fbinitial').val() },        
-        //    success: function (response) {
-        //        var result = $('#resultmode').val();
-        //        if (result == "True") {
-        //            window.location = "../../Home/Start";
-        //        } else {
-        //            window.location = "../../Results/Results";
-        //        }           
-        //    },
-        //    error: function (err) {           
-        //    }
-        //});
-    };
-    //function submitfeedback() {
-    //    $("#status").fadeIn();
-    //    $("#preloader").fadeIn();
-    //    setTimeout(function () {
-    //        completefeedback();
-
-    //    }, 1000);
-    //}
+    }   
 
 });
 
@@ -336,103 +302,35 @@ var selffeedback = {
         selffeedback.saveResults(savePOEResultRequests);
     },
     saveResults: function (request) {
-        //Common.ajaxSyncPost({
-        //    url: '/Feedback/SaveTakePOEResult',
-        //    data: request,
-        //    success: function (response) {
-        //    },
-        //    error: function (err) {
-        //        //window.location = "../Home/ErrorMsg";
-        //    }
-        //});
-        //debugger;
-        $.ajax({
-            url: "/Feedback/SaveTakePOEResult",
-            type: "POST",
-            data: JSON.stringify(request),
-            dataType: "json",
-            traditional: true,
-            contentType: "application/json; charset=utf-8",
+        Common.ajaxSyncPost({
+            url: '/Feedback/SaveTakePOEResult',
+            data: request,
             success: function (response) {
             },
-            error: function () {
-
+            error: function (err) {
+                //window.location = "../Home/ErrorMsg";
             }
         });
-
+        
     },
-    //loadSelectedAnswer: function (option) {
-    //    debugger;
-    //    $('#selectedanswer').val(0);
-    //    Common.ajaxsync({
-    //        url: "/Feedback/GetGivenAnswer",
-    //        data: option.data,
-    //        success: function (response) {
-    //            //debugger;
-    //            $('#selectedanswer').val(response.Answer > 4 || response == 0 ? 0 : response.Answer);
-    //            //$('#selectedNotes').val(response.Notes);
-    //        },
-    //        error: function (err) {
-    //        }
-    //    });
-    //    return parseInt($('#selectedanswer').val());
-    //},
     loadSelectedAnswer: function (option) {
+        //debugger;
         $('#selectedanswer').val(0);
-        var answer = 0;
-        $.ajax({
+        Common.ajaxsync({
             url: "/Feedback/GetGivenAnswer",
-            cache: false,
-            type: "GET",
-            async: false,
             data: option.data,
-            dataType: "json",
-            //traditional: true,
-            contentType: "application/json; charset=utf-8",
             success: function (response) {
+                //debugger;
                 $('#selectedanswer').val(response.Answer > 4 || response == 0 ? 0 : response.Answer);
+                //$('#selectedNotes').val(response.Notes);
             },
-            error: function () {
-
+            error: function (err) {
             }
         });
         return parseInt($('#selectedanswer').val());
     },
+    
 };
-
-//var completeFeedback = function () {
-//    $("#status").fadeIn();
-//    $("#preloader").fadeIn();
-//    $.ajax({
-//        url: "/Feedback/CompleteTakeFeedback",
-//        type: "POST",
-//        data: JSON.stringify(request),
-//        dataType: "json",
-//        async: false,
-//        //traditional: true,
-//        contentType: "application/json; charset=utf-8",
-//        success: function (response) {
-//        },
-//        error: function () {
-
-//        }
-//    });
-//    //Common.ajaxSyncPost({
-//    //    url: '../../Feedback/CompleteTakeFeedback',
-//    //    data: { fbinitial: $('#fbinitial').val() },        
-//    //    success: function (response) {
-//    //        var result = $('#resultmode').val();
-//    //        if (result == "True") {
-//    //            window.location = "../../Home/Start";
-//    //        } else {
-//    //            window.location = "../../Results/Results";
-//    //        }           
-//    //    },
-//    //    error: function (err) {           
-//    //    }
-//    //});
-//};
-
 
 var Requests = {
     SavePOEResultRequest: function () {
