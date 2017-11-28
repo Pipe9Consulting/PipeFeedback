@@ -1,5 +1,6 @@
 ﻿$(document).ready(function () {
     LoadScale();
+    selffeedback.LoadSliders();
     $('#module1').addClass('currentPageJssor');
     $('#module2').addClass('nextPageJssor');
     $(".modImg1").mouseover(function () {
@@ -9,18 +10,18 @@
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
         $(this).removeClass('selected');
     });
-    
+
     $(".modImg2").mouseover(function () {
         $(this).addClass('selected');
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2h.png');
-    }).mouseout(function () {        
+    }).mouseout(function () {
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
         $(this).removeClass('selected');
     });
 
     $(".modImg3").mouseover(function () {
         $(this).addClass('selected');
-        $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3h.png');      
+        $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3h.png');
     }).mouseout(function () {
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
         $(this).removeClass('selected');
@@ -88,10 +89,10 @@
     }
     $('.jssora13r').on('click', function (e) {
         //debugger;
-       // alert(parseInt(jssor_1_slider.$CurrentIndex()));
-        
+        // alert(parseInt(jssor_1_slider.$CurrentIndex()));
+
         if (sliderValidation(parseInt(jssor_1_slider.$CurrentIndex()))) {
-                
+
             if (parseInt(jssor_1_slider.$CurrentIndex()) == 0) {
                 $(".modImg2").addClass('selected').siblings('li').removeClass('selected');
                 $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
@@ -114,18 +115,18 @@
             }
             if (parseInt(jssor_1_slider.$CurrentIndex()) == 4) {
                 $(".modImg5").removeClass('selected');
-                $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');               
+                $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
             }
             $('.jssora13l').show();
-           
+
             jssor_1_slider.$Next();
             nextJssor((jssor_1_slider.$CurrentIndex() + 1));
         } else {
             alert('Please finish responding before progressing.');
         }
     });
-    
-    $('.jssora13l').on('click', function (e) {        
+
+    $('.jssora13l').on('click', function (e) {
         if (parseInt(jssor_1_slider.$CurrentIndex()) == 1) {
             $(".modImg1").addClass('selected').siblings('li').removeClass('selected');
             $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1h.png');
@@ -149,25 +150,25 @@
         }
         if (parseInt(jssor_1_slider.$CurrentIndex()) == 5) {
             $(".modImg5").addClass('selected').siblings('li').removeClass('selected');
-            $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5h.png');          
+            $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5h.png');
         }
         $('.jssora13r').show();
         jssor_1_slider.$Prev();
         prevJssor((jssor_1_slider.$CurrentIndex() + 1));
     });
-    
+
 
 
     function sliderValidation(current) {
-       // debugger;
+        // debugger;
         var validate = true;
         if (current == 0) {
             $("#module1").find('.freqscale_bg').each(function () {
-                if ($(this).attr("data-answer") == 0) {                    
+                if ($(this).attr("data-answer") == 0) {
                     validate = false;
-                } 
+                }
             });
-            
+
         }
         if (current == 1) {
             $("#module2").find('.freqscale_bg').each(function () {
@@ -203,7 +204,7 @@
             });
 
         }
-        
+
         return validate;
     }
     function nextJssor(currentPos) {
@@ -217,8 +218,122 @@
         $('#module' + (currentPos - 1)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
         $('#module' + (currentPos - 2)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
     }
-   
+
 });
+
+
+
+var selffeedback = {
+    LoadSliders: function () {
+        debugger;
+        var questionCount = parseInt(43);
+        for (var i = 0; i < questionCount; i++) {
+            //alert(parseInt($("#freqScale" + (i + 1)).attr('data-questionId')));
+            var freqency = selffeedback.loadSelectedAnswer({ data: { 'feedbackId': 0, 'questionId': parseInt($("#freqScale" + (i + 1)).attr('data-questionId')) } });
+            $("#freqScale" + (i + 1)).attr("data-answer", freqency);
+
+            if (freqency != 0) {
+                $("#freqScale" + (i + 1)).find('.freqbtn' + freqency).click();
+            }
+        }
+    },
+    saveQuestionData: function (answer, importance, questionId) {
+        debugger;
+        var savePOEResultRequests = [];
+        var savePOEResultRequest = new Requests.SavePOEResultRequest();
+        savePOEResultRequest.Answer = parseInt(answer);
+        savePOEResultRequest.AnswerType = 1;
+        savePOEResultRequest.ModuleNumber = parseInt($('.selected').attr('data-moduleid'));
+        savePOEResultRequest.QuestionId = parseInt(questionId);
+        savePOEResultRequest.Comment = null;
+        savePOEResultRequest.FeedbackStatus = 1;
+        savePOEResultRequest.CapabilityAnswer = parseInt(0);
+        savePOEResultRequest.UserRating = parseInt(importance);
+        savePOEResultRequest.Notes = 0;
+        savePOEResultRequest.Subject = '';
+
+        savePOEResultRequests.push(savePOEResultRequest);
+        selffeedback.saveResults(savePOEResultRequests);
+    },
+    saveResults: function (request) {
+        //Common.ajaxSyncPost({
+        //    url: '/Feedback/SaveTakePOEResult',
+        //    data: request,
+        //    success: function (response) {
+        //    },
+        //    error: function (err) {
+        //        //window.location = "../Home/ErrorMsg";
+        //    }
+        //});
+        debugger;
+        $.ajax({
+            url: "/Feedback/SaveTakePOEResult",
+            type: "POST",
+            data: JSON.stringify(request),
+            dataType: "json",
+            traditional: true,
+            contentType: "application/json; charset=utf-8",
+            success: function (response) {
+            },
+            error: function () {
+
+            }
+        });
+
+    },
+    //loadSelectedAnswer: function (option) {
+    //    debugger;
+    //    $('#selectedanswer').val(0);
+    //    Common.ajaxsync({
+    //        url: "/Feedback/GetGivenAnswer",
+    //        data: option.data,
+    //        success: function (response) {
+    //            //debugger;
+    //            $('#selectedanswer').val(response.Answer > 4 || response == 0 ? 0 : response.Answer);
+    //            //$('#selectedNotes').val(response.Notes);
+    //        },
+    //        error: function (err) {
+    //        }
+    //    });
+    //    return parseInt($('#selectedanswer').val());
+    //},
+    loadSelectedAnswer: function (option) {
+        //debugger;
+        $('#selectedanswer').val(0);
+        $.ajax({
+            url: "/Feedback/GetGivenAnswer",
+            type: "GET",
+            data: option.data,
+            dataType: "json",
+            traditional: true,
+            contentType: "application/json; charset=utf-8",
+            success: function (response) {
+
+
+            },
+            error: function () {
+
+            }
+        });
+        return parseInt($('#selectedanswer').val());
+    },
+};
+var Requests = { 
+    SavePOEResultRequest: function () {
+        this.UserId = 0;
+        this.ModuleNumber = 0;
+        this.QuestionId = 0;
+        this.Answer = 0;
+        this.Comment = '';
+        this.AnswerType = 1;
+        this.FeedbackId = 0;
+        this.FeedbackStatus = 1;
+        this.Notes = '';
+        this.Subject = '';
+        this.Initials = '';
+    }
+};
+
 function LoadScale() {
     $('.freqbtn1').click(function () {
         $(this).parents('.freqscale_bg').attr("data-answer", 1);
@@ -228,6 +343,7 @@ function LoadScale() {
         $(this).parents('.freqscale_bg').find(".freqbtn2, .freqbtn3, .freqbtn4").removeClass("addcolor");
         $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover2").removeClass("freqscaleover3").removeClass("freqscaleover4");
         $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle2").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
+        selffeedback.saveQuestionData($(this).parents('.freqscale_bg').attr("data-answer"), $(this).parents('.freqscale_bg').attr("data-important"), $(this).parents('.freqscale_bg').attr("data-questionId"));
     });
 
     $('.freqbtn2').click(function () {
@@ -238,6 +354,7 @@ function LoadScale() {
         $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn3, .freqbtn4").removeClass("addcolor");
         $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover3").removeClass("freqscaleover4");
         $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
+        selffeedback.saveQuestionData($(this).parents('.freqscale_bg').attr("data-answer"), $(this).parents('.freqscale_bg').attr("data-important"), $(this).parents('.freqscale_bg').attr("data-questionId"));
     });
 
     $('.freqbtn3').click(function () {
@@ -248,6 +365,7 @@ function LoadScale() {
         $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn2, .freqbtn4").removeClass("addcolor");
         $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover4");
         $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle4");
+        selffeedback.saveQuestionData($(this).parents('.freqscale_bg').attr("data-answer"), $(this).parents('.freqscale_bg').attr("data-important"), $(this).parents('.freqscale_bg').attr("data-questionId"));
     });
 
     $('.freqbtn4').click(function () {
@@ -258,6 +376,7 @@ function LoadScale() {
         $(this).parents('.freqscale_bg').find(".freqbtn1, .freqbtn2, .freqbtn3").removeClass("addcolor");
         $(this).parents('.freqscale_bg').find(".freqadddiv").removeClass("freqscaleover1").removeClass("freqscaleover2").removeClass("freqscaleover3");
         $(this).parents('.freqscale_bg').find(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle3");
+        selffeedback.saveQuestionData($(this).parents('.freqscale_bg').attr("data-answer"), $(this).parents('.freqscale_bg').attr("data-important"), $(this).parents('.freqscale_bg').attr("data-questionId"));
     });
-    
+
 }
