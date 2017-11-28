@@ -170,6 +170,7 @@
     </Compile>
     <Compile Include="Models\DomainData.cs" />
     <Compile Include="Models\DomainRoute.cs" />
+    <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\FeedbackLanding.cs" />
     <Compile Include="Models\ImageProcessing.cs" />
     <Compile Include="Models\LoginRequest.cs" />
