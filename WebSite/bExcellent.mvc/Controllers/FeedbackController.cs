@@ -1402,7 +1402,15 @@ namespace bExcellent.mvc.Controllers
             if (feedbacktype == 1)
             {
                 // CommonController.Log(Session["id"].ToString() + "::" + "ResumeFeedbak-OUT");
-                return RedirectToAction("Detailedview", "Feedback");
+                if (poeid != 34)
+                {
+                    return RedirectToAction("Detailedview", "Feedback");   
+                }
+                else
+                {
+                    return RedirectToAction("SelfFeedback", "TechnicalFeedback");  
+                }
+               
             }
             else
             {
