@@ -214,9 +214,18 @@
 
                 <div class="slidebtn" id="paslide1">
                     <a href="#" class="prev pmodule">Previous</a><a href="#" class="prev p1">Previous</a> <a href="#" class="prev p2">Previous</a><a href="#" class="prev p3">Previous</a>
+                    <a href="#" class="prev p4">Previous</a>
+                    <a href="#" class="prev p5">Previous</a>
+                    <a href="#" class="prev p6">Previous</a>
+                    <a href="#" class="prev p7">Previous</a>
+                     <a href="#" class="prev p8">Previous</a>
                     <div class="pagination">
                     </div>
                     <a href="#" class="nxt nmodule">Next</a><a href="#" class="nxt bn1">Next</a> <a href="#" class="nxt bn2">Next</a><a href="#" class="nxt bn3">Next</a>
+                    <a href="#" class="nxt bn4">Next</a>
+                    <a href="#" class="nxt bn5">Next</a>
+                    <a href="#" class="nxt bn6">Next</a>
+                    <a href="#" class="nxt bn7">Next</a>
                 </div>
                 <div class="chartholder" id="paLevel1">
                 </div>
