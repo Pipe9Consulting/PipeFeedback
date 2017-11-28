@@ -26,7 +26,42 @@ namespace bExcellent.mvc.Controllers
         }
         public ActionResult ManagerFeedback()
         {
-            return View();
+            if (Session["userIds"] != null)
+            {
+                string userIds = Session["userIds"].ToString();
+                var splitUserIds = userIds.Split(',');
+                var useridList = new int[splitUserIds.Length];
+                var roleList = new int[splitUserIds.Length];
+                for (var i = 0; i < splitUserIds.Length; i++)
+                {
+                    useridList[i] = int.Parse(splitUserIds[i].Split('_')[0]);
+                    roleList[i] = int.Parse(splitUserIds[i].Split('_')[1]);
+                }
+                Session["role"] = 3;
+                Session["type"] = 2;
+                CreateManagerFeedback(useridList, roleList);
+            }
+            var mgrFeedback = new bExcellent.mvc.Models.Feedback();
+            var teamList = (CreatedFeedback[])Session["CreatedFeedbacks"];
+            mgrFeedback.TeamMebers = teamList.ToList();
+            return View(mgrFeedback);
+        }
+        [SessionExpireFilter]
+        public void CreateManagerFeedback(int[] userids, int[] roles)
+        {
+            // CommonController.Log(Session["id"].ToString() + "::" + "CreateManagerFeedback-IN");
+            var request = new NewFeedbackRequest
+            {
+                UserId = int.Parse(Session["id"].ToString()),
+                PoeId = int.Parse(Session["SelectedPoe"].ToString()),
+                FeedbackRole = roles,
+                FeedbackType = 2,
+                IsGiveRequest = false,
+                Members = userids
+            };
+
+            CreateFeedback(request);
+            // CommonController.Log(Session["id"].ToString() + "::" + "CreateManagerFeedback-OUT");
         }
         public ActionResult Welcome()
         {

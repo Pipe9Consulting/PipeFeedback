@@ -147,6 +147,7 @@
                     // debugger;
                     //alert('dddd');
                     $('.q3,.q4,.q5,.q6,.q7,.q8').hide();
+                    $('.chartholder .q3,.chartholder .q4,.chartholder .q5,.chartholder .q6,.chartholder .q7,.chartholder .q8').css('margin-left', '-1.3%');
                     $('.q2').show().css('opacity', '0.4');
                     imagenumber = $(this).attr('data-value');
                     licount = $('.selectingArea').length;
@@ -261,13 +262,17 @@ $(document).ready(function () {
         }, 900);
     });
     $('#paslide1 .bn2').click(function () {
-        $(".q3").show();
+       
+        setTimeout(function () {
+            $(".q3").show();
+        }, 200);
         $('.chartholder .q2').animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
         $('.chartholder .q3').animate({ 'margin-left': '-0.3%' }, { duration: 500 }).css('opacity', '2');
         setTimeout(function () {
-            $('.chartholder .q4').animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4').show();
+            $('.chartholder .q4').show().animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4');
         }, 900);
         $('.chartholder .q1').hide();
+        $('.prev,.nxt').hide();
         var pagemax = $('#pagemax').val();
         if (parseInt(pagemax) > 3) {
             $('#paslide1 .bn3').show();
@@ -278,13 +283,16 @@ $(document).ready(function () {
         $('#paslide1 .p3').show();
     });
     $('#paslide1 .bn3').click(function () {
-        $(".q4").show();
+        setTimeout(function () {
+            $(".q4").show();
+        }, 200);
         $('.chartholder .q3').animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
         $('.chartholder .q4').animate({ 'margin-left': '-0.3%' }, { duration: 500 }).css('opacity', '2');
         setTimeout(function () {
-            $('.chartholder .q5').animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4').show();
+            $('.chartholder .q5').show().animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4');
         }, 900);
         $('.chartholder .q1,.chartholder .q2').hide();
+        $('.prev,.nxt').hide();
         var pagemax = $('#pagemax').val();
         if (parseInt(pagemax) > 4) {
             $('#paslide1 .bn4').show();
@@ -296,75 +304,88 @@ $(document).ready(function () {
         $('#paslide1 .p4').show();
     });
     $('#paslide1 .bn4').click(function () {
-        $(".q5").show();
+        setTimeout(function () {
+            $(".q5").show();
+        }, 200);
         $('.chartholder .q4').animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
         $('.chartholder .q5').animate({ 'margin-left': '-0.3%' }, { duration: 500 }).css('opacity', '2');
+       // $('.chartholder .q6').animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4').show();
         setTimeout(function () {
-            $('.chartholder .q6').animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4').show();
+            $('.chartholder .q6').show().animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4');
         }, 900);
         $('.chartholder .q3').hide();
         var pagemax = $('#pagemax').val();
+        $('.prev,.nxt').hide();
         if (parseInt(pagemax) > 5) {
             $('#paslide1 .bn5').show();
         } else {
             $('#paslide1 .nmodule').show();
         }
         $('#paslide1 .bn4').hide();
-        $('##paslide1 .p4').hide();
+        $('#paslide1 .p4').hide();
         $('#paslide1 .p5').show();
     });
     $('#paslide1 .bn5').click(function () {
-        $(".q6").show();
+        setTimeout(function () {
+            $(".q6").show();
+        }, 200);
         $('.chartholder .q5').animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
         $('.chartholder .q6').animate({ 'margin-left': '-0.3%' }, { duration: 500 }).css('opacity', '2');
         setTimeout(function () {
-            $('.chartholder .q7').animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4').show();
+            $('.chartholder .q7').show().animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4');
         }, 900);
         $('.chartholder .q4').hide();
         var pagemax = $('#pagemax').val();
+        $('.prev,.nxt').hide();
         if (parseInt(pagemax) > 6) {
             $('#paslide1 .bn6').show();
         } else {
             $('#paslide1 .nmodule').show();
         }
         $('#paslide1 .bn5').hide();
-        $('##paslide1 .p5').hide();
+        $('#paslide1 .p5').hide();
         $('#paslide1 .p6').show();
     });
     $('#paslide1 .bn6').click(function () {
-        $(".q7").show();
+        setTimeout(function () {
+            $(".q7").show();
+        }, 200);
         $('.chartholder .q6').animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
         $('.chartholder .q7').animate({ 'margin-left': '-0.3%' }, { duration: 500 }).css('opacity', '2');
         setTimeout(function () {
-            $('.chartholder .q8').animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4').show();
+            $('.chartholder .q8').show().animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4');
         }, 900);
         $('.chartholder .q5').hide();
         var pagemax = $('#pagemax').val();
+        $('.prev,.nxt').hide();
         if (parseInt(pagemax) > 7) {
             $('#paslide1 .bn7').show();
         } else {
             $('#paslide1 .nmodule').show();
         }
         $('#paslide1 .bn6').hide();
-        $('##paslide1 .p6').hide();
+        $('#paslide1 .p6').hide();
         $('#paslide1 .p7').show();
     });
     $('#paslide1 .bn7').click(function () {
-        $(".q8").show();
+        setTimeout(function () {
+            $(".q8").show();
+        }, 200);
         $('.chartholder .q7').animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
         $('.chartholder .q8').animate({ 'margin-left': '-0.3%' }, { duration: 500 }).css('opacity', '2');
         setTimeout(function () {
-            $('.chartholder .q9').animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4').show();
+            $('.chartholder .q9').show().animate({ 'margin-left': '-1.3%' }, { duration: 500 }).css('opacity', '0.4');
         }, 900);
         $('.chartholder .q6').hide();
         var pagemax = $('#pagemax').val();
+        $('.prev,.nxt').hide();
         if (parseInt(pagemax) > 8) {
             $('#paslide1 .bn8').show();
         } else {
             $('#paslide1 .nmodule').show();
         }
         $('#paslide1 .bn7').hide();
-        $('##paslide1 .p7').hide();
+        $('#paslide1 .p7').hide();
         $('#paslide1 .p8').show();
     });
     $('#paslide1 .p2').click(function () {
@@ -386,15 +407,85 @@ $(document).ready(function () {
     $('#paslide1 .p3').click(function () {
         $('.prev,.nxt').hide();
         $('#paslide1 .p2').show();
-        if ($('#pagemax').val() > 2) {
+        if ($('#pagemax').val() > 3) {
             $('#paslide1 .bn2').show();
         }
-        $('.chartholder .q2').show("slow");
+       // $('.chartholder .q2').show();
         $('.chartholder .q4').hide();
         $('.chartholder .q2').animate({ 'margin-left': '-2%' }, { duration: 1000 }).css('opacity', '2');
-        $('.chartholder .q3').animate({ 'margin-left': '-1.3%' }, { duration: 1000 }).css('opacity', '0.4');
+        $('.chartholder .q3').animate({ 'margin-left': '-1.3%' }, { duration: 1700 }).css('opacity', '0.4');
         setTimeout(function () {
             $('.chartholder .q1').show().animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
+        }, 600);
+    });
+    $('#paslide1 .p4').click(function () {
+        $('.prev,.nxt').hide();
+        $('#paslide1 .p3').show();
+        if ($('#pagemax').val() > 4) {
+            $('#paslide1 .bn3').show();
+        }
+       // $('.chartholder .q2').show("slow");
+        $('.chartholder .q5').hide();
+        $('.chartholder .q3').animate({ 'margin-left': '-2%' }, { duration: 1000 }).css('opacity', '2');
+        $('.chartholder .q4').animate({ 'margin-left': '-1.3%' }, { duration: 1700 }).css('opacity', '0.4');
+        setTimeout(function () {
+            $('.chartholder .q2').show().animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
+        }, 600);
+    });
+    $('#paslide1 .p5').click(function () {
+        $('.prev,.nxt').hide();
+        $('#paslide1 .p4').show();
+        if ($('#pagemax').val() > 5) {
+            $('#paslide1 .bn4').show();
+        }
+        // $('.chartholder .q2').show("slow");
+        $('.chartholder .q6').hide();
+        $('.chartholder .q4').animate({ 'margin-left': '-2%' }, { duration: 1000 }).css('opacity', '2');
+        $('.chartholder .q5').animate({ 'margin-left': '-1.3%' }, { duration: 1700 }).css('opacity', '0.4');
+        setTimeout(function () {
+            $('.chartholder .q3').show().animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
+        }, 600);
+    });
+    $('#paslide1 .p6').click(function () {
+        $('.prev,.nxt').hide();
+        $('#paslide1 .p5').show();
+        if ($('#pagemax').val() > 5) {
+            $('#paslide1 .bn5').show();
+        }
+        // $('.chartholder .q2').show("slow");
+        $('.chartholder .q7').hide();
+        $('.chartholder .q5').animate({ 'margin-left': '-2%' }, { duration: 1000 }).css('opacity', '2');
+        $('.chartholder .q6').animate({ 'margin-left': '-1.3%' }, { duration: 1700 }).css('opacity', '0.4');
+        setTimeout(function () {
+            $('.chartholder .q4').show().animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
+        }, 600);
+    });
+    $('#paslide1 .p7').click(function () {
+        $('.prev,.nxt').hide();
+        $('#paslide1 .p6').show();
+        if ($('#pagemax').val() > 5) {
+            $('#paslide1 .bn6').show();
+        }
+        // $('.chartholder .q2').show("slow");
+        $('.chartholder .q8').hide();
+        $('.chartholder .q6').animate({ 'margin-left': '-2%' }, { duration: 1000 }).css('opacity', '2');
+        $('.chartholder .q7').animate({ 'margin-left': '-1.3%' }, { duration: 1700 }).css('opacity', '0.4');
+        setTimeout(function () {
+            $('.chartholder .q5').show().animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
+        }, 600);
+    });
+    $('#paslide1 .p8').click(function () {
+        $('.prev,.nxt').hide();
+        $('#paslide1 .p7').show();
+        if ($('#pagemax').val() > 5) {
+            $('#paslide1 .bn7').show();
+        }
+        // $('.chartholder .q2').show("slow");
+        //$('.chartholder .q8').hide();
+        $('.chartholder .q7').animate({ 'margin-left': '-2%' }, { duration: 1000 }).css('opacity', '2');
+        $('.chartholder .q8').animate({ 'margin-left': '-1.3%' }, { duration: 1700 }).css('opacity', '0.4');
+        setTimeout(function () {
+            $('.chartholder .q6').show().animate({ 'margin-left': '-37%' }, { duration: 1000 }).css('opacity', '0.4');
         }, 600);
     });
     $('#paslide1 .nmodule').click(function () {
@@ -402,7 +493,7 @@ $(document).ready(function () {
     });
     $('#paslide1 .pmodule').click(function () {
         $('.selectedIndicator').prev('li').click();
-        //alert();
+       // alert('ss');
         var level = $('.selectedIndicator').attr('data-value');
         var pageLoad = $('#paLevel' + level).find('.chartslide').find('.slide').length;
         if (pageLoad == 2) {
