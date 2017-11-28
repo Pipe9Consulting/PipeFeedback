@@ -143,7 +143,8 @@ var devLanding = {
                 $('#clickProgress').on('click', function () {
                     var selectedPoe = parseInt($('#selectedPoe').val());
                    // if (poe == 15 || poe == 16 || poe == 17) {
-                        window.location = "../Development/Progress";
+                    // window.location = "../Development/Progress";
+                    window.location = "../TechnicalFeedback/Progress";
                    // }
                 });
             },
