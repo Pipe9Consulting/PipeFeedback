@@ -228,7 +228,7 @@
     }
 
 
-    $("#btnSubmitSign").on('click', function () {
+    $("#btnSubmitManSign").on('click', function () {
         //debugger;
         if (validateIntial()) {
             //$("#completeModal").show();
@@ -281,7 +281,7 @@ var teamFeedbackFb = {
         }
     },
     saveQuestionData: function (answer, important, questionId, feedbackId, userId) {
-        //debugger;
+        debugger;
         var savePOEResultRequests = [];
         var savePOEResultRequest = new Requests.SavePOEResultRequest();
         savePOEResultRequest.Answer = parseInt(answer);
