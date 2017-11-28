@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     $("#status").fadeIn();
     $("#preloader").delay(100).fadeIn("slow");
+   
     $('#coachingDate').datepicker({
         dateFormat: "yy-mm-dd",
         minDate: 0

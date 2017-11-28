@@ -69,7 +69,7 @@
                         <h2>Priorities</h2>
                         <div class="develop_content">
                             <p id="progressCont">View your Devlopment Priorities.</p>
-                            <a href="../Development/Priorities">Click Here</a>
+                            <a href="../TechnicalFeedback/Priorities">Click Here</a>
                         </div>
 
 
