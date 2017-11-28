@@ -96,7 +96,7 @@
 
 /******************************************/
 .content_progress {
-    height: 450px;
+    height: 350px;
 }
 
 body {
@@ -524,7 +524,6 @@ h1 {
         line-height: 1;
         border-bottom: 1px solid #666;
         text-transform: uppercase;
-
     }
 
 
@@ -585,6 +584,7 @@ h1 {
     width: 30%;
     z-index: 2147483647;
     top: 18%;
+    display: none;
 }
 
 
