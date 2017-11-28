@@ -5,919 +5,1064 @@
 
 <link href="~/Styles/self-product.css" rel="stylesheet" />
 <input type="hidden" id="selectedanswer" />
-    <div class="sixteen wide column breadMenu">
-        <div class="ui breadcrumb">
-            <a href="../Common/Index">Home</a> <a>></a><a href="../Feedback/Feedback?Mode=1">Feedback</a> <a>></a><a> Self-Feedback</a>
-        </div>
+<div class="sixteen wide column breadMenu">
+    <div class="ui breadcrumb">
+        <a href="../Common/Index">Home</a> <a>></a><a href="../Feedback/Feedback?Mode=1">Feedback</a> <a>></a><a> Self-Feedback</a>
     </div>
- <div class="pageholder" id="dv" style="display: block;">
-        <div class="customertiles" id="aboutContent">
-            <h1>
-                Give Feedback
-            </h1>
-
-            <ul class="poemodule">
-               @* <img src="~/Images/icons/AzureInfraTsp-Product5h.png" />*@
-                
-                <li class="selected modImg1" data-moduleId="210"><img src="~/Images/icons/AzureInfraTsp-Product1h.png" /><p>Microsoft Azure</p></li>
-                <li class="modImg2" data-moduleId="211"><img src="~/Images/icons/AzureInfraTsp-Product2.png" /><p>Security</p></li>
-                <li class="modImg3" data-moduleId="212"><img src="~/Images/icons/AzureInfraTsp-Product3.png" /><p>Operations &amp; Management </p></li>
-                <li class="modImg4" data-moduleId="213"><img src="~/Images/icons/AzureInfraTsp-Product4.png" /><p>Developer Tools</p></li>
-                <li class="modImg5" data-moduleId="214"><img src="~/Images/icons/AzureInfraTsp-Product5.png" /><p>Debugging and Performance</p></li>
-               @* <li><img src="../Images/icons/SolutionSalesSpecialist6.png"><p>Continuous Learning and Professional Growth</p></li>*@
-            </ul>
-
-
-        </div>
-        <h1 id="poemoduleName">Planning</h1>
-
-        <div class="contentholder">
-            <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 400px; overflow: hidden; visibility: hidden;">
-                <!-- Loading Screen -->
-                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                </div>
-                <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 400px; overflow: hidden;">
-                    <div data-p="112.50" style="display: none;" id="module1">
-                        <div class="content_progress mCustomScrollbar">
-                            <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Azure Active Directory</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Azure Active Directory</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1062" id="freqScale1">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Single Sign-On</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1063" id="freqScale2">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Azure IoT Suite</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Azure IoT Suite</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1064" id="freqScale3">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Azure Notification Hubs</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Notification Hub</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1065" id="freqScale4">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Azure Portal</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Administration</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1066" id="freqScale5">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Azure PowerShell</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1067" id="freqScale6">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Azure Security Center</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Security Center</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1068" id="freqScale7">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Azure Service Bus</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Azure Service Bus</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1069" id="freqScale8">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Compute</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Azure Container Service</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1070" id="freqScale9">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Batch</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1071" id="freqScale10">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">3</p><p class="moduleqncontent">Virtual Machine Scale Sets</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1072" id="freqScale11">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">4</p><p class="moduleqncontent">Virtual Machines</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1073" id="freqScale12">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">5</p><p class="moduleqncontent">Azure App Service</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1074" id="freqScale13">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">6</p><p class="moduleqncontent">Cloud Services</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1075" id="freqScale14">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">7</p><p class="moduleqncontent">Service Fabric</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1076" id="freqScale15">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Cortana Intelligence Suite</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Cortana Intelligence</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1077" id="freqScale16">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Databases</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Redis Cache</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1078" id="freqScale17">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Document DB</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1079" id="freqScale18">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">3</p><p class="moduleqncontent">SQL Database</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1080" id="freqScale19">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Networking</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Application Gateway</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1081" id="freqScale20">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">ExpressRoute</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1082" id="freqScale21">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">3</p><p class="moduleqncontent">Virtual Network</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1083" id="freqScale22">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Operations Management Suite</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Azure Backup</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1084" id="freqScale23">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Azure Site Recovery</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1085" id="freqScale24">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">3</p><p class="moduleqncontent">Operations Management Suite</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1086" id="freqScale25">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Storage</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Storage Accounts</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1087" id="freqScale26">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">StorSimple</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1088" id="freqScale27">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">3</p><p class="moduleqncontent">Blob</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1089" id="freqScale28">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">4</p><p class="moduleqncontent">Table Storage</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1090" id="freqScale29">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Developer Tools</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Azure Tools for Visual Studio</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1091" id="freqScale30">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Command Line Tools</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1092" id="freqScale31">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="moduleqn">
-                                    <p class="qn">3</p><p class="moduleqncontent">Docker Tools</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <img src="~/Images/Product/cap_icon.png" />
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1093" id="freqScale32">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
-
-
-
-
-
-                    </div>
-
-                    <div data-p="112.50" style="display: none;" id="module2">
-                        <div class="content_progress mCustomScrollbar">
-                            <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Azure Rights Management</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Maintenance</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1094" id="freqScale33">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Configuration</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1095" id="freqScale34">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Operations Management Suite</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Advanced Threat Analytics (ATA) Center</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1096" id="freqScale35">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Installation/Configuration</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1097" id="freqScale36">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div data-p="112.50" style="display: none;" id="module3">
-                        <div class="content_progress mCustomScrollbar">
-                            <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
-                            
-
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Operations Management Suite</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Installation by not Using System Center Operations Manager</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1098" id="freqScale37">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-
-                                 <div class="moduleqn">
-                                    <p class="qn">2</p><p class="moduleqncontent">Installation by Using System Center Operations Manager</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1099" id="freqScale38">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">3</p><p class="moduleqncontent">Non Operations Manager Integrated</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1100" id="freqScale39">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">4</p><p class="moduleqncontent">System Center Operations Manager Integrated</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1101" id="freqScale40">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-p="112.50" style="display: none;" id="module4">
-                        <div class="content_progress mCustomScrollbar">
-                            <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Team Foundation Server</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Team Foundation Server</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1102" id="freqScale41">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                              
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div data-p="112.50" style="display: none;" id="module5">
-                        <div class="content_progress mCustomScrollbar">
-                            <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
-                            <div class="supqnscaleset">
-                                <h2 class="productsubtitle">Debugger</h2>
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Client Side Application Tools</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1103" id="freqScale42">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-                                <div class="moduleqn">
-                                    <p class="qn">1</p><p class="moduleqncontent">Web Tools</p>
-                                </div>
-                                <div class="qnscale">
-                                    <div class="freqicon"><img src="~/Images/Product/cap_icon.png" /></div>
-                                    <div class="freqscale_bg" data-answer="0" data-important="3" data-questionId="1104" id="freqScale43">
-                                        <div class="freqscale_over">
-                                            <button class="freqbtn1">Introductory</button>
-                                            <button class="freqbtn2">Intermediate</button>
-                                            <button class="freqbtn3">Experienced</button>
-                                            <button class="freqbtn4">Expert</button>
-                                        </div>
-                                        <div class="freqscale_handle"></div>
-                                        <div class="freqadddiv"></div>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                     <div data-p="112.50" style="display: none;" id="signpage">
-                       <h2>sign page</h2>
-                    </div>
-                     <div data-p="112.50" style="display: none;" id="emptyfrloop">
-                       
-                    </div>
-                    <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
-                </div>
-                <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;" data-autocenter="1">
-                    <div data-u="prototype" style="width:12px;height:12px;"></div>
-                </div>
-          @*      data-u="arrowleft"
-                data-u="arrowright"*@
-                <span  class="jssora13l jssorCom" style="top:0px;left:30px;width:40px;height:50px;" data-autocenter="2"></span>
-                <span  class="jssora13r jssorCom" style="top:0px;right:30px;width:40px;height:50px;" data-autocenter="2"></span>
+</div>
+<div class="pageholder" id="dv" style="display: block;">
+    <div class="customertiles" id="aboutContent">
+        <h1>Give Feedback
+        </h1>
+
+        <ul class="poemodule">
+            @* <img src="~/Images/icons/AzureInfraTsp-Product5h.png" />*@
+
+            <li class="selected modImg1" data-moduleid="210">
+                <img src="~/Images/icons/AzureInfraTsp-Product1h.png" /><p>Microsoft Azure</p>
+            </li>
+            <li class="modImg2" data-moduleid="211">
+                <img src="~/Images/icons/AzureInfraTsp-Product2.png" /><p>Security</p>
+            </li>
+            <li class="modImg3" data-moduleid="212">
+                <img src="~/Images/icons/AzureInfraTsp-Product3.png" /><p>Operations &amp; Management </p>
+            </li>
+            <li class="modImg4" data-moduleid="213">
+                <img src="~/Images/icons/AzureInfraTsp-Product4.png" /><p>Developer Tools</p>
+            </li>
+            <li class="modImg5" data-moduleid="214">
+                <img src="~/Images/icons/AzureInfraTsp-Product5.png" /><p>Debugging and Performance</p>
+            </li>
+            @* <li><img src="../Images/icons/SolutionSalesSpecialist6.png"><p>Continuous Learning and Professional Growth</p></li>*@
+        </ul>
+
+
+    </div>
+    <h1 id="poemoduleName">Planning</h1>
+
+    <div class="contentholder">
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 400px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position: absolute; display: block; background: url('img/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
             </div>
-         
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 400px; overflow: hidden;">
+                <div data-p="112.50" style="display: none;" id="module1">
+                    <div class="content_progress mCustomScrollbar">
+                        <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Azure Active Directory</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Azure Active Directory</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1062" id="freqScale1">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Single Sign-On</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1063" id="freqScale2">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Azure IoT Suite</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Azure IoT Suite</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1064" id="freqScale3">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Azure Notification Hubs</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Notification Hub</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1065" id="freqScale4">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Azure Portal</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Administration</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1066" id="freqScale5">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Azure PowerShell</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1067" id="freqScale6">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Azure Security Center</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Security Center</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1068" id="freqScale7">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Azure Service Bus</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Azure Service Bus</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1069" id="freqScale8">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Compute</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Azure Container Service</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1070" id="freqScale9">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Batch</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1071" id="freqScale10">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">3</p>
+                                <p class="moduleqncontent">Virtual Machine Scale Sets</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1072" id="freqScale11">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">4</p>
+                                <p class="moduleqncontent">Virtual Machines</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1073" id="freqScale12">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">5</p>
+                                <p class="moduleqncontent">Azure App Service</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1074" id="freqScale13">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">6</p>
+                                <p class="moduleqncontent">Cloud Services</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1075" id="freqScale14">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">7</p>
+                                <p class="moduleqncontent">Service Fabric</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1076" id="freqScale15">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Cortana Intelligence Suite</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Cortana Intelligence</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1077" id="freqScale16">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Databases</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Redis Cache</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1078" id="freqScale17">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Document DB</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1079" id="freqScale18">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">3</p>
+                                <p class="moduleqncontent">SQL Database</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1080" id="freqScale19">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Networking</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Application Gateway</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1081" id="freqScale20">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">ExpressRoute</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1082" id="freqScale21">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">3</p>
+                                <p class="moduleqncontent">Virtual Network</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1083" id="freqScale22">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Operations Management Suite</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Azure Backup</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1084" id="freqScale23">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Azure Site Recovery</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1085" id="freqScale24">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">3</p>
+                                <p class="moduleqncontent">Operations Management Suite</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1086" id="freqScale25">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Storage</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Storage Accounts</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1087" id="freqScale26">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">StorSimple</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1088" id="freqScale27">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">3</p>
+                                <p class="moduleqncontent">Blob</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1089" id="freqScale28">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">4</p>
+                                <p class="moduleqncontent">Table Storage</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1090" id="freqScale29">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Developer Tools</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Azure Tools for Visual Studio</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1091" id="freqScale30">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Command Line Tools</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1092" id="freqScale31">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="moduleqn">
+                                <p class="qn">3</p>
+                                <p class="moduleqncontent">Docker Tools</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1093" id="freqScale32">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div data-p="112.50" style="display: none;" id="module2">
+                    <div class="content_progress mCustomScrollbar">
+                        <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Azure Rights Management</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Maintenance</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1094" id="freqScale33">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Configuration</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1095" id="freqScale34">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Operations Management Suite</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Advanced Threat Analytics (ATA) Center</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1096" id="freqScale35">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Installation/Configuration</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1097" id="freqScale36">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div data-p="112.50" style="display: none;" id="module3">
+                    <div class="content_progress mCustomScrollbar">
+                        <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
+
+
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Operations Management Suite</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Installation by not Using System Center Operations Manager</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1098" id="freqScale37">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="moduleqn">
+                                <p class="qn">2</p>
+                                <p class="moduleqncontent">Installation by Using System Center Operations Manager</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1099" id="freqScale38">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">3</p>
+                                <p class="moduleqncontent">Non Operations Manager Integrated</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1100" id="freqScale39">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">4</p>
+                                <p class="moduleqncontent">System Center Operations Manager Integrated</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1101" id="freqScale40">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-p="112.50" style="display: none;" id="module4">
+                    <div class="content_progress mCustomScrollbar">
+                        <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Team Foundation Server</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Team Foundation Server</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1102" id="freqScale41">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-p="112.50" style="display: none;" id="module5">
+                    <div class="content_progress mCustomScrollbar">
+                        <h3 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h3>
+                        <div class="supqnscaleset">
+                            <h2 class="productsubtitle">Debugger</h2>
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Client Side Application Tools</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1103" id="freqScale42">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+                            <div class="moduleqn">
+                                <p class="qn">1</p>
+                                <p class="moduleqncontent">Web Tools</p>
+                            </div>
+                            <div class="qnscale">
+                                <div class="freqicon">
+                                    <img src="~/Images/Product/cap_icon.png" />
+                                </div>
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1104" id="freqScale43">
+                                    <div class="freqscale_over">
+                                        <button class="freqbtn1">Introductory</button>
+                                        <button class="freqbtn2">Intermediate</button>
+                                        <button class="freqbtn3">Experienced</button>
+                                        <button class="freqbtn4">Expert</button>
+                                    </div>
+                                    <div class="freqscale_handle"></div>
+                                    <div class="freqadddiv"></div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div data-p="112.50" style="display: none;" id="signpage">
+
+                    <div class="signarea">
+                        <h1>Feedback Completed</h1>
+                        <p>Congratulations! You have successfully completed Team-Feedback. Team-Feedback is only used for development purposes, so please confirm, by typing your name into the signature box, that your responses are as honest and objective as possible. If you need to go back to review or revise any of your responses, you may do so now. Once you are satisfied, proceed by clicking “Submit.” Thank you for your participation!</p>
+                        <p><b>Billy Graham</b></p>
+                        <input name="textbox" id="fbinitial" type="text"><p><span></span></p>
+                        <a href="#">Submit</a>
+
+                    </div>
+                </div>
+                <div data-p="112.50" style="display: none;" id="emptyfrloop">
+                </div>
+                <a data-u="add" href="http://www.jssor.com" style="display: none">Jssor Slider</a>
+            </div>
+            <div data-u="navigator" class="jssorb01" style="bottom: 16px; right: 16px;" data-autocenter="1">
+                <div data-u="prototype" style="width: 12px; height: 12px;"></div>
+            </div>
+            @*      data-u="arrowleft"
+                data-u="arrowright"*@
+            <span class="jssora13l jssorCom" style="top: 0px; left: 30px; width: 40px; height: 50px;" data-autocenter="2"></span>
+            <span class="jssora13r jssorCom" style="top: 0px; right: 30px; width: 40px; height: 50px;" data-autocenter="2"></span>
         </div>
+
     </div>
+</div>
 
 
 
@@ -926,10 +1071,10 @@
 
 
 @section scripts{
-   @* <script src="~/Scripts/ref/common.js"></script>
+    @* <script src="~/Scripts/ref/common.js"></script>
     <script src="~/Scripts/ref/Requests.js"></script>*@
     <script src="~/Scripts/ref/Common/jquery-2.1.4.min.js"></script>
     <script src="~/Scripts/ref/Common/jssor.slider.min.js"></script>
-    <script src="~/Scripts/ref/Common/jquery.mCustomScrollbar.js"></script>   
-    <script src="~/Scripts/ref/TechnicalFeedback/SelfFeedback.js"></script> 
-    }
+    <script src="~/Scripts/ref/Common/jquery.mCustomScrollbar.js"></script>
+    <script src="~/Scripts/ref/TechnicalFeedback/SelfFeedback.js"></script>
+}

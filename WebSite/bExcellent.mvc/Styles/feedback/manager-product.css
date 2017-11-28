@@ -460,3 +460,50 @@ h1 {
 .addcolor {
     color: #fff !important;
 }
+
+
+.signarea {
+    border: 1px solid #666;
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+    float:left;
+    height:auto;
+}
+
+    .signarea h1 {
+        font-size: 150%;
+        margin: .5% 0 0 0;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .signarea p {
+        font-size: 100%;
+        margin: .5% 0 0 0;
+        color: #000;
+        line-height: 1.5;
+    }
+
+        .signarea p b {
+            color: #000;
+            font-size: 120%;
+        }
+
+    .signarea input {
+        border: 1px solid #000;
+        background: #fff;
+        color: #000;
+        padding: .5%;
+    }
+
+    .signarea a {
+        background: #fff;
+        text-decoration: none;
+        border: 1px solid #249fa4;
+        font-size: 130%;
+        padding: .5% 2%;
+        color: #249fa4;
+        cursor: pointer;
+        float: right;
+    }
