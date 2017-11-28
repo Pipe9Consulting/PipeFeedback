@@ -87,10 +87,7 @@
     if (parseInt(jssor_1_slider.$CurrentIndex()) == 4) {
         $('.jssora13r').hide();
     }
-    $('.jssora13r').on('click', function (e) {
-        //debugger;
-        // alert(parseInt(jssor_1_slider.$CurrentIndex()));
-
+    $('.jssora13r').on('click', function (e) {       
         if (sliderValidation(parseInt(jssor_1_slider.$CurrentIndex()))) {
 
             if (parseInt(jssor_1_slider.$CurrentIndex()) == 0) {
@@ -159,8 +156,7 @@
 
 
 
-    function sliderValidation(current) {
-        // debugger;
+    function sliderValidation(current) {       
         var validate = true;
         if (current == 0) {
             $("#module1").find('.freqscale_bg').each(function () {
@@ -224,11 +220,9 @@
 
 
 var selffeedback = {
-    LoadSliders: function () {
-        debugger;
+    LoadSliders: function () {      
         var questionCount = parseInt(43);
-        for (var i = 0; i < questionCount; i++) {
-            //alert(parseInt($("#freqScale" + (i + 1)).attr('data-questionId')));
+        for (var i = 0; i < questionCount; i++) {           
             var freqency = selffeedback.loadSelectedAnswer({ data: { 'feedbackId': 0, 'questionId': parseInt($("#freqScale" + (i + 1)).attr('data-questionId')) } });
             $("#freqScale" + (i + 1)).attr("data-answer", freqency);
 
@@ -237,8 +231,7 @@ var selffeedback = {
             }
         }
     },
-    saveQuestionData: function (answer, importance, questionId) {
-        debugger;
+    saveQuestionData: function (answer, importance, questionId) {        
         var savePOEResultRequests = [];
         var savePOEResultRequest = new Requests.SavePOEResultRequest();
         savePOEResultRequest.Answer = parseInt(answer);
@@ -265,7 +258,7 @@ var selffeedback = {
         //        //window.location = "../Home/ErrorMsg";
         //    }
         //});
-        debugger;
+        //debugger;
         $.ajax({
             url: "/Feedback/SaveTakePOEResult",
             type: "POST",
@@ -297,19 +290,20 @@ var selffeedback = {
     //    });
     //    return parseInt($('#selectedanswer').val());
     //},
-    loadSelectedAnswer: function (option) {
-        //debugger;
+    loadSelectedAnswer: function (option) {       
         $('#selectedanswer').val(0);
+        var answer = 0;
         $.ajax({
             url: "/Feedback/GetGivenAnswer",
+            cache: false,
             type: "GET",
+            async: false,
             data: option.data,
             dataType: "json",
-            traditional: true,
+            //traditional: true,
             contentType: "application/json; charset=utf-8",
-            success: function (response) {
-
-
+            success: function (response) {              
+                $('#selectedanswer').val(response.Answer > 4 || response == 0 ? 0 : response.Answer);
             },
             error: function () {
 
