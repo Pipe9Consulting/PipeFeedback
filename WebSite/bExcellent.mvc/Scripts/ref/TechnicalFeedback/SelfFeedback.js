@@ -87,7 +87,7 @@
     if (parseInt(jssor_1_slider.$CurrentIndex()) == 4) {
         $('.jssora13r').hide();
     }
-    $('.jssora13r').on('click', function (e) {       
+    $('.jssora13r').on('click', function (e) {
         if (sliderValidation(parseInt(jssor_1_slider.$CurrentIndex()))) {
 
             if (parseInt(jssor_1_slider.$CurrentIndex()) == 0) {
@@ -156,7 +156,7 @@
 
 
 
-    function sliderValidation(current) {       
+    function sliderValidation(current) {
         var validate = true;
         if (current == 0) {
             $("#module1").find('.freqscale_bg').each(function () {
@@ -215,14 +215,23 @@
         $('#module' + (currentPos - 2)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
     }
 
+    function submitfeedback() {
+        $("#status").fadeIn();
+        $("#preloader").fadeIn();
+        setTimeout(function () {
+            details_feedback.completefeedback();
+
+        }, 1000);
+    }
+
 });
 
 
 
 var selffeedback = {
-    LoadSliders: function () {      
+    LoadSliders: function () {
         var questionCount = parseInt(43);
-        for (var i = 0; i < questionCount; i++) {           
+        for (var i = 0; i < questionCount; i++) {
             var freqency = selffeedback.loadSelectedAnswer({ data: { 'feedbackId': 0, 'questionId': parseInt($("#freqScale" + (i + 1)).attr('data-questionId')) } });
             $("#freqScale" + (i + 1)).attr("data-answer", freqency);
 
@@ -231,7 +240,7 @@ var selffeedback = {
             }
         }
     },
-    saveQuestionData: function (answer, importance, questionId) {        
+    saveQuestionData: function (answer, importance, questionId) {
         var savePOEResultRequests = [];
         var savePOEResultRequest = new Requests.SavePOEResultRequest();
         savePOEResultRequest.Answer = parseInt(answer);
@@ -290,7 +299,7 @@ var selffeedback = {
     //    });
     //    return parseInt($('#selectedanswer').val());
     //},
-    loadSelectedAnswer: function (option) {       
+    loadSelectedAnswer: function (option) {
         $('#selectedanswer').val(0);
         var answer = 0;
         $.ajax({
@@ -302,7 +311,7 @@ var selffeedback = {
             dataType: "json",
             //traditional: true,
             contentType: "application/json; charset=utf-8",
-            success: function (response) {              
+            success: function (response) {
                 $('#selectedanswer').val(response.Answer > 4 || response == 0 ? 0 : response.Answer);
             },
             error: function () {
@@ -312,7 +321,42 @@ var selffeedback = {
         return parseInt($('#selectedanswer').val());
     },
 };
-var Requests = { 
+
+var completeFeedback = function () {
+    $("#status").fadeIn();
+    $("#preloader").fadeIn();
+    $.ajax({
+        url: "/Feedback/CompleteTakeFeedback",
+        type: "POST",
+        data: JSON.stringify(request),
+        dataType: "json",
+        async: false,
+        //traditional: true,
+        contentType: "application/json; charset=utf-8",
+        success: function (response) {
+        },
+        error: function () {
+
+        }
+    });
+    //Common.ajaxSyncPost({
+    //    url: '../../Feedback/CompleteTakeFeedback',
+    //    data: { fbinitial: $('#fbinitial').val() },        
+    //    success: function (response) {
+    //        var result = $('#resultmode').val();
+    //        if (result == "True") {
+    //            window.location = "../../Home/Start";
+    //        } else {
+    //            window.location = "../../Results/Results";
+    //        }           
+    //    },
+    //    error: function (err) {           
+    //    }
+    //});
+};
+
+
+var Requests = {
     SavePOEResultRequest: function () {
         this.UserId = 0;
         this.ModuleNumber = 0;
@@ -328,6 +372,30 @@ var Requests = {
     }
 };
 
+
+function validateIntial() {
+    
+    var trimtext = $('#fbinitial').val().trim();
+    //var poeid = $('#selectPoe').val();
+    
+    if (trimtext != '') {
+        // alert(trimtext);
+        var regex = new RegExp("^[a-zA-Z ]+$");
+        if (regex.test(trimtext)) {
+            return true;
+        } else {
+            $('#errmsg_cont').text("Special characters are not allowed in this field");
+            $('#signsubmit').show();          
+            return false;
+        }
+    } else {
+        $('#errmsg_cont').text("Please enter your name");
+        $('#signsubmit').show();        
+        return false;
+    }
+
+
+}
 function LoadScale() {
     $('.freqbtn1').click(function () {
         $(this).parents('.freqscale_bg').attr("data-answer", 1);
