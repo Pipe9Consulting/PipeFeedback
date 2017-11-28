@@ -119,7 +119,9 @@
             jssor_1_slider.$Next();
             nextJssor((jssor_1_slider.$CurrentIndex() + 1));
         } else {
-            alert('Please finish responding before progressing.');
+            $('#errmsg_cont').text("Please finish responding before progressing.");
+            $('#signsubmit').modal('show');
+            //alert('Please finish responding before progressing.');
         }
     });
 
@@ -215,14 +217,90 @@
         $('#module' + (currentPos - 2)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
     }
 
-    function submitfeedback() {
-        $("#status").fadeIn();
-        $("#preloader").fadeIn();
-        setTimeout(function () {
-            details_feedback.completefeedback();
 
-        }, 1000);
+    $("#btnSubmitSign").on('click', function () {
+        //debugger;
+        if (validateIntial()) {
+            $("#completeModal").modal('show');
+        }
+    });
+    $("#btnCompleteOk").on('click', function () {
+        $("#completeModal").modal('hide');
+        completeFeedback();       
+    });
+
+    function validateIntial() {
+        //debugger;
+        var trimtext = $('#fbinitial').val().trim();
+        //var poeid = $('#selectPoe').val();
+
+        if (trimtext != '') {
+            // alert(trimtext);
+            var regex = new RegExp("^[a-zA-Z ]+$");
+            if (regex.test(trimtext)) {
+                return true;
+            } else {
+                $('#errmsg_cont').text("Special characters are not allowed in this field");
+                $('#signsubmit').modal('show');
+                return false;
+            }
+        } else {
+            $('#errmsg_cont').text("Please enter your name");
+            $('#signsubmit').modal('show');
+            return false;
+        }
     }
+
+
+    function completeFeedback() {
+        //$("#status").fadeIn();
+        //$("#preloader").fadeIn();
+        $.ajax({
+            url: "/Feedback/CompleteTakeFeedback",
+            type: "POST",
+            data: JSON.stringify({ 'fbinitial': $('#fbinitial').val() }),
+            dataType: "json",
+            async: false,
+            //traditional: true,
+            contentType: "application/json; charset=utf-8",
+            success: function (response) {
+                debugger;
+                //alert($('#resultmode').val());
+                var result = $('#resultmode').val();
+                        if (result == "True") {
+                            window.location = "../../Home/Start";
+                        } else {
+                            window.location = "../../Results/Results";
+                        }
+                        
+            },
+            error: function () {
+
+            }
+        });
+        //Common.ajaxSyncPost({
+        //    url: '../../Feedback/CompleteTakeFeedback',
+        //    data: { fbinitial: $('#fbinitial').val() },        
+        //    success: function (response) {
+        //        var result = $('#resultmode').val();
+        //        if (result == "True") {
+        //            window.location = "../../Home/Start";
+        //        } else {
+        //            window.location = "../../Results/Results";
+        //        }           
+        //    },
+        //    error: function (err) {           
+        //    }
+        //});
+    };
+    //function submitfeedback() {
+    //    $("#status").fadeIn();
+    //    $("#preloader").fadeIn();
+    //    setTimeout(function () {
+    //        completefeedback();
+
+    //    }, 1000);
+    //}
 
 });
 
@@ -322,38 +400,38 @@ var selffeedback = {
     },
 };
 
-var completeFeedback = function () {
-    $("#status").fadeIn();
-    $("#preloader").fadeIn();
-    $.ajax({
-        url: "/Feedback/CompleteTakeFeedback",
-        type: "POST",
-        data: JSON.stringify(request),
-        dataType: "json",
-        async: false,
-        //traditional: true,
-        contentType: "application/json; charset=utf-8",
-        success: function (response) {
-        },
-        error: function () {
+//var completeFeedback = function () {
+//    $("#status").fadeIn();
+//    $("#preloader").fadeIn();
+//    $.ajax({
+//        url: "/Feedback/CompleteTakeFeedback",
+//        type: "POST",
+//        data: JSON.stringify(request),
+//        dataType: "json",
+//        async: false,
+//        //traditional: true,
+//        contentType: "application/json; charset=utf-8",
+//        success: function (response) {
+//        },
+//        error: function () {
 
-        }
-    });
-    //Common.ajaxSyncPost({
-    //    url: '../../Feedback/CompleteTakeFeedback',
-    //    data: { fbinitial: $('#fbinitial').val() },        
-    //    success: function (response) {
-    //        var result = $('#resultmode').val();
-    //        if (result == "True") {
-    //            window.location = "../../Home/Start";
-    //        } else {
-    //            window.location = "../../Results/Results";
-    //        }           
-    //    },
-    //    error: function (err) {           
-    //    }
-    //});
-};
+//        }
+//    });
+//    //Common.ajaxSyncPost({
+//    //    url: '../../Feedback/CompleteTakeFeedback',
+//    //    data: { fbinitial: $('#fbinitial').val() },        
+//    //    success: function (response) {
+//    //        var result = $('#resultmode').val();
+//    //        if (result == "True") {
+//    //            window.location = "../../Home/Start";
+//    //        } else {
+//    //            window.location = "../../Results/Results";
+//    //        }           
+//    //    },
+//    //    error: function (err) {           
+//    //    }
+//    //});
+//};
 
 
 var Requests = {
@@ -373,29 +451,7 @@ var Requests = {
 };
 
 
-function validateIntial() {
-    
-    var trimtext = $('#fbinitial').val().trim();
-    //var poeid = $('#selectPoe').val();
-    
-    if (trimtext != '') {
-        // alert(trimtext);
-        var regex = new RegExp("^[a-zA-Z ]+$");
-        if (regex.test(trimtext)) {
-            return true;
-        } else {
-            $('#errmsg_cont').text("Special characters are not allowed in this field");
-            $('#signsubmit').show();          
-            return false;
-        }
-    } else {
-        $('#errmsg_cont').text("Please enter your name");
-        $('#signsubmit').show();        
-        return false;
-    }
 
-
-}
 function LoadScale() {
     $('.freqbtn1').click(function () {
         $(this).parents('.freqscale_bg').attr("data-answer", 1);
