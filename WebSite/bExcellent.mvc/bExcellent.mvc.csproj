@@ -3774,6 +3774,8 @@
     <Content Include="Scripts\ref\Sync\Sync.js" />
     <Content Include="Scripts\ref\Sync\syncdigdeeper.js" />
     <Content Include="Scripts\ref\Sync\synclanding.js" />
+    <Content Include="Scripts\ref\TechnicalFeedback\devPriorities.js" />
+    <Content Include="Scripts\ref\TechnicalFeedback\devProgress.js" />
     <Content Include="Scripts\ref\TechnicalFeedback\ManagerFeedback.js" />
     <Content Include="Scripts\ref\TechnicalFeedback\SelfFeedback.js" />
     <Content Include="Scripts\ref\test.js" />
