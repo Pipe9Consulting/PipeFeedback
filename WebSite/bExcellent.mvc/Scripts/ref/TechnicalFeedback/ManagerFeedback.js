@@ -201,6 +201,8 @@
             jssor_1_slider.$Next();
             nextJssor((jssor_1_slider.$CurrentIndex() + 1));
         } else {
+            //alert("Please finish responding before progressing.");
+           // debugger;
             $('#errmsg_cont').text("Please finish responding before progressing.");
             $('#signsubmit').modal('show');
             //alert('Please finish responding before progressing.');
