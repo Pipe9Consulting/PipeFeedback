@@ -27,7 +27,17 @@
            }
         %>
         <input type="hidden" id="selectedMappingid" value="<%:t%>" />
-    
+     <%
+        var p = 0;
+
+        if (Session["SelectedPoe"] != null)
+        {
+            p = int.Parse(Session["SelectedPoe"].ToString());
+        }
+
+    %>
+
+    <input type="hidden" id="currentpoe" value="<%:p%>" />
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb">
             Home > Sync > Dig Deep

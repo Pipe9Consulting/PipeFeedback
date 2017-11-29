@@ -479,7 +479,7 @@ var feedback = {
         });
         $('.give').live('click', function () {
             var poeid = $('#selectedPoeValueFeedback').val();
-           // alert(poeid);
+           //alert(poeid);
             if (poeid != 34) {
                 $(this).toggleClass('msgmidselectArrow');
             } else {
@@ -575,10 +575,13 @@ var feedback = {
                 $('.poelistli').click(function (e) {
                     //debugger;
                     //hideTilesFunc
+                   
+                    //come
                     $("#status").fadeIn();
                     $("#preloader").delay(100).fadeIn("slow");
                     var poeListValue = $(this).val();
                     $('#sliderbtn').html('');
+                    $('#selectedPoeValueFeedback').val(poeListValue);
                     feedback.loadfeedbackMenu(poeListValue);
                 });
 
@@ -587,6 +590,7 @@ var feedback = {
 
                 if (selectedPoe == 0) {
                     feedback.loadfeedbackMenu(response[0].POEId);
+                    
                 } else {
                     feedback.loadfeedbackMenu(selectedPoe);
                 }
@@ -2746,9 +2750,11 @@ function poelist(poeids, html, firstid, poeLength) {
             s = $('.poelistli:visible').first();
             // debugger;
             $('.poelistli').click(function (e) {
+                //alert('ss');
                 var poeListValue = $(this).val();
                 //$("#status,#preloader").delay(100).fadeIn("slow", function () {
                 $('#sliderbtn').html('');
+                $('#selectedPoeValueFeedback').val(poeListValue);
                 feedback.loadfeedbackMenu(poeListValue);
                 //});
             });

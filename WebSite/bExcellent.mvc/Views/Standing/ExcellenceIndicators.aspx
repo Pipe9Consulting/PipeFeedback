@@ -46,6 +46,17 @@
 
     <input type="hidden" id="controlclicked" value="0" />
     <input type="hidden" id="pagemax" value="0" />
+      <%
+        var t = 0;
+
+        if (Session["SelectedPoe"] != null)
+        {
+            t = int.Parse(Session["SelectedPoe"].ToString());
+        }
+
+    %>
+
+    <input type="hidden" id="currentpoe" value="<%:t%>" />
     <%--<div class="indexright">
         <div class="indexrightarrow">
             <div class="indexclose">
