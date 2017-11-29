@@ -203,22 +203,26 @@ p {
 
         .frquencyHeader li:nth-child(2) {
             border-right: 1px solid #999;
-            width: 13%;
+            width: 12%;
         }
 
 
         .frquencyHeader li:nth-child(3) {
             border-right: 1px solid #999;
-            width: 76%;
+            width: 23%;
         }
 
         .frquencyHeader li:nth-child(4) {
             border-right: 1px solid #999;
-            width: 8%;
+            width: 23%;
         }
 
         .frquencyHeader li:nth-child(5) {
-            text-align: center;
+            border-right: 1px solid #999;
+            width: 30%;
+        }
+
+        .frquencyHeader li:nth-child(6) {
             width: 9%;
         }
 
@@ -256,12 +260,12 @@ p {
     }
 
 .frquencyContent li:nth-child(2) {
-    width: 13%;
+    width: 12%;
     font-size: 80%;
 }
 
 .frquencyContent li:nth-child(3) {
-    width: 76%;
+    width: 23%;
 }
 
 .frquencyContent li {
@@ -273,19 +277,24 @@ p {
 }
 
 .frquencyContent li:nth-child(4) {
-    width: 8%;
+    width: 23%;
 }
 
 .frquencyContent li:nth-child(5) {
-    width: 9%;
+    width: 30%;
     text-align: center;
-    border-right: 0px solid #999;
+    border-right: 1px solid #999;
 }
 
-    .frquencyContent li:nth-child(5) img {
-        width: 60%;
-        text-align: center;
-    }
+.frquencyContent li:nth-child(6) {
+    width: 9%;
+}
+
+
+.frquencyContent li:nth-child(5) img {
+    width: 60%;
+    text-align: center;
+}
 
 .frquencyContent ul:first-child {
     background: #fff;
@@ -707,8 +716,7 @@ p {
 
 .dp_freq {
     float: left;
-    width: 32%;
-    margin-right: 2%;
+    width: 100%;
 }
 
 .dp_capab {
@@ -988,7 +996,7 @@ p {
 
     .hover_content {
         margin-top: 0% !important;
-        right: 1% !important;
+        left: 12% !important;
     }
 
 
