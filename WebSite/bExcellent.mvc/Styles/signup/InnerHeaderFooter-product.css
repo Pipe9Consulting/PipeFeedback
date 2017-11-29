@@ -18,7 +18,7 @@ body {
 }
 
 .breadMenu {
-    margin: 0 0 2% 0;
+    margin:  0;
     background: #f1f1f1;
 }
 
@@ -80,12 +80,19 @@ html, body {
     background: #fff;
     margin: 0px;
     height: 100%;
+    width: 50%;
+    margin-left: 1.5%;
 }
 
 .ui.menu .item {
     display: table-cell;
     vertical-align: middle;
+    padding-right: 5%;
+    width: auto;
+    float: left;
+    padding-top: 1.3%;
 }
+
 
 .ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui) {
     color: #000;
@@ -198,11 +205,6 @@ html, body {
 
     .ui.menu .item {
         font-size: 14px !important;
-        padding-right: .5%;
-    }
-
-    .ui.menu span {
-        padding: 0 0 0 1.5%;
     }
 
     .cacLogo img {

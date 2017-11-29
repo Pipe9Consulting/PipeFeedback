@@ -203,7 +203,7 @@ body {
 .breadcrumb {
     background: #fafafa;
     padding: .6% .8%;
-    padding: 0.5% 1% 0% 1.5%;
+    padding: 0.4% 1% 0.5% 1.5%;
 }
 
     .breadcrumb a {
@@ -805,7 +805,7 @@ body {
     .pane li p {
         font-weight: 500;
         position: absolute;
-        bottom: 7%;
+        bottom: 0;
         left: 10%;
         color: #666;
         font-size: 15px !important;
@@ -1294,7 +1294,7 @@ body {
 
     .login {
         padding-top: 7%;
-        padding-bottom: 4.7%;
+        padding-bottom: 7%;
     }
 
     .headerRight .dropdown {

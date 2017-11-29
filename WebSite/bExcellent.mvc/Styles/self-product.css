@@ -503,3 +503,88 @@ h1 {
         cursor: pointer;
         float: right;
     }
+
+
+    .capabilityDef {
+    width: 100%;
+    float: left;
+    padding: 2%;
+    display: none;
+}
+
+    .capabilityDef h2 {
+        font-size: 130%;
+        padding: 0;
+        color: #333;
+        font-weight: 500;
+        margin: 0 2% 0 0;
+        line-height: 1;
+        border-bottom: 1px solid #666;
+        text-transform: uppercase;
+    }
+
+
+
+.scale_dfn {
+    width: 50%;
+    float: left;
+    padding-bottom: 0.5%;
+    padding-top: 1.5%;
+}
+
+.scale_img {
+    float: left;
+    width: 15%;
+}
+
+.scale_cnt {
+    float: left;
+    width: 85%;
+}
+
+.scale_img img {
+    width: 90%;
+}
+
+.scale_cnt h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    font-size: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.scale_cnt p {
+    color: #000;
+    font-size: 90%;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+
+.button_menu {
+    background: url(../../Images/DevPriorities/Priorities/menu_icon.png)no-repeat center;
+    border: 0;
+    float: right;
+    background-size: 100% 70%;
+    width: 2%;
+}
+
+#option_menu {
+    bottom: auto;
+    position: absolute;
+    border: 1px solid #000;
+    background: #fff !important;
+    right: 2%;
+    width: 30%;
+    z-index: 2147483647;
+    top: 14.8%;
+    display: none;
+}
+
+.producttitle {
+    float: left;
+    width: 70%;
+}
