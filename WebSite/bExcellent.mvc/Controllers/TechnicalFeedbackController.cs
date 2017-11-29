@@ -126,6 +126,21 @@ namespace bExcellent.mvc.Controllers
             // CommonController.Log(Session["id"].ToString() + "::" + "CompleteTakeFeedback-OUT");
         }
         [SessionExpireFilter]
+        public JsonResult CompleteManagerFeedback(List<SavePOEResultRequest> request)
+        {
+            // CommonController.Log(Session["id"].ToString() + "::" + "CompleteManagerFeedback-IN");
+            foreach (SavePOEResultRequest savePOEResultRequest in request)
+            {
+                savePOEResultRequest.FeedbackStatus = 2;
+                UpdateFeedbackStatus(savePOEResultRequest);
+            }
+            Session["ConnectUsers"] = (CreatedFeedback[])Session["CreatedFeedbacks"];
+            Session["PracticeArea"] = null;
+            Session["fbtype"] = 2;
+            return JsonResponse(true);
+            //CommonController.Log(Session["id"].ToString() + "::" + "CompleteManagerFeedback-OUT");
+        }
+        [SessionExpireFilter]
         public void UpdateFeedbackStatus(SavePOEResultRequest request, int? con = 0)
         {
             try

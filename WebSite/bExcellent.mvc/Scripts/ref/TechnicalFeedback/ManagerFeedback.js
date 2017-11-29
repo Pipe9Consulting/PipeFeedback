@@ -325,7 +325,7 @@ var teamFeedbackFb = {
         return parseInt($('#selectedanswer').val());
     },
     loadCompleteFeedback: function () {
-        debugger;
+        //debugger;
         var savePOEResultRequests = [];
         var savePOEResultRequest = new Requests.SavePOEResultRequest();
         var feedbackId = $('#freqScale1').attr('data-feedbackid');
@@ -340,7 +340,7 @@ var teamFeedbackFb = {
         savePOEResultRequests.push(savePOEResultRequest);
 
         Common.ajaxSyncPost({
-            url: '/Feedback/CompleteManagerFeedback',
+            url: '/TechnicalFeedback/CompleteManagerFeedback',
             data: savePOEResultRequests,
             success: function (response) {
                 var result = $('#resultmode').val();
