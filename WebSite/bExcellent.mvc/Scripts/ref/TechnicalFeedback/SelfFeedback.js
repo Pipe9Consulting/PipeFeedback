@@ -227,15 +227,16 @@
             $("#completeModal").modal('show');
         }
     });
-    $("#btnCompleteOk").on('click', function () {
+    $("#btnCompleteOk").on('click', function () {       
         //debugger;
         $("#completeModal").modal('hide');
         Common.ajaxsync({
             url: '../../TechnicalFeedback/CompleteTakeFeedback',
             data: { fbinitial: $('#fbinitial').val() },
             success: function (response) {
-               // alert(response);
-                var result = $('#resultmode').val();
+                // alert(response);
+                //debugger;
+                var result = $('#resultmode').val();               
                 if (result == "True") {
                     window.location = "../../Home/Start";
                 } else {

@@ -325,6 +325,7 @@ var teamFeedbackFb = {
         return parseInt($('#selectedanswer').val());
     },
     loadCompleteFeedback: function () {
+        debugger;
         var savePOEResultRequests = [];
         var savePOEResultRequest = new Requests.SavePOEResultRequest();
         var feedbackId = $('#freqScale1').attr('data-feedbackid');
