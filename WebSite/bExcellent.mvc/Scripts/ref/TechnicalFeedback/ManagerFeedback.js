@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     LoadScale();
     teamFeedbackFb.LoadSlider();
-    
+  
     $("#module-name").click(function () {
         $("#option_menu").fadeToggle();
 
@@ -117,6 +117,16 @@
     LoadTile(parseInt($('#lastModuleOrder').val())-2);
     if (parseInt(jssor_1_slider.$CurrentIndex()) == -1 && $('#lastModuleOrder').val()==0) {
         $('.jssora13l').hide();
+        $('#module1').addClass('currentPageJssor');
+        $('#module2').addClass('nextPageJssor');
+    } else {
+        for (var i = 1; i <= 6; i++) {
+            $('#module' + i).removeClass('currentPageJssor').removeClass('leftPageJssor').removeClass('nextPageJssor');
+        }
+        $('#module' + (parseInt($('#lastModuleOrder').val()))).addClass('select_core' + (parseInt($('#lastModuleOrder').val())));
+        $('#module' + (parseInt($('#lastModuleOrder').val()) + 1)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+        $('#module' + (parseInt($('#lastModuleOrder').val()))).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
+        $('#module' + (parseInt($('#lastModuleOrder').val()) - 1)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
     }
     if (parseInt(jssor_1_slider.$CurrentIndex()) == 3) {
 
@@ -232,10 +242,13 @@
         if (lastModuleOrder >= (index + 1)) {
             LoadTile(index-1);
             jssor_1_slider.$GoTo((index));
+            for (var i = 1; i <= 6; i++) {
+                $('#module' + i).removeClass('currentPageJssor').removeClass('leftPageJssor').removeClass('nextPageJssor');
+            }
             $('#module' + (index)).addClass('select_core' + (index));
-            $('#moduleSet' + (index + 1)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
-            $('#moduleSet' + (index)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
-            $('#moduleSet' + (index - 1)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
+            $('#module' + (index + 2)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+            $('#module' + (index + 1)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
+            $('#module' + (index)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
         }
         if (index == 0) {
             $('.jssora13l').hide();
