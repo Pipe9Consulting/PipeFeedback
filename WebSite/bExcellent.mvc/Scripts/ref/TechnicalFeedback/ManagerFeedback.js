@@ -174,10 +174,13 @@
             if (lastModuleOrder >= (index + 1)) {
                 LoadTile(index - 1);
                 jssor_1_slider.$GoTo((index));
+                for (var i = 1; i <= 6; i++) {
+                    $('#module' + i).removeClass('currentPageJssor').removeClass('leftPageJssor').removeClass('nextPageJssor');
+                }
                 $('#module' + (index)).addClass('select_core' + (index));
-                $('#moduleSet' + (index + 1)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
-                $('#moduleSet' + (index)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
-                $('#moduleSet' + (index - 1)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
+                $('#module' + (index + 2)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+                $('#module' + (index + 1)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
+                $('#module' + (index)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
             }
             if (index == 0) {
                 $('.jssora13l').hide();
