@@ -53,7 +53,7 @@
                 </div>
                 <div class="modal-body">
                     <p id="errmsg_cont">Some text in the modal.</p>
-                    <button class="popup_okbtn" data-dismiss="modal">Ok</button>
+                    <button class="popup_okbtn" data-dismiss="modal" id="btnOkClose">Ok</button>
                 </div>
 
             </div>
@@ -272,7 +272,17 @@
 
     </div>*@
 </body>
-
+<script type="text/javascript">
+    $(function () {
+        $("#btnOkClose,.close").on('click', function () {
+            //alert("1");              
+            //$("#signsubmit").modal('hide');
+            $("#signsubmit").hide();
+            $('.simplemodal-overlay').hide();
+            $('.simplemodal-container').hide();
+        });
+    });
+</script>
 @*<script language="javascript" type="text/javascript" src="../../Scripts/ref/common.js"></script>
  <script src="../../Scripts/ref/Requests.js"></script>*@
 </html>
