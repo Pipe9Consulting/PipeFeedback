@@ -9,6 +9,97 @@ body {
     font-family: 'Cuprum', sans-serif !important;
 }
 
+
+/***********************************************popup*************************************/
+.simplemodal-container {
+    background: rgba(0, 0, 0, .7);
+    z-index: 999999999 !important;
+    width: 100% !important;
+    left: 0px !important;
+    height: 100% !important;
+    top: 0px !important;
+}
+
+
+    .simplemodal-container .modal-dialog {
+        margin-top: 20%;
+        text-align: center;
+    }
+
+        .simplemodal-container .modal-dialog .modal-body {
+            position: relative;
+            padding: 30px 0;
+        }
+
+
+        .simplemodal-container .modal-dialog .modal-header {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .simplemodal-container .modal-dialog button.close {
+            -webkit-appearance: none;
+            padding: 0;
+            cursor: pointer;
+            background: 0 0;
+            border: 0;
+            background: #fff;
+            border: 3px solid #23a1a7;
+            border-radius: 30px;
+            padding: 2px 10px 0 10px;
+            font-size: 30px;
+            color: #23a1a7 !important;
+            outline: none;
+            top: -12%;
+            position: absolute;
+            right: -3%;
+            opacity: 1 !important;
+            z-index: 99999;
+        }
+
+            .simplemodal-container .modal-dialog button.close:hover {
+                -webkit-appearance: none;
+                padding: 0;
+                cursor: pointer;
+                background: 0 0;
+                border: 0;
+                background: #fff;
+                border: 3px solid #eb4329;
+                border-radius: 30px;
+                padding: 2px 10px 0 10px;
+                font-size: 30px;
+                color: #eb4329 !important;
+                outline: none;
+                top: -12%;
+                position: absolute;
+                right: -3%;
+                opacity: 1 !important;
+            }
+
+.popup_okbtn {
+    color: #fff;
+    border: 1px solid #148f95;
+    background: #23a1a7;
+    background: -o-linear-gradient(#36c2c9, #23a1a7);
+    background: -moz-linear-gradient(#36c2c9, #23a1a7);
+    background: linear-gradient(#36c2c9, #23a1a7);
+    font-size: 110%;
+    padding: 2px 12px;
+}
+
+    .popup_okbtn:hover {
+        color: #23a1a7;
+        border: 1px solid #148f95;
+        border-bottom: 3px solid #148f95;
+        background: #fff;
+        text-align: center;
+        padding: 2px 12px 0 12px;
+    }
+
+
+/***********************************************popup*************************************/
+
 .ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
     background: rgba(255,255,255,.1);
     color: #23a1a7 !important;
@@ -203,7 +294,7 @@ body {
 .breadcrumb {
     background: #fafafa;
     padding: .6% .8%;
-    padding: 0.4% 1% 0.5% 1.5%;
+    padding: 0.4% 2% 0.5% 2%;
 }
 
     .breadcrumb a {
@@ -225,7 +316,7 @@ body {
     float: left;
     padding-top: 5.5%;
     padding-bottom: 7%;
-    margin-left: 35%;
+    margin-left: 39%;
 }
 
 .wallAward {
@@ -908,8 +999,37 @@ body {
 /*Newly Added*/
 
 
+@media screen and (min-width: 3500px) and (max-width: 5000px) {
+
+    .headerMenu {
+        height: 160px !important;
+    }
+
+    .breadcrumb {
+        zoom: 200%;
+    }
+
+    .footerPart {
+        zoom: 200%;
+    }
+
+    .login {
+        zoom: 170%;
+    }
+
+    .pane li p {
+        line-height: 1.1;
+        font-size:25px !important
+    }
+}
+
 
 @media screen and (min-width: 2900px) and (max-width: 3500px) {
+
+    .simplemodal-container .modal-dialog {
+        zoom: 200%;
+    }
+
 
     .clickdeeper {
         font-size: 30px !important;
@@ -925,6 +1045,7 @@ body {
 
     .ui.breadcrumb {
         font-size: 22px !important;
+        margin-bottom: 1.5%;
     }
 
     .overallcontent p {
@@ -990,7 +1111,7 @@ body {
 
 
     .footerPart, .page-wrap::after {
-        height: 100px;
+        height: 80px !important;
     }
 
     .login {
@@ -1066,7 +1187,7 @@ body {
     }
 
     .accordion h3, .accordion h3:hover, .accordion .down {
-        background-size: 25% 24%;
+        background-size: 30% 24%;
         background-position-y: 43px;
         background-position-x: 38px;
         width: 100px;
@@ -1121,7 +1242,7 @@ body {
     }
 
     .headerMenu {
-        height: 120px;
+        height: 120px !important;
     }
 
     .accordion {
@@ -1129,7 +1250,8 @@ body {
     }
 
     .footerPart .item {
-        font-size: 18px;
+        font-size: 1.6rem !important;
+        padding-top: 1% !important;
     }
 
 
@@ -1149,6 +1271,11 @@ body {
 }
 
 @media screen and (min-width: 1900px) and (max-width: 2000px) {
+
+
+    .simplemodal-container .modal-body {
+        font-size: 120%;
+    }
 
     .dropdowns a {
         font-size: 16px;
@@ -1194,10 +1321,11 @@ body {
     }
 
     .accordion h3, .accordion h3:hover, .accordion .down {
-        background-size: 30% 25%;
+        background-size: 30% 30%;
         background-position-y: center;
         width: 85px;
         float: left;
+        height: 80px;
     }
 }
 

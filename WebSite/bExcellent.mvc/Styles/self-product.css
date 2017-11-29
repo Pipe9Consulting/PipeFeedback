@@ -393,7 +393,7 @@ h1 {
 }
 
 .freqscaleover2 {
-      background: #f7b4ab; /* For browsers that do not support gradients */
+    background: #f7b4ab; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
@@ -428,7 +428,7 @@ h1 {
 .freqscale_handle {
     width: 10px;
     left: -7px;
-    background: url("../../Images/Product/slider-handle2.png") no-repeat scroll 40% 50% transparent !important;
+    background: url("../../Images/Product/slider-handle3.png") no-repeat scroll 40% 50% transparent !important;
     height: 34px;
     position: absolute;
     z-index: 99;
@@ -504,8 +504,29 @@ h1 {
         float: right;
     }
 
+    .signarea a {
+        color: #fff;
+        border: 1px solid #148f95;
+        background: #23a1a7;
+        background: -o-linear-gradient(#36c2c9, #23a1a7);
+        background: -moz-linear-gradient(#36c2c9, #23a1a7);
+        background: linear-gradient(#36c2c9, #23a1a7);
+        text-decoration: none;
+        font-size: 130%;
+        padding: .5% 2%;
+        cursor: pointer;
+        float: right;
+    }
 
-    .capabilityDef {
+        .signarea a:hover {
+            color: #23a1a7;
+            border: 1px solid #148f95;
+            background: #fff;
+        }
+
+
+
+.capabilityDef {
     width: 100%;
     float: left;
     padding: 2%;
@@ -548,15 +569,15 @@ h1 {
 
 .scale_cnt h3 {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     color: #333;
-    font-size: 90%;
+    font-size: 100%;
     margin: 0;
     padding: 0;
 }
 
 .scale_cnt p {
-    color: #000;
+    color: #333;
     font-size: 90%;
     line-height: 1.2;
     margin: 0;
@@ -569,7 +590,7 @@ h1 {
     border: 0;
     float: right;
     background-size: 100% 70%;
-    width: 2%;
+    width: 1.5%;
 }
 
 #option_menu {
@@ -587,4 +608,219 @@ h1 {
 .producttitle {
     float: left;
     width: 70%;
+}
+
+
+#emptyfrloop {
+    z-index: -1;
+}
+
+
+@media screen and (min-width: 1401px) and (max-width: 2000px) {
+
+    #option_menu {
+        top: 11.6%;
+    }
+
+    .poemodule p {
+        font-size: 130%;
+    }
+
+    #jssor_1 {
+        height: 670px !important;
+    }
+
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 470px !important;
+    }
+
+    .jssorinner {
+        height: 470px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 50% !important;
+    }
+}
+
+
+@media screen and (min-width: 2000px) and (max-width: 2400px) {
+
+    #option_menu {
+        top: 8.4%;
+    }
+
+    .poemodule p {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    #jssor_1 {
+        height: 900px !important;
+    }
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 560px !important;
+    }
+
+    .jssorinner {
+        height: 560px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 60% !important;
+    }
+
+    .button_menu {
+        margin-top: 0.2%;
+    }
+}
+
+
+
+@media screen and (min-width: 2500px) and (max-width: 2800px) {
+
+    #option_menu {
+        top: 9.1%;
+    }
+
+    .poemodule p {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    #jssor_1 {
+        height: 900px !important;
+    }
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 470px !important;
+    }
+
+    .jssorinner {
+        height: 470px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 50% !important;
+    }
+
+    .button_menu {
+        margin-top: 0.2%;
+        width: 1%;
+    }
+}
+
+
+@media screen and (min-width: 2800px) and (max-width: 3500px) {
+
+    #option_menu {
+        top: 10%;
+        zoom: 180%;
+    }
+
+
+    .poemodule p {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    #jssor_1 {
+        height: 1250px !important;
+    }
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 620px !important;
+    }
+
+    .jssorinner {
+        height: 620px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 70% !important;
+    }
+
+    .button_menu {
+        margin-top: 0.6%;
+        width: 1%;
+    }
+
+    .customertiles {
+        zoom: 150%;
+    }
+
+    .producttitle {
+        zoom: 150%;
+    }
+}
+
+
+@media screen and (min-width: 3500px) and (max-width: 5000px) {
+
+    #option_menu {
+        top: 10%;
+        zoom: 180%;
+    }
+
+
+    .customertiles {
+        zoom: 250%;
+    }
+
+    .producttitle {
+        zoom: 250%;
+    }
+
+    .poemodule p {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    #jssor_1 {
+        height: 1250px !important;
+    }
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 620px !important;
+    }
+
+    .jssorinner {
+        height: 620px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 70% !important;
+    }
+
+    .button_menu {
+        margin-top: 0.6%;
+        width: 1%;
+    }
+
+    .customertiles {
+        zoom: 150%;
+    }
+
+    .producttitle {
+        zoom: 150%;
+    }
 }

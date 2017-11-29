@@ -18,7 +18,7 @@ body {
 }
 
 .breadMenu {
-    margin:  0;
+    margin: 0;
     background: #f1f1f1;
 }
 
@@ -81,7 +81,7 @@ html, body {
     margin: 0px;
     height: 100%;
     width: 50%;
-    margin-left: 1.5%;
+    margin-left: 2%;
 }
 
 .ui.menu .item {
@@ -307,14 +307,12 @@ html, body {
 
 @media screen and (max-width: 1930px) and (min-width: 1800px) {
     .cacLogo img {
-        width: 65% !important;
+        width: 53% !important;
     }
 
     .ui.menu .item {
-        font-size: 15px;
+        font-size: 1.4rem !important;
     }
-
-
 
     .dropImage img {
         width: 450% !important;
@@ -485,7 +483,9 @@ html, body {
 
     .ui.menu .item {
         font-size: 17px !important;
+        padding-top: 0.8%;
     }
+
 
     #notifyCont li a {
         padding: 4px 0 5px 35px;
@@ -533,7 +533,7 @@ html, body {
     }
 
     .headerMenu {
-        height: 170px;
+        height: 125px;
     }
 
     .cacLogo img {
@@ -547,7 +547,7 @@ html, body {
     }
 
     .ui.menu .item {
-        font-size: 1.1rem !important;
+        font-size: 25px !important;
     }
 
     #notifyCont li a {
