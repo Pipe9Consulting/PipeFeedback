@@ -55,8 +55,13 @@ namespace bExcellent.mvc.Controllers
                 CreateManagerFeedback(useridList, roleList);
             }
             var mgrFeedback = new bExcellent.mvc.Models.Feedback();
+            var createdFeedback = (CreatedFeedback[])Session["CreatedFeedbacks"];
+            int feedbackId = createdFeedback[0].FeedBackId;
+            var feedback = new FeedbackServiceClient();
+            var returnValue = feedback.GetLastSavedQuestion(feedbackId);
             var teamList = (CreatedFeedback[])Session["CreatedFeedbacks"];
             mgrFeedback.TeamMebers = teamList.ToList();
+            mgrFeedback.GetLastSavedQuestion = returnValue;
             return View(mgrFeedback);
         }
         [SessionExpireFilter]

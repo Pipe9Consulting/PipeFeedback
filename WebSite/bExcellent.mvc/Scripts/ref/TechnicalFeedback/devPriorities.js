@@ -9,6 +9,12 @@
     $('.clickdeeper').html("View Progress");
     $('.clickdeeper').show();
 
+    //$('.bukatutup').on('click', function () {
+    //    var htmlText = "<li id=lit1><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product1-small.png' /></span><p>Microsoft Azure</p></a></li>" + "<li id=lit2><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product2-small.png' /></span><p>Security</p></a></li>" + "<li id=lit3><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product3-small.png' /></span><p>Operations & Management</p></a></li>" + "<li id=lit4><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product4-small.png' /></span><p>Developer Tools</p></a></li>" + "<li id=lit5><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product5-small.png' /></span><p>Debugging & Performance</p></a></li>";
+    //    $('#target ul').html(htmlText);
+    //});
+   
+
     devLanding.getPageMode();
     devLanding.GetPOEDetails();
     if ($('#selectedCapMode').val() == "0") {
