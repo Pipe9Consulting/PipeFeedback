@@ -17,6 +17,13 @@ namespace bExcellent.mvc.Controllers
         {
             return View();
         }
+        private JsonResult JsonResponse(object s)
+        {
+            if (Request.RequestType == "GET")
+                return Json(s, JsonRequestBehavior.AllowGet);
+            else
+                return Json(s);
+        }
         public ActionResult SelfFeedback()
         {
             Session["role"] = 1;
@@ -103,6 +110,38 @@ namespace bExcellent.mvc.Controllers
             else
             {
                 // CommonController.Log(Session["id"].ToString() + "::" + "CreateFeedback-SessionNULL");
+            }
+        }
+        [SessionExpireFilter]
+        public JsonResult CompleteTakeFeedback(string fbinitial = "")
+        {
+            // CommonController.Log(Session["id"].ToString() + "::" + "CompleteTakeFeedback-IN");
+            var createdFeedback = (CreatedFeedback[])Session["CreatedFeedbacks"];
+            var Request = new SavePOEResultRequest { FeedbackId = createdFeedback[0].FeedBackId, FeedbackStatus = 2 };
+            Request.Initials = fbinitial;
+            UpdateFeedbackStatus(Request);
+            Session["PracticeArea"] = null;
+            Session["fbtype"] = 1;
+            return JsonResponse(true);
+            // CommonController.Log(Session["id"].ToString() + "::" + "CompleteTakeFeedback-OUT");
+        }
+        [SessionExpireFilter]
+        public void UpdateFeedbackStatus(SavePOEResultRequest request, int? con = 0)
+        {
+            try
+            {
+                // CommonController.Log(Session["id"].ToString() + "::" + "UpdateFeedbackStatus-IN");
+                var feedback = new FeedbackServiceClient();
+                feedback.UpdateFeedbackStatus(request);
+                // CommonController.Log(Session["id"].ToString() + "::" + "UpdateFeedbackStatus-OUT");
+            }
+            catch (Exception e)
+            {
+                var t = con + 1;
+                if (t <= 2)
+                {
+                    UpdateFeedbackStatus(request, t);
+                }
             }
         }
         [SessionExpireFilter]

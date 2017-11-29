@@ -230,7 +230,22 @@
     $("#btnCompleteOk").on('click', function () {
         //debugger;
         $("#completeModal").modal('hide');
-        completeFeedback();       
+        Common.ajaxsync({
+            url: '../../TechnicalFeedback/CompleteTakeFeedback',
+            data: { fbinitial: $('#fbinitial').val() },
+            success: function (response) {
+               // alert(response);
+                var result = $('#resultmode').val();
+                if (result == "True") {
+                    window.location = "../../Home/Start";
+                } else {
+                    window.location = "../../Results/Results";
+                }
+            },
+            error: function (err) {
+            }
+        });
+       // completeFeedback();       
     });
 
     function validateIntial() {
@@ -254,20 +269,7 @@
 
 
     function completeFeedback() {       
-        Common.ajaxSyncPost({
-            url: '../../Feedback/CompleteTakeFeedback',
-            data: { fbinitial: $('#fbinitial').val() },        
-            success: function (response) {
-                var result = $('#resultmode').val();
-                if (result == "True") {
-                    window.location = "../../Home/Start";
-                } else {
-                    window.location = "../../Results/Results";
-                }           
-            },
-            error: function (err) {           
-            }
-        });
+       
     }   
 
 });
