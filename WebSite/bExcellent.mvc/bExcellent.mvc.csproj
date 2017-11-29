@@ -337,6 +337,9 @@
     <Content Include="Images\AudienceMarketingManager.png" />
     <Content Include="Images\axxon-small.png" />
     <Content Include="Images\axxon.png" />
+    <Content Include="Images\Azure Infra Tsp - Capability_Intro.png" />
+    <Content Include="Images\Azure Infra Tsp - Functional_Intro.png" />
+    <Content Include="Images\Azure Infra Tsp - Product_Intro.png" />
     <Content Include="Images\AzureInfraTsp-Capability.png" />
     <Content Include="Images\AzureInfraTsp-Capability_Intro.png" />
     <Content Include="Images\AzureInfraTsp-Functional.png" />
