@@ -43,15 +43,16 @@
         $(this).removeClass('selected');
     });
 
-
+    //if (screen.width >= 2000) { document.write('<style>body{zoom:125%;}</style>'); }
 
     var jssor_1_options = {
         $AutoPlay: false,
-        $SlideWidth: 600,
+        $SlideWidth: 800,
         $Loop: 0,
         //$StartIndex: 0,
         $Cols: 2,
-        $Align: 100,
+        $Align: 120,
+        SlideSpacing: 0,
         $DragOrientation: 0,
         $ArrowNavigatorOptions: {
             $Class: $JssorArrowNavigator$,
@@ -69,7 +70,7 @@
     function ScaleSlider() {
         var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
         if (refSize) {
-            refSize = Math.min(refSize, 800);
+            refSize = Math.min(refSize, 2000);
             jssor_1_slider.$ScaleWidth(refSize);
         }
         else {

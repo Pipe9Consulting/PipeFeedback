@@ -298,9 +298,11 @@ var devProgress = {
                             if (response[i].IsDevelopmentPriorities && option.data.moduleid != 0) {
                                 select = "select_list";
                             }
-                           
+                            var splitQuestion = response[i].Question.split(',');
+                            var feature = splitQuestion[0].replace('Feature:', '');
+                            var component = splitQuestion[1].replace('Component:', '');
                             html = html + "<ul class=" + select + "><li class='dp_no' style='vertical-align: top;'>" + count + "</li><li class='dp_practicearea' style='vertical-align: top;'><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
-                                "<li class='dp_qetions'><div>" + moreText + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div></li><li>fasdf adsfa sfasdfafd adsf adsfa sdfas df asdf afda fs</li><li><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>Frequently " + selectedRole3 + "</li> " +
+                                "<li class='dp_qetions'><div>" + feature + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div></li><li>" + component + "</li><li><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>Frequently " + selectedRole3 + "</li> " +
                                 "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul> </div></div></li>" + "<li class='dp_frqprogress'>" + progressImage + "</li> </ul>";
                             count++;
                         }

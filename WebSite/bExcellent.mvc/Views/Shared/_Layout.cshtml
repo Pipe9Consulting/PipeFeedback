@@ -29,6 +29,16 @@
     <link href="~/Styles/jquery.custom-scrollbar.css" rel="stylesheet" />
     <link href="~/Styles/signup/InnerHeaderFooter.css" rel="stylesheet" />
     <link href="~/Styles/jquery-ui-1.8.21.css" rel="stylesheet" />
+    <style>
+        .h1, .h2, .h3, h1, h2, h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        a:hover {
+            text-decoration:none;
+        }
+    </style>
 </head>
 <body>
     <div id="signsubmit" class="modal fade" role="dialog">
@@ -59,7 +69,7 @@
 
     </div>*@
     <div class="ui grid headerPart">
-        <div class="row headerMenu">
+        <div class="headerMenu">
             <div class="headerLeft">
                 <div class="accordion">
                     <h3 class="checkt">
@@ -176,18 +186,21 @@
                 </ul>
                 <ul class="login afterlogin">
                     <li class="dropdowns lgn">
-                        <img src="../../Images/user.png" alt="User" align="right" id="myphoto" width="34px"
-                            height="34px" /><a href="#" id="loggedinUser">
-                                @{
-                                    if (Session["Uname"] != null)
-                                    {
-                                        Response.Write(Session["Uname"].ToString());
-                                    }  
-                                }
-
-                            </a>
+                        <img src="../../Images/user.png" alt="User" align="right" id="myphoto" width="34" height="34" />
+                        <a href="#" id="loggedinUser">
+                            @{
+                                var user = "";
+                                if (Session["Uname"] != null)
+                                {
+                                    user = Session["Uname"].ToString();
+                                    //Response.Write(Session["Uname"].ToString());
+                                }  
+                            }
+                            @user
+                        </a>
                         <ul id="accsettings">
                             <div class="hideDiv">
+
                                 <li id="redirectAccount"><a href="#">Account</a></li>
                                 <li id="redirectNetwork"><a href="#">Network</a></li>
 
@@ -198,8 +211,12 @@
                                 <li><a href="../Feedback/CompletedFeedback?mode=2">Report an Issue</a></li>
 
                                 <li><a href="http://demo.pipe9cloud.com/">Sign Out</a></li>
+
                             </div>
                         </ul>
+
+
+
                     </li>
                 </ul>
 
@@ -219,7 +236,7 @@
         @RenderSection("scripts", required: false)
 
     </div>
-        <div class="sixteen wide column footerPart">
+    <div class="sixteen wide column footerPart">
 
         <div class="ui inverted menu">
             <span class="item">© 2017 PIPE9 Consulting</span>
@@ -241,7 +258,7 @@
             </ul>
         </div>
     </div>
-   @* <div class="p9f_footer">
+    @* <div class="p9f_footer">
 
         <ul>
             <li>© 2017 PIPE9 Consulting 
