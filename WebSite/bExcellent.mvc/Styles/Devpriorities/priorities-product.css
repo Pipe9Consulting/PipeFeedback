@@ -1,0 +1,3676 @@
+﻿.container-fluid {
+    padding: 1.5% 1% 1.5% 1.5% !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background: url(../../Images/DevPriorities/Landing/bodyBg-new5.jpg)no-repeat !important;
+    background-size: 100% 100% !important;
+    font-family: Segoe UI;*/
+}
+
+.qncontent, .modNmaeview, .qnumber {
+    color: #000;
+}
+
+
+
+.breadcrumb {
+    padding: 0.5% 1% 0.6% 1.5% !important;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 0;
+    margin-top: -0.5%;
+}
+
+    .breadcrumb a {
+        font-size: 1.1em;
+    }
+
+.row {
+    margin-right: 0;
+}
+
+a:focus, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.slimScrollBar, .slimScrollRail {
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+p {
+    font-size: 120%;
+}
+
+.clearfix {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.priorities_tiles h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.priorities_tiles ul {
+    margin-bottom: 5%;
+    float: left;
+    width: 85%;
+    margin-right: 15%;
+    position: relative;
+}
+
+    .priorities_tiles ul li {
+        cursor: pointer;
+        width: 97%;
+        float: left;
+        padding: 0 0% 44% 0;
+        margin: 0 2% 0 0;
+        position: relative;
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+
+
+.listview {
+    background: url(../../Images/DevPriorities/Priorities/listView.png)no-repeat right 4% top 8% #fff;
+    background-size: 15% 20%;
+    border: 1px solid #666;
+}
+
+    .listview:hover {
+        background: url(../../Images/DevPriorities/Priorities/listView_h.png)no-repeat right 4% top 8% #fff;
+        background-size: 15% 20%;
+        border: 1px solid #23a1a7;
+    }
+
+
+.selectList {
+    background: url(../../Images/DevPriorities/Priorities/listView_h.png)no-repeat right 4% top 8% #fff;
+    background-size: 15% 20%;
+    border: 1px solid #23a1a7;
+}
+
+
+.profileview {
+    background: url(../../Images/DevPriorities/Priorities/profileView.png)no-repeat right 8% top 8% #fff;
+    background-size: 30% 28%;
+    border: 1px solid #666;
+}
+
+    .profileview:hover {
+        background: url(../../Images/DevPriorities/Priorities/profileView_h.png)no-repeat right 8% top 8% #fff;
+        background-size: 30% 28%;
+        border: 1px solid #23a1a7;
+    }
+
+
+.slecetProfile {
+    background: url(../../Images/DevPriorities/Priorities/profileView_h.png)no-repeat right 8% top 8% #fff;
+    background-size: 30% 28%;
+    border: 1px solid #23a1a7;
+}
+
+.profileview:hover p, .listview:hover p {
+    color: #23a1a7;
+}
+
+
+.selectList p, .slecetProfile p {
+    color: #23a1a7 !important;
+}
+
+.priorities_tiles ul li p {
+    bottom: 0;
+    color: #fff;
+    padding: 2% 3%;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.user_tiles h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.user_tiles ul {
+    float: left;
+    width: 85%;
+    margin-right: 15%;
+    position: relative;
+}
+
+    .user_tiles ul li {
+        background: #fff;
+        width: 47.5%;
+        float: left;
+        padding: 0 0% 44% 0;
+        position: relative;
+        margin: 0 2% 2% 0;
+        list-style: none;
+        cursor: pointer;
+        border: 1px solid #666;
+    }
+
+        .user_tiles ul li:hover {
+            background: #fff;
+            border: 1px solid #23a1a7;
+        }
+
+            .user_tiles ul li:hover p, .user_tiles ul li:hover span {
+                color: #23a1a7;
+            }
+
+        .user_tiles ul li p {
+            color: #333;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0 4% 2% 4%;
+        }
+
+        .user_tiles ul li img {
+            right: 0;
+            width: 50%;
+            height: auto;
+            position: absolute;
+        }
+
+        .user_tiles ul li span {
+            display: none;
+            color: #333;
+            padding: 0 2%;
+            font-size: 250%;
+            margin: 0;
+            line-height: 1;
+        }
+
+.user_name {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.selectTiles {
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
+}
+
+    .selectTiles p, .selectTiles span {
+        color: #23a1a7 !important;
+    }
+
+.priorities_part2 h2 {
+    margin: 0;
+    text-transform: uppercase;
+    float: left;
+    width: 90%;
+}
+
+.priorities_part2 h1 {
+    margin: 0;
+    text-transform: uppercase;
+    float: left;
+    width: 90%;
+    font-size: 150%;
+}
+
+
+.priorities_part2 h2 span {
+    text-transform: none;
+    font-size: 70%;
+}
+
+
+.priorities_part2 h1 span {
+    text-transform: none;
+    font-size: 70%;
+}
+
+
+.hover_content {
+    display: none;
+    background: #fff;
+    border: 1px solid #eb4830;
+    position: absolute;
+    width: 30%;
+    margin-top: 0;
+    right: 1%;
+    text-align: left;
+    padding: .5% .8%;
+    z-index: 99999999999;
+}
+
+    .hover_content span {
+        display: none;
+    }
+
+
+.prioitiesFrequency .slimScrollBar, .prioitiesFrequency .slimScrollRail {
+    background-color: #e0b001 !important;
+    opacity: 0.8 !important;
+    height: 50% !important;
+}
+
+.prioritiesScale {
+    border: 1px solid #333;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.scale_one {
+    background: url(../../Images/DevPriorities/Priorities/scale_bg.png) no-repeat;
+    background-position: 0% 85%;
+    position: relative;
+    width: 100%;
+    background-size: 100% auto;
+    padding-bottom: 10.2%;
+}
+
+.scaleYellow {
+    background: url(../../Images/DevPriorities/Priorities/scale_h.png) no-repeat;
+    background-position: 0% 38%;
+    background-size: auto 59.2%;
+    padding-bottom: 13.2%;
+    width: 100%;
+    position: absolute;
+}
+
+.startDate {
+    position: absolute;
+    top: 23%;
+    left: 1%;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.endDate {
+    position: absolute;
+    top: 23%;
+    right: 1%;
+    text-align: right;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+
+.slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 18%;
+}
+
+.user_tiles .slimScrollDiv {
+    width: 85% !important;
+    height: 0px !important;
+    position: relative;
+    padding-bottom: 78%;
+    border: 1px solid #333;
+    padding: 2% 0 76% 2.5%;
+}
+
+.priorities_part2 .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 18%;
+}
+
+
+
+.refreshBtn {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 98% !important;
+    position: relative;
+}
+
+
+.priorities_part2 .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 26%;
+}
+
+
+.prioitiesFrequency .slimScrollBar, .prioitiesFrequency .slimScrollRail {
+    right: .3% !important;
+    margin-top: 5px;
+}
+
+.profileview_content .slimScrollBar, .slimScrollRail {
+    margin-top: 1%;
+    cursor: pointer;
+    right: 0.3%;
+}
+
+.profileview_content .slimScrollBar, .profileview_content .slimScrollRail {
+    right: .3% !important;
+    margin-top: 0%;
+}
+
+
+#option_menu .slimScrollBar, #option_menu .slimScrollRail {
+    background: #eb4830 !important;
+    height: 50% !important;
+}
+
+#profileListsView {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 26% !important;
+    position: relative;
+}
+
+.profileview_content .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 26%;
+}
+
+#devPrioritiesCont {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 26% !important;
+    position: relative;
+}
+
+.slimScrollDiv #usrList {
+    width: 100% !important;
+    height: 0!important;
+    padding: 0 0 90% 0 !important;
+    border: 0 !important;
+    position: relative;
+}
+
+#usrList {
+    /*border: 1px solid #333;
+    padding: 2% 0 .5% 2% !important;*/
+    width: 85% !important;
+    position: relative;
+}
+
+
+#accordion-4 {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 60% !important;
+    position: relative;
+}
+
+.accordion-section .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 66%;
+}
+
+#option_menu .accordion h3 {
+    background: none;
+    padding-bottom: 3%;
+    display: table;
+}
+
+    #option_menu .accordion h3:hover {
+        display: table;
+    }
+
+
+
+.yellowEndLine {
+    background: #e0b001;
+    width: 10px;
+    position: absolute;
+    right: 0px;
+    height: 40%;
+    top: 12%;
+}
+
+
+
+.selectArrow img {
+    filter: gray;
+    filter: grayscale(0) !important;
+    -webkit-filter: grayscale(0) !important;
+}
+
+
+.daysCompleted {
+    position: absolute;
+    right: 0px;
+    top: -2%;
+    background: url(../../Images/DevPriorities/Priorities/line_arrow.png)no-repeat bottom;
+    background-size: 100% auto;
+    background-position: 0 100%;
+    padding: 0 0 7px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: 9999999;
+    color: black;
+}
+
+.blow15 {
+    left: 2%;
+    right: auto;
+    background: url(../../Images/DevPriorities/Priorities/line_arrow15.png)no-repeat bottom;
+    background-size: 100% auto;
+    background-position: 0 100%;
+}
+
+
+.above85 {
+    left: 2%;
+    right: auto;
+    background: url(../../Images/DevPriorities/Priorities/line_arrow15.png)no-repeat bottom;
+    background-size: 100% auto;
+    background-position: 0 100%;
+}
+
+.daysRemaining {
+    position: absolute;
+    right: 1%;
+    top: -2%;
+    background: url(../../Images/DevPriorities/Priorities/lineRed_arrow.png)no-repeat bottom;
+    background-size: 100% auto;
+    background-position: 0 100%;
+    padding: 0 0 7px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: 9999999;
+    color: red;
+}
+
+
+.prioitiesFrequency {
+    border: 1px solid #333;
+    float: left;
+    position: relative;
+    padding: 1%;
+}
+
+
+
+
+.frquencyHeader {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .frquencyHeader li {
+        background: #23a1a7;
+        list-style: none;
+        font-size: 120%;
+        float: left;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.4% .3% .2% .7%;
+        text-align: center;
+    }
+
+        .frquencyHeader li:first-child {
+            border-right: 1px solid #ccc;
+            width: 3%;
+        }
+
+        .frquencyHeader li:nth-child(2) {
+            border-right: 1px solid #ccc;
+            width: 15%;
+        }
+
+
+        .frquencyHeader li:nth-child(3) {
+            border-right: 1px solid #ccc;
+            width: 25%;
+        }
+
+
+        .frquencyHeader li:nth-child(4) {
+            width: 25%;
+            border-right: 1px solid #ccc;
+        }
+
+        .frquencyHeader li:nth-child(5) {
+            width: 32%;
+        }
+
+
+.frquencyContent ul {
+    margin: 0;
+    float: left;
+    padding: 0;
+    display: table;
+    width: 100%;
+    height: 30px;
+}
+
+    .frquencyContent ul li {
+        list-style: none;
+        display: table-cell;
+        padding: .2% 1% .5% 1%;
+        line-height: 1;
+        vertical-align: middle;
+    }
+
+
+
+.hidScaleTracker h1 {
+    display: none;
+}
+
+.frquencyContent li {
+    border-bottom: 1px solid #aaa;
+    vertical-align: top;
+}
+
+    .frquencyContent li:first-child {
+        width: 3%;
+        border-right: 1px solid #999;
+        text-align: center;
+    }
+
+    .frquencyContent li:nth-child(2) {
+        width: 15%;
+        border-right: 1px solid #999;
+    }
+
+
+    .frquencyContent li:first-child img {
+        float: left;
+        width: 20%;
+    }
+
+    .frquencyContent li:nth-child(3) {
+        border-right: 1px solid #999;
+        width: 25%;
+        font-size: 100%;
+        line-height: 1.2;
+        vertical-align:top;
+    }
+
+    .frquencyContent li:nth-child(4) {
+        border-right: 1px solid #999;
+        width: 25%;
+        font-size: 100%;
+        line-height: 1.2;
+        vertical-align:top;
+    }
+
+    .frquencyContent li:nth-child(5) {
+        width: 32%;
+        font-size: 100%;
+        line-height: 1.2;
+    }
+
+.frequency_scale li {
+    min-height: 0 !important;
+    text-transform: uppercase;
+    min-height: 0px;
+}
+
+.prioitiesFrequency .slimScrollRail, .prioitiesFrequency .slimScrollBar {
+    background-color: #eb4830 !important;
+    opacity: .8 !important;
+    height: 50% !important;
+}
+
+
+.frquencyContent ul:first-child {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(2) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(3) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(4) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(5) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(6) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(7) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(8) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(9) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(10) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(11) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(12) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(13) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(14) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(15) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(16) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(17) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(18) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(19) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(20) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(21) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(22) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(23) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(24) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(25) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(26) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(27) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(28) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(29) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(30) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(31) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(32) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(33) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(34) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(35) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(36) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(37) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(38) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(39) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(40) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(41) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(42) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(43) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(44) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(45) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(46) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(47) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(48) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(49) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(50) {
+    background: #f1f1f1;
+}
+
+.frequency_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border: 1px solid #007176;
+}
+
+    .frequency_scale li {
+        color: #000;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+        .frequency_scale li:first-child {
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            width: 25%;
+            border-right: 1px solid #007176 !important;
+            background: #dcf1f1; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #dcf1f1, #bae2e3); /* Standard syntax */
+        }
+
+        .frequency_scale li:nth-child(2) {
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            font-size: 65%;
+            border-right: 1px solid #007176 !important;
+            background: #bae2e3; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #bae2e3, #84cbce); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #bae2e3, #84cbce); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #bae2e3, #84cbce); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #bae2e3, #84cbce); /* Standard syntax */
+        }
+
+        .frequency_scale li:nth-child(3) {
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            border-right: 1px solid #007176 !important;
+            background: #84cbce; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #84cbce, #4bb2b7); /* Standard syntax */
+        }
+
+        .frequency_scale li:nth-child(4) {
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #4bb2b7, #23a1a7); /* Standard syntax */
+        }
+
+
+
+
+
+
+
+.selectManager {
+    position: relative;
+}
+
+.managerSpan {
+    color: #000;
+    background: url(../../Images/DevPriorities/Priorities/frequencyManager.png)no-repeat center;
+    position: absolute;
+    padding-bottom: 21%;
+    top: -100%;
+    text-transform: uppercase;
+    left: 0%;
+    background-size: 25px 15px;
+    font-size: 100%;
+    width: 100%;
+}
+
+
+
+.selectYou {
+    position: relative;
+}
+
+
+.youSpan {
+    width: 20%;
+    color: #000;
+    background: url(../../Images/DevPriorities/Priorities/frequencyYou.png)no-repeat center;
+    position: absolute;
+    text-align: center;
+    padding-top: 30%;
+    top: -8%;
+    text-transform: uppercase;
+    right: 0%;
+    background-size: 25px 15px;
+    font-size: 100%;
+    width: 100%;
+}
+
+#showscaleView {
+    display: none !important;
+}
+
+.button_menu {
+    background: url(../../Images/DevPriorities/Priorities/menu_icon.png)no-repeat center;
+    border: 0;
+    float: right;
+    background-size: 100% 70%;
+    width: 2%;
+}
+
+
+#option_menu {
+    top: 5.2%;
+    position: absolute;
+    background: #000 !important;
+    right: 1.5%;
+    z-index: 999999999999999999999;
+}
+
+
+
+/*------------------------------------- profile      -------------------------*/
+
+
+.profileview_content {
+    border: 1px solid #333;
+    float: left;
+    position: relative;
+    padding: 1.2%;
+}
+
+.profilelist {
+    width: 100%;
+    background: #000;
+    position: relative;
+    float: left;
+    padding: 0;
+}
+
+    .profilelist p {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .profilelist img {
+        margin-top: 1%;
+    }
+
+.practiceArea {
+    width: 15%;
+    padding: 1%;
+    float: left;
+}
+
+.profilelist ul {
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background: #fff;
+}
+
+    .profilelist ul li {
+        list-style: none;
+        border-bottom: 1px solid #ccc;
+        padding: 1%;
+        color: #000;
+    }
+
+.content_part {
+    border-bottom: 2px solid #666;
+    float: left;
+}
+
+
+.ui-datepicker-next {
+    background: url(../../Images/images/nextMonth.png)no-repeat center right !important;
+    cursor: pointer;
+}
+
+.ui-datepicker-prev {
+    background: url(../../Images/images/preMonth.png)no-repeat center right !important;
+    cursor: pointer;
+}
+
+.ui-datepicker-next:hover {
+    background: url(../../Images/images/nextMonth.png)no-repeat center right !important;
+    cursor: pointer;
+}
+
+.ui-datepicker-prev:hover {
+    background: url(../../Images/images/preMonth.png)no-repeat center right !important;
+    cursor: pointer;
+}
+
+.content_part:last-child {
+    border-bottom: 0px solid #666 !important;
+}
+
+.select_list {
+    background: #333;
+    color: #e0b001 !important;
+    /*border-bottom: 1PX solid #999;*/
+}
+/*------------------------------------*\
+-------- Page Styles: Accordion
+\*------------------------------------*/
+body {
+    position: relative;
+    z-index: 0;
+}
+
+.main:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    content: '';
+    /*background: -webkit-radial-gradient(30%, rgba(255,255,255,0.15), #fff), url('img/body-bg.png');
+    background: -moz-radial-gradient(30%, rgba(255,255,255,0.15), #fff), url('img/body-bg.png');
+    background: -o-radial-gradient(30%, rgba(255,255,255,0.15), #fff), url('img/body-bg.png');
+    background: radial-gradient(30%, rgba(255,255,255,0.15), #fff), url('img/body-bg.png');*/
+    background: #fff;
+}
+
+.site-header-wrap {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #cd9ad6;
+}
+
+/*------------------------------------*\
+-------- DEMO Code: accordion
+\*------------------------------------*/
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.accordion {
+    overflow: hidden;
+    /*box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+    border-radius: 3px;
+    background: #000;*/
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #333;
+    background: #000;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.3em;
+    color: #000 !important;
+}
+
+.updateMenu {
+    background: url(../../Images/DevPriorities/Priorities/update.png)no-repeat left center;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+    border: 1px solid #666 !important;
+}
+
+.requestMenu {
+    background: url(../../Images/DevPriorities/Priorities/request.png)no-repeat left center;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+    border: 1px solid #23a1a7;
+    display: none !important;
+    border: 1px solid #666 !important;
+}
+
+
+.trackerMenu {
+    background: url(../../Images/DevPriorities/Priorities/day_tracker.png)no-repeat left center;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    border: 1px solid #666 !important;
+    text-transform: uppercase;
+}
+
+
+.profilemenu {
+    background: url(../../Images/DevPriorities/Priorities/viewprofile.png)no-repeat left center #fff;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+    border: 1px solid #666 !important;
+}
+
+.boardView {
+    background: url(../../Images/DevPriorities/Priorities/board.png)no-repeat left center #fff;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+    height: 50px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #666;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 120%;
+    padding-right: 246px;
+    color: #eb4830 !important;
+    display: none !important;
+}
+
+
+    .boardView:hover {
+        background: url(../../Images/DevPriorities/Priorities/board.png)no-repeat left center #fff;
+        background-position: 2% 45%;
+        background-size: 10% 70%;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #666;
+    }
+
+
+.tracker_show {
+    background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #fff;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    padding-left: 24%;
+    background-position: 12% 45%;
+    background-size: 12% 120%;
+    text-transform: uppercase;
+    height: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #222;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 120%;
+    padding-right: 246px;
+}
+
+
+
+    .tracker_show:hover {
+        background: url(../../Images/DevPriorities/Priorities/show_tracker.png)no-repeat left center #fff;
+        background-position: 12% 45%;
+        background-size: 12% 120%;
+        text-decoration: none;
+        color: #222;
+    }
+
+
+
+.hideTrace {
+    background: url(../../Images/DevPriorities/Priorities/hide_tracker.png)no-repeat left center #fff !important;
+    background-position: 12% 45% !important;
+    background-size: 12% 120% !important;
+    text-decoration: none;
+    color: #222;
+}
+
+    .hideTrace:hover {
+        background: url(../../Images/DevPriorities/Priorities/hide_tracker.png)no-repeat left center #fff !important;
+        background-position: 12% 45% !important;
+        background-size: 12% 120% !important;
+        text-decoration: none;
+        color: #222;
+    }
+
+
+.cap_scale:focus {
+    color: #fff !important;
+}
+
+
+.cap_scale {
+    background: url(../../Images/DevPriorities/Priorities/capMenu_icon.png)no-repeat left center #000;
+    white-space: nowrap;
+    width: 100%;
+    position: absolute;
+    padding-left: 15%;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-transform: uppercase;
+    height: 50px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 120%;
+    padding-right: 246px;
+}
+
+
+.alterScale {
+    background: url(../../Images/DevPriorities/Priorities/freMenu_icon.png)no-repeat left center #000 !important;
+}
+
+    .alterScale:hover {
+        background: url(../../Images/DevPriorities/Priorities/freMenu_icon.png)no-repeat left center #e0b001 !important;
+    }
+
+.cap_scale:hover {
+    background: url(../../Images/DevPriorities/Priorities/capMenu_icon.png)no-repeat left center #e0b001;
+    background-position: 2% 45%;
+    background-size: 10% 70%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.scaleViews {
+    background: url(../../Images/DevPriorities/Priorities/chart_icon.png)no-repeat left center #000 !important;
+}
+
+    .scaleViews:hover {
+        background: url(../../Images/DevPriorities/Priorities/chart_icon.png)no-repeat left center #e0b001 !important;
+    }
+
+.main {
+    margin-top: 0;
+}
+
+.accordion-section-content h3 {
+    width: 100%;
+    color: #fff;
+    margin: 0 0 3% 0;
+    font-size: 150%;
+}
+
+.accordion-section-content img {
+    width: 100%;
+}
+
+.accordion-section-content p {
+    color: #000;
+    font-size: 90%;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background-color: #fff;
+    /* Type */
+    text-decoration: none;
+    border: 0px solid #23a1a7;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+    border: 1px solid #333;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding: 15px;
+    display: none;
+    border: 1px solid #333;
+    background: #fff;
+}
+
+
+.sendRequest {
+    background: #e0b001;
+    float: right;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #000;
+    padding: 2% 3%;
+    text-decoration: none;
+}
+
+
+    .sendRequest:hover {
+        background: #000;
+        color: #e0b001;
+        border: 1px solid #e0b001;
+        text-decoration: none;
+    }
+
+
+
+
+/****************************/
+
+
+.ddummyerror {
+    border: 1px solid #333;
+    position: relative;
+    padding: .7%;
+    float: left;
+    padding-bottom: 25%;
+    margin-left: 1.3%;
+    width: 72.6%;
+}
+
+
+.blankBox {
+    float: left;
+    background: #fff;
+    padding-bottom: 15%;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    width: 98.3%;
+    position: absolute;
+}
+
+
+.twoItemsHide .main {
+    margin-top: 0 !important;
+}
+
+.twoItemsHide {
+    top: 18% !important;
+}
+
+.hidScaleTracker .twoItemsHide {
+    top: 100% !important;
+}
+
+.blankBox p {
+    position: relative;
+    vertical-align: middle;
+    padding-top: 16.6%;
+    color: #000;
+    font-size: 130%;
+}
+
+.errorText {
+    color: #000;
+    float: right;
+}
+
+    .errorText span {
+        color: red;
+    }
+
+.accordion h4 {
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+
+/*********************************************************BoardView***************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+
+/* STRUCTURAL STYLES */
+
+.flapper {
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 300;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+    .flapper .digit {
+        position: relative;
+        display: inline-block;
+        box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+    }
+
+        .flapper .digit div {
+            position: absolute;
+            text-align: center;
+            box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+        }
+
+        .flapper .digit .top {
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+        }
+
+        .flapper .digit .bottom {
+            bottom: 0px;
+            left: 0px;
+            overflow: hidden;
+        }
+
+    /* SIZE STYLES */
+
+    /* XXL 96x128 */
+
+    .flapper.XXL {
+        font-size: 116px;
+        line-height: 123px;
+        height: 132px;
+    }
+
+        .flapper.XXL .digit {
+            border-radius: 8px;
+        }
+
+            .flapper.XXL .digit div {
+                border-radius: 6px;
+            }
+
+            .flapper.XXL .digit,
+            .flapper.XXL .digit div {
+                height: 128px;
+                width: 96px;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+                .flapper.XXL .digit .top {
+                    clip: rect(0px, 96px, 64px, 0px);
+                }
+
+                .flapper.XXL .digit .bottom {
+                    clip: rect(65px, 96px, 128px, 0px);
+                }
+
+    /* XL 72x96 */
+
+    .flapper.XL {
+        font-size: 89px;
+        line-height: 92px;
+        height: 100px;
+    }
+
+        .flapper.XL .digit {
+            border-radius: 7px;
+            margin: 0 0 0 4px;
+        }
+
+            .flapper.XL .digit:first-child {
+                margin: 0;
+            }
+
+            .flapper.XL .digit div {
+                border-radius: 5px;
+            }
+
+            .flapper.XL .digit,
+            .flapper.XL .digit div {
+                height: 96px;
+                width: 72px;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+                .flapper.XL .digit .top {
+                    clip: rect(0px, 72px, 47px, 0px);
+                }
+
+                .flapper.XL .digit .bottom {
+                    clip: rect(48px, 72px, 96px, 0px);
+                }
+
+    /* L 54x72 */
+
+    .flapper.L {
+        float: left;
+        font-size: 180%;
+        line-height: 25px;
+        height: 28px;
+    }
+
+        .flapper.L .digit {
+            border-radius: 6px;
+            margin: 0 0 0 4px;
+        }
+
+            .flapper.L .digit:first-child {
+                margin: 0;
+            }
+
+            .flapper.L .digit div {
+                border-radius: 4px;
+            }
+
+            .flapper.L .digit, .flapper.L .digit div {
+                height: 26px;
+                width: 26px;
+                font-size: inherit;
+                line-height: inherit;
+                font-weight: 400;
+                padding-top: 2px;
+            }
+
+
+
+/*.flapper.L .digit .top {
+                    clip: rect(0px, 54px, 25px, 0px);
+                }
+
+                .flapper.L .digit .bottom {
+                    clip: rect(26px, 54px, 72px, 0px);
+                }*/
+
+/* M 40x54 (default) */
+
+.flapper {
+    font-size: 51px;
+    line-height: 52px;
+    height: 58px;
+}
+
+    .flapper .digit {
+        border-radius: 5px;
+        margin: 0 0 0 4px;
+    }
+
+        .flapper .digit:first-child {
+            margin: 0;
+        }
+
+        .flapper .digit div {
+            border-radius: 3px;
+        }
+
+        .flapper .digit,
+        .flapper .digit div {
+            height: 54px;
+            width: 40px;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+    /*.flapper .digit .top {
+                clip: rect(0px, 40px, 26px, 0px);
+            }
+
+            .flapper .digit .bottom {
+                clip: rect(27px, 40px, 54px, 0px);
+            }*/
+
+    /* S 30x40 */
+
+    .flapper.S {
+        font-size: 36px;
+        line-height: 39px;
+        height: 44px;
+    }
+
+        .flapper.S .digit {
+            border-radius: 4px;
+            margin: 0 0 0 2px;
+        }
+
+            .flapper.S .digit:first-child {
+                margin: 0;
+            }
+
+            .flapper.S .digit div {
+                border-radius: 2px;
+            }
+
+            .flapper.S .digit,
+            .flapper.S .digit div {
+                height: 40px;
+                width: 30px;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+                .flapper.S .digit .top {
+                    clip: rect(0px, 30px, 19px, 0px);
+                }
+
+                .flapper.S .digit .bottom {
+                    clip: rect(20px, 30px, 40px, 0px);
+                }
+
+    /* XS 24x30 */
+
+    .flapper.XS {
+        font-size: 28px;
+        line-height: 30px;
+        height: 34px;
+    }
+
+        .flapper.XS .digit {
+            border-radius: 3px;
+            margin: 0 0 0 2px;
+        }
+
+            .flapper.XS .digit:first-child {
+                margin: 0;
+            }
+
+            .flapper.XS .digit div {
+                border-radius: 1px;
+            }
+
+            .flapper.XS .digit,
+            .flapper.XS .digit div {
+                height: 30px;
+                width: 24px;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+                .flapper.XS .digit .top {
+                    clip: rect(0px, 24px, 14px, 0px);
+                }
+
+                .flapper.XS .digit .bottom {
+                    clip: rect(15px, 24px, 30px, 0px);
+                }
+
+    /* THEME STYLES */
+
+    /* DARK (default) */
+
+    .flapper .digit {
+        background-color: #333;
+        border: 1px solid #666;
+    }
+
+        .flapper .digit div {
+            color: #000;
+            padding: 0px;
+            background-color: #fff;
+            line-height: 1 !important;
+        }
+
+    /* LIGHT */
+
+    .flapper.light .digit {
+        border: 1px solid #ddd;
+        background-color: #eee;
+    }
+
+        .flapper.light .digit div {
+            color: #222;
+            padding: 0px;
+            background-color: #f6f6f6;
+        }
+
+
+.sliderboardView {
+    background: #fff;
+    width: 101%;
+    float: left;
+    text-align: center;
+    margin: .5% 0.5% 0.5% -0.5%;
+    padding: .5% 2% 0.3% 2%;
+}
+
+
+.calendarText {
+    float: left;
+    padding: 1%;
+}
+
+    .calendarText label {
+        margin: 0;
+        font-size: 80%;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+    }
+
+
+.startgoalDate {
+    float: left;
+    width: 30%;
+    position: relative;
+}
+
+.completedDate {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.remainingDate {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.coachingDate {
+    float: left;
+    width: 30%;
+    position: relative;
+}
+
+
+.sliderboardView h3 {
+    color: #000;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 120%;
+}
+
+.startgoalDate .calendarText {
+    padding: 1% 2%;
+}
+
+.completedDate .calendarText {
+    padding: 1% 25%;
+}
+
+.remainingDate .calendarText {
+    padding: 1% 25%;
+}
+
+.coachingDate .calendarText {
+    padding: 1% 2%;
+}
+
+.completedDate .flapper .digit div {
+    color: #eb4830 !important;
+}
+
+
+.remainingDate .flapper .digit div {
+    color: #eb4830 !important;
+}
+
+/*.priorities_part2 .accordion a {
+    display: table !important;
+}*/
+
+/********************************************************************************************************************************************************/
+
+.dp_fci {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+.dp_freq {
+    float: left;
+    width: 100%;
+    margin-right: 2%;
+}
+
+.dp_capab {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.dp_importnt {
+    float: left;
+    width: 32%;
+}
+
+.clr {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+
+
+.capability_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border: 1px solid #0b47c2;
+}
+
+    .capability_scale li {
+        color: #000;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+    .capability_scale li {
+        min-height: 0px !important;
+        text-transform: uppercase;
+        min-height: 0px;
+    }
+
+
+        .capability_scale li:first-child {
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #ccdbfa; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ccdbfa, #aec6f7); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(2) {
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #f7c4bc; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #aec6f7, #7da3f2); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(3) {
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #7da3f2; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #7da3f2, #4b80ee); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(4) {
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #4b80ee, #2767ea); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #4b80ee, #2767ea); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #4b80ee, #2767ea); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #4b80ee, #2767ea); /* Standard syntax */
+            font-size: 70%;
+        }
+
+
+
+
+.important_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border: 1px solid #eb4329;
+}
+
+    .important_scale li {
+        color: #000;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+    .important_scale li {
+        min-height: 0px !important;
+        text-transform: uppercase;
+        min-height: 0px;
+    }
+
+
+        .important_scale li:first-child {
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #fae1dd; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #fae1dd, #f7c4bc); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(2) {
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #f7c4bc; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7c4bc, #f39586); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #f7c4bc, #f39586); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7c4bc, #f39586); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #f7c4bc, #f39586); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(3) {
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #f39586; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f39586, #ee654f); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #f39586, #ee654f); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f39586, #ee654f); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #f39586, #ee654f); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(4) {
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #ee654f, #eb442a); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ee654f, #eb442a); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ee654f, #eb442a); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ee654f, #eb442a); /* Standard syntax */
+            font-size: 70%;
+        }
+
+.dp_legends ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+    .dp_legends ul li {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 1px 10px 0 20px;
+        text-transform: uppercase;
+    }
+
+        .dp_legends ul li:first-child {
+            background: url(../../Images/Common/dp_leg_freq.png)no-repeat left center;
+            background-size: 17% 70%;
+        }
+
+
+        .dp_legends ul li:nth-child(2) {
+            background: url(../../Images/Common/dp_leg_cap.png)no-repeat left center;
+            background-size: 17% 70%;
+        }
+
+        .dp_legends ul li:nth-child(3) {
+            background: url(../../Images/Common/dp_leg_imp.png)no-repeat left center;
+            background-size: 17% 70%;
+        }
+
+/*@media screen and (max-width: 3500px) and (min-width: 2800px) {
+
+    .accordion-section-title {
+        font-size: 25px;
+    }
+
+    .trackerMenu {
+        padding-left: 15%;
+        background-size: 10% 80%;
+    }
+
+    .updateMenu {
+        padding-left: 15%;
+        background-size: 10% 80%;
+    }
+
+
+    .profilemenu {
+        padding-left: 15%;
+        background-size: 10% 80%;
+    }
+
+
+    .ddummyerror {
+        margin-left: 0.7%;
+        width: 73.7%;
+    }
+
+    .sliderboardView {
+        width: 100.6%;
+        margin: .5% 0.5% 0.5% -0.3%;
+    }
+
+    .modNmaeview {
+        font-size: 28px;
+    }
+
+    .frquencyContent li .frequency_scale li {
+        font-size: 70% !important;
+    }
+
+
+    .frquencyContent ul li {
+        padding: .4% 1% .3% 1%;
+    }
+
+
+    p {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    h1 {
+        font-size: 200% !important;
+    }
+
+    h4 {
+        font-size: 25px !important;
+    }
+
+    .tracker_show {
+        background-size: 13% 130% !important;
+        font-size: 25px;
+    }
+
+        .tracker_show:hover {
+            background-size: 13% 130% !important;
+            font-size: 25px;
+        }
+
+    .hideTrace {
+        background-size: 13% 130% !important;
+    }
+
+        .hideTrace:hover {
+            background-size: 13% 130% !important;
+        }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-top: 0.5%;
+        margin-bottom: 0.3%;
+    }
+
+    .calendarText label {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+
+    #option_menu {
+        right: 0.7%;
+        top: 3.9%;
+        width: 600px !important;
+    }
+
+    .profilelist ul li {
+        font-size: 140%;
+    }
+
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 42% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 42% !important;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 35%;
+    }
+
+    #profileListsView {
+        padding-bottom: 35% !important;
+    }
+
+
+    .digit {
+        font-size: 120% !important;
+    }
+
+
+    .moduleTier {
+        font-size: 100% !important;
+    }
+
+    .ui-datepicker td span, .ui-datepicker td a {
+        height: 34px !important;
+        width: 32px !important;
+        font-size: 20px !important;
+    }
+
+    .ui-datepicker .ui-datepicker-title {
+        font-size: 22px;
+    }
+
+    .ui-datepicker th {
+        font-size: 18px;
+    }
+
+    #btnDate {
+        font-size: 22px;
+    }
+
+
+    .frequency_scale li span:first-child, .frequency_scale li span {
+        font-size: 100% !important;
+    }
+
+    .frequency_scale {
+        margin-top: 0.4% !important;
+    }
+
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 100%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 95% !important;
+    }
+
+    .accordion-section-content p {
+        font-size: 22px !important;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 55px;
+        padding-top: 7px;
+        font-size: 35px;
+        height: 40px;
+    }
+
+    .startgoalDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .frquencyContent li {
+        font-size: 24px !important;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+
+    h3 {
+        font-size: 200% !important;
+    }
+
+    .user_tiles ul li {
+        width: 47%;
+    }
+
+        .user_tiles ul li p {
+            font-size: 26px !important;
+        }
+
+    .option_part {
+        width: 70%;
+    }
+
+    .startDate, .endDate {
+        font-size: 170%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 10px 0;
+        font-size: 150%;
+    }
+
+    .frquencyHeader li {
+        font-size: 28px;
+    }
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 30%;
+    }
+
+        .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 30% !important;
+        }
+
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40%;
+    }
+
+        .hidScaleTracker .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 40% !important;
+        }
+
+    .managerSpan {
+        padding-bottom: 16%;
+        top: -90%;
+    }
+
+
+    .youSpan {
+        padding-top: 15%;
+        top: 4%;
+    }
+
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 90px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+}*/
+
+@media screen and (max-width: 4000px) and (min-width: 2800px) {
+
+
+    .frquencyContent li .frequency_scale li, .frquencyContent li .capability_scale li, .frquencyContent li .important_scale li {
+        font-size: 65% !important;
+        line-height: 1;
+        height: 40px;
+        padding-top: 2px;
+    }
+
+
+
+    .youSpan {
+        padding-top: 30%;
+        top: 35%;
+        background-size: 35px 20px;
+    }
+
+    .managerSpan {
+        padding-bottom: 28%;
+        top: -60%;
+        background-size: 35px 20px;
+    }
+
+    .ddummyerror {
+        margin-left: 0.7%;
+        width: 73.7%;
+    }
+
+    .sliderboardView {
+        width: 100.6%;
+        margin: .5% 0.5% 0.5% -0.3%;
+    }
+
+    .modNmaeview {
+        font-size: 150%;
+    }
+
+    .frquencyContent li div {
+        font-size: 138%;
+    }
+
+
+
+
+    .frquencyContent ul li {
+        padding: .4% 1% .3% 1%;
+    }
+
+
+    /*p {
+        font-size: 35px !important;
+    }*/
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    h1 {
+        font-size: 200% !important;
+    }
+
+    h4 {
+        font-size: 140% !important;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-top: 6px;
+        margin-bottom: 10px;
+    }
+
+
+    #option_menu {
+        right: 1%;
+        top: 3.4%;
+    }
+
+
+    .profilelist ul li {
+        font-size: 140%;
+    }
+
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 42% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 42% !important;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 35%;
+    }
+
+    #profileListsView {
+        padding-bottom: 35% !important;
+    }
+
+
+    .digit {
+        font-size: 120% !important;
+    }
+
+
+    .moduleTier {
+        font-size: 100% !important;
+    }
+
+
+    .frequency_scale li span:first-child, .frequency_scale li span {
+        font-size: 100% !important;
+    }
+
+    .frequency_scale {
+        margin-top: 0.4% !important;
+    }
+
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 100%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 95% !important;
+    }
+
+    .accordion-section-content p {
+        font-size: 110% !important;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 55px;
+        height: 40px;
+        font-size: 130%;
+    }
+
+    .calendarText label {
+        margin-top: 20px;
+        font-size: 150%;
+    }
+
+    .startgoalDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .frquencyContent li {
+        font-size: 140% !important;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+
+    h3 {
+        font-size: 200% !important;
+    }
+
+    .user_tiles ul li {
+        width: 47%;
+    }
+
+        .user_tiles ul li p {
+            font-size: 200% !important;
+        }
+
+    .option_part {
+        width: 70%;
+    }
+
+    .startDate, .endDate {
+        font-size: 170%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 10px 0;
+        font-size: 150%;
+    }
+
+    .frquencyHeader li {
+        font-size: 180%;
+    }
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+    .accordion-section-title {
+        padding: 15px 60px;
+        font-size: 1.8em;
+    }
+
+    .tracker_show {
+        font-size: 180%;
+    }
+
+    .ui-datepicker .ui-datepicker-title {
+        font-size: 150%;
+        margin-top: -10px;
+    }
+
+    .priorities_tiles ul li p {
+        font-size: 220%;
+    }
+
+
+
+    .ui-datepicker td span, .ui-datepicker td a {
+        height: 38px !important;
+        width: 32px !important;
+        font-size: 150%;
+    }
+
+    .ui-datepicker-calendar th span {
+        font-size: 150%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 45%;
+    }
+
+    .frquencyContent li:first-child {
+        font-size: 180% !important;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+        padding-bottom: 45% !important;
+    }
+
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 55%;
+    }
+
+        .hidScaleTracker .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 55% !important;
+        }
+
+    .hover_content {
+        margin-top: 0%;
+        font-size: 100% !important;
+    }
+
+
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 70px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .priorities_part2 h2 {
+        width: 75%;
+    }
+
+    .dp_legends ul li {
+        padding: 2px 20px 0 35px;
+        font-size: 160%;
+        background-size: 25px 25px !important;
+    }
+
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 2800px) and (min-width: 2300px) {
+
+
+    .frquencyContent li .frequency_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+        height: 40px;
+        padding-top: 2px;
+    }
+
+    .frquencyContent li .capability_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+        height: 40px;
+        padding-top: 2px;
+    }
+
+    .frquencyContent li .important_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+        padding-top: 2px;
+        height: 40px;
+    }
+
+    .youSpan {
+        padding-top: 30%;
+        top: 35%;
+    }
+
+    .managerSpan {
+        padding-bottom: 28%;
+        top: -60%;
+    }
+
+    .ddummyerror {
+        margin-left: 0.7%;
+        width: 73.7%;
+    }
+
+    .sliderboardView {
+        width: 100.6%;
+        margin: .5% 0.5% 0.5% -0.3%;
+    }
+
+    .modNmaeview {
+        font-size: 115%;
+    }
+
+    .frquencyContent li .frequency_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+    .frquencyContent li .capability_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+    .frquencyContent li .important_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+
+    .frquencyContent ul li {
+        padding: .4% 1% .3% 1%;
+    }
+
+
+    p {
+        font-size: 170% !important;
+    }
+
+    h2 {
+        font-size: 200% !important;
+    }
+
+    h1 {
+        font-size: 200% !important;
+    }
+
+    h4 {
+        font-size: 140% !important;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-top: -0.2%;
+        margin-bottom: 0.3%;
+    }
+
+
+    #option_menu {
+        right: 1%;
+        top: 3.4%;
+    }
+
+
+    .profilelist ul li {
+        font-size: 140%;
+    }
+
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 42% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 42% !important;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 35%;
+    }
+
+    #profileListsView {
+        padding-bottom: 35% !important;
+    }
+
+
+    .digit {
+        font-size: 120% !important;
+    }
+
+
+    .moduleTier {
+        font-size: 100% !important;
+    }
+
+
+    .frequency_scale li span:first-child, .frequency_scale li span {
+        font-size: 100% !important;
+    }
+
+    .frequency_scale {
+        margin-top: 0.4% !important;
+    }
+
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 100%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 95% !important;
+    }
+
+    .accordion-section-content p {
+        font-size: 110% !important;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 45px;
+        height: 30px;
+    }
+
+    .calendarText label {
+        margin-top: 10px;
+    }
+
+    .startgoalDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .frquencyContent li {
+        font-size: 160% !important;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+
+    h3 {
+        font-size: 200% !important;
+    }
+
+    .user_tiles ul li {
+        width: 47%;
+    }
+
+        .user_tiles ul li p {
+            font-size: 150% !important;
+        }
+
+    .option_part {
+        width: 70%;
+    }
+
+    .startDate, .endDate {
+        font-size: 170%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 10px 0;
+        font-size: 150%;
+    }
+
+    .frquencyHeader li {
+        font-size: 150%;
+    }
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40%;
+    }
+
+        .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 40% !important;
+        }
+
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 50%;
+    }
+
+        .hidScaleTracker .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 50% !important;
+        }
+
+    .hover_content {
+        margin-top: 0%;
+    }
+
+
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 70px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .priorities_part2 h2 {
+        width: 75%;
+    }
+
+    .dp_legends ul li {
+        padding: 4px 20px 0 25px;
+        font-size: 120%;
+    }
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+
+@media screen and (max-width:2300px) and (min-width:2000px) {
+    .breadcrumb {
+        margin-top: 0px;
+    }
+
+    .ui.menu .item {
+        font-size: 1.8rem;
+    }
+
+    .frquencyContent li .frequency_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+        height: 40px;
+        padding-top: 2px;
+    }
+
+    .frquencyContent li .capability_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+        height: 40px;
+        padding-top: 2px;
+    }
+
+    .frquencyContent li .important_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+        padding-top: 2px;
+        height: 40px;
+    }
+
+    .youSpan {
+        padding-top: 38%;
+        top: 35%;
+    }
+
+    .managerSpan {
+        padding-bottom: 28%;
+        top: -60%;
+    }
+
+    .ddummyerror {
+        margin-left: 0.7%;
+        width: 73.7%;
+    }
+
+    .sliderboardView {
+        width: 100.6%;
+        margin: .5% 0.5% 0.5% -0.3%;
+    }
+
+    .modNmaeview {
+        font-size: 115%;
+    }
+
+    .frquencyContent li .frequency_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+    .frquencyContent li .capability_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+    .frquencyContent li .important_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+
+    .frquencyContent ul li {
+        padding: .4% 1% .3% 1%;
+    }
+
+
+    p {
+        font-size: 170% !important;
+    }
+
+    h2 {
+        font-size: 200% !important;
+    }
+
+    h1 {
+        font-size: 200% !important;
+    }
+
+    h4 {
+        font-size: 140% !important;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-top: -0.2%;
+        margin-bottom: 0.3%;
+    }
+
+
+    #option_menu {
+        right: 1%;
+        top: 3.4%;
+    }
+
+
+    .profilelist ul li {
+        font-size: 140%;
+    }
+
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 42% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 42% !important;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 35%;
+    }
+
+    #profileListsView {
+        padding-bottom: 35% !important;
+    }
+
+
+    .digit {
+        font-size: 120% !important;
+    }
+
+
+    .moduleTier {
+        font-size: 100% !important;
+    }
+
+
+    .frequency_scale li span:first-child, .frequency_scale li span {
+        font-size: 100% !important;
+    }
+
+    .frequency_scale {
+        margin-top: 0.4% !important;
+    }
+
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 100%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 95% !important;
+    }
+
+    .accordion-section-content p {
+        font-size: 110% !important;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 35px;
+        height: 30px;
+    }
+
+    .calendarText label {
+        margin-top: 10px;
+    }
+
+    .startgoalDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .frquencyContent li {
+        font-size: 135% !important;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+
+    h3 {
+        font-size: 200% !important;
+    }
+
+    .user_tiles ul li {
+        width: 47%;
+    }
+
+        .user_tiles ul li p {
+            font-size: 150% !important;
+        }
+
+    .option_part {
+        width: 70%;
+    }
+
+    .startDate, .endDate {
+        font-size: 170%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 10px 0;
+        font-size: 150%;
+    }
+
+    .frquencyHeader li {
+        font-size: 150%;
+    }
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 50%;
+    }
+
+        .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 50% !important;
+        }
+
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 55%;
+    }
+
+        .hidScaleTracker .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 55% !important;
+        }
+
+    .hover_content {
+        margin-top: 0%;
+    }
+
+
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 70px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .priorities_part2 h2 {
+        width: 73%;
+    }
+
+    .dp_legends ul li {
+        padding: 4px 20px 0 25px;
+        font-size: 120%;
+    }
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .qnumber {
+        padding-top: .6% !important;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1800px) {
+
+    .priorities_part2 h2 {
+        width: 75%;
+    }
+
+    .ui.menu .item {
+        font-size: 1.7rem;
+    }
+
+    .breadcrumb {
+        padding: 1% 1% 0.6% 1.5% !important;
+    }
+
+    .ui.menu .item {
+        font-size: 1.7rem;
+    }
+
+    .breadcrumb {
+        padding: 1% 1% 0.6% 1.5% !important;
+    }
+
+    .ddummyerror {
+        margin-left: 0.7%;
+        width: 73.7%;
+    }
+
+    .sliderboardView {
+        width: 100.6%;
+        margin: .5% 0.5% 0.5% -0.3%;
+    }
+
+    .modNmaeview {
+        font-size: 115%;
+    }
+
+    .frquencyContent li .frequency_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+    .frquencyContent li .capability_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+    .frquencyContent li .important_scale li {
+        font-size: 85% !important;
+        line-height: 1;
+    }
+
+
+    .frquencyContent ul li {
+        padding: .4% 1% .3% 1%;
+    }
+
+
+    p {
+        font-size: 170% !important;
+    }
+
+    h2 {
+        font-size: 200% !important;
+    }
+
+    h1 {
+        font-size: 200% !important;
+    }
+
+    h4 {
+        font-size: 140% !important;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-top: -0.2%;
+        margin-bottom: 0.3%;
+    }
+
+
+    #option_menu {
+        right: 1%;
+        top: 3.4%;
+    }
+
+
+    .profilelist ul li {
+        font-size: 140%;
+    }
+
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 42% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 42% !important;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 35%;
+    }
+
+    #profileListsView {
+        padding-bottom: 35% !important;
+    }
+
+
+    .digit {
+        font-size: 120% !important;
+    }
+
+
+    .moduleTier {
+        font-size: 100% !important;
+    }
+
+
+    .frequency_scale li span:first-child, .frequency_scale li span {
+        font-size: 100% !important;
+    }
+
+    .frequency_scale {
+        margin-top: 0.4% !important;
+    }
+
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 100%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 95% !important;
+    }
+
+    .accordion-section-content p {
+        font-size: 110% !important;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 45px;
+        height: 30px;
+    }
+
+    .calendarText label {
+        margin-top: 10px;
+    }
+
+    .startgoalDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .frquencyContent li {
+        font-size: 140% !important;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 29%;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 3% 1% 5.5%;
+    }
+
+
+    h3 {
+        font-size: 200% !important;
+    }
+
+    .user_tiles ul li {
+        width: 47%;
+    }
+
+        .user_tiles ul li p {
+            font-size: 150% !important;
+        }
+
+    .option_part {
+        width: 70%;
+    }
+
+    .startDate, .endDate {
+        font-size: 170%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 10px 0;
+        font-size: 150%;
+    }
+
+    .frquencyHeader li {
+        font-size: 150%;
+    }
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 30%;
+    }
+
+        .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 30% !important;
+        }
+
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40%;
+    }
+
+        .hidScaleTracker .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+            padding-bottom: 40% !important;
+        }
+
+    .managerSpan {
+        padding-bottom: 16%;
+        top: -90%;
+    }
+
+
+    .youSpan {
+        padding-top: 15%;
+        top: 4%;
+    }
+
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 70px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .startDate, .endDate {
+        font-size: 150%;
+    }
+
+    .accordion-section .slimScrollDiv {
+        padding-bottom: 120%;
+    }
+
+    #accordion-4 {
+        padding-bottom: 115% !important;
+    }
+
+
+    h1 {
+        font-size: 150% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -5.4% !important;
+    }
+
+
+    h2 {
+        font-size: 150% !important;
+    }
+
+
+    #accordion-4 p {
+        font-size: 100% !important;
+    }
+
+    .coachingDate .calendarText {
+        padding: 1% 1.5%;
+    }
+
+
+    .daysCompleted, .daysRemaining {
+        padding: 5px 0 9px 0;
+        font-size: 120%;
+    }
+
+    .calendarText label {
+        margin-top: 8px;
+    }
+
+
+    .startgoalDate .calendarText {
+        padding: 1% 1.5%;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 40px;
+        height: 30px;
+    }
+
+    .completedDate .calendarText {
+        padding: 1% 25%;
+    }
+
+    .user_tiles ul li span {
+        font-size: 300%;
+    }
+
+    .profileview_content .slimScrollDiv {
+        padding-bottom: 31%;
+    }
+
+    #profileListsView {
+        padding-bottom: 31% !important;
+    }
+
+    .profilelist ul li {
+        font-size: 120%;
+    }
+
+
+    .prioitiesFrequency .slimScrollDiv #devPrioritiesCont {
+        padding-bottom: 33% !important;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 33%;
+    }
+
+    .remainingDate .calendarText {
+        padding: 1% 25%;
+    }
+
+    .frquencyContent li {
+        font-size: 108% !important;
+    }
+
+    .ddummyerror {
+        margin-left: 1%;
+        width: 73.2%;
+    }
+
+    .frquencyContent li:nth-child(2) {
+        min-height: 60px;
+        line-height: 1.2;
+    }
+
+    /*@media screen and (max-width:2000px) and (min-width:1800px)*/
+    .managerSpan {
+        top: -70%;
+        padding-bottom: 30%;
+    }
+
+
+    .youSpan {
+        padding-top: 35%;
+        top: 25%;
+    }
+
+    .dp_fci {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+
+    .frequency_scale li {
+        font-size: 80% !important;
+    }
+
+    .qncontent {
+        font-size: 115%;
+    }
+
+    .frquencyContent li.qnumber {
+        padding-top: 0.7%;
+        font-size: 140% !important;
+    }
+
+
+    #devPrioritiesCont {
+        padding-bottom: 25% !important;
+    }
+
+
+
+        #devPrioritiesCont ul li span {
+            font-size: 140%;
+        }
+
+    .managerSpan, .youSpan {
+        font-size: 100% !important;
+    }
+
+    /*@media screen and (max-width:2000px) and (min-width:1900px)*/
+    .clickdeeper {
+        left: -175% !important;
+    }
+}
+
+
+
+@media screen and (max-width:1800px) and (min-width:1500px) {
+
+
+    .ddummyerror {
+        margin-left: 1.1%;
+        width: 73%;
+    }
+
+    #option_menu {
+        right: 1.2%;
+    }
+
+    .flapper.L .digit, .flapper.L .digit div {
+        width: 32px;
+    }
+
+    .managerSpan {
+        padding-bottom: 22%;
+        top: -90%;
+    }
+
+    .youSpan {
+        padding-top: 22%;
+        top: 0%;
+    }
+
+    .daysCompleted, .daysRemaining {
+        top: 0%;
+    }
+
+    .hidScaleTracker .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 40% !important;
+    }
+
+    .hidScaleTracker #devPrioritiesCont {
+        padding-bottom: 40% !important;
+    }
+
+    .hidScaleTracker .profileview_content .slimScrollDiv {
+        padding-bottom: 40% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 40% !important;
+    }
+}
+
+
+@media screen and (max-width:1500px) and (min-width:1200px) {
+    #usrList li p {
+        font-size: 100% !important;
+        line-height: 1;
+    }
+
+    .priorities_part2 h2 {
+        width: 68%;
+    }
+
+    .dp_legends ul li:nth-child(1), .dp_legends ul li:nth-child(2), .dp_legends ul li:nth-child(3) {
+        background-size: 15% 70%;
+    }
+
+
+    .breadcrumb {
+        margin-top: 0%;
+    }
+
+    .login {
+        padding-top: 5.5% !important;
+    }
+
+
+    .sliderboardView {
+        width: 102%;
+        margin: .5% 0.5% 0% -1%;
+    }
+
+
+    .frequency_scale li {
+        font-size: 70% !important;
+    }
+
+    .hover_content {
+        margin-top: 0%;
+        width: 35%;
+    }
+
+
+    .youSpan {
+        padding-top: 43%;
+        top: 40%;
+    }
+
+    .managerSpan {
+        padding-bottom: 40%;
+        top: -60%;
+    }
+
+
+    .modNmaeview {
+        font-size: 110%;
+    }
+
+    .priorities_part2 h1 {
+        font-size: 120%;
+    }
+
+
+    .clickdeeper {
+        left: -140%;
+    }
+
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -6% !important;
+    }
+
+
+    .frquencyContent ul li {
+        padding: 1% 1% 1% 1%;
+    }
+
+    .hidScaleTracker .slimScrollDiv {
+        padding-bottom: 37% !important;
+    }
+
+    .hidScaleTracker #profileListsView {
+        padding-bottom: 37% !important;
+    }
+
+    .hidScaleTracker #accordion-4 {
+        padding-bottom: 32% !important;
+    }
+
+    .hidScaleTracker #devPrioritiesCont {
+        padding-bottom: 37% !important;
+    }
+}
+
+
+
+.actionMore {
+    font-size: 80% !important;
+    padding-left: 4px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+    .actionMore:hover {
+        text-decoration: none;
+    }
+
+.moduleTier {
+    position: relative;
+    right: -2%;
+    font-size: 80% !important;
+    color: red;
+    text-align: left;
+    float: right;
+    display: table;
+    vertical-align: top;
+}
+
+.actionMore:hover {
+    color: #eb4830;
+    text-decoration: underline;
+}
+
+
+.frquencyContent ul:last-child .hover_content {
+    margin-top: -5%;
+}
+
+
+
+#target li p, #target li a {
+    float: left;
+    color: #000;
+    margin: 1%;
+    padding: 0 0 0;
+    text-decoration: none;
+    width: 82%;
+}
