@@ -475,8 +475,8 @@ var devLanding = {
                                 impselectedRole4 = impselectedRole4 + "<span class='youSpan'>" + name + "</span>";
                             }
                             html = html + "<ul><li class='qnumber' style='vertical-align: top;'>" + (i + 1) + "</li><li style='vertical-align: top;'><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
-                                "<li><div class='qncontent'>" + moreText + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>frequently " + selectedRole3 + "</li> " +
-                                "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul></div></div></li>" +
+                                "<li><div class='qncontent'>" + moreText + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div></li><li>asekdjf aksdjhfkasd fhjafkjdshkjf aksdjhf dsfh</li><li><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Introductory " + selectedRole1 + "</li> <li class='" + selected2 + "'>Intermediate " + selectedRole2 + "</li> <li class='" + selected3 + "'>Experienced " + selectedRole3 + "</li> " +
+                                "<li class='" + selected4 + "'>Expert " + selectedRole4 + "</li> </ul></div></div></li>" +
                                 "</ul>";
                             //html = html + "<ul><li>" + (i + 1) + "</li><li><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
                             //    "<li><div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div>" + moreText + "</li>" +
@@ -510,11 +510,14 @@ var devLanding = {
                                 selected4 = "selectYou";
                                 selectedRole4 = selectedRole4 + "<span class='youSpan'>" + name + "</span>";
                             }
-
                             html = html + "<ul><li class='qnumber' style='vertical-align: top;'>" + (i + 1) + "</li><li style='vertical-align: top;'><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
-                                "<li><div class='qncontent'>" + moreText + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>frequently " + selectedRole3 + "</li> " +
-                                "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul></div></div></li>" +
+                                "<li><div class='qncontent'>" + moreText + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div></li><li>asekdjf aksdjhfkasd fhjafkjdshkjf aksdjhf dsfh</li><li><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Introductory " + selectedRole1 + "</li> <li class='" + selected2 + "'>Intermediate " + selectedRole2 + "</li> <li class='" + selected3 + "'>Experienced " + selectedRole3 + "</li> " +
+                                "<li class='" + selected4 + "'>Expert " + selectedRole4 + "</li> </ul></div></div></li>" +
                                 "</ul>";
+                            //html = html + "<ul><li class='qnumber' style='vertical-align: top;'>" + (i + 1) + "</li><li style='vertical-align: top;'><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
+                            //    "<li><div class='qncontent'>" + moreText + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>frequently " + selectedRole3 + "</li> " +
+                            //    "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul></div></div></li>" +
+                            //    "</ul>";
                         }
                     }
                     $('#devPrioritiesCont').html(html);
