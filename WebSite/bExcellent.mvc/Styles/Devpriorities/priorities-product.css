@@ -603,6 +603,7 @@ p {
         width: 25%;
         font-size: 100%;
         line-height: 1.2;
+        vertical-align:top;
     }
 
     .frquencyContent li:nth-child(4) {
@@ -610,6 +611,7 @@ p {
         width: 25%;
         font-size: 100%;
         line-height: 1.2;
+        vertical-align:top;
     }
 
     .frquencyContent li:nth-child(5) {

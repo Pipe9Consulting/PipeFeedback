@@ -1,0 +1,1844 @@
+﻿.container-fluid {
+    padding: 2% 1% 2% 2% !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background: url(../../Images/DevPriorities/Landing/bodyBg-new5.jpg)no-repeat !important;
+    font-family: Segoe UI;
+    background-size: 100% 100% !important;*/
+}
+
+.dp_qetions div, .dp_practicearea span {
+    color: #000;
+}
+
+.row {
+    margin-right: 0;
+}
+
+a:focus, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+p {
+    font-size: 120%;
+}
+
+.clearfix {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+
+#devprogress {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 35%;
+    position: relative;
+}
+
+.user_tiles .slimScrollDiv {
+    width: 85% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 55%;
+    border: 1px solid #333;
+    padding: 1% 1% 77% 1%;
+}
+
+#usrList {
+    width: 100% !important;
+    height: 0!important;
+    padding-bottom: 90% !important;
+    position: relative;
+}
+
+.prioitiesFrequency .slimScrollDiv {
+    width: 100% !important;
+    height: 0!important;
+    position: relative;
+    padding-bottom: 35%;
+}
+
+.user_tiles .slimScrollBar, .user_tiles .slimScrollRail {
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.prioitiesFrequency .slimScrollBar, .prioitiesFrequency .slimScrollRail {
+    cursor: pointer;
+    opacity: .8 !important;
+    right: 0.3% !important;
+    margin-top: 5px;
+    background-color: #eb4830 !important;
+    height: 50% !important;
+}
+
+
+.user_tiles h2 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.user_tiles ul {
+    float: left;
+    width: 85%;
+    margin-right: 15%;
+    position: relative;
+}
+
+    .user_tiles ul li {
+        background: #fff;
+        width: 48%;
+        float: left;
+        padding: 0 0% 44% 0;
+        position: relative;
+        margin: 0 2% 2% 0;
+        list-style: none;
+        cursor: pointer;
+        border: 1px solid #666;
+    }
+
+
+        .user_tiles ul li:hover {
+            background: #fff;
+            border: 1px solid #23a1a7;
+        }
+
+            .user_tiles ul li:hover p, .user_tiles ul li:hover span {
+                color: #23a1a7;
+            }
+
+        .user_tiles ul li p {
+            text-transform: uppercase;
+            color: #333;
+            margin: 0;
+            padding: 0 4% 2% 4%;
+        }
+
+        .user_tiles ul li img {
+            right: 0;
+            width: 50%;
+            height: auto;
+            position: absolute;
+        }
+
+        .user_tiles ul li span {
+            color: #fff;
+            display: none;
+            padding: 0 2%;
+            font-size: 230%;
+            margin: 0;
+            line-height: 1;
+        }
+
+.user_name {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.selectTiles {
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
+}
+
+    .selectTiles p, .selectTiles span {
+        color: #23a1a7 !important;
+    }
+
+.priorities_part2 h2 {
+    margin: 0;
+    text-transform: uppercase;
+    float: left;
+    width: 50%;
+}
+
+
+    .priorities_part2 h2 span {
+        text-transform: none;
+        font-size: 70%;
+    }
+
+
+
+.prioitiesFrequency {
+    border: 1px solid #333;
+    height: auto;
+    float: left;
+    position: relative;
+    padding: .8%;
+}
+
+.frquencyHeader {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .frquencyHeader li {
+        background: #23a1a7;
+        list-style: none;
+        float: left;
+        color: #fff;
+        text-transform: uppercase;
+        padding: .4% 1% .3% .7%;
+        text-align: center;
+    }
+
+
+        .frquencyHeader li:first-child {
+            border-right: 1px solid #999;
+            width: 3%;
+        }
+
+
+        .frquencyHeader li:nth-child(2) {
+            border-right: 1px solid #999;
+            width: 13%;
+        }
+
+
+        .frquencyHeader li:nth-child(3) {
+            border-right: 1px solid #999;
+            width: 76%;
+        }
+
+        .frquencyHeader li:nth-child(4) {
+            border-right: 1px solid #999;
+            width: 8%;
+        }
+
+        .frquencyHeader li:nth-child(5) {
+            text-align: center;
+            width: 9%;
+        }
+
+.frquencyContent ul {
+    margin: 0;
+    float: left;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    display: table;
+    list-style: none;
+}
+
+    .frquencyContent ul li {
+        line-height: 1.2;
+        display: table-cell;
+        vertical-align: middle;
+        padding: .2% 1% .3% 1%;
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #aaa;
+        list-style-position: inside;
+    }
+
+.modNmaeview {
+    font-size: 140%;
+}
+
+.frquencyContent li:first-child {
+    width: 3%;
+}
+
+    .frquencyContent li:first-child img {
+        width: 20%;
+        float: left;
+    }
+
+.frquencyContent li:nth-child(2) {
+    width: 13%;
+    font-size: 80%;
+}
+
+.frquencyContent li:nth-child(3) {
+    width: 76%;
+}
+
+.frquencyContent li {
+    min-height: 80px;
+}
+
+.frequency_scale li {
+    min-height: 0 !important;
+}
+
+.frquencyContent li:nth-child(4) {
+    width: 8%;
+}
+
+.frquencyContent li:nth-child(5) {
+    width: 9%;
+    text-align: center;
+    border-right: 0px solid #999;
+}
+
+    .frquencyContent li:nth-child(5) img {
+        width: 60%;
+        text-align: center;
+    }
+
+.frquencyContent ul:first-child {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(2) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(3) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(4) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(5) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(6) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(7) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(8) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(9) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(10) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(11) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(12) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(13) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(14) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(15) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(16) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(17) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(18) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(19) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(20) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(21) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(22) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(23) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(24) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(25) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(26) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(27) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(28) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(29) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(30) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(31) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(32) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(33) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(34) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(35) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(36) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(37) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(38) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(39) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(40) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(41) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(42) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(43) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(44) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(45) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(46) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(47) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(48) {
+    background: #f1f1f1;
+}
+
+.frquencyContent ul:nth-child(49) {
+    background: #fff;
+}
+
+.frquencyContent ul:nth-child(50) {
+    background: #f1f1f1;
+}
+
+.frequency_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border: 1px solid #007176;
+}
+
+    .frequency_scale li {
+        color: #000;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+        .frequency_scale li:first-child {
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            width: 25%;
+            border-right: 1px solid #007176 !important;
+            background: #dcf1f1; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #dcf1f1, #bae2e3); /* Standard syntax */
+        }
+
+        .frequency_scale li:nth-child(2) {
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            font-size: 65%;
+            border-right: 1px solid #007176 !important;
+            background: #bae2e3; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #bae2e3, #84cbce); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #bae2e3, #84cbce); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #bae2e3, #84cbce); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #bae2e3, #84cbce); /* Standard syntax */
+        }
+
+        .frequency_scale li:nth-child(3) {
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            border-right: 1px solid #007176 !important;
+            background: #84cbce; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #84cbce, #4bb2b7); /* Standard syntax */
+        }
+
+        .frequency_scale li:nth-child(4) {
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #4bb2b7, #23a1a7); /* Standard syntax */
+        }
+
+.selectManager {
+    position: relative;
+}
+
+.ddummyerror {
+    border: 1px solid #333;
+    position: relative;
+    padding: .7%;
+    float: left;
+    padding-bottom: 41.3%;
+    width: 100%;
+}
+
+
+.blankBox {
+    float: left;
+    background: #fff;
+    padding-bottom: 19.2%;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    width: 98.6%;
+    position: absolute;
+}
+
+.twoItemsHide .main {
+    margin-top: 0 !important;
+}
+
+.blankBox p {
+    position: relative;
+    vertical-align: middle;
+    padding-top: 19%;
+    color: #000;
+    font-size: 130%;
+}
+
+.managerSpan {
+    background: url(../../Images/DevPriorities/Priorities/frequencyManager.png)no-repeat center;
+    background-size: 25px 15px !important;
+    position: absolute;
+    padding-bottom: 45%;
+    top: -60%;
+    text-transform: uppercase;
+    left: 0%;
+    color: #000 !important;
+    text-align: center;
+    width: 100%;
+}
+
+.dp_no {
+    color: #000;
+}
+
+.selectYou {
+    position: relative;
+}
+
+
+.youSpan {
+    color: #000 !important;
+    background: url(../../Images/DevPriorities/Priorities/frequencyYou.png)no-repeat center;
+    background-size: 25px 15px !important;
+    position: absolute;
+    padding-top: 50%;
+    top: 35%;
+    text-transform: uppercase;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.button_menu {
+    background: url(../../Images/DevPriorities/Priorities/menu_icon.png)no-repeat center;
+    border: 0;
+    float: right;
+    background-size: 100% 70%;
+    width: 2%;
+}
+
+
+#option_menu {
+    top: 5.3%;
+    position: absolute;
+    border: 1px solid #000;
+    background: #fff !important;
+    right: 1.5%;
+    width: 50% !important;
+    z-index: 999999999999999999999;
+}
+
+
+.progress_practiceArea {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+    .progress_practiceArea li {
+        height: 100px;
+        background: #fff;
+        padding: 1% 1%;
+        text-align: center;
+        width: 18.8%;
+        list-style: none;
+        float: left;
+        margin: 1% 0 1% 1%;
+        cursor: pointer;
+        border: 1px solid #666;
+    }
+
+        .progress_practiceArea li:hover {
+            background: #fff;
+            border: 1px solid #23a1a7 !important;
+        }
+
+            .progress_practiceArea li:hover p {
+                color: #23a1a7;
+            }
+
+.selectAP {
+    background: #fff !important;
+    border: 1px solid #23a1a7 !important;
+}
+
+    .selectAP p {
+        color: #23a1a7 !important;
+    }
+
+.progress_practiceArea p {
+    color: #333;
+    line-height: 1.2;
+    margin: 0%;
+    padding: 0;
+}
+
+
+/********************************************************************************************************************************************************/
+
+.dp_fci {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+.dp_freq {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.dp_capab {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.dp_importnt {
+    float: left;
+    width: 32%;
+}
+
+.clr {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+
+
+.capability_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border: 1px solid #0b47c2;
+}
+
+    .capability_scale li {
+        color: #000;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+    .capability_scale li {
+        min-height: 0px !important;
+        text-transform: uppercase;
+        min-height: 0px;
+    }
+
+
+        .capability_scale li:first-child {
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #ccdbfa; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ccdbfa, #aec6f7); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(2) {
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #f7c4bc; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #aec6f7, #7da3f2); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(3) {
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            border-right: 1px solid #0b47c2 !important;
+            background: #7da3f2; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #7da3f2, #4b80ee); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .capability_scale li:nth-child(4) {
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #4b80ee, #2767ea); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #4b80ee, #2767ea); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #4b80ee, #2767ea); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #4b80ee, #2767ea); /* Standard syntax */
+            font-size: 70%;
+        }
+
+
+
+
+.important_scale {
+    margin: 0%;
+    padding: 0%;
+    background: none !important;
+    border: 1px solid #eb4329;
+}
+
+    .important_scale li {
+        color: #000;
+        font-size: 70%;
+        padding-left: 1% !important;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+        border: none !important;
+    }
+
+    .important_scale li {
+        min-height: 0px !important;
+        text-transform: uppercase;
+        min-height: 0px;
+    }
+
+
+        .important_scale li:first-child {
+            /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #fae1dd; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #fae1dd, #f7c4bc); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #fae1dd, #f7c4bc); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(2) {
+            /*background: url(../../Images/DevPriorities/Priorities/orange_scale.png)no-repeat left !important;*/
+            background-size: 105% 100% !important;
+            border: 0;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #f7c4bc; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f7c4bc, #f39586); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #f7c4bc, #f39586); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f7c4bc, #f39586); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #f7c4bc, #f39586); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(3) {
+            /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            border-right: 1px solid #eb4329 !important;
+            background: #f39586; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #f39586, #ee654f); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #f39586, #ee654f); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #f39586, #ee654f); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #f39586, #ee654f); /* Standard syntax */
+            font-size: 70%;
+        }
+
+        .important_scale li:nth-child(4) {
+            /*background: url(../../Images/DevPriorities/Priorities/green_scale.png)no-repeat left !important;*/
+            background-size: 100% 100% !important;
+            width: 25%;
+            background: #4bb2b7; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #ee654f, #eb442a); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ee654f, #eb442a); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ee654f, #eb442a); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ee654f, #eb442a); /* Standard syntax */
+            font-size: 70%;
+        }
+
+
+.frquencyContent .important_scale li, .frquencyContent .frequency_scale li, .frquencyContent .capability_scale li {
+    height: 30px;
+    min-height: 30px !important;
+    font-size: 70% !important;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-top: 2px;
+}
+
+.dp_frqprogress img {
+    width: 100%;
+}
+
+.dp_no, .dp_practicearea, .dp_qetions {
+    padding-top: .4% !important;
+}
+
+.dp_legends ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+    .dp_legends ul li {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 1px 10px 0 20px;
+        text-transform: uppercase;
+        background-size: 20px 25px;
+    }
+
+        .dp_legends ul li:first-child {
+            background: url(../../Images/Common/dp_leg_freq.png)no-repeat left center;
+        }
+
+
+        .dp_legends ul li:nth-child(2) {
+            background: url(../../Images/Common/dp_leg_cap.png)no-repeat left center;
+        }
+
+        .dp_legends ul li:nth-child(3) {
+            background: url(../../Images/Common/dp_leg_imp.png)no-repeat left center;
+        }
+
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
+    /*@media screen and (max-width:1400px) and (min-width:1300px)*/
+    .login {
+        padding-top: 5.5%;
+    }
+
+    .user_tiles ul li {
+        width: 42%;
+        padding: 0 0% 40% 0;
+    }
+
+    .priorities_part2 h2 {
+        width: 68%;
+    }
+
+    .dp_frqprogress img {
+        width: 100%;
+        margin-top: 32%;
+    }
+
+    .dp_legends ul li {
+        padding: 2px 10px 0 20px;
+        background-size: 15px 15px !important;
+    }
+
+
+    .breadcrumb {
+        margin-top: 0%;
+    }
+
+    .frequency_scale li {
+        font-size: 60% !important;
+        min-height: 0px !important;
+    }
+
+    .modNmaeview {
+        font-size: 130% !important;
+    }
+
+    /*@media screen and (max-width:1400px) and (min-width:1300px)*/
+    .clickdeeper {
+        left: -155%;
+    }
+
+    .managerSpan, .youSpan {
+        font-size: 110% !important;
+    }
+
+    #option_menu {
+        width: 55% !important;
+    }
+
+
+    .hover_content {
+        margin-top: 0% !important;
+        right: 1% !important;
+    }
+
+
+    .frquencyContent li {
+        min-height: 50px !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        bottom: -20%;
+    }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1500px) {
+
+    .frequency_scale li {
+        font-size: 70% !important;
+        min-height: 0px !important;
+    }
+
+
+
+    .hover_content {
+        margin-top: 3.2% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -4% !important;
+    }
+
+    .managerSpan, .youSpan {
+        font-size: 110% !important;
+    }
+
+    .managerSpan {
+        padding-bottom: 26%;
+    }
+
+    .youSpan {
+        top: -11%;
+    }
+
+    h2 {
+        font-size: 120%;
+    }
+
+    .frquencyContent li {
+        min-height: 60px;
+    }
+}
+
+@media screen and (max-width:2000px) and (min-width:1800px) {
+
+    .priorities_part2 h2 {
+        width: 75%;
+    }
+
+    .managerSpan {
+        top: -80% !important;
+        padding-top: 2%;
+    }
+
+    .youSpan {
+        top: 6% !important;
+        padding-bottom: 15% !important;
+    }
+
+    #devprogress {
+        padding-bottom: 45% !important;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 45% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -6.8% !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px !important;
+    }
+
+
+    .frquencyContent ul li {
+        font-size: 100%;
+        line-height: 1.2;
+    }
+
+    .modNmaeview {
+        font-size: 200% !important;
+        line-height: 1;
+    }
+
+    .frequency_scale li {
+        min-height: 0px !important;
+    }
+
+    .dp_qetions div:first-child {
+        font-size: 85%;
+    }
+
+    .clickdeeper {
+        left: -175% !important;
+    }
+}
+
+
+@media screen and (max-width: 2000px) and (min-width: 1800px) {
+
+    .ui.menu .item {
+        font-size: 1.7rem;
+    }
+
+    .dp_legends ul li {
+        padding: 2px 15px 0 20px;
+        background-size: 15px 15px !important;
+    }
+
+
+    .breadcrumb {
+        padding: 1% 1% 0.6% 1.5% !important;
+    }
+
+    .frquencyContent ul li {
+        font-size: 150%;
+        line-height: 1.2;
+    }
+
+
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .dp_frqprogress img {
+        margin-top: 28%;
+    }
+
+
+    .frequency_scale li {
+        padding: 1% 0 !important;
+    }
+
+
+    .modNmaeview {
+        font-size: 220%;
+    }
+
+    .frquencyContent ul li .moduleTier {
+        font-size: 80% !important;
+    }
+
+    .dp_fci {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    .dp_frqprogress img {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+
+
+    .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
+        font-size: 11px !important;
+        min-height: 30px !important;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 150% !important;
+    }
+
+    .managerSpan {
+        top: -100%;
+        padding-top: 7%;
+    }
+
+
+    .youSpan {
+        top: -18%;
+        padding-bottom: 4%;
+    }
+
+
+
+    .youSpan {
+        top: -22%;
+    }
+
+    .progress_practiceArea li {
+        height: 155px;
+        padding: 3% 1%;
+        font-size: 120%;
+    }
+
+
+    #option_menu {
+        top: 3.9%;
+        right: 1.1%;
+    }
+
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    #devprogress {
+        padding-bottom: 45%;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 45%;
+    }
+
+
+    .frequency_scale li {
+        min-height: 0 !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 60px;
+    }
+
+    .frquencyHeader li {
+        font-size: 160%;
+    }
+
+    P {
+        font-size: 130%;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-bottom: 0.3%;
+    }
+}
+
+@media screen and (max-width: 2300px) and (min-width: 2000px) {
+
+    .managerSpan {
+        top: -55% !important;
+        padding-bottom: 30%;
+    }
+
+    .user_tiles ul li {
+        font-size: 18px;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px;
+    }
+
+    .hover_content {
+        margin-top: 2.8% !important;
+    }
+
+    .frquencyContent li:nth-child(3) {
+        min-height: 75px !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -3.5% !important;
+    }
+
+    .frquencyContent ul li {
+        font-size: 125% !important;
+        line-height: 1.2;
+    }
+
+    .user_tiles ul li span {
+        font-size: 350% !important;
+    }
+
+    .youSpan {
+        top: -5% !important;
+        padding-bottom: 2%;
+    }
+
+    .modNmaeview {
+        font-size: 125% !important;
+    }
+
+    .frequency_scale li {
+        min-height: 0px !important;
+    }
+
+
+    .user_tiles {
+        font-size: 160%;
+    }
+
+    .frquencyContent ul li {
+        font-size: 150%;
+        line-height: 1.2;
+    }
+
+    .priorities_part2 h2 {
+        width: 73%;
+    }
+
+    .ui.menu .item {
+        font-size: 1.7rem;
+    }
+
+    .breadcrumb {
+        padding: 1% 1% 0.6% 1.5% !important;
+    }
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .dp_legends ul li {
+        padding: 1px 20px 0 25px;
+        font-size: 120%;
+        background-size: 20px 25px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .frequency_scale li {
+        padding: 1% 0 !important;
+    }
+
+
+    .frquencyContent ul li .moduleTier {
+        font-size: 80% !important;
+    }
+
+    .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
+        font-size: 70% !important;
+        min-height: 35px !important;
+    }
+
+
+    h3 {
+        font-size: 150% !important;
+    }
+
+    .youSpan {
+        top: -30%;
+        padding-bottom: 20%;
+    }
+
+
+    .progress_practiceArea li {
+        height: 155px;
+        padding: 3% 1%;
+        font-size: 120%;
+    }
+
+
+    #option_menu {
+        top: 3.9%;
+        right: 1.1%;
+    }
+
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+    .dp_frqprogress img {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 25%;
+    }
+
+
+    #devprogress {
+        padding-bottom: 54%;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 54%;
+    }
+
+
+    .frequency_scale li {
+        min-height: 0 !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 60px;
+    }
+
+    .frquencyHeader li {
+        font-size: 160%;
+    }
+
+    P {
+        font-size: 120%;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-bottom: 0.3%;
+    }
+
+    .hover_content {
+        margin-top: 0% !important;
+        right: 0 !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -5.5% !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px;
+    }
+
+
+    #option_menu {
+        width: 45% !important;
+    }
+}
+
+
+@media screen and (max-width: 2600px) and (min-width: 2200px) {
+    .frquencyContent ul li {
+        font-size: 150%;
+        line-height: 1.2;
+    }
+
+    .priorities_part2 h2 {
+        width: 75%;
+    }
+
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .dp_legends ul li {
+        padding: 1px 20px 0 25px;
+        font-size: 120%;
+        background-size: 20px 25px;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .frequency_scale li {
+        padding: 1% 0 !important;
+    }
+
+
+    .modNmaeview {
+        font-size: 220%;
+    }
+
+    .frquencyContent ul li .moduleTier {
+        font-size: 80% !important;
+    }
+
+    .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
+        font-size: 70% !important;
+        min-height: 35px !important;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 150% !important;
+    }
+
+    .managerSpan {
+        top: -100%;
+        padding-top: 7%;
+    }
+
+
+
+    .youSpan {
+        top: -30%;
+        padding-bottom: 20%;
+    }
+
+
+    .progress_practiceArea li {
+        height: 155px;
+        padding: 3% 1%;
+        font-size: 120%;
+    }
+
+
+    #option_menu {
+        top: 3.9%;
+        right: 1.1%;
+    }
+
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+    .dp_frqprogress img {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 27%;
+    }
+
+    #devprogress {
+        padding-bottom: 48%;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 48%;
+    }
+
+
+    .frequency_scale li {
+        min-height: 0 !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 60px;
+    }
+
+    .frquencyHeader li {
+        font-size: 160%;
+    }
+
+    P {
+        font-size: 160%;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-bottom: 0.3%;
+    }
+
+    .hover_content {
+        margin-top: 0% !important;
+        right: 0 !important;
+    }
+
+    h2 {
+        font-size: 200% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -5.5% !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 80px;
+    }
+
+
+    .managerSpan {
+        top: -120%;
+        padding-top: 20% !important;
+    }
+
+
+    #option_menu {
+        width: 45% !important;
+    }
+}
+
+
+
+@media screen and (max-width: 3500px) and (min-width: 2600px) {
+
+    .dp_legends ul li {
+        padding: 2px 20px 0 32px;
+        background-size: 25px 25px !important;
+        font-size: 150%;
+    }
+
+    .priorities_part2 h2 {
+        width: 76%;
+    }
+
+
+    .frquencyContent ul li {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .clickdeeper {
+        left: -190%;
+    }
+
+    .frequency_scale li {
+        padding: 1% 0 !important;
+    }
+
+
+    .modNmaeview {
+        font-size: 30px;
+    }
+
+    .frquencyContent ul li .moduleTier {
+        font-size: 80% !important;
+    }
+
+    .frquencyContent .important_scale li, .frquencyContent .frequency_scale li, .frquencyContent .capability_scale li {
+        height: 30px;
+        min-height: 45px !important;
+    }
+
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 150% !important;
+    }
+
+    .managerSpan {
+        top: -100%;
+        padding-top: 16%;
+        background-size: 35px 25px !important;
+    }
+
+    .dp_fci {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+
+    .youSpan {
+        top: -18%;
+        padding-bottom: 12%;
+        background-size: 35px 25px !important;
+    }
+
+    .dp_frqprogress img {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 26%;
+    }
+
+
+    .progress_practiceArea p {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .hover_content {
+        margin-top: 0% !important;
+        right: 0% !important;
+    }
+
+    .frquencyContent ul:last-child .hover_content {
+        margin-top: -2.5% !important;
+    }
+
+
+    .progress_practiceArea li {
+        height: 200px;
+        padding: 3% 1%;
+        font-size: 120%;
+    }
+
+        .progress_practiceArea li img {
+            width: 45%;
+        }
+
+
+    #option_menu {
+        top: 3.9%;
+        right: 1.1%;
+    }
+
+
+    .user_tiles ul li span {
+        font-size: 400%;
+    }
+
+
+    #devprogress {
+        padding-bottom: 55%;
+    }
+
+    .prioitiesFrequency .slimScrollDiv {
+        padding-bottom: 55%;
+    }
+
+
+    .frequency_scale li {
+        min-height: 0 !important;
+    }
+
+    .frquencyContent ul li {
+        min-height: 100px;
+    }
+
+    .frquencyHeader li {
+        font-size: 28px;
+    }
+
+    P {
+        font-size: 28px;
+    }
+
+    .button_menu {
+        background-size: 100% 100%;
+        margin-bottom: 0.3%;
+    }
+}
+
+#usrList {
+    /*border: 1px solid #333;
+    padding: 2% 0 76% 2% !important;*/
+    width: 85% !important;
+}
+
+
+.slimScrollDiv #usrList {
+    border: 0;
+    padding: 0;
+    width: 100% !important;
+    padding-bottom: 90% !important;
+}
+
+
+.select_list {
+    /*border-bottom: 1PX solid #999;*/
+    background: #e4feff !important;
+    color: #000 !important;
+}
+
+
+.actionMore {
+    font-size: 80% !important;
+    padding-left: 4px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+    .actionMore:hover {
+        text-decoration: none;
+    }
+
+.moduleTier {
+    position: relative;
+    right: -2%;
+    font-size: 80% !important;
+    color: red;
+    text-align: left;
+    float: right;
+    display: table;
+    vertical-align: top;
+}
+
+.frquencyContent .slimScrollBar, .frquencyContent .slimScrollRail {
+    background-color: #23a1a7 !important;
+    opacity: 0.8 !important;
+    height: 50% !important;
+}
+
+
+.select_list .actionMore {
+    color: #000;
+}
+
+    .select_list .actionMore:hover {
+        color: #eb4830;
+    }
+
+.hover_content {
+    display: none;
+    color: #000;
+    background: #fff;
+    border: 1px solid #eb4830;
+    position: absolute;
+    width: 30%;
+    right: 0%;
+    text-align: left;
+    padding: .5% .8%;
+    z-index: 2147483647;
+    margin-top: 0;
+}
+
+    .hover_content span {
+        display: none;
+    }
+
+.actionMore:hover {
+    color: #eb4830;
+    text-decoration: underline;
+}
+
+
+.frquencyContent ul:last-child .hover_content {
+    margin-top: -4.5%;
+}
+
+
+.frquencyContent ul li:first-child {
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.select_list .managerSpan, .select_list .youSpan {
+    color: #000 !important;
+}
+
+
+
+.frequency_scale li {
+    min-height: 0 !important;
+}
+
+
+.breadcrumb {
+    padding: 0.7% 1% 0.5% 2% !important;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 0;
+    margin-top: -0.5%;
+}
+
+
+    .breadcrumb a {
+        font-size: 1.1em;
+    }
+
+
+#target li p, #target li a {
+    float: left;
+    color: #000;
+    margin: 1%;
+    padding: 0 0 0;
+    text-decoration: none;
+    width: 82%;
+}
