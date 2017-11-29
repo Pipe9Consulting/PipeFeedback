@@ -12,10 +12,18 @@
     <script src="~/Scripts/Pipe9Feedback/Common/jquery-3.2.1.min.js"></script>
     <script src="~/Scripts/Pipe9Feedback/Common/jquery-ui.js"></script>
     <script src="~/Scripts/Pipe9Feedback/Common/bootstrap.min.js"></script>
-     <script src="~/Scripts/ref/Common/jquery.mCustomScrollbar.js"></script>
+    <script src="~/Scripts/ref/Common/jquery.mCustomScrollbar.js"></script>
     <script src="~/Scripts/jquery.slimscroll.js"></script>
     <script src="~/Scripts/jquery.custom-scrollbar.js"></script>
     <script src="~/Scripts/ref/common.js"></script>
+    <script src="../../Scripts/ref/Account/SelectNetwork.js" type="text/javascript"></script>
+    <script src="../../Scripts/ref/Account/Login.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.simplemodal.js" type="text/javascript"></script>
+    <script src="../../Scripts/ref/Namespace.js"></script>
+    <script src="../../Scripts/ref/Requests.js"></script>
+    <script src="../../Scripts/ref/loadPhoto.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="../../Scripts/plugin/handlebars/handlebars-1.0.js"></script>
+    <script src="../../Scripts/ref/MaxipoeMaster.js"></script>
     <link href="~/Styles/signup/NewMaster.css" rel="stylesheet" />
     <link href="~/Styles/feedback/jquery.mCustomScrollbar.css" rel="stylesheet" />
     <link href="~/Styles/jquery.custom-scrollbar.css" rel="stylesheet" />
@@ -42,15 +50,169 @@
         </div>
     </div>
 
-    <div class="p9f_header">
+    @* <div class="p9f_header">
 
         <a class="p9_logo" href="#">
             <img src="~/Images/Pipe9Feedback/Common/p9_logo.png" alt="Pipe9 Feedback Logo" />
         </a>
 
 
-    </div>
+    </div>*@
+    <div class="ui grid headerPart">
+        <div class="row headerMenu">
+            <div class="headerLeft">
+                <div class="accordion">
+                    <h3 class="checkt">
+                        <a href="#" class="cacIcon">
+                            <img src="../../Images/blank.png" class="checkimg" /></a></h3>
+                    <a href="/common/Index" id="imagelogo" class="cacLogo">
 
+                        <img id="kesslogo" src="../../Images/images/CAC_logo.png" alt="Bexcellent" align="left" />
+                    </a>
+
+
+                    <div class="pane">
+                        <div class="menuArrow">
+                            <img src="../../Images/menu_arrow.png" alt="REP Library" /><p>
+                        </div>
+                        <ul id="indicator">
+                            <li class="start_start select_start"><a>
+                                <input name="option" id="nStart" type="radio" value="../../Home/Start" />
+                                <label for="nStart">
+                                    <img src="../../Images/icons/start_icon.png" alt="Sync" /><p>
+                                        Start
+                                    </p>
+                                </label>
+                            </a></li>
+                            <li class="feedback_start"><a>
+                                <input name="option" id="nFeedback" type="radio" value="../../Feedback/Feedback" />
+                                <label for="nFeedback">
+                                    <img src="../../Images/icons/start-feedback.png" alt="Feedback" /><p>
+                                        Feedback
+                                    </p>
+                                </label>
+
+                            </a>
+
+                            </li>
+                            <li class="result_start"><a>
+                                <input name="option" id="nResult" type="radio" value="../../Results/Results" />
+                                <label for="nResult">
+                                    <img src="../../Images/icons/result_Icon.png" alt="Dashboard" /><p>
+                                        Feedback Results
+                                    </p>
+
+                                </label>
+
+                            </a>
+                                <span class="headermenus"></span>
+
+                            </li>
+                            <li class="managersync_start"><a>
+                                <input name="option" id="nSync" type="radio" value="../../managersync/managersync" />
+                                <label for="nSync">
+                                    <img src="../../Images/icons/start-sync.png" alt="Sync" /><p>
+                                        Manager Sync
+                                    </p>
+                                </label>
+                            </a>
+                                <span class=" headermenus"></span>
+                            </li>
+                            <li class="communitysync_start"><a>
+                                <input name="option" id="nStanding" type="radio" value="../../communitysync/communitysync" />
+                                <label for="nStanding">
+                                    <img src="../../Images/icons/start-standing.png" alt="Standing" /><p>
+                                        Community Sync
+                                    </p>
+                                </label>
+                            </a>
+                                <span class="headermenus"></span>
+
+                            </li>
+                            <li class="goals_start"><a>
+                                <input name="option" id="nGoal" type="radio" value="../../Goal/Index" />
+                                <label for="nGoal">
+                                    <img src="../../Images/icons/goals_icon.png" alt="Dashboard" /><p>
+                                        Development Priorities
+                                    </p>
+
+
+
+                                </label>
+
+                            </a>
+
+                                <span class="headermenus"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="headerRight">
+
+
+                <div class="dropdown">
+                    <span class="dropImage">
+                        <span class="menuStar" id="menustar" style="display: none">
+                            <img src="../../Images/start/menu_starIcon.png" /></span>
+                        <img src="../../Images/start/wall_icon.png" alt="User" align="right" title="Notifications" /></span>
+                    <div class="dropdown-content">
+                        <ul id="notifyCont">
+                            <li><a href="#"><span>*</span> Incomplete Self-Feedback</a></li>
+                            <li><a href="#"><span>*</span> Incomplete Team-Feedback</a></li>
+                            <li><a href="#"><span>*</span> View Notification History</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <ul class="wallAward">
+
+                    <li id="redirectPostAppreciation"><a href="#">
+                        <img src="../../Images/start/award_icon.png" alt="User" align="right" title="Give Appreciation" /></a></li>
+
+                </ul>
+                <ul class="login afterlogin">
+                    <li class="dropdowns lgn">
+                        <img src="../../Images/user.png" alt="User" align="right" id="myphoto" width="34px"
+                            height="34px" /><a href="#" id="loggedinUser">
+                                @{
+                                    if (Session["Uname"] != null)
+                                    {
+                                        Response.Write(Session["Uname"].ToString());
+                                    }  
+                                }
+
+                            </a>
+                        <ul id="accsettings">
+                            <div class="hideDiv">
+                                <li id="redirectAccount"><a href="#">Account</a></li>
+                                <li id="redirectNetwork"><a href="#">Network</a></li>
+
+                                <li id="changingPassword"><a href="#">Change Password</a></li>
+
+                                <li><a href="../Feedback/CompletedFeedback?mode=1">Feedback on Your<br />
+                                    Experience</a></li>
+                                <li><a href="../Feedback/CompletedFeedback?mode=2">Report an Issue</a></li>
+
+                                <li><a href="http://demo.pipe9cloud.com/">Sign Out</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
     <div class="p9f_body">
         @RenderBody()
         @* @Scripts.Render("~/bundles/jquery")*@

@@ -29,7 +29,13 @@ namespace bExcellent.mvc.Controllers
             Session["role"] = 1;
             Session["type"] = 1;
             CreateTakeFeedback();
-            return View();
+            var createdFeedback = (CreatedFeedback[])Session["CreatedFeedbacks"];
+            int feedbackId = createdFeedback[0].FeedBackId;
+            var feedback = new FeedbackServiceClient();
+            var returnValue = feedback.GetLastSavedQuestion(feedbackId);
+            var selfFb=new bExcellent.mvc.Models.Feedback();
+            selfFb.GetLastSavedQuestion = returnValue;
+            return View(selfFb);
         }
         public ActionResult ManagerFeedback()
         {

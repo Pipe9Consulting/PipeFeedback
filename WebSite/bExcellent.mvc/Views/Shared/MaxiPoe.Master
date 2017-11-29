@@ -200,31 +200,6 @@
         <div class="ui grid headerPart">
             <div class="row headerMenu">
                 <div class="headerLeft">
-
-
-
-
-                    <%--New Design Header End --%>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     <div class="accordion">
                         <h3 class="checkt">
                             <a href="#" class="cacIcon">
@@ -248,31 +223,7 @@
                                         </p>
                                     </label>
                                 </a></li>
-                                <%--<li id="poelibraryHome"><a>
-                                    <input name="option" type="radio" id="nPoeLibrary" />
-                                    <label for="poelibrary">
-                                        <img src="../../Images/icons/square-library.png" alt="REP Library" /><p>
-                                            REP Library
-                                        </p>
-                                    </label>
-                                </a></li>--%>
-                                <%-- <li><a>
-                                    <input name="option" id="nWall" type="radio" value="../../wall/index" />
-                                    <label for="nWall">
-                                        <img src="../../Images/icons/start-wall.png" alt="Wall" /><p>
-                                            Wall
-                                        </p>
-                                    </label>
-                                </a></li>--%>
-                                <%-- <li><a>
-                                    <input name="option" id="nNetwork" type="radio" value="../../Network/Network" />
-                                    <label for="nNetwork">
-                                        <img src="../../Images/icons/start-Network.png" alt="Network" /><p>
-                                            Network
-                                        </p>
-                                    </label>
-                                </a></li>--%>
-                                <li class="feedback_start"><a>
+                               <li class="feedback_start"><a>
                                     <input name="option" id="nFeedback" type="radio" value="../../Feedback/Feedback" />
                                     <label for="nFeedback">
                                         <img src="../../Images/icons/start-feedback.png" alt="Feedback" /><p>
@@ -317,18 +268,6 @@
                                     <span class="headermenus"></span>
 
                                 </li>
-
-                                <%--<li><a>
-                                    <input name="option" id="nDashboard" type="radio" value="../../Dashboard/Index" />
-                                    <label for="nDashboard">
-                                        <img src="../../Images/dashboard/dashboard_icon.png" alt="Dashboard" /><p>
-                                            Dashboard
-                                        </p>
-
-                                    </label>
-
-                                </a></li>--%>
-
                                 <li class="goals_start"><a>
                                     <input name="option" id="nGoal" type="radio" value="../../Goal/Index" />
                                     <label for="nGoal">
@@ -344,22 +283,12 @@
 
                                     <span class="headermenus"></span>
                                 </li>
-                                <%-- <li><a>
-                                    <input name="option" id="nMentor" type="radio" value="../../Mentor/Mentor" />
-                                    <label for="nMentor">
-                                        <img src="../../Images/icons/mentor_icon.png" alt="Dashboard" /><p>
-                                            Mentors
-                                        </p>
-
-                                    </label>
-
-                                </a></li>--%>
-                            </ul>
+                               </ul>
                         </div>
                     </div>
                 </div>
 
-                <%-- After login --%>
+             
                 <div class="headerRight">
 
 
@@ -379,8 +308,7 @@
                     </div>
 
                     <ul class="wallAward">
-                        <%-- <li id="redirectWall"><a href="#">
-                            <img src="../../Images/start/wall_icon.png" alt="User" align="right" title="Notifications" /></a></li>--%>
+                      
                         <li id="redirectPostAppreciation"><a href="#">
                             <img src="../../Images/start/award_icon.png" alt="User" align="right" title="Give Appreciation" /></a></li>
 
@@ -391,17 +319,7 @@
 
 
 
-                    <%--                    <ul class="login afterlogin" id="networkdrpdown">
-                        <li class="dropdowns nt">
-                            <img src="../../Images/images/network-gray.png" alt="User" align="right" /><a id="ChooseyourNetwork" href="#"></a>
-
-                            <ul id="networklist">
-                                <li><a href="#">Network 1</a></li>
-                                <li><a href="#">Network 2</a></li>
-                                <li class="brdrnil"><a href="#">Network 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>--%>
+                  
                     <ul class="login afterlogin">
                         <li class="dropdowns lgn">
                             <img src="../../Images/user.png" alt="User" align="right" id="myphoto" width="34px"
@@ -416,23 +334,20 @@
                                 <div class="hideDiv">
                                     <li id="redirectAccount"><a href="#">Account</a></li>
                                     <li id="redirectNetwork"><a href="#">Network</a></li>
-                                    <%--<li id="redirectProfiles"><a href="#">Profiles</a></li>--%>
+                                 
                                     <li id="changingPassword"><a href="#">Change Password</a></li>
-                                    <%-- <li id="yourAcc"><a href="../SignUp/Accounts">Your Accounts</a></li>--%>
+                               
                                     <li><a href="../Feedback/CompletedFeedback?mode=1">Feedback on Your<br />
                                         Experience</a></li>
                                     <li><a href="../Feedback/CompletedFeedback?mode=2">Report an Issue</a></li>
-                                    <%--<li><a href="../../Home/SignOut">Sign Out</a></li>--%>
+                              
                                     <li><a href="http://demo.pipe9cloud.com/">Sign Out</a></li>
                                 </div>
                             </ul>
                         </li>
                     </ul>
 
-                    <%--     <ul class="login afterlogin" id="paidmember">
-                    </ul>
-                    <ul class="login afterlogin" id="cartlist">
-                    </ul>--%>
+                   
                 </div>
 
 
@@ -442,8 +357,7 @@
 
 
         </div>
-        <%-- Before login --%>
-        <%-- <div class="placeholder">--%>
+     
         <div class="navigation">
             <ul id="beforeLogin" style="display: none">
                 <!-- <ul id="beforeLogin" style="display: none">-->

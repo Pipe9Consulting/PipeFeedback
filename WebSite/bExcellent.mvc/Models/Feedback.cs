@@ -9,5 +9,6 @@ namespace bExcellent.mvc.Models
     public class Feedback
     {
         public List<CreatedFeedback> TeamMebers { get; set; }
+        public SavedQuestion GetLastSavedQuestion { get; set; }
     }
 }
