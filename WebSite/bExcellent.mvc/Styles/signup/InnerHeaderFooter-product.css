@@ -1,0 +1,694 @@
+﻿/*------------------ Header ********************************/
+body {
+    margin: 0;
+    padding: 0;
+    /*background: url(../../images/images/bodyBg-new1.jpg) repeat;*/
+    background: #fff;
+}
+
+.headerPart {
+    margin: 0 !important;
+}
+
+.headerMenu {
+    background: #fff;
+    height: 80px;
+    padding: 0 .8% 0 0 !important;
+    border-bottom: 1px solid #b9babb;
+}
+
+.breadMenu {
+    margin: 0 0 2% 0;
+    background: #f1f1f1;
+}
+
+.centerPart {
+    margin: 0 1.5% 1% 1.5%;
+    border: 1px solid #aaa;
+}
+
+.breadMenu a {
+    color: #333 !important;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -45px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.footerPart, .page-wrap:after {
+    height: 45px;
+}
+
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------ Footer ********************************/
+
+.footerPart {
+    background: #fff;
+    height: 45px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999999;
+    border-top: 1px solid #b9babb;
+}
+
+.ui.inverted.menu {
+    display: table;
+    background: #fff;
+    margin: 0px;
+    height: 100%;
+}
+
+.ui.menu .item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui) {
+    color: #000;
+}
+
+.ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
+    background: rgba(255,255,255,.1);
+    color: #23a1a7;
+}
+
+
+#notifyCont li a {
+    background: url(../../Images/start/notification_start.png) left bottom no-repeat;
+    padding: 0px 0 0px 25px;
+    background-size: 19px 19px;
+    background-position-y: 1px;
+}
+
+
+#notifyCont li:hover a {
+    background: url(../../Images/start/notification_startH.png) left bottom no-repeat;
+    padding: 0px 0 0px 25px;
+    background-size: 19px 19px;
+    background-position-y: 1px;
+}
+
+
+.menuStar img {
+    position: absolute;
+    width: 65% !important;
+    bottom: 15px;
+    right: -20px;
+}
+
+
+@media screen and (max-width: 1700px) and (min-width: 1670px) {
+    .cacIcon img {
+        width: 14%;
+    }
+
+    .cacLogo img {
+        width: 50%;
+    }
+
+    .ui.menu .item {
+        font-size: 15px;
+    }
+
+
+    .headerMenu {
+        height: 85px !important;
+    }
+
+    .site-footer {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1669px) and (min-width: 1501px) {
+    .cacIcon img {
+        width: 15%;
+    }
+
+    .cacLogo img {
+        width: 80%;
+    }
+
+    .ui.menu .item {
+        font-size: 15px;
+    }
+
+    .headerMenu {
+        height: 65px !important;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1401px) {
+
+    .cacIcon img {
+        width: 18%;
+    }
+
+    .cacLogo img {
+        width: 51%;
+    }
+
+    .headerMenu {
+        height: 70px !important;
+    }
+}
+
+/*KT Added*/
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+    .page-wrapper {
+        min-height: 100%;
+        margin-bottom: -38px;
+    }
+
+    .footerPart, .page-wrap:after {
+        height: 38px;
+    }
+}
+/*KT Added*/
+
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
+
+    .cacIcon img {
+        width: 13%;
+    }
+
+    .ui.menu .item {
+        font-size: 14px !important;
+        padding-right: .5%;
+    }
+
+    .ui.menu span {
+        padding: 0 0 0 1.5%;
+    }
+
+    .cacLogo img {
+        width: 52% !important;
+    }
+
+    #notifyCont li a {
+        padding: 2px 0 5px 30px;
+        background-size: 23px 23px !important;
+        background-position-y: 0px;
+        line-height: 1;
+    }
+
+    #notifyCont li:hover a {
+        padding: 2px 0 5px 30px;
+        background-size: 23px 23px !important;
+        background-position-y: 0px;
+        line-height: 1;
+    }
+
+
+    .dropdown-content ul li a {
+        font-size: 13px !important;
+    }
+
+    .dropdown-content {
+        width: 220px !important;
+        padding: 10px 0 0 0 !important;
+        background-color: #fff !important;
+    }
+
+    .headerMenu {
+        padding: 0 .7% !important;
+    }
+
+    .dropImage img {
+        width: 500% !important;
+        height: 65px;
+        margin: 0 0 5px 0 !important;
+    }
+
+    .menuStar img {
+        bottom: 15px;
+        right: -20px;
+    }
+
+    .menuStar img {
+        width: 60% !important;
+        bottom: 10px;
+        right: -10px;
+        height: 30% !important;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+
+    .cacIcon img {
+        width: 13%;
+    }
+
+    .cacLogo img {
+        width: 63%;
+    }
+
+    .headerMenu {
+        height: 65px !important;
+    }
+
+    .cacLogo img {
+        width: 125px !important;
+    }
+
+    .ui.menu .item {
+        font-size: 13px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+
+    .cacIcon img {
+        width: 18%;
+    }
+
+    .cacLogo img {
+        width: 81%;
+    }
+
+    .headerMenu {
+        height: 65px !important;
+    }
+
+    .cacLogo img {
+        width: 52% !important;
+    }
+}
+
+
+
+@media screen and (max-width: 1930px) and (min-width: 1800px) {
+    .cacLogo img {
+        width: 65% !important;
+    }
+
+    .ui.menu .item {
+        font-size: 15px;
+    }
+
+
+
+    .dropImage img {
+        width: 450% !important;
+        height: 80px;
+        margin: 0 0 2px 0 !important;
+    }
+
+
+    #notifyCont li a {
+        padding: 3px 0 3px 30px;
+        background-size: 25px 24px;
+        background-position-y: 1px;
+    }
+
+
+    #notifyCont li:hover a {
+        padding: 3px 0 3px 30px;
+        background-size: 25px 24px;
+        background-position-y: 1px;
+    }
+
+
+    .menuStar img {
+        bottom: 15px;
+        right: -20px;
+    }
+
+    .menuStar img {
+        width: 60% !important;
+        bottom: 12px;
+        right: -12px;
+        height: 30% !important;
+    }
+}
+
+@media screen and (min-width: 1930px) and (max-width: 2500px) {
+    .dropdowns a {
+        font-size: 18px !important;
+    }
+
+    .dropdowns img {
+        max-width: 45px;
+        max-height: 50px;
+        margin-left: 5%;
+    }
+
+
+    #notifyCont li a {
+        padding: 8px 0 7px 37px;
+        background-size: 35px 35px;
+        background-position-y: 1px;
+    }
+
+
+
+    #notifyCont li:hover a {
+        padding: 8px 0 7px 37px;
+        background-size: 35px 35px;
+        background-position-y: 1px;
+    }
+
+
+    .wallleft ul li p {
+        font-size: 112% !important;
+    }
+
+    .dropdown .icon-arrow {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .dropImage img {
+        width: 115%;
+        margin: 40% 0 50% 0 !important;
+    }
+
+
+    .dropImage img {
+        width: 450% !important;
+        height: 78px;
+        margin: 0 0 10px 0 !important;
+        margin-bottom: 43px;
+    }
+
+    .dropdown-content ul li {
+        padding: 7% 7% !important;
+    }
+
+
+
+    .menuStar img {
+        bottom: 15px;
+        right: -20px;
+    }
+
+    .menuStar img {
+        width: 50% !important;
+        bottom: 20px;
+        right: -15px;
+        height: 25% !important;
+    }
+}
+
+
+@media screen and (min-width: 2500px) and (max-width: 2800px) {
+    .dropdowns a {
+        font-size: 20px !important;
+    }
+
+    .ui.menu .item {
+        font-size: 1.1rem !important;
+    }
+
+    #notifyCont li a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        font-size: 17px;
+        background-position-y: 1px;
+    }
+
+    #notifyCont li:hover a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        background-position-y: 1px;
+    }
+
+
+    .wallleft ul li p {
+        font-size: 112% !important;
+    }
+
+    .dropdown .icon-arrow {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .dropImage img {
+        width: 450% !important;
+        height: 100px;
+        margin: 0 0 10px 0 !important;
+        margin-bottom: 43px;
+    }
+
+
+    .menuStar img {
+        bottom: 15px;
+        right: -20px;
+    }
+
+    .menuStar img {
+        width: 50% !important;
+        bottom: 20px;
+        right: -15px;
+        height: 25% !important;
+    }
+
+    .dropdown-content {
+        top: 100% !important;
+    }
+}
+
+
+
+@media screen and (min-width: 2500px) and (max-width: 2860px) {
+    .dropdowns a {
+        font-size: 20px !important;
+    }
+
+    .ui.menu .item {
+        font-size: 17px !important;
+    }
+
+    #notifyCont li a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        font-size: 17px;
+        background-position-y: 1px;
+    }
+
+    #notifyCont li:hover a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        background-position-y: 1px;
+    }
+
+    .wallleft ul li p {
+        font-size: 112% !important;
+    }
+
+    .dropdown .icon-arrow {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .dropImage img {
+        width: 450% !important;
+        height: 100px;
+        margin: 0 0 10px 0 !important;
+        margin-bottom: 43px;
+    }
+
+    .menuStar img {
+        bottom: 15px;
+        right: -20px;
+    }
+
+    .menuStar img {
+        width: 50% !important;
+        bottom: 20px;
+        right: -15px;
+        height: 25% !important;
+    }
+
+    .dropdown-content {
+        top: 100% !important;
+    }
+
+    .headerMenu {
+        height: 170px;
+    }
+
+    .cacLogo img {
+        width: 220%;
+    }
+}
+
+@media screen and (min-width: 2860px) and (max-width: 3500px) {
+    .dropdowns a {
+        font-size: 20px !important;
+    }
+
+    .ui.menu .item {
+        font-size: 1.1rem !important;
+    }
+
+    #notifyCont li a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        font-size: 17px;
+        background-position-y: 1px;
+    }
+
+    #notifyCont li:hover a {
+        padding: 4px 0 5px 35px;
+        background-size: 27px 27px;
+        background-position-y: 1px;
+    }
+
+    .wallleft ul li p {
+        font-size: 112% !important;
+    }
+
+    .dropdown .icon-arrow {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .dropImage img {
+        width: 450% !important;
+        height: 100px;
+        margin: 0 0 10px 0 !important;
+        margin-bottom: 43px;
+    }
+
+    .menuStar img {
+        bottom: 15px;
+        right: -20px;
+    }
+
+    .menuStar img {
+        width: 50% !important;
+        bottom: 20px;
+        right: -15px;
+        height: 25% !important;
+    }
+
+    .dropdown-content {
+        top: 100% !important;
+    }
+
+    .headerMenu {
+        height: 170px;
+    }
+
+    .cacLogo img {
+        width: 112%;
+    }
+
+    .dropdowns a {
+        font-size: 30px !important;
+        background-size: 7% 20% !important;
+        padding-top: 15px;
+        margin-right: 10px;
+    }
+}
+
+
+
+/************************************************** Notification Dropdown ************************************************************************/
+
+
+.headerRight .dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 10% !important;
+    margin-right: 10%;
+    display: none !important;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 250px;
+    padding: 0;
+    bottom: 0px;
+    height: auto;
+    top: 91%;
+    z-index: 9999999;
+    right: -10px;
+}
+
+    .dropdown-content ul {
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #69c2c6;
+        border-left: 1px solid #69c2c6;
+        border-right: 1px solid #69c2c6;
+    }
+
+        .dropdown-content ul li {
+            color: #fff;
+            padding: 5% 7%;
+            list-style: none;
+            background: #fff;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+        }
+
+
+            .dropdown-content ul li:last-child {
+                border-top: 1px solid #69c2c6;
+            }
+
+            .dropdown-content ul li:hover {
+                background: #fff;
+            }
+
+            .dropdown-content ul li a {
+                color: #000;
+                font-size: 15px;
+            }
+
+            .dropdown-content ul li:hover a {
+                color: #23a1a7;
+            }
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropImage img {
+    width: 115%;
+    margin: 41% 0 61% 0;
+}
+
+
+.dropImage {
+    cursor: pointer;
+}
+
+
+.ui.menu .item {
+    font-size: 1.2rem;
+}

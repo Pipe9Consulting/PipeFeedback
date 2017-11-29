@@ -1,0 +1,1437 @@
+﻿/*Newly added*/
+* {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    background-size: 100% 100% !important;
+    font-family: 'Cuprum', sans-serif !important;
+}
+
+.ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
+    background: rgba(255,255,255,.1);
+    color: #23a1a7 !important;
+}
+
+.slimScrollBar {
+    background-color: #ee644e !important;
+    opacity: 0.9 !important;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -45px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+
+#target .hideFooterMenu {
+    background: #000 !important;
+    opacity: 0.1;
+    cursor: default;
+    color: #fff;
+}
+
+    #target .hideFooterMenu:hover {
+        background: #000 !important;
+        opacity: 0.1;
+        cursor: default;
+        color: #fff !important;
+    }
+
+    #target .hideFooterMenu p, #target .hideFooterMenu a {
+        color: #fff !important;
+        cursor: default;
+    }
+
+    #target .hideFooterMenu:hover p, #target .hideFooterMenu:hover a {
+        color: #fff !important;
+        cursor: default;
+    }
+
+.footerPart, .page-wrap:after {
+    height: 45px;
+}
+
+#sticky {
+    z-index: 9999;
+}
+
+.afterlogin img {
+    width: 45%;
+}
+
+.headerMenuHide {
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+    height: 0px;
+    padding-bottom: 100%;
+    cursor: default;
+}
+
+
+.headerNOHover li:hover p {
+    color: #fff !important;
+}
+
+
+.overallcontent {
+    margin: 0 auto;
+    width: 25%;
+    height: 200px;
+    background: #fff;
+    top: 30%;
+    position: relative;
+    display: table;
+    padding-bottom: 1%;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 7px;
+    border: 1px solid #23a1a7;
+}
+
+/*.overallclose {
+    top: 0px;
+    background: none;
+    color: #e0b001;
+    right: 0%;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    padding: 4px 12px 6px 10px;
+    background: url('../Images/Common/popup_close.png') no-repeat left center !important;
+    background-size: 60px 60px !important;
+    width: 40px;
+    height: 40px;
+}*/
+
+.overallclose p {
+    color: #f24d2f !important;
+    font-size: 20px !important;
+    font-weight: 700;
+    font-family: arial;
+    display: none;
+}
+
+
+.overallclose {
+    background: url('../../Images/Common/popup_close.png') no-repeat right center !important;
+    background-size: 40px 40px !important;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    color: #fff;
+    font-size: 41px;
+    font-weight: 300;
+    text-shadow: none !important;
+    margin-top: -5% !important;
+    margin-right: -5% !important;
+    font-family: arial;
+    float: right;
+    right: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+
+    .overallclose:focus, .overallclose:hover {
+        text-decoration: none;
+        background: url('../../Images/Common/popup_closeH.png') no-repeat right center !important;
+        background-size: 40px 40px !important;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+
+.overallcontent div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.overallcontent p {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    padding: 5%;
+}
+
+.overallcontent a {
+    background: #fff;
+    border: 1px solid #23a1a7;
+    padding: 3px 15px 3px 15px;
+    color: #23a1a7;
+    font-size: 15px;
+}
+
+    .overallcontent a:hover {
+        background: #fff;
+        border: 1px solid #eb4830;
+        color: #eb4830;
+    }
+
+.overallpopup {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999999;
+    display: none;
+}
+
+.pane #indicator li img {
+    width: 100%;
+}
+
+/*Newly added*/
+
+
+.breadMenu {
+    margin: 0 0 1.5% 0;
+    background: #fafafa;
+}
+
+.breadcrumb {
+    background: #fafafa;
+    padding: .6% .8%;
+    padding: 0.5% 1% 0% 1.5%;
+}
+
+    .breadcrumb a {
+        color: #333;
+    }
+
+/*#indicator li img {
+    width: 100%;
+}*/
+
+.login {
+    cursor: pointer;
+    width: 60%;
+    position: relative;
+    border-left: 1px solid #e5e5e5;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    float: left;
+    padding-top: 5.5%;
+    padding-bottom: 7%;
+    margin-left: 35%;
+}
+
+.wallAward {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 10%;
+    position: relative;
+    float: left;
+    margin-left: 0%;
+    margin-right: 10%;
+    margin-top: 4.5%;
+    display: none !important;
+}
+
+    .wallAward li {
+        float: left;
+        position: relative;
+        width: 100%;
+    }
+
+        .wallAward li:first-child {
+            margin-right: 30%;
+        }
+
+        .wallAward li a img {
+            width: 100%;
+        }
+
+
+.afterlogin .dropdowns {
+    padding-right: 15px;
+}
+
+#networkdrpdown {
+    background: url("../../Images/profile_border_img.png") no-repeat center right;
+    display: none !important;
+}
+
+#paidmember {
+    border: 0;
+}
+
+#cartlist {
+    border: 0;
+}
+
+.dropdowns {
+    width: 100%;
+}
+
+    .dropdowns a {
+        background: url("../../Images/images/login-arrow.png") no-repeat bottom right rgba(0, 0, 0, 0);
+        background-position: right 0 bottom 0;
+        color: #000 !important;
+        float: right;
+        text-decoration: none;
+        text-align: right;
+        min-width: 66%;
+        max-width: 66%;
+        word-wrap: break-word;
+        padding-bottom: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+    }
+
+.selectdd {
+    background: url("../../images/login-arrow-up.png") no-repeat bottom right rgba(0, 0, 0, 0) !important;
+    background-position: right 0 bottom 0;
+}
+
+.dropdowns img {
+    float: right;
+    max-width: 35px;
+    max-height: 35px;
+    width: 30%;
+    height: auto;
+    margin-left: 3%;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.login:hover > .dropdowns ul, .login:hover > .dropdowns .slimScrollDiv {
+    display: block;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.dropdowns ul {
+    position: absolute;
+    top: 100%;
+    width: 93%;
+    height: 60% !important;
+    display: none;
+    z-index: 99999999999999999999999999999;
+    background-color: #222327 !important;
+    border-radius: 0 0 15px 15px !important;
+}
+
+.dropdowns .slimScrollDiv {
+    position: absolute !important;
+    width: 108% !important;
+    top: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    display: none;
+}
+
+#networklist {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+}
+
+.dropdowns ul li {
+    padding: 0 0 5% 0;
+    width: 100%;
+    background: #fff !important;
+    background-image: none !important;
+    float: left;
+    border-bottom: 1px solid #69c2c6;
+    clear: both;
+}
+
+#accsettings .hideDiv {
+    border-bottom: 1px solid #69c2c6;
+    border-left: 1px solid #69c2c6;
+    border-right: 1px solid #69c2c6;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+.clickdeeper {
+    background: url(../../Images/start/arrow_dig.png) no-repeat right top;
+    font-size: 15px;
+    color: #23a1a7;
+    float: left;
+    white-space: nowrap;
+    left: -240%;
+    position: absolute;
+    bottom: 5%;
+    background-size: 25% 80%;
+    padding-right: 70%;
+    padding-top: 0px;
+    padding-bottom: 8%;
+    cursor: default;
+    font-weight: 600;
+}
+
+
+.dropdowns ul li a {
+    color: #000 !important;
+    background-image: none !important;
+    min-width: 95%;
+    max-width: 95%;
+    text-align: left !important;
+    padding: 3% 0 0 5% !important;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    line-height: 1.3;
+}
+
+#accsettings li a {
+    padding: 3% 0 0% 5% !important;
+}
+
+.dropdowns ul li:hover {
+    background: #23a1a7 !important;
+    background-image: none !important;
+    color: #fff;
+}
+
+    .dropdowns ul li:hover > a {
+        color: #fff !important;
+    }
+
+.cart {
+    color: #fff;
+    display: none;
+}
+
+    .cart img {
+        width: 20%;
+        height: auto;
+        float: left;
+        margin-right: 5%;
+        display: none;
+    }
+
+    .cart p {
+        padding: 5% 0 0;
+        color: #ffffff;
+        display: none;
+    }
+
+
+.becomePaidmember {
+    background: url(../../Images/paid-member.png) no-repeat left 8% center #e0b001;
+    background-size: 15% 84% !important;
+    height: 0;
+    padding-bottom: 22%;
+    padding-left: 28%;
+}
+
+    .becomePaidmember p {
+        color: #ffffff;
+        line-height: 1.1em;
+        font-size: 90%;
+        padding: 11% 0;
+        font-weight: 600;
+    }
+
+#target {
+    background: none repeat scroll 0 0 #454444;
+    bottom: 54px;
+    display: none;
+    float: right;
+    position: absolute;
+    right: 80px;
+    width: 15%;
+}
+
+#target {
+    bottom: 100%;
+    background: #fff;
+    border: 1px solid #eb4830;
+    position: absolute;
+    right: 0;
+}
+
+    #target li:hover p {
+        color: #23a1a7;
+    }
+
+    #target li {
+        clear: both;
+        float: left;
+        width: 100%;
+        cursor: pointer;
+        background: transparent !important;
+    }
+
+        #target li:hover {
+            background: #fff !important;
+        }
+
+        #target li span {
+            float: left;
+            margin: 2% 3% 2% 2%;
+            width: 9%;
+            height: 0;
+            padding-bottom: 9%;
+            font-size: 130%;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+            #target li span img {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                left: 0;
+                top: 0;
+            }
+
+        #target li p, #target li a {
+            float: left;
+            color: #000;
+            margin: 1%;
+            padding: 1.5% 0 0;
+            text-decoration: none;
+            width: 82%;
+        }
+
+        #target li a {
+            width: 98% !important;
+        }
+
+.accordion {
+    display: table;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    position: relative;
+    height: 100%;
+}
+
+    .accordion a, .accordion h3 {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        float: left;
+    }
+
+        .accordion a.cacLogo {
+            /*background: url("../../Images/profile_border_img.png") no-repeat center left;*/
+            padding-left: 2.2%;
+            cursor: default;
+            float: left;
+        }
+
+.cacLogo img {
+    cursor: pointer;
+}
+
+
+.accordion h3 {
+    cursor: pointer;
+    width: 100px;
+    background: url(../../Images/menu_icon.png) no-repeat center;
+    position: relative;
+    background-size: 25% auto;
+    border-right: 1px solid #f1f1f1;
+}
+
+
+    .accordion h3:hover {
+        background: url(../../Images/menu_icon_hover.png) no-repeat center;
+        background-size: 25% auto;
+    }
+
+.accordion .down {
+    background: url(../../Images/menu_icon_hover.png) no-repeat center;
+    background-size: 25% auto;
+}
+
+.accordion div.pane {
+    background: none repeat scroll 0 0 #eee;
+    clear: both;
+    display: none;
+    float: left;
+    width: 95% !important;
+    position: absolute;
+    top: 102%;
+    z-index: 999999999;
+    left: 1%;
+    border: 1px solid #999;
+}
+
+.menuArrow {
+    position: absolute;
+    margin-top: -2.3%;
+    margin-left: .3%;
+}
+
+    .menuArrow img {
+        width: 80%;
+    }
+
+
+
+.pane li input:checked, .pane li input:not(:checked) {
+    display: none;
+}
+
+    .pane li input:checked + label {
+        margin-left: 0;
+        padding: 0;
+    }
+
+        .pane li input:checked + label p {
+            bottom: 7%;
+            color: #23a1a7;
+        }
+
+.pane #indicator {
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+
+
+.pane ul li a label img {
+    display: none !important;
+}
+
+
+.select_start p, .select_feedback p, .select_result p, .select_managersync p, .select_communitysync p, .select_goals p {
+    color: #23a1a7 !important;
+}
+
+.select_start, .select_feedback, .select_result, .select_managersync, .select_communitysync, .select_goals {
+    border: 1px solid #23a1a7 !important;
+}
+
+.start_start {
+    background: url(../../Images/icons/start_icon.png)no-repeat top right #fff;
+    background-size: 95% 95%;
+}
+
+    .start_start:hover {
+        background: url(../../Images/icons/start_icon_h.png)no-repeat top right #fff;
+        background-size: 95% 95%;
+    }
+
+
+.select_start {
+    background: url(../../Images/icons/start_icon_h.png)no-repeat top right #fff !important;
+    background-size: 95% 95% !important;
+}
+
+.feedback_start {
+    background: url(../../Images/icons/start-feedback.png)no-repeat top right #fff;
+    background-size: 90% 90%;
+}
+
+
+    .feedback_start:hover {
+        background: url(../../Images/icons/start-feedback_h.png)no-repeat top right #fff;
+        background-size: 90% 90%;
+    }
+
+
+.select_feedback {
+    background: url(../../Images/icons/start-feedback_h.png)no-repeat top right #fff !important;
+    background-size: 90% 90% !important;
+}
+
+.result_start {
+    background: url(../../Images/icons/result_Icon.png)no-repeat top right #fff;
+    background-size: 90% 90%;
+}
+
+
+    .result_start:hover {
+        background: url(../../Images/icons/result_Icon_h.png)no-repeat top right #fff;
+        background-size: 90% 90%;
+    }
+
+.select_result {
+    background: url(../../Images/icons/result_Icon_h.png)no-repeat top right #fff !important;
+    background-size: 90% 90% !important;
+}
+
+
+
+.managersync_start {
+    background: url(../../Images/icons/start-sync.png)no-repeat top right #fff;
+    background-size: 90% 90%;
+}
+
+    .managersync_start:hover {
+        background: url(../../Images/icons/start-sync_h.png)no-repeat top right #fff;
+        background-size: 90% 90%;
+    }
+
+.select_managersync {
+    background: url(../../Images/icons/start-sync_h.png)no-repeat top right #fff !important;
+    background-size: 90% 90% !important;
+}
+
+
+.communitysync_start {
+    background: url(../../Images/icons/start-standing.png)no-repeat top right #fff;
+    background-size: 85% 85%;
+}
+
+
+.resultMenuHide p, .managerMenuHide p, .communityMenuHide p, .goalsMenuHide p {
+    color: #fff;
+}
+
+.resultMenuHide:hover p, .managerMenuHide:hover p, .communityMenuHide:hover p, .goalsMenuHide:hover p {
+    color: #fff !important;
+}
+
+.resultMenuHide {
+    background: url(../../Images/icons/result_Icon.png)no-repeat top right #fff !important;
+    background-size: 100% 100% !important;
+    opacity: 0.2;
+}
+
+    .resultMenuHide:hover {
+        background: url(../../Images/icons/result_Icon.png)no-repeat top right #fff !important;
+        background-size: 100% 100% !important;
+        opacity: 0.2;
+    }
+
+.managerMenuHide {
+    background: url(../../Images/icons/start-sync.png)no-repeat top right #fff !important;
+    background-size: 100% 100% !important;
+    opacity: 0.2;
+}
+
+    .managerMenuHide:hover {
+        background: url(../../Images/icons/start-sync.png)no-repeat top right #fff !important;
+        background-size: 100% 100% !important;
+        opacity: 0.2;
+    }
+
+.communityMenuHide {
+    background: url(../../Images/icons/start-standing.png)no-repeat top right #fff !important;
+    background-size: 95% 95% !important;
+    opacity: 0.2;
+}
+
+    .communityMenuHide:hover {
+        background: url(../../Images/icons/start-standing.png)no-repeat top right #fff !important;
+        background-size: 95% 95% !important;
+        opacity: 0.2;
+    }
+
+
+
+
+.goalsMenuHide {
+    background: url(../../Images/icons/goals_icon.png)no-repeat top right #fff !important;
+    background-size: 110% 110% !important;
+    opacity: 0.2;
+}
+
+
+    .goalsMenuHide:hover {
+        background: url(../../Images/icons/goals_icon.png)no-repeat top right #fff !important;
+        background-size: 110% 110% !important;
+        opacity: 0.2;
+    }
+
+.communitysync_start:hover {
+    background: url(../../Images/icons/start-standing_h.png)no-repeat top right #fff;
+    background-size: 85% 85%;
+}
+
+.select_communitysync {
+    background: url(../../Images/icons/start-standing_h.png)no-repeat top right #fff !important;
+    background-size: 85% 85% !important;
+}
+
+
+.goals_start {
+    background: url(../../Images/icons/goals_icon.png)no-repeat top right #fff;
+    background-size: 95% 95%;
+}
+
+
+    .goals_start:hover {
+        background: url(../../Images/icons/goals_icon_h.png)no-repeat top right #fff;
+        background-size: 95% 95%;
+    }
+
+
+.select_goals {
+    background: url(../../Images/icons/goals_icon_h.png)no-repeat top right #000 !important;
+    background-size: 95% 95% !important;
+}
+
+.pane li {
+    position: relative;
+    width: 15.5%;
+    padding-bottom: 15.5%;
+    float: left;
+    /*background: #333;*/
+    margin: 0 1% 1% 0;
+    border: 1px solid #ccc;
+}
+
+    .pane li:hover {
+        background-color: #fff;
+        border: 1px solid #23a1a7;
+    }
+
+        .pane li:hover p {
+            color: #23a1a7;
+        }
+
+    .pane li:last-child {
+        margin-right: 0;
+    }
+
+    .pane li p {
+        font-weight: 500;
+        position: absolute;
+        bottom: 7%;
+        left: 10%;
+        color: #666;
+        font-size: 15px !important;
+    }
+
+    .pane li label {
+        cursor: pointer;
+        display: inline-block;
+        font-weight: normal;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pane li a {
+        color: #666;
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+    }
+
+#indicator {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.bukatutup {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: table;
+    width: 70px;
+    height: 100%;
+    z-index: 9999999999999999999;
+    /*border-left: 1px solid #333;*/
+    text-align: center;
+}
+
+    .bukatutup span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.headerRight {
+    float: right;
+    width: 20%;
+    display: table;
+    text-align: right;
+    height: 100%;
+}
+
+.headerLeft {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000 !important; /* change if the mask should have another color then white */
+    opacity: 0.5;
+    z-index: 9999998; /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    top: 50%; /* centers the loading animation vertically one the screen */
+    background-image: url(../../images/loading3.gif); /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px; /* is width and height divided by two */
+    z-index: 9999999;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #5E5E5E;
+    opacity: 0.1;
+    z-index: 90;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+/*Newly Added*/
+
+
+
+@media screen and (min-width: 2900px) and (max-width: 3500px) {
+
+    .clickdeeper {
+        font-size: 30px !important;
+        left: -480% !important;
+        background-size: 25% 60% !important;
+        padding-right: 110% !important;
+        padding-bottom: 20% !important;
+    }
+
+    .ui.breadcrumb a {
+        font-size: 22px !important;
+    }
+
+    .ui.breadcrumb {
+        font-size: 22px !important;
+    }
+
+    .overallcontent p {
+        font-size: 30px;
+        padding: 5% 0 3% 0;
+    }
+
+    .overallcontent a {
+        padding: 3px 25px 3px 25px;
+        font-size: 30px;
+    }
+
+    .overallclose {
+        background-size: 60px 60px !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+
+        .overallclose:hover {
+            background-size: 60px 60px !important;
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+
+    .breadcrumb a {
+        font-size: 22px !important;
+    }
+
+    .breadMenu a {
+        font-size: 22px;
+    }
+
+    .breadMenu i {
+        font-size: 25px;
+    }
+
+    .cacLogo img {
+        width: 330px;
+    }
+
+    .pane li p {
+        font-size: 37px !important;
+        line-height: 1.1;
+    }
+
+
+    .bukatutup span img {
+        width: 70%;
+        right: 30px;
+        position: relative;
+    }
+
+    .accordion h3 {
+        background-size: 27% 25% !important;
+        width: 170px !important;
+    }
+
+        .accordion h3:hover {
+            background-size: 27% 25% !important;
+        }
+
+
+    .footerPart, .page-wrap::after {
+        height: 100px;
+    }
+
+    .login {
+        padding-top: 7.5%;
+    }
+
+
+    .dropdowns a {
+        font-size: 25px;
+    }
+
+
+
+    .dropdowns img {
+        max-width: 70px;
+        max-height: 70px;
+        border-radius: 35px 35px 35px 35px;
+    }
+
+
+    #target li p, #target li a {
+        font-size: 25px;
+    }
+
+    .ui.menu .item {
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (min-width: 2500px) and (max-width: 2900px) {
+
+
+    .breadcrumb {
+        font-size: 17px;
+    }
+
+    .pane li p {
+        font-size: 23px !important;
+    }
+
+
+    #target li p, #target li a {
+        font-size: 21px !important;
+    }
+
+    .clickdeeper {
+        font-size: 18px;
+    }
+
+
+    .overallcontent p {
+        font-size: 20px;
+    }
+
+    .overallclose {
+        right: 0.7%;
+        top: 1.2%;
+    }
+
+    .overallcontent a {
+        font-size: 20px;
+    }
+
+
+    .dropdowns img {
+        max-width: 46px;
+        max-height: 46px;
+        border-radius: 25px 25px 25px 25px;
+    }
+
+    .overallcontent {
+        width: 15% !important;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 25% 24%;
+        background-position-y: 43px;
+        background-position-x: 38px;
+        width: 100px;
+    }
+
+    .headerMenu {
+        height: 110px;
+    }
+
+    .breadMenu a {
+        font-size: 16px;
+    }
+
+
+    #kesslogo {
+        width: 210px !important;
+        padding-top: 10px;
+    }
+
+    .page-wrapper {
+        min-height: 0px;
+    }
+}
+
+
+@media screen and (min-width: 2001px) and (max-width: 2500px) {
+    .pane li p {
+        font-size: 25px !important;
+        line-height: 1.2;
+    }
+
+
+    .wallAward {
+        margin-top: 4.5%;
+    }
+
+
+    .login {
+        padding-top: 10%;
+        padding-bottom: 4.5%;
+    }
+
+
+    .overallcontent {
+        width: 20% !important;
+        height: 200px !important;
+    }
+
+
+    .cacLogo img {
+        width: 225px;
+    }
+
+    .headerMenu {
+        height: 120px;
+    }
+
+    .accordion {
+        height: 98%;
+    }
+
+    .footerPart .item {
+        font-size: 18px;
+    }
+
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 35% 26%;
+        background-position-y: 46px;
+        background-position-x: 30px;
+        width: 85px;
+    }
+}
+
+
+@media screen and (min-width: 1940px) and (max-width: 2000px) {
+    .cacLogo img {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2000px) {
+
+    .dropdowns a {
+        font-size: 16px;
+    }
+
+    .pane li p {
+        font-size: 22px !important;
+        line-height: 1.1;
+        padding-right: 5%;
+    }
+
+    .clickdeeper {
+        left: -225%;
+        position: absolute;
+        background-size: 20% 65%;
+        padding-right: 55%;
+        padding-top: 0px;
+        padding-bottom: 8%;
+        cursor: default;
+        font-weight: 600;
+    }
+
+    .wallAward {
+        margin-top: 5.5%;
+    }
+
+    .login {
+        padding-top: 6%;
+        padding-bottom: 4.5%;
+    }
+
+    .overallcontent {
+        width: 20% !important;
+        height: 200px !important;
+    }
+
+    .headerMenu {
+        height: 100px;
+    }
+
+    .dropdown-content {
+        top: 97%;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 30% 25%;
+        background-position-y: center;
+        width: 85px;
+        float: left;
+    }
+}
+
+
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
+    .afterlogin img {
+        width: 50%;
+    }
+
+    .breadcrumb {
+        padding: 0.5% 1% 0.6% 2%;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 28% 35%;
+        background-position-y: 20px;
+        background-position-x: 32px;
+        width: 85px;
+    }
+
+    .cacLogo img {
+        width: 125px !important;
+    }
+
+    .clickdeeper {
+        left: -215%;
+        background-size: 19% 60%;
+        padding-right: 50%;
+    }
+
+    .wallAward {
+        margin-top: 3.9%;
+    }
+
+    .login {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+}
+
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+
+    .page-wrapper {
+        min-height: 100%;
+        /* equal to footer height */
+        margin-bottom: -38px;
+    }
+
+    .footerPart, .page-wrap:after {
+        height: 38px;
+    }
+
+    .centerPart h1 {
+        font-size: 1rem;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 40% 30%;
+        background-position-y: 28px;
+        background-position-x: 17px;
+        width: 60px;
+    }
+
+    .pane li p {
+        font-size: 17px !important;
+        line-height: 1.1;
+    }
+
+
+    .headerRight {
+        width: 23%;
+    }
+
+    .cacLogo img {
+        width: 150px !important;
+    }
+
+    .accordion a.cacLogo {
+        padding-left: 2.2%;
+    }
+
+    .clickdeeper {
+        left: -205%;
+        background-size: 22% 65%;
+        padding-right: 45%;
+        padding-top: 0%;
+        font-size: 14px;
+    }
+
+    .wallAward {
+        margin-top: 8%;
+    }
+
+    .login {
+        padding-top: 7%;
+        padding-bottom: 4.7%;
+    }
+
+    .headerRight .dropdown {
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) and (min-width: 1200px) {
+    .pane li p {
+        font-size: 15px !important;
+        line-height: 1.1;
+        padding-right: 5%;
+    }
+
+
+    .login {
+        padding-bottom: 4%;
+    }
+
+
+    .headerRight {
+        width: 23%;
+    }
+
+    .cacLogo img {
+        width: 125px !important;
+    }
+
+    .page-wrapper {
+        min-height: 100%;
+        margin-bottom: -38px;
+        width: 99.95%;
+    }
+
+    .footerPart, .page-wrap:after {
+        height: 38px;
+    }
+
+    .centerPart h1 {
+        font-size: 1rem;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 30% 25%;
+        width: 60px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .pane li p {
+        font-size: 15px !important;
+        line-height: 1.1;
+        padding-right: 5%;
+    }
+
+
+    .login {
+        padding-bottom: 4%;
+    }
+
+
+    .headerRight {
+        width: 23%;
+    }
+
+    .cacLogo img {
+        width: 125px !important;
+    }
+
+    .page-wrapper {
+        min-height: 100%;
+        margin-bottom: -38px;
+        width: 99.95%;
+    }
+
+    .footerPart, .page-wrap:after {
+        height: 38px;
+    }
+
+    .centerPart h1 {
+        font-size: 1rem;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 30% 25%;
+        width: 60px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+    .pane li p {
+        font-size: 15px !important;
+        line-height: 1.1;
+        padding-right: 5%;
+    }
+
+
+    .login {
+        padding-bottom: 4%;
+    }
+
+
+    .headerRight {
+        width: 23%;
+    }
+
+    .cacLogo img {
+        width: 150px !important;
+    }
+
+    .page-wrapper {
+        min-height: 100%;
+        margin-bottom: -38px;
+        width: 99.95%;
+    }
+
+    .footerPart, .page-wrap:after {
+        height: 38px;
+    }
+
+    .centerPart h1 {
+        font-size: 1rem;
+    }
+
+    .accordion h3, .accordion h3:hover, .accordion .down {
+        background-size: 30% 25%;
+        width: 60px;
+    }
+}
+
+.cacLogo {
+    cursor: default;
+}
+
+    .cacLogo img {
+        cursor: pointer;
+    }

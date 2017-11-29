@@ -48,41 +48,38 @@
         .jssora13l.jssora13ldn      (mousedown)
         .jssora13r.jssora13rdn      (mousedown)
         */
-.jssora13l, .jssora13r {
+
+.jssora13l {
     display: block;
     position: absolute;
-    /* size of arrow element */
-    width: 76px;
-    height: 119px;
+    width: 45px;
+    height: 70px;
     cursor: pointer;
-    background: url("../../Images/Product/a13.png") no-repeat;
+    background: url("../../Images/images/preIcon.png") no-repeat left center;
+    background-size: 100% 100%;
     overflow: hidden;
 }
 
-.jssora13l {
-    background-position: 0 0;
-}
-
 .jssora13r {
-    background-position: -85px 0px;
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 70px;
+    cursor: pointer;
+    background: url("../../Images/images/nextIcon.png") no-repeat right center;
+    background-size: 100% 100%;
+    overflow: hidden;
 }
 
 .jssora13l:hover {
-    background-position: -172px 0px;
+    background: url("../../Images/images/preIconHover.png") no-repeat left center;
+    background-size: 100% 100%;
 }
 
 .jssora13r:hover {
-    background-position: -258px 0px;
+    background: url("../../Images/images/nextIconHover.png") no-repeat right center;
+    background-size: 100% 100%;
 }
-
-.jssora13l.jssora13ldn {
-    background-position: -172px 0px;
-}
-
-.jssora13r.jssora13rdn {
-    background-position: -258px 0px;
-}
-
 
 .mCSB_scrollTools .mCSB_draggerRail {
     display: none;
@@ -94,11 +91,31 @@
 }
 
 
+.leftPageJssor {
+    left: 8% !important;
+    opacity: 0.15;
+}
+
+
+.currentPageJssor {
+    left: 13% !important;
+}
+
+.nextPageJssor {
+    left: 12% !important;
+    opacity: 0.15;
+}
+
 
 
 /******************************************/
 .content_progress {
     height: 400px;
+}
+
+
+.currentPageJssor .content_progress {
+    width: 90%;
 }
 
 body {
@@ -191,7 +208,7 @@ h1 {
 .contentholder {
     float: left;
     background: rgba(255, 255, 255, 0.9);
-    width: 75%;
+    width: 77%;
     margin: 0;
     border: 1px solid #333;
     margin-top: 0%;
@@ -241,7 +258,7 @@ h1 {
 .qnscale {
     padding: 0;
     clear: both;
-    padding: 0 0 0 4.5%;
+    padding: 0 0 0 4.3%;
     position: relative;
     width: 100%;
     float: left;
@@ -280,7 +297,7 @@ h1 {
     }
 
 .freqscale_bg {
-    width: 92%;
+    width: 98%;
     height: 34px;
     margin: 0;
     padding: 0;
@@ -367,42 +384,42 @@ h1 {
     width: 25%;
     position: absolute;
     float: left;
-    background: #d2ebec; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     color: #fff !important;
 }
 
 .freqscaleover2 {
-    background: #d2ebec; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+      background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 50%;
     position: absolute;
     float: left;
 }
 
 .freqscaleover3 {
-    background: #d2ebec; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 75%;
     position: absolute;
     float: left;
 }
 
 .freqscaleover4 {
-    background: #d2ebec; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 100%;
     position: absolute;
     float: left;
@@ -419,15 +436,15 @@ h1 {
 }
 
 .freqscale_handle1 {
-    left: 23.2%;
+    left: 23.5%;
 }
 
 .freqscale_handle2 {
-    left: 48.2%;
+    left: 48.5%;
 }
 
 .freqscale_handle3 {
-    left: 73.2%;
+    left: 73.5%;
 }
 
 .freqscale_handle4 {
