@@ -1,9 +1,11 @@
-﻿@{
+﻿@model bExcellent.mvc.Models.Feedback
+@{
     ViewBag.Title = "SelfFeedback";
 }
 <link href="~/Styles/Common/jquery.mCustomScrollbar.css" rel="stylesheet" />
 
-<link href="~/Styles/self-product.css" rel="stylesheet" />
+<link href="~/Styles/self-product.css" rel="stylesheet"/>
+<input type="hidden" id="lastModuleOrder" value="@Model.GetLastSavedQuestion.ModuleOrder"/>
 <div id="completeModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
@@ -46,19 +48,19 @@
         <ul class="poemodule">
             @* <img src="~/Images/icons/AzureInfraTsp-Product5h.png" />*@
 
-            <li class="selected modImg1" data-moduleid="210">
+            <li class="selected modImg1" data-moduleid="210" data-order="0">
                 <img src="~/Images/icons/AzureInfraTsp-Product1h.png" /><p>Microsoft Azure</p>
             </li>
-            <li class="modImg2" data-moduleid="211">
+            <li class="modImg2" data-moduleid="211" data-order="1">
                 <img src="~/Images/icons/AzureInfraTsp-Product2.png" /><p>Security</p>
             </li>
-            <li class="modImg3" data-moduleid="212">
+            <li class="modImg3" data-moduleid="212" data-order="2">
                 <img src="~/Images/icons/AzureInfraTsp-Product3.png" /><p>Operations &amp; Management </p>
             </li>
-            <li class="modImg4" data-moduleid="213">
+            <li class="modImg4" data-moduleid="213" data-order="3">
                 <img src="~/Images/icons/AzureInfraTsp-Product4.png" /><p>Developer Tools</p>
             </li>
-            <li class="modImg5" data-moduleid="214">
+            <li class="modImg5" data-moduleid="214" data-order="4">
                 <img src="~/Images/icons/AzureInfraTsp-Product5.png" /><p>Debugging and Performance</p>
             </li>
             @* <li><img src="../Images/icons/SolutionSalesSpecialist6.png"><p>Continuous Learning and Professional Growth</p></li>*@
@@ -1017,5 +1019,10 @@
     @* <script src="~/Scripts/ref/Common/jquery-2.1.4.min.js"></script>*@
     <script src="~/Scripts/ref/Common/jssor.slider.min.js"></script>
     <script src="~/Scripts/ref/TechnicalFeedback/SelfFeedback.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if (screen.width >= 2000) { document.write('<style>body{zoom:125%;}</style>'); }
+        });
+    </script>
 
 }

@@ -480,8 +480,11 @@ var devLanding = {
                                 impselected4 = "selectYou";
                                 impselectedRole4 = impselectedRole4 + "<span class='youSpan'>" + name + "</span>";
                             }
+                            var splitQuestion = response[i].Question.split(',');
+                            var feature = splitQuestion[0].replace('Feature:', '');
+                            var component = splitQuestion[1].replace('Component:', '');
                             html = html + "<ul><li class='qnumber' style='vertical-align: top;'>" + (i + 1) + "</li><li style='vertical-align: top;'><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
-                                "<li><div class='qncontent'>" + moreText + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div></li><li>asekdjf aksdjhfkasd fhjafkjdshkjf aksdjhf dsfh</li><li><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Introductory " + selectedRole1 + "</li> <li class='" + selected2 + "'>Intermediate " + selectedRole2 + "</li> <li class='" + selected3 + "'>Experienced " + selectedRole3 + "</li> " +
+                                "<li><div class='qncontent'>" + feature + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div></li><li>" + component + "</li><li><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Introductory " + selectedRole1 + "</li> <li class='" + selected2 + "'>Intermediate " + selectedRole2 + "</li> <li class='" + selected3 + "'>Experienced " + selectedRole3 + "</li> " +
                                 "<li class='" + selected4 + "'>Expert " + selectedRole4 + "</li> </ul></div></div></li>" +
                                 "</ul>";
                             //html = html + "<ul><li>" + (i + 1) + "</li><li><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +

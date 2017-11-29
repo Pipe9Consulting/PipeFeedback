@@ -47,7 +47,7 @@
 
     var jssor_1_options = {
         $AutoPlay: false,
-        $SlideWidth: 700,
+        $SlideWidth: 800,
         $Loop: 0,
         //$StartIndex: 0,
         $Cols: 2,
