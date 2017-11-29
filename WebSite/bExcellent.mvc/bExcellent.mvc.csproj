@@ -4237,8 +4237,11 @@
     <Content Include="Styles\demo.css" />
     <Content Include="Styles\Devpriorities\bootstrap.min.css" />
     <Content Include="Styles\Devpriorities\develop.css" />
+    <Content Include="Styles\Devpriorities\priorities-product.css" />
     <Content Include="Styles\Devpriorities\priorities.css" />
+    <Content Include="Styles\Devpriorities\progress-product.css" />
     <Content Include="Styles\Devpriorities\progress.css" />
+    <Content Include="Styles\feedback\feedbackGuide-product.css" />
     <Content Include="Styles\feedback\feedbackGuide.css" />
     <Content Include="Styles\feedback\jquery.mCustomScrollbar.css" />
     <Content Include="Styles\feedback\manager-product.css" />
