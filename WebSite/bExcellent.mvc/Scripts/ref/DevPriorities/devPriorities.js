@@ -330,6 +330,7 @@ var devLanding = {
             url: option.url,
             success: function (response) {
                 //debugger;
+                //alert(response);
                 var html = "";
                 if (response != null) {
                     $('#devPrioritiesLength').val(response.length);

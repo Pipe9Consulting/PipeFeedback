@@ -142,10 +142,18 @@ var devLanding = {
             success: function (response) {
                 $('#clickProgress').on('click', function () {
                     var selectedPoe = parseInt($('#selectedPoe').val());
-                   // if (poe == 15 || poe == 16 || poe == 17) {
-                    // window.location = "../Development/Progress";
-                    window.location = "../TechnicalFeedback/Progress";
-                   // }
+                    if (poe !=34) {
+                     window.location = "../Development/Progress";
+                   } else {
+                        window.location = "../TechnicalFeedback/Progress";
+                    }
+                });
+                $('#clickPriorities').on('click', function() {
+                    if (poe != 34) {
+                        window.location = "../Development/Priorities";
+                    } else {
+                        window.location = "../TechnicalFeedback/Priorities";
+                    }
                 });
             },
             error: function (err) {

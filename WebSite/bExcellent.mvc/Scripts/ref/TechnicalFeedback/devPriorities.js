@@ -337,6 +337,7 @@ var devLanding = {
             success: function (response) {
                 //debugger;
                 var html = "";
+                //alert(response);
                 if (response != null) {
                     $('#devPrioritiesLength').val(response.length);
                     for (var i = 0; i < response.length; i++) {
