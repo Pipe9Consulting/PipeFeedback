@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     LoadScale();
     teamFeedbackFb.LoadSlider();
-
+    
     $("#module-name").click(function () {
         $("#option_menu").fadeToggle();
 
@@ -24,41 +24,54 @@
         $(this).addClass('selected');
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1h.png');
     }).mouseout(function () {
-        $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
-        $(this).removeClass('selected');
+        if (!$(this).hasClass('selectedModule')) {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
+            $(this).removeClass('selected');
+        }
     });
 
     $(".modImg2").mouseover(function () {
         $(this).addClass('selected');
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2h.png');
     }).mouseout(function () {
-        $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
-        $(this).removeClass('selected');
+        if (!$(this).hasClass('selectedModule')) {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
+            $(this).removeClass('selected');
+        }
     });
 
     $(".modImg3").mouseover(function () {
         $(this).addClass('selected');
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3h.png');
     }).mouseout(function () {
-        $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
-        $(this).removeClass('selected');
+        if (!$(this).hasClass('selectedModule')) {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
+            $(this).removeClass('selected');
+        }
     });
 
     $(".modImg4").mouseover(function () {
         $(this).addClass('selected');
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4h.png');
     }).mouseout(function () {
-        $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4.png');
-        $(this).removeClass('selected');
+        if (!$(this).hasClass('selectedModule')) {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4.png');
+            $(this).removeClass('selected');
+        }
     });
 
     $(".modImg5").mouseover(function () {
         $(this).addClass('selected');
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5h.png');
     }).mouseout(function () {
-        $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
-        $(this).removeClass('selected');
+        if (!$(this).hasClass('selectedModule')) {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
+            $(this).removeClass('selected');
+        }
     });
+
+
+    
 
 
     var jssor_1_options = {
@@ -100,6 +113,8 @@
     $Jssor$.$AddEvent(window, "resize", ScaleSlider);
     $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
     var currentIndex = jssor_1_slider.$CurrentIndex();
+    //LoadFooterMenu(jssor_1_slider.$CurrentIndex()+1);
+    LoadTile(parseInt($('#lastModuleOrder').val())-2);
     if (parseInt(jssor_1_slider.$CurrentIndex()) == -1 && $('#lastModuleOrder').val()==0) {
         $('.jssora13l').hide();
     }
@@ -108,34 +123,66 @@
         $('.jssora13r').hide();
     }
 
+    $('.bukatutup').on('click', function () {
+        $("#target").toggle();
+        var htmlText = "<li id='lit1' style='display:none' data-order='0'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product1-small.png' /></span><p>Microsoft Azure</p></a></li>" + "<li id='lit2' style='display:none' data-order='1'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product2-small.png' /></span><p>Security</p></a></li>" + "<li id='lit3' style='display:none' data-order='2'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product3-small.png' /></span><p>Operations & Management</p></a></li>" + "<li id='lit4' style='display:none' data-order='3'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product4-small.png' /></span><p>Developer Tools</p></a></li>" + "<li id='lit5' style='display:none' data-order='4'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product5-small.png' /></span><p>Debugging & Performance</p></a></li>";
+        $('#target ul').html(htmlText);
+        LoadFooterMenu(parseInt(jssor_1_slider.$CurrentIndex()) + 1);
+        $("#lit1").mouseover(function () {            
+            $(this).find('img').attr('src', '../../Images/icons/AzureInfraTsp-Product1-small_selected.png');
+        }).mouseout(function () {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1-small.png');           
+        });
+
+        $("#lit2").mouseover(function () {          
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2-small_selected.png');
+        }).mouseout(function () {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2-small.png');           
+        });
+
+        $("#lit3").mouseover(function () {           
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3-small_selected.png');
+        }).mouseout(function () {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3-small.png');          
+        });
+
+        $("#lit4").mouseover(function () {           
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4-small_selected.png');
+        }).mouseout(function () {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4-small.png');          
+        });
+
+        $("#lit5").mouseover(function () {           
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5-small_selected.png');
+        }).mouseout(function () {
+            $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5-small.png');          
+        });
+
+        $("#target ul li").on('click', function () {
+            var index = parseInt($(this).attr('data-order'));
+            var lastModuleOrder = parseInt($('#lastModuleOrder').val());
+            if (lastModuleOrder >= (index + 1)) {
+                LoadTile(index - 1);
+                jssor_1_slider.$GoTo((index));
+                $('#module' + (index)).addClass('select_core' + (index));
+                $('#moduleSet' + (index + 1)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+                $('#moduleSet' + (index)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
+                $('#moduleSet' + (index - 1)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
+            }
+            if (index == 0) {
+                $('.jssora13l').hide();
+            } else {
+                $('.jssora13l').show();
+            }
+        });
+    });
+
+
+
+
     $('.jssora13r').on('click', function (e) {
         if (sliderValidation(parseInt(jssor_1_slider.$CurrentIndex()))) {
-
-            if (parseInt(jssor_1_slider.$CurrentIndex()) == 0) {
-                $(".modImg2").addClass('selected').siblings('li').removeClass('selected');
-                $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
-                $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2h.png');
-            }
-            if (parseInt(jssor_1_slider.$CurrentIndex()) == 1) {
-                $(".modImg3").addClass('selected').siblings('li').removeClass('selected');
-                $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
-                $('.modImg3').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3h.png');
-            }
-            if (parseInt(jssor_1_slider.$CurrentIndex()) == 2) {
-                $(".modImg4").addClass('selected').siblings('li').removeClass('selected');
-                $('.modImg3').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
-                $('.modImg4').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4h.png');
-            }
-            if (parseInt(jssor_1_slider.$CurrentIndex()) == 3) {
-                $(".modImg5").addClass('selected').siblings('li').removeClass('selected');
-                $('.modImg4').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4.png');
-                $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5h.png');
-            }
-            if (parseInt(jssor_1_slider.$CurrentIndex()) == 4) {
-                $(".modImg5").removeClass('selected');
-                $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
-                $('.jssora13r').hide();
-            }
+            LoadTile(parseInt(jssor_1_slider.$CurrentIndex()));
             $('.jssora13l').show();
 
             jssor_1_slider.$Next();
@@ -183,6 +230,7 @@
         var index = parseInt($(this).attr('data-order'));
         var lastModuleOrder = parseInt($('#lastModuleOrder').val());
         if (lastModuleOrder >= (index + 1)) {
+            LoadTile(index-1);
             jssor_1_slider.$GoTo((index));
             $('#module' + (index)).addClass('select_core' + (index));
             $('#moduleSet' + (index + 1)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
@@ -200,6 +248,7 @@
         var lastModuleOrder = parseInt($('#lastModuleOrder').val());
         if (lastModuleOrder < order) {
             $('#lastModuleOrder').val(order);
+            LoadFooterMenu(order);
         }
         $('#module' + (currentPos - 1)).removeClass('leftPageJssor');
         $('#module' + currentPos).removeClass('currentPageJssor').removeClass('currentPageJssor').addClass('leftPageJssor');
@@ -211,6 +260,72 @@
         $('#module' + (currentPos - 1)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
         $('#module' + (currentPos - 2)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
     }
+    function LoadFooterMenu(CurrenPos)
+    {
+        //debugger;
+        for (var i = 1; i <= CurrenPos; i++)
+        {
+            $('#lit' + i).show();            
+        }
+    }
+
+    function LoadTile(currPos)
+    {
+        
+        $('#moduleOrder' + (currPos + 1)).addClass('selectedModule').siblings().removeClass('selectedModule');       
+        if (currPos == -1) {
+            $(".modImg1").addClass('selected').siblings('li').removeClass('selected');
+            $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1h.png');
+            $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
+            $('.modImg3').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
+            $('.modImg4').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4.png');
+            $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
+            
+        }
+        if (currPos == 0) {
+            $(".modImg2").addClass('selected').siblings('li').removeClass('selected');
+            $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2h.png');
+            $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
+            $('.modImg3').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
+            $('.modImg4').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4.png');
+            $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
+        }
+        if (currPos == 1) {
+            $(".modImg3").addClass('selected').siblings('li').removeClass('selected');
+            $('.modImg3').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3h.png');
+            $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
+            $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
+            $('.modImg4').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4.png');
+            $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
+        }
+        if (currPos == 2) {
+            $(".modImg4").addClass('selected').siblings('li').removeClass('selected');
+            $('.modImg4').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4h.png');
+            $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
+            $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
+            $('.modImg3').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
+            $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
+        }
+        if (currPos == 3) {
+            $(".modImg5").addClass('selected').siblings('li').removeClass('selected');
+            $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5h.png');
+            $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
+            $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
+            $('.modImg3').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
+            $('.modImg4').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4.png');
+            
+        }
+        if (currPos == 4) {
+            $(".modImg5").removeClass('selected');
+            $('.modImg1').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1.png');
+            $('.modImg2').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product2.png');
+            $('.modImg3').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product3.png');
+            $('.modImg4').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product4.png');
+            $('.modImg5').find('img').attr('src', '../Images/icons/AzureInfraTsp-Product5.png');
+            $('.jssora13r').hide();
+        }
+    }
+
     function sliderValidation(current) {
         var validate = true;
         if (current == 0) {
