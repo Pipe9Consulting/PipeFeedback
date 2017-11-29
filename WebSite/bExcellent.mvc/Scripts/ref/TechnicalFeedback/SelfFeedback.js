@@ -54,6 +54,9 @@
         }
     });
 
+   
+
+
     //if (screen.width >= 2000) { document.write('<style>body{zoom:125%;}</style>'); }
 
     var jssor_1_options = {
@@ -209,6 +212,9 @@
         } else {
             $('#errmsg_cont').text("Please finish responding before progressing.");
             $('#signsubmit').modal('show');
+            $("#signsubmit").show();
+            $('.simplemodal-overlay').show();
+            $('.simplemodal-container').show();
             //alert('Please finish responding before progressing.');
         }
     });
@@ -398,11 +404,17 @@
         if (validateIntial()) {
             //$("#completeModal").show();
             $("#completeModal").modal('show');
+            $("#completeModal").show();
+            $('.simplemodal-overlay').show();
+            $('.simplemodal-container').show();
         }
     });
     $("#btnCompleteOk").on('click', function () {       
         //debugger;
         $("#completeModal").modal('hide');
+        $("#completeModal").hide();
+        $('.simplemodal-overlay').hide();
+        $('.simplemodal-container').hide();
         Common.ajaxsync({
             url: '../../TechnicalFeedback/CompleteTakeFeedback',
             data: { fbinitial: $('#fbinitial').val() },
@@ -432,11 +444,17 @@
             } else {
                 $('#errmsg_cont').text("Special characters are not allowed in this field");         
                 $('#signsubmit').modal('show');
+                $("#signsubmit").show();
+                $('.simplemodal-overlay').show();
+                $('.simplemodal-container').show();
                 return false;
             }
         } else {
             $('#errmsg_cont').text("Please enter your name");
             $('#signsubmit').modal('show');
+            $("#signsubmit").show();
+            $('.simplemodal-overlay').show();
+            $('.simplemodal-container').show();
             return false;
         }
     }

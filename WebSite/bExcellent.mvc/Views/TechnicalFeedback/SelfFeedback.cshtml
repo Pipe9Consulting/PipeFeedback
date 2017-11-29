@@ -4,9 +4,9 @@
 }
 <link href="~/Styles/Common/jquery.mCustomScrollbar.css" rel="stylesheet" />
 
-<link href="~/Styles/self-product.css" rel="stylesheet"/>
+<link href="~/Styles/self-product.css" rel="stylesheet" />
 <input type="hidden" id="lastModuleOrder" value="@Model.GetLastSavedQuestion.ModuleOrder"/>
-<div id="completeModal" class="modal fade" role="dialog">
+<div id="completeModal" class="modal" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
@@ -45,7 +45,7 @@
         <h1>Give Feedback
         </h1>
 
-      <ul class="poemodule">
+        <ul class="poemodule">
             <li id="moduleOrder0" class="selected modImg1 selectedModule" data-moduleid="210" data-order="0">
                 <img src="~/Images/icons/AzureInfraTsp-Product1h.png" /><p>Microsoft Azure</p>
             </li>
@@ -66,11 +66,56 @@
     </div>
 
     <h1 class="producttitle">Product Feature <span>- For each Product Component below, rate your level of Proficiency</span></h1>
+    <input type="button" class="button_menu" id="module-name" />
+
+    <div id="option_menu" class="optView" style="display: none;">
+        <div class="capabilityDef" id="capabilityDef" style="display: block;">
+            <h2>Proficiency Definitions</h2>
+            <div class="scale_dfn">
+                <div class="scale_img">
+                    <img alt="Rarely" src="../../Images/Feedback/Icon/capability2.png">
+                </div>
+                <div class="scale_cnt">
+                    <h3>Introductory</h3>
+                    <p>Introductory Level Proficiency.</p>
+                </div>
+            </div>
+            <div class="scale_dfn">
+                <div class="scale_img">
+                    <img alt="inconsistently" src="../../Images/Feedback/Icon/capability1.png">
+                </div>
+                <div class="scale_cnt">
+                    <h3>Intermediate</h3>
+                    <p>Intermediate Level Proficiency.</p>
+                </div>
+            </div>
+            <div class="scale_dfn">
+                <div class="scale_img">
+                    <img alt="frequently" src="../../Images/Feedback/Icon/capability3.png">
+                </div>
+                <div class="scale_cnt">
+                    <h3>Experienced</h3>
+                    <p>Experienced Level Proficiency.</p>
+                </div>
+            </div>
+            <div class="scale_dfn">
+                <div class="scale_img">
+                    <img alt="Always" src="../../Images/Feedback/Icon/capability4.png">
+                </div>
+                <div class="scale_cnt">
+                    <h3>Expert</h3>
+                    <p>Expert Level Proficiency.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
     <div class="contentholder">
 
         <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1000px; height: 400px; overflow: hidden; visibility: hidden;">
             <!-- Loading Screen -->
-@*            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            @*            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                 <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
                 <div style="position: absolute; display: block; background: url('img/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
             </div>*@
@@ -779,7 +824,7 @@
                                 <p class="moduleqncontent">Advanced Threat Analytics (ATA) Center</p>
                             </div>
                             <div class="qnscale">
-                                     <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1096" id="freqScale35">
+                                <div class="freqscale_bg" data-answer="0" data-important="3" data-questionid="1096" id="freqScale35">
                                     <div class="freqscale_over">
                                         <button class="freqbtn1">Introductory</button>
                                         <button class="freqbtn2">Intermediate</button>
@@ -900,7 +945,7 @@
 
                 <div data-p="112.50" style="display: none;" id="module4">
                     <div class="content_progress mCustomScrollbar">
-                       
+
                         <div class="supqnscaleset">
                             <h2 class="productsubtitle">Team Foundation Server</h2>
                             <div class="moduleqn">
@@ -929,7 +974,7 @@
 
                 <div data-p="112.50" style="display: none;" id="module5">
                     <div class="content_progress mCustomScrollbar">
-                        
+
                         <div class="supqnscaleset">
                             <h2 class="productsubtitle">Debugger</h2>
                             <div class="moduleqn">
@@ -1016,8 +1061,23 @@
     <script src="~/Scripts/ref/Common/jssor.slider.min.js"></script>
     <script src="~/Scripts/ref/TechnicalFeedback/SelfFeedback.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            if (screen.width >= 2000) { document.write('<style>body{zoom:125%;}</style>'); }
+        $(document).ready(function () {
+
+            $("#module-name").click(function () {
+                $("#option_menu").fadeToggle();
+
+            });
+
+
+
+        });
+
+        $(document).click(function (event) {
+            if (!$(event.target).hasClass("button_menu")) {
+                if (!$(event.target).parents().hasClass("optView")) {
+                    $('#option_menu').hide(250);
+                }
+            }
         });
     </script>
 
