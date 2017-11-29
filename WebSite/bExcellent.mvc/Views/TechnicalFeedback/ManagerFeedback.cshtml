@@ -4,7 +4,8 @@
 }
 
 <link href="~/Styles/Common/jquery.mCustomScrollbar.css" rel="stylesheet" />
-<link href="~/Styles/feedback/manager-product.css" rel="stylesheet" />
+<link href="~/Styles/feedback/manager-product.css" rel="stylesheet"/>
+<input type="hidden" id="lastModuleOrder" value="@Model.GetLastSavedQuestion.ModuleOrder"/>
 <div id="completeModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
@@ -45,19 +46,19 @@
         </h1>
 
         <ul class="poemodule">
-            <li class="selected modImg1" data-moduleid="210">
+            <li class="selected modImg1" data-moduleid="210" data-order="0">
                 <img src="~/Images/icons/AzureInfraTsp-Product1h.png" /><p>Microsoft Azure</p>
             </li>
-            <li class="modImg2" data-moduleid="211">
+            <li class="modImg2" data-moduleid="211" data-order="1">
                 <img src="~/Images/icons/AzureInfraTsp-Product2.png" /><p>Security</p>
             </li>
-            <li class="modImg3" data-moduleid="212">
+            <li class="modImg3" data-moduleid="212" data-order="2">
                 <img src="~/Images/icons/AzureInfraTsp-Product3.png" /><p>Operations &amp; Management </p>
             </li>
-            <li class="modImg4" data-moduleid="213">
+            <li class="modImg4" data-moduleid="213" data-order="3">
                 <img src="~/Images/icons/AzureInfraTsp-Product4.png" /><p>Developer Tools</p>
             </li>
-            <li class="modImg5" data-moduleid="214">
+            <li class="modImg5" data-moduleid="214" data-order="4">
                 <img src="~/Images/icons/AzureInfraTsp-Product5.png" /><p>Debugging and Performance</p>
             </li>
         </ul>

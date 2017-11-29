@@ -64,15 +64,17 @@
     var jssor_1_options = {
         $AutoPlay: false,
         $Loop: 0,
-        $StartIndex: 0,
-        $FillMode: 3,
+        $StartIndex:(parseInt($('#lastModuleOrder').val()) == 0) ? 0 : parseInt($('#lastModuleOrder').val())-1,
+        //$FillMode: 3,
         $DragOrientation: 0,
-        $SlideWidth: 1000,
-        $SlideSpacing: 100,
+        $SlideWidth: 600,
+        //$SlideSpacing: 100,
         $Cols: 2,
-        $Align: 50,
+        $Align: 120,
         $ArrowNavigatorOptions: {
-            $Class: $JssorArrowNavigator$
+            $Class: $JssorArrowNavigator$,
+            $Steps: 1,
+            $ChanceToShow: 1
         },
         $BulletNavigatorOptions: {
             $Class: $JssorBulletNavigator$
@@ -98,7 +100,7 @@
     $Jssor$.$AddEvent(window, "resize", ScaleSlider);
     $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
     var currentIndex = jssor_1_slider.$CurrentIndex();
-    if (parseInt(jssor_1_slider.$CurrentIndex()) == -1) {
+    if (parseInt(jssor_1_slider.$CurrentIndex()) == -1 && $('#lastModuleOrder').val()==0) {
         $('.jssora13l').hide();
     }
     if (parseInt(jssor_1_slider.$CurrentIndex()) == 3) {
@@ -177,8 +179,38 @@
         prevJssor((jssor_1_slider.$CurrentIndex() + 1));
     });
 
-
-
+    $('.poemodule li').on('click', function() {
+        var index = parseInt($(this).attr('data-order'));
+        var lastModuleOrder = parseInt($('#lastModuleOrder').val());
+        if (lastModuleOrder >= (index + 1)) {
+            jssor_1_slider.$GoTo((index));
+            $('#module' + (index)).addClass('select_core' + (index));
+            $('#moduleSet' + (index + 1)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+            $('#moduleSet' + (index)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
+            $('#moduleSet' + (index - 1)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
+        }
+        if (index == 0) {
+            $('.jssora13l').hide();
+        } else {
+            $('.jssora13l').show();
+        }
+    });
+    function nextJssor(currentPos) {
+        var order = currentPos + 1;
+        var lastModuleOrder = parseInt($('#lastModuleOrder').val());
+        if (lastModuleOrder < order) {
+            $('#lastModuleOrder').val(order);
+        }
+        $('#module' + (currentPos - 1)).removeClass('leftPageJssor');
+        $('#module' + currentPos).removeClass('currentPageJssor').removeClass('currentPageJssor').addClass('leftPageJssor');
+        $('#module' + (currentPos + 1)).removeClass('nextPageJssor').removeClass('leftPageJssor').addClass('currentPageJssor');
+        $('#module' + (currentPos + 2)).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+    }
+    function prevJssor(currentPos) {
+        $('#module' + currentPos).removeClass('currentPageJssor').removeClass('leftPageJssor').addClass('nextPageJssor');
+        $('#module' + (currentPos - 1)).removeClass('leftPageJssor').removeClass('nextPageJssor').addClass('currentPageJssor');
+        $('#module' + (currentPos - 2)).removeClass('currentPageJssor').removeClass('nextPageJssor').addClass('leftPageJssor');
+    }
     function sliderValidation(current) {
         var validate = true;
         if (current == 0) {
