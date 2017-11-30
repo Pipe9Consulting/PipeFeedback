@@ -391,6 +391,7 @@ p {
         font-weight: bold;
         color: #000;
         font-size: 80%;
+        margin: 0;
     }
 
     .slidercontent p {
@@ -2170,12 +2171,12 @@ p {
 
 
     .teamUser {
-        margin-top: 6.6%;
+        margin-top: .8%;
         width: 8%;
     }
 
     .teamcapRemoved .teamUser {
-        margin-top: 7%;
+        margin-top: 5%;
         width: 5.5%;
     }
 
@@ -2239,14 +2240,14 @@ p {
     }
 
     .beginBtn {
-        margin-top: -19%;
+        margin-top: -21%;
         background-size: 50% 60% !important;
         margin-right: -6%;
         text-indent: -4%;
     }
 
     .selfcapRemoved .beginBtn {
-        margin-top: -19%;
+        margin-top: -21%;
         background-size: 50% 60% !important;
         margin-right: -6%;
         text-indent: -4%;
