@@ -429,8 +429,8 @@
             //$("#completeModal").show();
             $("#completeModal").modal('show');
             $("#completeModal").show();
-            $('.simplemodal-overlay').show();
-            $('.simplemodal-container').show();
+            //$('.simplemodal-overlay').show();
+            //$('.simplemodal-container').show();
         }
     });
     $("#btnCompleteOk").on('click', function () {
@@ -439,8 +439,8 @@
         $("#preloader").fadeIn("slow");
         $("#completeModal").modal('hide');
         $("#completeModal").hide();
-        $('.simplemodal-overlay').hide();
-        $('.simplemodal-container').hide();
+        //$('.simplemodal-overlay').hide();
+        //$('.simplemodal-container').hide();
         Common.ajaxsync({
             url: '../../TechnicalFeedback/CompleteTakeFeedback',
             data: { fbinitial: $('#fbinitial').val() },
