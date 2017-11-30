@@ -435,6 +435,8 @@
     });
     $("#btnCompleteOk").on('click', function () {
         //debugger;
+        $("#status").fadeIn();
+        $("#preloader").fadeIn("slow");
         $("#completeModal").modal('hide');
         $("#completeModal").hide();
         $('.simplemodal-overlay').hide();
