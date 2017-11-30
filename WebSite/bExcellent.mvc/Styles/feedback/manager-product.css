@@ -708,30 +708,34 @@ h1 {
 
 
 
-    .signarea a {
-        color: #fff;
-        border: 1px solid #148f95;
-        background: #23a1a7;
-        background: -o-linear-gradient(#36c2c9, #23a1a7);
-        background: -moz-linear-gradient(#36c2c9, #23a1a7);
-        background: linear-gradient(#36c2c9, #23a1a7);
-        text-decoration: none;
-        font-size: 130%;
-        padding: .5% 2%;
-        cursor: pointer;
-        float: right;
-    }
+.signarea a {
+    color: #fff;
+    border: 1px solid #148f95;
+    background: #23a1a7;
+    background: -o-linear-gradient(#36c2c9, #23a1a7);
+    background: -moz-linear-gradient(#36c2c9, #23a1a7);
+    background: linear-gradient(#36c2c9, #23a1a7);
+    text-decoration: none;
+    font-size: 130%;
+    padding: .5% 2%;
+    cursor: pointer;
+    float: right;
+}
 
-        .signarea a:hover {
-            color: #23a1a7;
-            border: 1px solid #148f95;
-            background: #fff;
-        }
+    .signarea a:hover {
+        color: #23a1a7;
+        border: 1px solid #148f95;
+        background: #fff;
+    }
 
 @media screen and (min-width: 1401px) and (max-width: 2000px) {
 
     #option_menu {
-        top: 11.6%;
+        width: 40%;
+    }
+
+    .button_menu {
+        width: 1.2%;
     }
 
     .poemodule p {
@@ -742,6 +746,17 @@ h1 {
         height: 670px !important;
     }
 
+    .tm_img img {
+        width: 7%;
+    }
+
+    .tm_img {
+        margin-top: -0.7%;
+    }
+
+        .tm_img p {
+            padding: 1.5% 2%;
+        }
 
 
     .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
@@ -759,10 +774,18 @@ h1 {
 
 
 @media screen and (min-width: 2000px) and (max-width: 2400px) {
-
-    #option_menu {
-        top: 8.4%;
+    .tm_img img {
+        width: 7%;
     }
+
+    .tm_img {
+        margin-top: -0.7%;
+    }
+
+        .tm_img p {
+            padding: 1.5% 2%;
+            zoom: 125%;
+        }
 
     .poemodule p {
         font-size: 150%;
@@ -774,6 +797,15 @@ h1 {
 
     #jssor_1 {
         height: 900px !important;
+    }
+
+    #option_menu {
+        width: 40%;
+        zoom: 125%;
+    }
+
+    .button_menu {
+        width: 1.2%;
     }
 
 
@@ -797,10 +829,27 @@ h1 {
 
 
 @media screen and (min-width: 2500px) and (max-width: 2800px) {
+    .tm_img img {
+        width: 7%;
+    }
 
     #option_menu {
-        top: 9.1%;
+        width: 40%;
+        zoom: 125%;
     }
+
+    .button_menu {
+        width: 1.2%;
+    }
+
+    .tm_img {
+        margin-top: -0.7%;
+    }
+
+        .tm_img p {
+            padding: 1.5% 2%;
+            zoom: 125%;
+        }
 
     .poemodule p {
         font-size: 150%;
@@ -835,11 +884,27 @@ h1 {
 
 
 @media screen and (min-width: 2800px) and (max-width: 3500px) {
+    .tm_img img {
+        width: 7%;
+    }
 
     #option_menu {
-        top: 10%;
+        width: 40%;
         zoom: 180%;
     }
+
+    .button_menu {
+        width: 1.2%;
+    }
+
+    .tm_img {
+        margin-top: -0.7%;
+    }
+
+        .tm_img p {
+            padding: 1.2% 2%;
+            zoom: 170%;
+        }
 
 
     .poemodule p {
@@ -884,11 +949,27 @@ h1 {
 
 @media screen and (min-width: 3500px) and (max-width: 5000px) {
 
+    .tm_img img {
+        width: 7%;
+    }
+
     #option_menu {
-        top: 10%;
+        width: 40%;
         zoom: 180%;
     }
 
+    .button_menu {
+        width: 1.2%;
+    }
+
+    .tm_img {
+        margin-top: -0.7%;
+    }
+
+        .tm_img p {
+            padding: 1.5% 2%;
+            zoom: 125%;
+        }
 
     .customertiles {
         zoom: 250%;

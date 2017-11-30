@@ -3,7 +3,7 @@
     $("#preloader").delay(100).fadeIn("slow");
     $("#status").fadeOut();
     $("#preloader").fadeOut("slow");
-    debugger;
+   // debugger;
     $('#coachingDate').datepicker({
         dateFormat: "yy-mm-dd",
         minDate: 0

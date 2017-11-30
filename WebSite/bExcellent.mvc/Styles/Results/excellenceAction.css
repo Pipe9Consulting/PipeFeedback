@@ -298,6 +298,10 @@ standTable table {
     padding-bottom: 9.5%;
 }
 
+.chartTSPImg {
+    background-image: url("../../Images/new/tsp-big-pic-scale1.png") !important;
+}
+
 .chartbg {
     background: url("../../Images/new/chart-bg-newResult.png") no-repeat scroll left center rgba(0, 0, 0, 0);
     background-size: 100% 100%;

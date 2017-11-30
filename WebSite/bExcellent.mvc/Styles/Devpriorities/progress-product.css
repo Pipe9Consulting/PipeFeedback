@@ -185,7 +185,7 @@ p {
 }
 
     .frquencyHeader li {
-        background: #23a1a7;
+        background: #666;
         list-style: none;
         float: left;
         color: #fff;
@@ -266,6 +266,7 @@ p {
 
 .frquencyContent li:nth-child(3) {
     width: 23%;
+    vertical-align: top;
 }
 
 .frquencyContent li {
@@ -278,17 +279,25 @@ p {
 
 .frquencyContent li:nth-child(4) {
     width: 23%;
+    vertical-align: top;
 }
 
 .frquencyContent li:nth-child(5) {
     width: 30%;
     text-align: center;
     border-right: 1px solid #999;
+    vertical-align: middle;
 }
+
+
+    .frquencyContent li:nth-child(5) .dp_fci ul li {
+        vertical-align: middle !important;
+    }
 
 .frquencyContent li:nth-child(6) {
     width: 9%;
 }
+
 
 
 .frquencyContent li:nth-child(5) img {
@@ -518,12 +527,12 @@ p {
             /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
             background-size: 105% 100% !important;
             width: 25%;
-            border-right: 1px solid #007176 !important;
-            background: #dcf1f1; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(90deg, #dcf1f1, #bae2e3); /* Standard syntax */
+            border-right: 1px solid #0b47c2 !important;
+            background: #ccdbfa; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ccdbfa, #aec6f7); /* Standard syntax */
         }
 
         .frequency_scale li:nth-child(2) {
@@ -532,24 +541,24 @@ p {
             border: 0;
             width: 25%;
             font-size: 65%;
-            border-right: 1px solid #007176 !important;
-            background: #bae2e3; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(90deg, #bae2e3, #84cbce); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(90deg, #bae2e3, #84cbce); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(90deg, #bae2e3, #84cbce); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(90deg, #bae2e3, #84cbce); /* Standard syntax */
+            border-right: 1px solid #0b47c2 !important;
+            background: #f7c4bc; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #aec6f7, #7da3f2); /* Standard syntax */
         }
 
         .frequency_scale li:nth-child(3) {
             /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
             background-size: 100% 100% !important;
             width: 25%;
-            border-right: 1px solid #007176 !important;
-            background: #84cbce; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(90deg, #84cbce, #4bb2b7); /* Standard syntax */
+            border-right: 1px solid #0b47c2 !important;
+            background: #7da3f2; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #7da3f2, #4b80ee); /* Standard syntax */
         }
 
         .frequency_scale li:nth-child(4) {
@@ -557,10 +566,10 @@ p {
             background-size: 100% 100% !important;
             width: 25%;
             background: #4bb2b7; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(90deg, #4bb2b7, #23a1a7); /* Standard syntax */
+            background: -webkit-linear-gradient(90deg, #4b80ee, #2767ea); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #4b80ee, #2767ea); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #4b80ee, #2767ea); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #4b80ee, #2767ea); /* Standard syntax */
         }
 
 .selectManager {
@@ -1054,13 +1063,14 @@ p {
     }
 
     .managerSpan {
-        top: -80% !important;
+        top: -120% !important;
         padding-top: 2%;
     }
 
+    /*@media screen and (max-width:2000px) and (min-width:1800px)*/
     .youSpan {
-        top: 6% !important;
-        padding-bottom: 15% !important;
+        top: -30% !important;
+        padding-bottom: 20% !important;
     }
 
     #devprogress {
@@ -1132,7 +1142,7 @@ p {
     }
 
     .dp_frqprogress img {
-        margin-top: 28%;
+        margin-top: 0%;
     }
 
 
@@ -1176,7 +1186,7 @@ p {
 
     .managerSpan {
         top: -100%;
-        padding-top: 7%;
+        padding-top: 20%;
     }
 
 
@@ -1276,10 +1286,6 @@ p {
         font-size: 350% !important;
     }
 
-    .youSpan {
-        top: -5% !important;
-        padding-bottom: 2%;
-    }
 
     .modNmaeview {
         font-size: 125% !important;
@@ -1336,7 +1342,7 @@ p {
     }
 
     .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
-        font-size: 70% !important;
+        font-size: 80% !important;
         min-height: 35px !important;
     }
 
@@ -1346,10 +1352,9 @@ p {
     }
 
     .youSpan {
-        top: -30%;
-        padding-bottom: 20%;
+        top: -35%;
+        padding-bottom: 25%;
     }
-
 
     .progress_practiceArea li {
         height: 155px;
@@ -1487,10 +1492,9 @@ p {
     }
 
 
-
     .youSpan {
-        top: -30%;
-        padding-bottom: 20%;
+        top: -60%;
+        padding-bottom: 25%;
     }
 
 
@@ -1514,7 +1518,7 @@ p {
     .dp_frqprogress img {
         width: 80%;
         margin-left: 10%;
-        margin-top: 27%;
+        margin-top: 0%;
     }
 
     #devprogress {
@@ -1561,15 +1565,13 @@ p {
     }
 
     .frquencyContent ul li {
-        min-height: 80px;
+        min-height: 90px;
     }
-
 
     .managerSpan {
-        top: -120%;
-        padding-top: 20% !important;
+        top: -144%;
+        padding-top: 24% !important;
     }
-
 
     #option_menu {
         width: 45% !important;
@@ -1579,6 +1581,9 @@ p {
 
 
 @media screen and (max-width: 3500px) and (min-width: 2600px) {
+    .blankBox p {
+        font-size: 200%;
+    }
 
     .dp_legends ul li {
         padding: 2px 20px 0 32px;
@@ -1628,27 +1633,28 @@ p {
     }
 
     .managerSpan {
-        top: -100%;
-        padding-top: 16%;
+        top: -120%;
+        padding-top: 20%;
         background-size: 35px 25px !important;
     }
+
 
     .dp_fci {
         margin-top: 2%;
         margin-bottom: 2%;
     }
 
-
     .youSpan {
-        top: -18%;
-        padding-bottom: 12%;
+        top: -45%;
+        padding-bottom: 22%;
         background-size: 35px 25px !important;
     }
+
 
     .dp_frqprogress img {
         width: 80%;
         margin-left: 10%;
-        margin-top: 26%;
+        margin-top: 0%;
     }
 
 
@@ -1703,7 +1709,7 @@ p {
     }
 
     .frquencyContent ul li {
-        min-height: 100px;
+        min-height: 120px;
     }
 
     .frquencyHeader li {

@@ -16,19 +16,6 @@ body {
 
 
 
-.breadcrumb {
-    padding: 0.5% 1% 0.6% 1.5% !important;
-    margin-bottom: 0px;
-    list-style: none;
-    background-color: #f5f5f5;
-    border-radius: 0;
-    margin-top: -0.5%;
-}
-
-    .breadcrumb a {
-        font-size: 1.1em;
-    }
-
 .row {
     margin-right: 0;
 }
@@ -516,7 +503,7 @@ p {
 }
 
     .frquencyHeader li {
-        background: #23a1a7;
+        background: #666;
         list-style: none;
         font-size: 120%;
         float: left;
@@ -612,6 +599,7 @@ p {
         font-size: 100%;
         line-height: 1.2;
         vertical-align: top;
+        color: #000;
     }
 
     .frquencyContent li:nth-child(5) {
@@ -855,12 +843,12 @@ p {
             /*background: url(../../Images/DevPriorities/Priorities/red_scale.png)no-repeat left !important;*/
             background-size: 105% 100% !important;
             width: 25%;
-            border-right: 1px solid #007176 !important;
-            background: #dcf1f1; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(90deg, #dcf1f1, #bae2e3); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(90deg, #dcf1f1, #bae2e3); /* Standard syntax */
+            border-right: 1px solid #0b47c2 !important;
+            background: #ccdbfa; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #ccdbfa, #aec6f7); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #ccdbfa, #aec6f7); /* Standard syntax */
         }
 
         .frequency_scale li:nth-child(2) {
@@ -869,24 +857,24 @@ p {
             border: 0;
             width: 25%;
             font-size: 65%;
-            border-right: 1px solid #007176 !important;
-            background: #bae2e3; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(90deg, #bae2e3, #84cbce); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(90deg, #bae2e3, #84cbce); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(90deg, #bae2e3, #84cbce); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(90deg, #bae2e3, #84cbce); /* Standard syntax */
+            border-right: 1px solid #0b47c2 !important;
+            background: #f7c4bc; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #aec6f7, #7da3f2); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #aec6f7, #7da3f2); /* Standard syntax */
         }
 
         .frequency_scale li:nth-child(3) {
             /*background: url(../../Images/DevPriorities/Priorities/yellow_scale.png)no-repeat left !important;*/
             background-size: 100% 100% !important;
             width: 25%;
-            border-right: 1px solid #007176 !important;
-            background: #84cbce; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(90deg, #84cbce, #4bb2b7); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(90deg, #84cbce, #4bb2b7); /* Standard syntax */
+            border-right: 1px solid #0b47c2 !important;
+            background: #7da3f2; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #7da3f2, #4b80ee); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #7da3f2, #4b80ee); /* Standard syntax */
             vertical-align: middle !important;
         }
 
@@ -895,11 +883,11 @@ p {
             background-size: 100% 100% !important;
             width: 25%;
             background: #4bb2b7; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(90deg, #4bb2b7, #23a1a7); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(90deg, #4bb2b7, #23a1a7); /* Standard syntax */
-            vertical-align:middle !important;
+            background: -webkit-linear-gradient(90deg, #4b80ee, #2767ea); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(90deg, #4b80ee, #2767ea); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(90deg, #4b80ee, #2767ea); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(90deg, #4b80ee, #2767ea); /* Standard syntax */
+            vertical-align: middle !important;
         }
 
 
@@ -2283,7 +2271,6 @@ body {
 
 @media screen and (max-width: 4000px) and (min-width: 2800px) {
 
-
     .frquencyContent li .frequency_scale li, .frquencyContent li .capability_scale li, .frquencyContent li .important_scale li {
         font-size: 65% !important;
         line-height: 1;
@@ -2291,17 +2278,15 @@ body {
         padding-top: 2px;
     }
 
-
-
     .youSpan {
-        padding-top: 30%;
-        top: 35%;
+        padding-top: 25%;
+        top: 20%;
         background-size: 35px 20px;
     }
 
     .managerSpan {
-        padding-bottom: 28%;
-        top: -60%;
+        padding-bottom: 25%;
+        top: -80%;
         background-size: 35px 20px;
     }
 
@@ -2323,17 +2308,9 @@ body {
         font-size: 138%;
     }
 
-
-
-
     .frquencyContent ul li {
         padding: .4% 1% .3% 1%;
     }
-
-
-    /*p {
-        font-size: 35px !important;
-    }*/
 
     h2 {
         font-size: 35px !important;
@@ -2353,17 +2330,14 @@ body {
         margin-bottom: 10px;
     }
 
-
     #option_menu {
-        right: 1%;
-        top: 3.4%;
+        right: .7%;
+        top: 3%;
     }
-
 
     .profilelist ul li {
         font-size: 140%;
     }
-
 
     .hidScaleTracker .profileview_content .slimScrollDiv {
         padding-bottom: 42% !important;
@@ -2381,25 +2355,17 @@ body {
         padding-bottom: 35% !important;
     }
 
-
     .digit {
         font-size: 120% !important;
     }
-
 
     .moduleTier {
         font-size: 100% !important;
     }
 
-
     .frequency_scale li span:first-child, .frequency_scale li span {
         font-size: 100% !important;
     }
-
-    .frequency_scale {
-        margin-top: 0.4% !important;
-    }
-
 
     .accordion-section .slimScrollDiv {
         padding-bottom: 100%;
@@ -2496,8 +2462,6 @@ body {
         font-size: 220%;
     }
 
-
-
     .ui-datepicker td span, .ui-datepicker td a {
         height: 38px !important;
         width: 32px !important;
@@ -2507,7 +2471,6 @@ body {
     .ui-datepicker-calendar th span {
         font-size: 150%;
     }
-
 
     .prioitiesFrequency .slimScrollDiv {
         padding-bottom: 45%;
@@ -2536,26 +2499,32 @@ body {
         font-size: 100% !important;
     }
 
-
-
     .frquencyContent li:nth-child(3) {
         min-height: 70px;
     }
 
     .clickdeeper {
-        left: -190%;
+        left: -400% !important;
     }
 
     .priorities_part2 h2 {
         width: 75%;
     }
 
+    .frquencyContent li:nth-child(5) {
+        height: 110px;
+    }
+
+    .frquencyContent li:nth-child(4) {
+        font-size: 180% !important;
+    }
+
+
     .dp_legends ul li {
         padding: 2px 20px 0 35px;
         font-size: 160%;
         background-size: 25px 25px !important;
     }
-
 
     .dp_fci {
         margin-top: 2%;
@@ -2564,12 +2533,15 @@ body {
 }
 
 @media screen and (max-width: 2800px) and (min-width: 2300px) {
+    .frquencyContent li:nth-child(5) {
+        height: 90px;
+    }
 
 
     .frquencyContent li .frequency_scale li {
         font-size: 85% !important;
         line-height: 1;
-        height: 40px;
+        height: 30px;
         padding-top: 2px;
     }
 
@@ -2588,13 +2560,13 @@ body {
     }
 
     .youSpan {
-        padding-top: 30%;
-        top: 35%;
+        padding-top: 23%;
+        top: 10%;
     }
 
     .managerSpan {
-        padding-bottom: 28%;
-        top: -60%;
+        padding-bottom: 20%;
+        top: -70%;
     }
 
     .ddummyerror {
@@ -2694,11 +2666,7 @@ body {
 
 
     .frequency_scale li span:first-child, .frequency_scale li span {
-        font-size: 100% !important;
-    }
-
-    .frequency_scale {
-        margin-top: 0.4% !important;
+        font-size: 90% !important;
     }
 
 
@@ -2826,25 +2794,23 @@ body {
 
 
 @media screen and (max-width:2300px) and (min-width:2000px) {
-    .breadcrumb {
-        margin-top: 0px;
-    }
-
-    .ui.menu .item {
-        font-size: 1.8rem;
-    }
 
     .frquencyContent li .frequency_scale li {
         font-size: 85% !important;
         line-height: 1;
-        height: 40px;
+        height: 35px;
         padding-top: 2px;
     }
+
+    .frquencyContent li:nth-child(5) {
+        height: 90px;
+    }
+
 
     .frquencyContent li .capability_scale li {
         font-size: 85% !important;
         line-height: 1;
-        height: 40px;
+        height: 30px;
         padding-top: 2px;
     }
 
@@ -2856,14 +2822,16 @@ body {
     }
 
     .youSpan {
-        padding-top: 38%;
-        top: 35%;
+        padding-top: 28%;
+        top: 26%;
     }
 
+
     .managerSpan {
-        padding-bottom: 28%;
-        top: -60%;
+        padding-bottom: 24%;
+        top: -62%;
     }
+
 
     .ddummyerror {
         margin-left: 0.7%;
@@ -2963,10 +2931,6 @@ body {
 
     .frequency_scale li span:first-child, .frequency_scale li span {
         font-size: 100% !important;
-    }
-
-    .frequency_scale {
-        margin-top: 0.4% !important;
     }
 
 
@@ -3100,22 +3064,6 @@ body {
 
     .priorities_part2 h2 {
         width: 75%;
-    }
-
-    .ui.menu .item {
-        font-size: 1.7rem;
-    }
-
-    .breadcrumb {
-        padding: 1% 1% 0.6% 1.5% !important;
-    }
-
-    .ui.menu .item {
-        font-size: 1.7rem;
-    }
-
-    .breadcrumb {
-        padding: 1% 1% 0.6% 1.5% !important;
     }
 
     .ddummyerror {
@@ -3438,16 +3386,14 @@ body {
         line-height: 1.2;
     }
 
-    /*@media screen and (max-width:2000px) and (min-width:1800px)*/
     .managerSpan {
-        top: -70%;
-        padding-bottom: 30%;
+        top: -65%;
+        padding-bottom: 25%;
     }
 
-
     .youSpan {
-        padding-top: 35%;
-        top: 25%;
+        padding-top: 26%;
+        top: 20%;
     }
 
     .dp_fci {
@@ -3579,15 +3525,14 @@ body {
         width: 35%;
     }
 
-
     .youSpan {
-        padding-top: 43%;
-        top: 40%;
+        padding-top: 36%;
+        top: 30%;
     }
 
     .managerSpan {
-        padding-bottom: 40%;
-        top: -60%;
+        padding-bottom: 32%;
+        top: -56%;
     }
 
 

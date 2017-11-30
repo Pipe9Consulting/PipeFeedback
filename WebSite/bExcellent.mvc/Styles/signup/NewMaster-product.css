@@ -1019,7 +1019,7 @@ body {
 
     .pane li p {
         line-height: 1.1;
-        font-size:25px !important
+        font-size: 25px !important;
     }
 }
 
@@ -1143,6 +1143,11 @@ body {
 
 @media screen and (min-width: 2500px) and (max-width: 2900px) {
 
+    .simplemodal-container .modal-dialog {
+        margin-top: 21%;
+        zoom: 150%;
+        width: 500px;
+    }
 
     .breadcrumb {
         font-size: 17px;

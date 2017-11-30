@@ -270,30 +270,30 @@ var devProgress = {
                             goaldiff = (response[i].CurrrentResult) - (response[i].PreviousResult);
                             switch (goaldiff) {
                                 case 0:
-                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_nill.png' />";
+                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_nill-blue.png' />";
                                     break;
                                 case 1:
-                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowY1.png' />";
+                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowY1-blue.png' />";
                                     break;
                                 case 2:
-                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowY2.png' />";
+                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowY2-blue.png' />";
                                     break;
                                 case 3:
-                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowY3.png' />";
+                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowY3-blue.png' />";
                                     break;
                                 case -1:
-                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowR1.png' />";
+                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowR1-blue.png' />";
                                     break;
                                 case -2:
-                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowR2.png' />";
+                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowR2-blue.png' />";
                                     break;
                                 case -3:
-                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowR3.png' />";
+                                    progressImage = "<img src='../../Images/DevPriorities/Progress/progress_arrowR3-blue.png' />";
                                     break;
                                 default:
                             }
                         } else {
-                            progressImage = "<img src='../../Images/DevPriorities/Progress/progress_nill.png' />";
+                            progressImage = "<img src='../../Images/DevPriorities/Progress/progress_nill-blue.png' />";
                         }
                         if (response[i].IsDevelopmentPriorities || option.data.moduleid != 0) {
                             var select = "";
@@ -304,8 +304,8 @@ var devProgress = {
                             var feature = splitQuestion[0].replace('Feature:', '');
                             var component = splitQuestion[1].replace('Component:', '');
                             html = html + "<ul class=" + select + "><li class='dp_no' style='vertical-align: top;'>" + count + "</li><li class='dp_practicearea' style='vertical-align: top;'><span class='modNmaeview'>" + response[i].ModuleName + "</span></li> " +
-                                "<li class='dp_qetions'><div>" + feature + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div></li><li>" + component + "</li><li><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Never " + selectedRole1 + "</li> <li class='" + selected2 + "'>Sometimes " + selectedRole2 + "</li> <li class='" + selected3 + "'>Frequently " + selectedRole3 + "</li> " +
-                                "<li class='" + selected4 + "'>Always " + selectedRole4 + "</li> </ul> </div></div></li>" + "<li class='dp_frqprogress'>" + progressImage + "</li> </ul>";
+                                "<li class='dp_qetions'><div>" + feature + "<div class='hover_content' style='display:none'> " + response[i].Question + " <span> <img src='../../Images/start/hover_arrow.png' /></span> </div></div><div class='clr'></div></li><li>" + component + "</li><li><div class='dp_fci'><div class='dp_freq'><ul class='frequency_scale'> <li class='" + selected1 + "'>Introductory " + selectedRole1 + "</li> <li class='" + selected2 + "'>Intermediate " + selectedRole2 + "</li> <li class='" + selected3 + "'>Experienced " + selectedRole3 + "</li> " +
+                                "<li class='" + selected4 + "'>Expert " + selectedRole4 + "</li> </ul> </div></div></li>" + "<li class='dp_frqprogress'>" + progressImage + "</li> </ul>";
                             count++;
                         }
                     }
