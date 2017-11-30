@@ -1,5 +1,5 @@
 ﻿.container-fluid {
-    padding: 2% 1% 2% 2% !important;
+    padding: 1% 1% 2% 2% !important;
 }
 
 body {
@@ -41,7 +41,7 @@ p {
 #devprogress {
     width: 100% !important;
     height: 0!important;
-    padding-bottom: 35%;
+    padding-bottom: 39%;
     position: relative;
 }
 
@@ -65,7 +65,7 @@ p {
     width: 100% !important;
     height: 0!important;
     position: relative;
-    padding-bottom: 35%;
+    padding-bottom: 39%;
 }
 
 .user_tiles .slimScrollBar, .user_tiles .slimScrollRail {
@@ -209,17 +209,17 @@ p {
 
         .frquencyHeader li:nth-child(3) {
             border-right: 1px solid #999;
-            width: 23%;
+            width: 20%;
         }
 
         .frquencyHeader li:nth-child(4) {
             border-right: 1px solid #999;
-            width: 23%;
+            width: 20%;
         }
 
         .frquencyHeader li:nth-child(5) {
             border-right: 1px solid #999;
-            width: 30%;
+            width: 36%;
         }
 
         .frquencyHeader li:nth-child(6) {
@@ -265,7 +265,7 @@ p {
 }
 
 .frquencyContent li:nth-child(3) {
-    width: 23%;
+    width: 20%;
     vertical-align: top;
 }
 
@@ -278,12 +278,12 @@ p {
 }
 
 .frquencyContent li:nth-child(4) {
-    width: 23%;
+    width: 20%;
     vertical-align: top;
 }
 
 .frquencyContent li:nth-child(5) {
-    width: 30%;
+    width: 36%;
     text-align: center;
     border-right: 1px solid #999;
     vertical-align: middle;
@@ -589,7 +589,7 @@ p {
 .blankBox {
     float: left;
     background: #fff;
-    padding-bottom: 19.2%;
+    padding-bottom: 18.2%;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
@@ -613,8 +613,8 @@ p {
     background: url(../../Images/DevPriorities/Priorities/frequencyManager.png)no-repeat center;
     background-size: 25px 15px !important;
     position: absolute;
-    padding-bottom: 45%;
-    top: -60%;
+    padding-bottom: 25%;
+    top: -46%;
     text-transform: uppercase;
     left: 0%;
     color: #000 !important;
@@ -636,15 +636,13 @@ p {
     background: url(../../Images/DevPriorities/Priorities/frequencyYou.png)no-repeat center;
     background-size: 25px 15px !important;
     position: absolute;
-    padding-top: 50%;
+    padding-top: 27%;
     top: 35%;
     text-transform: uppercase;
     right: 0px;
     width: 100%;
     text-align: center;
 }
-
-
 
 
 .button_menu {
@@ -908,7 +906,7 @@ p {
 .frquencyContent .important_scale li, .frquencyContent .frequency_scale li, .frquencyContent .capability_scale li {
     height: 30px;
     min-height: 30px !important;
-    font-size: 70% !important;
+    font-size: 80% !important;
     text-transform: uppercase;
     line-height: 1;
     padding-top: 2px;
@@ -967,7 +965,7 @@ p {
 
     .dp_frqprogress img {
         width: 100%;
-        margin-top: 32%;
+        margin-top: 0%;
     }
 
     .dp_legends ul li {
@@ -1010,7 +1008,7 @@ p {
 
 
     .frquencyContent li {
-        min-height: 50px !important;
+        min-height: 65px !important;
     }
 
     .frquencyContent ul:last-child .hover_content {
@@ -1062,16 +1060,10 @@ p {
         width: 75%;
     }
 
-    .managerSpan {
-        top: -120% !important;
-        padding-top: 2%;
+    .frquencyContent li:nth-child(4) {
+        font-size: 130%;
     }
 
-    /*@media screen and (max-width:2000px) and (min-width:1800px)*/
-    .youSpan {
-        top: -30% !important;
-        padding-bottom: 20% !important;
-    }
 
     #devprogress {
         padding-bottom: 45% !important;
@@ -1126,10 +1118,6 @@ p {
     }
 
 
-    .breadcrumb {
-        padding: 1% 1% 0.6% 1.5% !important;
-    }
-
     .frquencyContent ul li {
         font-size: 150%;
         line-height: 1.2;
@@ -1172,7 +1160,7 @@ p {
 
 
     .frquencyContent ul li .frequency_scale li, .frquencyContent ul li .capability_scale li, .frquencyContent ul li .important_scale li {
-        font-size: 11px !important;
+        font-size: 13px !important;
         min-height: 30px !important;
     }
 
@@ -1185,24 +1173,18 @@ p {
     }
 
     .managerSpan {
-        top: -100%;
-        padding-top: 20%;
+        top: -65%;
+        padding-top: 2%;
     }
 
 
     .youSpan {
-        top: -18%;
+        top: 15%;
         padding-bottom: 4%;
     }
 
-
-
-    .youSpan {
-        top: -22%;
-    }
-
     .progress_practiceArea li {
-        height: 155px;
+        height: 135px;
         padding: 3% 1%;
         font-size: 120%;
     }
@@ -1241,7 +1223,7 @@ p {
     }
 
     P {
-        font-size: 130%;
+        font-size: 120%;
     }
 
     .button_menu {
@@ -1253,8 +1235,8 @@ p {
 @media screen and (max-width: 2300px) and (min-width: 2000px) {
 
     .managerSpan {
-        top: -55% !important;
-        padding-bottom: 30%;
+        top: -50% !important;
+        padding-bottom: 20%;
     }
 
     .user_tiles ul li {
@@ -1313,10 +1295,6 @@ p {
         font-size: 1.7rem;
     }
 
-    .breadcrumb {
-        padding: 1% 1% 0.6% 1.5% !important;
-    }
-
     .dp_fci {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -1352,12 +1330,12 @@ p {
     }
 
     .youSpan {
-        top: -35%;
-        padding-bottom: 25%;
+        top: 20%;
+        padding-bottom: 2%;
     }
 
     .progress_practiceArea li {
-        height: 155px;
+        height: 135px;
         padding: 3% 1%;
         font-size: 120%;
     }
@@ -1376,7 +1354,7 @@ p {
     .dp_frqprogress img {
         width: 80%;
         margin-left: 10%;
-        margin-top: 25%;
+        margin-top: 0%;
     }
 
 
@@ -1493,8 +1471,8 @@ p {
 
 
     .youSpan {
-        top: -60%;
-        padding-bottom: 25%;
+        top: -5%;
+        padding-bottom: 8%;
     }
 
 
@@ -1569,8 +1547,8 @@ p {
     }
 
     .managerSpan {
-        top: -144%;
-        padding-top: 24% !important;
+        top: -90%;
+        padding-top: 8% !important;
     }
 
     #option_menu {
@@ -1633,8 +1611,8 @@ p {
     }
 
     .managerSpan {
-        top: -120%;
-        padding-top: 20%;
+        top: -75%;
+        padding-top: 4%;
         background-size: 35px 25px !important;
     }
 
@@ -1645,8 +1623,8 @@ p {
     }
 
     .youSpan {
-        top: -45%;
-        padding-bottom: 22%;
+        top: 10%;
+        padding-bottom: 4%;
         background-size: 35px 25px !important;
     }
 
@@ -1685,8 +1663,8 @@ p {
 
 
     #option_menu {
-        top: 3.9%;
-        right: 1.1%;
+        top: 3%;
+        right: 0.7%;
     }
 
 
@@ -1833,19 +1811,6 @@ p {
 }
 
 
-.breadcrumb {
-    padding: 0.7% 1% 0.5% 2% !important;
-    margin-bottom: 0px;
-    list-style: none;
-    background-color: #f5f5f5;
-    border-radius: 0;
-    margin-top: -0.5%;
-}
-
-
-    .breadcrumb a {
-        font-size: 1.1em;
-    }
 
 
 #target li p, #target li a {
