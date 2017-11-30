@@ -674,29 +674,59 @@ h1 {
 
 .producttitle {
     float: left;
-    width: 70%;
+    width: 50%;
 }
 
 .tm_img {
     float: left;
     position: absolute;
-    width:25%;
+    width: 24%;
+    float: left;
+    margin-top: -1%;
+    z-index: 999;
+    right: 5%;
 }
 
     .tm_img img {
-        width: 100%;
-        border:1px solid #666;
-        border-radius:25px;
-        padding:10px;
+        width: 10%;
+        border: 1px solid #666;
+        border-radius: 25px;
+        padding: 0;
+        float: right;
     }
-
 
     .tm_img p {
-        float: left;
+        float: right;
         color: #000;
-        padding: 0;
+        padding: 2% 2%;
     }
 
+
+#emptyfrloop {
+    z-index: -9;
+}
+
+
+
+    .signarea a {
+        color: #fff;
+        border: 1px solid #148f95;
+        background: #23a1a7;
+        background: -o-linear-gradient(#36c2c9, #23a1a7);
+        background: -moz-linear-gradient(#36c2c9, #23a1a7);
+        background: linear-gradient(#36c2c9, #23a1a7);
+        text-decoration: none;
+        font-size: 130%;
+        padding: .5% 2%;
+        cursor: pointer;
+        float: right;
+    }
+
+        .signarea a:hover {
+            color: #23a1a7;
+            border: 1px solid #148f95;
+            background: #fff;
+        }
 
 @media screen and (min-width: 1401px) and (max-width: 2000px) {
 
