@@ -341,11 +341,8 @@
     <Content Include="Images\Azure Infra Tsp - Functional_Intro.png" />
     <Content Include="Images\Azure Infra Tsp - Product_Intro.png" />
     <Content Include="Images\AzureInfraTsp-Capability.png" />
-    <Content Include="Images\AzureInfraTsp-Capability_Intro.png" />
     <Content Include="Images\AzureInfraTsp-Functional.png" />
-    <Content Include="Images\AzureInfraTsp-Functional_Intro.png" />
     <Content Include="Images\AzureInfraTsp-Product.png" />
-    <Content Include="Images\AzureInfraTsp-Product_Intro.png" />
     <Content Include="Images\Azures Infras TSP - Products_Intro.png" />
     <Content Include="Images\background-img-1600.png" />
     <Content Include="Images\background-img-1920.png" />
