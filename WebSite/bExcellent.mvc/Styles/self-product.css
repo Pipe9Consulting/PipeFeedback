@@ -597,10 +597,10 @@ h1 {
     position: absolute;
     border: 1px solid #000;
     background: #fff !important;
-    right: 2%;
-    width: 30%;
+    right: 0;
+    width: 40%;
     z-index: 2147483647;
-    top: 14.8%;
+    top: 0;
     display: none;
 }
 
@@ -616,10 +616,6 @@ h1 {
 
 
 @media screen and (min-width: 1401px) and (max-width: 2000px) {
-
-    #option_menu {
-        top: 11.6%;
-    }
 
     .poemodule p {
         font-size: 130%;
@@ -646,10 +642,6 @@ h1 {
 
 
 @media screen and (min-width: 2000px) and (max-width: 2400px) {
-
-    #option_menu {
-        top: 8.4%;
-    }
 
     .poemodule p {
         font-size: 150%;
@@ -685,9 +677,6 @@ h1 {
 
 @media screen and (min-width: 2500px) and (max-width: 2800px) {
 
-    #option_menu {
-        top: 9.1%;
-    }
 
     .poemodule p {
         font-size: 150%;
@@ -724,7 +713,6 @@ h1 {
 @media screen and (min-width: 2800px) and (max-width: 3500px) {
 
     #option_menu {
-        top: 10%;
         zoom: 180%;
     }
 
@@ -772,7 +760,6 @@ h1 {
 @media screen and (min-width: 3500px) and (max-width: 5000px) {
 
     #option_menu {
-        top: 10%;
         zoom: 180%;
     }
 

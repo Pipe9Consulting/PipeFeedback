@@ -1089,6 +1089,14 @@ p {
             margin-right: -3.9%;
         }
 
+    #selfFeedCont .beginBtn {
+        margin-top: -25%;
+    }
+
+        #selfFeedCont .beginBtn:hover {
+            margin-top: -25%;
+        }
+
     .ui-slider-handle {
         margin-left: -0.9em;
     }
@@ -1149,6 +1157,19 @@ p {
     #selfFeedCont .questionPart {
         margin-left: 22%;
     }
+
+
+    #selfFeedCont .beginBtn {
+        margin-top: -21%;
+        width: 80px;
+        height: 120px;
+        margin-right: -4.6%;
+    }
+
+        #selfFeedCont .beginBtn:hover {
+            margin-top: -21%;
+        }
+
 
     .beginBtn {
         margin-top: -26%;
@@ -1251,7 +1272,7 @@ p {
     }
 
     .rateThisQuestion {
-        margin: 2% 0 2% 0;
+        margin: 0;
     }
 
     .sliderdiv {
@@ -1588,7 +1609,7 @@ p {
     }
 
     .rateThisQuestion {
-        margin: 2% 0 0 0;
+        margin: 0;
     }
 
     .selfcapratingRemoved .rateThisQuestion {
@@ -1611,10 +1632,14 @@ p {
 
 
     #selfFeedCont .beginBtn {
-        margin-top: -37.5%;
+        margin-top: -23%;
         text-indent: -4%;
         margin-right: -4.7%;
     }
+
+        #selfFeedCont .beginBtn:hover {
+            margin-top: -23%;
+        }
 
     .selfcapRemoved #selfFeedCont .beginBtn {
         margin-top: -25%;
@@ -2126,6 +2151,14 @@ p {
 
 
 @media screen and (max-width: 1500px) and (min-width: 1300px) {
+
+    #selfFeedCont .beginBtn {
+        margin-top: -18% !important;
+    }
+
+        #selfFeedCont .beginBtn:hover {
+            margin-top: -18% !important;
+        }
 
     .selfcapratingRemoved .rateThisQuestion {
         margin: 1% 0 2% 0;
