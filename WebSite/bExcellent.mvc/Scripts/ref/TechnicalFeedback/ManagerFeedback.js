@@ -425,8 +425,8 @@
             //$("#completeModal").show();
             $("#completedModal").modal('show');
             $("#completedModal").show();
-            $('.simplemodal-overlay').show();
-            $('.simplemodal-container').show();
+            //$('.simplemodal-overlay').show();
+            //$('.simplemodal-container').show();
         }
     });
 
@@ -435,9 +435,9 @@
         $("#status").fadeIn();
         $("#preloader").fadeIn("slow");
         $("#completedModal").modal('hide');
-        $("#completedModal").hide();
-        $('.simplemodal-overlay').hide();
-        $('.simplemodal-container').hide();
+        $("#completedModal").hide();       
+        //$('.simplemodal-overlay').hide();
+        //$('.simplemodal-container').hide();
         teamFeedbackFb.loadCompleteFeedback();
     });
 
