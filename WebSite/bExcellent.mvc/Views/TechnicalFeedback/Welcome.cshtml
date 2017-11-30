@@ -107,7 +107,11 @@
     <script src="~/Scripts/ref/jquery-1.8.3.min.js"></script>
   @*  <script src="~/Scripts/ref/common.js"></script>*@
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
+            $("#status").fadeIn();
+            $("#preloader").fadeIn("slow");
+            $("#status").fadeOut();
+            $("#preloader").fadeOut("slow");
             var selctedmode = $('#selectedMode').val();
             /// alert(selctedmode);
             if (selctedmode == "1") {
