@@ -6,7 +6,10 @@
     $("#status").fadeOut();
     $("#preloader").fadeOut("slow");
 
-
+    $(".content_progress").mCustomScrollbar({
+        mouseWheel: { scrollAmount: 200 },
+        advanced: { autoScrollOnFocus: "false" },
+    });
     $(".modImg1").mouseover(function () {
         $(this).addClass('selected');
         $(this).find('img').attr('src', '../Images/icons/AzureInfraTsp-Product1h.png');
@@ -118,7 +121,9 @@
     if (parseInt(jssor_1_slider.$CurrentIndex()) == 4) {
         $('.jssora13r').hide();
     }
-
+    if ($('#lastModuleOrder').val() == 1) {
+        $('.jssora13l').hide();
+    }
 
     // $('.bukatutup').on('click', function () {
     //$("#target").toggle();
@@ -476,11 +481,6 @@
             $('.simplemodal-container').show();
             return false;
         }
-    }
-
-
-    function completeFeedback() {
-
     }
 
 });
