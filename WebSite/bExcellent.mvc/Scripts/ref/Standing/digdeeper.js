@@ -605,6 +605,7 @@ $(document).ready(function () {
         //$('.chartholder .q2').animate({ 'margin-left': '-16px' }, { duration: 1000 }).css('opacity', '2');
         $('.chartholder .q2').css('opacity', '0.4');
         $('.chartholder .q1').animate({ 'margin-left': '3.5%' }, { duration: 1000 });
+        $('.chartholder .q3,.chartholder .q4,.chartholder .q5,.chartholder .q6,.chartholder .q7,.chartholder .q8').hide();
     });
     $(document).click(function (event) {
         if ($(event.target).parents().index($('.excellenceTiles')) == -1) {

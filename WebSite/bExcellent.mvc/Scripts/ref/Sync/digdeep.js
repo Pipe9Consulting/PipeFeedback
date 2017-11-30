@@ -913,7 +913,7 @@ $(document).ready(function () {
         $('#q2').css('opacity', '0.4');
         $('#q1').animate({ 'margin-left': '5%' });
         $('#q2').animate({ 'margin-left': '-2%' }, { duration: 1000 });
-
+        $('#q3,#q4,#q5,#q6,#q7,#q8').hide();
         $('#bn1').show();
         //$("#status").fadeOut();
         //$("#preloader").delay(100).fadeOut("slow");
