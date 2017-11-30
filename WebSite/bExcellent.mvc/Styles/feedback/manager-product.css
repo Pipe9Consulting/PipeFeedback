@@ -1,11 +1,81 @@
-﻿/* jssor slider bullet navigator skin 01 css */
-/*
-        .jssorb01 div           (normal)
-        .jssorb01 div:hover     (normal mouseover)
-        .jssorb01 .av           (active)
-        .jssorb01 .av:hover     (active mouseover)
-        .jssorb01 .dn           (mousedown)
-        */
+﻿
+/*.jssorb01 {
+    position: absolute;
+    display: none;
+}
+
+    .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        filter: alpha(opacity=70);
+        opacity: .7;
+        overflow: hidden;
+        cursor: pointer;
+        border: #000 1px solid;
+    }
+
+    .jssorb01 div {
+        background-color: gray;
+    }
+
+        .jssorb01 div:hover, .jssorb01 .av:hover {
+            background-color: #d3d3d3;
+        }
+
+    .jssorb01 .av {
+        background-color: #fff;
+    }
+
+    .jssorb01 .dn, .jssorb01 .dn:hover {
+        background-color: #555555;
+    }
+
+.jssora13l, .jssora13r {
+    display: block;
+    position: absolute;
+    width: 76px;
+    height: 119px;
+    cursor: pointer;
+    background: url("../../Images/Product/a13.png") no-repeat;
+    overflow: hidden;
+}
+
+.jssora13l {
+    background-position: 0 0;
+}
+
+.jssora13r {
+    background-position: -85px 0px;
+}
+
+.jssora13l:hover {
+    background-position: -172px 0px;
+}
+
+.jssora13r:hover {
+    background-position: -258px 0px;
+}
+
+.jssora13l.jssora13ldn {
+    background-position: -172px 0px;
+}
+
+.jssora13r.jssora13rdn {
+    background-position: -258px 0px;
+}
+
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    display: none;
+}
+
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 15px;
+}*/
+
+
 .jssorb01 {
     position: absolute;
     display: none;
@@ -48,41 +118,38 @@
         .jssora13l.jssora13ldn      (mousedown)
         .jssora13r.jssora13rdn      (mousedown)
         */
-.jssora13l, .jssora13r {
+
+.jssora13l {
     display: block;
     position: absolute;
-    /* size of arrow element */
-    width: 76px;
-    height: 119px;
+    width: 45px;
+    height: 70px;
     cursor: pointer;
-    background: url("../../Images/Product/a13.png") no-repeat;
+    background: url("../../Images/images/preIcon.png") no-repeat left center;
+    background-size: 100% 100%;
     overflow: hidden;
 }
 
-.jssora13l {
-    background-position: 0 0;
-}
-
 .jssora13r {
-    background-position: -85px 0px;
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 70px;
+    cursor: pointer;
+    background: url("../../Images/images/nextIcon.png") no-repeat right center;
+    background-size: 100% 100%;
+    overflow: hidden;
 }
 
 .jssora13l:hover {
-    background-position: -172px 0px;
+    background: url("../../Images/images/preIconHover.png") no-repeat left center;
+    background-size: 100% 100%;
 }
 
 .jssora13r:hover {
-    background-position: -258px 0px;
+    background: url("../../Images/images/nextIconHover.png") no-repeat right center;
+    background-size: 100% 100%;
 }
-
-.jssora13l.jssora13ldn {
-    background-position: -172px 0px;
-}
-
-.jssora13r.jssora13rdn {
-    background-position: -258px 0px;
-}
-
 
 .mCSB_scrollTools .mCSB_draggerRail {
     display: none;
@@ -94,9 +161,24 @@
 }
 
 
+.leftPageJssor {
+    left: 8% !important;
+    opacity: 0.15;
+}
+
+
+.currentPageJssor {
+    left: 13% !important;
+}
+
+.nextPageJssor {
+    left: 12% !important;
+    opacity: 0.15;
+}
+
 /******************************************/
 .content_progress {
-    height: 350px;
+    height: 400px;
 }
 
 body {
@@ -226,11 +308,12 @@ h1 {
 }
 
 .qnscale {
-    padding: 1% 0 0% 0;
     clear: both;
-    margin: 0 0 5% 5%;
+    padding: 0 0 0 4.3%;
     position: relative;
     width: 100%;
+    float: left;
+    margin-bottom: 1%;
 }
 
 .supqnscaleset {
@@ -241,11 +324,11 @@ h1 {
 
 .moduleqn .qn {
     float: left;
-    width: 4%;
+    width: 3%;
     background: #fff;
     border: 1px solid #666;
-    color: #23a1a7;
-    padding: .4% 0% 0.1% 0%;
+    color: #2666ea;
+    padding: 0.3% 0 0 0;
     text-align: center;
     margin: 0;
     font-weight: bold;
@@ -254,11 +337,9 @@ h1 {
 
 .moduleqn .moduleqncontent {
     float: left;
-    width: 85%;
-    background: #fff;
-    border: 1px solid #fff;
+    width: 91%;
     color: #000;
-    padding: .5% 1% 0 1%;
+    padding: 0.3% 1% 0 1%;
     margin: 0;
 }
 
@@ -301,7 +382,7 @@ h1 {
     }
 
 .freqscale_bg {
-    width: 87%;
+    width: 98%;
     height: 34px;
     margin: 0;
     padding: 0;
@@ -388,42 +469,42 @@ h1 {
     width: 25%;
     position: absolute;
     float: left;
-    background: #d2ebec; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     color: #fff !important;
 }
 
 .freqscaleover2 {
-    background: #d2ebec; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 50%;
     position: absolute;
     float: left;
 }
 
 .freqscaleover3 {
-    background: #d2ebec; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 75%;
     position: absolute;
     float: left;
 }
 
 .freqscaleover4 {
-    background: #d2ebec; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( 90deg, #d2ebec, #23a1a7); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #d2ebec, #23a1a7); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( 90deg, #d2ebec, #23a1a7); /* Standard syntax */
+    background: #f7b4ab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( 90deg, #c6d7fa, #2566ea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #c6d7fa, #2566ea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( 90deg, #c6d7fa, #2566ea); /* Standard syntax */
     width: 100%;
     position: absolute;
     float: left;
@@ -432,7 +513,7 @@ h1 {
 .freqscale_handle {
     width: 10px;
     left: -7px;
-    background: url("../../Images/Product/slider-handle2.png") no-repeat scroll 40% 50% transparent !important;
+    background: url("../../Images/Product/slider-handle3.png") no-repeat scroll 40% 50% transparent !important;
     height: 34px;
     position: absolute;
     z-index: 99;
@@ -440,15 +521,15 @@ h1 {
 }
 
 .freqscale_handle1 {
-    left: 23.2%;
+    left: 23.5%;
 }
 
 .freqscale_handle2 {
-    left: 48.2%;
+    left: 48.5%;
 }
 
 .freqscale_handle3 {
-    left: 73.2%;
+    left: 73.5%;
 }
 
 .freqscale_handle4 {
@@ -461,6 +542,9 @@ h1 {
     color: #fff !important;
 }
 
+.currentPageJssor .content_progress {
+    width: 90%;
+}
 
 .signarea {
     border: 1px solid #666;
@@ -551,15 +635,15 @@ h1 {
 
 .scale_cnt h3 {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     color: #333;
-    font-size: 90%;
+    font-size: 100%;
     margin: 0;
     padding: 0;
 }
 
 .scale_cnt p {
-    color: #000;
+    color: #333;
     font-size: 90%;
     line-height: 1.2;
     margin: 0;
@@ -580,16 +664,275 @@ h1 {
     position: absolute;
     border: 1px solid #000;
     background: #fff !important;
-    right: 1.5%;
-    width: 30%;
+    right: 0px;
+    width: 50%;
     z-index: 2147483647;
-    top: 18%;
+    top: 0px;
     display: none;
 }
 
 
-
 .producttitle {
     float: left;
-    width: 70%;
+    width: 50%;
+}
+
+.tm_img {
+    float: left;
+    position: absolute;
+    width: 24%;
+    float: left;
+    margin-top: -1%;
+    z-index: 999;
+    right: 5%;
+}
+
+    .tm_img img {
+        width: 10%;
+        border: 1px solid #666;
+        border-radius: 25px;
+        padding: 0;
+        float: right;
+    }
+
+    .tm_img p {
+        float: right;
+        color: #000;
+        padding: 2% 2%;
+    }
+
+
+#emptyfrloop {
+    z-index: -9;
+}
+
+
+
+    .signarea a {
+        color: #fff;
+        border: 1px solid #148f95;
+        background: #23a1a7;
+        background: -o-linear-gradient(#36c2c9, #23a1a7);
+        background: -moz-linear-gradient(#36c2c9, #23a1a7);
+        background: linear-gradient(#36c2c9, #23a1a7);
+        text-decoration: none;
+        font-size: 130%;
+        padding: .5% 2%;
+        cursor: pointer;
+        float: right;
+    }
+
+        .signarea a:hover {
+            color: #23a1a7;
+            border: 1px solid #148f95;
+            background: #fff;
+        }
+
+@media screen and (min-width: 1401px) and (max-width: 2000px) {
+
+    #option_menu {
+        top: 11.6%;
+    }
+
+    .poemodule p {
+        font-size: 130%;
+    }
+
+    #jssor_1 {
+        height: 670px !important;
+    }
+
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 470px !important;
+    }
+
+    .jssorinner {
+        height: 470px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 50% !important;
+    }
+}
+
+
+@media screen and (min-width: 2000px) and (max-width: 2400px) {
+
+    #option_menu {
+        top: 8.4%;
+    }
+
+    .poemodule p {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    #jssor_1 {
+        height: 900px !important;
+    }
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 560px !important;
+    }
+
+    .jssorinner {
+        height: 560px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 60% !important;
+    }
+
+    .button_menu {
+        margin-top: 0.2%;
+    }
+}
+
+
+
+@media screen and (min-width: 2500px) and (max-width: 2800px) {
+
+    #option_menu {
+        top: 9.1%;
+    }
+
+    .poemodule p {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    #jssor_1 {
+        height: 900px !important;
+    }
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 470px !important;
+    }
+
+    .jssorinner {
+        height: 470px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 50% !important;
+    }
+
+    .button_menu {
+        margin-top: 0.2%;
+        width: 1%;
+    }
+}
+
+
+@media screen and (min-width: 2800px) and (max-width: 3500px) {
+
+    #option_menu {
+        top: 10%;
+        zoom: 180%;
+    }
+
+
+    .poemodule p {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    #jssor_1 {
+        height: 1250px !important;
+    }
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 620px !important;
+    }
+
+    .jssorinner {
+        height: 620px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 70% !important;
+    }
+
+    .button_menu {
+        margin-top: 0.6%;
+        width: 1%;
+    }
+
+    .customertiles {
+        zoom: 150%;
+    }
+
+    .producttitle {
+        zoom: 150%;
+    }
+}
+
+
+@media screen and (min-width: 3500px) and (max-width: 5000px) {
+
+    #option_menu {
+        top: 10%;
+        zoom: 180%;
+    }
+
+
+    .customertiles {
+        zoom: 250%;
+    }
+
+    .producttitle {
+        zoom: 250%;
+    }
+
+    .poemodule p {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    #jssor_1 {
+        height: 1250px !important;
+    }
+
+
+    .content_progress, .currentPageJssor, .nextPageJssor, .leftPageJssor {
+        height: 620px !important;
+    }
+
+    .jssorinner {
+        height: 620px !important;
+    }
+
+    .jssora13l, .jssora13r {
+        top: 70% !important;
+    }
+
+    .button_menu {
+        margin-top: 0.6%;
+        width: 1%;
+    }
+
+    .customertiles {
+        zoom: 150%;
+    }
+
+    .producttitle {
+        zoom: 150%;
+    }
 }

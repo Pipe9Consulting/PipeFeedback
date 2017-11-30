@@ -1265,6 +1265,10 @@ h1 {
     margin-top: 1%;
 }
 
+.qntitle {
+    font-weight: bold;
+}
+
 @media screen and (min-width: 2560px) {
     .markergray, .markeramper, .marker3, .marker4, .marker5 {
         background-size: 50px 80%;
@@ -2708,6 +2712,13 @@ h1 {
     .stand li p {
         font-size: 17px !important;
     }
+
+    .slide {
+        width: 40.5%;
+        margin-left: 0.7%;
+        margin: 0 2% 0 1%;
+    }
+
 
     .EiQtext {
         padding-left: 5px;

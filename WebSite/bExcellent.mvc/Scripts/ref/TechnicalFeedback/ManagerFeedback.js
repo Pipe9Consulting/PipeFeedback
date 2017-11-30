@@ -88,7 +88,7 @@
         $StartIndex: (parseInt($('#lastModuleOrder').val()) == 0) ? 0 : parseInt($('#lastModuleOrder').val()) - 1,
         //$FillMode: 3,
         $DragOrientation: 0,
-        $SlideWidth: 600,
+        $SlideWidth: 800,
         //$SlideSpacing: 100,
         $Cols: 2,
         $Align: 120,
@@ -109,7 +109,7 @@
     function ScaleSlider() {
         var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
         if (refSize) {
-            refSize = Math.min(refSize, 1000);
+            refSize = Math.min(refSize, 2000);
             jssor_1_slider.$ScaleWidth(refSize);
         }
         else {
@@ -423,8 +423,8 @@
         //debugger;
         if (validateIntial()) {
             //$("#completeModal").show();
-            $("#completeModal").modal('show');
-            $("#completeModal").show();
+            $("#completedModal").modal('show');
+            $("#completedModal").show();
             $('.simplemodal-overlay').show();
             $('.simplemodal-container').show();
         }
@@ -432,8 +432,10 @@
 
     $("#btnMgrCompleteOk").on('click', function () {
         //debugger;
-        $("#completeModal").modal('hide');
-        $("#completeModal").hide();
+        $("#status").fadeIn();
+        $("#preloader").fadeIn("slow");
+        $("#completedModal").modal('hide');
+        $("#completedModal").hide();
         $('.simplemodal-overlay').hide();
         $('.simplemodal-container').hide();
         teamFeedbackFb.loadCompleteFeedback();

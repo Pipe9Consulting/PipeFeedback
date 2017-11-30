@@ -146,6 +146,23 @@ standTable table {
 }
 
 
+.qntitle {
+    background: none !important;
+    color: #333 !important;
+    font-weight: bold;
+    margin-right: 0px !important;
+    padding: 0 !important;
+}
+
+
+.qnsubtitle {
+    background: none !important;
+    color: #333 !important;
+    padding: 0 !important;
+    font-weight: normal;
+}
+
+
 .resultPa {
     width: 25%;
     float: left;
@@ -2739,11 +2756,17 @@ standTable table {
 
 @media screen and (min-width: 1359px) and (max-width: 1439px) {
 
-
-    .resultsQn span {
-        padding: 3px 3px 2px 7px !important;
+    .qntitle {
+        padding: 0 !important;
     }
 
+    .resultsQn span {
+        padding: 3px 3px 2px 6px;
+    }
+
+    .qnsubtitle {
+        padding: 3px 3px 2px 0 !important;
+    }
 
     .patable table tr td:first-child {
         width: 57% !important;
