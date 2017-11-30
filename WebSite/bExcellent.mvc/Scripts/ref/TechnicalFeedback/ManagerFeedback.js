@@ -423,8 +423,8 @@
         //debugger;
         if (validateIntial()) {
             //$("#completeModal").show();
-            $("#completeModal").modal('show');
-            $("#completeModal").show();
+            $("#completedModal").modal('show');
+            $("#completedModal").show();
             $('.simplemodal-overlay').show();
             $('.simplemodal-container').show();
         }
@@ -432,8 +432,10 @@
 
     $("#btnMgrCompleteOk").on('click', function () {
         //debugger;
-        $("#completeModal").modal('hide');
-        $("#completeModal").hide();
+        $("#status").fadeIn();
+        $("#preloader").fadeIn("slow");
+        $("#completedModal").modal('hide');
+        $("#completedModal").hide();
         $('.simplemodal-overlay').hide();
         $('.simplemodal-container').hide();
         teamFeedbackFb.loadCompleteFeedback();
