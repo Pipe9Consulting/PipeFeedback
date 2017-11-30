@@ -23,7 +23,15 @@
     <script src="../../Scripts/jquery-sticklr-1.0.pack.js" type="text/javascript"></script>
     <%--  <script src="../../Scripts/ref/Standing/standSetGoals.js"></script>--%>
 
+      <%
+        var isTspProfile = "";
 
+        if (Session["SelectedPoe"] != null && int.Parse(Session["SelectedPoe"].ToString())==34)
+        {
+            isTspProfile = "tspProfileProgress";
+        }
+
+    %>
 
 
 
@@ -331,7 +339,7 @@
         <div class="chartholdertop" id="top">
             <h1 class="lft_head">Community -  <span id='selfCont'></span></h1>
 
-            <div class="chartholder">
+            <div class="chartholder <%:isTspProfile %>">
                 <div class="slidebtn" id="topslide">
                     <a href="#" class="prev p1">Previous</a> <a href="#" class="prev p2">Previous</a><a href="#" class="prev p3">Previous</a>
                     <div class="pagination">
@@ -344,7 +352,7 @@
         <div class="chartholdertop" id="nxtline">
             <h1 class="lft_head">Area Team - <span id="areaCont"></span>
             </h1>
-            <div class="chartholder">
+            <div class="chartholder <%:isTspProfile %>">
                 <div class="slidebtn" id="nxtslide">
                     <a href="#" class="prev p1">P1revious</a> <a href="#" class="prev p2">Previous</a><a href="#" class="prev p3">Previous</a>
                     <div class="pagination">
@@ -359,7 +367,7 @@
             <h1 class="lft_head">Mentors -
                                 <span id="mentorCont">Your Self Feedback score compared with the average Self Feedback score of others in your role community who stand within 20% of the goal.</span>
             </h1>
-            <div class="chartholder">
+            <div class="chartholder <%:isTspProfile %>">
                 <div class="slidebtn" id="rest">
                     <a href="#" class="prev p1">Previous</a> <a href="#" class="prev p2">Previous</a><a href="#" class="prev p3">Previous</a>
                     <div class="pagination">
@@ -373,7 +381,7 @@
             <h1 class="lft_head">Tenure Group -
                                  <span id="tenureCont">Your Self Feedback score compared with the average Self Feedback score of various tenure groups in your role community.</span>
             </h1>
-            <div class="chartholder">
+            <div class="chartholder <%:isTspProfile %>">
                 <div class="slidebtn" id="tenures">
                     <a href="#" class="prev p1">Previous</a> <a href="#" class="prev p2">Previous</a><a href="#" class="prev p3">Previous</a>
                     <a href="#" class="prev p4">Previous</a>
@@ -389,7 +397,7 @@
             <h1 class="lft_head">Previous -
                                 <span id="prevCont">Your Self Feedback score compared with your previous Self Feedback score.</span>
             </h1>
-            <div class="chartholder">
+            <div class="chartholder <%:isTspProfile %>">
                 <div class="slidebtn" id="prevfb">
                     <a href="#" class="prev p1">Previous</a> <a href="#" class="prev p2">Previous</a><a href="#" class="prev p3">Previous</a>
                     <div class="pagination">
@@ -403,7 +411,7 @@
             <h1 class="lft_head">All -
                                  <span id="allCont">A comprehensive view of your Self Feedback score compared with Community, Team, Mentors and Previous.</span>
             </h1>
-            <div class="chartholder">
+            <div class="chartholder <%:isTspProfile %>">
                 <div class="slidebtn" id="allpagination">
                     <a href="#" class="prev p1">Previous</a> <a href="#" class="prev p2">Previous</a><a href="#" class="prev p3">Previous</a>
                     <a href="#" class="prev p4">Previous</a>

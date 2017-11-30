@@ -36,7 +36,15 @@
         }
 
     %>
+     <%
+        var isTspProfile = "";
 
+        if (Session["SelectedPoe"] != null && int.Parse(Session["SelectedPoe"].ToString())==34)
+        {
+            isTspProfile = "tspProfileProgress";
+        }
+
+    %>
     <input type="hidden" id="currentpoe" value="<%:p%>" />
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb">
@@ -87,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="chartholder diginpg" id="manager1">
+        <div class="chartholder diginpg <%:isTspProfile %>" id="manager1">
             <div class="slidebtn">
                 <a href="#" class="prev" id="p1">Previous</a> <a href="#" class="prev" id="p2">Previous</a>
                 <div class="pagination" id="pagetxt">

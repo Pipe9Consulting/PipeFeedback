@@ -759,7 +759,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                 perQuestionWeightage = ((maxweightage / loadQuestion.length) / 4).toFixed(1);
                 if (count < loadQuestion.length) {
 
-
+                    //debugger;
                     if (i == 0) {
                         count = i;
                     }
@@ -874,6 +874,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
 
 
     if (loadQuestion.length == 6 || loadQuestion.length == 7 || loadQuestion.length == 8) {
+        debugger;
         for (var j = 0; j < numberOfSlide ; j++) {
             //commhtml = commhtml + twoClass;
 
@@ -945,7 +946,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
 
 
 
-                        commhtml = commhtml + "<li class='resultsQn'>  <span> " + (count + 1) + " </span> " + questionCont + " </li>" +
+                        commhtml = commhtml + "<li class='resultsQn'>  <span> " + (count + 1) + " </span> " + loadQuestion[count].ShortQuetionText + " </li>" +
                                                     "<li class='chartYelloResults' style='width:" + yourscorePercentage + "%;'>" +
                                                         "<p> " + yourscorePercentage + "% </p>" +
                                                     "</li>";
@@ -960,7 +961,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
 
 
 
-                        commhtml = commhtml + "<li class='resultsQn'><span> " + (count + 1) + " </span> " + questionCont + " </li>" +
+                        commhtml = commhtml + "<li class='resultsQn'><span> " + (count + 1) + " </span> " + loadQuestion[count].ShortQuetionText + " </li>" +
                                                 "<li class='chartYelloProgress' style='width:" + yourscorePercentage + "%;'> " +
                                                     "<p class='smallFont'> " + yourscorePercentage + "% </p>" +
                                                 "</li>" +

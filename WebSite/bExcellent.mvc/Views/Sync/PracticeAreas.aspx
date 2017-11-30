@@ -263,7 +263,15 @@
         }
 
     %>
+     <%
+        var isTspProfile = "";
 
+        if (Session["SelectedPoe"] != null && int.Parse(Session["SelectedPoe"].ToString())==34)
+        {
+            isTspProfile = "tspProfileProgress";
+        }
+
+    %>
     <input type="hidden" id="networkMode" value="<%:h%>" />
     <input type="hidden" id="selectedpoeDigdeep" />
     <input type="hidden" id="goalSharedWith" value="0" />
@@ -374,7 +382,7 @@
             </div>
         </div>
         <!--Manager-->
-        <div class="chartholder" id="manager1">
+        <div class="chartholder <%:isTspProfile %>" id="manager1">
                 <div class="slidebtn">
                     <a href="#" class="prev" id="p1">Previous</a> <a href="#" class="prev" id="p2">Previous</a>
                     <div class="pagination" id="pagetxt">

@@ -35,7 +35,15 @@
         }
 
     %>
+     <%
+        var isTspProfile = "";
 
+        if (Session["SelectedPoe"] != null && int.Parse(Session["SelectedPoe"].ToString())==34)
+        {
+            isTspProfile = "tspProfileProgress";
+        }
+
+    %>
     <input type="hidden" id="hidCompletedTile" value="<%:showCompletedTile%>" />
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb"><a href="../Common/Index">Home </a> > <a href="../FeedbackResults/BigPicture">Results > </a>Practice Area</div>
@@ -97,7 +105,7 @@
         <!-- Results ------------------------------------------------------------------------------------------------------------------------------------------------------->
 
         <div class="chartholdercontainer">
-        <div class="chartholder"  id="resultBox">
+        <div class="chartholder <%:isTspProfile %>"  id="resultBox">
             <div class="chartslide">
 
                 <div class="slide">
@@ -167,7 +175,7 @@
         <!-- Progress ------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-        <div class="chartholder" style="display:none" id="progressBox">
+        <div class="chartholder <%:isTspProfile %>" style="display:none" id="progressBox">
             <div class="chartslide">
 
                 <div class="slide">

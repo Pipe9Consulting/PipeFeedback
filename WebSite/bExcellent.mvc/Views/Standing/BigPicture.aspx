@@ -35,6 +35,15 @@
             usertenure = Session["tenure"].ToString();
         }
     %>
+      <%
+        var isTspProfile = "";
+
+        if (Session["SelectedPoe"] != null && int.Parse(Session["SelectedPoe"].ToString())==34)
+        {
+            isTspProfile = "tspProfileProgress";
+        }
+
+    %>
     <input type="hidden" id="clickModes" value="<%:t%>" />
     <input type="hidden" id="userTenure" value="<%:usertenure%>" />
 
@@ -121,7 +130,7 @@
 
             </div>
         </div>
-        <div class="chartholder" id="top">
+        <div class="chartholder <%:isTspProfile %>" id="top">
             <div class="chartslide">
                 <!--Top Performer-->
                 <div class="slide">
@@ -198,7 +207,7 @@
                 </div>
             </div>
         </div>
-        <div class="chartholder" id="nxtline">
+        <div class="chartholder <%:isTspProfile %>" id="nxtline">
             <div class="chartslide">
                 <!--Top Performer-->
                 <div class="slide">
@@ -273,7 +282,7 @@
                 </div>
             </div>
         </div>
-        <div class="chartholder" id="community">
+        <div class="chartholder <%:isTspProfile %>" id="community">
             <div class="chartslide">
                 <!--Top Performer-->
                 <div class="slide">
@@ -359,7 +368,7 @@
                 </div>
             </div>
         </div>
-        <div class="chartholder" id="tenure">
+        <div class="chartholder <%:isTspProfile %>" id="tenure">
             <div class="chartslide">
                 <!--Top Performer-->
                 <div class="slide">
@@ -449,7 +458,7 @@
                 </div>
             </div>
         </div>
-        <div class="chartholder" id="previous">
+        <div class="chartholder <%:isTspProfile %>" id="previous">
             <div class="chartslide">
                 <!--Top Performer-->
                 <div class="slide">
@@ -526,7 +535,7 @@
                 </div>
             </div>
         </div>
-        <div class="chartholder" id="all">
+        <div class="chartholder <%:isTspProfile %>" id="all">
             <div class="chartslide">
                 <div id="q1" class="slide">
                     <div class="coltwo">

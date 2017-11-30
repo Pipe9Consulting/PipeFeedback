@@ -55,7 +55,15 @@
         }
 
     %>
+     <%
+        var isTspProfile = "";
 
+        if (Session["SelectedPoe"] != null && int.Parse(Session["SelectedPoe"].ToString())==34)
+        {
+            isTspProfile = "tspProfileProgress";
+        }
+
+    %>
     <input type="hidden" id="currentpoe" value="<%:t%>" />
     <%--<div class="indexright">
         <div class="indexrightarrow">
@@ -238,25 +246,25 @@
                     <a href="#" class="nxt bn6">Next</a>
                     <a href="#" class="nxt bn7">Next</a>
                 </div>
-                <div class="chartholder" id="paLevel1">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel1">
                 </div>
-                <div class="chartholder" id="paLevel2">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel2">
                 </div>
-                <div class="chartholder" id="paLevel3">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel3">
                 </div>
-                <div class="chartholder" id="paLevel4">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel4">
                 </div>
-                <div class="chartholder" id="paLevel5">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel5">
                 </div>
-                <div class="chartholder" id="paLevel6">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel6">
                 </div>
-                <div class="chartholder" id="paLevel7">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel7">
                 </div>
-                <div class="chartholder" id="paLevel8">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel8">
                 </div>
-                <div class="chartholder" id="paLevel9">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel9">
                 </div>
-                <div class="chartholder" id="paLevel10">
+                <div class="chartholder <%:isTspProfile %>" id="paLevel10">
                 </div>
             </div>
         </div>

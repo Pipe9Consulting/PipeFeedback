@@ -46,6 +46,15 @@
         }
 
     %>
+     <%
+        var isTspProfile = "";
+
+        if (Session["SelectedPoe"] != null && int.Parse(Session["SelectedPoe"].ToString())==34)
+        {
+            isTspProfile = "tspProfileProgress";
+        }
+
+    %>
     <input type="hidden" id="moreBigPicture" value="0" />
 
     <input type="hidden" id="dasboardMapping" value="<%:t %>" />
@@ -59,7 +68,7 @@
                 </ul>
             </div>
         </div>
-        <div class="chartholder" id="manager1">
+        <div class="chartholder <%:isTspProfile %>" id="manager1">
             <div class="chartslide">
                 <!--Top Performer-->
                 <div class="slide">
