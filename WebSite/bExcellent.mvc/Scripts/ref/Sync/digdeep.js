@@ -166,11 +166,13 @@
                     }
                     var questionCont = response.TScore.ModuleScores[moduleid].QuestionScores[i].ShortQuetionText;
                     var currentPoe = parseInt($('#currentpoe').val());
+                    var chartImgReplace = "";
                     if (currentPoe == 34) {
                         var splitQuestion = response.TScore.ModuleScores[moduleid].QuestionScores[i].ShortQuetionText.split(',');
                         //alert(response.TScore.ModuleScores[moduleid].QuestionScores[i].ShortQuetionText);
                         var feature = splitQuestion[0].replace('Feature:', '');
                         var component = splitQuestion[1].replace('Component:', '');
+                        chartImgReplace = "chartTSPImg";
                         questionCont = "<span class='qntitle'>" + feature + ":</span><span class='qnsubtitle'>" + component + "</span>";
                     }
                     if (i != 0 && ((i + 1) % 2) == 0) {
@@ -178,7 +180,7 @@
                             htmlContent = htmlContent + "<div class='chartsmlplaceholder'><div class='digqn'>" + questionId + "</div><div class='digdev' id='Qtext" + questionId + "'>" + questionCont + "</div>" +
                                 "<div class='chartdiv'><div class='legend'><ul><li class='legend1'>" + legendText + "</li><li class='legend2'>Manager</li></ul></div><div class='chart'><div class='chartop'></div>" +
                                 "<div class='chartbg'><div class='chartarea'><ul><li class='progressbar1' style='width: 0%' id='PArea" + questionId + "Pro1'><p></p></li><li class='progressbar2' style='width: 0%' id='PArea" + questionId + "Pro2'>" +
-                                "<p></p></li></ul></div></div><div class='chartbtm'><div class='markerholder'><ul><li class='markergray' style='display:none; width: 0%' id='PArea" + questionId + "Mar2'>" +
+                                "<p></p></li></ul></div></div><div class='chartbtm " + chartImgReplace + "'><div class='markerholder'><ul><li class='markergray' style='display:none; width: 0%' id='PArea" + questionId + "Mar2'>" +
                                 "<p></p></li><li class='markeramper' style='display:none; width: 0%' id='PArea" + questionId + "Mar1'><p></p></li></ul></div></div></div><div class='pointer'></div>" +
                                 "<div class='status' id='PArea" + questionId + "'></div></div></div></div>";
                         } else {
@@ -196,7 +198,7 @@
                             htmlContent = htmlContent + "<div class='coltwo'><div class='chartsmlplaceholder'><div class='digqn'>" + questionId + "</div><div class='digdev' id='Qtext" + questionId + "'>" + questionCont + "</div><div class='chartdiv'><div class='legend'>" +
                                 "<ul><li class='legend1'>" + legendText + "</li><li class='legend2'>Manager</li></ul></div><div class='chart'><div class='chartop'></div><div class='chartbg'><div class='chartarea'>" +
                                 "<ul><li class='progressbar1' style='width: 0%' id='PArea" + questionId + "Pro1'><p></p></li><li class='progressbar2' style='width: 0%' id='PArea" + questionId + "Pro2'><p></p></li></ul></div></div>" +
-                                "<div class='chartbtm'><div class='markerholder'><ul><li class='markergray' style='display:none; width: 0%' id='PArea" + questionId + "Mar2'><p></p></li><li class='markeramper' style='display:none; width: 0%' id='PArea" + questionId + "Mar1'>" +
+                                "<div class='chartbtm " + chartImgReplace + "'><div class='markerholder'><ul><li class='markergray' style='display:none; width: 0%' id='PArea" + questionId + "Mar2'><p></p></li><li class='markeramper' style='display:none; width: 0%' id='PArea" + questionId + "Mar1'>" +
                                 "<p></p></li></ul></div></div></div><div class='pointer'></div><div class='status' id='PArea" + questionId + "'></div></div></div>";
                         }
                         else {

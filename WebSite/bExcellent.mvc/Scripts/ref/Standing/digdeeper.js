@@ -829,24 +829,26 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                    
                     var questionCont = loadQuestion[count].ShortQuetionText;
                     var currentPoe = parseInt($('#currentpoe').val());
+                    var chartImgReplace = "";
                     if (currentPoe == 34) {
                         var splitQuestion = loadQuestion[count].ShortQuetionText.split(',');
                         var feature = splitQuestion[0].replace('Feature:', '');
                         var component = splitQuestion[1].replace('Component:', '');
+                        chartImgReplace = "chartTSPImg";
                         questionCont = "<span class='qntitle'>" + feature + ":</span><span class='qnsubtitle'>" + component + "</span>";
                     }
                     if (mode != 4 && mode != 6 && mode != 7) {
 
                         commhtml = commhtml + "<div class='chartsmlplaceholder pa1' data-value=" + numberOfSlide + "><div class='eqscon'><div class='EiQno'>" + (count + 1) + "</div><div class='EiQtext'>" + questionCont + "</div></div> <div class='chartdiv' id=''>" +
                             "  <div class='legend'> <ul> <li class='legend1'>You</li> <li class='legend2all'>" + legendText + "</li> </ul> </div><div class='chart'> <div class='chartop'></div> <div class='chartbg'> <div class='chartarea'> <ul> <li class='progressbar1' style='width: " + yourscorePercentage + "%;' id='Toppa1Pro1'> " +
-                            " </li> <li class='progressbar2' style='width: " + tilescorePercentage + "%;' id='Toppa1Pro2'>  </li> </ul> </div> </div> <div class='chartbtm'> <div class='markerholder'>" +
+                            " </li> <li class='progressbar2' style='width: " + tilescorePercentage + "%;' id='Toppa1Pro2'>  </li> </ul> </div> </div> <div class='chartbtm " + chartImgReplace + "'> <div class='markerholder'>" +
                             " <ul> <li class='markergray' style='display:none; width:" + tilescorePercentage + "%;" + margins + "' id='Toppa1Mar2'> <p></p> </li> <li class='markeramper' style='display:none; width: " + yourscorePercentage + "%;' id='Toppa1Mar1'> <p></p> </li> </ul> </div> " +
                             "</div> </div> <div class='pointer'></div> <div class='" + sclass + "' id='Toppa1'></div> </div> </div>";
                     } else {
                         commhtml = commhtml + "<div class='chartsmlplaceholder pa1' data-value=" + numberOfSlide + "> <div class='eqscon'><div class='EiQno'>" + (count + 1) + "</div><div class='EiQtext'>" + questionCont + "</div></div> <div class='chartdiv' id=''>" +
                            " <div class='legend'> <ul> <li class='legend1'>You</li> <li class='legend2all'> <div id='legendAll'> <div class='legend legenders legenddropdown'> <p class='legendText'>0 - 12 Months</p> <ul class='drplegend'> <li value='4'>0 - 12 Months</li> <li  value='6'>13 - 24 Months</li> <li  value='7'>25+ Months</li>  </ul> </div> " +
                             "</div></li> </ul> </div><div class='chart'> <div class='chartop'></div> <div class='chartbg'> <div class='chartarea'> <ul> <li class='progressbar1' style='width: " + yourscorePercentage + "%;' id='Toppa1Pro1'> " +
-                           " </li> <li class='progressbar2' style='width: " + tilescorePercentage + "%;' id='Toppa1Pro2'>  </li> </ul> </div> </div> <div class='chartbtm'> <div class='markerholder'>" +
+                           " </li> <li class='progressbar2' style='width: " + tilescorePercentage + "%;' id='Toppa1Pro2'>  </li> </ul> </div> </div> <div class='chartbtm " + chartImgReplace + "'> <div class='markerholder'>" +
                            " <ul> <li class='markergray' style='display:none; width:" + tilescorePercentage + "%;" + margins + "' id='Toppa1Mar2'> <p></p> </li> <li class='markeramper' style='display:none; width: " + yourscorePercentage + "%;' id='Toppa1Mar1'> <p></p> </li> </ul> </div> " +
                            "</div>  </div> <div class='pointer'></div> <div class='" + sclass + "' id='Toppa1'></div> </div> </div>";
                     }

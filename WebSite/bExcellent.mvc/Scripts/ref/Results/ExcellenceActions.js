@@ -742,7 +742,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                                         "<div class='chartarea'>" +
                                             "<ul>";
     if (loadQuestion.length == 9 || loadQuestion.length == 10 || loadQuestion.length == 32 || loadQuestion.length == 11 || loadQuestion.length == 12 || loadQuestion.length == 5 || loadQuestion.length == 4 || loadQuestion.length == 3 || loadQuestion.length == 2 || loadQuestion.length == 1) {
-       
+        var chartImgReplace = "";
         for (var j = 0; j < numberOfSlide ; j++) {
             //commhtml = commhtml + twoClass;
            
@@ -770,6 +770,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                         //alert(response.TScore.ModuleScores[moduleid].QuestionScores[i].ShortQuetionText);
                         var feature = splitQuestion[0].replace('Feature:', '');
                         var component = splitQuestion[1].replace('Component:', '');
+                        chartImgReplace = "chartTSPImg";
                         questionCont = "<span class='qntitle'>" + feature + ":</span><span class='qnsubtitle'>" + component + "</span>";
                     }
                     if (tilescore.length > 0) {
@@ -860,7 +861,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
             commhtml = commhtml + "</ul>" +
                                     "</div>" +
                                         "</div>" +
-                                        "<div class='chartbtm'>" +
+                                        "<div class='chartbtm " + chartImgReplace + "'>" +
                                         "</div><div class='charttitle' id='chartLoc'></div>" +
                                     "</div>";
         }
