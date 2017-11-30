@@ -278,8 +278,8 @@
 
         e.preventDefault();
     });
-    var html = "<li><a href='/Development/Priorities'><span><img src='../../Images/icons/goal-small.png' /></span><p>Priorities</p></a> </li>" +
-        "<li><a href='/Development/Progress'><span><img src='../../Images/icons/track-goal-small.png' /></span><p>Progress</p></a> </li>";
+    var html = "<li><a href='/TechnicalFeedback/Priorities'><span><img src='../../Images/icons/goal-small.png' /></span><p>Priorities</p></a> </li>" +
+        "<li><a href='/TechnicalFeedback/Progress'><span><img src='../../Images/icons/track-goal-small.png' /></span><p>Progress</p></a> </li>";
     $('#target ul').html(html);
     $("#status").fadeOut();
     $("#preloader").delay(100).fadeOut("slow");
