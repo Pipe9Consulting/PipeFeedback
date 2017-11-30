@@ -743,7 +743,7 @@ p {
 .capscale_handle {
     width: 10px;
     background: url("../../Images/slider-handle3.png") no-repeat scroll 40% 50% transparent !important;
-    left: -7px;
+    left: -8px;
     height: 30px;
     position: absolute;
     z-index: 99;
