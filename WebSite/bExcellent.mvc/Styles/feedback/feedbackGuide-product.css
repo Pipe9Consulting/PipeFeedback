@@ -1707,6 +1707,7 @@ p {
 
     .slidercontent h4 {
         font-size: 100%;
+        margin: 0;
     }
 
     .OverallScale {
@@ -1773,6 +1774,10 @@ p {
         }
 
 
+    .qn {
+        padding: .3% 0% .3% 0%;
+    }
+
 
     .ratingscaleRemoved .teamUser span {
         font-size: 80%;
@@ -1799,8 +1804,8 @@ p {
     }
 
     .teamUser {
-        width: 10.5%;
-        margin-top: 7.7%;
+        width: 7.4%;
+        margin-top: 1.1%;
     }
 
     .teamcapratingRemoved .teamUser {
@@ -1845,7 +1850,7 @@ p {
 
 
     .capabilityQuestion {
-        margin: 2% 0 0 0;
+        margin: 0;
     }
 
     .sliderimg {
@@ -1854,13 +1859,14 @@ p {
     }
 
     .beginBtn {
-        margin-top: -23%;
+        margin-top: -18%;
         margin-right: -6%;
         background-size: 55% 65% !important;
+        margin-top: -15%;
     }
 
         .beginBtn:hover {
-            margin-top: -23%;
+            margin-top: -15%;
             margin-right: -6%;
             background-size: 55% 65% !important;
         }

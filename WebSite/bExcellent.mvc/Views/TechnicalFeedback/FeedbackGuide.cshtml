@@ -60,7 +60,7 @@
             <div class="questionarea detailedarea">
                 <p>Responds to each Excellence Action as accurately and honestly as possible.</p>
                 <div class="rateThisQuestion">
-          @*          <div class="SI3 rateQuestions" style="display: none">
+                    @*          <div class="SI3 rateQuestions" style="display: none">
                         <span>Importance Scale: </span>Select how important this Excellence Action is in your market
                     </div>
                     <div class="rateOverall" style="display: none">
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <div class="clearfix"></div>
-@*                    <div class="sliderimg">
+                    @*                    <div class="sliderimg">
                         <div class="SI3">
                             <span>Frequency Scale: </span>Select how often you demonstrate this Excellence Action
                         </div>
@@ -158,53 +158,20 @@
                 <p>Responds to each Excellence Action as accurately and honestly as possible.</p>
                 <div class="clearfix"></div>
 
-                <div class="OverallScale ratingRemoved">
-                    <div class="importanceArea" style="display: none">
-                        <div class="slidercontent">
-                            <img src="../../Images/Feedback/Icon/importanceIcon.png"><h4>Importance Scale</h4>
-                            <p>Select how important this Excellence Action is in your market</p>
-                        </div>
-                    </div>
-                    <div class="capabilityArea">
-                        <div class="slidercontent">
-                            <img src="../../Images/Feedback/Icon/capabilityIcon.png"><h4>Proficiency Scale</h4>
-
-                            <p>Select how proficient your team member is for this Excellence Action</p>
-                        </div>
-                    </div>
-                    <div class="frequencyArea">
-                        <div class="slidercontent">
-                            <img src="../../Images/Feedback/Icon/frequencyIcon.png"><h4>Frequency Scale</h4>
-                            <p>Select how often your team member demonstrates this Excellence Action</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
                 <div class="teamFeedback ratingscaleRemoved">
                     <div class="teamUser">
                         <img src="../../Images/teamguideImg.png" width="61" height="61" alt="User"><span>John Barnes</span>
                     </div>
                     <div class="rateThisQuestion">
 
-                        <div class="rateOverall" style="display: none">
-                            <div class="rateImg">
-                                <img src="../../Images/Feedback/imp_icon.png" width="61" height="61" alt="User">
-                            </div>
-                            <div class="impscale_bg">
-                                <div class="impscale_over">
-                                    <button class="impbtn1">Not Important</button>
-                                    <button class="impbtn2">Somewhat Important</button>
-                                    <button class="impbtn3">Important</button>
-                                    <button class="impbtn4">Critical</button>
-                                </div>
-                                <div class="impscale_handle"></div>
-                                <div class="impadddiv"></div>
-                            </div>
 
-                        </div>
-                        <div class="clearfix"></div>
                         <div class="capabilityQuestion">
 
+                            <div class="slidercontent">
+                                <h4>Proficiency Scale</h4>
+                                <p>Select how proficient your team member is for this Excellence Action</p>
+                            </div>
+                            <div class="clearfix"></div>
                             <div class="capOverall">
                                 <div class="capImg">
                                     <img src="../../Images/Feedback/cap_icon.png" width="61" height="61" alt="User">
@@ -222,26 +189,7 @@
 
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="sliderimg">
 
-                            <div class="freqOverall">
-                                <div class="freqImg">
-                                    <img src="../../Images/Feedback/frq_icon.png" width="61" height="61" alt="User">
-                                </div>
-                                <div class="freqscale_bg">
-                                    <div class="freqscale_over">
-                                        <button class="freqbtn1">Never</button>
-                                        <button class="freqbtn2">SOMEtimes</button>
-                                        <button class="freqbtn3">Frequently</button>
-                                        <button class="freqbtn4">Always</button>
-                                    </div>
-                                    <div class="freqscale_handle"></div>
-                                    <div class="freqadddiv"></div>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -259,10 +207,10 @@
     <script src="~/Scripts/ref/jquery-1.8.3.min.js"></script>
     <script type="text/javascript">
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             //Important
-           // alert('click');
-            $('.impbtn1').click(function() {
+            // alert('click');
+            $('.impbtn1').click(function () {
                 $(".impadddiv").addClass("impscaleover1");
                 $(".impscale_handle").addClass("impscale_handle1");
                 $(".impbtn1").addClass("addcolor");
@@ -270,7 +218,7 @@
                 $(".impadddiv").removeClass("impscaleover2").removeClass("impscaleover3").removeClass("impscaleover4");
                 $(".impscale_handle").removeClass("impscale_handle2").removeClass("impscale_handle3").removeClass("impscale_handle4");
             });
-            $('.impbtn2').click(function() {
+            $('.impbtn2').click(function () {
                 $(".impadddiv").addClass("impscaleover2");
                 $(".impscale_handle").addClass("impscale_handle2");
                 $(".impbtn2").addClass("addcolor");
@@ -278,7 +226,7 @@
                 $(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover3").removeClass("impscaleover4");
                 $(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle3").removeClass("impscale_handle4");
             });
-            $('.impbtn3').click(function() {
+            $('.impbtn3').click(function () {
                 $(".impadddiv").addClass("impscaleover3");
                 $(".impscale_handle").addClass("impscale_handle3");
                 $(".impbtn3").addClass("addcolor");
@@ -286,7 +234,7 @@
                 $(".impadddiv").removeClass("impscaleover1").removeClass("impscaleover2").removeClass("impscaleover4");
                 $(".impscale_handle").removeClass("impscale_handle1").removeClass("impscale_handle2").removeClass("impscale_handle4");
             });
-            $('.impbtn4').click(function() {
+            $('.impbtn4').click(function () {
                 $(".impadddiv").addClass("impscaleover4");
                 $(".impscale_handle").addClass("impscale_handle4");
                 $(".impbtn4").addClass("addcolor");
@@ -297,7 +245,7 @@
 
             //Capability
 
-            $('.capbtn1').click(function() {
+            $('.capbtn1').click(function () {
                 $(".capadddiv").addClass("capscaleover1");
                 $(".capscale_handle").addClass("capscale_handle1");
                 $(".capbtn1").addClass("addcolor");
@@ -306,7 +254,7 @@
                 $(".capscale_handle").removeClass("capscale_handle2").removeClass("capscale_handle3").removeClass("capscale_handle4");
             });
 
-            $('.capbtn2').click(function() {
+            $('.capbtn2').click(function () {
                 $(".capadddiv").addClass("capscaleover2");
                 $(".capscale_handle").addClass("capscale_handle2");
                 $(".capbtn2").addClass("addcolor");
@@ -315,7 +263,7 @@
                 $(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle3").removeClass("capscale_handle4");
             });
 
-            $('.capbtn3').click(function() {
+            $('.capbtn3').click(function () {
                 $(".capadddiv").addClass("capscaleover3");
                 $(".capscale_handle").addClass("capscale_handle3");
                 $(".capbtn3").addClass("addcolor");
@@ -324,7 +272,7 @@
                 $(".capscale_handle").removeClass("capscale_handle1").removeClass("capscale_handle2").removeClass("capscale_handle4");
             });
 
-            $('.capbtn4').click(function() {
+            $('.capbtn4').click(function () {
                 $(".capadddiv").addClass("capscaleover4");
                 $(".capscale_handle").addClass("capscale_handle4");
                 $(".capbtn4").addClass("addcolor");
@@ -336,7 +284,7 @@
 
             //frequency
 
-            $('.freqbtn1').click(function() {
+            $('.freqbtn1').click(function () {
                 $(".freqadddiv").addClass("freqscaleover1");
                 $(".freqscale_handle").addClass("freqscale_handle1");
                 $(".freqbtn1").addClass("addcolor");
@@ -345,7 +293,7 @@
                 $(".freqscale_handle").removeClass("freqscale_handle2").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
             });
 
-            $('.freqbtn2').click(function() {
+            $('.freqbtn2').click(function () {
                 $(".freqadddiv").addClass("freqscaleover2");
                 $(".freqscale_handle").addClass("freqscale_handle2");
                 $(".freqbtn2").addClass("addcolor");
@@ -354,7 +302,7 @@
                 $(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle3").removeClass("freqscale_handle4");
             });
 
-            $('.freqbtn3').click(function() {
+            $('.freqbtn3').click(function () {
                 $(".freqadddiv").addClass("freqscaleover3");
                 $(".freqscale_handle").addClass("freqscale_handle3");
                 $(".freqbtn3").addClass("addcolor");
@@ -363,7 +311,7 @@
                 $(".freqscale_handle").removeClass("freqscale_handle1").removeClass("freqscale_handle2").removeClass("freqscale_handle4");
             });
 
-            $('.freqbtn4').click(function() {
+            $('.freqbtn4').click(function () {
                 $(".freqadddiv").addClass("freqscaleover4");
                 $(".freqscale_handle").addClass("freqscale_handle4");
                 $(".freqbtn4").addClass("addcolor");
@@ -375,9 +323,9 @@
 
         });
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             //debugger;
-           // alert('click');
+            // alert('click');
             var getUserRating = 0;
             //var getUserRating = feedbackGuide.GetUserRatingByPoeId();
             var capabilityMode = $('#capabilityMode').val();
