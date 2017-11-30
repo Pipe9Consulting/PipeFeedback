@@ -723,7 +723,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
     //for (var k = 0; k < numberOfSlide  ; k++) {
     //    var slideClass = "<div class='slide q" + (k + 1) + "'>";
     //    commhtml = commhtml + slideClass;
-
+    
     var twoClass = "<div class='chart' id=slide>" +
                                     "<div class='chartop'>" +
                                     "</div>" +
@@ -731,9 +731,10 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                                         "<div class='chartarea'>" +
                                             "<ul>";
     if (loadQuestion.length == 9 || loadQuestion.length == 10 || loadQuestion.length == 32 || loadQuestion.length == 11 || loadQuestion.length == 12 || loadQuestion.length == 5 || loadQuestion.length == 4 || loadQuestion.length == 3 || loadQuestion.length == 2 || loadQuestion.length == 1) {
+       
         for (var j = 0; j < numberOfSlide ; j++) {
             //commhtml = commhtml + twoClass;
-
+           
 
             commhtml = commhtml + "<div class='chart' id='q" + (j + 1) + "'>" +
                                         "<div class='chartop'>" +
@@ -746,8 +747,19 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
             for (var i = j; i < (j + 5) ; i++) {
                 perQuestionWeightage = ((maxweightage / loadQuestion.length) / 4).toFixed(1);
                 if (count < loadQuestion.length) {
+
+
                     if (i == 0) {
                         count = i;
+                    }
+                    var questionCont = loadQuestion[count].ShortQuetionText;
+                    var currentPoe = parseInt($('#currentpoe').val());
+                    if (currentPoe == 34) {
+                        var splitQuestion = loadQuestion[count].ShortQuetionText.split(',');
+                        //alert(response.TScore.ModuleScores[moduleid].QuestionScores[i].ShortQuetionText);
+                        var feature = splitQuestion[0].replace('Feature:', '');
+                        var component = splitQuestion[1].replace('Component:', '');
+                        questionCont = "<span class='qntitle'>" + feature + ":</span><span class='qnsubtitle'>" + component + "</span>";
                     }
                     if (tilescore.length > 0) {
                         //yourscorePercentage = youscore[count].ScorePercentage;
@@ -801,7 +813,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
 
 
 
-                        commhtml = commhtml + "<li class='resultsQn'>  <span> " + (count + 1) + " </span> " + loadQuestion[count].ShortQuetionText + " </li>" +
+                        commhtml = commhtml + "<li class='resultsQn'>  <span> " + (count + 1) + " </span> " + questionCont + " </li>" +
                                                     "<li class='chartYelloResults' style='width:" + yourscorePercentage + "%;'>" +
                                                         "<p> " + yourscorePercentage + "% </p>" +
                                                     "</li>";
@@ -816,7 +828,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
 
 
 
-                        commhtml = commhtml + "<li class='resultsQn'><span> " + (count + 1) + " </span> " + loadQuestion[count].ShortQuetionText + " </li>" +
+                        commhtml = commhtml + "<li class='resultsQn'><span> " + (count + 1) + " </span> " + questionCont + " </li>" +
                                                 "<li class='chartYelloProgress' style='width:" + yourscorePercentage + "%;'> " +
                                                     "<p class='smallFont'> " + yourscorePercentage + "% </p>" +
                                                 "</li>" +
@@ -863,6 +875,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
 
 
             for (var i = j; i < (j + 4) ; i++) {
+
                 perQuestionWeightage = ((maxweightage / loadQuestion.length) / 4).toFixed(1);
                 if (count < loadQuestion.length) {
                     if (i == 0) {
@@ -907,7 +920,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
                     } else {
                         yourscoreWeightingScore = yourscoreWeightingScore.toFixed(1);
                     }
-
+                   
                     //<ul class='scale paAr1' id='Toppa1Level'> <li class='scale1' id='Toppa1Level1'>25%</li> <li class='scale2' id='Toppa1Level2'>50%</li> <li class='scale3' id='Toppa1Level3'>75%</li>" +
                     // <li class='scale4' id='Toppa1Level4'>100%</li> <li></li> </ul>
                     if (mode != 1) {
@@ -920,7 +933,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
 
 
 
-                        commhtml = commhtml + "<li class='resultsQn'>  <span> " + (count + 1) + " </span> " + loadQuestion[count].ShortQuetionText + " </li>" +
+                        commhtml = commhtml + "<li class='resultsQn'>  <span> " + (count + 1) + " </span> " + questionCont + " </li>" +
                                                     "<li class='chartYelloResults' style='width:" + yourscorePercentage + "%;'>" +
                                                         "<p> " + yourscorePercentage + "% </p>" +
                                                     "</li>";
@@ -935,7 +948,7 @@ function LoadHtml(youscore, tilescore, palevel, mode, loadQuestion, maxweightage
 
 
 
-                        commhtml = commhtml + "<li class='resultsQn'><span> " + (count + 1) + " </span> " + loadQuestion[count].ShortQuetionText + " </li>" +
+                        commhtml = commhtml + "<li class='resultsQn'><span> " + (count + 1) + " </span> " + questionCont + " </li>" +
                                                 "<li class='chartYelloProgress' style='width:" + yourscorePercentage + "%;'> " +
                                                     "<p class='smallFont'> " + yourscorePercentage + "% </p>" +
                                                 "</li>" +

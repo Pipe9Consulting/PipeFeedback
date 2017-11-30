@@ -11,7 +11,10 @@
         $("#option_menu").fadeToggle();
 
     });
-
+    $(".content_progress").mCustomScrollbar({
+        mouseWheel: { scrollAmount: 200 },
+        advanced: { autoScrollOnFocus: "false" },
+    });
     $(window).on("load", function () {
         $(".content_progress").mCustomScrollbar();
     });
@@ -137,7 +140,9 @@
 
         $('.jssora13r').hide();
     }
-
+    if (parseInt($('#lastModuleOrder').val())==1) {
+        $('.jssora13l').hide();
+    }
     //$('.bukatutup').on('click', function () {
     $("#target").toggle();
     var htmlText = "<li id='lit1' style='display:none' data-order='0'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product1-small.png' /></span><p>Microsoft Azure</p></a></li>" + "<li id='lit2' style='display:none' data-order='1'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product2-small.png' /></span><p>Security</p></a></li>" + "<li id='lit3' style='display:none' data-order='2'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product3-small.png' /></span><p>Operations & Management</p></a></li>" + "<li id='lit4' style='display:none' data-order='3'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product4-small.png' /></span><p>Developer Tools</p></a></li>" + "<li id='lit5' style='display:none' data-order='4'><a href='#'><span><img src='../../Images/icons/AzureInfraTsp-Product5-small.png' /></span><p>Debugging & Performance</p></a></li>";

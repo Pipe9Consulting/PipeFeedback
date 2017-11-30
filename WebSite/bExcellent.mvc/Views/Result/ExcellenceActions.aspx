@@ -37,6 +37,18 @@
     %>
 
     <input type="hidden" id="hidCompletedTile" value="<%:showCompletedTile%>" />
+    <input type="hidden" id="pagemax" value="0" />
+      <%
+        var poe = 0;
+
+        if (Session["SelectedPoe"] != null)
+        {
+            poe = int.Parse(Session["SelectedPoe"].ToString());
+        }
+
+    %>
+
+    <input type="hidden" id="currentpoe" value="<%:poe%>" />
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb"><a href="../Common/Index">Home</a> > <a href="../FeedbackResults/FeedbackResults">Feedback Results > </a>Excellence Actions</div>
     </div>
