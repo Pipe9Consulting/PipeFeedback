@@ -1,6 +1,8 @@
 ﻿$(document).ready(function () {
     $("#status").fadeIn();
     $("#preloader").delay(100).fadeIn("slow");
+    $("#status").fadeOut();
+    $("#preloader").fadeOut("slow");
     devProgress.GetPOEDetails();
     devProgress.getPageMode();
     $('.clickdeeper').html("View Priorities");
