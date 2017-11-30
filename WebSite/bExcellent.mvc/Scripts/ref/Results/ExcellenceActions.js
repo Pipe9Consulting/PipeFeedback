@@ -74,6 +74,7 @@
       //debugger;
         $('#charttitle_top').html($(this).find('p').html());
         selectedModule = $(this).attr('data-moduleorder');
+       
         $('.chartdiv').hide();
         $('#paLevel' + selectedModule).show();
         $('.slidebtn').show();
@@ -101,20 +102,30 @@
             $(this).find('img').attr('src', '../../Images/icons/' + imgname + '.png');
         });
         removeAttrHovers();
+        //alert(totalSlides);
         ctrl.find('img').attr('src', '../../Images/icons/' + selectedimgname + 'h.png');
-        if (totalSlides == 2 || totalSlides == 3) {
+        if (totalSlides == 2 || totalSlides == 3 ||  totalSlides==7) {
             $('#nextModule').hide();
             $('#prevModule').show();
             $('#p2').hide();
             $('#p3').hide();
             $('#p1').hide();
+            $('#p4').hide();
+            $('#p5').hide();
+            $('#p6').hide();
+            $('#p7').hide();
             $('#bn2').hide();
             $('#bn3').hide();
             $('#bn1').show();
+            $('#bn4').hide();
+            $('#bn5').hide();
+            $('#bn6').hide();
+            $('#bn7').hide();
         } else {
             $('#nextModule').show();
         }
-        if(selectedModule==1) {
+        if (selectedModule == 1) {
+          //  alert(selectedModule);
             $('#prevModule').hide();
         }
        // alert($('#poemodule').not('.emptyTiles').find('li:last-child').attr('data-moduleorder'));
