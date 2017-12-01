@@ -342,7 +342,6 @@
     <Content Include="Images\Azure Infra Tsp - Functional_Intro.png" />
     <Content Include="Images\Azure Infra Tsp - Product Skills_Intro.png" />
     <Content Include="Images\Azure Infra Tsp - Product_Intro.png" />
-    <Content Include="Images\Azure InfraTsp - Role Excellence_Intro.png" />
     <Content Include="Images\AzureInfraTsp-Capability.png" />
     <Content Include="Images\AzureInfraTsp-Functional.png" />
     <Content Include="Images\AzureInfraTsp-Product.png" />
@@ -3990,6 +3989,7 @@
     <None Include="Properties\PublishProfiles\Kessaku_new.pubxml" />
     <None Include="Properties\PublishProfiles\Pipe9Consulting.pubxml" />
     <None Include="Properties\PublishProfiles\pipe9feedback.pubxml" />
+    <None Include="Properties\PublishProfiles\Pipe9FeedbackbExcellent.pubxml" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\profile2.pubxml" />
     <None Include="Properties\Settings.settings">
