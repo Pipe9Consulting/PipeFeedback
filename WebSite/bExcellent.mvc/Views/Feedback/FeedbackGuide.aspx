@@ -143,7 +143,8 @@
                 <div class="questionarea detailedarea">
                     <p>Responds to each Excellence Action as accurately and honestly as possible.</p>
                     <div class="rateThisQuestion">
-                        <div class="SI3 rateQuestions" style="display: none"><span>Importance Scale: </span>Select how important this Excellence Action is in your market</div>
+                        <%--<div class="SI3 rateQuestions" style="display: none"><span>Importance Scale: </span>Select how important this Excellence Action is in your market</div>--%>
+                        <div class="SI3 rateQuestions" style="display: none"><span>Importance Scale: </span>Select how important this Skill is in your market</div>
                         <div class="rateOverall" style="display: none">
                             <div class="rateImg">
                                 <img src="../../Images/Feedback/imp_icon.png" width="61" height="61" alt="User">
@@ -166,7 +167,7 @@
                         <div class="clearfix"></div>
                         <div class="capabilityQuestion">
                            <%-- <div class="SI3 capabalititys"><span>Capability Scale: </span>Select how ready you are to demonstrate this Excellence Action</div>--%>
-                             <div class="SI3 capabalititys"><span>Proficiency Scale: </span>Select your proficiency level for this Excellence Action</div>
+                             <div class="SI3 capabalititys"><span>Proficiency Scale: </span>Select your proficiency level for this Skill</div>
                             <div class="capOverall">
                                 <div class="capImg">
                                     <img src="../../Images/Feedback/cap_icon.png" width="61" height="61" alt="User">
@@ -189,7 +190,8 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="sliderimg">
-                            <div class="SI3"><span>Frequency Scale: </span>Select how often you demonstrate this Excellence Action</div>
+                            <%--<div class="SI3"><span>Frequency Scale: </span>Select how often you demonstrate this Excellence Action</div>--%>
+                            <div class="SI3"><span>Frequency Scale: </span>Select how often you demonstrate this Skill</div>
                             <div class="freqOverall">
                                 <div class="freqImg">
                                     <img src="../../Images/Feedback/frq_icon.png" width="61" height="61" alt="User">
@@ -241,27 +243,30 @@
                 <div class="clearfix"></div>
                 <div class="qn">1</div>
                 <div class="questionarea detailedarea">
-                    <p>Responds to each Excellence Action as accurately and honestly as possible.</p>
+                    <%--<p>Responds to each Excellence Action as accurately and honestly as possible.</p>--%>
+                    <p>Responds to each Skill as accurately and honestly as possible.</p>
                     <div class="clearfix"></div>
 
                     <div class="OverallScale ratingRemoved">
                         <div class="importanceArea" style="display: none">
                             <div class="slidercontent">
                                 <img src="../../Images/Feedback/Icon/importanceIcon.png"><h4>Importance Scale</h4>
-                                <p>Select how important this Excellence Action is in your market</p>
+                                <%--<p>Select how important this Excellence Action is in your market</p>--%>
+                                <p>Select how important this Skill is in your market</p>
                             </div>
                         </div>
                         <div class="capabilityArea">
                             <div class="slidercontent">
                                 <img src="../../Images/Feedback/Icon/capabilityIcon.png"><h4>Proficiency Scale</h4>
                                <%-- <p>Select how ready your team member is to demonstrate this Excellence Action</p>--%>
-                                 <p>Select how proficient your team member is for this Excellence Action</p>
+                                 <p>Select how proficient your team member is for this Skill</p>
                             </div>
                         </div>
                         <div class="frequencyArea">
                             <div class="slidercontent">
                                 <img src="../../Images/Feedback/Icon/frequencyIcon.png"><h4>Frequency Scale</h4>
-                                <p>Select how often your team member demonstrates this Excellence Action</p>
+                                <%--<p>Select how often your team member demonstrates this Excellence Action</p>--%>
+                                <p>Select how often your team member demonstrates this Skill</p>
                             </div>
                         </div>
                     </div>

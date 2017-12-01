@@ -45,7 +45,64 @@
             <img src="../../Images/start/welcomePhoto.jpg" alt="welcome" />
             <span>Sponsor</span>
         </div>
-        <div class="welcomeContent" id="selfIntroCont" style="display:none">
+
+         <div class="welcomeContent" id="selfIntroCont" style="display:none">
+
+            <p>
+
+             <b>Welcome!</b> YYou have been invited to complete Self-Feedback based on this Role Profile. Role Profiles defines the specific Skills that represent excellence in role. For each Skill in the Profile, you will be asked to specify how 
+             <b>important</b> you think that Skill is for success in your market<span class="capabilityremoves">, how <b>proficient</b> you are at demonstrating that Skill,</span> and how <b>frequently</b> frequently you demonstrate that Skill.  
+
+
+
+            </p>
+            <h2>Benefits of Self-Feedback:</h2>
+            <ul>
+
+                <li>Identifies your personal development priorities relating to this Role Profile.</li>
+                <li>Enables your Manager to provide more meaningful and targeted coaching.</li>
+                <li>Helps establish role readiness investment priorities for your community.</li>
+            </ul>
+            <h2>Please Note:</h2>
+            <ul>
+
+                <li>Your personal data will not be used or shared with anyone other than your manager.</li>
+                <li>Role Profiles are not a basis for performance reviews.</li>
+                <li>Feedback is not a direct measure of performance, nor should the Skills described be tied directly to a specific review score.</li>
+            </ul>
+            <p>Once you have completed Self-Feedback, you will be asked to sign and approve your final submission. Please begin Self-Feedback and thank you for participating!</p>
+            <a href="../../Feedback/Feedbackguide">Continue</a>
+            
+        </div>
+        <div class="welcomeContent" id="managerIntroCont" style="display:none">
+
+            <p>
+              <b>Welcome!</b> You have been invited to complete Team-Feedback based on your team’s Role Profiles. Role Profiles define the specific Skills that represent excellence in role. For each Skill in the Profile, you will be asked to specify how
+               <b>important</b> you think that Skill is for success in your market<span class="capabilityremoves">, 
+                how <b>proficient</b> each of your team members is at demonstrate that Skill,</span> and how <b>frequently</b> each of your team members demonstrate that Skill.  
+
+            </p>
+            <h2>Benefits of Team-Feedback:</h2>
+            <ul>
+
+                <li>Identifies development priorities for your team members relating to their Role Profiles.</li>
+                <li>Enables you to provide more meaningful and targeted coaching. </li>
+                <li>Helps establish role readiness investment priorities for your community.</li>
+            </ul>
+            <h2>Please Note:</h2>
+            <ul>
+
+                <li>Community-wide Feedback results will only be shared with Role Owners and key stakeholders involved in Role Excellence and Readiness.</li>
+                <li>Role Profiles are not a basis for performance reviews.</li>
+                <li>Feedback is not a direct measure of performance, nor should the Skills described be tied directly to a specific review score. </li>
+            </ul>
+            <p>Once you have completed Team-Feedback, you will be asked to sign and approve your final submission. Please begin Team-Feedback and thank you for participating!</p>
+            <a href="../../Feedback/Feedbackguide">Continue</a>
+            
+        </div>
+
+
+       <%-- <div class="welcomeContent" id="selfIntroCont" style="display:none">
 
             <p>
 
@@ -72,7 +129,7 @@
             </ul>
             <p>Once you have completed Self-Feedback, you will be asked to sign and approve your final submission. Please begin Self-Feedback and thank you for participating!</p>
             <a href="../../Feedback/Feedbackguide">Continue</a>
-            <%--../../Feedback/Detailedview--%>
+            
         </div>
         <div class="welcomeContent" id="managerIntroCont" style="display:none">
 
@@ -100,8 +157,8 @@
             </ul>
             <p>Once you have completed Team-Feedback, you will be asked to sign and approve your final submission. Please begin Team-Feedback and thank you for participating!</p>
             <a href="../../Feedback/Feedbackguide">Continue</a>
-            <%--../../Feedback/ManagerFeedback--%>
-        </div>
+            
+        </div>--%>
 
     </div>
 
