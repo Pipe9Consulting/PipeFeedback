@@ -954,6 +954,10 @@ p {
         padding-top: 5.5%;
     }
 
+    .frequency_scale li {
+        font-size: 12px !important;
+    }
+
     .user_tiles ul li {
         width: 42%;
         padding: 0 0% 40% 0;

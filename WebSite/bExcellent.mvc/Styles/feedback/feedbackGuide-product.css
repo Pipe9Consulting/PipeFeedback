@@ -1039,6 +1039,19 @@ p {
         right: -6%;
     }
 
+    #managerFeedContent .beginBtn {
+        margin-top: -25%;
+        width: 100px;
+        height: 150px;
+        margin-right: -3.9%;
+    }
+
+        #managerFeedContent .beginBtn:hover {
+            margin-top: -25%;
+            width: 100px;
+            height: 150px;
+            margin-right: -3.9%;
+        }
 
     .sliderdiv {
         width: 1000px !important;
@@ -1055,12 +1068,14 @@ p {
 
 
     .teamUser {
-        margin-top: 7.8%;
+        margin-top: 2%;
     }
 
         .teamUser span {
             font-size: 130%;
         }
+
+
 
 
     .questionarea p {
@@ -1231,9 +1246,24 @@ p {
     }
 
     .teamUser {
-        margin-top: 7%;
-        width: 9.5%;
+        margin-top: 2%;
+        width: 7.5%;
     }
+
+    #managerFeedContent .beginBtn {
+        margin-top: -22%;
+        width: 80px;
+        height: 120px;
+        margin-right: -4.45%;
+    }
+
+
+        #managerFeedContent .beginBtn:hover {
+            margin-top: -22%;
+            width: 80px;
+            height: 120px;
+            margin-right: -4.45%;
+        }
 
     .teamFeedback .rateThisQuestion {
         width: 86%;
@@ -1538,10 +1568,21 @@ p {
     }
 
     .teamUser {
-        width: 10%;
-        margin-top: 8.6%;
+        width: 8%;
+        margin-top: 2.7%;
     }
 
+    #managerFeedContent .beginBtn {
+        margin-top: -24.5%;
+        text-indent: -3%;
+        margin-right: -4.6%;
+    }
+
+        #managerFeedContent .beginBtn:hover {
+            margin-top: -24.5%;
+            text-indent: -3%;
+            margin-right: -4.6%;
+        }
 
     .teamcapRemoved .teamUser {
         width: 13%;

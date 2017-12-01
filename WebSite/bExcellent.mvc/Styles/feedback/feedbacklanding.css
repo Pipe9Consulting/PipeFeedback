@@ -3590,6 +3590,9 @@ body {
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1301px) {
+
+ 
+
     .incompleteFB span {
         font-size: 250%;
     }
@@ -3721,7 +3724,7 @@ body {
         font-size: 80% !important;
         line-height: 1.1;
         padding: 4px 2px 3px 6px !important;
-        bottom: -2%;
+        bottom: -2% !important;
     }
 
 
@@ -4748,21 +4751,21 @@ body {
     }
 
 .selectArrow {
-     border: 1px solid #23a1a7;
+    border: 1px solid #23a1a7;
 }
 
-        .profileCenter ul li:nth-child(even) {
-            margin-right: 0%;
-            margin-bottom: 0px;
-        }
+.profileCenter ul li:nth-child(even) {
+    margin-right: 0%;
+    margin-bottom: 0px;
+}
 
-        .profileCenter ul li:last-child, .profileCenter ul li:nth-last-child(2) {
-            margin-bottom: 0px !important;
-        }
+.profileCenter ul li:last-child, .profileCenter ul li:nth-last-child(2) {
+    margin-bottom: 0px !important;
+}
 
-        .profileCenter ul li a {
-            display: block;
-        }
+.profileCenter ul li a {
+    display: block;
+}
 
 .profilePicture {
     cursor: pointer;

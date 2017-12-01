@@ -1105,9 +1105,9 @@ h1 {
 }
 
 #all .legend p {
-    background: url("../../Images/select-arrow.png") no-repeat #777777 right;
+    background: url("../../Images/select-arrow.png") no-repeat #fff right;
     background-size: auto 100%;
-    color: #fff;
+    color: #000;
     padding: 1.5% 1% 2% 5%;
     display: block;
     cursor: pointer;
