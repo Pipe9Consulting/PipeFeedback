@@ -1467,7 +1467,7 @@ namespace bExcellent.mvc.Controllers
         {
             Session["fbmode"] = mode;
             var poeId = int.Parse(Session["SelectedPoe"].ToString());
-            if (poeId == 34 || poeId == 32 || poeId == 33)
+            if (poeId == 34)
             {
                 if (!string.IsNullOrEmpty(userIds))
                 {
