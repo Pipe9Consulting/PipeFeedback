@@ -1402,13 +1402,14 @@ namespace bExcellent.mvc.Controllers
             if (feedbacktype == 1)
             {
                 // CommonController.Log(Session["id"].ToString() + "::" + "ResumeFeedbak-OUT");
-                if (poeid != 34)
+                if (poeid == 34)
                 {
-                    return RedirectToAction("Detailedview", "Feedback");   
+                    return RedirectToAction("SelfFeedback", "TechnicalFeedback");  
+                    
                 }
                 else
                 {
-                    return RedirectToAction("SelfFeedback", "TechnicalFeedback");  
+                    return RedirectToAction("Detailedview", "Feedback");   
                 }
                
             }
@@ -1466,14 +1467,15 @@ namespace bExcellent.mvc.Controllers
         {
             Session["fbmode"] = mode;
             var poeId = int.Parse(Session["SelectedPoe"].ToString());
-            if (poeId != 34)
+            if (poeId == 34 || poeId == 32 || poeId == 33)
             {
                 if (!string.IsNullOrEmpty(userIds))
                 {
                     Session["fbmode"] = 2;
                     Session["userIds"] = userIds;
                 }
-                return RedirectToAction("Welcome", "Feedback");
+                return RedirectToAction("Welcome", "TechnicalFeedback");
+                
             }
             else
             {
@@ -1482,7 +1484,7 @@ namespace bExcellent.mvc.Controllers
                     Session["fbmode"] = 2;
                     Session["userIds"] = userIds;
                 }
-                return RedirectToAction("Welcome", "TechnicalFeedback");
+                return RedirectToAction("Welcome", "Feedback");
             }
             
         }
