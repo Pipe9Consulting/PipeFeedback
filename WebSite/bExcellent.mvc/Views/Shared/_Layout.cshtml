@@ -287,6 +287,13 @@
             $('.simplemodal-overlay').hide();
             $('.simplemodal-container').hide();
         });
+        $(document).click(function (event) {
+            if ($(event.target).parents().index($('.bukatutup')) == -1) {
+                if ($('#target').is(":visible")) {
+                    $("#target").hide("slow");
+                }
+            }
+        });
     });
 </script>
 @*<script language="javascript" type="text/javascript" src="../../Scripts/ref/common.js"></script>
