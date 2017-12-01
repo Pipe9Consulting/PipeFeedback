@@ -23,11 +23,18 @@
     {
         t = int.Parse(Session["SelectedCapability"].ToString());
     }
+    var p = 0;
+
+    if (Session["SelectedPoe"] != null)
+    {
+        p = int.Parse(Session["SelectedPoe"].ToString());
+    }
 }
 
 
 <input type="hidden" id="selectedMode" value="@h" />
 <input type="hidden" id="capabilityMode" value="@t" />
+<input type="hidden" id="selectedPoe" value="@p" />
 <div class="sixteen wide column breadMenu">
     <div class="breadcrumb">
         <a href="../Common/Index">Home </a>
@@ -83,7 +90,7 @@
                     <div class="capabilityQuestion">
 
                         <div class="SI3 capabalititys">
-                            <span>Proficiency Scale: </span>Select your proficiency level for this Excellence Action
+                            <span>Proficiency Scale: </span>Select your proficiency level for this Skill
                         </div>
                         <div class="capOverall">
                             <div class="capImg">
@@ -130,7 +137,7 @@
         </div>
 
         <div class="clearfix"></div>
-        <a href="../../TechnicalFeedback/SelfFeedback" class="beginBtn">NEXT</a>
+        <a href="#" class="beginBtn" id="selfFeedbckNext">NEXT</a>@*../../TechnicalFeedback/SelfFeedback*@
 
     </div>
 
@@ -169,7 +176,7 @@
 
                             <div class="slidercontent">
                                 <h4>Proficiency Scale</h4>
-                                <p>Select how proficient your team member is for this Excellence Action</p>
+                                <p>Select how proficient your team member is for this Skill</p>
                             </div>
                             <div class="clearfix"></div>
                             <div class="capOverall">
@@ -197,7 +204,7 @@
         </div>
 
         <div class="clearfix"></div>
-        <a href="../../TechnicalFeedback/Managerfeedback" class="beginBtn">NEXT</a>
+        <a href="#" class="beginBtn" id="mgrFeedbckNext">NEXT</a> @*../../TechnicalFeedback/Managerfeedback*@
     </div>
 
 
@@ -337,6 +344,28 @@
             var selctedmode = $('#selectedMode').val();
             //alert(selctedmode);
             //alert(selctedmode);
+
+            
+            $("#selfFeedbckNext").on('click', function () {
+                var selectedPoe = $("#selectedPoe").val();
+                if (parseInt(selectedPoe) == 34) {
+                    window.location = "../../TechnicalFeedback/SelfFeedback";
+                } else {
+                    window.location = "../../Feedback/Detailedview";
+                }
+            });
+
+            $("#mgrFeedbckNext").on('click', function () {
+                var selectedPoe = $("#selectedPoe").val();
+                if (parseInt(selectedPoe) == 34) {
+                    window.location = "../../TechnicalFeedback/Managerfeedback";
+                } else {
+                    window.location = "../../Feedback/Managerfeedback";
+                }
+            });
+
+
+
             if (selctedmode == 1) {
                 $('#selfFeedCont').show();
                 $('#breadcrumbtxt').html("Self-Feedback");
