@@ -2030,8 +2030,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                                                           QuestionId = fb.QuestionId,
                                                           Question = fb.SideBarText,
                                                           ModuleId = fb.POEModuleId,
-                                                          PreviousCapability = (int) fb.Capability,
-                                                          PreviousImportance = (int) fb.Rating
+                                                          CurrrentCapability = (int) fb.Capability,
+                                                          CurrrentImportance = (int) fb.Rating
                                                       }).ToList();
                 }
                 return null;
@@ -2299,7 +2299,8 @@ namespace bExcellent.Service.BusinessLogic.Goal
                     var devPrioritiesAll = developmentPrioritieses;
                     using (var context = DataContextFactory.GetIntelliSetDataContext())
                     {
-                        var developmentPriorites = context.GetDevPrioritiesByManager(mappingId, userid, PoeId).ToList();
+                        //var developmentPriorites = context.GetDevPrioritiesByManager(mappingId, userid, PoeId).ToList();
+                        var developmentPriorites = context.GetDevPrioritiesByManager(userid, PoeId, mappingId).ToList();
                         var devPrioritiesManager =
                        (from dev in devPrioritiesAll
                         join self in developmentPriorites on dev.QuestionId equals self.QuestionId
