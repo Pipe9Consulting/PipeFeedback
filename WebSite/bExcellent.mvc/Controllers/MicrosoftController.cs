@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using bExcellent.mvc.AuthenticationWCF;
@@ -70,6 +72,15 @@ namespace bExcellent.mvc.Controllers
             }
             return View();
         }
+        private string CreatePasswordHash(string password)
+        {
+            byte[] sourceStringToBytes = (new UnicodeEncoding()).GetBytes(password);
+
+            byte[] hashedBytes = new MD5CryptoServiceProvider().ComputeHash(sourceStringToBytes);
+
+            string hashedpassword = BitConverter.ToString(hashedBytes);
+            return hashedpassword;
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Login()
@@ -83,6 +94,7 @@ namespace bExcellent.mvc.Controllers
             ViewBag.errormsg = "";
             if (!string.IsNullOrEmpty(_username) && !string.IsNullOrEmpty(_password))
             {
+                _username = CreatePasswordHash(email + "john$P!p3r");
                 var returnValue = authentication.AuthenticateUser(_username, _password);
 
                 var loggedinUser = returnValue.currentUser;
