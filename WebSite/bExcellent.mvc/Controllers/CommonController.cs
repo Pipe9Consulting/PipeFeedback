@@ -179,7 +179,7 @@ namespace bExcellent.mvc.Controllers
             //    startpagemode = Convert.ToInt32(Session["StartPageMode"].ToString());
             //}
             var firstLogins = new FirstLogins();
-            var domain = Session["emailid"].ToString().Split('@')[1];
+            var domain = "microsoft.com";
             if (returnValue == "True" && domain.ToLower() == "microsoft.com")
             {
                 firstLogins.Username = Session["emailid"].ToString();

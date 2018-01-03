@@ -825,5 +825,10 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             DataAccess.DeleteFeedback(fbid, userId);
         }
+
+        public void DeleteAllFeedback(int userId, int poeId)
+        {
+            DataAccess.DeleteAllFeedback(userId, poeId);
+        }
     }
 }

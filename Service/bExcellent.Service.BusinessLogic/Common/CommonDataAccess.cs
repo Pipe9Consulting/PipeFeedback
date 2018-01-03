@@ -4398,6 +4398,13 @@ namespace bExcellent.Service.BusinessLogic.Common
                 context.deleteFeedback(fbid, userId);
             }
         }
+        public void DeleteAllFeedback(int userId, int poeId)
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                context.deleteAllUserFB(userId, poeId);
+            }
+        }
         public void ToolRequestEmail(string content)
         {
             // Log("WCF-SendEmail-IN");

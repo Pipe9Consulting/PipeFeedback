@@ -2105,6 +2105,13 @@ namespace bExcellent.Service.DataAccess
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), fbid, userId);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_deleteAllUserFB")]
+		public int deleteAllUserFB([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeId);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	public partial class GetAllCountriesResult
@@ -3154,7 +3161,7 @@ namespace bExcellent.Service.DataAccess
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -8976,7 +8983,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -9966,7 +9973,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -10322,7 +10329,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary picture
 		{
 			get

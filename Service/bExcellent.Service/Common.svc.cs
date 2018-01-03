@@ -3256,5 +3256,20 @@ namespace bExcellent.Service
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
             }
         }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public void DeleteAllFeedback(int userId, int poeId)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                common.DeleteAllFeedback(userId, poeId);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
+        }
     }
 }

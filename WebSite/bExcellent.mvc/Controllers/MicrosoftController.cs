@@ -119,9 +119,9 @@ namespace bExcellent.mvc.Controllers
                         Session["FirstLogin"] = false;
                     }
                     Session["StartPageMode"] = loggedinUser.StratPageMode;
-                    var domain = loggedinUser.EmailAddress.Split('@')[1];
+                    //var domain = loggedinUser.EmailAddress.Split('@')[1];
                     ViewBag.show = 0;
-                    if ((checkbox == null && loggedinUser.LastLogin == null && loggedinUser.StratPageMode == 1) || (checkbox == null && domain.ToLower() == "microsoft.com" && loggedinUser.LastLogin == null))
+                    if ((checkbox == null && loggedinUser.LastLogin == null && loggedinUser.StratPageMode == 1) || (checkbox == null && loggedinUser.LastLogin == null))
                     {
                         Session["StartPageMode"] = 1;
                         ViewBag.show = 1;
@@ -163,7 +163,7 @@ namespace bExcellent.mvc.Controllers
             Session["Uname"] = loggeduserName;
             Session["emailid"] = loggedinUser.EmailAddress;
             Session["id"] = loggedinUser.UserId;
-            Session["domain"] = loggedinUser.EmailAddress.Split('@')[1];
+            Session["domain"] = "microsoft.com";
             var request = (LoginRequest)Session["request"];
             var userSub = new CommonClient();
             var ownsub = userSub.GetMySubscription(Session["emailid"].ToString()).FirstOrDefault();

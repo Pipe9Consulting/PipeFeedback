@@ -3561,4 +3561,9 @@
     <Parameter Name="userId" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.V4_deleteAllUserFB" Method="deleteAllUserFB">
+    <Parameter Name="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="poeId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>
