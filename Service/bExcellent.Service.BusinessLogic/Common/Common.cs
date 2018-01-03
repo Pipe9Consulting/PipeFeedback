@@ -820,5 +820,10 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             return DataAccess.GetGoalDates();
         }
+
+        public void DeleteFeedback(int fbid, int userId)
+        {
+            DataAccess.DeleteFeedback(fbid, userId);
+        }
     }
 }

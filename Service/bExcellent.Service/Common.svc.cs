@@ -2117,7 +2117,7 @@ namespace bExcellent.Service
             try
             {
                 var common = new BusinessLogic.Goal.GoalDataAccess();
-                common.UpdateGoalDate(tmid, goaldate,userid);
+                common.UpdateGoalDate(tmid, goaldate, userid);
             }
             catch (Exception e)
             {
@@ -3184,7 +3184,7 @@ namespace bExcellent.Service
             try
             {
                 var common = new BusinessLogic.Common.Common();
-                return common.GetReportsCalcNext(userId,mode);
+                return common.GetReportsCalcNext(userId, mode);
             }
             catch (Exception e)
             {
@@ -3227,7 +3227,7 @@ namespace bExcellent.Service
         }
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
-        public bool ToolRequestAccess(string firstname,string lastname,string alias,string manageralias,string role,string country)
+        public bool ToolRequestAccess(string firstname, string lastname, string alias, string manageralias, string role, string country)
         {
             try
             {
@@ -3240,6 +3240,21 @@ namespace bExcellent.Service
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
             }
             return false;
+        }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public void DeleteFeedback(int fbid, int userId)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                common.DeleteFeedback(fbid, userId);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+            }
         }
     }
 }

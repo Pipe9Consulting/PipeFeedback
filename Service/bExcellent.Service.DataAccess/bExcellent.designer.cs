@@ -2098,6 +2098,13 @@ namespace bExcellent.Service.DataAccess
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, poeid, tmMappingid);
 			return ((ISingleResult<V4_GetDevTeamPrevFbResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_deleteFeedback")]
+		public int deleteFeedback([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> fbid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), fbid, userId);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	public partial class GetAllCountriesResult

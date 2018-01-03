@@ -3380,7 +3380,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                     pseRepot.Mplid = report.MPLID;
                     pseRepot.Order = counts;
                     pseRepot.Role = report.Roles;
-                    pseRepot.CompletedOn = (DateTime) report.startdate;
+                    pseRepot.CompletedOn = (DateTime)report.startdate;
                     var partnername = context.GetMPLIDName(report.MPLID).ToList();
                     if (partnername.Count != 0)
                     {
@@ -3473,10 +3473,10 @@ namespace bExcellent.Service.BusinessLogic.Common
 
                     Reports.ManagerFirstName = masnagerDetails.FirstName;
                     Reports.ManagerLastName = masnagerDetails.LastName;
-                    Reports.ManagerAlias = masnagerDetails.EmailId.Replace("@microsoft.com", ""); 
+                    Reports.ManagerAlias = masnagerDetails.EmailId.Replace("@microsoft.com", "");
                     Reports.AreaLeadFirstName = aldetails.FirstName;
                     Reports.AreaLeadLastName = aldetails.LastName;
-                    Reports.AreaLeadAlias = aldetails.EmailId.Replace("@microsoft.com", ""); 
+                    Reports.AreaLeadAlias = aldetails.EmailId.Replace("@microsoft.com", "");
                     Reports.TimeZoneFirstName = tmZone.FirstName;
                     Reports.TimeZoneLastName = tmZone.LastName;
                     Reports.TimeZoneAlias = tmZone.EmailId.Replace("@microsoft.com", "");
@@ -4165,7 +4165,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                                                               LastName = partner.LastName,
                                                               Role = partner.Role,
                                                               Mplid = partner.MPLID,
-                                                              UserId=partner.UserId
+                                                              UserId = partner.UserId
                                                           }));
             }
             return statusList;
@@ -4362,7 +4362,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                                    ManagerAlias = usr.ManagerAlias,
                                    tmName = usr.TeamMemberName,
                                    goalDate = (usr.Goaldate != null) ? (DateTime)usr.Goaldate : DateTime.Now,
-                                   ManagerId=(int) usr.MamangerId
+                                   ManagerId = (int)usr.MamangerId
 
                                };
                     listUsers.Add(user);
@@ -4389,6 +4389,13 @@ namespace bExcellent.Service.BusinessLogic.Common
                     return false;
                 }
 
+            }
+        }
+        public void DeleteFeedback(int fbid, int userId)
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                context.deleteFeedback(fbid, userId);
             }
         }
         public void ToolRequestEmail(string content)
