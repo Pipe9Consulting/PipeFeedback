@@ -1040,9 +1040,9 @@ namespace bExcellent.Service.BusinessLogic.Common
                                           User = new User
                                                      {
                                                          UserId = result.userid,
-                                                         FirstName = result.FirstName,
-                                                         LastName = result.LastName,
-                                                         EmailAddress = result.EmailID,
+                                                         FirstName = DecryptString(result.FirstName),
+                                                         LastName = DecryptString(result.LastName),
+                                                         EmailAddress = DecryptString(result.EmailID),
                                                          Subscriptionid = result.SubscriptionID,
                                                          Country = new Country
                                                                        {
@@ -4444,6 +4444,21 @@ namespace bExcellent.Service.BusinessLogic.Common
             }
             //Log("WCF-SendEmail-OUT");
         }
+        public string DecryptString(string encrString)
+        {
+            byte[] b;
+            string decrypted;
+            try
+            {
+                b = Convert.FromBase64String(encrString);
+                decrypted = System.Text.ASCIIEncoding.ASCII.GetString(b);
+            }
+            catch (FormatException fe)
+            {
+                decrypted = "";
+            }
+            return decrypted;
+        }  
     }
 
     public class getAxis

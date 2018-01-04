@@ -1393,9 +1393,9 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                          AreaId = a.ZoneId.GetValueOrDefault(),
                          User = new User{
                              UserId =  a.UserId.GetValueOrDefault(),
-                             FirstName = a.FirstName,
-                             LastName = a.LastName,
-                             EmailAddress = a.EmailID,
+                             FirstName = DecryptString(a.FirstName),//a.FirstName,
+                             LastName = DecryptString(a.LastName),
+                             EmailAddress = DecryptString(a.EmailID),
                             // Photo = a.Photo,
 
                              Country = new Country{
@@ -1437,7 +1437,21 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                 }).ToList();
             }
         }
-
+        public string DecryptString(string encrString)
+        {
+            byte[] b;
+            string decrypted;
+            try
+            {
+                b = Convert.FromBase64String(encrString);
+                decrypted = System.Text.ASCIIEncoding.ASCII.GetString(b);
+            }
+            catch (FormatException fe)
+            {
+                decrypted = "";
+            }
+            return decrypted;
+        }  
         /// <summary>
         /// Gets the users feedbacks by status.
         /// </summary>
