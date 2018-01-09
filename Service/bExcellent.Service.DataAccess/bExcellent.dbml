@@ -3566,4 +3566,11 @@
     <Parameter Name="poeId" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.V4_CreateErrorLog" Method="CreateErrorLog">
+    <Parameter Name="Userid" Parameter="userid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="functionName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ErrorMsg" Parameter="errorMsg" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ErrorCode" Parameter="errorCode" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

@@ -3998,7 +3998,7 @@
     </None>
     <None Include="Scripts\ref\editor\themes\monocons\monocons.eot" />
     <None Include="Scripts\ref\editor\themes\monocons\monocons.ttf" />
-    <Content Include="Service References\AuthenticationWCF\Authentication.wsdl" />
+    <None Include="Service References\AuthenticationWCF\Authentication.wsdl" />
     <None Include="Service References\AuthenticationWCF\Authentication.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -4050,7 +4050,7 @@
     </None>
     <None Include="Service References\AuthenticationWCF\Authentication1.disco" />
     <None Include="Service References\AuthenticationWCF\Authentication11.disco" />
-    <Content Include="Service References\AuthenticationWCF\Authentication.disco" />
+    <None Include="Service References\AuthenticationWCF\Authentication.disco" />
     <Content Include="Service References\CommonWCF\bExcellent.mvc.CommonWCF.ManagerReports1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -4343,7 +4343,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Service References\FeedbackWCF\FeedbackService1.disco" />
-    <Content Include="Service References\SignUpWCF\Signup1.disco" />
+    <None Include="Service References\SignUpWCF\Signup1.disco" />
     <Content Include="spa-managerGoal1.png" />
     <Content Include="StaticContents\CustomerRefContents.txt" />
     <Content Include="StaticContents\LatestNewsContents.txt" />
@@ -4624,7 +4624,7 @@
     <None Include="Service References\SignUpWCF\Signup12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\SignUpWCF\Signup2.wsdl" />
+    <None Include="Service References\SignUpWCF\Signup2.wsdl" />
     <None Include="Service References\SignUpWCF\Signup6.xsd">
       <SubType>Designer</SubType>
     </None>

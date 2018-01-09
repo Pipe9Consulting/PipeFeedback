@@ -53,13 +53,13 @@ namespace bExcellent.Service.BusinessLogic.Authentiation
                     {
                         user = new User()
                         {
-                            FirstName = result.FirstName,
+                            FirstName = DecryptString(result.FirstName),
                             LastLogin = result.LastLogin,
-                            LastName = result.LastName,
+                            LastName = DecryptString(result.LastName),
                             UserId = result.Id,
-                            EmailAddress = result.EmailID,
+                            EmailAddress = DecryptString(result.EmailID),
                             Subscriptionid = result.SubscriptionID,
-                            userName = result.FirstName + " " + result.LastName,
+                            userName = DecryptString(result.FirstName) + " " + DecryptString(result.LastName),
                             StratPageMode = (result.StartPageMode == null ? 0 : (int)result.StartPageMode)
                         },
 
@@ -71,7 +71,21 @@ namespace bExcellent.Service.BusinessLogic.Authentiation
             }
             return password;
         }
-
+        public string DecryptString(string encrString)
+        {
+            byte[] b;
+            string decrypted;
+            try
+            {
+                b = Convert.FromBase64String(encrString);
+                decrypted = System.Text.ASCIIEncoding.ASCII.GetString(b);
+            }
+            catch (FormatException fe)
+            {
+                decrypted = "";
+            }
+            return decrypted;
+        }  
         /// <summary>
         /// Checks the email id.
         /// </summary>

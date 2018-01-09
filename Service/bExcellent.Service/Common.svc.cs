@@ -44,6 +44,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(userId, "GetPoEsByUserId", e.Message, 0);
             }
             return null;
         }
@@ -1287,6 +1289,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(userid, "GetSubscribedUserWall",e.Message,0);
             }
             return null;
         }

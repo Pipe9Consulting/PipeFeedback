@@ -12208,6 +12208,12 @@ namespace bExcellent.mvc.CommonWCF {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/ToolRequestAccess", ReplyAction="http://tempuri.org/Common/ToolRequestAccessResponse")]
         bool ToolRequestAccess(string firstname, string lastname, string alias, string manageralias, string role, string country);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/DeleteFeedback", ReplyAction="http://tempuri.org/Common/DeleteFeedbackResponse")]
+        void DeleteFeedback(int fbid, int userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/DeleteAllFeedback", ReplyAction="http://tempuri.org/Common/DeleteAllFeedbackResponse")]
+        void DeleteAllFeedback(int userId, int poeId);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Common/GetPoEsByUserId", ReplyAction="http://tempuri.org/Common/GetPoEsByUserIdResponse")]
         bExcellent.mvc.CommonWCF.MinimizedPOE[] GetPoEsByUserId(int userId);
         
@@ -12811,6 +12817,14 @@ namespace bExcellent.mvc.CommonWCF {
         
         public bool ToolRequestAccess(string firstname, string lastname, string alias, string manageralias, string role, string country) {
             return base.Channel.ToolRequestAccess(firstname, lastname, alias, manageralias, role, country);
+        }
+        
+        public void DeleteFeedback(int fbid, int userId) {
+            base.Channel.DeleteFeedback(fbid, userId);
+        }
+        
+        public void DeleteAllFeedback(int userId, int poeId) {
+            base.Channel.DeleteAllFeedback(userId, poeId);
         }
         
         public bExcellent.mvc.CommonWCF.MinimizedPOE[] GetPoEsByUserId(int userId) {

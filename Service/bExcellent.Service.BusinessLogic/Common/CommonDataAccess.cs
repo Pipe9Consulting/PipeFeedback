@@ -499,14 +499,14 @@ namespace bExcellent.Service.BusinessLogic.Common
                 {
                     user = new User
                                {
-                                   EmailAddress = result.EmailID,
+                                   EmailAddress = DecryptString(result.EmailID),
                                    Country = new Country
                                                  {
                                                      Id = result.CountryId,
                                                      Name = Helper.GetCountryName(result.CountryId)
                                                  },
-                                   LastName = result.LastName,
-                                   FirstName = result.FirstName,
+                                   LastName = DecryptString(result.LastName),
+                                   FirstName = DecryptString(result.FirstName),
                                    UserId = result.Id,
                                    LastLogin = result.LastLogin,
                                    CompanyName = result.CompanyName,
@@ -572,9 +572,9 @@ namespace bExcellent.Service.BusinessLogic.Common
                                     User = new User
                                         {
                                             UserId = a.userid,
-                                            FirstName = a.FirstName,
-                                            LastName = a.LastName,
-                                            EmailAddress = a.EmailId,
+                                            FirstName =DecryptString(a.FirstName),
+                                            LastName = DecryptString(a.LastName),
+                                            EmailAddress = DecryptString(a.EmailId),
 
                                             //  Photo = a.Photo,
                                             Country = new Country
@@ -4403,6 +4403,13 @@ namespace bExcellent.Service.BusinessLogic.Common
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
                 context.deleteAllUserFB(userId, poeId);
+            }
+        }
+        public void CreateErrorLog(int userId, string functionName,string errorMsg, int errorCode)
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                context.CreateErrorLog(userId, functionName, errorMsg,errorCode);
             }
         }
         public void ToolRequestEmail(string content)

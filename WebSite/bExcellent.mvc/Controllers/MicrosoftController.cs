@@ -81,6 +81,12 @@ namespace bExcellent.mvc.Controllers
             string hashedpassword = BitConverter.ToString(hashedBytes);
             return hashedpassword;
         }
+        public string EnryptString(string strEncrypted)
+        {
+            byte[] b = System.Text.ASCIIEncoding.ASCII.GetBytes(strEncrypted);
+            string encrypted = Convert.ToBase64String(b);
+            return encrypted;
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Login()
@@ -94,7 +100,7 @@ namespace bExcellent.mvc.Controllers
             ViewBag.errormsg = "";
             if (!string.IsNullOrEmpty(_username) && !string.IsNullOrEmpty(_password))
             {
-                _username = CreatePasswordHash(email + "john$P!p3r");
+                _username = EnryptString(email); //(email + "john$P!p3r");
                 var returnValue = authentication.AuthenticateUser(_username, _password);
 
                 var loggedinUser = returnValue.currentUser;

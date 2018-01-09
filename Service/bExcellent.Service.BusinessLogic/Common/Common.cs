@@ -830,5 +830,10 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             DataAccess.DeleteAllFeedback(userId, poeId);
         }
+
+        public void CreateErrorLog(int userId, string functionName, string errorMsg, int errorCode)
+        {
+            DataAccess.CreateErrorLog(userId, functionName, errorMsg, errorCode);
+        }
     }
 }

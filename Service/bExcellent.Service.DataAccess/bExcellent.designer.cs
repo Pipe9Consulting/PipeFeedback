@@ -2112,6 +2112,13 @@ namespace bExcellent.Service.DataAccess
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeId);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_CreateErrorLog")]
+		public int CreateErrorLog([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string functionName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorMsg", DbType="NVarChar(100)")] string errorMsg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorCode", DbType="Int")] System.Nullable<int> errorCode)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, functionName, errorMsg, errorCode);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	public partial class GetAllCountriesResult
@@ -3161,7 +3168,7 @@ namespace bExcellent.Service.DataAccess
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -8983,7 +8990,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -9973,7 +9980,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -10329,7 +10336,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image", CanBeNull=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image")]
 		public System.Data.Linq.Binary picture
 		{
 			get
