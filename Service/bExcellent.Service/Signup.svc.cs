@@ -28,6 +28,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "SignUp", e.Message, 0);
             }
             return false;
         }
@@ -45,6 +47,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "UpdateUserPhoto", e.Message, 0);
             }
             return false;
         }
@@ -63,6 +67,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "CheckEmailId", e.Message, 0);
             }
             return false;
         }
@@ -86,6 +92,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "UpdateAcessToken", e.Message, 0);
             }
         }
 
@@ -109,6 +117,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(userId, "GetMyUsers", e.Message, 0);
             }
             return null;
         }
@@ -126,6 +136,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(userId, "GetMyAllUsers", e.Message, 0);
             }
             return null;
         }
@@ -148,6 +160,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "GetUserById", e.Message, 0);
             }
             return null;
         }
@@ -170,6 +184,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "GetNetworkById", e.Message, 0);
             }
             return null;
         }
@@ -188,6 +204,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "CheckNetwork", e.Message, 0);
             }
             return false;
         }
@@ -205,6 +223,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "GetAllPoEs", e.Message, 0);
             }
             return null;
         }
@@ -222,6 +242,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "GetSubscribedPoes", e.Message, 0);
             }
             return null;
         }
@@ -239,6 +261,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(userid, "GetSubscribedPoesList", e.Message, 0);
             }
             return null;
         }
@@ -257,6 +281,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "AssignPoeRecord", e.Message, 0);
             }
             return false;
         }
@@ -274,6 +300,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "DeleteSubscribedUsers", e.Message, 0);
             }
         }
 
@@ -290,6 +318,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "DeleteSubscribedPoe", e.Message, 0);
             }
         }
     }

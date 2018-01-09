@@ -34,6 +34,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "AuthenticateUser", e.Message, 0);
             }
             return null;
         }
@@ -57,6 +59,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "AuthenticateUserWithUserName", e.Message, 0);
             }
             return null;
         }
@@ -74,6 +78,8 @@ namespace bExcellent.Service
             {
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(0, "UpdateUserLastLogin", e.Message, 0);
             }
         }
     }
