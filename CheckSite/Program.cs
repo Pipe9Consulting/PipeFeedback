@@ -25,65 +25,15 @@ namespace CheckSite
 
         private static void Main(string[] args)
         {
+            DateTime date = DateTime.Today;
+            int daysInYear = DateTime.IsLeapYear(date.Year) ? 366 : 365;
+            int daysLeftInYear = daysInYear - date.DayOfYear;
+            double percentageOfYear = ((double)date.DayOfYear / daysInYear) * 100;
             bExcellent.Service.BusinessLogic.Common.Common common = new bExcellent.Service.BusinessLogic.Common.Common();
 
             var Goal = common.GetGoalDates().GroupBy(a => a.ManagerId);
             var counts = 1;
-            foreach (var date in Goal)
-            {
-                string EmailTemplateNew = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'> <html> <head><title></title></head> <body style='background: #f5f5f5;'> <table border='0' cellspacing='0' cellpadding='5' style='width: 100%; background: #f5f5f5;'> <tr> <td width='25%'></td> <td width='50%'> <table width='100%' border='0' cellspacing='0' cellpadding='5' style='margin: 0 auto; background: #f5f5f5;'> <tr> <td bgcolor='#f5f5f5' style='text-align:center;'> <table width='100%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td style='text-align:center;' width:'90%'><a href='http://www.pipe9consulting.com' target='_blank'> <img src='https://www.pipe9feedback.com/Images/overall/P9_logo_new.png' alt='pipe9Consulting' border='0' style='outline: 0' width='80' /> </a></td> </tr> </table> </td> </tr> </table> <table width='520px' border='0' cellspacing='0' cellpadding='5' style='margin: 0 auto; background: #fff; border: 1px solid #e5e5e5;'> <tr> <td bgcolor='#fff' style='font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333; line-height: 1.5;'> <table width='95%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #fff;'>&nbsp;</td> </tr> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333;'>{0} <p>Regards, </p> <p>The Pipe9 Team </p> </td> </tr> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #fff;'>&nbsp;</td> </tr> </table> </td> </tr> </table> <table width='520px' border='0' cellspacing='0' cellpadding='2' style='margin: 0 auto; background: #f5f5f5;'> <tr> <td style='font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 1.7; color: #333;'> <p>&nbsp;</p> <p>This e-mail was sent to <a href='mailto:{1}' style='color: #23a1a7; text-decoration: none;'><font style='color: #23a1a7; text-decoration: none;'>{1}</font></a> and contains information directly related to your Pipe9 Feedback account. This is a one-time email. You received this email because of your participation on the Pipe9 Feedback tool. Please do not reply to this email. If you want to contact us, please contact  <a href='mailto:support@pipe9consulting.com' style='color: #23a1a7; text-decoration: none;'><font color='#23a1a7'>support@pipe9consulting.com</font></a>. </p> <p>&nbsp;</p> </td> </tr> <tr> <td style='background: #f5f5f5; border-top: 1px solid #23a1a7;'> <table width='100%' border='0' align='center' cellpadding='0' cellspacing='0'> <tr> <td width='100%'> <div style='font-family: Arial, Helvetica, sans-serif; color: #333; font-size: 10px;'>&copy; 2017, Pipe9 consulting. All Rights Reserved </div> </td> </tr> </table> </td> </tr> </table> </td> <td width='25%'></td> </tr> </table> </body> </html>";
-
-                var goalDates = date.FirstOrDefault().goalDate;
-                var managerName = date.FirstOrDefault().ManagerName;
-                var managerAlias = date.FirstOrDefault().ManagerAlias;
-                var goalDate = Convert.ToDateTime(goalDates);
-                var currentDate = DateTime.Now;
-                var days = (goalDate - currentDate).TotalDays;
-                var count = 1;
-                goalDates = Convert.ToDateTime("2017-05-12");
-                managerAlias = "";
-                //if (days > 7 && days < 8)
-                //{
-                var teammembers = "Michelle";
-                //var tmCount = date.Count();
-                //var tmcounts = 1;
-                //foreach (var name in date)
-                //{
-                   
-                //    if (tmCount == 1)
-                //    {
-                //        teammembers = name.tmName + ", ";
-                //    }
-                //    else
-                //    {
-                //        if (tmCount == tmcounts)
-                //        {
-                //            teammembers = teammembers.Substring(0, teammembers.Length - 2) + " and " + name.tmName+", ";
-                //        }
-                //        else
-                //        {
-                //            teammembers = teammembers + name.tmName + ", ";
-                //        }
-                        
-                //    }
-                //    tmcounts++;
-                //}
-                string coachingDateReminder = " <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'> Hello <span>Gaby,</span> </p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'>Your coaching date is two days away. </p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'>Your coaching date for " + teammembers + " is on " + goalDates.ToString("MM-dd-yyyy",CultureInfo.InvariantCulture) + ". Please sign into your <a href='https://www.pipe9feedback.com/' style='color: #23a1a7'>Pipe9 Feedback</a> account and provide updated Team-Feedback to " + teammembers + ". This will enable you to track the progress each of your team members have made since that last time you provided Team-Feedback.</p> <p style='font-family:Arial, Helvetica, sans-serif; font-size:14px;'> This coaching date can be adjusted at any time by navigating to the Development Priorities feature within the tool. If you have any questions, please contact <a href='mailto:support@pipe9consulting.com' style='color: #23a1a7'>support@pipe9consulting.com</a>. </p>";
-                var emailTemplate = string.Format(EmailTemplateNew, coachingDateReminder, managerAlias);
-                if (counts == 1)
-                {
-                 SendRemider(managerAlias, emailTemplate);
-                    counts++;
-                }
-
-                // count++;
-                //}
-                //else
-                //{
-
-                //    count++;
-                //}
-            }
+           
 
             var common1 = new bExcellent.Service.BusinessLogic.Common.CommonDataAccess();
             var Goal1 = common1.GetOverallReportsCalculated();

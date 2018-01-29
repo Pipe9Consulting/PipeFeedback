@@ -3631,5 +3631,23 @@ namespace bExcellent.Service
                 common.CreateErrorLog(userId, "DeleteAllFeedback", e.Message, 0);
             }
         }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public PrivacyYourData PrivacyYourDataView(int userId, int poeId)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                return common.PrivacyYourDataView(userId, poeId);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(userId, "DeleteAllFeedback", e.Message, 0);
+                return null;
+            }
+        }
     }
 }

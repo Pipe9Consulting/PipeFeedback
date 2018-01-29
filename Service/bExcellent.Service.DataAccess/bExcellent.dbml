@@ -1265,32 +1265,6 @@
       <Column Name="subscriptionid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="dbo.V3_GetUserRolesWithArea" Method="GetUserRolesWithArea">
-    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
-    <Parameter Name="subscriptionid" Type="System.Int32" DbType="Int" />
-    <ElementType Name="V3_GetUserRolesWithAreaResult">
-      <Column Name="UserPOEMappingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="POEId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="POEName" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
-      <Column Name="ZoneId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="JobTitle" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="RoleTitle" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
-      <Column Name="DesignationId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DesignationName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="LevelId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ZoneId1" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FirstName" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
-      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="EmailId" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="COuntryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="CompanySize" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
-      <Column Name="subscriptionid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="AreaName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.V3_GetFeedbackGiven" Method="GetFeedbackGiven">
     <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
     <Parameter Name="Subscription" Parameter="subscription" Type="System.Int32" DbType="Int" />
@@ -3572,5 +3546,51 @@
     <Parameter Name="ErrorMsg" Parameter="errorMsg" Type="System.String" DbType="NVarChar(100)" />
     <Parameter Name="ErrorCode" Parameter="errorCode" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Privacy_GetAllCompletedSelfFeedback" Method="Privacy_GetAllCompletedSelfFeedback">
+    <Parameter Name="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="poeid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Privacy_GetAllCompletedSelfFeedbackResult">
+      <Column Name="POEFeedbackId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.V3_GetUserRolesWithArea" Method="GetUserRolesWithArea">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="subscriptionid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="V3_GetUserRolesWithAreaResult">
+      <Column Name="UserPOEMappingId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="POEId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="POEName" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="ZoneId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="JobTitle" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="RoleTitle" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="DesignationId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DesignationName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LevelId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZoneId1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COuntryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CompanySize" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="subscriptionid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AreaName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Privacy_GetAllCompletedMgrFeedback" Method="Privacy_GetAllCompletedMgrFeedback">
+    <Parameter Name="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="poeid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Privacy_GetAllCompletedMgrFeedbackResult">
+      <Column Name="POEFeedbackId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="lastname" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="updatedon" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="teammemberuserid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

@@ -748,13 +748,6 @@ namespace bExcellent.Service.DataAccess
 			return ((ISingleResult<GetUserRolesResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V3_GetUserRolesWithArea")]
-		public ISingleResult<V3_GetUserRolesWithAreaResult> GetUserRolesWithArea([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> subscriptionid)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, subscriptionid);
-			return ((ISingleResult<V3_GetUserRolesWithAreaResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V3_GetFeedbackGiven")]
 		public ISingleResult<V3_GetFeedbackGivenResult> GetFeedbackGiven([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Subscription", DbType="Int")] System.Nullable<int> subscription)
 		{
@@ -2118,6 +2111,27 @@ namespace bExcellent.Service.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userid, functionName, errorMsg, errorCode);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Privacy_GetAllCompletedSelfFeedback")]
+		public ISingleResult<Privacy_GetAllCompletedSelfFeedbackResult> Privacy_GetAllCompletedSelfFeedback([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid);
+			return ((ISingleResult<Privacy_GetAllCompletedSelfFeedbackResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V3_GetUserRolesWithArea")]
+		public ISingleResult<V3_GetUserRolesWithAreaResult> GetUserRolesWithArea([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserId", DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> subscriptionid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, subscriptionid);
+			return ((ISingleResult<V3_GetUserRolesWithAreaResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Privacy_GetAllCompletedMgrFeedback")]
+		public ISingleResult<Privacy_GetAllCompletedMgrFeedbackResult> Privacy_GetAllCompletedMgrFeedback([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid);
+			return ((ISingleResult<Privacy_GetAllCompletedMgrFeedbackResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -14596,374 +14610,6 @@ namespace bExcellent.Service.DataAccess
 				if ((this._subscriptionid != value))
 				{
 					this._subscriptionid = value;
-				}
-			}
-		}
-	}
-	
-	public partial class V3_GetUserRolesWithAreaResult
-	{
-		
-		private int _UserPOEMappingId;
-		
-		private int _POEId;
-		
-		private string _POEName;
-		
-		private System.Nullable<int> _ZoneId;
-		
-		private int _RoleId;
-		
-		private string _JobTitle;
-		
-		private string _RoleTitle;
-		
-		private int _DesignationId;
-		
-		private string _DesignationName;
-		
-		private int _LevelId;
-		
-		private System.Nullable<int> _ZoneId1;
-		
-		private string _FirstName;
-		
-		private string _LastName;
-		
-		private string _EmailId;
-		
-		private int _COuntryId;
-		
-		private string _Telephone;
-		
-		private string _CompanyName;
-		
-		private string _CompanySize;
-		
-		private int _subscriptionid;
-		
-		private string _AreaName;
-		
-		public V3_GetUserRolesWithAreaResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserPOEMappingId", DbType="Int NOT NULL")]
-		public int UserPOEMappingId
-		{
-			get
-			{
-				return this._UserPOEMappingId;
-			}
-			set
-			{
-				if ((this._UserPOEMappingId != value))
-				{
-					this._UserPOEMappingId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEId", DbType="Int NOT NULL")]
-		public int POEId
-		{
-			get
-			{
-				return this._POEId;
-			}
-			set
-			{
-				if ((this._POEId != value))
-				{
-					this._POEId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEName", DbType="NVarChar(60) NOT NULL", CanBeNull=false)]
-		public string POEName
-		{
-			get
-			{
-				return this._POEName;
-			}
-			set
-			{
-				if ((this._POEName != value))
-				{
-					this._POEName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ZoneId", DbType="Int")]
-		public System.Nullable<int> ZoneId
-		{
-			get
-			{
-				return this._ZoneId;
-			}
-			set
-			{
-				if ((this._ZoneId != value))
-				{
-					this._ZoneId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleId", DbType="Int NOT NULL")]
-		public int RoleId
-		{
-			get
-			{
-				return this._RoleId;
-			}
-			set
-			{
-				if ((this._RoleId != value))
-				{
-					this._RoleId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_JobTitle", DbType="NVarChar(200)")]
-		public string JobTitle
-		{
-			get
-			{
-				return this._JobTitle;
-			}
-			set
-			{
-				if ((this._JobTitle != value))
-				{
-					this._JobTitle = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleTitle", DbType="NVarChar(60) NOT NULL", CanBeNull=false)]
-		public string RoleTitle
-		{
-			get
-			{
-				return this._RoleTitle;
-			}
-			set
-			{
-				if ((this._RoleTitle != value))
-				{
-					this._RoleTitle = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DesignationId", DbType="Int NOT NULL")]
-		public int DesignationId
-		{
-			get
-			{
-				return this._DesignationId;
-			}
-			set
-			{
-				if ((this._DesignationId != value))
-				{
-					this._DesignationId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DesignationName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string DesignationName
-		{
-			get
-			{
-				return this._DesignationName;
-			}
-			set
-			{
-				if ((this._DesignationName != value))
-				{
-					this._DesignationName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LevelId", DbType="Int NOT NULL")]
-		public int LevelId
-		{
-			get
-			{
-				return this._LevelId;
-			}
-			set
-			{
-				if ((this._LevelId != value))
-				{
-					this._LevelId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ZoneId1", DbType="Int")]
-		public System.Nullable<int> ZoneId1
-		{
-			get
-			{
-				return this._ZoneId1;
-			}
-			set
-			{
-				if ((this._ZoneId1 != value))
-				{
-					this._ZoneId1 = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(35) NOT NULL", CanBeNull=false)]
-		public string FirstName
-		{
-			get
-			{
-				return this._FirstName;
-			}
-			set
-			{
-				if ((this._FirstName != value))
-				{
-					this._FirstName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string LastName
-		{
-			get
-			{
-				return this._LastName;
-			}
-			set
-			{
-				if ((this._LastName != value))
-				{
-					this._LastName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailId", DbType="NVarChar(100)")]
-		public string EmailId
-		{
-			get
-			{
-				return this._EmailId;
-			}
-			set
-			{
-				if ((this._EmailId != value))
-				{
-					this._EmailId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COuntryId", DbType="Int NOT NULL")]
-		public int COuntryId
-		{
-			get
-			{
-				return this._COuntryId;
-			}
-			set
-			{
-				if ((this._COuntryId != value))
-				{
-					this._COuntryId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Telephone", DbType="NVarChar(50)")]
-		public string Telephone
-		{
-			get
-			{
-				return this._Telephone;
-			}
-			set
-			{
-				if ((this._Telephone != value))
-				{
-					this._Telephone = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CompanyName", DbType="NVarChar(200)")]
-		public string CompanyName
-		{
-			get
-			{
-				return this._CompanyName;
-			}
-			set
-			{
-				if ((this._CompanyName != value))
-				{
-					this._CompanyName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CompanySize", DbType="NVarChar(150)")]
-		public string CompanySize
-		{
-			get
-			{
-				return this._CompanySize;
-			}
-			set
-			{
-				if ((this._CompanySize != value))
-				{
-					this._CompanySize = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_subscriptionid", DbType="Int NOT NULL")]
-		public int subscriptionid
-		{
-			get
-			{
-				return this._subscriptionid;
-			}
-			set
-			{
-				if ((this._subscriptionid != value))
-				{
-					this._subscriptionid = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AreaName", DbType="NVarChar(60)")]
-		public string AreaName
-		{
-			get
-			{
-				return this._AreaName;
-			}
-			set
-			{
-				if ((this._AreaName != value))
-				{
-					this._AreaName = value;
 				}
 			}
 		}
@@ -36060,6 +35706,534 @@ namespace bExcellent.Service.DataAccess
 				if ((this._rating != value))
 				{
 					this._rating = value;
+				}
+			}
+		}
+	}
+	
+	public partial class Privacy_GetAllCompletedSelfFeedbackResult
+	{
+		
+		private int _POEFeedbackId;
+		
+		private System.Nullable<System.DateTime> _UpdatedOn;
+		
+		public Privacy_GetAllCompletedSelfFeedbackResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEFeedbackId", DbType="Int NOT NULL")]
+		public int POEFeedbackId
+		{
+			get
+			{
+				return this._POEFeedbackId;
+			}
+			set
+			{
+				if ((this._POEFeedbackId != value))
+				{
+					this._POEFeedbackId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedOn", DbType="DateTime")]
+		public System.Nullable<System.DateTime> UpdatedOn
+		{
+			get
+			{
+				return this._UpdatedOn;
+			}
+			set
+			{
+				if ((this._UpdatedOn != value))
+				{
+					this._UpdatedOn = value;
+				}
+			}
+		}
+	}
+	
+	public partial class V3_GetUserRolesWithAreaResult
+	{
+		
+		private int _UserPOEMappingId;
+		
+		private int _POEId;
+		
+		private string _POEName;
+		
+		private System.Nullable<int> _ZoneId;
+		
+		private int _RoleId;
+		
+		private string _JobTitle;
+		
+		private string _RoleTitle;
+		
+		private int _DesignationId;
+		
+		private string _DesignationName;
+		
+		private int _LevelId;
+		
+		private System.Nullable<int> _ZoneId1;
+		
+		private string _FirstName;
+		
+		private string _LastName;
+		
+		private string _EmailId;
+		
+		private int _COuntryId;
+		
+		private string _Telephone;
+		
+		private string _CompanyName;
+		
+		private string _CompanySize;
+		
+		private int _subscriptionid;
+		
+		private string _AreaName;
+		
+		private System.Nullable<long> _Duration;
+		
+		public V3_GetUserRolesWithAreaResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserPOEMappingId", DbType="Int NOT NULL")]
+		public int UserPOEMappingId
+		{
+			get
+			{
+				return this._UserPOEMappingId;
+			}
+			set
+			{
+				if ((this._UserPOEMappingId != value))
+				{
+					this._UserPOEMappingId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEId", DbType="Int NOT NULL")]
+		public int POEId
+		{
+			get
+			{
+				return this._POEId;
+			}
+			set
+			{
+				if ((this._POEId != value))
+				{
+					this._POEId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEName", DbType="NVarChar(60) NOT NULL", CanBeNull=false)]
+		public string POEName
+		{
+			get
+			{
+				return this._POEName;
+			}
+			set
+			{
+				if ((this._POEName != value))
+				{
+					this._POEName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ZoneId", DbType="Int")]
+		public System.Nullable<int> ZoneId
+		{
+			get
+			{
+				return this._ZoneId;
+			}
+			set
+			{
+				if ((this._ZoneId != value))
+				{
+					this._ZoneId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleId", DbType="Int NOT NULL")]
+		public int RoleId
+		{
+			get
+			{
+				return this._RoleId;
+			}
+			set
+			{
+				if ((this._RoleId != value))
+				{
+					this._RoleId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_JobTitle", DbType="NVarChar(200)")]
+		public string JobTitle
+		{
+			get
+			{
+				return this._JobTitle;
+			}
+			set
+			{
+				if ((this._JobTitle != value))
+				{
+					this._JobTitle = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleTitle", DbType="NVarChar(60) NOT NULL", CanBeNull=false)]
+		public string RoleTitle
+		{
+			get
+			{
+				return this._RoleTitle;
+			}
+			set
+			{
+				if ((this._RoleTitle != value))
+				{
+					this._RoleTitle = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DesignationId", DbType="Int NOT NULL")]
+		public int DesignationId
+		{
+			get
+			{
+				return this._DesignationId;
+			}
+			set
+			{
+				if ((this._DesignationId != value))
+				{
+					this._DesignationId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DesignationName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string DesignationName
+		{
+			get
+			{
+				return this._DesignationName;
+			}
+			set
+			{
+				if ((this._DesignationName != value))
+				{
+					this._DesignationName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LevelId", DbType="Int NOT NULL")]
+		public int LevelId
+		{
+			get
+			{
+				return this._LevelId;
+			}
+			set
+			{
+				if ((this._LevelId != value))
+				{
+					this._LevelId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ZoneId1", DbType="Int")]
+		public System.Nullable<int> ZoneId1
+		{
+			get
+			{
+				return this._ZoneId1;
+			}
+			set
+			{
+				if ((this._ZoneId1 != value))
+				{
+					this._ZoneId1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string FirstName
+		{
+			get
+			{
+				return this._FirstName;
+			}
+			set
+			{
+				if ((this._FirstName != value))
+				{
+					this._FirstName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string LastName
+		{
+			get
+			{
+				return this._LastName;
+			}
+			set
+			{
+				if ((this._LastName != value))
+				{
+					this._LastName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailId", DbType="NVarChar(MAX)")]
+		public string EmailId
+		{
+			get
+			{
+				return this._EmailId;
+			}
+			set
+			{
+				if ((this._EmailId != value))
+				{
+					this._EmailId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COuntryId", DbType="Int NOT NULL")]
+		public int COuntryId
+		{
+			get
+			{
+				return this._COuntryId;
+			}
+			set
+			{
+				if ((this._COuntryId != value))
+				{
+					this._COuntryId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Telephone", DbType="NVarChar(50)")]
+		public string Telephone
+		{
+			get
+			{
+				return this._Telephone;
+			}
+			set
+			{
+				if ((this._Telephone != value))
+				{
+					this._Telephone = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CompanyName", DbType="NVarChar(200)")]
+		public string CompanyName
+		{
+			get
+			{
+				return this._CompanyName;
+			}
+			set
+			{
+				if ((this._CompanyName != value))
+				{
+					this._CompanyName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CompanySize", DbType="NVarChar(150)")]
+		public string CompanySize
+		{
+			get
+			{
+				return this._CompanySize;
+			}
+			set
+			{
+				if ((this._CompanySize != value))
+				{
+					this._CompanySize = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_subscriptionid", DbType="Int NOT NULL")]
+		public int subscriptionid
+		{
+			get
+			{
+				return this._subscriptionid;
+			}
+			set
+			{
+				if ((this._subscriptionid != value))
+				{
+					this._subscriptionid = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AreaName", DbType="NVarChar(60)")]
+		public string AreaName
+		{
+			get
+			{
+				return this._AreaName;
+			}
+			set
+			{
+				if ((this._AreaName != value))
+				{
+					this._AreaName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Duration", DbType="BigInt")]
+		public System.Nullable<long> Duration
+		{
+			get
+			{
+				return this._Duration;
+			}
+			set
+			{
+				if ((this._Duration != value))
+				{
+					this._Duration = value;
+				}
+			}
+		}
+	}
+	
+	public partial class Privacy_GetAllCompletedMgrFeedbackResult
+	{
+		
+		private int _POEFeedbackId;
+		
+		private string _FirstName;
+		
+		private string _lastname;
+		
+		private System.Nullable<System.DateTime> _updatedon;
+		
+		private System.Nullable<int> _teammemberuserid;
+		
+		public Privacy_GetAllCompletedMgrFeedbackResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEFeedbackId", DbType="Int NOT NULL")]
+		public int POEFeedbackId
+		{
+			get
+			{
+				return this._POEFeedbackId;
+			}
+			set
+			{
+				if ((this._POEFeedbackId != value))
+				{
+					this._POEFeedbackId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string FirstName
+		{
+			get
+			{
+				return this._FirstName;
+			}
+			set
+			{
+				if ((this._FirstName != value))
+				{
+					this._FirstName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lastname", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string lastname
+		{
+			get
+			{
+				return this._lastname;
+			}
+			set
+			{
+				if ((this._lastname != value))
+				{
+					this._lastname = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_updatedon", DbType="DateTime")]
+		public System.Nullable<System.DateTime> updatedon
+		{
+			get
+			{
+				return this._updatedon;
+			}
+			set
+			{
+				if ((this._updatedon != value))
+				{
+					this._updatedon = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_teammemberuserid", DbType="Int")]
+		public System.Nullable<int> teammemberuserid
+		{
+			get
+			{
+				return this._teammemberuserid;
+			}
+			set
+			{
+				if ((this._teammemberuserid != value))
+				{
+					this._teammemberuserid = value;
 				}
 			}
 		}

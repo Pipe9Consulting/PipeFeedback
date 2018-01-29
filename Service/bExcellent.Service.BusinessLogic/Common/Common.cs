@@ -835,5 +835,10 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             DataAccess.CreateErrorLog(userId, functionName, errorMsg, errorCode);
         }
+
+        public PrivacyYourData PrivacyYourDataView(int userId, int poeId)
+        {
+            return DataAccess.PrivacyYourDataView(userId, poeId);
+        }
     }
 }

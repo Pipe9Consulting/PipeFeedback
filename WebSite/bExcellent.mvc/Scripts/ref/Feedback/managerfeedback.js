@@ -438,6 +438,7 @@
                 data: { 'currentmoduleOrder': currentmoduleOrder },
                 success: function (response) {
                     //debugger;
+                   // alert(response);
                     $("#status").fadeIn();
                     $("#preloader").delay(100).fadeIn("slow");
                     if (response == "True") {
@@ -472,11 +473,25 @@
                             //$("#preloader").delay(100).fadeIn("slow");
                             $('.feedbackcomplete').show();
                             currentqn = $('.nxtfb:visible').attr('id').replace('bn', '');
-                            $('#q' + (currentqn - 1)).hide('slow');
-                            $('#q' + currentqn).css({ 'opacity': '0.1', 'left': '-8.5%' });
-                            $('.feedbackcomplete').css({ 'position': 'relative', 'left': '-10%', 'margin-left': '0', 'opacity': '2' });
-                            $('.nxtfb:visible').hide();
-                            $('.prevfb:visible').hide(); $('#plast').show();
+                            //alert(currentqn);
+                           
+                            if (currentqn == 1) {
+                                $('#q1').css({ 'opacity': '0.1'});
+                                $('#q1').css({ 'left': '-8.5%' });
+                                //setTimeout(function () {
+                                    $('.feedbackcomplete').css({ 'position': 'relative', 'left': '-14%', 'margin-left': '0', 'opacity': '2' });
+                               // }, 1500);
+                               
+                                $('.nxtfb:visible').hide();
+                                $('.prevfb:visible').hide();
+                                $('#plast').show();
+                            } else {
+                                $('#q' + (currentqn - 1)).hide('slow');
+                                $('#q' + currentqn).css({ 'opacity': '0.1', 'left': '-8.5%' });
+                                $('.feedbackcomplete').css({ 'position': 'relative', 'left': '-10%', 'margin-left': '0', 'opacity': '2' });
+                                $('.nxtfb:visible').hide();
+                                $('.prevfb:visible').hide(); $('#plast').show();
+                            }
                             //setTimeout(function () {
                             //    manager_feedback.completefeedback();
                             //    window.location = "../../Feedback/Connect";
@@ -810,10 +825,12 @@
             /// manager_feedback.LoadSelectedUserNote();
         } else {
             //debugger;
+            $("#status").fadeOut();
+            $("#preloader").delay(100).fadeOut("slow");
             manager_feedback.loadcompletedPAQuestion((parseInt($('#poemodule>li.selected').attr("data-value")) - 1), (parseInt($('#poemodule>li.selected').attr("id").replace("li", "")) - 1))
             var currentslide = parseInt($('#totalQuestionsformodule').val()) - 1;
-            $("#status").fadeIn();
-            $("#preloader").delay(100).fadeIn("slow");
+            //$("#status").fadeIn();
+            //$("#preloader").delay(100).fadeIn("slow");
             $('#q' + parseInt($('#totalQuestionsformodule').val())).show();
             for (var k = 0; k < (parseInt($('#totalQuestionsformodule').val()) - 3) ; k++) {
                 //debugger;
@@ -830,12 +847,15 @@
                 $("#status").fadeOut();
                 $("#preloader").delay(100).fadeOut("slow");
             }, 1000);
+            $("#status").fadeOut();
+            $("#preloader").delay(100).fadeOut("slow");
         }
         if ($('#currentmoduleOrder').val() == 2) {
             $('#p1').hide();
         }
     },
     nextclick: function (current, next) {
+        debugger;
         if (($('#Rno' + current).data('rating') == 0 || $('#Rno' + current).data('rating') == undefined) && $('#Rno' + current).length != 0) {
             $('#masterMsgCont').text("Please finish responding before progressing.");
             $('#overallCont').show();
@@ -1276,28 +1296,34 @@
     },
     CheckQuestionanswered: function (current) {
         var result = true;
-        var items = $('#curq' + current).val().split(',');
-        $(items).each(function (index, item) {
-            if (item != '') {
-                if ($('#' + item).attr('data-answer') == 0) {
-                    result = false;
+        //alert($('#curq' + current).val());
+       // if ($('#curq' + current).val() != undefined) {
+            var items = $('#curq' + current).val().split(',');
+            $(items).each(function (index, item) {
+                if (item != '') {
+                    if ($('#' + item).attr('data-answer') == 0) {
+                        result = false;
+                    }
                 }
-            }
-        });
+            });
+        //}
+        
         return result;
     },
     CheckCapabilityanswered: function (current) {
         var result = true;
-        var items = $('#curCap' + current).val().split(',');
-        $(items).each(function (index, item) {
-            // alert(item);
-            if (item != '') {
-                // alert($('#' + item).data('answer'));
-                if ($('#' + item).attr('data-answer') == 0) {
-                    result = false;
+        //if ($('#curCap' + current).val() != undefined) {
+            var items = $('#curCap' + current).val().split(',');
+            $(items).each(function(index, item) {
+                // alert(item);
+                if (item != '') {
+                    // alert($('#' + item).data('answer'));
+                    if ($('#' + item).attr('data-answer') == 0) {
+                        result = false;
+                    }
                 }
-            }
-        });
+            });
+        //}
         return result;
     },
     loadSelectedRating: function (option) {
@@ -1428,9 +1454,16 @@
     loadlastansweredquestion: function (current) {
         $('#q' + ((current + 1) - 2)).show('slow');
         $('.questionContainer').css('left', '-9%');
-        $('#q' + current).css('opacity', '1').animate({ 'left': '-11%' }, { duration: 400 });
-        $('.feedbackcomplete').hide();
-        $('.feedbackcomplete').css('opacity', '0.1').animate({ 'left': '-13%' }, { duration: 400 });
+        if (current == 1) {
+            $('#q' + current).css('opacity', '1').animate({ 'left': '-1%' }, { duration: 400 });
+            $('.feedbackcomplete').hide();
+            $('.feedbackcomplete').css('opacity', '0.1').animate({ 'left': '-13%' }, { duration: 400 });
+        } else {
+            $('#q' + current).css('opacity', '1').animate({ 'left': '-11%' }, { duration: 400 });
+            $('.feedbackcomplete').hide();
+            $('.feedbackcomplete').css('opacity', '0.1').animate({ 'left': '-13%' }, { duration: 400 });
+        }
+        
 
 
         var lastid = $('.feedbackcomplete').prev().attr('id').replace('q', '');
@@ -1439,6 +1472,7 @@
         // $('.feedbackcomplete').css({ 'margin-left': '1.5%', 'left': '-8.5%' });
         $('#plast').hide();
         $('#p' + lastid).show(); $('#bn' + lastid).show();
+       
     },
     submitfeedback: function () {
         //if ($('#fbinitial').val() == '') {
@@ -1520,7 +1554,7 @@ $(document).ready(function () {
         if (!$(event.target).hasClass("button_menu")) {
             if (!$(event.target).parents().hasClass("optView") && !$(event.target).parents().hasClass("ui-corner-all")) {
                 $('#option_menu').hide(250);
-                closeAccordionSection();
+               // closeAccordionSection();
                 //$('#accordion-4').parents('.slimScrollDiv').hide("slow");
                 //$('#accordion-4').parents('.slimScrollDiv').find('.slimScrollBar').hide();
             }

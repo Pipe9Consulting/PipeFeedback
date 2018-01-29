@@ -93,6 +93,7 @@
     <Compile Include="Response\OutstandingFeedbacks.cs" />
     <Compile Include="Response\Partner.cs" />
     <Compile Include="Response\PPAReports.cs" />
+    <Compile Include="Response\PrivacyYourData.cs" />
     <Compile Include="Response\PSEAnswers.cs" />
     <Compile Include="Response\PSEReports.cs" />
     <Compile Include="Response\PSESurvey.cs" />

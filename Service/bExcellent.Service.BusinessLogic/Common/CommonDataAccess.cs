@@ -430,15 +430,16 @@ namespace bExcellent.Service.BusinessLogic.Common
                                                                                User = new User
                                                                                           {
                                                                                               UserId = userId,
-                                                                                              FirstName = a.FirstName,
-                                                                                              LastName = a.LastName,
-                                                                                              EmailAddress = a.EmailId,
+                                                                                              FirstName = DecryptString(a.FirstName),
+                                                                                              LastName = DecryptString(a.LastName),
+                                                                                              EmailAddress = DecryptString(a.EmailId),
                                                                                               CompanyName =
                                                                                                   a.CompanyName,
                                                                                               CompanySize =
                                                                                                   a.CompanySize,
                                                                                               Subscriptionid =
                                                                                                   a.subscriptionid,
+                                                                                                  Duration=(int) a.Duration,
                                                                                               Country = new Country
                                                                                                             {
                                                                                                                 Id =
@@ -645,9 +646,9 @@ namespace bExcellent.Service.BusinessLogic.Common
                                     User = new User
                                         {
                                             UserId = a.userid,
-                                            FirstName = a.FirstName,
-                                            LastName = a.LastName,
-                                            EmailAddress = a.EmailId,
+                                            FirstName = DecryptString(a.FirstName),
+                                            LastName = DecryptString(a.LastName),
+                                            EmailAddress = DecryptString(a.EmailId),
 
                                             //  Photo = a.Photo,
                                             Country = new Country
@@ -4405,11 +4406,11 @@ namespace bExcellent.Service.BusinessLogic.Common
                 context.deleteAllUserFB(userId, poeId);
             }
         }
-        public void CreateErrorLog(int userId, string functionName,string errorMsg, int errorCode)
+        public void CreateErrorLog(int userId, string functionName, string errorMsg, int errorCode)
         {
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
-                context.CreateErrorLog(userId, functionName, errorMsg,errorCode);
+                context.CreateErrorLog(userId, functionName, errorMsg, errorCode);
             }
         }
         public void ToolRequestEmail(string content)
@@ -4451,6 +4452,57 @@ namespace bExcellent.Service.BusinessLogic.Common
             }
             //Log("WCF-SendEmail-OUT");
         }
+
+        public PrivacyYourData PrivacyYourDataView(int userId, int poeId)
+        {
+            var privacyData = new PrivacyYourData();
+            privacyData.YourData = GetMyDetailWithArea(userId, poeId, -1);
+            privacyData.ListView = YourdataList(userId, poeId);
+            return privacyData;
+        }
+
+        public List<YourDataListView> YourdataList(int userId, int poeId)
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                var yourData = new List<YourDataListView>();
+                var getAllMgrFeedback = context.Privacy_GetAllCompletedMgrFeedback(userId, poeId).ToList();
+                foreach (var mgrFb in getAllMgrFeedback)
+                {
+                    var yourSingledata = new YourDataListView
+                                         {
+                                             FeedbackId = (int)mgrFb.POEFeedbackId,
+                                             FeebackUser = DecryptString(mgrFb.FirstName) + " " + DecryptString(mgrFb.lastname),
+                                             FeedbackDate = String.Format("{0:MM/dd/yyyy}", mgrFb.updatedon),//(DateTime)mgrFb.updatedon.ToString("MM/dd/yyyy"),
+                                             FeedbackType = "Manager Feedback",
+                                             FeedbackResult = (int)GetAvgWcsiScore(mgrFb.POEFeedbackId.ToString())[0].wcsi.GetValueOrDefault(0)
+                                         };
+                    yourData.Add(yourSingledata);
+                }
+                var getAllSelfFeedback = context.Privacy_GetAllCompletedSelfFeedback(userId, poeId);
+                foreach (var selfFb in getAllSelfFeedback)
+                {
+                    var yourSingledata = new YourDataListView
+                    {
+                        FeedbackId = (int)selfFb.POEFeedbackId,
+                        FeebackUser = "You",
+                        FeedbackDate = String.Format("{0:MM/dd/yyyy}", selfFb.UpdatedOn),
+                        FeedbackType = "Self Feedback",
+                        FeedbackResult = (int)GetAvgWcsiScore(selfFb.POEFeedbackId.ToString())[0].wcsi.GetValueOrDefault(0)
+                    };
+                    yourData.Add(yourSingledata);
+                }
+                return yourData;
+            }
+
+        }
+        public List<V3_GetStandingAvgWCSIScoreResult> GetAvgWcsiScore(string fbid)
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                return context.GetStandingAvgWCSIScore(fbid).ToList();
+            }
+        }
         public string DecryptString(string encrString)
         {
             byte[] b;
@@ -4465,7 +4517,7 @@ namespace bExcellent.Service.BusinessLogic.Common
                 decrypted = "";
             }
             return decrypted;
-        }  
+        }
     }
 
     public class getAxis

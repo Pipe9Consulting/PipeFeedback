@@ -75,6 +75,8 @@ namespace bExcellent.Service.Util.Domain
             public string CountryName { get; set; }
             [DataMember]
             public DateTime GoalDate { get; set; }
+            [DataMember]
+            public int Duration { get; set; }
         //public List<Feedback> FeedbackDetails { get; set; }
     }
 
