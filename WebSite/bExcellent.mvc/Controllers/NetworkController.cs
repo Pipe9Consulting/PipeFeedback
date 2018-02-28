@@ -157,21 +157,41 @@ namespace bExcellent.mvc.Controllers
             return image;
         }
 
-        public void SavePhoto(string imgId)
+        //public void SavePhoto(string imgId)
+        //{
+        //    SignupClient common = new SignupClient();
+
+        //    byte[] img = null;
+        //    if (!string.IsNullOrEmpty(imgId))
+        //    {
+        //        var imgHandler = new ImageHandler();
+        //        img = imgHandler.GetImage(imgId, System.Web.HttpContext.Current);
+        //        SignUpWCF.User user = new SignUpWCF.User();
+        //        user.UserId = int.Parse(Session["id"].ToString());
+        //        user.Photo = img;
+        //        sr.User = user;
+        //        common.UpdateUserPhoto(sr);
+        //    }
+        //}
+
+        public JsonResult SavePhoto(string imgId)
         {
             SignupClient common = new SignupClient();
 
-            byte[] img = null;
+           // byte[] img = null;
             if (!string.IsNullOrEmpty(imgId))
             {
-                var imgHandler = new ImageHandler();
-                img = imgHandler.GetImage(imgId, System.Web.HttpContext.Current);
+                //var imgHandler = new ImageHandler();
+                //img = imgHandler.GetImage(imgId, System.Web.HttpContext.Current);
+                //img = System.IO.File.ReadAllBytes(imgId);
+                byte[] img = Convert.FromBase64String(imgId.Split(',')[1]);
                 SignUpWCF.User user = new SignUpWCF.User();
                 user.UserId = int.Parse(Session["id"].ToString());
                 user.Photo = img;
                 sr.User = user;
                 common.UpdateUserPhoto(sr);
             }
+            return JsonResponse(true);
         }
 
         [SessionExpireFilter]

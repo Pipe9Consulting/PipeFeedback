@@ -47,7 +47,7 @@
                     'fileDesc': 'Image Files',
                     'scriptData': { RequireUploadifySessionSync: true, SecurityToken: UploadifyAuthCookie, SessionId: UploadifySessionId },
                     'onComplete': function (event, ID, fileObj, response, data) {
-                        
+
                         response = $.parseJSON(response);
                         alert(response.Status);
                         if (response.Status == 'OK') {
@@ -89,17 +89,95 @@
                 }
             });
         }
-        function savePhoto(imgId) {
-            Common.ajaxsync({
-                url: '/Network/SavePhoto?imgId=' + imgId,
+        //function savePhoto(imgId) {
+        //    Common.ajaxsync({
+        //        url: '/Network/SavePhoto?imgId=' + imgId,
+        //        success: function (response) {
+        //            $('#lblMethodError').hide();
+        //            network.loadMyData();
+        //            $.modal.close();
+        //        },
+        //        error: function (err) {
+        //        }
+        //    });
+        //}
+
+
+
+        $(function () {
+            $('#FileUpload1').change(function () {
+                $('#Image1').hide();
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#Image1').show();
+                    $('#Image1').attr("src", e.target.result);
+                    $('#Image1').Jcrop({
+                        onChange: SetCoordinates,
+                        onSelect: SetCoordinates
+                    });
+                }
+                reader.readAsDataURL($(this)[0].files[0]);
+            });
+
+            $("#btnUploads").on('click', function () {
+                //debugger;
+                var imgValue = $('#imgCropped').val();
+                savePhoto(imgValue);
+            });
+
+            $('#btnCrops').click(function () {
+                var x1 = $('#imgX1').val();
+                var y1 = $('#imgY1').val();
+                var width = $('#imgWidth').val();
+                var height = $('#imgHeight').val();
+                var canvas = $("#canvas")[0];
+                var context = canvas.getContext('2d');
+                var img = new Image();
+                img.onload = function () {
+                    canvas.height = height;
+                    canvas.width = width;
+                    context.drawImage(img, x1, y1, width, height, 0, 0, width, height);
+                    $('#imgCropped').val(canvas.toDataURL());
+                    $('[id*=btnUploads]').show();
+                };
+                img.src = $('#Image1').attr("src");
+            });
+        });
+        function SetCoordinates(c) {
+            $('#imgX1').val(c.x);
+            $('#imgY1').val(c.y);
+            $('#imgWidth').val(c.w);
+            $('#imgHeight').val(c.h);
+            $('#btnCrops').show();
+        };
+
+        function savePhoto(imgValue) {
+            //debugger;
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: '/Network/SavePhoto',
+                data: { imgId: imgValue },
                 success: function (response) {
                     $('#lblMethodError').hide();
                     network.loadMyData();
                     $.modal.close();
                 },
-                error: function (err) {
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+
                 }
             });
+            //Common.ajaxsync({
+            //    url: '/Network/SavePhoto',
+            //    data: { 'imgId': imgValue },
+            //    success: function (response) {
+            //        $('#lblMethodError').hide();
+            //        network.loadMyData();
+            //        $.modal.close();
+            //    },
+            //    error: function (err) {
+            //    }
+            //});
         }
     </script>
 
@@ -135,9 +213,9 @@
     %>
     <input type="hidden" id="Subid" value="<%:p%>" />
     <input type="hidden" id="selectedPoeValueNetwork" value="<%:t%>" />
-    <input type="hidden" id="assignedPOE"/>
-     <input type="hidden" id="assignedUser"/>
-     <input type="hidden" id="assignedVal"/>
+    <input type="hidden" id="assignedPOE" />
+    <input type="hidden" id="assignedUser" />
+    <input type="hidden" id="assignedVal" />
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb">
             <span class="net1"><a href="../Common/Index">Home </a>> <a href="../Network/Network">Network</a> > Your Network</span><span class="net2"><a href="../Common/Index">Home
@@ -306,7 +384,7 @@
                     <li>
                         <div class="pageholder">
 
-                            <div id="customertiles" style="visibility:hidden">
+                            <div id="customertiles" style="visibility: hidden">
 
 
                                 <div class="customertiles tile">
@@ -361,7 +439,7 @@
                                                     Your Peers
                                                 </p>
                                             </li>--%>
-                                          <%--  <li class="custTile" tabindex="5">
+                                            <%--  <li class="custTile" tabindex="5">
                                                 <div class="icon doubleline">
                                                     <img src="../../Images/networkIcon5.png" alt="Blogs" />
                                                 </div>
@@ -370,7 +448,7 @@
                                                     & Partners<br />
                                                 </p>
                                             </li>--%>
-                                           <%-- <li class="yammerTile" tabindex="6">
+                                            <%-- <li class="yammerTile" tabindex="6">
                                                 <img src="../../Images/networkIcon6.png" /><p>
                                                     Add Members from Yammer
                                                 </p>
@@ -650,7 +728,7 @@
                                 <!--Your Manager-->
                                 <div class="customertiles stars last ntwrk urmngr">
                                     <h1 style="padding: 0 !important;">Your Managers</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Give)
                                         <div class="sendinv">
                                             <ul>
@@ -674,7 +752,7 @@
                                 <!--Team Member-->
                                 <div class="customertiles stars last teammembr">
                                     <h1 style="padding: 0 !important;">Your Team Members</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Take)
                                         <div class="sendinv">
                                             <ul>
@@ -698,7 +776,7 @@
                                 <!--Your Peers-->
                                 <div class="customertiles stars last urpeer">
                                     <h1 style="padding: 0 !important;">Your Peers</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Take)
                                         <div class="sendinv">
                                             <ul>
@@ -722,7 +800,7 @@
                                 <!--Add Yammer-->
                                 <div id="addyammeruser" class="customertiles stars last yammmerusr">
                                     <h1>Add Members from Yammer</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         <span id="drpdownTxtvalues">Choose a Yammer Group</span>
                                         <div class="sendinv">
                                             <ul id="yammerGroups">
@@ -746,7 +824,7 @@
                                 <!--Your Customers-->
                                 <div class="customertiles stars last custpart">
                                     <h1 style="padding: 0 !important;">Your Customers & Partners</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Give)
                                         <div class="sendinv">
                                             <ul>
@@ -771,17 +849,17 @@
                                     <div class="network">
                                         <div class="clr">
                                         </div>
-                                         <div class="vs-context-menu">
-                                                            <ul>
-                                                                <li class="nselect"><b>Choose a Title:</b></li>
-                                                                <li value="2">Manager</li>
-                                                                <li value="3">Skip Level Manager</li>
-                                                                <li value="5">Peers</li>
-                                                                <li value="1">Team Members</li>
-                                                                <li value="6">Customers &amp; Partners</li>
-                                                                <li value="0">None</li>
-                                                            </ul>
-                                                        </div>
+                                        <div class="vs-context-menu">
+                                            <ul>
+                                                <li class="nselect"><b>Choose a Title:</b></li>
+                                                <li value="2">Manager</li>
+                                                <li value="3">Skip Level Manager</li>
+                                                <li value="5">Peers</li>
+                                                <li value="1">Team Members</li>
+                                                <li value="6">Customers &amp; Partners</li>
+                                                <li value="0">None</li>
+                                            </ul>
+                                        </div>
                                         <div style="left: 0px; top: 0px; width: 98%; float: left; position: fixed; padding-top: 50%"
                                             id="dragassignpoe">
                                             <div class="popupbg">
@@ -794,9 +872,9 @@
                                                 </div>
                                                 <div class="network">
                                                     <div class="listwrapper">
-                                                        
+
                                                         <div class="scroll1">
-                                                           <ul id="allnetworkContent">
+                                                            <ul id="allnetworkContent">
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -817,7 +895,31 @@
         </div>
     </div>
     <div id="basic-modal-content" style="display: none">
-        <div class="browseright">
+        <div>
+            <input type="file" id="FileUpload1" />
+            <br />
+            <br />
+            <div>
+                <div>
+                    <img id="Image1" src="" alt="" style="display: none" />
+                </div>
+                <div>
+                    <canvas id="canvas" height="5" width="5"></canvas>
+                </div>
+
+            </div>
+            <br />
+            <input type="button" id="btnCrops" value="Crop" style="display: none" />
+
+            <input type="button" id="btnUploads" text="Upload" style="display: none" />
+            <input type="hidden" name="imgX1" id="imgX1" />
+            <input type="hidden" name="imgY1" id="imgY1" />
+            <input type="hidden" name="imgWidth" id="imgWidth" />
+            <input type="hidden" name="imgHeight" id="imgHeight" />
+            <input type="hidden" name="imgCropped" id="imgCropped" />
+        </div>
+
+        <%-- <div class="browseright">
             <div class="browserightcont">
                 <p>
                     Supported file formats - (.jpg, .png)
@@ -864,6 +966,6 @@
         <div class="croptxt" style="display: none">
             <input type="button" id="btnCrop" onclick="cropImage();" value="Crop Image" />
             <div class="cropmsg">Click on the image and drag box to choose the area of your picture.</div>
-        </div>
+        </div>--%>
     </div>
 </asp:Content>
