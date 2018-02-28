@@ -11,12 +11,16 @@
     <%--<link href="//cdn.jsdelivr.net/jquery.gray/1.4.2/gray.min.css" rel="stylesheet" type="text/css"/>--%>
     <script src="../../Scripts/ref/Jquery_ui_min_latest.js"></script>
     <%--javascripts--%>
-
-
+    <%--<script src="../../Scripts/Pipe9Feedback/Network/jquery-1.9.1.min.js"></script>--%>
+    <script src="../../Scripts/Pipe9Feedback/Network/jquery-ui-1.9.2.min.js"></script>
+    <script src="../../Scripts/Pipe9Feedback/Network/jquery.fileupload-ui.js"></script>
+    <script src="../../Scripts/Pipe9Feedback/Network/jquery.fileupload.js"></script>
+    <script src="../../Scripts/Pipe9Feedback/Network/jquery.iframe-transport.js"></script>
+    <script src="../../Scripts/Pipe9Feedback/Network/jquery.Jcrop.min.js"></script>
     <%--<script src="//cdn.jsdelivr.net/jquery.gray/1.4.2/jquery.gray.min.js" type="text/javascript"></script>--%>
     <script src="../../Uploadify/swfobject.js" type="text/javascript"></script>
     <script src="../../Uploadify/jquery.uploadify.v2.1.4.min.js" type="text/javascript"></script>
-    <script src="../../Scripts/jquery.Jcrop.min.js" type="text/javascript"></script>
+    <%-- <script src="../../Scripts/jquery.Jcrop.min.js" type="text/javascript"></script>--%>
     <script src="../../Scripts/jquery.simplemodal.js" type="text/javascript"></script>
     <script src="../../Scripts/vscontext.jquery.js" type="text/javascript"></script>
     <%--<script src="../../Scripts/ref/common.js" type="text/javascript"></script>--%>
@@ -26,7 +30,7 @@
     <%-- For Photo Upload--%>
     <script type="text/javascript">
         var x = 0, y = 0, w = 0, h = 0;
-        var imageHandler = "../../Uploadify/ImageHandler.ashx?id=";
+        //var imageHandler = "../../Uploadify/ImageHandler.ashx?id=";
 
         $(function () {
             $('#btnloading ').click(function (e) {
@@ -47,7 +51,7 @@
                     'fileDesc': 'Image Files',
                     'scriptData': { RequireUploadifySessionSync: true, SecurityToken: UploadifyAuthCookie, SessionId: UploadifySessionId },
                     'onComplete': function (event, ID, fileObj, response, data) {
-                        
+
                         response = $.parseJSON(response);
                         alert(response.Status);
                         if (response.Status == 'OK') {
@@ -68,39 +72,225 @@
                 });
             });
 
-            function setCoords(c) {
-                x = c.x;
-                y = c.y;
-                w = c.w;
-                h = c.h;
-            };
+            //    function setCoords(c) {
+            //        x = c.x;
+            //        y = c.y;
+            //        w = c.w;
+            //        h = c.h;
+            //    };
+            //});
+            //function cropImage() {
+            //    $.ajax({
+            //        url: "/Media/CropImage",
+            //        type: "POST",
+            //        data: { x: x, y: y, w: w, h: h, Module: 2, rWidth: parseInt($('#imgUploadedImage').width()), rHeight: parseInt($('#imgUploadedImage').height()) },
+            //        success: function (data) {
+            //            savePhoto(data);
+            //        },
+            //        error: function (xhr, status, error) {
+            //            $('#lblMethodError').text(xhr.responseText);
+            //            $('#lblMethodError').show();
+            //        }
+            //    });
+            //}
+            //function savePhoto(imgId) {
+            //    Common.ajaxsync({
+            //        url: '/Network/SavePhoto?imgId=' + imgId,
+            //        success: function (response) {
+            //            $('#lblMethodError').hide();
+            //            network.loadMyData();
+            //            $.modal.close();
+            //        },
+            //        error: function (err) {
+            //        }
+            //    });
+            //}
         });
+
+        $("#btn-my-submit").on('click', function () {
+            var imgSrc = $("#hf-cropped-image-path").val();
+            //alert(imgSrc);
+            if (imgSrc == "") {
+                $("#comErrMsg").html("Please crop the image");
+                $("#comModalPopUp").modal('show');
+                return false;
+            } else {
+                //saveProfileImage(imgSrc);
+            }
+        });
+
+        $("#btnCloseImageUpload").on('click', function () {
+            $("#crop-image-area").hide();
+        });
+
+        var jqXHRData;
+        'use strict';
+
+
+        
+        $('#fu-my-simple-upload').fileupload({
+            url: '/Network/UploadFile',
+            dataType: 'json',
+            add: function (e, data) {
+
+                jqXHRData = data;
+                if (data) {
+                    jqXHRData.submit();
+                }
+                return false;
+            },
+            done: function (event, data) {
+
+                if (data.result.isUploaded) {
+
+                    $("#hf-uploaded-image-path").val(data.result.filePath);
+
+                    destroyCrop();
+
+                    $("#uploaded-image").attr("src", data.result.filePath + "?t=" + new Date().getTime());
+
+                    initCrop();
+
+                    $("#crop-image-area").fadeIn("slow");
+                } else {
+
+                }
+            },
+            fail: function (event, data) {
+                if (data.files[0].error) {
+                    alert(data.files[0].error);
+                }
+            }
+        });
+
+        //************************************** JavaScript for cropping of image *****************************************
+        var imageCropWidth = 0;
+        var imageCropHeight = 0;
+        var cropPointX = 0;
+        var cropPointY = 0;
+
+        $("#hl-crop-image").on("click", function (e) {
+            //debugger;
+            $(".preLoader").fadeIn();
+            $(".loader").fadeIn();
+            e.preventDefault();
+            cropImage();
+        });
+
+        function initCrop() {
+            //var box_width = $('#uploaded-image').width();
+            //var box_heigth = $('#uploaded-image').heigth();
+            $('#uploaded-image').Jcrop({
+                onChange: setCoordsAndImgSize,
+                aspectRatio: 1,
+                setSelect: [250, 200, 50, 50],
+
+
+            });
+        }
+
+        function destroyCrop() {
+            var jcropApi = $('#uploaded-image').data('Jcrop');
+
+            if (jcropApi !== undefined) {
+                jcropApi.destroy();
+                $('#uploaded-image').attr('style', "").attr("src", "");
+            }
+        }
+
+        function setCoordsAndImgSize(e) {
+            //alert(e.w + " " + e.h + " " + e.x + " " + e.y);
+            var img = document.getElementById("uploaded-image"),
+            $img = $(img),
+            imgW = img.width,
+            imgH = img.height;
+
+            var ratioY = imgH / $img.height(),
+                ratioX = imgW / $img.width();
+            //alert($img.width());
+            imageCropWidth = Math.round((e.w) * (ratioX));
+            imageCropHeight = Math.round((e.h) * (ratioY));
+            cropPointX = Math.round((e.x) * (ratioX));
+            cropPointY = Math.round((e.y) * (ratioY));
+
+            //imageCropWidth = e.w;
+            //imageCropHeight = e.h;
+            //cropPointX = e.x;
+            //cropPointY = e.y;
+        }
+
         function cropImage() {
+            //alert($("#hf-uploaded-image-path").val());
+            //debugger;
+            if (imageCropWidth == 0 && imageCropHeight == 0) {
+                alert("Please select crop area.");
+                return;
+            }
+
             $.ajax({
-                url: "/Media/CropImage",
-                type: "POST",
-                data: { x: x, y: y, w: w, h: h, Module: 2, rWidth: parseInt($('#imgUploadedImage').width()), rHeight: parseInt($('#imgUploadedImage').height()) },
+                url: '/Network/CropImage',
+                type: 'POST',
+                data: {
+                    imagePath: $("#hf-uploaded-image-path").val(),
+                    cropPointX: cropPointX,
+                    cropPointY: cropPointY,
+                    imageCropWidth: imageCropWidth,
+                    imageCropHeight: imageCropHeight
+                },
                 success: function (data) {
-                    savePhoto(data);
+                    //alert(data);
+                    $("#hf-cropped-image-path").val(data.photoPath);
+
+                    //$("#my-cropped-image")
+                    //    .attr("src", data.photoPath + "?t=" + new Date().getTime())
+                    //    .show();
+
+                    //$("#btn-my-submit").fadeIn("slow");
+                    var imgSrc = $("#hf-cropped-image-path").val();
+                    //alert(imgSrc);
+                    if (imgSrc == "") {
+                        $("#comErrMsg").html("Please crop the image");
+                        $("#comModalPopUp").modal('show');
+                        $(".preLoader").fadeOut();
+                        $(".loader").fadeOut();
+                        return false;
+                    } else {
+                        saveProfileImage(imgSrc);
+                        $('#uploaded-image').hide();
+                    }
+
                 },
-                error: function (xhr, status, error) {
-                    $('#lblMethodError').text(xhr.responseText);
-                    $('#lblMethodError').show();
+                error: function (data) { }
+            });
+        }
+
+        function saveProfileImage(imgSrc) {
+            $.ajax({
+                url: "/Network/UpdateUserPhoto",
+                type: "POST",
+                data: JSON.stringify({ 'croppedImagePath': imgSrc }),
+                dataType: "json",
+                traditional: true,
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    //alert(data);
+                    //$("#imageUpload").modal('hide');
+                    $('#load_accounts').load("/Creator/LoadAccounts", function () {
+                        //$(".content-acc").mCustomScrollbar();
+                        $('.modal-backdrop').hide();
+                    });
+
+                    $(".preLoader").fadeOut();
+                    $(".loader").fadeOut();
+                    // window.location = "../Creator/Accounts";
+                },
+                error: function () {
+                    alert("An error has occured!!!");
                 }
             });
         }
-        function savePhoto(imgId) {
-            Common.ajaxsync({
-                url: '/Network/SavePhoto?imgId=' + imgId,
-                success: function (response) {
-                    $('#lblMethodError').hide();
-                    network.loadMyData();
-                    $.modal.close();
-                },
-                error: function (err) {
-                }
-            });
-        }
+
+
     </script>
 
 
@@ -135,9 +325,9 @@
     %>
     <input type="hidden" id="Subid" value="<%:p%>" />
     <input type="hidden" id="selectedPoeValueNetwork" value="<%:t%>" />
-    <input type="hidden" id="assignedPOE"/>
-     <input type="hidden" id="assignedUser"/>
-     <input type="hidden" id="assignedVal"/>
+    <input type="hidden" id="assignedPOE" />
+    <input type="hidden" id="assignedUser" />
+    <input type="hidden" id="assignedVal" />
     <div class="sixteen wide column breadMenu">
         <div class="ui breadcrumb">
             <span class="net1"><a href="../Common/Index">Home </a>> <a href="../Network/Network">Network</a> > Your Network</span><span class="net2"><a href="../Common/Index">Home
@@ -306,7 +496,7 @@
                     <li>
                         <div class="pageholder">
 
-                            <div id="customertiles" style="visibility:hidden">
+                            <div id="customertiles" style="visibility: hidden">
 
 
                                 <div class="customertiles tile">
@@ -361,7 +551,7 @@
                                                     Your Peers
                                                 </p>
                                             </li>--%>
-                                          <%--  <li class="custTile" tabindex="5">
+                                            <%--  <li class="custTile" tabindex="5">
                                                 <div class="icon doubleline">
                                                     <img src="../../Images/networkIcon5.png" alt="Blogs" />
                                                 </div>
@@ -370,7 +560,7 @@
                                                     & Partners<br />
                                                 </p>
                                             </li>--%>
-                                           <%-- <li class="yammerTile" tabindex="6">
+                                            <%-- <li class="yammerTile" tabindex="6">
                                                 <img src="../../Images/networkIcon6.png" /><p>
                                                     Add Members from Yammer
                                                 </p>
@@ -650,7 +840,7 @@
                                 <!--Your Manager-->
                                 <div class="customertiles stars last ntwrk urmngr">
                                     <h1 style="padding: 0 !important;">Your Managers</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Give)
                                         <div class="sendinv">
                                             <ul>
@@ -674,7 +864,7 @@
                                 <!--Team Member-->
                                 <div class="customertiles stars last teammembr">
                                     <h1 style="padding: 0 !important;">Your Team Members</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Take)
                                         <div class="sendinv">
                                             <ul>
@@ -698,7 +888,7 @@
                                 <!--Your Peers-->
                                 <div class="customertiles stars last urpeer">
                                     <h1 style="padding: 0 !important;">Your Peers</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Take)
                                         <div class="sendinv">
                                             <ul>
@@ -722,7 +912,7 @@
                                 <!--Add Yammer-->
                                 <div id="addyammeruser" class="customertiles stars last yammmerusr">
                                     <h1>Add Members from Yammer</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         <span id="drpdownTxtvalues">Choose a Yammer Group</span>
                                         <div class="sendinv">
                                             <ul id="yammerGroups">
@@ -746,7 +936,7 @@
                                 <!--Your Customers-->
                                 <div class="customertiles stars last custpart">
                                     <h1 style="padding: 0 !important;">Your Customers & Partners</h1>
-                                    <div class="addmember" style="display:none">
+                                    <div class="addmember" style="display: none">
                                         Send Request (Give)
                                         <div class="sendinv">
                                             <ul>
@@ -771,17 +961,17 @@
                                     <div class="network">
                                         <div class="clr">
                                         </div>
-                                         <div class="vs-context-menu">
-                                                            <ul>
-                                                                <li class="nselect"><b>Choose a Title:</b></li>
-                                                                <li value="2">Manager</li>
-                                                                <li value="3">Skip Level Manager</li>
-                                                                <li value="5">Peers</li>
-                                                                <li value="1">Team Members</li>
-                                                                <li value="6">Customers &amp; Partners</li>
-                                                                <li value="0">None</li>
-                                                            </ul>
-                                                        </div>
+                                        <div class="vs-context-menu">
+                                            <ul>
+                                                <li class="nselect"><b>Choose a Title:</b></li>
+                                                <li value="2">Manager</li>
+                                                <li value="3">Skip Level Manager</li>
+                                                <li value="5">Peers</li>
+                                                <li value="1">Team Members</li>
+                                                <li value="6">Customers &amp; Partners</li>
+                                                <li value="0">None</li>
+                                            </ul>
+                                        </div>
                                         <div style="left: 0px; top: 0px; width: 98%; float: left; position: fixed; padding-top: 50%"
                                             id="dragassignpoe">
                                             <div class="popupbg">
@@ -794,9 +984,9 @@
                                                 </div>
                                                 <div class="network">
                                                     <div class="listwrapper">
-                                                        
+
                                                         <div class="scroll1">
-                                                           <ul id="allnetworkContent">
+                                                            <ul id="allnetworkContent">
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -817,7 +1007,54 @@
         </div>
     </div>
     <div id="basic-modal-content" style="display: none">
-        <div class="browseright">
+
+        
+        <form>
+            <input type="hidden" id="hf-uploaded-image-path" />
+        <input type="hidden" id="hf-cropped-image-path" />
+            <div class="browse_area">
+                <p class="browse_btn">
+                    <%--@Html.TextBoxFor(m => m.MyFile, new { id = "fu-my-simple-upload", type = "file" })--%>
+                    <input type="file" id="fu-my-simple-upload" />
+                </p>
+                <div id="crop-image-area" style="display: none;">
+
+
+                    <p class="img_area">
+                        <img id="uploaded-image" class="upload_img" src="#" />
+                    </p>
+                    <button id="hl-crop-image" class="crop_btn">OK</button>
+                    <p>
+                        <img id="my-cropped-image" src="#" width="150" height="150" style="display: none;" />
+                    </p>
+                </div>
+            </div>
+            <div class="browseright">
+                <div class="browserightcont">
+                    <p>
+                        Supported file formats - (.jpg, .png)
+                    </p>
+                    <p>
+                        Maximum supported file size - 500KB
+                    </p>
+                    <p>
+                        Maximum supported width/height - 500px
+                    </p>
+                    <div class="imgselection">
+                        <img src="../../Images/right-img.png" /><p>
+                            <span>Good image selection</span>
+                        </p>
+                    </div>
+                    <div class="imgselection">
+                        <img src="../../Images/bad-img.png" /><p>
+
+                            <span>Bad image selection</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <%--<div class="browseright">
             <div class="browserightcont">
                 <p>
                     Supported file formats - (.jpg, .png)
@@ -864,6 +1101,61 @@
         <div class="croptxt" style="display: none">
             <input type="button" id="btnCrop" onclick="cropImage();" value="Crop Image" />
             <div class="cropmsg">Click on the image and drag box to choose the area of your picture.</div>
-        </div>
+        </div>--%>
     </div>
+
+    <%-- <div class="modal" id="basic-modal-content" role="dialog">
+        <div class="modal-dialog">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" id="btnCloseImageUpload" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+
+                    <input type="hidden" id="hf-uploaded-image-path" />
+                    <input type="hidden" id="hf-cropped-image-path" />
+                    <div class="browse_area">
+                        <p class="browse_btn">@Html.TextBoxFor(m => m.MyFile, new { id = "fu-my-simple-upload", type = "file" })</p>
+                        <div id="crop-image-area" style="display: none;">
+
+
+                            <p class="img_area">
+                                <img id="uploaded-image" class="upload_img" src="#" /></p>
+                            <button id="hl-crop-image" class="crop_btn">OK</button>
+                            <p>
+                                <img id="my-cropped-image" src="#" width="150" height="150" style="display: none;" /></p>
+                        </div>
+                    </div>
+                    <div class="browseright">
+                        <div class="browserightcont">
+                            <p>
+                                Supported file formats - (.jpg, .png)
+                            </p>
+                            <p>
+                                Maximum supported file size - 500KB
+                            </p>
+                            <p>
+                                Maximum supported width/height - 500px
+                            </p>
+                            <div class="imgselection">
+                                <img src="~/Images/Common/right-img.png" /><p>
+                                    <span>Good image selection</span>
+                                </p>
+                            </div>
+                            <div class="imgselection">
+                                <img src="~/Images/Common/bad-img.png" /><p>
+
+                                    <span>Bad image selection</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>--%>
 </asp:Content>
