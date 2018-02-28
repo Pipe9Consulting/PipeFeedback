@@ -1546,13 +1546,6 @@ namespace bExcellent.Service.DataAccess
 			return ((ISingleResult<V3_GetCapabilityWCSIPerModuleResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.GetPOEResults")]
-		public ISingleResult<GetPOEResultsResult> GetPOEResults([global::System.Data.Linq.Mapping.ParameterAttribute(Name="FeedbackId", DbType="Int")] System.Nullable<int> feedbackId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), feedbackId);
-			return ((ISingleResult<GetPOEResultsResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.V4_GetFeedackCompleteStatus")]
 		public ISingleResult<V4_GetFeedackCompleteStatusResult> GetFeedackCompleteStatus([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Userid", DbType="Int")] System.Nullable<int> userid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> teamMappingId)
 		{
@@ -2132,6 +2125,55 @@ namespace bExcellent.Service.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid);
 			return ((ISingleResult<Privacy_GetAllCompletedMgrFeedbackResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Privacy_GetPrivacyOptions")]
+		public ISingleResult<Privacy_GetPrivacyOptionsResult> Privacy_GetPrivacyOptions([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid);
+			return ((ISingleResult<Privacy_GetPrivacyOptionsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Privacy_IuDownload")]
+		public int Privacy_IuDownload([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> nresult)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid, nresult);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Privacy_IuManagerFeedback")]
+		public int Privacy_IuManagerFeedback([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> nresult)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid, nresult);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Privacy_IuNumericalResult")]
+		public int Privacy_IuNumericalResult([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> nresult)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid, nresult);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Privacy_IuSelfFeedback")]
+		public int Privacy_IuSelfFeedback([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> nresult)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid, nresult);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Privacy_IuTeamFeedback")]
+		public int Privacy_IuTeamFeedback([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> userId, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> poeid, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> nresult)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userId, poeid, nresult);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.GetPOEResults")]
+		public ISingleResult<GetPOEResultsResult> GetPOEResults([global::System.Data.Linq.Mapping.ParameterAttribute(Name="FeedbackId", DbType="Int")] System.Nullable<int> feedbackId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), feedbackId);
+			return ((ISingleResult<GetPOEResultsResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -3182,7 +3224,7 @@ namespace bExcellent.Service.DataAccess
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -9004,7 +9046,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -9994,7 +10036,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary Picture
 		{
 			get
@@ -10350,7 +10392,7 @@ namespace bExcellent.Service.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image", CanBeNull=true)]
 		public System.Data.Linq.Binary picture
 		{
 			get
@@ -29559,248 +29601,6 @@ namespace bExcellent.Service.DataAccess
 		}
 	}
 	
-	public partial class GetPOEResultsResult
-	{
-		
-		private int _POEResultID;
-		
-		private int _QuestionId;
-		
-		private int _QuestionOrder;
-		
-		private int _ModuleOrder;
-		
-		private int _POEModuleId;
-		
-		private System.Nullable<int> _Answer;
-		
-		private System.Nullable<int> _CapabilityAnswer;
-		
-		private int _POECapabilityResultID;
-		
-		private System.Nullable<int> _AnswerType;
-		
-		private System.Nullable<System.DateTime> _UpdatedOn;
-		
-		private System.Nullable<int> _Rating;
-		
-		private string _Comments;
-		
-		private string _Notes;
-		
-		public GetPOEResultsResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEResultID", DbType="Int NOT NULL")]
-		public int POEResultID
-		{
-			get
-			{
-				return this._POEResultID;
-			}
-			set
-			{
-				if ((this._POEResultID != value))
-				{
-					this._POEResultID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
-		public int QuestionId
-		{
-			get
-			{
-				return this._QuestionId;
-			}
-			set
-			{
-				if ((this._QuestionId != value))
-				{
-					this._QuestionId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionOrder", DbType="Int NOT NULL")]
-		public int QuestionOrder
-		{
-			get
-			{
-				return this._QuestionOrder;
-			}
-			set
-			{
-				if ((this._QuestionOrder != value))
-				{
-					this._QuestionOrder = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
-		public int ModuleOrder
-		{
-			get
-			{
-				return this._ModuleOrder;
-			}
-			set
-			{
-				if ((this._ModuleOrder != value))
-				{
-					this._ModuleOrder = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
-		public int POEModuleId
-		{
-			get
-			{
-				return this._POEModuleId;
-			}
-			set
-			{
-				if ((this._POEModuleId != value))
-				{
-					this._POEModuleId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="Int")]
-		public System.Nullable<int> Answer
-		{
-			get
-			{
-				return this._Answer;
-			}
-			set
-			{
-				if ((this._Answer != value))
-				{
-					this._Answer = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CapabilityAnswer", DbType="Int")]
-		public System.Nullable<int> CapabilityAnswer
-		{
-			get
-			{
-				return this._CapabilityAnswer;
-			}
-			set
-			{
-				if ((this._CapabilityAnswer != value))
-				{
-					this._CapabilityAnswer = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POECapabilityResultID", DbType="Int NOT NULL")]
-		public int POECapabilityResultID
-		{
-			get
-			{
-				return this._POECapabilityResultID;
-			}
-			set
-			{
-				if ((this._POECapabilityResultID != value))
-				{
-					this._POECapabilityResultID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AnswerType", DbType="Int")]
-		public System.Nullable<int> AnswerType
-		{
-			get
-			{
-				return this._AnswerType;
-			}
-			set
-			{
-				if ((this._AnswerType != value))
-				{
-					this._AnswerType = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedOn", DbType="DateTime")]
-		public System.Nullable<System.DateTime> UpdatedOn
-		{
-			get
-			{
-				return this._UpdatedOn;
-			}
-			set
-			{
-				if ((this._UpdatedOn != value))
-				{
-					this._UpdatedOn = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rating", DbType="Int")]
-		public System.Nullable<int> Rating
-		{
-			get
-			{
-				return this._Rating;
-			}
-			set
-			{
-				if ((this._Rating != value))
-				{
-					this._Rating = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Comments", DbType="NVarChar(MAX)")]
-		public string Comments
-		{
-			get
-			{
-				return this._Comments;
-			}
-			set
-			{
-				if ((this._Comments != value))
-				{
-					this._Comments = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Notes", DbType="NVarChar(MAX)")]
-		public string Notes
-		{
-			get
-			{
-				return this._Notes;
-			}
-			set
-			{
-				if ((this._Notes != value))
-				{
-					this._Notes = value;
-				}
-			}
-		}
-	}
-	
 	public partial class V4_GetFeedackCompleteStatusResult
 	{
 		
@@ -36234,6 +36034,436 @@ namespace bExcellent.Service.DataAccess
 				if ((this._teammemberuserid != value))
 				{
 					this._teammemberuserid = value;
+				}
+			}
+		}
+	}
+	
+	public partial class Privacy_GetPrivacyOptionsResult
+	{
+		
+		private int _Id;
+		
+		private System.Nullable<int> _userId;
+		
+		private System.Nullable<int> _PoeId;
+		
+		private System.Nullable<bool> _IsNumericalResultDisable;
+		
+		private System.Nullable<bool> _IsSelfFeedbackDisable;
+		
+		private System.Nullable<bool> _IsManagerFeedbackDisable;
+		
+		private System.Nullable<bool> _IsTeamFeedbackDisable;
+		
+		private System.Nullable<bool> _IsCanDownload;
+		
+		private System.Nullable<System.DateTime> _CreatedOn;
+		
+		private System.Nullable<System.DateTime> _UpdatedOn;
+		
+		public Privacy_GetPrivacyOptionsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL")]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this._Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_userId", DbType="Int")]
+		public System.Nullable<int> userId
+		{
+			get
+			{
+				return this._userId;
+			}
+			set
+			{
+				if ((this._userId != value))
+				{
+					this._userId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PoeId", DbType="Int")]
+		public System.Nullable<int> PoeId
+		{
+			get
+			{
+				return this._PoeId;
+			}
+			set
+			{
+				if ((this._PoeId != value))
+				{
+					this._PoeId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsNumericalResultDisable", DbType="Bit")]
+		public System.Nullable<bool> IsNumericalResultDisable
+		{
+			get
+			{
+				return this._IsNumericalResultDisable;
+			}
+			set
+			{
+				if ((this._IsNumericalResultDisable != value))
+				{
+					this._IsNumericalResultDisable = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsSelfFeedbackDisable", DbType="Bit")]
+		public System.Nullable<bool> IsSelfFeedbackDisable
+		{
+			get
+			{
+				return this._IsSelfFeedbackDisable;
+			}
+			set
+			{
+				if ((this._IsSelfFeedbackDisable != value))
+				{
+					this._IsSelfFeedbackDisable = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsManagerFeedbackDisable", DbType="Bit")]
+		public System.Nullable<bool> IsManagerFeedbackDisable
+		{
+			get
+			{
+				return this._IsManagerFeedbackDisable;
+			}
+			set
+			{
+				if ((this._IsManagerFeedbackDisable != value))
+				{
+					this._IsManagerFeedbackDisable = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsTeamFeedbackDisable", DbType="Bit")]
+		public System.Nullable<bool> IsTeamFeedbackDisable
+		{
+			get
+			{
+				return this._IsTeamFeedbackDisable;
+			}
+			set
+			{
+				if ((this._IsTeamFeedbackDisable != value))
+				{
+					this._IsTeamFeedbackDisable = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsCanDownload", DbType="Bit")]
+		public System.Nullable<bool> IsCanDownload
+		{
+			get
+			{
+				return this._IsCanDownload;
+			}
+			set
+			{
+				if ((this._IsCanDownload != value))
+				{
+					this._IsCanDownload = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedOn", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CreatedOn
+		{
+			get
+			{
+				return this._CreatedOn;
+			}
+			set
+			{
+				if ((this._CreatedOn != value))
+				{
+					this._CreatedOn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedOn", DbType="DateTime")]
+		public System.Nullable<System.DateTime> UpdatedOn
+		{
+			get
+			{
+				return this._UpdatedOn;
+			}
+			set
+			{
+				if ((this._UpdatedOn != value))
+				{
+					this._UpdatedOn = value;
+				}
+			}
+		}
+	}
+	
+	public partial class GetPOEResultsResult
+	{
+		
+		private int _POEResultID;
+		
+		private int _QuestionId;
+		
+		private int _QuestionOrder;
+		
+		private int _ModuleOrder;
+		
+		private int _POEModuleId;
+		
+		private string _Answer;
+		
+		private System.Nullable<int> _CapabilityAnswer;
+		
+		private int _POECapabilityResultID;
+		
+		private System.Nullable<int> _AnswerType;
+		
+		private System.Nullable<System.DateTime> _UpdatedOn;
+		
+		private System.Nullable<int> _Rating;
+		
+		private string _Comments;
+		
+		private string _Notes;
+		
+		public GetPOEResultsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEResultID", DbType="Int NOT NULL")]
+		public int POEResultID
+		{
+			get
+			{
+				return this._POEResultID;
+			}
+			set
+			{
+				if ((this._POEResultID != value))
+				{
+					this._POEResultID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionId", DbType="Int NOT NULL")]
+		public int QuestionId
+		{
+			get
+			{
+				return this._QuestionId;
+			}
+			set
+			{
+				if ((this._QuestionId != value))
+				{
+					this._QuestionId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuestionOrder", DbType="Int NOT NULL")]
+		public int QuestionOrder
+		{
+			get
+			{
+				return this._QuestionOrder;
+			}
+			set
+			{
+				if ((this._QuestionOrder != value))
+				{
+					this._QuestionOrder = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModuleOrder", DbType="Int NOT NULL")]
+		public int ModuleOrder
+		{
+			get
+			{
+				return this._ModuleOrder;
+			}
+			set
+			{
+				if ((this._ModuleOrder != value))
+				{
+					this._ModuleOrder = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POEModuleId", DbType="Int NOT NULL")]
+		public int POEModuleId
+		{
+			get
+			{
+				return this._POEModuleId;
+			}
+			set
+			{
+				if ((this._POEModuleId != value))
+				{
+					this._POEModuleId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Answer", DbType="VarChar(100)")]
+		public string Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+			set
+			{
+				if ((this._Answer != value))
+				{
+					this._Answer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CapabilityAnswer", DbType="Int")]
+		public System.Nullable<int> CapabilityAnswer
+		{
+			get
+			{
+				return this._CapabilityAnswer;
+			}
+			set
+			{
+				if ((this._CapabilityAnswer != value))
+				{
+					this._CapabilityAnswer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POECapabilityResultID", DbType="Int NOT NULL")]
+		public int POECapabilityResultID
+		{
+			get
+			{
+				return this._POECapabilityResultID;
+			}
+			set
+			{
+				if ((this._POECapabilityResultID != value))
+				{
+					this._POECapabilityResultID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AnswerType", DbType="Int")]
+		public System.Nullable<int> AnswerType
+		{
+			get
+			{
+				return this._AnswerType;
+			}
+			set
+			{
+				if ((this._AnswerType != value))
+				{
+					this._AnswerType = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedOn", DbType="DateTime")]
+		public System.Nullable<System.DateTime> UpdatedOn
+		{
+			get
+			{
+				return this._UpdatedOn;
+			}
+			set
+			{
+				if ((this._UpdatedOn != value))
+				{
+					this._UpdatedOn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Rating", DbType="Int")]
+		public System.Nullable<int> Rating
+		{
+			get
+			{
+				return this._Rating;
+			}
+			set
+			{
+				if ((this._Rating != value))
+				{
+					this._Rating = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Comments", DbType="NVarChar(MAX)")]
+		public string Comments
+		{
+			get
+			{
+				return this._Comments;
+			}
+			set
+			{
+				if ((this._Comments != value))
+				{
+					this._Comments = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Notes", DbType="NVarChar(MAX)")]
+		public string Notes
+		{
+			get
+			{
+				return this._Notes;
+			}
+			set
+			{
+				if ((this._Notes != value))
+				{
+					this._Notes = value;
 				}
 			}
 		}

@@ -12,11 +12,11 @@
     <script src="../../Scripts/ref/Jquery_ui_min_latest.js"></script>
     <%--javascripts--%>
 
-
+    <script src="../../Scripts/Pipe9Feedback/Network/jquery.Jcrop.min.js"></script>
     <%--<script src="//cdn.jsdelivr.net/jquery.gray/1.4.2/jquery.gray.min.js" type="text/javascript"></script>--%>
     <script src="../../Uploadify/swfobject.js" type="text/javascript"></script>
     <script src="../../Uploadify/jquery.uploadify.v2.1.4.min.js" type="text/javascript"></script>
-    <script src="../../Scripts/jquery.Jcrop.min.js" type="text/javascript"></script>
+    <%-- <script src="../../Scripts/jquery.Jcrop.min.js" type="text/javascript"></script>--%>
     <script src="../../Scripts/jquery.simplemodal.js" type="text/javascript"></script>
     <script src="../../Scripts/vscontext.jquery.js" type="text/javascript"></script>
     <%--<script src="../../Scripts/ref/common.js" type="text/javascript"></script>--%>
@@ -26,7 +26,7 @@
     <%-- For Photo Upload--%>
     <script type="text/javascript">
         var x = 0, y = 0, w = 0, h = 0;
-        var imageHandler = "../../Uploadify/ImageHandler.ashx?id=";
+        //var imageHandler = "../../Uploadify/ImageHandler.ashx?id=";
 
         $(function () {
             $('#btnloading ').click(function (e) {
@@ -68,27 +68,43 @@
                 });
             });
 
-            function setCoords(c) {
-                x = c.x;
-                y = c.y;
-                w = c.w;
-                h = c.h;
-            };
+            //    function setCoords(c) {
+            //        x = c.x;
+            //        y = c.y;
+            //        w = c.w;
+            //        h = c.h;
+            //    };
+            //});
+            //function cropImage() {
+            //    $.ajax({
+            //        url: "/Media/CropImage",
+            //        type: "POST",
+            //        data: { x: x, y: y, w: w, h: h, Module: 2, rWidth: parseInt($('#imgUploadedImage').width()), rHeight: parseInt($('#imgUploadedImage').height()) },
+            //        success: function (data) {
+            //            savePhoto(data);
+            //        },
+            //        error: function (xhr, status, error) {
+            //            $('#lblMethodError').text(xhr.responseText);
+            //            $('#lblMethodError').show();
+            //        }
+            //    });
+            //}
+            //function savePhoto(imgId) {
+            //    Common.ajaxsync({
+            //        url: '/Network/SavePhoto?imgId=' + imgId,
+            //        success: function (response) {
+            //            $('#lblMethodError').hide();
+            //            network.loadMyData();
+            //            $.modal.close();
+            //        },
+            //        error: function (err) {
+            //        }
+            //    });
+            //}
         });
-        function cropImage() {
-            $.ajax({
-                url: "/Media/CropImage",
-                type: "POST",
-                data: { x: x, y: y, w: w, h: h, Module: 2, rWidth: parseInt($('#imgUploadedImage').width()), rHeight: parseInt($('#imgUploadedImage').height()) },
-                success: function (data) {
-                    savePhoto(data);
-                },
-                error: function (xhr, status, error) {
-                    $('#lblMethodError').text(xhr.responseText);
-                    $('#lblMethodError').show();
-                }
-            });
-        }
+
+  
+
         //function savePhoto(imgId) {
         //    Common.ajaxsync({
         //        url: '/Network/SavePhoto?imgId=' + imgId,
@@ -167,18 +183,8 @@
 
                 }
             });
-            //Common.ajaxsync({
-            //    url: '/Network/SavePhoto',
-            //    data: { 'imgId': imgValue },
-            //    success: function (response) {
-            //        $('#lblMethodError').hide();
-            //        network.loadMyData();
-            //        $.modal.close();
-            //    },
-            //    error: function (err) {
-            //    }
-            //});
         }
+
     </script>
 
 
@@ -919,7 +925,9 @@
             <input type="hidden" name="imgCropped" id="imgCropped" />
         </div>
 
-        <%-- <div class="browseright">
+      
+        <%--<div class="browseright">
+>>>>>>> 68b3633aac0e8b52fc49dc222898898376d27d69
             <div class="browserightcont">
                 <p>
                     Supported file formats - (.jpg, .png)
@@ -968,4 +976,59 @@
             <div class="cropmsg">Click on the image and drag box to choose the area of your picture.</div>
         </div>--%>
     </div>
+
+    <%-- <div class="modal" id="basic-modal-content" role="dialog">
+        <div class="modal-dialog">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" id="btnCloseImageUpload" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+
+                    <input type="hidden" id="hf-uploaded-image-path" />
+                    <input type="hidden" id="hf-cropped-image-path" />
+                    <div class="browse_area">
+                        <p class="browse_btn">@Html.TextBoxFor(m => m.MyFile, new { id = "fu-my-simple-upload", type = "file" })</p>
+                        <div id="crop-image-area" style="display: none;">
+
+
+                            <p class="img_area">
+                                <img id="uploaded-image" class="upload_img" src="#" /></p>
+                            <button id="hl-crop-image" class="crop_btn">OK</button>
+                            <p>
+                                <img id="my-cropped-image" src="#" width="150" height="150" style="display: none;" /></p>
+                        </div>
+                    </div>
+                    <div class="browseright">
+                        <div class="browserightcont">
+                            <p>
+                                Supported file formats - (.jpg, .png)
+                            </p>
+                            <p>
+                                Maximum supported file size - 500KB
+                            </p>
+                            <p>
+                                Maximum supported width/height - 500px
+                            </p>
+                            <div class="imgselection">
+                                <img src="~/Images/Common/right-img.png" /><p>
+                                    <span>Good image selection</span>
+                                </p>
+                            </div>
+                            <div class="imgselection">
+                                <img src="~/Images/Common/bad-img.png" /><p>
+
+                                    <span>Bad image selection</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>--%>
 </asp:Content>

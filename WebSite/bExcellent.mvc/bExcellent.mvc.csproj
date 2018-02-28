@@ -3757,6 +3757,12 @@
     <Content Include="Scripts\Pipe9Feedback\Common\bootstrap.min.js" />
     <Content Include="Scripts\Pipe9Feedback\Common\jquery-3.2.1.min.js" />
     <Content Include="Scripts\Pipe9Feedback\Common\jquery-ui.js" />
+    <Content Include="Scripts\Pipe9Feedback\Network\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\Pipe9Feedback\Network\jquery-ui-1.9.2.min.js" />
+    <Content Include="Scripts\Pipe9Feedback\Network\jquery.fileupload-ui.js" />
+    <Content Include="Scripts\Pipe9Feedback\Network\jquery.fileupload.js" />
+    <Content Include="Scripts\Pipe9Feedback\Network\jquery.iframe-transport.js" />
+    <Content Include="Scripts\Pipe9Feedback\Network\jquery.Jcrop.min.js" />
     <Content Include="Scripts\plugin\handlebars\handlebars-1.0.js" />
     <Content Include="Scripts\plugin\jquery-cookie\jquery.cookie.js" />
     <Content Include="Scripts\plugin\jquery\jquery-1.8.2.min.js" />
@@ -4850,6 +4856,7 @@
     <Folder Include="Images\images\Feedback\New folder\" />
     <Folder Include="Service References\App_LocalResources\" />
     <Folder Include="Styles\themes\blue\" />
+    <Folder Include="Temp\" />
     <Folder Include="Uploads\Video\" />
     <Folder Include="Video\" />
     <Folder Include="Web References\App_Data\" />

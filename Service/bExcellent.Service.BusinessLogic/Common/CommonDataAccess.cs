@@ -4496,12 +4496,57 @@ namespace bExcellent.Service.BusinessLogic.Common
             }
 
         }
+
         public List<V3_GetStandingAvgWCSIScoreResult> GetAvgWcsiScore(string fbid)
         {
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
                 return context.GetStandingAvgWCSIScore(fbid).ToList();
             }
+        }
+        public void InsertPrivacyOptions(int userId, int poeId,bool numResult,int order)
+        {
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                if (order == 1)
+                {
+                    context.Privacy_IuNumericalResult(userId, poeId, numResult);
+                }
+                else if (order == 2)
+                {
+                    context.Privacy_IuSelfFeedback(userId, poeId, numResult);
+                }
+                else if (order == 3)
+                {
+                    context.Privacy_IuManagerFeedback(userId, poeId, numResult);
+                }
+                else if (order == 4)
+                {
+                    context.Privacy_IuTeamFeedback(userId, poeId, numResult);
+                }
+                else if (order == 5)
+                {
+                    context.Privacy_IuDownload(userId, poeId, numResult);
+                }
+                
+            }
+        }
+        public Privacy PrivacyOption(int userId, int poeId)
+        {
+            var privacyData = new Privacy();
+            using (var context = DataContextFactory.GetIntelliSetDataContext())
+            {
+                var data = context.Privacy_GetPrivacyOptions(userId, poeId).FirstOrDefault();
+                if (data != null)
+                {
+                    privacyData.IsNumeric =data.IsNumericalResultDisable ?? false;
+                    privacyData.IsSelf = data.IsSelfFeedbackDisable ?? false;
+                    privacyData.IsManager = data.IsManagerFeedbackDisable ?? false;
+                    privacyData.IsTeam = data.IsTeamFeedbackDisable ?? false;
+                    privacyData.IsDownload = data.IsCanDownload ?? false;
+                }
+            }
+            return privacyData;
         }
         public string DecryptString(string encrString)
         {

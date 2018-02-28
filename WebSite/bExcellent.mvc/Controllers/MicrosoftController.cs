@@ -131,7 +131,7 @@ namespace bExcellent.mvc.Controllers
                     {
                         Session["StartPageMode"] = 1;
                         ViewBag.show = 1;
-                        ViewBag.username = _username;
+                        ViewBag.username = email;
                         ViewBag.password = _password;
                         Session["Password"] = _password;
                         if (Session["click"] != null)

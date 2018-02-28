@@ -1406,7 +1406,7 @@ namespace bExcellent.Service
                 WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
                 WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
                 BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
-                common.CreateErrorLog(userid, "GetSubscribedUserWall",e.Message,0);
+                common.CreateErrorLog(userid, "GetSubscribedUserWall", e.Message, 0);
             }
             return null;
         }
@@ -3639,6 +3639,41 @@ namespace bExcellent.Service
             {
                 var common = new BusinessLogic.Common.Common();
                 return common.PrivacyYourDataView(userId, poeId);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(userId, "DeleteAllFeedback", e.Message, 0);
+                return null;
+            }
+        }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public void InsertPrivacyOptions(int userId, int poeId, bool numResult, int order)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                common.InsertPrivacyOptions(userId, poeId, numResult, order);
+            }
+            catch (Exception e)
+            {
+                WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.PreconditionFailed;
+                WebOperationContext.Current.OutgoingResponse.StatusDescription = e.Message;
+                BusinessLogic.Common.Common common = new BusinessLogic.Common.Common();
+                common.CreateErrorLog(userId, "DeleteAllFeedback", e.Message, 0);
+            }
+        }
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        public Privacy PrivacyOption(int userId, int poeId)
+        {
+            try
+            {
+                var common = new BusinessLogic.Common.Common();
+                return common.PrivacyOption(userId, poeId);
             }
             catch (Exception e)
             {
