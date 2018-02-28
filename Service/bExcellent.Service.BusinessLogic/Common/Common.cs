@@ -840,5 +840,15 @@ namespace bExcellent.Service.BusinessLogic.Common
         {
             return DataAccess.PrivacyYourDataView(userId, poeId);
         }
+
+        public void InsertPrivacyOptions(int userId, int poeId, bool numResult, int order)
+        {
+            DataAccess.InsertPrivacyOptions(userId, poeId, numResult, order);
+        }
+
+        public Privacy PrivacyOption(int userId, int poeId)
+        {
+            return DataAccess.PrivacyOption(userId, poeId);
+        }
     }
 }

@@ -52,19 +52,21 @@ namespace bExcellent.mvc.Controllers
         //}
 
         //[SessionExpireFilter]
-        public ActionResult Start(int? userId)
+        public ActionResult Start(string userId)
         {
+            
             //For pipe9 cloud development
             if (userId != null)
             {
+                var usr = Convert.ToInt32(DecryptString(userId));
                 var signUp = new SignupClient();
-                var suser = signUp.GetUserById((int)userId);
+                var suser = signUp.GetUserById(usr);
                 Session["user"] = suser;
                 var loggeduserName = suser.FirstName + " " + suser.LastName;
                 ViewData["username"] = loggeduserName;
                 Session["Uname"] = loggeduserName;
                 Session["emailid"] = suser.EmailAddress;
-                Session["id"] = (int)userId;
+                Session["id"] = usr;
                 Session["domain"] = suser.EmailAddress.Split('@')[1];
                 Session["subid"] = -1;
             }
@@ -86,7 +88,21 @@ namespace bExcellent.mvc.Controllers
             Session["GivenClick"] = null;
             return View();
         }
-
+        public string DecryptString(string encrString)
+        {
+            byte[] b;
+            string decrypted;
+            try
+            {
+                b = Convert.FromBase64String(encrString);
+                decrypted = System.Text.ASCIIEncoding.ASCII.GetString(b);
+            }
+            catch (FormatException fe)
+            {
+                decrypted = "";
+            }
+            return decrypted;
+        }
         public ActionResult PoeLibrary()
         {
             Session["Mode"] = 5;

@@ -180,7 +180,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                                         rolename
                                       );
                 emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
-                SendEmailUpdated(subject, emailContent, to);
+               // SendEmailUpdated(subject, emailContent, to);
 
             }
             else
@@ -199,7 +199,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                                         rolename
                                       );
                 emailContent = string.Format(Constant.EmailTemplateNew, emailContenttemp, user.User.EmailAddress);
-                SendEmailUpdated(subject, emailContent, to);
+                //SendEmailUpdated(subject, emailContent, to);
             }
         }
 
@@ -244,7 +244,7 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                                          url
                                        );
                     emailContent = string.Format(Constant.EmailTemplate, emailContenttemp);
-                    SendEmail(subject, emailContent, to);
+                    //SendEmail(subject, emailContent, to);
                 }
                 comments = "Your standing from completion of feedback on the Role Excellence Profile for " + user.POE.Name + " is " + wcsiscore + ".<a class='morelink' href='/Sync/BigPicture?poeid=" + user.POE.POEId + "&fid=" + feedback.POEFeedbackId + "&ftype=1'>View…</a>";
                 text = " <div class='recieve' style='height:60px'></div><div class='dt'>" + CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(DateTime.Now.Month) +
@@ -290,9 +290,9 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
                                           url
                                           );
                 emailContent = string.Format(Constant.EmailTemplate, emailContenttemp);
-                SendEmail(subject, emailContent, to);
+               // SendEmail(subject, emailContent, to);
             }
-            SendCompletionMail(feedback);
+           // SendCompletionMail(feedback);
             //Log("WCF-CreateFbCompleteActivity:FBID::" + feedback.POEFeedbackId + "-OUT");
             //UserPOEMapping memberdetails = Common.GetUserDetailsByMappingId(request.RequestedFrom);
         }
@@ -1648,22 +1648,30 @@ namespace bExcellent.Service.BusinessLogic.FeedbackBL
             // Log("WCF-GetFeedbackResults:FBID:" + feedbackId + "-IN");
             using (var context = DataContextFactory.GetIntelliSetDataContext())
             {
-                var results = context.GetPOEResults(feedbackId);
+                var results = context.GetPOEResults(feedbackId).ToList();
                 // Log("WCF-GetFeedbackResults:FBID:" + feedbackId + "-OUT");
-                return results.SelectMany((a, b) => new List<SavePOEResultRequest>
+                if (results.Count != 0)
+                {
+                    return results.SelectMany((a, b) => new List<SavePOEResultRequest>
                                                         {
                                                             new SavePOEResultRequest
-                                                                {
-                                                                    QuestionId = a.QuestionId,
-                                                                    Answer = a.Answer.GetValueOrDefault(),
-                                                                    AnswerType = a.AnswerType.GetValueOrDefault(),
-                                                                    FeedbackId=feedbackId,
-                                                                    UserRating = a.Rating.GetValueOrDefault(),
-                                                                    Notes = a.Notes,
-                                                                    CapabilityAnswer=a.CapabilityAnswer.GetValueOrDefault(),
-                                                                    ModuleNumber=a.POEModuleId
-                                                                }
+                                                            {
+                                                                QuestionId = a.QuestionId,
+                                                                Answer =  Convert.ToInt32(a.Answer),
+                                                                AnswerType = (int) a.AnswerType,
+                                                                FeedbackId = feedbackId,
+                                                                UserRating = (int) a.Rating,
+                                                                //Notes = a.Notes,
+                                                                CapabilityAnswer = (int) a.CapabilityAnswer,
+                                                                ModuleNumber = a.POEModuleId
+                                                            }
                                                         }).ToList();
+                }
+                else
+                {
+                    return null;
+                }
+
             }
         }
 
